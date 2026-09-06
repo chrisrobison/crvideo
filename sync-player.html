@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clock-Synced Stream Player</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+#stage,#html5Player,#vimeoPlayer{position:absolute;inset:0;width:100%;height:100%;background:#000}
+#html5Player{object-fit:contain}.hidden{display:none!important}
+#vimeoPlayer iframe{width:100%;height:100%;border:0}
+#status{position:absolute;left:16px;top:16px;z-index:20;max-width:min(620px,calc(100vw - 32px));padding:10px 12px;border-radius:8px;background:rgba(0,0,0,.72);color:#fff;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap;pointer-events:none}
+#startButton{position:absolute;z-index:30;left:50%;top:50%;transform:translate(-50%,-50%);appearance:none;border:1px solid rgba(255,255,255,.35);border-radius:10px;padding:14px 20px;background:rgba(0,0,0,.82);color:#fff;font:600 16px/1 system-ui,sans-serif;cursor:pointer}
+</style>
+</head>
+<body>
+<div id="stage">
+  <video id="html5Player" class="hidden" playsinline preload="auto"></video>
+  <div id="vimeoPlayer" class="hidden"></div>
+</div>
+<div id="status" class="hidden"></div>
+<button id="startButton" class="hidden" type="button">Start playback</button>
+<script>
+(() => {
+  "use strict";
+  const qs = new URLSearchParams(location.search);
+  const PLAYLIST_URL = qs.get("playlist") || "playlist.json";
+  const DEBUG = qs.has("debug");
+  const MANIFEST_REFRESH_MS = 60000;
+  const SYNC_INTERVAL_MS = 1000;
+  const DRIFT_CHECK_MS = 5000;
+  const DRIFT_TOLERANCE_SECONDS = 1.5;
+
+  const html5 = document.getElementById("html5Player");
+  const vimeoHost = document.getElementById("vimeoPlayer");
+  const status = document.getElementById("status");
+  const startButton = document.getElementById("startButton");
+
+  let entries = [];
+  let current = null;
+  let provider = null;
+  let vimeo = null;
+  let vimeoApiPromise = null;
+  let lastDriftCheck = 0;
+  let switching = false;
+
+  if (DEBUG) status.classList.remove("hidden");
+
+  const parseTime = value => {
+    const ms = Date.parse(value);
+    if (!Number.isFinite(ms)) throw new Error(`Invalid timestamp: ${value}`);
+    return ms;
+  };
+
+  function normalizeManifest(data) {
+    const list = Array.isArray(data) ? data : data.entries;
+    if (!Array.isArray(list)) throw new Error("playlist.json must contain an array or { entries: [...] }");
+
+    const normalized = list.map((item,index) => ({
+      ...item,
+      id: item.id || `entry-${index}`,
+      startMs: parseTime(item.start)
+    })).sort((a,b) => a.startMs - b.startMs);
+
+    normalized.forEach((item,index) => {
+      if (item.end) item.endMs = parseTime(item.end);
+      else if (Number.isFinite(Number(item.durationSeconds))) item.endMs = item.startMs + Number(item.durationSeconds) * 1000;
+      else if (normalized[index + 1]) item.endMs = normalized[index + 1].startMs;
+      else item.endMs = Infinity;
+
+      if (!item.url) throw new Error(`Missing url for ${item.id}`);
+      if (item.endMs <= item.startMs) throw new Error(`End time must be after start time for ${item.id}`);
+    });
+    return normalized;
+  }
+
+  async function loadManifest() {
+    const sep = PLAYLIST_URL.includes("?") ? "&" : "?";
+    const r = await fetch(`${PLAYLIST_URL}${sep}_=${Date.now()}`, {cache:"no-store"});
+    if (!r.ok) throw new Error(`Playlist request failed: ${r.status}`);
+    entries = normalizeManifest(await r.json());
+  }
+
+  const findActiveEntry = nowMs => entries.find(item => nowMs >= item.startMs && nowMs < item.endMs) || null;
+  const desiredOffsetSeconds = (item, nowMs=Date.now()) => Math.max(0, (nowMs - item.startMs) / 1000);
+  const detectProvider = item => item.provider ? item.provider.toLowerCase() : (/(^|\/\/)(www\.)?vimeo\.com\//i.test(item.url) ? "vimeo" : "html5");
+  const vimeoIdFromUrl = url => String(url).match(/vimeo\.com\/(?:video\/)?(\d+)/i)?.[1] || null;
+  const showStartButton = () => startButton.classList.remove("hidden");
+  const hideStartButton = () => startButton.classList.add("hidden");
+
+  async function ensureVimeoApi() {
+    if (window.Vimeo?.Player) return;
+    if (vimeoApiPromise) return vimeoApiPromise;
+    vimeoApiPromise = new Promise((resolve,reject) => {
+      const s = document.createElement("script");
+      s.src = "https://player.vimeo.com/api/player.js";
+      s.onload = resolve;
+      s.onerror = () => reject(new Error("Unable to load Vimeo Player API"));
+      document.head.appendChild(s);
+    });
+    return vimeoApiPromise;
+  }
+
+  async function stopCurrentPlayer() {
+    if (provider === "html5") {
+      html5.pause();
+      html5.removeAttribute("src");
+      html5.load();
+      html5.classList.add("hidden");
+    }
+    if (provider === "vimeo" && vimeo) {
+      try { await vimeo.destroy(); } catch (_) {}
+      vimeo = null;
+      vimeoHost.innerHTML = "";
+      vimeoHost.classList.add("hidden");
+    }
+    provider = null;
+  }
+
+  async function startHtml5(item, offset) {
+    provider = "html5";
+    html5.classList.remove("hidden");
+    vimeoHost.classList.add("hidden");
+    html5.src = item.url;
+    html5.muted = !!item.muted;
+
+    await new Promise((resolve,reject) => {
+      const cleanup = () => {
+        html5.removeEventListener("loadedmetadata", onLoaded);
+        html5.removeEventListener("error", onError);
+      };
+      const onLoaded = () => { cleanup(); resolve(); };
+      const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${item.url}`)); };
+      html5.addEventListener("loadedmetadata", onLoaded, {once:true});
+      html5.addEventListener("error", onError, {once:true});
+      html5.load();
+    });
+
+    const maxTime = Number.isFinite(html5.duration) ? Math.max(0, html5.duration - .25) : offset;
+    html5.currentTime = Math.min(offset, maxTime);
+    try { await html5.play(); hideStartButton(); } catch (_) { showStartButton(); }
+  }
+
+  async function startVimeo(item, offset) {
+    await ensureVimeoApi();
+    const id = item.vimeoId || vimeoIdFromUrl(item.url);
+    if (!id) throw new Error(`Could not determine Vimeo video ID from ${item.url}`);
+
+    provider = "vimeo";
+    html5.classList.add("hidden");
+    vimeoHost.classList.remove("hidden");
+    vimeoHost.innerHTML = "";
+    vimeo = new Vimeo.Player(vimeoHost, {
+      id: Number(id),
+      autoplay: true,
+      controls: false,
+      muted: !!item.muted,
+      responsive: true
+    });
+    await vimeo.ready();
+    await vimeo.setCurrentTime(offset);
+    try { await vimeo.play(); hideStartButton(); } catch (_) { showStartButton(); }
+  }
+
+  async function switchTo(item, offset) {
+    if (switching) return;
+    switching = true;
+    try {
+      await stopCurrentPlayer();
+      if (detectProvider(item) === "vimeo") await startVimeo(item, offset);
+      else await startHtml5(item, offset);
+      current = item;
+      lastDriftCheck = Date.now();
+    } finally { switching = false; }
+  }
+
+  async function getCurrentPlaybackTime() {
+    if (provider === "html5") return Number.isFinite(html5.currentTime) ? html5.currentTime : 0;
+    if (provider === "vimeo" && vimeo) return await vimeo.getCurrentTime();
+    return 0;
+  }
+
+  async function seekCurrent(seconds) {
+    if (provider === "html5" && html5.readyState >= 1) html5.currentTime = seconds;
+    else if (provider === "vimeo" && vimeo) await vimeo.setCurrentTime(seconds);
+  }
+
+  async function playCurrent() {
+    try {
+      if (provider === "html5") await html5.play();
+      else if (provider === "vimeo" && vimeo) await vimeo.play();
+      hideStartButton();
+    } catch (_) { showStartButton(); }
+  }
+
+  function updateStatus(item, desired, drift) {
+    if (!DEBUG) return;
+    const now = new Date();
+    status.textContent = !item
+      ? `No scheduled video\nClock: ${now.toISOString()}\nEntries: ${entries.length}`
+      : `${item.title || item.id}\nClock:   ${now.toISOString()}\nStart:   ${new Date(item.startMs).toISOString()}\nOffset:  ${desired.toFixed(2)}s\nDrift:   ${drift >= 0 ? "+" : ""}${drift.toFixed(2)}s\nSource:  ${provider}\nURL:     ${item.url}`;
+  }
+
+  async function sync(force=false) {
+    if (!entries.length || switching) return;
+    const now = Date.now();
+    const active = findActiveEntry(now);
+
+    if (!active) {
+      if (current) { await stopCurrentPlayer(); current = null; }
+      updateStatus(null,0,0);
+      return;
+    }
+
+    const desired = desiredOffsetSeconds(active, now);
+    if (!current || current.id !== active.id) {
+      await switchTo(active, desired);
+      updateStatus(active, desired, 0);
+      return;
+    }
+
+    if (force || now - lastDriftCheck >= DRIFT_CHECK_MS) {
+      lastDriftCheck = now;
+      const actual = await getCurrentPlaybackTime();
+      const drift = actual - desired;
+      if (Math.abs(drift) > DRIFT_TOLERANCE_SECONDS) await seekCurrent(desired);
+      updateStatus(active, desired, drift);
+    }
+  }
+
+  startButton.addEventListener("click", async () => { await playCurrent(); await sync(true); });
+  html5.addEventListener("ended", () => sync(true));
+  html5.addEventListener("error", () => setTimeout(() => sync(true), 3000));
+
+  (async function boot() {
+    try {
+      await loadManifest();
+      await sync(true);
+      setInterval(() => sync().catch(console.error), SYNC_INTERVAL_MS);
+      setInterval(async () => {
+        try { await loadManifest(); await sync(true); }
+        catch (e) { console.error(e); }
+      }, MANIFEST_REFRESH_MS);
+    } catch (e) {
+      console.error(e);
+      status.classList.remove("hidden");
+      status.textContent = `Player startup failed:\n${e.message}`;
+    }
+  })();
+})();
+</script>
+</body>
+</html>

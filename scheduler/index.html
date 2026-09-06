@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ChannelFlow — Schedule</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%233b82f6'/%3E%3Cpath d='M9 7l8 5-8 5V7z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/tokens.css">
+<style>
+  .app{ display:flex; flex-direction:column; min-height:100vh; }
+  .stat-strip{ padding:16px 20px 0; }
+  main.layout{
+    display:grid;
+    grid-template-columns: 300px minmax(0,1fr) 340px;
+    gap:16px;
+    padding:16px 20px 24px;
+    align-items:start;
+    flex:1;
+  }
+  .media-col{ height:calc(100vh - 210px); min-height:420px; position:sticky; top:16px; }
+  .center-col{ display:flex; flex-direction:column; gap:16px; min-width:0; }
+  .details-col{ min-width:0; }
+  @media (max-width:1200px){
+    main.layout{ grid-template-columns: 1fr; }
+    .media-col{ height:420px; position:static; }
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <cf-header></cf-header>
+  <div class="stat-strip"><cf-stat-bar></cf-stat-bar></div>
+  <main class="layout">
+    <aside class="media-col"><cf-media-library></cf-media-library></aside>
+    <section class="center-col">
+      <cf-timeline></cf-timeline>
+      <cf-rundown></cf-rundown>
+    </section>
+    <aside class="details-col">
+      <cf-details-panel></cf-details-panel>
+      <cf-program-monitor></cf-program-monitor>
+    </aside>
+  </main>
+</div>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "id": "segment-1",
+      "title": "video-001 (30s)",
+      "start": "2026-09-02T18:06:00-07:00",
+      "end": "2026-09-02T18:06:30-07:00",
+      "url": "https://cdr2.com/crvideo/video-001.mp4"
+    },
+    {
+      "id": "segment-2",
+      "title": "video-002 (30s)",
+      "start": "2026-09-02T18:06:30-07:00",
+      "end": "2026-09-02T18:07:00-07:00",
+      "url": "https://cdr2.com/crvideo/video-002.mp4"
+    },
+    {
+      "id": "segment-3",
+      "title": "video-003 (30s)",
+      "start": "2026-09-02T18:07:00-07:00",
+      "end": "2026-09-02T18:07:30-07:00",
+      "url": "https://cdr2.com/crvideo/video-003.mp4"
+    },
+    {
+      "id": "segment-4",
+      "title": "video-004 (30s)",
+      "start": "2026-09-02T18:07:30-07:00",
+      "end": "2026-09-02T18:08:00-07:00",
+      "url": "https://cdr2.com/crvideo/video-004.mp4"
+    },
+    {
+      "id": "segment-5",
+      "title": "video-001 again (30s)",
+      "start": "2026-09-02T18:08:00-07:00",
+      "end": "2026-09-02T18:08:30-07:00",
+      "url": "https://cdr2.com/crvideo/video-001.mp4"
+    },
+    {
+      "id": "segment-6",
+      "title": "video-002 again (30s)",
+      "start": "2026-09-02T18:08:30-07:00",
+      "end": "2026-09-02T18:09:00-07:00",
+      "url": "https://cdr2.com/crvideo/video-002.mp4"
+    },
+    {
+      "id": "segment-7",
+      "title": "video-003 again (30s)",
+      "start": "2026-09-02T18:09:00-07:00",
+      "end": "2026-09-02T18:09:30-07:00",
+      "url": "https://cdr2.com/crvideo/video-003.mp4"
+    },
+    {
+      "id": "segment-8",
+      "title": "video-004 again (30s)",
+      "start": "2026-09-02T18:09:30-07:00",
+      "end": "2026-09-02T18:10:00-07:00",
+      "url": "https://cdr2.com/crvideo/video-004.mp4"
+    }
+  ]
+}
