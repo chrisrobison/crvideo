@@ -60,6 +60,29 @@ Reload the scheduler and open the **Drive** menu in the header:
 - **Publish** (in the main toolbar) — when a Drive folder is chosen, also
   writes `playlist.json` into it, in addition to the local download.
 
+### Reels — auto-filling dead air from a folder
+Further down the same Drive menu is a separate **Reels** section — this is
+for a folder of filler/bumper clips you want the scheduler to lean on
+automatically whenever there's a gap in the Program track, so the channel
+never actually goes to dead air.
+- **Choose folder…** / paste a link — same as the main folder, but kept
+  separate on purpose: your Reels pool doesn't have to be the same folder
+  as your main shared media.
+- **Auto-fill gaps** (toggle) — when on, *any* edit that opens a gap
+  (deleting a segment, dragging one to reschedule it, resizing it shorter,
+  even switching channel/date to a schedule with existing gaps) immediately
+  gets patched with the next clip in the Reels folder, round-robin. The
+  clip is looped for the entire gap — one clip per gap, not chained
+  clips — so a 12-minute gap plays one reel on a loop until the next real
+  program starts, the same way a "please stand by" filler reel works on a
+  real broadcast channel.
+- **Fill gaps now** — a one-off manual sweep, useful if you'd rather review
+  gaps yourself before turning on full automation.
+
+Pasting `https://drive.google.com/drive/folders/<id>` (a link to a folder
+someone else shared with you, like a team's "reels" folder) works the same
+way here as it does for the main folder.
+
 ## Notes & limitations
 - The whole integration is one folder for everything, kept intentionally
   simple. If you want separate "media" vs. "publish" folders later, that's

@@ -1,6 +1,7 @@
 import { store } from "../store.js";
 import { baseComponentCSS, escapeHtml, dateLabel, dateLabelFull, secToClock, toast } from "../utils.js";
 import * as drive from "../drive.js";
+import "./cf-toggle.js";
 
 class CfHeader extends HTMLElement {
   constructor() {
@@ -84,6 +85,20 @@ class CfHeader extends HTMLElement {
       <button class="save-btn" style="width:100%;" ${store.driveFolderId ? "" : "disabled"}>Save schedule to Drive</button>
       <button class="load-btn" style="width:100%;" ${store.driveFolderId ? "" : "disabled"}>Load schedule from Drive</button>
       <div class="drive-divider"></div>
+      <div class="drive-section-title">Reels (auto-fill gaps)</div>
+      <div class="drive-folder-row">
+        <span class="muted">Folder:</span>
+        <strong>${store.reelsFolderName ? escapeHtml(store.reelsFolderName) : "None chosen"}</strong>
+      </div>
+      <button class="choose-reels-btn" style="width:100%;">Choose folder…</button>
+      <div class="drive-paste-row">
+        <input class="reels-link-input" type="text" placeholder="…or paste a folder link">
+        <button class="use-reels-link-btn">Use</button>
+      </div>
+      <cf-toggle class="autofill-toggle" label="Auto-fill gaps"
+        description="Loop a reel into any dead air, automatically" ${store.autoFillReels ? "checked" : ""}></cf-toggle>
+      <button class="fill-now-btn" style="width:100%;" ${store.reelsFolderId ? "" : "disabled"}>Fill gaps now</button>
+      <div class="drive-divider"></div>
       <button class="disconnect-btn danger" style="width:100%;">Disconnect</button>
     `;
     body.querySelector(".choose-folder-btn").addEventListener("click", async () => {
@@ -103,6 +118,27 @@ class CfHeader extends HTMLElement {
     body.querySelector(".refresh-btn").addEventListener("click", () => store.refreshDriveMedia());
     body.querySelector(".save-btn").addEventListener("click", () => store.saveScheduleToDrive());
     body.querySelector(".load-btn").addEventListener("click", () => store.loadScheduleFromDrive());
+
+    body.querySelector(".choose-reels-btn").addEventListener("click", async () => {
+      const picker = document.querySelector("cf-drive-folder-picker");
+      const result = await picker.open();
+      if (result) await store.setReelsFolder(result.id, result.name);
+      this._renderDriveBody();
+    });
+    const reelsLinkInput = body.querySelector(".reels-link-input");
+    const useReelsLink = async () => {
+      if (!reelsLinkInput.value.trim()) return;
+      await store.setReelsFolderFromInput(reelsLinkInput.value.trim());
+      this._renderDriveBody();
+    };
+    body.querySelector(".use-reels-link-btn").addEventListener("click", useReelsLink);
+    reelsLinkInput.addEventListener("keydown", (e) => { if (e.key === "Enter") useReelsLink(); });
+    body.querySelector(".autofill-toggle").addEventListener("change", (e) => store.setAutoFillReels(e.detail.checked));
+    body.querySelector(".fill-now-btn").addEventListener("click", () => {
+      const { filled } = store.fillGapsWithReels();
+      if (!filled) toast("No gaps to fill (or no reels loaded yet).", "warn");
+    });
+
     body.querySelector(".disconnect-btn").addEventListener("click", () => {
       drive.disconnect();
       this._profile = null;
@@ -164,18 +200,21 @@ class CfHeader extends HTMLElement {
           .drive-menu[open] summary{ border-color:var(--accent); }
           .drive-menu .dot{ width:7px; height:7px; border-radius:50%; background:var(--text-faint); }
           .drive-menu[data-connected="true"] .dot{ background:var(--good); }
-          .drive-body{ position:absolute; top:calc(100% + 6px); right:0; width:260px; background:var(--panel);
-            border:1px solid var(--border); border-radius:var(--radius); padding:12px; box-shadow:0 14px 34px rgba(0,0,0,.5);
-            z-index:60; display:flex; flex-direction:column; gap:8px; }
+          .drive-body{ position:absolute; top:calc(100% + 6px); right:0; width:290px; max-height:80vh; overflow-y:auto;
+            background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:12px;
+            box-shadow:0 14px 34px rgba(0,0,0,.5); z-index:60; display:flex; flex-direction:column; gap:8px; }
           .drive-body p{ margin:0; font-size:12px; }
           .drive-body .hint{ color:var(--text-faint); font-size:11px; }
           .drive-body code{ font:11px var(--mono); background:var(--bg-elevated); padding:1px 4px; border-radius:4px; }
           .drive-account{ font-size:12px; font-weight:700; word-break:break-all; }
+          .drive-section-title{ font-size:11px; font-weight:800; letter-spacing:.04em; text-transform:uppercase;
+            color:var(--text-muted); }
           .drive-folder-row{ font-size:12px; display:flex; flex-direction:column; gap:2px; }
           .drive-paste-row{ display:flex; gap:6px; }
           .drive-paste-row input{ flex:1; padding:6px 8px; font-size:12px; }
           .drive-paste-row button{ padding:6px 10px; font-size:12px; flex-shrink:0; }
           .drive-divider{ height:1px; background:var(--border-soft); margin:2px 0; }
+          .drive-body cf-toggle{ margin:2px 0; }
         </style>
         <header>
           <div class="logo">
