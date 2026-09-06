@@ -132,11 +132,24 @@ class Store extends EventTarget {
     this.publishedAt = null;
     this.driveFolderId = null;
     this.driveFolderName = null;
+    this.reelsFolderId = null;
+    this.reelsFolderName = null;
+    this.autoFillReels = false;
+    this._reelsRotation = 0;
+    this._fillingGaps = false;
 
     this._load();
     this._probeDurations();
     this._tick = this._tick.bind(this);
     setInterval(this._tick, 1000);
+
+    // A page reload keeps the OAuth token (sessionStorage) but not the fetched
+    // file lists (media isn't persisted), so re-hydrate both Drive folders if
+    // we're still signed in from before.
+    if (drive.isConnected()) {
+      if (this.driveFolderId) this.refreshDriveMedia();
+      if (this.reelsFolderId) this.refreshReelsMedia();
+    }
   }
 
   // ---------- persistence ----------
@@ -150,6 +163,9 @@ class Store extends EventTarget {
         if (saved.channels?.length) this.channels = saved.channels;
         this.driveFolderId = saved.driveFolderId || null;
         this.driveFolderName = saved.driveFolderName || null;
+        this.reelsFolderId = saved.reelsFolderId || null;
+        this.reelsFolderName = saved.reelsFolderName || null;
+        this.autoFillReels = !!saved.autoFillReels;
       }
     } catch (_) { /* ignore corrupt storage */ }
     const key = this._scheduleKey();
@@ -161,6 +177,8 @@ class Store extends EventTarget {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({
         schedules: this.schedules, publishedAt: this.publishedAt, channels: this.channels,
         driveFolderId: this.driveFolderId, driveFolderName: this.driveFolderName,
+        reelsFolderId: this.reelsFolderId, reelsFolderName: this.reelsFolderName,
+        autoFillReels: this.autoFillReels,
       }));
     } catch (_) { /* storage full/unavailable — keep working in memory */ }
   }
@@ -203,6 +221,7 @@ class Store extends EventTarget {
     this.selectedBlockId = null;
     this.persist();
     this._emit("channel");
+    if (this.autoFillReels) this.fillGapsWithReels();
   }
 
   shiftDate(deltaDays) {
@@ -213,6 +232,7 @@ class Store extends EventTarget {
     this.selectedBlockId = null;
     this.persist();
     this._emit("date");
+    if (this.autoFillReels) this.fillGapsWithReels();
   }
 
   isToday() { return this.activeDate === todayKey(); }
@@ -259,6 +279,7 @@ class Store extends EventTarget {
     }
     this.persist();
     this._emit("blocks");
+    if (this.autoFillReels) this.fillGapsWithReels();
   }
 
   moveBlock(blockId, newStart) {
@@ -270,6 +291,7 @@ class Store extends EventTarget {
     found.block.end = start + duration;
     this.persist();
     this._emit("blocks");
+    if (this.autoFillReels) this.fillGapsWithReels();
   }
 
   resizeBlock(blockId, edge, value) {
@@ -280,6 +302,7 @@ class Store extends EventTarget {
     else b.end = Math.min(DAY_SECONDS, Math.max(b.start + 30, Math.round(value)));
     this.persist();
     this._emit("blocks");
+    if (this.autoFillReels) this.fillGapsWithReels();
   }
 
   duplicateBlock(blockId) {
@@ -304,6 +327,7 @@ class Store extends EventTarget {
         if (this.selectedBlockId === blockId) this.selectedBlockId = null;
         this.persist();
         this._emit("blocks");
+        if (this.autoFillReels) this.fillGapsWithReels();
         return true;
       }
     }
@@ -441,6 +465,120 @@ class Store extends EventTarget {
     } catch (e) {
       toast(`Drive load failed: ${e.message}`, "danger");
     }
+  }
+
+  // ---------- Reels: a rotation pool that auto-fills dead air on the program track ----------
+  async setReelsFolder(folderId, folderName) {
+    this.reelsFolderId = folderId;
+    this.reelsFolderName = folderName;
+    this.persist();
+    this._emit("drive-folder");
+    await this.refreshReelsMedia();
+  }
+
+  async setReelsFolderFromInput(input) {
+    const folderId = drive.parseFolderId(input);
+    if (!folderId) return toast("That doesn't look like a Drive folder link or ID.", "danger");
+    try {
+      const meta = await drive.getFileMeta(folderId, "id,name,mimeType");
+      if (!drive.isFolder(meta)) return toast("That Drive item isn't a folder.", "danger");
+      await this.setReelsFolder(meta.id, meta.name);
+    } catch (e) {
+      toast(`Couldn't open that folder: ${e.message}`, "danger");
+    }
+  }
+
+  clearReelsFolder() {
+    this.reelsFolderId = null;
+    this.reelsFolderName = null;
+    for (const old of this.media) if (old.fromReels && old.thumbUrl) URL.revokeObjectURL(old.thumbUrl);
+    this.media = this.media.filter((m) => !m.fromReels);
+    this.persist();
+    this._emit("drive-folder");
+  }
+
+  async refreshReelsMedia() {
+    if (!this.reelsFolderId || !drive.isConnected()) return;
+    try {
+      const files = await drive.listFolder(this.reelsFolderId);
+      for (const old of this.media) if (old.fromReels && old.thumbUrl) URL.revokeObjectURL(old.thumbUrl);
+      const items = files
+        .filter((f) => !drive.isFolder(f) && drive.driveTypeFor(f.mimeType) !== "graphic")
+        .map((f) => ({
+          id: `reel-${f.id}`,
+          title: f.name.replace(/\.[^.]+$/, ""),
+          type: drive.driveTypeFor(f.mimeType),
+          duration: f.videoMediaMetadata ? Number(f.videoMediaMetadata.durationMillis) / 1000 : null,
+          sizeBytes: f.size ? Number(f.size) : null,
+          url: drive.streamUrl(f.id),
+          thumbTone: drive.driveTypeFor(f.mimeType),
+          thumbText: f.name.slice(0, 3).toUpperCase(),
+          thumbUrl: null,
+          fromDrive: true,
+          fromReels: true,
+          driveFileId: f.id,
+          _thumbnailLink: f.thumbnailLink || null,
+        }));
+      this.media = [...this.media.filter((m) => !m.fromReels), ...items];
+      this._emit("media");
+      toast(`Reels pool: ${items.length} clip${items.length === 1 ? "" : "s"} from "${this.reelsFolderName}".`, "good");
+      for (const item of items) {
+        if (!item._thumbnailLink) continue;
+        drive.fetchThumbnailObjectUrl(item._thumbnailLink).then((url) => {
+          if (url) { item.thumbUrl = url; this._emit("media-thumbnail"); }
+        });
+      }
+      if (this.autoFillReels) this.fillGapsWithReels();
+    } catch (e) {
+      toast(`Couldn't read Reels folder: ${e.message}`, "danger");
+    }
+  }
+
+  setAutoFillReels(enabled) {
+    this.autoFillReels = !!enabled;
+    this.persist();
+    this._emit("reels-autofill");
+    if (this.autoFillReels) this.fillGapsWithReels();
+  }
+
+  /**
+   * Scans the program track for dead air and fills each gap with one clip from the
+   * Reels pool (round-robin), looping that single clip for the gap's whole duration
+   * (the program monitor and any player already loop a block's video) rather than
+   * trying to chain multiple exact-length clips — simpler, and it reads like a
+   * standard broadcast "please stand by" filler reel.
+   */
+  fillGapsWithReels() {
+    if (this._fillingGaps) return { filled: 0 };
+    const pool = this.media.filter((m) => m.fromReels && m.url);
+    if (!pool.length) return { filled: 0 };
+
+    this._fillingGaps = true;
+    let filled = 0;
+    try {
+      const schedule = this.getActiveSchedule();
+      const program = schedule.tracks.find((t) => t.kind === "program");
+      const { gaps } = unionCoverage(program.blocks.map((b) => [b.start, b.end]));
+      for (const [s, e] of gaps) {
+        if (e - s < 5) continue; // ignore sub-5-second rounding slivers
+        const reel = pool[this._reelsRotation % pool.length];
+        this._reelsRotation += 1;
+        program.blocks.push(block({
+          id: uid("reel"), title: reel.title, type: "video",
+          start: s, end: e, source: "Reels rotation", url: reel.url,
+          notes: "Auto-filled from the Reels folder to avoid dead air.",
+        }));
+        filled += 1;
+      }
+      if (filled) {
+        this.persist();
+        this._emit("blocks");
+        toast(`Filled ${filled} gap${filled === 1 ? "" : "s"} with reels.`, "good");
+      }
+    } finally {
+      this._fillingGaps = false;
+    }
+    return { filled };
   }
 
   // ---------- derived data: stats / gaps / conflicts / rundown ----------
