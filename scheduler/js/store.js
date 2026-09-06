@@ -6,6 +6,7 @@ import {
   uid, DAY_SECONDS, todayKey, dateKey, nowUTCSeconds,
   unionCoverage, countOverlaps, toast, fmtHMS, secToClock,
 } from "./utils.js";
+import * as drive from "./drive.js";
 
 const STORAGE_KEY = "channelflow:v1";
 const ASSET_BASE = "../"; // sample mp4s live one directory up from /scheduler/
@@ -129,6 +130,8 @@ class Store extends EventTarget {
     this.selectedBlockId = null;
     this.rundownShowAll = false;
     this.publishedAt = null;
+    this.driveFolderId = null;
+    this.driveFolderName = null;
 
     this._load();
     this._probeDurations();
@@ -145,6 +148,8 @@ class Store extends EventTarget {
         this.schedules = saved.schedules || {};
         this.publishedAt = saved.publishedAt || null;
         if (saved.channels?.length) this.channels = saved.channels;
+        this.driveFolderId = saved.driveFolderId || null;
+        this.driveFolderName = saved.driveFolderName || null;
       }
     } catch (_) { /* ignore corrupt storage */ }
     const key = this._scheduleKey();
@@ -155,6 +160,7 @@ class Store extends EventTarget {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify({
         schedules: this.schedules, publishedAt: this.publishedAt, channels: this.channels,
+        driveFolderId: this.driveFolderId, driveFolderName: this.driveFolderName,
       }));
     } catch (_) { /* storage full/unavailable — keep working in memory */ }
   }
@@ -329,6 +335,87 @@ class Store extends EventTarget {
     return item;
   }
 
+  // ---------- Google Drive: shared media folder, schedule backup, publish target ----------
+  async setDriveFolder(folderId, folderName) {
+    this.driveFolderId = folderId;
+    this.driveFolderName = folderName;
+    this.persist();
+    this._emit("drive-folder");
+    await this.refreshDriveMedia();
+  }
+
+  clearDriveFolder() {
+    this.driveFolderId = null;
+    this.driveFolderName = null;
+    this.media = this.media.filter((m) => !m.fromDrive);
+    this.persist();
+    this._emit("drive-folder");
+  }
+
+  /** Pull the current Drive folder's files into the media library (video/audio/image only). */
+  async refreshDriveMedia() {
+    if (!this.driveFolderId || !drive.isConnected()) return;
+    try {
+      const files = await drive.listFolder(this.driveFolderId);
+      const items = files
+        .filter((f) => !drive.isFolder(f))
+        .map((f) => ({
+          id: `drive-${f.id}`,
+          title: f.name.replace(/\.[^.]+$/, ""),
+          type: drive.driveTypeFor(f.mimeType),
+          duration: f.videoMediaMetadata ? Number(f.videoMediaMetadata.durationMillis) / 1000 : null,
+          sizeBytes: f.size ? Number(f.size) : null,
+          url: drive.streamUrl(f.id),
+          thumbTone: drive.driveTypeFor(f.mimeType),
+          thumbText: f.name.slice(0, 3).toUpperCase(),
+          fromDrive: true,
+          driveFileId: f.id,
+        }));
+      this.media = [...this.media.filter((m) => !m.fromDrive), ...items];
+      this._emit("media");
+      toast(`Loaded ${items.length} file${items.length === 1 ? "" : "s"} from Drive folder "${this.driveFolderName}".`, "good");
+    } catch (e) {
+      toast(`Couldn't read Drive folder: ${e.message}`, "danger");
+    }
+  }
+
+  /** The persistable schedule state — used for both localStorage and Drive backup. */
+  serializeSchedule() {
+    return { version: 1, channels: this.channels, schedules: this.schedules };
+  }
+
+  hydrateSchedule(data) {
+    if (data.channels?.length) this.channels = data.channels;
+    if (data.schedules) this.schedules = data.schedules;
+    this.selectedBlockId = null;
+    this.getActiveSchedule();
+    this.persist();
+    this._emit("blocks");
+  }
+
+  async saveScheduleToDrive() {
+    if (!this.driveFolderId) return toast("Choose a Drive folder first.", "warn");
+    try {
+      await drive.writeJsonFile(this.driveFolderId, "channelflow-schedule.json", this.serializeSchedule());
+      toast("Schedule saved to Drive.", "good");
+    } catch (e) {
+      toast(`Drive save failed: ${e.message}`, "danger");
+    }
+  }
+
+  async loadScheduleFromDrive() {
+    if (!this.driveFolderId) return toast("Choose a Drive folder first.", "warn");
+    try {
+      const file = await drive.findFileByName(this.driveFolderId, "channelflow-schedule.json");
+      if (!file) return toast('No "channelflow-schedule.json" found in that Drive folder.', "warn");
+      const data = await drive.readJsonFile(file.id);
+      this.hydrateSchedule(data);
+      toast("Schedule loaded from Drive.", "good");
+    } catch (e) {
+      toast(`Drive load failed: ${e.message}`, "danger");
+    }
+  }
+
   // ---------- derived data: stats / gaps / conflicts / rundown ----------
   computeStats() {
     const schedule = this.getActiveSchedule();
@@ -441,6 +528,12 @@ class Store extends EventTarget {
     if (skipped) msg += ` ${skipped} live/graphic segment${skipped === 1 ? "" : "s"} without a file were skipped.`;
     toast(msg, stats.gapCount ? "warn" : "good");
     this._emit("publish");
+
+    if (this.driveFolderId && drive.isConnected()) {
+      drive.writeJsonFile(this.driveFolderId, "playlist.json", { version: 1, entries })
+        .then(() => toast("Also published playlist.json to the Drive folder.", "good"))
+        .catch((e) => toast(`Drive publish failed: ${e.message}`, "danger"));
+    }
   }
 }
 

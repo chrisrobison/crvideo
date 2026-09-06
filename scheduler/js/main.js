@@ -11,3 +11,4 @@ import "./components/cf-timeline.js";
 import "./components/cf-rundown.js";
 import "./components/cf-details-panel.js";
 import "./components/cf-program-monitor.js";
+import "./components/cf-drive-folder-picker.js";
