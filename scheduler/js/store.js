@@ -344,9 +344,23 @@ class Store extends EventTarget {
     await this.refreshDriveMedia();
   }
 
+  /** Accepts a pasted Drive folder URL or a raw folder ID (e.g. from a shared-folder link). */
+  async setDriveFolderFromInput(input) {
+    const folderId = drive.parseFolderId(input);
+    if (!folderId) return toast("That doesn't look like a Drive folder link or ID.", "danger");
+    try {
+      const meta = await drive.getFileMeta(folderId, "id,name,mimeType");
+      if (!drive.isFolder(meta)) return toast("That Drive item isn't a folder.", "danger");
+      await this.setDriveFolder(meta.id, meta.name);
+    } catch (e) {
+      toast(`Couldn't open that folder: ${e.message}`, "danger");
+    }
+  }
+
   clearDriveFolder() {
     this.driveFolderId = null;
     this.driveFolderName = null;
+    for (const old of this.media) if (old.fromDrive && old.thumbUrl) URL.revokeObjectURL(old.thumbUrl);
     this.media = this.media.filter((m) => !m.fromDrive);
     this.persist();
     this._emit("drive-folder");
@@ -357,6 +371,8 @@ class Store extends EventTarget {
     if (!this.driveFolderId || !drive.isConnected()) return;
     try {
       const files = await drive.listFolder(this.driveFolderId);
+      // Revoke any object URLs from a previous listing so we don't leak memory on refresh.
+      for (const old of this.media) if (old.fromDrive && old.thumbUrl) URL.revokeObjectURL(old.thumbUrl);
       const items = files
         .filter((f) => !drive.isFolder(f))
         .map((f) => ({
@@ -368,12 +384,23 @@ class Store extends EventTarget {
           url: drive.streamUrl(f.id),
           thumbTone: drive.driveTypeFor(f.mimeType),
           thumbText: f.name.slice(0, 3).toUpperCase(),
+          thumbUrl: null,
           fromDrive: true,
           driveFileId: f.id,
+          _thumbnailLink: f.thumbnailLink || null,
         }));
       this.media = [...this.media.filter((m) => !m.fromDrive), ...items];
       this._emit("media");
       toast(`Loaded ${items.length} file${items.length === 1 ? "" : "s"} from Drive folder "${this.driveFolderName}".`, "good");
+
+      // Thumbnails need an authenticated fetch (a plain <img src> can't attach a bearer
+      // token), so resolve them in the background and re-emit as each one lands.
+      for (const item of items) {
+        if (!item._thumbnailLink) continue;
+        drive.fetchThumbnailObjectUrl(item._thumbnailLink).then((url) => {
+          if (url) { item.thumbUrl = url; this._emit("media-thumbnail"); }
+        });
+      }
     } catch (e) {
       toast(`Couldn't read Drive folder: ${e.message}`, "danger");
     }

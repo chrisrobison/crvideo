@@ -30,6 +30,15 @@ class CfMediaItem extends HTMLElement {
     root.querySelector(".thumb").dataset.tone = it.type;
     root.querySelector(".thumb-text").textContent = escapeHtml(it.thumbText || it.title.slice(0, 3).toUpperCase());
     root.querySelector(".drive-flag").classList.toggle("hidden", !it.fromDrive);
+
+    const img = root.querySelector(".thumb-img");
+    if (it.thumbUrl) {
+      img.src = it.thumbUrl;
+      img.classList.remove("hidden");
+    } else {
+      img.classList.add("hidden");
+      img.removeAttribute("src");
+    }
   }
 
   _render() {
@@ -49,6 +58,7 @@ class CfMediaItem extends HTMLElement {
         .thumb[data-tone="audio"]{ background:linear-gradient(135deg,#6d28d9,#a855f7); }
         .thumb-text{ font-size:8px; font-weight:800; letter-spacing:.03em; color:rgba(255,255,255,.85);
           text-align:center; padding:0 2px; line-height:1.1; }
+        .thumb-img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
         .grip{ margin-left:auto; color:var(--text-faint); font-size:14px; letter-spacing:2px; padding-left:6px; }
         .info{ min-width:0; flex:1; }
         .title{ font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
@@ -57,7 +67,7 @@ class CfMediaItem extends HTMLElement {
         .drive-flag{ font-size:11px; }
       </style>
       <div class="card">
-        <div class="thumb"><span class="thumb-text"></span></div>
+        <div class="thumb"><span class="thumb-text"></span><img class="thumb-img hidden" alt="" loading="lazy"></div>
         <div class="info">
           <div class="title"></div>
           <div class="meta"><span class="duration"></span><span class="badge"></span><span class="drive-flag hidden" title="From Google Drive">☁️</span></div>

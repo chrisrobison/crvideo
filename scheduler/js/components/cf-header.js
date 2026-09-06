@@ -75,6 +75,10 @@ class CfHeader extends HTMLElement {
         <strong>${store.driveFolderName ? escapeHtml(store.driveFolderName) : "None chosen"}</strong>
       </div>
       <button class="choose-folder-btn" style="width:100%;">Choose folder…</button>
+      <div class="drive-paste-row">
+        <input class="folder-link-input" type="text" placeholder="…or paste a folder link">
+        <button class="use-link-btn">Use</button>
+      </div>
       <button class="refresh-btn" style="width:100%;" ${store.driveFolderId ? "" : "disabled"}>Refresh media from Drive</button>
       <div class="drive-divider"></div>
       <button class="save-btn" style="width:100%;" ${store.driveFolderId ? "" : "disabled"}>Save schedule to Drive</button>
@@ -88,6 +92,14 @@ class CfHeader extends HTMLElement {
       if (result) await store.setDriveFolder(result.id, result.name);
       this._renderDriveBody();
     });
+    const linkInput = body.querySelector(".folder-link-input");
+    const useLink = async () => {
+      if (!linkInput.value.trim()) return;
+      await store.setDriveFolderFromInput(linkInput.value.trim());
+      this._renderDriveBody();
+    };
+    body.querySelector(".use-link-btn").addEventListener("click", useLink);
+    linkInput.addEventListener("keydown", (e) => { if (e.key === "Enter") useLink(); });
     body.querySelector(".refresh-btn").addEventListener("click", () => store.refreshDriveMedia());
     body.querySelector(".save-btn").addEventListener("click", () => store.saveScheduleToDrive());
     body.querySelector(".load-btn").addEventListener("click", () => store.loadScheduleFromDrive());
@@ -160,6 +172,9 @@ class CfHeader extends HTMLElement {
           .drive-body code{ font:11px var(--mono); background:var(--bg-elevated); padding:1px 4px; border-radius:4px; }
           .drive-account{ font-size:12px; font-weight:700; word-break:break-all; }
           .drive-folder-row{ font-size:12px; display:flex; flex-direction:column; gap:2px; }
+          .drive-paste-row{ display:flex; gap:6px; }
+          .drive-paste-row input{ flex:1; padding:6px 8px; font-size:12px; }
+          .drive-paste-row button{ padding:6px 10px; font-size:12px; flex-shrink:0; }
           .drive-divider{ height:1px; background:var(--border-soft); margin:2px 0; }
         </style>
         <header>

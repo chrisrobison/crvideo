@@ -18,7 +18,7 @@ class CfMediaLibrary extends HTMLElement {
       this._render();
       this._wire();
       this._onChange = (e) => {
-        if (["media", "media-duration"].includes(e.detail.reason)) this._renderList();
+        if (["media", "media-duration", "media-thumbnail"].includes(e.detail.reason)) this._renderList();
       };
       store.addEventListener("change", this._onChange);
     }

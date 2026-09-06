@@ -126,9 +126,52 @@ export async function listFolder(folderId = "root") {
   return data.files || [];
 }
 
+/** Look up a single file/folder's metadata by ID (e.g. to resolve a pasted folder's name). */
+export async function getFileMeta(fileId, fields = "id,name,mimeType") {
+  const res = await api(`files/${fileId}?fields=${encodeURIComponent(fields)}`);
+  return res.json();
+}
+
+/**
+ * Accepts a raw folder ID, a full "https://drive.google.com/drive/folders/<id>..." URL,
+ * or a "https://drive.google.com/open?id=<id>" URL, and returns just the ID.
+ */
+export function parseFolderId(input) {
+  const trimmed = String(input || "").trim();
+  const folderMatch = trimmed.match(/\/folders\/([a-zA-Z0-9_-]+)/);
+  if (folderMatch) return folderMatch[1];
+  const idParamMatch = trimmed.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+  if (idParamMatch) return idParamMatch[1];
+  if (/^[a-zA-Z0-9_-]{10,}$/.test(trimmed)) return trimmed;
+  return null;
+}
+
 /** A streamable URL usable directly as a <video>/<audio> src (supports range/seek). */
 export function streamUrl(fileId) {
   return `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&access_token=${encodeURIComponent(accessToken)}`;
+}
+
+/** Bump a Drive thumbnailLink's baked-in size (…=s220) up a bit for sharper previews. */
+function upsizeThumbnail(thumbnailLink, size = 400) {
+  if (!thumbnailLink) return thumbnailLink;
+  return /=s\d+$/.test(thumbnailLink) ? thumbnailLink.replace(/=s\d+$/, `=s${size}`) : thumbnailLink;
+}
+
+/**
+ * Drive's thumbnailLink requires the same bearer auth as any other Drive request —
+ * an <img src> can't attach a header, so fetch it and hand back a blob: URL instead.
+ */
+export async function fetchThumbnailObjectUrl(thumbnailLink) {
+  if (!isConnected() || !thumbnailLink) return null;
+  try {
+    const res = await fetch(upsizeThumbnail(thumbnailLink), {
+      headers: { Authorization: `Bearer ${accessToken}` },
+    });
+    if (!res.ok) return null;
+    return URL.createObjectURL(await res.blob());
+  } catch (_) {
+    return null;
+  }
 }
 
 export async function findFileByName(folderId, name) {
