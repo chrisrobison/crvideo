@@ -29,6 +29,7 @@ class CfMediaItem extends HTMLElement {
     badge.dataset.tone = it.type;
     root.querySelector(".thumb").dataset.tone = it.type;
     root.querySelector(".thumb-text").textContent = escapeHtml(it.thumbText || it.title.slice(0, 3).toUpperCase());
+    root.querySelector(".drive-flag").classList.toggle("hidden", !it.fromDrive);
   }
 
   _render() {
@@ -53,12 +54,13 @@ class CfMediaItem extends HTMLElement {
         .title{ font-size:13px; font-weight:600; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
         .meta{ display:flex; align-items:center; gap:6px; margin-top:4px; }
         .duration{ font-size:11px; color:var(--text-muted); font-variant-numeric:tabular-nums; }
+        .drive-flag{ font-size:11px; }
       </style>
       <div class="card">
         <div class="thumb"><span class="thumb-text"></span></div>
         <div class="info">
           <div class="title"></div>
-          <div class="meta"><span class="duration"></span><span class="badge"></span></div>
+          <div class="meta"><span class="duration"></span><span class="badge"></span><span class="drive-flag hidden" title="From Google Drive">☁️</span></div>
         </div>
         <div class="grip">⋮⋮</div>
       </div>
