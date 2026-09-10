@@ -11,4 +11,4 @@ export const GOOGLE_CLIENT_ID = "1016365344593-t1i4mrovunf2uq4do79isjeti1q29etq.
 // Restrict it in Cloud Console to: API restriction = Google Drive API,
 // Application restriction = HTTP referrers = your domain(s).
 // See ../GOOGLE_DRIVE_SETUP.md for details.
-export const GOOGLE_API_KEY = "";
+export const GOOGLE_API_KEY = "AIzaSyAUqvJ_MZqyIpRWJBTwZaaLVDpbonmhheA";
