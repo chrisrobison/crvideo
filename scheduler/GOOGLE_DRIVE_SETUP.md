@@ -146,14 +146,74 @@ https://your-domain/crvideo/channel.html?folder=<DRIVE_FOLDER_ID>&tz=America/Los
   autoplay, so the default is to autoplay **muted** (works unattended on a
   kiosk/TV) with a small "🔇 Tap for sound" button a viewer can click.
 
-### Limitations
+### Avoiding Drive's per-file download quota — encode as *fragmented* MP4
+Google Drive caps a shared file at roughly **750GB of download traffic per
+24h** (undocumented, resets in ~24h) — and critically, it appears to charge
+against the *requested byte range*, not bytes actually transferred. A plain
+`<video src>` lets the browser's own media engine pick the Range header, and
+for a large file it issues an **open-ended** range (`bytes=0-`, "everything
+from here to EOF"). Against an 80-100GB master file, Drive reads that as
+"download the whole thing" and either debits most of the day's budget in one
+shot or rejects it outright — meaning a single page load (or reload, or
+reconnect) from **one viewer** can trip `downloadQuotaExceeded`, no sustained
+traffic required.
+
+To avoid this, `channel.html` prefers a **chunked player**
+(`scheduler/js/chunked-drive-player.js` + `mp4box.js`) that reads a
+*fragmented* MP4 (`moov` containing `mvex`, followed by `moof`+`mdat` pairs)
+and feeds it into a `<video>` via MediaSource Extensions using only small,
+explicitly-bounded Range requests (a few MB at a time) — every request has a
+concrete end byte, so nothing can ever be read as "give me the whole file."
+It also parses each fragment's real timestamp to seek precisely to the
+correct point when joining mid-video, the same "join in progress" behavior
+as before.
+
+**This requires the source file to actually be a fragmented MP4.** A normal
+export from most editors/encoders is a *flat* MP4 (one `moov`, one giant
+`mdat`) — `channel.html` detects this automatically and falls back to plain
+`<video src>` for those files (so nothing breaks), but a flat file is still
+exposed to the open-ended-range risk above. To get a fragmented file, re-encode with:
+
+```
+ffmpeg -i input.mov \
+  -c:v libx264 -preset slow -b:v 8M -maxrate 8M -bufsize 16M \
+  -c:a aac -b:a 192k \
+  -movflags +frag_keyframe+empty_moov+default_base_moof -frag_duration 4000000 \
+  output.mp4
+```
+
+- `-b:v`/`-maxrate`/`-bufsize` — target ~8 Mbps at a near-constant bitrate
+  (adjust the number; see the bitrate/size discussion below). Keeping it
+  close to constant-bitrate, rather than pure `-crf`, is what makes the
+  player's byte-offset-from-time seek estimate land close on the first try.
+- `-movflags +frag_keyframe+empty_moov+default_base_moof` — produces the
+  fragmented structure the chunked player needs; `+frag_keyframe` forces
+  every fragment to start on a keyframe (required for clean seeking).
+- `-frag_duration 4000000` — ~4-second fragments (microseconds). Shorter
+  fragments seek slightly more precisely but add a little overhead; 2-10s is
+  all reasonable.
+
+At 8 Mbps, a 4-hour block is roughly **14.8GB** instead of ~90-108GB at the
+original ~55 Mbps — both smaller (less Drive storage, comfortably streamable
+over an ordinary connection) and, combined with the chunked player's bounded
+requests, no longer able to trip the per-file quota from normal use.
+
+Re-uploading a file with the *same name* (so the `12a-4a` etc. time range
+still matches) is all that's needed — `channel.html` re-lists the folder
+every 5 minutes and will pick up the replacement automatically.
+
+### Other limitations
 - Video duration isn't validated against the filename's time range — if a
   file is shorter than its slot, playback holds on the last frame until the
-  next slot starts (same clamping behavior as `sync-player.html`).
-- Very large files that Drive flags for a virus-scan warning on the classic
-  download link are *not* an issue here — `channel.html` streams through
-  the Drive API's `alt=media` endpoint, which supports HTTP Range requests
-  (seeking) and skips that interstitial entirely.
+  next slot starts.
+- The direct-`<video src>` fallback (for non-fragmented files) still can't
+  fully protect against the open-ended-range quota issue above — its own
+  small availability check (a 2-byte probe) catches the file being missing,
+  permission-denied, etc., but not that specific failure mode. Re-encoding
+  as described above is the real fix, not a workaround for it.
+- `?debug` also shows which engine is active per file (`chunked` or
+  `direct`) so you can confirm a re-encoded file actually took the safe
+  path.
 
 ## Notes & limitations
 - The whole integration is one folder for everything, kept intentionally
