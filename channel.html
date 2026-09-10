@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>24/7 Channel</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+#stage,#player{position:absolute;inset:0;width:100%;height:100%;background:#000}
+#player{object-fit:contain}
+#status{position:absolute;left:16px;top:16px;z-index:20;max-width:min(620px,calc(100vw - 32px));padding:10px 12px;border-radius:8px;background:rgba(0,0,0,.72);color:#fff;font:13px/1.45 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;white-space:pre-wrap;pointer-events:none}
+.hidden{display:none!important}
+#soundButton{position:absolute;z-index:30;right:16px;bottom:16px;appearance:none;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;font:600 14px/1 system-ui,sans-serif;cursor:pointer}
+#startButton{position:absolute;z-index:30;left:50%;top:50%;transform:translate(-50%,-50%);appearance:none;border:1px solid rgba(255,255,255,.35);border-radius:10px;padding:14px 20px;background:rgba(0,0,0,.82);color:#fff;font:600 16px/1 system-ui,sans-serif;cursor:pointer}
+#fatal{position:absolute;inset:0;z-index:40;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;color:#fff;font:15px/1.5 system-ui,sans-serif;background:#111}
+</style>
+</head>
+<body>
+<div id="stage">
+  <video id="player" class="hidden" playsinline preload="auto" muted></video>
+</div>
+<div id="status" class="hidden"></div>
+<button id="soundButton" class="hidden" type="button">🔇 Tap for sound</button>
+<button id="startButton" class="hidden" type="button">Start playback</button>
+<div id="fatal" class="hidden"></div>
+<script type="module">
+import { GOOGLE_API_KEY } from "./scheduler/js/drive-config.js";
+
+const qs = new URLSearchParams(location.search);
+const DEBUG = qs.has("debug");
+const FOLDER_ID = qs.get("folder") || "1BQinVkjBE9IzRbMWxk6OJQhKGMHrqV1O";
+const TIMEZONE = qs.get("tz") || "America/Los_Angeles";
+const START_MUTED = qs.get("sound") !== "1";
+
+const LISTING_REFRESH_MS = 5 * 60 * 1000;   // re-list the Drive folder every 5 min
+const TICK_MS = 1000;                        // recompute the active slot every second
+const DRIFT_CHECK_MS = 5000;                 // re-seek if playback has drifted this often
+const DRIFT_TOLERANCE_SECONDS = 1.5;
+const SECONDS_PER_DAY = 86400;
+
+const player = document.getElementById("player");
+const status = document.getElementById("status");
+const soundButton = document.getElementById("soundButton");
+const startButton = document.getElementById("startButton");
+const fatal = document.getElementById("fatal");
+
+if (DEBUG) status.classList.remove("hidden");
+
+function showFatal(html) {
+  fatal.innerHTML = html;
+  fatal.classList.remove("hidden");
+}
+
+if (!GOOGLE_API_KEY) {
+  showFatal(
+    "Google API key not configured.<br><br>Add one in <code>scheduler/js/drive-config.js</code> " +
+    "(<code>GOOGLE_API_KEY</code>) — see <code>scheduler/GOOGLE_DRIVE_SETUP.md</code>.");
+  throw new Error("GOOGLE_API_KEY is not set");
+}
+
+// --- Filename -> time-of-day parsing --------------------------------------
+// Matches "12a-4a", "4:30a-8p", "8a-12p", case-insensitive, with optional
+// minutes and a trailing "m" (am/pm). Only the *start* time is used — an
+// entry's playback window always runs until the next entry's start (or, for
+// the last entry of the day, wraps to the first entry's start + 24h), so the
+// schedule always tiles the full day with no dead air, same philosophy as
+// the scheduler's Reels auto-fill.
+const TIME_RANGE_RE = /(\d{1,2})(?::(\d{2}))?\s*([ap])m?\s*-\s*(\d{1,2})(?::(\d{2}))?\s*([ap])m?/i;
+
+function parseStartSeconds(filename) {
+  const m = filename.match(TIME_RANGE_RE);
+  if (!m) return null;
+  let h = Number(m[1]);
+  const min = m[2] ? Number(m[2]) : 0;
+  const ap = m[3].toLowerCase();
+  if (h === 12) h = 0;
+  if (ap === "p") h += 12;
+  if (h > 23 || min > 59) return null;
+  return h * 3600 + min * 60;
+}
+
+function humanizeTitle(filename) {
+  return filename.replace(/\.[^./]+$/, "").replace(/_/g, " ").trim();
+}
+
+// --- Drive API (API-key only, no sign-in — folder must be publicly shared) -
+async function listVideoFiles(folderId) {
+  const q = `'${folderId}' in parents and trashed = false and mimeType contains 'video/'`;
+  const fields = "files(id,name,videoMediaMetadata)";
+  const url = `https://www.googleapis.com/drive/v3/files?q=${encodeURIComponent(q)}` +
+    `&fields=${encodeURIComponent(fields)}&pageSize=200&key=${encodeURIComponent(GOOGLE_API_KEY)}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Drive listing failed: ${res.status} ${(await res.text()).slice(0, 200)}`);
+  const data = await res.json();
+  return data.files || [];
+}
+
+function streamUrl(fileId) {
+  return `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&key=${encodeURIComponent(GOOGLE_API_KEY)}`;
+}
+
+// --- Schedule ---------------------------------------------------------------
+let schedule = [];   // sorted [{id,name,title,startSec,endSec,durationMs}]
+let ignored = [];    // filenames with no recognizable time range, for debug
+
+function buildSchedule(files) {
+  const items = [];
+  ignored = [];
+  for (const f of files) {
+    const startSec = parseStartSeconds(f.name);
+    if (startSec == null) { ignored.push(f.name); continue; }
+    items.push({
+      id: f.id,
+      name: f.name,
+      title: humanizeTitle(f.name),
+      startSec,
+      durationMs: f.videoMediaMetadata?.durationMillis ? Number(f.videoMediaMetadata.durationMillis) : null,
+    });
+  }
+  items.sort((a, b) => a.startSec - b.startSec);
+  items.forEach((item, i) => {
+    const next = items[(i + 1) % items.length];
+    item.endSec = next.startSec > item.startSec ? next.startSec : next.startSec + SECONDS_PER_DAY;
+  });
+  return items;
+}
+
+async function refreshSchedule() {
+  const files = await listVideoFiles(FOLDER_ID);
+  schedule = buildSchedule(files);
+}
+
+function nowSecondsInTZ(tz, date = new Date()) {
+  const fmt = new Intl.DateTimeFormat("en-US", {
+    timeZone: tz, hour12: false, hour: "2-digit", minute: "2-digit", second: "2-digit",
+  });
+  const parts = Object.fromEntries(fmt.formatToParts(date).map(p => [p.type, p.value]));
+  let h = Number(parts.hour);
+  if (h === 24) h = 0;
+  return h * 3600 + Number(parts.minute) * 60 + Number(parts.second);
+}
+
+function findActive(nowSec) {
+  for (const item of schedule) {
+    if (item.endSec <= SECONDS_PER_DAY) {
+      if (nowSec >= item.startSec && nowSec < item.endSec) return { item, offsetSec: nowSec - item.startSec };
+    } else {
+      if (nowSec >= item.startSec) return { item, offsetSec: nowSec - item.startSec };
+      if (nowSec < item.endSec - SECONDS_PER_DAY) return { item, offsetSec: nowSec + SECONDS_PER_DAY - item.startSec };
+    }
+  }
+  return null;
+}
+
+// --- Player -------------------------------------------------------------
+let current = null;   // active schedule item
+let switching = false;
+let lastDriftCheck = 0;
+
+const showStartButton = () => startButton.classList.remove("hidden");
+const hideStartButton = () => startButton.classList.add("hidden");
+
+function updateSoundButton() {
+  soundButton.classList.toggle("hidden", !player.muted);
+}
+
+async function switchTo(item, offsetSec) {
+  if (switching) return;
+  switching = true;
+  try {
+    player.muted = current === null ? START_MUTED : player.muted;
+    player.src = streamUrl(item.id);
+    player.classList.remove("hidden");
+
+    await new Promise((resolve, reject) => {
+      const cleanup = () => {
+        player.removeEventListener("loadedmetadata", onLoaded);
+        player.removeEventListener("error", onError);
+      };
+      const onLoaded = () => { cleanup(); resolve(); };
+      const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${item.name}`)); };
+      player.addEventListener("loadedmetadata", onLoaded, { once: true });
+      player.addEventListener("error", onError, { once: true });
+      player.load();
+    });
+
+    const maxTime = Number.isFinite(player.duration) ? Math.max(0, player.duration - 0.25) : offsetSec;
+    player.currentTime = Math.min(offsetSec, maxTime);
+    try { await player.play(); hideStartButton(); }
+    catch (_) { showStartButton(); }
+    updateSoundButton();
+    current = item;
+    lastDriftCheck = Date.now();
+  } finally { switching = false; }
+}
+
+async function playCurrent() {
+  try { await player.play(); hideStartButton(); } catch (_) { showStartButton(); }
+}
+
+function updateStatus(active) {
+  if (!DEBUG) return;
+  const now = new Date();
+  const lines = [
+    `Timezone: ${TIMEZONE}`,
+    `Clock:    ${now.toISOString()} (${now.toLocaleString("en-US", { timeZone: TIMEZONE })})`,
+    `Folder:   ${FOLDER_ID}`,
+    `Schedule: ${schedule.length} slot(s)${ignored.length ? `, ${ignored.length} file(s) ignored (no time in filename)` : ""}`,
+  ];
+  if (active) {
+    lines.push(
+      `Now:      ${active.item.title}`,
+      `Offset:   ${active.offsetSec.toFixed(2)}s`,
+      `Actual:   ${Number.isFinite(player.currentTime) ? player.currentTime.toFixed(2) : "?"}s`,
+    );
+  } else {
+    lines.push("Now:      (no slot matches — check filenames)");
+  }
+  status.textContent = lines.join("\n");
+}
+
+async function sync(force = false) {
+  if (!schedule.length || switching) return;
+  const nowSec = nowSecondsInTZ(TIMEZONE);
+  const active = findActive(nowSec);
+  if (!active) { updateStatus(null); return; }
+
+  if (!current || current.id !== active.item.id) {
+    await switchTo(active.item, active.offsetSec);
+    updateStatus(active);
+    return;
+  }
+
+  const now = Date.now();
+  if (force || now - lastDriftCheck >= DRIFT_CHECK_MS) {
+    lastDriftCheck = now;
+    const drift = (Number.isFinite(player.currentTime) ? player.currentTime : 0) - active.offsetSec;
+    if (Math.abs(drift) > DRIFT_TOLERANCE_SECONDS) player.currentTime = active.offsetSec;
+  }
+  updateStatus(active);
+}
+
+soundButton.addEventListener("click", () => { player.muted = false; updateSoundButton(); });
+startButton.addEventListener("click", async () => { await playCurrent(); await sync(true); });
+player.addEventListener("ended", () => sync(true));
+player.addEventListener("error", () => setTimeout(() => sync(true), 3000));
+
+(async function boot() {
+  try {
+    await refreshSchedule();
+    if (!schedule.length) {
+      showFatal(
+        `No usable videos found in the folder.<br><br>Expected filenames containing a time range ` +
+        `like <code>12a-4a</code> or <code>4:30p-8p</code>.` +
+        (ignored.length ? `<br><br>Found but ignored: ${ignored.map(n => `<code>${n}</code>`).join(", ")}` : ""));
+      return;
+    }
+    await sync(true);
+    setInterval(() => sync().catch(console.error), TICK_MS);
+    setInterval(async () => {
+      try { await refreshSchedule(); await sync(true); }
+      catch (e) { console.error(e); }
+    }, LISTING_REFRESH_MS);
+  } catch (e) {
+    console.error(e);
+    showFatal(`Channel startup failed:<br><br>${String(e.message || e)}`);
+  }
+})();
+</script>
+</body>
+</html>

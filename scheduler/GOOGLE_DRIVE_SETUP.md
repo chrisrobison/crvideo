@@ -83,6 +83,78 @@ Pasting `https://drive.google.com/drive/folders/<id>` (a link to a folder
 someone else shared with you, like a team's "reels" folder) works the same
 way here as it does for the main folder.
 
+## 7. (Optional) Broadcast a Drive folder 24/7 — `channel.html`
+
+`../channel.html` (repo root, alongside `sync-player.html`) turns a Drive
+folder straight into an unattended 24/7 channel — no `playlist.json`, no
+sign-in, no scheduler UI involved. It:
+
+- Lists the video files directly in a Drive folder.
+- Reads a time-of-day range out of each **filename**, e.g.
+  `01_USTV_MidnightMovies_12a-4a.mp4` → starts at 12:00am. Supports
+  `H`, `H:MM`, `a`/`p`/`am`/`pm`, e.g. `4a-8a`, `4:30p-8p`.
+  Only the *start* time matters — each video plays until the next one's
+  start time (wrapping past midnight for the last video of the day), so
+  the whole 24 hours is always covered with no dead air, even if the
+  trailing label in the filename (the `-4a` part) doesn't line up exactly.
+- Repeats that same schedule every day, forever — this is a loop by
+  time-of-day, not a one-off run through today's date.
+- On load (and on every reconnect), computes "now" in a fixed timezone
+  (`America/Los_Angeles` by default) and jumps straight to the correct
+  offset into the correct video, the same way `sync-player.html` does for
+  `playlist.json` — so anyone opening the page mid-video joins in progress,
+  like a real broadcast channel.
+- Re-lists the folder every 5 minutes, so dropping in a replacement file
+  (same or different name/time) picks up automatically, no redeploy.
+
+### Why this needs a Google **API key**, not the OAuth sign-in above
+Everything else in ChannelFlow assumes a human is at the keyboard to click
+"Connect Google Drive," and that sign-in's access token expires roughly
+hourly. A 24/7 channel has nobody there to re-authenticate. Instead,
+`channel.html` uses a Google **API key** (no sign-in, doesn't expire) against
+a folder that's shared **"Anyone with the link"** — exactly how you'd share
+a folder for this purpose anyway.
+
+**Create the key** (same Cloud project as step 4 above):
+1. **APIs & Services → Credentials → Create Credentials → API key**.
+2. Click the new key → **Restrict key**:
+   - **API restrictions** → Restrict key → check **Google Drive API** only.
+   - **Application restrictions** → **Websites** → add the origin(s) you'll
+     host this page on (e.g. `https://cdr2.com/*`).
+3. Copy the key into `scheduler/js/drive-config.js`:
+   ```js
+   export const GOOGLE_API_KEY = "AIza...";
+   ```
+   Even though it's restricted, treat it like the Client ID — it's meant to
+   be public/committable, not a backend secret.
+
+**Share the folder**: right-click it in Drive → **Share** → **General
+access** → **Anyone with the link** → **Viewer**. (If it's already shared
+more broadly — e.g. **Editor**, for a team that uploads into it — that's
+fine too, it only needs to be link-readable.)
+
+### Using it
+```
+https://your-domain/crvideo/channel.html?folder=<DRIVE_FOLDER_ID>&tz=America/Los_Angeles
+```
+- `folder` — Drive folder ID (defaults to the folder this was built for if
+  omitted).
+- `tz` — any IANA timezone name (defaults to `America/Los_Angeles`).
+- `debug` — shows a live overlay: current slot, computed offset, actual
+  player position, and any files whose names didn't match a time range.
+- `sound=1` — starts unmuted instead of muted. Browsers block unmuted
+  autoplay, so the default is to autoplay **muted** (works unattended on a
+  kiosk/TV) with a small "🔇 Tap for sound" button a viewer can click.
+
+### Limitations
+- Video duration isn't validated against the filename's time range — if a
+  file is shorter than its slot, playback holds on the last frame until the
+  next slot starts (same clamping behavior as `sync-player.html`).
+- Very large files that Drive flags for a virus-scan warning on the classic
+  download link are *not* an issue here — `channel.html` streams through
+  the Drive API's `alt=media` endpoint, which supports HTTP Range requests
+  (seeking) and skips that interstitial entirely.
+
 ## Notes & limitations
 - The whole integration is one folder for everything, kept intentionally
   simple. If you want separate "media" vs. "publish" folders later, that's
