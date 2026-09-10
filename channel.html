@@ -13,6 +13,7 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
 #soundButton{position:absolute;z-index:30;right:16px;bottom:16px;appearance:none;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:10px 16px;background:rgba(0,0,0,.72);color:#fff;font:600 14px/1 system-ui,sans-serif;cursor:pointer}
 #startButton{position:absolute;z-index:30;left:50%;top:50%;transform:translate(-50%,-50%);appearance:none;border:1px solid rgba(255,255,255,.35);border-radius:10px;padding:14px 20px;background:rgba(0,0,0,.82);color:#fff;font:600 16px/1 system-ui,sans-serif;cursor:pointer}
 #fatal{position:absolute;inset:0;z-index:40;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center;color:#fff;font:15px/1.5 system-ui,sans-serif;background:#111}
+#standby{position:absolute;z-index:25;left:50%;top:50%;transform:translate(-50%,-50%);max-width:min(560px,calc(100vw - 48px));padding:16px 20px;border-radius:10px;background:rgba(0,0,0,.82);color:#fff;font:14px/1.5 system-ui,sans-serif;text-align:center;white-space:pre-line}
 </style>
 </head>
 <body>
@@ -22,6 +23,7 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
 <div id="status" class="hidden"></div>
 <button id="soundButton" class="hidden" type="button">🔇 Tap for sound</button>
 <button id="startButton" class="hidden" type="button">Start playback</button>
+<div id="standby" class="hidden"></div>
 <div id="fatal" class="hidden"></div>
 <script type="module">
 import { GOOGLE_API_KEY } from "./scheduler/js/drive-config.js";
@@ -37,11 +39,14 @@ const TICK_MS = 1000;                        // recompute the active slot every 
 const DRIFT_CHECK_MS = 5000;                 // re-seek if playback has drifted this often
 const DRIFT_TOLERANCE_SECONDS = 1.5;
 const SECONDS_PER_DAY = 86400;
+const RETRY_BASE_MS = 5000;                  // first retry after a source failure
+const RETRY_MAX_MS = 5 * 60 * 1000;          // cap backoff at 5 min so we don't hammer Drive
 
 const player = document.getElementById("player");
 const status = document.getElementById("status");
 const soundButton = document.getElementById("soundButton");
 const startButton = document.getElementById("startButton");
+const standby = document.getElementById("standby");
 const fatal = document.getElementById("fatal");
 
 if (DEBUG) status.classList.remove("hidden");
@@ -97,6 +102,44 @@ async function listVideoFiles(folderId) {
 
 function streamUrl(fileId) {
   return `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&key=${encodeURIComponent(GOOGLE_API_KEY)}`;
+}
+
+/**
+ * Cheap 2-byte range request to check a Drive file is actually servable right
+ * now before committing the <video> element to it. Drive returns plain-error
+ * JSON (not a redirect) for things like a per-file download quota being
+ * temporarily exceeded — something a bare <video src> failure can't tell us
+ * apart from any other load error.
+ */
+async function probeAvailable(url) {
+  try {
+    const res = await fetch(url, { headers: { Range: "bytes=0-1" } });
+    if (res.ok) return { ok: true };
+    let reason = null, message = null;
+    try {
+      const body = await res.json();
+      reason = body?.error?.errors?.[0]?.reason || null;
+      message = body?.error?.message || null;
+    } catch (_) { /* non-JSON error body */ }
+    return { ok: false, status: res.status, reason, message };
+  } catch (e) {
+    return { ok: false, status: 0, reason: "network", message: e.message };
+  }
+}
+
+function friendlyReason(reason) {
+  switch (reason) {
+    case "downloadQuotaExceeded":
+      return "rate-limited by Google Drive (per-file download quota exceeded) — this clears on its own, usually within a few hours";
+    case "API_KEY_HTTP_REFERRER_BLOCKED":
+      return "blocked by the API key's referrer restrictions";
+    case "notFound":
+      return "missing from Drive (deleted or moved?)";
+    case "network":
+      return "unreachable (network error)";
+    default:
+      return null;
+  }
 }
 
 // --- Schedule ---------------------------------------------------------------
@@ -156,12 +199,43 @@ function findActive(nowSec) {
 let current = null;   // active schedule item
 let switching = false;
 let lastDriftCheck = 0;
+let retryTimer = null;      // pending backoff retry, or null when not backing off
+let retryDelayMs = RETRY_BASE_MS;
+let retryAt = 0;
 
 const showStartButton = () => startButton.classList.remove("hidden");
 const hideStartButton = () => startButton.classList.add("hidden");
 
 function updateSoundButton() {
   soundButton.classList.toggle("hidden", !player.muted);
+}
+
+function hideStandby() {
+  standby.classList.add("hidden");
+  delete standby.dataset.base;
+}
+
+function updateStandbyCountdown() {
+  if (!retryTimer || !standby.dataset.base) return;
+  const remaining = Math.max(0, Math.ceil((retryAt - Date.now()) / 1000));
+  standby.textContent = `${standby.dataset.base}\nRetrying in ${remaining}s…`;
+}
+
+/** Enter (or extend) a backed-off "standing by" state after a source failure. */
+function enterStandby(item, err) {
+  if (retryTimer) return; // already backing off — let the pending retry run
+  const reasonText = friendlyReason(err?.reason) || err?.message || "unavailable";
+  const base = `Standing by — "${item?.title || "this slot"}" is ${reasonText}.`;
+  standby.dataset.base = base;
+  standby.classList.remove("hidden");
+  const delay = retryDelayMs;
+  retryAt = Date.now() + delay;
+  retryDelayMs = Math.min(retryDelayMs * 2, RETRY_MAX_MS);
+  updateStandbyCountdown();
+  retryTimer = setTimeout(() => {
+    retryTimer = null;
+    sync(true).catch(console.error);
+  }, delay);
 }
 
 async function switchTo(item, offsetSec) {
@@ -198,6 +272,20 @@ async function playCurrent() {
   try { await player.play(); hideStartButton(); } catch (_) { showStartButton(); }
 }
 
+/** A source that loaded fine can still fail mid-stream (e.g. quota trips
+ *  partway through); re-probe it to get a real reason, then back off. */
+async function handlePlaybackError() {
+  if (retryTimer) return;
+  const failedItem = current;
+  current = null;
+  let err = new Error("Playback error");
+  if (failedItem) {
+    const probe = await probeAvailable(streamUrl(failedItem.id));
+    if (!probe.ok) { err = new Error(probe.message || `HTTP ${probe.status}`); err.reason = probe.reason; }
+  }
+  enterStandby(failedItem, err);
+}
+
 function updateStatus(active) {
   if (!DEBUG) return;
   const now = new Date();
@@ -216,6 +304,9 @@ function updateStatus(active) {
   } else {
     lines.push("Now:      (no slot matches — check filenames)");
   }
+  if (retryTimer) {
+    lines.push(`Standby:  retrying in ${Math.max(0, Math.ceil((retryAt - Date.now()) / 1000))}s (backoff caps at ${RETRY_MAX_MS / 1000}s)`);
+  }
   status.textContent = lines.join("\n");
 }
 
@@ -225,8 +316,22 @@ async function sync(force = false) {
   const active = findActive(nowSec);
   if (!active) { updateStatus(null); return; }
 
+  if (retryTimer) { updateStandbyCountdown(); updateStatus(active); return; }
+
   if (!current || current.id !== active.item.id) {
-    await switchTo(active.item, active.offsetSec);
+    try {
+      const probe = await probeAvailable(streamUrl(active.item.id));
+      if (!probe.ok) {
+        const e = new Error(probe.message || `HTTP ${probe.status}`);
+        e.reason = probe.reason;
+        throw e;
+      }
+      await switchTo(active.item, active.offsetSec);
+      hideStandby();
+      retryDelayMs = RETRY_BASE_MS;
+    } catch (e) {
+      enterStandby(active.item, e);
+    }
     updateStatus(active);
     return;
   }
@@ -243,7 +348,7 @@ async function sync(force = false) {
 soundButton.addEventListener("click", () => { player.muted = false; updateSoundButton(); });
 startButton.addEventListener("click", async () => { await playCurrent(); await sync(true); });
 player.addEventListener("ended", () => sync(true));
-player.addEventListener("error", () => setTimeout(() => sync(true), 3000));
+player.addEventListener("error", () => { handlePlaybackError().catch(console.error); });
 
 (async function boot() {
   try {
