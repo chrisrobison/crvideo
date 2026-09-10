@@ -27,6 +27,7 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
 <div id="fatal" class="hidden"></div>
 <script type="module">
 import { GOOGLE_API_KEY } from "./scheduler/js/drive-config.js";
+import { ChunkedDrivePlayer } from "./scheduler/js/chunked-drive-player.js";
 
 const qs = new URLSearchParams(location.search);
 const DEBUG = qs.has("debug");
@@ -137,6 +138,8 @@ function friendlyReason(reason) {
       return "missing from Drive (deleted or moved?)";
     case "network":
       return "unreachable (network error)";
+    case "unsupported-codec":
+      return "encoded in a format this browser can't play";
     default:
       return null;
   }
@@ -238,28 +241,75 @@ function enterStandby(item, err) {
   }, delay);
 }
 
+let engineKind = null;    // "chunked" | "direct" | null
+let chunkedEngine = null; // the active ChunkedDrivePlayer, when engineKind === "chunked"
+
+async function stopCurrentEngine() {
+  if (engineKind === "chunked" && chunkedEngine) chunkedEngine.destroy();
+  chunkedEngine = null;
+  if (engineKind !== "chunked") {
+    player.pause();
+    player.removeAttribute("src");
+    player.load();
+  }
+  engineKind = null;
+}
+
+/** Direct <video src> playback — used only for files that aren't a fragmented MP4 (see mp4box.js).
+ *  Still subject to the open-ended-range quota risk documented in GOOGLE_DRIVE_SETUP.md. */
+async function startDirect(item, offsetSec, url) {
+  const probe = await probeAvailable(url);
+  if (!probe.ok) {
+    const e = new Error(probe.message || `HTTP ${probe.status}`);
+    e.reason = probe.reason;
+    throw e;
+  }
+  player.src = url;
+  await new Promise((resolve, reject) => {
+    const cleanup = () => {
+      player.removeEventListener("loadedmetadata", onLoaded);
+      player.removeEventListener("error", onError);
+    };
+    const onLoaded = () => { cleanup(); resolve(); };
+    const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${item.name}`)); };
+    player.addEventListener("loadedmetadata", onLoaded, { once: true });
+    player.addEventListener("error", onError, { once: true });
+    player.load();
+  });
+  const maxTime = Number.isFinite(player.duration) ? Math.max(0, player.duration - 0.25) : offsetSec;
+  player.currentTime = Math.min(offsetSec, maxTime);
+}
+
 async function switchTo(item, offsetSec) {
   if (switching) return;
   switching = true;
   try {
+    await stopCurrentEngine();
     player.muted = current === null ? START_MUTED : player.muted;
-    player.src = streamUrl(item.id);
     player.classList.remove("hidden");
 
-    await new Promise((resolve, reject) => {
-      const cleanup = () => {
-        player.removeEventListener("loadedmetadata", onLoaded);
-        player.removeEventListener("error", onError);
-      };
-      const onLoaded = () => { cleanup(); resolve(); };
-      const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${item.name}`)); };
-      player.addEventListener("loadedmetadata", onLoaded, { once: true });
-      player.addEventListener("error", onError, { once: true });
-      player.load();
-    });
+    const url = streamUrl(item.id);
+    const candidate = new ChunkedDrivePlayer(player);
+    const probe = await candidate.probe(url);
 
-    const maxTime = Number.isFinite(player.duration) ? Math.max(0, player.duration - 0.25) : offsetSec;
-    player.currentTime = Math.min(offsetSec, maxTime);
+    if (probe.ok) {
+      candidate.addEventListener("error", (ev) => handleChunkedEngineError(ev.detail));
+      await candidate.load(offsetSec, item.durationMs ? item.durationMs / 1000 : null);
+      chunkedEngine = candidate;
+      engineKind = "chunked";
+      if (DEBUG) console.info(`[channel] "${item.title}": streaming via chunked MSE engine (${probe.mimeCodec})`);
+    } else if (probe.reason === "not-fragmented") {
+      candidate.destroy();
+      await startDirect(item, offsetSec, url);
+      engineKind = "direct";
+      if (DEBUG) console.info(`[channel] "${item.title}": direct <video src> (not a fragmented MP4 — see GOOGLE_DRIVE_SETUP.md)`);
+    } else {
+      candidate.destroy();
+      const e = new Error(probe.message || `HTTP ${probe.status}`);
+      e.reason = probe.reason;
+      throw e;
+    }
+
     try { await player.play(); hideStartButton(); }
     catch (_) { showStartButton(); }
     updateSoundButton();
@@ -272,11 +322,24 @@ async function playCurrent() {
   try { await player.play(); hideStartButton(); } catch (_) { showStartButton(); }
 }
 
-/** A source that loaded fine can still fail mid-stream (e.g. quota trips
- *  partway through); re-probe it to get a real reason, then back off. */
-async function handlePlaybackError() {
+/** The chunked engine reports its own failures directly (every fetch it makes is bounded, so
+ *  the reason is known immediately — no need to re-probe). */
+function handleChunkedEngineError(detail) {
   if (retryTimer) return;
   const failedItem = current;
+  stopCurrentEngine().catch(() => {});
+  current = null;
+  const err = new Error(detail?.message || "Playback error");
+  err.reason = detail?.reason;
+  enterStandby(failedItem, err);
+}
+
+/** A direct <video src> that loaded fine can still fail mid-stream (e.g. quota trips
+ *  partway through); re-probe it to get a real reason, then back off. */
+async function handleDirectPlaybackError() {
+  if (retryTimer) return;
+  const failedItem = current;
+  await stopCurrentEngine();
   current = null;
   let err = new Error("Playback error");
   if (failedItem) {
@@ -298,6 +361,7 @@ function updateStatus(active) {
   if (active) {
     lines.push(
       `Now:      ${active.item.title}`,
+      `Engine:   ${engineKind || "?"}`,
       `Offset:   ${active.offsetSec.toFixed(2)}s`,
       `Actual:   ${Number.isFinite(player.currentTime) ? player.currentTime.toFixed(2) : "?"}s`,
     );
@@ -320,13 +384,7 @@ async function sync(force = false) {
 
   if (!current || current.id !== active.item.id) {
     try {
-      const probe = await probeAvailable(streamUrl(active.item.id));
-      if (!probe.ok) {
-        const e = new Error(probe.message || `HTTP ${probe.status}`);
-        e.reason = probe.reason;
-        throw e;
-      }
-      await switchTo(active.item, active.offsetSec);
+      await switchTo(active.item, active.offsetSec); // probes + picks chunked/direct engine internally
       hideStandby();
       retryDelayMs = RETRY_BASE_MS;
     } catch (e) {
@@ -348,7 +406,11 @@ async function sync(force = false) {
 soundButton.addEventListener("click", () => { player.muted = false; updateSoundButton(); });
 startButton.addEventListener("click", async () => { await playCurrent(); await sync(true); });
 player.addEventListener("ended", () => sync(true));
-player.addEventListener("error", () => { handlePlaybackError().catch(console.error); });
+player.addEventListener("error", () => {
+  // The chunked engine reports its own failures via a dedicated event (handleChunkedEngineError) —
+  // this native <video> error only matters for the direct-playback fallback path.
+  if (engineKind === "direct") handleDirectPlaybackError().catch(console.error);
+});
 
 (async function boot() {
   try {
