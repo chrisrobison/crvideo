@@ -1,61 +1,511 @@
 {
-  "version": 1,
+  "version": 2,
+  "recurring": true,
+  "timezone": "America/Los_Angeles",
   "entries": [
     {
-      "id": "segment-1",
-      "title": "video-001 (30s)",
-      "start": "2026-09-02T18:06:00-07:00",
-      "end": "2026-09-02T18:06:30-07:00",
-      "url": "https://cdr2.com/crvideo/video-001.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part01",
+      "title": "Midnight Movies (1/12)",
+      "startSec": 0,
+      "endSec": 1200,
+      "driveFileId": "1qlJtmMFfwBpWt6gi-s6IMrZHs9WiNLCS"
     },
     {
-      "id": "segment-2",
-      "title": "video-002 (30s)",
-      "start": "2026-09-02T18:06:30-07:00",
-      "end": "2026-09-02T18:07:00-07:00",
-      "url": "https://cdr2.com/crvideo/video-002.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part02",
+      "title": "Midnight Movies (2/12)",
+      "startSec": 1200,
+      "endSec": 2400,
+      "driveFileId": "1eqvsuGue-Y2mHLFtOCfS_V3BonPUtQAL"
     },
     {
-      "id": "segment-3",
-      "title": "video-003 (30s)",
-      "start": "2026-09-02T18:07:00-07:00",
-      "end": "2026-09-02T18:07:30-07:00",
-      "url": "https://cdr2.com/crvideo/video-003.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part03",
+      "title": "Midnight Movies (3/12)",
+      "startSec": 2400,
+      "endSec": 3600,
+      "driveFileId": "1HpfsQwHcDSsZ83Z_W-GEK4Niimw5e_1u"
     },
     {
-      "id": "segment-4",
-      "title": "video-004 (30s)",
-      "start": "2026-09-02T18:07:30-07:00",
-      "end": "2026-09-02T18:08:00-07:00",
-      "url": "https://cdr2.com/crvideo/video-004.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part04",
+      "title": "Midnight Movies (4/12)",
+      "startSec": 3600,
+      "endSec": 4800,
+      "driveFileId": "17FOmg0SjkIZlZ-gXYZikrJ6wpevjmR2n"
     },
     {
-      "id": "segment-5",
-      "title": "video-001 again (30s)",
-      "start": "2026-09-02T18:08:00-07:00",
-      "end": "2026-09-02T18:08:30-07:00",
-      "url": "https://cdr2.com/crvideo/video-001.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part05",
+      "title": "Midnight Movies (5/12)",
+      "startSec": 4800,
+      "endSec": 6000,
+      "driveFileId": "1uECee8_l03wPk_iYJ1PFMxnIQEjx7Ep1"
     },
     {
-      "id": "segment-6",
-      "title": "video-002 again (30s)",
-      "start": "2026-09-02T18:08:30-07:00",
-      "end": "2026-09-02T18:09:00-07:00",
-      "url": "https://cdr2.com/crvideo/video-002.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part06",
+      "title": "Midnight Movies (6/12)",
+      "startSec": 6000,
+      "endSec": 7200,
+      "driveFileId": "1GXMbhsTZ26nMWQvDUKj2-cSzO7ODp2qs"
     },
     {
-      "id": "segment-7",
-      "title": "video-003 again (30s)",
-      "start": "2026-09-02T18:09:00-07:00",
-      "end": "2026-09-02T18:09:30-07:00",
-      "url": "https://cdr2.com/crvideo/video-003.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part07",
+      "title": "Midnight Movies (7/12)",
+      "startSec": 7200,
+      "endSec": 8400,
+      "driveFileId": "1DM-S8ZONqO94mvOGsVVz378G-tjI5xqK"
     },
     {
-      "id": "segment-8",
-      "title": "video-004 again (30s)",
-      "start": "2026-09-02T18:09:30-07:00",
-      "end": "2026-09-02T18:10:00-07:00",
-      "url": "https://cdr2.com/crvideo/video-004.mp4"
+      "id": "01_USTV_MidnightMovies_12a-4a-part08",
+      "title": "Midnight Movies (8/12)",
+      "startSec": 8400,
+      "endSec": 9600,
+      "driveFileId": "1t5Awct1Pq7ShL9H6y9EQjxi0oUCzltm-"
+    },
+    {
+      "id": "01_USTV_MidnightMovies_12a-4a-part09",
+      "title": "Midnight Movies (9/12)",
+      "startSec": 9600,
+      "endSec": 10800,
+      "driveFileId": "13DKbmMRmLqVP5ap7XzhtlklEF23V71ln"
+    },
+    {
+      "id": "01_USTV_MidnightMovies_12a-4a-part10",
+      "title": "Midnight Movies (10/12)",
+      "startSec": 10800,
+      "endSec": 12000,
+      "driveFileId": "1qWDODzgy4b-Pit6fR1lyv_3KvbtVtuco"
+    },
+    {
+      "id": "01_USTV_MidnightMovies_12a-4a-part11",
+      "title": "Midnight Movies (11/12)",
+      "startSec": 12000,
+      "endSec": 13200,
+      "driveFileId": "1vOcjMQhHUWe3MP4HzSMsIOkJsWLNWpiq"
+    },
+    {
+      "id": "01_USTV_MidnightMovies_12a-4a-part12",
+      "title": "Midnight Movies (12/12)",
+      "startSec": 13200,
+      "endSec": 14400,
+      "driveFileId": "11goIf1BVfGEjGx1TMAjuCsl0sfH0RhC3"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part01",
+      "title": "Signal Sunrise (1/12)",
+      "startSec": 14400,
+      "endSec": 15600,
+      "driveFileId": "1-A_87VFdq6abeBfZ1y-BB42RB-gzmCGI"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part02",
+      "title": "Signal Sunrise (2/12)",
+      "startSec": 15600,
+      "endSec": 16800,
+      "driveFileId": "1likHw6JHSqc5qHqKnfotAZMeEQZkbqs0"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part03",
+      "title": "Signal Sunrise (3/12)",
+      "startSec": 16800,
+      "endSec": 18000,
+      "driveFileId": "1TDYGlRDpDveynuxtuWM3PTCpSb-9LAnX"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part04",
+      "title": "Signal Sunrise (4/12)",
+      "startSec": 18000,
+      "endSec": 19200,
+      "driveFileId": "13aGfNOVm8tcWjR7Nsk2eX24Vy704zzpV"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part05",
+      "title": "Signal Sunrise (5/12)",
+      "startSec": 19200,
+      "endSec": 20400,
+      "driveFileId": "1UARih9mVbIPmEKFRX1Zs1HqygeJcPgej"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part06",
+      "title": "Signal Sunrise (6/12)",
+      "startSec": 20400,
+      "endSec": 21600,
+      "driveFileId": "1l4yB_wArUTe0vr6XGKg-hTPOXhSppCvC"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part07",
+      "title": "Signal Sunrise (7/12)",
+      "startSec": 21600,
+      "endSec": 22800,
+      "driveFileId": "1TNIIfdCPGKIyCxgmpN1hf1MU6wBI7s6T"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part08",
+      "title": "Signal Sunrise (8/12)",
+      "startSec": 22800,
+      "endSec": 24000,
+      "driveFileId": "1iGhDYIlwCGUWtnIGtIl8lyrps7AbNGVo"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part09",
+      "title": "Signal Sunrise (9/12)",
+      "startSec": 24000,
+      "endSec": 25200,
+      "driveFileId": "11Z54wIq-PhXzhBfGMHNKRP6qqcGczkkY"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part10",
+      "title": "Signal Sunrise (10/12)",
+      "startSec": 25200,
+      "endSec": 26400,
+      "driveFileId": "1IhHSNv09_3Ls2kI41NPgQeTnPT4AVetr"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part11",
+      "title": "Signal Sunrise (11/12)",
+      "startSec": 26400,
+      "endSec": 27600,
+      "driveFileId": "1AWeceEzAU6VvNP2305OvtSb2yS53YB4V"
+    },
+    {
+      "id": "02_USTV_SignalSunrise_4a-8a-part12",
+      "title": "Signal Sunrise (12/12)",
+      "startSec": 27600,
+      "endSec": 28800,
+      "driveFileId": "157rla-DiJyCEJICR5IClKyoGQZVhhp2_"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part01",
+      "title": "Revolution Rising (1/12)",
+      "startSec": 28800,
+      "endSec": 30000,
+      "driveFileId": "1_4k223tzFDgiQa3YDxgBQzFMHW7Ne-lL"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part02",
+      "title": "Revolution Rising (2/12)",
+      "startSec": 30000,
+      "endSec": 31200,
+      "driveFileId": "1kmnjzkPFhhFkEo-jMW_bk1IDuFL6b4Ix"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part03",
+      "title": "Revolution Rising (3/12)",
+      "startSec": 31200,
+      "endSec": 32400,
+      "driveFileId": "1ZKGs01nxK4VCVLJbylo67izxID4fRmPe"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part04",
+      "title": "Revolution Rising (4/12)",
+      "startSec": 32400,
+      "endSec": 33600,
+      "driveFileId": "1Ls8DOILxbwp2_6NVCKSP8_a_81u-wYs4"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part05",
+      "title": "Revolution Rising (5/12)",
+      "startSec": 33600,
+      "endSec": 34800,
+      "driveFileId": "17mgxw20LIjWnmF9g3usiTCDg9oAVG37D"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part06",
+      "title": "Revolution Rising (6/12)",
+      "startSec": 34800,
+      "endSec": 36000,
+      "driveFileId": "13r7-bxLVf-rry5m5a0AFwCrF6_CzGPgw"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part07",
+      "title": "Revolution Rising (7/12)",
+      "startSec": 36000,
+      "endSec": 37200,
+      "driveFileId": "1XeL_aqpSyPUIfc62vVN23lBsFZJqyTvM"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part08",
+      "title": "Revolution Rising (8/12)",
+      "startSec": 37200,
+      "endSec": 38400,
+      "driveFileId": "1BAF3-5vpWxL6cz8cPQayfwsglV9FURdd"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part09",
+      "title": "Revolution Rising (9/12)",
+      "startSec": 38400,
+      "endSec": 39600,
+      "driveFileId": "1nWydgy_WdcXHWabCoM4uUfhHs3LZFpkX"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part10",
+      "title": "Revolution Rising (10/12)",
+      "startSec": 39600,
+      "endSec": 40800,
+      "driveFileId": "10ZWRoc2yoXlw70kpxMuUUapkVuVb5q2f"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part11",
+      "title": "Revolution Rising (11/12)",
+      "startSec": 40800,
+      "endSec": 42000,
+      "driveFileId": "1Ek_fAZudTtUH92sdpw_kkZEzGhMgdmQ3"
+    },
+    {
+      "id": "03_USTV_RevolutionRising_8a-12p_v03-part12",
+      "title": "Revolution Rising (12/12)",
+      "startSec": 42000,
+      "endSec": 43200,
+      "driveFileId": "18HyHcQdYE-Buggh4UKAv7_wPxgDJfYvT"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part01",
+      "title": "Mid-Day Music Videos (1/12)",
+      "startSec": 43200,
+      "endSec": 44400,
+      "driveFileId": "1lyQQWutUrk0WFdIzn4ymWLfvfvdcoteY"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part02",
+      "title": "Mid-Day Music Videos (2/12)",
+      "startSec": 44400,
+      "endSec": 45600,
+      "driveFileId": "11bs6ZSv1ef5y4xW06pndoAJ7WdmSxQWN"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part03",
+      "title": "Mid-Day Music Videos (3/12)",
+      "startSec": 45600,
+      "endSec": 46800,
+      "driveFileId": "1Eio1Cd0RfKfXjiVGLW4XhBPtQ2PW71CT"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part04",
+      "title": "Mid-Day Music Videos (4/12)",
+      "startSec": 46800,
+      "endSec": 48000,
+      "driveFileId": "1htzLqHm6h1HFvJqkySho2K55ugNlGWWA"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part05",
+      "title": "Mid-Day Music Videos (5/12)",
+      "startSec": 48000,
+      "endSec": 49200,
+      "driveFileId": "1k4PizVOztQA-G6ldg8dO9AT5v2zenJcw"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part06",
+      "title": "Mid-Day Music Videos (6/12)",
+      "startSec": 49200,
+      "endSec": 50400,
+      "driveFileId": "1C3GX0nBOhiCRBnazvP-YOO2CJWzsRvTP"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part07",
+      "title": "Mid-Day Music Videos (7/12)",
+      "startSec": 50400,
+      "endSec": 51600,
+      "driveFileId": "10nsASpmRIVMa0AfAO8NjPkm9IMKn3ek7"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part08",
+      "title": "Mid-Day Music Videos (8/12)",
+      "startSec": 51600,
+      "endSec": 52800,
+      "driveFileId": "1xIwhMZv2U4WJ2e8Xli0d6bdb5DD1kXZb"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part09",
+      "title": "Mid-Day Music Videos (9/12)",
+      "startSec": 52800,
+      "endSec": 54000,
+      "driveFileId": "1RFoVZS7oixXtfpaKx4ZMOjG4yl8Spk8q"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part10",
+      "title": "Mid-Day Music Videos (10/12)",
+      "startSec": 54000,
+      "endSec": 55200,
+      "driveFileId": "1xSnoJ0UnQgl-VUaWLBG8vwu04GFr2uB9"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part11",
+      "title": "Mid-Day Music Videos (11/12)",
+      "startSec": 55200,
+      "endSec": 56400,
+      "driveFileId": "1XrHr5kJI4sZSEv2dAuxGJYDTupzfBU_b"
+    },
+    {
+      "id": "04_USTV_MidDayMusicVideos_12p-4p-part12",
+      "title": "Mid-Day Music Videos (12/12)",
+      "startSec": 56400,
+      "endSec": 57600,
+      "driveFileId": "1t7Z0RWuG7y5aHFfGuKsjkNPN6lkKUK7N"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part01",
+      "title": "Musical Crafternoon (1/12)",
+      "startSec": 57600,
+      "endSec": 58800,
+      "driveFileId": "17CL1a047M8fMy7_fgu-ZziCDCKAs0mdP"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part02",
+      "title": "Musical Crafternoon (2/12)",
+      "startSec": 58800,
+      "endSec": 60000,
+      "driveFileId": "1b1Y1d70qCYZ1QLpmHmrywL53d2QG9SDn"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part03",
+      "title": "Musical Crafternoon (3/12)",
+      "startSec": 60000,
+      "endSec": 61200,
+      "driveFileId": "1mvJEXe9wmMQs3J0L65cwKsR0FGfm4kG0"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part04",
+      "title": "Musical Crafternoon (4/12)",
+      "startSec": 61200,
+      "endSec": 62400,
+      "driveFileId": "1jmYl13kIHOjOWckbXzt6AE_0gKTsKuqp"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part05",
+      "title": "Musical Crafternoon (5/12)",
+      "startSec": 62400,
+      "endSec": 63600,
+      "driveFileId": "16oBwSBM8BywsKgy77o7u3feH5blud2CL"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part06",
+      "title": "Musical Crafternoon (6/12)",
+      "startSec": 63600,
+      "endSec": 64800,
+      "driveFileId": "1j2ssNaqMRjUku5C9RZXA8G79S6RPNRQY"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part07",
+      "title": "Musical Crafternoon (7/12)",
+      "startSec": 64800,
+      "endSec": 66000,
+      "driveFileId": "1sQPSV8vtcyJydRJQtnDNoevSnTwbf5Jc"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part08",
+      "title": "Musical Crafternoon (8/12)",
+      "startSec": 66000,
+      "endSec": 67200,
+      "driveFileId": "1aqsaA_m01OtZk4QXPA8wNMaJsg2yWdNq"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part09",
+      "title": "Musical Crafternoon (9/12)",
+      "startSec": 67200,
+      "endSec": 68400,
+      "driveFileId": "1ZQZEky79cEyup5Zs3v0QYeAg-2Y0cRG5"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part10",
+      "title": "Musical Crafternoon (10/12)",
+      "startSec": 68400,
+      "endSec": 69600,
+      "driveFileId": "1DJmj_o9SR6lWBVQnwQ5s--3tBrbbAKlZ"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part11",
+      "title": "Musical Crafternoon (11/12)",
+      "startSec": 69600,
+      "endSec": 70800,
+      "driveFileId": "1Hfjqye0z_ybBgIWBhv29A9NwtqArl0em"
+    },
+    {
+      "id": "05_USTV_MusicalCrafternoon_4p-8p_v04-part12",
+      "title": "Musical Crafternoon (12/12)",
+      "startSec": 70800,
+      "endSec": 72000,
+      "driveFileId": "1Rq5XrGd5imPh9Oz1OoAbz5_vFC3ACuZw"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part01",
+      "title": "Prime Time Live (1/12)",
+      "startSec": 72000,
+      "endSec": 73200,
+      "driveFileId": "1nWEX7hljbyAtixmUubFVFRiVY7-c7_4k"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part02",
+      "title": "Prime Time Live (2/12)",
+      "startSec": 73200,
+      "endSec": 74400,
+      "driveFileId": "1i8thBBjsOqQt2XwegoGWMq_fcE9DbqiY"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part03",
+      "title": "Prime Time Live (3/12)",
+      "startSec": 74400,
+      "endSec": 75600,
+      "driveFileId": "1OTzkTji6-s3EFqD2ST22Ox_NHl0v5srn"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part04",
+      "title": "Prime Time Live (4/12)",
+      "startSec": 75600,
+      "endSec": 76800,
+      "driveFileId": "1fTpzSUbK7B8hZlAb8mq5Q9TjGGLyjQi3"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part05",
+      "title": "Prime Time Live (5/12)",
+      "startSec": 76800,
+      "endSec": 78000,
+      "driveFileId": "1DlxFQAoXXfniXyN_Pi2cc0Mx46xiFsje"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part06",
+      "title": "Prime Time Live (6/12)",
+      "startSec": 78000,
+      "endSec": 79200,
+      "driveFileId": "1U0rSqQSzfhJEL42eJO-QXtHNzntf2uWt"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part07",
+      "title": "Prime Time Live (7/12)",
+      "startSec": 79200,
+      "endSec": 80400,
+      "driveFileId": "10i3UY9PhGCw5WLDIaQOft4JpIjjuMWvx"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part08",
+      "title": "Prime Time Live (8/12)",
+      "startSec": 80400,
+      "endSec": 81600,
+      "driveFileId": "1stD-4YH8lcMhxkiyOzHzBFWR25DUMsiP"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part09",
+      "title": "Prime Time Live (9/12)",
+      "startSec": 81600,
+      "endSec": 82800,
+      "driveFileId": "1BYBa5ggi4cZOWNoKN_CvyVQTLUiSZ2WG"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part10",
+      "title": "Prime Time Live (10/12)",
+      "startSec": 82800,
+      "endSec": 84000,
+      "driveFileId": "1gkTmPoBHvOJEsJi3LRo4VYEhrJbVaGJ9"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part11",
+      "title": "Prime Time Live (11/12)",
+      "startSec": 84000,
+      "endSec": 85200,
+      "driveFileId": "1ZQlvvCCuqwJ8NVDMHkNAUfeXVKFR7VGA"
+    },
+    {
+      "id": "06_USTV_PrimeTimeLive_8p-12a_v03-part12",
+      "title": "Prime Time Live (12/12)",
+      "startSec": 85200,
+      "endSec": 86400,
+      "driveFileId": "1x5HZUnV27zvyknjgpAaI7iJCORixW46k"
     }
   ]
 }
