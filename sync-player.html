@@ -20,9 +20,116 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
 </div>
 <div id="status" class="hidden"></div>
 <button id="startButton" class="hidden" type="button">Start playback</button>
-<script>
+<script type="module">
+"use strict";
+
+// ---------------------------------------------------------------------------
+// Google Drive live OAuth (Google Identity Services token-client flow).
+// Same client ID + pattern as scheduler/js/drive.js -- kept as a self-contained
+// copy here since this file is a standalone page, not part of that ES module
+// graph. A player-only scope (readonly) is used since this page never writes.
+// ---------------------------------------------------------------------------
+const GOOGLE_CLIENT_ID = "1016365344593-t1i4mrovunf2uq4do79isjeti1q29etq.apps.googleusercontent.com";
+const DRIVE_SCOPE = "https://www.googleapis.com/auth/drive.readonly";
+const GIS_SRC = "https://accounts.google.com/gsi/client";
+const TOKEN_STORAGE_KEY = "channelflow:player-drive-token";
+const TOKEN_REFRESH_MARGIN_MS = 5 * 60 * 1000; // refresh 5min before expiry
+
+let tokenClient = null;
+let accessToken = null;
+let tokenExpiresAt = 0;
+let gisLoadPromise = null;
+
+(function restoreToken() {
+  try {
+    const raw = sessionStorage.getItem(TOKEN_STORAGE_KEY);
+    if (!raw) return;
+    const saved = JSON.parse(raw);
+    if (saved.tokenExpiresAt > Date.now()) {
+      accessToken = saved.accessToken;
+      tokenExpiresAt = saved.tokenExpiresAt;
+    }
+  } catch (_) { /* ignore corrupt storage */ }
+})();
+
+function loadGis() {
+  if (window.google?.accounts?.oauth2) return Promise.resolve();
+  if (gisLoadPromise) return gisLoadPromise;
+  gisLoadPromise = new Promise((resolve, reject) => {
+    const s = document.createElement("script");
+    s.src = GIS_SRC;
+    s.async = true;
+    s.defer = true;
+    s.onload = resolve;
+    s.onerror = () => reject(new Error("Could not load Google Identity Services (offline / blocked?)"));
+    document.head.appendChild(s);
+  });
+  return gisLoadPromise;
+}
+
+function isTokenValid() { return !!accessToken && Date.now() < tokenExpiresAt; }
+
+/** Try to get/refresh a token without showing any UI. Resolves false if that's not possible. */
+async function trySilentAuth() {
+  if (isTokenValid()) return true;
+  if (!GOOGLE_CLIENT_ID) return false;
+  await loadGis();
+  return new Promise((resolve) => {
+    try {
+      tokenClient = google.accounts.oauth2.initTokenClient({
+        client_id: GOOGLE_CLIENT_ID,
+        scope: DRIVE_SCOPE,
+        callback: (resp) => {
+          if (resp.error) { resolve(false); return; }
+          accessToken = resp.access_token;
+          tokenExpiresAt = Date.now() + (Number(resp.expires_in) - 60) * 1000;
+          try { sessionStorage.setItem(TOKEN_STORAGE_KEY, JSON.stringify({ accessToken, tokenExpiresAt })); } catch (_) {}
+          resolve(true);
+        },
+        error_callback: () => resolve(false),
+      });
+      tokenClient.requestAccessToken({ prompt: "" });
+    } catch (_) { resolve(false); }
+  });
+}
+
+/** Interactive auth -- must be called from a user gesture (e.g. a click handler). */
+async function interactiveAuth() {
+  await loadGis();
+  return new Promise((resolve, reject) => {
+    tokenClient = google.accounts.oauth2.initTokenClient({
+      client_id: GOOGLE_CLIENT_ID,
+      scope: DRIVE_SCOPE,
+      callback: (resp) => {
+        if (resp.error) { reject(new Error(resp.error)); return; }
+        accessToken = resp.access_token;
+        tokenExpiresAt = Date.now() + (Number(resp.expires_in) - 60) * 1000;
+        try { sessionStorage.setItem(TOKEN_STORAGE_KEY, JSON.stringify({ accessToken, tokenExpiresAt })); } catch (_) {}
+        resolve(accessToken);
+      },
+      error_callback: (err) => reject(new Error(err?.type || "Google sign-in was cancelled")),
+    });
+    tokenClient.requestAccessToken({ prompt: accessToken ? "" : "consent" });
+  });
+}
+
+/** Keep the token fresh in the background for as long as the page stays open. */
+function scheduleTokenRefresh() {
+  setInterval(async () => {
+    if (Date.now() > tokenExpiresAt - TOKEN_REFRESH_MARGIN_MS) {
+      await trySilentAuth();
+    }
+  }, 60 * 1000);
+}
+
+function driveStreamUrl(fileId) {
+  return `https://www.googleapis.com/drive/v3/files/${fileId}?alt=media&access_token=${encodeURIComponent(accessToken)}`;
+}
+
+// ---------------------------------------------------------------------------
+// Player
+// ---------------------------------------------------------------------------
 (() => {
-  "use strict";
   const qs = new URLSearchParams(location.search);
   const PLAYLIST_URL = qs.get("playlist") || "playlist.json";
   const DEBUG = qs.has("debug");
@@ -37,12 +144,15 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
   const startButton = document.getElementById("startButton");
 
   let entries = [];
+  let recurring = false;
+  let timezone = null;
   let current = null;
   let provider = null;
   let vimeo = null;
   let vimeoApiPromise = null;
   let lastDriftCheck = 0;
   let switching = false;
+  let needsAuthGate = false;
 
   if (DEBUG) status.classList.remove("hidden");
 
@@ -52,23 +162,71 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
     return ms;
   };
 
+  // -- Daily-recurring time-of-day math -------------------------------------
+  // Entries in "recurring" manifests give startSec/endSec as seconds-since-
+  // midnight in `timezone` (an IANA zone name), repeating every day. We find
+  // "now" expressed the same way (seconds since local midnight in that zone)
+  // so the same program airs at the same real-world time every day regardless
+  // of the viewer's own timezone, and regardless of DST shifts.
+  const zoneFormatterCache = new Map();
+  function zoneFormatter(tz) {
+    if (!zoneFormatterCache.has(tz)) {
+      zoneFormatterCache.set(tz, new Intl.DateTimeFormat("en-US", {
+        timeZone: tz, hour12: false,
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", second: "2-digit",
+      }));
+    }
+    return zoneFormatterCache.get(tz);
+  }
+
+  function secondsSinceMidnight(date, tz) {
+    const parts = zoneFormatter(tz).formatToParts(date);
+    const get = type => Number(parts.find(p => p.type === type)?.value ?? 0);
+    const hour = get("hour") % 24; // "24" shows up at local midnight in some locales/Intl impls
+    return hour * 3600 + get("minute") * 60 + get("second") + (date.getMilliseconds() / 1000);
+  }
+
+  function findActiveRecurringEntry(nowSec) {
+    return entries.find(item => nowSec >= item.startSec && nowSec < item.endSec) || null;
+  }
+
   function normalizeManifest(data) {
+    if (data && data.recurring === true) {
+      recurring = true;
+      timezone = data.timezone || "UTC";
+      const list = Array.isArray(data.entries) ? data.entries : [];
+      const normalized = list.map((item, index) => ({ ...item, id: item.id || `entry-${index}` }))
+        .sort((a, b) => a.startSec - b.startSec);
+      normalized.forEach(item => {
+        if (!Number.isFinite(item.startSec) || !Number.isFinite(item.endSec)) {
+          throw new Error(`Missing/invalid startSec or endSec for ${item.id}`);
+        }
+        if (item.endSec <= item.startSec) throw new Error(`End must be after start for ${item.id}`);
+        if (!item.url && !item.driveFileId) throw new Error(`Missing url/driveFileId for ${item.id}`);
+      });
+      return normalized;
+    }
+
+    // Legacy absolute-date manifest (one-off schedule for a specific calendar day).
+    recurring = false;
+    timezone = null;
     const list = Array.isArray(data) ? data : data.entries;
     if (!Array.isArray(list)) throw new Error("playlist.json must contain an array or { entries: [...] }");
 
-    const normalized = list.map((item,index) => ({
+    const normalized = list.map((item, index) => ({
       ...item,
       id: item.id || `entry-${index}`,
-      startMs: parseTime(item.start)
-    })).sort((a,b) => a.startMs - b.startMs);
+      startMs: parseTime(item.start),
+    })).sort((a, b) => a.startMs - b.startMs);
 
-    normalized.forEach((item,index) => {
+    normalized.forEach((item, index) => {
       if (item.end) item.endMs = parseTime(item.end);
       else if (Number.isFinite(Number(item.durationSeconds))) item.endMs = item.startMs + Number(item.durationSeconds) * 1000;
       else if (normalized[index + 1]) item.endMs = normalized[index + 1].startMs;
       else item.endMs = Infinity;
 
-      if (!item.url) throw new Error(`Missing url for ${item.id}`);
+      if (!item.url && !item.driveFileId) throw new Error(`Missing url/driveFileId for ${item.id}`);
       if (item.endMs <= item.startMs) throw new Error(`End time must be after start time for ${item.id}`);
     });
     return normalized;
@@ -76,14 +234,37 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
 
   async function loadManifest() {
     const sep = PLAYLIST_URL.includes("?") ? "&" : "?";
-    const r = await fetch(`${PLAYLIST_URL}${sep}_=${Date.now()}`, {cache:"no-store"});
+    const r = await fetch(`${PLAYLIST_URL}${sep}_=${Date.now()}`, { cache: "no-store" });
     if (!r.ok) throw new Error(`Playlist request failed: ${r.status}`);
     entries = normalizeManifest(await r.json());
   }
 
-  const findActiveEntry = nowMs => entries.find(item => nowMs >= item.startMs && nowMs < item.endMs) || null;
-  const desiredOffsetSeconds = (item, nowMs=Date.now()) => Math.max(0, (nowMs - item.startMs) / 1000);
-  const detectProvider = item => item.provider ? item.provider.toLowerCase() : (/(^|\/\/)(www\.)?vimeo\.com\//i.test(item.url) ? "vimeo" : "html5");
+  function findActiveEntry(nowMs) {
+    if (recurring) return findActiveRecurringEntry(secondsSinceMidnight(new Date(nowMs), timezone));
+    return entries.find(item => nowMs >= item.startMs && nowMs < item.endMs) || null;
+  }
+
+  function desiredOffsetSeconds(item, nowMs = Date.now()) {
+    if (recurring) {
+      const sod = secondsSinceMidnight(new Date(nowMs), timezone);
+      return Math.max(0, sod - item.startSec);
+    }
+    return Math.max(0, (nowMs - item.startMs) / 1000);
+  }
+
+  /** Resolve an entry's playable URL -- a literal `url`, or a live-minted Drive stream URL. */
+  async function resolveUrl(item) {
+    if (item.driveFileId) {
+      if (!isTokenValid()) {
+        const ok = await trySilentAuth();
+        if (!ok) { needsAuthGate = true; showStartButton(); throw new Error("Drive sign-in required"); }
+      }
+      return driveStreamUrl(item.driveFileId);
+    }
+    return item.url;
+  }
+
+  const detectProvider = item => item.provider ? item.provider.toLowerCase() : (/(^|\/\/)(www\.)?vimeo\.com\//i.test(item.url || "") ? "vimeo" : "html5");
   const vimeoIdFromUrl = url => String(url).match(/vimeo\.com\/(?:video\/)?(\d+)/i)?.[1] || null;
   const showStartButton = () => startButton.classList.remove("hidden");
   const hideStartButton = () => startButton.classList.add("hidden");
@@ -91,7 +272,7 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
   async function ensureVimeoApi() {
     if (window.Vimeo?.Player) return;
     if (vimeoApiPromise) return vimeoApiPromise;
-    vimeoApiPromise = new Promise((resolve,reject) => {
+    vimeoApiPromise = new Promise((resolve, reject) => {
       const s = document.createElement("script");
       s.src = "https://player.vimeo.com/api/player.js";
       s.onload = resolve;
@@ -118,21 +299,22 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
   }
 
   async function startHtml5(item, offset) {
+    const url = await resolveUrl(item);
     provider = "html5";
     html5.classList.remove("hidden");
     vimeoHost.classList.add("hidden");
-    html5.src = item.url;
+    html5.src = url;
     html5.muted = !!item.muted;
 
-    await new Promise((resolve,reject) => {
+    await new Promise((resolve, reject) => {
       const cleanup = () => {
         html5.removeEventListener("loadedmetadata", onLoaded);
         html5.removeEventListener("error", onError);
       };
       const onLoaded = () => { cleanup(); resolve(); };
-      const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${item.url}`)); };
-      html5.addEventListener("loadedmetadata", onLoaded, {once:true});
-      html5.addEventListener("error", onError, {once:true});
+      const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${item.id}`)); };
+      html5.addEventListener("loadedmetadata", onLoaded, { once: true });
+      html5.addEventListener("error", onError, { once: true });
       html5.load();
     });
 
@@ -196,26 +378,34 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
   function updateStatus(item, desired, drift) {
     if (!DEBUG) return;
     const now = new Date();
+    const clockLine = recurring
+      ? `Clock:   ${now.toISOString()} (${timezone} tod=${secondsSinceMidnight(now, timezone).toFixed(1)}s)`
+      : `Clock:   ${now.toISOString()}`;
     status.textContent = !item
-      ? `No scheduled video\nClock: ${now.toISOString()}\nEntries: ${entries.length}`
-      : `${item.title || item.id}\nClock:   ${now.toISOString()}\nStart:   ${new Date(item.startMs).toISOString()}\nOffset:  ${desired.toFixed(2)}s\nDrift:   ${drift >= 0 ? "+" : ""}${drift.toFixed(2)}s\nSource:  ${provider}\nURL:     ${item.url}`;
+      ? `No scheduled video\n${clockLine}\nEntries: ${entries.length}`
+      : `${item.title || item.id}\n${clockLine}\nOffset:  ${desired.toFixed(2)}s\nDrift:   ${drift >= 0 ? "+" : ""}${drift.toFixed(2)}s\nSource:  ${provider}\nAuth:    ${isTokenValid() ? "ok" : "needed"}`;
   }
 
-  async function sync(force=false) {
+  async function sync(force = false) {
     if (!entries.length || switching) return;
     const now = Date.now();
     const active = findActiveEntry(now);
 
     if (!active) {
       if (current) { await stopCurrentPlayer(); current = null; }
-      updateStatus(null,0,0);
+      updateStatus(null, 0, 0);
       return;
     }
 
     const desired = desiredOffsetSeconds(active, now);
     if (!current || current.id !== active.id) {
-      await switchTo(active, desired);
-      updateStatus(active, desired, 0);
+      try {
+        await switchTo(active, desired);
+        updateStatus(active, desired, 0);
+      } catch (e) {
+        if (DEBUG) { status.classList.remove("hidden"); status.textContent = `Playback error: ${e.message}`; }
+        console.error(e);
+      }
       return;
     }
 
@@ -228,13 +418,21 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
     }
   }
 
-  startButton.addEventListener("click", async () => { await playCurrent(); await sync(true); });
+  startButton.addEventListener("click", async () => {
+    if (needsAuthGate || !isTokenValid()) {
+      try { await interactiveAuth(); needsAuthGate = false; } catch (e) { console.error(e); return; }
+    }
+    await playCurrent();
+    await sync(true);
+  });
   html5.addEventListener("ended", () => sync(true));
   html5.addEventListener("error", () => setTimeout(() => sync(true), 3000));
 
   (async function boot() {
     try {
       await loadManifest();
+      await trySilentAuth(); // won't block: entries without driveFileId still work if this fails
+      scheduleTokenRefresh();
       await sync(true);
       setInterval(() => sync().catch(console.error), SYNC_INTERVAL_MS);
       setInterval(async () => {
