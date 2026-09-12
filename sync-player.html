@@ -37,6 +37,9 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
   const startButton = document.getElementById("startButton");
 
   let entries = [];
+  let loopEnabled = false;
+  let cycleStartMs = 0;
+  let cycleLengthMs = Infinity;
   let current = null;
   let provider = null;
   let vimeo = null;
@@ -78,7 +81,27 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
     const sep = PLAYLIST_URL.includes("?") ? "&" : "?";
     const r = await fetch(`${PLAYLIST_URL}${sep}_=${Date.now()}`, {cache:"no-store"});
     if (!r.ok) throw new Error(`Playlist request failed: ${r.status}`);
-    entries = normalizeManifest(await r.json());
+    const data = await r.json();
+    entries = normalizeManifest(data);
+
+    // Loop the schedule by default: the manifest's own first "start" and last
+    // "end" define one cycle's shape, and that cycle repeats indefinitely so
+    // the playlist never goes stale after its original absolute timestamps
+    // pass. Set {"loop": false} at the manifest's top level to disable this
+    // and fall back to a single, non-repeating absolute schedule instead.
+    const lastEndMs = entries.length ? entries[entries.length - 1].endMs : Infinity;
+    loopEnabled = data.loop !== false && entries.length > 0 && Number.isFinite(lastEndMs);
+    cycleStartMs = entries.length ? entries[0].startMs : 0;
+    cycleLengthMs = loopEnabled ? (lastEndMs - cycleStartMs) : Infinity;
+  }
+
+  // Maps the real wall-clock time onto the repeating cycle so schedule
+  // lookups always land inside the manifest's original time window.
+  function virtualNow(realNowMs) {
+    if (!loopEnabled || !(cycleLengthMs > 0)) return realNowMs;
+    const elapsed = realNowMs - cycleStartMs;
+    const wrapped = ((elapsed % cycleLengthMs) + cycleLengthMs) % cycleLengthMs;
+    return cycleStartMs + wrapped;
   }
 
   const findActiveEntry = nowMs => entries.find(item => nowMs >= item.startMs && nowMs < item.endMs) || null;
@@ -170,7 +193,7 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
       if (detectProvider(item) === "vimeo") await startVimeo(item, offset);
       else await startHtml5(item, offset);
       current = item;
-      lastDriftCheck = Date.now();
+      lastDriftCheck = virtualNow(Date.now());
     } finally { switching = false; }
   }
 
@@ -196,14 +219,15 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
   function updateStatus(item, desired, drift) {
     if (!DEBUG) return;
     const now = new Date();
+    const loopInfo = loopEnabled ? `\nLoop:    ${(cycleLengthMs / 1000).toFixed(0)}s cycle from ${new Date(cycleStartMs).toISOString()}` : "\nLoop:    disabled";
     status.textContent = !item
-      ? `No scheduled video\nClock: ${now.toISOString()}\nEntries: ${entries.length}`
-      : `${item.title || item.id}\nClock:   ${now.toISOString()}\nStart:   ${new Date(item.startMs).toISOString()}\nOffset:  ${desired.toFixed(2)}s\nDrift:   ${drift >= 0 ? "+" : ""}${drift.toFixed(2)}s\nSource:  ${provider}\nURL:     ${item.url}`;
+      ? `No scheduled video\nClock: ${now.toISOString()}\nEntries: ${entries.length}${loopInfo}`
+      : `${item.title || item.id}\nClock:   ${now.toISOString()}\nStart:   ${new Date(item.startMs).toISOString()}\nOffset:  ${desired.toFixed(2)}s\nDrift:   ${drift >= 0 ? "+" : ""}${drift.toFixed(2)}s\nSource:  ${provider}\nURL:     ${item.url}${loopInfo}`;
   }
 
   async function sync(force=false) {
     if (!entries.length || switching) return;
-    const now = Date.now();
+    const now = virtualNow(Date.now());
     const active = findActiveEntry(now);
 
     if (!active) {
