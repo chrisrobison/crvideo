@@ -69,6 +69,16 @@ function loadGis() {
 
 function isTokenValid() { return !!accessToken && Date.now() < tokenExpiresAt; }
 
+/** Drop the cached token so the next resolveUrl() call mints a fresh one.
+ *  Used on playback failure -- a Google-side block on a specific token/URL
+ *  combination won't necessarily clear just by waiting, so retries get a
+ *  genuinely new token rather than replaying the same (possibly flagged) one. */
+function invalidateToken() {
+  accessToken = null;
+  tokenExpiresAt = 0;
+  try { sessionStorage.removeItem(TOKEN_STORAGE_KEY); } catch (_) {}
+}
+
 /** Try to get/refresh a token without showing any UI. Resolves false if that's not possible. */
 async function trySilentAuth() {
   if (isTokenValid()) return true;
@@ -137,6 +147,12 @@ function driveStreamUrl(fileId) {
   const SYNC_INTERVAL_MS = 1000;
   const DRIFT_CHECK_MS = 5000;
   const DRIFT_TOLERANCE_SECONDS = 1.5;
+  // Playback-failure backoff -- without this, a URL that 403s (e.g. a Google
+  // anti-abuse block) gets re-requested once per SYNC_INTERVAL_MS forever,
+  // which looks exactly like the automated-traffic pattern that trips that
+  // block in the first place. Back off per failing entry instead.
+  const RETRY_BASE_MS = 3000;
+  const RETRY_MAX_MS = 60000;
 
   const html5 = document.getElementById("html5Player");
   const vimeoHost = document.getElementById("vimeoPlayer");
@@ -153,6 +169,9 @@ function driveStreamUrl(fileId) {
   let lastDriftCheck = 0;
   let switching = false;
   let needsAuthGate = false;
+  let lastFailedEntryId = null;
+  let lastFailureAt = 0;
+  let failureCount = 0;
 
   if (DEBUG) status.classList.remove("hidden");
 
@@ -269,6 +288,19 @@ function driveStreamUrl(fileId) {
   const showStartButton = () => startButton.classList.remove("hidden");
   const hideStartButton = () => startButton.classList.add("hidden");
 
+  /** Exponential backoff with jitter, capped at RETRY_MAX_MS. */
+  function backoffDelay(attempt) {
+    const capped = Math.min(RETRY_MAX_MS, RETRY_BASE_MS * Math.pow(2, attempt - 1));
+    return capped * (0.75 + Math.random() * 0.5);
+  }
+
+  /** Always-visible (not just ?debug) failure indicator -- previously a
+   *  blocked/403'd stream failed completely silently from the viewer's side. */
+  function showError(message) {
+    status.classList.remove("hidden");
+    status.textContent = message;
+  }
+
   async function ensureVimeoApi() {
     if (window.Vimeo?.Player) return;
     if (vimeoApiPromise) return vimeoApiPromise;
@@ -353,6 +385,9 @@ function driveStreamUrl(fileId) {
       else await startHtml5(item, offset);
       current = item;
       lastDriftCheck = Date.now();
+      lastFailedEntryId = null;
+      failureCount = 0;
+      if (!DEBUG) status.classList.add("hidden");
     } finally { switching = false; }
   }
 
@@ -399,11 +434,22 @@ function driveStreamUrl(fileId) {
 
     const desired = desiredOffsetSeconds(active, now);
     if (!current || current.id !== active.id) {
+      // Throttle retries for an entry that's already failing -- without this,
+      // a bad/blocked URL gets re-requested every SYNC_INTERVAL_MS forever.
+      if (lastFailedEntryId === active.id && now - lastFailureAt < backoffDelay(failureCount)) {
+        return;
+      }
       try {
         await switchTo(active, desired);
         updateStatus(active, desired, 0);
       } catch (e) {
-        if (DEBUG) { status.classList.remove("hidden"); status.textContent = `Playback error: ${e.message}`; }
+        if (lastFailedEntryId !== active.id) failureCount = 0;
+        lastFailedEntryId = active.id;
+        failureCount++;
+        lastFailureAt = Date.now();
+        invalidateToken(); // next attempt gets a fresh token, not a replay of this one
+        const delay = backoffDelay(failureCount);
+        showError(`Playback error (attempt ${failureCount}): ${e.message}\nRetrying in ~${Math.round(delay / 1000)}s`);
         console.error(e);
       }
       return;
@@ -426,7 +472,14 @@ function driveStreamUrl(fileId) {
     await sync(true);
   });
   html5.addEventListener("ended", () => sync(true));
-  html5.addEventListener("error", () => setTimeout(() => sync(true), 3000));
+  html5.addEventListener("error", () => {
+    // Force a reload of the active entry through the normal switch path --
+    // sync()'s backoff logic (below) decides *when* that's actually allowed
+    // to hit the network again, instead of retrying unconditionally.
+    if (DEBUG) console.error("html5 playback error", html5.error);
+    current = null;
+    sync(true).catch(console.error);
+  });
 
   (async function boot() {
     try {
