@@ -146,29 +146,88 @@ function friendlyReason(reason) {
 }
 
 // --- Schedule ---------------------------------------------------------------
-let schedule = [];   // sorted [{id,name,title,startSec,endSec,durationMs}]
+// A "program" is one time-of-day slot (parsed from its base filename) that
+// can be delivered as a single file, or as an ordered sequence of chunk
+// files sharing that same base name plus a numeric "_partNN" suffix — any
+// number of chunks, any individual lengths. Nothing here assumes a fixed
+// chunk count or duration; each chunk's own real Drive-reported duration
+// drives how they're laid out back-to-back within the program's slot, so
+// re-uploading with more/fewer/differently-sized chunks just works on the
+// next 5-minute folder refresh, same as replacing a single file always did.
+const CHUNK_SUFFIX_RE = /_part(\d+)$/i;
+
+let schedule = [];   // sorted [{id,name,title,startSec,endSec,chunks:[{id,name,partNum,startSec,endSec,durationMs}]}]
 let ignored = [];    // filenames with no recognizable time range, for debug
 
 function buildSchedule(files) {
-  const items = [];
   ignored = [];
+  const groups = new Map(); // baseStem -> { baseStem, startSec, chunks: [...] }
+
   for (const f of files) {
-    const startSec = parseStartSeconds(f.name);
+    const stem = f.name.replace(/\.[^./]+$/, "");
+    const chunkMatch = stem.match(CHUNK_SUFFIX_RE);
+    const baseStem = chunkMatch ? stem.slice(0, chunkMatch.index) : stem;
+    const partNum = chunkMatch ? Number(chunkMatch[1]) : 1;
+
+    const startSec = parseStartSeconds(baseStem);
     if (startSec == null) { ignored.push(f.name); continue; }
-    items.push({
+
+    if (!groups.has(baseStem)) groups.set(baseStem, { baseStem, startSec, chunks: [] });
+    groups.get(baseStem).chunks.push({
       id: f.id,
       name: f.name,
-      title: humanizeTitle(f.name),
-      startSec,
+      partNum,
       durationMs: f.videoMediaMetadata?.durationMillis ? Number(f.videoMediaMetadata.durationMillis) : null,
     });
   }
+
+  const items = [];
+  for (const g of groups.values()) {
+    g.chunks.sort((a, b) => a.partNum - b.partNum);
+    // Lay chunks out back-to-back starting at 0 -- these boundaries are
+    // relative to the PROGRAM's own start (findActiveChunk is always called
+    // with an offset-into-the-program, not an absolute time-of-day), so the
+    // same layout logic works identically regardless of what time the
+    // program itself starts at. A chunk with unknown duration (Drive hasn't
+    // finished processing it yet) becomes open-ended and ends the sequence
+    // there — same "hold on last frame" tolerance an undersized single file
+    // always had, rather than guessing at where a later chunk would start.
+    let cursor = 0;
+    const laidOut = [];
+    for (const chunk of g.chunks) {
+      chunk.startSec = cursor;
+      const durSec = chunk.durationMs != null ? chunk.durationMs / 1000 : null;
+      chunk.endSec = durSec != null ? cursor + durSec : Infinity;
+      laidOut.push(chunk);
+      if (durSec == null) break;
+      cursor = chunk.endSec;
+    }
+    items.push({
+      name: g.baseStem,
+      title: humanizeTitle(g.baseStem),
+      startSec: g.startSec,
+      chunks: laidOut,
+    });
+  }
+
   items.sort((a, b) => a.startSec - b.startSec);
   items.forEach((item, i) => {
     const next = items[(i + 1) % items.length];
     item.endSec = next.startSec > item.startSec ? next.startSec : next.startSec + SECONDS_PER_DAY;
   });
   return items;
+}
+
+/** Which chunk of `item` covers `offsetIntoProgramSec`, and the offset within that chunk.
+ *  Holds on the last chunk if the program's chunks don't fully fill its slot. */
+function findActiveChunk(item, offsetIntoProgramSec) {
+  for (const chunk of item.chunks) {
+    if (offsetIntoProgramSec < chunk.endSec) {
+      return { chunk, chunkOffsetSec: Math.max(0, offsetIntoProgramSec - chunk.startSec) };
+    }
+  }
+  const last = item.chunks[item.chunks.length - 1];
+  return { chunk: last, chunkOffsetSec: Math.max(0, offsetIntoProgramSec - last.startSec) };
 }
 
 async function refreshSchedule() {
@@ -188,18 +247,24 @@ function nowSecondsInTZ(tz, date = new Date()) {
 
 function findActive(nowSec) {
   for (const item of schedule) {
+    let programOffsetSec;
     if (item.endSec <= SECONDS_PER_DAY) {
-      if (nowSec >= item.startSec && nowSec < item.endSec) return { item, offsetSec: nowSec - item.startSec };
+      if (nowSec >= item.startSec && nowSec < item.endSec) programOffsetSec = nowSec - item.startSec;
+      else continue;
     } else {
-      if (nowSec >= item.startSec) return { item, offsetSec: nowSec - item.startSec };
-      if (nowSec < item.endSec - SECONDS_PER_DAY) return { item, offsetSec: nowSec + SECONDS_PER_DAY - item.startSec };
+      if (nowSec >= item.startSec) programOffsetSec = nowSec - item.startSec;
+      else if (nowSec < item.endSec - SECONDS_PER_DAY) programOffsetSec = nowSec + SECONDS_PER_DAY - item.startSec;
+      else continue;
     }
+    const { chunk, chunkOffsetSec } = findActiveChunk(item, programOffsetSec);
+    return { item, chunk, offsetSec: chunkOffsetSec, programOffsetSec };
   }
   return null;
 }
 
 // --- Player -------------------------------------------------------------
-let current = null;   // active schedule item
+let current = null;      // active chunk (the actual streaming target)
+let currentItem = null;  // active program (may span several chunks)
 let switching = false;
 let lastDriftCheck = 0;
 let retryTimer = null;      // pending backoff retry, or null when not backing off
@@ -257,7 +322,7 @@ async function stopCurrentEngine() {
 
 /** Direct <video src> playback — used only for files that aren't a fragmented MP4 (see mp4box.js).
  *  Still subject to the open-ended-range quota risk documented in GOOGLE_DRIVE_SETUP.md. */
-async function startDirect(item, offsetSec, url) {
+async function startDirect(chunk, offsetSec, url) {
   const probe = await probeAvailable(url);
   if (!probe.ok) {
     const e = new Error(probe.message || `HTTP ${probe.status}`);
@@ -271,7 +336,7 @@ async function startDirect(item, offsetSec, url) {
       player.removeEventListener("error", onError);
     };
     const onLoaded = () => { cleanup(); resolve(); };
-    const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${item.name}`)); };
+    const onError = () => { cleanup(); reject(new Error(`Unable to load video: ${chunk.name}`)); };
     player.addEventListener("loadedmetadata", onLoaded, { once: true });
     player.addEventListener("error", onError, { once: true });
     player.load();
@@ -280,7 +345,7 @@ async function startDirect(item, offsetSec, url) {
   player.currentTime = Math.min(offsetSec, maxTime);
 }
 
-async function switchTo(item, offsetSec) {
+async function switchTo(item, chunk, offsetSec) {
   if (switching) return;
   switching = true;
   try {
@@ -288,21 +353,22 @@ async function switchTo(item, offsetSec) {
     player.muted = current === null ? START_MUTED : player.muted;
     player.classList.remove("hidden");
 
-    const url = streamUrl(item.id);
+    const url = streamUrl(chunk.id);
     const candidate = new ChunkedDrivePlayer(player);
     const probe = await candidate.probe(url);
+    const chunkLabel = item.chunks.length > 1 ? `${item.title} (part ${chunk.partNum}/${item.chunks.length})` : item.title;
 
     if (probe.ok) {
       candidate.addEventListener("error", (ev) => handleChunkedEngineError(ev.detail));
-      await candidate.load(offsetSec, item.durationMs ? item.durationMs / 1000 : null);
+      await candidate.load(offsetSec, chunk.durationMs ? chunk.durationMs / 1000 : null);
       chunkedEngine = candidate;
       engineKind = "chunked";
-      if (DEBUG) console.info(`[channel] "${item.title}": streaming via chunked MSE engine (${probe.mimeCodec})`);
+      if (DEBUG) console.info(`[channel] "${chunkLabel}": streaming via chunked MSE engine (${probe.mimeCodec})`);
     } else if (probe.reason === "not-fragmented") {
       candidate.destroy();
-      await startDirect(item, offsetSec, url);
+      await startDirect(chunk, offsetSec, url);
       engineKind = "direct";
-      if (DEBUG) console.info(`[channel] "${item.title}": direct <video src> (not a fragmented MP4 — see GOOGLE_DRIVE_SETUP.md)`);
+      if (DEBUG) console.info(`[channel] "${chunkLabel}": direct <video src> (not a fragmented MP4 — see GOOGLE_DRIVE_SETUP.md)`);
     } else {
       candidate.destroy();
       const e = new Error(probe.message || `HTTP ${probe.status}`);
@@ -313,7 +379,8 @@ async function switchTo(item, offsetSec) {
     try { await player.play(); hideStartButton(); }
     catch (_) { showStartButton(); }
     updateSoundButton();
-    current = item;
+    current = chunk;
+    currentItem = item;
     lastDriftCheck = Date.now();
   } finally { switching = false; }
 }
@@ -326,9 +393,10 @@ async function playCurrent() {
  *  the reason is known immediately — no need to re-probe). */
 function handleChunkedEngineError(detail) {
   if (retryTimer) return;
-  const failedItem = current;
+  const failedItem = currentItem;
   stopCurrentEngine().catch(() => {});
   current = null;
+  currentItem = null;
   const err = new Error(detail?.message || "Playback error");
   err.reason = detail?.reason;
   enterStandby(failedItem, err);
@@ -338,12 +406,14 @@ function handleChunkedEngineError(detail) {
  *  partway through); re-probe it to get a real reason, then back off. */
 async function handleDirectPlaybackError() {
   if (retryTimer) return;
-  const failedItem = current;
+  const failedItem = currentItem;
+  const failedChunk = current;
   await stopCurrentEngine();
   current = null;
+  currentItem = null;
   let err = new Error("Playback error");
-  if (failedItem) {
-    const probe = await probeAvailable(streamUrl(failedItem.id));
+  if (failedChunk) {
+    const probe = await probeAvailable(streamUrl(failedChunk.id));
     if (!probe.ok) { err = new Error(probe.message || `HTTP ${probe.status}`); err.reason = probe.reason; }
   }
   enterStandby(failedItem, err);
@@ -356,13 +426,14 @@ function updateStatus(active) {
     `Timezone: ${TIMEZONE}`,
     `Clock:    ${now.toISOString()} (${now.toLocaleString("en-US", { timeZone: TIMEZONE })})`,
     `Folder:   ${FOLDER_ID}`,
-    `Schedule: ${schedule.length} slot(s)${ignored.length ? `, ${ignored.length} file(s) ignored (no time in filename)` : ""}`,
+    `Schedule: ${schedule.length} program(s)${ignored.length ? `, ${ignored.length} file(s) ignored (no time in filename)` : ""}`,
   ];
   if (active) {
+    const chunkInfo = active.item.chunks.length > 1 ? ` (part ${active.chunk.partNum}/${active.item.chunks.length})` : "";
     lines.push(
-      `Now:      ${active.item.title}`,
+      `Now:      ${active.item.title}${chunkInfo}`,
       `Engine:   ${engineKind || "?"}`,
-      `Offset:   ${active.offsetSec.toFixed(2)}s`,
+      `Offset:   ${active.offsetSec.toFixed(2)}s (chunk), ${active.programOffsetSec.toFixed(2)}s (program)`,
       `Actual:   ${Number.isFinite(player.currentTime) ? player.currentTime.toFixed(2) : "?"}s`,
     );
   } else {
@@ -382,9 +453,9 @@ async function sync(force = false) {
 
   if (retryTimer) { updateStandbyCountdown(); updateStatus(active); return; }
 
-  if (!current || current.id !== active.item.id) {
+  if (!current || current.id !== active.chunk.id) {
     try {
-      await switchTo(active.item, active.offsetSec); // probes + picks chunked/direct engine internally
+      await switchTo(active.item, active.chunk, active.offsetSec); // probes + picks chunked/direct engine internally
       hideStandby();
       retryDelayMs = RETRY_BASE_MS;
     } catch (e) {
