@@ -142,6 +142,7 @@ function driveStreamUrl(fileId) {
 (() => {
   const qs = new URLSearchParams(location.search);
   const PLAYLIST_URL = qs.get("playlist") || "playlist.json";
+  const CACHE_MANIFEST_URL = qs.get("cacheManifest") || "cache/manifest.json";
   const DEBUG = qs.has("debug");
   const MANIFEST_REFRESH_MS = 60000;
   const SYNC_INTERVAL_MS = 1000;
@@ -162,6 +163,10 @@ function driveStreamUrl(fileId) {
   let entries = [];
   let recurring = false;
   let timezone = null;
+  // Populated from cache/manifest.json -- see server/download-cache.mjs.
+  // Maps driveFileId -> { ready, path, ... }. Empty/missing is fine: it
+  // just means every entry falls back to the live Drive streaming URL.
+  let cacheManifest = {};
   let current = null;
   let provider = null;
   let vimeo = null;
@@ -258,6 +263,18 @@ function driveStreamUrl(fileId) {
     entries = normalizeManifest(await r.json());
   }
 
+  /** Best-effort -- if this 404s or is unreachable, every entry just falls
+   *  back to the live Drive stream, so failures here are never fatal. */
+  async function loadCacheManifest() {
+    try {
+      const sep = CACHE_MANIFEST_URL.includes("?") ? "&" : "?";
+      const r = await fetch(`${CACHE_MANIFEST_URL}${sep}_=${Date.now()}`, { cache: "no-store" });
+      cacheManifest = r.ok ? await r.json() : {};
+    } catch (_) {
+      cacheManifest = {};
+    }
+  }
+
   function findActiveEntry(nowMs) {
     if (recurring) return findActiveRecurringEntry(secondsSinceMidnight(new Date(nowMs), timezone));
     return entries.find(item => nowMs >= item.startMs && nowMs < item.endMs) || null;
@@ -271,9 +288,12 @@ function driveStreamUrl(fileId) {
     return Math.max(0, (nowMs - item.startMs) / 1000);
   }
 
-  /** Resolve an entry's playable URL -- a literal `url`, or a live-minted Drive stream URL. */
+  /** Resolve an entry's playable URL -- a literal `url`, a locally-cached copy
+   *  (see server/download-cache.mjs), or a live-minted Drive stream URL. */
   async function resolveUrl(item) {
     if (item.driveFileId) {
+      const cached = cacheManifest[item.driveFileId];
+      if (cached && cached.ready) return cached.path;
       if (!isTokenValid()) {
         const ok = await trySilentAuth();
         if (!ok) { needsAuthGate = true; showStartButton(); throw new Error("Drive sign-in required"); }
@@ -484,12 +504,13 @@ function driveStreamUrl(fileId) {
   (async function boot() {
     try {
       await loadManifest();
+      await loadCacheManifest();
       await trySilentAuth(); // won't block: entries without driveFileId still work if this fails
       scheduleTokenRefresh();
       await sync(true);
       setInterval(() => sync().catch(console.error), SYNC_INTERVAL_MS);
       setInterval(async () => {
-        try { await loadManifest(); await sync(true); }
+        try { await loadManifest(); await loadCacheManifest(); await sync(true); }
         catch (e) { console.error(e); }
       }, MANIFEST_REFRESH_MS);
     } catch (e) {

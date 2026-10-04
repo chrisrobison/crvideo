@@ -1,3 +1,11 @@
 .DS_Store
 Thumbs.db
 *.swp
+
+# Local video cache (server/download-cache.mjs) -- large, regenerated, never committed.
+/cache/
+
+# Service-account credential for the cache downloader -- a secret, never committed.
+/server/service-account.json
+/server/node_modules/
+/server/*.log
