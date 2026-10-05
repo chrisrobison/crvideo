@@ -19,8 +19,10 @@ class CfHeader extends HTMLElement {
       };
       this._onDriveChange = () => { this._profile = null; this._renderDriveBody(); this._render(); };
       this._onDocClick = (e) => {
-        const details = this.shadowRoot.querySelector(".drive-menu");
-        if (details?.open && !e.composedPath().includes(this)) details.open = false;
+        if (e.composedPath().includes(this)) return;
+        this.shadowRoot.querySelectorAll(".drive-menu").forEach((details) => {
+          if (details.open) details.open = false;
+        });
       };
       store.addEventListener("change", this._onChange);
       drive.driveEvents.addEventListener("change", this._onDriveChange);
@@ -44,6 +46,32 @@ class CfHeader extends HTMLElement {
     root.querySelector(".publish-btn").addEventListener("click", () => store.publish());
     root.querySelector(".drive-menu").addEventListener("toggle", (e) => {
       if (e.target.open) this._renderDriveBody();
+    });
+    root.querySelector(".live-menu").addEventListener("toggle", (e) => {
+      if (e.target.open) this._renderLiveBody();
+    });
+  }
+
+  _renderLiveBody() {
+    const root = this.shadowRoot;
+    const body = root.querySelector(".live-body");
+    body.innerHTML = `
+      <p class="hint">Reads/writes the recurring <code>playlist.json</code> that
+        sync-player.html and the cache downloader actually use — independent of
+        the Drive folder above, acting on ${escapeHtml(store.activeChannelId)}/${escapeHtml(store.activeDate)}'s program track.</p>
+      <div class="drive-folder-row">
+        <span class="muted">Publish token:</span>
+        <strong>${store.hasPublishToken() ? "Saved" : "Not set"}</strong>
+      </div>
+      <button class="load-live-btn" style="width:100%;">Load live schedule</button>
+      <button class="publish-live-btn primary" style="width:100%;">Publish to live channel</button>
+      <button class="change-token-btn" style="width:100%;">Change publish token…</button>
+    `;
+    body.querySelector(".load-live-btn").addEventListener("click", () => store.loadLiveSchedule());
+    body.querySelector(".publish-live-btn").addEventListener("click", () => store.publishLiveSchedule());
+    body.querySelector(".change-token-btn").addEventListener("click", () => {
+      store.promptPublishToken();
+      this._renderLiveBody();
     });
   }
 
@@ -236,6 +264,10 @@ class CfHeader extends HTMLElement {
           <details class="drive-menu">
             <summary><span class="dot"></span>Drive</summary>
             <div class="drive-body"></div>
+          </details>
+          <details class="drive-menu live-menu">
+            <summary><span class="dot"></span>Live</summary>
+            <div class="drive-body live-body"></div>
           </details>
           <div class="actions">
             <button class="validate-btn">Validate Schedule</button>

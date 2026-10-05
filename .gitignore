@@ -1,3 +1,16 @@
 .DS_Store
 Thumbs.db
 *.swp
+
+# Local video cache (server/download-cache.mjs) -- large, regenerated, never committed.
+/cache/
+
+# Service-account credential for the cache downloader -- a secret, never committed.
+/server/service-account.json
+/server/*.log
+
+# Shared secret for the scheduler's publish endpoint -- a secret, never committed.
+/server/publish-secret.php
+
+# Backups the publish endpoint makes of playlist.json before each overwrite.
+/playlist.json.bak
