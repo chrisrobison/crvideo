@@ -96,10 +96,16 @@ On boot and on every manifest refresh, the player also fetches
 `cache/manifest.json`. For an entry with a `driveFileId`, it plays
 `cache/<driveFileId>.mp4` directly (same-origin, full native `<video>`
 range/seek support) when the manifest marks that id `ready: true`.
-Otherwise it falls back to the live Drive streaming URL + OAuth flow exactly
-as before -- so playback still works (just without the ORB-safety benefit)
-before the cache has warmed up, or if the downloader falls behind or fails
-for a given file.
+
+There is deliberately **no fallback to live-streaming from Drive** in the
+browser -- `sync-player.html` has no Google OAuth code at all. If an entry
+isn't cached yet (first-ever boot, or this downloader has fallen behind or
+is failing), playback for it just shows a retrying error on screen until
+the next successful run of this script catches up, rather than reaching
+out to Drive directly. That direct-from-browser path is what caused the
+anti-abuse block, ORB stripping, and autoplay/fragmented-MP4 issues this
+whole caching system exists to avoid -- so this cache downloader running
+reliably is now a hard dependency for playback, not a nice-to-have.
 
 ## Format `download-cache.php` expects
 
