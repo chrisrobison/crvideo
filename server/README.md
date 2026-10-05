@@ -63,6 +63,25 @@ just exits immediately instead of starting a second overlapping download:
 
 (Adjust the php path if it changes -- check with `which php`.)
 
+## Unattended kiosk/signage playback
+
+By default every entry starts **muted** -- browsers only allow autoplay
+without a click when the video is muted, and a kiosk display has no one
+there to click. A small "Tap for sound" button in the corner lets anyone
+physically present turn audio on for that session, but it resets to muted
+on the next browser restart/reboot (it's `sessionStorage`, intentionally --
+see the code comment on `SOUND_STORAGE_KEY`).
+
+For a dedicated kiosk box where you want sound from boot with zero
+interaction ever, use `server/kiosk-launch.sh`: it launches Chrome with
+`--autoplay-policy=no-user-gesture-required` (disables the autoplay
+restriction entirely) and loads `sync-player.html?unmuted` (tells the page
+to skip its own mute-by-default logic, since the flag makes it unnecessary).
+Point whatever starts on login/boot on that machine (a systemd user service,
+an XDG autostart entry, `crontab @reboot`, etc.) at it. Override the URL or
+Chrome profile dir via `CRVIDEO_PLAYER_URL` / `CRVIDEO_CHROME_PROFILE` env
+vars if needed.
+
 ## How `sync-player.html` uses this
 
 On boot and on every manifest refresh, the player also fetches
