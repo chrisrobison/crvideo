@@ -1,4 +1,12 @@
-# Local video cache downloader
+# Server-side pieces
+
+Two independent PHP scripts live here:
+
+- **`download-cache.php`** (cron-run) -- pre-fetches/remuxes video to local disk.
+- **`publish-playlist.php`** (web-reachable) -- lets the scheduler write a new
+  live schedule. See its own section below.
+
+## Local video cache downloader
 
 `download-cache.php` pre-fetches the Drive video for whichever playlist
 entry is airing right now, plus the one airing next, to `../cache/*.mp4`.
@@ -100,3 +108,42 @@ one actually in use) is supported -- it reads `timezone` +
 `entries[].{startSec,endSec,driveFileId,title}` to figure out what's airing
 now and next. The one-off absolute-date format sync-player.html also
 supports isn't handled by this script.
+
+## Publishing a new schedule from the ChannelFlow scheduler
+
+`publish-playlist.php` lets `scheduler/index.html` write a new live
+schedule directly -- the "Live" menu in the scheduler's header has **Load
+live schedule** (reads `playlist.json`, same as this cache downloader does,
+into the currently active channel/date's program track) and **Publish to
+live channel** (writes that track's blocks straight to `playlist.json`,
+taking effect immediately -- `download-cache.php`'s next run within a
+minute will fetch whatever's newly current/next).
+
+This is a write-capable endpoint on a publicly reachable domain with no
+login system in front of it, so it's gated by a shared-secret token:
+
+1. **Generate one**: `php -r "echo bin2hex(random_bytes(24)), PHP_EOL;"`
+2. **Save it server-side** as `server/publish-secret.php` (gitignored --
+   never commit it):
+   ```php
+   <?php
+   return 'paste-the-generated-token-here';
+   ```
+3. The first time you click **Publish to live channel** (or **Load live
+   schedule**, or **Change publish token…**) in the scheduler, it prompts
+   for that same token and remembers it in that browser's `localStorage`.
+   A 403 response (bad/stale token) clears the saved one so the next
+   attempt re-prompts instead of looping.
+
+Each publish backs up the previous `playlist.json` to `playlist.json.bak`
+(both gitignored) before overwriting, and appends one line to
+`server/publish.log` (also gitignored).
+
+**Permissions note**: Apache runs as `www-data`, which needs to create
+files in the repo root (`playlist.json.bak`, a `.tmp` file it renames into
+place) and in `server/` (`publish.log`). On this box `www-data` and `cdr`
+are in each other's groups, so both directories are `chmod 2775` (setgid,
+group-writable) and the script explicitly `chmod`s what it writes to `0664`
+-- so files either side creates stay editable by the other without manual
+`chown`/`chmod` after the fact. If you move this to a different box, you'll
+need the equivalent of that setup (or just run the whole site as one user).

@@ -11,6 +11,15 @@ import * as drive from "./drive.js";
 const STORAGE_KEY = "channelflow:v1";
 const ASSET_BASE = "../"; // sample mp4s live one directory up from /scheduler/
 
+// The real, live channel: a single recurring (no specific calendar date)
+// 24-hour loop, read from and written to the same playlist.json that
+// sync-player.html and server/download-cache.php use. Lives one directory
+// up, alongside sync-player.html.
+const LIVE_PLAYLIST_URL = "../playlist.json";
+const PUBLISH_ENDPOINT = "../server/publish-playlist.php";
+const PUBLISH_TOKEN_KEY = "channelflow:publish-token";
+const DEFAULT_LIVE_TIMEZONE = "America/Los_Angeles";
+
 function sampleMedia() {
   return [
     { id: "media-live-mab", title: "Live at The Mab", type: "live", duration: null,
@@ -38,6 +47,7 @@ function block(partial) {
     source: "Video File",
     fallback: "",
     url: null,
+    driveFileId: null,   // set when this block came from (or targets) a Drive file directly
     autoStart: true,
     recordStream: false,
     allowOverrun: false,
@@ -137,6 +147,7 @@ class Store extends EventTarget {
     this.autoFillReels = false;
     this._reelsRotation = 0;
     this._fillingGaps = false;
+    this._liveTimezone = null; // remembered from the last loadLiveSchedule(), reused on publish
 
     this._load();
     this._probeDurations();
@@ -698,6 +709,126 @@ class Store extends EventTarget {
       drive.writeJsonFile(this.driveFolderId, "playlist.json", { version: 1, entries })
         .then(() => toast("Also published playlist.json to the Drive folder.", "good"))
         .catch((e) => toast(`Drive publish failed: ${e.message}`, "danger"));
+    }
+  }
+
+  // ---------- Live channel: the real recurring playlist.json ----------
+  // Separate from publish()/buildPlaylistExport() above (which target the
+  // old one-off absolute-date format for the demo/per-date channels) --
+  // these read and write the *actual* recurring format sync-player.html and
+  // server/download-cache.php use, against whatever channel+date is active
+  // when you click the button. Pick one channel/date slot and always use
+  // that one for editing the live schedule; which slot doesn't matter since
+  // a recurring schedule doesn't vary by date.
+
+  hasPublishToken() {
+    try { return !!localStorage.getItem(PUBLISH_TOKEN_KEY); } catch (_) { return false; }
+  }
+
+  getPublishToken() {
+    try {
+      const existing = localStorage.getItem(PUBLISH_TOKEN_KEY);
+      if (existing) return existing;
+    } catch (_) { /* fall through to prompt */ }
+    return this.promptPublishToken();
+  }
+
+  promptPublishToken() {
+    const token = window.prompt(
+      "Publish token for the live channel (from server/publish-secret.php on the server):"
+    );
+    if (!token) return null;
+    try { localStorage.setItem(PUBLISH_TOKEN_KEY, token.trim()); } catch (_) { /* ignore */ }
+    return token.trim();
+  }
+
+  /** Fetch the live playlist.json and replace the active schedule's program
+   *  track with its entries (startSec/endSec map directly onto this app's
+   *  seconds-within-a-day block model — no date math needed). */
+  async loadLiveSchedule() {
+    try {
+      const res = await fetch(`${LIVE_PLAYLIST_URL}?_=${Date.now()}`, { cache: "no-store" });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (data.recurring !== true) {
+        throw new Error('That playlist.json isn\'t in the recurring format this loads.');
+      }
+      this._liveTimezone = data.timezone || DEFAULT_LIVE_TIMEZONE;
+      const entries = Array.isArray(data.entries) ? data.entries : [];
+
+      const schedule = this.getActiveSchedule();
+      const program = schedule.tracks.find((t) => t.kind === "program");
+      program.blocks = entries.map((e) => block({
+        id: e.id || uid("live"),
+        title: e.title || "Untitled segment",
+        type: "video",
+        start: e.startSec,
+        end: e.endSec,
+        source: e.driveFileId ? "Drive segment" : "Video File",
+        url: e.driveFileId ? null : (e.url || null),
+        driveFileId: e.driveFileId || null,
+      }));
+      this.selectedBlockId = null;
+      this.persist();
+      this._emit("blocks");
+      toast(`Loaded ${program.blocks.length} segment${program.blocks.length === 1 ? "" : "s"} from the live channel into ${this.activeChannelId}/${this.activeDate}.`, "good");
+    } catch (e) {
+      toast(`Couldn't load the live playlist: ${e.message}`, "danger");
+    }
+  }
+
+  /** Build a recurring-format payload from the active schedule's program
+   *  track, for publishLiveSchedule(). */
+  buildLivePlaylistExport() {
+    const schedule = this.getActiveSchedule();
+    const program = schedule.tracks.find((t) => t.kind === "program");
+    const entries = [];
+    let skipped = 0;
+    for (const b of [...program.blocks].sort((a, b) => a.start - b.start)) {
+      if (!b.driveFileId && !b.url) { skipped += 1; continue; }
+      const entry = { id: b.id, title: b.title, startSec: b.start, endSec: b.end };
+      if (b.driveFileId) entry.driveFileId = b.driveFileId;
+      else entry.url = b.url;
+      entries.push(entry);
+    }
+    return { entries, skipped };
+  }
+
+  /** POST the active schedule's program track to server/publish-playlist.php,
+   *  which writes it straight to the live playlist.json. */
+  async publishLiveSchedule() {
+    const { entries, skipped } = this.buildLivePlaylistExport();
+    if (!entries.length) {
+      return toast("Nothing to publish — no Drive-backed segments on the program track.", "danger");
+    }
+    const token = this.getPublishToken();
+    if (!token) return toast("Publish cancelled — no token entered.", "warn");
+
+    const payload = {
+      recurring: true,
+      timezone: this._liveTimezone || DEFAULT_LIVE_TIMEZONE,
+      entries,
+    };
+    try {
+      const res = await fetch(PUBLISH_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "X-Publish-Token": token },
+        body: JSON.stringify(payload),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.ok) {
+        if (res.status === 403) {
+          // Bad/stale token -- drop it so the next attempt re-prompts instead of looping.
+          try { localStorage.removeItem(PUBLISH_TOKEN_KEY); } catch (_) {}
+        }
+        throw new Error(data.error || `HTTP ${res.status}`);
+      }
+      let msg = `Published ${data.entries} segment${data.entries === 1 ? "" : "s"} to the live channel.`;
+      if (skipped) msg += ` ${skipped} segment${skipped === 1 ? "" : "s"} without a driveFileId/url were skipped.`;
+      toast(msg, "good");
+      this._emit("publish");
+    } catch (e) {
+      toast(`Live publish failed: ${e.message}`, "danger");
     }
   }
 }

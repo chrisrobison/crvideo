@@ -213,7 +213,8 @@ class CfTimeline extends HTMLElement {
       const start = Math.min(DAY_SECONDS - duration, dropSec);
       const created = store.addBlock(trackId, {
         title: item.title, type: item.type, start, end: start + duration,
-        source: item.type === "live" ? item.title : "Video File", url: item.url,
+        source: item.type === "live" ? item.title : (item.driveFileId ? "Drive segment" : "Video File"),
+        url: item.url, driveFileId: item.driveFileId || null,
       });
       if (created) store.selectBlock(created.id);
       toast(`Added "${item.title}" to ${trackId}`, "good");
