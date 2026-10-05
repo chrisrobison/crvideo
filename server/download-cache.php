@@ -29,6 +29,7 @@ const KEY_PATH = __DIR__ . '/service-account.json';
 
 const DRIVE_SCOPE = 'https://www.googleapis.com/auth/drive.readonly';
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';
+const FFMPEG_BIN = '/usr/bin/ffmpeg';
 
 function log_line(string $msg): void
 {
@@ -157,6 +158,32 @@ function downloadToFile(string $fileId, string $token, string $destPath): void
     rename($tmpPath, $destPath);
 }
 
+/** Stream-copy remux: fragmented MP4 (moov + thousands of moof/mdat pairs,
+ *  mvhd duration 0) -> standard single-moov "faststart" MP4 with a real
+ *  declared duration and full sample tables. The Drive exports are
+ *  fragmented (iso5/iso6 brand) -- fine for ffprobe/ffmpeg, which scan every
+ *  fragment's tfdt/trun to work out timing, but a browser's lightweight
+ *  <video src> engine does not do that: it reads mvhd's duration directly,
+ *  sees 0, and can never resolve `duration` or compute a byte offset for an
+ *  arbitrary seek -- readyState sits at HAVE_NOTHING forever. No re-encode,
+ *  just a container rewrite (~15s for a 1.2GB file on this box). */
+function remux(string $rawPath, string $destPath): void
+{
+    $tmpPath = $destPath . '.part';
+    $cmd = sprintf(
+        '%s -v error -i %s -c copy -movflags +faststart -f mp4 -y %s 2>&1',
+        escapeshellcmd(FFMPEG_BIN),
+        escapeshellarg($rawPath),
+        escapeshellarg($tmpPath)
+    );
+    exec($cmd, $output, $exitCode);
+    if ($exitCode !== 0 || !is_file($tmpPath) || filesize($tmpPath) === 0) {
+        @unlink($tmpPath);
+        throw new RuntimeException('ffmpeg remux failed (exit ' . $exitCode . '): ' . implode(' | ', $output));
+    }
+    rename($tmpPath, $destPath);
+}
+
 function readManifest(): array
 {
     if (!is_file(MANIFEST_PATH)) {
@@ -169,11 +196,15 @@ function readManifest(): array
 function cleanupOrphanedPartFiles(): void
 {
     // A cron entry wraps this script in `flock -n`, so only one instance ever
-    // runs at a time -- any .part file found here is leftover from a run that
-    // crashed or got killed mid-download, never one that's actively writing.
-    foreach (glob(CACHE_DIR . '/*.mp4.part') ?: [] as $f) {
-        log_line('Removing orphaned partial download ' . basename($f));
-        @unlink($f);
+    // runs at a time -- any .part/.raw file found here is leftover from a run
+    // that crashed or got killed mid-download or mid-remux, never one that's
+    // actively being written.
+    $patterns = ['/*.mp4.part', '/*.mp4.raw', '/*.mp4.raw.part'];
+    foreach ($patterns as $pattern) {
+        foreach (glob(CACHE_DIR . $pattern) ?: [] as $f) {
+            log_line('Removing orphaned temp file ' . basename($f));
+            @unlink($f);
+        }
     }
 }
 
@@ -214,9 +245,13 @@ function main(): int
         }
 
         log_line("Downloading \"{$entry['title']}\" ($fileId)...");
+        $rawPath = CACHE_DIR . "/$fileId.mp4.raw";
         try {
             $token ??= getAccessToken();
-            downloadToFile($fileId, $token, $destPath);
+            downloadToFile($fileId, $token, $rawPath);
+            log_line("Remuxing \"{$entry['title']}\" for seekable playback...");
+            remux($rawPath, $destPath);
+            @unlink($rawPath);
             $manifest[$fileId] = [
                 'ready' => true,
                 'path' => "cache/$fileId.mp4",
@@ -225,6 +260,7 @@ function main(): int
             ];
             log_line("Done: \"{$entry['title']}\"");
         } catch (Throwable $e) {
+            @unlink($rawPath);
             log_line("FAILED to download \"{$entry['title']}\" ($fileId): " . $e->getMessage());
             $manifest[$fileId] = [
                 'ready' => false,
