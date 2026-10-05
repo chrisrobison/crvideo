@@ -1,5 +1,6 @@
 import { store } from "../store.js";
 import { baseComponentCSS, escapeHtml } from "../utils.js";
+import * as drive from "../drive.js";
 
 const BAR_COUNT = 22;
 
@@ -29,7 +30,12 @@ class CfProgramMonitor extends HTMLElement {
       this.attachShadow({ mode: "open" });
       this._render();
       this._onChange = (e) => { if (e.detail.reason !== "tick") this._renderScreen(); };
+      // A driveFileId-only block (no plain url) can only preview once Drive
+      // is connected (see _renderScreen) -- force a re-check on connect so
+      // the monitor picks it up without needing a reselect.
+      this._onDriveChange = () => { this._lastBlockId = null; this._renderScreen(); };
       store.addEventListener("change", this._onChange);
+      drive.driveEvents.addEventListener("change", this._onDriveChange);
       this.shadowRoot.querySelector(".fullscreen-btn").addEventListener("click", () => {
         const stage = this.shadowRoot.querySelector(".stage");
         if (stage.requestFullscreen) stage.requestFullscreen().catch(() => {});
@@ -42,6 +48,7 @@ class CfProgramMonitor extends HTMLElement {
 
   disconnectedCallback() {
     store.removeEventListener("change", this._onChange);
+    drive.driveEvents.removeEventListener("change", this._onDriveChange);
     clearInterval(this._meterLoop);
     clearInterval(this._viewerLoop);
   }
@@ -93,6 +100,7 @@ class CfProgramMonitor extends HTMLElement {
         .placeholder{ text-align:center; color:#aab2c5; padding:20px; }
         .placeholder .icon{ font-size:28px; margin-bottom:6px; }
         .placeholder .name{ font-weight:700; font-size:13px; color:#fff; }
+        .placeholder .hint{ font-size:11px; color:var(--text-faint); margin-top:4px; }
         .footer{ display:flex; align-items:center; gap:16px; margin-top:12px; }
         .meters{ flex:1; display:flex; flex-direction:column; gap:4px; }
         .meter-line{ display:flex; align-items:center; gap:6px; font-size:10px; color:var(--text-faint); }
@@ -147,11 +155,20 @@ class CfProgramMonitor extends HTMLElement {
     if (b.id === this._lastBlockId && this._video) return; // already showing this block
     this._lastBlockId = b.id;
 
-    if (b.url && (b.type === "video" || b.type === "audio")) {
+    // Blocks loaded from the live playlist (see store.js loadLiveSchedule())
+    // only carry driveFileId -- playlist.json never stores a streamable url,
+    // just the raw Drive file id. Mint one the same way the media library
+    // already does for its own previews, so this still works for those.
+    const src = b.url || (b.driveFileId && drive.isConnected() ? drive.streamUrl(b.driveFileId) : null);
+
+    if (src && (b.type === "video" || b.type === "audio")) {
       stage.innerHTML = `<video muted playsinline autoplay loop></video>`;
       this._video = stage.querySelector("video");
-      this._video.src = b.url;
+      this._video.src = src;
       this._video.play().catch(() => {});
+    } else if (b.driveFileId && (b.type === "video" || b.type === "audio")) {
+      stage.innerHTML = `<div class="placeholder"><div class="icon">🎬</div><div class="name">${escapeHtml(b.title)}</div><div class="hint">Connect Google Drive (header menu) to preview</div></div>`;
+      this._video = null;
     } else {
       const icon = b.type === "live" ? "🔴" : b.type === "graphic" ? "🎛️" : "🎬";
       stage.innerHTML = `<div class="placeholder"><div class="icon">${icon}</div><div class="name">${escapeHtml(b.title)}</div></div>`;
