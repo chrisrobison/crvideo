@@ -147,6 +147,12 @@ function driveStreamUrl(fileId) {
   const PLAYLIST_URL = qs.get("playlist") || "playlist.json";
   const CACHE_MANIFEST_URL = qs.get("cacheManifest") || "cache/manifest.json";
   const DEBUG = qs.has("debug");
+  // For a kiosk launcher running Chrome with
+  // --autoplay-policy=no-user-gesture-required: skip the mute-then-click
+  // dance entirely and default straight to unmuted playback. Without a
+  // matching browser flag this will just fail the same way unmuted autoplay
+  // normally does, falling back to the Start-playback gate.
+  const FORCE_UNMUTED = qs.has("unmuted");
   const MANIFEST_REFRESH_MS = 60000;
   const SYNC_INTERVAL_MS = 1000;
   const DRIFT_CHECK_MS = 5000;
@@ -172,8 +178,10 @@ function driveStreamUrl(fileId) {
   // someone IS there to tap it -- it never gates playback the way
   // startButton's Drive-sign-in gate does.
   const SOUND_STORAGE_KEY = "channelflow:player-sound-enabled";
-  let soundEnabled = false;
-  try { soundEnabled = sessionStorage.getItem(SOUND_STORAGE_KEY) === "1"; } catch (_) {}
+  let soundEnabled = FORCE_UNMUTED;
+  if (!soundEnabled) {
+    try { soundEnabled = sessionStorage.getItem(SOUND_STORAGE_KEY) === "1"; } catch (_) {}
+  }
   if (soundEnabled) soundButton.classList.add("hidden");
 
   let entries = [];
