@@ -1,19 +1,23 @@
 import { store } from "../store.js";
 import { baseComponentCSS, escapeHtml } from "../utils.js";
-import * as drive from "../drive.js";
 
 const BAR_COUNT = 22;
+
+/** The block actually on air right now (ignores selection) -- used to decide
+ *  whether the sync-player preview below applies, separately from which
+ *  block the monitor is displaying. */
+function liveNowBlock() {
+  if (!store.isToday()) return null;
+  const now = store.nowSeconds();
+  const schedule = store.getActiveSchedule();
+  const program = schedule.tracks.find((t) => t.kind === "program");
+  return program.blocks.find((b) => now >= b.start && now < b.end) || null;
+}
 
 function displayedBlock() {
   const selected = store.getSelected();
   if (selected) return selected.block;
-  if (store.isToday()) {
-    const now = store.nowSeconds();
-    const schedule = store.getActiveSchedule();
-    const program = schedule.tracks.find((t) => t.kind === "program");
-    return program.blocks.find((b) => now >= b.start && now < b.end) || null;
-  }
-  return null;
+  return liveNowBlock();
 }
 
 class CfProgramMonitor extends HTMLElement {
@@ -30,12 +34,7 @@ class CfProgramMonitor extends HTMLElement {
       this.attachShadow({ mode: "open" });
       this._render();
       this._onChange = (e) => { if (e.detail.reason !== "tick") this._renderScreen(); };
-      // A driveFileId-only block (no plain url) can only preview once Drive
-      // is connected (see _renderScreen) -- force a re-check on connect so
-      // the monitor picks it up without needing a reselect.
-      this._onDriveChange = () => { this._lastBlockId = null; this._renderScreen(); };
       store.addEventListener("change", this._onChange);
-      drive.driveEvents.addEventListener("change", this._onDriveChange);
       this.shadowRoot.querySelector(".fullscreen-btn").addEventListener("click", () => {
         const stage = this.shadowRoot.querySelector(".stage");
         if (stage.requestFullscreen) stage.requestFullscreen().catch(() => {});
@@ -48,14 +47,15 @@ class CfProgramMonitor extends HTMLElement {
 
   disconnectedCallback() {
     store.removeEventListener("change", this._onChange);
-    drive.driveEvents.removeEventListener("change", this._onDriveChange);
     clearInterval(this._meterLoop);
     clearInterval(this._viewerLoop);
   }
 
   _isLiveish() {
     const b = displayedBlock();
-    return !!b && (b.type === "live" || (this._video && !this._video.paused));
+    if (!b) return false;
+    if (b.type === "live") return true;
+    return (b.type === "video" || b.type === "audio") && this._lastMode !== "placeholder";
   }
 
   _tickMeters() {
@@ -97,6 +97,7 @@ class CfProgramMonitor extends HTMLElement {
         .stage{ position:relative; aspect-ratio:16/9; background:#000; border-radius:8px; overflow:hidden;
           display:flex; align-items:center; justify-content:center; }
         .stage video{ width:100%; height:100%; object-fit:contain; background:#000; }
+        .stage iframe{ width:100%; height:100%; border:0; }
         .placeholder{ text-align:center; color:#aab2c5; padding:20px; }
         .placeholder .icon{ font-size:28px; margin-bottom:6px; }
         .placeholder .name{ font-weight:700; font-size:13px; color:#fff; }
@@ -149,29 +150,42 @@ class CfProgramMonitor extends HTMLElement {
     if (!b) {
       stage.innerHTML = `<div class="placeholder"><div class="icon">📡</div><div class="name">No signal</div></div>`;
       this._video = null;
+      this._lastBlockId = null;
+      this._lastMode = null;
       return;
     }
 
-    if (b.id === this._lastBlockId && this._video) return; // already showing this block
+    // Streaming a Drive file straight from the browser (via an OAuth bearer
+    // token) is a dead end here: Drive's media/thumbnail endpoints don't
+    // allow the Authorization header in their CORS preflight, so it just
+    // fails with ERR_FAILED. sync-player.html (the real on-air player)
+    // sidesteps that entirely -- it only ever plays files server/download-
+    // cache.php has already fetched and cached locally -- so for the block
+    // that's actually live right now, embed that real player instead of
+    // trying (and failing) to mint our own Drive preview URL.
+    const nowBlock = liveNowBlock();
+    const isLiveNow = !!nowBlock && nowBlock.id === b.id;
+    const mode = b.url && (b.type === "video" || b.type === "audio") ? "video"
+      : b.driveFileId && (b.type === "video" || b.type === "audio") && isLiveNow ? "sync"
+      : "placeholder";
+
+    if (b.id === this._lastBlockId && mode === this._lastMode) return; // already showing this
     this._lastBlockId = b.id;
+    this._lastMode = mode;
 
-    // Blocks loaded from the live playlist (see store.js loadLiveSchedule())
-    // only carry driveFileId -- playlist.json never stores a streamable url,
-    // just the raw Drive file id. Mint one the same way the media library
-    // already does for its own previews, so this still works for those.
-    const src = b.url || (b.driveFileId && drive.isConnected() ? drive.streamUrl(b.driveFileId) : null);
-
-    if (src && (b.type === "video" || b.type === "audio")) {
+    if (mode === "video") {
       stage.innerHTML = `<video muted playsinline autoplay loop></video>`;
       this._video = stage.querySelector("video");
-      this._video.src = src;
+      this._video.src = b.url;
       this._video.play().catch(() => {});
-    } else if (b.driveFileId && (b.type === "video" || b.type === "audio")) {
-      stage.innerHTML = `<div class="placeholder"><div class="icon">🎬</div><div class="name">${escapeHtml(b.title)}</div><div class="hint">Connect Google Drive (header menu) to preview</div></div>`;
+    } else if (mode === "sync") {
+      stage.innerHTML = `<iframe class="sync-frame" src="../sync-player.html" allow="autoplay" title="Live preview"></iframe>`;
       this._video = null;
     } else {
       const icon = b.type === "live" ? "🔴" : b.type === "graphic" ? "🎛️" : "🎬";
-      stage.innerHTML = `<div class="placeholder"><div class="icon">${icon}</div><div class="name">${escapeHtml(b.title)}</div></div>`;
+      const hint = b.driveFileId && (b.type === "video" || b.type === "audio")
+        ? `<div class="hint">Drive-only clip — preview shows here once it's on air</div>` : "";
+      stage.innerHTML = `<div class="placeholder"><div class="icon">${icon}</div><div class="name">${escapeHtml(b.title)}</div>${hint}</div>`;
       this._video = null;
     }
   }
