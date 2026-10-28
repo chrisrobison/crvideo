@@ -1,0 +1,20 @@
+{
+  "metadata": {
+    "identifier": "0771_Duck_and_Cover_12_33_20_12",
+    "title": "Duck and Cover",
+    "description": "<p>Civil defense film teaching children the &quot;duck and cover&quot; technique.</p>",
+    "creator": "Archer Productions",
+    "date": "1951-01-01",
+    "subject": ["Civil Defense", "Cold War", "Education"],
+    "collection": ["prelinger", "educational_films"],
+    "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "0771_Duck_and_Cover_12_33_20_12.mp4", "format": "h.264", "length": "754.5", "size": "40000000", "original": "0771_Duck_and_Cover_12_33_20_12.mov" },
+    { "name": "0771_Duck_and_Cover_12_33_20_12.ogv", "format": "Ogg Video", "length": "754.5", "size": "35000000", "original": "0771_Duck_and_Cover_12_33_20_12.mov" },
+    { "name": "0771_Duck_and_Cover_12_33_20_12.mov", "format": "QuickTime", "size": "900000000", "source": "original" },
+    { "name": "0771_Duck_and_Cover_12_33_20_12_thumb.jpg", "format": "JPEG", "size": "12000" },
+    { "name": "0771_Duck_and_Cover_12_33_20_12_meta.xml", "format": "Metadata", "size": "900" }
+  ]
+}

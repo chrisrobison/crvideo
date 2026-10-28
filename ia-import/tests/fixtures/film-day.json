@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "value": {
+    "list_name": "Film Day at School",
+    "description": "Vintage educational films",
+    "is_private": false,
+    "id": 1,
+    "date_created": "2026-10-28T16:08:14Z",
+    "members": [
+      { "identifier": "0771_Duck_and_Cover_12_33_20_12", "member_id": 1, "date_added": "2026-10-28T16:08:15Z" },
+      { "identifier": "Conquerb1943", "member_id": 2, "date_added": "2026-10-28T16:08:43Z" },
+      { "identifier": "multi_encoding_item", "member_id": 3, "date_added": "2026-10-28T16:08:50Z" },
+      { "identifier": "multi_part_item", "member_id": 4, "date_added": "2026-10-28T16:08:55Z" },
+      { "identifier": "ambiguous_item", "member_id": 5, "date_added": "2026-10-28T16:09:00Z" },
+      { "identifier": "unknown_duration_item", "member_id": 6, "date_added": "2026-10-28T16:09:05Z" },
+      { "identifier": "oversized_item", "member_id": 7, "date_added": "2026-10-28T16:09:10Z" },
+      { "identifier": "unavailable_item", "member_id": 8, "date_added": "2026-10-28T16:09:15Z" },
+      { "identifier": "network_fail_item", "member_id": 9, "date_added": "2026-10-28T16:09:20Z" },
+      { "member_id": 10, "date_added": "2026-10-28T16:09:25Z" },
+      { "identifier": "0771_Duck_and_Cover_12_33_20_12", "member_id": 11, "date_added": "2026-10-28T16:09:30Z" }
+    ]
+  }
+}

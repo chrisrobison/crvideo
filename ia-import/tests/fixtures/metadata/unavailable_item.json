@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "identifier": "unavailable_item",
+    "title": "No Playable File",
+    "description": "Only non-video assets are present.",
+    "creator": "Test Studio",
+    "date": "1950",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "unavailable_item_thumb.jpg", "format": "JPEG", "size": "9000" },
+    { "name": "unavailable_item_meta.xml", "format": "Metadata", "size": "500" }
+  ]
+}

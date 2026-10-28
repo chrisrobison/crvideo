@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "identifier": "oversized_item",
+    "title": "A Feature-Length Film",
+    "description": "Longer than any normal slot size we schedule in these tests.",
+    "creator": "Test Studio",
+    "date": "1948",
+    "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "oversized_item.mp4", "format": "h.264", "length": "4000" }
+  ]
+}
