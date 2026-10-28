@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "identifier": "unknown_duration_item",
+    "title": "No Duration Metadata",
+    "description": "Playable file exists, but no length/duration metadata is present anywhere.",
+    "creator": "Test Studio",
+    "date": "1955",
+    "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "unknown_duration_item.mp4", "format": "h.264", "size": "9000000" }
+  ]
+}

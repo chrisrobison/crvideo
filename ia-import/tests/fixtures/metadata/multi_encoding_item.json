@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "identifier": "multi_encoding_item",
+    "title": "A Film With Two Encodings",
+    "description": "Same film, two derivative encodings -- only one should be selected.",
+    "creator": "Test Studio",
+    "date": "1960",
+    "subject": ["Testing"],
+    "collection": ["test_collection"],
+    "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "multi_encoding_item.mp4", "format": "h.264", "length": "600", "original": "multi_encoding_item.mov" },
+    { "name": "multi_encoding_item_512kb.mp4", "format": "512Kb MPEG4", "length": "600", "original": "multi_encoding_item.mov" },
+    { "name": "multi_encoding_item.ogv", "format": "Ogg Video", "length": "600", "original": "multi_encoding_item.mov" },
+    { "name": "multi_encoding_item.mov", "format": "QuickTime", "size": "500000000", "source": "original" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "metadata": {
+    "identifier": "ambiguous_item",
+    "title": "Unclear Grouping Item",
+    "description": "Two candidate video files with no original-file link and no numbered-parts naming -- genuinely ambiguous.",
+    "creator": "Test Studio",
+    "date": "1970",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "reel_one.mp4", "format": "h.264", "length": "200" },
+    { "name": "something_else.mp4", "format": "h.264", "length": "210" }
+  ]
+}

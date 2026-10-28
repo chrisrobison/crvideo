@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "identifier": "multi_part_item",
+    "title": "A Two-Part Film",
+    "description": "Two genuinely distinct video parts in one IA item.",
+    "creator": "Test Studio",
+    "date": "1965",
+    "subject": ["Testing"],
+    "collection": ["test_collection"],
+    "licenseurl": "https://creativecommons.org/publicdomain/mark/1.0/",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "multi_part_item_pt1.mp4", "format": "h.264", "length": "300" },
+    { "name": "multi_part_item_pt2.mp4", "format": "h.264", "length": "320" }
+  ]
+}

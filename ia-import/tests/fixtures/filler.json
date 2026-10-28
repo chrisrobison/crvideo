@@ -1,0 +1,10 @@
+{
+  "clips": [
+    { "id": "station-id-01", "title": "Station ID A", "duration": 10 },
+    { "id": "station-id-02", "title": "Station ID B", "duration": 15 },
+    { "id": "bumper-01", "title": "Up Next Bumper", "duration": 20 },
+    { "id": "psa-01", "title": "Fire Safety PSA", "duration": 30 },
+    { "id": "short-01", "title": "Vintage Short A", "duration": 60 },
+    { "id": "short-02", "title": "Vintage Short B", "duration": 90 }
+  ]
+}
