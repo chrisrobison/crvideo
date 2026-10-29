@@ -1,0 +1,7 @@
+# Local metadata cache (see --cache-dir / README) and this tool's default
+# generated outputs. Input list JSON files you download yourself (e.g. via
+# the "Fetching a real list" steps in README.md) are left untracked too --
+# add them explicitly with `git add` if you want one committed.
+.cache/
+/catalog.json
+/schedule.json

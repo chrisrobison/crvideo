@@ -134,10 +134,25 @@ final class MediaResolver
     }
 
     /**
-     * Groups candidate files by logical film (same "original" source file =
-     * same film, different encodings) and picks the single best encoding per
-     * group. Returns a list ordered by group key, each entry
+     * Groups candidate files by logical film and picks the single best
+     * encoding per group. Returns a list ordered by group key, each entry
      * ['key' => string, 'file' => array].
+     *
+     * Grouping happens in two passes:
+     *  1. By the file-level "original" attribute when present (the
+     *     reliable signal: IA stamps every derivative of a source upload
+     *     with the source filename), falling back to the file's own name
+     *     when absent.
+     *  2. A near-identical-duration merge across whatever groups pass 1
+     *     produced. Real IA items routinely carry one or more derivatives
+     *     (e.g. a hand-edited "_edit.mp4", a plain ".avi") that omit
+     *     "original" entirely, so pass 1 alone leaves them as spurious
+     *     extra "parts" of the very same film. Those derivatives are
+     *     transcoded from the same source and their lengths agree to a
+     *     fraction of a second; genuinely distinct parts of a multi-part
+     *     item differ by many seconds. A tight absolute tolerance tells
+     *     the two apart without needing duration parsing beyond what we
+     *     already do.
      */
     private static function groupPlayableFiles(array $files, bool $allowOtherFormats): array
     {
@@ -172,11 +187,71 @@ final class MediaResolver
             usort($candidates, static function (array $a, array $b): int {
                 return $a['tier'] <=> $b['tier'] ?: strcmp($a['name'], $b['name']);
             });
-            $groups[$groupKey] = ['key' => $groupKey, 'file' => $candidates[0]['file']];
+            $duration = DurationParser::parse($candidates[0]['file']['length'] ?? null);
+            $groups[] = ['key' => $groupKey, 'candidates' => $candidates, 'duration' => $duration];
         }
 
         ksort($groups, SORT_STRING);
-        return array_values($groups);
+        $groups = self::mergeByDurationSimilarity(array_values($groups));
+
+        $result = [];
+        foreach ($groups as $g) {
+            $result[] = ['key' => $g['key'], 'file' => $g['candidates'][0]['file']];
+        }
+        return $result;
+    }
+
+    /**
+     * Merges groups whose best candidate's duration is within a tight
+     * absolute tolerance of each other -- almost certainly the same source
+     * material, just encoded differently and lacking (or disagreeing on)
+     * an "original" link. Groups without a parseable duration are left
+     * untouched (no safe signal to merge on).
+     */
+    private static function mergeByDurationSimilarity(array $groups): array
+    {
+        $withDuration = [];
+        $withoutDuration = [];
+        foreach ($groups as $g) {
+            if ($g['duration'] === null) {
+                $withoutDuration[] = $g;
+            } else {
+                $withDuration[] = $g;
+            }
+        }
+        usort($withDuration, static fn(array $a, array $b): int => $a['duration'] <=> $b['duration']);
+
+        $clusters = [];
+        foreach ($withDuration as $g) {
+            $placed = false;
+            foreach ($clusters as &$cluster) {
+                $tolerance = max(2.0, $cluster['duration'] * 0.005);
+                if (abs($g['duration'] - $cluster['duration']) <= $tolerance) {
+                    $cluster['keys'][] = $g['key'];
+                    $cluster['candidates'] = array_merge($cluster['candidates'], $g['candidates']);
+                    $placed = true;
+                    break;
+                }
+            }
+            unset($cluster);
+            if (!$placed) {
+                $clusters[] = ['duration' => $g['duration'], 'keys' => [$g['key']], 'candidates' => $g['candidates']];
+            }
+        }
+
+        $merged = [];
+        foreach ($clusters as $cluster) {
+            usort($cluster['candidates'], static function (array $a, array $b): int {
+                return $a['tier'] <=> $b['tier'] ?: strcmp($a['name'], $b['name']);
+            });
+            $merged[] = ['key' => implode('|', $cluster['keys']), 'candidates' => $cluster['candidates']];
+        }
+        foreach ($withoutDuration as $g) {
+            $merged[] = ['key' => $g['key'], 'candidates' => $g['candidates']];
+        }
+
+        usort($merged, static fn(array $a, array $b): int => strcmp($a['key'], $b['key']));
+        return $merged;
     }
 
     private static function tierFor(string $ext, string $format, bool $allowOtherFormats): ?int

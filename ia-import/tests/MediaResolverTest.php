@@ -83,6 +83,22 @@ final class MediaResolverTest
         Assert::true(count($found) > 0);
     }
 
+    public function testDerivativesMissingOriginalLinkStillCollapseByDurationSimilarity(): void
+    {
+        // Regression test: a real archive.org item (e.g. a WWII-era short)
+        // can carry a derivative that omits the "original" linking field
+        // entirely while still being frame-rounding-identical in length to
+        // the derivatives that do carry it. Grouping by "original" alone
+        // used to leave that file as a spurious extra "part" of the same
+        // film. It must collapse into the one logical video instead.
+        $raw = $this->loadFixture('same_film_mixed_originals');
+        $parts = MediaResolver::resolve($raw, 'same_film_mixed_originals');
+        Assert::count(1, $parts, 'a derivative missing "original" but matching duration must not become a fake extra part');
+        Assert::same('same_film_mixed_originals.mp4', $parts[0]['selected_file'], 'the h.264 mp4 must still win the selection across the merged candidates');
+        $flagged = array_filter($parts[0]['warnings'], static fn ($w) => str_contains($w, 'Review manually'));
+        Assert::true(count($flagged) === 0, 'a confidently-merged single film must not be flagged ambiguous');
+    }
+
     public function testMediaUrlIsProperlyEncoded(): void
     {
         $url = MediaResolver::buildDownloadUrl('my id', 'a file/name.mp4');
