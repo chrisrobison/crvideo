@@ -13,6 +13,36 @@ declare(strict_types=1);
 // No framework, no Composer -- plain PHP, manually required below, same
 // style as server/publish-playlist.php elsewhere in this repo.
 
+// This is a batch CLI job, not a shared web request, and the spec calls
+// for supporting lists of hundreds to thousands of items -- all of whose
+// decoded raw metadata is held in memory for the duration of a run (see
+// README "Known limitations": this is not a streaming pipeline). Real IA
+// /metadata/ responses run up to a couple of MB each, and PHP's decoded
+// array overhead is a large multiple of that, so a default 128M CLI
+// memory_limit is routinely too small for a few hundred real items. Raise
+// it (without overriding an operator who has already set something more
+// generous via php.ini/-d) rather than fail partway through a long run.
+$currentLimitBytes = ia_import_bytes(ini_get('memory_limit'));
+if ($currentLimitBytes !== -1 && $currentLimitBytes < 512 * 1024 * 1024) {
+    ini_set('memory_limit', '512M');
+}
+
+function ia_import_bytes(string|false $iniValue): int
+{
+    $v = trim((string) $iniValue);
+    if ($v === '' || $v === '-1') {
+        return -1;
+    }
+    $unit = strtolower(substr($v, -1));
+    $num = (int) $v;
+    return match ($unit) {
+        'g' => $num * 1024 * 1024 * 1024,
+        'm' => $num * 1024 * 1024,
+        'k' => $num * 1024,
+        default => (int) $v,
+    };
+}
+
 const IA_ROOT = __DIR__;
 
 require IA_ROOT . '/src/DurationParser.php';

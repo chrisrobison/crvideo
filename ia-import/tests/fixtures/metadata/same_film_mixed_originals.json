@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "identifier": "same_film_mixed_originals",
+    "title": "A Film With Some Untagged Derivatives",
+    "description": "Mirrors a real-world Internet Archive item: several playable-tier files of the same film, but not every derivative carries an \"original\" link back to the source upload -- some simply omit it. All lengths agree to a fraction of a second, which is the real signal that they are one film, not several.",
+    "creator": "Test Studio",
+    "date": "1943",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "same_film_mixed_originals.mp4", "format": "h.264", "length": "640.47", "original": "same_film_mixed_originals.mpeg" },
+    { "name": "same_film_mixed_originals_512kb.mp4", "format": "512Kb MPEG4", "length": "640.54", "original": "same_film_mixed_originals.mpeg" },
+    { "name": "same_film_mixed_originals_edit.mp4", "format": "HiRes MPEG4", "length": "640.30" }
+  ]
+}

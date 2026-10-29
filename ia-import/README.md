@@ -30,6 +30,30 @@ every member from `https://archive.org/metadata/{identifier}`, caches it
 locally, and writes `catalog.json` + `schedule.json` in the current
 directory, plus a human-readable report on stdout.
 
+### Fetching a real list
+
+This tool imports from a *local JSON file* -- it never fetches the list
+itself, only per-item metadata. An IA list page (e.g.
+`https://archive.org/details/@someuser/lists/1/some-list-name`) is a JS
+app with no visible "export" button, but the JSON it renders from is
+public at a predictable URL: swap `details` for `services/users` and drop
+the trailing slug, i.e.
+
+```text
+https://archive.org/details/@someuser/lists/<id>/<slug>
+                          ↓
+https://archive.org/services/users/@someuser/lists/<id>
+```
+
+```sh
+curl -s "https://archive.org/services/users/@someuser/lists/1" -o my-list.json
+php ia-import.php my-list.json --slot=30
+```
+
+This only works for a public list (`is_private: false`); a private list
+needs the owner's logged-in session cookies, which this tool does not
+handle.
+
 ### Running without live network access
 
 Every HTTP fetch in `ArchiveMetadataClient` goes through an injectable
