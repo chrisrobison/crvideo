@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Watch</title>
+<style>
+:root{color-scheme:dark;--accent:#ffcc33;--muted:#a3adbf;--live:#ff4b4b}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#000;color:#fff;font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow:hidden}
+body.idle{cursor:none}
+button{font:inherit;color:inherit;border:0;cursor:pointer}
+[hidden]{display:none!important}
+
+video{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+
+.slate{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px;
+  background:radial-gradient(circle at 50% 40%,#18213a,#020306 70%)}
+.slate img{max-width:min(320px,40vw);max-height:30vh}
+.slate .msg{font-size:clamp(20px,3vw,34px);font-weight:700}
+.slate .up{color:var(--muted);font-size:clamp(15px,1.8vw,20px)}
+.slate .up b{color:#fff}
+
+.bug{position:fixed;top:clamp(12px,3vh,32px);right:clamp(12px,3vw,40px);height:clamp(28px,6vh,64px);opacity:.55;pointer-events:none}
+
+.osd{position:fixed;top:clamp(12px,3vh,32px);left:clamp(12px,3vw,40px);font-size:clamp(36px,7vh,72px);font-weight:800;color:var(--accent);
+  text-shadow:0 2px 8px rgba(0,0,0,.8);font-variant-numeric:tabular-nums;transition:opacity .3s;pointer-events:none}
+
+.lower{position:fixed;left:0;right:0;bottom:0;padding:60px clamp(16px,4vw,56px) clamp(20px,5vh,48px);
+  background:linear-gradient(transparent,rgba(0,0,0,.85) 55%);transition:opacity .3s;pointer-events:none}
+.lower.off{opacity:0}
+.lower .ch{display:flex;align-items:center;gap:10px;color:var(--muted);font-weight:700}
+.lower .ch .num{color:var(--accent);font-size:20px}
+.lower .ch img{height:26px}
+.lower .ch .live{background:var(--live);color:#fff;font-size:11px;letter-spacing:.08em;padding:2px 6px;border-radius:3px}
+.lower h1{margin:6px 0 4px;font-size:clamp(24px,4vw,44px);line-height:1.1}
+.lower .sub{color:var(--muted);font-variant-numeric:tabular-nums}
+.lower .sub b{color:#fff}
+.lower .guide{pointer-events:auto;color:var(--muted);text-decoration:none;font-size:14px;display:inline-block;margin-top:10px}
+.lower .guide:hover{color:#fff}
+
+.hint{position:fixed;left:50%;bottom:clamp(110px,22vh,200px);transform:translateX(-50%);display:flex;align-items:center;gap:10px;
+  background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:12px 20px;font-weight:700;white-space:nowrap;
+  box-shadow:0 6px 24px rgba(0,0,0,.5)}
+.hint svg{width:22px;height:22px;flex:none}
+@media (max-width:520px){.hint{white-space:normal;text-align:center;width:calc(100% - 32px)}}
+
+.spinner{position:fixed;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;border:4px solid rgba(255,255,255,.2);border-top-color:#fff;animation:spin 1s linear infinite;pointer-events:none}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+.fatal{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--muted);text-align:center;padding:24px}
+.fatal a{color:var(--accent)}
+</style>
+</head>
+<body>
+<video id="screen" muted playsinline autoplay></video>
+
+<div class="slate" id="slate" hidden>
+  <img id="slateLogo" alt="">
+  <div class="msg" id="slateMsg">We'll be right back</div>
+  <div class="up" id="slateUp"></div>
+</div>
+
+<img class="bug" id="bug" alt="" hidden>
+<div class="osd" id="osd" hidden></div>
+<div class="spinner" id="spinner" hidden></div>
+
+<div class="lower off" id="lower">
+  <div class="ch"><span class="num" id="lNum"></span><img id="lLogo" alt="" hidden><span id="lName"></span><span class="live">LIVE</span></div>
+  <h1 id="lTitle"></h1>
+  <div class="sub" id="lSub"></div>
+  <a class="guide" href="./">‹ Channel guide</a>
+</div>
+
+<button class="hint" id="hint" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M11 5 6 9H2v6h4l5 4z"/><path d="m23 9-6 6"/><path d="m17 9 6 6"/>
+  </svg>
+  <span id="hintText">Click for sound and full screen</span>
+</button>
+
+<div class="fatal" id="fatal" hidden></div>
+
+<script type="module">
+import {
+  CHANNEL_ID, listChannels, loadChannel, nextProgram, now, syncClock, clock, minutesLeft, BroadcastPlayer,
+} from "./broadcast.js";
+
+const $ = (id) => document.getElementById(id);
+const video = $("screen");
+let channel = null;
+let lineup = null;
+let infoTimer = 0;
+let idleTimer = 0;
+let osdTimer = 0;
+
+const player = new BroadcastPlayer(video, { onAiring, onState });
+
+function onAiring(airing) {
+  document.title = channel ? `${channel.name} · ${airing.mediaUrl ? airing.title : "Station break"}` : "Watch";
+  renderInfo();
+  if (airing.mediaUrl) showInfo(7000);
+}
+
+function onState(state, airing) {
+  const slate = state === "slate" || state === "error" || !airing?.mediaUrl;
+  $("slate").hidden = !slate;
+  $("slateMsg").textContent = state === "error" ? "Signal lost, reconnecting…" : "We'll be right back";
+  $("spinner").hidden = !(state === "loading" || state === "buffering");
+  if (state === "blocked") {
+    $("hintText").textContent = "Click to start watching";
+    $("hint").hidden = false;
+  }
+  renderInfo();
+}
+
+function renderInfo() {
+  const a = player.airing;
+  if (!channel || !a) return;
+  const t = now();
+  const next = nextProgram(channel.timeline, t);
+  $("lTitle").textContent = a.mediaUrl ? a.title : "Station break";
+  const sub = $("lSub");
+  sub.replaceChildren(`${clock(a.startsAt)} – ${clock(a.endsAt)} · ${minutesLeft(a.endsAt - t)} left`);
+  if (next) sub.append("  ·  Next: ", Object.assign(document.createElement("b"), { textContent: next.title }), ` at ${clock(next.startsAt)}`);
+  const up = $("slateUp");
+  up.replaceChildren();
+  if (next) {
+    const wait = Math.max(0, Math.round(next.startsAt - t));
+    up.append("Up next: ", Object.assign(document.createElement("b"), { textContent: next.title }),
+      wait < 600 ? ` in ${Math.floor(wait / 60)}:${String(wait % 60).padStart(2, "0")}` : ` at ${clock(next.startsAt)}`);
+  }
+}
+
+function showInfo(ms = 4000) {
+  $("lower").classList.remove("off");
+  clearTimeout(infoTimer);
+  infoTimer = setTimeout(() => $("lower").classList.add("off"), ms);
+}
+
+function flashOsd(text, ms = 3000) {
+  $("osd").textContent = text;
+  $("osd").hidden = false;
+  clearTimeout(osdTimer);
+  osdTimer = setTimeout(() => { $("osd").hidden = true; }, ms);
+}
+
+function fatal(message) {
+  const box = $("fatal");
+  box.replaceChildren(Object.assign(document.createElement("div"), { textContent: message }),
+    Object.assign(document.createElement("a"), { href: "./", textContent: "Back to the channel guide" }));
+  box.hidden = false;
+}
+
+async function tune(id) {
+  let next;
+  try {
+    next = await loadChannel(id);
+  } catch (err) {
+    console.error(err);
+    if (!channel) fatal(`Channel "${id}" is off the air.`);
+    return;
+  }
+  channel = next;
+  history.replaceState(null, "", `?ch=${encodeURIComponent(id)}`);
+  for (const img of [$("bug"), $("slateLogo"), $("lLogo")]) {
+    img.hidden = !channel.logo;
+    if (channel.logo) img.src = channel.logo;
+  }
+  $("lNum").textContent = channel.number ?? "";
+  $("lName").textContent = channel.name;
+  if (channel.number != null) flashOsd(String(channel.number));
+  player.setTimeline(channel.timeline);
+}
+
+// ---------- sound + full screen ----------
+// The page starts muted because browsers only allow muted autoplay. The
+// first click (or key) turns sound on and goes full screen; playback never
+// stops or restarts for it.
+
+const isFullscreen = () => !!document.fullscreenElement;
+function enterFullscreen() {
+  const root = document.documentElement;
+  if (!isFullscreen() && root.requestFullscreen) root.requestFullscreen({ navigationUI: "hide" }).catch(() => {});
+}
+function toggleFullscreen() {
+  if (isFullscreen()) document.exitFullscreen().catch(() => {});
+  else enterFullscreen();
+}
+
+let engaged = false;
+function engage() {
+  if (player.state === "blocked") player.resume();
+  video.muted = false;
+  video.volume = 1;
+  if (!engaged) enterFullscreen();
+  engaged = true;
+}
+
+function updateHint() {
+  if (player.state === "blocked") return;
+  $("hintText").textContent = "Click for sound and full screen";
+  $("hint").hidden = !video.muted;
+}
+video.addEventListener("volumechange", updateHint);
+
+document.addEventListener("click", (e) => {
+  if (e.target.closest("a")) return;
+  const wasEngaged = engaged && !video.muted;
+  engage();
+  updateHint();
+  if (wasEngaged) showInfo();
+});
+document.addEventListener("dblclick", (e) => { if (!e.target.closest("a")) toggleFullscreen(); });
+
+// ---------- remote control ----------
+
+async function surf(step) {
+  try { lineup ??= await listChannels(); } catch { return; }
+  if (!lineup.length) return;
+  const i = lineup.findIndex((c) => c.id === channel?.id);
+  const next = lineup[(Math.max(i, 0) + step + lineup.length) % lineup.length];
+  if (next && next.id !== channel?.id) tune(next.id);
+}
+
+let dialed = "";
+let dialTimer = 0;
+function dial(digit) {
+  dialed = (dialed + digit).slice(-4);
+  flashOsd(`${dialed}-`, 2000);
+  clearTimeout(dialTimer);
+  dialTimer = setTimeout(async () => {
+    const number = Number(dialed);
+    dialed = "";
+    try { lineup ??= await listChannels(); } catch { return; }
+    const match = lineup.find((c) => Number(c.number) === number);
+    if (match) tune(match.id);
+    else flashOsd(`${number} —`, 1500);
+  }, 1300);
+}
+
+addEventListener("keydown", (e) => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const key = e.key;
+  if (key === "f" || key === "F") { toggleFullscreen(); engaged = true; }
+  else if (key === "m" || key === "M") { if (player.state === "blocked") player.resume(); video.muted = !video.muted; }
+  else if (key === "i" || key === "I" || key === "Enter" || key === " ") { e.preventDefault(); if (!engaged) engage(); showInfo(); }
+  else if (key === "ArrowUp" || key === "PageUp" || key === "+") { e.preventDefault(); surf(1); }
+  else if (key === "ArrowDown" || key === "PageDown" || key === "-") { e.preventDefault(); surf(-1); }
+  else if (/^[0-9]$/.test(key)) dial(key);
+  else return;
+  updateHint();
+});
+
+function wake() {
+  document.body.classList.remove("idle");
+  clearTimeout(idleTimer);
+  idleTimer = setTimeout(() => document.body.classList.add("idle"), 3000);
+}
+addEventListener("mousemove", () => { wake(); showInfo(3000); });
+wake();
+
+// ---------- boot ----------
+
+const id = new URLSearchParams(location.search).get("ch");
+if (!CHANNEL_ID.test(id || "")) {
+  fatal("No channel selected.");
+} else {
+  await Promise.race([syncClock(), new Promise((r) => setTimeout(r, 1500))]);
+  await tune(id);
+  player.start();
+  updateHint();
+  setInterval(renderInfo, 1000);
+}
+</script>
+</body>
+</html>
