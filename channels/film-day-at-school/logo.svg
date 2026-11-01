@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80">
+  <rect x="2" y="2" width="116" height="76" rx="10" fill="#f2c94c"/>
+  <rect x="10" y="10" width="100" height="60" rx="4" fill="#1d1d1f"/>
+  <g fill="#f2c94c">
+    <rect x="15" y="13" width="6" height="4" rx="1"/><rect x="27" y="13" width="6" height="4" rx="1"/>
+    <rect x="39" y="13" width="6" height="4" rx="1"/><rect x="51" y="13" width="6" height="4" rx="1"/>
+    <rect x="63" y="13" width="6" height="4" rx="1"/><rect x="75" y="13" width="6" height="4" rx="1"/>
+    <rect x="87" y="13" width="6" height="4" rx="1"/><rect x="99" y="13" width="6" height="4" rx="1"/>
+    <rect x="15" y="63" width="6" height="4" rx="1"/><rect x="27" y="63" width="6" height="4" rx="1"/>
+    <rect x="39" y="63" width="6" height="4" rx="1"/><rect x="51" y="63" width="6" height="4" rx="1"/>
+    <rect x="63" y="63" width="6" height="4" rx="1"/><rect x="75" y="63" width="6" height="4" rx="1"/>
+    <rect x="87" y="63" width="6" height="4" rx="1"/><rect x="99" y="63" width="6" height="4" rx="1"/>
+  </g>
+  <text x="60" y="41" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="18" fill="#f2c94c" text-anchor="middle">FILM DAY</text>
+  <text x="60" y="55" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="9" letter-spacing="2.4" fill="#ffffff" text-anchor="middle">AT SCHOOL</text>
+</svg>

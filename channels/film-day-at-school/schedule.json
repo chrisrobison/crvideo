@@ -1,0 +1,2702 @@
+{
+    "schema_version": 1,
+    "channel": "Film Day at School",
+    "slot_duration": 1800,
+    "strategy": "balanced",
+    "generated_at": "2026-10-31T03:58:27+00:00",
+    "blocks": [
+        {
+            "block": 1,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1708.81,
+            "remaining": 91.19,
+            "relative_start": 0,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "ShyGuy1947",
+                    "start": 0,
+                    "duration": 815.32,
+                    "title": "Shy Guy",
+                    "media_url": "https://archive.org/download/ShyGuy1947/ShyGuy1947.mp4",
+                    "source_url": "https://archive.org/details/ShyGuy1947"
+                },
+                {
+                    "type": "video",
+                    "id": "WhatAbou1955",
+                    "start": 815.32,
+                    "duration": 687.42,
+                    "title": "What About Juvenile Delinquency?",
+                    "media_url": "https://archive.org/download/WhatAbou1955/WhatAbou1955.mp4",
+                    "source_url": "https://archive.org/details/WhatAbou1955"
+                },
+                {
+                    "type": "video",
+                    "id": "Consumin1967",
+                    "start": 1502.74,
+                    "duration": 206.07,
+                    "title": "Consuming Women (Women as Consumers)",
+                    "media_url": "https://archive.org/download/Consumin1967/Consumin1967.mp4",
+                    "source_url": "https://archive.org/details/Consumin1967"
+                },
+                {
+                    "type": "gap",
+                    "start": 1708.81,
+                    "duration": 91.19
+                }
+            ]
+        },
+        {
+            "block": 2,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1689.56,
+            "remaining": 110.44,
+            "relative_start": 1800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Conquerb1943",
+                    "start": 0,
+                    "duration": 640.47,
+                    "title": "Conquer by the Clock",
+                    "media_url": "https://archive.org/download/Conquerb1943/Conquerb1943.mp4",
+                    "source_url": "https://archive.org/details/Conquerb1943"
+                },
+                {
+                    "type": "video",
+                    "id": "0022_Dont_Be_a_Sucker_22_33_53_00",
+                    "start": 640.47,
+                    "duration": 1049.09,
+                    "title": "Don't Be a Sucker",
+                    "media_url": "https://archive.org/download/0022_Dont_Be_a_Sucker_22_33_53_00/0022_Dont_Be_a_Sucker_22_33_53_00.mp4",
+                    "source_url": "https://archive.org/details/0022_Dont_Be_a_Sucker_22_33_53_00"
+                },
+                {
+                    "type": "gap",
+                    "start": 1689.56,
+                    "duration": 110.44
+                }
+            ]
+        },
+        {
+            "block": 3,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1718.79,
+            "remaining": 81.21,
+            "relative_start": 3600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0767_Incredible_Machine_The_20_26_47_00",
+                    "start": 0,
+                    "duration": 899.07,
+                    "title": "Incredible Machine, The",
+                    "media_url": "https://archive.org/download/0767_Incredible_Machine_The_20_26_47_00/0767_Incredible_Machine_The_20_26_47_00_3mb.mp4",
+                    "source_url": "https://archive.org/details/0767_Incredible_Machine_The_20_26_47_00"
+                },
+                {
+                    "type": "video",
+                    "id": "Aluminum1956",
+                    "start": 899.07,
+                    "duration": 819.72,
+                    "title": "Aluminum on the March (Part I)",
+                    "media_url": "https://archive.org/download/Aluminum1956/Aluminum1956.mp4",
+                    "source_url": "https://archive.org/details/Aluminum1956"
+                },
+                {
+                    "type": "gap",
+                    "start": 1718.79,
+                    "duration": 81.21
+                }
+            ]
+        },
+        {
+            "block": 4,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1615.63,
+            "remaining": 184.37,
+            "relative_start": 5400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "200923_Marijuana_Man",
+                    "start": 0,
+                    "duration": 1615.63,
+                    "title": "Marijuana Man",
+                    "media_url": "https://archive.org/download/200923_Marijuana_Man/200923_Marijuana_Man_master.intros.mp4",
+                    "source_url": "https://archive.org/details/200923_Marijuana_Man"
+                },
+                {
+                    "type": "gap",
+                    "start": 1615.63,
+                    "duration": 184.37
+                }
+            ]
+        },
+        {
+            "block": 5,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1699.31,
+            "remaining": 100.69,
+            "relative_start": 7200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "JoanAvoi1947",
+                    "start": 0,
+                    "duration": 625.39,
+                    "title": "Joan Avoids a Cold",
+                    "media_url": "https://archive.org/download/JoanAvoi1947/JoanAvoi1947.mp4",
+                    "source_url": "https://archive.org/details/JoanAvoi1947"
+                },
+                {
+                    "type": "video",
+                    "id": "MasterHa1936",
+                    "start": 625.39,
+                    "duration": 296.1,
+                    "title": "Master Hands (Part I)",
+                    "media_url": "https://archive.org/download/MasterHa1936/MasterHa1936.mp4",
+                    "source_url": "https://archive.org/details/MasterHa1936"
+                },
+                {
+                    "type": "video",
+                    "id": "0016_Alcohol_and_the_Human_Body_16_00_36_00",
+                    "start": 921.49,
+                    "duration": 777.82,
+                    "title": "Alcohol and the Human Body",
+                    "media_url": "https://archive.org/download/0016_Alcohol_and_the_Human_Body_16_00_36_00/0016_Alcohol_and_the_Human_Body_16_00_36_00.mp4",
+                    "source_url": "https://archive.org/details/0016_Alcohol_and_the_Human_Body_16_00_36_00"
+                },
+                {
+                    "type": "gap",
+                    "start": 1699.31,
+                    "duration": 100.69
+                }
+            ]
+        },
+        {
+            "block": 6,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1699.76,
+            "remaining": 100.24,
+            "relative_start": 9000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HearandN1958",
+                    "start": 0,
+                    "duration": 1084.95,
+                    "title": "Hear and Now",
+                    "media_url": "https://archive.org/download/HearandN1958/HearandN1958.mp4",
+                    "source_url": "https://archive.org/details/HearandN1958"
+                },
+                {
+                    "type": "video",
+                    "id": "bacteria_friend_and_foe",
+                    "start": 1084.95,
+                    "duration": 614.81,
+                    "title": "Bacteria: Friend and Foe",
+                    "media_url": "https://archive.org/download/bacteria_friend_and_foe/bacteria_friend_and_foe.mp4",
+                    "source_url": "https://archive.org/details/bacteria_friend_and_foe"
+                },
+                {
+                    "type": "gap",
+                    "start": 1699.76,
+                    "duration": 100.24
+                }
+            ]
+        },
+        {
+            "block": 7,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1402.2,
+            "remaining": 397.8,
+            "relative_start": 10800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Usingthe1947",
+                    "start": 0,
+                    "duration": 624.32,
+                    "title": "Using the Bank",
+                    "media_url": "https://archive.org/download/Usingthe1947/Usingthe1947.mp4",
+                    "source_url": "https://archive.org/details/Usingthe1947"
+                },
+                {
+                    "type": "video",
+                    "id": "HowDoYou1950",
+                    "start": 624.32,
+                    "duration": 777.88,
+                    "title": "How Do You Know It's Love?",
+                    "media_url": "https://archive.org/download/HowDoYou1950/HowDoYou1950.mp4",
+                    "source_url": "https://archive.org/details/HowDoYou1950"
+                },
+                {
+                    "type": "gap",
+                    "start": 1402.2,
+                    "duration": 397.8
+                }
+            ]
+        },
+        {
+            "block": 8,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1778.53,
+            "remaining": 21.47,
+            "relative_start": 12600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Personal1950",
+                    "start": 0,
+                    "duration": 897.1,
+                    "title": "Personal Hygiene (Part I)",
+                    "media_url": "https://archive.org/download/Personal1950/Personal1950.mp4",
+                    "source_url": "https://archive.org/details/Personal1950"
+                },
+                {
+                    "type": "video",
+                    "id": "201576_The_Big_Bounce",
+                    "start": 897.1,
+                    "duration": 881.43,
+                    "title": "The Big Bounce",
+                    "media_url": "https://archive.org/download/201576_The_Big_Bounce/201576_The_Big_Bounce_master.intros.mp4",
+                    "source_url": "https://archive.org/details/201576_The_Big_Bounce"
+                },
+                {
+                    "type": "gap",
+                    "start": 1778.53,
+                    "duration": 21.47
+                }
+            ]
+        },
+        {
+            "block": 9,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1737.7,
+            "remaining": 62.3,
+            "relative_start": 14400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Telegram1956",
+                    "start": 0,
+                    "duration": 1170.07,
+                    "title": "Telegram for America",
+                    "media_url": "https://archive.org/download/Telegram1956/Telegram1956.mp4",
+                    "source_url": "https://archive.org/details/Telegram1956"
+                },
+                {
+                    "type": "video",
+                    "id": "Arteries1941",
+                    "start": 1170.07,
+                    "duration": 567.63,
+                    "title": "Arteries of New York City",
+                    "media_url": "https://archive.org/download/Arteries1941/Arteries1941.mp4",
+                    "source_url": "https://archive.org/details/Arteries1941"
+                },
+                {
+                    "type": "gap",
+                    "start": 1737.7,
+                    "duration": 62.3
+                }
+            ]
+        },
+        {
+            "block": 10,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1294.03,
+            "remaining": 505.97,
+            "relative_start": 16200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "WhattoDo1950",
+                    "start": 0,
+                    "duration": 645.95,
+                    "title": "What to Do on a Date",
+                    "media_url": "https://archive.org/download/WhattoDo1950/WhattoDo1950.mp4",
+                    "source_url": "https://archive.org/details/WhattoDo1950"
+                },
+                {
+                    "type": "video",
+                    "id": "Preventi1940",
+                    "start": 645.95,
+                    "duration": 648.08,
+                    "title": "Preventing the Spread of Disease",
+                    "media_url": "https://archive.org/download/Preventi1940/Preventi1940.mp4",
+                    "source_url": "https://archive.org/details/Preventi1940"
+                },
+                {
+                    "type": "gap",
+                    "start": 1294.03,
+                    "duration": 505.97
+                }
+            ]
+        },
+        {
+            "block": 11,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1294.19,
+            "remaining": 505.81,
+            "relative_start": 18000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowtoBeW1949",
+                    "start": 0,
+                    "duration": 640.97,
+                    "title": "How to Be Well Groomed",
+                    "media_url": "https://archive.org/download/HowtoBeW1949/HowtoBeW1949.mp4",
+                    "source_url": "https://archive.org/details/HowtoBeW1949"
+                },
+                {
+                    "type": "video",
+                    "id": "Nationat1951",
+                    "start": 640.97,
+                    "duration": 653.22,
+                    "title": "Nation at Your Fingertips, The",
+                    "media_url": "https://archive.org/download/Nationat1951/Nationat1951.mp4",
+                    "source_url": "https://archive.org/details/Nationat1951"
+                },
+                {
+                    "type": "gap",
+                    "start": 1294.19,
+                    "duration": 505.81
+                }
+            ]
+        },
+        {
+            "block": 12,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1630.48,
+            "remaining": 169.52,
+            "relative_start": 19800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "6007_Trip_to_the_Moon_A_08_38_20_04",
+                    "start": 0,
+                    "duration": 550.4,
+                    "title": "Trip to the Moon, A",
+                    "media_url": "https://archive.org/download/6007_Trip_to_the_Moon_A_08_38_20_04/6007_Trip_to_the_Moon_A_08_38_20_04.mp4",
+                    "source_url": "https://archive.org/details/6007_Trip_to_the_Moon_A_08_38_20_04"
+                },
+                {
+                    "type": "video",
+                    "id": "SocialCl1957",
+                    "start": 550.4,
+                    "duration": 889.72,
+                    "title": "Social Class in America",
+                    "media_url": "https://archive.org/download/SocialCl1957/SocialCl1957.mp4",
+                    "source_url": "https://archive.org/details/SocialCl1957"
+                },
+                {
+                    "type": "video",
+                    "id": "American1956_4",
+                    "start": 1440.12,
+                    "duration": 190.36,
+                    "title": "American Engineer (Part IV)",
+                    "media_url": "https://archive.org/download/American1956_4/American1956_4.mp4",
+                    "source_url": "https://archive.org/details/American1956_4"
+                },
+                {
+                    "type": "gap",
+                    "start": 1630.48,
+                    "duration": 169.52
+                }
+            ]
+        },
+        {
+            "block": 13,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1662.26,
+            "remaining": 137.74,
+            "relative_start": 21600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "crimes_of_carelessness",
+                    "start": 0,
+                    "duration": 588.82,
+                    "title": "Crimes of Carelessness",
+                    "media_url": "https://archive.org/download/crimes_of_carelessness/crimes_of_carelessness.mp4",
+                    "source_url": "https://archive.org/details/crimes_of_carelessness"
+                },
+                {
+                    "type": "video",
+                    "id": "Photogra1946",
+                    "start": 588.82,
+                    "duration": 583.52,
+                    "title": "Photography",
+                    "media_url": "https://archive.org/download/Photogra1946/Photogra1946.mp4",
+                    "source_url": "https://archive.org/details/Photogra1946"
+                },
+                {
+                    "type": "video",
+                    "id": "Technico1949",
+                    "start": 1172.34,
+                    "duration": 489.92,
+                    "title": "Technicolor for Industrial Films",
+                    "media_url": "https://archive.org/download/Technico1949/Technico1949.mp4",
+                    "source_url": "https://archive.org/details/Technico1949"
+                },
+                {
+                    "type": "gap",
+                    "start": 1662.26,
+                    "duration": 137.74
+                }
+            ]
+        },
+        {
+            "block": 14,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1777.75,
+            "remaining": 22.25,
+            "relative_start": 23400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowMuchA1958",
+                    "start": 0,
+                    "duration": 1188.76,
+                    "title": "How Much Affection?",
+                    "media_url": "https://archive.org/download/HowMuchA1958/HowMuchA1958.mp4",
+                    "source_url": "https://archive.org/details/HowMuchA1958"
+                },
+                {
+                    "type": "video",
+                    "id": "FamilyLi1949",
+                    "start": 1188.76,
+                    "duration": 588.99,
+                    "title": "Family Life",
+                    "media_url": "https://archive.org/download/FamilyLi1949/FamilyLi1949.mp4",
+                    "source_url": "https://archive.org/details/FamilyLi1949"
+                },
+                {
+                    "type": "gap",
+                    "start": 1777.75,
+                    "duration": 22.25
+                }
+            ]
+        },
+        {
+            "block": 15,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1485.55,
+            "remaining": 314.45,
+            "relative_start": 25200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "GeneralH1928",
+                    "start": 0,
+                    "duration": 382.18,
+                    "title": "General Health Habits",
+                    "media_url": "https://archive.org/download/GeneralH1928/GeneralH1928.mp4",
+                    "source_url": "https://archive.org/details/GeneralH1928"
+                },
+                {
+                    "type": "video",
+                    "id": "LivingSt1958",
+                    "start": 382.18,
+                    "duration": 462.43,
+                    "title": "Living Stereo",
+                    "media_url": "https://archive.org/download/LivingSt1958/LivingSt1958.mp4",
+                    "source_url": "https://archive.org/details/LivingSt1958"
+                },
+                {
+                    "type": "video",
+                    "id": "Printing1947",
+                    "start": 844.61,
+                    "duration": 640.94,
+                    "title": "Printing",
+                    "media_url": "https://archive.org/download/Printing1947/Printing1947.mp4",
+                    "source_url": "https://archive.org/details/Printing1947"
+                },
+                {
+                    "type": "gap",
+                    "start": 1485.55,
+                    "duration": 314.45
+                }
+            ]
+        },
+        {
+            "block": 16,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1527.16,
+            "remaining": 272.84,
+            "relative_start": 27000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "MentalHe1952",
+                    "start": 0,
+                    "duration": 732,
+                    "title": "Mental Health: Keeping Mentally Fit",
+                    "media_url": "https://archive.org/download/MentalHe1952/MentalHe1952.mp4",
+                    "source_url": "https://archive.org/details/MentalHe1952"
+                },
+                {
+                    "type": "video",
+                    "id": "OfficeEt1950",
+                    "start": 732,
+                    "duration": 795.16,
+                    "title": "Office Etiquette",
+                    "media_url": "https://archive.org/download/OfficeEt1950/OfficeEt1950.mp4",
+                    "source_url": "https://archive.org/details/OfficeEt1950"
+                },
+                {
+                    "type": "gap",
+                    "start": 1527.16,
+                    "duration": 272.84
+                }
+            ]
+        },
+        {
+            "block": 17,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1561.99,
+            "remaining": 238.01,
+            "relative_start": 28800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Story_of_Television_The",
+                    "start": 0,
+                    "duration": 1561.99,
+                    "title": "Story of Television, The",
+                    "media_url": "https://archive.org/download/Story_of_Television_The/0829_Story_of_Television_The_11_00_55_00_3mb.mp4",
+                    "source_url": "https://archive.org/details/Story_of_Television_The"
+                },
+                {
+                    "type": "gap",
+                    "start": 1561.99,
+                    "duration": 238.01
+                }
+            ]
+        },
+        {
+            "block": 18,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1725.76,
+            "remaining": 74.24,
+            "relative_start": 30600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowtoGoP1954",
+                    "start": 0,
+                    "duration": 640.54,
+                    "title": "How to Go Places",
+                    "media_url": "https://archive.org/download/HowtoGoP1954/HowtoGoP1954.mp4",
+                    "source_url": "https://archive.org/details/HowtoGoP1954"
+                },
+                {
+                    "type": "video",
+                    "id": "WhiteMag1940",
+                    "start": 640.54,
+                    "duration": 456.12,
+                    "title": "White Magic",
+                    "media_url": "https://archive.org/download/WhiteMag1940/WhiteMag1940.mp4",
+                    "source_url": "https://archive.org/details/WhiteMag1940"
+                },
+                {
+                    "type": "video",
+                    "id": "Benefits1950",
+                    "start": 1096.66,
+                    "duration": 629.1,
+                    "title": "Benefits of Looking Ahead, The",
+                    "media_url": "https://archive.org/download/Benefits1950/Benefits1950.mp4",
+                    "source_url": "https://archive.org/details/Benefits1950"
+                },
+                {
+                    "type": "gap",
+                    "start": 1725.76,
+                    "duration": 74.24
+                }
+            ]
+        },
+        {
+            "block": 19,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1587.88,
+            "remaining": 212.12,
+            "relative_start": 32400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "IWanttoB1941",
+                    "start": 0,
+                    "duration": 951.08,
+                    "title": "I Want to Be a Secretary",
+                    "media_url": "https://archive.org/download/IWanttoB1941/IWanttoB1941.mp4",
+                    "source_url": "https://archive.org/details/IWanttoB1941"
+                },
+                {
+                    "type": "video",
+                    "id": "200374_Youre_Growing_Up",
+                    "start": 951.08,
+                    "duration": 636.8,
+                    "title": "You're Growing Up",
+                    "media_url": "https://archive.org/download/200374_Youre_Growing_Up/200374_Youre_Growing_Up_master.intros.mp4",
+                    "source_url": "https://archive.org/details/200374_Youre_Growing_Up"
+                },
+                {
+                    "type": "gap",
+                    "start": 1587.88,
+                    "duration": 212.12
+                }
+            ]
+        },
+        {
+            "block": 20,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1338.24,
+            "remaining": 461.76,
+            "relative_start": 34200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "AskMeDon1961",
+                    "start": 0,
+                    "duration": 1338.24,
+                    "title": "Ask Me, Don't Tell Me",
+                    "media_url": "https://archive.org/download/AskMeDon1961/AskMeDon1961.mp4",
+                    "source_url": "https://archive.org/details/AskMeDon1961"
+                },
+                {
+                    "type": "gap",
+                    "start": 1338.24,
+                    "duration": 461.76
+                }
+            ]
+        },
+        {
+            "block": 21,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1777.58,
+            "remaining": 22.42,
+            "relative_start": 36000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Telephon1946",
+                    "start": 0,
+                    "duration": 634.7,
+                    "title": "Telephone and Telegraph",
+                    "media_url": "https://archive.org/download/Telephon1946/Telephon1946.mp4",
+                    "source_url": "https://archive.org/details/Telephon1946"
+                },
+                {
+                    "type": "video",
+                    "id": "Wheelsof1950",
+                    "start": 634.7,
+                    "duration": 1142.88,
+                    "title": "Wheels of Progress",
+                    "media_url": "https://archive.org/download/Wheelsof1950/Wheelsof1950.mp4",
+                    "source_url": "https://archive.org/details/Wheelsof1950"
+                },
+                {
+                    "type": "gap",
+                    "start": 1777.58,
+                    "duration": 22.42
+                }
+            ]
+        },
+        {
+            "block": 22,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1758.46,
+            "remaining": 41.54,
+            "relative_start": 37800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Typesett1960",
+                    "start": 0,
+                    "duration": 1071.34,
+                    "title": "Typesetting: Linotype (Part I)",
+                    "media_url": "https://archive.org/download/Typesett1960/Typesett1960.mp4",
+                    "source_url": "https://archive.org/details/Typesett1960"
+                },
+                {
+                    "type": "video",
+                    "id": "OfficeCo1952",
+                    "start": 1071.34,
+                    "duration": 687.12,
+                    "title": "Office Courtesy: Meeting the Public",
+                    "media_url": "https://archive.org/download/OfficeCo1952/OfficeCo1952.mp4",
+                    "source_url": "https://archive.org/details/OfficeCo1952"
+                },
+                {
+                    "type": "gap",
+                    "start": 1758.46,
+                    "duration": 41.54
+                }
+            ]
+        },
+        {
+            "block": 23,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1443.92,
+            "remaining": 356.08,
+            "relative_start": 39600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "ActYourA1949",
+                    "start": 0,
+                    "duration": 801.74,
+                    "title": "Act Your Age",
+                    "media_url": "https://archive.org/download/ActYourA1949/ActYourA1949.mp4",
+                    "source_url": "https://archive.org/details/ActYourA1949"
+                },
+                {
+                    "type": "video",
+                    "id": "Woodwork1940",
+                    "start": 801.74,
+                    "duration": 642.18,
+                    "title": "Woodworker, The",
+                    "media_url": "https://archive.org/download/Woodwork1940/Woodwork1940.mp4",
+                    "source_url": "https://archive.org/details/Woodwork1940"
+                },
+                {
+                    "type": "gap",
+                    "start": 1443.92,
+                    "duration": 356.08
+                }
+            ]
+        },
+        {
+            "block": 24,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1686.92,
+            "remaining": 113.08,
+            "relative_start": 41400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Accordin1952",
+                    "start": 0,
+                    "duration": 1077.88,
+                    "title": "According to Plan: The Story of Modern Sidewalls for the Homes of America",
+                    "media_url": "https://archive.org/download/Accordin1952/Accordin1952.mp4",
+                    "source_url": "https://archive.org/details/Accordin1952"
+                },
+                {
+                    "type": "video",
+                    "id": "0831_Roscoes_Rules_00_31_48_00",
+                    "start": 1077.88,
+                    "duration": 609.04,
+                    "title": "Roscoe's Rules",
+                    "media_url": "https://archive.org/download/0831_Roscoes_Rules_00_31_48_00/0831_Roscoes_Rules_00_31_48_00_3mb.mp4",
+                    "source_url": "https://archive.org/details/0831_Roscoes_Rules_00_31_48_00"
+                },
+                {
+                    "type": "gap",
+                    "start": 1686.92,
+                    "duration": 113.08
+                }
+            ]
+        },
+        {
+            "block": 25,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1790.19,
+            "remaining": 9.81,
+            "relative_start": 43200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "DinnerPa1945",
+                    "start": 0,
+                    "duration": 966.1,
+                    "title": "Dinner Party",
+                    "media_url": "https://archive.org/download/DinnerPa1945/DinnerPa1945.mp4",
+                    "source_url": "https://archive.org/details/DinnerPa1945"
+                },
+                {
+                    "type": "video",
+                    "id": "Maintain1947",
+                    "start": 966.1,
+                    "duration": 824.09,
+                    "title": "Maintaining Classroom Discipline",
+                    "media_url": "https://archive.org/download/Maintain1947/Maintain1947.mp4",
+                    "source_url": "https://archive.org/details/Maintain1947"
+                },
+                {
+                    "type": "gap",
+                    "start": 1790.19,
+                    "duration": 9.81
+                }
+            ]
+        },
+        {
+            "block": 26,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1696.76,
+            "remaining": 103.24,
+            "relative_start": 45000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "WhatIsMo1947",
+                    "start": 0,
+                    "duration": 632.8,
+                    "title": "What Is Money?",
+                    "media_url": "https://archive.org/download/WhatIsMo1947/WhatIsMo1947.mp4",
+                    "source_url": "https://archive.org/details/WhatIsMo1947"
+                },
+                {
+                    "type": "video",
+                    "id": "203431_Education_is_Everybodys_Business",
+                    "start": 632.8,
+                    "duration": 1063.96,
+                    "title": "Education is Everybody's Business",
+                    "media_url": "https://archive.org/download/203431_Education_is_Everybodys_Business/203431_Education_is_Everybodys_Business_master.intros.mp4",
+                    "source_url": "https://archive.org/details/203431_Education_is_Everybodys_Business"
+                },
+                {
+                    "type": "gap",
+                    "start": 1696.76,
+                    "duration": 103.24
+                }
+            ]
+        },
+        {
+            "block": 27,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1527.02,
+            "remaining": 272.98,
+            "relative_start": 46800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "ManofAct1955",
+                    "start": 0,
+                    "duration": 809.01,
+                    "title": "Man of Action",
+                    "media_url": "https://archive.org/download/ManofAct1955/ManofAct1955.mp4",
+                    "source_url": "https://archive.org/details/ManofAct1955"
+                },
+                {
+                    "type": "video",
+                    "id": "0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00",
+                    "start": 809.01,
+                    "duration": 718.01,
+                    "title": "Black Widow Spider: Her Life Cycle and Her Enemies",
+                    "media_url": "https://archive.org/download/0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00/0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00_3mb.mp4",
+                    "source_url": "https://archive.org/details/0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00"
+                },
+                {
+                    "type": "gap",
+                    "start": 1527.02,
+                    "duration": 272.98
+                }
+            ]
+        },
+        {
+            "block": 28,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1514.98,
+            "remaining": 285.02,
+            "relative_start": 48600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "long_distance",
+                    "start": 0,
+                    "duration": 878.18,
+                    "title": "Long Distance",
+                    "media_url": "https://archive.org/download/long_distance/long_distance.mp4",
+                    "source_url": "https://archive.org/details/long_distance"
+                },
+                {
+                    "type": "video",
+                    "id": "Supervis1944",
+                    "start": 878.18,
+                    "duration": 636.8,
+                    "title": "Supervising Women Workers",
+                    "media_url": "https://archive.org/download/Supervis1944/Supervis1944.mp4",
+                    "source_url": "https://archive.org/details/Supervis1944"
+                },
+                {
+                    "type": "gap",
+                    "start": 1514.98,
+                    "duration": 285.02
+                }
+            ]
+        },
+        {
+            "block": 29,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1784.78,
+            "remaining": 15.22,
+            "relative_start": 50400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowaWatc1949",
+                    "start": 0,
+                    "duration": 1158.26,
+                    "title": "How a Watch Works",
+                    "media_url": "https://archive.org/download/HowaWatc1949/HowaWatc1949.mp4",
+                    "source_url": "https://archive.org/details/HowaWatc1949"
+                },
+                {
+                    "type": "video",
+                    "id": "electromagnetism",
+                    "start": 1158.26,
+                    "duration": 626.52,
+                    "title": "Electromagnetism",
+                    "media_url": "https://archive.org/download/electromagnetism/electromagnetism.mp4",
+                    "source_url": "https://archive.org/details/electromagnetism"
+                },
+                {
+                    "type": "gap",
+                    "start": 1784.78,
+                    "duration": 15.22
+                }
+            ]
+        },
+        {
+            "block": 30,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1698.22,
+            "remaining": 101.78,
+            "relative_start": 52200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "how_to_buy_meat_1",
+                    "start": 0,
+                    "duration": 1060.42,
+                    "title": "How to Buy Meat  (Part I)",
+                    "media_url": "https://archive.org/download/how_to_buy_meat_1/how_to_buy_meat_1.mp4",
+                    "source_url": "https://archive.org/details/how_to_buy_meat_1"
+                },
+                {
+                    "type": "video",
+                    "id": "Building1948",
+                    "start": 1060.42,
+                    "duration": 637.8,
+                    "title": "Building a Highway",
+                    "media_url": "https://archive.org/download/Building1948/Building1948.mp4",
+                    "source_url": "https://archive.org/details/Building1948"
+                },
+                {
+                    "type": "gap",
+                    "start": 1698.22,
+                    "duration": 101.78
+                }
+            ]
+        },
+        {
+            "block": 31,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1592.49,
+            "remaining": 207.51,
+            "relative_start": 54000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "MotherTa1952",
+                    "start": 0,
+                    "duration": 809.61,
+                    "title": "Mother Takes a Holiday (Part I)",
+                    "media_url": "https://archive.org/download/MotherTa1952/MotherTa1952.mp4",
+                    "source_url": "https://archive.org/details/MotherTa1952"
+                },
+                {
+                    "type": "video",
+                    "id": "YourChan1972",
+                    "start": 809.61,
+                    "duration": 782.88,
+                    "title": "Your Chance to Live: Earthwatch",
+                    "media_url": "https://archive.org/download/YourChan1972/YourChan1972.mp4",
+                    "source_url": "https://archive.org/details/YourChan1972"
+                },
+                {
+                    "type": "gap",
+                    "start": 1592.49,
+                    "duration": 207.51
+                }
+            ]
+        },
+        {
+            "block": 32,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1290.58,
+            "remaining": 509.42,
+            "relative_start": 55800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "StoryofS1930",
+                    "start": 0,
+                    "duration": 624.99,
+                    "title": "Story of Selecting Kosher Meat Products for Their Stores, The",
+                    "media_url": "https://archive.org/download/StoryofS1930/StoryofS1930.mp4",
+                    "source_url": "https://archive.org/details/StoryofS1930"
+                },
+                {
+                    "type": "video",
+                    "id": "0559_Color_Harmony",
+                    "start": 624.99,
+                    "duration": 665.59,
+                    "title": "Color Harmony",
+                    "media_url": "https://archive.org/download/0559_Color_Harmony/0559_Color_Harmony_09_00_59_17_3mb.mp4",
+                    "source_url": "https://archive.org/details/0559_Color_Harmony"
+                },
+                {
+                    "type": "gap",
+                    "start": 1290.58,
+                    "duration": 509.42
+                }
+            ]
+        },
+        {
+            "block": 33,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1636.94,
+            "remaining": 163.06,
+            "relative_start": 57600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "BodyCare1948",
+                    "start": 0,
+                    "duration": 1023.69,
+                    "title": "Body Care and Grooming",
+                    "media_url": "https://archive.org/download/BodyCare1948/BodyCare1948.mp4",
+                    "source_url": "https://archive.org/details/BodyCare1948"
+                },
+                {
+                    "type": "video",
+                    "id": "Libraria1947",
+                    "start": 1023.69,
+                    "duration": 613.25,
+                    "title": "Librarian, The",
+                    "media_url": "https://archive.org/download/Libraria1947/Libraria1947.mp4",
+                    "source_url": "https://archive.org/details/Libraria1947"
+                },
+                {
+                    "type": "gap",
+                    "start": 1636.94,
+                    "duration": 163.06
+                }
+            ]
+        },
+        {
+            "block": 34,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1798.04,
+            "remaining": 1.96,
+            "relative_start": 59400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "principles_of_electricity",
+                    "start": 0,
+                    "duration": 1200.17,
+                    "title": "Principles of Electricity",
+                    "media_url": "https://archive.org/download/principles_of_electricity/principles_of_electricity.mp4",
+                    "source_url": "https://archive.org/details/principles_of_electricity"
+                },
+                {
+                    "type": "video",
+                    "id": "0527_Are_You_Popular_E00020_01_09_07_27",
+                    "start": 1200.17,
+                    "duration": 597.87,
+                    "title": "Are You Popular?",
+                    "media_url": "https://archive.org/download/0527_Are_You_Popular_E00020_01_09_07_27/0527_Are_You_Popular_E00020_01_09_07_27.mp4",
+                    "source_url": "https://archive.org/details/0527_Are_You_Popular_E00020_01_09_07_27"
+                },
+                {
+                    "type": "gap",
+                    "start": 1798.04,
+                    "duration": 1.96
+                }
+            ]
+        },
+        {
+            "block": 35,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1797.5,
+            "remaining": 2.5,
+            "relative_start": 61200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Televisi1961",
+                    "start": 0,
+                    "duration": 346.68,
+                    "title": "Television Remote Control (Tuner)",
+                    "media_url": "https://archive.org/download/Televisi1961/Televisi1961.mp4",
+                    "source_url": "https://archive.org/details/Televisi1961"
+                },
+                {
+                    "type": "video",
+                    "id": "NewsMaga00_2",
+                    "start": 346.68,
+                    "duration": 1450.82,
+                    "title": "News Magazine of the Screen, The (Vol. 2, Issue 9)",
+                    "media_url": "https://archive.org/download/NewsMaga00_2/NewsMaga00_2.mp4",
+                    "source_url": "https://archive.org/details/NewsMaga00_2"
+                },
+                {
+                    "type": "gap",
+                    "start": 1797.5,
+                    "duration": 2.5
+                }
+            ]
+        },
+        {
+            "block": 36,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1796.14,
+            "remaining": 3.86,
+            "relative_start": 63000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Natureof1948",
+                    "start": 0,
+                    "duration": 644.44,
+                    "title": "Nature of Sound, The",
+                    "media_url": "https://archive.org/download/Natureof1948/Natureof1948.mp4",
+                    "source_url": "https://archive.org/details/Natureof1948"
+                },
+                {
+                    "type": "video",
+                    "id": "Pharmaci1946",
+                    "start": 644.44,
+                    "duration": 580.11,
+                    "title": "Pharmacist, The",
+                    "media_url": "https://archive.org/download/Pharmaci1946/Pharmaci1946.mp4",
+                    "source_url": "https://archive.org/details/Pharmaci1946"
+                },
+                {
+                    "type": "video",
+                    "id": "0995_Danger_Women_at_Work_01_15_48_19",
+                    "start": 1224.55,
+                    "duration": 571.59,
+                    "title": "Danger — Women at Work!",
+                    "media_url": "https://archive.org/download/0995_Danger_Women_at_Work_01_15_48_19/0995_Danger_Women_at_Work_01_15_48_19.mp4",
+                    "source_url": "https://archive.org/details/0995_Danger_Women_at_Work_01_15_48_19"
+                },
+                {
+                    "type": "gap",
+                    "start": 1796.14,
+                    "duration": 3.86
+                }
+            ]
+        },
+        {
+            "block": 37,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1546.75,
+            "remaining": 253.25,
+            "relative_start": 64800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "DontTalk1950",
+                    "start": 0,
+                    "duration": 787.92,
+                    "title": "Don't Talk to Strangers",
+                    "media_url": "https://archive.org/download/DontTalk1950/DontTalk1950.mp4",
+                    "source_url": "https://archive.org/details/DontTalk1950"
+                },
+                {
+                    "type": "video",
+                    "id": "Overcomi1950",
+                    "start": 787.92,
+                    "duration": 758.83,
+                    "title": "Overcoming Fear",
+                    "media_url": "https://archive.org/download/Overcomi1950/Overcomi1950.mp4",
+                    "source_url": "https://archive.org/details/Overcomi1950"
+                },
+                {
+                    "type": "gap",
+                    "start": 1546.75,
+                    "duration": 253.25
+                }
+            ]
+        },
+        {
+            "block": 38,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1627.09,
+            "remaining": 172.91,
+            "relative_start": 66600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Heavenly1920",
+                    "start": 0,
+                    "duration": 608.04,
+                    "title": "Heavenly Bodies",
+                    "media_url": "https://archive.org/download/Heavenly1920/Heavenly1920.mp4",
+                    "source_url": "https://archive.org/details/Heavenly1920"
+                },
+                {
+                    "type": "video",
+                    "id": "0661_Opportunities_Unlimited",
+                    "start": 608.04,
+                    "duration": 1019.05,
+                    "title": "Opportunities Unlimited",
+                    "media_url": "https://archive.org/download/0661_Opportunities_Unlimited/0661_Opportunities_Unlimited_10_16_25_00.mp4",
+                    "source_url": "https://archive.org/details/0661_Opportunities_Unlimited"
+                },
+                {
+                    "type": "gap",
+                    "start": 1627.09,
+                    "duration": 172.91
+                }
+            ]
+        },
+        {
+            "block": 39,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1503.83,
+            "remaining": 296.17,
+            "relative_start": 68400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Lifeinth1949",
+                    "start": 0,
+                    "duration": 622.32,
+                    "title": "Life in the Central Valley of California",
+                    "media_url": "https://archive.org/download/Lifeinth1949/Lifeinth1949.mp4",
+                    "source_url": "https://archive.org/details/Lifeinth1949"
+                },
+                {
+                    "type": "video",
+                    "id": "Sentinel1955",
+                    "start": 622.32,
+                    "duration": 881.51,
+                    "title": "Sentinel in the Sky",
+                    "media_url": "https://archive.org/download/Sentinel1955/Sentinel1955.mp4",
+                    "source_url": "https://archive.org/details/Sentinel1955"
+                },
+                {
+                    "type": "gap",
+                    "start": 1503.83,
+                    "duration": 296.17
+                }
+            ]
+        },
+        {
+            "block": 40,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1714.2,
+            "remaining": 85.8,
+            "relative_start": 70200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowYouSe1936",
+                    "start": 0,
+                    "duration": 478.15,
+                    "title": "How You See It",
+                    "media_url": "https://archive.org/download/HowYouSe1936/HowYouSe1936.mp4",
+                    "source_url": "https://archive.org/details/HowYouSe1936"
+                },
+                {
+                    "type": "video",
+                    "id": "our_bill_of_rights",
+                    "start": 478.15,
+                    "duration": 1236.05,
+                    "title": "Our Bill Of Rights",
+                    "media_url": "https://archive.org/download/our_bill_of_rights/our_bill_of_rights.mp4",
+                    "source_url": "https://archive.org/details/our_bill_of_rights"
+                },
+                {
+                    "type": "gap",
+                    "start": 1714.2,
+                    "duration": 85.8
+                }
+            ]
+        },
+        {
+            "block": 41,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1581.95,
+            "remaining": 218.05,
+            "relative_start": 72000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "BetterUs1950",
+                    "start": 0,
+                    "duration": 632.17,
+                    "title": "Better Use of Leisure Time",
+                    "media_url": "https://archive.org/download/BetterUs1950/BetterUs1950.mp4",
+                    "source_url": "https://archive.org/details/BetterUs1950"
+                },
+                {
+                    "type": "video",
+                    "id": "Jealousy1954",
+                    "start": 632.17,
+                    "duration": 949.78,
+                    "title": "Jealousy",
+                    "media_url": "https://archive.org/download/Jealousy1954/Jealousy1954.mp4",
+                    "source_url": "https://archive.org/details/Jealousy1954"
+                },
+                {
+                    "type": "gap",
+                    "start": 1581.95,
+                    "duration": 218.05
+                }
+            ]
+        },
+        {
+            "block": 42,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1799.21,
+            "remaining": 0.79,
+            "relative_start": 73800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "FactsAboutFi",
+                    "start": 0,
+                    "duration": 602.6,
+                    "title": "Facts About Film",
+                    "media_url": "https://archive.org/download/FactsAboutFi/FactsAboutFi.mp4",
+                    "source_url": "https://archive.org/details/FactsAboutFi"
+                },
+                {
+                    "type": "video",
+                    "id": "Boats1938",
+                    "start": 602.6,
+                    "duration": 607.94,
+                    "title": "Boats",
+                    "media_url": "https://archive.org/download/Boats1938/Boats1938.mp4",
+                    "source_url": "https://archive.org/details/Boats1938"
+                },
+                {
+                    "type": "video",
+                    "id": "Philosophy_of_Computing",
+                    "start": 1210.54,
+                    "duration": 588.67,
+                    "title": "Philosophy of Computing",
+                    "media_url": "https://archive.org/download/Philosophy_of_Computing/Philosophy_Of_Computing_master.intros.mp4",
+                    "source_url": "https://archive.org/details/Philosophy_of_Computing"
+                },
+                {
+                    "type": "gap",
+                    "start": 1799.21,
+                    "duration": 0.79
+                }
+            ]
+        },
+        {
+            "block": 43,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1787.25,
+            "remaining": 12.75,
+            "relative_start": 75600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0862_Our_Changing_Family_Life_E00944_14_11_22_23",
+                    "start": 0,
+                    "duration": 360.22,
+                    "title": "Our Changing Family Life",
+                    "media_url": "https://archive.org/download/0862_Our_Changing_Family_Life_E00944_14_11_22_23/0862_Our_Changing_Family_Life_E00944_14_11_22_23.mp4",
+                    "source_url": "https://archive.org/details/0862_Our_Changing_Family_Life_E00944_14_11_22_23"
+                },
+                {
+                    "type": "video",
+                    "id": "WhosBoss1950",
+                    "start": 360.22,
+                    "duration": 938.47,
+                    "title": "Who's Boss?",
+                    "media_url": "https://archive.org/download/WhosBoss1950/WhosBoss1950.mp4",
+                    "source_url": "https://archive.org/details/WhosBoss1950"
+                },
+                {
+                    "type": "video",
+                    "id": "Storyofa1956",
+                    "start": 1298.69,
+                    "duration": 488.56,
+                    "title": "Story of a Star, The",
+                    "media_url": "https://archive.org/download/Storyofa1956/Storyofa1956.mp4",
+                    "source_url": "https://archive.org/details/Storyofa1956"
+                },
+                {
+                    "type": "gap",
+                    "start": 1787.25,
+                    "duration": 12.75
+                }
+            ]
+        },
+        {
+            "block": 44,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1785.91,
+            "remaining": 14.09,
+            "relative_start": 77400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "AirportT1948",
+                    "start": 0,
+                    "duration": 631.4,
+                    "title": "Airport, The",
+                    "media_url": "https://archive.org/download/AirportT1948/AirportT1948.mp4",
+                    "source_url": "https://archive.org/details/AirportT1948"
+                },
+                {
+                    "type": "video",
+                    "id": "ant_city",
+                    "start": 631.4,
+                    "duration": 599.02,
+                    "title": "Ant City",
+                    "media_url": "https://archive.org/download/ant_city/ant_city.mp4",
+                    "source_url": "https://archive.org/details/ant_city"
+                },
+                {
+                    "type": "video",
+                    "id": "Backofth1938",
+                    "start": 1230.42,
+                    "duration": 555.49,
+                    "title": "Back of the Mike",
+                    "media_url": "https://archive.org/download/Backofth1938/Backofth1938.mp4",
+                    "source_url": "https://archive.org/details/Backofth1938"
+                },
+                {
+                    "type": "gap",
+                    "start": 1785.91,
+                    "duration": 14.09
+                }
+            ]
+        },
+        {
+            "block": 45,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1783.46,
+            "remaining": 16.54,
+            "relative_start": 79200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0771_Duck_and_Cover_12_33_20_12",
+                    "start": 0,
+                    "duration": 555.5,
+                    "title": "Duck and Cover",
+                    "media_url": "https://archive.org/download/0771_Duck_and_Cover_12_33_20_12/0771_Duck_and_Cover_12_33_20_12.mp4",
+                    "source_url": "https://archive.org/details/0771_Duck_and_Cover_12_33_20_12"
+                },
+                {
+                    "type": "video",
+                    "id": "ColorHar1956",
+                    "start": 555.5,
+                    "duration": 1227.96,
+                    "title": "Color Harmony for Your Home",
+                    "media_url": "https://archive.org/download/ColorHar1956/ColorHar1956.mp4",
+                    "source_url": "https://archive.org/details/ColorHar1956"
+                },
+                {
+                    "type": "gap",
+                    "start": 1783.46,
+                    "duration": 16.54
+                }
+            ]
+        },
+        {
+            "block": 46,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1297.96,
+            "remaining": 502.04,
+            "relative_start": 81000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowtheEa1940",
+                    "start": 0,
+                    "duration": 698.73,
+                    "title": "How the Ear Functions",
+                    "media_url": "https://archive.org/download/HowtheEa1940/HowtheEa1940.mp4",
+                    "source_url": "https://archive.org/details/HowtheEa1940"
+                },
+                {
+                    "type": "video",
+                    "id": "PlayingT1950",
+                    "start": 698.73,
+                    "duration": 599.23,
+                    "title": "Playing Together",
+                    "media_url": "https://archive.org/download/PlayingT1950/PlayingT1950.mp4",
+                    "source_url": "https://archive.org/details/PlayingT1950"
+                },
+                {
+                    "type": "gap",
+                    "start": 1297.96,
+                    "duration": 502.04
+                }
+            ]
+        },
+        {
+            "block": 47,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1789.06,
+            "remaining": 10.94,
+            "relative_start": 82800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0769_So_Youre_Going_to_High_School_18_16_46_00",
+                    "start": 0,
+                    "duration": 1100,
+                    "title": "So, You're Going to High School",
+                    "media_url": "https://archive.org/download/0769_So_Youre_Going_to_High_School_18_16_46_00/0769_So_Youre_Going_to_High_School_18_16_46_00_3mb.mp4",
+                    "source_url": "https://archive.org/details/0769_So_Youre_Going_to_High_School_18_16_46_00"
+                },
+                {
+                    "type": "video",
+                    "id": "WhatAbou1959",
+                    "start": 1100,
+                    "duration": 689.06,
+                    "title": "What About Prejudice?",
+                    "media_url": "https://archive.org/download/WhatAbou1959/WhatAbou1959.mp4",
+                    "source_url": "https://archive.org/details/WhatAbou1959"
+                },
+                {
+                    "type": "gap",
+                    "start": 1789.06,
+                    "duration": 10.94
+                }
+            ]
+        },
+        {
+            "block": 48,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1483.23,
+            "remaining": 316.77,
+            "relative_start": 84600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "american_road_1",
+                    "start": 0,
+                    "duration": 1058.47,
+                    "title": "American Road, The (Part I)",
+                    "media_url": "https://archive.org/download/american_road_1/american_road_1.mp4",
+                    "source_url": "https://archive.org/details/american_road_1"
+                },
+                {
+                    "type": "video",
+                    "id": "Lindberg1927",
+                    "start": 1058.47,
+                    "duration": 424.76,
+                    "title": "[Lindbergh's Flight and Return]",
+                    "media_url": "https://archive.org/download/Lindberg1927/Lindberg1927.mp4",
+                    "source_url": "https://archive.org/details/Lindberg1927"
+                },
+                {
+                    "type": "gap",
+                    "start": 1483.23,
+                    "duration": 316.77
+                }
+            ]
+        },
+        {
+            "block": 49,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1771.14,
+            "remaining": 28.86,
+            "relative_start": 86400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "BanksAndCred",
+                    "start": 0,
+                    "duration": 635.14,
+                    "title": "Banks And Credits",
+                    "media_url": "https://archive.org/download/BanksAndCred/BanksAndCred.mp4",
+                    "source_url": "https://archive.org/details/BanksAndCred"
+                },
+                {
+                    "type": "video",
+                    "id": "Everyday1948",
+                    "start": 635.14,
+                    "duration": 535.9,
+                    "title": "Everyday Courtesy",
+                    "media_url": "https://archive.org/download/Everyday1948/Everyday1948.mp4",
+                    "source_url": "https://archive.org/details/Everyday1948"
+                },
+                {
+                    "type": "video",
+                    "id": "MexicanHatDa",
+                    "start": 1171.04,
+                    "duration": 121.62,
+                    "title": "Mexican Hat Dance",
+                    "media_url": "https://archive.org/download/MexicanHatDa/MexicanHatDa.mp4",
+                    "source_url": "https://archive.org/details/MexicanHatDa"
+                },
+                {
+                    "type": "video",
+                    "id": "Magicint1941",
+                    "start": 1292.66,
+                    "duration": 478.48,
+                    "title": "Magic in the Air (1941)",
+                    "media_url": "https://archive.org/download/Magicint1941/Magicint1941.mp4",
+                    "source_url": "https://archive.org/details/Magicint1941"
+                },
+                {
+                    "type": "gap",
+                    "start": 1771.14,
+                    "duration": 28.86
+                }
+            ]
+        },
+        {
+            "block": 50,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1709.38,
+            "remaining": 90.62,
+            "relative_start": 88200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0042_Capitalism_E00102_18_20_52_00",
+                    "start": 0,
+                    "duration": 574.72,
+                    "title": "Capitalism",
+                    "media_url": "https://archive.org/download/0042_Capitalism_E00102_18_20_52_00/0042_Capitalism_E00102_18_20_52_00-0010.mp4",
+                    "source_url": "https://archive.org/details/0042_Capitalism_E00102_18_20_52_00"
+                },
+                {
+                    "type": "video",
+                    "id": "0525_Steel_A_Symphony_of_Industry_00_11_34_12",
+                    "start": 574.72,
+                    "duration": 1134.66,
+                    "title": "Steel: A Symphony of Industry",
+                    "media_url": "https://archive.org/download/0525_Steel_A_Symphony_of_Industry_00_11_34_12/0525_Steel_A_Symphony_of_Industry_00_11_34_12.mp4",
+                    "source_url": "https://archive.org/details/0525_Steel_A_Symphony_of_Industry_00_11_34_12"
+                },
+                {
+                    "type": "gap",
+                    "start": 1709.38,
+                    "duration": 90.62
+                }
+            ]
+        },
+        {
+            "block": 51,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1798.83,
+            "remaining": 1.17,
+            "relative_start": 90000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Aroundth1940",
+                    "start": 0,
+                    "duration": 781.31,
+                    "title": "Around the World in New York",
+                    "media_url": "https://archive.org/download/Aroundth1940/Aroundth1940.mp4",
+                    "source_url": "https://archive.org/details/Aroundth1940"
+                },
+                {
+                    "type": "video",
+                    "id": "0544_Cities_How_They_Grow_Second_Edition_14_19_59_02",
+                    "start": 781.31,
+                    "duration": 554.09,
+                    "title": "Cities: How They Grow (Second Edition)",
+                    "media_url": "https://archive.org/download/0544_Cities_How_They_Grow_Second_Edition_14_19_59_02/0544_Cities_How_They_Grow_Second_Edition_14_19_59_02.mp4",
+                    "source_url": "https://archive.org/details/0544_Cities_How_They_Grow_Second_Edition_14_19_59_02"
+                },
+                {
+                    "type": "video",
+                    "id": "ArrangingThe",
+                    "start": 1335.4,
+                    "duration": 463.43,
+                    "title": "Arranging The Tea Table",
+                    "media_url": "https://archive.org/download/ArrangingThe/ArrangingThe.mp4",
+                    "source_url": "https://archive.org/details/ArrangingThe"
+                },
+                {
+                    "type": "gap",
+                    "start": 1798.83,
+                    "duration": 1.17
+                }
+            ]
+        },
+        {
+            "block": 52,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1593.76,
+            "remaining": 206.24,
+            "relative_start": 91800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Electronic_Computers_Improve_Management_Control",
+                    "start": 0,
+                    "duration": 911.11,
+                    "title": "Electronic Computers Improve Management Control",
+                    "media_url": "https://archive.org/download/Electronic_Computers_Improve_Management_Control/0317_Electronic_Computers_Improve_Management_Control_18_45_55_02_3mb.mp4",
+                    "source_url": "https://archive.org/details/Electronic_Computers_Improve_Management_Control"
+                },
+                {
+                    "type": "video",
+                    "id": "HowtoKee1949",
+                    "start": 911.11,
+                    "duration": 682.65,
+                    "title": "How to Keep a Job",
+                    "media_url": "https://archive.org/download/HowtoKee1949/HowtoKee1949.mp4",
+                    "source_url": "https://archive.org/details/HowtoKee1949"
+                },
+                {
+                    "type": "gap",
+                    "start": 1593.76,
+                    "duration": 206.24
+                }
+            ]
+        },
+        {
+            "block": 53,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1614.77,
+            "remaining": 185.23,
+            "relative_start": 93600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "BigManOnCamp",
+                    "start": 0,
+                    "duration": 617.09,
+                    "title": "Big Man On Campus",
+                    "media_url": "https://archive.org/download/BigManOnCamp/BigManOnCamp.mp4",
+                    "source_url": "https://archive.org/details/BigManOnCamp"
+                },
+                {
+                    "type": "video",
+                    "id": "new_girl_in_the_office_1",
+                    "start": 617.09,
+                    "duration": 997.68,
+                    "title": "New Girl in the Office (Part I)",
+                    "media_url": "https://archive.org/download/new_girl_in_the_office_1/new_girl_in_the_office_1.mp4",
+                    "source_url": "https://archive.org/details/new_girl_in_the_office_1"
+                },
+                {
+                    "type": "gap",
+                    "start": 1614.77,
+                    "duration": 185.23
+                }
+            ]
+        },
+        {
+            "block": 54,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1754.02,
+            "remaining": 45.98,
+            "relative_start": 95400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Patternf1948",
+                    "start": 0,
+                    "duration": 1124.46,
+                    "title": "Pattern for Smartness",
+                    "media_url": "https://archive.org/download/Patternf1948/Patternf1948.mp4",
+                    "source_url": "https://archive.org/details/Patternf1948"
+                },
+                {
+                    "type": "video",
+                    "id": "Powersof1947",
+                    "start": 1124.46,
+                    "duration": 629.56,
+                    "title": "Powers of Congress, The",
+                    "media_url": "https://archive.org/download/Powersof1947/Powersof1947.mp4",
+                    "source_url": "https://archive.org/details/Powersof1947"
+                },
+                {
+                    "type": "gap",
+                    "start": 1754.02,
+                    "duration": 45.98
+                }
+            ]
+        },
+        {
+            "block": 55,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1566.74,
+            "remaining": 233.26,
+            "relative_start": 97200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "safety_in_offices",
+                    "start": 0,
+                    "duration": 585.79,
+                    "title": "Safety in Offices",
+                    "media_url": "https://archive.org/download/safety_in_offices/safety_in_offices.mp4",
+                    "source_url": "https://archive.org/details/safety_in_offices"
+                },
+                {
+                    "type": "video",
+                    "id": "machine-master_or_slave",
+                    "start": 585.79,
+                    "duration": 980.95,
+                    "title": "Machine : Master or Slave?",
+                    "media_url": "https://archive.org/download/machine-master_or_slave/machine-master_or_slave.mp4",
+                    "source_url": "https://archive.org/details/machine-master_or_slave"
+                },
+                {
+                    "type": "gap",
+                    "start": 1566.74,
+                    "duration": 233.26
+                }
+            ]
+        },
+        {
+            "block": 56,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1250.01,
+            "remaining": 549.99,
+            "relative_start": 99000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0808_Computer_Calculator_for_Math_and_Science_05_28_16_00",
+                    "start": 0,
+                    "duration": 1250.01,
+                    "title": "Computer Calculator for Math and Science",
+                    "media_url": "https://archive.org/download/0808_Computer_Calculator_for_Math_and_Science_05_28_16_00/0808_Computer_Calculator_for_Math_and_Science_05_28_16_00_3mb.mp4",
+                    "source_url": "https://archive.org/details/0808_Computer_Calculator_for_Math_and_Science_05_28_16_00"
+                },
+                {
+                    "type": "gap",
+                    "start": 1250.01,
+                    "duration": 549.99
+                }
+            ]
+        },
+        {
+            "block": 57,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1455.76,
+            "remaining": 344.24,
+            "relative_start": 100800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "RightorW1951",
+                    "start": 0,
+                    "duration": 652.19,
+                    "title": "Right or Wrong? (Making Moral Decisions)",
+                    "media_url": "https://archive.org/download/RightorW1951/RightorW1951.mp4",
+                    "source_url": "https://archive.org/details/RightorW1951"
+                },
+                {
+                    "type": "video",
+                    "id": "SnobThe1958",
+                    "start": 652.19,
+                    "duration": 803.57,
+                    "title": "Snob, The",
+                    "media_url": "https://archive.org/download/SnobThe1958/SnobThe1958.mp4",
+                    "source_url": "https://archive.org/details/SnobThe1958"
+                },
+                {
+                    "type": "gap",
+                    "start": 1455.76,
+                    "duration": 344.24
+                }
+            ]
+        },
+        {
+            "block": 58,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1500.37,
+            "remaining": 299.63,
+            "relative_start": 102600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Wheelsof1927",
+                    "start": 0,
+                    "duration": 852.82,
+                    "title": "Wheels of Progress",
+                    "media_url": "https://archive.org/download/Wheelsof1927/Wheelsof1927.mp4",
+                    "source_url": "https://archive.org/details/Wheelsof1927"
+                },
+                {
+                    "type": "video",
+                    "id": "DriveYou1955",
+                    "start": 852.82,
+                    "duration": 647.55,
+                    "title": "Drive Your Bicycle",
+                    "media_url": "https://archive.org/download/DriveYou1955/DriveYou1955.mp4",
+                    "source_url": "https://archive.org/details/DriveYou1955"
+                },
+                {
+                    "type": "gap",
+                    "start": 1500.37,
+                    "duration": 299.63
+                }
+            ]
+        },
+        {
+            "block": 59,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1698.87,
+            "remaining": 101.13,
+            "relative_start": 104400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Progress1960",
+                    "start": 0,
+                    "duration": 795.6,
+                    "title": "Progress Parade",
+                    "media_url": "https://archive.org/download/Progress1960/Progress1960.mp4",
+                    "source_url": "https://archive.org/details/Progress1960"
+                },
+                {
+                    "type": "video",
+                    "id": "Censorsh1963",
+                    "start": 795.6,
+                    "duration": 264.6,
+                    "title": "Censorship: A Question of Judgment?",
+                    "media_url": "https://archive.org/download/Censorsh1963/19437.mp4",
+                    "source_url": "https://archive.org/details/Censorsh1963"
+                },
+                {
+                    "type": "video",
+                    "id": "silence",
+                    "start": 1060.2,
+                    "duration": 19.88,
+                    "title": "Silence!",
+                    "media_url": "https://archive.org/download/silence/silence.mp4",
+                    "source_url": "https://archive.org/details/silence"
+                },
+                {
+                    "type": "video",
+                    "id": "YourPerm1951",
+                    "start": 1080.08,
+                    "duration": 618.79,
+                    "title": "Your Permit to Drive",
+                    "media_url": "https://archive.org/download/YourPerm1951/YourPerm1951.mp4",
+                    "source_url": "https://archive.org/details/YourPerm1951"
+                },
+                {
+                    "type": "gap",
+                    "start": 1698.87,
+                    "duration": 101.13
+                }
+            ]
+        },
+        {
+            "block": 60,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1273.3,
+            "remaining": 526.7,
+            "relative_start": 106200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowtoSay1951",
+                    "start": 0,
+                    "duration": 630.36,
+                    "title": "How to Say No: Moral Maturity",
+                    "media_url": "https://archive.org/download/HowtoSay1951/HowtoSay1951.mp4",
+                    "source_url": "https://archive.org/details/HowtoSay1951"
+                },
+                {
+                    "type": "video",
+                    "id": "Problems1944",
+                    "start": 630.36,
+                    "duration": 642.94,
+                    "title": "Problems of Housing",
+                    "media_url": "https://archive.org/download/Problems1944/Problems1944.mp4",
+                    "source_url": "https://archive.org/details/Problems1944"
+                },
+                {
+                    "type": "gap",
+                    "start": 1273.3,
+                    "duration": 526.7
+                }
+            ]
+        },
+        {
+            "block": 61,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1538.23,
+            "remaining": 261.77,
+            "relative_start": 108000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "New_Spirit_for_76",
+                    "start": 0,
+                    "duration": 563.22,
+                    "title": "New Spirit for '76, A",
+                    "media_url": "https://archive.org/download/New_Spirit_for_76/0337_New_Spirit_for_76_A_14_46_10_00_3mb.mp4",
+                    "source_url": "https://archive.org/details/New_Spirit_for_76"
+                },
+                {
+                    "type": "video",
+                    "id": "WhyVanda1955",
+                    "start": 563.22,
+                    "duration": 975.01,
+                    "title": "Why Vandalism?",
+                    "media_url": "https://archive.org/download/WhyVanda1955/WhyVanda1955.mp4",
+                    "source_url": "https://archive.org/details/WhyVanda1955"
+                },
+                {
+                    "type": "gap",
+                    "start": 1538.23,
+                    "duration": 261.77
+                }
+            ]
+        },
+        {
+            "block": 62,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1272.44,
+            "remaining": 527.56,
+            "relative_start": 109800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "YourThri1948",
+                    "start": 0,
+                    "duration": 634.77,
+                    "title": "Your Thrift Habits",
+                    "media_url": "https://archive.org/download/YourThri1948/YourThri1948.mp4",
+                    "source_url": "https://archive.org/details/YourThri1948"
+                },
+                {
+                    "type": "video",
+                    "id": "YourFami1948",
+                    "start": 634.77,
+                    "duration": 637.67,
+                    "title": "Your Family",
+                    "media_url": "https://archive.org/download/YourFami1948/YourFami1948.mp4",
+                    "source_url": "https://archive.org/details/YourFami1948"
+                },
+                {
+                    "type": "gap",
+                    "start": 1272.44,
+                    "duration": 527.56
+                }
+            ]
+        },
+        {
+            "block": 63,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1638.02,
+            "remaining": 161.98,
+            "relative_start": 111600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0992_This_Is_Automation_01_23_07_15",
+                    "start": 0,
+                    "duration": 1638.02,
+                    "title": "This Is Automation",
+                    "media_url": "https://archive.org/download/0992_This_Is_Automation_01_23_07_15/0992_This_Is_Automation_01_23_07_15.mp4",
+                    "source_url": "https://archive.org/details/0992_This_Is_Automation_01_23_07_15"
+                },
+                {
+                    "type": "gap",
+                    "start": 1638.02,
+                    "duration": 161.98
+                }
+            ]
+        },
+        {
+            "block": 64,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1752.18,
+            "remaining": 47.82,
+            "relative_start": 113400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0840_Girls_Beware_12_42_58_00",
+                    "start": 0,
+                    "duration": 611.65,
+                    "title": "Girls Beware",
+                    "media_url": "https://archive.org/download/0840_Girls_Beware_12_42_58_00/0840_Girls_Beware_12_42_58_00.mp4",
+                    "source_url": "https://archive.org/details/0840_Girls_Beware_12_42_58_00"
+                },
+                {
+                    "type": "video",
+                    "id": "1371TheChickenofTomorrow",
+                    "start": 611.65,
+                    "duration": 1140.53,
+                    "title": "Chicken of Tomorrow, The",
+                    "media_url": "https://archive.org/download/1371TheChickenofTomorrow/1371TheChickenofTomorrow.mp4",
+                    "source_url": "https://archive.org/details/1371TheChickenofTomorrow"
+                },
+                {
+                    "type": "gap",
+                    "start": 1752.18,
+                    "duration": 47.82
+                }
+            ]
+        },
+        {
+            "block": 65,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1673.94,
+            "remaining": 126.06,
+            "relative_start": 115200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Earthqua1973",
+                    "start": 0,
+                    "duration": 1673.94,
+                    "title": "Earthquake",
+                    "media_url": "https://archive.org/download/Earthqua1973/Earthqua1973.mp4",
+                    "source_url": "https://archive.org/details/Earthqua1973"
+                },
+                {
+                    "type": "gap",
+                    "start": 1673.94,
+                    "duration": 126.06
+                }
+            ]
+        },
+        {
+            "block": 66,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1293.8,
+            "remaining": 506.2,
+            "relative_start": 117000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HomeElec1944",
+                    "start": 0,
+                    "duration": 649.42,
+                    "title": "Home Electrical Appliances",
+                    "media_url": "https://archive.org/download/HomeElec1944/HomeElec1944.mp4",
+                    "source_url": "https://archive.org/details/HomeElec1944"
+                },
+                {
+                    "type": "video",
+                    "id": "Passenge1955",
+                    "start": 649.42,
+                    "duration": 644.38,
+                    "title": "Passenger Train, The (Second Edition)",
+                    "media_url": "https://archive.org/download/Passenge1955/Passenge1955.mp4",
+                    "source_url": "https://archive.org/details/Passenge1955"
+                },
+                {
+                    "type": "gap",
+                    "start": 1293.8,
+                    "duration": 506.2
+                }
+            ]
+        },
+        {
+            "block": 67,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1535.8,
+            "remaining": 264.2,
+            "relative_start": 118800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "RiverThe1937",
+                    "start": 0,
+                    "duration": 915.35,
+                    "title": "River, The (Part I)",
+                    "media_url": "https://archive.org/download/RiverThe1937/RiverThe1937.mp4",
+                    "source_url": "https://archive.org/details/RiverThe1937"
+                },
+                {
+                    "type": "video",
+                    "id": "SharingW1949",
+                    "start": 915.35,
+                    "duration": 620.45,
+                    "title": "Sharing Work At Home",
+                    "media_url": "https://archive.org/download/SharingW1949/SharingW1949.mp4",
+                    "source_url": "https://archive.org/details/SharingW1949"
+                },
+                {
+                    "type": "gap",
+                    "start": 1535.8,
+                    "duration": 264.2
+                }
+            ]
+        },
+        {
+            "block": 68,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1467.79,
+            "remaining": 332.21,
+            "relative_start": 120600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "200443_Sounds_Familiar",
+                    "start": 0,
+                    "duration": 1467.79,
+                    "title": "Sounds Familiar",
+                    "media_url": "https://archive.org/download/200443_Sounds_Familiar/200443_Sounds_Familiar_master.intros.mp4",
+                    "source_url": "https://archive.org/details/200443_Sounds_Familiar"
+                },
+                {
+                    "type": "gap",
+                    "start": 1467.79,
+                    "duration": 332.21
+                }
+            ]
+        },
+        {
+            "block": 69,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1476.25,
+            "remaining": 323.75,
+            "relative_start": 122400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0037_Gift_of_Green_13_00_46_00",
+                    "start": 0,
+                    "duration": 932.97,
+                    "title": "Gift of Green",
+                    "media_url": "https://archive.org/download/0037_Gift_of_Green_13_00_46_00/0037_Gift_of_Green_13_00_46_00.mp4",
+                    "source_url": "https://archive.org/details/0037_Gift_of_Green_13_00_46_00"
+                },
+                {
+                    "type": "video",
+                    "id": "RCAPrese1939",
+                    "start": 932.97,
+                    "duration": 543.28,
+                    "title": "RCA Presentation: Television, An",
+                    "media_url": "https://archive.org/download/RCAPrese1939/RCAPrese1939.mp4",
+                    "source_url": "https://archive.org/details/RCAPrese1939"
+                },
+                {
+                    "type": "gap",
+                    "start": 1476.25,
+                    "duration": 323.75
+                }
+            ]
+        },
+        {
+            "block": 70,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1413.85,
+            "remaining": 386.15,
+            "relative_start": 124200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "MindYour1953",
+                    "start": 0,
+                    "duration": 641.88,
+                    "title": "Mind Your Manners",
+                    "media_url": "https://archive.org/download/MindYour1953/MindYour1953.mp4",
+                    "source_url": "https://archive.org/details/MindYour1953"
+                },
+                {
+                    "type": "video",
+                    "id": "Hoteland",
+                    "start": 641.88,
+                    "duration": 771.97,
+                    "title": "Hotel and Restaurant Workers",
+                    "media_url": "https://archive.org/download/Hoteland/Hoteland.mp4",
+                    "source_url": "https://archive.org/details/Hoteland"
+                },
+                {
+                    "type": "gap",
+                    "start": 1413.85,
+                    "duration": 386.15
+                }
+            ]
+        },
+        {
+            "block": 71,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1336.08,
+            "remaining": 463.92,
+            "relative_start": 126000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Laborand1950",
+                    "start": 0,
+                    "duration": 967.87,
+                    "title": "Labor and Childbirth",
+                    "media_url": "https://archive.org/download/Laborand1950/Laborand1950.mp4",
+                    "source_url": "https://archive.org/details/Laborand1950"
+                },
+                {
+                    "type": "video",
+                    "id": "202248_Freeway_Driving",
+                    "start": 967.87,
+                    "duration": 368.21,
+                    "title": "Freeway Driving",
+                    "media_url": "https://archive.org/download/202248_Freeway_Driving/202248_Freeway_Driving_master.intros.mp4",
+                    "source_url": "https://archive.org/details/202248_Freeway_Driving"
+                },
+                {
+                    "type": "gap",
+                    "start": 1336.08,
+                    "duration": 463.92
+                }
+            ]
+        },
+        {
+            "block": 72,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1546.69,
+            "remaining": 253.31,
+            "relative_start": 127800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "4083_Seasonal_Changes_In_Trees",
+                    "start": 0,
+                    "duration": 649.33,
+                    "title": "Seasonal Changes in Trees",
+                    "media_url": "https://archive.org/download/4083_Seasonal_Changes_In_Trees/4083_Seasonal_Changes_In_Trees.mp4",
+                    "source_url": "https://archive.org/details/4083_Seasonal_Changes_In_Trees"
+                },
+                {
+                    "type": "video",
+                    "id": "EarlySet1940",
+                    "start": 649.33,
+                    "duration": 353.95,
+                    "title": "Early Settlers of New England (Salem 1626-1629)",
+                    "media_url": "https://archive.org/download/EarlySet1940/EarlySet1940.mp4",
+                    "source_url": "https://archive.org/details/EarlySet1940"
+                },
+                {
+                    "type": "video",
+                    "id": "StoryofJ1915",
+                    "start": 1003.28,
+                    "duration": 543.41,
+                    "title": "Story of Jewel City, The",
+                    "media_url": "https://archive.org/download/StoryofJ1915/StoryofJ1915.mp4",
+                    "source_url": "https://archive.org/details/StoryofJ1915"
+                },
+                {
+                    "type": "gap",
+                    "start": 1546.69,
+                    "duration": 253.31
+                }
+            ]
+        },
+        {
+            "block": 73,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1724.71,
+            "remaining": 75.29,
+            "relative_start": 129600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "DialDForDesi",
+                    "start": 0,
+                    "duration": 770.76,
+                    "title": "Dial D For Design (Pt 1)",
+                    "media_url": "https://archive.org/download/DialDForDesi/DialDForDesi.mp4",
+                    "source_url": "https://archive.org/details/DialDForDesi"
+                },
+                {
+                    "type": "video",
+                    "id": "DialDForDesi_2",
+                    "start": 770.76,
+                    "duration": 953.95,
+                    "title": "Dial D For Design (Pt 2)",
+                    "media_url": "https://archive.org/download/DialDForDesi_2/DialDForDesi_2.mp4",
+                    "source_url": "https://archive.org/details/DialDForDesi_2"
+                },
+                {
+                    "type": "gap",
+                    "start": 1724.71,
+                    "duration": 75.29
+                }
+            ]
+        },
+        {
+            "block": 74,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1730.26,
+            "remaining": 69.74,
+            "relative_start": 131400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "Hired1940",
+                    "start": 0,
+                    "duration": 1112.78,
+                    "title": "Hired!",
+                    "media_url": "https://archive.org/download/Hired1940/Hired1940.mp4",
+                    "source_url": "https://archive.org/details/Hired1940"
+                },
+                {
+                    "type": "video",
+                    "id": "Forestry1946",
+                    "start": 1112.78,
+                    "duration": 617.48,
+                    "title": "Forestry and Forest Industries",
+                    "media_url": "https://archive.org/download/Forestry1946/Forestry1946.mp4",
+                    "source_url": "https://archive.org/details/Forestry1946"
+                },
+                {
+                    "type": "gap",
+                    "start": 1730.26,
+                    "duration": 69.74
+                }
+            ]
+        },
+        {
+            "block": 75,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1540,
+            "remaining": 260,
+            "relative_start": 133200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "TableMan1947",
+                    "start": 0,
+                    "duration": 607.67,
+                    "title": "Table Manners",
+                    "media_url": "https://archive.org/download/TableMan1947/TableMan1947.mp4",
+                    "source_url": "https://archive.org/details/TableMan1947"
+                },
+                {
+                    "type": "video",
+                    "id": "WhyStudy1955_2",
+                    "start": 607.67,
+                    "duration": 709.81,
+                    "title": "Why Study Science?",
+                    "media_url": "https://archive.org/download/WhyStudy1955_2/WhyStudy1955_2.mp4",
+                    "source_url": "https://archive.org/details/WhyStudy1955_2"
+                },
+                {
+                    "type": "video",
+                    "id": "Californ1929",
+                    "start": 1317.48,
+                    "duration": 222.52,
+                    "title": "[California State Highway 101 Opening]",
+                    "media_url": "https://archive.org/download/Californ1929/Californ1929.mp4",
+                    "source_url": "https://archive.org/details/Californ1929"
+                },
+                {
+                    "type": "gap",
+                    "start": 1540,
+                    "duration": 260
+                }
+            ]
+        },
+        {
+            "block": 76,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1357.63,
+            "remaining": 442.37,
+            "relative_start": 135000,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "HowHones1950",
+                    "start": 0,
+                    "duration": 829.8,
+                    "title": "How Honest Are You?",
+                    "media_url": "https://archive.org/download/HowHones1950/HowHones1950.mp4",
+                    "source_url": "https://archive.org/details/HowHones1950"
+                },
+                {
+                    "type": "video",
+                    "id": "Somethin1940",
+                    "start": 829.8,
+                    "duration": 527.83,
+                    "title": "Something for Nothing",
+                    "media_url": "https://archive.org/download/Somethin1940/Somethin1940.mp4",
+                    "source_url": "https://archive.org/details/Somethin1940"
+                },
+                {
+                    "type": "gap",
+                    "start": 1357.63,
+                    "duration": 442.37
+                }
+            ]
+        },
+        {
+            "block": 77,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1333.07,
+            "remaining": 466.93,
+            "relative_start": 136800,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "SoundWavesAn",
+                    "start": 0,
+                    "duration": 617.59,
+                    "title": "Sound Waves And Their Sources",
+                    "media_url": "https://archive.org/download/SoundWavesAn/SoundWavesAn.mp4",
+                    "source_url": "https://archive.org/details/SoundWavesAn"
+                },
+                {
+                    "type": "video",
+                    "id": "TowersTh1957",
+                    "start": 617.59,
+                    "duration": 715.48,
+                    "title": "Towers, The",
+                    "media_url": "https://archive.org/download/TowersTh1957/TowersTh1957.mp4",
+                    "source_url": "https://archive.org/details/TowersTh1957"
+                },
+                {
+                    "type": "gap",
+                    "start": 1333.07,
+                    "duration": 466.93
+                }
+            ]
+        },
+        {
+            "block": 78,
+            "type": "normal",
+            "duration": 1800,
+            "used": 1720.02,
+            "remaining": 79.98,
+            "relative_start": 138600,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "0720_American_Girl_An_11_01_02_00",
+                    "start": 0,
+                    "duration": 1720.02,
+                    "title": "American Girl, An",
+                    "media_url": "https://archive.org/download/0720_American_Girl_An_11_01_02_00/0720_American_Girl_An_11_01_02_00.mp4",
+                    "source_url": "https://archive.org/details/0720_American_Girl_An_11_01_02_00"
+                },
+                {
+                    "type": "gap",
+                    "start": 1720.02,
+                    "duration": 79.98
+                }
+            ]
+        },
+        {
+            "block": 79,
+            "type": "overflow",
+            "duration": 3283.77,
+            "used": 3283.77,
+            "remaining": 0,
+            "relative_start": 140400,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "middleton_family_worlds_fair_1939",
+                    "start": 0,
+                    "duration": 3283.77,
+                    "title": "The Middleton Family at the New York World's Fair",
+                    "media_url": "https://archive.org/download/middleton_family_worlds_fair_1939/middleton_family_at_the_worlds_fair_1939.mp4",
+                    "source_url": "https://archive.org/details/middleton_family_worlds_fair_1939"
+                }
+            ]
+        },
+        {
+            "block": 80,
+            "type": "overflow",
+            "duration": 2338.18,
+            "used": 2338.18,
+            "remaining": 0,
+            "relative_start": 142200,
+            "items": [
+                {
+                    "type": "video",
+                    "id": "unconscious_motivation",
+                    "start": 0,
+                    "duration": 2338.18,
+                    "title": "Unconscious Motivation",
+                    "media_url": "https://archive.org/download/unconscious_motivation/unconscious_motivation.mp4",
+                    "source_url": "https://archive.org/details/unconscious_motivation"
+                }
+            ]
+        }
+    ]
+}
