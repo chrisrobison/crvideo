@@ -1,0 +1,8 @@
+{
+  "schema_version": 2,
+  "title": "Sample Missing",
+  "items": [],
+  "series": [
+    { "ref": "../../series/does-not-exist/series.json" }
+  ]
+}

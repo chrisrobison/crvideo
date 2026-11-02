@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "blocks": [
+    {
+      "id": "daily-hour",
+      "type": "series",
+      "series_id": "demo-series",
+      "recurrence": { "frequency": "daily", "time": "13:00", "timezone": "America/Los_Angeles" },
+      "duration": 1800,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-02" }
+    }
+  ]
+}

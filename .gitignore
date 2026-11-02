@@ -18,3 +18,10 @@ Thumbs.db
 # Backups YouTubeSeriesWriter (youtube-import) makes of a series.json before
 # each overwrite.
 series/*/series.json.bak
+
+# channels/publish.php's per-block approved-episode-set pins (EpisodeSetPin)
+# and the .bak files it/ScheduleWriter leave next to schedule.json/meta.json --
+# local build state, same posture as ia-import's .cache/, never committed.
+channels/*/.publish/
+channels/*/schedule.json.bak
+channels/*/meta.json.bak
