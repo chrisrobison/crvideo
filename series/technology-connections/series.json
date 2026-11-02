@@ -1,0 +1,18 @@
+{
+  "_note": "STRUCTURAL PLACEHOLDER. This file exists to prove out the series.json shape and its catalog reference (see channels/science/catalog.json) ahead of the YouTube importer, which has not been built yet (a later phase). No real YouTube channel id, video id, episode title, or duration has been entered here -- every such field is null or empty on purpose. Do not schedule this series and do not treat any value below as real metadata; replace this whole file by running the (future) importer.",
+  "schema_version": 1,
+  "id": "technology-connections",
+  "title": "Technology Connections",
+  "description": "Technology, engineering, and the everyday inventions behind them.",
+  "creator": null,
+  "year": null,
+  "thumbnail_url": null,
+  "logo_url": null,
+  "source": {
+    "provider": "youtube",
+    "channel_id": null,
+    "channel_url": null
+  },
+  "rotation": { "mode": "sequential", "loop": true },
+  "episodes": []
+}
