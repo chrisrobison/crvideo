@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "type": "module",
+  "description": "Marks channels/*.js as ES modules for Node (the guide and watch pages already load them as <script type=module>; this file only affects `node --test`/import resolution under this directory, not PHP or the browser). No dependencies, no build step."
+}

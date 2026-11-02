@@ -10,15 +10,20 @@
 //
 // meta.json may set "anchor" (an ISO timestamp) to choose when the cycle's
 // first block airs; by default the loop is anchored to the Unix epoch.
+//
+// catalog.json (optional per channel) enriches schedule items with year/
+// creator/description for display, and may also reference externally
+// maintained series.json files (see catalog-resolver.js and series/*). That
+// resolution logic lives in its own module so it can be reused outside the
+// browser later; loadCatalog() below is just the thin, cached wrapper the
+// guide and player already called.
+
+import { fetchJson, resolveCatalog } from "./catalog-resolver.js";
 
 export const CHANNEL_ID = /^[a-z0-9][a-z0-9-]*$/;
 const CHANNELS_URL = new URL("./", import.meta.url);
 
-export async function fetchJson(url) {
-  const r = await fetch(url, { cache: "no-cache" });
-  if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
-  return r.json();
-}
+export { fetchJson };
 
 // ---------- clock ----------
 
@@ -149,11 +154,17 @@ export async function loadChannel(id, meta = null) {
 const catalogs = new Map();
 
 /** A channel's catalog.json as a Map of item id -> item (year, creator,
- *  description...). Optional: resolves to an empty Map if it's missing. */
+ *  description...), with any series it references (see catalog-
+ *  resolver.js) merged in under "<seriesId>:<episodeId>" keys. Optional:
+ *  resolves to an empty Map if the catalog is missing. A catalog with no
+ *  "series" array behaves exactly as before (legacy, flat-items-only). */
 export function loadCatalog(channel) {
   if (!catalogs.has(channel.catalogUrl)) {
-    catalogs.set(channel.catalogUrl, fetchJson(channel.catalogUrl)
-      .then((c) => new Map((c.items || []).map((item) => [item.id, item])))
+    catalogs.set(channel.catalogUrl, resolveCatalog(channel.catalogUrl, { fetchJson })
+      .then(({ items, errors }) => {
+        if (errors.length) console.warn(`Catalog ${channel.catalogUrl}:`, errors);
+        return items;
+      })
       .catch(() => new Map()));
   }
   return catalogs.get(channel.catalogUrl);
