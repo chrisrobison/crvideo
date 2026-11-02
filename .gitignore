@@ -14,3 +14,7 @@ Thumbs.db
 
 # Backups the publish endpoint makes of playlist.json before each overwrite.
 /playlist.json.bak
+
+# Backups YouTubeSeriesWriter (youtube-import) makes of a series.json before
+# each overwrite.
+series/*/series.json.bak
