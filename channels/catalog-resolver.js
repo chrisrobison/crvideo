@@ -39,6 +39,18 @@
 // a series.json lists, status included, so a catalog-metadata consumer
 // (e.g. the guide) can still look up and display any episode by id. Status
 // *filtering* is the publish step's job, not this resolver's.
+//
+// Separately, an episode's "rights" ({"status", "notes"}) tracks content
+// licensing, independent of editorial status above. Suggested rights.status
+// values: "unverified" (the default -- nothing has been checked; this is
+// what every importer-written episode gets and NEVER anything else, since
+// neither ia-import nor youtube-import infers rights from a video simply
+// being publicly fetchable), "creator_permission", "licensed",
+// "public_domain", "restricted". This field is editorial bookkeeping only
+// -- see docs/series-and-channels.md ("Editorial status and content
+// rights") for the full policy, including why "creator_permission" here
+// never overrides YouTube's own API terms or unlocks any different
+// playback behavior.
 
 /** Series ids and episode ids must be filesystem/URL-safe tokens -- the
  *  same shape as CHANNEL_ID in broadcast.js. */
