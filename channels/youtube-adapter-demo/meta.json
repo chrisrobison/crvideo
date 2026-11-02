@@ -1,0 +1,5 @@
+{
+  "name": "YouTube Adapter Demo",
+  "description": "Manual-verification fixture for the HTML5 and YouTube playback adapters (phase 3). Not real programming -- hidden from the channel guide and dial-surfing on purpose; load it directly via watch.html?ch=youtube-adapter-demo.",
+  "hidden": true
+}
