@@ -1,0 +1,20 @@
+{
+  "_note": "STRUCTURAL PLACEHOLDER. Minimal valid schedule so the channel guide and player load this channel without error. It is one empty 30-minute block (a single gap -- a station break looping forever); no programs are scheduled yet. Recurring-series scheduling that reads catalog.json's \"series\" entries is a later phase.",
+  "schema_version": 1,
+  "channel": "Science & Engineering",
+  "slot_duration": 1800,
+  "strategy": "none",
+  "blocks": [
+    {
+      "block": 1,
+      "type": "normal",
+      "duration": 1800,
+      "used": 0,
+      "remaining": 1800,
+      "relative_start": 0,
+      "items": [
+        { "type": "gap", "start": 0, "duration": 1800 }
+      ]
+    }
+  ]
+}
