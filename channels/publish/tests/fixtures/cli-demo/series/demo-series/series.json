@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "id": "demo-series",
+  "title": "Demo Series",
+  "episodes": [
+    {
+      "id": "ep1", "episode_number": 1, "title": "Episode One", "duration": 1500, "status": "approved",
+      "source": { "provider": "youtube", "video_id": "aaa111", "url": "https://www.youtube.com/watch?v=aaa111" },
+      "rights": { "status": "cleared", "notes": null }
+    },
+    {
+      "id": "ep2", "episode_number": 2, "title": "Episode Two (still a candidate)", "duration": 1500, "status": "candidate",
+      "source": { "provider": "youtube", "video_id": "bbb222", "url": "https://www.youtube.com/watch?v=bbb222" },
+      "rights": { "status": "unverified", "notes": null }
+    },
+    {
+      "id": "ep3", "episode_number": 3, "title": "Episode Three", "duration": 1500, "status": "approved",
+      "source": { "provider": "youtube", "video_id": "ccc333", "url": "https://www.youtube.com/watch?v=ccc333" },
+      "rights": { "status": "cleared", "notes": null }
+    }
+  ]
+}

@@ -14,13 +14,31 @@
 //
 // This module is deliberately plain data in, plain data out: no DOM, no
 // built-in network client baked into the resolution logic itself (callers
-// inject `fetchJson`), so it can run under Node for tests and, if a PHP
-// "publish" step is built in a later phase, the same rules (safe reference
-// resolution, one include level, duplicate/collision detection) can be
-// mirrored there without porting any fetch-specific code. Nothing here
-// talks to YouTube or any other provider -- it only resolves and indexes
-// metadata that importers (not yet built) will have already written into
-// series.json files.
+// inject `fetchJson`), so it can run under Node for tests and, so the same
+// rules (safe reference resolution, one include level, duplicate/collision
+// detection) can be mirrored in PHP -- see channels/publish/src/CatalogResolver.php,
+// added in phase 4's publish step, which must be kept in lockstep with this
+// file (same root-escape rule, same depth-1 limit, same dedup/collision
+// handling; there is no shared source between the two implementations, by
+// design -- see that file's header for the specifics of what must match).
+//
+// An episode's "status" (series.json's episode.status) is one of:
+//   "candidate" -- imported but not reviewed; the default for anything an
+//                  importer writes. Never eligible for scheduling.
+//   "approved"  -- an editor has reviewed it and cleared it to air. Only
+//                  "approved" episodes are eligible for the publish step's
+//                  recurring-series rotation (channels/publish/).
+//   "rejected"  -- reviewed and declined; kept in the file (never deleted)
+//                  so it isn't re-imported as a new candidate.
+//   "disabled"  -- was approved and may have aired before, but is
+//                  temporarily pulled from rotation without un-approving
+//                  it for good (e.g. a rights question came up). Distinct
+//                  from "rejected" (permanent) and "candidate" (never yet
+//                  reviewed).
+// This module itself doesn't filter by status -- it indexes every episode
+// a series.json lists, status included, so a catalog-metadata consumer
+// (e.g. the guide) can still look up and display any episode by id. Status
+// *filtering* is the publish step's job, not this resolver's.
 
 /** Series ids and episode ids must be filesystem/URL-safe tokens -- the
  *  same shape as CHANNEL_ID in broadcast.js. */
