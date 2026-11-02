@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "source": "internet_archive",
+  "list_name": "Legacy Sample",
+  "description": "A pre-series catalog.json: flat items only, no \"series\" key at all.",
+  "items": [
+    { "id": "film-a", "title": "Film A", "year": 1950, "creator": "Studio One" },
+    { "id": "film-b", "title": "Film B", "year": 1952, "creator": "Studio Two" }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "id": "depth",
+  "title": "Depth Limited",
+  "episodes": [
+    { "id": "d1", "title": "D1" }
+  ],
+  "series": [
+    { "ref": "./nested.json" }
+  ]
+}
