@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "title": "Sample With Missing Series Ref",
+  "items": [
+    { "id": "standalone-item", "title": "Still loads even though the series ref below is missing" }
+  ],
+  "series": [
+    { "ref": "../../series/does-not-exist/series.json" }
+  ]
+}
