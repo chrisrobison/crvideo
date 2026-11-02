@@ -13,6 +13,8 @@ button{font:inherit;color:inherit;border:0;cursor:pointer}
 [hidden]{display:none!important}
 
 video{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;background:#000}
+.ytPlayer{position:fixed;inset:0;width:100%;height:100%;background:#000}
+.ytPlayer iframe{width:100%;height:100%;display:block}
 
 /* Station-break title card: "Up Next" on the left, "Coming Up" on the right
    (stacked on narrow or portrait screens). */
@@ -74,6 +76,7 @@ body.on-break .hint{bottom:clamp(16px,4vh,40px)}
 </head>
 <body>
 <video id="screen" muted playsinline autoplay></video>
+<div id="ytPlayer" class="ytPlayer" hidden></div>
 
 <div class="slate" id="slate" hidden>
   <div class="card">
@@ -128,16 +131,19 @@ let infoTimer = 0;
 let idleTimer = 0;
 let osdTimer = 0;
 
-const player = new BroadcastPlayer(video, { onAiring, onState });
+// youtubeContainer is optional on BroadcastPlayer; passing it here is what
+// lets this page (unlike the guide's small preview in index.html) actually
+// play a YouTube-sourced program via YouTubePlayerAdapter.
+const player = new BroadcastPlayer(video, { youtubeContainer: $("ytPlayer"), onAiring, onState });
 
 function onAiring(airing) {
-  document.title = channel ? `${channel.name} · ${airing.mediaUrl ? airing.title : "Station break"}` : "Watch";
+  document.title = channel ? `${channel.name} · ${airing.playable ? airing.title : "Station break"}` : "Watch";
   renderInfo();
-  if (airing.mediaUrl) showInfo(7000);
+  if (airing.playable) showInfo(7000);
 }
 
 function onState(state, airing) {
-  const slate = state === "slate" || state === "error" || !airing?.mediaUrl;
+  const slate = state === "slate" || state === "error" || !airing?.playable;
   $("slate").hidden = !slate;
   document.body.classList.toggle("on-break", slate);
   $("slateMsg").hidden = state !== "error";
@@ -154,7 +160,7 @@ function renderInfo() {
   if (!channel || !a) return;
   const t = now();
   const next = nextProgram(channel.timeline, t);
-  $("lTitle").textContent = a.mediaUrl ? a.title : "Station break";
+  $("lTitle").textContent = a.playable ? a.title : "Station break";
   const sub = $("lSub");
   sub.replaceChildren(`${clock(a.startsAt)} – ${clock(a.endsAt)} · ${minutesLeft(a.endsAt - t)} left`);
   if (next) sub.append("  ·  Next: ", Object.assign(document.createElement("b"), { textContent: next.title }), ` at ${clock(next.startsAt)}`);
@@ -166,7 +172,7 @@ function renderInfo() {
 let slateKey = null;
 function renderSlate(t) {
   const [next, ...later] = airings(channel.timeline, t, t + 12 * 3600)
-    .filter((a) => a.mediaUrl && a.startsAt > t)
+    .filter((a) => a.playable && a.startsAt > t)
     .slice(0, 1 + COMING_UP);
   if (!next) return;
 
@@ -256,11 +262,14 @@ function toggleFullscreen() {
   else enterFullscreen();
 }
 
+// Mute/volume go through the player (not the <video> element directly)
+// since the active program may be playing in the YouTube iframe instead;
+// BroadcastPlayer.setMuted()/isMuted() delegate to whichever adapter is
+// currently live and remember the preference across the next transition.
 let engaged = false;
 function engage() {
   if (player.state === "blocked") player.resume();
-  video.muted = false;
-  video.volume = 1;
+  player.setMuted(false);
   if (!engaged) enterFullscreen();
   engaged = true;
 }
@@ -268,13 +277,12 @@ function engage() {
 function updateHint() {
   if (player.state === "blocked") return;
   $("hintText").textContent = "Click for sound and full screen";
-  $("hint").hidden = !video.muted;
+  $("hint").hidden = !player.isMuted();
 }
-video.addEventListener("volumechange", updateHint);
 
 document.addEventListener("click", (e) => {
   if (e.target.closest("a")) return;
-  const wasEngaged = engaged && !video.muted;
+  const wasEngaged = engaged && !player.isMuted();
   engage();
   updateHint();
   if (wasEngaged) showInfo();
@@ -311,7 +319,7 @@ addEventListener("keydown", (e) => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   const key = e.key;
   if (key === "f" || key === "F") { toggleFullscreen(); engaged = true; }
-  else if (key === "m" || key === "M") { if (player.state === "blocked") player.resume(); video.muted = !video.muted; }
+  else if (key === "m" || key === "M") { if (player.state === "blocked") player.resume(); player.setMuted(!player.isMuted()); }
   else if (key === "i" || key === "I" || key === "Enter" || key === " ") { e.preventDefault(); if (!engaged) engage(); showInfo(); }
   else if (key === "ArrowUp" || key === "PageUp" || key === "+") { e.preventDefault(); surf(1); }
   else if (key === "ArrowDown" || key === "PageDown" || key === "-") { e.preventDefault(); surf(-1); }

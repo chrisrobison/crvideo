@@ -1,0 +1,40 @@
+{
+  "_note": "MANUAL-VERIFICATION FIXTURE ONLY. Not a real channel -- hidden from the public guide (see meta.json's \"hidden\": true). Exists so a person can open watch.html?ch=youtube-adapter-demo directly in a browser and see both playback adapters working, including a live HTML5-to-YouTube provider transition, which the automated (Node) test suite cannot exercise without a real browser/iframe. The 80-second cycle repeats continuously, so tuning in at any time shows both programs within at most 80 seconds. The YouTube video id below (jNQXAC9IVRw, \"Me at the zoo\") is YouTube's own first-ever uploaded video -- chosen because it is permanently public, always embeddable, and carries no third-party rights complication; it is not claimed to be CRVideo programming. The HTML5 clip reuses a real, already-vetted public-domain file from channels/film-day-at-school/catalog.json.",
+  "schema_version": 1,
+  "channel": "YouTube Adapter Demo",
+  "slot_duration": 80,
+  "strategy": "none",
+  "blocks": [
+    {
+      "block": 1,
+      "type": "normal",
+      "duration": 80,
+      "used": 80,
+      "remaining": 0,
+      "relative_start": 0,
+      "items": [
+        {
+          "type": "video",
+          "id": "duck-and-cover-clip",
+          "start": 0,
+          "duration": 60,
+          "title": "Duck and Cover (HTML5 / Internet Archive adapter)",
+          "media_url": "https://archive.org/download/0771_Duck_and_Cover_12_33_20_12/0771_Duck_and_Cover_12_33_20_12.mp4",
+          "source_url": "https://archive.org/details/0771_Duck_and_Cover_12_33_20_12"
+        },
+        {
+          "type": "video",
+          "id": "yt-jNQXAC9IVRw",
+          "start": 60,
+          "duration": 20,
+          "title": "Me at the zoo (YouTube adapter)",
+          "source": {
+            "provider": "youtube",
+            "video_id": "jNQXAC9IVRw",
+            "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw"
+          }
+        }
+      ]
+    }
+  ]
+}
