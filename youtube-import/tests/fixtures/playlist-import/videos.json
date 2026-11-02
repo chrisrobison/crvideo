@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "id": "pvid1",
+      "snippet": {
+        "title": "Normal Upload", "description": "d", "publishedAt": "2024-02-01T00:00:00Z",
+        "channelId": "UCplaylist", "channelTitle": "Playlist Owner", "liveBroadcastContent": "none"
+      },
+      "contentDetails": { "duration": "PT5M0S" },
+      "status": { "privacyStatus": "public", "uploadStatus": "processed" }
+    },
+    {
+      "id": "pvid2",
+      "snippet": {
+        "title": "Live Now", "description": "d", "publishedAt": "2024-02-02T00:00:00Z",
+        "channelId": "UCplaylist", "channelTitle": "Playlist Owner", "liveBroadcastContent": "live"
+      },
+      "contentDetails": { "duration": "P0D" },
+      "status": { "privacyStatus": "public", "uploadStatus": "processed" },
+      "liveStreamingDetails": { "actualStartTime": "2024-02-02T00:00:00Z" }
+    }
+  ]
+}

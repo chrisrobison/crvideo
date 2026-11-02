@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "id": "UCreal1",
+      "snippet": {
+        "title": "Real Channel Title",
+        "description": "Real channel description.",
+        "thumbnails": { "high": { "url": "https://example.test/channel.jpg" } }
+      },
+      "contentDetails": { "relatedPlaylists": { "uploads": "UUreal1" } }
+    }
+  ]
+}
