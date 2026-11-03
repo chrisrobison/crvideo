@@ -10,15 +10,23 @@
 //
 // meta.json may set "anchor" (an ISO timestamp) to choose when the cycle's
 // first block airs; by default the loop is anchored to the Unix epoch.
+//
+// catalog.json (optional per channel) enriches schedule items with year/
+// creator/description for display, and may also reference externally
+// maintained series.json files (see catalog-resolver.js and series/*). That
+// resolution logic lives in its own module so it can be reused outside the
+// browser later; loadCatalog() below is just the thin, cached wrapper the
+// guide and player already called.
+
+import { fetchJson, resolveCatalog } from "./catalog-resolver.js";
+import {
+  Html5PlayerAdapter, YouTubePlayerAdapter, resolveProvider, computeBackoffMs, computeDriftCorrection,
+} from "./player-adapters.js";
 
 export const CHANNEL_ID = /^[a-z0-9][a-z0-9-]*$/;
 const CHANNELS_URL = new URL("./", import.meta.url);
 
-export async function fetchJson(url) {
-  const r = await fetch(url, { cache: "no-cache" });
-  if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
-  return r.json();
-}
+export { fetchJson };
 
 // ---------- clock ----------
 
@@ -48,7 +56,14 @@ const mod = (a, n) => ((a % n) + n) % n;
 /** Flatten ia-import's blocks into one sorted list of entries with start/end
  *  in seconds from the start of the cycle. Block offsets are accumulated here
  *  rather than read from `relative_start`, which doesn't account for overflow
- *  blocks longer than the slot. */
+ *  blocks longer than the slot.
+ *
+ *  Each item's provider is read from its own structured "source" field
+ *  (the same {"provider": ..., "video_id": ...} shape series.json's
+ *  episodes already use -- see player-adapters.js's resolveProvider()),
+ *  not guessed from a URL. An item with no "source" at all but a
+ *  media_url is the pre-existing, still fully supported, implicit "html5"
+ *  convention every ia-import-produced schedule.json already uses. */
 export function buildTimeline(schedule, anchor = 0) {
   const entries = [];
   let blockStart = 0;
@@ -59,13 +74,17 @@ export function buildTimeline(schedule, anchor = 0) {
       const start = blockStart + Number(item.start);
       const end = start + Number(item.duration);
       if (!(end > start)) continue;
-      const playable = item.type !== "gap" && !!item.media_url;
+      const { provider, videoId } = resolveProvider(item);
+      const playable = item.type !== "gap" && provider !== null;
       entries.push({
         type: item.type,
         id: item.id ?? null,
         title: item.title || (playable ? item.id : null),
-        mediaUrl: playable ? item.media_url : null,
-        sourceUrl: item.source_url || null,
+        playable,
+        provider,
+        videoId,
+        mediaUrl: item.media_url || null,
+        sourceUrl: item.source_url || (item.source && item.source.url) || null,
         start, end,
       });
     }
@@ -75,6 +94,8 @@ export function buildTimeline(schedule, anchor = 0) {
   entries.sort((a, b) => a.start - b.start);
   return { entries, cycle: blockStart, anchor };
 }
+
+const GAP_ENTRY = { type: "gap", id: null, title: null, playable: false, provider: null, videoId: null, mediaUrl: null, sourceUrl: null };
 
 /** What is on at time t: the entry plus its absolute startsAt/endsAt. Time
  *  the schedule leaves uncovered comes back as a synthetic gap entry. */
@@ -89,10 +110,10 @@ export function locate(tl, t = now()) {
   }
   let e = entries[lo];
   if (pos < e.start) {
-    e = { type: "gap", id: null, title: null, mediaUrl: null, start: 0, end: e.start };
+    e = { ...GAP_ENTRY, start: 0, end: e.start };
   } else if (pos >= e.end) {
     const next = entries[lo + 1];
-    e = { type: "gap", id: null, title: null, mediaUrl: null, start: e.end, end: next ? next.start : tl.cycle };
+    e = { ...GAP_ENTRY, start: e.end, end: next ? next.start : tl.cycle };
   }
   return { ...e, startsAt: cycleStart + e.start, endsAt: cycleStart + e.end };
 }
@@ -117,7 +138,7 @@ export function airings(tl, from, until) {
 
 /** The next real program (not a gap) starting after t. */
 export function nextProgram(tl, t = now()) {
-  return airings(tl, t, t + tl.cycle).find((a) => a.startsAt > t && a.mediaUrl) || null;
+  return airings(tl, t, t + tl.cycle).find((a) => a.startsAt > t && a.playable) || null;
 }
 
 // ---------- channels ----------
@@ -149,11 +170,17 @@ export async function loadChannel(id, meta = null) {
 const catalogs = new Map();
 
 /** A channel's catalog.json as a Map of item id -> item (year, creator,
- *  description...). Optional: resolves to an empty Map if it's missing. */
+ *  description...), with any series it references (see catalog-
+ *  resolver.js) merged in under "<seriesId>:<episodeId>" keys. Optional:
+ *  resolves to an empty Map if the catalog is missing. A catalog with no
+ *  "series" array behaves exactly as before (legacy, flat-items-only). */
 export function loadCatalog(channel) {
   if (!catalogs.has(channel.catalogUrl)) {
-    catalogs.set(channel.catalogUrl, fetchJson(channel.catalogUrl)
-      .then((c) => new Map((c.items || []).map((item) => [item.id, item])))
+    catalogs.set(channel.catalogUrl, resolveCatalog(channel.catalogUrl, { fetchJson })
+      .then(({ items, errors }) => {
+        if (errors.length) console.warn(`Catalog ${channel.catalogUrl}:`, errors);
+        return items;
+      })
       .catch(() => new Map()));
   }
   return catalogs.get(channel.catalogUrl);
@@ -181,45 +208,57 @@ export function plainText(html) {
 
 const DRIFT_TOLERANCE = 3; // seconds off the live point before re-seeking
 const DRIFT_CHECK_MS = 5000;
+const MAX_RETRIES_PER_PROGRAM = 5; // bounded: after this many failures, stop retrying until the schedule itself advances
 
 /**
- * Keeps a <video> on the live point of a channel. It starts muted (browsers
- * always allow muted autoplay), never stays paused, follows the wall clock
- * from program to program, and re-seeks if buffering lets it fall behind.
+ * Keeps playback on the live point of a channel, across whichever
+ * provider is currently scheduled (HTML5 <video> for Internet-Archive-
+ * style direct files via Html5PlayerAdapter, or YouTube's IFrame API via
+ * YouTubePlayerAdapter -- see player-adapters.js). It starts muted
+ * (browsers only allow muted autoplay without a user gesture), never
+ * stays paused, follows the wall clock from program to program, and
+ * re-seeks if buffering lets it fall behind.
+ *
+ * `video` is the <video> element used for HTML5 playback, exactly as
+ * before. `youtubeContainer`, if given, is a separate plain element (e.g.
+ * an empty <div>) the YouTube iframe is mounted into when a scheduled
+ * program's source.provider is "youtube"; its visibility is toggled
+ * opposite the <video> element's as programs change. Without it, a
+ * YouTube-provider program is treated the same as a failed program (see
+ * MAX_RETRIES_PER_PROGRAM) -- shown as a station break for the rest of
+ * its slot rather than crashing anything else on the page. This is how
+ * index.html's small preview (no youtubeContainer) stays simple while
+ * watch.html's full player (which passes one) can actually play it.
  *
  * onAiring(airing) fires when the program changes; onState(state, airing)
- * reports "loading" | "playing" | "buffering" | "slate" (gap, or the file
- * ended before its slot did) | "error" (retrying) | "blocked" (the browser
- * refused even muted autoplay; call resume() from a click).
+ * reports "loading" | "playing" | "buffering" | "slate" (gap, the file
+ * ended before its slot did, or no adapter is available for this
+ * program's provider) | "error" (retrying, up to a bound) | "blocked"
+ * (autoplay was refused; call resume() from a click).
  */
 export class BroadcastPlayer {
-  constructor(video, { onAiring = () => {}, onState = () => {} } = {}) {
-    Object.assign(this, { video, onAiring, onState });
+  constructor(video, { youtubeContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
+    Object.assign(this, { video, youtubeContainer, onAiring, onState });
     this.timeline = null;
     this.airing = null;
     this.state = null;
+    this.activeProvider = null;
+    this.activeAdapter = null;
+    this.muted = true;
     this.failures = 0;
     this.retryAt = 0;
+    this.retriesExhausted = false;
     this.lastDriftCheck = 0;
 
-    video.muted = true;
-    video.defaultMuted = true;
-    video.autoplay = true;
-    video.playsInline = true;
-    video.controls = false;
-    video.preload = "auto";
-    video.disablePictureInPicture = true;
-
-    video.addEventListener("loadedmetadata", () => this.seekToLive(0.5));
-    video.addEventListener("playing", () => { this.failures = 0; this.setState("playing"); });
-    video.addEventListener("waiting", () => this.setState("buffering"));
-    video.addEventListener("ended", () => this.setState("slate"));
-    video.addEventListener("error", () => this.fail());
-    // A broadcast never pauses: whatever paused it (a media key, the OS),
-    // pick right back up -- tick() then re-seeks to the live point.
-    video.addEventListener("pause", () => {
-      if (this.airing?.mediaUrl && !video.ended && this.state !== "error") this.play();
-    });
+    const onStateChange = (state) => {
+      if (state === "playing") { this.failures = 0; this.retriesExhausted = false; }
+      this.setState(state === "ended" ? "slate" : state);
+    };
+    const onError = (err) => this.fail(err);
+    this.adapters = {
+      html5: new Html5PlayerAdapter(video, { onStateChange, onError }),
+      youtube: youtubeContainer ? new YouTubePlayerAdapter(youtubeContainer, { onStateChange, onError }) : null,
+    };
 
     this.tick = this.tick.bind(this);
   }
@@ -239,7 +278,20 @@ export class BroadcastPlayer {
   /** Call from a user gesture if state is "blocked". */
   resume() {
     if (this.state === "blocked") this.setState("loading");
-    this.play();
+    this.activeAdapter?.play();
+  }
+
+  /** Mute/unmute, preserved across program and provider transitions
+   *  (e.g. a viewer who unmuted stays unmuted moving from an Internet
+   *  Archive film into a YouTube-sourced one) for as long as each
+   *  provider permits programmatic control of it. */
+  setMuted(muted) {
+    this.muted = muted;
+    this.activeAdapter?.setMuted(muted);
+  }
+
+  isMuted() {
+    return this.activeAdapter ? this.activeAdapter.isMuted() : this.muted;
   }
 
   setState(state) {
@@ -255,58 +307,89 @@ export class BroadcastPlayer {
       this.switchTo(loc);
       return;
     }
-    if (!this.airing.mediaUrl) return;
+    if (!this.airing.playable) return;
     if (this.state === "error") {
-      if (Date.now() >= this.retryAt) this.load();
+      if (!this.retriesExhausted && Date.now() >= this.retryAt) this.load();
       return;
     }
-    const v = this.video;
-    if (v.paused && !v.ended && this.state !== "blocked") this.play();
-    if (Date.now() - this.lastDriftCheck >= DRIFT_CHECK_MS) {
-      this.lastDriftCheck = Date.now();
-      this.seekToLive(DRIFT_TOLERANCE);
+    if (this.state !== "blocked" && this.state !== "loading") {
+      if (Date.now() - this.lastDriftCheck >= DRIFT_CHECK_MS) {
+        this.lastDriftCheck = Date.now();
+        const target = computeDriftCorrection(
+          this.activeAdapter?.getCurrentTime(), now() - this.airing.startsAt, DRIFT_TOLERANCE, this.activeAdapter?.getDuration(),
+        );
+        if (target !== null) this.activeAdapter.seek(target);
+      }
     }
   }
 
   switchTo(airing) {
     this.airing = airing;
     this.failures = 0;
+    this.retriesExhausted = false;
     this.onAiring(airing);
-    if (airing.mediaUrl) {
+
+    const adapter = airing.playable ? (airing.provider === "youtube" ? this.adapters.youtube : this.adapters.html5) : null;
+    // Pause (never destroy) whichever adapter is being switched away from
+    // -- the YouTube iframe in particular stays alive and is reused via
+    // loadVideoById() the next time a YouTube program comes up, rather
+    // than being torn down and recreated for every program transition.
+    if (this.activeAdapter && this.activeAdapter !== adapter) this.activeAdapter.pause();
+
+    if (adapter) {
+      this.activeProvider = airing.provider;
+      this.activeAdapter = adapter;
+      this.video.hidden = airing.provider !== "html5";
+      if (this.youtubeContainer) this.youtubeContainer.hidden = airing.provider !== "youtube";
+      this.activeAdapter.setMuted(this.muted);
       this.load();
     } else {
-      this.video.removeAttribute("src");
-      this.video.load();
+      // Either a station break (no program scheduled) or a program whose
+      // provider this page has no adapter for (e.g. a YouTube program on
+      // a page that didn't pass a youtubeContainer) -- both show the same
+      // slate; there's nothing to retry.
+      this.activeProvider = null;
+      this.activeAdapter = null;
+      this.video.hidden = true;
+      if (this.youtubeContainer) this.youtubeContainer.hidden = true;
       this.setState("slate");
     }
+  }
+
+  /** Fully tears down both adapters (including destroying the YouTube
+   *  iframe, if one was ever created) and stops the polling loop. Neither
+   *  index.html nor watch.html calls this today -- each creates one
+   *  BroadcastPlayer for the page's lifetime -- but it's here for any
+   *  future caller that needs to unmount a player outright. */
+  destroy() {
+    clearInterval(this.timer);
+    this.adapters.html5.destroy();
+    this.adapters.youtube?.destroy();
   }
 
   load() {
     this.setState("loading");
     this.lastDriftCheck = Date.now();
-    this.video.src = this.airing.mediaUrl;
-    this.play();
+    const offset = now() - this.airing.startsAt;
+    const source = this.activeProvider === "youtube" ? this.airing.videoId : this.airing.mediaUrl;
+    this.activeAdapter.load(source, Math.max(0, offset));
   }
 
-  seekToLive(tolerance) {
-    const v = this.video;
-    if (!this.airing?.mediaUrl || v.readyState < 1 || v.seeking) return;
-    const target = now() - this.airing.startsAt;
-    // The file can be a little shorter than its slot; once we're past its
-    // end, let it end and hold the slate until the next program.
-    if (Number.isFinite(v.duration) && target >= v.duration - 0.25) return;
-    if (Math.abs(v.currentTime - target) > tolerance) v.currentTime = Math.max(0, target);
-  }
-
-  play() {
-    const p = this.video.play();
-    if (p) p.catch((err) => { if (err.name === "NotAllowedError") this.setState("blocked"); });
-  }
-
-  fail() {
-    if (!this.video.getAttribute("src")) return;
+  /** A playback failure from whichever adapter is active. Bounded
+   *  retries with exponential backoff; a `fatal` error (e.g. YouTube
+   *  reporting the video was removed or can't be embedded) skips
+   *  straight to "no more retries" since trying again can't help.
+   *  Once exhausted, this program just sits in "error" (shown as a
+   *  station break) until the schedule's own clock moves on to the next
+   *  one -- "falling back to approved programming" is that next program
+   *  airing on time, same as any gap recovers today. */
+  fail(err) {
     this.failures++;
-    this.retryAt = Date.now() + Math.min(30000, 2000 * 2 ** (this.failures - 1));
+    if (err?.fatal || this.failures > MAX_RETRIES_PER_PROGRAM) {
+      this.retriesExhausted = true;
+    } else {
+      this.retryAt = Date.now() + computeBackoffMs(this.failures);
+    }
     this.setState("error");
   }
 }

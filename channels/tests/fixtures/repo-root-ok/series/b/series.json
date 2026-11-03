@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "id": "b",
+  "title": "Series B",
+  "episodes": [
+    { "id": "ep1", "title": "B1" }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_note": "STRUCTURAL PLACEHOLDER. \"items\" is empty because nothing has been imported yet. \"series\" references the four portable series.json files for this channel's intended lineup; each is itself a placeholder (no real episodes) until the YouTube importer exists. See series/<id>/series.json.",
+  "schema_version": 2,
+  "title": "Science & Engineering",
+  "items": [],
+  "series": [
+    { "ref": "../../series/technology-connections/series.json" },
+    { "ref": "../../series/practical-engineering/series.json" },
+    { "ref": "../../series/steve-mould/series.json" },
+    { "ref": "../../series/electroboom/series.json" }
+  ]
+}

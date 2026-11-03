@@ -1,0 +1,9 @@
+{
+  "items": [
+    {
+      "id": "UCref",
+      "snippet": { "title": "Refresh Channel", "description": "d" },
+      "contentDetails": { "relatedPlaylists": { "uploads": "UUref" } }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": 2,
+  "title": "Sample With Series",
+  "items": [],
+  "series": [
+    { "ref": "../../series/a/series.json" },
+    { "ref": "../../series/b/series.json" }
+  ]
+}

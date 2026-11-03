@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "vid1",
+      "snippet": {
+        "title": "Episode One", "description": "First ep", "publishedAt": "2024-01-01T00:00:00Z",
+        "channelId": "UCreal1", "channelTitle": "Real Channel Title", "liveBroadcastContent": "none",
+        "thumbnails": { "high": { "url": "https://example.test/vid1.jpg" } }
+      },
+      "contentDetails": { "duration": "PT12M0S" },
+      "status": { "privacyStatus": "public", "embeddable": true, "madeForKids": false, "uploadStatus": "processed" }
+    },
+    {
+      "id": "vid2",
+      "snippet": {
+        "title": "Quick Clip", "description": "A short", "publishedAt": "2024-01-02T00:00:00Z",
+        "channelId": "UCreal1", "channelTitle": "Real Channel Title", "liveBroadcastContent": "none",
+        "thumbnails": { "high": { "url": "https://example.test/vid2.jpg" } }
+      },
+      "contentDetails": { "duration": "PT45S" },
+      "status": { "privacyStatus": "public", "embeddable": true, "madeForKids": false, "uploadStatus": "processed" }
+    },
+    {
+      "id": "vid3",
+      "snippet": {
+        "title": "Episode Three", "description": "Third ep", "publishedAt": "2024-01-03T00:00:00Z",
+        "channelId": "UCreal1", "channelTitle": "Real Channel Title", "liveBroadcastContent": "none",
+        "thumbnails": { "high": { "url": "https://example.test/vid3.jpg" } }
+      },
+      "contentDetails": { "duration": "PT8M0S" },
+      "status": { "privacyStatus": "public", "embeddable": true, "madeForKids": false, "uploadStatus": "processed" }
+    }
+  ]
+}

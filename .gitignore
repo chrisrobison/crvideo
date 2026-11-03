@@ -2,6 +2,10 @@
 Thumbs.db
 *.swp
 
+# Local environment/secrets file(s) -- never committed.
+/.env
+/.env.sh
+
 # Local video cache (server/download-cache.mjs) -- large, regenerated, never committed.
 /cache/
 
@@ -14,3 +18,14 @@ Thumbs.db
 
 # Backups the publish endpoint makes of playlist.json before each overwrite.
 /playlist.json.bak
+
+# Backups YouTubeSeriesWriter (youtube-import) makes of a series.json before
+# each overwrite.
+series/*/series.json.bak
+
+# channels/publish.php's per-block approved-episode-set pins (EpisodeSetPin)
+# and the .bak files it/ScheduleWriter leave next to schedule.json/meta.json --
+# local build state, same posture as ia-import's .cache/, never committed.
+channels/*/.publish/
+channels/*/schedule.json.bak
+channels/*/meta.json.bak

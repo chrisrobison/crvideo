@@ -1,0 +1,4 @@
+# Local YouTube Data API v3 credentials -- a secret, never committed. See
+# youtube-import.php --help for the YOUTUBE_API_KEY environment variable
+# alternative.
+/config.local.php
