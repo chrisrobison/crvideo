@@ -2,8 +2,9 @@
 Thumbs.db
 *.swp
 
-# Local environment/secrets file -- never committed.
+# Local environment/secrets file(s) -- never committed.
 /.env
+/.env.sh
 
 # Local video cache (server/download-cache.mjs) -- large, regenerated, never committed.
 /cache/
