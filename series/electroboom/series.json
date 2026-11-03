@@ -1,18 +1,427 @@
 {
-  "_note": "STRUCTURAL PLACEHOLDER. This file exists to prove out the series.json shape and its catalog reference (see channels/science/catalog.json) ahead of the YouTube importer, which has not been built yet (a later phase). No real YouTube channel id, video id, episode title, or duration has been entered here -- every such field is null or empty on purpose. Do not schedule this series and do not treat any value below as real metadata; replace this whole file by running the (future) importer.",
-  "schema_version": 1,
-  "id": "electroboom",
-  "title": "ElectroBOOM",
-  "description": "Electronics experiments, explained (and frequently exploded) for comic effect.",
-  "creator": null,
-  "year": null,
-  "thumbnail_url": null,
-  "logo_url": null,
-  "source": {
-    "provider": "youtube",
-    "channel_id": null,
-    "channel_url": null
-  },
-  "rotation": { "mode": "sequential", "loop": true },
-  "episodes": []
+    "schema_version": 1,
+    "id": "electroboom",
+    "title": "ElectroBOOM",
+    "description": "Electronics experiments, explained (and frequently exploded) for comic effect.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_nnG7-mZVY0oCnbM1yY_pGC_uOA-AoWYlpvDI9kOW5JDFE=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+        "channel_url": "https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-C2ZiaUCyRMY",
+            "episode_number": 1,
+            "title": "Just Open the Breaker! #electrical #Installation #DIY #Funny",
+            "description": "It is always best when doing electrician work to OPEN THE DAMN BREAKER!",
+            "duration": 25,
+            "year": 2026,
+            "published_at": "2026-10-27T17:28:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/C2ZiaUCyRMY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "C2ZiaUCyRMY",
+                "url": "https://www.youtube.com/watch?v=C2ZiaUCyRMY",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ZjyrZmtc7L0",
+            "episode_number": 2,
+            "title": "Electrical Wiring, Installations and Upgrade",
+            "description": "Get yourself an awesome thermal camera using promo code ‘ELECTROCAM10’ at checkout through either of the following links:\nhttps://thermalmaster.com/ELECTROBOOM\nUS: https://www.amazon.com/dp/B0FMDY9FJG\nEurope: https://www.amazon.de/dp/B0FPWWXN2S\nEurope: https://www.amazon.co.uk/dp/B0FPWWXN2S\n\nInstalling Electrical wiring, new outlets and light fixtures sounds easy until you have to crawl into dark tight place that you might fall through on your head! So have some appreciations for your local electrician!\n\nFor Exclusive Content (if I make any! Stay tuned), join:\nPatreon: http://patreon.com/electroboom\nOr YouTube membership: https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/join\n\nPost your submissions to: http://reddit.com/r/electroboom \n\nInstagram: http://instagram.com/mehdi_sadaghdar \nTikTok: https://www.tiktok.com/@electroboomguy\nTwitter:  http://twitter.com/electroboomguy\nFacebook:  http://www.facebook.com/ElectroBOOM\nMy articles:  https://www.electroboom.com/\n\nBelow are my Super HUGE Patrons!\n\nRiver Champeimont\nZoddy\nFeng Fenli\n \nMy sponsors and top patrons: http://www.electroboom.com/?page_id=727\n\nBy: Mehdi Sadaghdar\n\n0:00 Day 1: Prepare for Fishing Wires\n11:53 Day 2: Fishing and Securing Wires\n23:54 Day 3:  Installing Light Fixtures",
+            "duration": 1898,
+            "year": 2026,
+            "published_at": "2026-10-25T16:00:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZjyrZmtc7L0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ZjyrZmtc7L0",
+                "url": "https://www.youtube.com/watch?v=ZjyrZmtc7L0",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-sjTCGkq7PRk",
+            "episode_number": 3,
+            "title": "Never Trust Facebook AI Posts! #lithiumbattery #experiment #test #charger #funnyreels #teamhuman",
+            "description": "In the full video there are MANY AI generated crappy posts reviewed on facebook. We need to get this regulated! PUT YOUR NAME ON OUUR PETITION at https://teamhuman.org ! and good luck!",
+            "duration": 74,
+            "year": 2026,
+            "published_at": "2026-10-10T19:33:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sjTCGkq7PRk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sjTCGkq7PRk",
+                "url": "https://www.youtube.com/watch?v=sjTCGkq7PRk",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6Uv94zhK9M0",
+            "episode_number": 4,
+            "title": "Facebook is FULL of It 🤬",
+            "description": "Try _*Koji the AI Tutor*_ for _*FREE*_ signing up at http://brilliant.org/electroboom , and get _*20% OFF*_ Brilliant's annual premium subscription and start learning. Thanks Brilliant for sponsoring this video.\n\nSOOOO many pages on facebook filled with AI generated content, almost all feeding wrong information to unsuspecting people, some of which is quite dangerous! THIS IS TIME TO GET THEM REGULATED! Sign our petition at http://teamhuman.org and comment #teamhuman \n\nHere' more FILTH for members: https://youtu.be/21HuEgi91Ls?si=-yAcw4ZspUkQXzwf\n\nFor Exclusive Content (if I make any! Stay tuned), join:\nPatreon: http://patreon.com/electroboom\nOr YouTube membership: https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/join\n\nPost your submissions to: http://reddit.com/r/electroboom \n\nInstagram: http://instagram.com/mehdi_sadaghdar \nTikTok: https://www.tiktok.com/@electroboomguy\nTwitter:  http://twitter.com/electroboomguy\nFacebook:  http://www.facebook.com/ElectroBOOM\nMy articles:  https://www.electroboom.com/\n\nBelow are my Super HUGE Patrons!\n\nRiver Champeimont\nZoddy\nFeng Fenli\n \nMy sponsors and top patrons: http://www.electroboom.com/?page_id=727\n\nBy: Mehdi Sadaghdar\n\n#teamhuman",
+            "duration": 959,
+            "year": 2026,
+            "published_at": "2026-10-10T16:00:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6Uv94zhK9M0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6Uv94zhK9M0",
+                "url": "https://www.youtube.com/watch?v=6Uv94zhK9M0",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Tuxgh8SrzbQ",
+            "episode_number": 5,
+            "title": "Rage-Fixing the Power Washer",
+            "description": "Go to https://obscura.com/BOOM and get 25% off a the best VPN for online privacy or use code BOOM on checkout\n\nNever give up on your failing tools and equipment! Not only you can rage-fix them, you also learn about how things work, AND might survive the experience too! Also… don’t get foam spray on your skin…\n\nFor Exclusive Content (if I make any! Stay tuned), join:\nPatreon: http://patreon.com/electroboom\nOr YouTube membership: https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/join\n\nPost your submissions to: http://reddit.com/r/electroboom \n\nInstagram: http://instagram.com/mehdi_sadaghdar \nTikTok: https://www.tiktok.com/@electroboomguy\nTwitter:  http://twitter.com/electroboomguy\nFacebook:  http://www.facebook.com/ElectroBOOM\nMy articles:  https://www.electroboom.com/\n\nBelow are my Super HUGE Patrons!\n\nRiver Champeimont\nZoddy\nFeng Fenli\n \nMy sponsors and top patrons: http://www.electroboom.com/?page_id=727\n\nBy: Mehdi Sadaghdar\n\n0:00 Trying to Repair a Broken Power Washer\n10:14 Don't Get Expandable Foam Spray on Your Skin",
+            "duration": 751,
+            "year": 2026,
+            "published_at": "2026-09-21T16:04:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Tuxgh8SrzbQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Tuxgh8SrzbQ",
+                "url": "https://www.youtube.com/watch?v=Tuxgh8SrzbQ",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-DWAMwfM2DrM",
+            "episode_number": 6,
+            "title": "Electricity Can Pass Through Glass #experiment #science #electrical #funny",
+            "description": "High frequency electrical energy passes through everything and can cook you!",
+            "duration": 77,
+            "year": 2026,
+            "published_at": "2026-09-05T17:47:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DWAMwfM2DrM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DWAMwfM2DrM",
+                "url": "https://www.youtube.com/watch?v=DWAMwfM2DrM",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--TvOCDbhCWk",
+            "episode_number": 7,
+            "title": "Plasma Globe Can Be a Fire Hazard #experiment #technology #science #funny",
+            "description": "Everything with electricity can be hazardous when the universe gets creative! Plasma Globe is one of them! Checkout the full video for all sort of its dangers!",
+            "duration": 56,
+            "year": 2026,
+            "published_at": "2026-09-01T16:05:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-TvOCDbhCWk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-TvOCDbhCWk",
+                "url": "https://www.youtube.com/watch?v=-TvOCDbhCWk",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-WAeTROAfSTs",
+            "episode_number": 8,
+            "title": "Why Plasma Runs in the Globe #technology #electrical #science",
+            "description": "Plasma Globe is cool but can be a fire hazard! BEWARE!",
+            "duration": 41,
+            "year": 2026,
+            "published_at": "2026-08-30T07:39:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WAeTROAfSTs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WAeTROAfSTs",
+                "url": "https://www.youtube.com/watch?v=WAeTROAfSTs",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nhbeaHuZMQ0",
+            "episode_number": 9,
+            "title": "Plasma Globe is a ⚡Shocking⚡🔥Fire Hazard🔥",
+            "description": "Try _*Koji the AI Tutor*_ for _*FREE*_ signing up at http://brilliant.org/electroboom , and get _*20% OFF*_ Brilliant's annual premium subscription and start learning. Thanks Brilliant for sponsoring this video.\n\nThis video demonstrates the potential dangers of a plasma globe like electrocution, fire hazard and perhaps other potentials if you don’t use it right! But I mean… come on!!!\n\nFor Exclusive Content (if I make any! Stay tuned), join:\nPatreon: http://patreon.com/electroboom\nOr YouTube membership: https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/join\n\nPost your submissions to: http://reddit.com/r/electroboom \n\nInstagram: http://instagram.com/mehdi_sadaghdar \nTikTok: https://www.tiktok.com/@electroboomguy\nTwitter:  http://twitter.com/electroboomguy\nFacebook:  http://www.facebook.com/ElectroBOOM\nMy articles:  https://www.electroboom.com/\n\nBelow are my Super HUGE Patrons!\n\nRiver Champeimont\nZoddy\nMichael Lloyd\nFeng Fenli\n \nMy sponsors and top patrons: http://www.electroboom.com/?page_id=727\n\nBy: Mehdi Sadaghdar",
+            "duration": 679,
+            "year": 2026,
+            "published_at": "2026-08-27T16:01:40Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nhbeaHuZMQ0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nhbeaHuZMQ0",
+                "url": "https://www.youtube.com/watch?v=nhbeaHuZMQ0",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Se1NPlfUCss",
+            "episode_number": 10,
+            "title": "Taser Knife Fighting at Open Sauce 2026",
+            "description": "Lots of projects, great creators, disguises and sometimes shocking stuff!!! 😂\n\nFor Exclusive Content (if I make any! Stay tuned), join:\nPatreon: http://patreon.com/electroboom\nOr YouTube membership: https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/join\n\nPost your submissions to: http://reddit.com/r/electroboom \n\nInstagram: http://instagram.com/mehdi_sadaghdar \nTikTok: https://www.tiktok.com/@electroboomguy\nTwitter:  http://twitter.com/electroboomguy\nFacebook:  http://www.facebook.com/ElectroBOOM\nMy articles:  https://www.electroboom.com/\n\nBelow are my Super HUGE Patrons!\n\nRiver Champeimont\nZoddy\nFeng Fenli \nMy sponsors and top patrons: http://www.electroboom.com/?page_id=727\n\nBy: Mehdi Sadaghdar",
+            "duration": 666,
+            "year": 2026,
+            "published_at": "2026-08-09T16:06:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Se1NPlfUCss/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Se1NPlfUCss",
+                "url": "https://www.youtube.com/watch?v=Se1NPlfUCss",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-kSPrY4NHqow",
+            "episode_number": 11,
+            "title": "The Sketchiness in GREECE",
+            "description": "Click this link https://boot.dev/?promo=ELECTROBOOM and use my code ELECTROBOOM to get 25% off your first payment for boot.dev. Thank you Boot.Dev for Sponsoring! \n\nMy travel to Greece just proved to me that my electrical installations are far superior than what you can find in Greece!!! 😂\n \nFor Exclusive Content (if I make any! Stay tuned), join:\nPatreon: http://patreon.com/electroboom\nOr YouTube membership: https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/join\n\nPost your submissions to: http://reddit.com/r/electroboom \n\nInstagram: http://instagram.com/mehdi_sadaghdar \nTikTok: https://www.tiktok.com/@electroboomguy\nTwitter:  http://twitter.com/electroboomguy\nFacebook:  http://www.facebook.com/ElectroBOOM\nMy articles:  https://www.electroboom.com/\n\nBelow are my Super HUGE Patrons!\n\nRiver Champeimont\nZoddy\nFeng Fenli \nMy sponsors and top patrons: http://www.electroboom.com/?page_id=727\n\nMusic in the video:\nAtlas • Greece Music by Vadim from Pixabay :\nhttps://pixabay.com/users/vadim_makes_sound-54823268/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=555434\n\nu_98673jp944 from Pixabay:\nhttps://pixabay.com/users/u_98673jp944-48995615/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=470783\n\nBy: Mehdi Sadaghdar",
+            "duration": 1537,
+            "year": 2026,
+            "published_at": "2026-07-30T16:01:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kSPrY4NHqow/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kSPrY4NHqow",
+                "url": "https://www.youtube.com/watch?v=kSPrY4NHqow",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-dpNfJm2Ql90",
+            "episode_number": 12,
+            "title": "Mounting a Power Bar #diy #lifehacks #funny #electrical",
+            "description": "Some techniques make your life easy, just unplug it first.",
+            "duration": 33,
+            "year": 2026,
+            "published_at": "2026-07-26T00:25:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dpNfJm2Ql90/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dpNfJm2Ql90",
+                "url": "https://www.youtube.com/watch?v=dpNfJm2Ql90",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-mIBhWgYWVPA",
+            "episode_number": 13,
+            "title": "Running Power for New Outdoor Light Fixture",
+            "description": "Sometimes you don’t have power where you need to install a light fixture. Know how to do it, and leave it to professionals!!!\n \nFor Exclusive Content (if I make any! Stay tuned), join:\nPatreon: http://patreon.com/electroboom\nOr YouTube membership: https://www.youtube.com/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/join\n\nPost your submissions to: http://reddit.com/r/electroboom \n\nInstagram: http://instagram.com/mehdi_sadaghdar \nTikTok: https://www.tiktok.com/@electroboomguy\nTwitter:  http://twitter.com/electroboomguy\nFacebook:  http://www.facebook.com/ElectroBOOM\nMy articles:  https://www.electroboom.com/\n\nBelow are my Super HUGE Patrons!\n\nRiver Champeimont\nZoddy\nFeng Fenli \nMy sponsors and top patrons: http://www.electroboom.com/?page_id=727\n\nBy: Mehdi Sadaghdar",
+            "duration": 686,
+            "year": 2026,
+            "published_at": "2026-06-19T16:00:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mIBhWgYWVPA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mIBhWgYWVPA",
+                "url": "https://www.youtube.com/watch?v=mIBhWgYWVPA",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-P4351ixgP4M",
+            "episode_number": 14,
+            "title": "Seeing in Thermal #experiment #fluke #funny",
+            "description": "With thermal imaging you see the unseen!! \nThanks to @fluke for providing the camera to me!",
+            "duration": 52,
+            "year": 2026,
+            "published_at": "2026-06-11T17:43:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/P4351ixgP4M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "P4351ixgP4M",
+                "url": "https://www.youtube.com/watch?v=P4351ixgP4M",
+                "channel_id": "UCJ0-OtVpF0wOKEqT2Z1HEtA",
+                "channel_title": "ElectroBOOM",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
 }
