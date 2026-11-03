@@ -29,3 +29,8 @@ series/*/series.json.bak
 channels/*/.publish/
 channels/*/schedule.json.bak
 channels/*/meta.json.bak
+
+# Backups server/channel-admin.php makes of catalog.json/programming.json
+# before each overwrite (admin_atomic_write_json in server/lib/AdminSupport.php).
+channels/*/catalog.json.bak
+channels/*/programming.json.bak
