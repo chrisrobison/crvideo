@@ -17,33 +17,38 @@ editorial "candidate"; only an editor approving it (and a later run of
 
 ```sh
 # A channel, by its @handle
-php youtube-import.php --channel "@TechnologyConnections" \
-  --output ../series/technology-connections/series.json
+php youtube-import.php --channel="@TechnologyConnections" \
+  --output=../series/technology-connections/series.json
 
 # A channel, by its canonical UC... id (skips the handle lookup)
-php youtube-import.php --channel-id UCy0tKL1T7wFoYcxCe0xjN6Q \
-  --output ../series/technology-connections/series.json
+php youtube-import.php --channel-id=UCy0tKL1T7wFoYcxCe0xjN6Q \
+  --output=../series/technology-connections/series.json
 
 # A specific playlist
-php youtube-import.php --playlist PLxxxxxxxxxxxxxxxxxxxxxxxx \
-  --output ../series/some-playlist-series/series.json
+php youtube-import.php --playlist=PLxxxxxxxxxxxxxxxxxxxxxxxx \
+  --output=../series/some-playlist-series/series.json
 
 # Preview what a run would do without writing anything
-php youtube-import.php --channel "@TechnologyConnections" \
-  --output ../series/technology-connections/series.json --dry-run --verbose
+php youtube-import.php --channel="@TechnologyConnections" \
+  --output=../series/technology-connections/series.json --dry-run --verbose
 
 # Cap how many videos get enumerated (useful for a first trial run on a
 # channel with hundreds of uploads)
-php youtube-import.php --channel "@TechnologyConnections" \
-  --output ../series/technology-connections/series.json --max-videos=20
+php youtube-import.php --channel="@TechnologyConnections" \
+  --output=../series/technology-connections/series.json --max-videos=20
 
 # Refresh a previously-imported series: re-checks videos that were
 # previously marked unavailable/private/deleted (skipped by default to
 # save API quota), on top of the normal always-refreshed behavior for
 # still-available and newly-discovered videos
-php youtube-import.php --channel "@TechnologyConnections" \
-  --output ../series/technology-connections/series.json --refresh
+php youtube-import.php --channel="@TechnologyConnections" \
+  --output=../series/technology-connections/series.json --refresh
 ```
+
+Note: every `--flag` that takes a value must use `=` (e.g. `--output=PATH`),
+not a space — the parser treats `--output PATH` as the boolean flag
+`--output` followed by a stray positional argument, silently dropping the
+path. Same convention as `ia-import.php`.
 
 ## Credentials
 
