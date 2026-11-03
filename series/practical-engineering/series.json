@@ -40,10 +40,10 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "candidate",
+            "status": "approved",
             "rights": {
                 "status": "unverified",
-                "notes": null
+                "notes": "Approved as a manual demo of the admin UI round-trip (phase 6 report)."
             }
         },
         {
