@@ -1,3 +1,11 @@
 .DS_Store
 Thumbs.db
 *.swp
+
+# Local environment/secrets file -- never committed.
+/.env
+/.env.sh
+
+# Google Drive API key for channel.html's drive-key.php -- a secret,
+# never committed. See scheduler/GOOGLE_DRIVE_SETUP.md.
+/scheduler/drive-config.local.php
