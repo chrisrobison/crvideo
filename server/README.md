@@ -1,10 +1,17 @@
 # Server-side pieces
 
-Two independent PHP scripts live here:
+Several independent PHP scripts live here:
 
 - **`download-cache.php`** (cron-run) -- pre-fetches/remuxes video to local disk.
 - **`publish-playlist.php`** (web-reachable) -- lets the scheduler write a new
   live schedule. See its own section below.
+- **`series-admin.php`** / **`channel-admin.php`** (web-reachable) --
+  back the scheduler's new SERIES/PROGRAMMING admin tabs (episode
+  approval, channel catalog/programming editing, triggering
+  youtube-import.php/channels/publish.php). **Read
+  `docs/admin-ui.md` before deploying these anywhere reachable** --
+  they currently have no access control at all, by explicit decision,
+  documented there in full.
 
 ## Local video cache downloader
 
