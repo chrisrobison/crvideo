@@ -121,12 +121,21 @@ a folder for this purpose anyway.
    - **API restrictions** → Restrict key → check **Google Drive API** only.
    - **Application restrictions** → **Websites** → add the origin(s) you'll
      host this page on (e.g. `https://cdr2.com/*`).
-3. Copy the key into `scheduler/js/drive-config.js`:
-   ```js
-   export const GOOGLE_API_KEY = "AIza...";
-   ```
-   Even though it's restricted, treat it like the Client ID — it's meant to
-   be public/committable, not a backend secret.
+3. Give the key to `scheduler/js/drive-key.php` (a tiny PHP endpoint that
+   serves it as an ES module at request time — `channel.html` imports from
+   there, not from a committed file), one of:
+   - the `GOOGLE_DRIVE_API_KEY` environment variable, or
+   - an untracked `scheduler/drive-config.local.php` (gitignored) returning:
+     ```php
+     <?php
+     return ['api_key' => 'AIza...'];
+     ```
+
+   This key still ends up in every viewer's browser — that's inherent to
+   calling the Drive REST API client-side, the same as before. Keeping it
+   out of version control just means it's never sitting in git history and
+   can be rotated without a code change. The Cloud Console restrictions in
+   step 2 remain the actual abuse control, same as always.
 
 **Share the folder**: right-click it in Drive → **Share** → **General
 access** → **Anyone with the link** → **Viewer**. (If it's already shared

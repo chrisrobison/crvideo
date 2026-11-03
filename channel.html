@@ -26,7 +26,7 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
 <div id="standby" class="hidden"></div>
 <div id="fatal" class="hidden"></div>
 <script type="module">
-import { GOOGLE_API_KEY } from "./scheduler/js/drive-config.js";
+import { GOOGLE_API_KEY } from "./scheduler/js/drive-key.php";
 import { ChunkedDrivePlayer } from "./scheduler/js/chunked-drive-player.js";
 
 const qs = new URLSearchParams(location.search);
@@ -59,8 +59,9 @@ function showFatal(html) {
 
 if (!GOOGLE_API_KEY) {
   showFatal(
-    "Google API key not configured.<br><br>Add one in <code>scheduler/js/drive-config.js</code> " +
-    "(<code>GOOGLE_API_KEY</code>) — see <code>scheduler/GOOGLE_DRIVE_SETUP.md</code>.");
+    "Google API key not configured.<br><br>Set <code>GOOGLE_DRIVE_API_KEY</code> " +
+    "or create <code>scheduler/drive-config.local.php</code> " +
+    "— see <code>scheduler/GOOGLE_DRIVE_SETUP.md</code>.");
   throw new Error("GOOGLE_API_KEY is not set");
 }
 
