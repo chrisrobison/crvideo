@@ -32,9 +32,9 @@ function yt_import_usage(): string
     YouTube Channel / Playlist Importer -- writes a portable series.json
 
     Usage:
-      php youtube-import.php --channel "@SomeChannel" --output series/some-channel/series.json
-      php youtube-import.php --channel-id UCxxxxxxxxxxxxxxxxxxxxxx --output series/x/series.json
-      php youtube-import.php --playlist PLxxxxxxxxxxxxxxxxxxxxxxxx --output series/x/series.json
+      php youtube-import.php --channel="@SomeChannel" --output=series/some-channel/series.json
+      php youtube-import.php --channel-id=UCxxxxxxxxxxxxxxxxxxxxxx --output=series/x/series.json
+      php youtube-import.php --playlist=PLxxxxxxxxxxxxxxxxxxxxxxxx --output=series/x/series.json
 
     Options:
       --channel=HANDLE_OR_USERNAME  Channel to import, by "@handle" or legacy username
@@ -73,6 +73,26 @@ function yt_import_usage(): string
     atomic and the previous version is kept as "<output>.bak".
 
     USAGE;
+}
+
+/**
+ * Reads a value-bearing option, or returns null if it was never passed.
+ * Returns false (and writes a clear stderr error) if the flag was given
+ * as a bare switch instead of `--name=value` -- almost always a typo
+ * like `--output PATH` (space-separated) instead of `--output=PATH`,
+ * which would otherwise silently become the string "1" and the real
+ * path would be dropped as a stray positional argument.
+ */
+function yt_import_string_option(array $opt, string $name): string|false|null
+{
+    if (!isset($opt[$name])) {
+        return null;
+    }
+    if ($opt[$name] === true) {
+        fwrite(STDERR, "Error: --$name requires a value -- use --$name=VALUE, not a bare flag or a space-separated value.\n");
+        return false;
+    }
+    return (string) $opt[$name];
 }
 
 /** @return array{positional: list<string>, options: array<string,string|bool>} */
@@ -138,29 +158,36 @@ function yt_import_main(array $argv): int
         return 0;
     }
 
-    $channel = isset($opt['channel']) ? (string) $opt['channel'] : null;
-    $channelId = isset($opt['channel-id']) ? (string) $opt['channel-id'] : null;
-    $playlist = isset($opt['playlist']) ? (string) $opt['playlist'] : null;
+    $channel = yt_import_string_option($opt, 'channel');
+    $channelId = yt_import_string_option($opt, 'channel-id');
+    $playlist = yt_import_string_option($opt, 'playlist');
+    $outputPath = yt_import_string_option($opt, 'output');
+    $seriesIdOpt = yt_import_string_option($opt, 'series-id');
+    $titleOverride = yt_import_string_option($opt, 'title');
+    $maxVideosOpt = yt_import_string_option($opt, 'max-videos');
+    $timeoutOpt = yt_import_string_option($opt, 'timeout');
+    $fixturesDir = yt_import_string_option($opt, 'fixtures');
+    $configPath = yt_import_string_option($opt, 'config');
+    if (in_array(false, [$channel, $channelId, $playlist, $outputPath, $seriesIdOpt, $titleOverride, $maxVideosOpt, $timeoutOpt, $fixturesDir, $configPath], true)) {
+        return 1;
+    }
+
     $given = array_filter([$channel, $channelId, $playlist], static fn ($v) => $v !== null);
     if (count($given) !== 1) {
         fwrite(STDERR, "Error: pass exactly one of --channel, --channel-id, --playlist.\n");
         return 1;
     }
-    if (!isset($opt['output']) || $opt['output'] === '') {
+    if ($outputPath === null || $outputPath === '') {
         fwrite(STDERR, "Error: --output=PATH is required.\n");
         return 1;
     }
 
-    $outputPath = (string) $opt['output'];
-    $seriesId = isset($opt['series-id']) ? (string) $opt['series-id'] : basename(rtrim(dirname($outputPath), '/'));
-    $titleOverride = isset($opt['title']) ? (string) $opt['title'] : null;
-    $maxVideos = isset($opt['max-videos']) ? max(1, (int) $opt['max-videos']) : null;
+    $seriesId = $seriesIdOpt ?? basename(rtrim(dirname($outputPath), '/'));
+    $maxVideos = $maxVideosOpt !== null ? max(1, (int) $maxVideosOpt) : null;
     $refresh = !empty($opt['refresh']);
     $dryRun = !empty($opt['dry-run']);
     $verbose = !empty($opt['verbose']);
-    $timeout = isset($opt['timeout']) ? max(1, (int) $opt['timeout']) : 15;
-    $fixturesDir = isset($opt['fixtures']) ? (string) $opt['fixtures'] : null;
-    $configPath = isset($opt['config']) ? (string) $opt['config'] : null;
+    $timeout = $timeoutOpt !== null ? max(1, (int) $timeoutOpt) : 15;
 
     $creds = YouTubeCredentials::resolve($configPath);
     if ($creds['apiKey'] === null) {
