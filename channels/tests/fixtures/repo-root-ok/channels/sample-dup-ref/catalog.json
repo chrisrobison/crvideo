@@ -1,0 +1,9 @@
+{
+  "schema_version": 2,
+  "title": "Sample With Duplicate Series Ref",
+  "items": [],
+  "series": [
+    { "ref": "../../series/a/series.json" },
+    { "ref": "../../series/a/series.json" }
+  ]
+}

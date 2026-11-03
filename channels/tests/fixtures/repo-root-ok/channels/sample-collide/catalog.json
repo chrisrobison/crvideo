@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "title": "Sample With Colliding Id",
+  "items": [
+    { "id": "a:ep1", "title": "Flat item that happens to share a series-derived key" }
+  ],
+  "series": [
+    { "ref": "../../series/a/series.json" }
+  ]
+}

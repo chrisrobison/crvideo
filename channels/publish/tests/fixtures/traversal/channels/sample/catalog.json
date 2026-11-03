@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "title": "Traversal Attempt",
+  "items": [],
+  "series": [
+    { "ref": "../../../outside/series.json" },
+    { "ref": "https://evil.example/series.json" },
+    { "ref": "//evil.example/series.json" }
+  ]
+}

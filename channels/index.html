@@ -140,7 +140,7 @@ const openWindows = new Map();
 const preview = new BroadcastPlayer($("previewVideo"), {
   onAiring: () => renderPreview(),
   onState: (state, airing) => {
-    const slate = state === "slate" || state === "error" || !airing?.mediaUrl;
+    const slate = state === "slate" || state === "error" || !airing?.playable;
     $("previewSlate").hidden = !slate;
     $("slateText").textContent = state === "error" ? "Signal lost, reconnecting…" : "Station break";
   },
@@ -207,7 +207,7 @@ function renderGrid() {
       const left = Math.max(a.startsAt, windowStart);
       const right = Math.min(a.endsAt, until);
       if (a.startsAt <= t && t < a.endsAt) nextBoundary = Math.min(nextBoundary, a.endsAt);
-      if (!a.mediaUrl) {
+      if (!a.playable) {
         const gap = el("div", "gap");
         gap.style.left = pct(left);
         gap.style.width = `${((right - left) / span) * 100}%`;
@@ -269,7 +269,7 @@ async function renderPreview() {
   if (!ch) return;
   const a = preview.airing || locate(ch.timeline);
   const t = now();
-  $("pTitle").textContent = a.mediaUrl ? a.title : "Station break";
+  $("pTitle").textContent = a.playable ? a.title : "Station break";
   $("pRange").textContent = `${clock(a.startsAt)} – ${clock(a.endsAt)}`;
   const next = nextProgram(ch.timeline, t);
   $("pNext").replaceChildren();
@@ -277,8 +277,8 @@ async function renderPreview() {
   updateProgress();
 
   $("pMeta").textContent = "";
-  $("pDesc").textContent = a.mediaUrl ? "" : ch.description;
-  if (!a.mediaUrl) return;
+  $("pDesc").textContent = a.playable ? "" : ch.description;
+  if (!a.playable) return;
   const item = (await loadCatalog(ch)).get(a.id);
   if (focused !== ch || preview.airing?.startsAt !== a.startsAt || !item) return;
   $("pMeta").textContent = [item.year, item.creator].filter(Boolean).join(" · ");

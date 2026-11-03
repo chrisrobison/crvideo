@@ -1,0 +1,93 @@
+{
+    "_publish": {
+        "generated_at": "2026-11-02T11:08:05+00:00",
+        "window": {
+            "start": "2026-11-02T00:00:00-08:00",
+            "end": "2026-11-05T00:00:00-08:00"
+        },
+        "episode_sets": [
+            {
+                "block_id": "daily-hour",
+                "series_id": "fixture-series",
+                "version": 1,
+                "episode_count": 2
+            }
+        ]
+    },
+    "schema_version": 1,
+    "channel": "Fixture Channel",
+    "blocks": [
+        {
+            "block": 1,
+            "type": "normal",
+            "duration": 259200,
+            "used": 2700,
+            "remaining": 256500,
+            "relative_start": 0,
+            "items": [
+                {
+                    "type": "gap",
+                    "start": 0,
+                    "duration": 46800
+                },
+                {
+                    "type": "video",
+                    "id": "ep1",
+                    "start": 46800,
+                    "duration": 900,
+                    "title": "Episode One",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=aaa111",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "aaa111",
+                        "url": "https://www.youtube.com/watch?v=aaa111"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 47700,
+                    "duration": 85500
+                },
+                {
+                    "type": "video",
+                    "id": "ep2",
+                    "start": 133200,
+                    "duration": 900,
+                    "title": "Episode Two",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=bbb222",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "bbb222",
+                        "url": "https://www.youtube.com/watch?v=bbb222"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 134100,
+                    "duration": 85500
+                },
+                {
+                    "type": "video",
+                    "id": "ep1",
+                    "start": 219600,
+                    "duration": 900,
+                    "title": "Episode One",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=aaa111",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "aaa111",
+                        "url": "https://www.youtube.com/watch?v=aaa111"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 220500,
+                    "duration": 38700
+                }
+            ]
+        }
+    ]
+}

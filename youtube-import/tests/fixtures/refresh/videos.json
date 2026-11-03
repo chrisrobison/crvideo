@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "r1",
+      "snippet": {
+        "title": "YouTube still calls it this", "description": "x", "publishedAt": "2023-01-01T00:00:00Z",
+        "channelId": "UCref", "channelTitle": "Refresh Channel", "liveBroadcastContent": "none",
+        "thumbnails": { "high": { "url": "new1.jpg" } }
+      },
+      "contentDetails": { "duration": "PT1M40S" },
+      "status": { "privacyStatus": "public", "embeddable": true, "madeForKids": false, "uploadStatus": "processed" }
+    },
+    {
+      "id": "r3",
+      "snippet": {
+        "title": "Brand New Upload", "description": "fresh", "publishedAt": "2024-05-01T00:00:00Z",
+        "channelId": "UCref", "channelTitle": "Refresh Channel", "liveBroadcastContent": "none",
+        "thumbnails": { "high": { "url": "r3.jpg" } }
+      },
+      "contentDetails": { "duration": "PT3M0S" },
+      "status": { "privacyStatus": "public", "embeddable": true, "madeForKids": false, "uploadStatus": "processed" }
+    }
+  ]
+}

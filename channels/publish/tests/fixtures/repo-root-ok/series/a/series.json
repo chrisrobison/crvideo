@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "id": "a",
+  "title": "Series A",
+  "episodes": [
+    { "id": "ep1", "title": "A1", "status": "approved" },
+    { "id": "ep2", "title": "A2", "status": "candidate" }
+  ]
+}
