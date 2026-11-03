@@ -267,20 +267,33 @@ in-progress example in this repo:
 3. **Import** a real show: `php youtube-import.php --channel "@..." \
    --output series/technology-connections/series.json` -- see
    `youtube-import/README.md`. This writes real episodes, every one of
-   them `status: "candidate"`.
+   them `status: "candidate"`. (Or trigger the same import from the
+   browser -- see step 4a.)
 
-4. **Review and approve candidates.** This project does not build an
-   approval UI -- today that means opening `series.json` and changing a
-   candidate's `"status"` to `"approved"` (and setting `rights.status` to
-   whatever's actually true) by hand, or scripting it if you're approving
-   in bulk. Nothing here does this automatically, by design (section 8's
-   approval gate).
+4. **Review and approve candidates.** Either open `series.json` directly
+   and change a candidate's `"status"` to `"approved"` (and
+   `rights.status` to whatever's actually true) by hand, or use the
+   admin UI's SERIES tab (`scheduler/index.html`, added in a later
+   phase -- see `docs/admin-ui.md`), which does exactly that through
+   `server/series-admin.php`. Nothing in this project promotes a
+   candidate automatically, by design (section 8's approval gate) --
+   including that UI, which only ever writes the status an editor
+   explicitly picked.
+   - **4a.** That same admin UI can also trigger step 3's import (or a
+     `--refresh` of an existing series) directly from the browser,
+     including a dry-run preview first -- see `docs/admin-ui.md`,
+     **and read its "No access control" section before deploying it
+     anywhere reachable.**
 
 5. **Add `channels/science/programming.json`** declaring which series
    airs when (daily/weekly/monthly), referencing the now-approved
-   episodes implicitly through `series_id`.
+   episodes implicitly through `series_id` -- by hand, or via the admin
+   UI's PROGRAMMING tab (`server/channel-admin.php`), which also offers
+   a dry-run preview of `publish.php` before actually running it (next
+   step).
 
-6. **Publish**: `php channels/publish.php science`. With at least one
+6. **Publish**: `php channels/publish.php science` (or the PROGRAMMING
+   tab's Publish button). With at least one
    approved episode, this writes real dated occurrences into
    `channels/science/schedule.json`; with zero (the actual current state
    of this repo's `science` channel), it writes nothing wrong -- it

@@ -8,6 +8,10 @@
 <link rel="stylesheet" href="css/tokens.css">
 <style>
   .app{ display:flex; flex-direction:column; min-height:100vh; }
+  /* Preserves the original flex-fill behavior (main.layout{flex:1} needs
+     a flex-container parent to mean anything) now that the schedule view
+     lives one level deeper, inside a [data-view] wrapper. */
+  div[data-view="schedule"]{ display:flex; flex-direction:column; flex:1; min-width:0; }
   .stat-strip{ padding:16px 20px 0; }
   main.layout{
     display:grid;
@@ -24,23 +28,39 @@
     main.layout{ grid-template-columns: 1fr; }
     .media-col{ height:420px; position:static; }
   }
+  /* [data-view] sections toggle visibility via the plain `hidden`
+     attribute (see js/view.js / js/main.js's applyView()) -- this
+     !important override is needed because some of these sections (e.g.
+     main.layout's own `display:grid` rule above) would otherwise beat
+     the browser's default [hidden]{display:none} UA rule, which has
+     lower cascade priority than ANY author rule, not lower specificity. */
+  [data-view][hidden]{ display:none !important; }
+  .admin-view{ padding:16px 20px 24px; max-width:1400px; margin:0 auto; }
 </style>
 </head>
 <body>
 <div class="app">
   <cf-header></cf-header>
-  <div class="stat-strip"><cf-stat-bar></cf-stat-bar></div>
-  <main class="layout">
-    <aside class="media-col"><cf-media-library></cf-media-library></aside>
-    <section class="center-col">
-      <cf-timeline></cf-timeline>
-      <cf-rundown></cf-rundown>
-    </section>
-    <aside class="details-col">
-      <cf-details-panel></cf-details-panel>
-      <cf-program-monitor></cf-program-monitor>
-    </aside>
-  </main>
+  <div data-view="schedule">
+    <div class="stat-strip"><cf-stat-bar></cf-stat-bar></div>
+    <main class="layout">
+      <aside class="media-col"><cf-media-library></cf-media-library></aside>
+      <section class="center-col">
+        <cf-timeline></cf-timeline>
+        <cf-rundown></cf-rundown>
+      </section>
+      <aside class="details-col">
+        <cf-details-panel></cf-details-panel>
+        <cf-program-monitor></cf-program-monitor>
+      </aside>
+    </main>
+  </div>
+  <div data-view="series" class="admin-view" hidden>
+    <cf-series-admin></cf-series-admin>
+  </div>
+  <div data-view="programming" class="admin-view" hidden>
+    <cf-channel-admin></cf-channel-admin>
+  </div>
 </div>
 <cf-drive-folder-picker></cf-drive-folder-picker>
 <script type="module" src="js/main.js"></script>
