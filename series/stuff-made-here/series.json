@@ -1,0 +1,1240 @@
+{
+    "schema_version": 1,
+    "id": "stuff-made-here",
+    "title": "Stuff Made Here",
+    "description": "I've been building things for as long as I can remember. It all started when my dad exposed me to plastic model building and soldering when I was around 4 years old. That set me on a path to building increasingly complex things and becoming an engineer. My goal is to do the same for as many people as possible by exposing them to the joy of engineering, fabricating and creating things out of nothing. If I'm lucky a few people may become engineers, which would be great for the world. Engineering is awesome.\n",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_mzfzJ9E1WEzyt1YlPXemHOwGBBnVCKzXva_mzmS5qqMg=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+        "channel_url": "https://www.youtube.com/channel/UCj1VqrHhDte54oLgPG4xpuQ",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-BuRyQYf03xA",
+            "episode_number": 1,
+            "title": "My dog won't stay out of mud so I made this...",
+            "description": "Pro engineers: Get 6 months of free Onshape Professional, the world's most customizable production CAD system: https://Onshape.pro/StuffMadeHere\nYou can check out the Tormach 15LX here: https://hubs.ly/Q04wyHfb0\nIf you're interested in a Form 1 Studio you can check it out here: https://formlabs.com/products/form-studio-1-basic-founders-edition/\n\n-----------------------\n\nMy dog wont stop getting in the mud so I built this so me and my wife could wash her without getting mud shaken on us",
+            "duration": 1310,
+            "year": 2026,
+            "published_at": "2026-11-01T03:58:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BuRyQYf03xA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BuRyQYf03xA",
+                "url": "https://www.youtube.com/watch?v=BuRyQYf03xA",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-RpslsMqPFWA",
+            "episode_number": 2,
+            "title": "I made an apple peel itself",
+            "description": "Go to https://brilliant.org/StuffMadeHere/ try the tutor for free and get 20% off your annual premium subscription!\n\nSAFETY NOTICE\n\nThis video depicts an experimental system involving high-pressure steam. Boilers and pressure vessels contain substantial stored energy and can cause severe injury or death if they fail or are operated improperly. Their construction and use may also be governed by engineering codes, inspection requirements, permits, and other regulations that vary by jurisdiction and application.\n\nThis video is a record of an experiment, not a construction guide. Do not copy, reproduce, or operate equipment based on what is shown here. A hydrostatic test, a pressure relief valve, or an engineering background does not by itself make a homemade pressure system safe. Anyone working with pressurized steam should consult qualified pressure-equipment professionals and the applicable authorities before building or operating anything similar.\n\nSOURCES:\nBelleville washers: https://en.wikipedia.org/wiki/Belleville_washer",
+            "duration": 1766,
+            "year": 2026,
+            "published_at": "2026-08-05T22:30:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RpslsMqPFWA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RpslsMqPFWA",
+                "url": "https://www.youtube.com/watch?v=RpslsMqPFWA",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-2OfjZ3ORJfc",
+            "episode_number": 3,
+            "title": "Robot golf vs holes that keep getting harder",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ for a free 30-day trial and 20% off your annual premium subscription!\n\nSee how I designed and made the club: https://youtu.be/JQB8aNKyeao\n\nI decided to spend months giving my robotic club a massive software upgrade so that it can understand physics and solve challenging mini golf holes. \n\nSources:\nAckley function vis: https://en.wikipedia.org/wiki/Differential_evolution#/media/File:Ackley.gif\n3D Scanner video: https://www.revopoint3d.com/products/trackit-optical-tracking-3d-scanner",
+            "duration": 1486,
+            "year": 2026,
+            "published_at": "2026-04-15T20:01:57Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2OfjZ3ORJfc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2OfjZ3ORJfc",
+                "url": "https://www.youtube.com/watch?v=2OfjZ3ORJfc",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-JQB8aNKyeao",
+            "episode_number": 4,
+            "title": "Making an autocorrect mini golf club (part 1)",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ for a free 30-day trial and 20% off your annual premium subscription!\nCreate a FREE Onshape account at: https://Onshape.pro/StuffMadeHere and get the free design files for the AutoClub: https://tinyurl.com/aimbotminigolf\n\nI've been thinking about this one for years, but have been putting it off because it seemed to have major challenges. Turns out my instincts were correct :)",
+            "duration": 1617,
+            "year": 2026,
+            "published_at": "2026-01-01T04:51:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JQB8aNKyeao/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JQB8aNKyeao",
+                "url": "https://www.youtube.com/watch?v=JQB8aNKyeao",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-vJ43DjwLPGA",
+            "episode_number": 5,
+            "title": "Why is this task so difficult for machines?",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ to learn for free and get 20% off an annual premium subscription!\nCheck out this year's IMI award winners at https://www.theimi.co/awards. Good way to discover interesting new stuff.\n\nHelp support these projects on Patreon: https://patreon.com/stuffmadehere\nSubscribe if you like this kind of stuff! https://tinyurl.com/sub2smh\n\nI've been complaining about cracking eggs for the better part of a decade. I decided to put my engineering where my mouth is and try to make a tool to do it better. The engineering got crazier than I expected.",
+            "duration": 1627,
+            "year": 2025,
+            "published_at": "2025-08-30T17:27:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vJ43DjwLPGA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vJ43DjwLPGA",
+                "url": "https://www.youtube.com/watch?v=vJ43DjwLPGA",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-dXIkUkwzTQU",
+            "episode_number": 6,
+            "title": "Baking brownies from the inside out",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ for a free 30-day trial and 20% off your annual premium subscription!\nHelp support these projects on Patreon: https://patreon.com/stuffmadehere\nBe sure to subscribe if you like this kind of stuff! https://tinyurl.com/sub2smh\n\nEdgless brownies are one of those questions that has lived rent free in my head so I decided to just build it.\n\nSources used in video:\n- Plot of acoustic levitation: Cancino-Jaque E, Meneses-Diaz J, Vargas-Hernández Y, Gaete-Garretón L. On the dynamics of a big drop in acoustic levitation. Ultrason Sonochem. 2023 Dec;101:106705. doi: 10.1016/j.ultsonch.2023.106705. Epub 2023 Nov 24. PMID: 38029567; PMCID: PMC10716583.\n- Batter thermal conductivity: Burand, Tony; Tetzlaff, Michael; and Smith, Jacob (2013) \"Cooking Up the Optimal Baking Algorithm,\"\nColloquy Undergraduate Research Journal: Vol. 1, Article 6.\nAvailable at: https://spark.bethel.edu/colloquy/vol1/iss1/6 \n- \"Buy now\" infomercial screen: ttps://www.youtube.com/watch?v=sqgyxIQTcQc",
+            "duration": 1401,
+            "year": 2025,
+            "published_at": "2025-06-02T03:20:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dXIkUkwzTQU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dXIkUkwzTQU",
+                "url": "https://www.youtube.com/watch?v=dXIkUkwzTQU",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-BO_YGcSzJdA",
+            "episode_number": 7,
+            "title": "I really thought this would fly well",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ for a free 30-day trial and 20% off your annual premium subscription!\nHelp support these projects on Patreon: https://patreon.com/stuffmadehere\nBe sure to subscribe if you like this kind of stuff! https://tinyurl.com/sub2smh\n\nI had an idea for a very strange kinetically powered helicopter. An unfortunate design error made things go off the rails. Despite that, fun times were had by all. \n\nSources used in video:\nApollo 11: We Have a Lift-Off By https://soundcloud.com/nasa is licensed under a  Creative Commons License https://creativecommons.org/licenses/by-nc/3.0/",
+            "duration": 1145,
+            "year": 2025,
+            "published_at": "2025-03-04T01:05:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BO_YGcSzJdA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BO_YGcSzJdA",
+                "url": "https://www.youtube.com/watch?v=BO_YGcSzJdA",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-aXfTgCCsRSg",
+            "episode_number": 8,
+            "title": "What if we made a camera that sees in reverse?",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ for a free 30-day trial and 20% off your annual premium subscription!\nHelp support these projects on Patreon: https://patreon.com/stuffmadehere\nBe sure to subscribe if you like this kind of stuff! https://tinyurl.com/sub2smh\n\nSources used in video:\n- Thomas the tank image by http://www.hitnewsonline.com/, Fair use, https://en.wikipedia.org/w/index.php?curid=13878653\n- Bayer pattern by Cburnett, CC BY-SA 3.0 http://creativecommons.org/licenses/by-sa/3.0/",
+            "duration": 1383,
+            "year": 2024,
+            "published_at": "2024-12-04T14:43:59Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/aXfTgCCsRSg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "aXfTgCCsRSg",
+                "url": "https://www.youtube.com/watch?v=aXfTgCCsRSg",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-YqywL9PkM2s",
+            "episode_number": 9,
+            "title": "After 100+ parts and 45 hours of practice, I did it",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ for a free 30-day trial and 20% off your annual premium subscription!\nBe sure to subscribe if you like this kind of stuff! https://tinyurl.com/sub2smh\nHelp support these projects on Patreon: https://patreon.com/stuffmadehere\n\nCurrent worlds smallest bike by Sergey Dashevsky: https://www.guinnessworldrecords.com/world-records/570841-smallest-rideable-bicycle\n\nI love bikes. I decided I wanted to make a very small bike. Shenanigans and self one-up-manship ensued.",
+            "duration": 1081,
+            "year": 2024,
+            "published_at": "2024-08-09T03:42:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YqywL9PkM2s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YqywL9PkM2s",
+                "url": "https://www.youtube.com/watch?v=YqywL9PkM2s",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-t9rClZrbnrQ",
+            "episode_number": 10,
+            "title": "Precision guided launcher turns noobs into pros",
+            "description": "Check out https://brilliant.org/StuffMadeHere/ for a free 30-day trial and 20% off your annual premium subscription!\nBe sure to subscribe to catch part 2 where I'll be adding computer controlled sights. https://tinyurl.com/sub2smh\nHelp support these projects on Patreon: https://patreon.com/stuffmadehere\n\nI decided to try my hand at disc golf again. This time with a completely different strategy.",
+            "duration": 1543,
+            "year": 2024,
+            "published_at": "2024-05-02T16:42:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/t9rClZrbnrQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "t9rClZrbnrQ",
+                "url": "https://www.youtube.com/watch?v=t9rClZrbnrQ",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-9SRFbFreCkE",
+            "episode_number": 11,
+            "title": "I made these to do a ridiculously high dunk",
+            "description": "Head to https://brilliant.org/StuffMadeHere/ to start your free 30-day trial, and the first 200 people get 20% off an annual premium subscription!\nSupport these projects on Patreon, private discord, and directors commentaries: https://patreon.com/stuffmadehere\n\nTurned out to be way more dangerous, hard, and fun than I was expecting. I feel like I say that every time though…",
+            "duration": 1287,
+            "year": 2024,
+            "published_at": "2024-01-01T03:48:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9SRFbFreCkE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9SRFbFreCkE",
+                "url": "https://www.youtube.com/watch?v=9SRFbFreCkE",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-wh8ij9NnLIQ",
+            "episode_number": 12,
+            "title": "Six questionably legal pencil sharpeners",
+            "description": "Head to https://brilliant.org/StuffMadeHere/ to start your free 30-day trial, and the first 200 people get 20% off an annual premium subscription!\nCreate a FREE Onshape account at: https://Onshape.pro/StuffMadeHere and get the free design files for the Pantolathe: https://tinyurl.com/pantolathe\n\nI hope you find this to be a neat example of different ways to solve the same problem.",
+            "duration": 1712,
+            "year": 2023,
+            "published_at": "2023-10-11T00:54:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wh8ij9NnLIQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wh8ij9NnLIQ",
+                "url": "https://www.youtube.com/watch?v=wh8ij9NnLIQ",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-cQO2XTP7QDw",
+            "episode_number": 13,
+            "title": "I sent robot forgeries to a handwriting expert",
+            "description": "Create a FREE Onshape account at: https://Onshape.pro/StuffMadeHere\nDownload the part files for this project: https://tinyurl.com/plotterparts\nIf you want to help support these projects: https://patreon.com/stuffmadehere\n\nSpecial thanks to Ron Morris for taking the time to analyze a bunch of writing samples that I sent him. I got in touch with him after getting his textbook to learn more about the subject: https://www.amazon.com/dp/0124096026\n\nThis robot uses a tormach ZA6 to tend the writing robot: https://tormach.com/machines/robots.html\nHeres the 3D printers we designed in onshape: https://hubs.ly/Q01RNGdr0\n\nMachine learning Resources:\nGenerating Sequences with Recurrent Neural Networks:  https://arxiv.org/abs/1308.0850\nCode for Handwriting Synthesis with RNNs: https://github.com/sjvasquez/handwriting-synthesis\nIf you want to learn more about machine learning, this is a good overview that gets into the math behind them: https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi\n\nOther stuff:\nLSTM cell image By Guillaume Chevalier - File:The_LSTM_Cell.svg, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=109362147",
+            "duration": 1419,
+            "year": 2023,
+            "published_at": "2023-05-27T17:39:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cQO2XTP7QDw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cQO2XTP7QDw",
+                "url": "https://www.youtube.com/watch?v=cQO2XTP7QDw",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-WsPHBD5NsS0",
+            "episode_number": 14,
+            "title": "Worlds hardest jigsaw vs. puzzle machine (all white)",
+            "description": "Keep exploring at https://brilliant.org/stuffmadehere. Get started for free, and hurry—the first 200 people get 20% off an annual premium subscription.\nIf you're looking for a workstation check out Puget Systems. They rock: https://www.pugetsystems.com/\nHelp support these videos on patreon: https://patreon.com/stuffmadehere\n\nThis project was so hard it almost broke me. \n\nTopics discussed / used\nThresholding (image processing): https://en.wikipedia.org/wiki/Thresholding_(image_processing)\nMathematical morphology: https://en.wikipedia.org/wiki/Mathematical_morpholog\nLeast squares method: https://en.wikipedia.org/wiki/Least_squares\nLocality sensitive hashing: https://en.wikipedia.org/wiki/Locality-sensitive_hashing\nPoint in polygon: https://en.wikipedia.org/wiki/Point_in_polygon\nMemoization: https://en.wikipedia.org/wiki/Dynamic_programming\nTransformation matrices: https://en.wikipedia.org/wiki/Transformation_matrix\nBig-O/asymptotic analysis: https://en.wikipedia.org/wiki/Asymptotic_analysis\nUsing locality sensitive hashing for reverse image search: https://towardsdatascience.com/fast-near-duplicate-image-search-using-locality-sensitive-hashing-d4c16058efcb\nTelecentric lense: https://en.wikipedia.org/wiki/Telecentric_lens",
+            "duration": 1320,
+            "year": 2022,
+            "published_at": "2022-12-01T04:42:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WsPHBD5NsS0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WsPHBD5NsS0",
+                "url": "https://www.youtube.com/watch?v=WsPHBD5NsS0",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Gu_1S77XkiM",
+            "episode_number": 15,
+            "title": "A simple human task that's insanely hard for a robot",
+            "description": "Visit http://brilliant.org/stuffmadehere to sign up for free. And also, the first 200 people will get 20% off their annual premium membership.\nHelp support these videos on patreon: https://patreon.com/stuffmadehere\n\nI thought this would be an easy project to knock off my list after putting myself through the wringer with the automatic basketball hoop. I was wrong. This project is really hard. BUT that also makes it really interesting!\n\nSome more details:\n- The 5000 piece puzzle is the gradient puzzle from the play group: https://www.playgroup.design/\n- More about telecentric lenses: https://en.wikipedia.org/wiki/Telecentric_lens\n- CoreXY belt design: https://corexy.com/\n- Algorithm to determine point furthest from all puzzle edges https://en.wikipedia.org/wiki/Distance_transform",
+            "duration": 1204,
+            "year": 2022,
+            "published_at": "2022-08-01T06:22:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gu_1S77XkiM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Gu_1S77XkiM",
+                "url": "https://www.youtube.com/watch?v=Gu_1S77XkiM",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-xHWXZyfhQas",
+            "episode_number": 16,
+            "title": "I made a ball seeking hoop",
+            "description": "Visit https://KiwiCo.com/StuffMadeHere to save 50% off your first month of any crate!\nHelp support these videos on patreon: https://patreon.com/stuffmadehere\nGet merch, support these projects: https://stuffmadehere.shop\n\n---------------------------\n\nI've known this was the endgame for the robotic basketball hoop ever since I made the first one. It's time I actually did it.",
+            "duration": 1592,
+            "year": 2022,
+            "published_at": "2022-06-05T22:14:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xHWXZyfhQas/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xHWXZyfhQas",
+                "url": "https://www.youtube.com/watch?v=xHWXZyfhQas",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-gnwIiw3Rz3I",
+            "episode_number": 17,
+            "title": "Wrist rocket: worlds fastest disc launcher",
+            "description": "Visit http://brilliant.org/StuffMadeHere to get started learning STEM for free, and the first 200 people will get 20% off their annual premium subscription.\nGet merch, support these projects: https://stuffmadehere.shop\nHelp support these videos on patreon: https://patreon.com/stuffmadehere\n\n---------------------------\n\nI've had an idea for a super powerful disc golf gauntlet stuck in my head. I finally made it. It was hard.",
+            "duration": 1701,
+            "year": 2022,
+            "published_at": "2022-03-01T07:54:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/gnwIiw3Rz3I/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "gnwIiw3Rz3I",
+                "url": "https://www.youtube.com/watch?v=gnwIiw3Rz3I",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Q1RaC7YJ7sk",
+            "episode_number": 18,
+            "title": "Explosive powered nut cracker vs. metal nuts",
+            "description": "Check out https://KiwiCo.com/StuffMadeHere and get 50% off your first month of any crate!\nGet merch, support the channel: https://stuffmadehere.shop\nHelp support these videos on patreon: https://patreon.com/stuffmadehere\n\n---------------------------\n\nI've been waiting for the crossover episode between my explosive bat and a nut cracker for over a year. It was totally worth the wait. Hope you enjoy it!",
+            "duration": 1291,
+            "year": 2021,
+            "published_at": "2021-12-05T15:17:43Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q1RaC7YJ7sk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Q1RaC7YJ7sk",
+                "url": "https://www.youtube.com/watch?v=Q1RaC7YJ7sk",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-osUTMnDFV30",
+            "episode_number": 19,
+            "title": "My GIANT wall painting robot",
+            "description": "Check out https://KiwiCo.com/StuffMadeHere to get 50% off your first month of ANY crate!\nGet merch + support the channel: https://stuffmadehere.shop/\nHelp support these videos on patreon: http://patreon.com/stuffmadehere\n\n------------------------------\n\nI moved into a new shop with some massive blank walls. I thought I would break in the new space by building a robot to paint a huge mural for me. Hope you like it!\n\nChihuahua on cheeseburgers by William Hundley. More things on cheeseburgers: https://www.williamhundley.com/wcheeseburgers\n\nOther great things (your purchase helps support this channel):\n*  I use a glowforge pro for rapid prototyping and it's great. You can $500 off a Glowforge pro here: http://glowforge.com/stuffmadehere",
+            "duration": 1404,
+            "year": 2021,
+            "published_at": "2021-10-30T22:19:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/osUTMnDFV30/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "osUTMnDFV30",
+                "url": "https://www.youtube.com/watch?v=osUTMnDFV30",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-1MkrNVic7pw",
+            "episode_number": 20,
+            "title": "Auto-aiming bow vs. FLYING targets",
+            "description": "You should work at Formlabs. Apply here: http://bit.ly/formlabs-jobs\n90% of this project was made on the Fuse 1: http://bit.ly/fuse-1-printer\nGet merch + support the channel: https://stuffmadehere.shop/\n\n------------\n\nGet optitrack cameras: http://optitrack.com\nThanks to the folks at Lifetime Archery for the use of their range: http://lifetimearchery.com\n\nI've been dreaming about making an automatic archery bow for a long time. I finally made it. I hope you like it!",
+            "duration": 1056,
+            "year": 2021,
+            "published_at": "2021-08-13T21:23:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1MkrNVic7pw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1MkrNVic7pw",
+                "url": "https://www.youtube.com/watch?v=1MkrNVic7pw",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-SjJulcvTA7Y",
+            "episode_number": 21,
+            "title": "This is why I have 17,342 pounds of tools",
+            "description": "Visit https://micro.center/15f024 to enter your email address for a free pair of wireless Bluetooth headphones.\nJoin the MicroCenter Community: https://micro.center/516c8a \nCheck out the MicroCenter Custom PC Builder:  https://micro.center/051b1c\n\nGet merch + support the channel: https://stuffmadehere.shop/\n\n------------------------------\n\nWelcome to my shop. Today we'll be designing and building nine different ball bearing launching catapults. Why? Other than being a lot of fun, the catapults are the perfect vehicle to show you all of my major tools, how they work, and why I have them. I had fun making these, I hope you enjoy them too.\n\nThe tools used in the video (some links are affiliate links):\nAutodesk inventor: https://www.autodesk.com/products/inventor\nCenter punch: https://amzn.to/3jmc0w9\nBandsaw: https://www.harborfreight.com/10-amp-deep-cut-variable-speed-band-saw-64194.html\nDrill press: https://www.northerntool.com/shop/tools/product_200659137_200659137\nFractional drills: https://amzn.to/2SyM7Oz\nNumber drills: https://amzn.to/3x8zbxS\nBelt sander: https://www.harborfreight.com/1-in-x-30-in-belt-sander-61728.html\nVise: https://amzn.to/3w7QuxM\nCorded drill: https://www.ebay.com/itm/384234059608\nRusty chisel: https://www.ebay.com/itm/174606926159\nForm 3: http://bit.ly/form-3-printer\nFuse 1: http://bit.ly/fuse-1-printer\nForm wash: https://formlabs.com/store/form-wash/\nWork at Formlabs!: http://bit.ly/formlabs-jobs\nTormach 24R: https://hubs.ly/H0rSZY60\nPlastic nail gun: https://amzn.to/3hkpTYT\nHorizontal bandsaw: https://www.grizzly.com/products/g0613\nMini mill: https://www.micromark.com/Milling-Machine-R8-500W\nKnee mill: https://www.precisionmatthews.com/shop/pm-935ts-tv/\nKurt vise: https://amzn.to/3qGJqr2\nTormach 1100mx https://hubs.ly/H0rSZsq0\nmicroARC 4th axis: https://tormach.com/microarc-4-4th-axis-38412.html \nBondhus drivers: https://amzn.to/3qyPb9U\nSMW mod vise: https://saundersmachineworks.com/products/modular-vise\nSMW tooling plate: https://saundersmachineworks.com/products/tormach_1100_aluminum_fixture_plate\nThermal camera: https://amzn.to/3dJkBFJ\nHypertherm powermax 45xp: https://www.hypertherm.com/en-US/hypertherm/powermax/powermax45-xp/\nTormach 1300PL https://hubs.ly/H0HZ8-y0\nDie grinder: https://amzn.to/3dsOGsV\nAngle grinder: https://amzn.to/3AcKtmI\nVulcan protig 200: ACCESS DENIED\nHobart welding helmet: https://amzn.to/3hxZ9Vh \nRhinocart: https://amzn.to/3A8hVe9\nRing roller: https://www.harborfreight.com/gear-driven-ring-roller-36790.html\nOptitrack cameras: https://www.optitrack.com\nSheet metal bender: https://www.grizzly.com/products/t10718\nMetal dust collector: https://www.grizzly.com/products/t28798\nDowndraft: https://amzn.to/2UGAk1m\nFirst aid station: https://amzn.to/3qFSso3\nEye wash station: https://amzn.to/3js26Jo\nTurniquet: https://amzn.to/3dppkw3\nChest seal: https://amzn.to/3626Eym\nSkin stapler: https://amzn.to/3vZi805\nJ&J dermabond: https://www.jnjmedicaldevices.com/en-US/product/dermabond-advanced-topical-skin-adhesive \nSafetec burn spray: https://amzn.to/3dqwVKA\nSpot welder: https://www.harborfreight.com/240v-spot-welder-61206.html\nLaser cutter (Save $500!)  http://glowforge.com/stuffmadehere\nLaser cutter fume filter: https://shop.glowforge.com/products/glowforge-air-filter\nMini lathe (G0768): https://www.grizzly.com/products/g0768\nLathe: https://www.precisionmatthews.com/shop/pm-1440gt/\nRouter table: https://www.homedepot.com/p/RYOBI-Universal-Router-Table-A25RT03/300234859\nMini plane: https://www.homedepot.com/p/Buck-Bros-3-in-Model-Maker-Plane-120LSO/100351891\nPlaner (dewalt 735): https://amzn.to/2UPCXhz\nCompound miter saw: https://amzn.to/3vZCndP\nJointer: https://www.grizzly.com/products/g0813\nDust collector: https://www.grizzly.com/products/g0860",
+            "duration": 2006,
+            "year": 2021,
+            "published_at": "2021-06-29T18:40:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/SjJulcvTA7Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "SjJulcvTA7Y",
+                "url": "https://www.youtube.com/watch?v=SjJulcvTA7Y",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-2A2NY29iQdI",
+            "episode_number": 22,
+            "title": "TWO Unpickable (?) Locks for Lock Picking Lawyer!",
+            "description": "For 50% off your first month of any subscription crate from KiwiCo (available in 40 countries!) head to https://kiwico.com/stuffmadehere\nSee what the lock picking lawyer thinks: https://youtu.be/Ecy1FBdCRbQ\nBehind the scenes livestream on my second channel: https://youtu.be/8CWsA22H35Y\n\nApproximately 999,999,998 people have asked me to send my unpickable lock to the Lock Picking Lawyer. I decided to do you one better - I'm sending the Lock Picking Lawyer TWO unpickable locks with different designs. It will be interesting to see if he can pick them, if so, we'll fix those issues to make them even stronger. \n\nOther great things:\n* Get merch + support the channel: https://stuffmadehere.shop/\n* second channel: https://tinyurl.com/Smhtoo\n* Support these projects and behind the scenes info: http://patreon.com/stuffmadehere \n* Join the subreddit: https://tinyurl.com/smhere\n*  I use a glowforge pro for rapid prototyping and it's great. You can get $500 off a Glowforge pro here: http://glowforge.com/stuffmadehere",
+            "duration": 880,
+            "year": 2021,
+            "published_at": "2021-05-31T16:00:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2A2NY29iQdI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2A2NY29iQdI",
+                "url": "https://www.youtube.com/watch?v=2A2NY29iQdI",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-ix68oRfI5Gw",
+            "episode_number": 23,
+            "title": "Chainsaw + robotic arm = art?",
+            "description": "Check out https://Kiwico.com/StuffMadeHere for 50% off your first month of any crate!\nThe robot arm I used: https://hubs.ly/H0K42Hg0\nGet merch + support the channel: https://stuffmadehere.shop/\n\nJoin the subreddit: https://tinyurl.com/smhere\n\nWhen I was offered the opportunity to beta test an upcoming robotic arm from Tormach, I knew exactly what I wanted to do with it. CNC chainsaws baybeeeeee. Aside from being fundamentally awesome, it is a very interesting software problem. Since I didn't have to build the arm I was able to focus the project and the video on the software challenges of making something like this work. Thank goodness I didn't have to build the arm because the software almost killed me. I can imagine all kinds of next steps for this creation like machining textures with the chainsaw or cutting topiaries. I hope you like it!\n\nSources:\n *  Low Polygon Labrador Model: https://www.thingiverse.com/thing:446787\n *  RRT  GIF: https://en.wikipedia.org/wiki/Rapidly-exploring_random_tree#/media/File:Rapidly-exploring_Random_Tree_(RRT)_500x373.gif\n\nOther great things (your purchase helps support this channel):\n*  I use a glowforge pro for rapid prototyping and it's great. You can $500 off a Glowforge pro here: http://glowforge.com/stuffmadehere",
+            "duration": 1348,
+            "year": 2021,
+            "published_at": "2021-04-04T08:11:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ix68oRfI5Gw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ix68oRfI5Gw",
+                "url": "https://www.youtube.com/watch?v=ix68oRfI5Gw",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-vsTTXYxydOE",
+            "episode_number": 24,
+            "title": "Automatic pool stick vs. strangers",
+            "description": "Get a Free 32GB Flash Drive and 32GB Micro SD Card: https://micro.center/dbfba\nCheck out the Micro Center Custom PC Builder: https://micro.center/4879a\nJoin the Micro Center Community: https://micro.center/15dd5\nGet merch + support the channel: https://stuffmadehere.shop/\n\nPlease consider supporting these projects through my patreon: http://patreon.com/stuffmadehere \nI use a glowforge pro for rapid prototyping and it's great. You can $500 off a Glowforge pro here: http://glowforge.com/stuffmadehere \nI built this with the new Tormach 1300 PL, check it out: https://tormach.com/machines/plasma-tables.html\n\nAn automatic pool playing robot - how hard could it be? Turns out harder than I thought. It took me quite a while to work through all the difficulties of this project but when it all finally came together is so worth it. To my surprise the most interesting aspect of this project is using the cue to play real games of pool over the internet. Let me know if you think twitch plays billiards would be worthwhile...",
+            "duration": 1279,
+            "year": 2021,
+            "published_at": "2021-02-16T03:43:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vsTTXYxydOE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vsTTXYxydOE",
+                "url": "https://www.youtube.com/watch?v=vsTTXYxydOE",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-WQ8Xgp8ALFo",
+            "episode_number": 25,
+            "title": "Sometimes you have to test robots on yourself",
+            "description": "The first 1000 people to use this link will get a free trial of Skillshare Premium Membership: https://skl.sh/stuffmadehere12201\nPlease consider supporting these projects through my patreon: http://patreon.com/stuffmadehere Although very fun, these videos are very time consuming and expensive.\nI use a glowforge pro for rapid prototyping and it's great. You can $500 off a Glowforge pro here: http://glowforge.com/stuffmadehere \nJoin the subreddit: https://tinyurl.com/smhere\n\n-----------\n\nIt was time to take another pass on the hair cutting robot. The new robot is bigger, better, way more reliable and travel friendly. I tried to cut MatPats hair (live) then my brothers hair and then my own. For some reason I'm compelled to improve the pattern carving functionality even though I have zero desire to actually use it....\n\nOne final thing - if you know of any actual problems that could use a better solution please leave a comment. One of my goals is to make a portion of my projects attempts at solving legitimately useful problems and I would love to have a good list of them. Thanks!",
+            "duration": 1303,
+            "year": 2020,
+            "published_at": "2020-12-22T16:07:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WQ8Xgp8ALFo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WQ8Xgp8ALFo",
+                "url": "https://www.youtube.com/watch?v=WQ8Xgp8ALFo",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-_7vPNcnYWQ4",
+            "episode_number": 26,
+            "title": "Making an unpickable lock. Calling locksmiths",
+            "description": "Check out http://KiwiCo.com/StuffMadeHere to get 50% off your first month of any crate.\nGet merch + support the channel: https://stuffmadehere.shop/\n\nJoin the subreddit: https://tinyurl.com/smhere\n\n----\n\nHow hard could it be to make an unpickable lock? Turns out pretty flippin hard. After I recovering from the mental and physical turmoil of getting this thing made I called up a locksmith to see if they would be able to pick it. A fun time for all involved.",
+            "duration": 790,
+            "year": 2020,
+            "published_at": "2020-11-26T00:08:52Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_7vPNcnYWQ4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_7vPNcnYWQ4",
+                "url": "https://www.youtube.com/watch?v=_7vPNcnYWQ4",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-X9zXcnSXNF0",
+            "episode_number": 27,
+            "title": "Making a robot to carve photos into pumpkins",
+            "description": "Get your first audiobook and full access to the Plus Catalog for free when you try Audible for 30 days visit https://www.audible.com/stuffmadehere or text stuffmadehere to 500 500!\nClick here if you're interested in subscribing: http://tinyurl.com/sub2smh \nPlease consider supporting these projects through my patreon: http://patreon.com/stuffmadehere Although very fun, these videos are very time consuming and expensive.\n\nJoin the subreddit: https://tinyurl.com/smhere\n\n------\n\nI've been wondering if I could turn my haircut robot into a pumpkin carving robot. Cutting hair and carving pumpkins isn't really that different if you think about it - both cut stuff off a roughly pumpkin sized spheroid. In this video I do just that and carve some pretty amazing pumpkins with it. This was a  bit of a sprint to get done - I can't wait until next year to make even more insane pumpkins with it!\n\nWanna save $500 off a Glowforge pro? Here you go: http://glowforge.com/stuffmadehere",
+            "duration": 966,
+            "year": 2020,
+            "published_at": "2020-10-27T02:25:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/X9zXcnSXNF0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "X9zXcnSXNF0",
+                "url": "https://www.youtube.com/watch?v=X9zXcnSXNF0",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Puo6Vgcbxps",
+            "episode_number": 28,
+            "title": "Explosive Bat: crushing MLB records. Ft: Smarter Every Day",
+            "description": "Check out http://KiwiCo.com/stuffmadehere to get your first month's subscription 50% off!\nHere's the Smarter Every Day video: https://www.youtube.com/watch?v=6zHegXvEwdI\nGet merch + support the channel: https://stuffmadehere.shop/\n------\n\nPlease consider supporting these projects through my patreon: http://patreon.com/stuffmadehere Although very fun, these videos are very time consuming and expensive. \n\nThe previous explosive bat was cool, but it wasn't setting any records. I set out to design a bat that could beat Babe Ruth's home run record of 575 feet. The engineering was intense but the results are spectacular. Aside from attempts on the record, you can also look forward to some awesome high speed footage of the bat in action and a special guest.\n\nThis video could not have been made without the help of Destin from Smarter Every Day. Not only did he provide the high speed camera, he also shared all his footage from testing the bat. He made a more in depth video on what happens when this this bat goes boom. Check it out! \n\nWanna save $500 off a Glowforge pro?  Here you go: http://glowforge.com/stuffmadehere\n\nI was using body armor from http://bodyarmordirect.com, it's good quality and made in the USA.",
+            "duration": 1471,
+            "year": 2020,
+            "published_at": "2020-10-18T13:00:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Puo6Vgcbxps/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Puo6Vgcbxps",
+                "url": "https://www.youtube.com/watch?v=Puo6Vgcbxps",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-myO8fxhDRW0",
+            "episode_number": 29,
+            "title": "Moving hoop won't let you miss",
+            "description": "Thanks to Keeps for sponsoring this video! Head to https://keeps.com/stuffmadehere to learn more and get 50% off your first order of hair loss treatment.\nGet merch + support the channel: https://stuffmadehere.shop/\n\n###\nThousands have told me that anyone can easily miss my first automatic basketball hoop by missing the hoop entirely. That is a really good point and something that I can't let stand. In this video I show you how I devoted several weeks of my life to realizing a basketball hoop that makes your shot go in even if you totally miss the hoop.... it was a lot of fun, and quite a bit more challenging than I was anticipating. Hopefully you enjoy it :)\n\nAlthough very fun, these videos are very time consuming and expensive. Please consider helping to support the development of these projects through my patreon at http://patreon.com/stuffmadehere\n\nI built this with the new Tormach 24r check it out: https://hubs.ly/H0rSZY60\n\nTop Comment\nThis project was really hard. It was a huge challenge to whittle the 450gigs of footage down into a video that shared my journey of designing and getting this machine working. I hope you enjoyed it :) If you are interested in helping to support me making more of these videos you can check out my Patreon at http://patreon.com/stuffmadehere. One question - would a podcast be interesting yes / no? I've been considering that as an opportunity to share more details and whatnot that can't make it into my videos.",
+            "duration": 823,
+            "year": 2020,
+            "published_at": "2020-09-09T12:34:58Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/myO8fxhDRW0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "myO8fxhDRW0",
+                "url": "https://www.youtube.com/watch?v=myO8fxhDRW0",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-B3CsOx5U9Gs",
+            "episode_number": 30,
+            "title": "World's most powerful bat goes boom. Made on my new Tormach 24r",
+            "description": "To support future projects like this check out my patreon: http://patreon.com/stuffmadehere\nGet merch + support the channel: https://stuffmadehere.shop/\n\nI made a baseball bat that (pretty much) always hits home runs. It uses explosive charges to put an enormous amount of power into your swing. In this video I show how I designed it and all the unexpected trials and tribulations of getting something like this to work. It turned out to be really hard but the end result is so much fun I can't complain. I don't think it's possible to use this bat and not grin. \n\n\nI built this with the new Tormach 24r check it out: https://hubs.ly/H0rSZY60\n\nMy next video is project is a device that can shoot a mask onto your face :) Click here if you want to subscribe: https://tinyurl.com/subscribe2SMH\n\nOther tools and things that I think are great:\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake kit: https://amzn.to/2xw4fhL\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL",
+            "duration": 776,
+            "year": 2020,
+            "published_at": "2020-08-10T03:17:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/B3CsOx5U9Gs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "B3CsOx5U9Gs",
+                "url": "https://www.youtube.com/watch?v=B3CsOx5U9Gs",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-7zBrbdU_y0s",
+            "episode_number": 31,
+            "title": "I made a hair cutting machine",
+            "description": "My hair is getting too long so I decided to build a robot to cut it for me. To support future projects like this check out my patreon: http://patreon.com/stuffmadehere\nCheck out the SMH subreddit: https://tinyurl.com/smhere\n\nThe possibilities for this kind machine are endless with the most interesting things being haircuts that are too hard for human hair cutters to achieve. Imagine a mathematically perfect fade from one side of your head to another. Or imagine if I added a trimmer to this and cutting perfect lithopane pattern into your hair.  I consider this the first generation machine and hope to build another to explore some of the crazier haircut concepts.  A colleague suggested adding a precision hair dying attachment and doing some crazy multi-color hair styles. I wouldn't say that's really \"my jam\" but I might try it in the name of science & engineering. \n\nThis isn't just limited to humans either. Imagine sticking a poodle in this or making a bigger one to create topiaries. Lots of fun ideas....\n\nParts used in this build:\nGiant bearing: https://amzn.to/30aIFJE\nSuper long shop vac hose: https://amzn.to/3espyjm\nIntel real sense depth camera: https://amzn.to/3h932hB\nTeensy 3.6: https://amzn.to/3hLjANK\nLeadscrew stepper: https://amzn.to/3eejpIq\nStepper drivers: https://amzn.to/2Yham3M\nWheels to make extrusion gantry: https://amzn.to/2Wc2S0L\nHigh torque servos: https://amzn.to/32gFG56\nServo ball joints: https://amzn.to/2ZpZWPU\nAluminum servo horns: https://amzn.to/32h5fmU\nMini scissors: https://amzn.to/2Wc2VJZ\nSuper tough wigs: https://amzn.to/3ftPNHx\nFoam head: https://amzn.to/2DGNByD\n\nBooks that I've read to learn many of the skills used in this project:\nReal time collision detection: https://amzn.to/35iUr7i\nIntroduction to algorithims: https://amzn.to/2yUUSIN\nPlanning algorithims: https://amzn.to/2Smavj9\nStatistics: https://amzn.to/2zIlywI\nComputational geometry: https://amzn.to/3cZ7YmR\n\nOther tools and things that I think are great:\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake kit: https://amzn.to/2xw4fhL\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL",
+            "duration": 797,
+            "year": 2020,
+            "published_at": "2020-07-14T14:51:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7zBrbdU_y0s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7zBrbdU_y0s",
+                "url": "https://www.youtube.com/watch?v=7zBrbdU_y0s",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-8Au47gnXs0w",
+            "episode_number": 32,
+            "title": "See in complete darkness with touch",
+            "description": "Thanks SimpliSafe for sponsoring this video. SimpliSafe is award-winning home security that keeps your home safe around the clock. It's really reliable, easy to use, and there are no contracts. Check out SimpliSafe here: https://Simplisafe.com/StuffMadeHere\n\nI've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nJoin the subreddit: https://tinyurl.com/smhere\n\n--------------------------------------------\n\nI got nerd sniped by a great comment in a previous video. The idea was to make some kind of device to let blind people perceive their surroundings. The specific suggestion was to make some kind of a vest. Ultimately I ended up making an iPad case that uses the sensors in the iPad to perceive the surroundings and communicates through tactile feedback via a special hand grip. It was a fun project and turned out pretty neat. \n\nI use a 13\" iPad for all my technical drawing: https://amzn.to/2RKOnyL\n\n--------------------------------------------\n\nParts used in this build:\n2020 iPad pro 13\": https://amzn.to/2AJIixm\nApple pencil: https://amzn.to/2Cq1mRE\nTeensy 3.6: https://amzn.to/3hLjANK\nPancake stepper: https://amzn.to/2zOcR4h\nLeadscrew stepper: https://amzn.to/3eejpIq\nStepper drivers: https://amzn.to/2Yham3M\n\nBooks that I've read to learn many of the skills used in this project:\nReal time collision detection: https://amzn.to/35iUr7i\nIntroduction to algorithims: https://amzn.to/2yUUSIN\nPlanning algorithims: https://amzn.to/2Smavj9\nStatistics: https://amzn.to/2zIlywI\nComputational geometry: https://amzn.to/3cZ7YmR\n\nOther tools and things that I think are great:\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake kit: https://amzn.to/2xw4fhL\n\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL\n\n\"_IMG7503\" by OzAdr1an is licensed under CC BY 2.0",
+            "duration": 853,
+            "year": 2020,
+            "published_at": "2020-06-20T15:43:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8Au47gnXs0w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8Au47gnXs0w",
+                "url": "https://www.youtube.com/watch?v=8Au47gnXs0w",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-o5Cv9fvajrc",
+            "episode_number": 33,
+            "title": "My self correcting golf club makes me a better golfer",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nI wanted to see if I could make myself a better golfer by combining robotic engineering and golf. The result is a robotic club that senses your swing and corrects your shot for distance. It should be possible to correct for slice and hook with some hardware and software upgrades. It also has a cool mode where it can be any iron so no need to carry eleven clubs.\n\nAll hail our our robot overlords. I'm looking forward to gen 2 and doing more science on how good a robot really can make you.  \n\nThese videos usually take 100+ hours of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nI use a 13\" iPad for all my technical drawing: https://amzn.to/2RKOnyL\n\nParts used in this build:\nPractice green: https://amzn.to/374UnZL\nBasement driving net: https://amzn.to/2MjWqQ1\nThis driver gave its life for the cause: https://amzn.to/2z0CDSC\nServo: https://amzn.to/3eLQD1U\nScreen: https://amzn.to/3crVfZt\nKnob: https://amzn.to/2BrgPAp\nBattery pack: https://amzn.to/2U1jjfl\n\nBooks that I've read to learn many of the skills used in this project:\nReal time collision detection: https://amzn.to/35iUr7i\nIntroduction to algorithims: https://amzn.to/2yUUSIN\nPlanning algorithims: https://amzn.to/2Smavj9\nStatistics: https://amzn.to/2zIlywI\nComputational geometry: https://amzn.to/3cZ7YmR\n\nOther tools and things that I think are great:\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nThe best marker ever. Marks everything. Always in my pocket: https://amzn.to/3ewHGtL\nImport spot welder. Cheap bulletproof: https://amzn.to/2ypHmMU\nRivnuts + tool: https://amzn.to/3eJstWy\nDigital angle gauge: https://amzn.to/2Vn6ZXL\nBench sheet metal brake: https://amzn.to/2XNfI7h\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake: https://amzn.to/2xw4fhL\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom",
+            "duration": 918,
+            "year": 2020,
+            "published_at": "2020-06-02T16:30:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/o5Cv9fvajrc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "o5Cv9fvajrc",
+                "url": "https://www.youtube.com/watch?v=o5Cv9fvajrc",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-FycDx69px8U",
+            "episode_number": 34,
+            "title": "The automatic hoop always goes in",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nI wasn't totally satisfied with my previous basketball hoop so I made another try at the problem. This time with robots and computer vision! I designed and build this hoop from the ground up with the goal of tracking the ball and directing it into the hoop by tilting the backboard. It works pretty well. My old solid state hoop is old news. Long live our robot overlords. \n\nI wonder what V3 will look like...\n\nThese videos usually take 100+ hours of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nThe basketball hoop that donated it's guts: https://amzn.to/2xw7fux\nI use a 13\" iPad for all my technical drawing: https://amzn.to/2RKOnyL\n\nBooks that I've read to learn many of the skills used in this project:\nReal time collision detection: https://amzn.to/35iUr7i\nIntroduction to algorithims: https://amzn.to/2yUUSIN\nPlanning algorithims: https://amzn.to/2Smavj9\nStatistics: https://amzn.to/2zIlywI\nComputational geometry: https://amzn.to/3cZ7YmR\n\nOther tools and things that I think are great:\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nThe best marker ever. Marks everything. Always in my pocket: https://amzn.to/3ewHGtL\nImport spot welder. Cheap bulletproof: https://amzn.to/2ypHmMU\nRivnuts + tool: https://amzn.to/3eJstWy\nDigital angle gauge: https://amzn.to/2Vn6ZXL\nBench sheet metal brake: https://amzn.to/2XNfI7h\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake: https://amzn.to/2xw4fhL\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom",
+            "duration": 1000,
+            "year": 2020,
+            "published_at": "2020-05-11T06:56:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/FycDx69px8U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "FycDx69px8U",
+                "url": "https://www.youtube.com/watch?v=FycDx69px8U",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-IcjgrB9vTec",
+            "episode_number": 35,
+            "title": "How I made steel toe crocs with wood",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nI want steel toed crocs but I can't buy them. That's a crime against humanity that I want to rectify. In this video I show how I developed wooden tooling that with a bit of refinement could be used to mass produce steel toe crocs. \n\nThese videos usually take 100+ hours of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nI use a 13\" iPad for all my technical drawing: https://amzn.to/2RKOnyL\n\nTools that I used in this video and others that I love:\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\n20 ton hydraulic press: https://amzn.to/3bHA7i3\nTormach 1100mx: https://tormach.com/machines/mills/1100mx.html\nImport spot welder. Cheap bulletproof: https://amzn.to/2ypHmMU\nDigital angle gauge: https://amzn.to/2Vn6ZXL\nBench sheet metal brake: https://amzn.to/2XNfI7h\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake kit: https://amzn.to/2xw4fhL\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL\nCyclonic dust collector: https://amzn.to/3ezyghf",
+            "duration": 1455,
+            "year": 2020,
+            "published_at": "2020-04-27T07:38:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/IcjgrB9vTec/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "IcjgrB9vTec",
+                "url": "https://www.youtube.com/watch?v=IcjgrB9vTec",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-vtN4tkvcBMA",
+            "episode_number": 36,
+            "title": "My curved basketball hoop always goes in",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nI've wondered if it is possible to make a basketball hoop where the ball always goes in. Imagine throwing a ball and if it hits the backboard it somehow gets directed into the hoop. Thanks to physics it isn't quite possible to make ALL possible shots go in though you can make a hoop where the ball goes in a lot more often. In this video I show how I wrote a program to calculate the optical backboard then machined and fabricated it. It worked out better than I was expected so I'm really happy with it!\n\nThese videos usually take 100+ hours of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nThe basketball hoop that donated it's guts: https://amzn.to/2xw7fux\nI use a 13\" iPad for all my technical drawing: https://amzn.to/2RKOnyL\n\nBooks that I've read to learn many of the skills used in this project:\nReal time collision detection: https://amzn.to/35iUr7i\nIntroduction to algorithims: https://amzn.to/2yUUSIN\nPlanning algorithims: https://amzn.to/2Smavj9\nStatistics: https://amzn.to/2zIlywI\nComputational geometry: https://amzn.to/3cZ7YmR\n\nOther tools and things that I think are great:\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nThe best marker ever. Marks everything. Always in my pocket: https://amzn.to/3ewHGtL\nImport spot welder. Cheap bulletproof: https://amzn.to/2ypHmMU\nRivnuts + tool: https://amzn.to/3eJstWy\nDigital angle gauge: https://amzn.to/2Vn6ZXL\nBench sheet metal brake: https://amzn.to/2XNfI7h\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake: https://amzn.to/2xw4fhL\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom",
+            "duration": 1267,
+            "year": 2020,
+            "published_at": "2020-04-17T06:34:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vtN4tkvcBMA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vtN4tkvcBMA",
+                "url": "https://www.youtube.com/watch?v=vtN4tkvcBMA",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-lPMg0dk1hFI",
+            "episode_number": 37,
+            "title": "This machine changes everything",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nI recently acquired a Tormach 1100mx. I've started to outgrow my existing mills and have been looking for a VMC that was feature rich but that I could also get into my basement. I show the rigging process of getting it into my basement, assembly, and then machining a tool holder for it. Also includes some 3D printing and plasma cutting. Finally I take the tool breakage detection and rigid tapping features for a test drive.\n\nMy videos usually take 100+ hours of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nOh also this video is not sponsored by Tormach. I bought this mill with my hard earned bucks.",
+            "duration": 1336,
+            "year": 2020,
+            "published_at": "2020-04-09T03:32:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lPMg0dk1hFI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lPMg0dk1hFI",
+                "url": "https://www.youtube.com/watch?v=lPMg0dk1hFI",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-1de6fO-9ZDU",
+            "episode_number": 38,
+            "title": "Fixing a little mess with a big mess",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nSeveral years ago I built a CNC machine. It's been having some flood coolant system issues so I decided to cut out the heart of the coolant system and build it stronger. In this video I show how I did that.\n\nThese videos usually take a ton of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nTools that I use in this video + recurring favorites:\nImport spot welder. Cheap bulletproof: https://amzn.to/2ypHmMU\nRivnuts + tool: https://amzn.to/3eJstWy\nDigital angle gauge: https://amzn.to/2Vn6ZXL\nBench sheet metal brake: https://amzn.to/2XNfI7h\nCoolant tank + pump: https://amzn.to/3ew1g9L\nVise brake (highly recommend): https://amzn.to/3akCkhZ\n20 ton press brake: https://amzn.to/2xw4fhL\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\nCordless angle grinder - this thing will change your life: https://amzn.to/3cxrDdy\nDropped off ladder 20x and still going strong: https://amzn.to/2wO855g\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL",
+            "duration": 1179,
+            "year": 2020,
+            "published_at": "2020-03-30T01:25:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1de6fO-9ZDU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1de6fO-9ZDU",
+                "url": "https://www.youtube.com/watch?v=1de6fO-9ZDU",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-8cNeAOpR-Ws",
+            "episode_number": 39,
+            "title": "3D Printed Sheet Metal Forming (Part 2)",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nIn this video I show more techniques for 3D printed sheet metal press forming tools. I improve over my previous designs by making a tool with a moving action as well as fixing a major design flaw. I also demonstrate a more complicated forming operation with many features made in one pressing.\n\nThese videos usually take a ton of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nIf you missed it, you can find part one here:\nhttps://www.youtube.com/watch?v=WuY2-OrT9ig\n\nHere's some of the tools that I use in this video + recurring favorites:\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\nVise brake (highly recommend): https://amzn.to/3akCkhZ\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL\nFormlabs Form 3: https://formlabs.com/3d-printers/form-3/",
+            "duration": 903,
+            "year": 2020,
+            "published_at": "2020-03-23T04:23:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8cNeAOpR-Ws/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8cNeAOpR-Ws",
+                "url": "https://www.youtube.com/watch?v=8cNeAOpR-Ws",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-c3LhK2SAusk",
+            "episode_number": 40,
+            "title": "This marker will change the way you work with sheet metal",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nPlasma cutting is incredibly useful. Paired with bending and welding it is often the fastest and cheapest way to build any kind of mechanical structure or enclosure. Results that might take a day on a 3D printer or on a CNC mill can be achieved in minutes on a plasma cutter. Not to mention the cost of sheet metal is a lot cheaper than 3D printer materials or billet for machining. I'm constantly making folded and welded structures with my plasma cutter and every time I have the same problem. I will design a complicated folded part and then when I go to bend it I can't place the bends accurately. I'll spend a lot of time trying to measure them out but the plasma cutter can make any arbitrary shape which can make measuring difficult. \n\nTo solve this problem I designed and built a pen plotter head for my plasma cutter. It allows me to first draw all of the bend lines then cut out the part. This gives me perfectly registered bend locations that make folding the parts really easy. \n\nThis video details how I designed it and how it works.\n\nThese videos usually take a ton of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nHere's some of the tools that I use in this video:\nRetractable sharpies: https://amzn.to/2XLNYzI\nAir solenoid valves: https://amzn.to/3apr57Y\nPneumatic Cylinder: https://amzn.to/3exLbjG\nVise brake (highly recommend): https://amzn.to/3akCkhZ\nWera allen keys 1000x better than el cheapos: https://amzn.to/2KlCb36\nWera allen keys (english): https://amzn.to/2RQUxNG\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\n100mm linear stage for plasma  Z axis - easier than building: https://amzn.to/3cAeEb3\nDowndraft fans - these things chooch!: https://amzn.to/2VKFbM5\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL\nDrag chains: https://amzn.to/2VFDXSf\n\n\"computer startup sound\" sound from https://freesound.org/people/bigmanjoe/sounds/433930/ is licensed under CC BY 3.0 https://creativecommons.org/licenses/by/3.0/\n\nUpbeat Corporate by JP Bianchini | https://soundcloud.com/jpmbianchini\nMusic promoted by https://www.free-stock-music.com\nCreative Commons / Attribution 3.0 Unported License (CC BY 3.0)\nhttps://creativecommons.org/licenses/by/3.0/deed.en_US",
+            "duration": 838,
+            "year": 2020,
+            "published_at": "2020-03-18T05:14:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/c3LhK2SAusk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "c3LhK2SAusk",
+                "url": "https://www.youtube.com/watch?v=c3LhK2SAusk",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-BuC1IiZBY_o",
+            "episode_number": 41,
+            "title": "Making a particle filter that doesn't wear out for my plasma cutter",
+            "description": "Support these projects on patreon: https://patreon.com/stuffmadehere\nCheck out the subreddit: https://tinyurl.com/smhere\n\nWhen I was designing the downdraft for my plasma cutter I was concerned that it might eject too much metal dust out of my shop and into my driveway. It turns out that I was right and as I've been cutting more I've noticed a real uptick in accumulated metal on the ground. To address this problem I built a filtering system designed to remove the bigger particles from the exhaust. Since I'm not concerned with smoke and really extremely fine vapor I was able to make a \"solid state\" filter that takes advantage of the inability of a heavy particle to follow a tight corner. It was inspired by cyclonic seperators on larger shop vacuum systems. From the testing that I've done it seems to work quite well and I'm pretty happy with the results.\n\nThese videos usually take a ton of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nHere's some of the tools that I use in this video:\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nHypertherm fine cut consumables (great for sheet metal) https://amzn.to/34SjMom\n100mm linear stage for plasma  Z axis - easier than building: https://amzn.to/3cAeEb3\nAnemometer - cheap but seems to work well: https://amzn.to/2ROtkeL\nDowndraft fans - these things chooch!: https://amzn.to/2VKFbM5\nThe best marker ever. Always in my pocket: https://amzn.to/3ewHGtL\nCyclonic dust collector: https://amzn.to/3ezyghf",
+            "duration": 565,
+            "year": 2020,
+            "published_at": "2020-03-09T01:34:52Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BuC1IiZBY_o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BuC1IiZBY_o",
+                "url": "https://www.youtube.com/watch?v=BuC1IiZBY_o",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-WuY2-OrT9ig",
+            "episode_number": 42,
+            "title": "Bending Steel With Plastic Tools",
+            "description": "I've been wondering if 3D printed tools could possibly bend steel. It seemed possible unlikely. I designed and printed several tools which are used on a hydraulic press to bend and form steel sheet metal. This particular tool could be made by CNC machining the tools from metal but 3D printing it is much faster and easier.\n\nThese videos usually take a ton of work and a lot of money in tools and materials. I've made a patreon if you're interested in supporting the creation of these projects: https://www.patreon.com/stuffmadehere\n\nIf you're interested here's some of the tools that I use in this video:\nPneumatic jack conversion for my 20 ton press: https://amzn.to/3ajft6j\nHypertherm powermax 45xp with machine torch: https://amzn.to/2zfoyAv\nSmall machinist square. Cheap but useful: https://amzn.to/2XK6I2N",
+            "duration": 1202,
+            "year": 2020,
+            "published_at": "2020-03-04T15:15:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WuY2-OrT9ig/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WuY2-OrT9ig",
+                "url": "https://www.youtube.com/watch?v=WuY2-OrT9ig",
+                "channel_id": "UCj1VqrHhDte54oLgPG4xpuQ",
+                "channel_title": "Stuff Made Here",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "id": "no-source-series",
+  "title": "No Source Series",
+  "source": { "provider": "youtube" },
+  "episodes": []
+}

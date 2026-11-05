@@ -1,6 +1,7 @@
 import { store } from "../store.js";
 import { baseComponentCSS, escapeHtml, dateLabel, dateLabelFull, secToClock, toast } from "../utils.js";
 import * as drive from "../drive.js";
+import { viewState } from "../view.js";
 import "./cf-toggle.js";
 
 class CfHeader extends HTMLElement {
@@ -24,9 +25,11 @@ class CfHeader extends HTMLElement {
           if (details.open) details.open = false;
         });
       };
+      this._onViewChange = () => this._renderNavActive();
       store.addEventListener("change", this._onChange);
       drive.driveEvents.addEventListener("change", this._onDriveChange);
       document.addEventListener("click", this._onDocClick);
+      viewState.addEventListener("change", this._onViewChange);
     }
     this._render();
   }
@@ -35,6 +38,7 @@ class CfHeader extends HTMLElement {
     store.removeEventListener("change", this._onChange);
     drive.driveEvents.removeEventListener("change", this._onDriveChange);
     document.removeEventListener("click", this._onDocClick);
+    viewState.removeEventListener("change", this._onViewChange);
   }
 
   _wire() {
@@ -49,6 +53,27 @@ class CfHeader extends HTMLElement {
     });
     root.querySelector(".live-menu").addEventListener("toggle", (e) => {
       if (e.target.open) this._renderLiveBody();
+    });
+    root.querySelector("nav").addEventListener("click", (e) => {
+      const a = e.target.closest("a[data-view]");
+      if (!a) return;
+      viewState.setView(a.dataset.view);
+    });
+  }
+
+  _renderNavActive() {
+    this.shadowRoot.querySelectorAll("nav a[data-view]").forEach((a) => {
+      a.classList.toggle("active", a.dataset.view === viewState.current);
+    });
+    // The schedule-only controls (channel/date/live/validate/publish) are
+    // meaningless outside the SCHEDULE view -- hide them rather than
+    // leaving them acting on a view the editor can't see. (.hidden is
+    // baseComponentCSS's `display:none!important` utility class, not the
+    // bare `hidden` attribute, so it reliably wins over each element's
+    // own `display:flex` rule regardless of CSS source order.)
+    const onSchedule = viewState.current === "schedule";
+    this.shadowRoot.querySelectorAll(".schedule-only-controls").forEach((el) => {
+      el.classList.toggle("hidden", !onSchedule);
     });
   }
 
@@ -203,6 +228,8 @@ class CfHeader extends HTMLElement {
           nav{ display:flex; gap:18px; margin-left:6px; }
           nav a{ font-size:12px; font-weight:700; letter-spacing:.05em; color:var(--text-muted); text-decoration:none;
             padding:4px 0; border-bottom:2px solid transparent; cursor:default; }
+          nav a[data-view]{ cursor:pointer; }
+          nav a[data-view]:hover{ color:var(--text); }
           nav a.active{ color:var(--text); border-bottom-color:var(--accent); }
           .channel-select{ min-width:150px; font-weight:600; }
           .date-nav{ display:flex; align-items:center; gap:6px; background:var(--panel-2); border:1px solid var(--border);
@@ -250,32 +277,33 @@ class CfHeader extends HTMLElement {
             ChannelFlow
           </div>
           <nav>
-            <a class="active">SCHEDULE</a><a>PLAYOUT</a><a>STREAM</a><a>TOGETHER</a>
+            <a data-view="schedule" class="active">SCHEDULE</a><a data-view="series">SERIES</a><a data-view="programming">PROGRAMMING</a><a>PLAYOUT</a><a>STREAM</a><a>TOGETHER</a>
           </nav>
-          <select class="channel-select"></select>
-          <div class="date-nav">
+          <select class="channel-select schedule-only-controls"></select>
+          <div class="date-nav schedule-only-controls">
             <button class="prev-day" title="Previous day">◀</button>
             <span class="date-label"></span>
             <button class="next-day" title="Next day">▶</button>
           </div>
-          <div class="live-badge"><span class="dot"></span><span class="label">LIVE</span></div>
+          <div class="live-badge schedule-only-controls"><span class="dot"></span><span class="label">LIVE</span></div>
           <div class="clock"><div class="clock-time"></div><div class="clock-date"></div></div>
           <div class="spacer"></div>
           <details class="drive-menu">
             <summary><span class="dot"></span>Drive</summary>
             <div class="drive-body"></div>
           </details>
-          <details class="drive-menu live-menu">
+          <details class="drive-menu live-menu schedule-only-controls">
             <summary><span class="dot"></span>Live</summary>
             <div class="drive-body live-body"></div>
           </details>
-          <div class="actions">
+          <div class="actions schedule-only-controls">
             <button class="validate-btn">Validate Schedule</button>
             <button class="publish-btn primary">Publish</button>
           </div>
         </header>
       `;
       this._wire();
+      this._renderNavActive();
     }
 
     const select = root.querySelector(".channel-select");

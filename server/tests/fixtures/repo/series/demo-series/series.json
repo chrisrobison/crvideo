@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "id": "demo-series",
+  "title": "Demo Series",
+  "description": "A fixture series for server/tests.",
+  "creator": null,
+  "source": { "provider": "youtube", "channel_id": "UCdemo123", "channel_url": "https://www.youtube.com/channel/UCdemo123" },
+  "rotation": { "mode": "sequential", "loop": true },
+  "episodes": [
+    {
+      "id": "yt-aaa111", "episode_number": 1, "title": "Episode One", "description": "", "duration": 900,
+      "year": 2024, "published_at": "2024-01-01T00:00:00Z", "thumbnail_url": "https://example.test/1.jpg", "guests": [],
+      "source": { "provider": "youtube", "video_id": "aaa111", "url": "https://www.youtube.com/watch?v=aaa111",
+        "channel_id": "UCdemo123", "channel_title": "Demo Channel", "kind": "upload", "embeddable": true,
+        "made_for_kids": false, "privacy_status": "public", "availability": "available", "availability_detail": null },
+      "status": "candidate",
+      "rights": { "status": "unverified", "notes": null }
+    },
+    {
+      "id": "yt-bbb222", "episode_number": 2, "title": "Episode Two", "description": "", "duration": 900,
+      "year": 2024, "published_at": "2024-01-02T00:00:00Z", "thumbnail_url": "https://example.test/2.jpg", "guests": [],
+      "source": { "provider": "youtube", "video_id": "bbb222", "url": "https://www.youtube.com/watch?v=bbb222",
+        "channel_id": "UCdemo123", "channel_title": "Demo Channel", "kind": "upload", "embeddable": true,
+        "made_for_kids": false, "privacy_status": "public", "availability": "available", "availability_detail": null },
+      "status": "approved",
+      "rights": { "status": "licensed", "notes": "Approved for the fixture test." }
+    },
+    {
+      "id": "yt-ccc333", "episode_number": 3, "title": "Episode Three", "description": "", "duration": 900,
+      "year": 2024, "published_at": "2024-01-03T00:00:00Z", "thumbnail_url": "https://example.test/3.jpg", "guests": [],
+      "source": { "provider": "youtube", "video_id": "ccc333", "url": "https://www.youtube.com/watch?v=ccc333",
+        "channel_id": "UCdemo123", "channel_title": "Demo Channel", "kind": "upload", "embeddable": true,
+        "made_for_kids": false, "privacy_status": "public", "availability": "available", "availability_detail": null },
+      "status": "approved",
+      "rights": { "status": "unverified", "notes": null }
+    }
+  ]
+}

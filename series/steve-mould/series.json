@@ -1,18 +1,427 @@
 {
-  "_note": "STRUCTURAL PLACEHOLDER. This file exists to prove out the series.json shape and its catalog reference (see channels/science/catalog.json) ahead of the YouTube importer, which has not been built yet (a later phase). No real YouTube channel id, video id, episode title, or duration has been entered here -- every such field is null or empty on purpose. Do not schedule this series and do not treat any value below as real metadata; replace this whole file by running the (future) importer.",
-  "schema_version": 1,
-  "id": "steve-mould",
-  "title": "Steve Mould",
-  "description": "Hands-on experiments and explanations of everyday physics and curious phenomena.",
-  "creator": null,
-  "year": null,
-  "thumbnail_url": null,
-  "logo_url": null,
-  "source": {
-    "provider": "youtube",
-    "channel_id": null,
-    "channel_url": null
-  },
-  "rotation": { "mode": "sequential", "loop": true },
-  "episodes": []
+    "schema_version": 1,
+    "id": "steve-mould",
+    "title": "Steve Mould",
+    "description": "Hands-on experiments and explanations of everyday physics and curious phenomena.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/iX-akiHlJYuPDq4YVBO83cfjWW0aQefdewmI326XVhZkzxnS3MrqNVi49J33jLBw5LR_ZVyKFA=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+        "channel_url": "https://www.youtube.com/channel/UCEIwxahdLz7bap-VDs9h35A"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-Z-2pTzSZtLU",
+            "episode_number": 1,
+            "title": "This Material Sorts Itself",
+            "description": "Click this link: https://hensonshaving.com/stevemould and use code STEVEMOULD to recieve 100 free blades with the purchase of your AL13 razor.\n\nTurning a drum full of grains of different sizes sorts the grins by size and forms weird patterns. It's linked to granular segregation, the Brazil nut effect and landslides on the moon.\n\nHere's the paper by Chris and Nico: https://www.researchgate.net/publication/377489269_Particle-size_segregation_patterns_in_a_partially_filled_triangular_rotating_drum\n\nHere's the colloidal phase separation paper: https://pubs.acs.org/langd5/article-abstract/26/5/3174/306151/The-Role-of-Polymer-Polydispersity-in-Phase\n\n\nGet the Hooded Seal Plushie with actuating nose bubble: https://shop.stevemould.com\n\nYou can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 1117,
+            "year": 2026,
+            "published_at": "2026-10-31T12:50:48Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z-2pTzSZtLU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Z-2pTzSZtLU",
+                "url": "https://www.youtube.com/watch?v=Z-2pTzSZtLU",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6gsZY_-kT3U",
+            "episode_number": 2,
+            "title": "This Device Turns Anything into a Suction Cup",
+            "description": "Take you first BlueDot course today: https://bluedot.org/stevemould\n\nI thought vibration adhesion worked like a Bernoulli Gripper but it's way more interesting than that.\n\nCheck out David Colosante's work here: https://www.linkedin.com/in/david-colasante-3488b543\n\nScott's fancy kitchen knife: https://seattleultrasonics.com\n\nMy airless airhockey video: https://www.youtube.com/watch?v=BViIGAg-eVI\n\nGet the Hooded Seal Plushie with actuating nose bubble: https://shop.stevemould.com\n\nHere are the 3D files for vibration motor harness: https://github.com/steventhebrave/vibration-adhesion-adapter\n\nYou can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 830,
+            "year": 2026,
+            "published_at": "2026-09-30T23:26:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6gsZY_-kT3U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6gsZY_-kT3U",
+                "url": "https://www.youtube.com/watch?v=6gsZY_-kT3U",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nwot04PfgaU",
+            "episode_number": 3,
+            "title": "Hooded Seals are Really Weird...",
+            "description": "Get the Hooded Seal Plushie with actuating nose bubble: https://shop.stevemould.com\n\nYou can buy my books here:\nhttps://stevemould.com/books\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 135,
+            "year": 2026,
+            "published_at": "2026-09-10T11:03:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nwot04PfgaU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nwot04PfgaU",
+                "url": "https://www.youtube.com/watch?v=nwot04PfgaU",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-k3Q9UWWiPsQ",
+            "episode_number": 4,
+            "title": "The \"Perpetual Motion\" Pump That Actually Works",
+            "description": "Use my code STEVEMOULD to get 50% off your first monthly crate at https://kiwico.com/stevemould\n\nRam pumps are probably my most requested topic. But getting a transparent one working was really hard. When I understood them a lot better.\n\nGet the Hooded Seal Plushie with actuating nose bubble: https://shop.stevemould.com\n\nWater Power Technologies: https://waterpoweredtechnologies.com for all your ram pump needs!\n\nPractical Engineering's excellent ram pump video: https://www.youtube.com/watch?v=zFdyqTGx32A\n\nMy Wirtz pump video: https://www.youtube.com/watch?v=wCxRHueX6jQ\n\nYou can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\njust like these amazing people:\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 991,
+            "year": 2026,
+            "published_at": "2026-08-31T22:09:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/k3Q9UWWiPsQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "k3Q9UWWiPsQ",
+                "url": "https://www.youtube.com/watch?v=k3Q9UWWiPsQ",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-R8swv0V5BOQ",
+            "episode_number": 5,
+            "title": "Hooded Seals are amazing!",
+            "description": "I’ve been working on an idea for about a year, and it’s finally ready to show you. Maybe you’ve heard of this amazing animal called the Hooded Seal. \n\nThe male has an incredible mating display where it inflates a giant red membrane out of its left nostril! When I told my kids about it, they thought it was the most amazing thing they had ever heard of. \n\nEver since, I’ve been trying to turn the hooded seal into a plushie with an actual inflating red nose bubble. Well I’ve finally navigated all the design constraints that come with soft toy manufacturing and perfected all the little details, and I’m proud to say it’s ready for preorder! \n\nI know this isn’t my typical subject matter but I’m a huge fan of biology behind the scenes, and this has been a bit of a passion project. So I hope you’ll take a look and consider placing an order. \n\nGet one for your kids, or stick one on your coffee table, it’s a brilliant conversation starter! https://shop.stevemould.com/\n\nMore information on hooded seals and efforts to protect them: \n\nHooded seals live far up north in the Arctic. The sea ice there is disappearing faster than almost anywhere else on Earth, which is why they are now classified as endangered. \n\nWhen you add this plushie to your cart, you have the option to include a donation of 5%, 10% or 25%, or you can skip it. All donations go straight to the 90 North Foundation, a charity campaigning to turn the Central Arctic Ocean (about 2.8 million square kilometres of water around the North Pole) into a proper marine reserve. It's the fastest-warming, fastest-acidifying ocean on the planet, and as the ice retreats, it's opening up to fishing boats, cargo ships and mining vessels that couldn't get there before. \n\n90 North works with real scientists to make the case for protecting it before it's too late.",
+            "duration": 50,
+            "year": 2026,
+            "published_at": "2026-08-28T16:13:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/R8swv0V5BOQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "R8swv0V5BOQ",
+                "url": "https://www.youtube.com/watch?v=R8swv0V5BOQ",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-NvkZaWLe0Sk",
+            "episode_number": 6,
+            "title": "This Device Goes Past Equilibrium",
+            "description": "Learn more about the Jane Street internship at https://jane-st.co/internships2027-SteveMould\n\nCounterflow heat exchangers are really counterintuitive because they can swap the temperature of two liquids.\n\nGet the Hooded Seal Plushie with actuating nose bubble: https://shop.stevemould.com\n\nYou can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 803,
+            "year": 2026,
+            "published_at": "2026-08-22T00:37:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/NvkZaWLe0Sk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "NvkZaWLe0Sk",
+                "url": "https://www.youtube.com/watch?v=NvkZaWLe0Sk",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ti2qiU_JTUQ",
+            "episode_number": 7,
+            "title": "The Euler Disc Is The Wrong Shape",
+            "description": "Get your own Singularity Disc here: https://metmo.co.uk/singularity\n\nLarge discs like the Euler disc spin for a really long time but we discovered some optimisations to make it spin even longer.",
+            "duration": 1201,
+            "year": 2026,
+            "published_at": "2026-08-01T15:57:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ti2qiU_JTUQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ti2qiU_JTUQ",
+                "url": "https://www.youtube.com/watch?v=ti2qiU_JTUQ",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-1EyN9_QO4_A",
+            "episode_number": 8,
+            "title": "The Arm Spin That Stops a Fall",
+            "description": "Take your personal data back with Incogni! Use code SCIENCE at the link below and get 60% off an annual plan: https://incogni.com/science\n\nHumans use conservation of angular momentum to recover from an imbalance. Here's why.\n\nThanks to Gareth Barnaby for his amazing robot. More about his work here: https://senmag-robotics.com\n\nYou can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 806,
+            "year": 2026,
+            "published_at": "2026-07-09T14:46:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1EyN9_QO4_A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1EyN9_QO4_A",
+                "url": "https://www.youtube.com/watch?v=1EyN9_QO4_A",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-rm9pUwgf9SE",
+            "episode_number": 9,
+            "title": "Why clouds and foam are white",
+            "description": "You can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\njust like these amazing people:\n\nGlenn Watson\nPeter Turner\nJoël van der Loo\nMatthew Cocke\nMark Brouwer\nDeneb\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 180,
+            "year": 2026,
+            "published_at": "2026-07-03T19:00:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/rm9pUwgf9SE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "rm9pUwgf9SE",
+                "url": "https://www.youtube.com/watch?v=rm9pUwgf9SE",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-biCFghI9uKU",
+            "episode_number": 10,
+            "title": "The disappearing ink that isn’t ink",
+            "description": "You can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\njust like these amazing people:\n\nGlenn Watson\nPeter Turner\nJoël van der Loo\nMatthew Cocke\nMark Brouwer\nDeneb\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 92,
+            "year": 2026,
+            "published_at": "2026-06-26T11:00:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/biCFghI9uKU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "biCFghI9uKU",
+                "url": "https://www.youtube.com/watch?v=biCFghI9uKU",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-EP1mYq8hLIY",
+            "episode_number": 11,
+            "title": "The Anti Trampoline Effect",
+            "description": "Click this link https://www.hensonshaving.com/stevemould and use the\ncode stevemould to receive 100 free blades with the purchase of your AL13 razor\n\nWhen you combine a bouncy surface with a bouncy ball, you might kill the bounce! You have to tune their vibrations!\n\nDr Andy Wright at the University of St Andrews contacted me after watching the atomic trampoline video (https://youtu.be/QpuCtzdvix4) because some of the questions I had in the video had been answered by a couple of final year projects he had run (completed by undergraduates Connor Richardson and Sam Edwards). They found they could tune their model of a golf ball and club to give a perfect bounce or a rubbish bounce. Andy kindly shared the simulation code from these projects, and my animations were built animations on top of that.\n\nThe simulation software is here: https://stevemould.com/bounce\n\nYou can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 1005,
+            "year": 2026,
+            "published_at": "2026-06-25T15:30:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/EP1mYq8hLIY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "EP1mYq8hLIY",
+                "url": "https://www.youtube.com/watch?v=EP1mYq8hLIY",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4cUX0jJC3HY",
+            "episode_number": 12,
+            "title": "What chilli is actually doing to you...",
+            "description": "You can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\njust like these amazing people:\n\nGlenn Watson\nPeter Turner\nJoël van der Loo\nMatthew Cocke\nMark Brouwer\nDeneb\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 101,
+            "year": 2026,
+            "published_at": "2026-06-19T11:30:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4cUX0jJC3HY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4cUX0jJC3HY",
+                "url": "https://www.youtube.com/watch?v=4cUX0jJC3HY",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-CsEV7ryCJ9A",
+            "episode_number": 13,
+            "title": "This structure feels impossible to move",
+            "description": "You can buy my books here:\nhttps://stevemould.com/books\n\nYou can support me on Patreon and get access to the exclusive Discord:\nhttps://www.patreon.com/stevemould\n\njust like these amazing people:\n\nGlenn Watson\nPeter Turner\nJoël van der Loo\nMatthew Cocke\nMark Brouwer\nDeneb\n\nTwitter: http://twitter.com/moulds\nInstagram: https://www.instagram.com/stevemouldscience/\nFacebook: https://www.facebook.com/stevemouldscience/\nTikTok: https://www.tiktok.com/stevemould\nBuy nerdy maths things: http://mathsgear.co.uk",
+            "duration": 102,
+            "year": 2026,
+            "published_at": "2026-06-12T19:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/CsEV7ryCJ9A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "CsEV7ryCJ9A",
+                "url": "https://www.youtube.com/watch?v=CsEV7ryCJ9A",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-2yiRyAipXe8",
+            "episode_number": 14,
+            "title": "This zipper is really weird...",
+            "description": "The Y zipper, invented by William Freeman in 1985 at MIT, can be flexible and rigid.",
+            "duration": 55,
+            "year": 2026,
+            "published_at": "2026-06-08T18:10:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2yiRyAipXe8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2yiRyAipXe8",
+                "url": "https://www.youtube.com/watch?v=2yiRyAipXe8",
+                "channel_id": "UCEIwxahdLz7bap-VDs9h35A",
+                "channel_title": "Steve Mould",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
 }
