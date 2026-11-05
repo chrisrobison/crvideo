@@ -243,6 +243,153 @@ or, in principle, alongside its own hand/`ia-import`-maintained content
 exercised end to end (see `channels/publish/README.md`'s "Known
 limitations").
 
+A block can additionally opt into **multi-episode packing**
+(`packing.enabled` in `programming.json`): instead of exactly one
+episode per scheduled occurrence, as many pinned episodes as actually
+fit the block's `duration` are packed in, back to back, in rotation
+order -- never truncated. This is off by default (so every channel
+published before this feature, Science & Engineering included, keeps
+compiling identically unless it opts in) and needs one more small,
+gitignored, per-block state file (`.publish/<channel>.<block>.rotation.json`)
+beyond the episode-set pin, to remember where a block's sequential
+consumption of pinned episodes currently is across publish runs. A block also picks a `packing.mode`: `"sequential"` (pinned order,
+default), `"best_fit"` (minimize leftover time, order doesn't matter),
+or `"hybrid"` (prefer the main sequential show, fall back to a bounded,
+separately-rotated alternate for filler without disturbing the main
+cursor). See `channels/publish/README.md`'s "Multi-episode packing"
+section for the full config (`mode`, `minimum_remaining`,
+`safety_margin`, `on_unfit`) and `channels/publish/src/EpisodePacker.php`
+/ `RotationState.php` for how every mode stays deterministic and
+bounded-cost.
+
+A block can also declare a `boundary` (`hard`, the default and the
+pre-existing behavior; `soft`, with a required `max_delay`; `elastic`,
+for now simplified to behave like `soft`): whether its own nominal start
+time can ever be pushed later by an overrunning predecessor, and by how
+much. A dedicated `BoundaryResolver` stage resolves every block's
+occurrences together, chronologically, after per-block compilation --
+see `channels/publish/README.md`'s "Hard and soft start boundaries"
+section.
+
+## Dynamic continuity rendering and playback (Phase 5/6)
+
+`channels/continuity-card.js` defines `<cr-continuity-card>`, a
+dependency-free Web Component (native custom element, shadow DOM, plain
+CSS -- no React, no build step, no prerecorded asset) that renders a
+"Coming Up Next" card: channel logo/name, the upcoming program's title/
+description/thumbnail (when available), its start time, and a live
+countdown. It decides nothing about scheduling -- it only ever formats
+whatever `.program`/`.channel` it's given against its own clock function
+(`.clockNow`, normally the project's drift-corrected broadcast clock),
+recomputed from absolute instants on every tick, which is what makes a
+mid-card refresh or a background-tab timer suspension land on the
+correct remaining time with no special-case recovery logic needed.
+Theming is entirely CSS custom properties with generic defaults; a
+specific channel's identity (e.g. Science & Engineering's dark
+background, cyan highlights, warm accent) is layered on by the caller
+via `meta.json`'s optional `theme` field, never hardcoded in the
+component itself.
+
+`channels/player-adapters.js`'s `ContinuityRenderer` mounts/updates/
+hides one `<cr-continuity-card>` inside a container element the calling
+page owns -- structurally alongside `Html5PlayerAdapter`/
+`YouTubePlayerAdapter`, but deliberately not forced through their
+`PlayerAdapter` interface, since a card is rendered, never played/
+paused/sought. `BroadcastPlayer` (`broadcast.js`) treats a `"continuity"`
+airing as a dedicated third case in `switchTo()`: it pauses/hides
+whichever adapter was active first (the YouTube iframe's required
+presentation is never drawn under anything else), then renders the card
+with the real upcoming program's info (via the existing `nextProgram()`
+timeline helper) and the continuity occurrence's own exact span. A page
+that passes no `continuityContainer` (e.g. the channel guide's small
+preview in `index.html`) is completely unaffected -- a continuity airing
+simply falls back to the ordinary not-playable station-break slate,
+exactly like an unsupported provider already does.
+
+`watch.html` is the first integration: a `#continuityHost` element,
+passed as `continuityContainer`, shown/hidden independently of the
+pre-existing generic "Up Next" slate (which still handles the plain-gap,
+no-program-at-all case exactly as before).
+
+**What's unit-tested vs. what still needs a real browser** (same honesty
+standard this project already applies to the YouTube player adapter):
+`buildTimeline()`'s continuity field passthrough and the card's pure
+`formatCountdown()` helper are covered under `node --test` (no DOM
+involved). `<cr-continuity-card>`'s actual shadow-DOM rendering, its
+`visibilitychange`-triggered re-render, the pause/hide transition away
+from a live YouTube iframe, and the card's layout/animations have no
+meaningful behavior without a real browser -- faking enough of the DOM
+to exercise them wouldn't prove anything a browser wouldn't prove
+better, so they are **not** covered by the automated suite and need
+manual/Playwright verification before relying on them in production.
+
+A channel can additionally reference a `continuity.json` (or several --
+network-wide and channel-specific, merged, the same portable-reference
+shape as `series`) from its `catalog.json`. When it does,
+`ContinuityFiller` replaces every remaining gap with real continuity
+occurrences -- a short, bounded chain of approved station-id/filler
+media, then exactly one dynamically-rendered continuity card for
+whatever's left -- instead of a plain `"gap"` block. A channel that
+references no `continuity.json` is completely unaffected. See
+`channels/publish/README.md`'s "Broadcast continuity and filler"
+section for the full schema and `channels/publish/src/
+ContinuityResolver.php` / `ContinuityFiller.php` for the resolution and
+exact-gap-coverage rules. The dynamic card's actual on-screen rendering
+and player integration are a later phase (continuity occurrences compile
+correctly today; they render as an ordinary station-break slate in the
+existing player until that phase lands).
+
+## Determinism and schedule publication (Phase 8)
+
+Everything built across these phases shares the same determinism
+contract the original recurring-programming design already established
+(no unseeded randomness, no viewer-timezone-dependent boundaries, no
+`setTimeout()`-as-authoritative-clock), extended to cover the new state:
+
+- **No filler selection at playback time.** `ContinuityFiller` runs
+  entirely inside `publish.php`; the browser only ever displays what
+  the compiler already decided and formats a countdown from absolute
+  instants (`continuity-card.js`) -- it never picks a card or asset
+  itself.
+- **Stable rotation across publication windows.** `EpisodeSetPin`
+  (which episodes/which order) and `RotationState` (where a packing-
+  enabled block's cursor/deferred queue currently is) are both small,
+  versioned, gitignored state files, not recomputed from scratch on
+  every publish -- see `RotationState.php`'s header for exactly how its
+  single forward-only checkpoint stays both correct and bounded-cost
+  regardless of how long a channel has been running.
+- **Never retroactively shifts an already-published occurrence.** A
+  compile only ever emits items at or after its own `--window-start`;
+  `RotationState`'s checkpoint only ever advances to *that* window's own
+  start, never past it, which is exactly what keeps republishing the
+  same or a later-starting (overlapping) window idempotent.
+- **Stable occurrence ids.** An episode occurrence keeps the episode's
+  own stable id; a continuity occurrence's id (`continuity-<its own
+  absolute start timestamp>`) is a pure function of when it airs, so
+  republishing an unchanged window reproduces the identical id.
+- **Timezone/DST-correct throughout.** `Recurrence` (occurrence timing)
+  and `BoundaryResolver` (delay arithmetic -- plain elapsed-seconds math
+  over already-resolved absolute instants, so it needs no DST-awareness
+  of its own) are both covered by explicit spring-forward/fall-back/
+  midnight-crossing tests.
+- **Backward compatible by construction, not by convention.** Packing,
+  boundaries, and continuity are each gated by their own explicit opt-in
+  field (`packing.enabled`, a non-`"hard"` `boundary.mode`, a
+  `"continuity"` catalog reference); every one of them defaults to
+  exactly the pre-existing behavior, which is what the full regression
+  suite (232 tests: 124 PHP `publish`, 66 PHP `server`, 42 JS, all
+  passing as of this phase) verifies on every change rather than merely
+  asserting.
+
+If a schedule genuinely cannot be resolved deterministically and safely
+(an impossible hard boundary, a rotation mode this project doesn't
+implement, a malformed config), every stage in this pipeline fails the
+whole publish with a clear `RuntimeException`/`InvalidArgumentException`
+rather than guessing or writing a partial/inconsistent `schedule.json` --
+the same "fail safely" posture `ProgrammingCompiler`'s original overlap
+check already established, just now shared by `BoundaryResolver` and
+`EpisodePacker` too.
+
 ## Worked example: adding a channel end to end
 
 Using `channels/science` (Science & Engineering) as the actual, currently

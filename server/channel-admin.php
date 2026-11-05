@@ -22,6 +22,8 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/lib/AdminSupport.php';
 require_once __DIR__ . '/../channels/publish/src/Recurrence.php';
+require_once __DIR__ . '/../channels/publish/src/EpisodePacker.php';
+require_once __DIR__ . '/../channels/publish/src/BoundaryResolver.php';
 
 final class ChannelAdminValidationError extends RuntimeException
 {
@@ -168,6 +170,32 @@ function channel_admin_validate_block(mixed $block, string $seriesDir = ADMIN_SE
         Recurrence::occurrences($recurrence, $anchorDate, $now, $now->modify('+1 day'));
     } catch (Throwable $e) {
         throw new ChannelAdminValidationError("block \"$id\": " . $e->getMessage());
+    }
+
+    // Both optional (Phases 1-3): validated the exact same way publish.php
+    // itself validates them (EpisodePacker::normalizeConfig / BoundaryResolver::
+    // normalizeBoundary, not a reimplementation of their rules), so this
+    // endpoint's acceptance criteria cannot drift out of sync with what a real
+    // publish would actually do with the same block.
+    if (isset($block['packing'])) {
+        if (!is_array($block['packing'])) {
+            throw new ChannelAdminValidationError("block \"$id\": \"packing\" must be an object.");
+        }
+        try {
+            EpisodePacker::normalizeConfig($block['packing'], $id);
+        } catch (Throwable $e) {
+            throw new ChannelAdminValidationError($e->getMessage());
+        }
+    }
+    if (isset($block['boundary'])) {
+        if (!is_array($block['boundary'])) {
+            throw new ChannelAdminValidationError("block \"$id\": \"boundary\" must be an object.");
+        }
+        try {
+            BoundaryResolver::normalizeBoundary($block['boundary'], $id);
+        } catch (Throwable $e) {
+            throw new ChannelAdminValidationError($e->getMessage());
+        }
     }
 
     return $block;

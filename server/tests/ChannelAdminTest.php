@@ -203,6 +203,48 @@ final class ChannelAdminTest
         });
     }
 
+    public function testSaveProgrammingAcceptsAValidPackingConfig(): void
+    {
+        $block = $this->validBlock(['packing' => ['enabled' => true, 'mode' => 'best_fit', 'minimum_remaining' => 60]]);
+        $result = channel_admin_save_programming(['channel_id' => 'demo-channel', 'blocks' => [$block]], $this->channelsDir, $this->seriesDir);
+        Assert::same('best_fit', $result['blocks'][0]['packing']['mode']);
+    }
+
+    public function testSaveProgrammingRejectsAnInvalidPackingMode(): void
+    {
+        Assert::throws(ChannelAdminValidationError::class, function (): void {
+            channel_admin_save_programming(['channel_id' => 'demo-channel', 'blocks' => [$this->validBlock(['packing' => ['enabled' => true, 'mode' => 'random']])]], $this->channelsDir, $this->seriesDir);
+        });
+    }
+
+    public function testSaveProgrammingRejectsPackingThatIsNotAnObject(): void
+    {
+        Assert::throws(ChannelAdminValidationError::class, function (): void {
+            channel_admin_save_programming(['channel_id' => 'demo-channel', 'blocks' => [$this->validBlock(['packing' => 'enabled'])]], $this->channelsDir, $this->seriesDir);
+        });
+    }
+
+    public function testSaveProgrammingAcceptsAValidSoftBoundary(): void
+    {
+        $block = $this->validBlock(['boundary' => ['mode' => 'soft', 'max_delay' => 300]]);
+        $result = channel_admin_save_programming(['channel_id' => 'demo-channel', 'blocks' => [$block]], $this->channelsDir, $this->seriesDir);
+        Assert::same('soft', $result['blocks'][0]['boundary']['mode']);
+    }
+
+    public function testSaveProgrammingRejectsASoftBoundaryWithoutMaxDelay(): void
+    {
+        Assert::throws(ChannelAdminValidationError::class, function (): void {
+            channel_admin_save_programming(['channel_id' => 'demo-channel', 'blocks' => [$this->validBlock(['boundary' => ['mode' => 'soft']])]], $this->channelsDir, $this->seriesDir);
+        });
+    }
+
+    public function testSaveProgrammingRejectsAnInvalidBoundaryMode(): void
+    {
+        Assert::throws(ChannelAdminValidationError::class, function (): void {
+            channel_admin_save_programming(['channel_id' => 'demo-channel', 'blocks' => [$this->validBlock(['boundary' => ['mode' => 'bogus']])]], $this->channelsDir, $this->seriesDir);
+        });
+    }
+
     public function testSaveProgrammingKeepsAnAtomicBackup(): void
     {
         channel_admin_save_programming(['channel_id' => 'demo-channel', 'blocks' => [$this->validBlock()]], $this->channelsDir, $this->seriesDir);

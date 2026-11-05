@@ -48,6 +48,20 @@ declare(strict_types=1);
 //   occurrences for that block (every scheduled instant for it is left
 //   as a gap) -- never an error, since "imported but not yet reviewed"
 //   is an entirely normal, expected state.
+//
+// Multi-episode packing (block.packing.enabled -- see docs/series-and-
+// channels.md): when ABSENT or false, every behavior above is exactly
+// what runs, byte-for-byte -- this is the pre-packing, one-episode-per-
+// occurrence path, kept intact specifically so every existing published
+// channel (Science & Engineering included) keeps compiling identically
+// forever unless it explicitly opts in. When true, EpisodePacker decides
+// how many pinned episodes fill each occurrence (never truncating one to
+// fit), and RotationState persists the small amount of additional
+// cursor/deferred-queue state that requires, across publish runs, that a
+// single "advance by one episode per occurrence" counter can no longer
+// capture on its own -- see that file's header for why a checkpoint
+// (rather than a full history) is enough to stay both deterministic and
+// bounded-cost.
 
 final class ProgrammingCompiler
 {
@@ -75,7 +89,7 @@ final class ProgrammingCompiler
             $seriesById[$s['id']] = $s;
         }
 
-        $items = [];
+        $groups = []; // one entry per scheduled occurrence that has at least one item -- see BoundaryResolver
         $warnings = [];
         $episodeSets = [];
 
@@ -149,54 +163,152 @@ final class ProgrammingCompiler
                 throw new RuntimeException("block \"$blockId\": duration must be a positive number of seconds.");
             }
 
-            $occurrences = Recurrence::occurrences($block['recurrence'] ?? [], $anchorDate, $windowStart, $windowEnd);
+            $boundary = BoundaryResolver::normalizeBoundary($block['boundary'] ?? null, $blockId);
+
+            $packing = is_array($block['packing'] ?? null) ? $block['packing'] : [];
+            $packingEnabled = (bool) ($packing['enabled'] ?? false);
+
+            if (!$packingEnabled) {
+                // Pre-packing path, unchanged: exactly one episode per occurrence.
+                $occurrences = Recurrence::occurrences($block['recurrence'] ?? [], $anchorDate, $windowStart, $windowEnd);
+                foreach ($occurrences as $occ) {
+                    $n = $occ['index'];
+                    if ($loop) {
+                        $episodeIndex = Recurrence::floorMod($n, $pinnedCount);
+                    } elseif ($n >= 0 && $n < $pinnedCount) {
+                        $episodeIndex = $n;
+                    } else {
+                        continue; // non-looping rotation has run out (or hasn't started) -- leave as a gap
+                    }
+
+                    $episodeId = $pinnedIds[$episodeIndex];
+                    $episode = $episodesById[$episodeId] ?? null;
+                    if ($episode === null || ($episode['status'] ?? null) !== 'approved') {
+                        $warnings[] = "block \"$blockId\" occurrence " . $occ['at']->format('c')
+                            . ": pinned episode \"$episodeId\" is no longer approved/present; this occurrence is left as a gap.";
+                        continue;
+                    }
+
+                    $episodeDuration = is_numeric($episode['duration'] ?? null) ? (float) $episode['duration'] : null;
+                    $itemDuration = ($episodeDuration !== null && $episodeDuration > 0) ? (int) round($episodeDuration) : $durationSeconds;
+                    $startAbs = $occ['at']->getTimestamp();
+                    $groups[] = [
+                        'blockId' => $blockId,
+                        'boundary' => $boundary,
+                        'nominalStart' => $startAbs,
+                        'items' => [self::buildItem($episode, $startAbs, $itemDuration)],
+                    ];
+                }
+                continue;
+            }
+
+            // Packing path: EpisodePacker decides how many pinned episodes fill
+            // each occurrence; RotationState carries its cursor/deferred queue
+            // across publish runs. See both files' header comments.
+            $config = EpisodePacker::normalizeConfig($packing, $blockId);
+            $rot = RotationState::load($stateDir, $channelId, $blockId, $pin['version']);
+            if ($rot['reset']) {
+                $warnings[] = "block \"$blockId\": {$rot['resetReason']}";
+            }
+
+            $replayStart = $windowStart;
+            if ($rot['checkpoint_at'] !== null) {
+                $checkpointAt = new DateTimeImmutable($rot['checkpoint_at']);
+                if ($checkpointAt < $windowStart) {
+                    $replayStart = $checkpointAt;
+                } elseif ($checkpointAt > $windowStart) {
+                    // --window-start moved earlier than the last known checkpoint: there is
+                    // no history before the checkpoint to replay from. Documented limitation
+                    // (see RotationState's header) -- reset and warn rather than guess.
+                    $warnings[] = "block \"$blockId\": --window-start (" . $windowStart->format('c') . ') is earlier than the '
+                        . 'last known rotation checkpoint (' . $checkpointAt->format('c') . '); rotation cursor and deferred '
+                        . 'queue reset to the start for this publish (will not match a previously published overlapping window).';
+                    $rot = RotationState::empty();
+                }
+            }
+
+            $occurrences = Recurrence::occurrences($block['recurrence'] ?? [], $anchorDate, $replayStart, $windowEnd);
+
+            $cursor = $rot['cursor'];
+            $deferred = $rot['deferred'];
+            $altCursor = $rot['altCursor'];
+            $checkpointCaptured = false;
+            $checkpointCursor = $cursor;
+            $checkpointDeferred = $deferred;
+            $checkpointAltCursor = $altCursor;
+            $checkpointIndex = null;
+            $checkpointAtToSave = null;
 
             foreach ($occurrences as $occ) {
-                $n = $occ['index'];
-                if ($loop) {
-                    $episodeIndex = Recurrence::floorMod($n, $pinnedCount);
-                } elseif ($n >= 0 && $n < $pinnedCount) {
-                    $episodeIndex = $n;
-                } else {
-                    continue; // non-looping rotation has run out (or hasn't started) -- leave as a gap
+                $emit = $occ['at'] >= $windowStart;
+                if ($emit && !$checkpointCaptured) {
+                    $checkpointCaptured = true;
+                    $checkpointCursor = $cursor;
+                    $checkpointDeferred = $deferred;
+                    $checkpointAltCursor = $altCursor;
+                    $checkpointIndex = $occ['index'];
+                    $checkpointAtToSave = $occ['at'];
                 }
 
-                $episodeId = $pinnedIds[$episodeIndex];
-                $episode = $episodesById[$episodeId] ?? null;
-                if ($episode === null || ($episode['status'] ?? null) !== 'approved') {
-                    $warnings[] = "block \"$blockId\" occurrence " . $occ['at']->format('c')
-                        . ": pinned episode \"$episodeId\" is no longer approved/present; this occurrence is left as a gap.";
-                    continue;
+                $packed = EpisodePacker::packOccurrence(
+                    $durationSeconds, $pinnedIds, $episodesById,
+                    ['cursor' => $cursor, 'deferred' => $deferred, 'altCursor' => $altCursor],
+                    $config, $loop, $durationSeconds, $blockId, $occ['at']->format('c'),
+                );
+                $cursor = $packed['state']['cursor'];
+                $deferred = $packed['state']['deferred'];
+                $altCursor = $packed['state']['altCursor'];
+
+                if (!$emit) {
+                    continue; // replay-only: re-derives cursor/deferred state, nothing is (re-)published for it
                 }
 
-                $episodeDuration = is_numeric($episode['duration'] ?? null) ? (float) $episode['duration'] : null;
-                $itemDuration = ($episodeDuration !== null && $episodeDuration > 0) ? (int) round($episodeDuration) : $durationSeconds;
+                $warnings = [...$warnings, ...$packed['warnings']];
+                if (!$packed['scheduled']) {
+                    continue; // nothing packed into this occurrence -- no group, exactly like a non-packing-path gap
+                }
                 $startAbs = $occ['at']->getTimestamp();
-                $source = is_array($episode['source'] ?? null) ? $episode['source'] : null;
+                $offset = 0;
+                $groupItems = [];
+                foreach ($packed['scheduled'] as $sched) {
+                    $episode = $episodesById[$sched['episode_id']];
+                    $groupItems[] = self::buildItem($episode, $startAbs + $offset, $sched['duration']);
+                    $offset += $sched['duration'];
+                }
+                $groups[] = ['blockId' => $blockId, 'boundary' => $boundary, 'nominalStart' => $startAbs, 'items' => $groupItems];
+            }
 
-                $items[] = [
-                    'start' => $startAbs,
-                    'end' => $startAbs + $itemDuration,
-                    'id' => $episode['id'],
-                    'title' => is_string($episode['title'] ?? null) ? $episode['title'] : $episode['id'],
-                    'source' => $source,
-                    'source_url' => is_string($source['url'] ?? null) ? $source['url'] : null,
-                ];
+            if ($checkpointCaptured) {
+                RotationState::save(
+                    $stateDir, $channelId, $blockId, $pin['version'],
+                    $checkpointCursor, $checkpointDeferred, $checkpointAltCursor, $checkpointIndex, $checkpointAtToSave,
+                );
             }
         }
 
-        usort($items, static fn (array $a, array $b): int => $a['start'] <=> $b['start']);
-        for ($i = 1, $count = count($items); $i < $count; $i++) {
-            if ($items[$i]['start'] < $items[$i - 1]['end']) {
-                throw new RuntimeException(sprintf(
-                    'Occurrence "%s" starting %s overlaps the previous occurrence "%s", which runs until %s. '
-                    . 'Adjust block durations or recurrence timing -- publish refuses to emit an overlapping schedule.',
-                    $items[$i]['id'], gmdate('c', $items[$i]['start']),
-                    $items[$i - 1]['id'], gmdate('c', $items[$i - 1]['end']),
-                ));
-            }
-        }
+        // BoundaryResolver is the only place overlap is decided: hard (the default,
+        // and the pre-Phase-3 behavior byte-for-byte) refuses any overlap exactly as
+        // the old inline check always did; soft/elastic may turn a bounded amount of
+        // it into an explicit, reported delay instead. See its header for the full
+        // reasoning.
+        $resolved = BoundaryResolver::resolve($groups);
+        $items = $resolved['items'];
+        $warnings = [...$warnings, ...$resolved['warnings']];
 
         return ['items' => $items, 'warnings' => $warnings, 'episodeSets' => $episodeSets];
+    }
+
+    /** @return array{start:int,end:int,id:string,title:string,source:?array,source_url:?string} */
+    private static function buildItem(array $episode, int $startAbs, int $durationSeconds): array
+    {
+        $source = is_array($episode['source'] ?? null) ? $episode['source'] : null;
+        return [
+            'start' => $startAbs,
+            'end' => $startAbs + $durationSeconds,
+            'id' => $episode['id'],
+            'title' => is_string($episode['title'] ?? null) ? $episode['title'] : $episode['id'],
+            'source' => $source,
+            'source_url' => is_string($source['url'] ?? null) ? $source['url'] : null,
+        ];
     }
 }

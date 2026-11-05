@@ -56,6 +56,11 @@ const PUBLISH_ROOT = __DIR__;
 require PUBLISH_ROOT . '/publish/src/CatalogResolver.php';
 require PUBLISH_ROOT . '/publish/src/Recurrence.php';
 require PUBLISH_ROOT . '/publish/src/EpisodeSetPin.php';
+require PUBLISH_ROOT . '/publish/src/RotationState.php';
+require PUBLISH_ROOT . '/publish/src/EpisodePacker.php';
+require PUBLISH_ROOT . '/publish/src/BoundaryResolver.php';
+require PUBLISH_ROOT . '/publish/src/ContinuityResolver.php';
+require PUBLISH_ROOT . '/publish/src/ContinuityFiller.php';
 require PUBLISH_ROOT . '/publish/src/ProgrammingCompiler.php';
 require PUBLISH_ROOT . '/publish/src/ScheduleWriter.php';
 require PUBLISH_ROOT . '/publish/src/PublishReporter.php';
@@ -193,6 +198,18 @@ function publish_main(array $argv): int
         fwrite(STDERR, 'Error: ' . $e->getMessage() . "\n");
         return 1;
     }
+
+    // Phase 4: fill every remaining gap with continuity occurrences, if (and only
+    // if) this channel's catalog.json references at least one continuity.json --
+    // see ContinuityResolver/ContinuityFiller's headers. A channel that doesn't is
+    // completely unaffected: fill() hands back its input unchanged.
+    $continuity = ContinuityResolver::resolveCatalog($catalogPath);
+    foreach ($continuity['errors'] as $e) {
+        fwrite(STDERR, "Warning: $e\n");
+    }
+    $filled = ContinuityFiller::fill($compiled['items'], $windowStart->getTimestamp(), $windowEnd->getTimestamp(), $continuity);
+    $compiled['items'] = $filled['items'];
+    $compiled['warnings'] = [...$compiled['warnings'], ...$filled['warnings']];
 
     PublishReporter::printSummary($channelId, $windowStart, $windowEnd, $compiled['items'], $compiled['warnings'], $dryRun, $verbose);
 

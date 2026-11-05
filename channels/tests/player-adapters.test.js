@@ -25,6 +25,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 import { computeBackoffMs, computeDriftCorrection, resolveProvider } from "../player-adapters.js";
+import { formatCountdown } from "../continuity-card.js";
 import { buildTimeline, locate, airings, nextProgram } from "../broadcast.js";
 
 // ---------- computeBackoffMs ----------
@@ -204,4 +205,58 @@ test("a malformed youtube item (missing video_id) locates as an unplayable gap-l
   const loc = locate(tl, tl.anchor + 10);
   assert.equal(loc.playable, false);
   assert.equal(loc.provider, null);
+});
+
+// ---------- continuity (Phase 4/5/6) ----------
+
+test("a continuity schedule item is a real, playable-false, non-gap entry carrying its template/next-program fields", () => {
+  const tl = buildTimeline(schedule([
+    { type: "video", id: "a1", start: 0, duration: 600, title: "A1", media_url: "https://x.test/a1.mp4" },
+    {
+      type: "continuity", id: "continuity-600", start: 600, duration: 27,
+      template: "up-next", next_program_id: "a2",
+    },
+    { type: "video", id: "a2", start: 627, duration: 600, title: "A2", media_url: "https://x.test/a2.mp4" },
+  ]));
+  const loc = locate(tl, tl.anchor + 610);
+  assert.equal(loc.type, "continuity");
+  assert.equal(loc.playable, false, "never driven through a PlayerAdapter -- rendered, not played");
+  assert.equal(loc.template, "up-next");
+  assert.equal(loc.nextProgramId, "a2");
+  assert.equal(loc.id, "continuity-600");
+
+  // Distinct from an ordinary gap: airings() still reports it as a real,
+  // present entry (gap-free coverage), just not a "playable" one.
+  const all = airings(tl, tl.anchor, tl.anchor + tl.cycle);
+  assert.equal(all.some((a) => a.type === "continuity"), true);
+  assert.equal(all.some((a) => a.type === "gap"), false);
+});
+
+test("a continuity item carries description/thumbnail through to the entry when the compiler provided them", () => {
+  const tl = buildTimeline(schedule([
+    {
+      type: "video", id: "a1", start: 0, duration: 600, title: "A1", media_url: "https://x.test/a1.mp4",
+      description: "An episode description.", thumbnail_url: "https://x.test/thumb.jpg",
+    },
+  ]));
+  const loc = locate(tl, tl.anchor + 10);
+  assert.equal(loc.description, "An episode description.");
+  assert.equal(loc.thumbnailUrl, "https://x.test/thumb.jpg");
+});
+
+// ---------- formatCountdown (continuity-card.js) ----------
+
+test("formatCountdown shows minutes:seconds for anything a minute or more away", () => {
+  assert.equal(formatCountdown(90), "starts in 1:30");
+  assert.equal(formatCountdown(600), "starts in 10:00");
+});
+
+test("formatCountdown shows plain seconds under a minute", () => {
+  assert.equal(formatCountdown(27), "starts in 27s");
+  assert.equal(formatCountdown(3), "starts in 3s");
+});
+
+test("formatCountdown never goes negative -- clamps to \"starting now\"", () => {
+  assert.equal(formatCountdown(0), "starting now");
+  assert.equal(formatCountdown(-5), "starting now");
 });
