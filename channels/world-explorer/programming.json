@@ -1,0 +1,381 @@
+{
+    "_note": "Recurring-series programming for World Explorer (see channels/publish.php). A 24-hour themed daily grid, wall-to-wall with no gaps, mapping the requested dayparts onto nine real series: 00-06 Overnight Destinations (Internet Archive public-domain Vintage Travelogues 00:00-01:15, Kara and Nate's overland journeys 01:15-03:00, Mark Wiens: Asia & the Middle East 03:00-06:00), 06-09 Morning in Europe (Rick Steves' Europe 06-08, DW Travel: Explore Europe city reports 08-09), 09-12 Geography & Culture (Geography Now country profiles), 12-15 Around the World (Kara and Nate 12:00-13:30, Mark Wiens: Asia & the Middle East 13:30-15:00), 15-18 Travel Documentary (DW Documentary: Travel 15:00-16:30, Mark Wiens: Africa & Latin America 16:30-18:00), 18-21 World Explorer Prime organized geographically as one trip across the map each night (18-19 Europe: Rick Steves' Europe; 19-20 Asia & the Middle East: Mark Wiens; 20-21 Africa & Latin America: Mark Wiens), 21-24 Scenic Journeys (DW Documentary: Train Journeys 21:00-22:30, Rick Steves' Europe 22:30-24:00). The geographic prime time is made possible by curating series to one region each: Rick Steves' Europe is approved for European destinations only (his Middle East/Africa episodes are held as candidates), and one Mark Wiens channel import is split into two disjoint regional editorial series. Deviations from the requested grid: Overnight Destinations is not all vintage film -- only ~8h of Internet Archive travelogues are both IA-declared public domain and not sponsored promotional films, so that block is 75 minutes and the rest of the overnight reuses two daytime sources; Travel Documentary's second half is Mark Wiens' food journeys because DW Documentary's own travel playlist only has ~19h of non-duplicate films (one daily 90-minute block). Every series' blocks have DIFFERENT lengths (Rick Steves 120/60/90 min, Mark Wiens Asia 180/90/60, Mark Wiens Africa & Latin America 90/60, Kara and Nate 105/90): rotation/packing state is per block, so two same-length blocks of one series would replay the identical sequence each day. Every block opts into multi-episode packing (sequential, minimum_remaining 30s) because no series' episodes run close to a single slot; leftover minutes go to the world-explorer-up-next continuity card. on_unfit is skip_for_block (pull the next episode that fits forward; the skipped one is tried first next occurrence, nothing is dropped). boundary.mode is hard everywhere, and every block can fit every approved episode of its series with the 30s minimum_remaining slack (longest approved: Vintage Travelogues 4198s <= 75m, Kara and Nate 5159s <= 90m, DW Train Journeys 5162s <= 90m, Geography Now 3930s <= 180m, Rick Steves 3464s <= 60m, Mark Wiens Asia 3349s and Africa/LatAm 3294s <= 60m, DW Documentary Travel 2566s, DW Travel 1105s); anything longer was left as a candidate, so no sequential cursor can stall on an unfittable episode.",
+    "schema_version": 1,
+    "blocks": [
+        {
+            "id": "overnight-vintage-travelogues",
+            "type": "series",
+            "series_id": "vintage-travelogues",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "00:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 4500,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "overnight-kara-and-nate",
+            "type": "series",
+            "series_id": "kara-and-nate",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "01:15",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 6300,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "overnight-mark-wiens-asia",
+            "type": "series",
+            "series_id": "mark-wiens-asia",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "03:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 10800,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "morning-europe-rick-steves",
+            "type": "series",
+            "series_id": "rick-steves-europe",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "06:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "morning-europe-dw-travel",
+            "type": "series",
+            "series_id": "dw-travel-explore-europe",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "08:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "geography-culture-geography-now",
+            "type": "series",
+            "series_id": "geography-now",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "09:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 10800,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "around-the-world-kara-and-nate",
+            "type": "series",
+            "series_id": "kara-and-nate",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "12:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "around-the-world-mark-wiens-asia",
+            "type": "series",
+            "series_id": "mark-wiens-asia",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "13:30",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "travel-documentary-dw",
+            "type": "series",
+            "series_id": "dw-documentary-travel",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "15:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "travel-documentary-mark-wiens-africa-americas",
+            "type": "series",
+            "series_id": "mark-wiens-africa-americas",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "16:30",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "prime-europe-rick-steves",
+            "type": "series",
+            "series_id": "rick-steves-europe",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "18:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "prime-asia-mark-wiens",
+            "type": "series",
+            "series_id": "mark-wiens-asia",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "19:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "prime-africa-americas-mark-wiens",
+            "type": "series",
+            "series_id": "mark-wiens-africa-americas",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "20:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "scenic-journeys-dw-trains",
+            "type": "series",
+            "series_id": "dw-train-journeys",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "21:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "scenic-journeys-rick-steves",
+            "type": "series",
+            "series_id": "rick-steves-europe",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "22:30",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        }
+    ]
+}

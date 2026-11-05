@@ -1,0 +1,13 @@
+{
+  "_note": "World Explorer's own continuity assets, following channels/science/continuity.json's pattern exactly. No real prerecorded station-id/bumper media exists for this channel, so \"station_ids\"/\"filler\" are deliberately empty -- nonexistent media is never invented or referenced. Every packing remainder (a slot's leftover minutes when no further approved episode fits) is covered by the dynamic \"world-explorer-up-next\" card alone (see channels/continuity-card.js), which needs no video asset. Real station IDs can be added here later without any other change.",
+  "schema_version": 1,
+  "station_ids": [],
+  "filler": [],
+  "cards": [
+    { "id": "world-explorer-up-next", "template": "world-explorer-up-next", "min_duration": 0, "max_duration": 100000 }
+  ],
+  "defaults": {
+    "preferred_card": "world-explorer-up-next",
+    "minimum_video_filler": 10
+  }
+}

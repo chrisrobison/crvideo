@@ -1,0 +1,1618 @@
+{
+    "schema_version": 1,
+    "id": "vintage-travelogues",
+    "title": "Vintage Travelogues",
+    "description": "Public-domain travelogue and geography films, 1916-1949, from the Internet Archive (largely the Prelinger Archives): early city tours of London and Paris, Hawaii in the silent era, Merian C. Cooper and Ernest Schoedsack's 1925 ethnographic epic Grass, 1930s aerial and island journeys, and the U.S. Office of Inter-American Affairs' 1940s portraits of Latin American cities and countries.",
+    "creator": "Internet Archive (Prelinger Archives and other public-domain film collections)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "ia-SeeingLo1920",
+            "episode_number": 1,
+            "title": "Seeing London",
+            "description": "Tour through central parts of London.",
+            "creator": "Holmes (Burton)",
+            "duration": 835.34,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/SeeingLo1920",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "SeeingLo1920",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/SeeingLo1920/SeeingLo1920.mp4",
+                "page_url": "https://archive.org/details/SeeingLo1920",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "London",
+                    "United Kingdom",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SeeingLo1920; reviewed 2026-11-05). Underlying film dated 1920; US copyright for works published before 1931 has expired, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-the-open-road-london-1926",
+            "episode_number": 2,
+            "title": "The Open Road - London (1926)",
+            "description": "The Open Road - London is a series of cinema travelogues in London England. Claude Friese-Greene filmed these moving picture postcards and used a specially devised color film process to make a fully color film in the late 1920s.",
+            "creator": "Claude Friese-Greene",
+            "duration": 611.34,
+            "year": 1926,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/the-open-road-london-1926",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "the-open-road-london-1926",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/the-open-road-london-1926/The%20Open%20Road%20-%20London%20%281926%29.mp4",
+                "page_url": "https://archive.org/details/the-open-road-london-1926",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "cinema",
+                    "film",
+                    "silent film",
+                    "silent",
+                    "movie",
+                    "silent cinema",
+                    "color film",
+                    "1920s",
+                    "London",
+                    "England",
+                    "Europe",
+                    "United Kingdom",
+                    "picture postcards",
+                    "early color film",
+                    "travelogues",
+                    "silent movie",
+                    "silent era"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item the-open-road-london-1926; reviewed 2026-11-05). Underlying film dated 1926; US copyright for works published before 1931 has expired, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-TheHawaiianIslands",
+            "episode_number": 3,
+            "title": "1924 The Hawaiian Islands",
+            "description": "\"Note: All rights were conveyed to the U.S. Government on Nov. 28, 1962. However, proprietary rights or existing copyright in footage obtained from other sources by Ford Motor Company may exist.\"National Archives Identifier: 91174",
+            "creator": "Ford Motor Company",
+            "duration": 587.72,
+            "year": 1924,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TheHawaiianIslands",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TheHawaiianIslands",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TheHawaiianIslands/200-fc-484%20Hawaiian%20Islands%20The%201924.mp4",
+                "page_url": "https://archive.org/details/TheHawaiianIslands",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies",
+                    "community"
+                ],
+                "subjects": [
+                    "Hawaii",
+                    "Travelogue"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item TheHawaiianIslands; reviewed 2026-11-05). Underlying film dated 1924; US copyright for works published before 1931 has expired, consistent with IA's declaration. Ford Educational Weekly-era film (IA creator: Ford Motor Company) -- an educational reel, not a tourism promo; IA's National Archives note says rights were conveyed to the U.S. Government in 1962 but 'proprietary rights or existing copyright in footage obtained from other sources by Ford Motor Company may exist' -- flag for human review."
+            }
+        },
+        {
+            "id": "ia-27267_1411114866_s01_Hawaii_the_paradise_of_the_Pacific",
+            "episode_number": 4,
+            "title": "Hawaii: the paradise of the Pacific",
+            "description": "Travelogue about the island of Hawaii, shot from the train. We see shots of a train trip across Hawaii, via the so-called Hilo route. Along the way, we see images of gaping depths, and fishers in the surf with casting nets.",
+            "creator": "Lyman H. Howe",
+            "duration": 581.87,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/27267_1411114866_s01_Hawaii_the_paradise_of_the_Pacific",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "27267_1411114866_s01_Hawaii_the_paradise_of_the_Pacific",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/27267_1411114866_s01_Hawaii_the_paradise_of_the_Pacific/27267_1411114866_s01_Hawaii_the_paradise_of_the_Pacific.mp4",
+                "page_url": "https://archive.org/details/27267_1411114866_s01_Hawaii_the_paradise_of_the_Pacific",
+                "license": "http://creativecommons.org/publicdomain/zero/1.0",
+                "collections": [
+                    "opensource_movies",
+                    "community"
+                ],
+                "subjects": [
+                    "travel",
+                    "trains",
+                    "indigenous people",
+                    "landscapes",
+                    "fishing"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/zero/1.0 (archive.org item 27267_1411114866_s01_Hawaii_the_paradise_of_the_Pacific; reviewed 2026-11-05). Underlying film dated 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-ParisFromAMotor",
+            "episode_number": 5,
+            "title": "Paris From a Motor",
+            "description": "A Burton Holmes' Film-Reels of Travel short subject with views of Paris circa 1925. Elias Burton Holmes was a cinematographer and noted travel lecturer who is credited with coining the word \"travelogue.\"",
+            "creator": null,
+            "duration": 204,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ParisFromAMotor",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ParisFromAMotor",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ParisFromAMotor/ParisFromAMotor.mp4",
+                "page_url": "https://archive.org/details/ParisFromAMotor",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "short_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "short subjects",
+                    "travel films",
+                    "travelogues",
+                    "Paris, France"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item ParisFromAMotor; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified."
+            }
+        },
+        {
+            "id": "ia-ATripOnTheSeine",
+            "episode_number": 6,
+            "title": "A Trip On the Seine",
+            "description": "A Burton Holmes' Film-Reels of Travel short subject with views of the river Seine in Paris circa 1925. Elias Burton Holmes was a cinematographer and noted travel lecturer who is credited with coining the word \"travelogue.\"",
+            "creator": null,
+            "duration": 209.31,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ATripOnTheSeine",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ATripOnTheSeine",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ATripOnTheSeine/ATripOnTheSeine.mp4",
+                "page_url": "https://archive.org/details/ATripOnTheSeine",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "short_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "short subjects",
+                    "travel films",
+                    "travelogues",
+                    "the River Seine",
+                    "Paris, France"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item ATripOnTheSeine; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified."
+            }
+        },
+        {
+            "id": "ia-Flyingth1937",
+            "episode_number": 7,
+            "title": "Flying the Lindbergh Trail (Part I)",
+            "description": "Aerial travelogue of South America.",
+            "creator": "Unknown",
+            "duration": 1426.53,
+            "year": 1937,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Flyingth1937",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Flyingth1937",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Flyingth1937/Flyingth1937.mp4",
+                "page_url": "https://archive.org/details/Flyingth1937",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Aviation: History",
+                    "South America",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Flyingth1937; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified."
+            }
+        },
+        {
+            "id": "ia-Flyingth1937_2",
+            "episode_number": 8,
+            "title": "Flying the Lindbergh Trail (Part II)",
+            "description": "Aerial travelogue of South America.",
+            "creator": "Unknown",
+            "duration": 1446.08,
+            "year": 1937,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Flyingth1937_2",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Flyingth1937_2",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Flyingth1937_2/Flyingth1937_2.mp4",
+                "page_url": "https://archive.org/details/Flyingth1937_2",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Aviation: History",
+                    "South America",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Flyingth1937_2; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified."
+            }
+        },
+        {
+            "id": "ia-coveted_east_indies_1",
+            "episode_number": 9,
+            "title": "Coveted East Indies, The (Part I)",
+            "description": "This film appears MOS, but originally had sound and was produced and narrated by the radio world travel radio commentator Deane Dickason. Interesting silent portrait of cultural life in the East Indies during Dutch colonialism. PA8530 Coveted East Indies, The 16mm Koda travelogue, 2 reels, ca. 1938-39",
+            "creator": "Deane Dickason",
+            "duration": 1156.78,
+            "year": 1938,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/coveted_east_indies_1",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "coveted_east_indies_1",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/coveted_east_indies_1/coveted_east_indies_1.mp4",
+                "page_url": "https://archive.org/details/coveted_east_indies_1",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Travelogues",
+                    "East Indies",
+                    "Netherlands: History and Culture",
+                    "Indonesia",
+                    "Colonization"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item coveted_east_indies_1; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified. IA notes this copy is silent (MOS) though the original had a narrated soundtrack."
+            }
+        },
+        {
+            "id": "ia-coveted_east_indies_2",
+            "episode_number": 10,
+            "title": "Coveted East Indies, The (Part II)",
+            "description": "This film appears MOS, but originally had sound and was produced and narrated by the radio world travel radio commentator Deane Dickason. Interesting silent portrait of cultural life in the East Indies during Dutch colonialism. PA8530 Coveted East Indies, The 16mm Koda travelogue, 2 reels, ca. 1938-39",
+            "creator": "Deane Dickason",
+            "duration": 1043.57,
+            "year": 1938,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/coveted_east_indies_2",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "coveted_east_indies_2",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/coveted_east_indies_2/coveted_east_indies_2.mp4",
+                "page_url": "https://archive.org/details/coveted_east_indies_2",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Travelogues",
+                    "East Indies",
+                    "Netherlands: History and Culture",
+                    "Indonesia",
+                    "Colonization"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item coveted_east_indies_2; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified. IA notes this copy is silent (MOS) though the original had a narrated soundtrack."
+            }
+        },
+        {
+            "id": "ia-Introduc1942",
+            "episode_number": 11,
+            "title": "Introduction to Haiti",
+            "description": "Presents a tourist's view of Haiti: its history, tradition, daily life of the people, Port-au-Prince, Cap Haitien and Henri Christophes' Palace. In Kodachrome. Producer and Director: Mary Darling. Narrator: Milton J. Cross.",
+            "creator": "Darling (Mary)",
+            "duration": 561.23,
+            "year": 1942,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Introduc1942",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Introduc1942",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Introduc1942/Introduc1942.mp4",
+                "page_url": "https://archive.org/details/Introduc1942",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Haiti",
+                    "Caribbean region",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Introduc1942; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-LaPaz1943",
+            "episode_number": 12,
+            "title": "La Paz",
+            "description": "Tour of old and new in Bolivian capital.",
+            "creator": "Bryan (Julien)",
+            "duration": 999.97,
+            "year": 1943,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/LaPaz1943",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "LaPaz1943",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/LaPaz1943/LaPaz1943.mp4",
+                "page_url": "https://archive.org/details/LaPaz1943",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Bolivia"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LaPaz1943; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-Lima1944",
+            "episode_number": 13,
+            "title": "Lima",
+            "description": "Historical and modern views of the Peruvian capital.",
+            "creator": "Bryan (Julien)",
+            "duration": 921.42,
+            "year": 1944,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Lima1944",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Lima1944",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Lima1944/Lima1944.mp4",
+                "page_url": "https://archive.org/details/Lima1944",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Peru",
+                    "Latin America"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Lima1944; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-LimaFami1944",
+            "episode_number": 14,
+            "title": "Lima Family",
+            "description": "Depicts a day in the lives of the members of an upper class family of Lima, capital of Peru, and points out similarities to a family of the same class in the United States.",
+            "creator": "Bryan (Julien)",
+            "duration": 1089.52,
+            "year": 1944,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/LimaFami1944",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "LimaFami1944",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/LimaFami1944/LimaFami1944.mp4",
+                "page_url": "https://archive.org/details/LimaFami1944",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Peru",
+                    "Latin America",
+                    "South America"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LimaFami1944; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-SouthChi1945",
+            "episode_number": 15,
+            "title": "South Chile",
+            "description": "Life and agriculture of Patagonia.",
+            "creator": "Bryan (Julien)",
+            "duration": 1219.25,
+            "year": 1945,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/SouthChi1945",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "SouthChi1945",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/SouthChi1945/SouthChi1945.mp4",
+                "page_url": "https://archive.org/details/SouthChi1945",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Chile"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SouthChi1945; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-Uruguay1949",
+            "episode_number": 16,
+            "title": "Uruguay",
+            "description": "Compares the agriculture, economic well-being and culture of Uruguayan people with those of the U.S.",
+            "creator": "Bryan (Julien)",
+            "duration": 1080.55,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Uruguay1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Uruguay1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Uruguay1949/Uruguay1949.mp4",
+                "page_url": "https://archive.org/details/Uruguay1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Uruguay"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Uruguay1949; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-RoadsSou1943",
+            "episode_number": 17,
+            "title": "Roads South",
+            "description": "Compares various modes of transportation in Latin America and explains why airways have been widely developed.",
+            "creator": "Bryan (Julien)",
+            "duration": 1087.45,
+            "year": 1943,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/RoadsSou1943",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "RoadsSou1943",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/RoadsSou1943/RoadsSou1943.mp4",
+                "page_url": "https://archive.org/details/RoadsSou1943",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Latin America"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RoadsSou1943; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-YoungUru1943",
+            "episode_number": 18,
+            "title": "Young Uruguay",
+            "description": "Portrays the young people of Uruguay at home, play and school.",
+            "creator": "Bryan (Julien)",
+            "duration": 1028.23,
+            "year": 1943,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/YoungUru1943",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "YoungUru1943",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/YoungUru1943/YoungUru1943.mp4",
+                "page_url": "https://archive.org/details/YoungUru1943",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Uruguay",
+                    "Latin America",
+                    "Children"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item YoungUru1943; reviewed 2026-11-05). Made for the U.S. Office of the Coordinator of Inter-American Affairs (a U.S. government agency) per IA's sponsor metadata, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-the-amazon-awakens",
+            "episode_number": 19,
+            "title": "The Amazon Awakens",
+            "description": "The Amazon Awakens is an educational film made by Walt Disney Productions for the Coordinator of Inter-American Affairs.",
+            "creator": "Walt Disney Productions",
+            "duration": 2299.12,
+            "year": 1944,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/the-amazon-awakens",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "the-amazon-awakens",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/the-amazon-awakens/The%20Amazon%20Awakens.ia.mp4",
+                "page_url": "https://archive.org/details/the-amazon-awakens",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies",
+                    "community"
+                ],
+                "subjects": [
+                    "Disney",
+                    "Walt Disney Studios",
+                    "Amazon River",
+                    "1944",
+                    "Coordinator of Inter-American Affairs",
+                    "Brazil",
+                    "Peru",
+                    "Educational"
+                ],
+                "mediatype": "movies",
+                "format": "h.264 IA",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item the-amazon-awakens; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified. Produced by Walt Disney Productions for the U.S. Coordinator of Inter-American Affairs; IA marks it Public Domain Mark 1.0, but because Disney produced it, the PD status should get a human rights check before production."
+            }
+        },
+        {
+            "id": "ia-EF-105",
+            "episode_number": 20,
+            "title": "The March of Time - Brazil",
+            "description": "Episode of The March of Time released as 1945 U.S. Army educational film # EF-105, Brazil.National Archives Identifier: 24381",
+            "creator": "United States. Army",
+            "duration": 792.91,
+            "year": 1945,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/EF-105",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "EF-105",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/EF-105/EF-105%20Brazil.mp4",
+                "page_url": "https://archive.org/details/EF-105",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "short_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "The March of Time",
+                    "Brazil",
+                    "Travelogue",
+                    "WWII",
+                    "World War, 1939-1945",
+                    "World War II",
+                    "United States. Army",
+                    "US Army"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item EF-105; reviewed 2026-11-05). Released as a U.S. Army educational film (National Archives copy), consistent with IA's declaration. A March of Time episode (Time Inc.) re-released as U.S. Army educational film EF-105; IA marks it Public Domain Mark 1.0 per the National Archives copy. Original March of Time copyright status was not independently checked -- flag for human review."
+            }
+        },
+        {
+            "id": "ia-EF-257",
+            "episode_number": 21,
+            "title": "The March of Time - Ireland",
+            "description": "Episode of The March of Time, released as 1946 U.S. Army educational film # EF-257, Ireland.\"Reel 1 shows a panorama of the Irish countryside; castles and towns; Eamon de Valera; crowds in city streets; activities in the linen industry; riveters and welders at work in a shipyard; a celebration of the Battle of the Boyne; customs officials on the Eire-North Ireland border; farmers reaping and taking produce to a market; women spinning; a horse race; university students in a classroom; and a football game.Reel 2, de Valera speaks. Farmers plow. Peat is mined and cut into briquettes. Shows Irish hams and bacon, activities in the brewing and auto industries, the Dunlop tire plant in Cork, manufacture of rubber boots, a power project on the Shannon R., hospital and public housing construction, and children learning Gaelic.\" National Archives Identifier: 24405",
+            "creator": "United States. Army",
+            "duration": 964.52,
+            "year": 1946,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/EF-257",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "EF-257",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/EF-257/EF-257%20Ireland.mp4",
+                "page_url": "https://archive.org/details/EF-257",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "short_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "The March of Time",
+                    "WWII",
+                    "US Army",
+                    "Travelogue",
+                    "United States. Army",
+                    "World War, 1939-1945",
+                    "World War II"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item EF-257; reviewed 2026-11-05). Released as a U.S. Army educational film (National Archives copy), consistent with IA's declaration. A March of Time episode (Time Inc.) re-released as U.S. Army educational film EF-257; IA marks it Public Domain Mark 1.0 per the National Archives copy. Original March of Time copyright status was not independently checked -- flag for human review."
+            }
+        },
+        {
+            "id": "ia-EF-168",
+            "episode_number": 22,
+            "title": "Uruguay, 1945",
+            "description": "1945 U.S. Army educational film # EF-168, Uruguay.\"Reel 1, peasants work in fields. Shows panoramic views of Montevideo and gauchos on horseback. Fields are plowed with oxen and with tractors. Grain is loaded on a ship. Wild horses are rounded up. Sheep are sheared. Children attend school. Cattle are disinfected. Beef is inspected and tinned beef loaded on a ship. Reel 2 shows surf swimming bathing beauties, a gambling casino, and university scenes. Describes the government's role in gambling and in the national lottery. A dam is constructed on the Rio Negro. Mounted police keep order at a soccer game. Shows the legislature in session, the Rio Plata, and gaucho horsemen.\"National Archives Identifier: 24384",
+            "creator": "United States. Army",
+            "duration": 1078.35,
+            "year": 1945,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/EF-168",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "EF-168",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/EF-168/EF-168%20Uruguay%201945.mp4",
+                "page_url": "https://archive.org/details/EF-168",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "wwIIarchive",
+                    "folkscanomy_history",
+                    "folkscanomy"
+                ],
+                "subjects": [
+                    "WWII",
+                    "Uruguay",
+                    "Travelogue",
+                    "World War, 1939-1945",
+                    "World War II",
+                    "United States. Army",
+                    "US Army"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item EF-168; reviewed 2026-11-05). Released as a U.S. Army educational film (National Archives copy), consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-EF-193",
+            "episode_number": 23,
+            "title": "Alaska, Reservoir of Resources",
+            "description": "1946 Erpi short film, Alaska, Reservoir of Resources, released as U.S. Army educational film # EF-193, Alaska. National Archives lists it as 1945 but the film says 1946.National Archives description: \"Shows forests and seacoasts; rapids in a stream; lumberjacks at work; salmon migrating upstream; the netting, transfer to barges, and canning and tinning of salmon; placer mining of gold; an airplane being loaded at an airport; reindeer herds; a silver fox farm; ships arriving in a harbor; commercial vegetable gardening; hay being cut and stacked; and Alaskan tourist attractions (icebergs, Indian totems, mountains, and Kodiak bear).\"National Archives Identifier: 24388 As always, any error or typo is mine and if you enjoy my uploads or if you intend to make $ or otherwise profit from these files, please consider making a donation to a veteran's charity of your choice and/or Archive.org itself. Thanks. :)",
+            "creator": "United States. Army",
+            "duration": 624.31,
+            "year": 1946,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/EF-193",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "EF-193",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/EF-193/EF-193%20Alaska%201945.mp4",
+                "page_url": "https://archive.org/details/EF-193",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "wwIIarchive",
+                    "folkscanomy_history",
+                    "folkscanomy"
+                ],
+                "subjects": [
+                    "Alaska",
+                    "US Army",
+                    "United States. Army",
+                    "Travelogue"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item EF-193; reviewed 2026-11-05). Released as a U.S. Army educational film (National Archives copy), consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-Northwes1956",
+            "episode_number": 24,
+            "title": "Northwestern States",
+            "description": "Resources and geography of America's \"breadbasket.\"",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 0.18,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Northwes1956",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Northwes1956",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Northwes1956/Northwes1956.mp4",
+                "page_url": "https://archive.org/details/Northwes1956",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Geography: U.S.: Pacific Northwest"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- unreliable duration (0.18s reported by IA for the MP4 derivative), cannot be scheduled safely."
+            }
+        },
+        {
+            "id": "ia-TradingC1947",
+            "episode_number": 25,
+            "title": "Trading Centers of the Pacific Coast",
+            "description": "The Pacific Rim at the start of the air age.",
+            "creator": "Coronet Instructional Films",
+            "duration": 637.84,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TradingC1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TradingC1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TradingC1947/TradingC1947.mp4",
+                "page_url": "https://archive.org/details/TradingC1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Pacific Rim",
+                    "Globalization",
+                    "Geography"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TradingC1947; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified."
+            }
+        },
+        {
+            "id": "ia-MightyCo1947",
+            "episode_number": 26,
+            "title": "Mighty Columbia River, The",
+            "description": "Hydroelectric power, shipping, irrigation and salmon fishing.",
+            "creator": "Coronet Instructional Films",
+            "duration": 598.7,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MightyCo1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MightyCo1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MightyCo1947/MightyCo1947.mp4",
+                "page_url": "https://archive.org/details/MightyCo1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Geography: U.S.: Pacific Northwest",
+                    "Rivers: Western U.S.",
+                    "Environment"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MightyCo1947; reviewed 2026-11-05). Prelinger Archives / IA declaration relied on; underlying copyright not independently re-verified."
+            }
+        },
+        {
+            "id": "ia-wonderful_world_1",
+            "episode_number": 27,
+            "title": "Wonderful World (Part I)",
+            "description": "World Travelogue sponsored by Coca-Cola. 0731 PA8798 Wonderful World from 037.08",
+            "creator": "Handy (Jam) Organization",
+            "duration": 945.62,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/wonderful_world_1",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "wonderful_world_1",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/wonderful_world_1/wonderful_world_1.mp4",
+                "page_url": "https://archive.org/details/wonderful_world_1",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: Sponsored",
+                    "Travelogue",
+                    "Tourism",
+                    "Beverage Industry"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: a corporate-sponsored promotional travelogue (IA description: 'World Travelogue sponsored by Coca-Cola'). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-wonderful_world_2",
+            "episode_number": 28,
+            "title": "Wonderful World  (Part II)",
+            "description": "World Travelogue sponsored by Coca-Cola. 0731 PA8798 Wonderful World",
+            "creator": "Handy (Jam) Organization",
+            "duration": 1007.78,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/wonderful_world_2",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "wonderful_world_2",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/wonderful_world_2/wonderful_world_2.mp4",
+                "page_url": "https://archive.org/details/wonderful_world_2",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: Sponsored",
+                    "Travelogue",
+                    "Tourism",
+                    "Beverage Industry"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: a corporate-sponsored promotional travelogue (IA description: 'World Travelogue sponsored by Coca-Cola'). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-wonderful_world_3",
+            "episode_number": 29,
+            "title": "Wonderful World (Part III)",
+            "description": "World Travelogue sponsored by Coca-Cola. 0731 PA8798 Wonderful World",
+            "creator": "Handy (Jam) Organization",
+            "duration": 639.62,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/wonderful_world_3",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "wonderful_world_3",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/wonderful_world_3/wonderful_world_3.mp4",
+                "page_url": "https://archive.org/details/wonderful_world_3",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: Sponsored",
+                    "Travelogue",
+                    "Tourism",
+                    "Beverage Industry"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: a corporate-sponsored promotional travelogue (IA description: 'World Travelogue sponsored by Coca-Cola'). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-grass-1925",
+            "episode_number": 30,
+            "title": "Grass: A Nation's Battle for Life",
+            "description": "Grass: A Nation's Battle for Life is a 1925 documentary film that follows a branch of the Bakhtiari tribe of Lurs in Persia as they and their herds make their seasonal journey to better pastures. It is considered one of the earliest ethnographic documentary films. In 1997, Grass was selected for preservation in the United States National Film Registry by the Library of Congress as being \"culturally, historically, or aesthetically significant.Funding was provided by a loan of $5,000 from Cooper's father and brother, and Harrison contributed an additional $5,000.The film's producers were mainly concerned with documenting a way of life that was unknown to all those outside the Bakhtiari realm. The film highlights the extreme hardships faced by nomadic peoples, as well as the bravery and ingenuity of the Bakhtiari on their migration in search of grass, which meant abundant seasonal pasture for their animals. Grass documents the caravan route from Angora (modern-day Ankara, Turkey) to the Bakhtiari lands in Persia (western Iran in Chaharmahal and Bakhtiari Province and the eastern part of Khuzestan). The film then follows Haidar Khan as he leads 50,000 of his people and countless animals on a harrowing trek across the Karun River and over Zard Kuh, a subrange of the Zagros Mountains.",
+            "creator": "MehranDHN",
+            "duration": 4197.6,
+            "year": 1925,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/grass-1925",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "grass-1925",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/grass-1925/Grass1925.mp4",
+                "page_url": "https://archive.org/details/grass-1925",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Bakhtiari",
+                    "Middle East",
+                    "Nomads",
+                    "Voyages and travel",
+                    "Caravans",
+                    "Cattle",
+                    "Chickens",
+                    "Deserts",
+                    "Dogs",
+                    "Donkeys",
+                    "Drowning",
+                    "Goats",
+                    "Horses",
+                    "Iran",
+                    "Iraq",
+                    "Karun River",
+                    "Motion picture cameramen",
+                    "Motion picture directors",
+                    "Mountaineering",
+                    "Tribal chiefs",
+                    "Tribal life",
+                    "Women explorers",
+                    "Zardeh Kuh Mountain",
+                    "Merian C. Cooper",
+                    "Ernest B. Schoedsack",
+                    "Terry Ramsaye"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item grass-1925; reviewed 2026-11-05). Underlying film dated 1925; US copyright for works published before 1931 has expired, consistent with IA's declaration. 1925 release (US copyright for works published before 1931 has expired, consistent with IA's declaration). Uploaded to IA by a community member (MehranDHN), not an institutional collection; any added soundtrack on this copy was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CarpenterWhitneyExpedition1929",
+            "episode_number": 31,
+            "title": "Carpenter-Whitney Expedition Alaska, 1929",
+            "description": "National Archives description \"Reel 1, shows the route of the Carpenter-Whitney expedition on a map of Alaska. The expedition's ship passes sea gulls and sea lions. A train leaves Anchorage with the expedition. Shows the Alaska Agricultural College and School of Mines near Fairbanks; deer, goats, sheep, and husky dogs. The expedition departs from the Arctic Circle and eats lunch on a river bank. Reel 2 shows a trapper's camp, dogs pulling a toboggan through the forest and a small boat along a river, a salmon wheel, and caribou. Part 3 shows ptarmigan, wild foxes, and sheep. A bear charges a cameraman. Reel 4, a game commissioner arrives at Tustumena Lake.\"",
+            "creator": "United States. Department of the Interior",
+            "duration": 1879.13,
+            "year": 1929,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CarpenterWhitneyExpedition1929",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CarpenterWhitneyExpedition1929",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CarpenterWhitneyExpedition1929/CarpenterWhitneyExpedition1929.mp4",
+                "page_url": "https://archive.org/details/CarpenterWhitneyExpedition1929",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies",
+                    "community"
+                ],
+                "subjects": [
+                    "Travel -- Alaska",
+                    "Animals -- Alaska",
+                    "Alaska Railroad",
+                    "Anchorage (Alaska)",
+                    "Twelve Mile Roadhouse (Alaska)",
+                    "Yukon River Valley (Yukon and Alaska)",
+                    "Academy of Natural Sciences of Philadelphia"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item CarpenterWhitneyExpedition1929; reviewed 2026-11-05). Underlying film dated 1929; US copyright for works published before 1931 has expired, consistent with IA's declaration."
+            }
+        },
+        {
+            "id": "ia-Wherethe1955",
+            "episode_number": 32,
+            "title": "Where the Sun Reigns",
+            "description": "Tour of the scenic Miami-Dade County area. With many views of attractions at ground level and from a helicopter. Director: John Behney.",
+            "creator": "Reela Films",
+            "duration": 812.81,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Wherethe1955",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Wherethe1955",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Wherethe1955/Wherethe1955.mp4",
+                "page_url": "https://archive.org/details/Wherethe1955",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Florida",
+                    "Miami",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: a tourism-board promotional film: IA's own sponsor field credits the Greater Miami Development Board (and Dade County) -- the 'sponsored by the tourism board of X' category this channel rejects. (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-RoadstoR1950",
+            "episode_number": 33,
+            "title": "Roads to Romance: Coral Gables",
+            "description": "Travelogue, made for theatrical showing, promoting tourism in Coral Gables, Florida. Shows colorful parrots, the University of Miami, and a visit to the beach.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 180.55,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/RoadstoR1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "RoadstoR1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/RoadstoR1950/RoadstoR1950.mp4",
+                "page_url": "https://archive.org/details/RoadstoR1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Automobiles: Advertising",
+                    "Travelogues",
+                    "Florida"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: a sponsored tourism promo (IA sponsor: Chevrolet Division, General Motors; the description says it was made for 'promoting tourism in Coral Gables, Florida'). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-DesertEm1948",
+            "episode_number": 34,
+            "title": "Desert Empire (Part I)",
+            "description": "Railroad tour through the state of Utah, stopping off at many natural attractions and in Salt Lake City. Shows Arches National Monument and the mineral resources of Utah, including coal and copper. Director: Carlton T. Sills.",
+            "creator": "New Universal Pictures Commercial Department",
+            "duration": 618.62,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/DesertEm1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "DesertEm1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/DesertEm1948/DesertEm1948.mp4",
+                "page_url": "https://archive.org/details/DesertEm1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Utah",
+                    "Transportation: Railroad",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: a railroad's sponsored promotional travelogue (IA sponsor: Denver and Rio Grande Western Railroad). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-FashionH1940",
+            "episode_number": 35,
+            "title": "Fashion Horizons",
+            "description": "Southwestern U.S. travelogue flies around in modern 1930s airplanes, stopping off at Albuquerque and an Arizona dude ranch, all the time focusing on fashions worn by its cargo of aspiring Paramount starlets. Excellent pre-World War II fashion footage in Kodachrome, plus documentation of affluent tourist destinations. Produced and directed by Harry D. Donahue. With Mary Martin.",
+            "creator": "Donahue (Harry D.)",
+            "duration": 1151.12,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/FashionH1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "FashionH1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/FashionH1940/FashionH1940.mp4",
+                "page_url": "https://archive.org/details/FashionH1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Fashion",
+                    "Aviation: Commercial",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: an airline's sponsored promotional film (IA sponsor: Transcontinental and Western Air / TWA), built around starlets and fashion rather than the destinations. (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-MidwestH1952",
+            "episode_number": 36,
+            "title": "Midwest Holiday (Part I)",
+            "description": "Auto travelogue through the sights, monuments and mythologies of America's heartland. A jaded newspaper reporter returns from a long stint in Europe, takes to the highways of the Midwest, and discovers a father-daughter team who help him to realize that his true home lies in mid-America. A fascinating view of Midwestern and Great Plains natural and historical attractions, and a strong statement that mobility equals freedom.",
+            "creator": "Wilding Picture Productions, Inc.",
+            "duration": 823.82,
+            "year": 1952,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MidwestH1952",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MidwestH1952",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MidwestH1952/MidwestH1952.mp4",
+                "page_url": "https://archive.org/details/MidwestH1952",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "U.S.: Midwest",
+                    "Travelogues",
+                    "Patriotism"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: an oil company's sponsored auto-tourism promotional film (IA sponsor: Standard Oil Co. (Illinois)). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-FreedomH1956",
+            "episode_number": 37,
+            "title": "Freedom Highway (Part I)",
+            "description": "A Greyhound bus transports us through the landscape of American mythology. Directed by Harold Schuster. Director of Photography: Jerry Fairbanks. Screenplay: Charles L. Tedford, Leo S. Rosencrans. Film Editor: Milton Kleinberg. Art Director: Theobold Holsopple. Production Supervisor: John McKennon. Musical Supervision: Edward Paul. Assistant Director: Robert Scrivner. With Marshall Thompson (Mysterious Stranger); Tommy Kirk (Jimmy Rollins); Morris Ankrum (Fred Schroder); Angie Dickinson (Mary); Charles Maxwell (Bill Roberts) and Tex Ritter as himself. Winner of the Freedoms Foundation Special Award.",
+            "creator": "Fairbanks (Jerry) Productions",
+            "duration": 1265.37,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/FreedomH1956",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "FreedomH1956",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/FreedomH1956/FreedomH1956.mp4",
+                "page_url": "https://archive.org/details/FreedomH1956",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Patriotism",
+                    "Transportation: Bus",
+                    "Travelogues"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: a bus line's sponsored promotional film (IA sponsor: The Greyhound Lines). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        },
+        {
+            "id": "ia-NaturesC1930",
+            "episode_number": 38,
+            "title": "Nature's Cameo: Bryce Canyon National Park",
+            "description": "Early Western tourism.",
+            "creator": "Industrial Pictures, Inc. (Detroit)",
+            "duration": 456.02,
+            "year": 1930,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/NaturesC1930",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "NaturesC1930",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/NaturesC1930/NaturesC1930.mp4",
+                "page_url": "https://archive.org/details/NaturesC1930",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Travelogues",
+                    "Geography: U.S.: Mountain states",
+                    "Regional: United States: Utah"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- travel advertising masquerading as a travelogue: an automaker's sponsored tourism promo (IA sponsor: Ford Motor Company; IA description: 'Early Western tourism'). (IA declares it public domain, http://creativecommons.org/licenses/publicdomain/, but the rights status is not the issue.)"
+            }
+        }
+    ]
+}
