@@ -1,18 +1,427 @@
 {
-  "_note": "STRUCTURAL PLACEHOLDER. This file exists to prove out the series.json shape and its catalog reference (see channels/science/catalog.json) ahead of the YouTube importer, which has not been built yet (a later phase). No real YouTube channel id, video id, episode title, or duration has been entered here -- every such field is null or empty on purpose. Do not schedule this series and do not treat any value below as real metadata; replace this whole file by running the (future) importer.",
-  "schema_version": 1,
-  "id": "practical-engineering",
-  "title": "Practical Engineering",
-  "description": "Civil engineering explained: infrastructure, construction, and how the built world works.",
-  "creator": null,
-  "year": null,
-  "thumbnail_url": null,
-  "logo_url": null,
-  "source": {
-    "provider": "youtube",
-    "channel_id": null,
-    "channel_url": null
-  },
-  "rotation": { "mode": "sequential", "loop": true },
-  "episodes": []
+    "schema_version": 1,
+    "id": "practical-engineering",
+    "title": "Practical Engineering",
+    "description": "Civil engineering explained: infrastructure, construction, and how the built world works.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_m1Y4p9FzWjJBIhIwbVt6Z1qGKa8eWUTzE3kizORZMFKf4=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+        "channel_url": "https://www.youtube.com/channel/UCMOqf8ab-42UUQIdVoKwjlQ"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-awV7FP9sAHE",
+            "episode_number": 1,
+            "title": "Whatever Happened to Fire Escapes?",
+            "description": "External fire escapes are becoming a thing of the past\n📰 Go to https://ground.news/practicalengineering to get 40% off unlimited access to the news tool I use. It helps you cut through the noise and understand how stories are being reported across the spectrum.\n\nWriting building regulations is a messy process, and there really is rarely a single “right” answer. There are just tradeoffs that affect every building differently and ripple through space, time, and the economy.\n\n📖My new book, Disasters By Design: How Engineering Failures Shaped the Modern World is coming March 2, 2027 and available for preorder now.\nUS: https://www.penguinrandomhouse.com/books/786143/disasters-by-design-by-grady-hillhouse/\nUK: https://www.penguin.co.uk/books/476190/disasters-by-design-by-hillhouse-grady/9780241798508\nMore About the Book: https://practical.engineering/books \n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-whatever-happened-to-fire-escapes\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by Ground News.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nEdge of a Knife composed by Caleb Winters (https://beacons.ai/calebwinters)\nWoodland Expedition composed by Caleb Winters\nAural Imprints from Epidemic Sound\nHeart Beam from Epidemic Sound\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1087,
+            "year": 2026,
+            "published_at": "2026-10-20T13:00:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/awV7FP9sAHE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "awV7FP9sAHE",
+                "url": "https://www.youtube.com/watch?v=awV7FP9sAHE",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved as a manual demo of the admin UI round-trip (phase 6 report)."
+            }
+        },
+        {
+            "id": "yt-5_B1Mq02wcI",
+            "episode_number": 2,
+            "title": "The Hidden Engineering of Pressure Regulators",
+            "description": "Pressure regulators are Victorian-era mechanical computers, and I cut one in half so we can see how it works\n⚙️ Check out SendCutSend for custom parts fabricated from your CAD: http://sendcutsend.com/practicalengineering\n\nI just love that there’s stuff like this out there, pretty much anywhere you’re willing to look, doing an essential job that few people even consider, and that their basic function really hasn’t changed in centuries.\n\n📖My new book, Disasters By Design: How Engineering Failures Shaped the Modern World is coming March 2, 2027 and available for preorder now.\nUS: https://www.penguinrandomhouse.com/books/786143/disasters-by-design-by-grady-hillhouse/\nUK: https://www.penguin.co.uk/books/476190/disasters-by-design-by-hillhouse-grady/9780241798508\nMore About the Book: https://practical.engineering/books \n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-the-hidden-engineering-of-pressure-regulators\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by SendCutSend.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nCactus Song from Epidemic Sound\nPractical Engineering Theme composed by Caleb Winters (https://beacons.ai/calebwinters)\nEdge of a Knife composed by Caleb Winters\nWater and Light composed by Caleb Winters\nWoodland Expedition composed by Caleb Winters\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 994,
+            "year": 2026,
+            "published_at": "2026-10-06T13:00:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/5_B1Mq02wcI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "5_B1Mq02wcI",
+                "url": "https://www.youtube.com/watch?v=5_B1Mq02wcI",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-n_1wzYQwnts",
+            "episode_number": 3,
+            "title": "Every US Electrical Outlet Explained",
+            "description": "Can you collect them all?\nWant to restore the planet's ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code PRACTICAL29 will get the first month paid for by me: https://planetwild.com/r/practicalengineering/join/29\nIf you want to get to know them better first, check out their mission rewilding transmission lines: https://planetwild.com/r/practicalengineering/m15/29\n\nJust like the periodic table of the elements, the NEMA connection standards are a bit messy. And that’s what I love about them.\n\n📖My new book, Disasters By Design: How Engineering Failures Shaped the Modern World is coming March 2, 2027 and available for preorder now.\nUS: https://www.penguinrandomhouse.com/books/786143/disasters-by-design-by-grady-hillhouse/\nUK: https://www.penguin.co.uk/books/476190/disasters-by-design-by-hillhouse-grady/9780241798508\nMore About the Book: https://practical.engineering/books \n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-every-us-electrical-outlet-explained\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by Planet Wild.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nCactus Song from Epidemic Sound\nMidnight in Paris composed by Caleb Winters (https://beacons.ai/calebwinters)\nWater and Light composed by Caleb Winters\nWoodland Expedition composed by Caleb Winters\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1293,
+            "year": 2026,
+            "published_at": "2026-09-15T13:00:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/n_1wzYQwnts/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "n_1wzYQwnts",
+                "url": "https://www.youtube.com/watch?v=n_1wzYQwnts",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--17mPnFxi30",
+            "episode_number": 4,
+            "title": "Stopping the Unstoppable",
+            "description": "Buffer stops and bumping posts are hidden in plain sight\n⚙️ Check out SendCutSend for custom parts fabricated from your CAD: http://sendcutsend.com/practicalengineering\n\nAs long as we rely on rail, the \"simple\" physics of stopping will always be a complex balancing act.\n\n📖My new book, Disasters By Design: How Engineering Failures Shaped the Modern World is coming March 2, 2027 and available for preorder now.\nUS: https://www.penguinrandomhouse.com/books/786143/disasters-by-design-by-grady-hillhouse/\nUK: https://www.penguin.co.uk/books/476190/disasters-by-design-by-hillhouse-grady/9780241798508\nMore About the Book: https://practical.engineering/books \n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-stopping-the-unstoppable\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by SendCutSend.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nEdge of a Knife composed by Caleb Winters (https://beacons.ai/calebwinters)\nPractical Engineering Theme composed by Caleb Winters\nWater and Light composed by Caleb Winters\nWoodland Expedition composed by Caleb Winters\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 946,
+            "year": 2026,
+            "published_at": "2026-09-01T13:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-17mPnFxi30/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-17mPnFxi30",
+                "url": "https://www.youtube.com/watch?v=-17mPnFxi30",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-r1wwtGgnzg4",
+            "episode_number": 5,
+            "title": "Are Beavers Actually Good at Dams?",
+            "description": "Want to restore the planet’s ecosystems and see your impact in monthly videos? The first 100 people to join Planet Wild with my code PRACTICAL8 will get the first month paid for by me: https://planetwild.com/r/practicalengineering/join/8\nIf you want to get to know them better first, check out their wildlife crossings mission: https://planetwild.com/r/practicalengineering/m36/8\n\nDo the beavers have a better dam system?\n\n📖My new book, Disasters By Design: How Engineering Failures Shaped the Modern World is coming March 2, 2027 and available for preorder now.\nUS: https://www.penguinrandomhouse.com/books/786143/disasters-by-design-by-grady-hillhouse/\nUK: https://www.penguin.co.uk/books/476190/disasters-by-design-by-hillhouse-grady/9780241798508\nMore About the Book: https://practical.engineering/books \n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-are-beavers-actually-good-at-dams\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by Planet Wild.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\nThanks to Ian Slater for sharing some beaver footage (https://www.youtube.com/@porchlandia)\n\nMUSIC CREDITS\n____________________________________\nRecycled Mood from Epidemic Sound\nTapped Out from Epidemic Sound\nWater and Light composed by Caleb Winters (https://beacons.ai/calebwinters)\nEdge of a Knife composed by Caleb Winters\nWoodland Expedition composed by Caleb Winters\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1155,
+            "year": 2026,
+            "published_at": "2026-08-18T13:00:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/r1wwtGgnzg4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "r1wwtGgnzg4",
+                "url": "https://www.youtube.com/watch?v=r1wwtGgnzg4",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-stQfGfUSLQg",
+            "episode_number": 6,
+            "title": "The Grid That Doubles the Strength of the Ground",
+            "description": "I love geocells\n⚙️ Check out SendCutSend for custom parts fabricated from your CAD: http://sendcutsend.com/practicalengineering\n\nSometimes it’s not all about more massive concrete slabs or the brute strength of steel, but just a little bit of clever geometry and some dirt.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-the-grid-that-doubles-the-strength-of-the-ground\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by SendCutSend.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nCactus Song from Epidemic Sound\nPractical Engineering Theme composed by Caleb Winters (https://beacons.ai/calebwinters)\nKeyless Entry from Epidemic Sound\nWoodland Expedition composed by Caleb Winters\nWater and Light composed by Caleb Winters\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1108,
+            "year": 2026,
+            "published_at": "2026-08-04T13:00:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/stQfGfUSLQg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "stQfGfUSLQg",
+                "url": "https://www.youtube.com/watch?v=stQfGfUSLQg",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Iclf_JnPkKw",
+            "episode_number": 7,
+            "title": "What's Under Your Feet in New York City?",
+            "description": "A tour of the subsurface in NYC\n⚙️ Check out SendCutSend for custom parts fabricated from your CAD: http://sendcutsend.com/practicalengineering\n\nErrata: At 8:00, winding are showing a step-up transformer and should be swapped.\n\nThe underground of New York is almost a city within a city. We kind of get used to having all these utilities and services that it’s easy to forget the physical space they all take up and the work that goes into installing and maintaining them.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-whats-under-your-feet-in-new-york-city\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by SendCutSend.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nHimalayan Spell from Epidemic Sound\nKeyless Entry from Epidemic Sound\nWater and Light composed by Caleb Winters (https://beacons.ai/calebwinters)\nTapped Out from Epidemic Sound\nWoodland Expedition composed by Caleb Winters (https://beacons.ai/calebwinters)\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1352,
+            "year": 2026,
+            "published_at": "2026-07-21T13:02:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Iclf_JnPkKw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Iclf_JnPkKw",
+                "url": "https://www.youtube.com/watch?v=Iclf_JnPkKw",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Ku_ockR2t44",
+            "episode_number": 8,
+            "title": "The Mind-Blowing Flaw That Flooded New Orleans",
+            "description": "Based on a chapter from Disasters By Design: How Engineering Failures Shaped the Modern World by Grady Hillhouse, coming March 2, 2027, and available for preorder now.\nUS: https://www.penguinrandomhouse.com/books/786143/disasters-by-design-by-grady-hillhouse/\nUK: https://www.penguin.co.uk/books/476190/disasters-by-design-by-hillhouse-grady/9780241798508\nMore About the Book: https://practical.engineering/books\n\nWhat happened in New Orleans in August 2005 wasn’t a natural disaster. A number of engineering errors made the hurricane far more deadly than it would have been otherwise. And I built a model to show you why.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-why-the-levees-failed-in-new-orleans\n\nSigned copies of my first book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nAural Imprints from Epidemic Sound\nRhubarb from Epidemic Sound\nWoodland Expedition composed by Caleb Winters (https://beacons.ai/calebwinters)\nMagnified XY from Epidemic Sound\nAll Parts Equal from Epidemic Sound\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1474,
+            "year": 2026,
+            "published_at": "2026-07-07T13:00:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ku_ockR2t44/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Ku_ockR2t44",
+                "url": "https://www.youtube.com/watch?v=Ku_ockR2t44",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7oi4yMr8Rjk",
+            "episode_number": 9,
+            "title": "Bridge Demolition is Complicated",
+            "description": "The complex engineering involved in demolishing the I-74 Mississippi River Bridge.\n🌌Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/practical-engineering\n🚣Watch The Anatomy of: https://nebula.tv/realengineering/the-anatomy-of?ref=practical-engineering\n\nNo shade at all to the new bridges, but honestly I think taking the old ones down was the coolest part of the entire replacement project.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-how-to-demolish-a-bridge\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThanks to IOWA DOT, Helm Civil, and Genesis Structures for sharing information about the project.\nThis video is sponsored by Nebula.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nKeyless Entry from Epidemic Sound\nPractical Engineering Theme composed by Caleb Winters (https://beacons.ai/calebwinters)\nWoodland Expedition composed by Caleb Winters (https://beacons.ai/calebwinters)\nWater and Light composed by Caleb Winters (https://beacons.ai/calebwinters)\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1076,
+            "year": 2026,
+            "published_at": "2026-06-16T11:37:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7oi4yMr8Rjk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7oi4yMr8Rjk",
+                "url": "https://www.youtube.com/watch?v=7oi4yMr8Rjk",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-3YvwqMDDb3k",
+            "episode_number": 10,
+            "title": "Why Roads Get Washboards",
+            "description": "The bizarre science of washboards on unpaved roads\n⚙️ Check out SendCutSend for custom parts fabricated from your CAD: http://sendcutsend.com/practicalengineering\n\nThe more we understand the physics of washboarding, the better we can engineer roads that stay safe, smooth, and reliable.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-why-roads-get-washboards\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by SendCutSend.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nKeyless Entry from Epidemic Sound\nPractical Engineering Theme composed by Caleb Winters (https://beacons.ai/calebwinters)\nWoodland Expedition composed by Caleb Winters (https://beacons.ai/calebwinters)\nWater and Light composed by Caleb Winters (https://beacons.ai/calebwinters)\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1074,
+            "year": 2026,
+            "published_at": "2026-06-02T13:00:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3YvwqMDDb3k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3YvwqMDDb3k",
+                "url": "https://www.youtube.com/watch?v=3YvwqMDDb3k",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-DWLcmq_DiaA",
+            "episode_number": 11,
+            "title": "Fixing the Most Dangerous Dam in the World",
+            "description": "The wild story of Mosul Dam in northern Iraq\n🌌Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/practical-engineering\n🚣Watch The Anatomy of: https://nebula.tv/realengineering/the-anatomy-of?ref=practical-engineering\n\nFor the past 40 years or so, the problem at Mosul Dam has been ongoing, scrutinized by some of the most preeminent engineers across the world and complicated by politics, bureaucracy, and armed conflict.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-fixing-the-most-dangerous-dam-in-the-world\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by Nebula.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nPattern View from Epidemic Sound\nMagnified XY from Epidemic Sound\nAural Imprints from Epidemic Sound\nCactus Song from Epidemic Sound\nAll Parts Equal from Epidemic Sound\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1343,
+            "year": 2026,
+            "published_at": "2026-05-19T13:00:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DWLcmq_DiaA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DWLcmq_DiaA",
+                "url": "https://www.youtube.com/watch?v=DWLcmq_DiaA",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-fKuIJ_z2Y6A",
+            "episode_number": 12,
+            "title": "The Physics Behind the Thumb Trick",
+            "description": "_Closed Conduit Hydraulics_ is a place where intuitions don’t always serve you well\n⚙️ Check out SendCutSend for custom parts fabricated from your CAD: http://sendcutsend.com/practicalengineering\n\nThe garden hose is a backyard version of the same problem engineers and operators deal with every day: how much flow can you get through a real system, and what does it cost you in pressure?\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-the-physics-behind-the-thumb-trick\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by SendCutSend.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nTapped Out from Epidemic Sound\nPractical Engineering Theme composed by Caleb Winters (https://beacons.ai/calebwinters)\nWater and Light composed by Caleb Winters\nWoodland Expedition composed by Caleb Winters\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1063,
+            "year": 2026,
+            "published_at": "2026-05-05T13:01:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fKuIJ_z2Y6A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fKuIJ_z2Y6A",
+                "url": "https://www.youtube.com/watch?v=fKuIJ_z2Y6A",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-J7ieKmP96Hc",
+            "episode_number": 13,
+            "title": "The Wild Story of the Teton Dam Failure",
+            "description": "This year is the 50th anniversary of the Teton Dam Failure\n🌌Get Nebula using my link for 50% off an annual subscription: https://go.nebula.tv/practical-engineering\n🚣Watch Joe Scott - Oldest and Newest Places on Earth: https://nebula.tv/oldestnewest?ref=practical-engineering\n\nTeton was one of the most dramatic and catalyzing dam failures of the 20th century in the US.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-the-wild-story-of-the-teton-dam-failure\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by Nebula.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nBuilding Blocks from Epidemic Sound\nAural Imprints from Epidemic Sound\nAddicted To Me from Epidemic Sound\nMagnified XY from Epidemic Sound\nThe Road Less Travelled from Epidemic Sound\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1163,
+            "year": 2026,
+            "published_at": "2026-04-21T13:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/J7ieKmP96Hc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "J7ieKmP96Hc",
+                "url": "https://www.youtube.com/watch?v=J7ieKmP96Hc",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-UF63eFJmbrQ",
+            "episode_number": 14,
+            "title": "This Spillway Failed On Purpose",
+            "description": "An overview of fuse plug and fusible gate spillways\n\nMost of the largest dams in the world have gated spillways with whole teams of staff dedicated to their operation. But it’s still a challenge, especially for small owners like cities. So there is another option, kind of in between controlled and uncontrolled spillways, and its use is growing worldwide.\n\nWatch this video ad-free on Nebula: https://nebula.tv/videos/practical-engineering-spillways-that-fail-on-purpose\n\nSigned copies of my book (plus other cool stuff) are available here: https://store.practical.engineering/\n\nPractical Engineering is a YouTube channel about infrastructure and the human-made world around us. It is hosted, written, and produced by Grady Hillhouse. We have new videos posted regularly, so please subscribe for updates. If you enjoyed the video, hit that ‘like’ button, give us a comment, or watch another of our videos!\n\nCONNECT WITH ME\n____________________________________\nWebsite:         http://practical.engineering\nTwitter:           https://twitter.com/HillhouseGrady\nInstagram:     https://www.instagram.com/practicalengineering\nReddit:            https://www.reddit.com/r/PracticalEngineering\nFacebook:      https://www.facebook.com/PracticalEngineerGrady​\nPatreon:         http://patreon.com/PracticalEngineering\n\nSPONSORSHIP INQUIRIES\n____________________________________\nPlease email my agent at practicalengineering@standard.tv\n\nDISCLAIMER\n____________________________________\nThis is not engineering advice. Everything here is for informational and entertainment purposes only. Contact an engineer licensed to practice in your area if you need professional advice or services. All non-licensed clips used for fair use commentary, criticism, and educational purposes.\n\nSPECIAL THANKS\n____________________________________\nThis video is sponsored by SendCutSend.\nStock video and imagery provided by Getty Images, Shutterstock, Pond5, and Videoblocks.\nVideo by Grady Hillhouse\nEdited by Wesley Crump\nProduced by Ralph Crewe\nGraphics by Nebula Studios\n\nMUSIC CREDITS\n____________________________________\nAddicted To Me from Epidemic Sound\nPractical Engineering Theme composed by Caleb Winters (https://beacons.ai/calebwinters)\nTapped Out from Epidemic Sound\nWater and Light composed by Caleb Winters (https://beacons.ai/calebwinters)\nBuilding Blocks from Epidemic Sound\nTonic and Energy by Elexive is licensed under a Creative Commons Attribution License\nSource: https://www.youtube.com/watch?v=U6fBPdu8w9U",
+            "duration": 1144,
+            "year": 2026,
+            "published_at": "2026-04-07T13:01:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UF63eFJmbrQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UF63eFJmbrQ",
+                "url": "https://www.youtube.com/watch?v=UF63eFJmbrQ",
+                "channel_id": "UCMOqf8ab-42UUQIdVoKwjlQ",
+                "channel_title": "Practical Engineering",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
 }

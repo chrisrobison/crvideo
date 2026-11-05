@@ -1,18 +1,427 @@
 {
-  "_note": "STRUCTURAL PLACEHOLDER. This file exists to prove out the series.json shape and its catalog reference (see channels/science/catalog.json) ahead of the YouTube importer, which has not been built yet (a later phase). No real YouTube channel id, video id, episode title, or duration has been entered here -- every such field is null or empty on purpose. Do not schedule this series and do not treat any value below as real metadata; replace this whole file by running the (future) importer.",
-  "schema_version": 1,
-  "id": "technology-connections",
-  "title": "Technology Connections",
-  "description": "Technology, engineering, and the everyday inventions behind them.",
-  "creator": null,
-  "year": null,
-  "thumbnail_url": null,
-  "logo_url": null,
-  "source": {
-    "provider": "youtube",
-    "channel_id": null,
-    "channel_url": null
-  },
-  "rotation": { "mode": "sequential", "loop": true },
-  "episodes": []
+    "schema_version": 1,
+    "id": "technology-connections",
+    "title": "Technology Connections",
+    "description": "Technology, engineering, and the everyday inventions behind them.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_lG8iUz4mpHBrzJSDYEKT0qe2XmhZUUUzhzcJbz9cE3rQ=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+        "channel_url": "https://www.youtube.com/channel/UCy0tKL1T7wFoYcxCe0xjN6Q"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-I1rlK3BKmyA",
+            "episode_number": 1,
+            "title": "Alkaline batteries are obsolete — but not for the reason you'd think",
+            "description": "Innovation is sometimes funny.\n\nLinks 'n stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, as well as folks in need in Chicagoland and beyond, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 1819,
+            "year": 2026,
+            "published_at": "2026-10-30T17:35:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/I1rlK3BKmyA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "I1rlK3BKmyA",
+                "url": "https://www.youtube.com/watch?v=I1rlK3BKmyA",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved as a manual demo of the admin UI round-trip (phase 6 report)."
+            }
+        },
+        {
+            "id": "yt-0KoeY54M5VA",
+            "episode_number": 2,
+            "title": "Engines haven't been fully mechanical in decades - and that's good!",
+            "description": "Beep boop. Engine better now.\nThere's now a playlist of all the engine management videos! So you can find all the earlier ones right here: https://www.youtube.com/playlist?list=PLQp5_w6Rc6sk\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, as well as folks in need in Chicagoland and beyond, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 3037,
+            "year": 2026,
+            "published_at": "2026-09-24T16:57:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0KoeY54M5VA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0KoeY54M5VA",
+                "url": "https://www.youtube.com/watch?v=0KoeY54M5VA",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-F_7B2shTPPU",
+            "episode_number": 3,
+            "title": "My water heater is cooler than yours",
+            "description": "Cooly hot. Or hotly cool.\nFollow-up video:\nhttps://youtu.be/fHPCS8j3cRM\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, as well as folks in need in Chicagoland and beyond, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections\n\n00:00 intro\n03:55 Why my situation is… not ideal\n06:02 Installation quirks\n14:47 The upsides and why I did this\n22:24 But what about in winter?\n26:47 The math behind this\n31:10 The massive “catch” with 120V models\n38:12 Two minor issues I’ve had\n40:17 AO Smith’s so-far unique feature\n44:32 Weird nerd stuff and other nonsense",
+            "duration": 3525,
+            "year": 2026,
+            "published_at": "2026-08-21T17:27:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/F_7B2shTPPU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "F_7B2shTPPU",
+                "url": "https://www.youtube.com/watch?v=F_7B2shTPPU",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-_KWdCqpXB7A",
+            "episode_number": 4,
+            "title": "Ceiling fans: the simple idea we keep screwing up",
+            "description": "Make it breezy.\nDan's video on Moss Ceiling Fans:\nhttps://www.youtube.com/watch?v=IVv5vWjwCx8\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, as well as folks in need in Chicagoland and beyond, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 4271,
+            "year": 2026,
+            "published_at": "2026-06-17T17:30:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_KWdCqpXB7A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_KWdCqpXB7A",
+                "url": "https://www.youtube.com/watch?v=_KWdCqpXB7A",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-KnUFH5GX_fI",
+            "episode_number": 5,
+            "title": "Nobody understands the point of hybrid cars",
+            "description": "It's a really good idea and everyone hating on it probably doesn't understand it.\nLinks 'n' stuff:\n\nHere's Prof. John Kelly's excellent demo of the eCVT (the mentioned Weber Auto YouTube Channel)\nhttps://www.youtube.com/watch?v=ppyK3ZlUbtM\n\nAnd I linked in a card to Engineering Explained's demo, too, which may help those having a hard time wrapping their head around this:\nhttps://www.youtube.com/watch?v=dxmxIsoV_Xo\n\nHere's the Sights and Sounds video I mentioned:\nhttps://youtu.be/AtaG0PQYeVQ\n\nAnd here's a silly one telling anyone who will listen why they need to get over themselves and embrace the minivan:\nhttps://youtu.be/oEruzTKteRE\n\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections\n\n00:00 Intro\n03:31 The internal combustion engine and its flaws\n09:12 The Atkinson cycle engine\n14:04 What hybrid drivetrains unlock\n19:21 An operational overview of Toyota's hybrid system\n24:10 Conversion losses and why they're a problem\n28:24 Regenerative braking and other hybrid drivetrain benefits\n34:54 How it all works mechanically\n46:42 Series vs. Parallel hybrids\n51:22 A cool way to do AWD\n54:44 bloopers",
+            "duration": 3351,
+            "year": 2026,
+            "published_at": "2026-05-06T15:35:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/KnUFH5GX_fI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "KnUFH5GX_fI",
+                "url": "https://www.youtube.com/watch?v=KnUFH5GX_fI",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nXdVG45wveo",
+            "episode_number": 6,
+            "title": "The disappearing and unappreciated art of audible alerts",
+            "description": "A proverbial one, anyway.\n\nlinks 'n' stuff\n\nIf you're interested in the resurrection of the Pebble, here's more info:\nhttps://repebble.com/\n\nThe Slow Whoop promo record:\nhttps://www.youtube.com/watch?v=a2_kt7RW9bI\n\nMy old video on elevator chimes:\nhttps://youtu.be/48hW-K7fQTM\n\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 1451,
+            "year": 2026,
+            "published_at": "2026-04-12T15:18:48Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nXdVG45wveo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nXdVG45wveo",
+                "url": "https://www.youtube.com/watch?v=nXdVG45wveo",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-mmCfOazZCNQ",
+            "episode_number": 7,
+            "title": "Oil pressure is the only thing keeping an engine alive",
+            "description": "What really grinds my gears is a lack of sufficient lubrication.\n\nlinks 'n' stuff\nThe catalytic converter video (once there's a third video I'll make a true playlist)\nhttps://youtu.be/Aytf6ARcs8s\n\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 3286,
+            "year": 2026,
+            "published_at": "2026-03-21T15:39:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mmCfOazZCNQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mmCfOazZCNQ",
+                "url": "https://www.youtube.com/watch?v=mmCfOazZCNQ",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-KtQ9nt2ZeGM",
+            "episode_number": 8,
+            "title": "You are being misled about renewable energy technology.",
+            "description": "Let's learn and grow. New things are cool!\nLinks 'n' stuff down below. Lots of links.\n\nFirst, the \"clean version.\" Please pass that around.\nhttps://youtu.be/Zgxb8I1nk2I\n\nJerry Rig Everything's video on battery recycling\nhttps://www.youtube.com/watch?v=s2xrarUWVRQ\n\nIf you'd like a legal argument from an actual lawyer which highlights the uniquely strange and unchecked powers we have given DHS and ICE, this is worth a watch. I am not being hyperbolic in saying that this is a serious problem we need to face head on through abolishment, not reform.\nhttps://www.youtube.com/watch?v=zkgNnbTrsgw\n \nHere are a couple of corn ethanol vs. solar land use studies. There are more if you'd like to look for them.\nhttps://news.cornell.edu/stories/2025/04/trading-some-corn-ethanol-land-solar-offers-tremendous-opportunity\nhttps://www.cleanwisconsin.org/wp-content/uploads/2023/01/Corn-Ethanol-Vs.-Solar-Analysis-V3-9-compressed.pdf\n\nI'm not gonna post links to my socials or my Patreon here.\n\nTake care of each other.\n\n00:00 Intro\n07:35 Some opening notes\n10:14 Cars and all the oil they use\n15:38 Photovoltaics and electric cars\n18:59 A cost and opportunity comparison\n22:33 Solar farms\n30:35 A discussion of land use\n38:29 A diversion on wind power\n41:17 The materials in solar panels\n50:52 What about the batteries?\n1:02:41 The reasons I made this video\n1:10:16 The reason I am who I am\n1:16:35 Who the liars are and what we need to do about them.",
+            "duration": 5520,
+            "year": 2026,
+            "published_at": "2026-01-30T17:27:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/KtQ9nt2ZeGM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "KtQ9nt2ZeGM",
+                "url": "https://www.youtube.com/watch?v=KtQ9nt2ZeGM",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-tCVsyY5TRQI",
+            "episode_number": 9,
+            "title": "I made my whole-home humidifier slightly less terrifying",
+            "description": "mm mm moist\n\nlinks 'n' stuff\nThe HVAC sizing video\nhttps://youtu.be/DTsQjiPlksA\n\nMy original video on humidifiers\nhttps://youtu.be/oHeehYYgl28\n\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? Unless you count this Christmas light tirade, that is. Anyway, that's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 2079,
+            "year": 2025,
+            "published_at": "2025-12-25T16:29:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/tCVsyY5TRQI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "tCVsyY5TRQI",
+                "url": "https://www.youtube.com/watch?v=tCVsyY5TRQI",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-oy7BrKNmZAQ",
+            "episode_number": 10,
+            "title": "It's the Christmas light video again - 2025 edition",
+            "description": "It's the most wonderful time of the year.\nhttps://tru-tone.com\nhttps://merryco.com\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? Unless you count this Christmas light tirade, that is. Anyway, that's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 2028,
+            "year": 2025,
+            "published_at": "2025-12-06T15:45:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/oy7BrKNmZAQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "oy7BrKNmZAQ",
+                "url": "https://www.youtube.com/watch?v=oy7BrKNmZAQ",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-INZybkX8tLI",
+            "episode_number": 11,
+            "title": "My car charger can boil water really fast",
+            "description": "That title might be the best effort I can pull off.\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 1396,
+            "year": 2025,
+            "published_at": "2025-11-27T18:37:52Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/INZybkX8tLI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "INZybkX8tLI",
+                "url": "https://www.youtube.com/watch?v=INZybkX8tLI",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-8I4Jc-WLsrs",
+            "episode_number": 12,
+            "title": "This cassette player is built into an 8-track cartridge",
+            "description": "Cool tapes.\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? That's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 1648,
+            "year": 2025,
+            "published_at": "2025-11-20T17:02:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8I4Jc-WLsrs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8I4Jc-WLsrs",
+                "url": "https://www.youtube.com/watch?v=8I4Jc-WLsrs",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-DAX2_mPr9W8",
+            "episode_number": 13,
+            "title": "I was right about dishwasher pods, and now I can prove it",
+            "description": "Some \"innovations\" really are gimmicks after all.\nhttps://good.store/products/dishwasher-powder\n\n2nd channel video:\nhttps://youtu.be/WnBb3DLlVPw\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? Well, except maybe this one time? If you think socks for charity counts. Anyway, that's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections\n\n00:00 intro\n01:40 Why I insist on powders\n08:00 The story of how this got made\n09:39 ASTM testing and results\n16:12 The importance of purging cold water from the line\n21:46 A demonstration\n29:18 A surprise about the dishwasher\n35:36 The demo again, but with PRE-WASH DETERGENT\n39:27 Recap and outro",
+            "duration": 2487,
+            "year": 2025,
+            "published_at": "2025-11-04T18:07:43Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DAX2_mPr9W8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DAX2_mPr9W8",
+                "url": "https://www.youtube.com/watch?v=DAX2_mPr9W8",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ms8uu0zeU88",
+            "episode_number": 14,
+            "title": "Video projectors used to be ridiculously cool",
+            "description": "Three of them. That's three times more than usual!\n\nOther stuff:\nTechnology Connections on Bluesky:\nhttps://bsky.app/profile/techconnectify.bsky.social\n\nTechnology Connections on Mastodon:\nhttps://mas.to/@TechConnectify\n\nHave you ever noticed that I've never done that whole influencer thing? Well, except maybe this one time? If you think socks for charity counts. Anyway, that's all thanks to people like you! Viewer support through Patreon keeps this channel independent and possible. If you'd like to join the amazing folks who fund my work, check out the link below. Thank you!\nhttps://www.patreon.com/technologyconnections",
+            "duration": 2080,
+            "year": 2025,
+            "published_at": "2025-10-08T15:43:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ms8uu0zeU88/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ms8uu0zeU88",
+                "url": "https://www.youtube.com/watch?v=ms8uu0zeU88",
+                "channel_id": "UCy0tKL1T7wFoYcxCe0xjN6Q",
+                "channel_title": "Technology Connections",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
 }

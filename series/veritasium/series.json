@@ -1,0 +1,1472 @@
+{
+    "schema_version": 1,
+    "id": "veritasium",
+    "title": "Veritasium",
+    "description": "An element of truth - videos about science, education, and anything else we find interesting.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/7vCbvtCqtjQ3YLgsJt7Y952MQV1sBvhllSCSxHP8_sVZdcPCBrITfhkN2RdyCuwPnsByq-1GoA=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+        "channel_url": "https://www.youtube.com/channel/UCHnyfMqiRRG1u-2MsSQLbXA",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-KfODG5REyss",
+            "episode_number": 1,
+            "title": "The Closest Thing We Have to Alien Matter",
+            "description": "The world’s coldest liquid is far stranger than you’d imagine. Sponsored by Ground News - Go to https://ground.news/Ve and subscribe to get 40% off the unlimited access Vantage Plan. Stay informed on breaking news and compare coverage from every angle.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV \n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter\n\nJoin our Patreon for a chance to get a NASA sticker that went to the edge of space during the eclipse and for early access to work-in-progress videos https://ve42.co/VePatreon\n\nLast year, we launched Elements of Truth on Kickstarter. We’re now in the final stages of production, and Kickstarter rewards are shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here - https://ve42.co/YTDEcl  \nIf you backed us on Kickstarter, don’t worry, your game will ship before any pre-orders are fulfilled.\n\n▀▀▀\nChapters: \n0:00 The \"Impossible\" Liquid\n1:59 The Race to Absolute Zero\n6:33 Why Helium Seemed Impossible to Liquefy\n15:04 The First Liquid Helium Ever Made\n19:08 Can you make solid helium?\n21:42 What is superconductivity?\n28:41 Zero Viscosity and Superfluidity\n36:15 What are Bose-Einstein condensates?\n43:20 How Kapitsa Saved Landau From Prison\n46:20 The Superfluid Fountain Powered by Light\n47:46 Landau's Theory of Phonons\n58:32 Why Helium (Almost) Never Freezes\n1:01:58 The takeaway\n\n▀▀▀\nA big thank you to Prof. Dirk van Delft for his guidance and expertise on Onnes’ life and work. If you want to read more about it you can find the free PDF of his book “Freezing Physics” here:  https://ve42.co/Freezing_physics \nA massive thank you to Prof. Martin Zwierlein for his enthusiasm and helping us get the specifics of superfluidity and BECs right.\nAs well as a huge thank you to everyone who helped us understand the physics, the story, and provided valuable feedback on different parts of this video: Prof. Kostas Gavroglu, Dr. Philippe Lebrun, Prof. David Kaiser, Dr. John G Weisend II, Prof. Ad Maas, and Prof Robert Taylor.\nThen two more special thank-you’s:\nThe first is to Rijksmuseum Boerhaave, for showing us around the archives and Onnes’ original equipment. You can check them out here: https://www.rijksmuseumboerhaave.nl/ \nAnd the second, of course, is to everyone at the Gravity Laboratory and Nottingham University who recreated all the experiments for us. Your efforts made this video possible. Dr. Chris Goodwin, thank you for your unrelenting support in helping us get the physics of superfluidity right. You can check out the gravity laboratory here: ve42.co/GravityLaboratory\n\n▀▀▀\nReferences: https://ve42.co/SuperfluidsReferences\n\n▀▀▀\nSpecial thanks to our Patreon supporters: \nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Hybrid Minds, Ibby Hadeed, Jeromy Johnson, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Orlando Bassotto, Parsee Health, Paul Peijzel, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Sweet_Nemo, Tj Steyn, Ubiquity Ventures, wolfee\n\n▀▀▀\nCredits: \nWriters: Casper Mebius & Derek Muller\nProducer and Director: Casper Mebius\nPresenters:  Derek Muller & Casper Mebius\nEditors: Trenton Oliver, George Reynolds & Axel Oliver\nAssistant Editors: James Stuart & Peter Nelson\nAnimators: Domonkos Jozsa, Emma Wright, Fabio Albertelli, Andrew Neet, Alex Drakoulis, Rokas Viksraitis & Mike Radjabov  \nIllustrators: Jakub Misiek & Raphael Aubry\nResearchers: Sophia Rose, Gabe Strong and Fred Green\nCamera Operators: James Haslam, James Dann, Derek Muller, Raquel Muller, Casper Mebius, Stephen Foote, Gabe Strong & Sophia Rose\nThumbnail Designers: Abdallah Rabah, Ben Powell & Patryk Ziolkowski\nAdditional thumbnail picture by: Leonardo Solidoro\nProduction Team: Anna Milkovic, Glen Griffiths, Jess Bishop-Laggett & Matthew Cavanagh\nExecutive Producers: Emilia Gyles, Derek Muller & Casper Mebius",
+            "duration": 3956,
+            "year": 2026,
+            "published_at": "2026-11-04T15:52:59Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/KfODG5REyss/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "KfODG5REyss",
+                "url": "https://www.youtube.com/watch?v=KfODG5REyss",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-xlNKNnXdtN4",
+            "episode_number": 2,
+            "title": "These ponds help support half the people on Earth",
+            "description": "What are these electric blue ponds in the middle of the Utah desert? And why do they keep changing color?",
+            "duration": 113,
+            "year": 2026,
+            "published_at": "2026-11-02T14:00:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xlNKNnXdtN4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xlNKNnXdtN4",
+                "url": "https://www.youtube.com/watch?v=xlNKNnXdtN4",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-zEmabFZvdqA",
+            "episode_number": 3,
+            "title": "What happens if I lower this weight into the water?",
+            "description": "Will the weighing scale underneath go up, down or stay the same?",
+            "duration": 74,
+            "year": 2026,
+            "published_at": "2026-10-30T14:00:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zEmabFZvdqA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zEmabFZvdqA",
+                "url": "https://www.youtube.com/watch?v=zEmabFZvdqA",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Kap7mRzr13w",
+            "episode_number": 4,
+            "title": "Why doesn't your heart get tired like other muscles do?",
+            "description": "The secret to why your heart never gets tired...",
+            "duration": 73,
+            "year": 2026,
+            "published_at": "2026-10-27T14:00:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Kap7mRzr13w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Kap7mRzr13w",
+                "url": "https://www.youtube.com/watch?v=Kap7mRzr13w",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-eyZEqSPeMwg",
+            "episode_number": 5,
+            "title": "No device could prove Einstein wrong... until now",
+            "description": "Can atomic clocks prove Einstein wrong? The biggest protection in the game! Go to https://NordVPN.com/veritasium and get an exclusive NordVPN deal + 4 extra months. It’s risk free with NordVPN’s 30-day money-back guarantee!\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter\n\nHuge thanks to NIST for their help making this video. Visit their website: https://www.nist.gov/pml/time-and-frequency-division\n\nJoin our Patreon for a chance to get a NASA sticker that went to the edge of space during the eclipse and for early access to work-in-progress videos https://ve42.co/VePatreon\n\nLast year, we launched Elements of Truth on Kickstarter and were thrilled by the response. We’re now in the final stages of production, and Kickstarter rewards are shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here - https://ve42.co/YTDEcl  \n\nIf you backed us on Kickstarter, don’t worry, your game will ship before any pre-orders are fulfilled.\n\n▀▀▀\n0:00 Does gravity obey the rules of quantum mechanics?\n2:40 How does an atomic clock work?\n6:06 Why Optical Atomic Clocks Are So Accurate\n8:51 Using Lasers To Cool Atoms Down\n13:47 Driving an atomic clock up a mountain\n17:01 Linking Atomic Clocks Across 80 Kilometres\n19:00 Flying an Atomic Clock in a Helicopter\n25:11 How Do You Measure the Frequency of Light?\n28:40 Optical Frequency Combs\n30:42 Is Einstein Still Right?\n\n▀▀▀\nWith special thanks to the experts and collaborators who made this video possible:\nIn order of appearance, Prof. Jonathan Oppenheim (University College London), Greg Hoth (NIST), Dr. Andrew Ludlow (NIST), Dr. Laura Sinclair (NIST), Dr. Harikesh Ranganath (NIST), Lilani Toms-Hardman (University of Western Australia), Prof. Sascha Schediwy (University of Western Australia), Dr Sabrina Slimani (University of Western Australia), Dr Benjamin Dix-Matthews (University of Western Australia). \n\nThe National Institute of Standards and Technology (NIST), the University of Denver and the Meyer-Womble Observatory, the University of Western Australia and the International Centre for Radio Astronomy Research, RIKEN and the University of Tokyo. In addition, to the Precision Measurement Group (PMG) in the Institute for Photonics, Advanced Sensing and Quantum Technologies (IPAS-QT) at Adelaide University who provided the two portable atomic clocks used in the UWA test. https://ve42.co/AdelaideUniversityPrecisionMeasurementGroup\nIn the production of this video, Rebecca Jacobson, Dr. Emily Caldwell, Dr. Kyle Latty (NIST), Nicholas Kurth, University of Colorado (Boulder), Dr. Bryn Crawford (Adelaide University), Prof. Hidetoshi Katori, A/Prof. Kai Suekane, Dr. Shota Yo and Dr. Hiutat Yang (RIKEN & University of Tokyo). \n\nIn additional research and review, Prof. David Kaiser (MIT), Prof. Scott Diddams (University of Colorado Boulder), Prof. Claudia de Rham (Imperial College London), Prof. Steven Cundiff (University of Michigan) and Dr. Derek van Westrum (NOAA National Geodetic Survey). \n\nFor their support with archive footage, the NIST Archive, Prof. Jun Ye (NIST/JILA) and Brent Doerzman. \n\n▀▀▀\nReferences: https://ve42.co/AtomicClockReferences\n\nFor more information on the dipole trap:  https://ve42.co/HBDDipole\n\nMIT Open Access Course: https://ve42.co/FreeLecturesHere\n\n▀▀▀\nSpecial thanks to our Patreon supporters: \nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Hybrid Minds, Ibby Hadeed, Jeromy Johnson, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Orlando Bassotto, Parsee Health, Paul Peijzel, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Sweet_Nemo, Tj Steyn, Ubiquity Ventures, wolfee, Burt Humburg, Sanome, Ulf Hermjakob\n\n▀▀▀\nCredits\nWriters: Sarah Houlton, Gregor Čavlović, Emilia Gyles\nProducer and Director: Sarah Houlton\nPresenters: Gregor Čavlović and Emilia Gyles\nEditor: Peter Nelson\nAdditional Editing: James Stuart and Trenton Oliver\nAnimators: Alex Drakoulis, Andrew Neet, Domonkos Józsa, Emma Wright and Fabio Albertelli\nResearchers: Sophia Rose and Gabe Strong\nCamera Operators: James Chance, Jesse Bartlett, Sarah Houlton, Gregor Čavlović and Emilia Gyles\nThumbnail Designers: Abdallah Rabah, Daniel Ellacott and Jakub Misiek\nProduction Team: Anna Milkovic, Glen Griffiths, Jess Bishop-Laggett, Matthew Cavanagh\nExecutive Producers: Gregor Čavlović, Emilia Gyles and Derek Muller",
+            "duration": 2068,
+            "year": 2026,
+            "published_at": "2026-10-23T18:46:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/eyZEqSPeMwg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "eyZEqSPeMwg",
+                "url": "https://www.youtube.com/watch?v=eyZEqSPeMwg",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-wxLc-gFORPQ",
+            "episode_number": 6,
+            "title": "Is there something faster than light?",
+            "description": "The experiment that broke relativity.\n\nHow an argument between Einstein and Bohr changed quantum mechanics forever.",
+            "duration": 58,
+            "year": 2026,
+            "published_at": "2026-10-22T13:00:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wxLc-gFORPQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wxLc-gFORPQ",
+                "url": "https://www.youtube.com/watch?v=wxLc-gFORPQ",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-6U6Z6pb6ewI",
+            "episode_number": 7,
+            "title": "When you lose weight where does it go?",
+            "description": "What does it mean to lose weight? \n\nWhen you work out or eat less your overall size decreases. So where does this mass go?",
+            "duration": 70,
+            "year": 2026,
+            "published_at": "2026-10-15T13:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6U6Z6pb6ewI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6U6Z6pb6ewI",
+                "url": "https://www.youtube.com/watch?v=6U6Z6pb6ewI",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-NiCgcUTL9_Q",
+            "episode_number": 8,
+            "title": "Fiber Optics are so much cooler than I thought",
+            "description": "Why making glass fibers to send signals was almost impossible. Sponsored by Saily - 🌎 Get an exclusive 15% discount on Saily data plans!  Download Saily app go to https://saily.com/veritasium Use code veritasium at checkout ⛵\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV \n\nFor the latest science news, and for an exclusive bonus Q&A with Sulli, the director of this video, sign up to the Veritasium newsletter - https://ve42.co/VeMail_FO\n\nFor early access to work in progress videos join our patreon https://ve42.co/VePatreon \n\n▀▀▀\n0:00 What are fiber optics?\n2:02 Why Copper Phone Lines Had Limited Capacity\n5:13 Trying To Go From Copper Communication To Glass\n8:15 Why is glass so ‘lossy’?\n11:29 Scattering and Absorption\n16:00 How can you remove impurities in glass?\n19:00 How They Make Fiber Optic Glass\n26:47 The Technology that Made the Internet Possible \n\n▀▀▀\nSpecial thanks to the experts and collaborators who made this video possible:\nDr. Donald Keck\nProf. Vincent Chan\nSir David Payne\nDr. Nikola Alic\nJim Hayes\nJeff Hecht, whose book City of Light: The Story of Fiber Optics was an invaluable resource for this video (explore his work at https://www.jeffhecht.com).\nDiffraction Limited, who made the fiber kits we used and some additional simulations that were critical to our understanding (https://www.youtube.com/@DiffractionLimited)\nTrulala CANDY Chef (https://www.youtube.com/@TrulalaCANDYChef)\nAdditional thanks to:\nROSENDAHL NEXTROM for providing animations and fiber manufacturing 3D assets: (https://rosendahlnextrom.com/fiber/)\nBay Area Glass Institute for hosting our team. (https://bagi.org/)\nPrysmian for giving us a guided tour of their fiber manufacturing plant, and our two on screen experts:\nSujeet Rao, Operational Excellence Fiber Director and Jon Fitz, Technical Sales Support Sr. Manager.\n\n▀▀▀\nReferences: https://ve42.co/FiberRefs\n\nNote: The skin effect explanation is simplified. The full analysis involves the eddy currents' own magnetic fields, which induce further currents, and so on. Here’s an article on the same: https://ve42.co/SkinEffectDerivation\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Juan Benet, Kelcey Steele, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Meekay, meg noah, Michael Krugman, Orlando Bassotto, Parsee Health, Patreon mp22, Paul Peijzel, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Steven, Sweet_Nemo, Tair Aurmont, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n▀▀▀\nCredits\nWriters: Sulli Yost, Henry van Dyck\nProducer and Director: Sulli Yost\nPresenter: Henry van Dyck\nEditors: George Reynolds, Trenton Oliver and Axel Oliver\nAssistant Editor: James Stuart\nIllustrators: Jakub Misiek, Raphael Aubry, Thomas Brizard and Emma Wright\nAnimators: Aleksandrs Loginovs, Alex Drakoulis, Andrew Neet, Andrew Wernette, Domonkos Józsa, Emma Wright, Fabio Albertelli, Rokas Viksraitis and Sulli Yost\nResearchers: Aakash Singh Bagga, Sophia Rose, Callum Cuttle and Gabe Strong\nCamera Operators: Sulli Yost, Aaron Zhizhin, Emilia Gyles and Jesse Chandler\nThumbnail Designers: Abdallah Rabah, Daniel Ellacott\nProduction Team: Anna Milkovic, Glen Griffiths, Jess Bishop-Laggett, Matthew Cavanagh\nExecutive Producers: Derek Muller, Emilia Gyles and Henry van Dyck",
+            "duration": 2072,
+            "year": 2026,
+            "published_at": "2026-10-12T17:11:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/NiCgcUTL9_Q/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "NiCgcUTL9_Q",
+                "url": "https://www.youtube.com/watch?v=NiCgcUTL9_Q",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-j9p3Sn8ROL4",
+            "episode_number": 9,
+            "title": "What is edge dislocation?",
+            "description": "We demonstrated a crystal lattice of atoms using bubbles.",
+            "duration": 71,
+            "year": 2026,
+            "published_at": "2026-10-09T13:00:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/j9p3Sn8ROL4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "j9p3Sn8ROL4",
+                "url": "https://www.youtube.com/watch?v=j9p3Sn8ROL4",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-IHkp5Kq72ro",
+            "episode_number": 10,
+            "title": "How Dangerous Are Non-Stick Pans?",
+            "description": "What happens to your body if you eat Teflon from a non-stick pan?\n\n#pfas \n#foreverchemicals",
+            "duration": 101,
+            "year": 2026,
+            "published_at": "2026-10-01T18:26:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/IHkp5Kq72ro/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "IHkp5Kq72ro",
+                "url": "https://www.youtube.com/watch?v=IHkp5Kq72ro",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-ONAuUyml0yI",
+            "episode_number": 11,
+            "title": "We're trying something new...",
+            "description": "Veritasium's mission has always been to get to the truth - to understand how and why things work the way they do. We love the variety of topics we're able to cover - from the real to the abstract - and the heart of that is always hard science.\n\nBut as our world is getting more complex and interesting, the team keep finding incredible stories that don't quite fit on the main channel. Stories that are less about physics and maths and more about how our society and global systems work; how a change on one side of the world can ripple through society affecting how you and I live our lives.\n\nSo some of the team have been working on a new channel about just that.\n\nThis is @InGeniusOfficial - an element of innovation.\n\nHosted by Latif Nasser\n\nFirst video out now - https://youtu.be/eczB0uUx_k8",
+            "duration": 308,
+            "year": 2026,
+            "published_at": "2026-09-30T19:19:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ONAuUyml0yI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ONAuUyml0yI",
+                "url": "https://www.youtube.com/watch?v=ONAuUyml0yI",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-VKlulHwMxgU",
+            "episode_number": 12,
+            "title": "What happens to these balloons when you open the valve?",
+            "description": "Take a balloon and fill it with lots of air. Take another one and fill it with less air. Now connect the two via a valve. \n\nWhat do you think will happen when you open the valve?",
+            "duration": 94,
+            "year": 2026,
+            "published_at": "2026-09-24T13:00:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/VKlulHwMxgU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "VKlulHwMxgU",
+                "url": "https://www.youtube.com/watch?v=VKlulHwMxgU",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-JsBZOcqZerk",
+            "episode_number": 13,
+            "title": "The Insane Real Engineering of the Nazi Enigma Machine",
+            "description": "How did Bletchley Park's codebreakers crack the \"unbreakable\" enigma? Sponsored by Incogni - use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off your annual subscription.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV \n\nFor the latest science news, and for an exclusive bonus Q&A with the director of this video, sign up to the Veritasium newsletter - https://ve42.co/Newsletter \n\nFor early access to work in progress videos join our patreon https://ve42.co/VePatreon \n\n▀▀▀\n0:00 Who invented Enigma?\n4:16 How did Enigma work?\n10:51 The Secret Spy Mansion\n13:10 The First Codebreakers Who Broke Enigma\n16:45 Trying To Decrypt An Enigma Message\n22:35 Who was Alan Turing?\n26:30 How Enigma’s Flaws Were Exploited\n34:27 Breaking Enigma - The Bombe\n41:39 The Naval Enigma\n44:35 What did Alan Turing do after Bletchley Park? \n\n▀▀▀\nA huge thanks out to Sir Dermot Turing, Jonah Weinbaum, Andrew Fryer, John Pickles, Peter Hoath, Robert Dowell and all of the experts at Bletchley Park & The National Museum of Computing that helped make this video possible!\n\nShout out to Jared Owen for letting us use his 3D model of the Enigma machine! Check out his amazing video: https://youtu.be/ybkkiGtJmkM?si=fNtZF6StWhiIxRtB\n\nBletchley Park is a museum and heritage attraction open daily to visitors. To plan your visit and book tickets, head to: https://www.bletchleypark.org.uk/plan-a-visit/\n\nThe National Museum of Computing at Bletchley Park is an independent charity housing working historic machines. Plan your visit here: https://www.tnmoc.org/plan-your-visit \n\n▀▀▀\nCan you decrypt this unbroken Naval Enigma message? Let us know in the comments!\n\nJCRSAJTGSJEYEXYKKZZSHVUOCTRFRCRPFVYPLKPPLGRHVVBBTBRSXSWXGGTYTVKQNGSCHVGF\n\nUniversal Enigma simulator by Daniel Palloks: https://ve42.co/EnigmaSim\n\n▀▀▀\nReferences: https://ve42.co/BletchleyRefs \n\nVisual References: https://ve42.co/BletchleyVisRefs \n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Juan Benet, Kelcey Steele, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Patreon mp22, Paul Peijzel, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Steven, Sweet_Nemo, Tair Aurmont, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n\n▀▀▀\nWriters: James Moore, Gregor Čavlović, Darius Garewal & Emilia Gyles\nProducer & Director: James Moore\nAdditional Directing: Darius Garewal\nPresenters: Gregor Čavlović & Derek Muller\nEditor: Peter Nelson\nAdditional Editing: James Stuart & Trenton Oliver\nCamera Operators: Rob Newman & Darius Garewal\nAnimators: Emma Wright, Domonkos Józsa, Alex Drakoulis, Andrew Neet, Rokas Vikšraitis & Aleksandrs Loginovs\nIllustrator: Jakub Misiek\nResearchers: Darius Garewal & Gabe Strong\nThumbnail Designers: Abdallah Rabah, Daniel Ellacott & Ben Powell\nProduction Team: Jess Bishop-Laggett, Glen Griffiths, Matthew Cavanagh & Anna Milkovic\nExecutive Producers: Gregor Čavlović, Emilia Gyles, Henry van Dyck & Derek Muller\n\nAdditional video/photos supplied by Getty Images and Storyblocks\nMusic from Epidemic Sound \n& Sprach Zarathustra - Conducted by Philip Milman (https://pmmusic.pro/)",
+            "duration": 2862,
+            "year": 2026,
+            "published_at": "2026-09-21T17:49:57Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JsBZOcqZerk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JsBZOcqZerk",
+                "url": "https://www.youtube.com/watch?v=JsBZOcqZerk",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-hPoJWjJ9Ao8",
+            "episode_number": 14,
+            "title": "Heating A Ball Just By Squeezing It",
+            "description": "How Jupiter heats its moon, just be stretching and squeezing it.",
+            "duration": 66,
+            "year": 2026,
+            "published_at": "2026-09-18T13:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hPoJWjJ9Ao8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hPoJWjJ9Ao8",
+                "url": "https://www.youtube.com/watch?v=hPoJWjJ9Ao8",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-O3a99HNskNk",
+            "episode_number": 15,
+            "title": "The Scariest Chart In Engineering",
+            "description": "Why is the Smith Chart one of the scariest charts in electrical engineering?\n\nWe printed the largest one in the world to explain how it works and why it's so terrifying (to engineers at least).",
+            "duration": 71,
+            "year": 2026,
+            "published_at": "2026-09-10T13:00:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/O3a99HNskNk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "O3a99HNskNk",
+                "url": "https://www.youtube.com/watch?v=O3a99HNskNk",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-oR94cicO7xM",
+            "episode_number": 16,
+            "title": "The Most Dangerous Escalator In Europe",
+            "description": "In 2018 football fans were leaving a stadium in Rome. They boarded an escalator down to the metro. Suddenly the machine sprung a fault.\n\nMultiple safety systems were triggered. One after another. And then the final line failed.\n\nThis is why.",
+            "duration": 77,
+            "year": 2026,
+            "published_at": "2026-09-06T13:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/oR94cicO7xM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "oR94cicO7xM",
+                "url": "https://www.youtube.com/watch?v=oR94cicO7xM",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-F5_G0AHfYhI",
+            "episode_number": 17,
+            "title": "A Physics Professor Bet Me $10,000 I'm Wrong...",
+            "description": "A UCLA Physics Professor bet me $10,000 that my video (https://youtu.be/jyQwgBAaBag) about going downwind faster than the wind was wrong.\n\nHere's how we proved it...",
+            "duration": 91,
+            "year": 2026,
+            "published_at": "2026-09-02T13:00:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/F5_G0AHfYhI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "F5_G0AHfYhI",
+                "url": "https://www.youtube.com/watch?v=F5_G0AHfYhI",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-b3KpFdb1pW8",
+            "episode_number": 18,
+            "title": "We Took $10,000 From @mkbhd's Locked iPhone",
+            "description": "There's a flaw in some virtual wallets.\n\nWe exploited this flaw to steal $10,000 from @mkbhd.\n\nWatch the full video to find out how we did it...",
+            "duration": 49,
+            "year": 2026,
+            "published_at": "2026-08-26T15:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/b3KpFdb1pW8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "b3KpFdb1pW8",
+                "url": "https://www.youtube.com/watch?v=b3KpFdb1pW8",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-5U-V0y-fkSw",
+            "episode_number": 19,
+            "title": "It's impossible to choose a number at random",
+            "description": "In math you can't truly pick things at random because formulas always give the same result.\n\nSo if we can't pick randomly, how do we select anything in math?",
+            "duration": 101,
+            "year": 2026,
+            "published_at": "2026-08-24T13:08:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/5U-V0y-fkSw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "5U-V0y-fkSw",
+                "url": "https://www.youtube.com/watch?v=5U-V0y-fkSw",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-nHAFnH3xRl4",
+            "episode_number": 20,
+            "title": "Could identical twins commit the perfect crime?",
+            "description": "The DNA in twins is (almost) exactly the same. \n\nSo how could a team of forensic scientists tell which twin committed the crime?\n\nThere is a way but it has some issues...",
+            "duration": 68,
+            "year": 2026,
+            "published_at": "2026-08-18T11:33:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nHAFnH3xRl4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nHAFnH3xRl4",
+                "url": "https://www.youtube.com/watch?v=nHAFnH3xRl4",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-J1WoNuemKOg",
+            "episode_number": 21,
+            "title": "We sent a camera to space to film the solar eclipse",
+            "description": "What does an eclipse look like from the edge of space? We travelled to Spain for the 2026 total solar eclipse to find out. Sponsored by 80,000 Hours - Head to http://80000hours.org/veritasium to start planning a career that can help change the world for the better. By joining their newsletter, you’ll get a free copy of their in-depth career guide sent to your inbox.\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter\n\nTo be in with a chance of getting a NASA sticker that went to the edge of space during the eclipse and for early access to work-in-progress videos, join our Patreon https://ve42.co/VePatreon\n\nLast year, we launched Elements of Truth on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here - https://ve42.co/YTDEcl  \nIf you backed us on Kickstarter, don’t worry, your game will ship before any pre-orders are fulfilled.\n\n▀▀▀\n00:00 The 2026 Total Solar Eclipse\n02:00 Why there are more total solar eclipses in the Northern Hemisphere\n03:30 How we get 5 solar eclipses a year\n06:20 Why the Sun turns white only during totality\n09:27 How the eclipse faked an element\n11:10 The weird shadows during the eclipse\n14:06 Shadow band effect\n17:00 Filming the eclipse from space\n▀▀▀\nSpecial thanks to the experts and collaborators who made this video possible: \n\nThe Montana State University NASA Ballooning Team, for working with us on this video and for the incredible footage of the eclipse from the edge of space. \nProject Leads: Angela Des Jardins and Michael Walach \nStudents: Ava Arbogast, Isabel Besel, Ryder Cole, Daniel Graves, Mari Greene, Mikael Savage, Gabriel Sova, Addison Zumwalt\n\nThe Exploratorium Team, for providing their insights and footage from their livestream\n© The Exploratorium\nAll rights reserved. Used and adapted with authorization.\nThe Exploratorium® is a registered trademark of The Exploratorium®.\nhttp://www.exploratorium.edu  \n\nMichael Kirk for taking the time to chat with us and sharing his expertise. \n\nNASA's Goddard Space Flight Center for speaking with us and for sharing details of their WB-57 aircraft eclipse mission.\n\nThe team at @astrumspace for their help and support on this video. Check out their video on how ESA’s Proba-3 mission uses satellites to create artificial eclipses in space and reveal the inner corona for the first time:\nhttps://youtu.be/fv5lJjR6DmQ\n\nAlso, very glad we ran into https://www.youtube.com/@UCyC3HkaEzr7PBNuE2oPvQKg during totality! Check out his channel!\n\n▀▀▀\nReferences: https://ve42.co/EclipseReferences\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Hybrid Minds, Ibby Hadeed, Jeromy Johnson, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Orlando Bassotto, Parsee Health, Paul Peijzel, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Sweet_Nemo, Tj Steyn, Ubiquity Ventures, wolfee\n\n▀▀▀\nCredits\nWriters: Emilia Gyles, Gregor Čavlović and Henry van Dyck,\nProducer and Director: Emilia Gyles, Gregor Čavlović and Henry van Dyck\nPresenter: Emilia Gyles, Gregor Čavlović and Henry van Dyck\nEditors: Peter Nelson and Trenton Oliver \nAssistant Editor: James Stuart\nAnimators: Archie Crofton and Emma Wright \nResearchers: Sophia Rose, Aakash Singh Bagga, Shourya Shrivastava and Gabe Strong\nCamera Operators: Archie Crofton, Emilia Gyles, Gregor Čavlović, Henry van Dyck, James Stuart and Peter Nelson \nThumbnail Designers: Abdallah Rabah, Daniel Ellacott & Ben Powell\nProduction Team: Jess Bishop-Laggett, Glen Griffiths, Matthew Cavanagh, Anna Milkovic, Justin St Laurent and James Dowse\nExecutive Producers: Emilia Gyles, Gregor Čavlović & Henry van Dyck",
+            "duration": 1365,
+            "year": 2026,
+            "published_at": "2026-08-17T14:30:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/J1WoNuemKOg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "J1WoNuemKOg",
+                "url": "https://www.youtube.com/watch?v=J1WoNuemKOg",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-_1G8nrmBKeY",
+            "episode_number": 22,
+            "title": "How do submarines know where they are?",
+            "description": "How does a submarine find its way 600m deep in the ocean?\n\nSurfacing is obviously the easiest way but not when you want to stay hidden.\n\nSo how do a crew balance concealment and pathfinding?",
+            "duration": 91,
+            "year": 2026,
+            "published_at": "2026-08-06T13:00:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_1G8nrmBKeY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_1G8nrmBKeY",
+                "url": "https://www.youtube.com/watch?v=_1G8nrmBKeY",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-wt4p2oalmRY",
+            "episode_number": 23,
+            "title": "Is spider web really stronger than steel?",
+            "description": "Can you really swing from spider silk? Sponsored by Henson Shaving - Head to https://hensonshaving.com/veritasium and use code “veritasium” for 100 free blades with any razor purchase. Just add both the razor and blades to your cart.\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. Pre-order the retail edition here: https://ve42.co/YTSpiderSilk\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nFor weekly science news, and an exclusive Q&A where writer/director Vibhor Pandey discusses the making of this video, sign up to the Veritasium newsletter  - https://ve42.co/Newsletter\n\nFor early access to work-in-progress videos, join our Patreon - https://ve42.co/VePatreon\n\n▀▀▀\n00:00 Could Spider Silk Let You Swing Like Spider-Man?\n00:44 Is Spider Silk Really Stronger Than Steel? \n02:29 Testing Spider Silk's Tensile Strength\n03:48 The Strongest Silk on Earth\n05:34 Spider Silk vs Kevlar vs Steel\n07:37 The Nanostructure Behind Spider Silk's Strength\n08:42 Why We Can't Farm Spiders \n10:16 Engineering Fake Spider Silk\n15:04 From the Silk Road to CRISPR\n21:31 Real-World Uses and the Ultimate Swing Test\n\n▀▀▀\nSpecial thanks to the experts and collaborators who made this video possible:\n\nProfessor Todd Blackledge and the Blackledge Spider Lab at the University of Akron, for welcoming us into the lab, walking us through how spiders make and use silk, and letting us put the real material to the test.\n\nJon Rice and the team at Kraig Biocraft Laboratories, for opening their doors, sharing their transgenic silk, patiently explaining how their engineered silkworms work, and helping make the spider-silk swing possible.\n\nProfessors Keiji Numata, Chris Holland, Sara Goodacre and Greg Holland, for generously sharing their time and expertise in our research conversations helping us understand the extraordinary diversity of spider silks, how they are spun, and how structure, water and chemistry shape their properties.\n\nProfessors Ingi Agnarsson and Thomas Scheibel, for their guidance that helped sharpen our explanation.\n\n▀▀▀\nReferences: https://ve42.co/SpiderSilkRefs\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\n\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Paul Peijzel, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Sweet_Nemo, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n▀▀▀\nWriters - Vibhor Pandey & Henry van Dyck\nProducer & Director - Vibhor Pandey & Henry van Dyck\nPresenters & Narration - Henry van Dyck & Derek Muller\nEditors- Trenton Oliver, Axel Oliver, James Stuart & George Reynolds\nAnimators - Alex Drakoulis, Andrew Neet, Domonkos Józsa, Emma Wright & Fabio Albertelli\nIllustrator - Jakub Misiek\nResearchers - Aakash Singh Bagga, Gabe Strong & Sophia Rose\nCamera Operators: Henry van Dyck, Petr Lebedev, Casper Mebius and Ben Curtis-Dyck\nThumbnail Designers - Abdallah Rabah, Daniel Ellacott & Ben Powell\nProduction Team - Matthew Cavanagh, Jess Bishop-Laggett, Glen Griffiths, Josh Pitt, Luke Lewis, Anna Milkovic & Justin St-Laurent\nExecutive Producers - Henry van Dyck, Emilia Gyles, Casper Mebius & Derek Muller\n\nAdditional video/photos supplied by Getty Images, Pond5 and Storyblocks\nMusic from Epidemic Sound",
+            "duration": 1618,
+            "year": 2026,
+            "published_at": "2026-08-02T13:21:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wt4p2oalmRY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wt4p2oalmRY",
+                "url": "https://www.youtube.com/watch?v=wt4p2oalmRY",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-3HQkVfZ4DNY",
+            "episode_number": 24,
+            "title": "The World's Heaviest Weight",
+            "description": "How do you measure big forces accurately? \n\nBy calibrating your force transducer on the world's biggest weight - 1,000,000 pounds of force. \n\nThis machine ensures planes don't break apart, jets provide required thrust, and rockets make it to their destination.",
+            "duration": 60,
+            "year": 2026,
+            "published_at": "2026-07-30T13:00:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3HQkVfZ4DNY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3HQkVfZ4DNY",
+                "url": "https://www.youtube.com/watch?v=3HQkVfZ4DNY",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-tL9Lw250spc",
+            "episode_number": 25,
+            "title": "Why does every mammal get 1 billion heartbeats in their life?",
+            "description": "The hidden math that governs life. Sponsored by Brilliant - Try Brilliant for free, plus get 20% off an annual Premium subscription at https://brilliant.org/veritasium\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. Pre-order the retail edition here: https://elementsoftruth.game/\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nFor weekly science news, and an exclusive Q&A where writer/director Daniel Leonard discusses the making of this video, sign up to the Veritasium newsletter - https://ve42.co/Newsletter \n\nFor early access to work in progress videos join our Patreon - https://ve42.co/VePatreon \n\n▀▀▀\n0:00 How much LSD should you give an elephant?\n3:09 Metabolic Rate In Animals\n5:27 The Surface Law\n8:04 What is Kleiber’s Law?\n10:49 Why is ¼ everywhere in biology?\n13:33 WBE Theory\n19:53 Every animal has 1,000,000,000 heartbeats\n23:11 Why Humans Live Longer\n24:31 Is it better to live in a city or a small town?\n30:12 Is there really a universal scaling exponent for life?\n\n▀▀▀\nMuch of this video was inspired by Geoffrey West’s book: Scale. Check it out here - https://ve42.co/ScaleBook\n\n▀▀▀\nSpecial thanks to the experts who helped make this video possible:\nBrian Enquist, whose work helped inspire this video, for sharing the story behind WBE theory and helping us make its key assumptions and derivation more accurate.\n\nVan Savage, for the generous and detailed feedback that sharpened our explanation of WBE theory, self-similarity, and the current state of the field.\n\nSteven Strogatz, for the insightful conversations, on-camera contribution, and careful reviews that helped us keep the mathematics clear and the story scientifically honest.\n\nPeter Sheridan Dodds, for helping us understand the objections to WBE theory and the debate over three-quarter-power scaling.\n\nAnd the many other experts who discussed this topic with us as we were developing the script, for their invaluable contributions: Luis Bettencourt, Jayanth Banavar, Aaron Clauset, Juan Rubalcaba, and Douglas Glazier.\n\n▀▀▀\nReferences: https://ve42.co/ScaleRefs\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\n\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Paul Peijzel, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Sweet_Nemo, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n\n▀▀▀\nWriters - Daniel Leonard, Casper Mebius & Derek Muller\nProducer & Director - Daniel Leonard\nPresenters & Narration - Derek Muller & Henry van Dyck\nEditors - Trenton Oliver, Axel Oliver & Jonny Lennard\nAssistant Editor - James Stuart\nAnimators - Alex Drakoulis, Andrew Neet, Domonkos Józsa, Emma Wright & Fabio Albertelli\nIllustrators - Jakub Misiek & Raphael Aubry\nCamera Operator - Chris Anstis\nSimulations - Callum Cuttle & Aakash Singh Bagga\nResearchers - Aakash Singh Bagga, Callum Cuttle & Gabe Strong\nThumbnail Designers - Abdallah Rabah & Daniel Ellacott\nThumbnail Design Direction - Ben Powell\nProduction Team - Jess Bishop-Laggett, Glen Griffiths, Matthew Cavanagh, Luke Lewis, Anna Milkovic & Justin St-Laurent\nExecutive Producers - Casper Mebius & Derek Muller\n\nAdditional video/photos supplied by Getty Images, Pond5 and Storyblocks\nMusic from Epidemic Sound",
+            "duration": 2132,
+            "year": 2026,
+            "published_at": "2026-07-25T17:29:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/tL9Lw250spc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "tL9Lw250spc",
+                "url": "https://www.youtube.com/watch?v=tL9Lw250spc",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-2_VB-oc_pmk",
+            "episode_number": 26,
+            "title": "The Most Controversial Thought Experiment In Physics",
+            "description": "Put a cat in a box with a radioactive atom. Add a radiation detector that triggers the release of poisonous cyanide gas.\n\nSchrödinger's thought experiment was supposed to be a criticism of quantum mechanics and is now one of it's best explainers.\n\nHere's why and what happens to the cat...",
+            "duration": 103,
+            "year": 2026,
+            "published_at": "2026-07-21T15:31:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2_VB-oc_pmk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2_VB-oc_pmk",
+                "url": "https://www.youtube.com/watch?v=2_VB-oc_pmk",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-RmHcX5oVzvs",
+            "episode_number": 27,
+            "title": "Why Waves Travel Faster At The Top",
+            "description": "Why do objects travel with waves?\n\nWe're taught waves only transfer energy, not material, but objects wash ashore all the time.\n\nHow does this work?\n\n#veritasium #science #physics",
+            "duration": 118,
+            "year": 2026,
+            "published_at": "2026-07-17T13:28:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RmHcX5oVzvs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RmHcX5oVzvs",
+                "url": "https://www.youtube.com/watch?v=RmHcX5oVzvs",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-GK2pZ_oVU1o",
+            "episode_number": 28,
+            "title": "The Scariest Chart in Electrical Engineering",
+            "description": "Why is the Smith Chart one of the scariest charts in electrical engineering? Sponsored by Incogni - use code veritasium at https://incogni.com/veritasium to get an exclusive 60% off your annual subscription.\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. Pre-order the retail edition here: https://elementsoftruth.game/\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nFor weekly science news, and an exclusive Q&A where Writer/Director Henry discusses the making of this video, sign up to the Veritasium newsletter - https://ve42.co/Newsletter \n\nFor early access to work in progress videos join our Patreon https://ve42.co/VePatreon \n\n▀▀▀\n0:00 The Scariest Chart In Engineering\n3:24 Standing Waves And Reflections\n7:24 Why does a wave bounce back?\n10:15 How to stop a wave from bouncing back\n17:06 The Smith Chart\n25:53 How To Read The Smith Chart\n30:42 This Circuit Gets Better When You Break It\n35:22 Why were we slow to use it?\n37:06 Is it still useful?\n\n▀▀▀\nA big shout out to Imperial College London for letting us use their screened RF anechoic chamber. In particular, a massive thanks to Prof. Stepan Lucyszyn and Ian Rossuck for helping us set up the demos seen in this video.\n\nAlso special thanks to Zach Star, Dr. Cynthia Furse, Dr James Nagel, and Ralph Gable for their invaluable expertise!\n\nCheck out @zachstar 's video on the Smith Chart here: https://www.youtube.com/watch?v=pXWbdxOAuDs \n\nCheck out @3blue1brown 's video to learn more about transformations and conformal maps: https://www.youtube.com/watch?v=ldxFjLJ3rVY \n\n▀▀▀\nReferences: https://ve42.co/SmithChartsRefs\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Paul Peijzel, Richard Sundvall, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n\n▀▀▀\nWriter, Producer & Director: Henry van Dyck\nPresenter: Henry van Dyck\nEditors: Trenton Oliver, Axel Oliver & Peter Nelson\nAnimators: Emma Wright, Alex Drakoulis, Andrew Neet & Fabio Albertelli\nIllustrator: Jakub Misiek\nResearchers: Darius Garewal & Gabe Strong\nAsst. Editors: James Stuart & Jonny Leonard\nSimulations: Darius Garewal & Henry van Dyck\nCamera/Drone Operators: Robert Newman & Xavier Bussière\nAdditional Writing: Darius Garewal\nThumbnail Designers: Abdallah Rabah & Daniel Ellacott\nProduction Team: Jess Bishop-Laggett, Glen Griffiths, Matthew Cavanagh, Luke Lewis & Anna Milkovic\nExecutive Producers: Casper Mebius\n\nAdditional video/photos supplied by Getty Images and Storyblocks\nMusic from Epidemic Sound",
+            "duration": 2384,
+            "year": 2026,
+            "published_at": "2026-07-14T18:03:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/GK2pZ_oVU1o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "GK2pZ_oVU1o",
+                "url": "https://www.youtube.com/watch?v=GK2pZ_oVU1o",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-kP7l1agsTzQ",
+            "episode_number": 29,
+            "title": "The Google Interview Question Everyone Gets Wrong",
+            "description": "The blender problem. Do you think you know the answer? Comment below!",
+            "duration": 60,
+            "year": 2026,
+            "published_at": "2026-07-13T13:57:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kP7l1agsTzQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kP7l1agsTzQ",
+                "url": "https://www.youtube.com/watch?v=kP7l1agsTzQ",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-h1YeIE0vEIs",
+            "episode_number": 30,
+            "title": "How does light 'know' the shortest path?",
+            "description": "Light is the fastest thing in the universe. \n\nIn order to be this fast it always needs to take the shortest path (as it's speed cannot change).\n\nSo how does it always know what the shortest path is?",
+            "duration": 76,
+            "year": 2026,
+            "published_at": "2026-07-09T13:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/h1YeIE0vEIs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "h1YeIE0vEIs",
+                "url": "https://www.youtube.com/watch?v=h1YeIE0vEIs",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Xhl5TzKZbpw",
+            "episode_number": 31,
+            "title": "AD - Why are plants colder than their surroundings?",
+            "description": "Plants can stay cooler than the air around them, even in full sun. How is that possible? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
+            "duration": 160,
+            "year": 2026,
+            "published_at": "2026-07-07T13:04:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xhl5TzKZbpw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Xhl5TzKZbpw",
+                "url": "https://www.youtube.com/watch?v=Xhl5TzKZbpw",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-dquI8khH1Zk",
+            "episode_number": 32,
+            "title": "AD - Why do I get this spark when I unplug my hair dryer?",
+            "description": "Why does a charger sometimes spark when you unplug it, even when it's switched off at the wall? We partnered with Anker to find out…\n\nPick up your Anker Prime Charger here:\n\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
+            "duration": 142,
+            "year": 2026,
+            "published_at": "2026-06-30T14:00:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dquI8khH1Zk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dquI8khH1Zk",
+                "url": "https://www.youtube.com/watch?v=dquI8khH1Zk",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-uPGBcVCrdg8",
+            "episode_number": 33,
+            "title": "Why do these metronomes sync up?",
+            "description": "Watch what happens when you start a metronome ticking on an unstable platform, out of sync with two others.\n\nSlowly over time, they all sync up. \n\nHow does this happen?",
+            "duration": 73,
+            "year": 2026,
+            "published_at": "2026-06-26T13:00:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uPGBcVCrdg8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uPGBcVCrdg8",
+                "url": "https://www.youtube.com/watch?v=uPGBcVCrdg8",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-mvcesPWvUIc",
+            "episode_number": 34,
+            "title": "We've Been Using The Wrong Science In Court For 50 years",
+            "description": "How accurate is modern forensics? Sponsored by Saily - Get an exclusive 15% discount on Saily data plans! Use code veritasium at checkout. Download the Saily app or go to https://saily.com/veritasium\n\nLast year, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here - https://ve42.co/ForensicsDes\n \nIf you backed us on Kickstarter, don’t worry, your game will ship before any pre-orders are fulfilled. \n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nFor the latest science news, and for an exclusive bonus Q&A with the director of this video, sign up to the Veritasium newsletter - https://ve42.co/Newsletter\n\nFor early access to work-in-progress videos, join our Patreon https://ve42.co/VePatreon\n\nCorrection: At 2:47, we state 96% of cases were declared false, the FBI report found that examiners gave erroneous or exaggerated testimony under oath in 96% of those cases.\n\n▀▀▀\n0:00 The First Forensics Investigation \n1:51 How accurate is hair in forensics?\n3:30 Why Bite Marks Should Never Be Used In Court\n5:22 Blood Spatter Analysis\n8:04 How unique are fingerprints?\n16:33 Is DNA evidence reliable?\n21:38 How can we improve forensics as a science?\n\n▀▀▀\nSpecial thanks to the experts and collaborators who made this video possible: \n\nFor their fantastic insights and time in contributing to this video (in order of appearance) - Dr Mary Bush from the University at Buffalo, John Foster at the University of Greenwich, Dr Itiel Dror, and Professor Turi King. \n\nFor key expertise and consultation on the animations as well as wider research, Professor Denise Syndercombe Court of King’s College London and Dr John Butler of the National Institute for Standards and Technology.\n\nFor their expert contributions to the development and research of the video (in alphabetical order),  Zack Kowalske (@TheScienceDetective), Dr Emmanuel Nsiah Amoako, Professor Nick Scurich, Derek Tremain, Dr Sophie Turfus, Theron Vines, Professor Graham Williams and Jerri Williams.  \n\nFor key inspiration in the making of this video, Forensics: The Anatomy of Crime by Val McDermid, Patented: History of Inventions Podcast by History Hit, Murder Is Her Hobby: Frances Glessner Lee and The Nutshell Studies of Unexplained Death Exhibition at the Smithsonian American Art Museum, deathindiorama.com, and @forensicsprof videos on the Henry Classification System for fingerprint analysis. \n\n\n▀▀▀\n\nReference List: https://ve42.co/ForensicsRefs\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Paul Peijzel, Richard Sundvall, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n▀▀▀\n\nWriters: Sarah Houlton and Gregor Čavlović\nProducer and Director: Sarah Houlton\nPresenter: Gregor Čavlović\nEditors: Trenton Oliver and Axel Oliver\nAssistant Editors: James Stuart and Peter Nelson\nAnimators: Emma Wright, Domonkos Józsa, Alex Drakoulis, Andrew Neet and Fabio Albertelli\nIllustrator: Jakub Misiek\nResearchers: Sophia Rose and Gabe Strong\nDirector of Photography: Richard Ing\nCamera Assistant: Jack Stevenson\nAdditional Camera: Sarah Houlton\nAdditional Writer: Sophia Rose\nThumbnail Designers: Abdallah Rabah, Daniel Ellacott, Patryk Ziolkowski and Ben Powell\nProduction Team: Jess Bishop-Laggett, Glen Griffiths, Matthew Cavanagh, Anna Milkovic and Justin St Laurent\nExecutive Producers: Gregor Čavlović and Casper Mebius\n\nAdditional video/photos supplied by Getty Images and Storyblocks\nMusic from Epidemic Sound",
+            "duration": 1402,
+            "year": 2026,
+            "published_at": "2026-06-22T14:40:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mvcesPWvUIc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mvcesPWvUIc",
+                "url": "https://www.youtube.com/watch?v=mvcesPWvUIc",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-RxIsjweAAdE",
+            "episode_number": 35,
+            "title": "This tiny magnetic blob could change how we treat brain tumors forever...",
+            "description": "Scientists have developed a new way to provide treatment for brain tumours.\n\nCurrently we use chemotherapy, but that's like throwing a grenade at a mosquito, you end up damaging a lot more than you mean to.\n\nThis magnetic blob will help change that.\n\nReferences:\nMicrorobots: https://www.science.org/stoken/author-tokens/ST-3054/full\nhttps://www.nature.com/articles/d41586-025-03754-6\nhttps://www.washingtonpost.com/science/2025/11/19/robot-drugs-side-effects-magnets/ \n\nCatheters: https://www.science.org/doi/full/10.1126/scirobotics.adh0298 \n\nTelesurgery: https://www.science.org/doi/10.1126/scirobotics.ado3187 \nhttps://www.science.org/doi/full/10.1126/scirobotics.adq0192 \n\nElectromagnetic Navigation Systems: https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202310701 \n\nMagnetic Levitation: https://www.youtube.com/watch?v=WT8129liuQc",
+            "duration": 42,
+            "year": 2026,
+            "published_at": "2026-06-18T13:00:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RxIsjweAAdE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RxIsjweAAdE",
+                "url": "https://www.youtube.com/watch?v=RxIsjweAAdE",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-8HBDE-msUjw",
+            "episode_number": 36,
+            "title": "We're 99.9% sure this pattern is true, but no one can prove it",
+            "description": "Do twin primes go on forever? Sponsored by Brilliant - Head to https://brilliant.org/veritasium to try Brilliant’s tutor for free, plus receive 20% off an annual Premium subscription\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV  \n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter \n\nFor early access to work in progress videos join our patreon https://ve42.co/VePatreon\n\n▀▀▀\n\nA huge thank you to Alex Kontorovich, Andrew Granville, James Maynard, Roger Heath-Brown, Dimitris Koukoulopoulos, Debmalya Basak & George Shakan for their invaluable expertise and contributions to this video!\n\n▀▀▀\n0:00 What are twin primes?\n3:08 How To Find Prime Numbers\n6:11 The Sieve of Eratosthenes\n11:26 The Closest We’ve Come To Proving Twin Primes\n15:54 Searching For A Bounded Gap\n18:47 How A Subway Worker Changed The Game\n29:20 Finding An Upper Bound\n32:04 Maynard and Polymath\n36:42 Will we solve the twin prime conjecture?\n\n▀▀▀\nReferences can be found here: https://ve42.co/TwinPrimesRefs \n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, Anton Ragin, armedtoe, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Charles Ian Norman Venn, Daniel Martins, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Jon Jamison, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Paul Peijzel, Richard Sundvall, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n▀▀▀\nWriters: Vibhor Pandey, Casper Mebius and Alex Kontorovich\nProducer & Director: Vibhor Pandey\nPresenters: Derek Muller & Casper Mebius\nEditors: George Reynolds & Trenton Oliver\nCamera Operators: Casper Mebius &  Derek Muller\nAnimators: Emma Wright, Andrew Neet, Alex Drakoulis, Domonkos Józsa & Fabio Albertelli\nIllustrators: Jakub Misiek\nAdditional Editor: James Stuart\nResearchers: Darius Garewal, Gabe Strong, Sophia Rose\nThumbnail Designers: Abdallah Rabah, Ben Powell, Daniel Ellacott & Patryk Ziolkowski\nProduction Team: Jess Bishop-Laggett, Matthew Cavanagh, Anna Milkovich & Josh Pitt\nExecutive Producers: Derek Muller, Casper Mebius & Emily Zhang \n\nAdditional video/photos supplied by Getty Images & Storyblocks\nMusic from Epidemic Sound",
+            "duration": 2490,
+            "year": 2026,
+            "published_at": "2026-06-14T15:18:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8HBDE-msUjw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8HBDE-msUjw",
+                "url": "https://www.youtube.com/watch?v=8HBDE-msUjw",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-2_Z7FB3vfFg",
+            "episode_number": 37,
+            "title": "Zippers are stronger than you think...",
+            "description": "How do zippers work? \n\nWe made a giant one to find out!",
+            "duration": 65,
+            "year": 2026,
+            "published_at": "2026-06-12T13:00:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2_Z7FB3vfFg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2_Z7FB3vfFg",
+                "url": "https://www.youtube.com/watch?v=2_Z7FB3vfFg",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-AUmHqD0lGHo",
+            "episode_number": 38,
+            "title": "How A Random System Can Actually Be Predictable",
+            "description": "The balls in a Galton board fall down randomly. Any time they come to a junction they can take any number of paths and it's almost impossible to accurately predict every ball's trajectory.\n\nHowever, the system as a whole is predictable. \n\nHow can this be? How can random systems actually be predictable?",
+            "duration": 110,
+            "year": 2026,
+            "published_at": "2026-06-08T13:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/AUmHqD0lGHo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "AUmHqD0lGHo",
+                "url": "https://www.youtube.com/watch?v=AUmHqD0lGHo",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-b_SZC8oIsBw",
+            "episode_number": 39,
+            "title": "AD - How do cities control traffic? We partnered with Anker to find out…",
+            "description": "How does a traffic light know when a car is there?\n\nPick up your Anker Prime Charger here:\nhttps://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime",
+            "duration": 79,
+            "year": 2026,
+            "published_at": "2026-06-05T12:36:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/b_SZC8oIsBw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "b_SZC8oIsBw",
+                "url": "https://www.youtube.com/watch?v=b_SZC8oIsBw",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-tz23G_UXCGA",
+            "episode_number": 40,
+            "title": "Something is jamming GPS over Europe. Here's what we found",
+            "description": "Something is disrupting GPS signals across Europe. Sponsored by Ground News. Go to https://ground.news/Ve for 40% off the unlimited Vantage plan. \n\nIn 2025, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here - https://ve42.co/GPSJam\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter\n\n▀▀▀\n0:00 What is jamming Europe’s GPS?\n4:43 How does GPS work?\n10:46 How easy is it to jam GPS?\n12:18 The Hunt To Find The Jammer\n17:12 Who are the possible culprits?\n20:06 The Investigation Goes Public\n23:00 Narrowing In On The Jammer\n25:15 Cosmos 2546\n28:25 A Secret Messaging Service?\n29:19 What happens if we lose GPS?\n\n▀▀▀\nSpecial thanks to the experts and collaborators who made this video possible:\n\nProfessor Todd Humphreys and Dr Zach Clements at the University of Texas at Austin, whose research this story is based on - thank you for sharing your data, your time, and the inside story of the hunt.\n\nRamsey Faragher, Director of the Royal Institute of Navigation, for the brilliant interview, feedback and stories that helped to shape this video.\n\nRichard D. Easton, for helping us understand the history of GPS. \n\nDana Goward, President of the Resilient Navigation and Timing Foundation, for providing context on interference and alternative systems.\n\nRichard Bowden and Luis Enrique Aguado from GMV for sharing their independent work tracing the source of the interference.\n\nBen Watts, for sharing his first-hand experience of GPS jamming and spoofing from the cockpit.\n\nKeepTrack (https://keeptrack.space/) for generously giving us access to their satellite-tracking software, which we used to visualise the search through 15,000 satellites for the culprit. And to GPSWise (https://gpswise.aero/) for kindly providing their software which we used to visualise GPS jamming and spoofing.\n\nBartosz Ciechanowski, whose interactive GPS explainer (https://ciechanow.ski/gps/) was a great resource for research and the basis for one of our technical animations.  Thank you for allowing us to build on your work.\n\n▀▀▀\nReferences:\n\nClements, Z. L., Kriezis, A., & Humphreys, T. E. (2026). Chasing Lightning: Detecting, Characterizing, and Identifying a Powerful Space-Based GNSS Interference  - https://ve42.co/GNSSInterference\n\nThe rest here: https://ve42.co/GPSJammingRefs\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Paul Peijzel, Richard Sundvall, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n\n▀▀▀\nWriter, Producer & Director: Emilia Gyles\nPresenters: Derek Muller & Gregor Čavlović\nEditor: Peter Nelson\nAsst. Editor & Sound Designer: James Stuart\nAnimators: Domonkos Józsa, Emma Wright, Alex Drakoulis & Andrew Neet\nIllustrators: Jakub Misiek & Maria Gusakovich\nStop Motion: Sulli Yost\nResearchers: Aakash Singh Bagga, Sophia Rose & Callum Cuttle\nThumbnail Designers: Abdallah Rabah, Ren Hurley, Ben Powell & Daniel Ellacott\nProduction Team: Jess Bishop-Laggett, Matthew Cavanagh & Anna Milkovic\nExecutive Producers: Casper Mebius, Derek Muller & Gregor Čavlović\n\nAdditional video/photos supplied by Getty Images and Storyblocks\nMusic from Epidemic Sound",
+            "duration": 2057,
+            "year": 2026,
+            "published_at": "2026-06-05T07:09:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/tz23G_UXCGA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "tz23G_UXCGA",
+                "url": "https://www.youtube.com/watch?v=tz23G_UXCGA",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-kS-CGkiPetQ",
+            "episode_number": 41,
+            "title": "Google Maps is unreasonably fast. Let me explain",
+            "description": "The math behind Google Maps. Sponsored by boot.dev - Click this link https://boot.dev/?promo=VERITASIUM and use our code VERITASIUM to get 25% off your first payment for boot.dev. \n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter\n\nFor those curious about the path-count estimate: we estimated the non-backtracking paths NYC→SF, using a sparse spatial network model with mean degree ≈ 2.5 and characteristic length ≈ √N.\n\n▀▀▀\n0:00 What is a ‘shortest path algorithm’?\n3:30 Dijkstra’s 20 Minute Algorithm\n6:30 The First Route Planner\n10:31 A* Search Algorithm\n12:40 Shortest Doesn’t Mean Fastest\n15:08 Road Network Hierarchy\n18:29 Mapping North America - Nested Dissection\n25:17 How do map apps work?\n28:04 Simplicity is prerequisite for reliability\n\n▀▀▀\nCheck out @twoswap's channel for some fantastic videos! \n\nA big thank you to Ben Strasser and Julian Dibbelt who were incredibly gracious with their time and feedback.\n\nThank you to all the experts we interviewed for this video: Aaron Bernstein, Tim Roughgarden, Tomas Rokicki, Jon Kleinberg, Virginia Vassilevska Williams, Peter Sanders, and the team behind the SSSP Barrier Paper: Xinkai Shu, Ran Duan, Xiao Mao, Longhui Yin, Jiayi Mao\n\nFor more information on how you choose A*'s heuristic, check out Polylog's video: https://youtu.be/A60q6dcoCjw?si=5LHOmZ8ZKvR_kLcx\n\nIf you'd like more information on Minecraft's A*, check out RedLogic's video: https://youtu.be/Zg0Cxn8AVZA?si=DyECX4wmeuSb4c1n\n\n▀▀▀\nReferences: https://ve42.co/DijkstraRefs\n\n▀▀▀\nSpecial thanks to our Patreon supporters:\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Chris Brewer, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Moebiusol - Cristian, Orlando Bassotto, Parsee Health, Paul Peijzel, Richard Sundvall, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Tj Steyn, Ubiquity Ventures, Vahe Andonians, wolfee\n\n▀▀▀\nWriters: Sulli Yost\nProducer & Director: Sulli Yost\nPresenter: Henry van Dyck & Derek Muller\nEditor: Jonny Lennard and Trenton Oliver\nAdditional Editor: James Stuart\nCamera Operators: Sulli Yost & Henry van Dyck\nIllustrators: Jakub Misiek & Maria Gusakovich\nAnimators: @twoswap, Andrew Neet, Jonny Lennard, Alex Drakoulis & Fabio Albertelli\nResearchers: Aakash Singh Bagga & Callum Cuttle\nThumbnail Designers: Abdallah Rabah, Ren Hurley, Ben Powell & Daniel Ellacott\nProduction Team: Jess Bishop-Laggett, Glen Griffiths, Matthew Cavanagh & Anna Milkovic\nExecutive Producers: Casper Mebius, Gregor Čavlović & Derek Muller\n\nMap data © OpenStreetMap contributors, available under the Open Database License: https://www.openstreetmap.org/copyright\nAdditional video/photos supplied by Getty Images and Pond5\nMusic from Epidemic Sound",
+            "duration": 1794,
+            "year": 2026,
+            "published_at": "2026-05-30T14:46:43Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kS-CGkiPetQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kS-CGkiPetQ",
+                "url": "https://www.youtube.com/watch?v=kS-CGkiPetQ",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-OgFf_J1CP0g",
+            "episode_number": 42,
+            "title": "How An Infinite Hotel Ran Out Of Room",
+            "description": "If there's a hotel with infinite rooms, could it ever be completely full? \n\nCould you run out of space to put everyone? \n\nThe surprising answer is yes -- this is important to know if you're the manager of the Hilbert Hotel.",
+            "duration": 160,
+            "year": 2026,
+            "published_at": "2026-05-28T13:00:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/OgFf_J1CP0g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "OgFf_J1CP0g",
+                "url": "https://www.youtube.com/watch?v=OgFf_J1CP0g",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-fF32B_sOVHA",
+            "episode_number": 43,
+            "title": "Can you solve the hat riddle?",
+            "description": "You and 3 amigos are buried neck deep in sand in a prison yard.\n\nThe guard says if one of you can guess your own hat colour you can all go free. You know there are two black hats and two white hats and you can only see the hats of the people in front of you.\n\nA minute passes in silence and then one of you shouts out a correct answer.\n\nWho shouted? \n\nA, B, C or D?",
+            "duration": 74,
+            "year": 2026,
+            "published_at": "2026-05-23T13:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fF32B_sOVHA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fF32B_sOVHA",
+                "url": "https://www.youtube.com/watch?v=fF32B_sOVHA",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Xr2yp8JA9LU",
+            "episode_number": 44,
+            "title": "How many batteries would it take to power a human?",
+            "description": "AD How many batteries would it take to power a human? We partnered with @AnkerCharging to find out...\n\nPick up your Anker Prime power bank here: https://ankerfast.club/noagy5\n\n#AnkerTech #Anker #AnkerPrime #Veritasium #Tech",
+            "duration": 105,
+            "year": 2026,
+            "published_at": "2026-05-20T15:04:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xr2yp8JA9LU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Xr2yp8JA9LU",
+                "url": "https://www.youtube.com/watch?v=Xr2yp8JA9LU",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-zXvygWE3Ess",
+            "episode_number": 45,
+            "title": "How Alpha Particles Can Break Computer Chips",
+            "description": "In the 1970s, Intel couldn't work out what was damaging the DRAM on their microchips.\n\nThe cause turned out to be the ceramic that the chip was encased in. It was secretly flipping 1s to 0s.\n\nBut how?",
+            "duration": 127,
+            "year": 2026,
+            "published_at": "2026-05-15T13:01:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zXvygWE3Ess/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zXvygWE3Ess",
+                "url": "https://www.youtube.com/watch?v=zXvygWE3Ess",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-7F4pY8Td9QQ",
+            "episode_number": 46,
+            "title": "The Surprising Genius Of Sewing Machines",
+            "description": "How does a sewing machine work?\n\nThe answer is more genius than you might think.",
+            "duration": 73,
+            "year": 2026,
+            "published_at": "2026-05-10T13:00:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7F4pY8Td9QQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7F4pY8Td9QQ",
+                "url": "https://www.youtube.com/watch?v=7F4pY8Td9QQ",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-SVTPv4sI_Jc",
+            "episode_number": 47,
+            "title": "The CIA's new tech doesn't make sense",
+            "description": "Is the CIA’s Ghost Murmur technology real? Sponsored by Ground News. Go to https://ground.news/Ve for 40% off the unlimited Vantage plan. \n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV\n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter\n\n▀▀▀\nA huge thanks to Patrick Maletinsky at the University of Basel and Jan Jeske at the Fraunhofer Institute for their insights into NV magnetometry.\n\nLikewise, thank you to Brad Roth at Oakland University, John Wikswo at Vanderbilt University, and Bob Fagaly at the IEEE for their input on the history and constraints of magnetometry.\n\nThank you to Douglas London, CIA Senior Operations Officer (Rtd), for his input on the story. His book, The Recruiter, can be found here - https://ve42.co/Recruiter\n\nA big thanks to Herbert Lin at Stanford University and Emma Briant at the University of Notre Dame for their knowledge on deception and propaganda tactics. \n\n▀▀▀\nReferences\n\nExclusive | 'Ghost Murmur' via the New York Post\nExclusive | Trump confirms CIA 'Ghost Murmur' tool via the New York Post\nBéchard, D. E. (2026). Scientists question CIA’s claim of long-range heartbeat detection. Scientific American. \nRoth, B. J. (2023). Biomagnetism: The First Sixty Years. Sensors\nDoherty, M. W. et al. (2013). The nitrogen-vacancy colour centre in diamond. Physics Reports.\n\"Quantum Diamond Sensing: The Surprising Power of NV Centers | Ron Walsworth\" by 632nm Podcast on YouTube\n\"Ronald Walsworth - “Quantum Diamond Sensors\" by Stanford Physics on YouTube\nArai, K. et al. (2022). Millimetre-scale magnetocardiography of living rats with thoracotomy. Communications Physics.\n\nAdditional sources available here: Ghost Murmur Video - https://ve42.co/ReferencesGhost\n\nImages & Video:\nhttps://www.youtube.com/watch?v=WmXuaHX3QeY\nhttps://www.youtube.com/watch?v=DkmHh6eZoZs\nhttps://www.youtube.com/watch?v=vrRJimixWEc\n\n▀▀▀\nSpecial thanks to our Patreon supporters: \n\nAdam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Cartier, Chris Brewer, Daniel Martins, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Orlando Bassotto, Parsee Health, Paul Peijzel, Richard Sundvall, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Tj Steyn, Ubiquity Ventures, Vahe Andonians, William Yoon, wolfee\n\n▀▀▀\nWriter: Gregor Čavlović\nProducer and Director: Gregor Čavlović\nPresenter: Gregor Čavlović\nEditors: Jack Saxon and James Stuart\nAdditional Editor: James Horsley\nAnimators: Emma Wright, Fabio Albertelli, and Domonkos Józsa\nResearchers: Aakash Singh Bagga\nProduction Team: Jess Bishop-Laggett, Glen Griffiths, Matthew Cavanagh & Anna Milkovic \nExecutive producer: Casper Mebius\n\nThumbnail contributions by Abdallah Rabah, Ren Hurley, and Ben Powell\n\nAdditional video/photos supplied by Getty Images and Pond5\nMusic from Epidemic Sound",
+            "duration": 1278,
+            "year": 2026,
+            "published_at": "2026-05-03T19:26:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/SVTPv4sI_Jc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "SVTPv4sI_Jc",
+                "url": "https://www.youtube.com/watch?v=SVTPv4sI_Jc",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-ksn5yrsC3Wg",
+            "episode_number": 48,
+            "title": "The Crystal That Could Destroy All Medicine",
+            "description": "The crystals that wiped out an HIV medication, almost overnight. Thanks to SoFi for sponsoring the video! Click here to sign-up for SoFi Checking and Savings: https://sofi.com/ve \n\nIn 2025, we launched the Elements of Truth game on Kickstarter and were thrilled by the response. We’re now in the final stages of production, with Kickstarter rewards shipping soon. If you missed the campaign, you can now pre-order the retail edition through our new website here -https://ve42.co/PolymorphsDesc\n\nIf you’re looking for a molecular modelling kit, try Snatoms, a kit I invented where the atoms snap together magnetically - https://ve42.co/SnatomsV    \n\nSign up for the Veritasium newsletter for weekly science updates - https://ve42.co/Newsletter \n\n▀▀▀\nCheck out the excellent video by Reactions here: https://youtu.be/PccOwGEbtQU?si=NOpmaulDcoq6Kif-\n\nThis video was a huge collaborative effort!\n\nSpecial thanks to…\n\nDr Andreas Kafizas for all his help with the Silver and Tin demonstrations, and staying up for those 14 hours with us monitoring the timelapse! As well as Conrad Duncan and the team at Imperial College London. \n\n@ChrisYoungCooks for teaching Casper how to temper chocolate and @jameshoffmann and the team for letting us take over their studio; we had a great day!\n\nMany thanks to Professor Adam Matzger, Professor Katharina Fromm and Professor Mike Zaworotko for taking the time to talk to us. \n\nAlso thank you to Dr. William McVicker and the British Institute of Organ Studies and Chris at Luciteria Science for helping us source our grey and white tin samples. \n\nCorrection: 11:45 should say carbon-nitrogen triple bond not double bond\n\n▀▀▀\n0:00 The Disease Infecting Miracle Medicine\n4:20 An Explosive Feud\n10:05 How The Same Compound Can Behave Two Different Ways\n13:18 Polymorphs Of Chocolate\n19:51 Why Ritonavir Stopped Working\n22:57 The Tin Pest\n27:28 Disappearing Polymorphs\n30:20 Is Everything Polymorphic?\n\n▀▀▀\nReferences can be found here - https://ve42.co/PolymorphRefs \n\n▀▀▀\nSpecial thanks to our Patreon supporters: Adam Foreman, Albert Wenger, Alex Porter, Alexander Tamas, André Powell, Anton Ragin, Balkrishna Heroor, Bertrand Serlet, Blake Byers, Bruce, Bryan Ackermann, Cartier, Chris Brewer, Daniel Martins, Data Don, Dave Kircher, David Johnston, David Tseng, EJ Alexandra, Evgeny Skvortsov, Garrett Mueller, Gnare, gpoly, Hayden Christensen, Hong Thai Le, Ibby Hadeed, Jeromy Johnson, Jesse Brandsoy, Juan Benet, Kelcey Steele, KeyWestr, Kyi, Lee Redden, Marinus Kuivenhoven, Mark Heising, Martin Paull, Meekay, meg noah, Michael Krugman, Orlando Bassotto, Parsee Health, Paul Peijzel, Richard Sundvall, Robson, Sam Lutfi, Shalva Bukia, Sinan Taifour, Tj Steyn, Ubiquity Ventures, Vahe Andonians, William Yoon, wolfee\n\n▀▀▀\nWriters: Gabe Strong & Casper Mebius\nProducer and Director: Gabe Strong\nPresenters: Derek Muller & Casper Mebius\nEditor: Trenton Oliver\nAssistant Editor: James Stuart\nArt Director: Mathias Hawk\nIllustrators: Jakub Misiek, Emma Wright, Maria Gusakovich & Raphael Aubry \nAnimators: Fabio Albertelli, Andrew Neet, Emma Wright & Alex Drakoulis\nResearcher: Sophia Rose\nAdditional Research: Callum Cuttle\nCamera Operators: Rob Newman, Casper Mebius, Gabe Strong, Callum Cuttle & Derek Muller\nVoice-over Artist: Gregor Čavlović\nThumbnail Designers: Abdallah Rabah, Ren Hurley & Ben Powell\nProduction Team: Jess Bishop-Laggett, Glen Griffiths, Mathew Cavanagh & Anna Milkovic\nExecutive Producers: Derek Muller, Casper Mebius & Gregor Čavlović\nAdditional video/photos supplied by Getty Images & Storyblocks\nMusic from Epidemic Sound",
+            "duration": 2005,
+            "year": 2026,
+            "published_at": "2026-04-29T20:30:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ksn5yrsC3Wg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ksn5yrsC3Wg",
+                "url": "https://www.youtube.com/watch?v=ksn5yrsC3Wg",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-iRach9lpIlg",
+            "episode_number": 49,
+            "title": "Wombats Poop Cubes",
+            "description": "Wombat feces are surprisingly... cube shaped. \n\nThey are the only known animal to produce this kind of poop leading scientists to work out this strange phenomenon.",
+            "duration": 46,
+            "year": 2026,
+            "published_at": "2026-04-27T13:18:46Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iRach9lpIlg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iRach9lpIlg",
+                "url": "https://www.youtube.com/watch?v=iRach9lpIlg",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-MVFd0qFB9TE",
+            "episode_number": 50,
+            "title": "Why don't trains make *that* sound anymore?",
+            "description": "If you've been on a modern train you won't have noticed that classic \"clickety-clack\" sound anymore. This is because train tracks are now one continuous piece of rail without gaps. \n\nBut one long piece of metal without room to expand when hot is dangerous.\n\nThus, engineers had to come up with an ingenious solution involving... jagged rocks?",
+            "duration": 63,
+            "year": 2026,
+            "published_at": "2026-04-24T13:00:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/MVFd0qFB9TE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "MVFd0qFB9TE",
+                "url": "https://www.youtube.com/watch?v=MVFd0qFB9TE",
+                "channel_id": "UCHnyfMqiRRG1u-2MsSQLbXA",
+                "channel_title": "Veritasium",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        }
+    ]
+}

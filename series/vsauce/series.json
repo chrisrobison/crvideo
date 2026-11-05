@@ -1,0 +1,1472 @@
+{
+    "schema_version": 1,
+    "id": "vsauce",
+    "title": "Vsauce",
+    "description": "Our World is Amazing. \n\n",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_mpYedipdXUXCKkwjQEeFrepFlDHZ0LiczqWeKyG0YmJvA=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+        "channel_url": "https://www.youtube.com/channel/UC6nSFpj9HTCZ5t-N3Rm3-HA",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-sU3DYEJ1br0",
+            "episode_number": 1,
+            "title": "Ghost Tape Number 10",
+            "description": "",
+            "duration": 158,
+            "year": 2026,
+            "published_at": "2026-11-03T21:43:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sU3DYEJ1br0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sU3DYEJ1br0",
+                "url": "https://www.youtube.com/watch?v=sU3DYEJ1br0",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-YYu76d3leR8",
+            "episode_number": 2,
+            "title": "Thunder Tubes",
+            "description": "happy halloween nerds",
+            "duration": 62,
+            "year": 2026,
+            "published_at": "2026-10-30T22:52:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YYu76d3leR8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YYu76d3leR8",
+                "url": "https://www.youtube.com/watch?v=YYu76d3leR8",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-gNVj-FIxoe4",
+            "episode_number": 3,
+            "title": "We Used To Think The Sun Was Cold",
+            "description": "https://www.curiositybox.com/\n\nimages:\n\nNASA solar imagery: https://svs.gsfc.nasa.gov/13641/\nsolar kitchen: https://commons.wikimedia.org/wiki/File:Solar_kitchen_auroville.png\nCrescent Dunes Solar Energy Project: https://commons.wikimedia.org/wiki/File:Crescent_Dunes_Solar_December_2014.JPG\nmelting an iron nail: https://commons.wikimedia.org/wiki/File:Melting_an_iron_nail.webm",
+            "duration": 180,
+            "year": 2026,
+            "published_at": "2026-10-27T23:49:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/gNVj-FIxoe4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "gNVj-FIxoe4",
+                "url": "https://www.youtube.com/watch?v=gNVj-FIxoe4",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-1k1w1Q8vr5g",
+            "episode_number": 4,
+            "title": "The Magic Octagon",
+            "description": "",
+            "duration": 168,
+            "year": 2026,
+            "published_at": "2026-10-22T21:19:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1k1w1Q8vr5g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1k1w1Q8vr5g",
+                "url": "https://www.youtube.com/watch?v=1k1w1Q8vr5g",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-2McJ8QpzSWo",
+            "episode_number": 5,
+            "title": "The Disturbing Sound The FBI Used At Waco",
+            "description": "the audio is played at 28:18 here: https://www.c-span.org/program/senate-committee/texas-cult-standoff-day-2/52898\n\nsource of artist's recreation of waco: https://www.roddickinson.net/pages/waco/project-synopsis.php",
+            "duration": 178,
+            "year": 2026,
+            "published_at": "2026-10-19T23:51:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2McJ8QpzSWo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2McJ8QpzSWo",
+                "url": "https://www.youtube.com/watch?v=2McJ8QpzSWo",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-YIrFd4uVwd4",
+            "episode_number": 6,
+            "title": "POV: I'm Your Trip Sitter",
+            "description": "",
+            "duration": 83,
+            "year": 2026,
+            "published_at": "2026-10-16T20:10:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YIrFd4uVwd4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YIrFd4uVwd4",
+                "url": "https://www.youtube.com/watch?v=YIrFd4uVwd4",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Gf_5iqKPbxY",
+            "episode_number": 7,
+            "title": "A Spooky Mathematical Coincidence",
+            "description": "some of my favorite Curiosity Box items (and one NEW one!) are now available individually in our shop 👉 https://www.curiositybox.com/collections/all",
+            "duration": 110,
+            "year": 2026,
+            "published_at": "2026-10-10T16:56:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gf_5iqKPbxY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Gf_5iqKPbxY",
+                "url": "https://www.youtube.com/watch?v=Gf_5iqKPbxY",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-C45inxl6U10",
+            "episode_number": 8,
+            "title": "The Biggest Hug",
+            "description": "",
+            "duration": 173,
+            "year": 2026,
+            "published_at": "2026-10-08T00:03:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/C45inxl6U10/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "C45inxl6U10",
+                "url": "https://www.youtube.com/watch?v=C45inxl6U10",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Pnwuw5UyU0s",
+            "episode_number": 9,
+            "title": "Making My Perfect Pencil",
+            "description": "",
+            "duration": 124,
+            "year": 2026,
+            "published_at": "2026-10-02T23:18:58Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Pnwuw5UyU0s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Pnwuw5UyU0s",
+                "url": "https://www.youtube.com/watch?v=Pnwuw5UyU0s",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-kO1ASsAuc1Y",
+            "episode_number": 10,
+            "title": "The Ruler Of The Universe",
+            "description": "",
+            "duration": 152,
+            "year": 2026,
+            "published_at": "2026-09-29T23:17:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kO1ASsAuc1Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kO1ASsAuc1Y",
+                "url": "https://www.youtube.com/watch?v=kO1ASsAuc1Y",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-V6HRAcwFyec",
+            "episode_number": 11,
+            "title": "How To Fix ROCK HARD Brown Sugar",
+            "description": "",
+            "duration": 61,
+            "year": 2026,
+            "published_at": "2026-09-22T21:42:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/V6HRAcwFyec/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "V6HRAcwFyec",
+                "url": "https://www.youtube.com/watch?v=V6HRAcwFyec",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Fob38Jo9F_k",
+            "episode_number": 12,
+            "title": "The Ontological Status of Phenylalanine In Sugar Free Sodas",
+            "description": "",
+            "duration": 146,
+            "year": 2026,
+            "published_at": "2026-09-20T16:14:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Fob38Jo9F_k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Fob38Jo9F_k",
+                "url": "https://www.youtube.com/watch?v=Fob38Jo9F_k",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-4SKpHDjf6_Q",
+            "episode_number": 13,
+            "title": "Who Said The First Bad Word On The Moon?",
+            "description": "",
+            "duration": 136,
+            "year": 2026,
+            "published_at": "2026-09-16T18:43:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4SKpHDjf6_Q/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4SKpHDjf6_Q",
+                "url": "https://www.youtube.com/watch?v=4SKpHDjf6_Q",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Yhg-DtVUO4A",
+            "episode_number": 14,
+            "title": "The Ambitrope Coin",
+            "description": "https://www.curiositybox.com/",
+            "duration": 80,
+            "year": 2026,
+            "published_at": "2026-08-27T23:02:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Yhg-DtVUO4A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Yhg-DtVUO4A",
+                "url": "https://www.youtube.com/watch?v=Yhg-DtVUO4A",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-J9Y8TG7luec",
+            "episode_number": 15,
+            "title": "Audio Palindromes",
+            "description": "",
+            "duration": 66,
+            "year": 2026,
+            "published_at": "2026-08-26T01:03:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/J9Y8TG7luec/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "J9Y8TG7luec",
+                "url": "https://www.youtube.com/watch?v=J9Y8TG7luec",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-i0mqdRGYgbU",
+            "episode_number": 16,
+            "title": "The Singularity Disc",
+            "description": "Watch @SteveMould  talk about the design of the Singularity Disc: https://www.youtube.com/watch?v=ti2qiU_JTUQ\n\nGet your own: https://www.metmo.co.uk/collections/metmo-singularity",
+            "duration": 130,
+            "year": 2026,
+            "published_at": "2026-08-22T21:51:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/i0mqdRGYgbU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "i0mqdRGYgbU",
+                "url": "https://www.youtube.com/watch?v=i0mqdRGYgbU",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-dG7pemDgwmc",
+            "episode_number": 17,
+            "title": "How Many Letters Are In The Answer?",
+            "description": "",
+            "duration": 130,
+            "year": 2026,
+            "published_at": "2026-08-21T00:44:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dG7pemDgwmc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dG7pemDgwmc",
+                "url": "https://www.youtube.com/watch?v=dG7pemDgwmc",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-axILrr1GgMs",
+            "episode_number": 18,
+            "title": "Some Obscure Sorrows",
+            "description": "",
+            "duration": 156,
+            "year": 2026,
+            "published_at": "2026-08-17T22:44:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/axILrr1GgMs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "axILrr1GgMs",
+                "url": "https://www.youtube.com/watch?v=axILrr1GgMs",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-moKQ4klRARw",
+            "episode_number": 19,
+            "title": "I Built A \"Swing Thing\"",
+            "description": "",
+            "duration": 63,
+            "year": 2026,
+            "published_at": "2026-08-14T20:56:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/moKQ4klRARw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "moKQ4klRARw",
+                "url": "https://www.youtube.com/watch?v=moKQ4klRARw",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-rPmypttutJk",
+            "episode_number": 20,
+            "title": "Can I Crack This Lock?",
+            "description": "",
+            "duration": 142,
+            "year": 2026,
+            "published_at": "2026-08-12T22:06:49Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/rPmypttutJk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "rPmypttutJk",
+                "url": "https://www.youtube.com/watch?v=rPmypttutJk",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-nAA_4TxqWTE",
+            "episode_number": 21,
+            "title": "What You See When You Look Away",
+            "description": "https://www.curiositybox.com/\n#opticalillusion #afterimage #perception #books #oldbooks #library #1800s #spiritualism #ghosts #vision #colorvision #psychology #mystery #research",
+            "duration": 180,
+            "year": 2026,
+            "published_at": "2026-08-10T21:55:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nAA_4TxqWTE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nAA_4TxqWTE",
+                "url": "https://www.youtube.com/watch?v=nAA_4TxqWTE",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-4DaETxhoAxg",
+            "episode_number": 22,
+            "title": "One Dimensional Balls",
+            "description": "",
+            "duration": 162,
+            "year": 2026,
+            "published_at": "2026-08-05T23:42:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4DaETxhoAxg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4DaETxhoAxg",
+                "url": "https://www.youtube.com/watch?v=4DaETxhoAxg",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-laSCmjoYQdM",
+            "episode_number": 23,
+            "title": "This Is Not Yellow",
+            "description": "manual & unchanging white balance, ISO, and shutter speed.",
+            "duration": 43,
+            "year": 2026,
+            "published_at": "2026-08-03T20:47:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/laSCmjoYQdM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "laSCmjoYQdM",
+                "url": "https://www.youtube.com/watch?v=laSCmjoYQdM",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-y-TQq6sQ4Z0",
+            "episode_number": 24,
+            "title": "Butt Head Doublers",
+            "description": "",
+            "duration": 143,
+            "year": 2026,
+            "published_at": "2026-07-29T00:47:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/y-TQq6sQ4Z0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "y-TQq6sQ4Z0",
+                "url": "https://www.youtube.com/watch?v=y-TQq6sQ4Z0",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-cDotce_yZAI",
+            "episode_number": 25,
+            "title": "The Hockney–Falco Thesis",
+            "description": "https://www.curiositybox.com",
+            "duration": 161,
+            "year": 2026,
+            "published_at": "2026-07-25T23:47:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cDotce_yZAI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cDotce_yZAI",
+                "url": "https://www.youtube.com/watch?v=cDotce_yZAI",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-QbbYXZHwTdw",
+            "episode_number": 26,
+            "title": "I Just Committed NOT A Crime",
+            "description": "@HassanKhadair",
+            "duration": 156,
+            "year": 2026,
+            "published_at": "2026-07-23T22:14:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/QbbYXZHwTdw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "QbbYXZHwTdw",
+                "url": "https://www.youtube.com/watch?v=QbbYXZHwTdw",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-EupTKqL3f1E",
+            "episode_number": 27,
+            "title": "Only One English Word Has This Property",
+            "description": "",
+            "duration": 61,
+            "year": 2026,
+            "published_at": "2026-07-17T04:52:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/EupTKqL3f1E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "EupTKqL3f1E",
+                "url": "https://www.youtube.com/watch?v=EupTKqL3f1E",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-l5aVdFu9ZQI",
+            "episode_number": 28,
+            "title": "My Best Friend Wrote A Book!",
+            "description": "\"Abby Offsides\" by Anna McCallie",
+            "duration": 172,
+            "year": 2026,
+            "published_at": "2026-07-09T01:43:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/l5aVdFu9ZQI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "l5aVdFu9ZQI",
+                "url": "https://www.youtube.com/watch?v=l5aVdFu9ZQI",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-dyzzvenwOgc",
+            "episode_number": 29,
+            "title": "The Vista Paradox",
+            "description": "",
+            "duration": 169,
+            "year": 2026,
+            "published_at": "2026-07-07T04:31:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dyzzvenwOgc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dyzzvenwOgc",
+                "url": "https://www.youtube.com/watch?v=dyzzvenwOgc",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-P1vOlK_Ccfk",
+            "episode_number": 30,
+            "title": "I'm Full Of Bones. ... Or Am I?",
+            "description": "https://www.curiositybox.com/",
+            "duration": 83,
+            "year": 2026,
+            "published_at": "2026-07-02T04:54:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/P1vOlK_Ccfk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "P1vOlK_Ccfk",
+                "url": "https://www.youtube.com/watch?v=P1vOlK_Ccfk",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-jIwsHATFc9M",
+            "episode_number": 31,
+            "title": "My Dad Ranking",
+            "description": "",
+            "duration": 94,
+            "year": 2026,
+            "published_at": "2026-07-01T02:31:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/jIwsHATFc9M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "jIwsHATFc9M",
+                "url": "https://www.youtube.com/watch?v=jIwsHATFc9M",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-pd3r93I5DNw",
+            "episode_number": 32,
+            "title": "EGG DICE",
+            "description": "https://www.curiositybox.com",
+            "duration": 65,
+            "year": 2026,
+            "published_at": "2026-04-17T17:55:59Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pd3r93I5DNw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pd3r93I5DNw",
+                "url": "https://www.youtube.com/watch?v=pd3r93I5DNw",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-vPwGmFUAr88",
+            "episode_number": 33,
+            "title": "How Many People Lived Before History?",
+            "description": "",
+            "duration": 75,
+            "year": 2026,
+            "published_at": "2026-03-20T19:38:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vPwGmFUAr88/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vPwGmFUAr88",
+                "url": "https://www.youtube.com/watch?v=vPwGmFUAr88",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-hqSL5V9yXBM",
+            "episode_number": 34,
+            "title": "When You Sleep In Socks And Imagine An Icositetrachoron",
+            "description": "song: \"Philadelphia\" by @jakechudnow",
+            "duration": 21,
+            "year": 2026,
+            "published_at": "2026-03-15T21:16:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hqSL5V9yXBM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hqSL5V9yXBM",
+                "url": "https://www.youtube.com/watch?v=hqSL5V9yXBM",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt--UgtKlbzers",
+            "episode_number": 35,
+            "title": "I Found A Wild Ambigram!",
+            "description": "",
+            "duration": 96,
+            "year": 2026,
+            "published_at": "2026-03-13T22:59:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-UgtKlbzers/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-UgtKlbzers",
+                "url": "https://www.youtube.com/watch?v=-UgtKlbzers",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-_Nr4mvdkEVw",
+            "episode_number": 36,
+            "title": "An Illusion You Can Hug",
+            "description": "https://www.curiositybox.com",
+            "duration": 78,
+            "year": 2026,
+            "published_at": "2026-03-09T23:03:52Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_Nr4mvdkEVw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_Nr4mvdkEVw",
+                "url": "https://www.youtube.com/watch?v=_Nr4mvdkEVw",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-2qOya17le0A",
+            "episode_number": 37,
+            "title": "Album Art Origins",
+            "description": "",
+            "duration": 64,
+            "year": 2025,
+            "published_at": "2025-12-22T19:56:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2qOya17le0A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2qOya17le0A",
+                "url": "https://www.youtube.com/watch?v=2qOya17le0A",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-PNbgHdDQ1fc",
+            "episode_number": 38,
+            "title": "The Dynamic Ebbinghaus Illusion",
+            "description": "",
+            "duration": 126,
+            "year": 2025,
+            "published_at": "2025-12-19T01:52:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PNbgHdDQ1fc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PNbgHdDQ1fc",
+                "url": "https://www.youtube.com/watch?v=PNbgHdDQ1fc",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-cdu6sOgI9Dc",
+            "episode_number": 39,
+            "title": "My Weirdest Dice",
+            "description": "",
+            "duration": 84,
+            "year": 2025,
+            "published_at": "2025-12-16T21:57:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cdu6sOgI9Dc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cdu6sOgI9Dc",
+                "url": "https://www.youtube.com/watch?v=cdu6sOgI9Dc",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-7MfvZuCXVMQ",
+            "episode_number": 40,
+            "title": "The Official Blue Berry of North Carolina",
+            "description": "",
+            "duration": 164,
+            "year": 2025,
+            "published_at": "2025-12-12T22:15:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7MfvZuCXVMQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7MfvZuCXVMQ",
+                "url": "https://www.youtube.com/watch?v=7MfvZuCXVMQ",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-UrM6ugyzeC8",
+            "episode_number": 41,
+            "title": "Would You Like A TRIPLE Entendre?",
+            "description": "",
+            "duration": 62,
+            "year": 2025,
+            "published_at": "2025-12-10T21:32:46Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UrM6ugyzeC8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UrM6ugyzeC8",
+                "url": "https://www.youtube.com/watch?v=UrM6ugyzeC8",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-ti8ZdImveB0",
+            "episode_number": 42,
+            "title": "The 852655 Mystery",
+            "description": "https://inqfactory.com/poison",
+            "duration": 106,
+            "year": 2025,
+            "published_at": "2025-12-09T00:09:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ti8ZdImveB0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ti8ZdImveB0",
+                "url": "https://www.youtube.com/watch?v=ti8ZdImveB0",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-4HbYUB1J1io",
+            "episode_number": 43,
+            "title": "2 Inertia Tricks",
+            "description": "",
+            "duration": 66,
+            "year": 2025,
+            "published_at": "2025-12-05T20:35:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4HbYUB1J1io/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4HbYUB1J1io",
+                "url": "https://www.youtube.com/watch?v=4HbYUB1J1io",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Avr5K6tX1x4",
+            "episode_number": 44,
+            "title": "We Recreated The Oldest Surviving Globe",
+            "description": "The globe is now available on its own in our shop! 👉https://www.curiositybox.com/products/erdapfel-coasters\n\nAlso, https://www.curiositybox.com/pages/closest-approach-to-uranus",
+            "duration": 122,
+            "year": 2025,
+            "published_at": "2025-12-04T03:11:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Avr5K6tX1x4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Avr5K6tX1x4",
+                "url": "https://www.youtube.com/watch?v=Avr5K6tX1x4",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-za2isHAgefY",
+            "episode_number": 45,
+            "title": "Only Using Words That Begin With \"A\"",
+            "description": "",
+            "duration": 107,
+            "year": 2025,
+            "published_at": "2025-12-01T20:11:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/za2isHAgefY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "za2isHAgefY",
+                "url": "https://www.youtube.com/watch?v=za2isHAgefY",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Oa3k7RLZCUE",
+            "episode_number": 46,
+            "title": "The Kennedy Coincidences",
+            "description": "🎙️@TheRestIsScience 🎙️\nhttps://linktr.ee/therestisscience",
+            "duration": 104,
+            "year": 2025,
+            "published_at": "2025-11-25T20:41:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Oa3k7RLZCUE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Oa3k7RLZCUE",
+                "url": "https://www.youtube.com/watch?v=Oa3k7RLZCUE",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-QaFTwJPKLuo",
+            "episode_number": 47,
+            "title": "A 2D Shadow Of A 3D Shadow Of A 4D Hypercube",
+            "description": "song: \"Transition 2\" by Jake Chudnow\n\n#geometry #hypercube #fourthdimension #Shadow #zometool #math #2D #3D #4D #model",
+            "duration": 12,
+            "year": 2025,
+            "published_at": "2025-11-21T22:16:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/QaFTwJPKLuo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "QaFTwJPKLuo",
+                "url": "https://www.youtube.com/watch?v=QaFTwJPKLuo",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-543gNct7rXc",
+            "episode_number": 48,
+            "title": "The Ultimate Desert Island Book 🔥",
+            "description": "The book is now in our shop! 👉 https://www.curiositybox.com/products/robinson-crusoe-desert-island-edition\n\nsong: \"yo\" by @jakechudnow \n\nIsland footage by WalkingKooka on wikicommons",
+            "duration": 75,
+            "year": 2025,
+            "published_at": "2025-11-19T14:57:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/543gNct7rXc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "543gNct7rXc",
+                "url": "https://www.youtube.com/watch?v=543gNct7rXc",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Qpv89g-861M",
+            "episode_number": 49,
+            "title": "Lashyknobongymofsilliatshelf",
+            "description": "kangaroo words 🦘\n\n#langauge #words #synonyms #antonyms #reading #meaning #writing",
+            "duration": 103,
+            "year": 2025,
+            "published_at": "2025-11-17T23:17:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qpv89g-861M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Qpv89g-861M",
+                "url": "https://www.youtube.com/watch?v=Qpv89g-861M",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-qUALUK3hXu0",
+            "episode_number": 50,
+            "title": "A Cosmic Coincidence",
+            "description": "",
+            "duration": 49,
+            "year": 2025,
+            "published_at": "2025-11-13T23:13:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qUALUK3hXu0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qUALUK3hXu0",
+                "url": "https://www.youtube.com/watch?v=qUALUK3hXu0",
+                "channel_id": "UC6nSFpj9HTCZ5t-N3Rm3-HA",
+                "channel_title": "Vsauce",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        }
+    ]
+}

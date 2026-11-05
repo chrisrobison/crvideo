@@ -9,19 +9,21 @@
   color-scheme:dark;
   --bg:#080b12; --panel:#0f1420; --lane:#121a29; --cell:#1a2338; --cell-hover:#26345a;
   --cell-now:#1d3a6b; --border:#243049; --text:#eef2f8; --muted:#8e9ab0; --accent:#ffcc33; --live:#ff4b4b;
-  --chan-w:220px;
+  --chan-w:220px; --lane-w:7200px;
 }
 *{box-sizing:border-box}
+html,body{height:100%}
 html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{display:flex;flex-direction:column}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:left}
 :focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 
-.top{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--border)}
+.top{flex:0 0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;border-bottom:1px solid var(--border)}
 .brand{font-weight:800;letter-spacing:.04em;text-transform:uppercase;font-size:14px;color:var(--muted)}
 .brand b{color:var(--accent)}
 .clock{font-variant-numeric:tabular-nums;font-weight:700;font-size:20px}
 
-.preview{display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:24px;padding:20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0d1322,var(--bg))}
+.preview{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:24px;padding:20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0d1322,var(--bg))}
 .screen{position:relative;aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden;cursor:pointer;box-shadow:0 0 0 1px var(--border)}
 .screen video{width:100%;height:100%;object-fit:contain;display:block}
 .screen .badge{position:absolute;top:10px;left:10px;background:var(--live);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;padding:3px 7px;border-radius:4px}
@@ -46,14 +48,18 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .watch{align-self:flex-start;margin-top:6px;background:var(--accent);color:#14100a;font-weight:800;padding:10px 16px;border-radius:6px}
 .watch:hover{filter:brightness(1.08)}
 
-.grid{position:relative;padding:0 0 40px}
-.ruler,.row{display:grid;grid-template-columns:var(--chan-w) minmax(0,1fr)}
-.ruler{position:sticky;top:0;z-index:2;background:var(--bg);border-bottom:1px solid var(--border);height:38px}
-.ruler .day{padding:10px 20px;color:var(--muted);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+/* The grid is its own scroll container (both axes) so the sticky ruler
+   (top) and sticky channel column (left) can stick relative to it, and so
+   the time axis -- wider than any viewport, see --lane-w -- scrolls
+   horizontally without taking the whole page with it. */
+.grid{flex:1 1 auto;min-height:0;overflow:auto;position:relative;padding:0 0 40px}
+.ruler{display:grid;grid-template-columns:var(--chan-w) var(--lane-w);width:max-content;position:sticky;top:0;z-index:3;background:var(--bg);border-bottom:1px solid var(--border);height:38px}
+.ruler .day{position:sticky;left:0;z-index:4;padding:10px 20px;color:var(--muted);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.06em;background:var(--bg)}
 .ticks{position:relative}
 .ticks span{position:absolute;top:10px;padding-left:8px;border-left:1px solid var(--border);height:28px;font-weight:700;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
-.row{height:64px;border-bottom:1px solid var(--border)}
-.chan{display:flex;align-items:center;gap:10px;padding:0 14px 0 20px;background:var(--panel);min-width:0}
+.row{border-bottom:1px solid var(--border)}
+.row-main{display:grid;grid-template-columns:var(--chan-w) var(--lane-w);width:max-content;height:64px}
+.chan{position:sticky;left:0;z-index:2;display:flex;align-items:center;gap:10px;padding:0 14px 0 20px;background:var(--panel);min-width:0}
 .chan .num{color:var(--accent);font-weight:800;font-size:18px;min-width:1.6em;font-variant-numeric:tabular-nums}
 .chan img{height:30px;max-width:56px;object-fit:contain}
 .chan .name{font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -71,6 +77,21 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .nowline{position:absolute;top:0;bottom:0;width:2px;background:var(--live);z-index:1;pointer-events:none}
 .empty{padding:40px 20px;color:var(--muted)}
 
+/* A future timeslot's "detailed accounting" -- sticks just right of the
+   (always-visible) channel label regardless of scroll position, rather
+   than living wherever its timeslot happens to have scrolled to. Never
+   tunes the channel; it's purely informational (see the click handling
+   in the script -- only the "now" cell or the channel button itself
+   opens the channel). */
+.row-detail{display:none;position:sticky;left:var(--chan-w);z-index:2;width:min(560px,calc(100vw - var(--chan-w) - 24px));margin:10px 14px 16px;padding:14px 40px 14px 14px;background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.4)}
+.row.expanded .row-detail{display:block}
+.row-detail .thumb{display:block;width:160px;max-width:40%;border-radius:6px;float:left;margin:0 12px 8px 0}
+.row-detail h3{margin:0 0 6px;font-size:16px;line-height:1.3}
+.row-detail .meta{color:var(--muted);font-size:13px;margin-bottom:8px;font-variant-numeric:tabular-nums}
+.row-detail p{margin:0;color:#c3cbd9;font-size:14px;line-height:1.5}
+.row-detail .close{position:absolute;top:8px;right:8px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:16px;border-radius:5px}
+.row-detail .close:hover{background:var(--cell);color:var(--text)}
+
 @media (max-width:900px){
   .preview{grid-template-columns:1fr;gap:14px;padding:16px}
   :root{--chan-w:150px}
@@ -82,6 +103,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   .chan .name{display:none}
   .chan img{max-width:44px}
   .ruler .day{padding:10px 16px}
+  .row-detail{width:min(420px,calc(100vw - var(--chan-w) - 16px))}
 }
 </style>
 </head>
@@ -121,6 +143,13 @@ import {
 } from "./broadcast.js";
 
 const SLOT = 1800;
+// How much of the schedule the grid shows at once -- scroll sideways to
+// browse further into it. 24h covers two full cycles of a 12-hour
+// repeating lineup, so a scroll all the way across shows the lineup
+// looping back to where it started.
+const HORIZON = 24 * 3600;
+const PX_PER_SLOT = 150; // width of one 30-minute tick
+const PX_PER_SEC = PX_PER_SLOT / SLOT;
 const FOCUS_KEY = "crvideo:guide-focus";
 const $ = (id) => document.getElementById(id);
 const el = (tag, cls, text) => {
@@ -133,7 +162,7 @@ const el = (tag, cls, text) => {
 let channels = [];
 let focused = null;
 let windowStart = 0;
-let span = 0;
+const span = HORIZON;
 let nextBoundary = Infinity;
 const openWindows = new Map();
 
@@ -158,29 +187,49 @@ function openChannel(id) {
   else location.href = url;
 }
 
-function spanFor(width) {
-  return width < 600 ? 3600 : width < 1100 ? 5400 : 7200;
-}
-
 /** Start of the current local half hour. */
 function halfHourStart(t) {
   const tz = new Date(t * 1000).getTimezoneOffset() * 60;
   return Math.floor((t - tz) / SLOT) * SLOT + tz;
 }
 
-const pct = (t) => `${((t - windowStart) / span) * 100}%`;
+const pxLeft = (t) => (t - windowStart) * PX_PER_SEC;
+
+/** A published occurrence's `id` (see channels/publish/src/
+ *  ProgrammingCompiler.php) is always the episode's own raw id (e.g.
+ *  "yt-xxx"), but a series-sourced catalog.json indexes its episodes as
+ *  "<seriesId>:<episodeId>" (see catalog-resolver.js, for collision
+ *  resistance across series). A flat, non-series catalog item's id
+ *  matches directly. Try the direct key first, then fall back to a
+ *  suffix match so series-sourced programs can still show a description/
+ *  year/creator/thumbnail instead of silently coming up empty. */
+function findCatalogItem(catalog, id) {
+  const direct = catalog.get(id);
+  if (direct) return direct;
+  const suffix = `:${id}`;
+  for (const item of catalog.values()) {
+    if (typeof item.id === "string" && item.id.endsWith(suffix)) return item;
+  }
+  return null;
+}
 
 function renderGrid() {
   const t = now();
+  const gridEl = $("grid");
+
+  // Re-anchoring the horizon (only happens roughly once per HORIZON, when
+  // "now" finally scrolls past the end of what's currently loaded) would
+  // otherwise silently reset anyone's horizontal scroll back to the start.
+  // Preserve the absolute instant they were looking at instead.
+  const anchorAbs = windowStart ? windowStart + gridEl.scrollLeft / PX_PER_SEC : null;
   windowStart = halfHourStart(t);
-  span = spanFor(innerWidth);
   const until = windowStart + span;
 
   const ticks = $("ticks");
   ticks.replaceChildren();
   for (let s = windowStart; s < until; s += SLOT) {
     const tick = el("span", null, clock(s));
-    tick.style.left = pct(s);
+    tick.style.left = `${pxLeft(s)}px`;
     ticks.append(tick);
   }
 
@@ -194,39 +243,50 @@ function renderGrid() {
     row.dataset.id = ch.id;
     row.classList.toggle("focused", ch.id === focused?.id);
 
+    const main = el("div", "row-main");
+
     const chan = el("button", "chan");
     chan.setAttribute("aria-label", `Channel ${ch.number ?? ""} ${ch.name}`.replace(/\s+/g, " "));
     if (ch.number != null) chan.append(el("span", "num", String(ch.number)));
     if (ch.logo) { const img = el("img"); img.src = ch.logo; img.alt = ""; chan.append(img); }
     chan.append(el("span", "name", ch.name));
     chan.addEventListener("click", () => openChannel(ch.id));
-    row.append(chan);
+    main.append(chan);
 
+    const detail = el("div", "row-detail");
     const lane = el("div", "lane");
     for (const a of airings(ch.timeline, windowStart, until)) {
       const left = Math.max(a.startsAt, windowStart);
       const right = Math.min(a.endsAt, until);
-      if (a.startsAt <= t && t < a.endsAt) nextBoundary = Math.min(nextBoundary, a.endsAt);
+      const isNow = a.startsAt <= t && t < a.endsAt;
+      if (isNow) nextBoundary = Math.min(nextBoundary, a.endsAt);
       if (!a.playable) {
         const gap = el("div", "gap");
-        gap.style.left = pct(left);
-        gap.style.width = `${((right - left) / span) * 100}%`;
+        gap.style.left = `${pxLeft(left)}px`;
+        gap.style.width = `${(right - left) * PX_PER_SEC}px`;
         lane.append(gap);
         continue;
       }
       const cell = el("button", "prog");
-      cell.style.left = `calc(${pct(left)} + 2px)`;
-      cell.style.width = `calc(${((right - left) / span) * 100}% - 4px)`;
-      cell.classList.toggle("now", a.startsAt <= t && t < a.endsAt);
+      cell.style.left = `${pxLeft(left) + 2}px`;
+      cell.style.width = `${(right - left) * PX_PER_SEC - 4}px`;
+      cell.classList.toggle("now", isNow);
       cell.classList.toggle("cut", a.startsAt < windowStart);
       cell.title = `${a.title}\n${clock(a.startsAt)} – ${clock(a.endsAt)}`;
       cell.tabIndex = -1;
       cell.append(el("span", "t", a.title), el("span", "s", `${clock(a.startsAt)} – ${clock(a.endsAt)}`));
-      cell.addEventListener("click", () => openChannel(ch.id));
+      // The "now" cell (or the channel button/number) tunes the channel.
+      // Any other -- future -- timeslot just expands this row with a
+      // detailed accounting of that episode; it never changes the channel.
+      cell.addEventListener("click", () => {
+        if (isNow) openChannel(ch.id);
+        else toggleDetail(row, detail, ch, a);
+      });
       lane.append(cell);
     }
     lane.append(el("div", "nowline"));
-    row.append(lane);
+    main.append(lane);
+    row.append(main, detail);
 
     row.addEventListener("mouseenter", () => hoverFocus(ch));
     row.addEventListener("focusin", () => setFocus(ch));
@@ -234,12 +294,54 @@ function renderGrid() {
   }
 
   if (hadFocus) rows.querySelector(`.row[data-id="${CSS.escape(hadFocus)}"] .chan`)?.focus();
+  gridEl.scrollLeft = anchorAbs != null ? Math.max(0, (anchorAbs - windowStart) * PX_PER_SEC) : 0;
   placeNowLines();
 }
 
 function placeNowLines() {
-  const left = pct(now());
+  const left = `${pxLeft(now())}px`;
   for (const line of document.querySelectorAll(".nowline")) line.style.left = left;
+}
+
+/** Expands/collapses a row's detail card for a given future airing.
+ *  Clicking the same already-expanded timeslot again collapses it;
+ *  clicking a different timeslot in the same row swaps the content.
+ *  Never calls openChannel() -- that's the whole point. */
+async function toggleDetail(row, detailEl, ch, a) {
+  const key = String(a.startsAt);
+  if (row.dataset.expanded === key) {
+    row.classList.remove("expanded");
+    delete row.dataset.expanded;
+    return;
+  }
+  row.dataset.expanded = key;
+  row.classList.add("expanded");
+
+  const close = el("button", "close", "✕");
+  close.setAttribute("aria-label", "Close details");
+  close.addEventListener("click", () => {
+    row.classList.remove("expanded");
+    delete row.dataset.expanded;
+  });
+
+  detailEl.replaceChildren(close, el("p", null, "Loading…"));
+
+  const item = await loadCatalog(ch).then((c) => findCatalogItem(c, a.id)).catch(() => null);
+  if (row.dataset.expanded !== key) return; // moved on before this resolved
+
+  detailEl.replaceChildren(close);
+  if (item?.thumbnail_url) {
+    const img = el("img", "thumb");
+    img.src = item.thumbnail_url;
+    img.alt = "";
+    detailEl.append(img);
+  }
+  detailEl.append(el("h3", null, a.title));
+  const metaParts = [`${clock(a.startsAt)} – ${clock(a.endsAt)}`];
+  if (item?.year) metaParts.push(String(item.year));
+  if (item?.creator) metaParts.push(item.creator);
+  detailEl.append(el("div", "meta", metaParts.join(" · ")));
+  detailEl.append(el("p", null, item ? plainText(item.description) || "No description available." : "No details available for this episode."));
 }
 
 let hoverTimer = 0;
@@ -279,7 +381,7 @@ async function renderPreview() {
   $("pMeta").textContent = "";
   $("pDesc").textContent = a.playable ? "" : ch.description;
   if (!a.playable) return;
-  const item = (await loadCatalog(ch)).get(a.id);
+  const item = findCatalogItem(await loadCatalog(ch), a.id);
   if (focused !== ch || preview.airing?.startsAt !== a.startsAt || !item) return;
   $("pMeta").textContent = [item.year, item.creator].filter(Boolean).join(" · ");
   $("pDesc").textContent = plainText(item.description);
@@ -297,7 +399,7 @@ function updateProgress() {
 function everySecond() {
   const t = now();
   $("clock").textContent = clock(t);
-  if (t >= windowStart + SLOT || t >= nextBoundary) renderGrid();
+  if (t >= nextBoundary || t >= windowStart + span) renderGrid();
   else placeNowLines();
   updateProgress();
 }
@@ -312,12 +414,9 @@ $("rows").addEventListener("keydown", (e) => {
 });
 $("screen").addEventListener("click", () => focused && openChannel(focused.id));
 $("pWatch").addEventListener("click", () => focused && openChannel(focused.id));
-let lastSpan = 0;
-addEventListener("resize", () => {
-  if (spanFor(innerWidth) !== lastSpan) { lastSpan = spanFor(innerWidth); renderGrid(); }
-});
 
 async function init() {
+  document.documentElement.style.setProperty("--lane-w", `${HORIZON * PX_PER_SEC}px`);
   await syncClock();
   $("clock").textContent = clock(now());
   let list;
@@ -337,7 +436,6 @@ async function init() {
 
   let saved = null;
   try { saved = localStorage.getItem(FOCUS_KEY); } catch { /* optional */ }
-  lastSpan = spanFor(innerWidth);
   $("preview").hidden = false;
   setFocus(channels.find((c) => c.id === saved) || channels[0]);
   renderGrid();
