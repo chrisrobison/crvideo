@@ -1,0 +1,2922 @@
+{
+  "schema_version": 1,
+  "id": "retro-technology",
+  "title": "The Computer Chronicles",
+  "description": "The classic PBS television series on personal computing and technology (1983-2002), from the Internet Archive -- a weekly look at the machines that were about to change everyday life.",
+  "creator": "Stewart Cheifet Productions / PBS",
+  "year": null,
+  "thumbnail_url": null,
+  "logo_url": null,
+  "source": {
+    "provider": "internet_archive",
+    "query": "collection:(computerchronicles)",
+    "collection": "computerchronicles"
+  },
+  "rotation": {
+    "mode": "sequential",
+    "loop": true
+  },
+  "episodes": [
+    {
+      "id": "ia-CC517_commodore_64",
+      "episode_number": 1,
+      "title": "Commodore 64",
+      "description": "The Commodore 64 was the first computer for many families. This program looks at what you can do with the famous C-64. Demonstrations include The Wine Steward, Skate or Die, Strike Fleet, the Koala Pad, Master Composer, Tetris, and Berkeley Software's GEOS. Includes a visit to a Commodore Owners Users Group meeting and an interview with Max Toy, president of Commodore. Originally broadcast in 1988. Copyright 1988 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1711.65,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC517_commodore_64",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC517_commodore_64",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC517_commodore_64/CC517_commodore_64.mp4",
+        "page_url": "https://archive.org/details/CC517_commodore_64",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "commodore",
+          "C-64",
+          "GEOS"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-GaryKild",
+      "episode_number": 2,
+      "title": "Gary Kildall Special",
+      "description": "A profile on computer pioneer Gary Kildall and the important contributions he made to the PC industry including the true story on how IBM ended up using MS-DOS rather than CP/M. Kildall developed CP/M, the first personal computer operating system. He was also a co-host on the early Computer Chronicles series. Includes comments by Gordon Eubanks, Symantec; Tom Rolander, DRI; Tim Bajarin, Creative Strategies; Lee Lorenzen, DRI; Jacqui Morby, TA Associates; Alan Cooper, CP/M applications developer. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1681.08,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/GaryKild",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "GaryKild",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/GaryKild/GaryKild.mp4",
+        "page_url": "https://archive.org/details/GaryKild",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "subtitled_movies",
+          "moviesandfilms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 2001",
+          "Episode year: 1995",
+          "Operating systems: CP/M, the first operating system",
+          "CD-ROM",
+          "Companies: IBM",
+          "Companies: Apple"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC501_hypercard",
+      "episode_number": 3,
+      "title": "Hypercard",
+      "description": "An introduction to Apple's Hypercard. Guests include Apple Fellow and Hypercard creator Bill Atkinson, Hypercard senior engineer Dan Winkler, author of \"The Complete Hypercard Handbook\" Danny Goodman, and Robert Stein, Publisher of Voyager Company. Demonstrations include Hypercard 1.0, Complete Car Cost Guide, Focal Point, Laserstacks, and National Galllery of Art. Originally broadcast in 1987. Copyright 1987 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1611.02,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC501_hypercard",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC501_hypercard",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC501_hypercard/CC501_hypercard.mp4",
+        "page_url": "https://archive.org/details/CC501_hypercard",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "hypercard",
+          "apple",
+          "bill atkinson"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-TheMacin1985",
+      "episode_number": 4,
+      "title": "The Macintosh Computer",
+      "description": "An in-depth look at the early Apple Macintosh computer, available software and hardware add-ons. Originally broadcast in 1985. Guests: Joanna Hoffman, Apple; Bob Foster, Telos Software; Lee Lorenzen, Digital Research; Ben Wiseman, InfoCorp; Gary Kildall, DRI; Larry Tesler, AppleProducts/Demos: Apple Macintosh, MacProject, FileVision, GEM DrawJazz. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1773.31,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/TheMacin1985",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "TheMacin1985",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/TheMacin1985/TheMacin1985.mp4",
+        "page_url": "https://archive.org/details/TheMacin1985",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "macintosh",
+          "apple",
+          "jobs"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1984_4",
+      "episode_number": 5,
+      "title": "Computer Games",
+      "description": "Computers are creating an entirely new platform for playing games, between humans or between humans and computers.Guests: Trip Hawkins, Electronic Arts; Bill Budge, Game Designer; Chris Crawford, Atari; Steve Kitchen, ActivisionProducts/Demos: Pinball Construction Set, One on One, Space Shuttle, Excaliber, Larry Bird Basketball. Originally broadcast in September 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1732.8,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1984_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1984_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1984_4/Computer1984_4.mp4",
+        "page_url": "https://archive.org/details/Computer1984_4",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984",
+          "computer games",
+          "pinball",
+          "space",
+          "activation",
+          "atari",
+          "hawkins",
+          "budge"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Amigaand1985",
+      "episode_number": 6,
+      "title": "Amiga and Atari",
+      "description": "How much computer can you get at the bottom end of the market - comparison between the Commodore Amiga and the Atari 520ST.Guests: Rick Geiger, Commodore; Tim Mott, Electronic Arts; Bryan Kerr, Atari; Jim Tittsler, Atari; Lewis Moore, Home Computing; George Morrow, Morrow Computing; Gary Kildall, Digital Research; Tim Bajarin, Creative StrategiesProducts/Demos: Atari 800, Commodore 64, Amiga IBM PC Emulator, Commodore Amiga, Atari 520, STNEO Paint. Originally broadcast in December 1985. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1758.81,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Amigaand1985",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Amigaand1985",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Amigaand1985/Amigaand1985.mp4",
+        "page_url": "https://archive.org/details/Amigaand1985",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1985",
+          "Television Programs",
+          "Computers: History",
+          "amiga",
+          "atari"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-virtualreali",
+      "episode_number": 7,
+      "title": "Virtual Reality",
+      "description": "Virtual reality started out as a science fiction concept in the early 1950s. Now, VR has become a kind of holy grail - lots of promises and claims, few results delivered. This program looks at the state of virtual reality. Demonstrations include the Talking Glove, AutoDesk's Cyberspace project, the Virtual Hand, GestureGlove, CyberGlove, CyberCAD, Virtus Corporation's WalkThrough. Also a visit to the Virtual Reality Showcase at the Software Development Conference in Santa Clara, California. Originally broadcast in 1992. Copyright 1992 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1619.11,
+      "year": 1992,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/virtualreali",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "virtualreali",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/virtualreali/virtualreali.mp4",
+        "page_url": "https://archive.org/details/virtualreali",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "VRML",
+          "cyberspace",
+          "VR",
+          "AutoCAD"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC605_apple_ii_forever",
+      "episode_number": 8,
+      "title": "Apple II Forever",
+      "description": "Today they're called \"mac heads\", but way back in the 1980's, Apple users were in love with the Apple II. Despite the introduction of the Mac in 1984, the Apple II continued to have its devoted fans. This program looks at the Apple II culture during the early Mac era. Included are the Apple IIc+, the Apple II-GS, and a rare Apple I. Guests include John Sculley and Gary Kildall. Software demonstrations are of Math Blaster, Paintworks Gold, and Microsoft Bookshelf. Also a look at the newest Macintosh at the time, the Mac IIx. Originally broadcast in 1988. Copyright 1988 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1719.21,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC605_apple_ii_forever",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC605_apple_ii_forever",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC605_apple_ii_forever/CC605_apple_ii_forever.mp4",
+        "page_url": "https://archive.org/details/CC605_apple_ii_forever",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "apple",
+          "macintosh",
+          "sculley"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-amiga3000",
+      "episode_number": 9,
+      "title": "Amiga 3000",
+      "description": "For fans of the Commodore Amiga, the introduction of the new Amiga 3000 was big news, even though the price tag was nearly $4,000. This program looked at the new Amiga computer and new third party appplications. Demonstrations include the Amiga 3000, the Amiga 2500, the AmigaVision authoring system, The Animation Studio, and the Video Toaster from NewTek. Also includes a visit to FAUG, the First Amiga Users Group, in Palo Alto. Guests include Paul Montgomery, Tim Jenison, Lou Wallace, and Hedley Davis. Originally broadcast in 1988. Copyright 1988 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1749.79,
+      "year": 1988,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/amiga3000",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "amiga3000",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/amiga3000/amiga3000.mp4",
+        "page_url": "https://archive.org/details/amiga3000",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1988",
+          "Television Programs",
+          "Computers: History",
+          "amiga",
+          "commodore",
+          "video toaster"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-UNIX1985",
+      "episode_number": 10,
+      "title": "UNIX",
+      "description": "AT&T's computer operating system is threatening to take over IBM's MS-DOS dominance.Guests: John Mashey, Bell Labs; Mark Sobell, Author; Bill Joy, Sun Microsystems; Doug Hartman, Hewlett Packard; Mike Denney, Basis; Gary Kildall, DRIProducts/Demos: File It, HP Integral PC, UNIX. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1691.71,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/UNIX1985",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "UNIX1985",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/UNIX1985/UNIX1985.mp4",
+        "page_url": "https://archive.org/details/UNIX1985",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1985"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-BillGate99",
+      "episode_number": 11,
+      "title": "Bill Gates Profile",
+      "description": "An up close and personal profile of Microsoft chairman Bill Gates. Includes comments by John Gage, Sun Microsystems; David Kirkpatrick, Fortune Magazine; Tony Perkins, Red Herring; Mitchell Kertzman, Liberate Technologies; Alex Vieux, Dasar. Originally broadcast in 1998. Copyright 1998 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1775.84,
+      "year": 1999,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/BillGate99",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "BillGate99",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/BillGate99/BillGate99.mp4",
+        "page_url": "https://archive.org/details/BillGate99",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1998",
+          "Television Programs",
+          "Computers: History",
+          "bill gates",
+          "microsoft"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC1024_artificial_intelligence",
+      "episode_number": 12,
+      "title": "Artificial Intelligence",
+      "description": "An early look at artificial Intelligence. Guests includes Edward Feigenbaum of Stanford University, Nils Nilsson of the AI Center at SRI International, Tom Kehler of Intellegenetics, Herb Lechner of SRI, and John McCarthy of Stanford. Featured demonstrations include Inferential Knowledge Engineering and the programming language LISP. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1694.64,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC1024_artificial_intelligence",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC1024_artificial_intelligence",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC1024_artificial_intelligence/CC1024_artificial_intelligence.mp4",
+        "page_url": "https://archive.org/details/CC1024_artificial_intelligence",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "artificial intelligence",
+          "expert systems",
+          "knowledge engineering"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-DVD1011999",
+      "episode_number": 13,
+      "title": "DVD  101",
+      "description": "New computers are coming out with DVD drives built in. Do you need a DVD drive? We'll show you why this new format is great and how you can upgrade your old PC to use this new technology. Originally broadcast in October, 1999. Copyright 1999 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1515.92,
+      "year": 1999,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/DVD1011999",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "DVD1011999",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/DVD1011999/DVD1011999.mp4",
+        "page_url": "https://archive.org/details/DVD1011999",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 2000",
+          "Companies: Sony",
+          "Companies: Panasonic",
+          "DVD"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Japanese1985",
+      "episode_number": 14,
+      "title": "Japanese PC's",
+      "description": "A review of where major Japanese technology companies are in the PC hardware and software markets. Shot in Japan.Guests: Katsuro Miyakoda, Microcomputer Magazine; Yukio Mizuno, NEC; Kay Nishi, ASCII; Hitoshi Tanaka, Ampere; Susumu Shinbori, Sony; Michael Miller, Popular Computing; Christopher Mead, High Tech Review.Products/Demos: MSX, Fujitsu Portable, Sony CD-ROM, CIC Handwriter, Ampere WS-1, Epson Wrist Computer. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1688.73,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Japanese1985",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Japanese1985",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Japanese1985/Japanese1985.mp4",
+        "page_url": "https://archive.org/details/Japanese1985",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1985"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-LowEndCo1985",
+      "episode_number": 15,
+      "title": "Low End Computers",
+      "description": "A consumer's guide to the most popular low-cost home computers.Guests: Jack Tramiel, Atari; Leonard Tramiel, Atari; Frank Leonardi, Commodore; Gary Kildall, Digital ResearchProducts/Demos: Commodore Laptop, Commodore 128, Commodore Amiga, Atari ST 512. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1776.3,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/LowEndCo1985",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "LowEndCo1985",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/LowEndCo1985/LowEndCo1985.mp4",
+        "page_url": "https://archive.org/details/LowEndCo1985",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1985"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-SmartTV95-p1",
+      "episode_number": 16,
+      "title": "Smart TV (Part 1)",
+      "description": "As the computer and the television began to merge, we started seeing intelligent TV sets. This program looks at some examples. Demonstrations include the TVModem from En Technology, the Kayak set top box from HP, MicroWare Systems' DAVID (Digital Audio Video Interactive Decoder), the new cable modem from Intel, and the new MPEG (Moving Picture Experts Group) standard for encoding full motion video on a computer. Guests include Avram Miller of Intel and Arthur Orduna of Microware Systems. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1571.87,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/SmartTV95",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "SmartTV95",
+        "part_index": 1,
+        "part_count": 2,
+        "url": "https://archive.org/download/SmartTV95/SmartTV95.mp4",
+        "page_url": "https://archive.org/details/SmartTV95",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "set top box",
+          "cable modem",
+          "cybercast"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-SmartTV95-p2",
+      "episode_number": 17,
+      "title": "Smart TV (Part 2)",
+      "description": "As the computer and the television began to merge, we started seeing intelligent TV sets. This program looks at some examples. Demonstrations include the TVModem from En Technology, the Kayak set top box from HP, MicroWare Systems' DAVID (Digital Audio Video Interactive Decoder), the new cable modem from Intel, and the new MPEG (Moving Picture Experts Group) standard for encoding full motion video on a computer. Guests include Avram Miller of Intel and Arthur Orduna of Microware Systems. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1.8,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/SmartTV95",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "SmartTV95",
+        "part_index": 2,
+        "part_count": 2,
+        "url": "https://archive.org/download/SmartTV95/SmartTV95_256kb.mp4",
+        "page_url": "https://archive.org/details/SmartTV95",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "set top box",
+          "cable modem",
+          "cybercast"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC1301_windows_95-p1",
+      "episode_number": 18,
+      "title": "Windows 95 (Part 1)",
+      "description": "It was the biggest ever launch of a software product with stores opening at midnight and buyers around the world waiting to get their hands on... an operating system! It was Windows 95. This show looks at the hoopla surrounding the launch of Windows 95, the product itself, and several Windows 95 add-on products including Microsoft Office, Viking RAM Chips, Uninstaller, Trispectives Professional, and The Hive. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1622.52,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC1301_windows_95",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC1301_windows_95",
+        "part_index": 1,
+        "part_count": 2,
+        "url": "https://archive.org/download/CC1301_windows_95/CC1301_windows_95.mp4",
+        "page_url": "https://archive.org/details/CC1301_windows_95",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "windows",
+          "microsoft",
+          "operating systems"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC1301_windows_95-p2",
+      "episode_number": 19,
+      "title": "Windows 95 (Part 2)",
+      "description": "It was the biggest ever launch of a software product with stores opening at midnight and buyers around the world waiting to get their hands on... an operating system! It was Windows 95. This show looks at the hoopla surrounding the launch of Windows 95, the product itself, and several Windows 95 add-on products including Microsoft Office, Viking RAM Chips, Uninstaller, Trispectives Professional, and The Hive. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1545.38,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC1301_windows_95",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC1301_windows_95",
+        "part_index": 2,
+        "part_count": 2,
+        "url": "https://archive.org/download/CC1301_windows_95/cc1301_windows95.mp4",
+        "page_url": "https://archive.org/details/CC1301_windows_95",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "windows",
+          "microsoft",
+          "operating systems"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Operatin1984",
+      "episode_number": 20,
+      "title": "Operating Systems",
+      "description": "A review of competing operating systems and their affect on software development.Guests: Gary Kildall, SRI; Tony Fanning, Hewlett Packard; Jean Yates, Yates Ventures; Bruce Tognizinni, Apple; Herb Lechner, SRIProducts/Demos: CP/MUNIXXenix, MS/DOS, Apple IIe & AppleTalk. Originally broadcast in March 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1732.29,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Operatin1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Operatin1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Operatin1984/Operatin1984.mp4",
+        "page_url": "https://archive.org/details/Operatin1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Programm1984",
+      "episode_number": 21,
+      "title": "Programming",
+      "description": "A review of current popular programming languages.Guests: Gary Kildall, DRI; Paul Grady, Microfocus; Dave Eisenberg, Apple; Elizabeth Rather, ForthProducts/Demos: COBOLFORTHFORTH Graphics, PASCAL, Apple's Personal COBOL. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1389.45,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Programm1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Programm1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Programm1984/Programm1984.mp4",
+        "page_url": "https://archive.org/details/Programm1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC1232_internet",
+      "episode_number": 22,
+      "title": "Internet",
+      "description": "In the mid 1990's many people were on line, but the internet and the world wide web were still a new phenomenon. This program looks at the new open world of the web. Demonstrations include Eudora, Anarchy, the WELL, WinCIM, InterACT.net, and HoTMetal Pro HTML Editor. Guests include New York Times technology writer John Markoff. Also features a profile of the band Severe Tire Damage, the first band to ever perform live over the internet. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1622.49,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC1232_internet",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC1232_internet",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC1232_internet/CC1232_internet.mp4",
+        "page_url": "https://archive.org/details/CC1232_internet",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "internet",
+          "web",
+          "online"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CDROM10.3",
+      "episode_number": 23,
+      "title": "CD-ROM",
+      "description": "Multimedia was the big deal in the early 90's as software publishers rushed to use the new storage medium for bigger and more interactive programs. This show looks at several new software titles on CD-ROM including Sherlock Holmes from ICOM Simulations, Jazz: A Multimedia History from Compton's New Media, and Battle Chess from MacPlay. Also a look at CD-ROM hardware including the TurboDuo from Turbo Technologies and the Portable CD-ROM Player from Sony and the Desktop Library CD-ROM system. Also featured is a visit to PC Week Labs for a review of new CD-ROM drives. Guests include Gina Smith of PC Computing and Jim Louderback of PC Week. Originally broadcast in 1993. Copyright 1993 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1599.27,
+      "year": 1993,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CDROM10.3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CDROM10.3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CDROM10.3/CDROM10.3.mp4",
+        "page_url": "https://archive.org/details/CDROM10.3",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "sony",
+          "compact disk",
+          "compact disc",
+          "multimedia",
+          "optical"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Software1985",
+      "episode_number": 24,
+      "title": "Software Piracy",
+      "description": "Meet teenage software pirates, computer lawyers and the battle over software ownership.Guests: Mark Pump, Alpha Logic; Smith McKeithen, Activision; Frankie Mouse, Hacker; Neil Smith, Software Publish Assoc; John Draper (Captain Crunch); Gary Kildall, DRIProducts/Demos: Locksmith, Cap'n Software, Easy Writer, MacWare. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1765.81,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Software1985",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Software1985",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Software1985/Software1985.mp4",
+        "page_url": "https://archive.org/details/Software1985",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1985"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-amiga_2",
+      "episode_number": 25,
+      "title": "The New Amigas",
+      "description": "Before there was a Macintosh, the Amiga was the computer for the creative community. This program looks at the Amiga 2000, the Amiga 500, Photon Video Cell Animator, Music X, Video Toaster, and Interceptor. Originally broadcast in 1988. Copyright 1988 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1677.21,
+      "year": 1988,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/amiga_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "amiga_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/amiga_2/amiga_2.mp4",
+        "page_url": "https://archive.org/details/amiga_2",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "amiga",
+          "commodore",
+          "video toaster"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-windows30",
+      "episode_number": 26,
+      "title": "Windows 3.0",
+      "description": "The first major upgrade to Windows was the 3.0 version, launched in 1990. This program reviews Windows 3.0 , some competitive products, and it looks at some Windows add-ons designed to make it work better. Demonstrations include Windows 3.0, ToolBook 1.0 from Asymetrix, PowerPoint 2.0 for Windows, DR-DOS 5.0 from Digital Research, GEM from Digital Research, GEOS and Ensemble from GeoWorks, and ViewMax. Originally broadcast in September 1990. Copyright 1990 Stewart Cheifet Productions",
+      "creator": null,
+      "duration": 1721.76,
+      "year": 1990,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/windows30",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "windows30",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/windows30/windows30.mp4",
+        "page_url": "https://archive.org/details/windows30",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Windows",
+          "Microsoft",
+          "Digital Research",
+          "GEM",
+          "GEOS",
+          "PowerPoint"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-IBMPerso1987",
+      "episode_number": 27,
+      "title": "IBM Personal System 2",
+      "description": "A first look at the new IBM PS2 computer and its design and interface innovations.Guests: Tony Harris, Digital Research; David Bunnell, PCW Communications; John Dvorak, PC Magazine; Ron Kaufmann, RX Computers; George Morrow, Nestar; Jan Lewis, Palo Alto Research Group; Gary Kildall, Digital ResearchProducts/Demos: DOS 3.3, Gem Desktop Publisher, IBM PS2 Model 50, GEM Draw Plus, FLEX-OS. Copyright 1987 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1751.28,
+      "year": 1987,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/IBMPerso1987",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "IBMPerso1987",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/IBMPerso1987/IBMPerso1987.mp4",
+        "page_url": "https://archive.org/details/IBMPerso1987",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1987"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-MainFram1984",
+      "episode_number": 28,
+      "title": "Mainframes to Minis to Micros",
+      "description": "This was the very first episode of the Computer Chronicles, originally broadcast in September 1983, covering the history and ancestry of today's PC.Guests: Gary Kildall, DRI; Gordon Bell, DEC; Herb Lechner, SRI; Cyril Yansouni, HPProducts/Demos: HP 150 PC, Computer Museum, TX-1 Computer. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1405.96,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/MainFram1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "MainFram1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/MainFram1984/MainFram1984.mp4",
+        "page_url": "https://archive.org/details/MainFram1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1983"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC707_desktop_presentation_graphics_1",
+      "episode_number": 29,
+      "title": "Desktop Presentation Graphics - Part One",
+      "description": "The introduction of the Macintosh in the mid 1980's opened up a whole new world of desktop graphics capability. This program looks at several early graphics applications for the Mac including More II, Power Point 2.0, Persuasion 2.0, and Macromind Director. Originally broadcast in 1989. Copyright Stewart Cheifet Productions 1989.",
+      "creator": null,
+      "duration": 1715.76,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC707_desktop_presentation_graphics_1",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC707_desktop_presentation_graphics_1",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC707_desktop_presentation_graphics_1/CC707_desktop_presentation_graphics_1.mp4",
+        "page_url": "https://archive.org/details/CC707_desktop_presentation_graphics_1",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "graphics",
+          "powerpoint",
+          "presenations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Decision1984",
+      "episode_number": 30,
+      "title": "Decision Support Systems",
+      "description": "Expert systems software and artificial intelligence applications.Guests: Gary Kildall, DRI; Mike Thoma, Mgmt Decisn Sys; Steve Weyl, Syntelligence; Jim Chapman, Human Edge SW Products/Demos: Strategic Simulations Epidemic, Prospector, CompuStat, Easy Scan, Sales Edge. Copyright 1984 Stewart Cheifet Productions",
+      "creator": null,
+      "duration": 1722.28,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Decision1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Decision1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Decision1984/Decision1984.mp4",
+        "page_url": "https://archive.org/details/Decision1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC707_desktop_presentation_graphics_2",
+      "episode_number": 31,
+      "title": "Desktop Presentation Graphics - Part Two",
+      "description": "If a picture is worth a thousand words, then graphics should be an important tool for business. Thanks to more sophisticated computers and display technology, the use of corporate graphics work boomed in the late 1980's. This program looks at several new products for doing presentation graphics on a PC including Harvard Graphics 2.12, Draw Partner, Freelance Plus 3.01, Graph Plus 1.3, Storyboard Plus 2.0, GEM Presentation 1.1, AutoDesk Animator, and Xerox Presents. Originally broadcast in 1989.",
+      "creator": null,
+      "duration": 1733.71,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC707_desktop_presentation_graphics_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC707_desktop_presentation_graphics_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC707_desktop_presentation_graphics_2/CC707_desktop_presentation_graphics_2.mp4",
+        "page_url": "https://archive.org/details/CC707_desktop_presentation_graphics_2",
+        "license": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "graphics",
+          "presentations",
+          "business"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1984_6",
+      "episode_number": 32,
+      "title": "Computer Graphics",
+      "description": "A review of computer art, graphics capabilities of computers and professional computer graphics systems.Guests: Herb Lechner, SRI International; Don McKinney, Silicon Graphics; Michael Arent, Freelance Artist; Kevin Prince, MCI/Quantel; Ann Chase, Freelance ArtistProducts/Demos: MCI Quantel PaintBox, Silicon Graphics 3D Animation, Apple IIe. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1333.36,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1984_6",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1984_6",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1984_6/Computer1984_6.mp4",
+        "page_url": "https://archive.org/details/Computer1984_6",
+        "license": "http://creativecommons.org/licenses/by-nd-nc/1.0/",
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "1984",
+          "paintbox",
+          "quantel",
+          "silicon grapics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-midimusic",
+      "episode_number": 33,
+      "title": "MIDI Music",
+      "description": "A look at the new role of personal computers in making music. Products demonstrated include Super Jam from Blue Ribbon Soundworks, Encore for Windows from Passport Designs, EZ Vision and Studio Vision from Opcode Systems, and the Miracle Piano. The show incudes visits to the Stanford Center for Computer Research in Music and Acoustics and the annual National Association of Music Merchants (NAMM) convention is Los Angeles. Originally broadcast in 1992. Copyright 1992 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1736.28,
+      "year": 1992,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/midimusic",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "midimusic",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/midimusic/midimusic.mp4",
+        "page_url": "https://archive.org/details/midimusic",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1992",
+          "Television Programs",
+          "Computers: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC1536BROWSERS",
+      "episode_number": 34,
+      "title": "Battle of the Browsers",
+      "description": "When Microsoft started giving away Internet Explorer, it became a serious challenger for Netscape. This program looked at the battle to become the dominant internet browser platform. Featured are Netscape Communicator 4.0, Internet Explorer 4.0, VRML 2.0 and RealSystem 5.0. Guests include Mark Brown, author of Using Netscape Communicator, and Amy Helen Johnson, Senior Technology Editor for Windows Magazine. Originally broadcast in 1997. Copyright 1997 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1696.26,
+      "year": 1997,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC1536BROWSERS",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC1536BROWSERS",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC1536BROWSERS/CC1536BROWSERS.mp4",
+        "page_url": "https://archive.org/details/CC1536BROWSERS",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1997",
+          "Television Programs",
+          "Computers: History",
+          "netscape",
+          "internet explorer",
+          "browser"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-amiga_3",
+      "episode_number": 35,
+      "title": "Amiga 2500",
+      "description": "A look at the new Amiga models including the Amiga 2500 and new software and peripherals for the Amiga computers.Guests: Tom Stearns, Commodore; Lou Wallace, Amiga World; Dan Silva, Author; Jim Schneider, Inno; Vision; Gary Kildall, DRIProducts/Demos: Menace; Battle Chess; Amiga 2500 Deluxe Paint III, Video Effects 3D. Originally broadcast in March 1989. Copyright 1989 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1738.27,
+      "year": 1989,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/amiga_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "amiga_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/amiga_3/amiga_3.mp4",
+        "page_url": "https://archive.org/details/amiga_3",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1989",
+          "Television Programs",
+          "Computers: History",
+          "amiga",
+          "commodore",
+          "battle chess"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1984",
+      "episode_number": 36,
+      "title": "Computer Music",
+      "description": "The computer as a creative tool used to make, display and store music.Guests: John Chowning, Stanford; Will Harvey, Electronic Arts; Ellen Lapham, Syntauri; Gary Kildall, DRIProducts/Demos: Music Construction Set, Alpha Syntauri Keyboard, Casiotone, Vocal Synthesizer, MIT Experimental Music Studio, Stanford Center for Computer Music. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1381.53,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1984/Computer1984.mp4",
+        "page_url": "https://archive.org/details/Computer1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "1984",
+          "MIT",
+          "will harvey",
+          "john chowning",
+          "music",
+          "stanford"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-india_2",
+      "episode_number": 37,
+      "title": "High Tech India - Part One",
+      "description": "India is the hot place now for companies to look at for new software development. The trend actually started more than fifteen years ago. This is an early look at the growth of high-tech in India, shot on location in Bangalore, New Delhi, and Bombay. Guests: Mike Shah, Digital Equipment; Vinay Deshpande, PSIAshok Soota, Wipro; Venkat Mohan, Wipro; P. S. Deodhar, Electronic Comm; S. G. Pitroda, Advisor to the PM Arjun Malhotra, Hindustan; Rajendra Pawar, NIIT, Jerry Gaudet, DECS. Balakrishnan, CMC. Originally broadcast in April 1989. Copyright 1989 Stewart Cheifet Productions.",
+      "creator": "Sara O'Brien",
+      "duration": 1724.25,
+      "year": 1989,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/india_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "india_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/india_2/india_2.mp4",
+        "page_url": "https://archive.org/details/india_2",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "india",
+          "bombay",
+          "new delhi",
+          "bangalore",
+          "outsourcing",
+          "software"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-StorageD1984",
+      "episode_number": 38,
+      "title": "Storage Devices",
+      "description": "Floppy drives, hard drives, and bubble memory.Guests: Al Shugart, Seagate; Frank Sordello, Memorex; Gary Kildall, DRIProducts/Demos: 5 ¼ inch floppy drive, 3 ½ inch floppy drive, RCA CED videodisk, 3680 1.2 GB spindle disk. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1419.98,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/StorageD1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "StorageD1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/StorageD1984/StorageD1984.mp4",
+        "page_url": "https://archive.org/details/StorageD1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC606_spreadsheet_wars",
+      "episode_number": 39,
+      "title": "Spreadsheet Wars",
+      "description": "Excel now dominates the spreadsheet world, but once upon a time there was actual competition among spreadsheet products. This program looks at Quattro 1.0, Allways 1.0, Lotus 1-2-3 3.0, Ashton-Tate's Full Impact, and Excel 2.1. Guests include Gary Kildall, Jan Lewis, and Jared Taylor of PC Magazine. Originally broadcast in 1988. Copyright 1988 Stewart Cheifet Productions",
+      "creator": null,
+      "duration": 1690.89,
+      "year": 1988,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC606_spreadsheet_wars",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC606_spreadsheet_wars",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CC606_spreadsheet_wars/CC606_spreadsheet_wars.mp4",
+        "page_url": "https://archive.org/details/CC606_spreadsheet_wars",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "spreadsheets",
+          "excel",
+          "lotus"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1984_5",
+      "episode_number": 40,
+      "title": "Computer Entrepreneurs",
+      "description": "A look at the people who are driving the personal computer industry.Guests: Gary Kildall, Digital Research; Steve Wozniak, Apple; Adam Osborne, Osborne Computer; Lore Harp, Vector Graphic; Gene Amdahl, Trilogy Systems. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1730.3,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1984_5",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1984_5",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1984_5/Computer1984_5.mp4",
+        "page_url": "https://archive.org/details/Computer1984_5",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Artifici1984",
+      "episode_number": 41,
+      "title": "Artificial Intelligence",
+      "description": "",
+      "creator": null,
+      "duration": 1720.27,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Artifici1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Artifici1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Artifici1984/Artifici1984.mp4",
+        "page_url": "https://archive.org/details/Artifici1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Wireless2001",
+      "episode_number": 42,
+      "title": "Wireless Technology",
+      "description": "Wireless technology is rapidly evolving and playing an increasing role in the lives of people throughout the world. In addition, ever-larger numbers of people are relying on wireless technology directly or indirectly. Copyright 2001 Stewart Cheifet Productions.",
+      "creator": "Stewart Cheifet",
+      "duration": 1594.56,
+      "year": 2001,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Wireless2001",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Wireless2001",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Wireless2001/Wireless2001.mp4",
+        "page_url": "https://archive.org/details/Wireless2001",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 2002",
+          "Episode year: 2001",
+          "Wireless: Bluetooth"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Programm99",
+      "episode_number": 43,
+      "title": "Programming Languages",
+      "description": "A look at a variety of interesting programming languages being used for personal computers. Included are demonstrations of Microsoft's Office 2000 Developer, LEGO Mindstorms RCX Code Developer, Macromedia Flash 3.0, and Metrowerks CodeWarrior. Also a special look inside Electronic Arts to see what they use to program their newest game WWII Fighters. Originally broadcast in 1999. Copyright 1999 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1645.01,
+      "year": 1999,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Programm99",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Programm99",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Programm99/Programm99.mp4",
+        "page_url": "https://archive.org/details/Programm99",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1999"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1984_2",
+      "episode_number": 44,
+      "title": "Computer Security",
+      "description": "Security issues related to the world's increasing dependence on information containted in computer networks.Guests: Gary Kildall, Digital Research; Donn Parker, SRI International; Jim Holmes, Tri-Data CorporationProducts/Demos: Digi-Link, Add & Answer Verification. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1737.28,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1984_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1984_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1984_2/Computer1984_2.mp4",
+        "page_url": "https://archive.org/details/Computer1984_2",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "1984",
+          "donn parker",
+          "sri"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Windows9_2",
+      "episode_number": 45,
+      "title": "Windows 98",
+      "description": "The launch of Windows 98 was a major upgrade for Windows users, solving some of the problems of Windows 95. This program previewed the new functionality of Windows 98 and also featured Win98 add-ons including Microsoft's Plus! 98, the Windows utility Tweak UI, and Gizmos 98 from Play. Guests include Linus Torvalds, developer of Linux, Mike Elgan of Windows magazine, and Kiki Stockhammer of Play. Originally broadcast in 1998. Copyright 1998 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1583.38,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Windows9_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Windows9_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Windows9_2/Windows9_2.mp4",
+        "page_url": "https://archive.org/details/Windows9_2",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-games2",
+      "episode_number": 46,
+      "title": "Computer Games",
+      "description": "A look at some of the leading computer games in the late 1980's. Demonstrations include Chuck Yeager's Advanced Flight Trainer, Accolade's Mean 18 Golf, Apache Strike, Beyond Dark Castle, The Other Side, and Strategic Conquest. Also features an early look at CompuServe's online games. Originally broadcast in 1988. Copyright 1988 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1670.18,
+      "year": 1988,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/games2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "games2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/games2/games2.mp4",
+        "page_url": "https://archive.org/details/games2",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1989",
+          "Television Programs",
+          "Computers: History",
+          "Gaming",
+          "CompuServe"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1985_6",
+      "episode_number": 47,
+      "title": "Computer Games",
+      "description": "A look at the newest computer games for PC users.Guests: Kathe Spracklen, Game Developer; James Zuber, Game Developer; David Crane, Activision; David Lebling, Game Developer; Gary Kildall, DRIProducts/Demos: Sargon III Chess Game, Millionaire Strategy Game, Pitfall, Zork ( Infocom), Ghostbusters. Originally broadcast in 1985. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1768.79,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1985_6",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1985_6",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1985_6/Computer1985_6.mp4",
+        "page_url": "https://archive.org/details/Computer1985_6",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "1985",
+          "games",
+          "chess",
+          "pitfall",
+          "zork",
+          "ghostbusters"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-MIDIMusi1986",
+      "episode_number": 48,
+      "title": "MIDI Music",
+      "description": "Computers and music, MIDI machines and interfaces, and music composition software.Guests: Chris French, Music Software; Bob Moore, Hybrid Arts; David Schwartz, Compusonics; Chris Potter, Mimetics; Curtis Sasaki, Apple; Gary Kildall, Digital Research; Gary Leuenberger, Midi RevolutionProducts/Demos: Casio SK-1 Synthesizer, Atari ST, Activision's Music Studio, ADAP Sampler, DSP-1000, Apple II GS, Ensoniq Sound Chip, Soundscape, Commodore AmigaEZ Track, Kidnotes. Copyright 1986 Stewart Cheifet Productions",
+      "creator": null,
+      "duration": 1756.77,
+      "year": 1986,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/MIDIMusi1986",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "MIDIMusi1986",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/MIDIMusi1986/MIDIMusi1986.mp4",
+        "page_url": "https://archive.org/details/MIDIMusi1986",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1986"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-episode_932",
+      "episode_number": 49,
+      "title": "Computer Games",
+      "description": "A look at the hottest computer games in the early 1990's. Included are Wordtris, Crisis in the Kremlin, Earl Weaver Baseball II, Railroad Tycoon, Playmaker Football 2.0, King's Quest V, The Games: Winter Challenge, and TSN (The Sierra Network). Also features a visit to Lucasfilm Games and their development process for titles such as Indiana Jones, The Fate of Atlantis, Monkey Island 2, and Lechuck's Revenge. Another segment looks at the InGolf Simulator from TOP Pro Sports, a game which actually teaches you how to play better golf. Guests include Gilman Louie, President of Spectrum Holobyte, Michael Brook of Electronic Arts, and Bruce Shelley of MicroProse. Originally broadcast in 1991. Copyright 1991 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1746.55,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/episode_932",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "episode_932",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/episode_932/episode_932.mp4",
+        "page_url": "https://archive.org/details/episode_932",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "monkey island",
+          "indiana jones",
+          "baseball",
+          "king's quest"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-MacClone95",
+      "episode_number": 50,
+      "title": "Mac Clones and New O/S",
+      "description": "In the post Steve Jobs era, Apple started licensing other companies to produce Macintosh clones. And there was a new Mac operating system 8.0, code named Copland. This program looks at the new Mac clones and the new OS. Products demonstrated include the System 100 from Radius, the Genesis MP from DayStar Digital, and the Power 100 from Power Computing. Applications demonstrated include Adobe Photoshop and Personal Oracle 7. Also featured are the new Apple Macintosh 7100 and 8100 models. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1515.78,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/MacClone95",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "MacClone95",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/MacClone95/MacClone95.mp4",
+        "page_url": "https://archive.org/details/MacClone95",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "apple",
+          "operating system",
+          "macintosh",
+          "power pc"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1985_3",
+      "episode_number": 51,
+      "title": "Computer Networks",
+      "description": "A look at the new technology for computers communicating with other computers.Guests: Gary Kildall, Digital Research; Sherry Geddes, Strategic Inc.; Bob Metcalfe, 3Com; Bill Godbout, CompuPro; Richard Goldberg, IBM; Nat Goldhaber, Centram Systems; George Morrow, Morrow ComputingProducts/Demos: EtherMacToken Ring, TOPS Network. Originally broadcast in October 1985. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1741.27,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1985_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1985_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1985_3/Computer1985_3.mp4",
+        "page_url": "https://archive.org/details/Computer1985_3",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "1985",
+          "3com",
+          "ibm",
+          "ethernet"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-videogames_2",
+      "episode_number": 52,
+      "title": "Video Game Consoles",
+      "description": "Computers became a great platform for game players, but dedicated videogame consoles were even better. This program compares the various videogame platforms. Demonstrations include \"Defender of the Crown\" on an IBM PC, \"SimEarth\" on Mac IIci, \"Michael Jackson Moonwalker\" and \"Mickey Mouse in the Castle of Illusion\" on a Sega Genesis, \"Super Mario Brothers 3\" and \"The Legend of Zelda\" on a Nintendo, and \"Bonk's Adventure and Ys\" on an NEC TurboGrafx. Guests include Russel DeMaria, author of Sega Genesis Secrets, Nintendo Games Secrets, and Secrets of Game Boy. Also features a visit to Nintendo Powerfest and the Alladin's Castle Arcade. Originally broadcast in 1990. Copyright 1990 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1723.24,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/videogames_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "videogames_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/videogames_2/videogames_2.mp4",
+        "page_url": "https://archive.org/details/videogames_2",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "cinemaware",
+          "maxis",
+          "sega",
+          "NEC",
+          "Nintendo",
+          "videogame"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC1308_greatest_games-p1",
+      "episode_number": 53,
+      "title": "Greatest Computer Games (Part 1)",
+      "description": "A review of the best new games of the year. Games covered include In the First Degree, Buried in Time, Mech Warrior 2, ImagiNation Network, and Phantasmagoria. Plus a visit to Microsoft's Judgment Day, a conference for third-party game developers in Redmond, Washington. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1727.42,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC1308_greatest_games",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC1308_greatest_games",
+        "part_index": 1,
+        "part_count": 2,
+        "url": "https://archive.org/download/CC1308_greatest_games/CC1308_greatest_games.mp4",
+        "page_url": "https://archive.org/details/CC1308_greatest_games",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "games",
+          "mech warrior",
+          "phantasmagoria"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-CC1308_greatest_games-p2",
+      "episode_number": 54,
+      "title": "Greatest Computer Games (Part 2)",
+      "description": "A review of the best new games of the year. Games covered include In the First Degree, Buried in Time, Mech Warrior 2, ImagiNation Network, and Phantasmagoria. Plus a visit to Microsoft's Judgment Day, a conference for third-party game developers in Redmond, Washington. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1632.43,
+      "year": 1995,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CC1308_greatest_games",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CC1308_greatest_games",
+        "part_index": 2,
+        "part_count": 2,
+        "url": "https://archive.org/download/CC1308_greatest_games/cc1308_greatestgames.mp4",
+        "page_url": "https://archive.org/details/CC1308_greatest_games",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "games",
+          "mech warrior",
+          "phantasmagoria"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Windows4",
+      "episode_number": 55,
+      "title": "Windows 95",
+      "description": "The upgrade from Windows 3.0 to Windows 95 was the big leap for Microsoft and began its domination of the desktop. This program looks at the new OS, originally code named \"Chicago\" and Windows 4.0, and new applications developed specifically for Win 95. Demonstrations include Windows 95, Norton Utilities for Win 95, Visio, and Picture Publisher. Also included are demonstratons of IBM's Warp OS/2, and the Macintosh Operating System OS 7.5. Originally broadcast in 1994. Copyright 1994 Stewart Cheifet Productions",
+      "creator": null,
+      "duration": 1478.51,
+      "year": 1994,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Windows4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Windows4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Windows4/Windows4.mp4",
+        "page_url": "https://archive.org/details/Windows4",
+        "license": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "windows",
+          "microsoft",
+          "apple",
+          "macintosh",
+          "warp",
+          "IBM",
+          "OS/2",
+          "operating system"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-desktopvideo",
+      "episode_number": 56,
+      "title": "Desktop Video 1990",
+      "description": "Today we take for granted the fact that we can watch video on our computers, but in the early 1990s, that was a big innovation. This program looks at early examples of desktop video on the Amiga, the Mac, and the IBM PC. Demonstrations include the Amiga 2500, the Amiga video authoring system, the Pionner LaserDisk player, MacroMind's Director 2.0 for the Mac IIx, the Avid/1 Media Composer, the DVA-4000 video controller from VideoLogic, and the use of desktop video at the NASA Ames research center. Originally broadcast in 1990. Copyright 1990 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1683.21,
+      "year": 1990,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/desktopvideo",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "desktopvideo",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/desktopvideo/desktopvideo.mp4",
+        "page_url": "https://archive.org/details/desktopvideo",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "amiga",
+          "macromedia",
+          "director",
+          "avid",
+          "videologic",
+          "macromind"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Intel3861987",
+      "episode_number": 57,
+      "title": "Intel 386 - The Fast Lane",
+      "description": "A review of the new Intel 386 chip and the new super-fast computers and applications that take advantage of its speed.Guests: Dana Krelle, Intel; Michael Swavely, Compaq; Robert Dilworth, Zenith; Neil Colvin, Phoenix Technologies; Jan Lewis, Palo Alto Research GroupProducts/Demos: Compaq Deskpro 386, Intel 80386 Microprocessor, Zenith Z-386, VP/ix, UNIX 386. Copyright 1987 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1769.8,
+      "year": 1987,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Intel3861987",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Intel3861987",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Intel3861987/Intel3861987.mp4",
+        "page_url": "https://archive.org/details/Intel3861987",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1987"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-ar_cc177_pc_games",
+      "episode_number": 58,
+      "title": "Greatest PC Games  -  Arabic",
+      "description": "Arabic subtitled version of this program. A look at the hot new computer games of 1995. Games covered include Voyeur, Astronomica, Wing Commander III: Heart of the Tiger, Master of Magic, Nascar Racing, Front Page Sports: Football Pro '95, Daedalus Encounter from Mechadeus, and Loadstar: The Legend of Tully Bodine. Includes visits to Electronic Arts and Rocket Science Games and an interview with \"The Fat Man\", George Sanger. Originally broadcast in 1995. Copyright 1995 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1413.86,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ar_cc177_pc_games",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ar_cc177_pc_games",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ar_cc177_pc_games/ar_cc177_pc_games.mp4",
+        "page_url": "https://archive.org/details/ar_cc177_pc_games",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "games",
+          "video games",
+          "arabic",
+          "subtitled",
+          "1995",
+          "computer"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-ModemsBu1985",
+      "episode_number": 59,
+      "title": "Modems & Bulletin Boards",
+      "description": "From high-tech trysts to selling black-market software, computers users are talking.Guests: Ezra Shapiro, Byte Magazine; Rory O'Connor, InforWorld; Matthew McClure, The Well; Donald Ingrim, Alameda County DA; George Morrow, Morrow ComputingProducts/Demos: CompuServe, Byte BBS, The Well. Copyright 1985 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1752.29,
+      "year": 1985,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ModemsBu1985",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ModemsBu1985",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ModemsBu1985/ModemsBu1985.mp4",
+        "page_url": "https://archive.org/details/ModemsBu1985",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1985"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-ar_cc190_windows_95",
+      "episode_number": 60,
+      "title": "Windows 95  - Arabic",
+      "description": "Arabic subtitled version of this program. It was the biggest ever launch of a software product with stores opening at midnight and buyers around the world waiting to get their hands on... an operating system! It was Windows 95. This show looks at the hoopla surrounding the launch of Windows 95, the product itself, and several Windows 95 add-on products including Microsoft Office, Viking RAM Chips, Uninstaller, Trispectives Professional, and The Hive. Originally broadcast in 1995.",
+      "creator": null,
+      "duration": 1640.01,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ar_cc190_windows_95",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ar_cc190_windows_95",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ar_cc190_windows_95/ar_cc190_windows_95.mp4",
+        "page_url": "https://archive.org/details/ar_cc190_windows_95",
+        "license": "http://creativecommons.org/licenses/by-nc-nd/2.0/",
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "arabic",
+          "windows",
+          "larry magid",
+          "microsoft"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Artifici1986-p1",
+      "episode_number": 61,
+      "title": "Artificial Intelligence (Part 1)",
+      "description": "Expert systems, decision support software, and natural language communication.Guests: Harry Tennant, Texas Instruments; Hubert Dreyfus, UC Berkeley; Gary Hendrix, Symantec; S. Jerrold Kaplan, Lotus Developmnt; Gary Kildall, Digital ResearchProducts/Demos: Personal Consultant, Q&A. Originally broadcast in 1986. Copyright 1986 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1764.33,
+      "year": 1986,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Artifici1986",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Artifici1986",
+        "part_index": 1,
+        "part_count": 2,
+        "url": "https://archive.org/download/Artifici1986/Artifici1986.mp4",
+        "page_url": "https://archive.org/details/Artifici1986",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1986",
+          "Television Programs",
+          "Computers: History",
+          "artificial intelligence",
+          "expert systems"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Artifici1986-p2",
+      "episode_number": 62,
+      "title": "Artificial Intelligence (Part 2)",
+      "description": "Expert systems, decision support software, and natural language communication.Guests: Harry Tennant, Texas Instruments; Hubert Dreyfus, UC Berkeley; Gary Hendrix, Symantec; S. Jerrold Kaplan, Lotus Developmnt; Gary Kildall, Digital ResearchProducts/Demos: Personal Consultant, Q&A. Originally broadcast in 1986. Copyright 1986 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 0,
+      "year": 1986,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Artifici1986",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Artifici1986",
+        "part_index": 2,
+        "part_count": 2,
+        "url": "https://archive.org/download/Artifici1986/Artifici1986_edit.mp4",
+        "page_url": "https://archive.org/details/Artifici1986",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "computersandtechvideos",
+          "tvprograms",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode Year: 1986",
+          "Television Programs",
+          "Computers: History",
+          "artificial intelligence",
+          "expert systems"
+        ],
+        "mediatype": "movies",
+        "format": "HiRes MPEG4",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Computer1984_3",
+      "episode_number": 63,
+      "title": "Computer Ergonomics",
+      "description": "A look at health problems related to computer use such as video display radiation and repetitive stress injuries.Guests: Herb Lechner, SRI International; Wanda Smith, Hewlett Packard; Karen Kessel, Koffler Group; Susan Kare, Apple; Jerry Manock, Apple..Products/Demos: Apple Macintosh, HP Orion Computer. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1739.8,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Computer1984_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Computer1984_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Computer1984_3/Computer1984_3.mp4",
+        "page_url": "https://archive.org/details/Computer1984_3",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Business1984",
+      "episode_number": 64,
+      "title": "Business Application Software",
+      "description": "A look at the popular new software programs for business.Guests: Herb Lechner, SRI; Chuck Kinch, Computerland; Stewart Reges, Stanford; Dan Carro, IBM; Bill Blackmer, Levi StraussProducts/Demos: Lotus 123, SuperCalc 3PC Talk, CrossTalk, IBM Professional Office System. Originally broadcast in 1984. Copyright 1984 Stewart Cheifet Productions.",
+      "creator": null,
+      "duration": 1701.76,
+      "year": 1984,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Business1984",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Business1984",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Business1984/Business1984.mp4",
+        "page_url": "https://archive.org/details/Business1984",
+        "license": null,
+        "collections": [
+          "computerchronicles",
+          "tvprograms",
+          "computersandtechvideos",
+          "whisper_test"
+        ],
+        "subjects": [
+          "Episode year: 1984",
+          "business",
+          "software"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    }
+  ]
+}

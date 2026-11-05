@@ -1,0 +1,20 @@
+{
+  "_note": "\"items\" is empty -- this channel is entirely series-driven, same shape as channels/science. Twelve real YouTube imports (see each series/<id>/series.json for the full episode list and editorial status) back the 12-hour, 12-show recurring lineup declared in programming.json. Deliberately does NOT reference series/stuff-made-here/series.json (already Science & Engineering's flagship show, and reused here would dilute Maker's own distinct lineup) even though reuse across channels is fully supported and independently rotated -- see docs/series-and-channels.md.",
+  "schema_version": 2,
+  "title": "Maker Channel",
+  "items": [],
+  "series": [
+    { "ref": "../../series/this-old-tony/series.json" },
+    { "ref": "../../series/greatscott/series.json" },
+    { "ref": "../../series/ivan-miranda/series.json" },
+    { "ref": "../../series/clickspring/series.json" },
+    { "ref": "../../series/my-mechanics/series.json" },
+    { "ref": "../../series/jeremy-fielding/series.json" },
+    { "ref": "../../series/integza/series.json" },
+    { "ref": "../../series/blondihacks/series.json" },
+    { "ref": "../../series/colinfurze/series.json" },
+    { "ref": "../../series/wintergatan/series.json" },
+    { "ref": "../../series/diy-perks/series.json" },
+    { "ref": "../../series/tested/series.json" }
+  ]
+}

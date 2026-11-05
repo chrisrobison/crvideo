@@ -1,0 +1,2342 @@
+{
+    "schema_version": 1,
+    "id": "integza",
+    "title": "Integza",
+    "description": "Tomatoes are disgusting!\n\n\n",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/gUgXHHSyS0WxgOC2qHNLB9Gj0spnO5RMOaLWDIg9vCnmtL-w1r98MdSG3jc4DgGhIVfRh_DDPQ=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+        "channel_url": "https://www.youtube.com/channel/UC2avWDLN1EI3r1RZ_dlSxCw",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-s9llVDRWmRI",
+            "episode_number": 1,
+            "title": "WESTCOTT NAZI GHOST",
+            "description": "",
+            "duration": 49,
+            "year": 2026,
+            "published_at": "2026-11-05T17:00:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/s9llVDRWmRI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "s9llVDRWmRI",
+                "url": "https://www.youtube.com/watch?v=s9llVDRWmRI",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-1ZCKszfKBOE",
+            "episode_number": 2,
+            "title": "I FINALLY BUILT a LIQUID ROCKET ENGINE!",
+            "description": "Give me your ideas:https://anydesk.com/science\n\n\nRace2Space:https://race2space.org.uk/\nACONITY 3D:https://aconity3d.com/\n\n@SteveMould :https://youtu.be/J_vXK9uvRf4?si=kMrm793R3qoVWMmX\n@BreakingTaps :https://youtu.be/DbdxeuI1r7A?si=XCwl11j2JsZKn9tj\n\n#rocket #engine #engineering",
+            "duration": 1626,
+            "year": 2026,
+            "published_at": "2026-11-03T19:23:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1ZCKszfKBOE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1ZCKszfKBOE",
+                "url": "https://www.youtube.com/watch?v=1ZCKszfKBOE",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-3kVhp9ZuAo0",
+            "episode_number": 3,
+            "title": "IRIS MECHANISM NOZZLE",
+            "description": "",
+            "duration": 160,
+            "year": 2026,
+            "published_at": "2026-09-18T15:00:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3kVhp9ZuAo0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3kVhp9ZuAo0",
+                "url": "https://www.youtube.com/watch?v=3kVhp9ZuAo0",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-MpwWWxpUn5M",
+            "episode_number": 4,
+            "title": "This works really well as a COMBUSTOR!",
+            "description": "",
+            "duration": 42,
+            "year": 2026,
+            "published_at": "2026-08-31T16:00:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/MpwWWxpUn5M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "MpwWWxpUn5M",
+                "url": "https://www.youtube.com/watch?v=MpwWWxpUn5M",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Zb7YOf1aPnM",
+            "episode_number": 5,
+            "title": "I built a VARIABLE ROCKET NOZZLE",
+            "description": "GIVE ME YOUR IDEAS:https://anydesk.com/science\n\n\nSlow motion Camera: https://www.krontech.ca/chronos-4k12/\n\nMachines\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\nCarvera CNC:https://www.makera.com/products/carvera-air\nForm 4 (Resin):https://formlabs.com/3d-printers/form-4/\n\n#rocket #engineering #3dprinting",
+            "duration": 976,
+            "year": 2026,
+            "published_at": "2026-08-23T17:18:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zb7YOf1aPnM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Zb7YOf1aPnM",
+                "url": "https://www.youtube.com/watch?v=Zb7YOf1aPnM",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-0AeJkIOiK0Q",
+            "episode_number": 6,
+            "title": "HYDRAZINE: Great for ROCKETS but HORRIBLE for Humans",
+            "description": "",
+            "duration": 161,
+            "year": 2026,
+            "published_at": "2026-07-04T16:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0AeJkIOiK0Q/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0AeJkIOiK0Q",
+                "url": "https://www.youtube.com/watch?v=0AeJkIOiK0Q",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Ebha4ozMUcg",
+            "episode_number": 7,
+            "title": "Robert Goddard was the Original One",
+            "description": "",
+            "duration": 15,
+            "year": 2026,
+            "published_at": "2026-07-03T16:00:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ebha4ozMUcg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Ebha4ozMUcg",
+                "url": "https://www.youtube.com/watch?v=Ebha4ozMUcg",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-cGDkUW8UQ90",
+            "episode_number": 8,
+            "title": "Nitric Acid Burns Stuff Really Well",
+            "description": "",
+            "duration": 113,
+            "year": 2026,
+            "published_at": "2026-07-02T16:00:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cGDkUW8UQ90/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cGDkUW8UQ90",
+                "url": "https://www.youtube.com/watch?v=cGDkUW8UQ90",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-8fy_4jgSo-0",
+            "episode_number": 9,
+            "title": "HYPERGOLIC is a Scary Word!",
+            "description": "",
+            "duration": 97,
+            "year": 2026,
+            "published_at": "2026-07-01T16:00:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8fy_4jgSo-0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8fy_4jgSo-0",
+                "url": "https://www.youtube.com/watch?v=8fy_4jgSo-0",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-az_nBfDoq3U",
+            "episode_number": 10,
+            "title": "The Rocket Fuel that could Burn Concrete",
+            "description": "",
+            "duration": 114,
+            "year": 2026,
+            "published_at": "2026-06-29T16:00:13Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/az_nBfDoq3U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "az_nBfDoq3U",
+                "url": "https://www.youtube.com/watch?v=az_nBfDoq3U",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-PsDpDB3neng",
+            "episode_number": 11,
+            "title": "HYPERGOLIC : The Most FEARED WORD in ROCKET SCIENCE",
+            "description": "Get your Displate metal posters at https://displate.com/l/integza and use the discount code INTEGZA to get 22% OFF on 1 Displate, 27% OFF on 2 Displates and 33% OFF on 3 Displates (Not Valid on Limited Edition).\n\n\nBecome a member of this team : https://www.patreon.com/integza\n\nCHRONOS 4K12 HIGH SPEED CAMERA:https://www.krontech.ca/chronos-4k12/\n\n#rocket #science #engine",
+            "duration": 826,
+            "year": 2026,
+            "published_at": "2026-06-20T18:21:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PsDpDB3neng/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PsDpDB3neng",
+                "url": "https://www.youtube.com/watch?v=PsDpDB3neng",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ytcU3Mp2xRs",
+            "episode_number": 12,
+            "title": "THERMAL EXPANSION",
+            "description": "",
+            "duration": 62,
+            "year": 2026,
+            "published_at": "2026-05-29T21:38:46Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ytcU3Mp2xRs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ytcU3Mp2xRs",
+                "url": "https://www.youtube.com/watch?v=ytcU3Mp2xRs",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ptPLanPZo1c",
+            "episode_number": 13,
+            "title": "ALUMINIUM RUST IS NOT METAL",
+            "description": "",
+            "duration": 34,
+            "year": 2026,
+            "published_at": "2026-05-27T13:10:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ptPLanPZo1c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ptPLanPZo1c",
+                "url": "https://www.youtube.com/watch?v=ptPLanPZo1c",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-WDlJZ2AQ6co",
+            "episode_number": 14,
+            "title": "AIR BEARING TURBINE",
+            "description": "",
+            "duration": 58,
+            "year": 2026,
+            "published_at": "2026-05-16T17:23:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WDlJZ2AQ6co/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WDlJZ2AQ6co",
+                "url": "https://www.youtube.com/watch?v=WDlJZ2AQ6co",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-CouJwDKIpLA",
+            "episode_number": 15,
+            "title": "HOMEMADE JET TURBINE",
+            "description": "",
+            "duration": 127,
+            "year": 2026,
+            "published_at": "2026-05-14T19:00:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/CouJwDKIpLA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "CouJwDKIpLA",
+                "url": "https://www.youtube.com/watch?v=CouJwDKIpLA",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-XiuD_DddAks",
+            "episode_number": 16,
+            "title": "LEVITATING FIDGET TOY",
+            "description": "",
+            "duration": 30,
+            "year": 2026,
+            "published_at": "2026-05-11T10:47:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XiuD_DddAks/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XiuD_DddAks",
+                "url": "https://www.youtube.com/watch?v=XiuD_DddAks",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-viEYJnKVND4",
+            "episode_number": 17,
+            "title": "I Built a LEVITATING JET ENGINE",
+            "description": "Engineers get Onshape Professional free up to 6 Months: https://Onshape.pro/integza\n\n\nBecome a member of this team : https://www.patreon.com/integza\n\nCNC machining and sheet metal starts at just $1, click here to get the $123 coupons at JLCCNC: https://jlccnc.com?from=integzacnc #JLCCNC\nSIMSCALE: https://www.simscale.com/\nCHRONOS 4K12 CAMERA: https://www.krontech.ca/chronos-4k12/\nFIDGET TOY: https://www.metmo.co.uk/\nRPA: https://www.rocket-propulsion.com/index.htm\nSPARK PLUG:https://www.flashrc.com/en/gasoline-spark-plugs/20502-spark-plug-1-4-32-rcexl-8800223388334.html\n\n#engine  #engineering",
+            "duration": 1298,
+            "year": 2026,
+            "published_at": "2026-04-17T18:50:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/viEYJnKVND4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "viEYJnKVND4",
+                "url": "https://www.youtube.com/watch?v=viEYJnKVND4",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Xgn4VjD2b0o",
+            "episode_number": 18,
+            "title": "THIS ROCKET ENGINE WASN’T DESIGNED BY HUMANS",
+            "description": "",
+            "duration": 181,
+            "year": 2026,
+            "published_at": "2026-02-04T13:56:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xgn4VjD2b0o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Xgn4VjD2b0o",
+                "url": "https://www.youtube.com/watch?v=Xgn4VjD2b0o",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6Xx1GXjRbMk",
+            "episode_number": 19,
+            "title": "This ROCKET ENGINE WASN'T DESIGNED BY HUMANS",
+            "description": "You can go to my sponsor at https://aura.com/integza to try 14 days for free. That’s enough time for Aura to start scrubbing your personal info off these data broker sites, without you lifting a finger.\n\nBecome a member of this team : https://www.patreon.com/integza\n\nLEAP 71:https://leap71.com/\n@BreakingTaps :https://youtu.be/DbdxeuI1r7A?si=TnDDfVe3Y-etZCpw\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\n\nCoupon code: integza100off (Get $100 off Carvera or Carvera Air)\nMakera Carvera desktop CNC: https://makerainc.sjv.io/Qj5gmo\nMakera Carvera Air desktop CNC: https://makerainc.sjv.io/POPZL6\n\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/\n\n#rocket #engine #engineering",
+            "duration": 667,
+            "year": 2025,
+            "published_at": "2025-12-19T17:48:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6Xx1GXjRbMk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6Xx1GXjRbMk",
+                "url": "https://www.youtube.com/watch?v=6Xx1GXjRbMk",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-qY9fpU8Vpig",
+            "episode_number": 20,
+            "title": "I Built the FIRST VENTURI ROCKET ENGINE",
+            "description": "Engineers get Onshape Professional free up to 6 months: https://Onshape.pro/Integza\n\n\nJLC3DP 3D Printing Starts at $0.3, if you're spending up to $70 use this link to get a new user coupon:https://jlc3dp.com/?from=3dintegza\n\nBecome a member of this team : https://www.patreon.com/integza\n\nCoupon code: integza100off (Get $100 off Carvera or Carvera Air)\nMakera Carvera desktop CNC: https://makerainc.sjv.io/Qj5gmo\nMakera Carvera Air desktop CNC: https://makerainc.sjv.io/POPZL6\n\nSIMSCALE: http://simscale.com/integza\nSLOWMOTION CAMERA (CHRONOS 4K12):https://www.krontech.ca/chronos-4k12/",
+            "duration": 1055,
+            "year": 2025,
+            "published_at": "2025-12-11T16:55:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qY9fpU8Vpig/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qY9fpU8Vpig",
+                "url": "https://www.youtube.com/watch?v=qY9fpU8Vpig",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-jXQIRUKWQkg",
+            "episode_number": 21,
+            "title": "RELOADING MECHANISM (SHOTGUN AXE)",
+            "description": "",
+            "duration": 40,
+            "year": 2025,
+            "published_at": "2025-10-09T17:33:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/jXQIRUKWQkg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "jXQIRUKWQkg",
+                "url": "https://www.youtube.com/watch?v=jXQIRUKWQkg",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-yOLVtTvR8o0",
+            "episode_number": 22,
+            "title": "SHOTGUN AXE MK2",
+            "description": "",
+            "duration": 44,
+            "year": 2025,
+            "published_at": "2025-10-06T11:02:58Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/yOLVtTvR8o0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "yOLVtTvR8o0",
+                "url": "https://www.youtube.com/watch?v=yOLVtTvR8o0",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-vICU4PTPbuo",
+            "episode_number": 23,
+            "title": "I built a BETTER SHOTGUN AXE",
+            "description": "Engineers get Onshape Professional free up to 6 Months: https://Onshape.pro/integza\n\n\nJLC3DP 3D printing starts at $0.3, sign up to get $70 new user coupons here: https://jlc3dp.com/?from=3dintegza\n\nBecome a member of this team : https://www.patreon.com/integza\n\n3D MODELS: https://integza.com/\n\nCoupon code: integza100off (Get $100 off Carvera or Carvera Air)\nMakera Carvera desktop CNC: https://makerainc.sjv.io/Qj5gmo\nMakera Carvera Air desktop CNC: https://makerainc.sjv.io/POPZL6\n\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/",
+            "duration": 1197,
+            "year": 2025,
+            "published_at": "2025-09-30T14:00:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vICU4PTPbuo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vICU4PTPbuo",
+                "url": "https://www.youtube.com/watch?v=vICU4PTPbuo",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Kp1OpzZ7S2k",
+            "episode_number": 24,
+            "title": "Integza Talk at PRINTED CONFERENCE",
+            "description": "This video is a bit different than usual but I did this talk at the PRINTED convention in Amsterdam and I wanted to share it with you. I hope you enjoy it!\nINTEGZA Website:https://integza.com/\nPRINTED Website:https://printed-amsterdam.com/\n\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/\n\n#engine #inventions #rocket",
+            "duration": 1176,
+            "year": 2025,
+            "published_at": "2025-07-15T15:44:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Kp1OpzZ7S2k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Kp1OpzZ7S2k",
+                "url": "https://www.youtube.com/watch?v=Kp1OpzZ7S2k",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-0Szg8Ig4rYs",
+            "episode_number": 25,
+            "title": "ROCKET PROPELLER #engine #inventions #rocket #science",
+            "description": "",
+            "duration": 56,
+            "year": 2025,
+            "published_at": "2025-06-02T13:30:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0Szg8Ig4rYs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0Szg8Ig4rYs",
+                "url": "https://www.youtube.com/watch?v=0Szg8Ig4rYs",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-qyKideyU64c",
+            "episode_number": 26,
+            "title": "I Built a ROCKET PROPELLER",
+            "description": "AD: Download Opera Here : https://opr.as/05-Opera-browser-integza\nROCKET PROPELLER 3D MODEL:https://integza.com/collections/3d-models/products/rocket-propeller-3d-model\nMaterials\nHigh Voltage Generator:https://amzn.to/3XwKkbB\nFull Ceramic Ball Bearings:https://amzn.to/3Z1YUIz\nBrass Bar Stock:https://amzn.to/4jiLXkH\nBrass Tube 6mm OD :https://amzn.to/43gC0zG\nBrass Tube 4mm OD:https://amzn.to/3He3lKf\nCopper Tube 6mm OD:https://amzn.to/43esehq\n\nCoupon code: integza100off (Get $100 off Carvera or Carvera Air)\nMakera Carvera desktop CNC: https://makerainc.sjv.io/Qj5gmo\nMakera Carvera Air desktop CNC: https://makerainc.sjv.io/POPZL6\n\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/\n\n#engine #inventions #rocket",
+            "duration": 763,
+            "year": 2025,
+            "published_at": "2025-05-24T12:59:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qyKideyU64c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qyKideyU64c",
+                "url": "https://www.youtube.com/watch?v=qyKideyU64c",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-K6mi8MFPoog",
+            "episode_number": 27,
+            "title": "I built a SHOTGUN AXE",
+            "description": "Full Video: Click \" ▶I Built a SHOTGUN AXE\" LEFT LOWER CORNER",
+            "duration": 25,
+            "year": 2025,
+            "published_at": "2025-03-17T14:44:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/K6mi8MFPoog/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "K6mi8MFPoog",
+                "url": "https://www.youtube.com/watch?v=K6mi8MFPoog",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-_luBh6eFANU",
+            "episode_number": 28,
+            "title": "I Built a SHOTGUN AXE",
+            "description": "Engineers get Onshape Professional free up to 6 months https://Onshape.pro/integza\nBecome a member of this team : https://www.patreon.com/integza\n\nJLC3DP 3D Printing & CNC Service Starts at $0.3: https://jlc3dp.com/?from=integza\nStainless Steel Properties: https://jlc3dp.com/help/article/316L-Stainless-Steel\n\n@hacksmith  Bobblehead: https://hacksmith.store/products/bobbleheads\n\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\n\nCoupon code: integza100off (Get $100 off Carvera or Carvera Air)\nMakera Carvera desktop CNC: https://makerainc.sjv.io/Qj5gmo\nMakera Carvera Air desktop CNC: https://makerainc.sjv.io/POPZL6\n\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/",
+            "duration": 804,
+            "year": 2025,
+            "published_at": "2025-03-06T16:33:49Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_luBh6eFANU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_luBh6eFANU",
+                "url": "https://www.youtube.com/watch?v=_luBh6eFANU",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-gKIkLHHEv5s",
+            "episode_number": 29,
+            "title": "A TRUE CIRCULAR ENGINE",
+            "description": "FULL VIDEO: https://youtu.be/udI2dWmwMUE?si=bXAVigUjmsGPtLe6",
+            "duration": 95,
+            "year": 2025,
+            "published_at": "2025-01-13T11:57:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/gKIkLHHEv5s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "gKIkLHHEv5s",
+                "url": "https://www.youtube.com/watch?v=gKIkLHHEv5s",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-sGD0FZZ1Bmc",
+            "episode_number": 30,
+            "title": "Genius Idea of the ROTATING PISTON",
+            "description": "",
+            "duration": 65,
+            "year": 2024,
+            "published_at": "2024-12-25T12:04:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sGD0FZZ1Bmc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sGD0FZZ1Bmc",
+                "url": "https://www.youtube.com/watch?v=sGD0FZZ1Bmc",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ccXDuLJ2LNc",
+            "episode_number": 31,
+            "title": "Are ROCKET TURBINES better than PISTON ENGINES?",
+            "description": "",
+            "duration": 81,
+            "year": 2024,
+            "published_at": "2024-12-17T14:21:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ccXDuLJ2LNc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ccXDuLJ2LNc",
+                "url": "https://www.youtube.com/watch?v=ccXDuLJ2LNc",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-udI2dWmwMUE",
+            "episode_number": 32,
+            "title": "I built a FLAP ENGINE (New Rotary Design)",
+            "description": "Get an exclusive 15% discount on Saily data plans! Use code Integza at checkout. Download Saily or go to https://saily.com/integza\n3D Models\nFlappy Engine (3D Model):https://integza.com/collections/3d-models/products/flappy-engine-compressed-air-engine-3d-model\nPowerful Vane Engine (3D Model):https://integza.com/collections/3d-models/products/vane-engine-power-version-3d-model\nResin Vane Engine (3D Model):https://integza.com/collections/3d-models/products/vane-motor-resin-version-3d-model\nPLA Vane Engine (3D Model):https://integza.com/collections/3d-models/products/vane-motor-pla-version-3d-model\n@TomStantonEngineering :https://youtu.be/Ho2l1K4Jprg?si=m1n8AaO3rLXOpBKa\nMaterials\nCarbon Fiber Propeller:https://shorturl.at/2yO33\nTeflon Block:https://amzn.to/3ZV4BsG\nTeflon Sheet:https://amzn.to/4gBUA9e\n\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\nCarvera CNC:https://www.makera.com?sca_ref=4215478.wBRb4lz08M&utm_source=uppromote&utm_medium=affiliate-joel-gomes&utm_campaign=makera-carvera-affiliate-commission\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/\n\n#rotary #engine #3dprinting",
+            "duration": 1138,
+            "year": 2024,
+            "published_at": "2024-12-15T12:34:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/udI2dWmwMUE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "udI2dWmwMUE",
+                "url": "https://www.youtube.com/watch?v=udI2dWmwMUE",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6Q7VGlfBT_s",
+            "episode_number": 33,
+            "title": "I Made a Jam Jar Rocket Engine",
+            "description": "",
+            "duration": 48,
+            "year": 2024,
+            "published_at": "2024-11-10T14:45:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6Q7VGlfBT_s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6Q7VGlfBT_s",
+                "url": "https://www.youtube.com/watch?v=6Q7VGlfBT_s",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4HwfqlHihNc",
+            "episode_number": 34,
+            "title": "I SUCK at Welding!",
+            "description": "",
+            "duration": 56,
+            "year": 2024,
+            "published_at": "2024-11-06T19:15:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4HwfqlHihNc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4HwfqlHihNc",
+                "url": "https://www.youtube.com/watch?v=4HwfqlHihNc",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-8Eg0Beir9lo",
+            "episode_number": 35,
+            "title": "This Engine Powered the First Rocket Missile in WWII!",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-11-03T12:30:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8Eg0Beir9lo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8Eg0Beir9lo",
+                "url": "https://www.youtube.com/watch?v=8Eg0Beir9lo",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nO9fzqgvO3E",
+            "episode_number": 36,
+            "title": "What Would Happen if I Added Fuel?",
+            "description": "",
+            "duration": 48,
+            "year": 2024,
+            "published_at": "2024-10-30T19:00:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nO9fzqgvO3E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nO9fzqgvO3E",
+                "url": "https://www.youtube.com/watch?v=nO9fzqgvO3E",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-TVQUEL2WtfY",
+            "episode_number": 37,
+            "title": "Can I Make a Dyson Fan Jet Engine?",
+            "description": "",
+            "duration": 59,
+            "year": 2024,
+            "published_at": "2024-10-27T13:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/TVQUEL2WtfY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "TVQUEL2WtfY",
+                "url": "https://www.youtube.com/watch?v=TVQUEL2WtfY",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-vKysWSZiFhI",
+            "episode_number": 38,
+            "title": "Have You Seen Electrode-less Ring Discharge in Action?",
+            "description": "",
+            "duration": 59,
+            "year": 2024,
+            "published_at": "2024-10-23T19:15:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vKysWSZiFhI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vKysWSZiFhI",
+                "url": "https://www.youtube.com/watch?v=vKysWSZiFhI",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-8CqfTqzn8Zc",
+            "episode_number": 39,
+            "title": "What Happens When I Add an Afterburner?",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-10-20T12:15:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8CqfTqzn8Zc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8CqfTqzn8Zc",
+                "url": "https://www.youtube.com/watch?v=8CqfTqzn8Zc",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-kNTyJCkdQ8g",
+            "episode_number": 40,
+            "title": "If This Doesn't Blow Up, I'll Be VERY Surprised!",
+            "description": "",
+            "duration": 40,
+            "year": 2024,
+            "published_at": "2024-10-16T18:30:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kNTyJCkdQ8g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kNTyJCkdQ8g",
+                "url": "https://www.youtube.com/watch?v=kNTyJCkdQ8g",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-LMt39PlHOVk",
+            "episode_number": 41,
+            "title": "Look Mum, No Compressor!",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-10-13T12:00:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/LMt39PlHOVk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "LMt39PlHOVk",
+                "url": "https://www.youtube.com/watch?v=LMt39PlHOVk",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-xPI7XuS6sh8",
+            "episode_number": 42,
+            "title": "Could I Make a MAGNETIC Engine that Runs on Air?",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-10-09T18:30:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xPI7XuS6sh8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xPI7XuS6sh8",
+                "url": "https://www.youtube.com/watch?v=xPI7XuS6sh8",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-2MuNwD4RT8k",
+            "episode_number": 43,
+            "title": "I Went Back to Basics...",
+            "description": "",
+            "duration": 53,
+            "year": 2024,
+            "published_at": "2024-10-06T12:15:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2MuNwD4RT8k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2MuNwD4RT8k",
+                "url": "https://www.youtube.com/watch?v=2MuNwD4RT8k",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--xcKpUScXOI",
+            "episode_number": 44,
+            "title": "Can I 3D Print a Magnetic Air Engine?",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-10-02T19:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-xcKpUScXOI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-xcKpUScXOI",
+                "url": "https://www.youtube.com/watch?v=-xcKpUScXOI",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-UvHx89aq4c0",
+            "episode_number": 45,
+            "title": "I Built a Crappy Compressed Air Engine",
+            "description": "",
+            "duration": 57,
+            "year": 2024,
+            "published_at": "2024-09-29T13:15:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UvHx89aq4c0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UvHx89aq4c0",
+                "url": "https://www.youtube.com/watch?v=UvHx89aq4c0",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-NdKvcTyQWnM",
+            "episode_number": 46,
+            "title": "I Never Understood NASA's Nozzle...",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-09-25T18:30:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/NdKvcTyQWnM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "NdKvcTyQWnM",
+                "url": "https://www.youtube.com/watch?v=NdKvcTyQWnM",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-r3eOkxxygL0",
+            "episode_number": 47,
+            "title": "Fastest Propellant You Can Get?",
+            "description": "",
+            "duration": 38,
+            "year": 2024,
+            "published_at": "2024-09-22T13:15:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/r3eOkxxygL0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "r3eOkxxygL0",
+                "url": "https://www.youtube.com/watch?v=r3eOkxxygL0",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-bA1hgEPDR5w",
+            "episode_number": 48,
+            "title": "How To Design a Rocket Nozzle",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-09-18T18:30:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/bA1hgEPDR5w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "bA1hgEPDR5w",
+                "url": "https://www.youtube.com/watch?v=bA1hgEPDR5w",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-LR3_7xzfVfc",
+            "episode_number": 49,
+            "title": "I Have a Rocket Dilemma",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-09-15T13:30:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/LR3_7xzfVfc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "LR3_7xzfVfc",
+                "url": "https://www.youtube.com/watch?v=LR3_7xzfVfc",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-JEzcfB9Vwbo",
+            "episode_number": 50,
+            "title": "Do You Know The Difference Between...?",
+            "description": "",
+            "duration": 54,
+            "year": 2024,
+            "published_at": "2024-09-12T18:30:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JEzcfB9Vwbo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JEzcfB9Vwbo",
+                "url": "https://www.youtube.com/watch?v=JEzcfB9Vwbo",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-MrHcT3_ClEk",
+            "episode_number": 51,
+            "title": "I Have to Become The PulseJet Engine...",
+            "description": "",
+            "duration": 57,
+            "year": 2024,
+            "published_at": "2024-09-08T13:15:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/MrHcT3_ClEk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "MrHcT3_ClEk",
+                "url": "https://www.youtube.com/watch?v=MrHcT3_ClEk",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-MWoFFoaL5aw",
+            "episode_number": 52,
+            "title": "I Built The First LAMINAR FLOW ROCKET ENGINE",
+            "description": "Become a member of this team : https://www.patreon.com/integza\n\nTry Onshape Professional free up to 6 months: https://Onshape.pro/Integza\n3D Models\nResin Rocket:https://integza.com/collections/3d-models/products/resin-rocket\nGYROID ROCKET:https://integza.com/collections/3d-models/products/laminar-flow-rocket-engine\n\nK3D:https://k3d.nl/en/\nMetafold 3D: https://metafold3d.com (info@metafold3d.com)\n\nRPA Software:http://www.rocket-propulsion.com/index.htm\n\nMaterials\nHigh Voltage Generator:https://amzn.to/3XwKkbB\n\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\nCarvera CNC:https://www.makera.com?sca_ref=4215478.wBRb4lz08M&utm_source=uppromote&utm_medium=affiliate-joel-gomes&utm_campaign=makera-carvera-affiliate-commission\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/\n\n#Rocket #engine #3dprinting",
+            "duration": 951,
+            "year": 2024,
+            "published_at": "2024-09-07T16:00:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/MWoFFoaL5aw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "MWoFFoaL5aw",
+                "url": "https://www.youtube.com/watch?v=MWoFFoaL5aw",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--9d0J-g3PkM",
+            "episode_number": 53,
+            "title": "Can I Make Fuel for My Hybrid Rocket Engine?",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-09-04T18:30:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-9d0J-g3PkM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-9d0J-g3PkM",
+                "url": "https://www.youtube.com/watch?v=-9d0J-g3PkM",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-IgsKGFNV060",
+            "episode_number": 54,
+            "title": "I Am in LOVE with PulseJet Engines",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-09-01T13:45:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/IgsKGFNV060/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "IgsKGFNV060",
+                "url": "https://www.youtube.com/watch?v=IgsKGFNV060",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-eHeS5xbFEMA",
+            "episode_number": 55,
+            "title": "Homemade Rocket Fuel Would Be Cool to Try",
+            "description": "",
+            "duration": 56,
+            "year": 2024,
+            "published_at": "2024-08-28T18:30:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/eHeS5xbFEMA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "eHeS5xbFEMA",
+                "url": "https://www.youtube.com/watch?v=eHeS5xbFEMA",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-3gu3kHYrCL8",
+            "episode_number": 56,
+            "title": "I 3D Printed Resin Rocket... It DIDN'T MELT!",
+            "description": "",
+            "duration": 59,
+            "year": 2024,
+            "published_at": "2024-08-25T13:30:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3gu3kHYrCL8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3gu3kHYrCL8",
+                "url": "https://www.youtube.com/watch?v=3gu3kHYrCL8",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-cffJkRZTP3Y",
+            "episode_number": 57,
+            "title": "Turbo Charged PulseJet Engine Match Made in Heaven!",
+            "description": "",
+            "duration": 54,
+            "year": 2024,
+            "published_at": "2024-08-21T18:15:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cffJkRZTP3Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cffJkRZTP3Y",
+                "url": "https://www.youtube.com/watch?v=cffJkRZTP3Y",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-O4KEzr_V-tU",
+            "episode_number": 58,
+            "title": "Made a TurboJet Engine... and Gave it a Test!",
+            "description": "",
+            "duration": 54,
+            "year": 2024,
+            "published_at": "2024-08-18T13:30:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/O4KEzr_V-tU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "O4KEzr_V-tU",
+                "url": "https://www.youtube.com/watch?v=O4KEzr_V-tU",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-hcJmfqjiKj8",
+            "episode_number": 59,
+            "title": "Wankel Engines are More Powerful AND Less Complicated",
+            "description": "",
+            "duration": 57,
+            "year": 2024,
+            "published_at": "2024-08-14T18:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hcJmfqjiKj8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hcJmfqjiKj8",
+                "url": "https://www.youtube.com/watch?v=hcJmfqjiKj8",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-1vRYWbTvAPA",
+            "episode_number": 60,
+            "title": "Built a Wankel Rotary RC Car... and Gave it a Go!",
+            "description": "",
+            "duration": 53,
+            "year": 2024,
+            "published_at": "2024-08-11T13:30:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1vRYWbTvAPA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1vRYWbTvAPA",
+                "url": "https://www.youtube.com/watch?v=1vRYWbTvAPA",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-FF4NxgaRRms",
+            "episode_number": 61,
+            "title": "Liquids Create More Propulsion... Right?",
+            "description": "",
+            "duration": 57,
+            "year": 2024,
+            "published_at": "2024-08-07T18:30:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/FF4NxgaRRms/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "FF4NxgaRRms",
+                "url": "https://www.youtube.com/watch?v=FF4NxgaRRms",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-E3H1QrWp9Oc",
+            "episode_number": 62,
+            "title": "Can I 3D Print Metal Rocket Parts?",
+            "description": "",
+            "duration": 59,
+            "year": 2024,
+            "published_at": "2024-08-04T12:15:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/E3H1QrWp9Oc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "E3H1QrWp9Oc",
+                "url": "https://www.youtube.com/watch?v=E3H1QrWp9Oc",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-pc0K33okLnA",
+            "episode_number": 63,
+            "title": "I Fixed Sam Rogers's Gravity 2 Problem...",
+            "description": "",
+            "duration": 56,
+            "year": 2024,
+            "published_at": "2024-07-31T17:30:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pc0K33okLnA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pc0K33okLnA",
+                "url": "https://www.youtube.com/watch?v=pc0K33okLnA",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ULWgsjCfxqE",
+            "episode_number": 64,
+            "title": "Making Accidental Earthquakes.",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-07-28T13:30:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ULWgsjCfxqE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ULWgsjCfxqE",
+                "url": "https://www.youtube.com/watch?v=ULWgsjCfxqE",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-uqSIv9jVz7Y",
+            "episode_number": 65,
+            "title": "It Worked! I Can't Believe My Pulsejet Engine WORKED!",
+            "description": "",
+            "duration": 48,
+            "year": 2024,
+            "published_at": "2024-07-24T18:30:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uqSIv9jVz7Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uqSIv9jVz7Y",
+                "url": "https://www.youtube.com/watch?v=uqSIv9jVz7Y",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-hRZQuDXgBkg",
+            "episode_number": 66,
+            "title": "Charging My Phone With Car-Top Turbine I Printed at Home...",
+            "description": "",
+            "duration": 58,
+            "year": 2024,
+            "published_at": "2024-07-21T12:45:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hRZQuDXgBkg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hRZQuDXgBkg",
+                "url": "https://www.youtube.com/watch?v=hRZQuDXgBkg",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-AMFzYBP6HeI",
+            "episode_number": 67,
+            "title": "No Matter What I Do it Only Works One Way?!",
+            "description": "",
+            "duration": 43,
+            "year": 2024,
+            "published_at": "2024-07-17T18:30:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/AMFzYBP6HeI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "AMFzYBP6HeI",
+                "url": "https://www.youtube.com/watch?v=AMFzYBP6HeI",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7O2MZr9B9XM",
+            "episode_number": 68,
+            "title": "ROCKET that LITERALLY BURNS WATER as FUEL",
+            "description": "Become a member of this team : https://www.patreon.com/integza\n\nJLC3DP 3D Printing &CNC Service Starts at $0.3: https://jlc3dp.com/?from=integza https://jlc3dp.com/help/article/202-316L-Stainless-Steel\n\n\nMetafold 3D: metafold3d.com (info@metafold3d.com)\n\n3D Models\nWRENCH RING: https://integza.com/collections/3d-models/products/spanner-wrench-ring\nROCKET: https://integza.com/collections/3d-models/products/smal-rocket-engine\nANTI-GYROID LATTICE: https://integza.com/collections/3d-models/products/anti-gyroid-lattice\nGYROID SPACER: https://integza.com/collections/3d-models/products/gyroid-spacer\n\nMaterials\nHigh Voltage Transformer:https://amzn.to/3XwKkbB\n\nMachines\nBambu Labs X1 Carbon:https://eu.store.bambulab.com/en-pt/products/x1-carbon-combo\nPrusa Mk4:https://www.prusa3d.com/product/original-prusa-mk4-2/\nCarvera CNC:https://www.makera.com?sca_ref=4215478.wBRb4lz08M&utm_source=uppromote&utm_medium=affiliate-joel-gomes&utm_campaign=makera-carvera-affiliate-commission\nForm 4 (Resin):https://formlabs.com/eu/3d-printers/form-4/\n\n@Nighthawkinlight :https://youtu.be/d85OX6yEwE0?si=n1EJ7m6zd8pZ441i\n@maciejnowakprojects :https://youtu.be/RY08xO-_11w?si=a4fmDevEkIAuSIa3\n\n#engine #rocket #3dprinting",
+            "duration": 1038,
+            "year": 2024,
+            "published_at": "2024-07-15T15:05:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7O2MZr9B9XM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7O2MZr9B9XM",
+                "url": "https://www.youtube.com/watch?v=7O2MZr9B9XM",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-XYKgwTUukWM",
+            "episode_number": 69,
+            "title": "Creating Crazy Things I See on Instagram",
+            "description": "",
+            "duration": 59,
+            "year": 2024,
+            "published_at": "2024-07-14T13:00:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XYKgwTUukWM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XYKgwTUukWM",
+                "url": "https://www.youtube.com/watch?v=XYKgwTUukWM",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-muVsndmnWfQ",
+            "episode_number": 70,
+            "title": "Tesla. Truly One of The Greatest Inventors of All Time.",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-07-10T18:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/muVsndmnWfQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "muVsndmnWfQ",
+                "url": "https://www.youtube.com/watch?v=muVsndmnWfQ",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-LvDKEYlBgUM",
+            "episode_number": 71,
+            "title": "I Made a Broken Hairdryer go BANG!",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-07-07T13:45:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/LvDKEYlBgUM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "LvDKEYlBgUM",
+                "url": "https://www.youtube.com/watch?v=LvDKEYlBgUM",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4aLfpfv3vjk",
+            "episode_number": 72,
+            "title": "Explosive FLAMING KNIFE Test",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-07-03T18:15:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4aLfpfv3vjk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4aLfpfv3vjk",
+                "url": "https://www.youtube.com/watch?v=4aLfpfv3vjk",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4ENfrTatLOM",
+            "episode_number": 73,
+            "title": "This is Not Good For Your Health!",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-06-30T11:00:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4ENfrTatLOM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4ENfrTatLOM",
+                "url": "https://www.youtube.com/watch?v=4ENfrTatLOM",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-L80Og1clWOE",
+            "episode_number": 74,
+            "title": "How They Made Knives that NEVER STICK to ANYTHING!",
+            "description": "",
+            "duration": 57,
+            "year": 2024,
+            "published_at": "2024-06-26T18:30:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/L80Og1clWOE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "L80Og1clWOE",
+                "url": "https://www.youtube.com/watch?v=L80Og1clWOE",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-fHYGMUjpuOU",
+            "episode_number": 75,
+            "title": "Pumping 1000kg of Liquid O2 in 60s!",
+            "description": "",
+            "duration": 59,
+            "year": 2024,
+            "published_at": "2024-06-23T19:15:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fHYGMUjpuOU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fHYGMUjpuOU",
+                "url": "https://www.youtube.com/watch?v=fHYGMUjpuOU",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-vyrfxE4gM-E",
+            "episode_number": 76,
+            "title": "40,000rpm Motor STEROID-Level Blower Fan",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-06-19T19:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vyrfxE4gM-E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vyrfxE4gM-E",
+                "url": "https://www.youtube.com/watch?v=vyrfxE4gM-E",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-PXWHF8lK44M",
+            "episode_number": 77,
+            "title": "So, I Have a Problem...",
+            "description": "",
+            "duration": 42,
+            "year": 2024,
+            "published_at": "2024-06-16T12:00:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PXWHF8lK44M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PXWHF8lK44M",
+                "url": "https://www.youtube.com/watch?v=PXWHF8lK44M",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-SaB6lysxeEA",
+            "episode_number": 78,
+            "title": "Rocket Pistol Project of Nuclear Scientist",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-06-12T19:30:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/SaB6lysxeEA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "SaB6lysxeEA",
+                "url": "https://www.youtube.com/watch?v=SaB6lysxeEA",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-VOHYHP9n_sE",
+            "episode_number": 79,
+            "title": "WIN A 3D PRINTER - SUMMER 3D DESIGN CONTEST #elegoo #all3dp",
+            "description": "Submit your design here:https://bit.ly/ELEGOO3DPSummer\nMore info here:https://www.elegoo.com/blogs/news/summer-necessities-creativity-challenge-elegoo-x-all3dp\n\n3D Modeling App (No Need to Download):https://Onshape.pro/Integza\n\n Elegoo:\n- Instagram: https://bit.ly/InstagramElegoo\n- Twitter: https://bit.ly/TwitterElegoo\n- Facebook: https://bit.ly/FacebookElegoo",
+            "duration": 55,
+            "year": 2024,
+            "published_at": "2024-06-09T17:38:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/VOHYHP9n_sE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "VOHYHP9n_sE",
+                "url": "https://www.youtube.com/watch?v=VOHYHP9n_sE",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-GgqpTeIBj9A",
+            "episode_number": 80,
+            "title": "I Made A Rocket Gun, So You Don't Have To.",
+            "description": "",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-06-09T11:15:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/GgqpTeIBj9A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "GgqpTeIBj9A",
+                "url": "https://www.youtube.com/watch?v=GgqpTeIBj9A",
+                "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
+                "channel_title": "Integza",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}

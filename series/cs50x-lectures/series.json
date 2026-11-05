@@ -1,0 +1,412 @@
+{
+    "schema_version": 1,
+    "id": "cs50x-lectures",
+    "title": "CS50x Lectures (Harvard)",
+    "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concentrators alike, with or without prior programming experience. (Two thirds of CS50 students have never taken CS before.) This course teaches you how to solve problems, both with and without code, with an emphasis on correctness, design, and style. Topics include computational thinking, abstraction, algorithms, data structures, and computer science more generally. Problem sets inspired by the arts, humanities, social sciences, and sciences. More than teach you how to program in one language, this course teaches you how to program fundamentally and how to teach yourself new languages ultimately. The course starts with a traditional but omnipresent language called C that underlies today's newer languages, via which you'll learn not only about functions, variables, conditionals, loops, and more, but also about how computers themselves work underneath the hood, memory and all. The course then transitions to Python, a higher-level language that you'll understand all the more because of C. Toward term's end, the course introduces SQL, via which you can store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCcabW7890RKJzL968QWEykA",
+        "channel_url": null,
+        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-HJP0a6vKvlo",
+            "episode_number": 1,
+            "title": "CS50x - Introduction",
+            "description": "Assista a esta palestra em português em https://youtu.be/fVTtTKRuiik, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/hKpAHgT9VxM, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 104,
+            "year": 2025,
+            "published_at": "2025-12-31T23:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/HJP0a6vKvlo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "HJP0a6vKvlo",
+                "url": "https://www.youtube.com/watch?v=HJP0a6vKvlo",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-UuIEbpQms8o",
+            "episode_number": 2,
+            "title": "CS50x - Lecture 0 - Scratch",
+            "description": "Assista a esta palestra em português em https://youtu.be/GHZzYAy4NKA, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/nfYOp3_SyqM, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n*** \n\nTABLE OF CONTENTS\n00:00:00 - Introduction  \n00:02:03 - This is CS50\n00:02:24 - Artificial Intelligence\n00:14:12 - Computer Science\n00:15:36 - Unary\n00:16:06 - Binary\n00:29:46 - ASCII\n00:40:52 - Unicode\n00:44:57 - Color\n00:50:17 - Representation\n00:55:23 - Algorithms\n01:04:45 - Pseudocode\n01:14:09 - Scratch\n01:18:15 - Hello, World\n01:21:21 - Hello, You\n01:30:20 - Meow\n01:33:51 - Abstractions\n01:37:55 - Conditionals\n01:40:05 - Oscartime\n01:51:59 - Ivy’s Hardest Game\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 7253,
+            "year": 2026,
+            "published_at": "2026-01-01T00:00:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UuIEbpQms8o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UuIEbpQms8o",
+                "url": "https://www.youtube.com/watch?v=UuIEbpQms8o",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-SlqjA04_dpk",
+            "episode_number": 3,
+            "title": "CS50x - Lecture 1 - C",
+            "description": "Assista a esta palestra em português em https://youtu.be/eepzDoovmAw, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/7hxVvUoo-PI, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n*** \n\nTABLE OF CONTENTS\n00:00:00 - Introduction\n00:00:43 - Source Code\n00:05:01 - Visual Studio Code for CS50\n00:09:00 - Hello, World\n00:14:33 - From Scratch to C\n00:24:10 - Header Files\n00:27:10 - CS50 Manual Pages\n00:31:01 - Hello, You\n00:44:03 - Terminal Commands\n00:55:49 - Conditionals\n01:02:55 - Types\n01:09:02 - compare.c\n01:17:33 - agree.c\n01:22:24 - Loops\n01:26:09 - cat.c\n01:44:46 – Functions\n01:56:21 – Correctness, Design, Style\n02:02:48 – Mario\n02:12:53 – calculator.c\n02:18:32 – Integer Overflow\n02:22:11 – Boeing\n02:24:34 – Pacman\n02:25:54 – Truncation\n02:26:32 – Type Casting\n02:26:47 – Floating-Point Imprecision\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 9018,
+            "year": 2026,
+            "published_at": "2026-01-01T03:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/SlqjA04_dpk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "SlqjA04_dpk",
+                "url": "https://www.youtube.com/watch?v=SlqjA04_dpk",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-h5Gc1n8ZuU8",
+            "episode_number": 4,
+            "title": "CS50x - Lecture 2 - Arrays",
+            "description": "Assista a esta palestra em português em https://youtu.be/vdCJU-1mB-A, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/G7erq8mRYdk, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n00:00:00 - Introduction\n00:00:43 – Reading Levels\n00:05:49 – Debugging\n00:26:09 – debug50\n00:39:36 – Compiling\n01:01:47 – Types\n01:05:36 – scores.c\n01:12:40 – Arrays\n01:29:56 – Strings\n01:47:57 – String Length\n01:59:45 – uppercase.c\n02:06:55 – Command Line Arguments\n02:14:43 – Exit Status\n02:18:55 – Cowsay\n02:20:22 – Cryptography\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 8735,
+            "year": 2026,
+            "published_at": "2026-01-01T06:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/h5Gc1n8ZuU8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "h5Gc1n8ZuU8",
+                "url": "https://www.youtube.com/watch?v=h5Gc1n8ZuU8",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-6Svu_ae5ebk",
+            "episode_number": 5,
+            "title": "CS50x - Lecture 3 - Algorithms",
+            "description": "Assista a esta palestra em português em https://youtu.be/1dV61IMUwIc, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/zU0DbilHvYM, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n00:00:00 - Introduction\n00:00:43 – Overview\n00:11:55 – Searching\n00:14:27 – Linear Search\n00:17:40 – Binary Search\n00:27:01 – Running Time\n00:38:54 – search.c\n00:50:12 – phonebook.c\n00:56:09 – Structs\n01:02:13 – Sorting\n01:12:20 – Selection Sort\n01:20:12 – Bubble Sort\n01:29:11 – Recursion\n01:36:02 – iteration.c\n01:39:44 – recursion.c\n01:45:46 – Merge Sort\n01:57:23 – Sort Race\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 7176,
+            "year": 2026,
+            "published_at": "2026-01-01T09:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6Svu_ae5ebk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6Svu_ae5ebk",
+                "url": "https://www.youtube.com/watch?v=6Svu_ae5ebk",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-db0H0U13YsA",
+            "episode_number": 6,
+            "title": "CS50x - Lecture 4 - Memory",
+            "description": "Assista a esta palestra em português em https://youtu.be/DweS4KseeDE, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/xRW70LgrEho, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n\n00:00:00 - Introduction\n00:00:43 – Pixel Art\n00:04:37 – Hexadecimal\n00:11:44 – Memory\n00:18:05 – Pointers\n00:31:28 - Strings\n00:43:34 – Pointer Arithmetic\n00:47:42 – String Comparison\n00:57:11 – Copying and malloc\n01:13:17 – Valgrind\n01:23:11 – Garbage Values\n01:25:25 – Pointer Fun with Blinky\n01:33:28 – Swapping\n01:48:14 – Overflow\n01:50:24 – scanf\n02:02:20 – File I/O\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 8395,
+            "year": 2026,
+            "published_at": "2026-01-01T12:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/db0H0U13YsA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "db0H0U13YsA",
+                "url": "https://www.youtube.com/watch?v=db0H0U13YsA",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-PmAI76OGE_E",
+            "episode_number": 7,
+            "title": "CS50x - Lecture 5 - Data Structures",
+            "description": "Assista a esta palestra em português em https://youtu.be/pttqNxchp9k, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/Q0xvQT87ekA, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n\n00:00:00 - Introduction\n00:00:43 – Jack Learns the Facts\n00:03:35 – Stacks and Queues\n00:10:44 – Dictionaries\n00:12:26 – Resizing Arrays\n00:27:16 – realloc\n00:33:03 – Linked Lists\n01:22:04 – Trees\n01:36:47 – Hashing and Hash Tables\n01:53:51 – Tries\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 7430,
+            "year": 2026,
+            "published_at": "2026-01-01T15:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PmAI76OGE_E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PmAI76OGE_E",
+                "url": "https://www.youtube.com/watch?v=PmAI76OGE_E",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-Rl0ludWTLxs",
+            "episode_number": 8,
+            "title": "CS50x - Lecture 6 - Python",
+            "description": "Assista a esta palestra em português em https://youtu.be/iIG8j9kWlIY, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/N3zVFYQu3bU, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n\n00:00:00 - Introduction\n00:00:43 – Python\n00:06:13 – Speller\n00:12:47 – Filter\n00:16:51 – Functions\n00:38:16 – Data Types\n00:40:00 – Calculator\n00:48:50 – Conditionals\n00:52:11 – Compare\n01:02:55 – Object-Oriented Programming\n01:05:06 – copy.py\n01:11:53 – Loops\n01:12:48 – Meow\n01:27:39 – Truncation\n01:32:58 – Exceptions\n01:41:51 – Mario\n01:50:20 – Lists\n01:54:08 – Dictionaries\n02:08:35 – sys\n02:14:02 – csv\n02:22:04 – pip\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 8972,
+            "year": 2026,
+            "published_at": "2026-01-01T18:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Rl0ludWTLxs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Rl0ludWTLxs",
+                "url": "https://www.youtube.com/watch?v=Rl0ludWTLxs",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-oqRU2So6Z2Y",
+            "episode_number": 9,
+            "title": "CS50x - Lecture 7 - SQL",
+            "description": "Assista a esta palestra em português em https://youtu.be/Samqz7iHwPM, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/VnfMRaZUSrc, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n\n00:00:00 - Introduction\n00:00:43 – Flat-file Databases\n00:24:10 – Relational Databases\n00:53:24 – Shows\n00:59:45 – Schema\n01:04:16 – Data Types and Constraints\n01:06:05 – Primary and Foreign Keys\n01:06:58 – Querying\n01:40:47 – Indexes\n01:45:56 – Python and SQL\n01:57:46 – SQL injection attacks\n02:06:15 – Race Conditions\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 8133,
+            "year": 2026,
+            "published_at": "2026-01-01T21:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/oqRU2So6Z2Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "oqRU2So6Z2Y",
+                "url": "https://www.youtube.com/watch?v=oqRU2So6Z2Y",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt--9bo8HlSxwQ",
+            "episode_number": 10,
+            "title": "CS50x - Artificial Intelligence",
+            "description": "Assista a esta palestra em português em https://youtu.be/YFzkVvjiPmM, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/MTSE0ZOpyDc, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n00:00:00 - Introduction\n00:00:43 – Welcome\n00:02:53 – Generative Artificial Intelligence\n00:07:56 – Prompt Engineering\n00:09:30 – CS50.ai\n00:11:05 – Copilot\n00:17:29 – AI\n00:20:52 – Decision Trees\n00:23:56 – Minimax\n00:29:00 – Machine Learning\n00:37:26 – Deep Learning\n00:42:55 – Large Language Models\n00:46:04 – Hallucinations\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 2869,
+            "year": 2026,
+            "published_at": "2026-01-02T00:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-9bo8HlSxwQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-9bo8HlSxwQ",
+                "url": "https://www.youtube.com/watch?v=-9bo8HlSxwQ",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-yYst7puZXjw",
+            "episode_number": 11,
+            "title": "CS50x - Lecture 8 - HTML, CSS, JavaScript",
+            "description": "Assista a esta palestra em português em https://youtu.be/i_GmZgveqpw, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/3Ph5G_sfrFM, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n\n00:00:00 - Introduction\n00:00:43 – TCP/IP\n00:11:30 – Ports\n00:16:37 – DNS\n00:20:22 – DHCP\n00:21:52 – HTTP\n00:30:25 – Status Codes\n00:35:30 – Inspect\n00:42:20 – HTML\n01:22:20 – Regular Expressions\n01:29:34 – CSS\n01:43:46 – Bootstrap\n01:51:03 – JavaScript\n02:08:40 – Background\n02:11:40 – Blink\n02:14:18 – Autocomplete\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 8532,
+            "year": 2026,
+            "published_at": "2026-01-02T01:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/yYst7puZXjw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "yYst7puZXjw",
+                "url": "https://www.youtube.com/watch?v=yYst7puZXjw",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-am7POvSZ4GE",
+            "episode_number": 12,
+            "title": "CS50x - Lecture 9 - Flask",
+            "description": "Assista a esta palestra em português em https://youtu.be/Uddye35TNp4, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/7Yd_xMuzPHE, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n\n00:00:00 - Introduction\n00:00:43 – Flask\n00:28:41 – Forms\n00:33:31 – Jinja\n00:37:12 – Templates\n00:48:10 – Request Methods\n00:54:22 – Frosh IMs\n01:31:10 – SQLite and Python\n01:57:05 – Cookies and Sessions\n02:02:47 – Shopping Cart\n02:15:55 – Shows\n02:20:29 – APIs\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 8796,
+            "year": 2026,
+            "published_at": "2026-01-02T04:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/am7POvSZ4GE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "am7POvSZ4GE",
+                "url": "https://www.youtube.com/watch?v=am7POvSZ4GE",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-ApQTgFkf8TU",
+            "episode_number": 13,
+            "title": "CS50x - Lecture 10 - The End",
+            "description": "Assista a esta palestra em português em https://youtu.be/sQBEFAwdvxc, graças ao lingopal.ai.\nMira esta conferencia en español en https://youtu.be/0IjFxHxs88c, gracias a lingopal.ai.\n\n***\n\nThis is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming.\n\n***\n\nTABLE OF CONTENTS\n\n00:00:00 - Introduction\n00:00:43 – Welcome\n00:03:17 – Computational Thinking\n00:16:14 – Recap\n00:23:36 – Charades\n00:30:13 – Looking Ahead\n00:39:48 – Quiz Show\n\n***\n\nHOW TO SUBSCRIBE\n\nhttp://www.youtube.com/subscription_center?add_user=cs50tv\n\nHOW TO TAKE CS50\n\nedX: https://cs50.edx.org/\nHarvard Extension School: https://cs50.harvard.edu/extension\nHarvard Summer School: https://cs50.harvard.edu/summer\nOpenCourseWare: https://cs50.harvard.edu/x\n\nHOW TO JOIN CS50 COMMUNITIES\n\nBluesky: https://bsky.app/profile/cs50.harvard.edu\nDiscord: https://discord.gg/cs50\nEd: https://cs50.edx.org/ed\nFacebook Group: https://www.facebook.com/groups/cs50/\nFaceboook Page: https://www.facebook.com/cs50/\nGitHub: https://github.com/cs50\nGitter: https://gitter.im/cs50/x\nInstagram: https://instagram.com/cs50\nLinkedIn Group: https://www.linkedin.com/groups/7437240/\nLinkedIn Page: https://www.linkedin.com/school/cs50/\nMedium: https://cs50.medium.com/\nQuora: https://www.quora.com/topic/CS50\nReddit: https://www.reddit.com/r/cs50/\nSlack: https://cs50.edx.org/slack\nSnapchat: https://www.snapchat.com/add/cs50\nSoundCloud: https://soundcloud.com/cs50\nStack Exchange: https://cs50.stackexchange.com/\nTelegram: https://t.me/cs50x\nThreads: https://www.threads.net/@cs50\nTikTok: https://www.tiktok.com/@cs50\nTwitter: https://twitter.com/cs50\nTwitter Community: https://twitter.com/i/communities/1722308663522594923\nYouTube: http://www.youtube.com/cs50\n\nHOW TO FOLLOW DAVID J. MALAN\n\nFacebook: https://www.facebook.com/dmalan\nGitHub: https://github.com/dmalan\nInstagram: https://www.instagram.com/davidjmalan/\nLinkedIn: https://www.linkedin.com/in/malan/\nQuora: https://www.quora.com/profile/David-J-Malan\nThreads: https://www.threads.net/@davidjmalan\nTikTok: https://www.tiktok.com/@davidjmalan\nTwitter: https://twitter.com/davidjmalan\n\n***\n\nCS50 SHOP\n\nhttps://cs50.harvardshop.com/\n\n***\n\nLICENSE\n\nCC BY-NC-SA 4.0\nCreative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/\n\nDavid J. Malan\nhttps://cs.harvard.edu/malan\nmalan@harvard.edu",
+            "duration": 3125,
+            "year": 2026,
+            "published_at": "2026-01-02T07:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ApQTgFkf8TU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ApQTgFkf8TU",
+                "url": "https://www.youtube.com/watch?v=ApQTgFkf8TU",
+                "channel_id": "UCcabW7890RKJzL968QWEykA",
+                "channel_title": "CS50",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        }
+    ]
+}

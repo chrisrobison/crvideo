@@ -1,0 +1,18 @@
+{
+  "_note": "The Lecture Hall is entirely series-driven (\"items\" is empty). Ten real YouTube imports back it (see series/<id>/series.json for each one's real channel/playlist id and episode list). \"stanford-cs229\" is deliberately referenced but has no programming.json block and zero approved episodes: 16 of its 17 imported videos have source.embeddable=false (Stanford has disabled embedding for that course's uploads), so none of them can ever be scheduled without bypassing YouTube's own restrictions -- left here, dormant, exactly like Science & Engineering's own unused-but-referenced series, in case Stanford re-enables embedding later.",
+  "schema_version": 2,
+  "title": "The Lecture Hall",
+  "items": [],
+  "series": [
+    { "ref": "../../series/mit-math-for-cs/series.json" },
+    { "ref": "../../series/mit-general-relativity/series.json" },
+    { "ref": "../../series/cs50x-lectures/series.json" },
+    { "ref": "../../series/stanford-cs229/series.json" },
+    { "ref": "../../series/royal-institution-physics/series.json" },
+    { "ref": "../../series/gresham-lectures/series.json" },
+    { "ref": "../../series/yale-ukraine/series.json" },
+    { "ref": "../../series/stanford-ecorner/series.json" },
+    { "ref": "../../series/perimeter-institute/series.json" },
+    { "ref": "../../series/oxford-mathematics/series.json" }
+  ]
+}

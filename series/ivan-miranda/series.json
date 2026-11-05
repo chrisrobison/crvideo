@@ -1,0 +1,1472 @@
+{
+    "schema_version": 1,
+    "id": "ivan-miranda",
+    "title": "Ivan Miranda",
+    "description": "I make projects about what makes me tick. I'm into digital fabrication, 3D printing, electronics, woodworking, instrument making, metalworking, and anything geeky in general. I'll try to give as much info as possible about my projects so anyone can try an replicate. Hope you like my projects, don't forget to subscribe to be updated about my new contraptions!",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_kfVc_0CEDmp7LK72nfs2hNlvp0nLaBkiXlYZnk19MZCQ=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+        "channel_url": "https://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-wKQOMW56auA",
+            "episode_number": 1,
+            "title": "I made a Marble Scroller",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more! Use coupon code PCBWay-IvanMiranda-10 for $10 off orders over $30 (code valid for 3 months, one-time use per person). There's only 500 coupons available, so grab yours quick!\n\nEngineers get up to 6 months Onshape Professional for free https://Onshape.pro/IvanMiranda\n\nThis took way too much time but I finally finished my Marble Scroller. It draws using marbles and it recycles them back to the selector to be used again. I'd say that this is the project that I underestimated the most but in the end making it work was absolutely worth it. \nIf you have any ideas about how to make it go faster as always drop them down in the comments and we'll se if you can drag me into a spiral of marbles and more marbles.\n\nThanks!!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1916,
+            "year": 2026,
+            "published_at": "2026-10-23T15:26:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wKQOMW56auA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wKQOMW56auA",
+                "url": "https://www.youtube.com/watch?v=wKQOMW56auA",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-CH65FIqxGEI",
+            "episode_number": 2,
+            "title": "I built a 3D printed Motorbike",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more! Use coupon code PCBWay-IvanMiranda-10 for $10 off orders over $30 (code valid for 3 months, one-time use per person). There's only 100 coupons available, so grab yours quick!\n\nEngineers get up to 6 months Onshape Professional for free https://Onshape.pro/IvanMiranda\n\nIf you want to give the Mirandetta a go you can find the files here:\n\nhttps://ivanmiranda.com/products/mirandetta-3d-printed-motorbike\n\nFor reasons that escape my control I found myself with a few free days before going to maker faire Prague so I decided last minute to desing build and bring with me a mini 3D printed motorbike to prague.\n\nThe original motorbike, the one that flew to Prague took me about 10 working days since I thought about it and got on the plane and was a lot of fun to make and test. \n\nWhen I got to prague and people had the chance to see it and test it everybody loved it and started to get tons of requests for the files to make one. In the end, a projec that I wasn't even sure it was going to be a video ended up being a very fun project that will have its own video and plans released with it.\n\nI have to thank  @NFTI  @Prusa3D @3DMakerNoob and all other creators there for the help filming and the valuable feedback. And for sharing the fun ofc!\n\nAs always love to read your comments and suggestions down below.\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1054,
+            "year": 2026,
+            "published_at": "2026-07-06T17:44:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/CH65FIqxGEI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "CH65FIqxGEI",
+                "url": "https://www.youtube.com/watch?v=CH65FIqxGEI",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-9W_KqmLzkO8",
+            "episode_number": 3,
+            "title": "I WROTE MY NAME USING HUGE BLOCKS #3dprinting #lego",
+            "description": "Join this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 60,
+            "year": 2026,
+            "published_at": "2026-06-05T11:14:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9W_KqmLzkO8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9W_KqmLzkO8",
+                "url": "https://www.youtube.com/watch?v=9W_KqmLzkO8",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-w8W4IOl5rtc",
+            "episode_number": 4,
+            "title": "The Marble Clock that Shows Seconds Shows Seconds!",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more! Use coupon code PCBWay-IvanMiranda10 for $10 off orders over $30 (code valid for 3 months, one-time use per person). There's only 100 coupons available, so grab yours quick!\n\nEngineers get up to 6 months Onshape Professional for free https://Onshape.pro/IvanMiranda\n\nFinally! after all this time the marble clock that shows seconds has reached clock speed and shows seconds at the incredible speed of 1s². \n\nIt took adding a buffer between the marble selectors and the display gate and a new big wheel (and lots and lots of fiddling) but it works!\n\nI'll probably move the buffer up a bit so I have more time to roll the marbles down to the display and will need to rethink the clutch so it doesn't desync the clock every time it trips to make it more reliable as this will need a twin to show the tens of seconds and finally be integrated with the original marble clock. \n\nBut now that summer is almost (in this hemisp)here I'll take a break to tackle a couple of summer projects like the motorbike that I brought to Maker Faire Prague (video will be up in a couple of weeks tops). \n\nAs always love to read your comments down below. Thanks!!!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 961,
+            "year": 2026,
+            "published_at": "2026-05-29T12:00:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/w8W4IOl5rtc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "w8W4IOl5rtc",
+                "url": "https://www.youtube.com/watch?v=w8W4IOl5rtc",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Ze0FwMWhxTg",
+            "episode_number": 5,
+            "title": "It finally works!! The Marble Clock that tells Seconds",
+            "description": "I cannot believe I didn't realize this earlier!! I think on the next iteration I may swap the marbles for printed numbers or even change the marbles for leds, that way I won't even need to rotate them!!\n\nAs always love to read your comments down below.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 244,
+            "year": 2026,
+            "published_at": "2026-04-01T08:16:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ze0FwMWhxTg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Ze0FwMWhxTg",
+                "url": "https://www.youtube.com/watch?v=Ze0FwMWhxTg",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-AkeFqT9NEA4",
+            "episode_number": 6,
+            "title": "This made Marble Seconds possible",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more! Use coupon code PCBWay-IvanMiranda10 for $10 off orders over $30 (code valid for 3 months, one-time use per person). There's only 100 coupons available, so grab yours quick!\n\nEngineers get up to 6 months Onshape Professional for free https://Onshape.pro/IvanMiranda\n\nSince I added the new marble sorter/elevator to the Marble Clock that shows seconds I've been able to speed up testing about 20x so I've been doing good progress on diagnosing and fine tuning this monster.\n\nIn this episode of the saga I've managed to consistently show the digits correctly and also made it easier to repair and maintain.\n\nThe next step is to make it faster so I need to figure out how to lock the marbles in place before swapping them and I may need to change the profile of the cam disks so the release of the marbles is sharper and more in sync.\n\nEither way I think the end is near!!!\n\nAs always love to read your comments!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 939,
+            "year": 2026,
+            "published_at": "2026-03-27T15:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/AkeFqT9NEA4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "AkeFqT9NEA4",
+                "url": "https://www.youtube.com/watch?v=AkeFqT9NEA4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nt032aKP_WU",
+            "episode_number": 7,
+            "title": "The Marble Clock Seconds got a Marble feeder (for now)",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nEngineers get up to 6 months Onshape Professional for free https://Onshape.pro/IvanMiranda\n\nWith this video we're a step closer to having a working marble clock that tells seconds. I've been wanting to make progress on it for a while but I was entering the same loop over and over. You know how it goes, you need to do something before you do something and then you never start so I went all in and decided to solve the issues all at once.\nThis marble sorter/elevator wasn't particularly difficult to make nor is it spectacular but it will allow me to tune the clock before I integrate it with the original marble clock and even though it looks awfully wanky and self-destructing I'm very happy with how it ended up behaving. It looks like it would work with just proper timming adjustment and maybe polishing a couple of points where the marbles can get stuck sometimes (famous last words). So I hope to make quick progress on it so it can be back and running.\nAs always love to hear your comments down below!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1124,
+            "year": 2026,
+            "published_at": "2026-02-10T14:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nt032aKP_WU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nt032aKP_WU",
+                "url": "https://www.youtube.com/watch?v=nt032aKP_WU",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7ZVxWAX-ABE",
+            "episode_number": 8,
+            "title": "10 year old 3D printed skateboard update",
+            "description": "This is what 10 years do to 3D printed PLA",
+            "duration": 54,
+            "year": 2026,
+            "published_at": "2026-01-24T09:37:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7ZVxWAX-ABE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7ZVxWAX-ABE",
+                "url": "https://www.youtube.com/watch?v=7ZVxWAX-ABE",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-EG3dnPZUVh4",
+            "episode_number": 9,
+            "title": "I made a Midi Slapophone",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nEngineers get up to 6 months Onshape Professional for free https://Onshape.pro/IvanMiranda\n\nCheck Lou Wiss plugin here: http://www.CrushAudio.com\n\nThis project has been in the works for a very long time and finally I got to make it real. I've always loved slapophones, those instruments where you make music hitting pipes of different lengths but I thought I could make it into a midi instrument so it takes less space and it is easier to play. Not sure if I reached any of those goals but it was amazing to see it built and playing it (or with it).\n\nAs an extra perk I've finally got @LouWiss  to play with something I've built so I don't have to rely on the little musical knowledge I have.\n\nIn hindsight having PVC pipes + 3D printed surfaces in the path of the sound wasn't the best of choices and probably the diameters of the pipes weren't tight enough to have the compact contraption working properly although I think it was a cool idea. The hitting mechanism worked good enough as it did the pipe sliding mechanism so even though it works there's room for improvement.\n\nSome of you probably have proper knowledge in the field or good feedback so as always love reading your comments!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 974,
+            "year": 2025,
+            "published_at": "2025-12-07T11:00:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/EG3dnPZUVh4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "EG3dnPZUVh4",
+                "url": "https://www.youtube.com/watch?v=EG3dnPZUVh4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-0foNjHxT8bw",
+            "episode_number": 10,
+            "title": "I 3D Printed a GoKart to fly around the world",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nEngineers get up to 6 months Onshape Professional for free https://Onshape.pro/IvanMiranda\n\nWhen the 3D Printed Gokart I made to race @MattDenton ended up being to heavy I designed a new and lighter one that I brought to Maker Faire Prague. It fitted in a suitcase and weighed only 23Kg. After I got @integza @MadeWithLayers @carlos3dworld and a whole lot of people to test it I realized that it was way twitchy and unstable. When @Prusa3D offered to take the Gokart to @sauceplusofficial I decided to redesign it completely and build two new gokarts that ended up being a success. It got tested by @EvanAndKatelyn @MichaelReeves @TheBackyardScientist @Jabrils @Project-Air @EverydayAstronaut and a whole lot more people who as you can see had a lot of fun with them. The thing is that I left the gokarts there with my good friend @Repkord and I hadn't recorded any of the build because it's mandatory that whatever you bring to Opensauce has to be done last minute so I took the opportunity to do maintenance and improvements on my Giant 3D printer and built a new one for this video. As always love to read your comments!!\n\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1142,
+            "year": 2025,
+            "published_at": "2025-10-31T18:08:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0foNjHxT8bw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0foNjHxT8bw",
+                "url": "https://www.youtube.com/watch?v=0foNjHxT8bw",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-x_ldiNJFeF4",
+            "episode_number": 11,
+            "title": "I Invented A New Type of Skateboard",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nLast year at OpenSauce I was talking about this idea of a TwoWheeled OneWheel to Wren from Corridor Digital and I haven't had time to try and make it the whole year so as a last minute crunch project I set myself to build it and bring to OpenSauce 2025.\n\nI had a blast and it was amazing having so many people around me helping me and really wanting me to make it working. I've learned a lot and I think there's future in this idea so I may try again sometime.\n\nAs a status update on the projects that I have pending, the kayak will be back but I'm going to build a new printer to print the new version and I'm waiting on parts for that so summer may be over before I get it printed but I'll think of something. And the marble clock, I'm on it, I'm trying to not get tangled on it and actually finish it so I want to make sure that there will be progress before I post another video.\n\nAs always love to read your comments! Thanks!!!!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1073,
+            "year": 2025,
+            "published_at": "2025-09-05T12:01:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/x_ldiNJFeF4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "x_ldiNJFeF4",
+                "url": "https://www.youtube.com/watch?v=x_ldiNJFeF4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-9DpMkYDCq9Y",
+            "episode_number": 12,
+            "title": "I 3D Printed a Kayak in Less Than 24 hours",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nCheck Proper Printing video of the Kayak we took to Prague Maker Faire here: https://www.youtube.com/watch?v=QuZW259aIn0\n\nAnd you can get your tickets for Open Sauce here:\nhttps://opensauce.com/tickets/\nCome and visit and please say hi if you see me, I'd love to meet you all.\n\nAll the filament in this video was provided by Prusa:\nhttps://prusament.com/\nProud filament sponsor of this channel.\n\nI went into a rabbit hole of optimization and improvement of the Giant Belt Treadmill 3D printer and managed to get a 3D printed a Kayak in less than 24 hours!! Thermal management, mechanical issues and a sour-sweet ending leaves the door open for a second round because I truly want to get a proper kayak that I can ride so leave your comments, suggestions and words of encouragement down below!!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1105,
+            "year": 2025,
+            "published_at": "2025-07-03T12:00:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9DpMkYDCq9Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9DpMkYDCq9Y",
+                "url": "https://www.youtube.com/watch?v=9DpMkYDCq9Y",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-K3FMVmAte3g",
+            "episode_number": 13,
+            "title": "Marble Clock Seconds Teleporter",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nIt seems that you all want the Seconds Marble Clock to display real seconds with both digits next to each other so I went and made an entire new mechanism that will allow for both digits to be displayed next to each other.\nI think the mechanism works well but it is quite something to see it working up close. I'll have to add some more rigidity to it but It is a keeper. \nAs always happy to read get your feedback in the comments.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 988,
+            "year": 2025,
+            "published_at": "2025-05-28T16:00:40Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/K3FMVmAte3g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "K3FMVmAte3g",
+                "url": "https://www.youtube.com/watch?v=K3FMVmAte3g",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-0rWxUpknTG0",
+            "episode_number": 14,
+            "title": "We made a Treadmill into a 3D printer!! - w/ Proper Printing",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nMaking a treadmill into a 3D printer has been in my bucket list for a very long time and luckily in Jon's too. A few months ago at Formnext we decided that we should at last try to get this project going that we had been talking about for so long. So we blocked a few days and met to try and bring the idea of making a treadmill into a 3D printer to reality. Honestly it came out way better than I expected and now I believe that it is possible to end up with a 3D printed kayak in one go with this machine. We ran into a few issues along the way but the principle of a treadmill being a good base to built a belt 3D printer is still valid and I honestly would consider doing it this way if I were to try and build another belt printer (belt not standing). \n\nAs always love reading your comments and subscribe if you want to see us trying to get a usable kayak out of this thing.\n\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nBluesky: @ivanmiranda.com\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1102,
+            "year": 2025,
+            "published_at": "2025-04-09T15:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0rWxUpknTG0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0rWxUpknTG0",
+                "url": "https://www.youtube.com/watch?v=0rWxUpknTG0",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-UlvbLeI7l5w",
+            "episode_number": 15,
+            "title": "Mini Giant Marble Clock that tells the time using marbles - Still too big",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nThe files for the clock can be found here: https://ivanmiranda.com/products/mini-marble-clock-files\n\nA year ago I made a Giant Marble Clock. I feel like I'm the only one that has lost his marbles with this project and now I think it's your turn. \nIn no way I think this is a good idea but you can go to my store, buy the plans and try to build one yourself. It'll take more time than you think and it'll cost more money than you expect and even then you may not end up with a working marble clock but you know what? You'll have fun (most of the time) and you'll be supporting my marble madness (not sure about how good of an idea is that either).\nI'll be back soon with a new marble clock seconds video but in the meantime I love to read your comments down below\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1240,
+            "year": 2025,
+            "published_at": "2025-02-14T20:56:13Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UlvbLeI7l5w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UlvbLeI7l5w",
+                "url": "https://www.youtube.com/watch?v=UlvbLeI7l5w",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-e19i6KYhJ8o",
+            "episode_number": 16,
+            "title": "3D Printed Giant Magnetic Torque Limiter - Marble Clock Seconds Display Pt.8",
+            "description": "Engineers get Onshape Professional Free up to 6 Months: https://Onshape.pro/IvanMiranda\n\nAs an unexpected (but completely expected) issue, the elevator can get stuck when unloading more than one marble. It shouldn't happen when running but on the first run or when fed manually up to 5 marbles can unload from an elevator link at once and there might be not enough time for that on one cycle. Long story short? I added a torque limiter to the cardan shaft to protect it from destruction. And I got to make my own magnetic torque limiter which is pretty cool too!\n\nAs always love to read your comments! Marbles!!!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 972,
+            "year": 2024,
+            "published_at": "2024-12-11T14:29:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/e19i6KYhJ8o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "e19i6KYhJ8o",
+                "url": "https://www.youtube.com/watch?v=e19i6KYhJ8o",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4vWCXlqLK6g",
+            "episode_number": 17,
+            "title": "I invented a really fast tool to pick marbles from the floor #MARBLE CLOCK #3dprinting #ENGINEERING",
+            "description": "Tired of picking marbles from the floor while building the marble clock I finally decided to solve the issue once and for all and designed a new tool that allows me to use my vacuum cleaner to pick up the marbles. It is superfast and easy to use and the best of all is that I can stop training my back. \n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 60,
+            "year": 2024,
+            "published_at": "2024-11-28T08:47:40Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4vWCXlqLK6g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4vWCXlqLK6g",
+                "url": "https://www.youtube.com/watch?v=4vWCXlqLK6g",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-dbLLDTZmDPs",
+            "episode_number": 18,
+            "title": "4 Stage Cardan Shaft and Geneva drive - Marble Clock Seconds Display Pt.7",
+            "description": "Engineers get Onshape Professional Free up to 6 Months: https://Onshape.pro/IvanMiranda\n\nHere's a playlist to get you up to speed:\nhttps://www.youtube.com/playlist?list=PLiqrEMrfoE8pOmxFXpOTk7UyUK8hfkwLH\n\nIn this video I used the new Prusa MK4S, very fast and reliable. You can get one here and at the same time help this channel (aff link): \nhttps://prusa3d.com/?promocode=IvanMiranda\n\nIn this new installment of the Marble Clock saga I took care of the connection between the elevator and the marble selector as both need to work in sync. \n\nI got lots of suggestions to use a Geneva drive and of course I did in the end go for it, a bit too strongly maybe? \n\nAnd did something that I wanted to do for a long time, a 4 stage cardan shaft to transfer rotational movement between two shafts 90 degrees apart. \n\nAs always love to read your comments. \n\nThanks!!!Join this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 888,
+            "year": 2024,
+            "published_at": "2024-11-14T14:00:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dbLLDTZmDPs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dbLLDTZmDPs",
+                "url": "https://www.youtube.com/watch?v=dbLLDTZmDPs",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6jx5-Kx3_wo",
+            "episode_number": 19,
+            "title": "High Throughput Marble Elevator - Marble Clock Seconds Display Pt.6",
+            "description": "Engineers get Onshape Professional Free up to 6 Months: https://Onshape.pro/IvanMiranda\n\nThis is the third assembly of the marble clock that will show seconds. I made a  high throughput marble elevator that can feed enough marbles to the marble selector to keep it running in realtime. I only made it work slowly for now as I need to synchronize it with the rest of the assemblies first so nothing breaks. Next I need to do just that, synchronize this assembly with the other two before I attempt to build the third one as there's no way that I will be able to test that one without the rest of the clock working. As always love to read you comments and suggestions. \n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1036,
+            "year": 2024,
+            "published_at": "2024-10-03T12:00:13Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6jx5-Kx3_wo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6jx5-Kx3_wo",
+                "url": "https://www.youtube.com/watch?v=6jx5-Kx3_wo",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-I7bXTZZ1lN4",
+            "episode_number": 20,
+            "title": "Rotary Cam Marble Selector - Marble Clock Seconds Display Pt.5",
+            "description": "Visit https://www.kiwico.com/ivan and use code IVAN to get 50% off your first\r crate of a monthly subscription to KiwiCo!\n\nIn my quest to build the most reliable marble clock ever I went and built a rotary cam marble selector, 15 cam disks a spur gear reduction with a beveled set to change the rotation plane and lots and lots of 3D printed parts to make which I hope will be the solution to all my marble selection problems.\nI went back to glass marbles and something I don't mention in the video is that I like way more the sound of the glass marbles knocking. It is a little bit like music.\nAs always love to read your comments!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 756,
+            "year": 2024,
+            "published_at": "2024-07-31T17:25:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/I7bXTZZ1lN4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "I7bXTZZ1lN4",
+                "url": "https://www.youtube.com/watch?v=I7bXTZZ1lN4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-BKwMHmSvK68",
+            "episode_number": 21,
+            "title": "Swinging Marble Teleporter - Marble Clock Seconds Display Pt.4",
+            "description": "Check the Sovol SV08 Here: https://landing.sovol3d.com/8KI\nSovol Official user group: https://landing.sovol3d.com/SGKI\n\n\nMarble Clock Saga: https://www.youtube.com/playlist?list=PLiqrEMrfoE8pOmxFXpOTk7UyUK8hfkwLH\n\nIn my quest to build a marble clock that displays seconds I got to a point where none of the things that I've tried worked reliably so I went back to the drawing board and after internalizing that this marble clock is in itself an absurd machine and that no one can stop me I went all in and built a contraption that at the same time that makes no sense it also works reliably and will make the clock able to work 100% of the time.\n\nThis is just one fourth of the total assembly that I have planned for the mechanism required to show one of the two digits required to show seconds and I'll probably merge this clock with the original one so It can show at the same time the complete time with hours, minutes and seconds and make some marble \"music\" at the same time.\n\nFrom what I've experienced and If I manage to build it entirely, this will be the first clock that can be detected by a seismograph.\n\nMarbles!!!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 732,
+            "year": 2024,
+            "published_at": "2024-06-29T06:00:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BKwMHmSvK68/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BKwMHmSvK68",
+                "url": "https://www.youtube.com/watch?v=BKwMHmSvK68",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-pMEaQmn1iP4",
+            "episode_number": 22,
+            "title": "Faster than the Eye Automatic Marble Sorter - Marble Clock Seconds Display Pt.3",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nI got hundreds of comments on my last video encouraging me to build a sorting machine to sort the marbles of my marble clock. Fair enough, I built one. Now the question is, should I put this in the clock to sort the marbles while the clock is working or should I make a different sorter for the clock. This one is super loud, which seems to be on brand with my clock designs, and seems fast enough to be used with the clock in realtime. I would obviously polish the design to make it nicer but you tell me. What should I do?\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 676,
+            "year": 2024,
+            "published_at": "2024-05-01T05:17:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pMEaQmn1iP4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pMEaQmn1iP4",
+                "url": "https://www.youtube.com/watch?v=pMEaQmn1iP4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-kZCgs9lLu9g",
+            "episode_number": 23,
+            "title": "Mechanically Multiplexed Marble Selector (Electromagnetic) - Marble Clock Seconds Display Pt.2",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nIn the frenetic pursuit of a working marble clock that displays seconds, in the last video I forgot to actually explain how the clock works and that was the premise for this video. Little did I know about what was going to take to do it as I was in the end going to lose this battle. \nI'm already working on adding extra overkillness to it to be absolutely sure that it works and works reliably so I can already tell you to expect something absolutely bonkers for the next iteration. \nAs always loving to read your comments so bring'em on!!!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 842,
+            "year": 2024,
+            "published_at": "2024-03-26T15:00:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kZCgs9lLu9g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kZCgs9lLu9g",
+                "url": "https://www.youtube.com/watch?v=kZCgs9lLu9g",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-JLD_Nl12oac",
+            "episode_number": 24,
+            "title": "Ramp Based Rapid Marble Swap - Marble Clock Seconds Display Pt.1",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nIt seems that building a marble clock that updates every minute isn't a hard enough challenge so I fell to the trap you all set for me in the comments and I'm now building a marble clock that can update every second!! Yes, bonkers, I know, but I hope this becomes an even more fun build than the last and you all follow along with me. Keep the comments coming as they are music to my ears and will help me improve this monstrous machine. \n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1088,
+            "year": 2024,
+            "published_at": "2024-02-22T14:03:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JLD_Nl12oac/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JLD_Nl12oac",
+                "url": "https://www.youtube.com/watch?v=JLD_Nl12oac",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-_hpUnX9buR4",
+            "episode_number": 25,
+            "title": "BUILDING A MARBLE CLOCK Pt.4 - NOW FASTER!!",
+            "description": "Check out PCBWay here: https://www.pcbway.com/?from=Ivan for a trusted one-stop solution to 3D Printing Services, CNC Machining, Injection Moulding and more!\n\nAs I promised in the last video I tried my best to make the clock update minute by minute. It wasn't an easy feat as I dealt with many (expected) issues. As many of you will notice I'm still having lots of issues with the marbles getting stuck on the machine as there's about a 2:5 ratio between good and bad marbles. If anyone knows about a good source of glass marbles please let me know. I had to do a bit of fiddling with the programming to get the timing right and I broke a few more things that what can be seen in the video but at least we have a clock that runs on time now. It is now louder and has less music to it, it is less zen and more stressful but learned a lot here. This project was a lot of fun and I may try some of the things that I could not do in this series in the coming videos. As always loving to hear from you in the comments.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 762,
+            "year": 2024,
+            "published_at": "2024-01-04T12:02:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_hpUnX9buR4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_hpUnX9buR4",
+                "url": "https://www.youtube.com/watch?v=_hpUnX9buR4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-M6nZiRVzauM",
+            "episode_number": 26,
+            "title": "BUILDING A MARBLE CLOCK - Pt. 3",
+            "description": "I highly recommend the engineers and product designers to check out Onshape, you can get started with Onshape for Free at: https://Onshape.pro/IvanMiranda\n\nYou can watch the two previous videos of this project here:\nPart 1: https://youtu.be/8IF4esSNA3k\nPart 2: https://youtu.be/Qtcqx2pZbrI\n\nIt took a while indeed but it works!! The \"small\" issue of the marbles getting stuck everywhere brought me to do one redesign after another which in the end took me to reprint every single piece on the machine but at least it solved the problem. In addition to reprinting everything I had to use steel wire for the marbles to roll on because any minimal imperfection would get the marbles unable to start rolling from a standing stop. \n\nWhile I was at it I moved the joints to the middle of the inclines and consequently moved the first gate too and that made impossible for the marbles to get trapped in there too.\n\nI changed slightly the marble selection mechanism and now marbles are pushed into the channels instead of rejected out of the elevator. I don't mention in the video why I did it because I hope will be the key of my success in the next and last video for this project where I will try to make it work minute by minute. \n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 743,
+            "year": 2023,
+            "published_at": "2023-12-23T11:00:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/M6nZiRVzauM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "M6nZiRVzauM",
+                "url": "https://www.youtube.com/watch?v=M6nZiRVzauM",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Qtcqx2pZbrI",
+            "episode_number": 27,
+            "title": "BUILDING A MARBLE CLOCK - Pt. 2",
+            "description": "Get the Comgrow T500 3D Printer here: https://rb.gy/zm4t3 (*$100 off right now)\nI've always wanted to build a marble clock and now I'm paying for the huge mistake I made. In this video I made the marble selector that distinguishes between white and black marbles and managed to get a number on the display. This is the second part of the build of what I thought was going to be a two part video but I won't be defeated so stay tuned for part 3 because I'm going to make this build work. (I was going to make it epic but now seems more feasible to make it work).\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 819,
+            "year": 2023,
+            "published_at": "2023-11-03T19:00:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qtcqx2pZbrI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Qtcqx2pZbrI",
+                "url": "https://www.youtube.com/watch?v=Qtcqx2pZbrI",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-8IF4esSNA3k",
+            "episode_number": 28,
+            "title": "BUILDING A MARBLE CLOCK - Pt.1.",
+            "description": "Go to: https://pvcase.com/IvanMiranda to try PVcase for free!\n\nI've always wanted to build a marble clock and now I realise what a huge mistake I made. I had to 3D print huge parts several times and dedicate lots of hours to sanding, filing and getting the parts just right so the marbles don't get stuck. For now I got the marble circuit running with the marble paths, the marble lift that raises the marbles to the top of the circuit and the marbles get in and out of the lift without issue so I think I'm ready for the marble selector. This is the first half of the build and I already think this project is going to be on the \"too much\" side but I won't be defeated so stay tuned for part 2 because I'm going to make this build epic.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 937,
+            "year": 2023,
+            "published_at": "2023-10-20T18:20:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8IF4esSNA3k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8IF4esSNA3k",
+                "url": "https://www.youtube.com/watch?v=8IF4esSNA3k",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nVPNh0MUDxE",
+            "episode_number": 29,
+            "title": "You won't believe what this 3D printed hand is for",
+            "description": "Go to: https://pvcase.com/IvanMiranda to try PVcase for free!\n\nBuilding a giant robotic hand for my giant rideable robot wasn't on my bingo card for this year and yet here I am. \n\nIn this video I'm building a giant robotic hand that will potentially be a part of my giant rideable robot build so If you're interested on me giving it a go you know what to do ;)\n\nThis is definitely the first iteration of this 3D printed robotic hand as once finished I got lots of ideas that will make it 10 times better and honestly, does one ever finish building his giant rideable robot?\n\nAs always leave your thoughts down below so I know what todo.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 762,
+            "year": 2023,
+            "published_at": "2023-08-25T11:00:40Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nVPNh0MUDxE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nVPNh0MUDxE",
+                "url": "https://www.youtube.com/watch?v=nVPNh0MUDxE",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-PxcP74W-PgE",
+            "episode_number": 30,
+            "title": "You won't believe what I 3D Printed - Giant 3D Printer build Pt.2",
+            "description": "You and your company can try Onshape for Free at https://onshape.pro/ivanmiranda\n\nThe files for this 3D printer are here:\nhttps://ivanmiranda.com/products/big-3d-printer-mkv\nThese files are mostly finished and I'll keep updating them with whatever improvements or changes I make to the machine.\n\nThe part 1 of the build where I complete the frame and the CoreXY assembly, including the carriage with the hotend, extruder etc. can be found here:\nhttps://youtu.be/qnOci3cJapQ\n\nThis is the second and last part of the giant 3D printer with a build volume of 1110mmx1110mmx2005mm that adds up to more than 2.5 m3 build volume.\n\nThis is my largest DIY 3D printer build to date and I truly enjoyed building it and I hope you enjoy watching the video, as always let me read your thoughts in the comments.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1179,
+            "year": 2023,
+            "published_at": "2023-07-16T10:00:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PxcP74W-PgE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PxcP74W-PgE",
+                "url": "https://www.youtube.com/watch?v=PxcP74W-PgE",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-qnOci3cJapQ",
+            "episode_number": 31,
+            "title": "Building a Giant 3D printer to 3D print myself",
+            "description": "Create a FREE Onshape account here: https://Onshape.pro/IvanMiranda\n\nThe early version of the files are here: \n\nhttps://ivanmiranda.com/products/big-3d-printer-mkv\n\nI will keep adding stuff to the files until they're complete and then I'll send updates as I keep improving the machine.\n\nI've built a giant 3D printer with a build volume of 1110mmx1110mmx2005mm that adds up to more than 2.5 m3 build volume.\n\nThis is my largest build to date and as far as I know is the largest DIY 3D printer in the world. And I've designed it from scratch keeping in mind that anyone should be able to attempt tbis build so each one of the parts of this build fit in a 200x200 mm print bed.\n\nThis is part 1 of the build where I complete the frame and the CoreXY assembly, including the carriage with the hotend, extruder etc.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1034,
+            "year": 2023,
+            "published_at": "2023-06-30T18:46:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qnOci3cJapQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qnOci3cJapQ",
+                "url": "https://www.youtube.com/watch?v=qnOci3cJapQ",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-sOs3lfCZgfQ",
+            "episode_number": 32,
+            "title": "GIANT 3D PRINTED GO KART BUILD - MOTORS AND TEST",
+            "description": "You and your company can try Onshape for Free at https://onshape.pro/ivanmiranda\n\nIf you want to get the files for the CNC machine I use in this video you can go here: https://ivanmiranda.com/products/3d-printed-desktop-cnc and check the video here: https://youtu.be/ctyLjOHg7Ag\n\nCheck out @MattDenton channel!:\nhttps://www.youtube.com/channel/UCbOrJwJsd4vFS4aLIILa_7Q\n\nGo and get some awesome PolyMaker filament and start building awesome stuff with it!(affiliate link):\nhttps://bit.ly/3i4PEkd\n\nIn this video I install the motors, brakes and pedasl on the Go Kart and also do a few test laps to see how much fun it is. \n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 896,
+            "year": 2023,
+            "published_at": "2023-03-31T20:59:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sOs3lfCZgfQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sOs3lfCZgfQ",
+                "url": "https://www.youtube.com/watch?v=sOs3lfCZgfQ",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ifXeN_9IYmY",
+            "episode_number": 33,
+            "title": "GIANT 3D PRINTED GO KART BUILD - THE CHASSIS",
+            "description": "You and your company can try Onshape for Free at https://onshape.pro/ivanmiranda\n\nCheck out @MattDenton  channel!:\nhttps://www.youtube.com/channel/UCbOrJwJsd4vFS4aLIILa_7Q\n\nGo and get some awesome PolyMaker filament and start building awesome stuff with it!(affiliate link):\nhttps://bit.ly/3i4PEkd\n\nThis video is a restart of the 3D printed Go Kart project. After I redesigned the Lego Inspired parts I finally decided to reprint the steering system and finish the chassis, the seat and the wheels. After this video I only need to add the motors and brakes and it should be ready to go!.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 842,
+            "year": 2023,
+            "published_at": "2023-03-21T15:31:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ifXeN_9IYmY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ifXeN_9IYmY",
+                "url": "https://www.youtube.com/watch?v=ifXeN_9IYmY",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ItHLPGZNVeE",
+            "episode_number": 34,
+            "title": "A GIANT 3D PRINTED DIGGER THAT WORKS!!",
+            "description": "You and your company can try Onshape for Free at https://onshape.pro/ivanmiranda\n\nIf you want to try the blocks you can get them at my store: \nhttps://ivanmiranda.com/collections/products/products/miranda-blocks-mini\n\nAnd send some love to PolyMaker for letting me go wild with their filament! (affiliate link):\nhttps://bit.ly/3i4PEkd\n\nI finished the excavator at last! This thing is lots of fun and very fragile. I, again, went too far and this thing is too big for this kind of design. I recon I could try a different design using the blocks to make an excavator at this scale that doesn't \"autodisintegrate\".\n\nThe choice of using servos was on one side poorly made because they lack power and speed and in the other side poorly made because there's no feedback position so any minor distraction makes the thing implode. If I were to try again something similar I would probably use linear actuators (like the ones used in beds) and would wire endstops to stop the thing form harming itself. \n\nI broke a few screws here and there but the screws are quite reliable even though the printing orientation is not the best.\n\nAs always leave your comments and questions down below.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1104,
+            "year": 2023,
+            "published_at": "2023-02-15T14:00:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ItHLPGZNVeE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ItHLPGZNVeE",
+                "url": "https://www.youtube.com/watch?v=ItHLPGZNVeE",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-drYPr1l3YkA",
+            "episode_number": 35,
+            "title": "MAKING A GIANT 3D PRINTED EXCAVATOR PT.1",
+            "description": "Check out PCBWay at: https://www.pcbway.com/?from=Ivan for 3D Printing, Sheet metal fabrication, Injection moulding, CNC services and more!\n\nI'm building a giant excavator using the 3D printed Miranda Blocks that I designed to build the Go Kart to race Matt Denton and his lego inspired Go Kart. When I started building the Go Kart I realised that there were a lot of improvements that could be done to the blocks but Iterating the design on that monstrous scale was going to take a lot of time and be quite wasteful so I created this scaled down version of the blocks which took a loooot of filament so go and send some love to PolyMaker for letting me go wild with their filament! (aff link): https://bit.ly/3i4PEkd\n\nAs the goal of the blocks is to be able to use and reuse them to prototype different projects I needed a project with a little bit more punch than a car so I decided to try and build an excavator.\nThis excavator design is already too big for these blocks but that's intentional as I want to test the limits of the design so I can be sure that I thought of every detail before starting to print these at full scale.\n\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 768,
+            "year": 2023,
+            "published_at": "2023-01-31T14:00:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/drYPr1l3YkA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "drYPr1l3YkA",
+                "url": "https://www.youtube.com/watch?v=drYPr1l3YkA",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-L_YHvlnIwn4",
+            "episode_number": 36,
+            "title": "MAKING A GIANT SPOOL ROLLER WITH A LASER CUTTER",
+            "description": "Product Links:\nEU Official Store:\nhttps://store.creality.com/eu/products/10w-cr-laser-falcon-engraver?aid=yt01IvanMiranda\nCode: FA120 (with 120€ off)\nUS Official Store:\nhttps://store.creality.com/products/10w-cr-laser-falcon-engraver?aid=yt01IvanMiranda\nCode: FA80 (with $80 off)\nDE Official Store:\nhttps://store.creality.com/de/products/cr-laser-falcon-graveur-10-w?aid=yt01IvanMiranda\nCode: FA120 (with €120 off)\nUK Official Store:\nhttps://store.creality.com/uk/products/10w-cr-laser-falcon-engraver?aid=yt01IvanMiranda\nCode: FA120 (with ￡120 off)\nEnter the Creality Giveaway Event: https://gleam.io/competitions/kd6xD-giveawaywho-are-creator-of-masterpiecesfestival-gifts-collection\n\nThanks a lot to Creality for sponsoring this video and letting me work on a fun project.\n\nCHAPTERS\n00:00 INTRO\n00:57 SAFETY\n02:01 FOCUS BAR\n02:18 ONE BUTTON OPERATION\n02:42 BUILT IN LEVELLER\n02:49 GRADIENT ENGRAVING\n03:24 SCALE ENGRAVING\n04:08 CUTTING AND ENGRAVING\n06:42 TESTING\n07:10 WE ARE CREATORS OF MASTERPIECES",
+            "duration": 483,
+            "year": 2023,
+            "published_at": "2023-01-09T14:24:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/L_YHvlnIwn4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "L_YHvlnIwn4",
+                "url": "https://www.youtube.com/watch?v=L_YHvlnIwn4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-OunU3Cz1o4M",
+            "episode_number": 37,
+            "title": "I BUILT MY OWN HUGE LEGO INSPIRED BLOCKS FOR A LIFE SIZED GO KART!!",
+            "description": "No matter how big or small your custom manufacturing project may be, you can start your manufacturing project with Xometry. Visit https://xometry.com/miranda to get your design quoted, produced, and in your hands in no time and use code: MIRANDA25 for $25 off your first order\n\nCheck out Matt's channel!:\nhttps://www.youtube.com/channel/UCbOrJwJsd4vFS4aLIILa_7Q\n\nAnd send some love to PolyMaker for letting me go wild with their filament! (affiliate link):\nhttps://bit.ly/3i4PEkd\n\nHi everyone! The second part of the Lego Inspired Go Kart build is here! This time I focused on the Miranda Blocks design and tried to make more sensible progress by testing the Go Kart Design with the newly created Miranda Blocks Mini. \n\nAs always please let me know your thoughts down below. \n\nThanks!!!\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 786,
+            "year": 2022,
+            "published_at": "2022-11-29T15:30:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/OunU3Cz1o4M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "OunU3Cz1o4M",
+                "url": "https://www.youtube.com/watch?v=OunU3Cz1o4M",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-jQ4tehq1CC0",
+            "episode_number": 38,
+            "title": "YOU WON'T BELIEVE WHAT I 3D PRINTED THIS TIME ft. Matt Denton (from scratch)",
+            "description": "They are now running a Black Friday Sale. Go to https://establishedtitles.com/MIRANDA and get an additional 10% off on any purchase with code MIRANDA. Thanks to Established Titles for sponsoring this video!\n\nCheck out Matt's channel!:\nhttps://www.youtube.com/channel/UCbOrJwJsd4vFS4aLIILa_7Q\n\nAnd send some love to PolyMaker for letting me go wild with their filament! (affiliate link):\n\nhttps://bit.ly/3i4PEkd\n\nI'm finally building a lego inspired go kart to race Matt Denton. I had the opportunity to try his at Makers Central last spring and I challenged Matt to a race. I'm going to win! Go team Miranda! \nIf you are interested on a scale down version of the Miranda Blocks that I'm using for this build let me know in the comments!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 771,
+            "year": 2022,
+            "published_at": "2022-11-22T15:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/jQ4tehq1CC0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "jQ4tehq1CC0",
+                "url": "https://www.youtube.com/watch?v=jQ4tehq1CC0",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-TKE7-Q5jBjE",
+            "episode_number": 39,
+            "title": "YOU WON'T BELIEVE WHAT I PRINTED FIRST - GIANT 3D PRINTER BUILD PT. 5",
+            "description": "You and your company can try Onshape for Free at https://Onshape.Pro/IvanMiranda\n\nThe big printer finally prints!! I got to assemble the carriage with the awesome Slice Engineering Magnum Plus. Check it out here!:\nhttps://www.sliceengineering.com/products/mosquito-magnum-plus\n\nMaking it print took a bit too long because I went the fancy way with the Z axis homing sequence. The Duet3 boards are full of possibilities, you can check them all out here:\nhttps://www.duet3d.com/\n\nAnd all the filament on this video was sponsored by Polymaker. They seem to be as crazy as I am or more so please send them some love!:\nwww.polymaker.com\n\nThe CHEP cube used at the end of the video is a design from Chuck Hellebuyck:\nhttps://www.youtube.com/user/beginnerelectronics\nAnd the universally known Benchy from:\nhttps://www.3dbenchy.com/\n\nThe printer is finished as it is already printing but there's one more video in this series where I plan on fixing and mending all the bodges that I had to do to be able to progress during this build. I've learned a lot and there are a few low effort changes that will make it ten times better. Not sure if that video will be the next one or I will need a bit more time so be sure to subscribe so you don't miss it. \n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook\n\nCHAPTERS\n00:00 Intro\n00:34 Carriage assembly\n02:32 Drag chain contraption\n05:27 Filament runout sensor\n07:53 Bed homing sequence\n10:12 Printing",
+            "duration": 782,
+            "year": 2022,
+            "published_at": "2022-11-04T15:00:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/TKE7-Q5jBjE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "TKE7-Q5jBjE",
+                "url": "https://www.youtube.com/watch?v=TKE7-Q5jBjE",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--b7WU3RsxXY",
+            "episode_number": 40,
+            "title": "I FINALLY CAVED, COREXY - GIANT 3D PRINTER BUILD PT. 4",
+            "description": "Check out PCBWay at: https://www.pcbway.com/?from=Ivan for 3D Printing, Sheet metal fabrication, Injection moulding, CNC services and more!\n\nI kept doubting until the last minute while designing the printer but in the end I caved and went for the CoreXY arrangement on the XY axis belts. \n\nIt was easier to implement than I thought and harder to understand than I anticipated. I had to even make a prototype to wrap my head around the concept and still I'm not entirely sure about how to adjust for squareness but I'll get there eventually I'm sure.\n\nI went all in with the motors because I hope to be able to print thinner layers really fast with this one but time will tell.\n\nSend some love to https://www.polymaker.com to let them know that you like them supporting my madness. \n\nCHAPTERS\n00:00 Intro\n00:20 What's CoreXY?\n01:06 Gantry assembly\n03:36 Installing the idlers\n05:16 Replacing the Z pulleys\n06:19 The motors\n08:10 Installing the belts\n09:22 Testing\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 770,
+            "year": 2022,
+            "published_at": "2022-10-12T10:57:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-b7WU3RsxXY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-b7WU3RsxXY",
+                "url": "https://www.youtube.com/watch?v=-b7WU3RsxXY",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4QdBHjsvxNs",
+            "episode_number": 41,
+            "title": "I BUILT A HEATED BED AND IT BLEW A FUSE - GIANT 3D PRINTER BUILD PT. 3",
+            "description": "You and your company can try Onshape for Free at https://Onshape.Pro/IvanMiranda\n\nI'm building a giant 3D printer from scratch, the printer will have a print volume of 1000x1000x1420 mm. Everything you see in the video has been designed and 3D printed by me and the files will be available on my website www.ivanmiranda.com when the project is finished. \n\nI'll be using a Slice Engineering magnum plus hotend and It is controlled by a Duet3 MBHC which is a fantastic controller, check it out!:\nhttps://www.duet3d.com/products\n\nIn this episode I install 4 - 1Kw heaters on a 3mm aluminium plate. The heaters are individually controlled by the Duet3 through 4 SSR and each heated bed has an independent thermal fuse just in case things go haywire. \nOn top I used a regular piece of 5mm glass. That will be more than enough for PLA or similar plastics.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook\n\nCHAPTERS\n00:00 The plate\n01:07 Half wave rectifier\n02:06 Thermal fuse\n03:48 Sticking to the plate\n06:57 Wiring\n08:24 Fail 1 - Short\n08:48 Fail 2 - Common ground\n09:11 Fail 3 - SSR Triac\n10:33 The glass\n11:48 Speed test",
+            "duration": 838,
+            "year": 2022,
+            "published_at": "2022-09-25T12:00:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4QdBHjsvxNs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4QdBHjsvxNs",
+                "url": "https://www.youtube.com/watch?v=4QdBHjsvxNs",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-enF73S2UKPc",
+            "episode_number": 42,
+            "title": "MOST POWERFUL 3D PRINTER BED EVER (lifts human) - GIANT 3D PRINTER BUILD PT. 2",
+            "description": "🌏Get NordVPN 2 year plan + 4 months free here ➼https://nordvpn.com/miranda It's risk-free with Nord's 30-day money-back guarantee!\n\nI'm building a giant 3D printer from scratch, the printer will have a print volume of 1000x1000x1420 mm. Everything you see in the video has been designed and 3D printed by me and the files will be available on my website www.ivanmiranda.com when the project is finished. \nI'll be using a Slice Engineering magnum plus hotend and It is controlled by a Duet3 MBHC which is a fantastic controller, check it out!:\nhttps://www.duet3d.com/products\n\nThe bed frame is lifted by four Nema23 motors with a 47:1 gear ratio and it already weighs 15 kilos without the bed heater or surface so this is going to end up being a heavy one, but you'll see in the video that that won't be an issue. The motors are being run at 1.2A for the stunt at the end of the video so I have plenty of power to lift whatever I decide to print.\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook\n\nCHAPTERS\n00:00 The frame\n01:35 The motors\n02:37 Bracing\n05:17 Minor Setback\n06:30 NordVPN\n07:28 Wiring the motors\n09:48 Mainboard\n11:02 Calibration\n11:40 Belts\n13:43 Test",
+            "duration": 904,
+            "year": 2022,
+            "published_at": "2022-09-10T12:00:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/enF73S2UKPc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "enF73S2UKPc",
+                "url": "https://www.youtube.com/watch?v=enF73S2UKPc",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-YTklfvTQcPQ",
+            "episode_number": 43,
+            "title": "MAKING A GIANT FRAME FOR A 3D PRINTER  (from scratch) - GIANT 3D PRINTER BUILD PT. 1",
+            "description": "Start your free trial to Altium Designer for 15 days: https://www.altium.com/yt/ivanmiranda Check out Octopart: https://octopart.com/\nI'm building a giant 3D printer from scratch, the printer will have a print volume of 1000x1000x1420 mm. The printer will be able to print about 4kg of Filament a day and amongst other things it'll be able to print an entire Go Kart chassis in one go for my challenge with @MattDenton or the hull of a boat that I can ride. Of course the Big Tank will see new parts printed on this once it is up and running.\nEverything you see in the video has been designed and 3D printed by me and the files will be available on my website www.ivanmiranda.com when the project is finished. \nI'll be using a Slice Engineering magnum plus hotend and it will be controlled by a Duet3 Controller board.\n\nCHAPTERS:\n00:00 Cutting to length\n02:07 Vertical posts\n05:00 Altium Designer\n06:07 Y axis guides\n08:55 Braces\n09:37 Feet\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 737,
+            "year": 2022,
+            "published_at": "2022-08-22T13:00:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YTklfvTQcPQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YTklfvTQcPQ",
+                "url": "https://www.youtube.com/watch?v=YTklfvTQcPQ",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ctyLjOHg7Ag",
+            "episode_number": 44,
+            "title": "3D PRINTED CNC BUILT FROM SCRATCH CUTS METAL",
+            "description": "Start your free trial to Altium Designer for 15 days: https://www.altium.com/yt/ivanmiranda\n\nIf you want to get the files for this machine you can go here:\nhttps://ivanmiranda.com/products/3d-printed-desktop-cnc\n\nAfter using the Tiny CNC that I made back in January for a while I've been wanting to improve it and make it more rigid. The natural next step for that router would have been to machine the plastic parts in aluminium but I was sure that the rods and bearings were way more important in terms of rigidity so I set myself to redesign it using linear rails. In the end I started the design from scratch and every single 3D printed part in it is new. I've tried to keep it as compatible as possible with the hardware of the MKI just in case those who got the files for it can switch to this new design.\n\nIn this new version there's also more clearance for stock, up to 85 mm and more usable Z travel as it can move up to 60 mm.  The vacuum hose adapter of the MKI was taking a lot of usable stock clearance so I've designed a new retractable one that mounts on the side.\n\nThis one is clearly more rigid and can be pushed a lot to machine faster and better parts and I'm pretty happy with the final design.\n\nAs always I'd love to read your thoughts down below. Enjoy and thanks!!\n\nCHAPTERS:\n00:00 The frame\n04:40 Gantry\n06:10 Altium\n06:55 Gantry II\n08:55 Carriage\n10:56 Z Assembly\n12:00 Wiring\n13:11 Vacuum Adapter\n13:36 Wasteboard\n15:18 Calibration\n17:04 Testing\n17:45 Conclusions\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 1163,
+            "year": 2022,
+            "published_at": "2022-07-07T14:02:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ctyLjOHg7Ag/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ctyLjOHg7Ag",
+                "url": "https://www.youtube.com/watch?v=ctyLjOHg7Ag",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-fJreU4RwN-M",
+            "episode_number": 45,
+            "title": "You won't believe what this 3D printed tank can do",
+            "description": "Learn more about PCBWay's services like CNC Machining, Online sheet metal fabrication, 3D printing or Injection Molding at https://www.pcbway.com/?from=Ivan\n\nI've been doing a lot of off camera work to the tank so I could get it ready for this test, It has been a fun test and I've learned a lot about what does and what does not work. \nBy my observations I'd say that the parts that failed did it so because:\n· I printed them really weak because I was running to finish the tank.\n· The parts were at least 2 years old and had been supporting the weight of the tank all that time.\n· There are a couple of design flaws that introduced unwanted weaknesses mostly on the links. \n\nEven though the fact that it is 3D printed is a clear drawback I think I'm pretty close to it working as I want so I'll keep pushing through. I still consider the tank finished but I'll have to redesign and reprint a bunch of parts. Please let me know what you think about it in the comments!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook\n\nCHAPTERS: \n00:00 Intro\n01:39 Transporting the tank\n02:46 How does it work\n04:34 PCBWay\n05:18 Testing\n09:56 Unexpected disassembly\n11:15 Damage report",
+            "duration": 848,
+            "year": 2022,
+            "published_at": "2022-06-17T21:00:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fJreU4RwN-M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fJreU4RwN-M",
+                "url": "https://www.youtube.com/watch?v=fJreU4RwN-M",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-UFySQMVuqv4",
+            "episode_number": 46,
+            "title": "I CRASHED MY GIANT 3D PRINTED TANK WHILE DRIFTING IT",
+            "description": "Thank you INTO THE AM for these Elevated Everyday Graphic Tees! Get yours now and get 10% off site-wide when you click this link: \nhttps://intotheam.com/ivanmiranda\n\nThis time I added a giant hopper on top of the Giant 3D Printed Tank to get a whopping 200 balls of capacity. As always I found a few difficulties in the process but I ended up having way too much fun as it always happens with this project. \nAs always loving to hear your thoughts in the comments.\n\nCHAPTERS: \n00:00​ Making it faster\n03:10 Hopper assembly\n04:57 Into the AM\n05:33 Troubleshooting\n08:45 Testing!\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 618,
+            "year": 2022,
+            "published_at": "2022-05-22T13:45:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UFySQMVuqv4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UFySQMVuqv4",
+                "url": "https://www.youtube.com/watch?v=UFySQMVuqv4",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-c5gBMMs9ayk",
+            "episode_number": 47,
+            "title": "GIANT 3D PRINTED TANK FIRES ITS CANNON",
+            "description": "Learn more about PCBWay's services like CNC Machining, Online sheet metal fabrication, 3D printing or Injection Moulding at https://www.pcbway.com/?from=Ivan\n\nFinally! The tank got a cannon! The ball feeding system is a hybrid from the last two ball launcher builds as the revolver separates the ball hopper from the airstream and gives a constant launch rate and the conveyor can feed balls in line at an insane speed. \n\nAs you already know I cannot make anything not huge and the large cannon was a bit of a struggle for the turret base plate but I reprinted the side wall in one part and that seemed to give it enough rigidity. I keep forgetting that the entire thing is made of plastic. \n\nThe turret is still missing the hopper for the balls and I have bought a few switches, lights and levers to add proper controls for the turret on the sides of the seat so I can operate the turret while driving. \n\nCHAPTERS: \n00:00​ Barrel\n01:50 Ball revolver\n03:18 EDF motor\n03:42 PCBway\n04:30 Cannon on the turret\n05:16 Tilt actuator\n07:24 Ball conveyor\n09:37 Testing\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 746,
+            "year": 2022,
+            "published_at": "2022-05-01T14:00:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/c5gBMMs9ayk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "c5gBMMs9ayk",
+                "url": "https://www.youtube.com/watch?v=c5gBMMs9ayk",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-bGh0ZY6MI1g",
+            "episode_number": 48,
+            "title": "GIANT 3D PRINTED TANK GETS A TURRET (from scratch)",
+            "description": "Learn more about PCBWay's services like CNC Machining, Online sheet metal fabrication, 3D printing or Injection Molding at https://www.pcbway.com/?from=Ivan\n\nAbout the 3D printer used to print the huge prints on the video:\nhttps://youtu.be/KhBdMpEGH0o\n\nAbout the CNC router used to make the aluminium parts for the video:\nhttps://youtu.be/dkvED8p8bt0\n\nPrevious videos about this tank build:\nhttps://youtube.com/playlist?list=PLiqrEMrfoE8ph8BZS2d72R-MJUhN61ut3\n\nCommunity discord server: \nhttps://discord.gg/gKUDjT2yCm\n\nI made a turret for the 3D printed tank so we can put a cannon on top of it. I also installed a few accessories on it that will make easier to install the barrel and the rest of the motors and actuators to make it work. I'm using a nema 23 stepper motor to make the turret spin and seems to be more than capable to spin the turret at a decent speed. I'm running the motor @12V for now but 24V will be available when I install the electronics for the cannon. \nAs always let me know your thoughts down below!\n\nCHAPTERS: \n00:00​ Turret base\n00:46 Giant bearing\n01:23 Centering endstop\n02:01 Pan motor\n04:24 Rotating base perimeter\n05:30 PCBWay\n06:15 Electronics\n07:52 Programming and testing\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 688,
+            "year": 2022,
+            "published_at": "2022-03-31T15:30:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/bGh0ZY6MI1g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "bGh0ZY6MI1g",
+                "url": "https://www.youtube.com/watch?v=bGh0ZY6MI1g",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-LCE_A3x0vR0",
+            "episode_number": 49,
+            "title": "FULLY 3D PRINTED TANK THAT DRIVES WITH PEDALS (from scratch)",
+            "description": "Start your free trial to Altium Designer for 15 days: https://www.altium.com/yt/ivanmiranda\n\nIf you want to know more about the 3D printer in the video check:\nhttps://ivanmiranda.com/products/big-3d-printer-mkiv-files\nhttps://youtu.be/KhBdMpEGH0o\n\nIf you want to know more about the CNC used in the video check:\nhttps://ivanmiranda.com/products/tiny-3d-printed-cnc\nhttps://youtu.be/dkvED8p8bt0\n\nIf you want to watch all the 3D printed tank saga here's the playlist:\nhttps://youtube.com/playlist?list=PLiqrEMrfoE8ph8BZS2d72R-MJUhN61ut3\n\nI finally got back to the big tank project! This was more fun than I even remembered.\n\nMany of you may remember that the tank had a clamshell style cover, and it seemed like a good idea to me at the time but it had two 30 Kg gas cylinders to help with the lifting and those pushed the lid forward constantly when the lid was closed. That shifted the cover forward and bent the back of the frame, a couple of the hinges also broke. That paired with the fact that it was going to be impossible to fit a turret on top (too heavy) and  that it was incredibly disorienting (and uncomfortable) to ride the tank on my back made me discard the idea and start over. \n\nThe new seat is surprisingly comfortable (I've never designed a seat before) and it allows for the next modification to the driving of the tank, PEDALS!. Before getting to the pedals idea I revolved a lot around a complex driving wheel with buttons and levers but in the end, my feet where free and is super intuitive to control. In the video you may see that I put a couple of encoders on the pedals but those had pretty poor resolution and I had only 12 encoder counts for the entire travel of each speed so I ended up temporarily connecting linear potentiometers to the Arduino as an almost drop in replacement. I'll need to swap those for something more robust and most probably will add two on each pedal as a safety as this thing going hay wire doesn't sound safe. I also added a couple of 200 amp switches on the panel behind the seat that will in the future cut power to the batteries.\n\nAnd as an inevitable modification I removed the three chain reduction gear that I previously mounted as it was extremely unreliable and kept broke, I broke chains, shafts, bolts.. everything in it was failing all the time. Since I made that video I've learned a lot and HTD 5M belts seem to be the most reliable and easy to design for solution so I went with that. \n\nThe turret and the cannon will be sitting in the flat spot on top where I've already left mounting holes.\n\nAs always I'm super thankful for your support and eager to read your comments. Thanks!!!\n\nCHAPTERS: \n00:00​ Intro\n00:16 Disassembly\n00:43 New rear\n01:37 Traction sprockets\n02:43 Motor assembly\n04:16 Seat\n04:56 Altium Designer\n07:22 Pedals\n10:04 Shell\n10:43 Testing\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 764,
+            "year": 2022,
+            "published_at": "2022-03-03T16:00:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/LCE_A3x0vR0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "LCE_A3x0vR0",
+                "url": "https://www.youtube.com/watch?v=LCE_A3x0vR0",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-dkvED8p8bt0",
+            "episode_number": 50,
+            "title": "TINY 3D PRINTED CNC CUTS METAL (from scratch)",
+            "description": "Invest in blue-chip art for the very first time by signing up for Masterworks:\nhttps://masterworks.art/ivanmiranda\nSee important Masterworks disclosures: https://mw-art.co/37WwvbD\n\nThere's a new version of this machine here: https://youtu.be/ctyLjOHg7Ag\n\nIf you are interested in the files for the machine you can go here:\n\nhttps://ivanmiranda.com/products/tiny-3d-printed-cnc\n\nI made a CNC router using mostly 3D printed parts that can cut metal! \nThe machine uses a Makita router as the cutting tool and as I show in the video it can easily cut complex parts out of aluminium. \n\nCHAPTERS: \n00:00​ Intro\n00:15 Frame\n03:40 Side Plates\n05:05 Masterworks\n06:57 Gantry\n08:10 Carriage\n10:14 Wiring\n11:25 Waste Board\n12:30 Testing\n\n\nJoin this channel to get access to perks:\nhttps://www.youtube.com/channel/UCF3cDM_hQMtIEJvEW1BZugg/join\n\nIf you want to support this channel you can do it here:\n\nPatreon: https://www.patreon.com/ivanmiranda\nMerchandise: http://ivanmiranda.space/store\nPayPal: https://www.paypal.me/IvanMirandacom\n\nFor regular updates on my projects follow me on:\n\nInstagram: https://ivanmiranda.space/instagram\nTwitter: https://ivanmiranda.space/twitter\nFacebook: https://ivanmiranda.space/facebook",
+            "duration": 922,
+            "year": 2022,
+            "published_at": "2022-01-25T16:00:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dkvED8p8bt0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dkvED8p8bt0",
+                "url": "https://www.youtube.com/watch?v=dkvED8p8bt0",
+                "channel_id": "UCF3cDM_hQMtIEJvEW1BZugg",
+                "channel_title": "Ivan Miranda",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}

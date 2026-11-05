@@ -15,6 +15,7 @@ declare(strict_types=1);
 // Usage: php ia-import/tests/run-tests.php [optional-filter-substring]
 
 require __DIR__ . '/../ia-import.php'; // pulls in all of src/* via its requires
+require __DIR__ . '/../ia-series-import.php'; // pulls in the series-importer's additional src/* classes
 
 final class AssertionFailed extends Exception
 {

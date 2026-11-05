@@ -1,0 +1,87 @@
+{
+    "_note": "Recurring-series programming for The Lecture Hall (channels/publish.php; see docs/series-and-channels.md and channels/publish/README.md). Nine blocks, each one real complete lecture per daily occurrence -- packing.enabled is deliberately NOT used anywhere here: lectures run 20-150+ minutes and packing exists to fit several SHORT episodes into one fixed slot, which fights 'respect real lecture durations' and 'air a structured lecture series in its intended order' for long-form content (see docs/series-and-channels.md's packing section and this task's own brief). Block spacing was chosen from each series' real approved-episode duration range (see series/<id>/series.json), not from the nominal 'duration' field -- ProgrammingCompiler/BoundaryResolver only ever compare a real episode's actual end against the NEXT occurrence's real calendar start time (channels/publish/src/ProgrammingCompiler.php's own header, point (b)); 'duration' itself is just a fallback for an episode with no known duration. Every block below still carries a comfortable margin between its own longest approved episode and the next block's start, PLUS an explicit boundary.mode='soft' + max_delay as a second line of defense for future refreshes that might approve a longer episode -- except 'history-and-civilization' and 'the-evening-lecture', which keep boundary.mode='hard' (the default) because their source material (Yale's ~46-54min classes; Gresham's ~29-67min public lectures) has either very low variance or a very large trailing gap before the next block, so hard was evaluated and is genuinely safe, matching Science & Engineering's own precedent for when to prefer hard. 'stanford-cs229' is intentionally not scheduled anywhere here (see catalog.json's _note: 16/17 of its imported videos are not embeddable).",
+    "schema_version": 1,
+    "blocks": [
+        {
+            "id": "physics-and-astronomy-overnight",
+            "type": "series",
+            "series_id": "mit-general-relativity",
+            "recurrence": { "frequency": "daily", "time": "00:00", "timezone": "America/Los_Angeles" },
+            "duration": 6300,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "soft", "max_delay": 1200 }
+        },
+        {
+            "id": "overnight-university",
+            "type": "series",
+            "series_id": "perimeter-institute",
+            "recurrence": { "frequency": "daily", "time": "02:00", "timezone": "America/Los_Angeles" },
+            "duration": 5400,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "soft", "max_delay": 1800 }
+        },
+        {
+            "id": "mathematics-oxford",
+            "type": "series",
+            "series_id": "oxford-mathematics",
+            "recurrence": { "frequency": "daily", "time": "04:00", "timezone": "America/Los_Angeles" },
+            "duration": 8400,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "soft", "max_delay": 2400 }
+        },
+        {
+            "id": "mathematics-mit",
+            "type": "series",
+            "series_id": "mit-math-for-cs",
+            "recurrence": { "frequency": "daily", "time": "07:00", "timezone": "America/Los_Angeles" },
+            "duration": 5400,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "soft", "max_delay": 1500 }
+        },
+        {
+            "id": "computer-science-cs50",
+            "type": "series",
+            "series_id": "cs50x-lectures",
+            "recurrence": { "frequency": "daily", "time": "09:00", "timezone": "America/Los_Angeles" },
+            "duration": 9300,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "soft", "max_delay": 3000 }
+        },
+        {
+            "id": "the-royal-institution",
+            "type": "series",
+            "series_id": "royal-institution-physics",
+            "recurrence": { "frequency": "daily", "time": "13:00", "timezone": "America/Los_Angeles" },
+            "duration": 5400,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "soft", "max_delay": 1500 }
+        },
+        {
+            "id": "history-and-civilization",
+            "type": "series",
+            "series_id": "yale-ukraine",
+            "recurrence": { "frequency": "daily", "time": "15:00", "timezone": "America/Los_Angeles" },
+            "duration": 3600,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "hard" }
+        },
+        {
+            "id": "economics-and-society",
+            "type": "series",
+            "series_id": "stanford-ecorner",
+            "recurrence": { "frequency": "daily", "time": "16:30", "timezone": "America/Los_Angeles" },
+            "duration": 4500,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "soft", "max_delay": 1200 }
+        },
+        {
+            "id": "the-evening-lecture",
+            "type": "series",
+            "series_id": "gresham-lectures",
+            "recurrence": { "frequency": "daily", "time": "18:00", "timezone": "America/Los_Angeles" },
+            "duration": 4500,
+            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
+            "boundary": { "mode": "hard" }
+        }
+    ]
+}

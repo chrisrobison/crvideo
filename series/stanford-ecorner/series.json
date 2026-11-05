@@ -1,0 +1,1182 @@
+{
+    "schema_version": 1,
+    "id": "stanford-ecorner",
+    "title": "Stanford eCorner",
+    "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. We share original stories from informed leaders in academia and industry that focus on innovation, startups, culture, and strategy. The goal: empower you to bring bold ideas to life. Find our videos, as well as original articles and podcasts, at https://ecorner.stanford.edu.\n\nStanford eCorner is led by the Stanford Technology Ventures Program (STVP), the entrepreneurship center in Stanford University’s School of Engineering.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/FrI08KCkMoaluAWywjkFSsvH-OHkgIddunJo5sqMppgBDmWpgkRtELsWb0kqe1lUVwOahYaBTQ=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+        "channel_url": "https://www.youtube.com/channel/UCctkeBNtFIOn7Yl_9TTj_4w",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-bTxL01xq1W4",
+            "episode_number": 1,
+            "title": "Carina Hong (Axiom) - The Frontier of AI for Math [Entire Talk]",
+            "description": "Carina Hong is the founder and CEO of Axiom, an AI company building a self-improving, superintelligent reasoner, starting with an AI mathematician. In this conversation with Stanford Adjunct Lecturer Ravi Belani, Hong explains the technical challenges of pursuing mathematical breakthroughs using AI, as well as the human challenges of fundraising, finding talent, and motivating employees in a rapidly changing AI industry.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2805,
+            "year": 2026,
+            "published_at": "2026-11-03T16:23:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/bTxL01xq1W4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "bTxL01xq1W4",
+                "url": "https://www.youtube.com/watch?v=bTxL01xq1W4",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-E1s1fb-DyUk",
+            "episode_number": 2,
+            "title": "Michael Bernstein (Simile) - The Future of AI Simulation [Entire Talk]",
+            "description": "Michael Bernstein is a co-founder and the chief data officer of Simile, where he works on AI systems for behavioral simulation. He is also a professor of computer science at Stanford University and a senior fellow at the Stanford Institute for Human-Centered Artificial Intelligence. In this presentation, followed by a conversation with Stanford Adjunct Lecturer Ravi Belani, Bernstein reflects on what his year of focusing on Simile taught him about human-centered design, gaining customers’ trust, building a cross-functional organization, and preparing for a new era of transformative AI applications.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2872,
+            "year": 2026,
+            "published_at": "2026-10-29T20:34:58Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/E1s1fb-DyUk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "E1s1fb-DyUk",
+                "url": "https://www.youtube.com/watch?v=E1s1fb-DyUk",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-2kEkOX32gtY",
+            "episode_number": 3,
+            "title": "Vineet Edupuganti (Cogent Security) - First Principles in the AI Era [Entire Talk]",
+            "description": "Vineet Edupuganti is the CEO and co-founder of Cogent Security, which uses AI systems to investigate and resolve cybersecurity vulnerabilities. With a background in machine learning and product management, Edupuganti brings a product-first mindset to solving complex security challenges for modern enterprises. In this conversation with Stanford Adjunct Lecturer Ravi Belani, Edupuganti explores how his journey from Stanford undergraduate to AI cybersecurity entrepreneur taught him to base his thinking on first principles.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2765,
+            "year": 2026,
+            "published_at": "2026-10-22T21:48:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2kEkOX32gtY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2kEkOX32gtY",
+                "url": "https://www.youtube.com/watch?v=2kEkOX32gtY",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-QMfrkoMRJh8",
+            "episode_number": 4,
+            "title": "Stanford Educators on AI: The Next Wave of Entrepreneurship Education (Presented by STVP)",
+            "description": "The entrepreneurial landscape is changing. So too is how we educate entrepreneurial competencies. AI enables students to create convincing prototypes, marketing materials, and venture narratives almost instantly. But compelling output can conceal untested assumptions, limited customer evidence, and skipped steps in the entrepreneurial process.\n\nIn this webinar, Stanford educators explore how AI is reshaping venture creation and entrepreneurship education. They discuss what entrepreneurs still need to learn, how courses must evolve, and how to distinguish polished output from genuine insight, judgment, and evidence.\n\nTopics include:\nHow Lean LaunchPad and customer discovery must evolve when students arrive with working prototypes\n\nWhich design and venture-building processes remain essential when AI accelerates product development\n\nHow abundant AI-generated output changes entrepreneurial expertise and strategy\n\nWhere AI simulation can support learning, and where engagement with real customers remains indispensable\n\nHow courses can assess judgment, experimentation, evidence, and learning rather than the polish of a final product\n\nSpeakers:\n\nRiitta Katila, Professor of Management Science and Engineering and Faculty Director, Stanford Technology Ventures Program\n\nSteve Blank, Adjunct Professor, Management Science and Engineering, and creator of the Lean LaunchPad methodology\n\nPerry Klebahn, Adjunct Professor and Director of Executive Education, Stanford d.school\n\nSaikat Chaudhuri, Professor of Management Science and Engineering and Faculty Director, Stanford Technology Ventures Program\n\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 3566,
+            "year": 2026,
+            "published_at": "2026-10-14T18:47:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/QMfrkoMRJh8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "QMfrkoMRJh8",
+                "url": "https://www.youtube.com/watch?v=QMfrkoMRJh8",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-M5-Uft9nX68",
+            "episode_number": 5,
+            "title": "Eric Ries (The Lean Startup) - Be the Human Spark [Entire Talk]",
+            "description": "Eric Ries is an entrepreneur, author, and creator of the Lean Startup methodology. He is the founder of the Long-Term Stock Exchange and the author of The Lean Startup, The Startup Way, and Incorruptible. In this conversation with Saikat Chaudhuri, faculty director of the Stanford Technology Ventures Program (STVP) and a professor of Management Science and Engineering, Ries urges aspiring entrepreneurs not to outsource their learning and creativity, while advising them how to benefit customers, avoid corruption, and create mission-driven companies.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2795,
+            "year": 2026,
+            "published_at": "2026-10-14T17:09:52Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/M5-Uft9nX68/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "M5-Uft9nX68",
+                "url": "https://www.youtube.com/watch?v=M5-Uft9nX68",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-Zb1LClh3lHo",
+            "episode_number": 6,
+            "title": "Adam Nash (Daffy) - Making Great Products [Entire Talk]",
+            "description": "Adam Nash is the co-founder and CEO of Daffy, a modern donor-advised fund (DAF) built to help people be more generous, more often. Under his leadership, Daffy has grown into one of Fast Company’s Most Innovative Companies, recently surpassed $2 billion in charitable assets under management, and became one of the fastest-growing DAF platforms in the country. In this talk, Nash uses examples from throughout his career to share five practical lessons for being a great product leader.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2786,
+            "year": 2026,
+            "published_at": "2026-10-08T18:59:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zb1LClh3lHo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Zb1LClh3lHo",
+                "url": "https://www.youtube.com/watch?v=Zb1LClh3lHo",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-hUHhg-_pu6M",
+            "episode_number": 7,
+            "title": "Do What You Love",
+            "description": "November 12, 2008\nYou won’t just be happier when you follow your passionate career path; you’ll be better at it. IDEO’s General Manager Tom Kelley quotes author Jim Collins who identifies a Venn diagram in every career path – the overlapping intersection of what you’re good at, what you’re born to do, what people will pay you to do, and finding a happy group of co-workers with whom to work. In the pursuit of self-discovery, Kelley suggests keeping a laboratory notebook tracking the happiest moments in life to discover our own true passions.",
+            "duration": 331,
+            "year": 2026,
+            "published_at": "2026-08-13T22:46:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hUHhg-_pu6M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hUHhg-_pu6M",
+                "url": "https://www.youtube.com/watch?v=hUHhg-_pu6M",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-iRL2mypbN5M",
+            "episode_number": 8,
+            "title": "Ryan Nece (Next Legacy Partners) - Learning from Achievement and Adversity [Entire Talk]",
+            "description": "Ryan Nece is co-founder and managing partner of Next Legacy Partners, a multi-strategy venture platform investing in established venture firms, emerging venture firms, and select technology companies. A former Super Bowl champion, Nece transitioned from professional sports to entrepreneurship, founding and scaling multiple businesses before co-founding Next Legacy. In this conversation with Adjunct Lecturer Emily Ma, Nece shares the lessons he has learned about resilience, generosity, authenticity, and thoughtfulness from both painful experiences and huge successes.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2819,
+            "year": 2026,
+            "published_at": "2026-06-03T16:02:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iRL2mypbN5M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iRL2mypbN5M",
+                "url": "https://www.youtube.com/watch?v=iRL2mypbN5M",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-HfjFBGjgegc",
+            "episode_number": 9,
+            "title": "Jake Miller (Fellow) - Designing Products Around Customer Experience [Entire Talk]",
+            "description": "Jake Miller founded Fellow coming out of Stanford’s d.school Launchpad course, starting with the Duo Coffee Steeper. Fellow products are now in 50 countries. In this conversation with Launchpad instructor and Adjunct Professor Perry Klebahn, Miller shares how he built a roadmap for his company, a portfolio of products, and a distribution plan by focusing on customer experience.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2961,
+            "year": 2026,
+            "published_at": "2026-05-27T16:18:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/HfjFBGjgegc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "HfjFBGjgegc",
+                "url": "https://www.youtube.com/watch?v=HfjFBGjgegc",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-k8-OvuT4Cqs",
+            "episode_number": 10,
+            "title": "Ellen Ochoa (NASA) - Leadership Lessons from Space [Entire Talk]",
+            "description": "Ellen Ochoa (NASA) - Leadership Lessons from Space [Entire Talk]Ellen Ochoa is the first Hispanic woman astronaut to go into space, serving on four space shuttle missions. She served from 2013 to 2018 as the first Hispanic director and the second female director of Johnson Space Center. She earned her MS in electrical engineering and her PhD in electrical engineering with a focus in optical information processing from Stanford. In this conversation with Adjunct Lecturer Emily Ma, Ochoa shares insights she learned in space and on Earth about exploration, resilience, purpose, and teamwork.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 3030,
+            "year": 2026,
+            "published_at": "2026-05-20T15:26:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/k8-OvuT4Cqs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "k8-OvuT4Cqs",
+                "url": "https://www.youtube.com/watch?v=k8-OvuT4Cqs",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-mHYO5Vj7pBw",
+            "episode_number": 11,
+            "title": "Elizabeth Weil (Scribble Ventures) - A People-Centered Journey [Entire Talk]",
+            "description": "Elizabeth Weil is the founder and general partner at Scribble Ventures, the seed fund where builders from OpenAI, Meta, Twitter, Instagram, and a16z channel their operator DNA into backing the next generation of AI‑native companies. In this conversation with Adjunct Lecturer Emily Ma, Weil shares the life lessons she’s learned over her career as an operator and investor, emphasizing the importance of connecting with others and planning activities for yourself outside of work.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2774,
+            "year": 2026,
+            "published_at": "2026-05-13T17:01:48Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mHYO5Vj7pBw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mHYO5Vj7pBw",
+                "url": "https://www.youtube.com/watch?v=mHYO5Vj7pBw",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-AzIvPB1c8lg",
+            "episode_number": 12,
+            "title": "Tracy Chou (Block Party) - Founding a Mission-Driven Startup [Entire Talk]",
+            "description": "Tracy Chou is a product-minded engineering leader and exited founder with more than 15 years of experience building and scaling consumer and enterprise products. She is best known for her work advocating for diversity and inclusion in tech, and for being founder and CEO of Block Party, a platform for online safety, privacy, and anti-harassment, which was recently acquired by DeleteMe. In this conversation with Adjunct Lecturer Emily Ma, Chou explains how her early experiences working at tech startups inspired her to found a mission-driven company and how Block Party balanced mission and profitability.",
+            "duration": 2817,
+            "year": 2026,
+            "published_at": "2026-05-06T21:31:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/AzIvPB1c8lg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "AzIvPB1c8lg",
+                "url": "https://www.youtube.com/watch?v=AzIvPB1c8lg",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-SyLEXYKdqc0",
+            "episode_number": 13,
+            "title": "Harry Tannenbaum (Mill) - Setting the Goal at Delight [Entire Talk]",
+            "description": "Harry Tannenbaum is the co-founder and president of Mill, a technology company combining hardware and AI to reduce waste and recover value from everyday materials, starting with food. Mill’s residential food recycler is now in tens of thousands of homes, creating the foundation for Mill Commercial, which pre-processes and analyzes food waste streams on-site, helping organizations reduce waste, gain operational efficiencies, and unlock new value from what was once discarded. In this conversation with Adjunct Lecturer Emily Ma, Tannenbaum explains his approach to creating products that customers rave about and companies that scale to the point of changing entire systems.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2993,
+            "year": 2026,
+            "published_at": "2026-04-29T22:13:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/SyLEXYKdqc0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "SyLEXYKdqc0",
+                "url": "https://www.youtube.com/watch?v=SyLEXYKdqc0",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-4lH6fwDBODY",
+            "episode_number": 14,
+            "title": "Kit Rodgers, Ben Jun, and Paul Kocher (Cryptography Research, Inc.) [Entire Talk]",
+            "description": "Stanford alumni Kit Rodgers, Paul Kocher, and Ben Jun co-founded Cryptography Research, Inc. (CRI), where they built and deployed some of the world’s most impactful security technologies. CRI was acquired by Rambus in 2011 for $342 million. Kocher is a cryptography and data security researcher best known as a co-author of the SSL 3.0/TLS 1.0 protocols. Jun is an engineer who most recently served as the vice president of livestream and video at Diamond Kinetics, which acquired his company sidelineHD, a livestreaming platform for sports. Rodgers is the senior vice president of technology partnerships and corporate development at Rambus. In this conversation, Kocher, Jun, and Rodgers discuss how CRI’s business model evolved and how they built their uncommon level of trust in each other throughout the process.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2977,
+            "year": 2026,
+            "published_at": "2026-04-22T16:30:43Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4lH6fwDBODY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4lH6fwDBODY",
+                "url": "https://www.youtube.com/watch?v=4lH6fwDBODY",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-NUNyK6P6q8s",
+            "episode_number": 15,
+            "title": "Brendan Foody (Mercor) - Agentic Data and the Future of AI [Entire Talk]",
+            "description": "Brendan Foody co-founded Mercor, a recruiting startup that helps Silicon Valley's top AI labs train their models to do professional-level reasoning by matching skilled workers with enterprise projects. Foody and his co-founders, Surya Midha and Adarsh Hiremath, became the world's three youngest self-made billionaires in October 2025. In this conversation with Adjunct Lecturer Emily Ma, Foody shares how he and his co-founders identified agentic data as the next leap in AI training and benchmarking and built Mercor around it; predicts how the AI revolution will reshape work and the economy; and gives advice to aspiring entrepreneurs looking for a way into the AI market.\n\nEntrepreneurial Thought Leaders is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering, and published on eCorner by STVP. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram \nInstagram: https://www.instagram.com/stanford_stvp \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2831,
+            "year": 2026,
+            "published_at": "2026-04-15T20:58:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/NUNyK6P6q8s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "NUNyK6P6q8s",
+                "url": "https://www.youtube.com/watch?v=NUNyK6P6q8s",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-zIwwkuB2NPQ",
+            "episode_number": 16,
+            "title": "Working with Venture Capitalists",
+            "description": "Roizen talks about what she would look for in a VC. From her perspective, acquiring a VC is the only time you're getting someone to work for you and pay you at the same time. She recommends people populate their investor pool with VCs who will add value to their company.",
+            "duration": 35,
+            "year": 2026,
+            "published_at": "2026-03-24T04:23:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zIwwkuB2NPQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zIwwkuB2NPQ",
+                "url": "https://www.youtube.com/watch?v=zIwwkuB2NPQ",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-IG0FWz-SaXk",
+            "episode_number": 17,
+            "title": "Garry Tan - SIER Distinguished Lectureship: A Candid Fireside Chat on the Entrepreneurial Journey",
+            "description": "Garry Tan sits down with Stanford Biodesign's Anastasia Ntracha for the second annual Distinguished Lectureship from the Stanford Initiative for Entrepreneurs' Resilience & Well-Being (SIER).\n\n​Tan is President & CEO of Y Combinator, which he rejoined after founding the venture fund Initialized Capital. Before that, he co-founded Posterous (acquired by Twitter) and was an early employee at Palantir. Drawing on his own experience, Garry speaks about the importance of resilience and well-being to entrepreneurial success. \n\n​​SIER is working to better study, understand, and teach resilience and well-being to entrepreneurs at Stanford University and around the world. SIER is a collaboration between the Stanford Mussallem Center for Biodesign and the Stanford Technology Ventures Program (STVP). Learn more at https://sier.stanford.edu.\n\nThe views and recommendations expressed by speakers are their own and do not represent Stanford University. If you or someone you know is struggling or in crisis, call or text 988 or chat at https://988lifeline.org. For other mental health or relationship concerns, please consult qualified professionals. Stanford community members can contact CAPS (for students: https://caps.stanford.edu) or the Faculty Staff Help Center (https://helpcenter.stanford.edu). \n\n#SIERWellbeing #GarryTan #entrepreneurship #resilience #mentalhealth #ycombinator",
+            "duration": 3773,
+            "year": 2026,
+            "published_at": "2026-03-02T21:42:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/IG0FWz-SaXk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "IG0FWz-SaXk",
+                "url": "https://www.youtube.com/watch?v=IG0FWz-SaXk",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-_kr__64RA4Y",
+            "episode_number": 18,
+            "title": "Introduction: Common Startup Mistakes and Pitfalls",
+            "description": "As author and CEO of Lina Group Inc. Theresa Lina Stevens explains it, this collection is the next best thing to sitting across the table from some of Silicon Valley's best minds. Originally created as part of a JOLT, or just-in-time online learning module, this clip introduces the collection and how you can learn from others' mistakes.",
+            "duration": 51,
+            "year": 2026,
+            "published_at": "2026-02-03T18:20:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_kr__64RA4Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_kr__64RA4Y",
+                "url": "https://www.youtube.com/watch?v=_kr__64RA4Y",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Im3VxIPfATM",
+            "episode_number": 19,
+            "title": "Intellectual Property Issues Between Vaxgen and the New Social Venture",
+            "description": "Francis explains there are IP issues associated with forming the new venture, but since they are working for the less-developed world the licenses were given free of charge.",
+            "duration": 115,
+            "year": 2026,
+            "published_at": "2026-02-03T18:16:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Im3VxIPfATM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Im3VxIPfATM",
+                "url": "https://www.youtube.com/watch?v=Im3VxIPfATM",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-QG7SW4RG88c",
+            "episode_number": 20,
+            "title": "Voltage's Value Proposition in The Security Software Market",
+            "description": "Currently, only point solutions exist for establishing secure systems, necessitating multiple systems administrators and making creating a unified system difficult.  The Voltage technology provides a solution by delivering a security platform which can protect all of a customer's systems.  The platform is based on Identi-based encryption which encrypts bits of your email address to create a private key for decryption.",
+            "duration": 270,
+            "year": 2026,
+            "published_at": "2026-02-02T23:31:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/QG7SW4RG88c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "QG7SW4RG88c",
+                "url": "https://www.youtube.com/watch?v=QG7SW4RG88c",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-jQoag6IBEdM",
+            "episode_number": 21,
+            "title": "Leadership Lessons From Two Generations",
+            "description": "Leadership is an increasingly important skill for entrepreneurs , but its education is difficult.  David emphasizes that a leader should motivate and inspire people to perform extraordinary accomplishments.  Gary adds that different people are motivated by different things and leadership has to be adaptive to match the individual.",
+            "duration": 576,
+            "year": 2026,
+            "published_at": "2026-01-31T04:19:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/jQoag6IBEdM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "jQoag6IBEdM",
+                "url": "https://www.youtube.com/watch?v=jQoag6IBEdM",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-DZRtD42vEKw",
+            "episode_number": 22,
+            "title": "Eric Volmar (Stanford University) - A New Entrepreneurship Playbook [Entire Talk]",
+            "description": "Eric Volmar is teaching lead at the Gordian Knot Center for National Security Innovation at Stanford. His work focuses on connecting defense, academia, and entrepreneurship to accelerate innovation for national security, supporting new ventures at the intersection of technology and policy. In this presentation – followed by a conversation with Tina Seelig, executive director of Knight-Hennessy Scholars and director emerita of the Stanford Technology Ventures Program – Volmar advises entrepreneurs about how to navigate a new landscape shaped by a shift to deep tech, blended capital, and governments reengaging with technology innovation.\n\nEntrepreneurial Thought Leaders and other Stanford eCorner content is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2924,
+            "year": 2025,
+            "published_at": "2025-11-24T20:48:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DZRtD42vEKw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DZRtD42vEKw",
+                "url": "https://www.youtube.com/watch?v=DZRtD42vEKw",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-t0bORNw_-Lw",
+            "episode_number": 23,
+            "title": "Steve Cousins (Stanford University) - Real-World Robotics [Entire Talk]",
+            "description": "Steve Cousins is the executive director of the Stanford Robotics Center and founder of Relay Robotics (formerly Savioke), which builds autonomous service robots for hotels and healthcare. Cousins’ career reflects a commitment to advancing robotics from research to real-world applications. In this presentation, he shares stories of his time in research, startups, and academia to illustrate practical advice about hiring, developing robotics products, and bringing robotics into new industries.\n\nEntrepreneurial Thought Leaders and other Stanford eCorner content is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2753,
+            "year": 2025,
+            "published_at": "2025-11-19T18:21:59Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/t0bORNw_-Lw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "t0bORNw_-Lw",
+                "url": "https://www.youtube.com/watch?v=t0bORNw_-Lw",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-r4nRLflRSVw",
+            "episode_number": 24,
+            "title": "Jane Chen (Embrace Global) - Doing the Inner Work [Entire Talk]",
+            "description": "Jane Chen is the co-founder of Embrace Global, which created a low-cost infant warmer that has helped more than one million babies in low-resource settings. Her new book, Like a Wave We Break: a Memoir of Falling Apart and Finding Myself, tells the story of her globe-spanning journey to break free of the narratives that once defined her and confront the long-buried truths of a traumatic past. In this conversation with Adjunct Lecturer Emily Ma, Chen encourages entrepreneurs to focus on journeys instead of outcomes, sharing her experiences with burnout and healing to illustrate the importance of self-compassion and finding the worthiness within.\n\nEntrepreneurial Thought Leaders and other Stanford eCorner content is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 1849,
+            "year": 2025,
+            "published_at": "2025-11-12T18:31:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/r4nRLflRSVw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "r4nRLflRSVw",
+                "url": "https://www.youtube.com/watch?v=r4nRLflRSVw",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-FoY_7cV4zd8",
+            "episode_number": 25,
+            "title": "Sanjit Biswas (Samsara) - Making a Real-World Impact [Entire Talk]",
+            "description": "Sanjit Biswas is the co-founder and CEO of Samsara, a global leader in allowing physical operations organizations to harness data, AI, and the Internet of Things. He started the company with the mission to increase the safety, efficiency, and sustainability of the operations that power the global economy. In this presentation, Biswas tells the story of how he co-founded his first company as a graduate student and pivoted to a new industry to found Samsara, sharing advice for aspiring entrepreneurs on finding meaningful problems to solve, building a team, and running feedback loops to understand what customers need.\n\nEntrepreneurial Thought Leaders and other Stanford eCorner content is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2725,
+            "year": 2025,
+            "published_at": "2025-11-05T20:10:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/FoY_7cV4zd8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "FoY_7cV4zd8",
+                "url": "https://www.youtube.com/watch?v=FoY_7cV4zd8",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-PROX8gg7pSc",
+            "episode_number": 26,
+            "title": "Drew Endy (Stanford University) - A Synthetic Biology Dream [Entire Talk]",
+            "description": "Drew Endy is an associate professor of bioengineering at Stanford University and a pioneer of synthetic biology. A co-founder of the BioBricks Foundation, Endy helped launch the International Genetically Engineered Machine (iGEM) competition to democratize biotechnology for student innovators worldwide. In this presentation, Endy gives a primer on synthetic biology and the obstacles it has encountered in the United States, shares where he hopes the field is going, and explains how aspiring entrepreneurs can adapt his framework to imagine their own futures.\n\nEntrepreneurial Thought Leaders and other eCorner content is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2851,
+            "year": 2025,
+            "published_at": "2025-10-29T21:39:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PROX8gg7pSc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PROX8gg7pSc",
+                "url": "https://www.youtube.com/watch?v=PROX8gg7pSc",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-T7QtkPqamsU",
+            "episode_number": 27,
+            "title": "Grant Lee (Gamma) - Finding Early-Stage Energy [Entire Talk]",
+            "description": "Grant Lee is the CEO and Co-founder of Gamma, an AI-powered presentation and website design tool that has scaled to 50 million customers and $50 million in annual recurring revenue with fewer than 50 employees. In this conversation with Adjunct Lecturer Ravi Belani, Lee shares how his search for energizing projects and partnerships shaped Gamma’s path, and he gives advice for early-stage entrepreneurs on building conviction, finding good co-founders, and gauging product-market fit.\n\nEntrepreneurial Thought Leaders and other Stanford eCorner content is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2849,
+            "year": 2025,
+            "published_at": "2025-10-22T19:05:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/T7QtkPqamsU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "T7QtkPqamsU",
+                "url": "https://www.youtube.com/watch?v=T7QtkPqamsU",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-P9rqjxLaQOY",
+            "episode_number": 28,
+            "title": "Tina Seelig (Stanford University) - Catching the Winds of Luck [Entire Talk]",
+            "description": "Tina Seelig is an educator, entrepreneur, and bestselling author who has spent decades teaching creativity, innovation, and leadership at Stanford. She is the executive director of Knight-Hennessy Scholars and director emerita of the Stanford Technology Ventures Program. In this presentation, inspired by her forthcoming book What I Wish I Knew about Luck, Seelig gives practical and encouraging advice – illustrated by real-life stories – designed to help young people see and seize lucky opportunities.\n------------------------\nEntrepreneurial Thought Leaders and other Stanford eCorner content is produced by the Stanford Technology Ventures Program (STVP), the entrepreneurship center at the Stanford School of Engineering. STVP empowers aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nYouTube: https://www.youtube.com/user/ecorner  \nX: https://x.com/ECorner  \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/  \nBluesky: https://bsky.app/profile/stanfordstvp.bsky.social \n \nLEARN MORE\nSTVP: https://stvp.stanford.edu/ \neCorner by STVP: https://stvp.stanford.edu/ecorner \n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://stvp.stanford.edu/giving-to-stvp/.",
+            "duration": 2607,
+            "year": 2025,
+            "published_at": "2025-10-15T21:32:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/P9rqjxLaQOY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "P9rqjxLaQOY",
+                "url": "https://www.youtube.com/watch?v=P9rqjxLaQOY",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-YrCuz7JPEZc",
+            "episode_number": 29,
+            "title": "Samir Vasavada (Vise) - From Teenage Founder to Tech CEO [Entire Talk]",
+            "description": "Samir Vasavada, co-founder and CEO of Vise, shares his inspiring journey from launching an AI-powered asset management startup as a teenager to raising more than  $130M from top VCs like Sequoia and Founders Fund. Vasavada discusses navigating the “dark side” of venture funding, the lessons learned from hiring seasoned executives too early, and why the best leaders often come from within. His reflections offer a candid look at staying focused amid hype, aligning incentives, and building a category-defining company where you stay committed to your vision while responding to customer feedback.",
+            "duration": 3180,
+            "year": 2025,
+            "published_at": "2025-07-09T20:44:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YrCuz7JPEZc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YrCuz7JPEZc",
+                "url": "https://www.youtube.com/watch?v=YrCuz7JPEZc",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-c6EJpCQXENA",
+            "episode_number": 30,
+            "title": "Osi Imeokparia (Kode with Klossy) - Training Tech’s Next Gen [Entire Talk]",
+            "description": "Founded by supermodel Karlie Kloss, Kode With Klossy teaches young women and gender expansive youth how to code. The organization supports a community of 11,000 from 100-plus countries over more than a decade to ensure their education is effective. CEO Osi Imeokparia shares how long-term support and mentorship for diverse young coders can lead to success in computer science majors and careers in technology. She and Dani Lucas of McKinsey & Company also address the need for shifts in the industry to tackle the \"broken rung\" of the tech career ladder, which results in women and underrepresented workers facing challenges in promotions and upward advancement.",
+            "duration": 2760,
+            "year": 2025,
+            "published_at": "2025-06-25T23:47:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/c6EJpCQXENA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "c6EJpCQXENA",
+                "url": "https://www.youtube.com/watch?v=c6EJpCQXENA",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-uSHxoXpuYOk",
+            "episode_number": 31,
+            "title": "Garrett Lord (Handshake) - The Network Effect [Entire Talk]",
+            "description": "Garrett Lord started Handshake to make it easier for students from all backgrounds to find internships. Lord discusses his own experience studying computer science at Michigan Tech and the disparities that leave so many students without exposure to recruiters at their campuses. In democratizing the job search, Lord talks about identifying a two-way marketplace and how to scale helping one student at a time.",
+            "duration": 2948,
+            "year": 2025,
+            "published_at": "2025-06-11T16:08:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uSHxoXpuYOk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uSHxoXpuYOk",
+                "url": "https://www.youtube.com/watch?v=uSHxoXpuYOk",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-qKgfWY-6O80",
+            "episode_number": 32,
+            "title": "Vinay Hiremath (LoomAI) - The Uncertainty After Success [Entire Talk] [Explicit]",
+            "description": "Vinay Hiremath shares his entrepreneurial journey as the co-founder of LoomAI, a video messaging platform that grew to 30 million users and was acquired by Atlassian for nearly $1 billion. Vinay chronicles his entrepreneurial journey and its many pivots and adaptations – as well as his post-acquisition period of profound questioning and self-discovery. \n\nThis talk includes references to mental health challenges and substance use. The 988 Suicide and Crisis Lifeline (also at 988lifeline.org) is a hotline for individuals in crisis or for those looking to help someone else. The Crisis Text Line is a texting service for emotional crisis support, text SAVE to 741741. It is free, available 24/7, and confidential.\n\n(EDS NOTE: THIS EPISODE INCLUDES EXPLICIT LANGUAGE.)",
+            "duration": 2931,
+            "year": 2025,
+            "published_at": "2025-05-28T15:37:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qKgfWY-6O80/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qKgfWY-6O80",
+                "url": "https://www.youtube.com/watch?v=qKgfWY-6O80",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-3WURk4ItjtQ",
+            "episode_number": 33,
+            "title": "Stanley Tang (DoorDash) - Scaling the Unscalable [Entire Talk]",
+            "description": "Stanley Tang was a junior at Stanford when he started to explore technology solutions for small businesses. Working with local shops got him thinking about food delivery, and while at first the idea didn’t seem scalable, the ingredients for DoorDash began to come together. Recounting how DoorDash’s growth spanned many ups and downs including global crises, Tang shares how resilience is built from pivotal moments, and how leaning on core values in times of stress was instrumental in the success of what is now a $75 billion company.",
+            "duration": 2876,
+            "year": 2025,
+            "published_at": "2025-05-20T23:25:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3WURk4ItjtQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3WURk4ItjtQ",
+                "url": "https://www.youtube.com/watch?v=3WURk4ItjtQ",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-hg1pCXugMrM",
+            "episode_number": 34,
+            "title": "Reid Hoffman - SIER Distinguished Lectureship: A Candid Fireside Chat on the Entrepreneurial Journey",
+            "description": "Silicon Valley luminary Reid Hoffman sits down with Stanford's Tina Seelig at the inaugural Distinguished Lectureship from the Stanford Initiative for Entrepreneurs' Resilience & Well-Being (SIER). \n\nHoffman has played an integral role in building many of today’s leading consumer technology businesses and has been called “a master class in resilience” by Startup Insider. In 2003 he co-founded LinkedIn, the world’s largest professional networking service, and in 2009 he joined Greylock as a partner. In 2022, Hoffman co-founded Inflection AI, an AI studio that created Pi. \n\nIn this candid fireside chat, Hoffman shares valuable insights on resilience, failure, and balancing self-care with the hard work of running a startup. He also shares his outlook on AI, drawing from his latest book, Superagency: What Could Possibly Go Right with Our AI Future (with Greg Beato).\n\nThe Stanford Initiative for Entrepreneurs’ Resilience and Well-Being (SIER) is working to better study, understand, and teach resilience and well-being to entrepreneurs at Stanford University and around the world. SIER is a collaboration between the Stanford Mussallem Center for Biodesign and the Stanford Technology Ventures Program (STVP). Learn more at https://sier.stanford.edu.\n\n#SIERWellbeing #ReidHoffman #TinaSeelig #Entrepreneurship #AI #LinkedIn #InflectionAI #Resilience #Superagency #Greylock",
+            "duration": 3852,
+            "year": 2025,
+            "published_at": "2025-01-30T18:21:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hg1pCXugMrM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hg1pCXugMrM",
+                "url": "https://www.youtube.com/watch?v=hg1pCXugMrM",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-k-WCcxXxNdM",
+            "episode_number": 35,
+            "title": "What Product-Market Fit Feels Like - Alexandra Zatarain (Eight Sleep)",
+            "description": "Alexandra Zatarain, co-founder and VP of brand and marketing at Eight Sleep, observes that finding product-market fit feels like a shift in a company, not just something you see in sales data. She shares her experience of getting through a difficult first five years at Eight Sleep before finding their fit.\n\n—-----------------------------------\nStanford eCorner content is produced by the Stanford Technology Ventures Program. At STVP, we empower aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nTwitter: https://twitter.com/ECorner \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/ \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram/ \nYouTube: https://www.youtube.com/user/ecorner \n\nLEARN MORE\neCorner Website: https://ecorner.stanford.edu/\nSTVP Website: https://stvp.stanford.edu/\n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://ecorner.stanford.edu/give.",
+            "duration": 88,
+            "year": 2024,
+            "published_at": "2024-06-05T16:29:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/k-WCcxXxNdM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "k-WCcxXxNdM",
+                "url": "https://www.youtube.com/watch?v=k-WCcxXxNdM",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-FKgBompuFnU",
+            "episode_number": 36,
+            "title": "Using Your Mission to Find Your Customer - Alexandra Zatarain (Eight Sleep)",
+            "description": "Alexandra Zatarain, co-founder and VP of brand and marketing at Eight Sleep, explains how her company refined their brand and target audience by looking inward and understanding their core values. Once they understood their mission, she says, they were able to find their customer and build the company like a movement.\n\n—-----------------------------------\nStanford eCorner content is produced by the Stanford Technology Ventures Program. At STVP, we empower aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nTwitter: https://twitter.com/ECorner \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/ \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram/ \nYouTube: https://www.youtube.com/user/ecorner \n\nLEARN MORE\neCorner Website: https://ecorner.stanford.edu/\nSTVP Website: https://stvp.stanford.edu/\n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://ecorner.stanford.edu/give.",
+            "duration": 218,
+            "year": 2024,
+            "published_at": "2024-06-05T16:18:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/FKgBompuFnU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "FKgBompuFnU",
+                "url": "https://www.youtube.com/watch?v=FKgBompuFnU",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-48Sf6TlSBXo",
+            "episode_number": 37,
+            "title": "Challenges and Joys of Hardware - Alexandra Zatarain (Eight Sleep)",
+            "description": "Alexandra Zatarain, co-founder and VP of brand and marketing at Eight Sleep, describes how Eight Sleep approaches developing new products as a hardware-focused company. She observes that it is harder to raise money for hardware, but building something people can hold is a thrill.\n\n—-----------------------------------\nStanford eCorner content is produced by the Stanford Technology Ventures Program. At STVP, we empower aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nTwitter: https://twitter.com/ECorner \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/ \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram/ \nYouTube: https://www.youtube.com/user/ecorner \n\nLEARN MORE\neCorner Website: https://ecorner.stanford.edu/\nSTVP Website: https://stvp.stanford.edu/\n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://ecorner.stanford.edu/give.",
+            "duration": 349,
+            "year": 2024,
+            "published_at": "2024-06-05T15:52:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/48Sf6TlSBXo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "48Sf6TlSBXo",
+                "url": "https://www.youtube.com/watch?v=48Sf6TlSBXo",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-m4nVnnJbECE",
+            "episode_number": 38,
+            "title": "Going Narrow - Alexandra Zatarain (Eight Sleep)",
+            "description": "Alexandra Zatarain, co-founder and VP of brand and marketing at Eight Sleep, advises startups to go very narrow in their customer segmentation. She shares how Eight Sleep learned this lesson and chose to reposition their brand.\n\n—-----------------------------------\nStanford eCorner content is produced by the Stanford Technology Ventures Program. At STVP, we empower aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nTwitter: https://twitter.com/ECorner \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/ \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram/ \nYouTube: https://www.youtube.com/user/ecorner \n\nLEARN MORE\neCorner Website: https://ecorner.stanford.edu/\nSTVP Website: https://stvp.stanford.edu/\n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://ecorner.stanford.edu/give.",
+            "duration": 128,
+            "year": 2024,
+            "published_at": "2024-06-05T15:50:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/m4nVnnJbECE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "m4nVnnJbECE",
+                "url": "https://www.youtube.com/watch?v=m4nVnnJbECE",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-p2NAxtmzWNs",
+            "episode_number": 39,
+            "title": "Refining Price Point and Messaging - Alexandra Zatarain (Eight Sleep)",
+            "description": "Alexandra Zatarain, co-founder and VP of brand and marketing at Eight Sleep, observes that research can’t help a company find the right price point and messaging strategy— you have to launch a product and see whether people are willing to pay for it. She recommends doing post-purchase research to continue refining your customer profile.\n\n—-----------------------------------\nStanford eCorner content is produced by the Stanford Technology Ventures Program. At STVP, we empower aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nTwitter: https://twitter.com/ECorner \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/ \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram/ \nYouTube: https://www.youtube.com/user/ecorner \n\nLEARN MORE\neCorner Website: https://ecorner.stanford.edu/\nSTVP Website: https://stvp.stanford.edu/\n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://ecorner.stanford.edu/give.",
+            "duration": 183,
+            "year": 2024,
+            "published_at": "2024-06-05T15:45:48Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/p2NAxtmzWNs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "p2NAxtmzWNs",
+                "url": "https://www.youtube.com/watch?v=p2NAxtmzWNs",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-AN5alU7tOJ0",
+            "episode_number": 40,
+            "title": "Conducting Valuable Research - Alexandra Zatarain (Eight Sleep)",
+            "description": "Alexandra Zatarain, co-founder and VP of brand and marketing at Eight Sleep, shares how her company starts with qualitative research, having deep conversations with individuals to learn about their problems. Once they have enough information about a target audience to construct a profile, she says, they start gathering more quantitative data.\n\n—-----------------------------------\nStanford eCorner content is produced by the Stanford Technology Ventures Program. At STVP, we empower aspiring entrepreneurs to become global citizens who create and scale responsible innovations.\n\nCONNECT WITH US\nTwitter: https://twitter.com/ECorner \nLinkedIn: https://www.linkedin.com/company/stanfordtechnologyventuresprogram/ \nFacebook: https://www.facebook.com/StanfordTechnologyVenturesProgram/ \nYouTube: https://www.youtube.com/user/ecorner \n\nLEARN MORE\neCorner Website: https://ecorner.stanford.edu/\nSTVP Website: https://stvp.stanford.edu/\n\nSupport our mission of providing students and educators around the world with free access to Stanford University’s network of entrepreneurial thought leaders: https://ecorner.stanford.edu/give.",
+            "duration": 199,
+            "year": 2024,
+            "published_at": "2024-06-05T15:42:52Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/AN5alU7tOJ0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "AN5alU7tOJ0",
+                "url": "https://www.youtube.com/watch?v=AN5alU7tOJ0",
+                "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                "channel_title": "Stanford eCorner",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}
