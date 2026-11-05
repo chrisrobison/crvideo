@@ -271,6 +271,22 @@ occurrences together, chronologically, after per-block compilation --
 see `channels/publish/README.md`'s "Hard and soft start boundaries"
 section.
 
+A channel can additionally reference a `continuity.json` (or several --
+network-wide and channel-specific, merged, the same portable-reference
+shape as `series`) from its `catalog.json`. When it does,
+`ContinuityFiller` replaces every remaining gap with real continuity
+occurrences -- a short, bounded chain of approved station-id/filler
+media, then exactly one dynamically-rendered continuity card for
+whatever's left -- instead of a plain `"gap"` block. A channel that
+references no `continuity.json` is completely unaffected. See
+`channels/publish/README.md`'s "Broadcast continuity and filler"
+section for the full schema and `channels/publish/src/
+ContinuityResolver.php` / `ContinuityFiller.php` for the resolution and
+exact-gap-coverage rules. The dynamic card's actual on-screen rendering
+and player integration are a later phase (continuity occurrences compile
+correctly today; they render as an ordinary station-break slate in the
+existing player until that phase lands).
+
 ## Worked example: adding a channel end to end
 
 Using `channels/science` (Science & Engineering) as the actual, currently

@@ -301,6 +301,108 @@ occurrences are adjacent. It operates purely on the absolute instants
 -- "the previous program ran N seconds long" is elapsed-time arithmetic,
 not calendar arithmetic, even across a DST transition.
 
+## Broadcast continuity and filler (`continuity.json`)
+
+A channel opts in by adding a `"continuity"` array to its `catalog.json`
+(the exact same portable-reference shape as `"series"`, resolved with
+the identical path-safety rules):
+
+```json
+{
+  "schema_version": 2,
+  "title": "Science & Engineering",
+  "series": [ { "ref": "../../series/technology-connections/series.json" } ],
+  "continuity": [
+    { "ref": "../../continuity/network/continuity.json" },
+    { "ref": "./continuity.json" }
+  ]
+}
+```
+
+Absent entirely (no `"continuity"` array): **nothing changes** -- every
+remaining gap is still a plain `{"type":"gap",...}` block, exactly as
+before this phase. This is what lets a channel adopt continuity on its
+own schedule, with no migration required for anyone else.
+
+`continuity.json` itself:
+
+```json
+{
+  "schema_version": 1,
+  "station_ids": [
+    {
+      "id": "science-id-15", "title": "Science Station ID",
+      "category": "station_id", "duration": 15, "status": "approved",
+      "source": { "provider": "direct", "url": "/media/science/id-15.mp4" }
+    }
+  ],
+  "filler": [ /* identical shape -- short-form filler, merged into the same selection pool as station_ids */ ],
+  "cards": [
+    { "id": "up-next", "template": "up-next", "min_duration": 5, "max_duration": 300 },
+    { "id": "station-id", "template": "station-id", "min_duration": 3, "max_duration": 120 }
+  ],
+  "defaults": { "preferred_card": "up-next", "minimum_video_filler": 10 }
+}
+```
+
+- `station_ids`/`filler` entries use the exact same editorial gate as
+  series.json episodes: `status` must be `"approved"` to ever be
+  selected (`"candidate"`/`"rejected"`/`"disabled"` are loaded into the
+  pool, reported, but never scheduled).
+- `cards` describe a dynamically-rendered continuity card template (no
+  media asset needed) and the `[min_duration, max_duration]` range of
+  gap sizes it's suitable for.
+- `defaults.preferred_card` is used when it qualifies for a given gap's
+  size; otherwise the first qualifying card in configured order wins
+  (deterministic). A gap no configured card covers (or no cards
+  configured at all) falls back to a universal `"generic"` template --
+  a dynamic card needs no prerecorded asset, so a gap is **never** left
+  undefined.
+- Multiple referenced `continuity.json` files merge: asset/card lists
+  concatenate (a duplicate id across files is reported, never silently
+  merged); `defaults` keys are last-wins across the referenced list in
+  `catalog.json`'s own order (so a channel-specific file listed after a
+  network-wide one can override just the default it cares about).
+
+### Exact gap coverage (`ContinuityFiller`)
+
+For every interval `ProgrammingCompiler`/`BoundaryResolver` left
+uncovered, in this priority order:
+
+1. Additional episodes from the scheduled series -- already fully
+   handled upstream by multi-episode packing; there is nothing left for
+   this stage to do for that tier by the time it runs.
+2. A short, bounded chain (at most 3) of approved station-id/filler
+   assets, each picked to minimize what's left afterward (same
+   deterministic best-fit idea as `packing.mode=best_fit`) -- skipped
+   entirely for a gap smaller than `defaults.minimum_video_filler`.
+3. Exactly one dynamic continuity card, sized to whatever's left. A gap
+   that no real asset could usefully fill still gets exactly one card
+   for the whole thing -- never hundreds of tiny filler occurrences.
+
+A station-id/filler occurrence is an ordinary `"video"` schedule item
+(it plays back through the ordinary direct-media path -- no player
+change needed for it at all) with a `continuity_category` field for
+information. A dynamic card is a new `"continuity"` item type:
+
+```json
+{
+  "type": "continuity",
+  "id": "continuity-1762300800",
+  "start": 1800, "duration": 27,
+  "template": "up-next",
+  "next_program_id": "practical-engineering-episode-42"
+}
+```
+
+`next_program_id` is the next real scheduled program's id within this
+compile's window, or `null` if there isn't one (e.g. the window's own
+trailing edge). Until the Phase 5/6 renderer and player adapter exist,
+a `"continuity"` item simply displays as the same station-break slate a
+plain gap always has (`broadcast.js`'s existing "no provider -> not
+playable" rule already covers it) -- nothing breaks by publishing one
+early.
+
 ## Forward window / regeneration workflow
 
 The published window is fixed-length (`--days`, default 14) and does
@@ -366,7 +468,10 @@ windows, pin-refresh resets, best-fit's deterministic tie-breaking,
 hybrid's main-cursor-never-disturbed guarantee), hard/soft/elastic
 boundary resolution (preserved hard anchors, within/exceeding-tolerance
 soft delays, cascading adjacent soft blocks, soft-into-hard, DST and
-midnight-crossing delay arithmetic), and a full CLI end-to-
+midnight-crossing delay arithmetic), continuity resolution and exact-gap
+filling (network-wide/channel-specific merging, editorial gating,
+tiny/large/exact-multiple gaps, missing assets, bounded station-id
+chains, next-program-id correctness), and a full CLI end-to-
 end run (atomic write + backup, idempotent re-publish,
 `--refresh-episode-set`, `--dry-run`, error cases) -- all via fixtures, no
 real channel ever touched by the test suite.
