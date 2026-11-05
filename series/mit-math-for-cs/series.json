@@ -1,0 +1,742 @@
+{
+    "schema_version": 1,
+    "id": "mit-math-for-cs",
+    "title": "MIT 6.1200J Mathematics for Computer Science",
+    "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nElementary discrete mathematics for science and engineering, with a focus on mathematical tools and proof techniques useful in computer science. Topics include logical notation, sets, relations, elementary graph theory, state machines and invariants, induction and proofs by contradiction, recurrences, asymptotic notation, elementary analysis of algorithms, elementary number theory and cryptography, permutations and combinations, counting tools, and discrete probability.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+        "channel_url": null,
+        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-sbpCTjmw85g",
+            "episode_number": 1,
+            "title": "Lecture 1: Predicates, Sets, and Proofs",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture explores what a proof is. It defines proofs, propositions, logical deductions, and axioms and delves into predicate logic. It explores how to use and combine prepositions and how to use implications.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4727,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sbpCTjmw85g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sbpCTjmw85g",
+                "url": "https://www.youtube.com/watch?v=sbpCTjmw85g",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-_NYsYuzMLs0",
+            "episode_number": 2,
+            "title": "Lecture 2: Contradiction and Induction",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nToday we will explore some basic (but crucial!) proof techniques, and then two powerful techniques: proof by contradiction and proof by induction.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4778,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_NYsYuzMLs0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_NYsYuzMLs0",
+                "url": "https://www.youtube.com/watch?v=_NYsYuzMLs0",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-GOgA8JGUiwI",
+            "episode_number": 3,
+            "title": "Lecture 3: Casework and Strong Induction",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture builds upon proof techniques of construction, instantiation, direct argument, contradiction, and induction. We then go over more proof by cases and strong induction.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 5050,
+            "year": 2025,
+            "published_at": "2025-07-24T00:12:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/GOgA8JGUiwI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "GOgA8JGUiwI",
+                "url": "https://www.youtube.com/watch?v=GOgA8JGUiwI",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-gVdrFsnOo_s",
+            "episode_number": 4,
+            "title": "Lecture 4: State Machines",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nToday we’re going to introduce a new abstraction called a state machine, that lets us model how algorithms work. We’ll show how to use induction to prove properties of state machines. \n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4876,
+            "year": 2025,
+            "published_at": "2025-07-24T00:12:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/gVdrFsnOo_s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "gVdrFsnOo_s",
+                "url": "https://www.youtube.com/watch?v=gVdrFsnOo_s",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-nqOPy2d6ihY",
+            "episode_number": 5,
+            "title": "Lecture 5: Sums",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nSums are useful for recurrences, counting, probability, runtimes of algorithms, performances of large systems, machine learning, and much more! This lecture looks at ways to approximate sums through perturbation, ansatz method, and the integral method.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4941,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nqOPy2d6ihY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nqOPy2d6ihY",
+                "url": "https://www.youtube.com/watch?v=nqOPy2d6ihY",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-6dQQAn4L24s",
+            "episode_number": 6,
+            "title": "Lecture 6: Asymptotics",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nLast week we saw some techniques for evaluating and approximating sums. Today we will use those techniques to solve a well-known physics problem. We then explore asymptotic notation, including Big-O, Little-o, Big-Ω, and Little-ω.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4706,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6dQQAn4L24s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6dQQAn4L24s",
+                "url": "https://www.youtube.com/watch?v=6dQQAn4L24s",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-PvuwfciiH2U",
+            "episode_number": 7,
+            "title": "Lecture 7: Recurrences",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nToday we will see how to model computational problems, such as computing running time, by using recurrences, and we will see how to find closed-form solutions for many recurrences.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4404,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PvuwfciiH2U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PvuwfciiH2U",
+                "url": "https://www.youtube.com/watch?v=PvuwfciiH2U",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-XW9xERSeenI",
+            "episode_number": 8,
+            "title": "Lecture 8: Divisibility",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture we look at number theory and its applications through the lenses of divisibility, greatest common devisor (GCD), and the Extended Euclidian Algorithm.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4740,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XW9xERSeenI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XW9xERSeenI",
+                "url": "https://www.youtube.com/watch?v=XW9xERSeenI",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-Nn8nBPyzzQ0",
+            "episode_number": 9,
+            "title": "Lecture 9: Modular Arithmetic",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nModular arithmetic helps answer questions like: What is even+odd? What day of the week will it be 100 days from now? What computation do you need to do? (rem(100, 2) = 2, so Tues+2=Thurs).\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4786,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Nn8nBPyzzQ0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Nn8nBPyzzQ0",
+                "url": "https://www.youtube.com/watch?v=Nn8nBPyzzQ0",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-hRDOmMEZtPo",
+            "episode_number": 10,
+            "title": "Lecture 10: Cryptography",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nYou’ve seen a couple of lectures on basic number theory now. Why was it in 6.1200? Today we will see how GCDs and modular arithmetic are extremely important for computer security!\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4869,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hRDOmMEZtPo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hRDOmMEZtPo",
+                "url": "https://www.youtube.com/watch?v=hRDOmMEZtPo",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-cB0UijRfOCQ",
+            "episode_number": 11,
+            "title": "Lecture 11: Graphs and Coloring",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nGraphs are incredibly useful structures in computer science. Their applications range from scheduling to communications to search engines. In this lecture, we look at several types of graphs and coloring.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4876,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:43Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cB0UijRfOCQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cB0UijRfOCQ",
+                "url": "https://www.youtube.com/watch?v=cB0UijRfOCQ",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-CEd313PPKXQ",
+            "episode_number": 12,
+            "title": "Lecture 12: Matching",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nA matching in a graph G is a subgraph M of G in which every vertex has degree 1. In this lecture, we examine types of matching problems, such as maximum weight matching, stable matching, and matching in bipartite and non-bipartite graphs.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4904,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/CEd313PPKXQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "CEd313PPKXQ",
+                "url": "https://www.youtube.com/watch?v=CEd313PPKXQ",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-BVpOkj7W_xE",
+            "episode_number": 13,
+            "title": "Lecture 13: Connectivity and Trees",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nMotivation: getting around! In this lecture, we look at optimization problems such as: What about efficiency? Shortest route or fastest route (might not be the same!)?\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4923,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BVpOkj7W_xE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BVpOkj7W_xE",
+                "url": "https://www.youtube.com/watch?v=BVpOkj7W_xE",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-E33i67e_X9Q",
+            "episode_number": 14,
+            "title": "Lecture 14: Digraphs and DAGs",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture examines directed graphs, or digraphs, and their walks, cycles, and connectivity. Next, we look at Directed Acyclic Graphs (DAGs), digraphs with no cycles.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4742,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/E33i67e_X9Q/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "E33i67e_X9Q",
+                "url": "https://www.youtube.com/watch?v=E33i67e_X9Q",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-gwOxD51n3nc",
+            "episode_number": 15,
+            "title": "Lecture 15: Relations and Counting",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nA relation consists of a domain, a codomain, and a subset of ordered pairs. This lecture examines relations on a single set, equivalence relations, and partial orders. Then, we introduce counting.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4727,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/gwOxD51n3nc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "gwOxD51n3nc",
+                "url": "https://www.youtube.com/watch?v=gwOxD51n3nc",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-9X6HtUsxnDc",
+            "episode_number": 16,
+            "title": "Lecture 16: Counting Techniques",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Zachary Abel\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture continues the topic of counting and looks at how product rules can be used with cards as an example.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4514,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9X6HtUsxnDc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9X6HtUsxnDc",
+                "url": "https://www.youtube.com/watch?v=9X6HtUsxnDc",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-sF5_cyLyyw0",
+            "episode_number": 17,
+            "title": "Lecture 17: More Counting Techniques",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nWe continue the counting techniques by looking at the pigeonhole principle to solve counting problems.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4857,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sF5_cyLyyw0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sF5_cyLyyw0",
+                "url": "https://www.youtube.com/watch?v=sF5_cyLyyw0",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-Hjvy1w4ocQU",
+            "episode_number": 18,
+            "title": "Lecture 18: Probability",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nProbability is one of the most important disciplines in all of the sciences and also one of the least understood. Solution? Throw away intuition, and simply fall back to rigorous, step-by-step analysis.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4079,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Hjvy1w4ocQU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Hjvy1w4ocQU",
+                "url": "https://www.youtube.com/watch?v=Hjvy1w4ocQU",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-wQBSalAFFC4",
+            "episode_number": 19,
+            "title": "Lecture 19: Conditional Probability",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nIn the last lecture, we learned how to compute probabilities using the Tree Method. In this lecture, we will see how some of our tools for reasoning about sizes of sets carry over naturally to the world of probability.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4845,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wQBSalAFFC4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wQBSalAFFC4",
+                "url": "https://www.youtube.com/watch?v=wQBSalAFFC4",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-qYia9FXN7Po",
+            "episode_number": 20,
+            "title": "Lecture 20: Independence",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture examines three of the most common types of independence: mutual independence, pairwise independence, and conditional independence.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4923,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qYia9FXN7Po/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qYia9FXN7Po",
+                "url": "https://www.youtube.com/watch?v=qYia9FXN7Po",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-WXIOdgaLCNM",
+            "episode_number": 21,
+            "title": "Lecture 21: Random Variables",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThe probability mass function and the cumulative distribution function are two different (equivalent!) ways to express the probability distribution of an RV. It’s often used to describe random variables by their distributions.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4248,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WXIOdgaLCNM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WXIOdgaLCNM",
+                "url": "https://www.youtube.com/watch?v=WXIOdgaLCNM",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-h6fbQD8NKKo",
+            "episode_number": 22,
+            "title": "Lecture 22: Expectation",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture is about the notion of expectation of a random variable, and a really cool property called linearity of expectation which makes computing expected values so much easier.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4831,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/h6fbQD8NKKo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "h6fbQD8NKKo",
+                "url": "https://www.youtube.com/watch?v=h6fbQD8NKKo",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-047B4UrEaNw",
+            "episode_number": 23,
+            "title": "Lecture 23: Expectation and Variance",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Erik Demaine\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nWe continue probability with expectation and the second level of random variables, which is variance.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4697,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/047B4UrEaNw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "047B4UrEaNw",
+                "url": "https://www.youtube.com/watch?v=047B4UrEaNw",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-7FOFBqw1gMs",
+            "episode_number": 24,
+            "title": "Lecture 24: Large Deviations: Chebyshev and Chernov Bound, Wrap Up",
+            "description": "MIT 6.1200J Mathematics for Computer Science,  Spring 2024\nInstructor: Brynmor Chapman\n\nView the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d\n\nThis lecture wraps up the semester by looking at large deviation, Chebyshev, and Chernoff bounds.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4970,
+            "year": 2025,
+            "published_at": "2025-07-22T14:44:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7FOFBqw1gMs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7FOFBqw1gMs",
+                "url": "https://www.youtube.com/watch?v=7FOFBqw1gMs",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        }
+    ]
+}
