@@ -223,9 +223,11 @@ final class ProgrammingCompiler
 
             $cursor = $rot['cursor'];
             $deferred = $rot['deferred'];
+            $altCursor = $rot['altCursor'];
             $checkpointCaptured = false;
             $checkpointCursor = $cursor;
             $checkpointDeferred = $deferred;
+            $checkpointAltCursor = $altCursor;
             $checkpointIndex = null;
             $checkpointAtToSave = null;
 
@@ -235,17 +237,19 @@ final class ProgrammingCompiler
                     $checkpointCaptured = true;
                     $checkpointCursor = $cursor;
                     $checkpointDeferred = $deferred;
+                    $checkpointAltCursor = $altCursor;
                     $checkpointIndex = $occ['index'];
                     $checkpointAtToSave = $occ['at'];
                 }
 
                 $packed = EpisodePacker::packOccurrence(
                     $durationSeconds, $pinnedIds, $episodesById,
-                    ['cursor' => $cursor, 'deferred' => $deferred],
+                    ['cursor' => $cursor, 'deferred' => $deferred, 'altCursor' => $altCursor],
                     $config, $loop, $durationSeconds, $blockId, $occ['at']->format('c'),
                 );
                 $cursor = $packed['state']['cursor'];
                 $deferred = $packed['state']['deferred'];
+                $altCursor = $packed['state']['altCursor'];
 
                 if (!$emit) {
                     continue; // replay-only: re-derives cursor/deferred state, nothing is (re-)published for it
@@ -263,7 +267,7 @@ final class ProgrammingCompiler
             if ($checkpointCaptured) {
                 RotationState::save(
                     $stateDir, $channelId, $blockId, $pin['version'],
-                    $checkpointCursor, $checkpointDeferred, $checkpointIndex, $checkpointAtToSave,
+                    $checkpointCursor, $checkpointDeferred, $checkpointAltCursor, $checkpointIndex, $checkpointAtToSave,
                 );
             }
         }

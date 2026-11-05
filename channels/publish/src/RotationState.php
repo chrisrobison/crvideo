@@ -57,6 +57,7 @@ final class RotationState
      * @return array{
      *   cursor: int,
      *   deferred: list<array{episode_id:string, pinned_index:int}>,
+     *   altCursor: int,
      *   checkpoint_occurrence_index: ?int,
      *   checkpoint_at: ?string,
      *   reset: bool,
@@ -85,6 +86,7 @@ final class RotationState
         return [
             'cursor' => (int) ($raw['cursor'] ?? 0),
             'deferred' => $deferred,
+            'altCursor' => (int) ($raw['alt_cursor'] ?? 0), // only meaningful for packing.mode=hybrid -- see EpisodePacker::packHybrid
             'checkpoint_occurrence_index' => isset($raw['checkpoint_occurrence_index']) ? (int) $raw['checkpoint_occurrence_index'] : null,
             'checkpoint_at' => is_string($raw['checkpoint_at'] ?? null) ? $raw['checkpoint_at'] : null,
             'reset' => false,
@@ -92,12 +94,13 @@ final class RotationState
         ];
     }
 
-    /** @return array{cursor:int, deferred:list<array{episode_id:string,pinned_index:int}>, checkpoint_occurrence_index:?int, checkpoint_at:?string, reset:bool, resetReason:?string} */
+    /** @return array{cursor:int, deferred:list<array{episode_id:string,pinned_index:int}>, altCursor:int, checkpoint_occurrence_index:?int, checkpoint_at:?string, reset:bool, resetReason:?string} */
     public static function empty(): array
     {
         return [
             'cursor' => 0,
             'deferred' => [],
+            'altCursor' => 0,
             'checkpoint_occurrence_index' => null,
             'checkpoint_at' => null,
             'reset' => false,
@@ -121,6 +124,7 @@ final class RotationState
         int $pinVersion,
         int $cursor,
         array $deferred,
+        int $altCursor,
         int $checkpointOccurrenceIndex,
         DateTimeImmutable $checkpointAt,
     ): void {
@@ -135,6 +139,7 @@ final class RotationState
             'pin_version' => $pinVersion,
             'cursor' => $cursor,
             'deferred' => $deferred,
+            'alt_cursor' => $altCursor,
             'checkpoint_occurrence_index' => $checkpointOccurrenceIndex,
             'checkpoint_at' => $checkpointAt->format('c'),
             'saved_at' => gmdate('c'),
