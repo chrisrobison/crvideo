@@ -142,6 +142,267 @@ timeline. In practice this essentially never happens at daily/weekly/
 monthly cadences with any sane episode length; it exists as a safety net
 for misconfiguration.
 
+## Multi-episode packing (`packing`)
+
+```json
+{
+  "id": "technology-hour",
+  "type": "series",
+  "series_id": "technology-connections",
+  "recurrence": { "frequency": "daily", "time": "14:00", "timezone": "America/Los_Angeles" },
+  "duration": 3600,
+  "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" },
+  "packing": {
+    "enabled": true,
+    "mode": "sequential",
+    "minimum_remaining": 60,
+    "safety_margin": 0,
+    "on_unfit": "defer",
+    "allow_repeat_within_block": false
+  }
+}
+```
+
+Absent or `"enabled": false` (the default): **nothing changes** -- exactly
+one episode per occurrence, the pre-existing behavior, byte-for-byte.
+This is deliberate: every already-published channel (Science &
+Engineering included) keeps compiling identically forever unless a block
+explicitly opts in.
+
+When `enabled` is `true`, a single occurrence can be filled with as many
+pinned episodes, in rotation order, as actually fit in the block's
+`duration` -- an episode is **never truncated**; it either plays in full
+or isn't scheduled this occurrence at all. All fields but `enabled` have
+sane defaults:
+
+- `mode`:
+  - `"sequential"` (default): play episodes in their pinned order,
+    fitting as many complete ones as possible. Best for structured/
+    episodic series where airing order matters.
+  - `"best_fit"`: ignores pinned order -- at each pick, greedily takes
+    whichever eligible episode minimizes leftover time (a bounded,
+    deterministic search, never exhaustive/combinatorial). Ties break by
+    distance from a fairness cursor that rotates forward past whatever
+    was just used (so one conveniently-sized episode can't dominate
+    every occurrence), then by pinned index. `on_unfit` doesn't apply to
+    this mode -- every occurrence already considers every eligible
+    episode. Best for collections where order doesn't matter.
+  - `"hybrid"`: prefers the main sequential cursor whenever it fits (the
+    scheduled show stays recognizable); when it doesn't, makes one
+    bounded search through a *separate* alternate rotation
+    (`alt_cursor`, its own small piece of persisted state) for filler.
+    The main cursor is never disturbed by an alternate pick -- it always
+    resumes exactly where it left off -- and the alternate rotation
+    itself advances past whatever it used, so repeated filler needs
+    don't always reach for the same episode.
+- `minimum_remaining` (seconds, default 0): once fitting another episode
+  would leave less than this much time afterward (and it isn't the exact
+  remainder), stop packing -- leaves a deliberate, continuity-sized gap
+  rather than cramming in one more episode right up to the wire.
+- `safety_margin` (seconds, default 0): added to an episode's own
+  duration only for the purposes of the fit check (not subtracted from
+  what's actually used) -- a stricter "does this really fit" cushion.
+- `on_unfit` (default `"defer"`, the conservative choice): what happens
+  the moment the next episode in rotation doesn't fit the time left in
+  this occurrence --
+  - `"defer"`: stop packing this occurrence. The rotation cursor is
+    deliberately **not** advanced past the unfit episode, which is
+    exactly what gives it priority again: the very next occurrence of
+    this block tries it first, with a full fresh slot. If an episode is
+    longer than the block's own configured `duration`, no occurrence of
+    that block will ever fit it -- a clear warning says so by name and
+    names the fix (a larger `duration`, or a different `on_unfit`).
+  - `"skip_for_block"`: look ahead (bounded by the pinned list's own
+    length) for a different pinned episode that *does* fit; every
+    episode skipped over to find it -- including the original unfit one
+    -- is queued and retried, with priority, at a future occurrence, so
+    nothing pinned is ever permanently dropped from rotation just
+    because something else filled this slot instead.
+  - `"allow_overrun"`: schedule the unfit episode anyway, letting the
+    occurrence run long. This is only ever safe because the existing
+    hard overlap check (see "Slot-vs-episode-duration policy" above)
+    still refuses to publish a schedule where that overrun collides with
+    the next occurrence -- the same safety net a single naturally-
+    overlong episode always relied on, packing or not.
+- `allow_repeat_within_block` (default `false`): whether the *same*
+  episode may air twice within one occurrence. Almost never useful with
+  a real catalog; exists mainly for a single-episode series paired with
+  a long block.
+
+### Rotation state (`channels/<id>/.publish/<channel>.<block>.rotation.json`)
+
+A packing-enabled block needs a little more persisted state than
+`EpisodeSetPin` alone provides: not just *which* episodes are eligible,
+but *where* a block's sequential consumption of them currently is, now
+that a single occurrence can consume more than one. This file (same
+gitignored, atomic-write, operator-local posture as the episode-set pin)
+holds that rotation cursor and small deferred-episode queue.
+
+It only ever stores one checkpoint -- the state entering the most recent
+publish's own window -- not a full history, because every occurrence's
+packing is a pure function of the state entering it: replaying forward
+from a checkpoint always reproduces the same result. This is what keeps
+republishing the same (or a later-starting, overlapping) window
+idempotent, and keeps replay cost bounded by how far the window moved
+since the last publish rather than by the channel's total lifetime. See
+`src/RotationState.php`'s header for the full reasoning, including the
+one documented edge case (publishing a window that starts *before* the
+last known checkpoint resets rotation state with a clear warning, same
+honesty standard as `EpisodeSetPin`'s own documented limitations).
+
+A pin refresh (`--refresh-episode-set`) that changes the pinned list
+also resets the matching block's rotation state (a cursor position
+computed against one pinned ordering isn't meaningful against another)
+-- reported the same way.
+
+## Hard and soft start boundaries (`boundary`)
+
+```json
+{
+  "id": "evening-news",
+  "type": "series",
+  "series_id": "local-news",
+  "recurrence": { "frequency": "daily", "time": "18:00", "timezone": "America/Los_Angeles" },
+  "duration": 1800,
+  "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" },
+  "boundary": { "mode": "soft", "max_delay": 600 }
+}
+```
+
+Absent (the default): `"mode": "hard"` -- **nothing changes**: any overlap
+with the previous occurrence (from this block or any other block in the
+channel) is still a hard publish error, exactly the pre-Phase-3
+behavior, byte-for-byte.
+
+- `"hard"`: this occurrence's nominal start can never move. If the
+  previous occurrence runs past it, publish refuses to emit anything --
+  shorten the preceding block, adjust timing, or give the preceding
+  block room via its own boundary.
+- `"soft"`: this occurrence may begin up to `max_delay` seconds (a
+  required, non-negative number -- there is no unbounded "soft") later
+  than its nominal start. A resulting delay is never silently absorbed:
+  it is recorded on every item in the occurrence (`delay_seconds`) and
+  reported in the publish warnings. An overlap bigger than `max_delay`
+  is still a hard publish error.
+- `"elastic"`: for now, deliberately simplified to behave exactly like
+  `"soft"` (same required `max_delay`) -- full elastic semantics (several
+  consecutive blocks sharing one pooled flexible window, rather than one
+  block's own tolerance) is intentionally deferred rather than half-
+  built. See `src/BoundaryResolver.php`'s header for the reasoning. It
+  still, honestly, "never allows unbounded drift" and "respects the next
+  hard boundary", because those fall straight out of how it's resolved.
+
+Resolution is a single deterministic, chronological left-to-right walk
+across every block's occurrences together (`src/BoundaryResolver.php`):
+it never reorders occurrences, never moves one earlier than its nominal
+start, and a delay cascades correctly if several soft-boundaried
+occurrences are adjacent. It operates purely on the absolute instants
+`Recurrence` already resolved, so it needs no DST-awareness of its own
+-- "the previous program ran N seconds long" is elapsed-time arithmetic,
+not calendar arithmetic, even across a DST transition.
+
+## Broadcast continuity and filler (`continuity.json`)
+
+A channel opts in by adding a `"continuity"` array to its `catalog.json`
+(the exact same portable-reference shape as `"series"`, resolved with
+the identical path-safety rules):
+
+```json
+{
+  "schema_version": 2,
+  "title": "Science & Engineering",
+  "series": [ { "ref": "../../series/technology-connections/series.json" } ],
+  "continuity": [
+    { "ref": "../../continuity/network/continuity.json" },
+    { "ref": "./continuity.json" }
+  ]
+}
+```
+
+Absent entirely (no `"continuity"` array): **nothing changes** -- every
+remaining gap is still a plain `{"type":"gap",...}` block, exactly as
+before this phase. This is what lets a channel adopt continuity on its
+own schedule, with no migration required for anyone else.
+
+`continuity.json` itself:
+
+```json
+{
+  "schema_version": 1,
+  "station_ids": [
+    {
+      "id": "science-id-15", "title": "Science Station ID",
+      "category": "station_id", "duration": 15, "status": "approved",
+      "source": { "provider": "direct", "url": "/media/science/id-15.mp4" }
+    }
+  ],
+  "filler": [ /* identical shape -- short-form filler, merged into the same selection pool as station_ids */ ],
+  "cards": [
+    { "id": "up-next", "template": "up-next", "min_duration": 5, "max_duration": 300 },
+    { "id": "station-id", "template": "station-id", "min_duration": 3, "max_duration": 120 }
+  ],
+  "defaults": { "preferred_card": "up-next", "minimum_video_filler": 10 }
+}
+```
+
+- `station_ids`/`filler` entries use the exact same editorial gate as
+  series.json episodes: `status` must be `"approved"` to ever be
+  selected (`"candidate"`/`"rejected"`/`"disabled"` are loaded into the
+  pool, reported, but never scheduled).
+- `cards` describe a dynamically-rendered continuity card template (no
+  media asset needed) and the `[min_duration, max_duration]` range of
+  gap sizes it's suitable for.
+- `defaults.preferred_card` is used when it qualifies for a given gap's
+  size; otherwise the first qualifying card in configured order wins
+  (deterministic). A gap no configured card covers (or no cards
+  configured at all) falls back to a universal `"generic"` template --
+  a dynamic card needs no prerecorded asset, so a gap is **never** left
+  undefined.
+- Multiple referenced `continuity.json` files merge: asset/card lists
+  concatenate (a duplicate id across files is reported, never silently
+  merged); `defaults` keys are last-wins across the referenced list in
+  `catalog.json`'s own order (so a channel-specific file listed after a
+  network-wide one can override just the default it cares about).
+
+### Exact gap coverage (`ContinuityFiller`)
+
+For every interval `ProgrammingCompiler`/`BoundaryResolver` left
+uncovered, in this priority order:
+
+1. Additional episodes from the scheduled series -- already fully
+   handled upstream by multi-episode packing; there is nothing left for
+   this stage to do for that tier by the time it runs.
+2. A short, bounded chain (at most 3) of approved station-id/filler
+   assets, each picked to minimize what's left afterward (same
+   deterministic best-fit idea as `packing.mode=best_fit`) -- skipped
+   entirely for a gap smaller than `defaults.minimum_video_filler`.
+3. Exactly one dynamic continuity card, sized to whatever's left. A gap
+   that no real asset could usefully fill still gets exactly one card
+   for the whole thing -- never hundreds of tiny filler occurrences.
+
+A station-id/filler occurrence is an ordinary `"video"` schedule item
+(it plays back through the ordinary direct-media path -- no player
+change needed for it at all) with a `continuity_category` field for
+information. A dynamic card is a new `"continuity"` item type:
+
+```json
+{
+  "type": "continuity",
+  "id": "continuity-1762300800",
+  "start": 1800, "duration": 27,
+  "template": "up-next",
+  "next_program_id": "practical-engineering-episode-42"
+}
+```
+
+`next_program_id` is the next real scheduled program's id within this
+compile's window, or `null` if there isn't one (e.g. the window's own
+trailing edge). Until the Phase 5/6 renderer and player adapter exist,
+a `"continuity"` item simply displays as the same station-break slate a
+plain gap always has (`broadcast.js`'s existing "no provider -> not
+playable" rule already covers it) -- nothing breaks by publishing one
+early.
+
 ## Forward window / regeneration workflow
 
 The published window is fixed-length (`--days`, default 14) and does
@@ -199,10 +460,21 @@ Covers: daily/weekly/monthly determinism (including explicit DST spring-
 forward/fall-back cases and month-end clamping against this system's real
 timezone database), the PHP `CatalogResolver`'s path-safety parity with
 `channels/catalog-resolver.js`, approved-episode-set pinning, episode
-selection/rotation/loop/overlap policies, and a full CLI end-to-end run
-(atomic write + backup, idempotent re-publish, `--refresh-episode-set`,
-`--dry-run`, error cases) -- all via fixtures, no real channel ever
-touched by the test suite.
+selection/rotation/loop/overlap policies, multi-episode packing in all
+three modes (`sequential`/`best_fit`/`hybrid`; every `on_unfit` policy,
+`minimum_remaining`/`safety_margin`, empty/single-episode/all-unavailable
+catalogs, rotation stability across adjacent overlapping publish
+windows, pin-refresh resets, best-fit's deterministic tie-breaking,
+hybrid's main-cursor-never-disturbed guarantee), hard/soft/elastic
+boundary resolution (preserved hard anchors, within/exceeding-tolerance
+soft delays, cascading adjacent soft blocks, soft-into-hard, DST and
+midnight-crossing delay arithmetic), continuity resolution and exact-gap
+filling (network-wide/channel-specific merging, editorial gating,
+tiny/large/exact-multiple gaps, missing assets, bounded station-id
+chains, next-program-id correctness), and a full CLI end-to-
+end run (atomic write + backup, idempotent re-publish,
+`--refresh-episode-set`, `--dry-run`, error cases) -- all via fixtures, no
+real channel ever touched by the test suite.
 
 `channels/tests/published-schedule.test.js` (Node) separately proves the
 PHP output and the JS player agree: it loads a real compiled
@@ -221,6 +493,11 @@ the correct program and the correct offset into it.
   window can shift any not-yet-elapsed occurrence in the currently
   published window, which is an accepted, operator-opt-in consequence of
   explicitly passing `--refresh-episode-set`.
+- Rotation state (see "Rotation state" above) resets if a publish's
+  `--window-start` moves to an occurrence earlier than the last known
+  checkpoint -- there is no history before it to replay from. The
+  documented forward-rolling workflow (re-publish before the window
+  runs out, same or later `--window-start` each time) never hits this.
 - One `--window-timezone` governs the window's day-boundary snapping;
   individual blocks can still each use their own `recurrence.timezone`
   independently of it.

@@ -1,0 +1,9 @@
+{
+  "schema_version": 2,
+  "title": "Missing Continuity",
+  "items": [],
+  "series": [],
+  "continuity": [
+    { "ref": "../../continuity/network/does-not-exist.json" }
+  ]
+}

@@ -15,10 +15,17 @@ import { channelAdminApi, seriesAdminApi } from "../admin-api.js";
 
 const FREQUENCIES = ["daily", "weekly", "monthly"];
 const WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+const PACKING_MODES = ["sequential", "best_fit", "hybrid"];
+const ON_UNFIT_POLICIES = ["defer", "skip_for_block", "allow_overrun"];
+const BOUNDARY_MODES = ["hard", "soft", "elastic"];
 
 function blockRowHtml(block, allSeriesIds) {
   const rec = block.recurrence || {};
   const freq = rec.frequency || "daily";
+  const packing = block.packing || {};
+  const packingEnabled = packing.enabled === true;
+  const boundary = block.boundary || {};
+  const boundaryMode = boundary.mode || "hard";
   return `
     <div class="block-row">
       <div class="block-grid">
@@ -40,6 +47,40 @@ function blockRowHtml(block, allSeriesIds) {
         <label class="field"><div class="field-value"><label class="loop-label"><input type="checkbox" class="b-loop" ${block.rotation?.loop !== false ? "checked" : ""}> Loop back to episode 1</label></div></label>
         <div class="field remove-field"><button class="remove-block-btn danger">Remove block</button></div>
       </div>
+
+      <details class="advanced-group">
+        <summary>Multi-episode packing ${packingEnabled ? `<span class="pill">on · ${escapeHtml(packing.mode || "sequential")}</span>` : `<span class="pill muted">off</span>`}</summary>
+        <div class="advanced-body">
+          <label class="field"><div class="field-value"><label class="loop-label"><input type="checkbox" class="b-packing-enabled" ${packingEnabled ? "checked" : ""}> Fill this block with as many complete episodes as fit (instead of just one)</label></div></label>
+          <div class="packing-fields ${packingEnabled ? "" : "hidden"}">
+            <div class="block-grid">
+              <label class="field">Mode<div class="field-value"><select class="b-packing-mode">
+                ${PACKING_MODES.map((m) => `<option value="${m}" ${m === (packing.mode || "sequential") ? "selected" : ""}>${m}</option>`).join("")}
+              </select></div></label>
+              <label class="field">If an episode doesn't fit<div class="field-value"><select class="b-packing-onunfit">
+                ${ON_UNFIT_POLICIES.map((p) => `<option value="${p}" ${p === (packing.on_unfit || "defer") ? "selected" : ""}>${p}</option>`).join("")}
+              </select></div></label>
+              <label class="field">Leave at least this much time (seconds)<div class="field-value"><input class="b-packing-minremain" type="number" min="0" value="${packing.minimum_remaining ?? 0}"></div></label>
+              <label class="field">Safety margin (seconds)<div class="field-value"><input class="b-packing-margin" type="number" min="0" value="${packing.safety_margin ?? 0}"></div></label>
+              <label class="field"><div class="field-value"><label class="loop-label"><input type="checkbox" class="b-packing-repeat" ${packing.allow_repeat_within_block ? "checked" : ""}> Allow the same episode twice in one occurrence</label></div></label>
+            </div>
+            <p class="hint-note">"sequential" keeps episodes in order (best for a structured show); "best_fit" ignores order to minimize unused time; "hybrid" prefers order but fills gaps from elsewhere when needed. "defer" (recommended) just waits for a bigger slot rather than guessing.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="advanced-group">
+        <summary>Start time boundary <span class="pill ${boundaryMode === "hard" ? "muted" : ""}">${escapeHtml(boundaryMode)}</span></summary>
+        <div class="advanced-body">
+          <div class="block-grid">
+            <label class="field">Mode<div class="field-value"><select class="b-boundary-mode">
+              ${BOUNDARY_MODES.map((m) => `<option value="${m}" ${m === boundaryMode ? "selected" : ""}>${m}</option>`).join("")}
+            </select></div></label>
+            <label class="field b-boundary-delay-field ${boundaryMode === "hard" ? "hidden" : ""}">Max delay (seconds)<div class="field-value"><input class="b-boundary-delay" type="number" min="0" value="${boundary.max_delay ?? 300}"></div></label>
+          </div>
+          <p class="hint-note">"hard" (recommended for anything time-sensitive) never starts late. "soft"/"elastic" may start up to the max delay late if the previous program runs over -- never silently, always shown in the preview below.</p>
+        </div>
+      </details>
     </div>
   `;
 }
@@ -49,7 +90,8 @@ function readBlockRow(row) {
   const recurrence = { frequency: freq, time: row.querySelector(".b-time").value.trim(), timezone: row.querySelector(".b-tz").value.trim() };
   if (freq === "weekly") recurrence.weekday = row.querySelector(".b-weekday").value;
   if (freq === "monthly") recurrence.day_of_month = Number(row.querySelector(".b-dom").value) || 1;
-  return {
+
+  const block = {
     id: row.querySelector(".b-id").value.trim(),
     type: "series",
     series_id: row.querySelector(".b-series").value,
@@ -57,6 +99,27 @@ function readBlockRow(row) {
     duration: Number(row.querySelector(".b-duration").value) || 0,
     rotation: { mode: "sequential", loop: row.querySelector(".b-loop").checked, anchor_date: row.querySelector(".b-anchor").value },
   };
+
+  const packingEnabled = row.querySelector(".b-packing-enabled").checked;
+  if (packingEnabled) {
+    block.packing = {
+      enabled: true,
+      mode: row.querySelector(".b-packing-mode").value,
+      on_unfit: row.querySelector(".b-packing-onunfit").value,
+      minimum_remaining: Number(row.querySelector(".b-packing-minremain").value) || 0,
+      safety_margin: Number(row.querySelector(".b-packing-margin").value) || 0,
+      allow_repeat_within_block: row.querySelector(".b-packing-repeat").checked,
+    };
+  }
+
+  const boundaryMode = row.querySelector(".b-boundary-mode").value;
+  if (boundaryMode !== "hard") {
+    block.boundary = { mode: boundaryMode, max_delay: Number(row.querySelector(".b-boundary-delay").value) || 0 };
+  } else {
+    block.boundary = { mode: "hard" };
+  }
+
+  return block;
 }
 
 function wireBlockRow(row) {
@@ -66,6 +129,17 @@ function wireBlockRow(row) {
     row.querySelector(".b-dom-field").classList.toggle("hidden", freqSelect.value !== "monthly");
   };
   freqSelect.addEventListener("change", sync);
+
+  const packingEnabledInput = row.querySelector(".b-packing-enabled");
+  packingEnabledInput.addEventListener("change", () => {
+    row.querySelector(".packing-fields").classList.toggle("hidden", !packingEnabledInput.checked);
+  });
+
+  const boundaryModeSelect = row.querySelector(".b-boundary-mode");
+  boundaryModeSelect.addEventListener("change", () => {
+    row.querySelector(".b-boundary-delay-field").classList.toggle("hidden", boundaryModeSelect.value === "hard");
+  });
+
   row.querySelector(".remove-block-btn").addEventListener("click", () => row.remove());
 }
 
@@ -127,6 +201,14 @@ class CfChannelAdmin extends HTMLElement {
         .block-grid label.field{ margin-bottom:0; }
         .loop-label{ display:flex; align-items:center; gap:6px; font-size:12px; text-transform:none; letter-spacing:0; color:var(--text); }
         .remove-field{ display:flex; align-items:end; }
+        .advanced-group{ margin-top:10px; border-top:1px solid var(--border); padding-top:10px; }
+        .advanced-group summary{ cursor:pointer; font-size:12px; font-weight:700; color:var(--text-muted); list-style:none; display:flex; align-items:center; gap:8px; }
+        .advanced-group summary::-webkit-details-marker{ display:none; }
+        .advanced-body{ padding-top:10px; }
+        .pill{ display:inline-block; font-size:10px; font-weight:800; letter-spacing:.04em; text-transform:uppercase;
+          padding:2px 7px; border-radius:999px; background:var(--accent-soft, rgba(93,169,255,.18)); color:var(--accent, #5da9ff); }
+        .pill.muted{ background:var(--panel-2); color:var(--text-muted); }
+        .hint-note{ font-size:11px; color:var(--text-muted); margin:8px 0 0; line-height:1.5; }
         .publish-row{ display:flex; gap:12px; flex-wrap:wrap; align-items:end; margin-bottom:10px; }
         .publish-row .field{ margin-bottom:0; min-width:140px; }
         pre.output{ background:var(--bg-elevated); border:1px solid var(--border); border-radius:var(--radius-sm);

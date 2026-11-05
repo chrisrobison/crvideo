@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "filler": [
+    { "id": "sample-promo-60", "title": "Sample Promo", "category": "promo", "duration": 60, "status": "approved", "source": { "provider": "direct", "url": "/media/sample/promo-60.mp4" } }
+  ],
+  "cards": [
+    { "id": "up-next", "template": "up-next", "min_duration": 5, "max_duration": 300 }
+  ],
+  "defaults": {
+    "preferred_card": "up-next"
+  }
+}

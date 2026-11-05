@@ -173,4 +173,171 @@ final class ProgrammingCompilerTest
         $b = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-10T00:00:00Z'));
         Assert::same(json_encode($a['items']), json_encode($b['items']));
     }
+
+    // ---------------- Phase 1: multi-episode packing ----------------
+
+    private function dailyPackedBlock(string $id, string $seriesId, string $anchorDate, array $packingOverrides = [], array $overrides = []): array
+    {
+        return array_replace_recursive(
+            $this->dailyBlock($id, $seriesId, $anchorDate, $overrides),
+            ['packing' => array_replace(['mode' => 'sequential', 'enabled' => true], $packingOverrides)],
+        );
+    }
+
+    public function testPackingDisabledOrAbsentIsByteForByteTheOldOneEpisodePerOccurrenceBehavior(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 300.0), $this->episode('e2', 'approved', 300.0),
+        ]]];
+        $withoutPacking = ProgrammingCompiler::compile(
+            ['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false,
+            $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-04T00:00:00Z'),
+        );
+        $ids = array_map(static fn ($i) => $i['id'], $withoutPacking['items']);
+        Assert::same(['e1', 'e2'], $ids, 'exactly one (short) episode per occurrence, the rest of the 1800s slot left as a gap -- unchanged');
+    }
+
+    public function testPackingFillsAnHourWithSeveralEpisodesAndDefersTheOneThatDoesNotFit(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 1380.0), // 23 min
+            $this->episode('e2', 'approved', 1080.0), // 18 min
+            $this->episode('e3', 'approved', 960.0),  // 16 min
+            $this->episode('e4', 'approved', 1860.0), // 31 min -- doesn't fit alongside the rest
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        $ids = array_map(static fn ($i) => $i['id'], $result['items']);
+        Assert::same(['e1', 'e2', 'e3'], $ids, 'e4 is deferred, never truncated');
+        Assert::same(1380, $result['items'][1]['start'] - $result['items'][0]['start'], 'items are packed back-to-back within the occurrence');
+    }
+
+    public function testPackingRotationIsStableAcrossTwoAdjacentOverlappingPublicationWindows(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 1200.0), $this->episode('e2', 'approved', 1200.0), $this->episode('e3', 'approved', 2000.0),
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $programming = ['blocks' => [$block]];
+
+        $first = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-05T00:00:00Z'));
+        $firstIds = array_map(static fn ($i) => $i['id'], $first['items']);
+
+        // A later, overlapping publish (window rolled forward by a day, as the documented workflow expects).
+        $second = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-03T00:00:00Z'), $this->utc('2026-11-07T00:00:00Z'));
+        $secondIds = array_map(static fn ($i) => $i['id'], $second['items']);
+
+        // Every occurrence present in BOTH windows (11-03 and 11-04) must have identical content --
+        // the second publish must not have reshuffled anything the first one already committed.
+        $firstByDay = [];
+        foreach ($first['items'] as $it) {
+            $firstByDay[gmdate('Y-m-d', $it['start'])][] = $it['id'];
+        }
+        $secondByDay = [];
+        foreach ($second['items'] as $it) {
+            $secondByDay[gmdate('Y-m-d', $it['start'])][] = $it['id'];
+        }
+        Assert::same(json_encode($firstByDay['2026-11-03']), json_encode($secondByDay['2026-11-03']), 'already-published 11-03 occurrence must not change');
+        Assert::same(json_encode($firstByDay['2026-11-04']), json_encode($secondByDay['2026-11-04']), 'already-published 11-04 occurrence must not change');
+    }
+
+    public function testPackingCompileIsIdempotentForTheSameInputsAndWindow(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 1200.0), $this->episode('e2', 'approved', 1200.0), $this->episode('e3', 'approved', 1200.0),
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $programming = ['blocks' => [$block]];
+        $a = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-10T00:00:00Z'));
+        $b = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-10T00:00:00Z'));
+        Assert::same(json_encode($a['items']), json_encode($b['items']));
+    }
+
+    public function testPackingWithZeroApprovedEpisodesProducesZeroOccurrencesNotAnError(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [$this->episode('e1', 'candidate')]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::count(0, $result['items']);
+    }
+
+    public function testPackingWithASingleShortEpisodeLeavesTheRestOfTheOccurrenceAsAGap(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved', 600.0)]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::count(1, $result['items']);
+        Assert::same(600, $result['items'][0]['end'] - $result['items'][0]['start']);
+    }
+
+    public function testPackingWithOnUnfitAllowOverrunStillGoesThroughTheExistingHardOverlapCheck(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 90000.0), // 25 hours -- will collide with tomorrow's occurrence
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', ['on_unfit' => 'allow_overrun'], ['duration' => 3600]);
+        Assert::throws(RuntimeException::class, function () use ($block, $series): void {
+            ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-06T00:00:00Z'));
+        });
+    }
+
+    // ---------------- Phase 3: hard/soft boundaries ----------------
+
+    public function testDefaultBoundaryIsHardAndOverlapIsStillRefusedExactlyAsBeforePhase3(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved', 90000.0)]]];
+        Assert::throws(RuntimeException::class, function () use ($series): void {
+            ProgrammingCompiler::compile(['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-06T00:00:00Z'));
+        });
+    }
+
+    public function testSoftBoundaryAbsorbsAnOverrunFromAPrecedingBlockAsAnExplicitDelay(): void
+    {
+        $series = [
+            ['id' => 'morning', 'title' => 'M', 'url' => '/x', 'episodes' => [$this->episode('m1', 'approved', 4200.0)]], // 70 min, overruns its 1hr slot by 600s
+            ['id' => 'evening', 'title' => 'E', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved', 600.0)]],
+        ];
+        $blockA = $this->dailyBlock('a', 'morning', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '13:00', 'timezone' => 'UTC'], 'duration' => 3600]);
+        $blockB = array_replace($this->dailyBlock('b', 'evening', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '14:00', 'timezone' => 'UTC'], 'duration' => 1800]), [
+            'boundary' => ['mode' => 'soft', 'max_delay' => 900],
+        ]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$blockA, $blockB]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        $byId = [];
+        foreach ($result['items'] as $it) {
+            $byId[$it['id']] = $it;
+        }
+        Assert::same($byId['m1']['end'], $byId['e1']['start'], 'e1 is pushed to start exactly where the overrunning m1 ends, never overlapping it');
+        Assert::same(600, $byId['e1']['delay_seconds']);
+    }
+
+    public function testHardBoundaryAfterASoftOverrunThatDoesNotFitIsRejected(): void
+    {
+        $series = [
+            ['id' => 'morning', 'title' => 'M', 'url' => '/x', 'episodes' => [$this->episode('m1', 'approved', 4500.0)]], // 75 min -- overruns by 900s
+            ['id' => 'noon', 'title' => 'N', 'url' => '/x', 'episodes' => [$this->episode('n1', 'approved', 600.0)]],
+        ];
+        $blockA = $this->dailyBlock('a', 'morning', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '13:00', 'timezone' => 'UTC'], 'duration' => 3600]);
+        $blockB = array_replace($this->dailyBlock('b', 'noon', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '14:00', 'timezone' => 'UTC'], 'duration' => 1800]), [
+            'boundary' => ['mode' => 'hard'],
+        ]);
+        Assert::throws(RuntimeException::class, function () use ($blockA, $blockB, $series): void {
+            ProgrammingCompiler::compile(['blocks' => [$blockA, $blockB]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        });
+    }
+
+    public function testPackingResetsRotationStateWhenTheEpisodeSetIsRefreshed(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 1200.0), $this->episode('e2', 'approved', 1200.0),
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $programming = ['blocks' => [$block]];
+        ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+
+        // Approve a third episode and refresh -- the pin version changes, so rotation state resets cleanly rather than misreading stale cursor positions.
+        $series[0]['episodes'][] = $this->episode('e3', 'approved', 1200.0);
+        $result = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', true, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        $ids = array_map(static fn ($i) => $i['id'], $result['items']);
+        Assert::same(['e1', 'e2', 'e3'], $ids);
+    }
 }

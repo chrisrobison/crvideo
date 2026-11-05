@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "station_ids": [
+    { "id": "network-id-15", "title": "Network ID 15s", "category": "station_id", "duration": 15, "status": "approved", "source": { "provider": "direct", "url": "/media/network/id-15.mp4" } },
+    { "id": "network-id-30", "title": "Network ID 30s", "category": "station_id", "duration": 30, "status": "candidate", "source": { "provider": "direct", "url": "/media/network/id-30.mp4" } }
+  ],
+  "cards": [
+    { "id": "station-id", "template": "station-id", "min_duration": 3, "max_duration": 60 }
+  ],
+  "defaults": {
+    "preferred_card": "station-id",
+    "minimum_video_filler": 10
+  }
+}

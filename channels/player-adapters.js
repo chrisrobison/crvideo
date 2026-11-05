@@ -23,6 +23,65 @@
 // -- stays in the surrounding page chrome, same as it already is for
 // HTML5 playback in watch.html).
 
+// ---------- continuity (Phase 5/6: dynamic "Coming Up Next" cards) ----------
+
+import "./continuity-card.js"; // side-effect: registers <cr-continuity-card>
+
+/**
+ * Mounts/updates/hides a <cr-continuity-card> inside a container element
+ * the caller owns (consistent placement with Html5PlayerAdapter/
+ * YouTubePlayerAdapter, but NOT a PlayerAdapter itself -- a continuity
+ * card is never "played, paused, or sought", just rendered, so forcing
+ * it through that media-playback-shaped interface would only add
+ * meaningless no-op methods). BroadcastPlayer calls this directly.
+ * Never creates a fake video URL and never draws over an active
+ * YouTube iframe -- see BroadcastPlayer.switchTo(), which always pauses/
+ * hides the outgoing adapter first.
+ */
+export class ContinuityRenderer {
+  constructor(container) {
+    this.container = container;
+    this.card = null;
+  }
+
+  /**
+   * @param {{name?:string, logo?:string, theme?:Record<string,string>|null}|null} channel
+   * @param {{title:string, description?:string, thumbnailUrl?:string, startsAt:number}|null} program the UPCOMING program, not this card itself
+   * @param {() => number} clockNow
+   * @param {{startsAt:number, endsAt:number}} cardSpan this continuity occurrence's own span, for the progress bar
+   */
+  show(channel, program, clockNow, cardSpan) {
+    if (!this.card) {
+      this.card = document.createElement("cr-continuity-card");
+      this.container.appendChild(this.card);
+    }
+    // Per-channel theming lives entirely in the page/caller (never
+    // hardcoded in continuity-card.js itself) -- see loadChannel()'s
+    // `theme` field in broadcast.js. Unset properties simply keep the
+    // component's own generic defaults.
+    const vars = { bg: "--cc-bg", bg2: "--cc-bg-2", fg: "--cc-fg", muted: "--cc-muted", accent: "--cc-accent", accentWarm: "--cc-accent-warm" };
+    for (const [key, cssVar] of Object.entries(vars)) {
+      const value = channel?.theme?.[key];
+      if (value) this.card.style.setProperty(cssVar, value);
+      else this.card.style.removeProperty(cssVar);
+    }
+    this.card.channel = channel;
+    this.card.clockNow = clockNow;
+    this.card.program = program;
+    this.card.setCardSpan(cardSpan.startsAt, cardSpan.endsAt);
+    this.container.hidden = false;
+  }
+
+  hide() {
+    this.container.hidden = true;
+  }
+
+  destroy() {
+    this.card?.remove();
+    this.card = null;
+  }
+}
+
 // ---------- pure, unit-testable helpers ----------
 
 /** Exponential backoff, capped -- same formula BroadcastPlayer's HTML5
