@@ -468,3 +468,4 @@ ElectroBOOM): plasma physics and high-voltage experiments (e.g. channels
 built around Tesla coils/Jacob's ladders), and narrative science-history
 shows in the vein of James Burke's *Connections*. None of this is
 scheduled, imported, or otherwise acted on anywhere in this codebase.
+<!-- verifying Workers Builds preview deploy command fix: 2026-11-05T19:55:51Z -->
