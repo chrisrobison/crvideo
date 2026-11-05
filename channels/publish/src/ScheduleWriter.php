@@ -57,6 +57,26 @@ final class ScheduleWriter
             if ($relStart > $cursor) {
                 $relItems[] = ['type' => 'gap', 'start' => $cursor, 'duration' => $relStart - $cursor];
             }
+
+            if (($it['kind'] ?? 'video') === 'continuity') {
+                // Phase 4/5: a dynamically-rendered continuity card -- no media asset at
+                // all. The compiler already decided its template, exact duration, and
+                // which program follows; the player only ever computes a countdown
+                // display from this and the broadcast clock (see docs/series-and-
+                // channels.md), never anything about WHAT plays or for how long.
+                $relItems[] = [
+                    'type' => 'continuity',
+                    'id' => $it['id'],
+                    'start' => $relStart,
+                    'duration' => $relEnd - $relStart,
+                    'template' => $it['template'],
+                    'next_program_id' => $it['next_program_id'] ?? null,
+                ];
+                $used += $relEnd - $relStart;
+                $cursor = $relEnd;
+                continue;
+            }
+
             $source = $it['source'];
             $provider = is_array($source) && is_string($source['provider'] ?? null) ? $source['provider'] : null;
             // A directly-hosted (non-YouTube) episode's source.url IS a playable
@@ -84,6 +104,12 @@ final class ScheduleWriter
             // next" renderer can read it directly, no re-derivation needed).
             if (isset($it['delay_seconds']) && $it['delay_seconds'] > 0) {
                 $relItem['delay_seconds'] = $it['delay_seconds'];
+            }
+            if (isset($it['continuity_category'])) {
+                // Marks a ContinuityFiller-sourced station-id/filler occurrence as such
+                // (vs. an actual scheduled episode) -- purely informational; playback is
+                // identical either way, an ordinary direct-media "video" item.
+                $relItem['continuity_category'] = $it['continuity_category'];
             }
             $relItems[] = $relItem;
             $used += $relEnd - $relStart;

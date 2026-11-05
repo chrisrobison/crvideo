@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "title": "Demo Channel",
+  "items": [],
+  "series": [
+    { "ref": "../../series/demo-series/series.json" }
+  ],
+  "continuity": [
+    { "ref": "./continuity.json" }
+  ]
+}

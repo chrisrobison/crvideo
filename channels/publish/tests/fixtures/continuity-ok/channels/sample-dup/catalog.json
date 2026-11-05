@@ -1,0 +1,10 @@
+{
+  "schema_version": 2,
+  "title": "Duplicate Continuity Ref",
+  "items": [],
+  "series": [],
+  "continuity": [
+    { "ref": "../../continuity/network/continuity.json" },
+    { "ref": "../../continuity/network/continuity.json" }
+  ]
+}

@@ -28,7 +28,8 @@ final class PublishReporter
             if ($items) {
                 echo "\nOccurrences:\n";
                 foreach ($items as $it) {
-                    echo '  ' . gmdate('c', $it['start']) . ' - ' . $it['title'] . " ({$it['id']})\n";
+                    $label = is_string($it['title'] ?? null) ? $it['title'] : '[continuity: ' . ($it['template'] ?? '?') . ']';
+                    echo '  ' . gmdate('c', $it['start']) . ' - ' . $label . " ({$it['id']})\n";
                 }
             }
             if ($warnings) {

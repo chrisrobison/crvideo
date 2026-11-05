@@ -1,0 +1,190 @@
+<?php
+declare(strict_types=1);
+
+// channels/publish/src/ContinuityFiller.php
+//
+// Phase 4 of docs/series-and-channels.md: turns every uncovered interval
+// left by BoundaryResolver's final item list into real, gap-free
+// continuity occurrences, using the resolved continuity pool
+// (ContinuityResolver) and this priority order:
+//
+//   1. Additional episodes from the scheduled series -- already fully
+//      handled upstream by EpisodePacker; by the time items reach this
+//      class, packing has already used every episode that fits. There
+//      is nothing left for this class to do for that tier.
+//   2. Approved short-form filler / station IDs with known durations --
+//      a short, bounded chain (never more than MAX_STATION_IDS_PER_GAP)
+//      of real media assets, each picked to minimize what's left
+//      afterward (same deterministic best-fit idea as EpisodePacker's
+//      best_fit mode: largest-that-fits, ties broken by configured
+//      order).
+//   3. Whatever remains after that -- which, for a gap smaller than
+//      `defaults.minimum_video_filler`, is the WHOLE gap, since station
+//      IDs are not even attempted below that threshold -- is covered by
+//      EXACTLY ONE dynamic continuity card sized to the exact remainder.
+//      A card never needs a prerecorded asset, so it is always available
+//      as the final fallback: a gap is never left undefined, and this
+//      class never emits more than one card per gap, which is what keeps
+//      a long stretch with no filler assets from turning into hundreds
+//      of tiny occurrences.
+//
+// A channel that references no continuity.json at all (ContinuityResolver
+// returns an empty pool) is untouched: fill() returns its input items
+// completely unchanged, so every channel published before this phase
+// keeps producing plain "gap" blocks exactly as before.
+//
+// Station-ID/filler occurrences are ordinary "video" items (they play
+// through the existing Html5PlayerAdapter, same as any other directly-
+// hosted media -- no player change needed for them at all); a dynamic
+// card is a new "continuity" item (kind: "continuity"), which needs the
+// Phase 5/6 renderer and player adapter to actually display -- until
+// those exist, broadcast.js's existing "no provider -> not playable"
+// rule already shows it as an ordinary station-break slate, never
+// breaking anything.
+
+final class ContinuityFiller
+{
+    private const MAX_STATION_IDS_PER_GAP = 3;
+    private const FALLBACK_CARD_TEMPLATE = 'generic';
+
+    /**
+     * @param list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}> $items sorted, non-overlapping (BoundaryResolver's output)
+     * @param array{assets:list<array<string,mixed>>, cards:list<array<string,mixed>>, defaults:array{preferredCard:?string,minimumVideoFiller:int}} $continuity
+     * @return array{items: list<array<string,mixed>>, warnings: list<string>}
+     */
+    public static function fill(array $items, int $windowStartTs, int $windowEndTs, array $continuity): array
+    {
+        if (!$continuity['assets'] && !$continuity['cards']) {
+            return ['items' => $items, 'warnings' => []]; // no continuity configured for this channel -- opt-out, zero change
+        }
+
+        $warnings = [];
+        $eligibleAssets = array_values(array_filter($continuity['assets'], static fn (array $a): bool => $a['status'] === 'approved'));
+
+        $merged = [];
+        $cursor = $windowStartTs;
+        foreach ($items as $it) {
+            if ($it['start'] > $cursor) {
+                foreach (self::fillGap($cursor, $it['start'], $eligibleAssets, $continuity['cards'], $continuity['defaults']) as $fillerItem) {
+                    $merged[] = $fillerItem;
+                }
+            }
+            $merged[] = $it;
+            $cursor = max($cursor, $it['end']);
+        }
+        if ($windowEndTs > $cursor) {
+            foreach (self::fillGap($cursor, $windowEndTs, $eligibleAssets, $continuity['cards'], $continuity['defaults']) as $fillerItem) {
+                $merged[] = $fillerItem;
+            }
+        }
+
+        // next_program_id for every continuity card: the next real "video" item's id, if the window has one.
+        for ($i = 0, $n = count($merged); $i < $n; $i++) {
+            if (($merged[$i]['kind'] ?? 'video') !== 'continuity') {
+                continue;
+            }
+            $next = null;
+            for ($j = $i + 1; $j < $n; $j++) {
+                if (($merged[$j]['kind'] ?? 'video') === 'video') {
+                    $next = $merged[$j]['id'];
+                    break;
+                }
+            }
+            $merged[$i]['next_program_id'] = $next;
+        }
+
+        return ['items' => $merged, 'warnings' => $warnings];
+    }
+
+    /** @return list<array<string,mixed>> */
+    private static function fillGap(int $start, int $end, array $assets, array $cards, array $defaults): array
+    {
+        $out = [];
+        $cursor = $start;
+        $remaining = $end - $start;
+        if ($remaining <= 0) {
+            return $out;
+        }
+
+        if ($remaining >= $defaults['minimumVideoFiller'] && $assets) {
+            for ($chain = 0; $chain < self::MAX_STATION_IDS_PER_GAP && $remaining > 0; $chain++) {
+                $best = null;
+                foreach ($assets as $i => $a) {
+                    if ($a['duration'] > $remaining) {
+                        continue;
+                    }
+                    if ($best === null || $a['duration'] > $best['duration']) {
+                        $best = $a;
+                    }
+                }
+                if ($best === null) {
+                    break; // nothing fits (even the smallest asset is bigger than what's left) -- stop the chain
+                }
+                $out[] = self::videoItem($best, $cursor);
+                $cursor += $best['duration'];
+                $remaining -= $best['duration'];
+            }
+        }
+
+        if ($remaining > 0) {
+            $card = self::pickCard($remaining, $cards, $defaults['preferredCard']);
+            $out[] = self::continuityItem($card, $cursor, $remaining);
+        }
+
+        return $out;
+    }
+
+    /** @return array{id:string,template:string,minDuration:int,maxDuration:int} */
+    private static function pickCard(int $remaining, array $cards, ?string $preferredId): array
+    {
+        $qualifying = array_values(array_filter(
+            $cards,
+            static fn (array $c): bool => $remaining >= $c['minDuration'] && $remaining <= $c['maxDuration'],
+        ));
+        if ($preferredId !== null) {
+            foreach ($qualifying as $c) {
+                if ($c['id'] === $preferredId) {
+                    return $c;
+                }
+            }
+        }
+        if ($qualifying) {
+            return $qualifying[0]; // first qualifying card in configured order -- deterministic
+        }
+        // No configured card's [min_duration, max_duration] covers this exact remainder (or
+        // none are configured at all) -- the universal, always-available fallback. A dynamic
+        // card needs no prerecorded asset, so this never leaves an undefined hole.
+        return ['id' => self::FALLBACK_CARD_TEMPLATE, 'template' => self::FALLBACK_CARD_TEMPLATE, 'minDuration' => 0, 'maxDuration' => PHP_INT_MAX];
+    }
+
+    /** @return array{kind:string,start:int,end:int,id:string,title:string,source:?array,source_url:?string,continuity_category:string} */
+    private static function videoItem(array $asset, int $startAbs): array
+    {
+        $source = $asset['source'];
+        return [
+            'kind' => 'video',
+            'start' => $startAbs,
+            'end' => $startAbs + $asset['duration'],
+            'id' => $asset['id'],
+            'title' => $asset['title'],
+            'source' => $source,
+            'source_url' => is_string($source['url'] ?? null) ? $source['url'] : null,
+            'continuity_category' => $asset['category'],
+        ];
+    }
+
+    /** @return array{kind:string,start:int,end:int,id:string,title:?string,template:string,source:null,source_url:null} */
+    private static function continuityItem(array $card, int $startAbs, int $durationSeconds): array
+    {
+        return [
+            'kind' => 'continuity',
+            'start' => $startAbs,
+            'end' => $startAbs + $durationSeconds,
+            'id' => 'continuity-' . $startAbs,
+            'title' => null,
+            'template' => $card['template'],
+            'source' => null,
+            'source_url' => null,
+        ];
+    }
+}

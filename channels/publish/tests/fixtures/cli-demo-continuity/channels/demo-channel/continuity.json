@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "station_ids": [
+    { "id": "demo-id-30", "title": "Demo Station ID", "category": "station_id", "duration": 30, "status": "approved", "source": { "provider": "direct", "url": "/media/demo/id-30.mp4" } }
+  ],
+  "cards": [
+    { "id": "up-next", "template": "up-next", "min_duration": 0, "max_duration": 100000 }
+  ],
+  "defaults": {
+    "preferred_card": "up-next",
+    "minimum_video_filler": 10
+  }
+}
