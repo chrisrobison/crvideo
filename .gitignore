@@ -6,6 +6,10 @@ Thumbs.db
 /.env
 /.env.sh
 
+# Google Drive API key for channel.html's drive-key.php -- a secret,
+# never committed. See scheduler/GOOGLE_DRIVE_SETUP.md.
+/scheduler/drive-config.local.php
+
 # Local video cache (server/download-cache.mjs) -- large, regenerated, never committed.
 /cache/
 
