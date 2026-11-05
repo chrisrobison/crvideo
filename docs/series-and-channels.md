@@ -271,6 +271,58 @@ occurrences together, chronologically, after per-block compilation --
 see `channels/publish/README.md`'s "Hard and soft start boundaries"
 section.
 
+## Dynamic continuity rendering and playback (Phase 5/6)
+
+`channels/continuity-card.js` defines `<cr-continuity-card>`, a
+dependency-free Web Component (native custom element, shadow DOM, plain
+CSS -- no React, no build step, no prerecorded asset) that renders a
+"Coming Up Next" card: channel logo/name, the upcoming program's title/
+description/thumbnail (when available), its start time, and a live
+countdown. It decides nothing about scheduling -- it only ever formats
+whatever `.program`/`.channel` it's given against its own clock function
+(`.clockNow`, normally the project's drift-corrected broadcast clock),
+recomputed from absolute instants on every tick, which is what makes a
+mid-card refresh or a background-tab timer suspension land on the
+correct remaining time with no special-case recovery logic needed.
+Theming is entirely CSS custom properties with generic defaults; a
+specific channel's identity (e.g. Science & Engineering's dark
+background, cyan highlights, warm accent) is layered on by the caller
+via `meta.json`'s optional `theme` field, never hardcoded in the
+component itself.
+
+`channels/player-adapters.js`'s `ContinuityRenderer` mounts/updates/
+hides one `<cr-continuity-card>` inside a container element the calling
+page owns -- structurally alongside `Html5PlayerAdapter`/
+`YouTubePlayerAdapter`, but deliberately not forced through their
+`PlayerAdapter` interface, since a card is rendered, never played/
+paused/sought. `BroadcastPlayer` (`broadcast.js`) treats a `"continuity"`
+airing as a dedicated third case in `switchTo()`: it pauses/hides
+whichever adapter was active first (the YouTube iframe's required
+presentation is never drawn under anything else), then renders the card
+with the real upcoming program's info (via the existing `nextProgram()`
+timeline helper) and the continuity occurrence's own exact span. A page
+that passes no `continuityContainer` (e.g. the channel guide's small
+preview in `index.html`) is completely unaffected -- a continuity airing
+simply falls back to the ordinary not-playable station-break slate,
+exactly like an unsupported provider already does.
+
+`watch.html` is the first integration: a `#continuityHost` element,
+passed as `continuityContainer`, shown/hidden independently of the
+pre-existing generic "Up Next" slate (which still handles the plain-gap,
+no-program-at-all case exactly as before).
+
+**What's unit-tested vs. what still needs a real browser** (same honesty
+standard this project already applies to the YouTube player adapter):
+`buildTimeline()`'s continuity field passthrough and the card's pure
+`formatCountdown()` helper are covered under `node --test` (no DOM
+involved). `<cr-continuity-card>`'s actual shadow-DOM rendering, its
+`visibilitychange`-triggered re-render, the pause/hide transition away
+from a live YouTube iframe, and the card's layout/animations have no
+meaningful behavior without a real browser -- faking enough of the DOM
+to exercise them wouldn't prove anything a browser wouldn't prove
+better, so they are **not** covered by the automated suite and need
+manual/Playwright verification before relying on them in production.
+
 A channel can additionally reference a `continuity.json` (or several --
 network-wide and channel-specific, merged, the same portable-reference
 shape as `series`) from its `catalog.json`. When it does,

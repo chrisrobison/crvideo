@@ -43,6 +43,9 @@ video{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;backgroun
 body.on-break .lower,body.on-break .bug{display:none}
 body.on-break .hint{bottom:clamp(16px,4vh,40px)}
 
+#continuityHost{position:fixed;inset:0}
+#continuityHost cr-continuity-card{position:absolute;inset:0}
+
 .bug{position:fixed;top:clamp(12px,3vh,32px);right:clamp(12px,3vw,40px);height:clamp(28px,6vh,64px);opacity:.55;pointer-events:none}
 
 .osd{position:fixed;top:clamp(12px,3vh,32px);left:clamp(12px,3vw,40px);font-size:clamp(36px,7vh,72px);font-weight:800;color:var(--accent);
@@ -77,6 +80,7 @@ body.on-break .hint{bottom:clamp(16px,4vh,40px)}
 <body>
 <video id="screen" muted playsinline autoplay></video>
 <div id="ytPlayer" class="ytPlayer" hidden></div>
+<div id="continuityHost" hidden></div>
 
 <div class="slate" id="slate" hidden>
   <div class="card">
@@ -134,7 +138,7 @@ let osdTimer = 0;
 // youtubeContainer is optional on BroadcastPlayer; passing it here is what
 // lets this page (unlike the guide's small preview in index.html) actually
 // play a YouTube-sourced program via YouTubePlayerAdapter.
-const player = new BroadcastPlayer(video, { youtubeContainer: $("ytPlayer"), onAiring, onState });
+const player = new BroadcastPlayer(video, { youtubeContainer: $("ytPlayer"), continuityContainer: $("continuityHost"), onAiring, onState });
 
 function onAiring(airing) {
   document.title = channel ? `${channel.name} · ${airing.playable ? airing.title : "Station break"}` : "Watch";
@@ -143,9 +147,11 @@ function onAiring(airing) {
 }
 
 function onState(state, airing) {
-  const slate = state === "slate" || state === "error" || !airing?.playable;
+  const continuity = state === "continuity";
+  const slate = !continuity && (state === "slate" || state === "error" || !airing?.playable);
   $("slate").hidden = !slate;
-  document.body.classList.toggle("on-break", slate);
+  $("continuityHost").hidden = !continuity;
+  document.body.classList.toggle("on-break", slate || continuity);
   $("slateMsg").hidden = state !== "error";
   $("spinner").hidden = !(state === "loading" || state === "buffering");
   if (state === "blocked") {
@@ -244,7 +250,7 @@ async function tune(id) {
   $("lNum").textContent = channel.number ?? "";
   $("lName").textContent = channel.name;
   if (channel.number != null) flashOsd(String(channel.number));
-  player.setTimeline(channel.timeline);
+  player.setTimeline(channel.timeline, { name: channel.name, logo: channel.logo });
 }
 
 // ---------- sound + full screen ----------
