@@ -1,0 +1,381 @@
+{
+    "_note": "Recurring-series programming for Comedy Club (see channels/publish.php). A 24-hour themed daily grid, wall-to-wall with no gaps, mapping the requested dayparts onto seven real series: 00-06 Overnight Comedy Reruns (Comedy Central Stand-Up 00-02, Just For Laughs 02-03:30, Don't Tell Comedy 03:30-05, Keaton & Arbuckle silent shorts 05-06 as a lead-in to the morning), 06-10 Classic Comedy (Chaplin Shorts 06-08, Keaton & Arbuckle Shorts 08-10; Internet Archive public-domain silents), 10-14 Comedy Matinee (Dry Bar Comedy 10-12, Jim Gaffigan 12-12:30, a Chaplin silent matinee 12:30-14), 14-18 Stand-Up Showcase (Dry Bar Comedy full specials 14-17, Jim Gaffigan 17-18), 18-20 Comedy Happy Hour (Don't Tell Comedy), 20-23 Comedy Club Prime (Dry Bar Comedy 20-21:30, Comedy Central Stand-Up full specials 21:30-23), 23-24 Late Night Laughs (Just For Laughs). Daytime (06-18) uses only the clean/family-friendly sources (Dry Bar's self-described clean catalog, Jim Gaffigan, silent shorts); the three sources flagged as mature/uncensored (Comedy Central Stand-Up, Don't Tell Comedy, Just For Laughs) air only 18:00-06:00. Deviation from the requested grid: a planned Gabriel Iglesias series was dropped (its channel re-posts the same clips under new titles and could not be de-duplicated reliably), so the Matinee's third slot went to a second Chaplin block and the Showcase leans on Dry Bar. Every series' blocks have DIFFERENT lengths: rotation/packing state is per block, so two same-length blocks of one series would replay the identical sequence each day; different lengths consume at different rates and drift apart. Every block opts into multi-episode packing (sequential, minimum_remaining 30s) because no series' episodes run close to a single slot; leftover minutes go to the comedy-club-up-next continuity card. on_unfit is skip_for_block rather than defer for a measured reason: these series mix 6-minute sets with 45-80 minute specials, and under defer a long next episode that doesn't fit left the rest of the slot to the up-next card (40.0h of card time over the 14-day window, single cards up to 54 minutes); skip_for_block pulls the next episode that does fit forward and queues the skipped one to be tried first at the block's next occurrence (nothing is ever dropped from rotation), cutting card time to ~13h with more distinct episodes aired. Sub-3-minute social cuts were left unapproved so they can't be reused over and over as gap filler. boundary.mode is hard everywhere, and every block is at least as long as its series' longest approved episode (Comedy Central 4390s <= 90m, Dry Bar 4871s <= 90m, Chaplin 4292s <= 90m, Don't Tell 1898s, Keaton 2674s <= 60m, Just For Laughs 2599s <= 60m, Gaffigan 1516s <= 30m); anything longer was left unapproved, so no sequential cursor can stall on an unfittable episode.",
+    "schema_version": 1,
+    "blocks": [
+        {
+            "id": "overnight-reruns-comedy-central",
+            "type": "series",
+            "series_id": "comedy-central-stand-up",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "00:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "overnight-reruns-just-for-laughs",
+            "type": "series",
+            "series_id": "just-for-laughs",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "02:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "overnight-reruns-dont-tell",
+            "type": "series",
+            "series_id": "dont-tell-comedy",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "03:30",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "overnight-reruns-keaton",
+            "type": "series",
+            "series_id": "keaton-arbuckle-shorts",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "05:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "classic-comedy-chaplin",
+            "type": "series",
+            "series_id": "chaplin-shorts",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "06:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "classic-comedy-keaton",
+            "type": "series",
+            "series_id": "keaton-arbuckle-shorts",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "08:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "comedy-matinee-dry-bar",
+            "type": "series",
+            "series_id": "dry-bar-comedy",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "10:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "comedy-matinee-gaffigan",
+            "type": "series",
+            "series_id": "jim-gaffigan",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "12:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 1800,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "comedy-matinee-chaplin",
+            "type": "series",
+            "series_id": "chaplin-shorts",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "12:30",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "standup-showcase-dry-bar",
+            "type": "series",
+            "series_id": "dry-bar-comedy",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "14:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 10800,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "standup-showcase-gaffigan",
+            "type": "series",
+            "series_id": "jim-gaffigan",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "17:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "happy-hour-dont-tell",
+            "type": "series",
+            "series_id": "dont-tell-comedy",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "18:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "prime-dry-bar",
+            "type": "series",
+            "series_id": "dry-bar-comedy",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "20:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "prime-comedy-central",
+            "type": "series",
+            "series_id": "comedy-central-stand-up",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "21:30",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 5400,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "late-night-just-for-laughs",
+            "type": "series",
+            "series_id": "just-for-laughs",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "23:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "skip_for_block",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        }
+    ]
+}

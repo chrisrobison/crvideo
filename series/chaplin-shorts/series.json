@@ -1,0 +1,2001 @@
+{
+    "schema_version": 1,
+    "id": "chaplin-shorts",
+    "title": "Chaplin Shorts",
+    "description": "Charlie Chaplin's silent comedy shorts from his Keystone (1914), Essanay (1915) and Mutual (1916-1917) years, plus his 1918 wartime shorts -- the Little Tramp's earliest screen work, from the Internet Archive's silent-film collections.",
+    "creator": "Charlie Chaplin (Internet Archive silent_films / Comedy_Films collections)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "ia-CC_1914_02_02_MakingALiving",
+            "episode_number": 1,
+            "title": "Charlie Chaplin's \"Making A Living\"",
+            "description": "Charlie Chaplin's 1st Film Released Feb. 02 1914 Making a Living is the first film appearance of Charlie Chaplin, which premiered on February 2, 1914. Chaplin plays a lady-charming swindler, Edgar English, who runs afoul of the Keystone Kops. Chaplin's famed screen persona of \"the Little Tramp\" did not appear until the film Kid Auto Races at Venice. http://www.imdb.com/title/tt0004288/ Find more Chaplin films",
+            "creator": null,
+            "duration": 531,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_02_02_MakingALiving",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_02_02_MakingALiving",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_02_02_MakingALiving/CC_1914_02_02_MakingALiving_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_02_02_MakingALiving",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_02_02_MakingALiving; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_02_07_KidsAutoRaceAtVenice",
+            "episode_number": 2,
+            "title": "Charlie Chaplin's \"Kids Auto Race At Venice\"",
+            "description": "Charlie Chaplin's 2nd Film Released Feb. 07 1914 Kid Auto Races At Venice is 1914 American-made motion picture starring Charlie Chaplin in which his \"Tramp\" character makes a first appearance. Made by Keystone Studios and directed by Henry Lehrman, in it Chaplin plays a spectator at a 'baby-cart race' in California. The spectator keeps getting in the way of the camera and interferes with the race, causing great frustration to the public and participants. Chaplin's tramp character would go on to be one of the most beloved film icons in history. http://www.imdb.com/title/tt0004189/",
+            "creator": null,
+            "duration": 358.68,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_02_07_KidsAutoRaceAtVenice",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_02_07_KidsAutoRaceAtVenice",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_02_07_KidsAutoRaceAtVenice/CC_1914_02_07_KidsAutoRaceAtVenice_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_02_07_KidsAutoRaceAtVenice",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_02_07_KidsAutoRaceAtVenice; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_02_09_MabelsStrangePredicament",
+            "episode_number": 3,
+            "title": "Charlie Chaplin's \"Mabels Strange Predicament\"",
+            "description": "Charlie Chaplins 3rd Film Released Feb. 09 1914 http://www.imdb.com/title/tt0004284/",
+            "creator": null,
+            "duration": 622.88,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_02_09_MabelsStrangePredicament",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_02_09_MabelsStrangePredicament",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_02_09_MabelsStrangePredicament/CC_1914_02_09_MabelsStrangePredicament_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_02_09_MabelsStrangePredicament",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_02_09_MabelsStrangePredicament; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_02_28_BetweenShowers",
+            "episode_number": 4,
+            "title": "Charlie Chaplin's \"Between Showers\"",
+            "description": "Charlie Chaplin's 4th Released Feb. 28 1914 Between Showers was a short film made by Keystone Studios and directed by Henry Lehrman. It starred Charlie Chaplin, Ford Sterling, Emma Bell Clifton, and Chester Conklin. http://www.imdb.com/title/tt0003679/",
+            "creator": null,
+            "duration": 539.12,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_02_28_BetweenShowers",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_02_28_BetweenShowers",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_02_28_BetweenShowers/CC_1914_02_28_BetweenShowers_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_02_28_BetweenShowers",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_02_28_BetweenShowers; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_03_02_FilmJohnny",
+            "episode_number": 5,
+            "title": "Charlie Chaplins \"A Film Johnnie\"",
+            "description": "Charlie Chaplins 5th Film Released. March 02 1914 http://www.imdb.com/title/tt0003961/",
+            "creator": null,
+            "duration": 429.69,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_03_02_FilmJohnny",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_03_02_FilmJohnny",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_03_02_FilmJohnny/CC_1914_03_02_FilmJohnny_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_03_02_FilmJohnny",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents",
+                    "CC"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_03_02_FilmJohnny; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_03_16_HisFavoritePasttime",
+            "episode_number": 6,
+            "title": "Charlie Chaplin's \"His Favorite Pasttime\"",
+            "description": "Charlie Chaplin's 7th Film Released March 16 1914. http://www.imdb.com/title/tt0004091/",
+            "creator": null,
+            "duration": 804.44,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_03_16_HisFavoritePasttime",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_03_16_HisFavoritePasttime",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_03_16_HisFavoritePasttime/CC_1914_03_16_HisFavoritePasttime_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_03_16_HisFavoritePasttime",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_03_16_HisFavoritePasttime; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_03_26_CruelCruelLove",
+            "episode_number": 7,
+            "title": "Charlie Chaplin's \"Cruel Cruel Love\"",
+            "description": "Charlie Chaplin's 8th Film released March 26 1914 This early Chaplin film has him playing a character quite different from the Tramp for which he would become famous. He is a rich, upper-class gentleman whose romance is endangered when his girlfriend oversees him being embraced by a maid. Chaplin's romantic interest in this film, Minta Durfee, was the wife of fellow Keystone actor, Roscoe \"Fatty\" Arbuckle. http://www.imdb.com/title/tt0003805/ Watch more Chaplin movies",
+            "creator": null,
+            "duration": 538.08,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_03_26_CruelCruelLove",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_03_26_CruelCruelLove",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_03_26_CruelCruelLove/CC_1914_03_26_CruelCruelLove_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_03_26_CruelCruelLove",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_03_26_CruelCruelLove; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_04_04_TheLandladysPet",
+            "episode_number": 8,
+            "title": "Charlie Chaplin's \"The Landladys Pet\" aka The Star Boarder",
+            "description": "Charlie Chaplins 9th Film Released April 04 1914 As The Star Boarder http://www.imdb.com/title/tt0004637/",
+            "creator": null,
+            "duration": 465.92,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_04_04_TheLandladysPet",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_04_04_TheLandladysPet",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_04_04_TheLandladysPet/CC_1914_04_04_TheLandladysPet_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_04_04_TheLandladysPet",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_04_04_TheLandladysPet; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_04_20_TwentyMinutesofLove",
+            "episode_number": 9,
+            "title": "Charlie Chaplin's \"Twenty Minutes Of Love\"",
+            "description": "Charlie Chaplins 11th Film Released April 20 1914 http://www.imdb.com/title/tt0004736/",
+            "creator": null,
+            "duration": 599.06,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_04_20_TwentyMinutesofLove",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_04_20_TwentyMinutesofLove",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_04_20_TwentyMinutesofLove/CC_1914_04_20_TwentyMinutesofLove_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_04_20_TwentyMinutesofLove",
+                "license": null,
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: left as candidate 2026-11-05 -- no license/rights information on the IA item; do not assume redistributable."
+            }
+        },
+        {
+            "id": "ia-CC_1914_04_27_CaughtinaCaberet",
+            "episode_number": 10,
+            "title": "Charlie Chaplin's \"Caught in a Caberet\"",
+            "description": "Charlie Chaplins 12th Film Released. April 27 1914 http://www.imdb.com/title/tt0003758/",
+            "creator": null,
+            "duration": 946.71,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_04_27_CaughtinaCaberet",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_04_27_CaughtinaCaberet",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_04_27_CaughtinaCaberet/CC_1914_04_27_CaughtinaCaberet_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_04_27_CaughtinaCaberet",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents",
+                    "CC"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_04_27_CaughtinaCaberet; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_05_07_ABusyDay",
+            "episode_number": 11,
+            "title": "Charlie Chaplin's \"A Busy Day\"",
+            "description": "Charlie Chaplin's 14th Film Released May 07 1914 Chaplin plays a wife jealous of her husband's interest in another woman, played by Phyllis Allen. On her way to attack the couple, the wife interrupts the set of a film, knocking over a film director, played by Mack Sennett, and a policeman, played by Billy Gilbert http://www.imdb.com/title/tt0003733/",
+            "creator": null,
+            "duration": 363.73,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_05_07_ABusyDay",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_05_07_ABusyDay",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_05_07_ABusyDay/CC_1914_05_07_ABusyDay_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_05_07_ABusyDay",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_05_07_ABusyDay; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_06_01_TheFatalMallet",
+            "episode_number": 12,
+            "title": "Charlie Chaplin's \"The Fatal Mallet\"",
+            "description": "Charlie Chaplin's 15th Film Released June o1 1914 http://www.imdb.com/title/tt0003934/",
+            "creator": null,
+            "duration": 587.04,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_06_01_TheFatalMallet",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_06_01_TheFatalMallet",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_06_01_TheFatalMallet/CC_1914_06_01_TheFatalMallet_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_06_01_TheFatalMallet",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_06_01_TheFatalMallet; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_06_11_TheKnockout",
+            "episode_number": 13,
+            "title": "Charlie Chaplin's \"The Knockout\"",
+            "description": "Charlie Chaplins 17th Film Released June 11 1914 The Knockout was Charlie Chaplin's seventeenth film for Keystone Studios. Chaplin only has a small role, and Fatty Arbuckle takes up the main role. It also stars Arbuckle's wife, Minta Durfee, Edgar Kennedy and Keystone owner, Mack Sennett in a minor role as a spectator. The film was directed by Charles Avery, and made in 1914 in America. http://www.imdb.com/title/tt0004194/",
+            "creator": null,
+            "duration": 1438.4,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_06_11_TheKnockout",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_06_11_TheKnockout",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_06_11_TheKnockout/CC_1914_06_11_TheKnockout_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_06_11_TheKnockout",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents",
+                    "Fatty Arbuckle"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_06_11_TheKnockout; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_06_13_MabelsBusyDay",
+            "episode_number": 14,
+            "title": "Charlie Chaplin's \"Mabel's Busy Day\"",
+            "description": "Charlie Chaplin's 18th Film Released June 13 1914 http://www.imdb.com/title/tt0004280/",
+            "creator": null,
+            "duration": 574.76,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_06_13_MabelsBusyDay",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_06_13_MabelsBusyDay",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_06_13_MabelsBusyDay/CC_1914_06_13_MabelsBusyDay_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_06_13_MabelsBusyDay",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_06_13_MabelsBusyDay; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_06_20_CharlottEtLeMannequin",
+            "episode_number": 15,
+            "title": "Charlie Chaplin's \"Charlott Et Le Mannequin\" (Mabel's Married Life)",
+            "description": "Charlie Chaplin's 19th Film Released June 20 1914 as Mabel's Married Life. http://www.imdb.com/title/tt0004282/",
+            "creator": null,
+            "duration": 762.48,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_06_20_CharlottEtLeMannequin",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_06_20_CharlottEtLeMannequin",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_06_20_CharlottEtLeMannequin/CC_1914_06_20_CharlottEtLeMannequin_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_06_20_CharlottEtLeMannequin",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_06_20_CharlottEtLeMannequin; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_07_09_LaffingGas",
+            "episode_number": 16,
+            "title": "Charlie Chaplin's \"Laffing Gas\" aka Laughing Gas",
+            "description": "Charlie Chaplin's 20th Film Released July 09 1914 As Laughing Gas http://www.imdb.com/title/tt0004210/",
+            "creator": null,
+            "duration": 809.96,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_07_09_LaffingGas",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_07_09_LaffingGas",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_07_09_LaffingGas/CC_1914_07_09_LaffingGas_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_07_09_LaffingGas",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_07_09_LaffingGas; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_08_01_CharolotGargonDeTheater",
+            "episode_number": 17,
+            "title": "Charlie Chaplin's \"Charolot Gargon De Theater\" ( The Property Man)",
+            "description": "Charlie Chaplin's 21st Film Released Aug. 01 1914 Charolot Gargon De Theater is the French version of The Property Man. http://www.imdb.com/title/tt0004499/",
+            "creator": null,
+            "duration": 1103.07,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_08_01_CharolotGargonDeTheater",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_08_01_CharolotGargonDeTheater",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_08_01_CharolotGargonDeTheater/CC_1914_08_01_CharolotGargonDeTheater_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_08_01_CharolotGargonDeTheater",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_08_01_CharolotGargonDeTheater; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_08_10_FaceOnTheBarroomFloor",
+            "episode_number": 18,
+            "title": "Charlie Chaplin's \"Face On The Barroom Floor\"",
+            "description": "Charlie Chaplin's 22th Film Released August 10th 1914 http://www.imdb.com/title/tt0003923/",
+            "creator": null,
+            "duration": 696.26,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_08_10_FaceOnTheBarroomFloor",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_08_10_FaceOnTheBarroomFloor",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_08_10_FaceOnTheBarroomFloor/CC_1914_08_10_FaceOnTheBarroomFloor_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_08_10_FaceOnTheBarroomFloor",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_08_10_FaceOnTheBarroomFloor; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_08_13_CharliesRecreation",
+            "episode_number": 19,
+            "title": "Charlie Chaplin's \"Charlie's Recreation\"",
+            "description": "Charlie Chaplin's 23rd film released August 13 1914 http://www.imdb.com/title/tt0004518/",
+            "creator": null,
+            "duration": 742.28,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_08_13_CharliesRecreation",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_08_13_CharliesRecreation",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_08_13_CharliesRecreation/CC_1914_08_13_CharliesRecreation_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_08_13_CharliesRecreation",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_08_13_CharliesRecreation; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_08_27_TheMasquerader",
+            "episode_number": 20,
+            "title": "Charlie Chaplin's \"The Masquerader\"",
+            "description": "Charlie Chaplins 24th Film Released Aug.27 1914 The Masquerader is a 1914 film written, directed, and starring Charlie Chaplin. Its running time is only 16 minutes. It is the tenth film directed and the second written by Chaplin. http://www.imdb.com/title/tt0004311/",
+            "creator": null,
+            "duration": 551.12,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_08_27_TheMasquerader",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_08_27_TheMasquerader",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_08_27_TheMasquerader/CC_1914_08_27_TheMasquerader_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_08_27_TheMasquerader",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_08_27_TheMasquerader; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_08_31_TheGoodforNothing",
+            "episode_number": 21,
+            "title": "Charlie Chaplin's \"The Good For Nothing\"",
+            "description": "Charlie Chaplins 25th Film Released Aug. 31 1914 As His New Profession An American comedy silent film made at the Keystone Studios and starring Charlie Chaplin. The film involves Chaplin taking care of a man in a wheelchair. http://www.imdb.com/title/tt0004101/",
+            "creator": null,
+            "duration": 810.56,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_08_31_TheGoodforNothing",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_08_31_TheGoodforNothing",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_08_31_TheGoodforNothing/CC_1914_08_31_TheGoodforNothing_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_08_31_TheGoodforNothing",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_08_31_TheGoodforNothing; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_09_07_TheRounders",
+            "episode_number": 22,
+            "title": "Charlie Chaplin's \"The Rounders\"",
+            "description": "Charlie Chaplins 26th Film Released Sept 07 1914 http://www.imdb.com/title/tt0004546/",
+            "creator": null,
+            "duration": 575,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_09_07_TheRounders",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_09_07_TheRounders",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_09_07_TheRounders/CC_1914_09_07_TheRounders_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_09_07_TheRounders",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_09_07_TheRounders; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_10_10_TheRivalMashers",
+            "episode_number": 23,
+            "title": "Charlie Chaplin's \"The Rival Mashers\" aka Those Love Pangs",
+            "description": "Charlie Chaplin's 28th Film Released Oct. 10 1914 http://www.imdb.com/title/tt0004693/",
+            "creator": null,
+            "duration": 728.16,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_10_10_TheRivalMashers",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_10_10_TheRivalMashers",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_10_10_TheRivalMashers/CC_1914_10_10_TheRivalMashers_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_10_10_TheRivalMashers",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_10_10_TheRivalMashers; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_10_26_DoughandDynamite",
+            "episode_number": 24,
+            "title": "Charlie Chaplin's \"Dough And Dynamite\"",
+            "description": "Charlie Chaplin's 29th Released Oct. 26 1914 The story involves Chaplin and Chester Conklin working as waiters at a restaurant where the cooks go on strike. When the two are forced to work as bakers, the striking cooks put dynamite in the dough, with explosive results. Dough and Dynamite was one of two Charlie Chaplin films that were to be shown at a special event in September, 2001. However, in the light of 9/11, it was taken off the list of films as it ends with Charlie walking out of a blown up building. http://www.imdb.com/title/tt0003863/",
+            "creator": null,
+            "duration": 742.28,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_10_26_DoughandDynamite",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_10_26_DoughandDynamite",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_10_26_DoughandDynamite/CC_1914_10_26_DoughandDynamite_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_10_26_DoughandDynamite",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_10_26_DoughandDynamite; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_10_29_CharlottMabelAuxCourses",
+            "episode_number": 25,
+            "title": "Charlie Chaplin's \"Charlott Mabel Aux Courses\" aka Gentlemen of Nerve",
+            "description": "Charlie Chaplin's 30th Film Released Oct. 30 1914 as Gentlemen of Nerve http://www.imdb.com/title/tt0004007/",
+            "creator": null,
+            "duration": 603.12,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_10_29_CharlottMabelAuxCourses",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_10_29_CharlottMabelAuxCourses",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_10_29_CharlottMabelAuxCourses/CC_1914_10_29_CharlottMabelAuxCourses_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_10_29_CharlottMabelAuxCourses",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_10_29_CharlottMabelAuxCourses; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_11_07_MusicalTramps",
+            "episode_number": 26,
+            "title": "Charlie Chaplin's \"Musical Tramps\"",
+            "description": "Charlie Chaplins 31st Film Released Nov. 07 1914 As His Musical Career http://www.imdb.com/title/tt0004100/",
+            "creator": null,
+            "duration": 687.08,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_11_07_MusicalTramps",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_11_07_MusicalTramps",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_11_07_MusicalTramps/CC_1914_11_07_MusicalTramps_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_11_07_MusicalTramps",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_11_07_MusicalTramps; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_11_09_HisTrystingPlace",
+            "episode_number": 27,
+            "title": "Charlie Chaplin's \"His Trysting Place\"",
+            "description": "Charlie Chaplins 32nd Film Released Nov. 09 1914 http://www.imdb.com/title/tt0004108/",
+            "creator": null,
+            "duration": 956.64,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_11_09_HisTrystingPlace",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_11_09_HisTrystingPlace",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_11_09_HisTrystingPlace/CC_1914_11_09_HisTrystingPlace_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_11_09_HisTrystingPlace",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_11_09_HisTrystingPlace; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_11_14_TilliesPuncturedRomance",
+            "episode_number": 28,
+            "title": "Charlie Chaplin's \"Tillies Punctured Romance\"",
+            "description": "Charlie Chaplin's 33rd Film Released Nov. 14 1914. Tillie's Punctured Romance was the first feature-length comedy film from Keystone Film Company and the Christie Film Company, produced in 1914. A silent film directed by Mack Sennett, the film stars Marie Dressler, Mabel Normand, and Charlie Chaplin, as well as the Keystone Kops. http://www.imdb.com/title/tt0004707/",
+            "creator": null,
+            "duration": 4291.85,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_11_14_TilliesPuncturedRomance",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_11_14_TilliesPuncturedRomance",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_11_14_TilliesPuncturedRomance/CC_1914_11_14_TilliesPuncturedRomance_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_11_14_TilliesPuncturedRomance",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_11_14_TilliesPuncturedRomance; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_12_05_AFairExchange",
+            "episode_number": 29,
+            "title": "Charlie Chaplin's \"A Fair Exchange\"",
+            "description": "Charlie Chaplins 34th Film Released Dec. 05 1914. This Film was released as Getting Acquainted. http://www.imdb.com/title/tt0004011/",
+            "creator": null,
+            "duration": 772.94,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_12_05_AFairExchange",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_12_05_AFairExchange",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_12_05_AFairExchange/CC_1914_12_05_AFairExchange_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_12_05_AFairExchange",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents",
+                    "CC"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_12_05_AFairExchange; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1914_12_07_HisPrehistoricpast",
+            "episode_number": 30,
+            "title": "Charlie Chaplin's \"His Prehistoric Past\"",
+            "description": "Charlie Chaplin's 35th Film Released Dec. 07 1914. This is his last film for Keystone Studios as well. http://www.imdb.com/title/tt0004102/",
+            "creator": null,
+            "duration": 720.98,
+            "year": 1914,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1914_12_07_HisPrehistoricpast",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1914_12_07_HisPrehistoricpast",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1914_12_07_HisPrehistoricpast/CC_1914_12_07_HisPrehistoricpast_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1914_12_07_HisPrehistoricpast",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1914_12_07_HisPrehistoricpast; reviewed 2026-11-05). Underlying film first released 1914; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1915_02_01_HisNewJob",
+            "episode_number": 31,
+            "title": "Charlie Chaplin's \"His New Job\"",
+            "description": "Charlie Chaplin's 36th Film released Feb. 01 1915 http://www.imdb.com/title/tt0005489/",
+            "creator": null,
+            "duration": 1233.24,
+            "year": 1915,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1915_02_01_HisNewJob",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1915_02_01_HisNewJob",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1915_02_01_HisNewJob/CC_1915_02_01_HisNewJob_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1915_02_01_HisNewJob",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1915_02_01_HisNewJob; reviewed 2026-11-05). Underlying film first released 1915; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1915_10_04_CharlieShanghaied",
+            "episode_number": 32,
+            "title": "Charlie Chaplin's \"Charlie Shanghaied\"",
+            "description": "Charlie Chaplin's 46th Film Released Oct 04 1915 http://www.imdb.com/title/tt0006032/",
+            "creator": null,
+            "duration": 1390.92,
+            "year": 1915,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1915_10_04_CharlieShanghaied",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1915_10_04_CharlieShanghaied",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1915_10_04_CharlieShanghaied/CC_1915_10_04_CharlieShanghaied_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1915_10_04_CharlieShanghaied",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1915_10_04_CharlieShanghaied; reviewed 2026-11-05). Underlying film first released 1915; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1915_12_18_ABurlesqueOnCarmen",
+            "episode_number": 33,
+            "title": "Charlie Chaplin's \"A Burlesque On Carmen\"",
+            "description": "Charlie Chaplin's 48th Film Released Dec. 18 1915 Charlie Chaplin's Burlesque on Carmen was Chaplin's 13th film for Essanay Films. It was released in 1915 and then later recut into a different version in 1916. Charlie Chaplin played Dain Hosiery and Edna Purviance played Carmen. Carmen was very popular at this time and one of the reasons Chaplin decided to create his own comedy version on the opera. Theda Bara had recently played the part in a film version in 1915. http://www.imdb.com/title/tt0005077/",
+            "creator": null,
+            "duration": 2622.48,
+            "year": 1915,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1915_12_18_ABurlesqueOnCarmen",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1915_12_18_ABurlesqueOnCarmen",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1915_12_18_ABurlesqueOnCarmen/CC_1915_12_18_ABurlesqueOnCarmen_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1915_12_18_ABurlesqueOnCarmen",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1915_12_18_ABurlesqueOnCarmen; reviewed 2026-11-05). Underlying film first released 1915; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_05_15_TheFloorwalker",
+            "episode_number": 34,
+            "title": "Charlie Chaplin's \"The Floorwalker\"",
+            "description": "Charlie Chaplins 51st Film Released May 15 1916 The Floorwalker was Charlie Chaplin's first Mutual Film Company made in 1916. It starred Chaplin as a customer in a department store who finds out the manager is stealing money from the store. It was noted for the first 'running staircase' used in films. Edna Purviance played a minor role as a secretary to the store manager, played by Eric Campbell. http://www.imdb.com/title/tt0006689/ Watch more Chaplin films",
+            "creator": null,
+            "duration": 1169.84,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_05_15_TheFloorwalker",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_05_15_TheFloorwalker",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_05_15_TheFloorwalker/CC_1916_05_15_TheFloorwalker_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_05_15_TheFloorwalker",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_05_15_TheFloorwalker; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_05_27_Police",
+            "episode_number": 35,
+            "title": "Charlie Chaplin's \"Police\"",
+            "description": "Charlie Chaplin's 49th Film Released May 27 1916 Police was Charlie Chaplin's 14th released film from Essanay. It was made at the Majestic Studio in Los Angeles. Charlie playing an ex-convict finds life on the outside not to his liking and leads him to breaking into a home with another thief (Wesley Ruggles). Edna Purviance plays the girl living in the home who tries to change him. http://www.imdb.com/title/tt0007194/",
+            "creator": null,
+            "duration": 879.68,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_05_27_Police",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_05_27_Police",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_05_27_Police/CC_1916_05_27_Police_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_05_27_Police",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_05_27_Police; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_06_12_TheFireman",
+            "episode_number": 36,
+            "title": "Charlie Chaplin's \"The Fireman\"",
+            "description": "Charlie Chaplins 52nd Film Released June 12 1916 The Fireman was the second film Charlie Chaplin created for Mutual Films in 1916. Released in June 1916, it starred Charlie as the fireman and Edna Purviance as the daughter to Leo White. Leo White played a character trying to arrange with Eric Campbell (the fire chief) to have his house burn down so he could collection the insurance money. Shows some early day street scenes in the surrounding Los Angeles area. http://www.imdb.com/title/tt0006684/",
+            "creator": null,
+            "duration": 946.16,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_06_12_TheFireman",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_06_12_TheFireman",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_06_12_TheFireman/CC_1916_06_12_TheFireman_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_06_12_TheFireman",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_06_12_TheFireman; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_08_07_One_A_M",
+            "episode_number": 37,
+            "title": "Charlie Chaplin's \"One A.M.\"",
+            "description": "Charlie Chaplin's 54th Film Released Aug. 07 1916 One A.M. was a unique Charlie Chaplin silent film created for Mutual Films in 1916. It was the first film he starred in alone, except for a brief scene of Albert Austin playing a cab driver. Chaplin plays the role of a wealthman coming home late, after too much to drink. He only wants to go to bed, but 'everything' around him prevents him. http://www.imdb.com/title/tt0007145/",
+            "creator": null,
+            "duration": 1008.84,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_08_07_One_A_M",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_08_07_One_A_M",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_08_07_One_A_M/CC_1916_08_07_One_A_M_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_08_07_One_A_M",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_08_07_One_A_M; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_09_04_TheCount",
+            "episode_number": 38,
+            "title": "Charlie Chaplin's \"The Count\"",
+            "description": "Charlie Chaplin's 55th Film released Sept. 04 1916. The Count was Charlie Chaplin's fifth film for Mutual Films. Co-starring Eric Campbell and Edna Purviance, it is a story about Charlie and his boss finding an invitation to a party from a real Count. Each try to play the role as the Count instead to catch the rich heiress played by Edna http://www.imdb.com/title/tt0006548/",
+            "creator": null,
+            "duration": 1210.97,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_09_04_TheCount",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_09_04_TheCount",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_09_04_TheCount/CC_1916_09_04_TheCount_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_09_04_TheCount",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_09_04_TheCount; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_10_02_ThePawnshop",
+            "episode_number": 39,
+            "title": "Charlie Chaplin's \" The Pawnshop\"",
+            "description": "Charlie Chaplin's 56th Film Released Oct 02 1916. The Pawnshop was Charlie Chaplin's sixth film for Mutual Film Company. Chaplin played the role of assistant to the pawnshop owner. Henry Bergman played the owner and Edna Purviance the owner's daughter. Albert Austin played an alarm clock owner who watches Charlie in dismay as he checks out the clock. This was one of Chaplin's more popular Mutual Films, mainly for the slapstick comedy he was famous for at the time. http://www.imdb.com/title/tt0007162/",
+            "creator": null,
+            "duration": 1221.52,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_10_02_ThePawnshop",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_10_02_ThePawnshop",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_10_02_ThePawnshop/CC_1916_10_02_ThePawnshop_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_10_02_ThePawnshop",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_10_02_ThePawnshop; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_11_13_BehindtheScreen",
+            "episode_number": 40,
+            "title": "Charlie Chaplin's \"Behind The Screen\"",
+            "description": "Charlie Chaplin's 57th Film released November 13 1916. Behind the Screen, a short film written and directed by Charlie Chaplin also starring Eric Campbell and Edna Purviance. In the film which takes place in a movie studio, Chaplin plays a stagehand named David while Campbell (\"Goliath\") plays his supervisor. Much of the film is slapstick comedy but other issues are also brought up such as a stagehand strike as well as a plotline in which Purviance, unable to become an actress, dresses as a man and becomes a stagehand. The film is silent. The film is noted for having one of the first Hollywood gay jokes in it. After Chaplin learns that Purviance is really a woman, he kisses her while on the set. A male stagehand sees this and thinking that Chaplin has kissed a man, starts acting in an overtly effeminate way until Chaplin kicks him. http://www.imdb.com/title/tt0006414/",
+            "creator": null,
+            "duration": 1193.96,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_11_13_BehindtheScreen",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_11_13_BehindtheScreen",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_11_13_BehindtheScreen/CC_1916_11_13_BehindtheScreen_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_11_13_BehindtheScreen",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_11_13_BehindtheScreen; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1916_12_04_TheRink",
+            "episode_number": 41,
+            "title": "Charlie Chaplin's \"The Rink\"",
+            "description": "Charlie Chaplin's 58th Film Released Dec. 04 1916 The Rink was Charlie Chaplin's 8th film for Mutual Films. It co-starred Edna Purviance, Eric Campbell, Henry Bergman and Albert Austin. It is best known for showcasing Chaplin's roller skating skills. http://www.imdb.com/title/tt0007264/",
+            "creator": null,
+            "duration": 1169.83,
+            "year": 1916,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1916_12_04_TheRink",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1916_12_04_TheRink",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1916_12_04_TheRink/CC_1916_12_04_TheRink_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1916_12_04_TheRink",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1916_12_04_TheRink; reviewed 2026-11-05). Underlying film first released 1916; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1917_04_16_TheCure",
+            "episode_number": 42,
+            "title": "Charlie Chaplin's \"The Cure\"",
+            "description": "Charlie Chaplin's 60th Film Released April 16 1917 The Cure is a short comedy film written and directed by Charlie Chaplin. Chaplin plays a drunk who checks into a health spa to dry out, but his suitcase full of alcohol does not aid him in this pursuit. Along the way he aggravates a large man and seduces a young lady, as Chaplin's characters are often wont to do. The film featured Chaplin's frequent co-stars Edna Purviance, Eric Campbell, Henry Bergman, John Rand, James T. Kelley, Albert Austin, and Frank J. Coleman. http://www.imdb.com/title/tt0007832/",
+            "creator": null,
+            "duration": 1147.81,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1917_04_16_TheCure",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1917_04_16_TheCure",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1917_04_16_TheCure/CC_1917_04_16_TheCure_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1917_04_16_TheCure",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1917_04_16_TheCure; reviewed 2026-11-05). Underlying film first released 1917; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1917_06_17_TheImmigrant",
+            "episode_number": 43,
+            "title": "Charlie Chaplin's \"The Immigrant\"",
+            "description": "Charlie Chaplin's 61st Film Released June 17 1917. The Immigrant (also called Broke) starring the Charlie Chaplin Tramp character as an immigrant coming to the United States who is accused of theft on the voyage across the Atlantic Ocean, and befriends a young woman along the way. It also stars Edna Purviance and Eric Campbell. The movie was written and directed by Chaplin. According to Kevin Brownlow and David Gill's documentary series Unknown Chaplin, the first scenes to be written and filmed take place in what became the movie's second half, in which the penniless Tramp finds a coin and goes for a meal in a restaurant, not realising that the coin has fallen out of his pocket. It was not until later that Chaplin decided the reason the Tramp was penniless was that he had just arrived on a boat from Europe, and used this notion as the basis for the first half. Purviance reportedly was required to eat so many plates of beans during the many takes to complete the restaurant sequence (in character as another immigrant who falls in love with Charlie) that she became physically ill. The scene in which Chaplin's character kicks an immigration officer was cited later as evidence of his anti-Americanism when he was forced to leave the United States in the 1950s. The film has been selected for preservation in the United States National Film Registry. http://www.imdb.com/title/tt0008133/",
+            "creator": null,
+            "duration": 1200.06,
+            "year": 1917,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1917_06_17_TheImmigrant",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1917_06_17_TheImmigrant",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1917_06_17_TheImmigrant/CC_1917_06_17_TheImmigrant_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1917_06_17_TheImmigrant",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1917_06_17_TheImmigrant; reviewed 2026-11-05). Underlying film first released 1917; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1917_10_22_TheAdventurer",
+            "episode_number": 44,
+            "title": "Charlie Chaplin's \"The Adventurer\"",
+            "description": "Charlie Chaplin's 62nd Film Released Oct. 22 1917 The Adventurer is a short comedy film written and directed by Charlie Chaplin. It is the last out of the twelve films made while he was under contract for the Mutual Film Corportation. Chaplin plays an escaped convict on the run from prison guards. He falls into favor with a wealthy family after he saves a young lady (Edna Purviance) from drowning, but her suitor (Eric Campbell) does everything he can to have Chaplin apprehended by the officials. The film also stars Henry Bergman, and Albert Austin, and marked the final film of his co-star Eric Campbell who would be dead before the end of the year in a drunk driving accident. http://www.imdb.com/title/tt0007613/",
+            "creator": null,
+            "duration": 1139,
+            "year": 1917,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1917_10_22_TheAdventurer",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1917_10_22_TheAdventurer",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1917_10_22_TheAdventurer/CC_1917_10_22_TheAdventurer_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1917_10_22_TheAdventurer",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1917_10_22_TheAdventurer; reviewed 2026-11-05). Underlying film first released 1917; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1918_09_29_TheBond",
+            "episode_number": 45,
+            "title": "Charlie Chaplin's \"The Bond\"",
+            "description": "Charlie Chaplin's 64th Film Released Sept. 29 1918 The Bond was a propaganda film created by Charlie Chaplin at his own expense for the Liberty Load Committee for theatrical release to help sell U.S. Liberty Bonds during World War I. Made in 1918 with Edna Purviance, Albert Austin and Sydney Chaplin, the film has a distinctive visual motif set in a simple plain black set with starkly lit simple props and arrangements. The story is a series of sketches humorously illustrating various bonds like the bond of friendship and of marriage and, most important, the Liberty Bond, to K.O. the Kaiser which Charlie does literally. There was also a British version with Uncle Sam replaced by John Bull and promotes War Bonds. http://www.imdb.com/title/tt0008907/",
+            "creator": null,
+            "duration": 652.68,
+            "year": 1918,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1918_09_29_TheBond",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1918_09_29_TheBond",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1918_09_29_TheBond/CC_1918_09_29_TheBond_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1918_09_29_TheBond",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1918_09_29_TheBond; reviewed 2026-11-05). Underlying film first released 1918; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CC_1918_xx_xx_TripleTrouble",
+            "episode_number": 46,
+            "title": "Charlie Chaplin's Triple Trouble",
+            "description": "Charlie Chaplin's 50th Film released In 1918. (put together by Essanay from unfinished Chaplin films two years after he had left the company) Triple Trouble was a silent film released in 1918. It starred Charlie Chaplin, Edna Purviance and Leo White. This film was not an official Chaplin film, even thought it has many Chaplin directed scenes. The film was produced and edited by Essanay Films, with Leo White as director for new scenes. The actual film was created from left over film stock Essanay Films had in their collection. Since Chaplin did not own the copyright during his time with Essanay, he had no control over its release. It was made up from left over scenes from Police and from an unfinished Chaplin film called Life. Leo White filled in the rest. http://www.imdb.com/title/tt0007476/",
+            "creator": null,
+            "duration": 1643.91,
+            "year": 1918,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CC_1918_xx_xx_TripleTrouble",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CC_1918_xx_xx_TripleTrouble",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CC_1918_xx_xx_TripleTrouble/CC_1918_xx_xx_TripleTrouble_512kb.mp4",
+                "page_url": "https://archive.org/details/CC_1918_xx_xx_TripleTrouble",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Charlie Chaplin",
+                    "Silents"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CC_1918_xx_xx_TripleTrouble; reviewed 2026-11-05). Underlying film first released 1918; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        }
+    ]
+}

@@ -1,0 +1,1256 @@
+{
+    "schema_version": 1,
+    "id": "keaton-arbuckle-shorts",
+    "title": "Keaton & Arbuckle Shorts",
+    "description": "Buster Keaton's silent two-reel comedies (1920-1923) and his earlier Comique shorts with Roscoe 'Fatty' Arbuckle (1917-1920), plus Keaton's 1924 featurette Sherlock Jr. -- slapstick and stunt comedy from the Internet Archive's public-domain film collections.",
+    "creator": "Buster Keaton / Roscoe Arbuckle (Internet Archive)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "ia-the-butcher-boy-1917-tmdb51468",
+            "episode_number": 1,
+            "title": "The Butcher Boy",
+            "description": "Customers and clerks frolic in a general store. Roscoe walks out of the freezer wearing a fur coat, then does some clever cleaver tossing. In Buster's film debut he buys a pail of molasses. Public domain in the United States — released 1917, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Roscoe 'Fatty' Arbuckle",
+            "duration": 1465.38,
+            "year": 1917,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/the-butcher-boy-1917-tmdb51468",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "the-butcher-boy-1917-tmdb51468",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/the-butcher-boy-1917-tmdb51468/The%20Butcher%20Boy%20%281917%29.mp4",
+                "page_url": "https://archive.org/details/the-butcher-boy-1917-tmdb51468",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Roscoe 'Fatty' Arbuckle",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item the-butcher-boy-1917-tmdb51468; reviewed 2026-11-05). Underlying film first released 1917; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-coney-island-1917-tmdb38691",
+            "episode_number": 2,
+            "title": "Coney Island",
+            "description": "Arbuckle escapes the watch of his domineering wife and heads for Coney Island. Keaton arrives that same day with his attractive, and rather easy, girlfriend, who is immediately stolen from him by St. John. Public domain in the United States — released 1917, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Roscoe 'Fatty' Arbuckle",
+            "duration": 1536,
+            "year": 1917,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/coney-island-1917-tmdb38691",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "coney-island-1917-tmdb38691",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/coney-island-1917-tmdb38691/Coney%20Island%20%281917%29.mp4",
+                "page_url": "https://archive.org/details/coney-island-1917-tmdb38691",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Roscoe 'Fatty' Arbuckle",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item coney-island-1917-tmdb38691; reviewed 2026-11-05). Underlying film first released 1917; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-CASACLBusterKeatonTheCook",
+            "episode_number": 3,
+            "title": "The Cook",
+            "description": "The Cook is a 1918 American silent film starring Roscoe \"Fatty\" Arbuckle and Buster Keaton. The movie is a slapstick comedy and focuses on goings-on at a high-end restaurant with Arbuckle as the Cook and Keaton as the Waiter.The film is notable for a scene spoofing the 1918 Theda Bara film Salomé, with Arbuckle dancing around with a length of sausage links and pots and pans. It also contains many of Arbuckle's favorite food gags and some well-received work by Keaton.https://en.wikipedia.org/wiki/The_Cook",
+            "creator": "Roscoe Arbuckle",
+            "duration": 1096.61,
+            "year": 1918,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/CASACLBusterKeatonTheCook",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "CASACLBusterKeatonTheCook",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/CASACLBusterKeatonTheCook/CASACL%20-%20Buster%20Keaton%20-%20The%20Cook.mp4",
+                "page_url": "https://archive.org/details/CASACLBusterKeatonTheCook",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies",
+                    "community"
+                ],
+                "subjects": [
+                    "Fatty Arbuckle",
+                    "Buster Keaton",
+                    "1918",
+                    "slapstick",
+                    "silent film"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item CASACLBusterKeatonTheCook; reviewed 2026-11-05). Underlying film first released 1918; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-bellboy",
+            "episode_number": 4,
+            "title": "The Bell Boy",
+            "description": "Fatty Arbuckle and Buster Keaton team up as hotel bellhops. Some interesting props, including a horse-drawn elevator. Decent gags, culminating with a classic chase scene. The movie is not a classic, but it's typical Arbuckle and Keaton and a good illustration of the kind of comedy they did together. The IMDb entry is at http://www.imdb.com/title/tt0008874/",
+            "creator": "Roscoe \"Fatty\" Arbuckle",
+            "duration": 1718.45,
+            "year": 1918,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/bellboy",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "bellboy",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/bellboy/bellboy_512kb.mp4",
+                "page_url": "https://archive.org/details/bellboy",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Arbuckle",
+                    "Keaton",
+                    "silent",
+                    "comedy",
+                    "slapstick"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item bellboy; reviewed 2026-11-05). Underlying film first released 1918; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-Fatty_Arbuckles_Out_West",
+            "episode_number": 5,
+            "title": "Out West",
+            "description": "\"Fatty\" Arbuckle and Buster Keaton, arguably the greatest comedy team of their time, team up in a western comedy. Be warned, there is a scene in the middle that will offend some with its racist tone. This should not spoil the movie. The IMDb entry is at http://imdb.com/title/tt0009466/",
+            "creator": "Roscoe \"Fatty\" Arbuckle",
+            "duration": 1139.21,
+            "year": 1918,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Fatty_Arbuckles_Out_West",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Fatty_Arbuckles_Out_West",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Fatty_Arbuckles_Out_West/out_west_512kb.mp4",
+                "page_url": "https://archive.org/details/Fatty_Arbuckles_Out_West",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "short_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Fatty Arbuckle",
+                    "Buster Keaton",
+                    "Silent",
+                    "Comedy",
+                    "Western"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Fatty_Arbuckles_Out_West; reviewed 2026-11-05). Underlying film first released 1918; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-good-night-nurse-1918-tmdb38791",
+            "episode_number": 6,
+            "title": "Good Night, Nurse!",
+            "description": "Roscoe's wife, tired of his endless drunkenness, reads of an operation that cures alcoholism and has him admitted to No Hope Sanitarium to get the surgery. Roscoe, wanting out, eventually disguises himself as a nurse to effect his escape. Public domain in the United States — released 1918, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Roscoe 'Fatty' Arbuckle",
+            "duration": 1370,
+            "year": 1918,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/good-night-nurse-1918-tmdb38791",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "good-night-nurse-1918-tmdb38791",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/good-night-nurse-1918-tmdb38791/Good%20Night%2C%20Nurse%21%20%281918%29.mp4",
+                "page_url": "https://archive.org/details/good-night-nurse-1918-tmdb38791",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Roscoe 'Fatty' Arbuckle",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item good-night-nurse-1918-tmdb38791; reviewed 2026-11-05). Underlying film first released 1918; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-moonshine-1918-tmdb51470",
+            "episode_number": 7,
+            "title": "Moonshine",
+            "description": "A feud between the Owens and the Gillettes ends when the last remaining Gillette is killed, but new trouble erupts for the mountain folk with the arrival of a U.S. revenue agent and his assistant. Public domain in the United States — released 1918, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Roscoe 'Fatty' Arbuckle",
+            "duration": 1097.83,
+            "year": 1918,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/moonshine-1918-tmdb51470",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "moonshine-1918-tmdb51470",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/moonshine-1918-tmdb51470/Moonshine%20%281918%29.mp4",
+                "page_url": "https://archive.org/details/moonshine-1918-tmdb51470",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Roscoe 'Fatty' Arbuckle",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item moonshine-1918-tmdb51470; reviewed 2026-11-05). Underlying film first released 1918; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-back-stage-1919-tmdb38531",
+            "episode_number": 8,
+            "title": "Back Stage",
+            "description": "Roscoe and Buster give a bullying Strongman the what-for, but after the performance troupe quits it's up to Fatty and Buster to keep the show going. Public domain in the United States — released 1919, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Roscoe 'Fatty' Arbuckle",
+            "duration": 1273.04,
+            "year": 1919,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/back-stage-1919-tmdb38531",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "back-stage-1919-tmdb38531",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/back-stage-1919-tmdb38531/Back%20Stage%20%281919%29.mp4",
+                "page_url": "https://archive.org/details/back-stage-1919-tmdb38531",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Roscoe 'Fatty' Arbuckle",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item back-stage-1919-tmdb38531; reviewed 2026-11-05). Underlying film first released 1919; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-the-garage-1920-tmdb51472",
+            "episode_number": 9,
+            "title": "The Garage",
+            "description": "Roscoe and Buster operate a combination garage and fire station. In the first half they destroy a car left for them to clean. In the second half they go off on a false alarm and return to find their own building on fire. Public domain in the United States — released 1920, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Roscoe 'Fatty' Arbuckle",
+            "duration": 1313.42,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/the-garage-1920-tmdb51472",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "the-garage-1920-tmdb51472",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/the-garage-1920-tmdb51472/The%20Garage%20%281920%29.mp4",
+                "page_url": "https://archive.org/details/the-garage-1920-tmdb51472",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Roscoe 'Fatty' Arbuckle",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item the-garage-1920-tmdb51472; reviewed 2026-11-05). Underlying film first released 1920; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-OneWeek",
+            "episode_number": 10,
+            "title": "One Week",
+            "description": "Buster and Sybil exit a chapel as newlyweds. Among the gifts is a portable house you easily put together in one week",
+            "creator": null,
+            "duration": 1336.8,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/OneWeek",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "OneWeek",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/OneWeek/One_Week_512kb.mp4",
+                "page_url": "https://archive.org/details/OneWeek",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item OneWeek; reviewed 2026-11-05). Underlying film first released 1920; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-Convict13",
+            "episode_number": 11,
+            "title": "Convict 13",
+            "description": "Buster is playing golf with Sybil when he gets knocked out. An escaped prisoner changes clothes with him. Buster goes to prison and learns that he is to be hanged. He changes clothes with a guard just as prisoner Roberts attacks all the guards.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1219.32,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Convict13",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Convict13",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Convict13/Convict_13_512kb.mp4",
+                "page_url": "https://archive.org/details/Convict13",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Convict13; reviewed 2026-11-05). Underlying film first released 1920; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-the-scarecrow-1920-tmdb51357",
+            "episode_number": 12,
+            "title": "The Scarecrow",
+            "description": "Two farmhands compete for the love of the farmer's daughter. Public domain in the United States — released 1920, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Edward F. Cline;Buster Keaton",
+            "duration": 1126.5,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/the-scarecrow-1920-tmdb51357",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "the-scarecrow-1920-tmdb51357",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/the-scarecrow-1920-tmdb51357/The%20Scarecrow%20%281920%29.mp4",
+                "page_url": "https://archive.org/details/the-scarecrow-1920-tmdb51357",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Edward F. Cline",
+                    "Buster Keaton",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item the-scarecrow-1920-tmdb51357; reviewed 2026-11-05). Underlying film first released 1920; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-Neighbors",
+            "episode_number": 13,
+            "title": "Neighbors",
+            "description": "Neighbors / Frigo a soused (1920) info: http://www.csfd.cz/film.php?5119 http://us.imdb.com/title/tt0011508/",
+            "creator": null,
+            "duration": 1054.32,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Neighbors",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Neighbors",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Neighbors/frigoNeighbors_512kb.mp4",
+                "page_url": "https://archive.org/details/Neighbors",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Frigo",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Neighbors; reviewed 2026-11-05). Underlying film first released 1920; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-TheHauntedHouse",
+            "episode_number": 14,
+            "title": "The Haunted House",
+            "description": "Buster at his place of work, a bank. After being falsely accused of being a bank robber he escapes to the local 'haunted' which is really a cover for a gang of counterfeiters, also in the house are the cast of a lousy version of 'Faust' who are escaping a hostile audience.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1237.37,
+            "year": 1921,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TheHauntedHouse",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TheHauntedHouse",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TheHauntedHouse/TheHauntedHouse.mp4",
+                "page_url": "https://archive.org/details/TheHauntedHouse",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Short",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item TheHauntedHouse; reviewed 2026-11-05). Underlying film first released 1921; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-hard-luck-1921-tmdb38812",
+            "episode_number": 15,
+            "title": "Hard Luck",
+            "description": "A down on his luck young man makes several attempts at committing suicide but fails them too. He then finds himself becoming more confident through a series of petty adventures, to such an extent that this becomes his undoing. Public domain in the United States — released 1921, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Buster Keaton;Edward F. Cline",
+            "duration": 1381.25,
+            "year": 1921,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/hard-luck-1921-tmdb38812",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "hard-luck-1921-tmdb38812",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/hard-luck-1921-tmdb38812/Hard%20Luck%20%281921%29.mp4",
+                "page_url": "https://archive.org/details/hard-luck-1921-tmdb38812",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Comedy",
+                    "Buster Keaton",
+                    "Edward F. Cline",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item hard-luck-1921-tmdb38812; reviewed 2026-11-05). Underlying film first released 1921; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-the-high-sign-1921-tmdb46510",
+            "episode_number": 16,
+            "title": "The 'High Sign'",
+            "description": "Buster is thrown off a train near an amusement park. There he gets a job in a shooting gallery run by the Blinking Buzzards mob. Ordered to kill a businessman, he winds up protecting the man and his daughter by outfitting their home with trick devices. Public domain in the United States — released 1921, more than 95 years ago. US copyright term for works from this era has fully expired; no renewal exceptions apply. Resolution: 1440x1080",
+            "creator": "Edward F. Cline;Buster Keaton",
+            "duration": 1251.42,
+            "year": 1921,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/the-high-sign-1921-tmdb46510",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "the-high-sign-1921-tmdb46510",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/the-high-sign-1921-tmdb46510/The%20High%20Sign%20%281921%29.mp4",
+                "page_url": "https://archive.org/details/the-high-sign-1921-tmdb46510",
+                "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies"
+                ],
+                "subjects": [
+                    "Crime",
+                    "Comedy",
+                    "Edward F. Cline",
+                    "Buster Keaton",
+                    "Public Domain"
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: https://creativecommons.org/publicdomain/mark/1.0/ (archive.org item the-high-sign-1921-tmdb46510; reviewed 2026-11-05). Underlying film first released 1921; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-TheGoat",
+            "episode_number": 17,
+            "title": "The Goat",
+            "description": "Dumb luck sets some policemen on his trail -- after a series of innovative escapes, he gets mistaken for a murderer with a price on his head, which means the people that aren't chasing him are fleeing from him.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1374.68,
+            "year": 1921,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TheGoat",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TheGoat",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TheGoat/The_Goat_512kb.mp4",
+                "page_url": "https://archive.org/details/TheGoat",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TheGoat; reviewed 2026-11-05). Underlying film first released 1921; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-ThePlayhouse",
+            "episode_number": 18,
+            "title": "The Playhouse",
+            "description": "The opening scene, a dream sequence prior to the vaudeville routines which follow, is what makes this film famous. In it Keaton plays everyone in a theatre simultaneously (through multiple exposures). He is the band leader, all its members, the dancers on the stage and everyone in the audience.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1208.17,
+            "year": 1921,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ThePlayhouse",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ThePlayhouse",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ThePlayhouse/The_Playhouse_512kb.mp4",
+                "page_url": "https://archive.org/details/ThePlayhouse",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ThePlayhouse; reviewed 2026-11-05). Underlying film first released 1921; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-TheBoat",
+            "episode_number": 19,
+            "title": "The Boat",
+            "description": "Buster's handmade boat, The Damfino, is finished and is, of course, too large to get through the basement door. When he drives off with it in tow, the side of his house, then the whole thing, collapses. At the harbor he rides the boat out only to have it sink beneath him. The rest is a series of adventures he and his family have with the restored boat. This funny short has some good subtile gags plus the usual slapstick and gadgets.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1607.94,
+            "year": 1921,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TheBoat",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TheBoat",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TheBoat/The_Boat_512kb.mp4",
+                "page_url": "https://archive.org/details/TheBoat",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TheBoat; reviewed 2026-11-05). Underlying film first released 1921; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-ThePaleface",
+            "episode_number": 20,
+            "title": "The Paleface",
+            "description": "Buster Keaton stars in this comedy as the captive of hostile Indians. His captors tie him to a stake and prepare him for death by fire. Keaton moves with the stake as the Indians try frantically to place the firewood around him. When he survives the flames due to his fire-resistant clothes, Keaton is made a member of the tribe and named Little Chief Paleface. He then foils the scheme of unsavory oil speculators to steal the land from his Indian companion.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1266.23,
+            "year": 1922,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ThePaleface",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ThePaleface",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ThePaleface/The_Paleface_512kb.mp4",
+                "page_url": "https://archive.org/details/ThePaleface",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ThePaleface; reviewed 2026-11-05). Underlying film first released 1922; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-Cops",
+            "episode_number": 21,
+            "title": "Cops",
+            "description": "A series of mishaps manages to make a young man get chased by a big city's entire police force",
+            "creator": "Joseph M. Schenck",
+            "duration": 1084.8,
+            "year": 1922,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Cops",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Cops",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Cops/cops_512kb.mp4",
+                "page_url": "https://archive.org/details/Cops",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Cops; reviewed 2026-11-05). Underlying film first released 1922; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-MyWifesRelations",
+            "episode_number": 22,
+            "title": "My Wifes Relations",
+            "description": "When a large Irish woman falsely accuses Buster of breaking a window he is hauled before a Polish judge who speaks no English and assumes they are there to be married. She takes her new husband home to meet her four gorilla-like brothers.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1327.09,
+            "year": 1922,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MyWifesRelations",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MyWifesRelations",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MyWifesRelations/My_Wifes_Relations_512kb.mp4",
+                "page_url": "https://archive.org/details/MyWifesRelations",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton",
+                    "my wife's relations"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MyWifesRelations; reviewed 2026-11-05). Underlying film first released 1922; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-TheBlacksmith",
+            "episode_number": 23,
+            "title": "The Blacksmith",
+            "description": "Blacksmiths' assistant inadvertent clowning around in the shop, gets into fight with the smithy who is then arrested and placed in jail. In the meantime, the assistant tries to help several customers with devastating comedic consequences.",
+            "creator": "Raymond Rohauer and Joseph M. Schenck",
+            "duration": 1159.22,
+            "year": 1922,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TheBlacksmith",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TheBlacksmith",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TheBlacksmith/The_Blacksmith_512kb.mp4",
+                "page_url": "https://archive.org/details/TheBlacksmith",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TheBlacksmith; reviewed 2026-11-05). Underlying film first released 1922; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-The_Frozen_North",
+            "episode_number": 24,
+            "title": "The Frozen North",
+            "description": "William S. Hart's melodramatic film finds Buster in the frozen north, \"last stop on the subway.\" He uses a wanted poster as his partner in robbing a gambling house. When he thinks he spies his wife making love to another man he shoots them both only to learn it isn't his cabin after all.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1031.57,
+            "year": 1922,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/The_Frozen_North",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "The_Frozen_North",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/The_Frozen_North/The_Frozen_North_512kb.mp4",
+                "page_url": "https://archive.org/details/The_Frozen_North",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item The_Frozen_North; reviewed 2026-11-05). Underlying film first released 1922; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-TheElectricHouse",
+            "episode_number": 25,
+            "title": "The Electric House",
+            "description": "The Electric House starts with Buster's graduation ceremony as the first of his comic misfortunes, including a mix-up of diplomas so Buster receives a diploma in electrical engineering. This leads to a job opportunity: electrifying the family house of the girl he's sweet on. A great chance, so Buster studies hard and soon installs a useful and impressive set of electric appliances.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1232.72,
+            "year": 1922,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TheElectricHouse",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TheElectricHouse",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TheElectricHouse/The_Electric_House_512kb.mp4",
+                "page_url": "https://archive.org/details/TheElectricHouse",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TheElectricHouse; reviewed 2026-11-05). Underlying film first released 1922; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-Daydreams",
+            "episode_number": 26,
+            "title": "Daydreams",
+            "description": "Buster Keaton asks the father of the woman he loves for her hand in marriage, but the father wants to see Keaton make something of himself first. \"I'll leave for the city to make good. If I'm not a success, I'll come back and shoot myself,\" Buster declares, which is a perfectly acceptable arrangement as far as the father is concerned. So Keaton heads off for the big city and tries his hand at a number of different jobs. But his letters to his girl suggest more noble and enterprising careers than those he's actually attempting. Her imaginings provide the basis for the title, while his actual efforts provide the humor.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1087.65,
+            "year": 1922,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Daydreams",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Daydreams",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Daydreams/Daydreams_512kb.mp4",
+                "page_url": "https://archive.org/details/Daydreams",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "Comedy_Films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Daydreams; reviewed 2026-11-05). Underlying film first released 1922; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-TheBalloonatic",
+            "episode_number": 27,
+            "title": "The Balloonatic",
+            "description": "AKA Balloonatics Buster and Phyllis endure a number of outdoor adventures trying to prove to each other their survival skills. The balloon which lands Buster in the wilderness proves useful later on as their canoe is about go over a waterfall.",
+            "creator": "Joseph M. Schenck",
+            "duration": 1350.92,
+            "year": 1923,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TheBalloonatic",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TheBalloonatic",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TheBalloonatic/The_Balloonatic_512kb.mp4",
+                "page_url": "https://archive.org/details/TheBalloonatic",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "short_films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Silent",
+                    "Comedy",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TheBalloonatic; reviewed 2026-11-05). Underlying film first released 1923; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-LoveNest",
+            "episode_number": 28,
+            "title": "Love Nest",
+            "description": "Love Nest, The / Frigo kapitánem (1923) info: CSFD IMDB Directed by: Edward F. Cline ; Buster Keaton Cast: Buster Keaton ; Joe Roberts ; Virginia Fox",
+            "creator": null,
+            "duration": 1343.53,
+            "year": 1923,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/LoveNest",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "LoveNest",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/LoveNest/keaton.love.nest_512kb.mp4",
+                "page_url": "https://archive.org/details/LoveNest",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "silent_films",
+                    "feature_films",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Frigo",
+                    "Buster Keaton"
+                ],
+                "mediatype": "movies",
+                "format": "512Kb MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LoveNest; reviewed 2026-11-05). Underlying film first released 1923; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        },
+        {
+            "id": "ia-sherlockjr1924_201909",
+            "episode_number": 29,
+            "title": "Sherlock Jr. 1924",
+            "description": "Sherlock Jr. is a 1924 American silent comedy film directed by and starring Buster Keaton. Written by Clyde Bruckman, Jean Havez and Joseph A. Mitchell.In 1991, Sherlock Jr. was selected for preservation in the United States National Film Registry by the Library of Congress as being \"culturally, historically, or aesthetically significant.\"Directed by Buster KeatonProduced by Joseph M. SchenckWritten by Clyde Bruckman, Jean Havez, Joseph A. MitchellStarring: Buster KeatonMusic by Club Foot Orchestra, Beth Custer, Myles Boysen, Steve Kirk, Nik Phelps, Sheldon BrownlCinematography: Byron Houck, Elgin LessleyEdited by Buster KeatonProduction company: Metro Pictures CorporationDistributed by Metro-Goldwyn PicturesRelease date: April 21, 1924",
+            "creator": null,
+            "duration": 2673.85,
+            "year": 1924,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/sherlockjr1924_201909",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "sherlockjr1924_201909",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/sherlockjr1924_201909/Sherlock%20Jr.%20-%20Buster%20Keaton%20%281924%29%20HD%20%5B720p%5D.mp4",
+                "page_url": "https://archive.org/details/sherlockjr1924_201909",
+                "license": "http://creativecommons.org/publicdomain/mark/1.0/",
+                "collections": [
+                    "opensource_movies",
+                    "community"
+                ],
+                "subjects": [
+                    "slient film",
+                    "silent movie",
+                    "buster keaton",
+                    "sherlock jr."
+                ],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/publicdomain/mark/1.0/ (archive.org item sherlockjr1924_201909; reviewed 2026-11-05). Underlying film first released 1924; US copyright for works published before 1931 has expired, consistent with IA's declaration. Any later-added musical score or restoration on this particular upload was not separately verified."
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "number": 8,
+    "name": "Comedy Club",
+    "description": "A 24-hour stand-up stage built from complete sets and full specials: clean, family-friendly Dry Bar Comedy specials through the day, Jim Gaffigan's food-and-fatherhood bits at lunch and teatime, silent-era slapstick from Charlie Chaplin and Buster Keaton every morning, Don't Tell Comedy's secret-show sets for happy hour, Comedy Central Stand-Up's full specials in prime time, and Just For Laughs festival sets for late night -- with the after-dark hours reserved for the uncensored grown-up material.",
+    "logo": "logo.svg",
+    "anchor": "2026-11-05T00:00:00-08:00",
+    "theme": {
+        "bg": "#0d0817",
+        "bg2": "#1e1233",
+        "fg": "#fff6e6",
+        "muted": "#b7a6cf",
+        "accent": "#ffc53d",
+        "accentWarm": "#ff2e93"
+    }
+}
