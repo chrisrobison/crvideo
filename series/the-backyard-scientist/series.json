@@ -1,0 +1,1472 @@
+{
+    "schema_version": 1,
+    "id": "the-backyard-scientist",
+    "title": "TheBackyardScientist",
+    "description": "Aloha YouTubers, I am The Backyard Scientist!\n\nI like to make videos on all the crazy stuff I do. From exploding arrows, to making instruments, molten aluminum to science/chemistry experiments - I do it so you don't have to! I'm always thinking of more stuff to do, if you have an idea, id love to hear it!\n\n\n",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_nNL1yViBIY9zKnmWPmnaR3SAv9NbD3oLsA-QHUxlxRhlU=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+        "channel_url": "https://www.youtube.com/channel/UC06E4Y_-ybJgBUMtXx8uNNw",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-637GVfsjSp8",
+            "episode_number": 1,
+            "title": "Testing  @ColumbiaSportswear Omni-MAX shoes vs. the slipperiest materials​. #columbiapartner",
+            "description": "",
+            "duration": 93,
+            "year": 2025,
+            "published_at": "2025-05-29T01:05:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/637GVfsjSp8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "637GVfsjSp8",
+                "url": "https://www.youtube.com/watch?v=637GVfsjSp8",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-b8yxCa9tnGw",
+            "episode_number": 2,
+            "title": "The secret technique I used to make this axe",
+            "description": "",
+            "duration": 159,
+            "year": 2024,
+            "published_at": "2024-12-07T04:38:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/b8yxCa9tnGw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "b8yxCa9tnGw",
+                "url": "https://www.youtube.com/watch?v=b8yxCa9tnGw",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-cxd4DsHGups",
+            "episode_number": 3,
+            "title": "Warmest jacket vs Coldest temperature",
+            "description": "Thanks @Columbia1938 for collaborating. Check out Columbia’s Omni-Heat Infinity line!  #ad #CSPartner",
+            "duration": 62,
+            "year": 2024,
+            "published_at": "2024-12-07T04:38:13Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cxd4DsHGups/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cxd4DsHGups",
+                "url": "https://www.youtube.com/watch?v=cxd4DsHGups",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-bGtdL3zpSdg",
+            "episode_number": 4,
+            "title": "The most painful plant in New Zealand",
+            "description": "",
+            "duration": 50,
+            "year": 2024,
+            "published_at": "2024-08-07T22:10:57Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/bGtdL3zpSdg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "bGtdL3zpSdg",
+                "url": "https://www.youtube.com/watch?v=bGtdL3zpSdg",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-RLIt6PtXiOU",
+            "episode_number": 5,
+            "title": "ONLY 1 MORE SUBSCRIBER!!",
+            "description": "i stole this idea from mark rober",
+            "duration": 49,
+            "year": 2024,
+            "published_at": "2024-06-24T04:55:58Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RLIt6PtXiOU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RLIt6PtXiOU",
+                "url": "https://www.youtube.com/watch?v=RLIt6PtXiOU",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-ETn5St4SXDQ",
+            "episode_number": 6,
+            "title": "DIY laser cutter #shorts",
+            "description": "Only a few days left to get tickets!\nhttps://opensauce.com/\n\nThis is the laser im using \nhttps://www.fortunelaser.com/wobble-head-3-in-1-handheld-laser-welder-cleaner-cutter-product/",
+            "duration": 53,
+            "year": 2024,
+            "published_at": "2024-06-08T02:50:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ETn5St4SXDQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ETn5St4SXDQ",
+                "url": "https://www.youtube.com/watch?v=ETn5St4SXDQ",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-JSm7Tp8iv3o",
+            "episode_number": 7,
+            "title": "Could you Survive a Blast from the Worlds Biggest Vortex Cannon?",
+            "description": "Go to http://crunchlabs.com/backyardscientist and claim your free kit today! \n\nAlso, bring your project to Open Sauce! http://opensauce.com\n\nAllens Video - https://www.youtube.com/watch?v=_15Rn2YmROM\nMarks Video - https://www.youtube.com/watch?v=SrGENEXocJU\nHuge thanks to @Estefannie for helping me film!\n\nhttps://www.facebook.com/VRADINC/ - vrad cannon",
+            "duration": 528,
+            "year": 2024,
+            "published_at": "2024-04-21T18:45:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JSm7Tp8iv3o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JSm7Tp8iv3o",
+                "url": "https://www.youtube.com/watch?v=JSm7Tp8iv3o",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-T4DePn8foj4",
+            "episode_number": 8,
+            "title": "Don't Smoke in pure oxygen",
+            "description": "Smoking kills, Smoking in pure oxygen kills faster\n\nVacuum pump - https://amzn.to/49jICNv",
+            "duration": 55,
+            "year": 2024,
+            "published_at": "2024-03-27T21:23:49Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/T4DePn8foj4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "T4DePn8foj4",
+                "url": "https://www.youtube.com/watch?v=T4DePn8foj4",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-lShvvZmknxI",
+            "episode_number": 9,
+            "title": "Laser Vs Diamond",
+            "description": "I turned one diamond into two diamonds",
+            "duration": 49,
+            "year": 2024,
+            "published_at": "2024-02-29T05:00:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lShvvZmknxI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lShvvZmknxI",
+                "url": "https://www.youtube.com/watch?v=lShvvZmknxI",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-uBHJn3-9Av8",
+            "episode_number": 10,
+            "title": "I built a Bear Trap that can cut you in half",
+            "description": "💻 Thanks to Opera for sponsoring this video! Get a browser that’s literally better at everything, download Opera today: https://opr.as/Opera-browser-TheBackyardScientist\n\n@williamosman \n@PeterSripol \n@Estefannie \n\nand thanks to Oxnard Steel and Ntt Equipment",
+            "duration": 1022,
+            "year": 2023,
+            "published_at": "2023-10-24T00:17:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uBHJn3-9Av8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uBHJn3-9Av8",
+                "url": "https://www.youtube.com/watch?v=uBHJn3-9Av8",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-S6bUlwtYwGY",
+            "episode_number": 11,
+            "title": "Trim Trees with a Laser",
+            "description": "Full laser video\nhttps://www.youtube.com/watch?v=SXeeRgEY2UE",
+            "duration": 59,
+            "year": 2023,
+            "published_at": "2023-05-29T00:17:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/S6bUlwtYwGY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "S6bUlwtYwGY",
+                "url": "https://www.youtube.com/watch?v=S6bUlwtYwGY",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-XxbzdFdip1c",
+            "episode_number": 12,
+            "title": "I built a Cotton Candy Gun",
+            "description": "Get an exclusive Surfshark deal! Enter promo code BACKYARD for an extra 3 months free at https://surfshark.deals/backyard\nOpen Sauce tickets - http://opensauce.live\n\n\nHow to make molten cotton candy sugar:\n7 parts sugar, 3 parts water, boil until the temperature hits 280-300°F(150°C)  and let it cool down a little.  Or just follow any  basic sugar glass recipe!  Watch out, molten sugar is basically like napalm and lots of little droplets get shot out!\n\nWith: \n@allenpan \n@EmilyTheEngineer \n@williamosman  and his video https://www.youtube.com/watch?v=3N0benwDTD4",
+            "duration": 600,
+            "year": 2023,
+            "published_at": "2023-05-16T02:40:48Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XxbzdFdip1c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XxbzdFdip1c",
+                "url": "https://www.youtube.com/watch?v=XxbzdFdip1c",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-oOYHbtsidUU",
+            "episode_number": 13,
+            "title": "chip",
+            "description": "The original video https://www.youtube.com/watch?v=WIRK_pGdIdA\n@doober4373",
+            "duration": 60,
+            "year": 2023,
+            "published_at": "2023-04-20T03:31:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/oOYHbtsidUU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "oOYHbtsidUU",
+                "url": "https://www.youtube.com/watch?v=oOYHbtsidUU",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-SXeeRgEY2UE",
+            "episode_number": 14,
+            "title": "Laser Cleaner Lifehacks",
+            "description": "Get Honey for FREE today ▸https://joinhoney.com/backyard\nHoney finds coupons with one click. Thanks to Honey for sponsoring!\n\nLaser - https://www.fortunelaser.com/wobble-head-3-in-1-handheld-laser-welder-cleaner-cutter-product/  (highly recommended, super helpful and only laser welder with touchscreen gun)\n\nSafety Third & the crew \nPodcast - https://www.youtube.com/@safetythird/videos\nMerch - https://safetythird.shop/\nPatreon - https://www.patreon.com/safetythird (extra content and discord server)\nAllen - https://www.youtube.com/@allenpan/\nWilliam - https://www.youtube.com/@williamosman\nNigel - https://www.youtube.com/@NileRed\n\nLaser helmet - https://shop.ipgphotonics.com/spare-parts/systems/lightweld/safety-equipment/welding-helmet-with-shield-ceu00002506xxxxu",
+            "duration": 669,
+            "year": 2023,
+            "published_at": "2023-02-01T06:07:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/SXeeRgEY2UE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "SXeeRgEY2UE",
+                "url": "https://www.youtube.com/watch?v=SXeeRgEY2UE",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-nIbcud3EcB0",
+            "episode_number": 15,
+            "title": "Titanium has a dirty secret",
+            "description": "",
+            "duration": 23,
+            "year": 2023,
+            "published_at": "2023-01-11T19:46:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nIbcud3EcB0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nIbcud3EcB0",
+                "url": "https://www.youtube.com/watch?v=nIbcud3EcB0",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-zEVPgnLbguI",
+            "episode_number": 16,
+            "title": "400mph Rocket Knife",
+            "description": "Go to http://kiwico.com/backyard to get your first month of KiwiCo free!\n\n\nSafety Third Podcast - https://www.youtube.com/channel/UC7QE72cxiBkiwnvGoFfqYOg/videos\ndiscord- https://discord.gg/DqPbGgq\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/backyardscientistofficial",
+            "duration": 779,
+            "year": 2022,
+            "published_at": "2022-12-01T17:27:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zEVPgnLbguI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zEVPgnLbguI",
+                "url": "https://www.youtube.com/watch?v=zEVPgnLbguI",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-KqstP9ics2A",
+            "episode_number": 17,
+            "title": "This is why potato cannons are dangerous.",
+            "description": "Get Honey for FREE today ▸ https://joinhoney.com/backyard\nHoney finds coupons with one click. Thanks to Honey for sponsoring!\n\n\n\nMerch - https://shop.backyardscient.ist/\n\n\nSafety Third Podcast - https://www.youtube.com/channel/UC7QE72cxiBkiwnvGoFfqYOg/videos\ndiscord- https://discord.gg/DqPbGgq\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/backyardscientistofficial\n\nFeatured Videos \nPotato cannon tank - https://www.youtube.com/watch?v=ytdgCsqjA-A\nPotato cannon artillery - https://www.youtube.com/watch?v=JgMBKg9d3Js\nQuad barrel - https://www.youtube.com/watch?v=a1XdPYEsf_o",
+            "duration": 526,
+            "year": 2022,
+            "published_at": "2022-07-22T18:48:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/KqstP9ics2A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "KqstP9ics2A",
+                "url": "https://www.youtube.com/watch?v=KqstP9ics2A",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-vWBu8mY2xr8",
+            "episode_number": 18,
+            "title": "Devil's Toothpaste Squirtgun (exploded)",
+            "description": "Offset your carbon footprint with me on Wren! We'll plant 10 extra trees for the first 100 people who sign up! https://www.wren.co/start/thebackyardscientist\n\nSafety Third Podcast - https://www.youtube.com/channel/UC7QE72cxiBkiwnvGoFfqYOg/videos\ndiscord- https://discord.gg/DqPbGgq\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/backyardscientistofficial",
+            "duration": 609,
+            "year": 2022,
+            "published_at": "2022-04-06T20:29:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vWBu8mY2xr8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vWBu8mY2xr8",
+                "url": "https://www.youtube.com/watch?v=vWBu8mY2xr8",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Q1AJ3QGvrb4",
+            "episode_number": 19,
+            "title": "fire death machine - i made a rocket",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Sign up to Morning Brew for free today http://morningbrew.com/backyard\n\nMerch - https://shop.backyardscient.ist/\n\n\nSafety Third Podcast - https://www.youtube.com/channel/UC7QE72cxiBkiwnvGoFfqYOg/videos\ndiscord- https://discord.gg/DqPbGgq\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/thebackyardscientist_/\n\nRussian Rocket - https://www.youtube.com/watch?app=desktop&v=imRAnN4ylZs\n\n Fusion 360 files - https://drive.google.com/drive/folders/1ygPYCI8e1HP3wuyTK-7k_HOQIu5aVSxR?usp=sharing",
+            "duration": 639,
+            "year": 2022,
+            "published_at": "2022-01-28T00:41:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q1AJ3QGvrb4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Q1AJ3QGvrb4",
+                "url": "https://www.youtube.com/watch?v=Q1AJ3QGvrb4",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-XbCLokA3XP8",
+            "episode_number": 20,
+            "title": "Gas powering things that should NOT be gas powered",
+            "description": "Thanks to Bespoke Post for sponsoring this video! New subscribers get 20% off their first box — go to https://bspk.me/backyard20 and enter code BACKYARD20 at checkout.\n\nSafety Third Podcast - https://www.youtube.com/channel/UC7QE72cxiBkiwnvGoFfqYOg/videos\n\nSend me memes - https://discord.gg/DqPbGgq\n\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/backyardscientistofficial",
+            "duration": 610,
+            "year": 2021,
+            "published_at": "2021-12-10T02:31:46Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XbCLokA3XP8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XbCLokA3XP8",
+                "url": "https://www.youtube.com/watch?v=XbCLokA3XP8",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-iyM0rkoO-XI",
+            "episode_number": 21,
+            "title": "Dangerous Toys - Gas Powered Pogo Stick from 1960's",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Use code BACKYARD14 for up to 14 FREE MEALS across your first 5 HelloFresh boxes plus free shipping at https://bit.ly/3E2xZA3\n\nThanks to https://www.youtube.com/user/frenchcreekvalley/videos for the pogo stick!! \nHop Rod user manual - https://imgur.com/gallery/E5nHcg1\n\nTwitter - https://twitter.com/ChemicalKevy\nCome hangout on Discord!  https://discord.gg/DqPbGgq\nInstagram - https://www.instagram.com/backyardscientistofficial",
+            "duration": 571,
+            "year": 2021,
+            "published_at": "2021-10-02T02:13:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iyM0rkoO-XI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iyM0rkoO-XI",
+                "url": "https://www.youtube.com/watch?v=iyM0rkoO-XI",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-wKFnk4R54ZQ",
+            "episode_number": 22,
+            "title": "DIY induction heater that can BOIL STEEL",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Viewers of my channel get their first month free by going to the URL http://kiwiCo.com/mlp/backyard\n\n\nTwitter - https://twitter.com/ChemicalKevy\nCome hangout on Discord!  https://discord.gg/DqPbGgq\nInstagram - https://www.instagram.com/backyardscientistofficial\n\nLouis weiss - slapping a chicken to cook it - https://www.youtube.com/watch?v=LHFhnnTWMgI\n\n\ninduction heater control schematic https://easyeda.com/kevindk9/pll-induction-heater\ninduction heater power stage schematic - https://www.instructables.com/30-kVA-Induction-Heater/\nhttps://content.instructables.com/ORIG/F20/WZQP/GQBCHZIY/F20WZQPGQBCHZIY.png\nanother good resource - http://inductionheatertutorial.com/ \n\nSpecial thanks to the HV gang, and styoropyro discord servers for helping me, and Steve Ward for the brilliant design for the matching transformer stage, and selling some of his old capacitors and ferrite. \n\nferrite cores are from TSC international 70-54-32 E cores\n\n\n\n\n\n\n\nCarefree Melody by Twin Musicom is licensed under a Creative Commons Attribution 4.0 license. https://creativecommons.org/licenses/by/4.0/\n\nSource: http://www.twinmusicom.org/song/302/carefree-melody\n\nArtist: http://www.twinmusicom.org",
+            "duration": 662,
+            "year": 2021,
+            "published_at": "2021-08-05T07:55:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wKFnk4R54ZQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wKFnk4R54ZQ",
+                "url": "https://www.youtube.com/watch?v=wKFnk4R54ZQ",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-5BoVME0xrQY",
+            "episode_number": 23,
+            "title": "I Touched the Worlds Most Painful Plant - Gympie Gympie (The Suicide Plant)",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Thanks to Keeps for sponsoring this video! Head to https://keeps.com/backyard to learn more and get 50% off your first order of hair loss treatment.\n\n\nScience Bros:\n@williamosman \n@PeterSripol \n\nTwitter - https://twitter.com/ChemicalKevy\nCome hangout on Discord!  https://discord.gg/DqPbGgq\nInstagram - https://www.instagram.com/backyardscientistofficial",
+            "duration": 621,
+            "year": 2021,
+            "published_at": "2021-06-25T03:10:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/5BoVME0xrQY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "5BoVME0xrQY",
+                "url": "https://www.youtube.com/watch?v=5BoVME0xrQY",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-DQ67njnNaxw",
+            "episode_number": 24,
+            "title": "20000 Volts Vs a Pickle",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Check out The Great Courses Plus and get your free trial today! http://ow.ly/G27130rJjKQ\n\n\n\nThanks to The Great Courses Plus for sponsoring this video!\n\nScience Bros\n@williamosman \n@PeterSripol \nTwitter - https://twitter.com/ChemicalKevy\nCome hangout on Discord!  https://discord.gg/DqPbGgq\nInstagram - https://www.instagram.com/backyardscientistofficial",
+            "duration": 760,
+            "year": 2021,
+            "published_at": "2021-06-04T00:43:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DQ67njnNaxw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DQ67njnNaxw",
+                "url": "https://www.youtube.com/watch?v=DQ67njnNaxw",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-ZoCK1rHlLt8",
+            "episode_number": 25,
+            "title": "We Made Kids Toys Extra Dangerous",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye You can get 50% off your first month of ANY crate by going to https://kiwico.com/backyard50\n\n\n\nScience Bros\n@williamosman \n@PeterSripol \n\nTwitter - https://twitter.com/ChemicalKevy\nCome hangout on Discord!  https://discord.gg/DqPbGgq\nInstagram - https://www.instagram.com/backyardscientistofficial",
+            "duration": 560,
+            "year": 2021,
+            "published_at": "2021-05-15T16:02:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZoCK1rHlLt8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ZoCK1rHlLt8",
+                "url": "https://www.youtube.com/watch?v=ZoCK1rHlLt8",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-8_QuoA_WCcY",
+            "episode_number": 26,
+            "title": "Pouring Molten Aluminum from 50 feet! What will happen?",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Go to https://nordvpn.com/backyard and use code BACKYARD to get a 2-year plan plus 1 additional month with a huge discount. It’s risk free with Nord’s 30 day money-back guarantee!\n\nLearn how a VPN works: https://www.youtube.com/watch?v=yCWNRzoQGis\n\nCool video on how lead shot is made: https://www.youtube.com/watch?v=2qybStWdYcsa\n\n\nCome hang out in the discord! https://discord.gg/DqPbGgq",
+            "duration": 654,
+            "year": 2021,
+            "published_at": "2021-03-19T20:05:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8_QuoA_WCcY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8_QuoA_WCcY",
+                "url": "https://www.youtube.com/watch?v=8_QuoA_WCcY",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-3QnUn3U59VY",
+            "episode_number": 27,
+            "title": "I Made a Gun that Punches through ANYTHING",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Get a Free 32GB Flash Drive and 32GB Micro SD Card at Micro Center: https://micro.center/84ccd\nCheck out the Micro Center Custom PC Builder: https://micro.center/dd016\nJoin the Micro Center Community: https://micro.center/c9f9e\n\nPadlock vs Ramset gun - Lock Picking Lawyer - https://www.youtube.com/watch?v=Wimo09WV-rY\nModern Rouge - https://www.youtube.com/watch?v=jG2muodjgAo&t=36s\nJeff the maintenance man - https://www.youtube.com/watch?v=MhqMWeT4q-8&t=153s",
+            "duration": 674,
+            "year": 2021,
+            "published_at": "2021-02-01T01:00:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3QnUn3U59VY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3QnUn3U59VY",
+                "url": "https://www.youtube.com/watch?v=3QnUn3U59VY",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-JV0-Gc2CDAQ",
+            "episode_number": 28,
+            "title": "We Defibrillated a Steak",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Thanks to LastPass for sponsoring a portion of this video! Click here to start using LastPass and get 40% off through December 8: http://lastpass.com/TheBackyardScientist40\n\n\n\nTwitter - https://twitter.com/ChemicalKevy\nCome hangout on Discord!  https://discord.gg/DqPbGgq\nInstagram - https://www.instagram.com/backyardscientistlofficial/\nTikTok - https://www.tiktok.com/@thebackyardscientist",
+            "duration": 753,
+            "year": 2020,
+            "published_at": "2020-12-03T02:07:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JV0-Gc2CDAQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JV0-Gc2CDAQ",
+                "url": "https://www.youtube.com/watch?v=JV0-Gc2CDAQ",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Zuc7OzAi-oc",
+            "episode_number": 29,
+            "title": "The Impossible Fire pit Tornado",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Is it possible to make a fire pit that always makes a fire tornado? I put some ideas to the test in this video to see if its possible!\nCome hangout on Discord!  https://discord.gg/DqPbGgq\nInstagram - https://www.instagram.com/backyardscientistlofficial/\nTwitter - https://twitter.com/ChemicalKevy\nTikTok - https://www.tiktok.com/@thebackyardscientist",
+            "duration": 433,
+            "year": 2020,
+            "published_at": "2020-10-27T19:06:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Zuc7OzAi-oc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Zuc7OzAi-oc",
+                "url": "https://www.youtube.com/watch?v=Zuc7OzAi-oc",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-rOCKjaYaYhg",
+            "episode_number": 30,
+            "title": "Blowing FIRE RINGS underwater",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Viewers of my show get their first month free by going to https://KiwiCo.com/backyard \n\nMore Below!\n\n David's Website: https://www.bubblerings.com/\nHere are the 3D files for the bubble ring flipper: https://www.thingiverse.com/thing:4600307\n\nInstagram - https://www.instagram.com/backyardscientistlofficial/\nTwitter - https://twitter.com/ChemicalKevy\nTikTok - https://www.tiktok.com/@thebackyardscientist",
+            "duration": 621,
+            "year": 2020,
+            "published_at": "2020-09-18T18:14:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/rOCKjaYaYhg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "rOCKjaYaYhg",
+                "url": "https://www.youtube.com/watch?v=rOCKjaYaYhg",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-WAI7Lu4UFi4",
+            "episode_number": 31,
+            "title": "200 Watt car mounted laser!",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Visit https://bit.ly/30eG6YG and use promo code H4MUUKFG5VZY to get 5% off when purchasing the DJI Mavic Mini or Mavic Mini Fly More Combo  \n\nI have been wanting to make this laser FOREVER and i could have made a hour long video on it. But dont worry, I have much more planned for this laser!   \n\n\n\nTikTok - https://www.tiktok.com/@thebackyardscientist\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/backyardscientistlofficial/\n\n\n\n\n\n secret discord https://discord.gg/DqPbGgq\n\n\nThere were never any planes in danger and I can prove it with science. First of all, we never turned the beam on more than 4 amps (50 watts)because we were having cooling issues and couldn't really monitor it up on the car.. (we tried 6 amps once but it was too bright.)\n \nSo assuming the beam stayed perfectly collimated, the beam would have an area of 430 square centimeters. If the laser was running at 25% power (4 amps/50 watts) that would be about 110mw/cm2 from the telescope. However, your pupil is only half this size fully open, so a pilot could theoretically receive a 50mw/cm2 exposure.  A decent amount, but you have to remember even the smallest plane is traveling 150 miles per hour which would limit total exposure time to only 3ms( time it takes to cross a 9 inch beam). That puts it at the cusp of the maximum exposure limit, which is defined as \"about 10% of the dose that has a 50% chance of creating damage under worst-case conditions.\"  Here is the chart im referencing https://en.wikipedia.org/wiki/Laser_safety#/media/File:IEC60825_MPE_W_s.png\n\nSo even under perfect conditions, this would still be 10x less than the exposure that carries a risk of damage.   That's assuming perfect conditions, but in reality it was a hazy night, the laser would not be perfectly collimated, the atmosphere would distort the beam,  the windows in the airplane would deflect some of the beam, unless the pilot was staring directly at the beam they would receive a smaller dose, I tried to keep the beam moving when up in the sky, and most planes are moving faster. all of this meaning the pilot would be exposed to a much lower amount of laser energy in the real world than under perfect conditions.  even at full power this laser is still within the safety factor of the maximum exposure limit. Plus do you know the odds of hitting a plane with a laser when your trying not to? just pick a random star in the sky and wait for a plane to fly over it.",
+            "duration": 871,
+            "year": 2020,
+            "published_at": "2020-07-31T17:38:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WAI7Lu4UFi4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WAI7Lu4UFi4",
+                "url": "https://www.youtube.com/watch?v=WAI7Lu4UFi4",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt--uNSv4ZtMwk",
+            "episode_number": 32,
+            "title": "Can a Motor run on BEANS?",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Can gallium destroy an engine? How long would it take? What destroys an engine faster, beans or gallium?  Even now, in the age of technological enlightenment these are questions that remain unsolved by modern science. Florida Man Shirt - https://outloudmerch.com/collections/...\n\nTikTok - https://www.tiktok.com/@thebackyardscientist\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/backyardsci... \n\n\nJoin the secret beancord server  \nhttps://discord.gg/DqPbGgq",
+            "duration": 453,
+            "year": 2020,
+            "published_at": "2020-07-10T20:23:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-uNSv4ZtMwk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-uNSv4ZtMwk",
+                "url": "https://www.youtube.com/watch?v=-uNSv4ZtMwk",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-9wVsMooVulI",
+            "episode_number": 33,
+            "title": "Claymore Roomba Hide & Seek!",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye We took the Claymore Roomba meme and brought it into the real world!  \nStore - https://outloudmerch.com/collections/backyard-scientist\nGet your own claymore here - https://amzn.to/3eMUaO5\n\nTwitter - https://twitter.com/ChemicalKevy\nInstagram - https://www.instagram.com/backyardscientistlofficial/\n\n\nThanks Glytch for the Roomba!\nhttps://www.youtube.com/user/KellerRobotics \nhttps://twitter.com/GlytchTech\n\nFeaturing:\n\nWilliam Osman - https://www.youtube.com/channel/UCfMJ2MchTSW2kWaT0kK94Yw/videos\nPeter Sripol - https://www.youtube.com/channel/UC7yF9tV4xWEMZkel7q8La_w/videos\n\nTom Stanton - https://www.youtube.com/user/tomstanton282/videos\n\nJabrilis -  https://www.youtube.com/channel/UCQALLeQPoZdZC4JNUboVEUg/featured\n\nAllen Pan - Sufficently Advanced -https://www.youtube.com/channel/UCVS89U86PwqzNkK2qYNbk5A\n\n\n\n\n\nAs an Amazon Associate I earn from qualifying purchases. AKA if you buy that claymore",
+            "duration": 521,
+            "year": 2020,
+            "published_at": "2020-04-24T23:09:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9wVsMooVulI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9wVsMooVulI",
+                "url": "https://www.youtube.com/watch?v=9wVsMooVulI",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-m7YznIKe7bU",
+            "episode_number": 34,
+            "title": "Making Petrified Lightning ...with electricity??",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Click here: https://kiwico.com/backyardscientist or use code BACKYARD for 20% off everything on the site — both subscriptions and everything in Store!  -- offer valid through May 31, 2020\n\nInstagram - https://www.instagram.com/backyardscientistlofficial/\nTwitter - https://twitter.com/ChemicalKevy\nFacebook - https://www.facebook.com/TheBackyardScientistOfficial/",
+            "duration": 623,
+            "year": 2020,
+            "published_at": "2020-04-01T14:13:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/m7YznIKe7bU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "m7YznIKe7bU",
+                "url": "https://www.youtube.com/watch?v=m7YznIKe7bU",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-tdmnuAL4Nas",
+            "episode_number": 35,
+            "title": "Molten Aluminum vs. 𝘛 𝘏 𝘌   𝘊 𝘜 𝘉 𝘌",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Thanks to LastPass for sponsoring a portion of this video. Click here to start using LastPass: https://lastpass.onelink.me/HzaM/2020\n\nMy brother and I decided to make an old school video back at the old backyard! we poured molten aluminum on some glass cubes and spheres to see what would happen, and to get some cool slow motion footage. We also melted glass and aluminum together to see if they would mix. Its unfortunate the glass sphere melted and fell over in the kiln, oh well, it was still interesting!",
+            "duration": 565,
+            "year": 2020,
+            "published_at": "2020-02-28T21:14:59Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/tdmnuAL4Nas/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "tdmnuAL4Nas",
+                "url": "https://www.youtube.com/watch?v=tdmnuAL4Nas",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt--v-II1FPFSU",
+            "episode_number": 36,
+            "title": "Don't Put Wet Rocks In A Campfire",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Ever heard of rocks exploding in a campfire? Can it really happen, and how dangerous is it?  What happens if you spill molten metal on concrete? Today we will look at how and why concrete and rocks spall during a fire.\n\nInstagram - https://www.instagram.com/backyardscientistlofficial/\nTwitter - https://twitter.com/ChemicalKevy\nFacebook - https://www.facebook.com/TheBackyardScientistOfficial/",
+            "duration": 621,
+            "year": 2020,
+            "published_at": "2020-02-02T20:56:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-v-II1FPFSU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-v-II1FPFSU",
+                "url": "https://www.youtube.com/watch?v=-v-II1FPFSU",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-xRwWM0IJwz0",
+            "episode_number": 37,
+            "title": "Molten Aluminum Volcano [ERUPTION]",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye 🍌I was going to do a video on Sand Casting then I got distracted.🍌\nInstagram - https://www.instagram.com/backyardscientistlofficial/\nShark Shirt -  https://amzn.to/2MYMG0O\nFollow my friend too! - https://bit.ly/38irUPa (instagram) \n\nMaking Green Sand - https://www.youtube.com/watch?v=xFq9wpF0L8M\n\n\nSong 1 - treat yourself (youtube music library)\nSong 2 - the good old days (youtube music library)\nSong 3 - “Happy” from https://soundcloud.com/mbbofficial/\n\n\n\n\n\n\n\n\n\n\n\namazon affiliate disclaimer:\nBackyard scientist is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com.",
+            "duration": 503,
+            "year": 2020,
+            "published_at": "2020-01-20T01:07:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xRwWM0IJwz0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xRwWM0IJwz0",
+                "url": "https://www.youtube.com/watch?v=xRwWM0IJwz0",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-hz8vFcUv-B4",
+            "episode_number": 38,
+            "title": "Melting and combining 19 elements! Does it make a Super-Alloy?!",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Viewers of my show get their first box free by going to the URL https://www.kiwiCo.com/Backyard",
+            "duration": 617,
+            "year": 2019,
+            "published_at": "2019-12-07T03:20:48Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hz8vFcUv-B4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hz8vFcUv-B4",
+                "url": "https://www.youtube.com/watch?v=hz8vFcUv-B4",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-QMb1FH_YEME",
+            "episode_number": 39,
+            "title": "We made a Drone to Toilet Paper houses!",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye We made a drone to toilet paper peoples houses!\nI'm thankful for all my viewers and I wanted to share a little gratitude back. Go to https://www.outloudmerch.com/bys & use code SCIENCE at checkout to get 15% off my merch through 12/2. There's new youth sizes as well!",
+            "duration": 468,
+            "year": 2019,
+            "published_at": "2019-11-22T23:46:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/QMb1FH_YEME/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "QMb1FH_YEME",
+                "url": "https://www.youtube.com/watch?v=QMb1FH_YEME",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-L08LjkN1k70",
+            "episode_number": 40,
+            "title": "Plugging things in that SHOULD NOT be plugged in",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye I was curious what would happen if you plugged in a subwoofer so thats how this video was born. Then I plug in a hotdog, electrify a can of shaving cream, tickle a pickle (with 120 volts), and show you  my new method of rapid plasma assisted material removal on a can of lighter fluid.",
+            "duration": 514,
+            "year": 2019,
+            "published_at": "2019-11-09T00:12:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/L08LjkN1k70/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "L08LjkN1k70",
+                "url": "https://www.youtube.com/watch?v=L08LjkN1k70",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-d6L5btPRHq8",
+            "episode_number": 41,
+            "title": "Potato cannon powered glider!",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye My friend & I collaborated in Dropbox Paper to build a collapsible glider for a potato cannon! Visit http://bit.ly/DropboxPaper_BS to learn more about this free tool. #DropboxAmbassador\n\nYou can find the 3D files on my website https://www.backyardscient.ist/foam-glider",
+            "duration": 544,
+            "year": 2019,
+            "published_at": "2019-10-23T00:16:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/d6L5btPRHq8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "d6L5btPRHq8",
+                "url": "https://www.youtube.com/watch?v=d6L5btPRHq8",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-0EM946JAv7M",
+            "episode_number": 42,
+            "title": "Is Molten Aluminum Bulletproof?",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Go to https://wix.com/go/Backyard to create your own free website! Get 15% off a yearly premium plan with my code \"Backyard15\" Check out my website here  - https://backyardscient.ist\n\nAlso thanks to my friend photogenic firearms for helping me https://www.youtube.com/channel/UC7CYQcN8KaZTccRJ1OixCAQ\n https://instagram.com/photogenic_firearms?igshid=kchp3tjatole\n\n\nFollow me on Instagram! https://www.instagram.com/backyardscientistofficial/\n\nI was curious if molten aluminum is bulletproof, and now you are too!",
+            "duration": 519,
+            "year": 2019,
+            "published_at": "2019-09-30T22:03:58Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0EM946JAv7M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0EM946JAv7M",
+                "url": "https://www.youtube.com/watch?v=0EM946JAv7M",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-BRW2r-ao5vg",
+            "episode_number": 43,
+            "title": "Gallium Vs High Pressure Tank",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Viewers of my show get their first month of any subscription ($19.95 value) for FREE -- head to https://KiwiCo.com/Backyard to check it out!\nhttps://twitter.com/ChemicalKevy\nhttps://www.instagram.com/backyardscientistofficial/",
+            "duration": 764,
+            "year": 2019,
+            "published_at": "2019-08-24T23:47:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BRW2r-ao5vg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BRW2r-ao5vg",
+                "url": "https://www.youtube.com/watch?v=BRW2r-ao5vg",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-VpIF3Y1JzWI",
+            "episode_number": 44,
+            "title": "Impossible Water Fountain - DIY",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Go to https://wix.com/go/Backyard to create your own free website! Get 15% off a yearly premium plan with my code \"Backyard15\" Check out my website here for a parts list - https://backyardscient.ist\n\n\nFor the Fountain head:\n-6\" long 1/2 diameter PVC pipe. Threaded on both ends. https://smile.amazon.com/Orbit-Pack-Flexible-Sprinkler-Riser/dp/B07B89XQ9K\n-90 degree barb fitting https://smile.amazon.com/dp/B004672YH0\n-5/16 stainless steel washer https://smile.amazon.com/dp/B07KPZDLTJ\n-3/32 brass tube https://smile.amazon.com/dp/B000BQO57M\n-1/4in brass barb https://smile.amazon.com/dp/B002SAO7XQ\n-straws https://smile.amazon.com/dp/B06XYTCPJZ\n\n​\n\nPump:\n-620 G.P.H.+ Take your pick from one of these. https://smile.amazon.com/s?k=600gph+pump&ref=nb_sb_noss_1\nThe height of the fountain is a function of the pump output and the nozzle size. If you get a bigger pump you can get a larger waster size for a fatter column of water or a skinny nozzle for a higher column of water. \n\n​\n\nMisc:\n-Propane tank\n-1/4in tube for propane https://smile.amazon.com/dp/B07C3628R5\n-1/2in hose for water Https://smile.amazon.com/dp/B003VAY4SA\n-propane tank adaptor https://smile.amazon.com/dp/B07GZNMS9S\n-lots of hot glue\n\n​\n\n​",
+            "duration": 496,
+            "year": 2019,
+            "published_at": "2019-08-06T00:33:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/VpIF3Y1JzWI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "VpIF3Y1JzWI",
+                "url": "https://www.youtube.com/watch?v=VpIF3Y1JzWI",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-NT_1L6o5HXE",
+            "episode_number": 45,
+            "title": "How 'Bright' is Deadly Radiation?",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye I was curious how bright a deadly dose of  radiation would be after I watched Chernobyl. Hopefully this video helps you visualize what a dangerous dose of radiation would look like.",
+            "duration": 336,
+            "year": 2019,
+            "published_at": "2019-07-27T00:44:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/NT_1L6o5HXE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "NT_1L6o5HXE",
+                "url": "https://www.youtube.com/watch?v=NT_1L6o5HXE",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-Ucr76IXAi7w",
+            "episode_number": 46,
+            "title": "Balloon Brain Teaser",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Ive got a few short videos like this coming up in the next few days! \nChris's channel & instagram\nhttps://www.youtube.com/user/rol36915/featured\nhttps://www.instagram.com/chrisrollinsvideo/\n\nHeres the cool water balloons i used in the video https://amzn.to/2llGiTH\namazon affiliate disclaimer:\nBackyard scientist is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com",
+            "duration": 446,
+            "year": 2019,
+            "published_at": "2019-07-14T23:13:46Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ucr76IXAi7w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Ucr76IXAi7w",
+                "url": "https://www.youtube.com/watch?v=Ucr76IXAi7w",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-3F-Tww516Cc",
+            "episode_number": 47,
+            "title": "Its like Liquid Nitrogen - but Fire!",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye I've always wanted to try these experiments! Hope you enjoy :)\nSometimes I get comments wondering where I get my shirts and stuff from\nHawaiian Shirt Shirt - https://amzn.to/2Ifo1Al\nHawaiian Shark Shirt (from ballista video) - https://amzn.to/2MYMG0O\n10L Liquid Nitrogen Dewar - https://amzn.to/2IgLJwb\nInsulated glass bottle - https://amzn.to/2XlRyRC\nMy Camera - https://amzn.to/2WGfx9J\n\nGiant Air Plant information:\nIts scientific name is Tillandsia utriculata. They are called 'air plants' because they typically live in trees. People sometimes think the name means they can survive air alone, but thats wrong! they still need water and nutrients (typically from decaying leaf litter they collect). They don't have a very high survival rate on the ground, and tend to die from staying wet for too long. Im just trying to raise awareness because I see people throwing them out or mowing over them all time time and there are very few left in my area.\nhttps://entomology.ifas.ufl.edu/frank/savebromeliads/floridas-bromeliads/Tillandsia-utriculata.html\nhttps://www.morningwoodgrowers.com/about-us/endangered/tillandsia-utriculata-aka-giant-wild-pine.html\n\n\namazon affiliate disclaimer:\nBackyard scientist is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com.",
+            "duration": 634,
+            "year": 2019,
+            "published_at": "2019-06-14T21:29:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3F-Tww516Cc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3F-Tww516Cc",
+                "url": "https://www.youtube.com/watch?v=3F-Tww516Cc",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-2ReBMjJU7vc",
+            "episode_number": 48,
+            "title": "I made the Scorpion From GAME OF THRONES and its CRAZY",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Get your first audiobook and 2 Audible Originals free when you try Audible for 30 days. Visit http://www.audible.com/backyard or text backyard to 500500",
+            "duration": 761,
+            "year": 2019,
+            "published_at": "2019-05-26T14:57:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2ReBMjJU7vc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2ReBMjJU7vc",
+                "url": "https://www.youtube.com/watch?v=2ReBMjJU7vc",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-knB8WMzB6jI",
+            "episode_number": 49,
+            "title": "Fortnite Boom Bow IRL - BOOM or BUST?",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye How could you pass up trying a Boom Bow IRL? It was fun, and a noise maker for sure!  \nInstagram - https://www.instagram.com/backyardscientistofficial/\nTwitter - https://twitter.com/ChemicalKevy\nFacebook - https://www.facebook.com/TheBackyardScientistOfficial",
+            "duration": 459,
+            "year": 2019,
+            "published_at": "2019-04-24T00:51:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/knB8WMzB6jI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "knB8WMzB6jI",
+                "url": "https://www.youtube.com/watch?v=knB8WMzB6jI",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        },
+        {
+            "id": "yt-J_evWNVWIYc",
+            "episode_number": 50,
+            "title": "Burning stuff with a giant fresnel lens + how a DLP projector works",
+            "description": "Join the science discord! https://discord.gg/pw5sZ3PTye Hey everybody! Ive wanted to make one of these forever. Well, i have made one before but it was not a 'good' fresnel lens.  If you want to learn more about fresnel lenses this is a good website - https://rimstar.org/equip/fresnel_lens.htm  They have a youtube channel too with lots of educational content. https://www.youtube.com/user/RimstarOrg\n\nAnd of course shoutout to The King of Random where i first saw this idea ! https://www.youtube.com/watch?v=jrje73EyKag",
+            "duration": 512,
+            "year": 2019,
+            "published_at": "2019-04-04T23:16:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/J_evWNVWIYc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "J_evWNVWIYc",
+                "url": "https://www.youtube.com/watch?v=J_evWNVWIYc",
+                "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
+                "channel_title": "TheBackyardScientist",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
+            }
+        }
+    ]
+}

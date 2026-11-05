@@ -1,5 +1,5 @@
 {
-  "_note": "STRUCTURAL PLACEHOLDER. \"items\" is empty because nothing has been imported yet. \"series\" references the four portable series.json files for this channel's intended lineup; each is itself a placeholder (no real episodes) until the YouTube importer exists. See series/<id>/series.json.",
+  "_note": "\"items\" is empty -- this channel is entirely series-driven. The first four series below are the original phase-1/2 placeholders (still \"episodes\": [] pending a real import; see series/<id>/series.json). The twelve after that are real YouTube imports (50 recent videos each, most episodes approved -- see each series.json's episodes) backing the 12-hour, 12-show recurring lineup declared in programming.json.",
   "schema_version": 2,
   "title": "Science & Engineering",
   "items": [],
@@ -7,6 +7,18 @@
     { "ref": "../../series/technology-connections/series.json" },
     { "ref": "../../series/practical-engineering/series.json" },
     { "ref": "../../series/steve-mould/series.json" },
-    { "ref": "../../series/electroboom/series.json" }
+    { "ref": "../../series/electroboom/series.json" },
+    { "ref": "../../series/techmoan/series.json" },
+    { "ref": "../../series/scishow/series.json" },
+    { "ref": "../../series/plasma-channel/series.json" },
+    { "ref": "../../series/real-engineering/series.json" },
+    { "ref": "../../series/stuff-made-here/series.json" },
+    { "ref": "../../series/the-engineering-mindset/series.json" },
+    { "ref": "../../series/veritasium/series.json" },
+    { "ref": "../../series/vsauce/series.json" },
+    { "ref": "../../series/smarter-every-day/series.json" },
+    { "ref": "../../series/the-backyard-scientist/series.json" },
+    { "ref": "../../series/mark-rober/series.json" },
+    { "ref": "../../series/kurzgesagt/series.json" }
   ]
 }
