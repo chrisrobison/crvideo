@@ -339,6 +339,57 @@ and player integration are a later phase (continuity occurrences compile
 correctly today; they render as an ordinary station-break slate in the
 existing player until that phase lands).
 
+## Determinism and schedule publication (Phase 8)
+
+Everything built across these phases shares the same determinism
+contract the original recurring-programming design already established
+(no unseeded randomness, no viewer-timezone-dependent boundaries, no
+`setTimeout()`-as-authoritative-clock), extended to cover the new state:
+
+- **No filler selection at playback time.** `ContinuityFiller` runs
+  entirely inside `publish.php`; the browser only ever displays what
+  the compiler already decided and formats a countdown from absolute
+  instants (`continuity-card.js`) -- it never picks a card or asset
+  itself.
+- **Stable rotation across publication windows.** `EpisodeSetPin`
+  (which episodes/which order) and `RotationState` (where a packing-
+  enabled block's cursor/deferred queue currently is) are both small,
+  versioned, gitignored state files, not recomputed from scratch on
+  every publish -- see `RotationState.php`'s header for exactly how its
+  single forward-only checkpoint stays both correct and bounded-cost
+  regardless of how long a channel has been running.
+- **Never retroactively shifts an already-published occurrence.** A
+  compile only ever emits items at or after its own `--window-start`;
+  `RotationState`'s checkpoint only ever advances to *that* window's own
+  start, never past it, which is exactly what keeps republishing the
+  same or a later-starting (overlapping) window idempotent.
+- **Stable occurrence ids.** An episode occurrence keeps the episode's
+  own stable id; a continuity occurrence's id (`continuity-<its own
+  absolute start timestamp>`) is a pure function of when it airs, so
+  republishing an unchanged window reproduces the identical id.
+- **Timezone/DST-correct throughout.** `Recurrence` (occurrence timing)
+  and `BoundaryResolver` (delay arithmetic -- plain elapsed-seconds math
+  over already-resolved absolute instants, so it needs no DST-awareness
+  of its own) are both covered by explicit spring-forward/fall-back/
+  midnight-crossing tests.
+- **Backward compatible by construction, not by convention.** Packing,
+  boundaries, and continuity are each gated by their own explicit opt-in
+  field (`packing.enabled`, a non-`"hard"` `boundary.mode`, a
+  `"continuity"` catalog reference); every one of them defaults to
+  exactly the pre-existing behavior, which is what the full regression
+  suite (232 tests: 124 PHP `publish`, 66 PHP `server`, 42 JS, all
+  passing as of this phase) verifies on every change rather than merely
+  asserting.
+
+If a schedule genuinely cannot be resolved deterministically and safely
+(an impossible hard boundary, a rotation mode this project doesn't
+implement, a malformed config), every stage in this pipeline fails the
+whole publish with a clear `RuntimeException`/`InvalidArgumentException`
+rather than guessing or writing a partial/inconsistent `schedule.json` --
+the same "fail safely" posture `ProgrammingCompiler`'s original overlap
+check already established, just now shared by `BoundaryResolver` and
+`EpisodePacker` too.
+
 ## Worked example: adding a channel end to end
 
 Using `channels/science` (Science & Engineering) as the actual, currently
