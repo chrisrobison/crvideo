@@ -82,14 +82,21 @@ test("the channels/science catalog/schedule/meta all parse and build a valid tim
 
   const { items, series, errors } = await resolveCatalog(new URL("catalog.json", base), { fetchJson: fsFetchJson });
   assert.deepEqual(errors, []);
-  // Episode count here depends on real import state (zero when the four
-  // series are still structural placeholders, 14+ each once a real
+  // Episode count here depends on real import state (zero when a series is
+  // still a structural placeholder, 40+ each once a real
   // `youtube-import.php` run has populated them -- both are valid; this
   // test only cares that resolution itself is error-free and structurally
   // sound, not a specific episode count at a specific point in time.
   assert.ok(items.size >= 0);
+  // The original four phase-1/2 placeholders, plus the twelve real
+  // YouTube-sourced shows backing the 12-hour recurring lineup
+  // (channels/science/programming.json) added on 2026-11-04.
   assert.deepEqual(series.map((s) => s.id).sort(), [
-    "electroboom", "practical-engineering", "steve-mould", "technology-connections",
+    "electroboom", "kurzgesagt", "mark-rober", "plasma-channel",
+    "practical-engineering", "real-engineering", "scishow",
+    "smarter-every-day", "steve-mould", "stuff-made-here", "techmoan",
+    "technology-connections", "the-backyard-scientist",
+    "the-engineering-mindset", "veritasium", "vsauce",
   ]);
 });
 

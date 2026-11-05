@@ -1,22 +1,198 @@
 {
-  "_note": "Recurring-series programming rules for Science & Engineering (see channels/publish.php, phase 4). Both series referenced below (technology-connections, practical-engineering) currently have zero approved episodes -- series/<id>/series.json are still the phase-1/2 structural placeholders with \"episodes\": [] pending a real YouTube import + editorial approval. Running `php channels/publish.php science` against this file today is well-defined and crash-free, but produces zero occurrences for both blocks (every scheduled instant is published as an explicit gap) -- see channels/publish/tests/ProgrammingCompilerTest.php's zero-approved-episodes case for exactly this behavior, proven against fixtures with real approved episodes. This file has deliberately NOT been run against this real channel yet, so channels/science/schedule.json still holds the phase-1 placeholder (a single 30-minute gap) rather than a pointless all-gap 14-day window -- run publish.php here once technology-connections/practical-engineering have real, approved episodes.",
+  "_note": "Recurring-series programming for Science & Engineering (see channels/publish.php, phase 4). This channel's airtime is now the 12-hour, 12-show repeating lineup added on 2026-11-04 (below): twelve shows, each a real YouTube import with (almost all) candidates approved, each given one fixed 60-minute daily slot plus a second slot exactly 12 hours later -- so the same ordered lineup plays twice every calendar day, i.e. repeats every 12 hours, wall-to-wall with no gaps. A handful of individual episodes (anything longer than the 60-minute slot) were deliberately left unapproved so publish.php never hits its overlap-refusal case; see series/<id>/series.json for exactly which ones. The original phase-4 placeholder blocks ('technology-hour' at daily 13:00, 'engineering-weekly' at Saturday 10:00, for technology-connections/practical-engineering) were removed from here rather than left dormant: because the 12-show lineup below is wall-to-wall across all 24 hours, there is no free airtime left for them to occupy without an overlap -- and each now has exactly one approved episode (from the admin-UI demo commit), so they're no longer actually dormant. technology-connections and practical-engineering remain in catalog.json's series list; they simply have no programming block right now. Re-add a block for either (on a schedule that doesn't collide with the lineup) if they should air again.",
   "schema_version": 1,
   "blocks": [
     {
-      "id": "technology-hour",
+      "id": "lineup-techmoan-am",
       "type": "series",
-      "series_id": "technology-connections",
-      "recurrence": { "frequency": "daily", "time": "13:00", "timezone": "America/Los_Angeles" },
+      "series_id": "techmoan",
+      "recurrence": { "frequency": "daily", "time": "00:00", "timezone": "America/Los_Angeles" },
       "duration": 3600,
-      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-02" }
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
     },
     {
-      "id": "engineering-weekly",
+      "id": "lineup-scishow-am",
       "type": "series",
-      "series_id": "practical-engineering",
-      "recurrence": { "frequency": "weekly", "weekday": "saturday", "time": "10:00", "timezone": "America/Los_Angeles" },
-      "duration": 1800,
-      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-02" }
+      "series_id": "scishow",
+      "recurrence": { "frequency": "daily", "time": "01:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-plasma-channel-am",
+      "type": "series",
+      "series_id": "plasma-channel",
+      "recurrence": { "frequency": "daily", "time": "02:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-real-engineering-am",
+      "type": "series",
+      "series_id": "real-engineering",
+      "recurrence": { "frequency": "daily", "time": "03:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-stuff-made-here-am",
+      "type": "series",
+      "series_id": "stuff-made-here",
+      "recurrence": { "frequency": "daily", "time": "04:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-the-engineering-mindset-am",
+      "type": "series",
+      "series_id": "the-engineering-mindset",
+      "recurrence": { "frequency": "daily", "time": "05:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-veritasium-am",
+      "type": "series",
+      "series_id": "veritasium",
+      "recurrence": { "frequency": "daily", "time": "06:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-vsauce-am",
+      "type": "series",
+      "series_id": "vsauce",
+      "recurrence": { "frequency": "daily", "time": "07:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-smarter-every-day-am",
+      "type": "series",
+      "series_id": "smarter-every-day",
+      "recurrence": { "frequency": "daily", "time": "08:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-the-backyard-scientist-am",
+      "type": "series",
+      "series_id": "the-backyard-scientist",
+      "recurrence": { "frequency": "daily", "time": "09:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-mark-rober-am",
+      "type": "series",
+      "series_id": "mark-rober",
+      "recurrence": { "frequency": "daily", "time": "10:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-kurzgesagt-am",
+      "type": "series",
+      "series_id": "kurzgesagt",
+      "recurrence": { "frequency": "daily", "time": "11:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-techmoan-pm",
+      "type": "series",
+      "series_id": "techmoan",
+      "recurrence": { "frequency": "daily", "time": "12:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-scishow-pm",
+      "type": "series",
+      "series_id": "scishow",
+      "recurrence": { "frequency": "daily", "time": "13:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-plasma-channel-pm",
+      "type": "series",
+      "series_id": "plasma-channel",
+      "recurrence": { "frequency": "daily", "time": "14:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-real-engineering-pm",
+      "type": "series",
+      "series_id": "real-engineering",
+      "recurrence": { "frequency": "daily", "time": "15:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-stuff-made-here-pm",
+      "type": "series",
+      "series_id": "stuff-made-here",
+      "recurrence": { "frequency": "daily", "time": "16:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-the-engineering-mindset-pm",
+      "type": "series",
+      "series_id": "the-engineering-mindset",
+      "recurrence": { "frequency": "daily", "time": "17:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-veritasium-pm",
+      "type": "series",
+      "series_id": "veritasium",
+      "recurrence": { "frequency": "daily", "time": "18:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-vsauce-pm",
+      "type": "series",
+      "series_id": "vsauce",
+      "recurrence": { "frequency": "daily", "time": "19:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-smarter-every-day-pm",
+      "type": "series",
+      "series_id": "smarter-every-day",
+      "recurrence": { "frequency": "daily", "time": "20:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-the-backyard-scientist-pm",
+      "type": "series",
+      "series_id": "the-backyard-scientist",
+      "recurrence": { "frequency": "daily", "time": "21:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-mark-rober-pm",
+      "type": "series",
+      "series_id": "mark-rober",
+      "recurrence": { "frequency": "daily", "time": "22:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
+    },
+    {
+      "id": "lineup-kurzgesagt-pm",
+      "type": "series",
+      "series_id": "kurzgesagt",
+      "recurrence": { "frequency": "daily", "time": "23:00", "timezone": "America/Los_Angeles" },
+      "duration": 3600,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" }
     }
   ]
 }
