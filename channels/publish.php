@@ -56,6 +56,8 @@ const PUBLISH_ROOT = __DIR__;
 require PUBLISH_ROOT . '/publish/src/CatalogResolver.php';
 require PUBLISH_ROOT . '/publish/src/Recurrence.php';
 require PUBLISH_ROOT . '/publish/src/EpisodeSetPin.php';
+require PUBLISH_ROOT . '/publish/src/RotationState.php';
+require PUBLISH_ROOT . '/publish/src/EpisodePacker.php';
 require PUBLISH_ROOT . '/publish/src/ProgrammingCompiler.php';
 require PUBLISH_ROOT . '/publish/src/ScheduleWriter.php';
 require PUBLISH_ROOT . '/publish/src/PublishReporter.php';

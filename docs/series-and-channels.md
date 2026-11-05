@@ -243,6 +243,21 @@ or, in principle, alongside its own hand/`ia-import`-maintained content
 exercised end to end (see `channels/publish/README.md`'s "Known
 limitations").
 
+A block can additionally opt into **multi-episode packing**
+(`packing.enabled` in `programming.json`): instead of exactly one
+episode per scheduled occurrence, as many pinned episodes as actually
+fit the block's `duration` are packed in, back to back, in rotation
+order -- never truncated. This is off by default (so every channel
+published before this feature, Science & Engineering included, keeps
+compiling identically unless it opts in) and needs one more small,
+gitignored, per-block state file (`.publish/<channel>.<block>.rotation.json`)
+beyond the episode-set pin, to remember where a block's sequential
+consumption of pinned episodes currently is across publish runs. See
+`channels/publish/README.md`'s "Multi-episode packing" section for the
+full config (`mode`, `minimum_remaining`, `safety_margin`, `on_unfit`)
+and `channels/publish/src/EpisodePacker.php` / `RotationState.php` for
+how it stays deterministic and bounded-cost.
+
 ## Worked example: adding a channel end to end
 
 Using `channels/science` (Science & Engineering) as the actual, currently

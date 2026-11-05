@@ -142,6 +142,102 @@ timeline. In practice this essentially never happens at daily/weekly/
 monthly cadences with any sane episode length; it exists as a safety net
 for misconfiguration.
 
+## Multi-episode packing (`packing`)
+
+```json
+{
+  "id": "technology-hour",
+  "type": "series",
+  "series_id": "technology-connections",
+  "recurrence": { "frequency": "daily", "time": "14:00", "timezone": "America/Los_Angeles" },
+  "duration": 3600,
+  "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" },
+  "packing": {
+    "enabled": true,
+    "mode": "sequential",
+    "minimum_remaining": 60,
+    "safety_margin": 0,
+    "on_unfit": "defer",
+    "allow_repeat_within_block": false
+  }
+}
+```
+
+Absent or `"enabled": false` (the default): **nothing changes** -- exactly
+one episode per occurrence, the pre-existing behavior, byte-for-byte.
+This is deliberate: every already-published channel (Science &
+Engineering included) keeps compiling identically forever unless a block
+explicitly opts in.
+
+When `enabled` is `true`, a single occurrence can be filled with as many
+pinned episodes, in rotation order, as actually fit in the block's
+`duration` -- an episode is **never truncated**; it either plays in full
+or isn't scheduled this occurrence at all. All fields but `enabled` have
+sane defaults:
+
+- `mode`: only `"sequential"` is implemented so far (play episodes in
+  their pinned order, fitting as many complete ones as possible).
+  `"best_fit"`/`"hybrid"` are a later phase.
+- `minimum_remaining` (seconds, default 0): once fitting another episode
+  would leave less than this much time afterward (and it isn't the exact
+  remainder), stop packing -- leaves a deliberate, continuity-sized gap
+  rather than cramming in one more episode right up to the wire.
+- `safety_margin` (seconds, default 0): added to an episode's own
+  duration only for the purposes of the fit check (not subtracted from
+  what's actually used) -- a stricter "does this really fit" cushion.
+- `on_unfit` (default `"defer"`, the conservative choice): what happens
+  the moment the next episode in rotation doesn't fit the time left in
+  this occurrence --
+  - `"defer"`: stop packing this occurrence. The rotation cursor is
+    deliberately **not** advanced past the unfit episode, which is
+    exactly what gives it priority again: the very next occurrence of
+    this block tries it first, with a full fresh slot. If an episode is
+    longer than the block's own configured `duration`, no occurrence of
+    that block will ever fit it -- a clear warning says so by name and
+    names the fix (a larger `duration`, or a different `on_unfit`).
+  - `"skip_for_block"`: look ahead (bounded by the pinned list's own
+    length) for a different pinned episode that *does* fit; every
+    episode skipped over to find it -- including the original unfit one
+    -- is queued and retried, with priority, at a future occurrence, so
+    nothing pinned is ever permanently dropped from rotation just
+    because something else filled this slot instead.
+  - `"allow_overrun"`: schedule the unfit episode anyway, letting the
+    occurrence run long. This is only ever safe because the existing
+    hard overlap check (see "Slot-vs-episode-duration policy" above)
+    still refuses to publish a schedule where that overrun collides with
+    the next occurrence -- the same safety net a single naturally-
+    overlong episode always relied on, packing or not.
+- `allow_repeat_within_block` (default `false`): whether the *same*
+  episode may air twice within one occurrence. Almost never useful with
+  a real catalog; exists mainly for a single-episode series paired with
+  a long block.
+
+### Rotation state (`channels/<id>/.publish/<channel>.<block>.rotation.json`)
+
+A packing-enabled block needs a little more persisted state than
+`EpisodeSetPin` alone provides: not just *which* episodes are eligible,
+but *where* a block's sequential consumption of them currently is, now
+that a single occurrence can consume more than one. This file (same
+gitignored, atomic-write, operator-local posture as the episode-set pin)
+holds that rotation cursor and small deferred-episode queue.
+
+It only ever stores one checkpoint -- the state entering the most recent
+publish's own window -- not a full history, because every occurrence's
+packing is a pure function of the state entering it: replaying forward
+from a checkpoint always reproduces the same result. This is what keeps
+republishing the same (or a later-starting, overlapping) window
+idempotent, and keeps replay cost bounded by how far the window moved
+since the last publish rather than by the channel's total lifetime. See
+`src/RotationState.php`'s header for the full reasoning, including the
+one documented edge case (publishing a window that starts *before* the
+last known checkpoint resets rotation state with a clear warning, same
+honesty standard as `EpisodeSetPin`'s own documented limitations).
+
+A pin refresh (`--refresh-episode-set`) that changes the pinned list
+also resets the matching block's rotation state (a cursor position
+computed against one pinned ordering isn't meaningful against another)
+-- reported the same way.
+
 ## Forward window / regeneration workflow
 
 The published window is fixed-length (`--days`, default 14) and does
@@ -199,10 +295,13 @@ Covers: daily/weekly/monthly determinism (including explicit DST spring-
 forward/fall-back cases and month-end clamping against this system's real
 timezone database), the PHP `CatalogResolver`'s path-safety parity with
 `channels/catalog-resolver.js`, approved-episode-set pinning, episode
-selection/rotation/loop/overlap policies, and a full CLI end-to-end run
-(atomic write + backup, idempotent re-publish, `--refresh-episode-set`,
-`--dry-run`, error cases) -- all via fixtures, no real channel ever
-touched by the test suite.
+selection/rotation/loop/overlap policies, multi-episode packing (every
+`on_unfit` policy, `minimum_remaining`/`safety_margin`, empty/single-
+episode/all-unavailable catalogs, rotation stability across adjacent
+overlapping publish windows, pin-refresh resets), and a full CLI end-to-
+end run (atomic write + backup, idempotent re-publish,
+`--refresh-episode-set`, `--dry-run`, error cases) -- all via fixtures, no
+real channel ever touched by the test suite.
 
 `channels/tests/published-schedule.test.js` (Node) separately proves the
 PHP output and the JS player agree: it loads a real compiled
@@ -221,6 +320,13 @@ the correct program and the correct offset into it.
   window can shift any not-yet-elapsed occurrence in the currently
   published window, which is an accepted, operator-opt-in consequence of
   explicitly passing `--refresh-episode-set`.
+- Packing's `mode` only implements `"sequential"` so far -- `"best_fit"`
+  and `"hybrid"` are a later phase (see `docs/series-and-channels.md`).
+- Rotation state (see "Rotation state" above) resets if a publish's
+  `--window-start` moves to an occurrence earlier than the last known
+  checkpoint -- there is no history before it to replay from. The
+  documented forward-rolling workflow (re-publish before the window
+  runs out, same or later `--window-start` each time) never hits this.
 - One `--window-timezone` governs the window's day-boundary snapping;
   individual blocks can still each use their own `recurrence.timezone`
   independently of it.
