@@ -1,0 +1,18 @@
+{
+  "_note": "\"items\" is empty -- this channel is entirely series-driven, same shape as channels/science, channels/maker and channels/pet-central. Seven series back the 15-block, 24-hour daily grid in programming.json: five real YouTube imports from official channels (each from the channel's own long-form-only uploads playlist, UULF<channel>, so YouTube Shorts are excluded at the source) and two Internet Archive imports of pre-1931 silent comedy. See each series/<id>/series.json for the full episode list and per-episode editorial status/notes. YouTube episodes carry rights.status \"unverified\" (YouTube embed only; needs human rights review); Comedy Central Stand-Up, Don't Tell Comedy and Just For Laughs episodes are additionally flagged as mature content unreviewed for content rating and are scheduled only in evening/late-night/overnight blocks. IA episodes are approved only where IA declares public domain AND the film predates 1931.",
+  "schema_version": 2,
+  "title": "Comedy Club",
+  "items": [],
+  "series": [
+    { "ref": "../../series/dry-bar-comedy/series.json" },
+    { "ref": "../../series/dont-tell-comedy/series.json" },
+    { "ref": "../../series/comedy-central-stand-up/series.json" },
+    { "ref": "../../series/jim-gaffigan/series.json" },
+    { "ref": "../../series/just-for-laughs/series.json" },
+    { "ref": "../../series/chaplin-shorts/series.json" },
+    { "ref": "../../series/keaton-arbuckle-shorts/series.json" }
+  ],
+  "continuity": [
+    { "ref": "./continuity.json" }
+  ]
+}
