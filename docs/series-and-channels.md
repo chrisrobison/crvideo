@@ -478,6 +478,59 @@ in-progress example in this repo:
    "Forward window / regeneration workflow" in
    `channels/publish/README.md`).
 
+## Maintaining RetroVision, The Lecture Hall, and Maker Channel
+
+Three more channels were built on top of all of the above:
+`channels/retrovision` (Internet Archive -- see `ia-import/README.md`'s
+"ia-series-import.php" section), `channels/lecture-hall` and
+`channels/maker` (YouTube -- ordinary `youtube-import.php`). Each
+channel's own `catalog.json`/`programming.json` `_note` field documents
+its specific source list and scheduling design decisions in full; this
+section only covers the recurring maintenance loop, which is the same
+shape for all three (and for `channels/science`):
+
+1. **Refresh a series** to pick up new uploads/re-check availability,
+   without touching any hand-set `status`/`rights`/title:
+   ```sh
+   # YouTube (lecture-hall, maker):
+   php youtube-import/youtube-import.php --channel="@Handle" \
+     --output=series/<id>/series.json --refresh
+
+   # Internet Archive (retrovision):
+   php ia-import/ia-series-import.php --collection=<id> \
+     --output=series/<id>/series.json --refresh
+   ```
+2. **Review new candidates** (every new episode starts
+   `status: "candidate"`, `rights.status: "unverified"` -- never
+   promoted automatically) and hand-approve the ones that belong in
+   rotation, same editorial criteria as the series already documents in
+   its own episodes (resolvable/embeddable, on-topic, sane duration).
+3. **Republish** that channel's forward window before it runs out (see
+   `channels/publish/README.md`'s "Forward window / regeneration
+   workflow"):
+   ```sh
+   php channels/publish.php retrovision --days=14
+   php channels/publish.php lecture-hall --days=14
+   php channels/publish.php maker --days=14
+   ```
+   Always run with `--dry-run --verbose` first on an unfamiliar change --
+   `publish.php` fails loudly (never silently truncates or fabricates)
+   on an unresolvable overlap, and every warning it prints is worth
+   reading before trusting a fresh publish.
+
+Each channel's `number` in `meta.json` must stay unique across every
+channel folder (`ustv`=1, `film-day-at-school`=2, `science`=3,
+`lecture-hall`=4, `retrovision`=5, `maker`=6, at the time of writing) --
+there's no shared registry enforcing this, just the convention; check
+`channels/*/meta.json` before assigning a new one.
+
+None of these three channels' real-browser/embed playback has been
+verified end to end (no browser was available while building them) --
+see each channel's git history for the exact, explicit list of what was
+and wasn't checked. That's the one piece of the "definition of done"
+still genuinely outstanding, same caveat the project already applies to
+the YouTube adapter elsewhere in this doc.
+
 ### Ideas for future Science & Engineering series (not implemented)
 
 Purely illustrative, not a commitment or a to-do list -- candidates a
