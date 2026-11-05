@@ -1,0 +1,1182 @@
+{
+    "schema_version": 1,
+    "id": "wintergatan",
+    "title": "Wintergatan",
+    "description": "Music & Engineering, and sometimes some stupid ideas, or actually quite often :) Welcome!\n\nThe Official Second Channel for Wintergatan: ► https://www.youtube.com/c/Wintergatan2021\n\nWINTERGATAN RECORDS ►http://www.wintergatan.net/#/shop\nSPOTIFY ►http://bit.ly/2oKxXWd \nITUNES ►http://apple.co/2ntWNsZ \nMUSIC DOWNLOADS ►https://wintergatan.bandcamp.com\n\n",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ZMcjW19cjU18wJY4szazKGKKzQbtUadZLJUxM7ql9A1TMrv1IvfWhM1PTge9la9E2OsKn8yB6A=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+        "channel_url": "https://www.youtube.com/channel/UCcXhhVwCT6_WqjkEniejRJQ",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-fM0cGOJVRxU",
+            "episode_number": 1,
+            "title": "Production CAD With Your Feedback | Marble Machine #487",
+            "description": "Production CAD With Your Feedback | Marble Machine #487\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 732,
+            "year": 2026,
+            "published_at": "2026-10-30T18:22:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fM0cGOJVRxU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fM0cGOJVRxU",
+                "url": "https://www.youtube.com/watch?v=fM0cGOJVRxU",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--IZ2Ft0n5bI",
+            "episode_number": 2,
+            "title": "Building the Test Bench Frame – Revenge! | Marble Machine #486",
+            "description": "Building the Test Bench Frame – Revenge! | Marble Machine #486\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 803,
+            "year": 2026,
+            "published_at": "2026-10-26T16:00:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-IZ2Ft0n5bI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-IZ2Ft0n5bI",
+                "url": "https://www.youtube.com/watch?v=-IZ2Ft0n5bI",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ks-YMKs5T-E",
+            "episode_number": 3,
+            "title": "Stop Your Parts Fighting – Exact Constraint | Marble Machine #485",
+            "description": "Stop Your Parts Fighting – Exact Constraint | Marble Machine #485\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 1000,
+            "year": 2026,
+            "published_at": "2026-10-21T17:22:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ks-YMKs5T-E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ks-YMKs5T-E",
+                "url": "https://www.youtube.com/watch?v=ks-YMKs5T-E",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-xhhTMxt7UCI",
+            "episode_number": 4,
+            "title": "Don’t Ask a Bolt to Do a Pin’s Job | Marble Machine #484",
+            "description": "Give feedback on the Episode 484 plate switch design concept here:\nhttps://forms.gle/T91Wvihy7CqYShCt9\n\nDon’t Ask a Bolt to Do a Pin’s Job | Marble Machine #484\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 680,
+            "year": 2026,
+            "published_at": "2026-10-16T15:57:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xhhTMxt7UCI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xhhTMxt7UCI",
+                "url": "https://www.youtube.com/watch?v=xhhTMxt7UCI",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-0uOvdAgSgXk",
+            "episode_number": 5,
+            "title": "Goodbye Mock-Up, Hello Wrong T-Nuts | Marble Machine #483",
+            "description": "Goodbye Mock-Up, Hello Wrong T-Nuts | Marble Machine #483\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 897,
+            "year": 2026,
+            "published_at": "2026-10-14T15:53:52Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0uOvdAgSgXk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0uOvdAgSgXk",
+                "url": "https://www.youtube.com/watch?v=0uOvdAgSgXk",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-T19l8-r00hM",
+            "episode_number": 6,
+            "title": "Learning How to Use Datums | Marble Machine #482",
+            "description": "The poll has closed and Results are in! 692 responses and 80.5% preferred option 1, We will dive into why in next video, super thanks for all the feedback!\n\nLearning How to Use Datums | Marble Machine #482\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 1071,
+            "year": 2026,
+            "published_at": "2026-10-08T15:58:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/T19l8-r00hM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "T19l8-r00hM",
+                "url": "https://www.youtube.com/watch?v=T19l8-r00hM",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7kAqIQjo3qE",
+            "episode_number": 7,
+            "title": "The Song-Switch Mechanism | Marble Machine #481",
+            "description": "The Song-Switch Mechanism | Marble Machine #481\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 991,
+            "year": 2026,
+            "published_at": "2026-10-07T15:55:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7kAqIQjo3qE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7kAqIQjo3qE",
+                "url": "https://www.youtube.com/watch?v=7kAqIQjo3qE",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ou99akEgz6U",
+            "episode_number": 8,
+            "title": "Aluminium Extrusion Crash Course | Marble Machine #480",
+            "description": "Lego for Engineers: Aluminium Extrusions | Marble Machine #480\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 777,
+            "year": 2026,
+            "published_at": "2026-10-06T15:01:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ou99akEgz6U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ou99akEgz6U",
+                "url": "https://www.youtube.com/watch?v=ou99akEgz6U",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4hk-_J3UHDA",
+            "episode_number": 9,
+            "title": "How Much Rotary Precision Do We Need? | Marble Machine #479",
+            "description": "How Much Rotary Precision Do We Need? | Marble Machine #479\n—\nhttps://wattsan.com/product/wattsan-m1-1325/?utm_source=youtube&utm_medium=blogger&utm_campaign=wintergatan\n\n#wattsan #cncrouter \n\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 935,
+            "year": 2026,
+            "published_at": "2026-10-01T16:21:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4hk-_J3UHDA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4hk-_J3UHDA",
+                "url": "https://www.youtube.com/watch?v=4hk-_J3UHDA",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Iddkab7Q-kE",
+            "episode_number": 10,
+            "title": "The One Channel Test Bench | Marble Machine #478",
+            "description": "The One Channel Test Bench | Marble Machine #478\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 965,
+            "year": 2026,
+            "published_at": "2026-09-30T16:15:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Iddkab7Q-kE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Iddkab7Q-kE",
+                "url": "https://www.youtube.com/watch?v=Iddkab7Q-kE",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-UnMs0jvhwYI",
+            "episode_number": 11,
+            "title": "Super Martin: My Gamified Planning Tool | Marble Machine #477",
+            "description": "Super Martin: My Gamified Planning Tool | Marble Machine #477\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 816,
+            "year": 2026,
+            "published_at": "2026-09-29T15:27:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UnMs0jvhwYI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UnMs0jvhwYI",
+                "url": "https://www.youtube.com/watch?v=UnMs0jvhwYI",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Xf_JA8VsaAg",
+            "episode_number": 12,
+            "title": "Mechanical MIDI & Cutting Features | Marble Machine #476",
+            "description": "Mechanical MIDI & Cutting Features | Marble Machine #476\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 1569,
+            "year": 2026,
+            "published_at": "2026-09-28T14:00:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xf_JA8VsaAg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Xf_JA8VsaAg",
+                "url": "https://www.youtube.com/watch?v=Xf_JA8VsaAg",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-kioDlCjHdhc",
+            "episode_number": 13,
+            "title": "The Over-Center Clamp | Marble Machine #475",
+            "description": "The Over-Center Clamp | Marble Machine #475\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 829,
+            "year": 2026,
+            "published_at": "2026-09-23T17:10:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kioDlCjHdhc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kioDlCjHdhc",
+                "url": "https://www.youtube.com/watch?v=kioDlCjHdhc",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-hASDSK-xOCo",
+            "episode_number": 14,
+            "title": "Print-in-Place Locking Pins | Marble Machine #474",
+            "description": "Print-in-Place Locking Pins | Marble Machine #474\n—\nSupport Wintergatan:\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C",
+            "duration": 973,
+            "year": 2026,
+            "published_at": "2026-09-21T14:00:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hASDSK-xOCo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hASDSK-xOCo",
+                "url": "https://www.youtube.com/watch?v=hASDSK-xOCo",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ZOgXJRM8ttA",
+            "episode_number": 15,
+            "title": "Designing The Marble Machine's Programming System",
+            "description": "Wintergatan Update Summer 2026\n\n    Parental Leave, July 20 to August 21, 2026 - I'm going to be home with my daughter on parental leave from July 20 to August 21. Back working on the Marble Machine August 24.\n\n    Team Vacation and Summer Content Pause - My Team members are on vacation during the same period, July 20 to August 21, so there will be a pause in content over the upcoming month.\n\n    Content Schedule - When we're back from vacation, we won't publish every Wednesday. The video deadlines are halting the Marble Machine rather than aiding it. Letting the design process dictate what needs to be done, and publishing videos whenever they're naturally ready, will optimize for Machine progress instead.\n\n    Online Messages - In general, i do not read or reply to online comments and messages. The sheer amount of input makes it impossible to handle in the time available. It feels bad knowing that people put their hearts into messages without getting a reply, but I would never want a team or bots to write fake answers in my place. Thank you to everyone who has written heartwarming direct messages and comments on Wintergatan's online channels.\n\n    Positive Perspective on Marble Machine Progress - I've solved all my real question marks about how this machine should look, feel and function. The tinkering research from the last few years has been a slow process, but in the end, very fruitful. All the work requiring inspiration is completed and in art that's actually the hard part. To make progress from here we only need hard work, discipline and elbow grease, easy peasy :)\n\n    Negative Perspective on Marble Machine Progress - I think progress is too slow. I get stuck in details instead of executing the bigger unlocks. I'm spending too much time on the public-facing part of the project, managing all the administrative overhead that never shows in YouTube videos. Since becoming a father, I've reduced my work from 200% to only 100%, which means I have to be doubly deliberate with my focus. The build-in-public process is a double-edged sword, the joy of sharing the journey is mixed with distractions pulling me away from the necessary deep work. Over the years I've tried many times to re-shift my focus away from internet, now it's time to try again. I will spend my parental leave reflecting on this, building momentum towards that one decision, to take The Road Not Taken.\n\nThank you all and see you after the summer! //Martin\n\nThe Road Not Taken By Robert Frost\n\nTwo roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\n\nTo where it bent in the undergrowth;\nThen took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\n\nThough as for that the passing there\nHad worn them really about the same,\nAnd both that morning equally lay\nIn leaves no step had trodden black.\n\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.\nI shall be telling this with a sigh\n\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference.\n\n\nupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n\n\nhttps://wattsan.com/product/wattsan-m1-1325/?utm_source=youtube&utm_medium=blogger&utm_campaign=wintergatan\n\n#wattsan #cncrouter \n\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 967,
+            "year": 2026,
+            "published_at": "2026-07-21T16:35:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZOgXJRM8ttA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ZOgXJRM8ttA",
+                "url": "https://www.youtube.com/watch?v=ZOgXJRM8ttA",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-0Iq-jYBTBp8",
+            "episode_number": 16,
+            "title": "I Avoided This for Too Long - Design Requirements",
+            "description": "WIN!\n\nBig thanks to FlexiSpot for supporting the Marble Machine project with the desk in this video. \nhttps://go.flexispot.com/Wintergatan-E7PlusMax\n—\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 457,
+            "year": 2026,
+            "published_at": "2026-07-10T15:31:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0Iq-jYBTBp8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0Iq-jYBTBp8",
+                "url": "https://www.youtube.com/watch?v=0Iq-jYBTBp8",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-WuhJy9deDCU",
+            "episode_number": 17,
+            "title": "Marble Machine Programming Wheel Design Challenge",
+            "description": "MARBLE MACHINE DESIGN CHALLENGE\n\nMake the ultimate Snap-In Programming profile for the Marble Machine!\nSend your Design ideas as Onshape links here:\nhttps://forms.gle/SzoCR1bzwDiLcxkaA\n\nTry Onshape Free - Engineers Get Up to 6 Months Pro with the Wintergatan Link:\nhttps://onshape.pro/Wintergatan\n\nDESIGN REQUIREMENTS:\n•⁠  ⁠Curved Stainless steel sheet metal base, 1mm thin, 1600mm diameter bend\n•⁠  ⁠Holes are laser or watercut in the curved base\n\n•⁠  ⁠Profiles Max Width 9mm\n•⁠  ⁠Profiles Max Height above base 40mm\n•⁠  ⁠Profiles lengths varies from 80mm-200mm\n•⁠  ⁠3D Printed, design for printability\n\n•⁠  ⁠Snaps in and out from the top surface (no fastening from the undersideof the base)\n•⁠  ⁠Must stay perpendicular to base within +-1mm of top of profile\n•⁠  ⁠Top reading surface can have different heights (20/30/40mm) within the same profile\n•⁠  ⁠Center-center distance 10mm between programming channels\n•⁠  ⁠Lengthwise position tolerance +- 0.4mm\n•⁠  ⁠Heightwise position tolerance +-1mm\n\n•⁠  ⁠Design submission must be Onshape Links, no further documentation\n\nLivestream:\nWhat's the Best Marble Machine Programming Profile Design? - Onshape Livestream\nThursday July 9 14.00 CEST\nLink: https://www.youtube.com/live/3f75D2K38pk\n\nWe are collaborating with Onshape who is supporting the Marble Machine Project, thank you to Onshape for not only making fantastic software but also helping out with the Machine!\n\nTry Onshape Free - Engineers Get Up to 6 Months Pro with the Wintergatan Link:\nhttps://onshape.pro/Wintergatan\n\n\nProgramming Wheel Concepts CAD Files:\nhttps://cad.onshape.com/documents/6dba071704bb7445a9b0bc50/w/006e67b2d7f5172088ede285/e/7510cd6a3050089ea55d89f6?renderMode=0&uiState=6a3bc7ad33b2b2a7ebad4852\n\nMarble Machine CAD Files:\nhttps://cad.onshape.com/documents/6431f50ab88e26e4984d3fba/w/6ab1127834b4888e3f08529b/e/89be30df9c37de9011a678d8?renderMode=0&uiState=6a3bc7e986a9ea79f4c8fe7c\n\nProgramming Wheel Design Guidelines:\nhttps://docs.google.com/spreadsheets/d/1_V-VQOzRi8xpghq3RlBJMHSVPDH7kfuhFuMYXvMemq0/edit?usp=sharing\n\n\nThank you all for submitting your ideas!\n\n\n—\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 536,
+            "year": 2026,
+            "published_at": "2026-07-03T14:22:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WuhJy9deDCU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WuhJy9deDCU",
+                "url": "https://www.youtube.com/watch?v=WuhJy9deDCU",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-PxA9LaJQQ8Q",
+            "episode_number": 18,
+            "title": "Is the Monster Music Box Big Enough?",
+            "description": "Feedback Wanted!\n\nThere are two ways to provide feedback on the Programming Wheel Design:\n\n1. If you do not work in CAD, provide feedback here: https://forms.gle/Bcv9zWrTCZXV6XFr8\n2. If you work in CAD download the CAD Files here:\n\nProgramming Wheel Concepts CAD Files:\nhttps://cad.onshape.com/documents/6dba071704bb7445a9b0bc50/w/006e67b2d7f5172088ede285/e/7510cd6a3050089ea55d89f6?renderMode=0&uiState=6a3bc7ad33b2b2a7ebad4852\n\nMarble Machine CAD Files:\nhttps://cad.onshape.com/documents/6431f50ab88e26e4984d3fba/w/6ab1127834b4888e3f08529b/e/89be30df9c37de9011a678d8?renderMode=0&uiState=6a3bc7e986a9ea79f4c8fe7c\n\nProgramming Wheel Design Guidelines:\nhttps://docs.google.com/spreadsheets/d/1_V-VQOzRi8xpghq3RlBJMHSVPDH7kfuhFuMYXvMemq0/edit?usp=sharing\n\nTry Onshape Free - Engineers Get Up to 6 Months Pro with the Wintergatan Link:\nhttps://onshape.pro/Wintergatan\n\nWe would love to see your ideas in CAD via Onshape Links:\n- Improvements on the two concepts Martin presented in the video\n- Your own suggested concepts\n\nSubmit your ideas as shared Onshape Links on the dedicated channel at the Marble Machine Engineering Discord Server:\n\nOnshape files discord channel:\nhttps://discord.com/channels/1197496499236507749/1519251051348365352\n\nNon-Onshape Links can be posted at the Livestream Visual Feedback Channel:\nLivestream Visuals:\nhttps://discord.com/channels/1197496499236507749/1516708668610052236\n\nWe will go through the feedback during two upcoming Livestreams:\n\nWhat's the Best Programming Wheel Design? - Onshape Livestream 1\nThursday June 25 14.00 CEST \nLink: https://youtube.com/live/9HUlhXoR3To\n\nWhat's the Best Programming Wheel Design? - Onshape Livestream 2\nDate And Time To Be Announced\n\nThank you all for submitting your ideas!\n\n\n—\nThe CNC Machine we are using, Wattsan M1 1325:\nhttps://wattsan.com/product/wattsan-m1-1325/?utm_source=youtube&utm_medium=blogger&utm_campaign=wintergatan\n—\nIf you would like to support the build and the project, find all information on:\nhttps://www.wintergatan.net/support\n—\nPatreon ► https://patreon.com/Wintergatan\nYouTube Membership ► https://bit.ly/4cQVM7C\nTwitch Sub (Free with Amazon Prime!) ► https://www.twitch.tv/wintergatan\n—\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ",
+            "duration": 866,
+            "year": 2026,
+            "published_at": "2026-06-24T14:18:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PxA9LaJQQ8Q/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PxA9LaJQQ8Q",
+                "url": "https://www.youtube.com/watch?v=PxA9LaJQQ8Q",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4WFtFxr3RQU",
+            "episode_number": 19,
+            "title": "Every Sound the Marble Machine Can Play - Design Freeze Milestone",
+            "description": "Speed of Decision making is the bottle neck of the project. Banking on Caveman style to unlock the Swedish ketchup effect, also thanks mum\n—\nIf you would like to support the build and the project, find all information on:\nhttps://www.wintergatan.net/support\n—\nPatreon ► https://patreon.com/Wintergatan\nYouTube Membership ► https://bit.ly/4cQVM7C\nTwitch Sub (Free with Amazon Prime!) ► https://www.twitch.tv/wintergatan\n—\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ",
+            "duration": 725,
+            "year": 2026,
+            "published_at": "2026-06-17T18:01:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4WFtFxr3RQU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4WFtFxr3RQU",
+                "url": "https://www.youtube.com/watch?v=4WFtFxr3RQU",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-k8K8mYCQSvk",
+            "episode_number": 20,
+            "title": "Building the Marble Machine Mockup - It's BIG",
+            "description": "This Mockup is more of a scrappy research lab than a prototype and it’s already helping me increase the speed of decision making.\nSpeed of decisions has been veeery slow and the bottleneck of the project. Let’s hope the ketchup effect is incoming! :) Martin\n\n—\nIf you would like to support the build and the project, find all information on:\nhttps://www.wintergatan.net/support\n—\nPatreon ► https://patreon.com/Wintergatan\nYouTube Membership ► https://bit.ly/4cQVM7C\nTwitch Sub (Free with Amazon Prime!) ► https://www.twitch.tv/wintergatan\n—\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ",
+            "duration": 603,
+            "year": 2026,
+            "published_at": "2026-06-10T18:17:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/k8K8mYCQSvk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "k8K8mYCQSvk",
+                "url": "https://www.youtube.com/watch?v=k8K8mYCQSvk",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-CsnlJTEtnUA",
+            "episode_number": 21,
+            "title": "Can Marbles Play Drums Like a Human?",
+            "description": "The real story here is that I am finally making decisions, writing functional requirements and killing darlings. There are many snare sounds that I have decided that the machine should not be able to play side stick, rimshot, brushes etc. \nNarrowing down the functionality and sticking to a short list is progress IMHO :)\nNext up: doing the same for all the instruments, defining what the output of the machine should be. Should have done it three years ago but wasn't in a place where I could make decisions then, better late than never I guess! :)\n\nGood luck with everything you are doing! /Martin\n—\nIf you would like to support the build and the project, find all information on:\nhttps://www.wintergatan.net/support\n—\nPatreon ► https://patreon.com/Wintergatan\nYouTube Membership ► https://bit.ly/4cQVM7C\nTwitch Sub (Free with Amazon Prime!) ► https://www.twitch.tv/wintergatan\n—\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ",
+            "duration": 649,
+            "year": 2026,
+            "published_at": "2026-06-05T14:00:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/CsnlJTEtnUA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "CsnlJTEtnUA",
+                "url": "https://www.youtube.com/watch?v=CsnlJTEtnUA",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nJxNQmoSsOs",
+            "episode_number": 22,
+            "title": "Marble Machine Design Freeze - At Last!",
+            "description": "Real progress IMHO :)! \nWill try to write many more of these design freeze contracts with myself going forward. Finally making those much needed set in stone decisions to progress! Thanks for watching! Martin\n\nWe wanted to thank all our backers in a more meaningful way so for all backers on $5 tiers and above we are putting up everyones username on my studio wall. The project is depending more on the support from the backers than ever so thank you so much everyone!  \n\n—\nSupport Wintergatan and become a Backer:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n- Twitch subscribe ► https://www.twitch.tv/wintergatan\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ",
+            "duration": 611,
+            "year": 2026,
+            "published_at": "2026-05-27T14:00:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nJxNQmoSsOs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nJxNQmoSsOs",
+                "url": "https://www.youtube.com/watch?v=nJxNQmoSsOs",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-aF7a14bdfUA",
+            "episode_number": 23,
+            "title": "Can Moving Vibraphone Bars Still Sound Good?",
+            "description": "Support Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 552,
+            "year": 2026,
+            "published_at": "2026-04-30T16:14:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/aF7a14bdfUA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "aF7a14bdfUA",
+                "url": "https://www.youtube.com/watch?v=aF7a14bdfUA",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--1R4UvvlclM",
+            "episode_number": 24,
+            "title": "Vertical Stream: Lego Vibrato Experiments | Marble Machine Live",
+            "description": "Episode 432\n\nWintergatan Wednesdays and Livestream schedule \n\nMonday - LIVE 9:30-12:00 & 14:00-17:00\nTuesday - LIVE 9:30-12:00 & 14:00-17:00\nWednesday - VIDEO 16:00 (10 minute Weekly Progress Recap)\nThursday - LIVE 9:30-12:00 & 14:00-17:00\nFriday - LIVE 9:30-12:00 & 14:00-17:00\n\nAll times Stockholm CET Timezone.\n\nThese streams are designed to let Martin spend as much time as possible building the Marble Machine, while still bringing you along for the process. Come hang out with us in the workshop as it happens.\n\nAs always, times may shift slightly depending on the build, but this is the structure we’re aiming for going forward.\n\nSee you in the workshop and on Wintergatan Wednesday’s!\n\nAlfons\nTeam Wintergatan\n—\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 8195,
+            "year": 2026,
+            "published_at": "2026-04-29T03:09:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-1R4UvvlclM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-1R4UvvlclM",
+                "url": "https://www.youtube.com/watch?v=-1R4UvvlclM",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-fqkVZue6eaM",
+            "episode_number": 25,
+            "title": "Vertical Stream: Vibraphone Pivot Arm Experiments | Marble Machine Live",
+            "description": "Episode 431\n\nWintergatan Wednesdays and Livestream schedule \n\nMonday - LIVE 9:30-12:00 & 14:00-17:00\nTuesday - LIVE 9:30-12:00 & 14:00-17:00\nWednesday - VIDEO 16:00 (10 minute Weekly Progress Recap)\nThursday - LIVE 9:30-12:00 & 14:00-17:00\nFriday - LIVE 9:30-12:00 & 14:00-17:00\n\nAll times Stockholm CET Timezone.\n\nThese streams are designed to let Martin spend as much time as possible building the Marble Machine, while still bringing you along for the process. Come hang out with us in the workshop as it happens.\n\nAs always, times may shift slightly depending on the build, but this is the structure we’re aiming for going forward.\n\nSee you in the workshop and on Wintergatan Wednesday’s!\n\nAlfons\nTeam Wintergatan\n—\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 6396,
+            "year": 2026,
+            "published_at": "2026-04-28T22:04:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fqkVZue6eaM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fqkVZue6eaM",
+                "url": "https://www.youtube.com/watch?v=fqkVZue6eaM",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-_wslKCTOLQQ",
+            "episode_number": 26,
+            "title": "Lego Vibrato Experiments | Marble Machine Live",
+            "description": "Episode 432\n\nWe're going to switch the livestreaming to the Wintergatan 2 Youtube channel. Make sure you're subscribed so you dont miss it:\nhttps://www.youtube.com/@Wintergatan_2\n\nWintergatan Wednesdays and Livestream schedule \n\nMonday - LIVE 9:30-12:00 & 14:00-17:00\nTuesday - LIVE 9:30-12:00 & 14:00-17:00\nWednesday - VIDEO 16:00 (10 minute Weekly Progress Recap)\nThursday - LIVE 9:30-12:00 & 14:00-17:00\nFriday - LIVE 9:30-12:00 & 14:00-17:00\n\nAll times Stockholm CET Timezone.\n\nThese streams are designed to let Martin spend as much time as possible building the Marble Machine, while still bringing you along for the process. Come hang out with us in the workshop as it happens.\n\nAs always, times may shift slightly depending on the build, but this is the structure we’re aiming for going forward.\n\nSee you in the workshop and on Wintergatan Wednesday’s!\n\nAlfons\nTeam Wintergatan\n—\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 8171,
+            "year": 2026,
+            "published_at": "2026-04-28T15:56:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_wslKCTOLQQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_wslKCTOLQQ",
+                "url": "https://www.youtube.com/watch?v=_wslKCTOLQQ",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lWTjeRmOGyA",
+            "episode_number": 27,
+            "title": "Vibraphone Pivot Arm Experiments | Marble Machine Live",
+            "description": "Episode 431\n\nWintergatan Wednesdays and Livestream schedule \n\nMonday - LIVE 9:30-12:00 & 14:00-17:00\nTuesday - LIVE 9:30-12:00 & 14:00-17:00\nWednesday - VIDEO 16:00 (10 minute Weekly Progress Recap)\nThursday - LIVE 9:30-12:00 & 14:00-17:00\nFriday - LIVE 9:30-12:00 & 14:00-17:00\n\nAll times Stockholm CET Timezone.\n\nThese streams are designed to let Martin spend as much time as possible building the Marble Machine, while still bringing you along for the process. Come hang out with us in the workshop as it happens.\n\nAs always, times may shift slightly depending on the build, but this is the structure we’re aiming for going forward.\n\nSee you in the workshop and on Wintergatan Wednesday’s!\n\nAlfons\nTeam Wintergatan\n—\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 6430,
+            "year": 2026,
+            "published_at": "2026-04-28T10:05:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lWTjeRmOGyA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lWTjeRmOGyA",
+                "url": "https://www.youtube.com/watch?v=lWTjeRmOGyA",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ZKNvUG6nuqc",
+            "episode_number": 28,
+            "title": "Writing Design Requirements with Paul Drover | Marble Machine Live",
+            "description": "Episode 430\n\nWintergatan Wednesdays and Livestream schedule \n\nMonday - LIVE 9:30-12:00 & 14:00-17:00\nTuesday - LIVE 9:30-12:00 & 14:00-17:00\nWednesday - VIDEO 16:00 (10 minute Weekly Progress Recap)\nThursday - LIVE 9:30-12:00 & 14:00-17:00\nFriday - LIVE 9:30-12:00 & 14:00-17:00\n\nAll times Stockholm CET Timezone.\n\nThese streams are designed to let Martin spend as much time as possible building the Marble Machine, while still bringing you along for the process. Come hang out with us in the workshop as it happens.\n\nAs always, times may shift slightly depending on the build, but this is the structure we’re aiming for going forward.\n\nSee you in the workshop and on Wintergatan Wednesday’s!\n\nAlfons\nTeam Wintergatan\n—\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 6426,
+            "year": 2026,
+            "published_at": "2026-04-27T14:40:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZKNvUG6nuqc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ZKNvUG6nuqc",
+                "url": "https://www.youtube.com/watch?v=ZKNvUG6nuqc",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-pJJ4GRCK_gI",
+            "episode_number": 29,
+            "title": "Vibraphone 1 Channel Prototype Part 2 | Marble Machine Live",
+            "description": "Episode 429\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 11426,
+            "year": 2026,
+            "published_at": "2026-04-24T16:36:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pJJ4GRCK_gI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pJJ4GRCK_gI",
+                "url": "https://www.youtube.com/watch?v=pJJ4GRCK_gI",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--NfmrRx-2b0",
+            "episode_number": 30,
+            "title": "Vibraphone 1 Channel Prototype | Marble Machine Live",
+            "description": "Episode 428\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 8026,
+            "year": 2026,
+            "published_at": "2026-04-24T10:36:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-NfmrRx-2b0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-NfmrRx-2b0",
+                "url": "https://www.youtube.com/watch?v=-NfmrRx-2b0",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-UQBMl0lNWuo",
+            "episode_number": 31,
+            "title": "Vibraphone Resonator Prototyping | Marble Machine Live",
+            "description": "Episode 427\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 9835,
+            "year": 2026,
+            "published_at": "2026-04-23T16:53:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UQBMl0lNWuo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UQBMl0lNWuo",
+                "url": "https://www.youtube.com/watch?v=UQBMl0lNWuo",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-9Kug45MSdhU",
+            "episode_number": 32,
+            "title": "Vibraphone Resonator Experiments Supported by Theory | Marble Machine Live",
+            "description": "Episode 426\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 5105,
+            "year": 2026,
+            "published_at": "2026-04-23T10:12:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9Kug45MSdhU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9Kug45MSdhU",
+                "url": "https://www.youtube.com/watch?v=9Kug45MSdhU",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-t8TSO-7OtK8",
+            "episode_number": 33,
+            "title": "7 Engineering Lessons from Building the Marble Machine this Week",
+            "description": "Support Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 500,
+            "year": 2026,
+            "published_at": "2026-04-22T16:39:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/t8TSO-7OtK8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "t8TSO-7OtK8",
+                "url": "https://www.youtube.com/watch?v=t8TSO-7OtK8",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-jOYu4zZLELk",
+            "episode_number": 34,
+            "title": "9:16 Vertical Stream: Vibraphone Holders Part 4 | Marble Machine Live",
+            "description": "Episode 424\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 10466,
+            "year": 2026,
+            "published_at": "2026-04-22T03:15:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/jOYu4zZLELk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "jOYu4zZLELk",
+                "url": "https://www.youtube.com/watch?v=jOYu4zZLELk",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-b01MUffzMQ8",
+            "episode_number": 35,
+            "title": "9:16 Stream: Vibraphone Holders Part 3 | Marble Machine Live",
+            "description": "Episode 424\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 7901,
+            "year": 2026,
+            "published_at": "2026-04-21T23:18:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/b01MUffzMQ8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "b01MUffzMQ8",
+                "url": "https://www.youtube.com/watch?v=b01MUffzMQ8",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lXrJi2X6JSo",
+            "episode_number": 36,
+            "title": "Vibraphone Holders Part 4 | Marble Machine Live",
+            "description": "Episode 425\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 10511,
+            "year": 2026,
+            "published_at": "2026-04-21T16:27:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lXrJi2X6JSo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lXrJi2X6JSo",
+                "url": "https://www.youtube.com/watch?v=lXrJi2X6JSo",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-rkDEuUQi9s8",
+            "episode_number": 37,
+            "title": "Vibraphone Holders Part 3 | Marble Machine Live",
+            "description": "Episode 424\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 7880,
+            "year": 2026,
+            "published_at": "2026-04-21T10:23:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/rkDEuUQi9s8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "rkDEuUQi9s8",
+                "url": "https://www.youtube.com/watch?v=rkDEuUQi9s8",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--iu6L037yi8",
+            "episode_number": 38,
+            "title": "Design Requirements Organisation in the Style Of Paul Drover | Marble Machine Live",
+            "description": "Link to document: https://docs.google.com/spreadsheets/d/1hFkB3O5DgQOfsiPVsx21OQOrMzSW5DOY2n-_a-d6W4k/edit?usp=sharing\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 9175,
+            "year": 2026,
+            "published_at": "2026-04-20T16:11:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-iu6L037yi8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-iu6L037yi8",
+                "url": "https://www.youtube.com/watch?v=-iu6L037yi8",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-a57vCmURZKA",
+            "episode_number": 39,
+            "title": "Testing the 3D Printed Silicone Holder for the Vibraphone bars | Marble Machine Live",
+            "description": "Episode 422\n\nWintergatan Wednesdays and Livestream schedule \n\nMonday - LIVE 9:30-12:00 & 14:00-17:00\nTuesday - LIVE 9:30-12:00 & 14:00-17:00\nWednesday - VIDEO 16:00 (10 minute Weekly Progress Recap)\nThursday - LIVE 9:30-12:00 & 14:00-17:00\nFriday - Easter Holidays\n\nAll times Stockholm CET Timezone.\n\nThese streams are designed to let Martin spend as much time as possible building the Marble Machine, while still bringing you along for the process. Come hang out with us in the workshop as it happens.\n\nAs always, times may shift slightly depending on the build, but this is the structure we’re aiming for going forward.\n\nSee you in the workshop and on Wintergatan Wednesday’s!\n\nAlfons\nTeam Wintergatan\n\n—\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n—\n\n—\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd \nITUNES ► http://apple.co/2ntWNsZ \n—",
+            "duration": 8560,
+            "year": 2026,
+            "published_at": "2026-04-14T16:15:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/a57vCmURZKA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "a57vCmURZKA",
+                "url": "https://www.youtube.com/watch?v=a57vCmURZKA",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-z6xprYueYec",
+            "episode_number": 40,
+            "title": "How to Write Better Design Requirements with Jasper Brookman | Marble Machine Live",
+            "description": "Jaspers presentation:\nhttps://docs.google.com/presentation/d/1bG69RlZB5M1zqNcdWVJuU1nvL3IaqxF1/edit?slide=id.p1#slide=id.p1\n\nSupport Wintergatan:\n- Patreon ► https://patreon.com/Wintergatan\n- Youtube membership ► https://bit.ly/4cQVM7C\n-  Twitch ► https://www.twitch.tv/wintergatan\n—\n\nPATREON ► https://patreon.com/Wintergatan\nYOUTUBE MEMBERSHIP ► https://bit.ly/4cQVM7C\nTWITCH ► https://www.twitch.tv/wintergatan\nWINTERGATAN RECORDS ► http://www.wintergatan.net/#/shop\nSPOTIFY ► http://bit.ly/2oKxXWd\nITUNES ► http://apple.co/2ntWNsZ\n\n—",
+            "duration": 7515,
+            "year": 2026,
+            "published_at": "2026-04-14T10:44:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/z6xprYueYec/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "z6xprYueYec",
+                "url": "https://www.youtube.com/watch?v=z6xprYueYec",
+                "channel_id": "UCcXhhVwCT6_WqjkEniejRJQ",
+                "channel_title": "Wintergatan",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}

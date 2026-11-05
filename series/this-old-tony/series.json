@@ -1,0 +1,1182 @@
+{
+    "schema_version": 1,
+    "id": "this-old-tony",
+    "title": "This Old Tony",
+    "description": "",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_nJisvM3xWeEdy5fdqPPH63qNEgSGB_uhXdaq_odgkFctw=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+        "channel_url": "https://www.youtube.com/channel/UC5NO8MgTQKHAWXp6z8Xl7yQ",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-hksOKMqCqZs",
+            "episode_number": 1,
+            "title": "Vampires?  I'M READY!",
+            "description": "Stake Pointer?  Post Tool?  Did I really need one?\nLet's find out together!\n\nIf you'd like to check out Matthias' dowel maker:\nhttps://www.youtube.com/user/Matthiaswandel",
+            "duration": 1357,
+            "year": 2026,
+            "published_at": "2026-10-13T20:55:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hksOKMqCqZs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hksOKMqCqZs",
+                "url": "https://www.youtube.com/watch?v=hksOKMqCqZs",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-wyBkLyGWZyU",
+            "episode_number": 2,
+            "title": "Magnets Aren't Always Right!",
+            "description": "Hello!  Its been a minute, huh?  Hope you're all doing ... okay-ish!\ncustom magnetic transfer blocks are something I've always wanted to try... should of picked an easier shape to cut my teeth on.  But all's well that ends well, right?  \n\n\n------------\nMusic: Everybody get up - Everet Almond.",
+            "duration": 1532,
+            "year": 2026,
+            "published_at": "2026-05-29T21:00:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wyBkLyGWZyU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wyBkLyGWZyU",
+                "url": "https://www.youtube.com/watch?v=wyBkLyGWZyU",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ThSLfcZfS8A",
+            "episode_number": 3,
+            "title": "Advanced Welding For Dummies!",
+            "description": "Do you like new welding tech?  I do!  \nThere is a lot to talk about, but if you're looking to jump to my favorites:\nFAST TACK 17:18\nDYNAMIC POWER (TIG) 17:53\nMIXED AC/DC aluminum welding 21:37\nSYNERGIC MIG on Aluminum 28:22\n\nThanks to HTP for letting me kick the tires.  https://usaweld.com/\n\n--- Music: Dance Of The Sugar Plum Fairy / Kevin MacLeod",
+            "duration": 2189,
+            "year": 2025,
+            "published_at": "2025-12-20T16:19:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ThSLfcZfS8A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ThSLfcZfS8A",
+                "url": "https://www.youtube.com/watch?v=ThSLfcZfS8A",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-TFOT4kpwgdw",
+            "episode_number": 4,
+            "title": "Making The Easiest Winch!",
+            "description": "Let's discover the wonderful world of capstan winches... together!\n\nCheck out Ohio Hill Tops Hobby Farm:\nhttps://www.youtube.com/watch?v=5nymwmvJnSg\n\n----\nMusic: The Whole Other - Barnyard Surprise",
+            "duration": 1719,
+            "year": 2025,
+            "published_at": "2025-11-28T20:52:23Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/TFOT4kpwgdw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "TFOT4kpwgdw",
+                "url": "https://www.youtube.com/watch?v=TFOT4kpwgdw",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-sBswDxpAoWM",
+            "episode_number": 5,
+            "title": "Right (angle) Tool For The Job!",
+            "description": "DISCLAIMER 1: do not fix your own teeth with a die grinder (or anyone else's!)\nDISCLAIMER 2: do not cut overhead branches\nDISCLAIMER 3: this is a talky video.\n\nWere you hoping for an informal follow up on some stuff?  here it is!\nIt was supposed to be about the Gen 2 Milwaukee Die Grinder a lot of you recommended I buy.  Which I did! ... but it very quickly went off the rails.\n\nEnjoy!",
+            "duration": 771,
+            "year": 2025,
+            "published_at": "2025-10-22T21:15:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sBswDxpAoWM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sBswDxpAoWM",
+                "url": "https://www.youtube.com/watch?v=sBswDxpAoWM",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lVYu8KUYAgY",
+            "episode_number": 6,
+            "title": "THREADMILLING: For Fun & Profit!",
+            "description": "Hey-OHH! and hello :)\nIn a rush?  Threadmilling starts at 8:20 -ish.  \nEverything before is pre-game warmup. \nLong story short: threadmilling with a lathe internal thread tool actually seemed to work!  That, and WEAR OFFSETS are your friend.",
+            "duration": 1433,
+            "year": 2025,
+            "published_at": "2025-10-09T18:15:49Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lVYu8KUYAgY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lVYu8KUYAgY",
+                "url": "https://www.youtube.com/watch?v=lVYu8KUYAgY",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-YA5IpJ9azgQ",
+            "episode_number": 7,
+            "title": "Homemade Grinding Belts?  At Home?!  GET OUT!",
+            "description": "Is it possible to join grinding belts?  Let's take this journey together and, perhaps, my madness, can become your madness!\n\n\n-----\nMusic: Twin Musicom - Funky",
+            "duration": 1446,
+            "year": 2025,
+            "published_at": "2025-06-21T20:28:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YA5IpJ9azgQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YA5IpJ9azgQ",
+                "url": "https://www.youtube.com/watch?v=YA5IpJ9azgQ",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7TLdCMB-Y2s",
+            "episode_number": 8,
+            "title": "I Have The Power!! (Burnishing)",
+            "description": "Ever try power burnishing?  I hadn't.  At least not on purpose. *blush*\nIn this video I'm copying a tool I saw online and testing it on the lathe to see if I get something useful out of it.\n\n\n--------\nBongo Madness - Quincas Moreira",
+            "duration": 1144,
+            "year": 2025,
+            "published_at": "2025-05-24T18:47:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7TLdCMB-Y2s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7TLdCMB-Y2s",
+                "url": "https://www.youtube.com/watch?v=7TLdCMB-Y2s",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--lkgAYe-8_s",
+            "episode_number": 9,
+            "title": "Make Your Own Air Knife!",
+            "description": "Let's be honest, who of us hasn't wanted to make their own air knife?\nWell today's the day!  Stick around while I try to figure out the who's who and the what's what of air knives.\n----\nMusic: \"Sunshine Samba\"",
+            "duration": 1459,
+            "year": 2025,
+            "published_at": "2025-03-01T16:40:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-lkgAYe-8_s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-lkgAYe-8_s",
+                "url": "https://www.youtube.com/watch?v=-lkgAYe-8_s",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-EXhXezK4cKU",
+            "episode_number": 10,
+            "title": "Idle Hands & A Tormek!",
+            "description": "Hey!  How've you been / what've you been up to?!  Me?  Made a speed nut for my Tormek, thanks for ask'n.  Also an extended support.  And a short tool jig.  Not to mention a bunch of gum flapping, of course.  Usual stuff!\n\nWes' channel if you're interested: https://www.youtube.com/c/WatchWesWork\n\nMusic: \"Canal 3\"",
+            "duration": 1797,
+            "year": 2025,
+            "published_at": "2025-02-08T20:09:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/EXhXezK4cKU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "EXhXezK4cKU",
+                "url": "https://www.youtube.com/watch?v=EXhXezK4cKU",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6iNnfRldLXg",
+            "episode_number": 11,
+            "title": "XYLA's Handsome Hand Tools!!",
+            "description": "Better late than never? You betcha!  Let's see what Xyla cooked up and close the space-time hole we made in Secret Santa!\n\nCheck out Xyla's channel and her build video here:\nhttps://www.youtube.com/@xylafoxlin",
+            "duration": 550,
+            "year": 2025,
+            "published_at": "2025-02-08T19:55:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6iNnfRldLXg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6iNnfRldLXg",
+                "url": "https://www.youtube.com/watch?v=6iNnfRldLXg",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-cQEUI-iKUi4",
+            "episode_number": 12,
+            "title": "Christmas Darts! - Family Recipe - Secret Santa 2024",
+            "description": "#YTMakersSecretSanta \nMerry Christmas one and all; Maker Secret Santa time again!\nThis year I'm building for James Bruton:\n https://www.youtube.com/@jamesbruton\nAnd turns out MY santa is Xyla Foxlin:\n https://www.youtube.com/@xylafoxlin\n\nBe sure to follow along using the handy playlist! \nhttps://youtube.com/playlist?list=PLBsfTOjKcQe-OOKYCcfpSFW0Dtj_9w4qo&si=-S0pLRy-Panm3rdJ\n\n----\nMusic: E's Jammy Jams - Oh Little Town, Twin Musicom - Not Without The Rest, Audionautic - We Wish You A Merry Christmas, Jingle Punks - Auld Lang Syne",
+            "duration": 1212,
+            "year": 2024,
+            "published_at": "2024-12-22T16:01:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cQEUI-iKUi4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cQEUI-iKUi4",
+                "url": "https://www.youtube.com/watch?v=cQEUI-iKUi4",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-vK8CmznlbeU",
+            "episode_number": 13,
+            "title": "BUTT CLAMPS!  (the ones for welding)",
+            "description": "Are you upset at the lack of butt clamp videos?  So am I! \n& decided to do something about it.\n\nEasy to build; these clamp help fixture sheet metal panels in place, positioning your butt joints for easier welding.\n\nEnjoy!\n\n----\nMusic: Twin Musicom - The Halloween Dawn",
+            "duration": 965,
+            "year": 2024,
+            "published_at": "2024-11-12T21:36:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vK8CmznlbeU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vK8CmznlbeU",
+                "url": "https://www.youtube.com/watch?v=vK8CmznlbeU",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-BRAn4XzFRfU",
+            "episode_number": 14,
+            "title": "Fixing Broken Fishnets",
+            "description": "Summer's over & back in the garage: stretching the old muscles with a \"quick\" CNC part to repair a broken landing net.\n\n\n----\nMusic: South Of The Border - Audionautix",
+            "duration": 1038,
+            "year": 2024,
+            "published_at": "2024-09-27T20:24:57Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BRAn4XzFRfU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BRAn4XzFRfU",
+                "url": "https://www.youtube.com/watch?v=BRAn4XzFRfU",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7dRlDmPR3Gk",
+            "episode_number": 15,
+            "title": "The Secret Life Of Gas Springs",
+            "description": "Need a constant force?  Gas springs have got you covered!\nBut how on earth do they do what they do?!\n\nWe need some common ground to understand what's going on.  If you can't stand the wait, jump to 17:28.\n\n--------------\nMusic: Wayne Jones 'Mr. Sunny Face'",
+            "duration": 1472,
+            "year": 2024,
+            "published_at": "2024-07-26T21:24:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7dRlDmPR3Gk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7dRlDmPR3Gk",
+                "url": "https://www.youtube.com/watch?v=7dRlDmPR3Gk",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-GJAZnqrza1Q",
+            "episode_number": 16,
+            "title": "Welder WINNERS! (CHICKEN DINNERS)",
+            "description": "My apologies for the delay but here's to closing the loop on the welder giveaways.  Thanks to everyone who participated and congrats again to the winners!\n\nDave's video starts at 4:05\nDoug's starts at 6:17\nMy video starts at 0:00",
+            "duration": 479,
+            "year": 2024,
+            "published_at": "2024-06-15T18:34:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/GJAZnqrza1Q/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "GJAZnqrza1Q",
+                "url": "https://www.youtube.com/watch?v=GJAZnqrza1Q",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Ia3Iieejyg8",
+            "episode_number": 17,
+            "title": "Over Center Mechanisms But Were Afraid To Ask!",
+            "description": "Good manners and over-center mechanisms are what separates us from the animals.  Let's talk way too much about them!\n\n------\nMusic: Wayne Jones - Mr. Sunny Face / Silent Partner - On Hold",
+            "duration": 1601,
+            "year": 2024,
+            "published_at": "2024-06-07T18:06:40Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Ia3Iieejyg8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Ia3Iieejyg8",
+                "url": "https://www.youtube.com/watch?v=Ia3Iieejyg8",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-xI9KXhGBA5M",
+            "episode_number": 18,
+            "title": "Arbor Press Dental Work!",
+            "description": "Time to get the arbor press off the floor and sorted.\nStick around while we knock out a couple of its teeth and make some simple tooling!\n\n-----\nMusic: Epic TV Theme - Audionautix",
+            "duration": 1688,
+            "year": 2024,
+            "published_at": "2024-03-15T21:11:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xI9KXhGBA5M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xI9KXhGBA5M",
+                "url": "https://www.youtube.com/watch?v=xI9KXhGBA5M",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-2SA85hYxOzk",
+            "episode_number": 19,
+            "title": "So Who Wants A Welder?!",
+            "description": "All the info is in the video.  Must be 18 years or older / Limited to contiguous U.S. / Free to enter.  Ends Friday Dec. 22, 2023, 12 noon EST.\n\nThe manuals for these machines are here: https://usaweld.com/pages/manuals\n\nPlease read the safety information here: \nhttps://cdn.shopify.com/s/files/1/1917/6569/files/Pro_Pulse_220_MTS_Manual_6.1.2023_rev5.pdf?v=1686619193 and here:\nhttps://cdn.shopify.com/s/files/1/1917/6569/files/Invertig_221_Manual_01_21_21.pdf?v=1611266258\n\nMaking a submission to the email addresses in this video means you've read and understood the safety information.\n\nPete Zila's video about gas tanks is here: https://youtu.be/7ajmVtUQDtA?si=yedzmSgIKENih3ED \n\nYouTube is not a sponsor / viewers release YouTube from any liability.\nYouTube community guidelines: https://www.youtube.com/howyoutubeworks/policies/community-guidelines/\n\nNo personal data is collected.  Contact information will be deleted after this ends; won't be shared, etc.",
+            "duration": 672,
+            "year": 2023,
+            "published_at": "2023-12-19T20:19:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2SA85hYxOzk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2SA85hYxOzk",
+                "url": "https://www.youtube.com/watch?v=2SA85hYxOzk",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-oaWtl6UwvmY",
+            "episode_number": 20,
+            "title": "Fancy Pants Clamps!!",
+            "description": "Just to be clear, these are fancy-pants clamps.  Not fancy pants-clamps.\nThough, I'm sure they'd work just fine for that.\n\nIt's YouTube Maker Secret Santa 2023!!  See all the great makers and gifts here: \nhttps://www.youtube.com/playlist?list=PLBsfTOjKcQe-hKw23746QrYRzt_Z7v7rF\n\nBecky's Channel: https://www.youtube.com/@BeckyStern\nEmily's Channel: https://www.youtube.com/@EmilyTheEngineer\n\n---- \nMusic:\nTrack Tribe: Running Errands\nTwin Musicom: Canon & Variations\nJimena Contreras: Oaxacan Tradition",
+            "duration": 949,
+            "year": 2023,
+            "published_at": "2023-12-17T16:05:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/oaWtl6UwvmY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "oaWtl6UwvmY",
+                "url": "https://www.youtube.com/watch?v=oaWtl6UwvmY",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-RaO2OKrXxmw",
+            "episode_number": 21,
+            "title": "Building My DREAM Knife Sharpener",
+            "description": "Granted... it was a weird dream.\n\n\nMusic:\nWayne Jones - Brain Trust",
+            "duration": 1360,
+            "year": 2023,
+            "published_at": "2023-11-23T14:35:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RaO2OKrXxmw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RaO2OKrXxmw",
+                "url": "https://www.youtube.com/watch?v=RaO2OKrXxmw",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-mq1pJ76moxw",
+            "episode_number": 22,
+            "title": "You Say You Want A Revolution? (2500)",
+            "description": "If welders are your thing, pull up a chair, let's chat!\nI've had a chance to try the new Revolution multiprocess welder from HTP, and the jury is in!\n\n\n\n---------------------------------------------------------------------\nMusic: Jimena Contreras - Classic Mariachi",
+            "duration": 1625,
+            "year": 2023,
+            "published_at": "2023-09-30T19:09:48Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mq1pJ76moxw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mq1pJ76moxw",
+                "url": "https://www.youtube.com/watch?v=mq1pJ76moxw",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ps4yC-5NV1c",
+            "episode_number": 23,
+            "title": "Unnecessary SHARPENING JIG!",
+            "description": "Title says it all, but is this the secret the PROs don't want you to know?!!\nI can't say, I didn't' ask.  MAYBE!\n\nI just noticed the title does not, in fact, say it all.  This is a jig build to sharpen my felco pruners.\n\n-----\nMusic: \n\"Josefina\" & \"The Trapezist\" - Quincas Moreira\n\"Grinding Noises\" - my grinder",
+            "duration": 1451,
+            "year": 2023,
+            "published_at": "2023-08-04T16:57:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ps4yC-5NV1c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ps4yC-5NV1c",
+                "url": "https://www.youtube.com/watch?v=ps4yC-5NV1c",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-9FVavOy4GUw",
+            "episode_number": 24,
+            "title": "Let's make TOE CLAMPS",
+            "description": "How often have you wished you had toe clamps but you didn't?!\nME TOO!",
+            "duration": 1423,
+            "year": 2023,
+            "published_at": "2023-07-19T21:02:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9FVavOy4GUw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9FVavOy4GUw",
+                "url": "https://www.youtube.com/watch?v=9FVavOy4GUw",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-c5dGlgdHlaY",
+            "episode_number": 25,
+            "title": "Grinding Saw Chain! in Oregon! (620)",
+            "description": "Recently bought a saw chain grinder; I thought it best to come talk to you about it asap.\n\nLegal disclaimer: I didn't sharpen these in Oregon, though I hear it's nice there.  Just covering my search terms.  Hope you understand.",
+            "duration": 1793,
+            "year": 2023,
+            "published_at": "2023-05-13T20:43:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/c5dGlgdHlaY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "c5dGlgdHlaY",
+                "url": "https://www.youtube.com/watch?v=c5dGlgdHlaY",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-5uwqiWp5prY",
+            "episode_number": 26,
+            "title": "Rebuilding &/or Replacing BALL NUTS",
+            "description": "A misadventure in re-balling a ball nut!",
+            "duration": 1240,
+            "year": 2023,
+            "published_at": "2023-04-16T13:13:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/5uwqiWp5prY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "5uwqiWp5prY",
+                "url": "https://www.youtube.com/watch?v=5uwqiWp5prY",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-u-CeA29bFiY",
+            "episode_number": 27,
+            "title": "MILWAUKEE ?!?!?!",
+            "description": "My mom always says if you can't say something nice... etc.\nBut this might be a teachable moment.\nThat... and I'm sad.\n\nLet's talk about Milwaukee's new cordless pruner, shall we?\n\nMusic: Hookah Bar - Silent Partner",
+            "duration": 1255,
+            "year": 2023,
+            "published_at": "2023-02-18T14:38:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/u-CeA29bFiY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "u-CeA29bFiY",
+                "url": "https://www.youtube.com/watch?v=u-CeA29bFiY",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ncbJkz1zHOI",
+            "episode_number": 28,
+            "title": "How Much Does A $3 Collet Cost?",
+            "description": "A $3 collet:  $3.\nEconomic and emotional damage:  Priceless.\n\n--------\nMusic: Stalking Prey - Audionautix",
+            "duration": 1110,
+            "year": 2023,
+            "published_at": "2023-01-28T16:07:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ncbJkz1zHOI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ncbJkz1zHOI",
+                "url": "https://www.youtube.com/watch?v=ncbJkz1zHOI",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lbtcxBd0LFI",
+            "episode_number": 29,
+            "title": "Making Christmas Screwdrivers !!",
+            "description": "#YTMakersSecretSanta\nTis The Season to... build something!  Follow along as I try to figure out what and how the heck to make a Christmas gift.\n\nspoiler: it's screwdrivers.\n\nSee if the screwdrivers break on Sam's channel: \nhttps://youtu.be/5gilhOpXEUk\nhttps://www.youtube.com/@LOOKMUMNOCOMPUTER/featured\n\nAnd check out Becky Stern's great channel!  Thanks again Becky!\nhttps://www.youtube.com/@BeckyStern\n\nThe whole playlist: https://www.youtube.com/playlist?list=PLBsfTOjKcQe9Kw8hLmO8mmNIpraOUF-c7\n\n\n\nmusic:\nCanon&Variation / Twin Musicom\nDuck In The Alley / TrackTribe",
+            "duration": 1784,
+            "year": 2022,
+            "published_at": "2022-12-18T16:08:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lbtcxBd0LFI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lbtcxBd0LFI",
+                "url": "https://www.youtube.com/watch?v=lbtcxBd0LFI",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7Y6_cmIWj2c",
+            "episode_number": 30,
+            "title": "Will it Black an Entire Aluminum Part?",
+            "description": "The answer is not really.  Well not the way you might expect.\nThat, or I did it completely wrong.",
+            "duration": 1279,
+            "year": 2022,
+            "published_at": "2022-09-17T21:22:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7Y6_cmIWj2c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7Y6_cmIWj2c",
+                "url": "https://www.youtube.com/watch?v=7Y6_cmIWj2c",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-W9rlWu9KWe8",
+            "episode_number": 31,
+            "title": "BUILD: FILING VISE!",
+            "description": "Ever wished you had a special vise just for filing?!  ME TOO!  Let's build one.\n\n-----\nMusic: Sand Castle - Quincas Moreira",
+            "duration": 1178,
+            "year": 2022,
+            "published_at": "2022-08-11T21:43:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/W9rlWu9KWe8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "W9rlWu9KWe8",
+                "url": "https://www.youtube.com/watch?v=W9rlWu9KWe8",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Vvqv0MThNFI",
+            "episode_number": 32,
+            "title": "PULSED MIG WELDING! at Home!  (HTP ProPulse)",
+            "description": "Say goodbye to the constant voltage MIG welding from your childhood... hello PULSED!\n\nThis is my first real go at pulsed mig with the HTP ... come play along!\n\n----\nMusic: Higher Octane / Vans in Japan & A Night Alone / TrackTribe.",
+            "duration": 1708,
+            "year": 2022,
+            "published_at": "2022-05-07T15:23:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Vvqv0MThNFI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Vvqv0MThNFI",
+                "url": "https://www.youtube.com/watch?v=Vvqv0MThNFI",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-PqsOgGhIsPg",
+            "episode_number": 33,
+            "title": "Turn a CUBE on a LATHE?!",
+            "description": "Everyone says turning a cube on the lathe is hard, but it couldn't be easier!\nGranted, it's an aluminum cube, but still: No sweat!\n\nOkay maybe a little sweat.",
+            "duration": 535,
+            "year": 2022,
+            "published_at": "2022-04-01T13:04:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PqsOgGhIsPg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PqsOgGhIsPg",
+                "url": "https://www.youtube.com/watch?v=PqsOgGhIsPg",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-XWWPcWy0zmY",
+            "episode_number": 34,
+            "title": "Dampers... WHAT A DRAG!",
+            "description": "Your daily intake of dampers low?  I've got you covered!\nTurn your project up a notch (but slower) with one of these!\nRotary, linear, hybrid, dapper, we got all types.\n\n\n---------\nMusic: Switched on Carcassi - Brian Bolger",
+            "duration": 821,
+            "year": 2022,
+            "published_at": "2022-03-20T19:35:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XWWPcWy0zmY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XWWPcWy0zmY",
+                "url": "https://www.youtube.com/watch?v=XWWPcWy0zmY",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-tSh0CZQ5Qa0",
+            "episode_number": 35,
+            "title": "New Bender!  And Other Musings (UB-100)",
+            "description": "Finally replacing the old junky import bender with a NEW junky import bender!\n\nFor the searches: I'm not really sure if this is a UB-100 or UB-100A but I'm going to say both out loud.",
+            "duration": 1480,
+            "year": 2022,
+            "published_at": "2022-03-13T22:24:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/tSh0CZQ5Qa0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "tSh0CZQ5Qa0",
+                "url": "https://www.youtube.com/watch?v=tSh0CZQ5Qa0",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-usRMtTFKpmI",
+            "episode_number": 36,
+            "title": "Can You Weld Cast Iron??",
+            "description": "Sometimes cast iron welds crack.  Sometimes they don't.  \nHere are some pointers I've picked up over the years.\nCaveat:  I'm a stunt welder, not a real welder.  \n\n\n------\nMusic: Hovering Thoughts - SPENCE",
+            "duration": 1391,
+            "year": 2022,
+            "published_at": "2022-02-04T21:14:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/usRMtTFKpmI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "usRMtTFKpmI",
+                "url": "https://www.youtube.com/watch?v=usRMtTFKpmI",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-J9jLCAWJfPs",
+            "episode_number": 37,
+            "title": "Making a Slip Joint Knife",
+            "description": "#YTMakersSecretSanta \nThis year we're making an elegant folding knife for Xlya Foxlin!\nI don't know why... I'VE NEVER MADE A FOLDING KNIFE!\n\nCheck out Xyla's channel here, find out what she thinks and, more importantly... does it break?!? https://www.youtube.com/c/xylafoxlin\n\nSee the whole 2021 Makers Secret Santa thing here:\nhttps://www.youtube.com/playlist?list=PLBsfTOjKcQe-dxiUtDUMUkOL3bXDowADb\n\n\n\n---\nMusic: Dance of the Sugar Plum Fairy - Kevin McLeod, Jingle Bells - Jingle Punks, Last Horizon - Silent Partner",
+            "duration": 1552,
+            "year": 2021,
+            "published_at": "2021-12-23T19:05:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/J9jLCAWJfPs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "J9jLCAWJfPs",
+                "url": "https://www.youtube.com/watch?v=J9jLCAWJfPs",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-HnJ1XZellPk",
+            "episode_number": 38,
+            "title": "CNC Checkering!!",
+            "description": "CNC checkering using Mach4's Surface Mapping.\n\nAnd a hammer.  Always a hammer.\n\n---\nMusic: Fiesta de La Vida - AaronKenny",
+            "duration": 483,
+            "year": 2021,
+            "published_at": "2021-12-18T21:31:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/HnJ1XZellPk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "HnJ1XZellPk",
+                "url": "https://www.youtube.com/watch?v=HnJ1XZellPk",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-VY4cevyGYA4",
+            "episode_number": 39,
+            "title": "CNC Surface Mapping... ON EARTH!",
+            "description": "ADVENTURES! in surface height mapping and CNC.\nI think this is sometimes called surface digitizing, but I can see this coming in real handy for non-critical machining work such as engraving, perhaps.\n\n-----\nthumbnail background: Nadjib BR / Unsplash.",
+            "duration": 841,
+            "year": 2021,
+            "published_at": "2021-12-16T19:01:57Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/VY4cevyGYA4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "VY4cevyGYA4",
+                "url": "https://www.youtube.com/watch?v=VY4cevyGYA4",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lAIXPu-gFNg",
+            "episode_number": 40,
+            "title": "Pruning For Machinists!",
+            "description": "Do you really like your pruning saw?\nHave you ever wish it was powered?\nDo I have any more leading questions?\n\nNope.\n\nEnjoy!",
+            "duration": 1200,
+            "year": 2021,
+            "published_at": "2021-12-05T20:33:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lAIXPu-gFNg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lAIXPu-gFNg",
+                "url": "https://www.youtube.com/watch?v=lAIXPu-gFNg",
+                "channel_id": "UC5NO8MgTQKHAWXp6z8Xl7yQ",
+                "channel_title": "This Old Tony",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}
