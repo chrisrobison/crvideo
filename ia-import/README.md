@@ -348,6 +348,91 @@ future maintenance:
   is exactly the grouping key `MediaResolver` uses, confirming that
   heuristic against real data, not just the hand-built fixtures.
 
+## ia-series-import.php: a portable series.json, instead of a fixed schedule
+
+Everything above (`ia-import.php`) builds a *fixed-block* `catalog.json` +
+`schedule.json` directly -- the right shape for a channel like
+`channels/film-day-at-school` that airs one hand-picked list on a loop.
+It is untouched by what follows and keeps working exactly as before.
+
+`ia-series-import.php` is a second, additive CLI living alongside it in
+this same directory, reusing `ArchiveMetadataClient`/`MediaResolver`/
+`DurationParser` (identical metadata fetching and media resolution -- same
+cache, same license-never-assumed policy, same "never fabricate a
+duration" rule) but writing a portable `series/<id>/series.json` instead
+(see `docs/series-and-channels.md`) -- the same schema every YouTube
+series already uses, so an IA-backed show can be approved episode-by-
+episode and aired on a recurring `programming.json` schedule via
+`channels/publish.php`, exactly like `channels/science`'s YouTube shows
+already are.
+
+```sh
+# Discover by IA collection (shorthand for --query="collection:(ID)")
+php ia-series-import.php --collection=prelinger \
+  --output=../series/retro-prelinger/series.json --rows=200
+
+# Or a raw advancedsearch.php query
+php ia-series-import.php --query="collection:(classic_tv_commercials)" \
+  --output=../series/retro-commercials/series.json
+
+# Or a pre-fetched IA user list (same format ia-import.php reads)
+php ia-series-import.php --list=my-list.json \
+  --output=../series/retro-curated/series.json
+
+# Or an explicit identifier list
+php ia-series-import.php --identifiers=AboutBan1935,Doctorin1946 \
+  --output=../series/retro-health-films/series.json
+```
+
+Every new item becomes episode `status: "candidate"`, `rights: {"status":
+"unverified"}` -- **always**, regardless of what IA's own `licenseurl`
+metadata says (even an unambiguous `.../publicdomain/` URL). The raw
+license string is still preserved every refresh, at
+`episode.source.license`, for a human editor to read and decide; nothing
+in this tool ever promotes a candidate or infers rights from a successful
+fetch. See `src/IaSeriesBuilder.php`'s header for the exact field-freezing
+rules (identical in spirit to `youtube-import/src/YouTubeSeriesBuilder.php`).
+
+### Why `source.provider` is the literal string `"html5"`
+
+A directly-hosted episode's `source.provider` must be exactly the literal
+string `"html5"` -- not `"internet_archive"` or anything else descriptive.
+`channels/broadcast.js`'s provider dispatch only ever special-cases two
+provider values: `"youtube"` (routes to the YouTube iframe adapter) and
+the literal string `"html5"` (shows the `<video>` element and routes to
+`Html5PlayerAdapter`). Any other string is accepted by the schema (for
+future-proofing) but never actually wired to playback. The series-level
+`source.provider` (`"internet_archive"`) is a different, unrelated field
+-- that one is purely descriptive bookkeeping about where the *show*
+comes from, never read by the player.
+
+### `source.url` vs `source.page_url`
+
+A YouTube episode's `source.url` is already the human-readable watch page
+*and* enough to build the embed (via `video_id`) -- one field serves both
+jobs. A directly-hosted episode doesn't have that luxury: the thing that's
+actually playable (an `.mp4` download link) and the thing worth showing
+as "the source" (an archive.org `/details/` page) are two different URLs.
+So `IaSeriesBuilder` writes both: `source.url` is always the direct
+playable media file (what `channels/publish/src/ScheduleWriter.php` turns
+into `media_url`), and `source.page_url` is the human-readable attribution
+page (what `channels/publish/src/ProgrammingCompiler.php` prefers for the
+published `source_url`, falling back to `source.url` when `page_url` is
+absent -- which is every pre-existing episode, so nothing already
+published changes).
+
+### Known limitations specific to this tool
+
+- Discovery via `--collection`/`--query` only ever lists identifiers
+  (`archive.org/advancedsearch.php`, `fl[]=identifier`); it has no
+  understanding of item quality, duplicates across collections, or
+  licensing beyond what `MediaResolver` already surfaces per item.
+- `--sort` is passed straight through to `advancedsearch.php`
+  (default `"downloads desc"`); an invalid sort field is whatever
+  archive.org itself does with one (no client-side validation).
+- Like `ia-import.php`, a multi-part vs. ambiguous grouping is a naming
+  heuristic (`MediaResolver`), not content inspection.
+
 ## Known limitations / deliberate simplifications
 
 Being upfront about what was simplified under time constraints:

@@ -45,16 +45,16 @@ function ia_import_bytes(string|false $iniValue): int
 
 const IA_ROOT = __DIR__;
 
-require IA_ROOT . '/src/DurationParser.php';
-require IA_ROOT . '/src/ArchiveListParser.php';
-require IA_ROOT . '/src/MetadataCache.php';
-require IA_ROOT . '/src/ArchiveMetadataClient.php';
-require IA_ROOT . '/src/MediaResolver.php';
-require IA_ROOT . '/src/MediaCatalog.php';
-require IA_ROOT . '/src/ScheduleOptimizer.php';
-require IA_ROOT . '/src/FillerSelector.php';
-require IA_ROOT . '/src/ScheduleExporter.php';
-require IA_ROOT . '/src/ImportReporter.php';
+require_once IA_ROOT . '/src/DurationParser.php';
+require_once IA_ROOT . '/src/ArchiveListParser.php';
+require_once IA_ROOT . '/src/MetadataCache.php';
+require_once IA_ROOT . '/src/ArchiveMetadataClient.php';
+require_once IA_ROOT . '/src/MediaResolver.php';
+require_once IA_ROOT . '/src/MediaCatalog.php';
+require_once IA_ROOT . '/src/ScheduleOptimizer.php';
+require_once IA_ROOT . '/src/FillerSelector.php';
+require_once IA_ROOT . '/src/ScheduleExporter.php';
+require_once IA_ROOT . '/src/ImportReporter.php';
 
 function ia_import_usage(): string
 {
