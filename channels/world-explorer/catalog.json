@@ -1,0 +1,20 @@
+{
+  "_note": "\"items\" is empty -- this channel is entirely series-driven, same shape as channels/science, channels/pet-central and channels/comedy-club. Nine series back the 15-block, 24-hour daily grid in programming.json: eight real YouTube imports from six official publisher channels (Rick Steves' Europe; DW Travel; Geography Now; DW Documentary, as two playlists -- its 'Travel' and 'Train Ride Documentaries' playlists, with the overlap de-duplicated; Kara and Nate's long-form-only uploads playlist UULF<channel>; and Mark Wiens' long-form-only uploads playlist imported twice as two disjoint regional editorial series, Asia & the Middle East and Africa & Latin America, so each prime-time hour stays on one part of the map) plus one Internet Archive series of public-domain travelogues. See each series/<id>/series.json for the full episode list and per-episode editorial status/notes. YouTube episodes carry rights.status \"unverified\" (YouTube embed only; needs human rights review); IA episodes are approved only where IA itself declares public domain. Tourism-board-sponsored, hotel/resort/airline/cruise showcase and listicle uploads were rejected across every source.",
+  "schema_version": 2,
+  "title": "World Explorer",
+  "items": [],
+  "series": [
+    { "ref": "../../series/rick-steves-europe/series.json" },
+    { "ref": "../../series/dw-travel-explore-europe/series.json" },
+    { "ref": "../../series/geography-now/series.json" },
+    { "ref": "../../series/kara-and-nate/series.json" },
+    { "ref": "../../series/mark-wiens-asia/series.json" },
+    { "ref": "../../series/mark-wiens-africa-americas/series.json" },
+    { "ref": "../../series/dw-documentary-travel/series.json" },
+    { "ref": "../../series/dw-train-journeys/series.json" },
+    { "ref": "../../series/vintage-travelogues/series.json" }
+  ],
+  "continuity": [
+    { "ref": "./continuity.json" }
+  ]
+}

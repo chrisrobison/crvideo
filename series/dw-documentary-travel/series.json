@@ -1,0 +1,1372 @@
+{
+    "schema_version": 1,
+    "id": "dw-documentary-travel",
+    "title": "DW Documentary: Travel",
+    "description": "Full documentaries on travel",
+    "creator": "DW Documentary (Deutsche Welle)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+        "channel_url": "https://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q",
+        "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-C_ODFlqURxY",
+            "episode_number": 45,
+            "title": "From Rio to Lima – Transoceânica, the world's longest bus journey (1/5) | DW Documentary",
+            "description": "From Brazil’s Rio de Janeiro to Lima, Peru, the world’s longest bus ride takes 100 hours and spans 6,300 kilometers. Hop aboard for an unforgettable journey along the South America’s Transoceânica highway!\n\nThe first leg of the journey starts on the Atlantic shore, exploring the Costa Verde, one of the most beautiful coastlines in the country. But it’s not long until the bus crosses into Mato Grasso, the agricultural heart of Brazil, where soy fields and sugar cane plantations dominate the landscape. \n\nThe region is also the home of the rodeo, a regular event in the villages along the Transoceânica route. We even find female rodeo riders here in spite of all the cultural prejudices.\n\nParts 2-5:\nPart 2: https://www.youtube.com/watch?v=Gkdt36SNc7Q\nPart 3: https://www.youtube.com/watch?v=iIeq7LpfX88&t=12s\nPart 4: https://www.youtube.com/watch?v=vbAoM23sK7o&t=46s\nPart 5: https://www.youtube.com/watch?v=7sVazu3D5hY\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttps://www.dw.com/documentaries \nInstagram:\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories",
+            "duration": 2550,
+            "year": 2017,
+            "published_at": "2017-02-03T15:09:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/C_ODFlqURxY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "C_ODFlqURxY",
+                "url": "https://www.youtube.com/watch?v=C_ODFlqURxY",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-Gkdt36SNc7Q",
+            "episode_number": 44,
+            "title": "From Rio to Lima – Transoceânica, the world's longest bus journey (2/5) | DW Documentary",
+            "description": "The Amazon basin in Brazil is home to the indigenous Suri people – and is also the next stop on our bus ride down the Transoceânica highway. The drive along the longest bus route in the world continues through South America.\n\nPassing through Rondônia, passengers expect an unforgettable journey through the Amazon basin. But there isn’t much left to see of the jungle – deforestation means the rainforest is shrinking, and with it the indigenous people who call it home. Before the highway passed through their land, the Suri tribe lived here. But outsiders carrying smallpox wiped out nearly the whole population. Those that are left live on a reserve and are fighting to protect the rainforest. \n\nThe bus hits problems as it continues through Rondônia. In Vista Alegre do Abunã, the villagers have blocked the road with a burning barricade. Will the bus be able to get round it?\n\nParts 1-5:\nPart 1: https://www.youtube.com/watch?v=C_ODFlqURxY\nPart 3: https://www.youtube.com/watch?v=iIeq7LpfX88\nPart 4: https://www.youtube.com/watch?v=vbAoM23sK7o\nPart 5: https://www.youtube.com/watch?v=7sVazu3D5hY\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttps://www.dw.com/documentaries \nInstagram: \nhttps://www.instagram.com/dwdocumentary\nFacebook:\nhttps://www.facebook.com/dw.stories",
+            "duration": 2551,
+            "year": 2017,
+            "published_at": "2017-02-10T15:00:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gkdt36SNc7Q/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Gkdt36SNc7Q",
+                "url": "https://www.youtube.com/watch?v=Gkdt36SNc7Q",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-iIeq7LpfX88",
+            "episode_number": 43,
+            "title": "From Rio to Lima – Transoceânica, the world's longest bus journey (3/5) | DW Documentary",
+            "description": "From Brazil to Peru via the Andes, the bus crosses its first international border as it continues its trip through the Amazon of South America. This section of the Transoceânica highway is known as the “Gold Road”, where fortune hunters and adventurers illegally pan for gold.\n\nA raid on illegal gold prospectors is underway. The Peruvian government estimates that 20,000 people are panning for gold here - illegally. At the end of May 2016, most of the region of Madre de Dios was declared an emergency area after mercury used in gold extraction threatened to poison 50,000 people. \n\nEvery few months, raids are carried out - but with limited success. The panhandlers return to their sites soon after the police have left. During the raids, the prospectors sometimes block the highway for days.\n\nBut the Transoceânica bus passes through this region without incident. \n\nParts 1-5:\nPart 1: https://www.youtube.com/watch?v=C_ODFlqURxY\nPart 2: https://www.youtube.com/watch?v=Gkdt36SNc7Q\nPart 4: https://www.youtube.com/watch?v=vbAoM23sK7o&t=46s\nPart 5: https://www.youtube.com/watch?v=7sVazu3D5hY\n\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttps://www.dw.com/documentaries \nInstagram: \nhttps://www.instagram.com/dwdocumentary\nFacebook:\nhttps://www.facebook.com/dw.stories",
+            "duration": 2551,
+            "year": 2017,
+            "published_at": "2017-02-17T16:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iIeq7LpfX88/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iIeq7LpfX88",
+                "url": "https://www.youtube.com/watch?v=iIeq7LpfX88",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-vbAoM23sK7o",
+            "episode_number": 42,
+            "title": "From Rio to Lima – Transoceânica, the world's longest bus journey (4/5) | DW Documentary",
+            "description": "From the Amazon to the Andes and all the way up to Machu Picchu, the bus continues its journey through South America on the Transoceânica highway.\n\nThe mountains mark the most difficult stage of the trip for both drivers and passengers. But the passengers have a large part of the journey behind them now and it won’t be long until they reach Peru. They have crossed Brazil and driven through the Peruvian Amazon basin to the Andes. Here, the endless greenery of the basin gives way to increasingly steep rock faces.\n\nThe Incas worshipped these mighty mountains as deities and called them Apus - Gods. The road takes us close to one of them: Apu Ausangate, which is 6,384 meters high. The temperature here is much lower than in the Amazon basin.\n\nThe bus soon reaches Cuzco. For centuries the town was the center of the Inca Empire, until the Spaniards came and burnt it to the ground and built their own palaces on its walls. Today, the city is mainly one thing: a tourist magnet, and the starting point for tours to the legendary ruins of Machu Picchu. The complex is crumbling under the tread of millions of visitors from all over the world, and now the authorities are facing a dilemma: on the one hand, the tourists bring money; on the other the archaeologists want to preserve Machu Picchu for generations to come.\n\nParts 1-5:\nPart 1: https://www.youtube.com/watch?v=C_ODFlqURxY\nPart 2: https://www.youtube.com/watch?v=Gkdt36SNc7Q\nPart 3: https://www.youtube.com/watch?v=iIeq7LpfX88&t=12s\nPart 5: https://www.youtube.com/watch?v=7sVazu3D5hY\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttps://www.dw.com/documentaries \nInstagram:\nhttps://www.instagram.com/dwdocumentary\nFacebook:\nhttps://www.facebook.com/dw.stories",
+            "duration": 2551,
+            "year": 2017,
+            "published_at": "2017-02-25T03:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vbAoM23sK7o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vbAoM23sK7o",
+                "url": "https://www.youtube.com/watch?v=vbAoM23sK7o",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-7sVazu3D5hY",
+            "episode_number": 41,
+            "title": "From Rio to Lima – Transoceânica, the world's longest bus journey (5/5) | DW Documentary",
+            "description": "In the final installment of Transoceânica, the bus goes from the Andes to the Peruvian coastal desert and then on to the capital Lima. \n\nIn Peru, roughly three times as many people, per capita, are killed on the roads as in Germany or France. Dangerous places in the Andes are often given names such as \"Death Bend\" or \"Jinxed Bend”, marking the spot where people have died. On the high plateau of the Andes, we find vicuñas, a type of lama, which produce the most expensive wool in the world. However, a parasite has recently decimated vicuña stocks, attacking the animals’ skin, leaving them unable to cope with the cold and rain. The western slopes of the Andes are dusty and dry. These mark the start of the Peruvian coastal desert, where the Nazca culture developed over 2,000 years ago. All that remains now are the famous Nazca Lines, enormous geoglyphs etched into the hard floor of the desert. The road then turns north along the Pacific coast, where there are numerous fishing villages. One of them is Pisco, where the local fishing trade has been badly hit by the El Niño weather phenomenon. And then finally, after 144 hours and 6,300 kilometers on the bus, we arrive in Lima - just two days late.\n\nWatch the other parts of the journey:\nPart 1: https://www.youtube.com/watch?v=C_ODFlqURxY&t=6s\nPart 2: https://www.youtube.com/watch?v=Gkdt36SNc7Q\nPart 3: https://www.youtube.com/watch?v=iIeq7LpfX88\nPart 4: https://www.youtube.com/watch?v=vbAoM23sK7o&t=46s\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39... \nFor more information visit:\nhttps://www.dw.com/documentaries \nInstagram:\nhttps://www.instagram.com/dwdocumentary\nFacebook:\nhttps://www.facebook.com/dw.stories",
+            "duration": 2551,
+            "year": 2017,
+            "published_at": "2017-03-03T16:59:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7sVazu3D5hY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7sVazu3D5hY",
+                "url": "https://www.youtube.com/watch?v=7sVazu3D5hY",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-lqSoLVkYYu0",
+            "episode_number": 40,
+            "title": "Traveling Iran by train | DW Documentary",
+            "description": "Iran is opening its doors to foreigners and a train ride from the Persian Gulf to the Caspian Sea is a great way to get to know the country and its people.\n\nThe travel restrictions that are now being lifted were in place for decades. Many Iranians are hoping they will now be able to lead a freer life – and we meet many of these hospitable and welcoming people on our journey through the Middle Eastern nation. \n\nThe country’s most important rail link, the Trans-Iranian Railway, runs for approximately 1400 kilometers from the Persian Gulf via Teheran to the Caspian Sea. The journey starts in Khorramshahr on the Shatt al-Arab, the river border between Iraq and Iran.\n\nTraveling past oil fields, the train reaches Shushtar. One of the top sights here is the historic hydraulic system, now a UNESCO World Heritage Site. After that, the train heads up into the Zagros Mountains. The journey is interrupted by a break for prayer. Breath-taking landscapes move past the train window until we reach the highest point not only of our journey but of the entire rail network: 2,200 meters above sea level between Dorud and Arak.\n\nDuring a brief stop in Qom, travelers can refuel with sohan, a pastry made of wheat germ, flour and sugar. The next section of the track is high-speed and we continue on to Teheran at 160 km/h. The metropolitan area is home to more than 15 million people. The last leg takes us to the north of the country.\n\nIn the Alborz Mountains, we find out what role the Trans-Iranian Railway played during Stalin’s major offensive against the German army in World War II. Our oriental rail adventure ends in Bandar-e Torkaman on the Caspian Sea.\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttps://www.dw.com/documentaries \nInstagram:\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories",
+            "duration": 2545,
+            "year": 2017,
+            "published_at": "2017-05-12T15:00:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lqSoLVkYYu0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lqSoLVkYYu0",
+                "url": "https://www.youtube.com/watch?v=lqSoLVkYYu0",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-zA6TWnquOYo",
+            "episode_number": 39,
+            "title": "Cuba - nostalgia and change | DW Documentary",
+            "description": "Fidel Castro brought revolution to Cuba in 1959. But the country has been stuck between nostalgia and new beginnings ever since. \n\nWith its vintage cars and crumbling facades, Havana looks like it’s stuck in a time warp. But young Cubans are optimistic about the future, and material shortages make for inventiveness. To compensate for the lack of a reliable Internet, for example, they invented \"El Paquete,\" an elaborate information network that stretched across the island thanks to portable hard drives. It brings the Bundesliga, telenovelas and US TV shows to even the most remote villages.\n\nAs the 1962 missile crisis finally fades into history, Cuba is slowly opening up. The owner of Havana’s most chic restaurant, \"La Guarida,\" has reached a deal with some young architects: The profits from the restaurant will go towards restoring the old mansion it’s housed in. This kind of trade-off is increasingly common.\n\nOur documentary shows a country caught between upbeat dreams for the future and nostalgic melancholy. It takes us from Havana to Santiago de Cuba, a city famous for its rum, to the Sierra Maestra mountains, steeped in revolutionary romance, and the white, sandy beaches in the north of the island.\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttps://www.dw.com/documentaries \nFacebook:\nhttps://www.facebook.com/dw.stories",
+            "duration": 2546,
+            "year": 2017,
+            "published_at": "2017-05-21T02:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zA6TWnquOYo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zA6TWnquOYo",
+                "url": "https://www.youtube.com/watch?v=zA6TWnquOYo",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-fyYo6quHZss",
+            "episode_number": 38,
+            "title": "The impact of terrorism on tourism | DW Documentary",
+            "description": "Tunisia, Egypt and Turkey: tourists to these countries are often targeted by terrorists. A climate of fear prevails and holidaymakers are staying away.\n\nAttacks on foreign tourists set off a disastrous chain reaction: first they bring fear, then the tourists stay away and the economy takes a nosedive, leading to job losses and more radicalization.\nTourism sectors in countries such as Tunisia, Egypt and Turkey have traditionally provided unskilled workers with jobs that allow them to feed their families. But with fears of terrorism affecting visitor numbers to Muslim countries, more and more people are unemployed and becoming desperate, with state help almost non-existent.\n\nWe look at the dire social situation in these countries, and examine the impact of anti-terrorism policies there. Tunisia’s fledgling democracy is increasingly clamping down on returnees from IS regions and tightening its security, while Egypt's military regime is pursuing a much stricter security regime and using widespread surveillance. Turkey, meanwhile, is using the fight against terrorists as a pretext to step up authoritarian controls.\n\nMeet people who are desperately hoping the tourists will return, politicians, terrorists, journalists and civil rights activists.\n\n[Reupload of documentary published 06.05.2017]\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttps://www.dw.com/documentaries \nFacebook:\nhttps://www.facebook.com/dw.stories \n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 2546,
+            "year": 2017,
+            "published_at": "2017-07-20T15:00:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fyYo6quHZss/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fyYo6quHZss",
+                "url": "https://www.youtube.com/watch?v=fyYo6quHZss",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-ykAisB_4WLg",
+            "episode_number": 37,
+            "title": "A journey through Mongolia | DW Documentary",
+            "description": "Fashion and Mongolia - on a journey through her homeland, Saruul Fischer explains how she connected her two passions.\n\nSaruul Fischer left Mongolia for East Germany at the age of eleven. But she still felt a strong attachment to her homeland. Later she developed a fashion label that would allow her to connect her two homes. In Ulaanbaatar, her company \"Edelziege” manufactures clothing from fine cashmere which is then sold in Germany.\n\nThis documentary accompanies Saruul Fischer on a trip back home to Mongolia. The capital of Ulaanbaatar is no longer the city of her childhood memories, but she still regularly visits relatives there. Her trip takes her to the west of the country, where she sleeps in a yurt on the expansive steppe. What does the fashion designer think about the changes that have taken place in Mongolia? How has this transformation affected the Mongolians’ affinity with their traditions? Saruul shows us a life far from civilization, a life that may not exist much longer.\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttp://www.dw.com/documentaries \nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories \n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 2550,
+            "year": 2017,
+            "published_at": "2017-08-11T17:00:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ykAisB_4WLg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ykAisB_4WLg",
+                "url": "https://www.youtube.com/watch?v=ykAisB_4WLg",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-s8VNJ88AFWw",
+            "episode_number": 36,
+            "title": "By train across Sri Lanka | DW Documentary",
+            "description": "Asia’s most beautiful railway line? The “Main Line” cuts through tea plantations and jungle, then passes Buddhist temples and relicts of the British Empire. \n\nIn the 19th century the British built a railway in what was then their colony of Ceylon. Their idea was to transport goods such as tea from the highlands to the port of Colombo. Today it’s mainly only locals and tourists who use the so-called \"Main Line.\" The route is considered one of the most picturesque in the whole of Asia.\n\nOur trip takes us from the capital, Colombo, to Ella in the highlands. Our first stop is one of the country’s largest elephant orphanages. And then on to Kandy, the former capital of the Singhalese kingdom. The city is home to the famous Temple of the Tooth, which is said to house the Buddha’s top left canine. The train then winds its way further up into the highlands. We watch tea pickers at work and go to a tea factory to discover where the aroma comes from. Nuwara Eliya is Sri Lanka’s highest town at an altitude of almost 1900 meters, where a racecourse still brings the colonial era back to life. The stations have also retained their own colonial charm: in 1901, a signaling system was set up to make the long journey safer. And those suffering from the altitude can catch their breath at the final stop, the spa in Ella.\n_______ \n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttp://www.dw.com/documentaries \nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories \n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 2546,
+            "year": 2017,
+            "published_at": "2017-09-20T19:00:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/s8VNJ88AFWw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "s8VNJ88AFWw",
+                "url": "https://www.youtube.com/watch?v=s8VNJ88AFWw",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-OntOGcWRvHA",
+            "episode_number": 35,
+            "title": "A train ride through American history - New Orleans to New York | DW Documentary",
+            "description": "From New Orleans to New York, a train ride aboard the \"Crescent\" takes you on an extraordinary journey through American history.\n\nThis train journey begins in the \"cradle of jazz\" - New Orleans. Three famous express trains start and terminate here: the City of New Orleans, the Sunset Limited and the Crescent, named after a New Orleans neighborhood. Every morning at 7 a.m. the Crescent sets off from New Orleans on its 1,377-mile journey from the Deep South to pulsating New York City.\n\nThe distance is covered in around 31 hours. The route takes in various famous cities on the journey northeast. Birmingham, Alabama is also known as \"Bombingham\" after the attacks launched there by the Ku Klux Klan during the civil rights movement era between 1947 and 1965. The train then heads to Atlanta, the largest city in Georgia. Charlotte in North Carolina was named nearly 250 years ago after Charlotte of Mecklenburg-Strelitz, the German wife of Britain’s King George III. Our next stop is Washington D.C., capital of the United States since 1800. Beforehand that honor had gone to a city further north: Philadelphia, Pennsylvania, where the Declaration of Independence was proclaimed in 1776. The final stop on this unique train journey is New York City aka the \"Big Apple\".\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttp://www.dw.com/documentaries \nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories \n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 2546,
+            "year": 2017,
+            "published_at": "2017-10-26T16:25:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/OntOGcWRvHA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "OntOGcWRvHA",
+                "url": "https://www.youtube.com/watch?v=OntOGcWRvHA",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-Egzd7PsmNTo",
+            "episode_number": 34,
+            "title": "St. Helena - A remote island in the Atlantic | DW Documentary",
+            "description": "Every third week, a British Royal Mail ship begins its journey from Cape Town to Saint Helena, the remote island in the Atlantic where Napoleon was once in exile.\n\nIt’s like the end of the world in the middle of the Atlantic. Five days, with a northwesterly course, and only then do the sheer black cliffs appear in front of RMS St. Helena. The island’s 4500 residents are often waiting impatiently for the ship’s arrival and panic if the schedule changes. Director Thomas Denzel and his team went on the journey to Saint Helena and met the people living on the island. Many of the residents are descendants of people who were sent into exile there by the British crown - the most famous among them, the French Emperor Napoleon. This is a report about life at the end of the world, loneliness, unique vegetation, and a very special journey.\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttp://www.dw.com/documentaries \nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories \n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 1556,
+            "year": 2017,
+            "published_at": "2017-10-28T14:00:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Egzd7PsmNTo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Egzd7PsmNTo",
+                "url": "https://www.youtube.com/watch?v=Egzd7PsmNTo",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-xC4h7SA6sBc",
+            "episode_number": 33,
+            "title": "Welcome to Bangkok, Thailand | DW Documentary",
+            "description": "Thailand’s capital city, Bangkok, is unique. This film reveals the best spots: well-known locations, and places off the beaten track. \n\nOur report provides a detailed guide to Asia’s most exciting city. For transportation, visitors and local residents alike can choose from motorized rickshaws, taxis, subways, or the sky train. There are also express boats that ply the Chao Phraya River -- plus long-tail boats, and vessels that make their way through the city's khlongs, or canals. This journey of discovery takes us to the places where Bangkok residents go to rest and relax -- like the island of Ko Samet in the Gulf of Thailand. This is the capital's version of Wannsee Lake in Berlin.  You can book a river cruise, or visit one of the trendy open-air bars perched atop high-rise buildings. A lot of younger Bangkok residents have taken up a bold challenge in this car-friendly city: they've switched to bicycles. Many locals enjoy making a bike visit to the village-like central district, near a big bend in the river -- even when the temperature rises above 30-degrees centigrade. On the islands off the coast, there's plenty of sunshine, beautiful beaches, and clear, warm water -- a mix that attracts crowds of Bangkok residents on weekends.\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1#\nFor more information visit:\nhttp://www.dw.com/documentaries\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 1563,
+            "year": 2017,
+            "published_at": "2017-11-26T15:00:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xC4h7SA6sBc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xC4h7SA6sBc",
+                "url": "https://www.youtube.com/watch?v=xC4h7SA6sBc",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-iDo1vIBqi10",
+            "episode_number": 32,
+            "title": "Traveling by train in Panama | DW Documentary",
+            "description": "The Panama Canal Railway runs parallel to the Panama Canal, connecting the Pacific to the Atlantic Ocean. The train ride is a popular journey among tourists.\n\nAlthough much older than the famous canal, the Panama Rail Road never enjoyed the same recognition. The maiden voyage across the Isthumus of Panama in 1855 was the first train to run from ocean to ocean. Its significance was lost, however, just four decades later when the U.S. opened a route connecting the Atlantic and Pacific coasts. Today a train ride along the old line is a treat for tourists.\n\nEver since it opened for commercial operations in 1914, the Panama Canal has been greatly beneficial to the economy in Central America. Eighty-two kilometers long, it meant goods could be shipped from the Atlantic coast to the Pacific coast much faster; a single journey could be reduced by a good three weeks. From 1914 until 1979 the canal was under the control of the United States. For two decades it was then jointly controlled by the US and Panama and in 1999 full control was given to Panama. This incredible feat of engineering is the pride and joy of its citizens and generates around 40% of the national income. But before the canal, the Panama railway was the first to affectively connect the Atlantic with the Pacific. Today, 77-kilometre route between Balboa harbor in Panama City and the port of Cristóbal on the Atlantic is used to transport both freight and passengers. The panorama cars offer tourists a unique view of the canal. On the small islands off the Caribbean coast, they can also visit the Kuna, an indigenous people with a unique way of life. The Casco Viejo, the historic quarter of Panama City, is also well-worth a stopover.\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1# \nFor more information visit:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories \n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 2551,
+            "year": 2018,
+            "published_at": "2018-02-01T17:01:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iDo1vIBqi10/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iDo1vIBqi10",
+                "url": "https://www.youtube.com/watch?v=iDo1vIBqi10",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-985xnRfA2VE",
+            "episode_number": 31,
+            "title": "India: Exploring Delhi | DW Documentary",
+            "description": "India's big cities are famous for their lively hustle and bustle. A documentary exploring beauty, justice, health and beer in India’s capital territory, Delhi. \n\nDelhi has a population of almost twenty million, and to film-maker Markus Spieker it sometimes seems as if Delhi has twice as many stories to tell: stories ranging from the traditional to the modern, from happiness to misery. He takes the viewer into the heart of the Old Town and into the modern Cyberhub, into malodorous canteens and exclusive restaurants.\n\nIndia is a country with incredible stories and huge contrasts. Metropolises like Delhi are growing at a tremendous rate. No matter how well you know the area, there is always something new to discover. As well as street cafés and exclusive restaurants, this documentary visits India’s biggest hospital and the practices of plastic surgeons, the \"Kingdom of Dreams” and gloomy ghettos. We meet star chefs and street cooks who compete to see who can bake the best pita bread. We encounter cult dancers, hard rock fans of a different kind, and the world record holder in holding world records. This is a documentary film for those who like to marvel, smile, and enjoy.\n_______\n\nExciting, powerful and informative – DW Documentary is always close to current affairs and international events. Our eclectic mix of award-winning films and reports take you straight to the heart of the story. Dive into different cultures, journey across distant lands, and discover the inner workings of modern-day life. Subscribe and explore the world around you – every day, one DW Documentary at a time.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/dwdocumentary?sub_confirmation=1\nFor more information visit:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories \n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 2556,
+            "year": 2018,
+            "published_at": "2018-02-22T09:38:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/985xnRfA2VE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "985xnRfA2VE",
+                "url": "https://www.youtube.com/watch?v=985xnRfA2VE",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-8P-iPXsylrk",
+            "episode_number": 30,
+            "title": "Traveling Ecuador by train | DW Documentary",
+            "description": "The train line through Ecuador is considered one of the most spectacular train lines in South America. A train journey of discovery.\n\nThe Trans-Andean railroad takes in the infamous Nariz del Diablo, or Devil’s Nose, a mountain with almost perpendicular walls. To overcome this obstacle, the train zigzags to ascend 500 meters in less than 12 kilometers. With steep ascents and descents, it’s no ride for the faint-hearted! The main line along the country’s Andean spine links the coastal city of Guayaquil with the capital Quito. It was finished in 1908, but was mostly shut down after a series of weather-related disasters destroyed much of the Ecuadorian rail network in the 1990s. After extensive restoration, a new cross-Andean service was opened in 2013, following the original narrow-gauge line. It’s 450 kilometers long and runs from the Pacific coast up to the Andean highlands. On its cross-country journey, the train is accompanied by guards on motorcycles who, in the absence of railway gates, stop traffic at every level crossing along the way to let the train pass. The Tren Crucero, - or \"cruise train\"- is the centerpiece of Ecuador’s rejuvenated railway. A revamped luxury steam train, it runs once a fortnight and has room for 54 passengers. The most exhilarating stretch of the ride begins deep down in the gorge of the River Chanchán. The train zigzags up the Nariz del Diablo - the \"Devil's Nose\" - in a series of dizzying switchbacks in which the tracks almost seem to lie on top of each other. Join the reporters for the ride of a lifetime, as the train journeys on to Urbina, the highest station at 3,609 meters above sea level, and along the so-called Avenue of Volcanoes, to the Cotopaxi National Park and onwards to Quito, the world's highest capital.\n\nOriginal release date: 2015\n_______\n\nDW Documentary gives you knowledge beyond the headlines. Watch high-class documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1#\nFor more documentaries visit:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 2546,
+            "year": 2018,
+            "published_at": "2018-09-20T18:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8P-iPXsylrk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8P-iPXsylrk",
+                "url": "https://www.youtube.com/watch?v=8P-iPXsylrk",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-iXGtx-hroKE",
+            "episode_number": 29,
+            "title": "Working online and traveling the world - digital nomads | DW Documentary",
+            "description": "Working online whilst traveling the world sounds like a dream job for many people. But what exactly is a digital nomad? Pete and Supi live as digital nomads.\n\nThey travel the world permanently, work on the road and are always online. Their lives epitomize the digital revolution and how it is changing how we work live.\n\nMany people dream of living and working on the road - a dream that has come true for Pete and Supi. Driven by a passion for travel, they set out to escape the dreary routine of everyday life. They want to achieve maximum self-fulfilment without big safety nets and full-cover insurance, in a nomadic world of adventure. Pete is a DJ, so parties and big cities are a defining part of his life, whereas Suparni aka Supi is the opposite; she’s looking for spirituality and awareness. The two show us the huge spectrum of opportunities that the world of the digital nomad has to offer. Despite their fundamental differences, they both earn their living by working remotely. The digital age has made this way of life possible: without the Internet, it would be almost unthinkable. But their lifestyle does have its limits, as is becoming especially evident to Suparni with her plans for parenthood. But it's hard to find someone you love who also loves the same sort of lifestyle, and the constant travel is a big obstacle.\n_______\n\nDW Documentary gives you knowledge beyond the headlines. Watch high-class documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1#\nFor more documentaries visit:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: http://www.dw.com/en/dws-netiquette-policy/a-5300954",
+            "duration": 1556,
+            "year": 2019,
+            "published_at": "2019-02-09T17:30:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iXGtx-hroKE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iXGtx-hroKE",
+                "url": "https://www.youtube.com/watch?v=iXGtx-hroKE",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-Xaj1Gj7oXFM",
+            "episode_number": 28,
+            "title": "Along the Amazon in Peru | DW Documentary",
+            "description": "The government intends to expand and deepen the River Amazon’s tributaries to allow passage for large container ships and is meeting stiff resistance from the region’s indigenous peoples.\n\nA decrepit old cargo ship is the only means of transport on the Amazon in Peru. South America's great river is still relatively narrow here, but it’s also the only lifeline for the region's people and economy. We travel on the Eduardo III, an overcrowded steamship on its three-day voyage up the winding river from Yurimaguas to Iquitos. Timber and other goods are loaded in chaotic ports, and people doze in hammocks on the cramped passenger deck as the ship passes through one of the last untouched natural paradises in the world. If Peru's government goes ahead with its plans, the Amazon region in the northeast of the country will soon be developed and links to the country’s economic infrastructure significantly improved. A Chinese company, for example, is to deepen the Amazon tributaries Marañón, Ucayali and Huallaga to allow large container ships all-year passage. But the excavation project is highly controversial and the region’s indigenous peoples are putting up a stiff fight against it. Water has a deep spiritual meaning for the tribes of the Amazon, who believe the spirits of their ancestors live on in the river. But will Peru’s advocates of progress allow objections like that to get in their way of their plans?\n\n--------------------------------------------------------------------\n\nDW Documentary gives you knowledge beyond the headlines. Watch high-class documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1#\n\nOur other YouTube channels:\nDW Documental (in spanish):  https://www.youtube.com/dwdocumental\nDW Documentary وثائقية دي دبليو: (in arabic): https://www.youtube.com/dwdocarabia\n\nFor more documentaries visit also:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: https://p.dw.com/p/MF1G",
+            "duration": 1700,
+            "year": 2019,
+            "published_at": "2019-06-04T18:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xaj1Gj7oXFM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Xaj1Gj7oXFM",
+                "url": "https://www.youtube.com/watch?v=Xaj1Gj7oXFM",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-78xdMXOx7Rw",
+            "episode_number": 27,
+            "title": "Thailand and the fallout from mass tourism | DW Documentary",
+            "description": "Plastic garbage and the death of the coral reefs show the downside of mass tourism in Thailand, which hosted 36 million visitors in 2018. The documentary looks at the effects on tourist resorts above and below water.\n\nTen years ago there were 20 million fewer tourists. Today’s mass tourism has both social and ecological consequences. Most of the Thailand’s popular tourist resorts discharge untreated sewage into the sea, and plastic waste ends up in the water. This is killing off the fragile coral reefs along the coast. The countless hotels and restaurants mainly serve fresh fish, so fishing boats are using giant trawl nets, which are also destroying the coral. The internationally renowned marine ecologist Thon Thamrongnawasawa from the University of Bangkok says 77 percent of Thailand's coral reefs have been severely damaged. Meanwhile, the locals in popular tourist resorts hardly benefit from the huge numbers of holidaymakers at all. They work for the minimum wage and are often pushed out by guest workers from neighboring Myanmar, who are willing to work for even less money. Small local restaurants lose out when the big tour operators take their guests on all-inclusive excursions. The filmmakers first visited Thailand a few years ago, shooting enchanting footage of the still intact underwater world in many places. Now they are back there again to look at the consequences of unrestricted tourism - both above and below the waterline.\n\n--------------------------------------------------------------------\n\nDW Documentary gives you knowledge beyond the headlines. Watch high-class documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1#\n\nOur other YouTube channels:\nDW Documental (in spanish):  https://www.youtube.com/dwdocumental\nDW Documentary وثائقية دي دبليو: (in arabic): https://www.youtube.com/dwdocarabia\n\nFor more documentaries visit also:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2019,
+            "published_at": "2019-06-05T15:41:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/78xdMXOx7Rw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "78xdMXOx7Rw",
+                "url": "https://www.youtube.com/watch?v=78xdMXOx7Rw",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-kBZdsMb9upI",
+            "episode_number": 26,
+            "title": "Taiwan for food lovers | DW Documentary",
+            "description": "Taiwan’s diverse culture has given way to many popular restaurants which specialize in exotic cuisine. It is THE place for foodies who love fusion and more. Few places in Asia have so many different delicious dishes on offer, and all in one city!\n\n\"Tasty Taipei\" tells the story of Taiwanese food - what's on the table, why it tastes the way it does and how it got there. In \"Tasty Taipei,\" DW’s Taipei correspondent Tzung-Han Tsou takes Euromaxx host Meggin Leigh to the city’s culinary hotspots. \n\nTzung-Han Tsou and Meggin Leigh explore the various tastes of the city. Tsou is a Taipei native and knows all about the city’s culinary history. His co-host Meggin Leigh comes from abroad and offers an outsider’s perspective on the food.\n\nThey describe what they eat, how they experience it and how it tastes. They also explore the side dishes and drinks available on the menu. Meggin Leigh and Tzung-Han Tsou have lively discussions about the food and at the same time talk about the traditions and history behind Asian cuisine.  They also marvel at the culinary possibilities in Taiwan's capital.\n\nThe dishes are presented in detail, but also the cultural-historical context is described: Where does the dish come from? Why is it so popular?\n\n\"Nowhere else does one eat as well as here,\" says Tzung-Han Tsou. Exploring Asia as a culinary melting pot, from Night Market stinky tofu and Din Tai Fung dumplings to 5-star beef noodles! \n\n--------------------------------------------------------------------\n\nDW Documentary gives you knowledge beyond the headlines. Watch high-class documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to DW Documentary:\nhttps://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1#\n\nOur other YouTube channels:\nDW Documental (in spanish): https://www.youtube.com/dwdocumental\nDW Documentary وثائقية دي دبليو: (in arabic): https://www.youtube.com/dwdocarabia\n\nFor more documentaries visit also:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: https://p.dw.com/p/MF1G",
+            "duration": 1556,
+            "year": 2019,
+            "published_at": "2019-08-30T16:00:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kBZdsMb9upI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kBZdsMb9upI",
+                "url": "https://www.youtube.com/watch?v=kBZdsMb9upI",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-qfuDZEQjro8",
+            "episode_number": 25,
+            "title": "The Russians – An intimate journey through Russia (1/2) | DW Documentary",
+            "description": "A very private trip through Russia - a world power with a shrinking population, a myriad of ethnic minorities, and vast distances, a country between tradtion and future. \n\nEncounters with Russians from six different generations help us get to know a Russia beyond Moscow and the Kremlin. Away from the 75th Victory Day parade and displays of military might, we meet the people of Russia. They tell us of a nation poised between tradition and the future. Filmmaker Juri Rescheto travelled through the giant country, meeting with ordinary Russians who share their everyday lives with him. They talk about their joys and sorrows, their hopes and needs, and their experiences - good and bad. The film shows intimate scenes from their homes and their workplaces, as well as glimpses of their political views, their standards of living, and their customs. The protagonists’ personal situations are presented in relation to official Russian studies on the particular generation to which they belong.  \n\nIn Part 1 we go to a city halfway between Moscow and Novosibirsk to meet Jelena, who works as a surrogate mother in a children’s home. Then we travel to the boreal forest in western Siberia to meet 16-year-old Veronika, who spends most of the year in a boarding school. Her parents are reindeer herders and members of the indigenous Khanty people. The generation of young adults in Russia is represented by Kirill, who holds down a normal job, but spends his free time practicing a dangerous hobby: no holds barred boxing.\n\nWatch Part 2 here: https://youtu.be/z35dX3EEGko\n\nGet to know the Russians a little better in our six-part YouTube special:\nPart 1: Birth - https://youtu.be/3cO58tL1CUw\nPart 2: Childhood - https://youtu.be/4IG4eVdhbxI\nPart 3: Youth - https://youtu.be/sRIiTk1nR78\nPart 4: Adulthood - https://youtu.be/he8FGw9e-pc\nPart 5: Old age - https://youtu.be/SAnWF6yTaWQ\nPart 6: Death - https://youtu.be/bQN420LIwrc\n\n-------------------------------------------------------------------\n\nDW Documentary gives you knowledge beyond the headlines. Watch high-class documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nAlso subscribe to: \nDW Documental (Spanish): https://www.youtube.com/dwdocumental\nDW Documentary وثائقية دي دبليو: (Arabic): https://www.youtube.com/dwdocarabia\n\nFor more visit:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram:\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: https://p.dw.com/p/MF1G",
+            "duration": 2548,
+            "year": 2020,
+            "published_at": "2020-06-19T18:00:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qfuDZEQjro8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qfuDZEQjro8",
+                "url": "https://www.youtube.com/watch?v=qfuDZEQjro8",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-z35dX3EEGko",
+            "episode_number": 24,
+            "title": "The Russians – An intimate journey through Russia (2/2) | DW Documentary",
+            "description": "A very private trip through Russia - a world power with a shrinking population, a myriad of ethnic minorities, and vast distances.\n\nEncounters with Russians from six different generations help us get to know a Russia beyond Moscow and the Kremlin. Away from the 75th Victory Day parade and displays of military might, we meet the people of Russia. They tell us of a nation poised between tradition and the future. Filmmaker Juri Rescheto travelled through the giant country, meeting with ordinary Russians who share their everyday lives with him. They talk about their joys and sorrows, their hopes and needs, and their experiences - good and bad. The film shows intimate scenes from their homes and their workplaces, as well as glimpses of their political views, their standards of living, and their customs. The protagonists’ personal situations are presented in relation to official Russian studies on the particular generation to which they belong.  \n\nIn Part 1 we go to a city halfway between Moscow and Novosibirsk to meet Jelena, who works as a surrogate mother in a children’s home. Then we travel to the boreal forest in western Siberia to meet 16-year-old Veronika, who spends most of the year in a boarding school. Her parents are reindeer herders and members of the indigenous Khanty people. The generation of young adults in Russia is represented by Kirill, who holds down a normal job, but spends his free time practicing a dangerous hobby: no holds barred boxing.\n\nIn Part 2 of the documentary we meet Dmitri, who lives in northwestern Russia and works at Europe’s largest blast furnace. He is a proud steelworker and admires Vladimir Putin. At Lake Baikal, Baba Lyuba tells us many stories about her legendary region and her own eventful life. Finally, we make the acquaintance of Ivan, who earns a livelihood from death as an engraver of tombstones at a gigantic cemetery in central Russia.\n\nWatch Part 1 here: https://youtu.be/qfuDZEQjro8\n\nGet to know the Russians a little better in our six-part YouTube special:\nPart 1: Birth - https://youtu.be/3cO58tL1CUw\nPart 2: Childhood - https://youtu.be/4IG4eVdhbxI\nPart 3: Youth - https://youtu.be/sRIiTk1nR78\nPart 4: Adulthood - https://youtu.be/he8FGw9e-pc\nPart 5: Old age - https://youtu.be/SAnWF6yTaWQ\nPart 6: Death - https://youtu.be/bQN420LIwrc\n\n-------------------------------------------------------------------\n\nDW Documentary gives you knowledge beyond the headlines. Watch high-class documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nAlso subscribe to: \nDW Documental (Spanish): https://www.youtube.com/dwdocumental\nDW Documentary وثائقية دي دبليو: (Arabic): https://www.youtube.com/dwdocarabia\n\nFor more visit:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram:\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nDW netiquette policy: https://p.dw.com/p/MF1G",
+            "duration": 2547,
+            "year": 2020,
+            "published_at": "2020-06-19T18:15:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/z35dX3EEGko/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "z35dX3EEGko",
+                "url": "https://www.youtube.com/watch?v=z35dX3EEGko",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-npGwq_ZxVKk",
+            "episode_number": 23,
+            "title": "A train ride into Japan's past | DW Documentary",
+            "description": "Kyushu is said to be the wellspring of Japanese civilization. Yet few tourists visit the southernmost of Japan's main islands. This documentary contrasts modern Japanese cities with traditional customs in the countryside.\n\nThe rail journey begins in Fukuoka - a city with a metro population of 2.5 million - and ends at the southern tip of the island, in the city of Ibusuki. As the train rolls along, it travels through time - and reveals the amazing diversity and contrasts of the most southerly of Japan's four main islands. The trip provides spectacular landscape views, as well as deep insight into a foreign culture, and its ancient traditions and modern lifestyles. \n\nIn the West, Kyushu is one of the lesser-known regions in the \"Land of the Rising Sun.\" Even for the Japanese, the green, mountainous island is seen mostly as a holiday spot. Europeans rarely visit this part of the country - but there are plenty of restaurants and cafes that have names like \"Wolfgang,\" \"Bavaria,\" or \"Côte d'Azur.\" Travel guides say that these words sound \"European\" to Japanese.\n\nThe family of the emperor, or Tenno, comes from Kyushu as well. This is also where the dynasties of the proud warrior class, the samurai, have their roots. \nAnd there are a number of active volcanoes on Kyushu. One of the most famous is Mount Aso. Its caldera - the cauldron-like hollow at the top -- has a circumference of about 120 kilometers.\n\n-------------------------------------------------------------------\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \nDW Documentary: https://www.youtube.com/channel/UCW39zufHfsuGgpLviKh297Q?sub_confirmation=1#\nDW Documental (Spanish): https://www.youtube.com/dwdocumental\nDW Documentary وثائقية دي دبليو: (Arabic): https://www.youtube.com/dwdocarabia\n\nFor more visit:\nhttp://www.dw.com/en/tv/docfilm/s-3610\nInstagram:\nhttps://www.instagram.com/dwdocumentary/\nFacebook:\nhttps://www.facebook.com/dw.stories\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2545,
+            "year": 2021,
+            "published_at": "2021-01-20T17:00:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/npGwq_ZxVKk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "npGwq_ZxVKk",
+                "url": "https://www.youtube.com/watch?v=npGwq_ZxVKk",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-r8c3_T9QfnY",
+            "episode_number": 22,
+            "title": "By train from St. Moritz to the Matterhorn - The Glacier Express | DW Documentary",
+            "description": "A trip on the Glacier Express is one of the world’s best-known railway journeys. For nearly 90 years, traveling on the \"world’s slowest express train\" has been one of the most thrilling - and comfortable - ways to discover the Alps.\n\nThe journey begins in chic St. Moritz, birthplace of the Alpine winter vacation - in winter, of course. Here, Hans Peter Danuser gives us a blast on his \"alphorn,” a famed local instrument. In the 1980s, the former spa director of St. Moritz used this very horn to promote the Glacier Express in New York. \n\nAfter pulling out of St. Moritz, the train travels through the Albula Tunnel. On the other side, the train rumbles down to Thusis on the Albula Line, a UNESCO World Heritage site. Harmoniously embedded in the landscape, the route is considered the showpiece of the railway era. \n\nSeveral spiral tunnels help the train manage the 1,000-meter hike in altitude. On the way up to Bergün, passengers might even start feeling a bit dizzy! Finally, the train passes the \"most beautiful place in Switzerland”, the Lai de Palpuogna mountain lake. \n\nThe Glacier Express then makes its way slowly towards Chur, via Switzerland’s most famous railway bridge, the Landwasser Viaduct. The spa town is a great place to learn about the meaning of the word \"Waschweib” - literally, \"washerwoman”, colloquially, \"gossip”.\n\n#documentary #dwdocumentary #train #trainride\n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2022,
+            "published_at": "2022-02-24T17:00:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/r8c3_T9QfnY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "r8c3_T9QfnY",
+                "url": "https://www.youtube.com/watch?v=r8c3_T9QfnY",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. Region-restricted on YouTube (availability_detail: region restricted (blocked list present)); the blocked-country list was checked by hand on 2026-11-05 and does NOT include the US for the videos approved here."
+            }
+        },
+        {
+            "id": "yt-mzSxHe-hRho",
+            "episode_number": 21,
+            "title": "By train through Vietnam - From Hanoi to Ho Chi Minh City | DW Documentary",
+            "description": "A journey of about 1,700 kilometers. In Vietnam, the \"Reunification Express\" train travels from Hanoi to Ho Chi Minh City. After the end of the Vietnam War, the destroyed line was quickly repaired, to help support the reconciliation of the people of North and South Vietnam.\n\nThe 32-hour journey through the Southeast Asian country is an opportunity to experience unique culture and take in breathtaking landscapes. The first stop is the Trang An Landscape Complex, a nature reserve that is home to Delacour's Langurs -- a very rare, endangered primate species. \n\nFrom here, the journey continues south. The train crosses the Ben Hai River at the 17th parallel. This was the border between North and South Vietnam. During the Vietnam War, the bloodiest battles raged here. It is not far to Hue, which was the capital of Vietnam in imperial times. Here, the filmmakers disembark to attend a performance of the Royal Ballet. \n\nNow, the train approaches the scenic highlight of the trip: the ride along the South China Sea takes viewers through the Ocean Cloud Pass, a climatic border between North and South Vietnam. In Da Lat, a motorcycle tour makes a short detour into the mountains before the trip ends the next morning in Ho Chi Minh City, formerly Saigon. The \"Reunification Express\" -- a symbol of reconciliation between Vietnam‘s North and South.\n\n#documentary #dwdocumentary #vietnam \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2023,
+            "published_at": "2023-12-13T17:00:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mzSxHe-hRho/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mzSxHe-hRho",
+                "url": "https://www.youtube.com/watch?v=mzSxHe-hRho",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-ccrt2o8Bs2U",
+            "episode_number": 20,
+            "title": "Transylvania - The heart of Romania | DW Documentary",
+            "description": "Transylvania has a lot to offer: beautiful cities, endless forests, fascinating traditions. All of these are cultivated with great dedication by the people of the region.\n\nDumitru Pop, for example, works at the \"funniest cemetery in the world”. His mission: to change people's view of death. He carves and paints wooden crosses for the deceased. He decides which anecdotes best commemorate the dead. Too much alcohol? A tyrannical mother-in-law? Dumitru doesn't sugarcoat anything -- and adds a dash of humor to the saddest of circumstances.\n\nTransylvania is nestled in the Carpathian Mountains and boasts seemingly endless forests and pristine nature. In towns like Sighisoara and Biertan, imposing churches remind us that Transylvania was shaped by German culture. Among the people the filmmakers meet are two Transylvanian Saxons who are renovating their house using ancient tools -- and the knowledge passed down by their ancestors.\n\nThe largest ethnic minority in the country, the Roma, meet at the horse market in Gilau. The horse trade has been one of the most respected Roma professions for centuries. The market is impressive and puts on a great show. But it’s also a kind of family reunion. For the horse trader Costell and the market organizer Pufi Moldovan, it’s an exciting day.\n\n#documentary #dwdocumentary #transylvania \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2024,
+            "published_at": "2024-01-25T17:00:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ccrt2o8Bs2U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ccrt2o8Bs2U",
+                "url": "https://www.youtube.com/watch?v=ccrt2o8Bs2U",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-DhgDXRAcoJI",
+            "episode_number": 19,
+            "title": "Cape Verde: Volcanoes, pristine beaches, carnival | DW Documentary",
+            "description": "The African Cape Verde islands have their own distinct genre of music and dance known as \"morna”.  It’s mostly in evidence during the carnival season across the archipelago that’s located in the Atlantic off the coast of Senegal.\n\nEach of the Cape Verde islands has its own charm and its own diverse landscape: from dramatic volcanic landscapes to the lush gardens of Sao Antão and the endless sandy beaches of Sao Vicente.\n\nThe documentary observes the everyday lives of Cape Verde people and hears about their dreams and aspirations. People like the young singer Claudia, the drummer Nuno and Catarina - the carnival queen.\n\nThey all love the typical music of Cape Verde, the \"morna”, made famous throughout the world by Cesária Évora. It’s best described as a kind of plaintive blues that touches the soul and speaks of lovesickness, longing and the challenges of life. The young singer Claudia idolises Évora. She studies law, but dreams of a career on the stage. Music is her passion and she devotes all her free time to singing and playing the guitar.\n\nMusic is also a big deal for drummer Nuno. He leads the drum band at carnival time, the most important date in the Cape Verde calendar. People look forward to this festival for months and anyone who can take part in the preparations, does. Dentist Catarina has a prominent role this year: She’s attending as the carnival queen and is having an elaborate costume made for the big day. Will her appearance be a success?\n\n#documentary #dwdocumentary #capeverde \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2024,
+            "published_at": "2024-05-11T16:00:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DhgDXRAcoJI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DhgDXRAcoJI",
+                "url": "https://www.youtube.com/watch?v=DhgDXRAcoJI",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-RHOiWc9Nj18",
+            "episode_number": 18,
+            "title": "The Greek islands - Crystal clear water and a paradise for foodies | DW Documentary",
+            "description": "The island world of the Aegean Sea is both fascinating and incredibly diverse. Each island has its own charm and character. The film travels to the Greek Cyclades island group and visits five islands. Along the way, viewers meet people whose love for their islands is tangible.\n\nIkaria, in the north-eastern Aegean, is known as the island of 100-year-olds. It’s one of the world's five \"Blue Zones\", where people live to an exceptionally old age. Sifnos is the foodie island. Greece's most famous cook and cookbook author, Nikolaos Tselementes, was born here on this western Cyclades island and it’s no accident that it’s a place where food is important -- on Sifnos, traditional Greek cuisine is interpreted in a modern way. Kimolos is a small island that’s also home to the 95-year-old captain Augusti Galanos. He’s the archipelago’s most famous resident. Polyegos, with its wild goats, who all have names, is the largest uninhabited island in the Aegean. And Mykonos, the jet-set island that everyone knows, still holds plenty of surprises.\n\n#documentary #dwdocumentary #greece \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2024,
+            "published_at": "2024-06-13T16:00:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RHOiWc9Nj18/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RHOiWc9Nj18",
+                "url": "https://www.youtube.com/watch?v=RHOiWc9Nj18",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-DaiS_lp_4JM",
+            "episode_number": 17,
+            "title": "By train through the Caribbean | DW Documentary",
+            "description": "St. Kitts has one of the few still-functioning sugar cane railway lines in the Caribbean, running along almost 30 kilometers of coastline. A pair of islands in the Lesser Antilles, St. Kitts and Nevis is one of the smallest nations in the world.\n\nThis makes it all the more astonishing that St. Kitts has a railway line at all. The narrow-gauge track was built by local plantation owners between 1912 and 1926 to transport sugar cane to the factory in Basseterre. But eventually, Caribbean sugar cane lost ground to European sugar beet. Freight transport was discontinued, then seamlessly replaced by the St. Kitts Scenic Railway. The American railway owners relied primarily on business from cruise ship passengers. They purchased and installed powerful locomotives that had once transported sugar beet in Poland. \n\nToday, these locomotives pull double-decker carriages that provide an unobstructed view of the sea and mountains. The locomotives from the sugar cane era have fallen into disrepair, just like the old factory. A decline accelerated by the high humidity here. Today, only the No. 15 Hunslet locomotive is still in running order. The engine driver uses it for maintenance on the tracks and four long bridges. He loves to recall the time when, as the most powerful locomotive in the fleet, it could pull numerous wagons laden with sugar cane.\n\nWe retrace the tracks of the old sugar cane railway and experience an adventure or two with the railwaymen of the St. Kitts Scenic Railway.  \n\n#documentary #dwdocumentary #train \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 1556,
+            "year": 2024,
+            "published_at": "2024-07-28T16:00:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DaiS_lp_4JM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DaiS_lp_4JM",
+                "url": "https://www.youtube.com/watch?v=DaiS_lp_4JM",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-dbGltFFcyZM",
+            "episode_number": 16,
+            "title": "Mexico City - Life in the megalopolis | DW Documentary",
+            "description": "Mexico City used to inspire fear. But these days, the megacity is a hotspot for tourists. Still, the city has not lost its fighting spirit. Some use it to put on a show, while others simply try to survive.\n\nWith around 22 million people, Mexico City is the largest Spanish-speaking city in the world. But this isn’t the only reason why it attracts increasing numbers of tourists each year. Indeed, the mega-metropolis has pretty much everything travelers could wish for: History, culture, art, music, excellent street food, Michelin-starred restaurants, spectacular nature and, of course, the people who call Mexico City home. Locals are known for their open, respectful and life-affirming vibe.\n\nLalo Garcia, for example, is a star chef on the Mexican culinary scene. He’s living the reverse American dream: he grew up in the USA as the child of illegal immigrant field workers and was deported to Mexico as an adult, to a country he barely knew. Despite these hardships, he has found success and happiness here. \n\nAngel Palafox is a former pilot. He realized that you can make a lot of money in Mexico City by operating private ambulances. After all, there are far too few public ambulances to serve a city of 22 million people. Private companies fill the gap and make money from it. Some ambulances, like Angel's, are well equipped and have paramedics or doctors on board. Others are souped-up vans with minimal equipment. To get to the scene as quickly as possible, they follow the police scanner and search Facebook for posts about accidents. They hand out business cards outside hospitals in case an ambulance is needed. It’s a business proposition -- but the private ambulances also provide an important service in an underfunded healthcare system.\n\nThe film also follows a trans activist, someone who’s known as a ‘bicycle mayor’ and Mexican lucha libre fighters. All the protagonists are representative of how creative and combative the people of Mexico City are.\n\n#documentary #dwdocumentary \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2024,
+            "published_at": "2024-08-07T16:33:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dbGltFFcyZM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dbGltFFcyZM",
+                "url": "https://www.youtube.com/watch?v=dbGltFFcyZM",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. Region-restricted on YouTube (availability_detail: region restricted (blocked list present)); the blocked-country list was checked by hand on 2026-11-05 and does NOT include the US for the videos approved here."
+            }
+        },
+        {
+            "id": "yt-iVP91kt3sP8",
+            "episode_number": 15,
+            "title": "Ireland’s most beautiful train route | DW Documentary",
+            "description": "Spectacular cliffs and traces of the Vikings can be found along Ireland’s most beautiful train route. It leads from Rosslare in the southeast via the capital, Dublin, to the Howth Peninsula. In times gone by, the region has been inhabited by Vikings, Normans and the English.\n\nThe scenery in the east of the Emerald Isle is picturesque: long beaches and solitary mountains. This was where the Vikings once landed. The Normans also left their mark. The region is also marked by its centuries-old history with England. In addition to the magnificent castles of the former colonial rulers, the ruins of an early Christian monastery and a prehistoric dolmen tomb bear witness to the diverse cultural influences here. \n\nThe camera team meets people who embody the modern nation while continuing to follow in the footsteps of their ancestors. A detour leads to the fertile hinterland of County Wexford and magical places in the Wicklow Mountains, before heading into the hustle and bustle of the city of Dublin. There’s the opportunity for some rest and relaxation in the natural paradise near Howth, where a large colony of grey seals make their home. \n\n#documentary #dwdocumentary #ireland \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2024,
+            "published_at": "2024-09-12T16:00:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iVP91kt3sP8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iVP91kt3sP8",
+                "url": "https://www.youtube.com/watch?v=iVP91kt3sP8",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-p49QRxO_n2c",
+            "episode_number": 14,
+            "title": "Chongqing - Nightlife in the Chinese megacity | DW Documentary",
+            "description": "If you want to experience China, you can't avoid Chongqing. This megacity is growing at a blistering place.  But beware, it is not a place for anyone with a fear of heights, or a sensitive stomach.\n\nThe population of Chongqing, in southwestern China, has exploded over the last 30 years: now, some 32 million people live here. Covering an area the size of Austria, Chongqing is one of the largest cities in the world in terms of physical size. \n\nIn China, the megacity has become a tourist magnet. It’s known for its unique spots for snapping photos, like the train that runs right through the eighth floor of a high-rise building. Social media influencers have contributed to popularizing the city, once known mainly as an arrival or departure point for cruise tourists. \n\nThe people of Chongqing have a reputation for being particularly warm-hearted. City guide Zhen Jili, for example, knows every corner of his city, and has witnessed first-hand how his \"big village\" became a megacity. He takes visitors through his remarkable metropolis, where GPS is useless, because you never know which floor your destination is on.\n\nProfessional \"designated driver\" Shen Xun takes the film’s viewers along on his journey through Chongqing's raucous nightlife, where the party doesn‘t end until morning. Because there is a strict ban on drinking and driving in China, anyone who has had a drink can call Shen Xun. He then arrives on his little folding bike, which he stows in the trunk before chauffeuring his customers home in their car. \n\nLivestreamers like Paipai can be seen on every street corner in Chongqing. She explains why livestreaming is a billion-dollar business in China, and takes viewers to one of the city's tallest buildings, for a view from right in the middle of the skyline. \n\n#documentary #dwdocumentary \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: \n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary\n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental\n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2547,
+            "year": 2024,
+            "published_at": "2024-09-19T16:00:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/p49QRxO_n2c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "p49QRxO_n2c",
+                "url": "https://www.youtube.com/watch?v=p49QRxO_n2c",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. Region-restricted on YouTube (availability_detail: region restricted (blocked list present)); the blocked-country list was checked by hand on 2026-11-05 and does NOT include the US for the videos approved here."
+            }
+        },
+        {
+            "id": "yt-p-5OwdctfeY",
+            "episode_number": 13,
+            "title": "By car from Madrid to Marrakech - Road trip back home | DW Documentary",
+            "description": "The same spectacle every summer: Hundreds of thousands of vehicles leaving Spain, headed for Morocco. In the summer of 2024, many of the travelers were migrants. Living in Europe, vacationing in their home country. But what does \"home” really mean?\n\nThe term \"home” is becoming increasingly complicated. More and more people are blending different identities. People who belong to migrant groups increasing live out this \"multiple identity,” as people who feel they have more than one \"home”. \n\nHow does this identity work? What do people experience when they leave their homes in Spain every summer, to visit their homes in Morocco? In 2024, 3.4 million people crossed the strait from Algeciras to Tangier. The ferries transported over 800,000 vehicles in the three summer months - a record.\n\nThis road movie accompanies some of these people on their journey, arrival, and as they spend their summer in their country of origin. The caravan serves as a kind of bridge between homes. Older people tend to long for their homeland, while younger ones often find it difficult to reconcile their new world with their roots.\n\n#documentary #dwdocumentary #dwdocs #marrakech #spain #morocco #home \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2025,
+            "published_at": "2025-05-24T16:01:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/p-5OwdctfeY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "p-5OwdctfeY",
+                "url": "https://www.youtube.com/watch?v=p-5OwdctfeY",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-NUPbYrK8WoU",
+            "episode_number": 12,
+            "title": "The Kanazawa railway hub - Where tradition and high-speed meet in Japan | DW Documentary",
+            "description": "A huge wooden gate, like that of a Shinto shrine, is the landmark of Kanazawa. The main railway station of the metropolis in western Japan is reminiscent of a religious site.\n\nThe film shows viewers a metropolis where rail transport plays an important role: The new high-speed railway line runs through the city on concrete tracks. The film also visits one of Japan's few surviving ancient towns, as well as one of the country's most famous gardens. The railway and the city are inextricably linked. Even the Shinkansen high-speed train livery is based on the colors of a local palace.\n\nOne tourist highlight is a small special train that hugs the coastline and serves sushi. The Kanazawa railway hub is a microcosm of Japan’s national train network.\n\n#documentary #dwdocumentary #dwdocs #japan #train #kanazawa \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 1556,
+            "year": 2025,
+            "published_at": "2025-06-01T16:00:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/NUPbYrK8WoU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "NUPbYrK8WoU",
+                "url": "https://www.youtube.com/watch?v=NUPbYrK8WoU",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-souQZzwt3tA",
+            "episode_number": 11,
+            "title": "By train to Hudson Bay | DW Documentary",
+            "description": "Anyone who wants to travel overland from Winnipeg to Churchill has to take the train. Only one track leads through Canada's tundra to Hudson Bay. There’s only one thing for passengers to do - relax, unwind and admire the wild beauty of the landscape through the carriage window.\n\nThe train journey begins in Winnipeg, the multicultural capital of the Canadian province of Manitoba, characterized by Canada's indigenous population and immigrants from all over the world. As soon as the train leaves the city, the vast prairie opens up. Grain now grows where bison once grazed. Further north, we encounter swampy coniferous forests. First Nation communities live here, and rely on the railways to access their reserves. They bought and renovated parts of the line when the tracks were washed out in 2017 - an event that led to railway operations being interrupted. Last but not least is the treeless Arctic tundra. After 1,700 kilometers and a 45-hour train journey, we reach the terminus in the small town of Churchill with around 900 inhabitants. In autumn, when the waters begin to freeze, polar bears gather here and the aurora borealis sparkles in the night.\n\n#documentary #dwdocumentary #dwdocs #canada #travel \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2025,
+            "published_at": "2025-07-01T16:01:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/souQZzwt3tA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "souQZzwt3tA",
+                "url": "https://www.youtube.com/watch?v=souQZzwt3tA",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-4wjlZ_RKHk8",
+            "episode_number": 10,
+            "title": "Cape Verde: Island paradise with a dark side | DW Documentary",
+            "description": "Endless beaches, majestic mountains and villages with multi-colored houses: Cape Verde has become one of the hottest new destinations for social media influencers. Here, tourists can enjoy a week at an all-inclusive resort for as little as €700, including travel.\n\nBut virtually none of this benefits the island. Indeed, a lack of opportunities, coupled with a severe drought, mean that some women have to resort to stealing sand from the sea floor in order to survive.\n\nThe islands are on the frontline of global warming. It has hardly rained in the past seven years. While tourists enjoy numerous huge swimming pools and are unaware of the crisis, families in Cape Verde are restricted to a few 25-liter containers of water per day. All food and supplies for the hotels are imported from wherever they can be sourced cheapest, providing no benefit to the local economy.\n\nOn many of the island’s beaches, the sand has completely disappeared. All that remains are shores strewn with pebbles. For years, the women of Ribeira da Barca have been stealing sand to sell to the construction industry. They collected all the sand that covered the beach long ago. Now they have to fetch it from the bottom of the sea. The sand thieves operate at low tide. These women carry no fewer than 50 kilograms of sand on their heads each trip. Most of them can’t swim so, every time they enter the sea, they are risking their lives. For this, they are paid approximately €10 a week.\n\n#documentary #dwdocumentary #dwdocs\n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2025,
+            "published_at": "2025-07-02T16:00:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4wjlZ_RKHk8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4wjlZ_RKHk8",
+                "url": "https://www.youtube.com/watch?v=4wjlZ_RKHk8",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. Region-restricted on YouTube (availability_detail: region restricted (blocked list present)); the blocked-country list was checked by hand on 2026-11-05 and does NOT include the US for the videos approved here."
+            }
+        },
+        {
+            "id": "yt-aaPt1LWGIB0",
+            "episode_number": 9,
+            "title": "By train through Thailand's West | DW Documentary",
+            "description": "Winding rivers. Countless canals. A rushing waterfall. Elephants come here to bathe, while local people build their houses on stilts: Water, the elixir of life, is everywhere in western Thailand. And the railroad follows its course.\n\nThe canals that criss-cross Thailand are known as ‘khlongs’. Trains in the region often travel across water - as well as over the bridge on the River Kwai that became world-famous thanks to a feature film. \n\nThis journey begins in Mae Klong on the Gulf of Thailand. Here, the train passes through a market that takes place right on the tracks. Whenever a train approaches, vendors clear their stalls in a matter of seconds. From here, the route alternates between barren salt fields and lush tropical nature. People have been using the seawater to extract salt for centuries. \n\nThe train runs northwest from Bangkok on a route known as the ‘Death Railway’. The Japanese army had it built by prisoners of war and forced laborers during the Second World War. Less than a third of it is still intact. In addition to the memorial at Hellfire Pass, researchers and a Buddhist abbot ensure that this episode of world history is not forgotten.\n\n#documentary #dwdocumentary #dwdocs #thailand #travel #train \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2025,
+            "published_at": "2025-07-10T16:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/aaPt1LWGIB0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "aaPt1LWGIB0",
+                "url": "https://www.youtube.com/watch?v=aaPt1LWGIB0",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-IralqVXQw8U",
+            "episode_number": 8,
+            "title": "By train along the fjord coast of Norway | DW Documentary",
+            "description": "Northern Norway in June: Fjords and mountains bathed in the light of the midnight sun. The Norwegian Nordland Railway runs from Trondheim along fjords and rivers, up to the Arctic Circle, via Saltfjellet with the Svartisen glacier to Bodø.\n\nOn beautiful June days, the fjord coasts of northern Norway reveal themselves in the breathtaking light of the midnight sun. The Nordland Railway crosses the bright night even in rough Nordic weather and winds its way along the banks of fjords and rivers up to the Arctic Circle. It crosses the barren Saltfjellet plateau with the Svartisen glacier to reach Saltstraumen, Norway's strongest tidal stream, just in time for the Midsummer Festival. \n\nAlong the train route from Trondheim to Bodø, the Vikings fought, the Nazis built spectacular bridges and tunnels and the Sami, the indigenous people of northern Scandinavia, still breed reindeer today. A water-rich, wild landscape that draws world-class canoeists and ambitious painters -- and a place where countless moose and the rare Arctic fox live.\n\n#documentary #dwdocumentary #dwdocs #train #norway \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/dwdocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/dwdocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/dwdochindi\n⮞ DW Doku (German): https://www.youtube.com/dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2547,
+            "year": 2025,
+            "published_at": "2025-08-01T16:00:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/IralqVXQw8U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "IralqVXQw8U",
+                "url": "https://www.youtube.com/watch?v=IralqVXQw8U",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-my0sHrM4JwM",
+            "episode_number": 7,
+            "title": "Sausage stands and coffee houses - When night falls in Vienna | DW Documentary",
+            "description": "Vienna is beautiful. Surrounded by elegant imperial facades, people enjoy culture and coffee. Or, they might clatter past St. Stephen's Cathedral and the Sisi Museum in horse-drawn carriages. But when night falls, the city shows itself in a whole new light.\n\nAfter the tourists have been swallowed up by the revolving doors of the Sacher Hotel, the Vienna State Opera and the Burgtheater, the night shift takes over. The now-quiet streets make Vienna's magnificent buildings seem to shine even brighter.\n\nWe begin our tour at Mitra Milašević's \"Café 3M.\" For decades, Serbs, Albanians, and Croats have been dancing here together through the night. Mitra's pub is a cult favorite. As students and neighbors join in, often around midnight, the \"3M\" seems to burst at the seams.\n\nMeanwhile, Andreas Nevrivy has a rendezvous with death. He and his team are on the night shift at a local mortuary. We ask them, is the saying \"death is Viennese\" really true? Their answer is tied to the Vienna Central Cemetery. One of the largest in Europe, tonight it also serves as a place of work, for Andreas and his team.\n\nThis is also a night that musician Bibiza ushers into day, along with his friends. The enfant terrible of Vienna's subculture gives us a tour. It is the opposite of Viennese chic — though we can find that too, in the posh Eden Bar or the legendary Hotel Orient.\n\nAnd, as always in Vienna, every long night ends at the sausage stand — with an order of Käsekrainer sausage and pickled gherkin. \"LEO\" is the oldest family-owned sausage stand, and Leszek is his boss's best employee. He shares his tips for how to stay up, until the sun rises again over Vienna.\n\n#documentary #dwdocumentary #dwdocs #austria #vienna \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/@DWDocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/@DWDocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/@dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/@dwdochindi\n⮞ DW Dokumenter (Indonesian): https://www.youtube.com/@DWDokumenter\n⮞ DW Doku (German): https://www.youtube.com/@dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2546,
+            "year": 2025,
+            "published_at": "2025-12-12T17:01:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/my0sHrM4JwM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "my0sHrM4JwM",
+                "url": "https://www.youtube.com/watch?v=my0sHrM4JwM",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. Region-restricted on YouTube (availability_detail: region restricted (blocked list present)); the blocked-country list was checked by hand on 2026-11-05 and does NOT include the US for the videos approved here."
+            }
+        },
+        {
+            "id": "yt-bsIUHHtEEOc",
+            "episode_number": 6,
+            "title": "Norway at its limit - Tourists flood the north | DW Documentary",
+            "description": "2024 was a record year for Norwegian tourism, with almost 38.6 million overnight stays. The country’s cuisine, culture, and unique destinations entice visitors. But tourism brings its own problems.\n\nAt a campsite in Stavanger, Per Arne Haarr is often forced to turn away tourists during the high season. Because reservations can’t be made in advance, Robert, Yvonne, and their son Paul have arrived extra early. They hope to secure a spot at this campground in central Stavanger.\nThe family from Germany is on its second visit to Norway and hoping to explore the south of the country. It quickly becomes apparent that since their last visit, things have gotten much more crowded here.\n\nThose who like hustle and bustle will get their money's worth along the Fargegaten pedestrian street, in the center of Stavanger. Then there’s the harbor promenade - and, of course, the cruise ships. Up to three of these can moor here at the same time, bringing thousands of tourists to the city every day. This is a nuisance for residents who live in the old town. The ships right outside their front doors don’t just obstruct the view. They also damage historic buildings and residents’ health.\nJust 40 minutes from Stavanger the crowds can be even more intense. This is the location of the Preikestolen or Pulpit Rock. Most tourists come to take a photo at the edge of the rock, which drops steeply, some 604 meters, into the fjord. When the weather’s good, queues are almost guaranteed.\nBernt Hårvard Øyen, director of the Bryggen Foundation in Bergen, wants to find a better balance when it comes to tourism. His coastal city’s historic harbor district is a UNESCO World Heritage Site -- and one of the most popular places to visit. In July, the tourist high season, it’s sometimes so crowded here that walking is difficult. And not everyone behaves respectfully. Øyen says options for limiting the number of visitors are currently under discussion.\n\nMany residents of the small town of Flåm on the Aurlandsfjord would probably welcome a visitor limit. When a cruise ship is in port, this village of 288 people turns into a kind of Disneyland. One of the main draws for tourists, in addition to the picturesque surroundings, is the Flåm Railway. It’s considered one of the most beautiful train journeys in the world and attracts some 450,000 tourists to Flåm every year. \nYvonne, Robert and their son Paul have traveled here to see it. But is so much tourism really worth it?\n\n#documentary #dwdocumentary #dwdocs #norway #tourism \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/@DWDocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/@DWDocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/@dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/@dwdochindi\n⮞ DW Dokumenter (Indonesian): https://www.youtube.com/@DWDokumenter\n⮞ DW Doku (German): https://www.youtube.com/@dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 1676,
+            "year": 2026,
+            "published_at": "2026-04-12T16:00:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/bsIUHHtEEOc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "bsIUHHtEEOc",
+                "url": "https://www.youtube.com/watch?v=bsIUHHtEEOc",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-RTU0x2rBDNM",
+            "episode_number": 5,
+            "title": "By tram through the Polish city of Wrocław | DW Documentary",
+            "description": "The best way to appreciate Wrocław is from tram line No. 1. It has been rolling through the city for 140 years - passing rubble, after the war, and past renovated facades, modern apartment blocks and the grassy banks of the River Oder, today.\n\nThis film accompanies tram driver Tatjana Granowska on her daily journey through Wrocław, and features talks with people along tram line No. 1 - students, artists and other residents of this city on the Oder. They talk about their everyday lives and how this city in the heart of Europe is changing.\n\nTatjana Granowska worked in a travel agency for many years, helping others to discover the world. When that ended, the native Kazakh decided to make a fresh start and became a tram driver. Today, she steers the tram through the city -- and can’t imagine a better job.\n\nKamil Zaremba lost everything in the 1997 floods. Today, he lives on a houseboat on the Oder River. While many in the city fear the next big flood, he feels safe on the water. His floating home is also an inexpensive alternative, in a property market characterized by rising rents. His second houseboat, which is also his life's work, is moored next door: the \"Odra Centrum\" is an educational and cultural center attracting many young people.\n\nTrained locksmith Zenon Dębowski was unemployed for a long time. Through the art project \"The Colorful Courtyards\" in the Nadodrze district, he found stability and community.\n\nWrocław is Poland’s third-largest city. \"On Tram Tracks Through Wrocław - A City in Transition” is a cinematic invitation to discover the Lower Silesian metropolis - through the windows of a tram that’s been telling stories for 140 years.\n\n#documentary #dwdocumentary #dwdocs\n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/@DWDocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/@DWDocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/@dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/@dwdochindi\n⮞ DW Dokumenter (Indonesian): https://www.youtube.com/@DWDokumenter\n⮞ DW Doku (German): https://www.youtube.com/@dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 1696,
+            "year": 2026,
+            "published_at": "2026-05-24T16:00:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RTU0x2rBDNM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RTU0x2rBDNM",
+                "url": "https://www.youtube.com/watch?v=RTU0x2rBDNM",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-uWSuGqi_Lo8",
+            "episode_number": 4,
+            "title": "By train to Mount Etna | DW Documentary",
+            "description": "For almost 120 years, the \"Circumetnea” narrow-gauge railway has been circling Europe’s highest volcano. The train travels through impressive lava landscapes and vegetation zones, as well as two nature parks, with the UNESCO World Heritage Site of Mount Etna always in view.\n\nAt the foot of Mount Etna, amidst black rocks and prickly pears, the narrow-gauge railway winds its way through rocky wastelands, wooded areas and lush green hills. Lava eruptions have meant the railway line has had to be rebuilt many times over the years, most recently in 1981. Mount Etna, standing at 3,352 meters, is Europe’s most active volcano. Most eruptions affect mainly the immediate vicinity of the crater; they rarely pose a threat to people or animals. However, violent eruptions do occur from time to time. Then, volcano spews clouds of ash and chunks of rock kilometers into the atmosphere, and lava flows make their way down into the valley.\n\nFollowing the closure of the railway network in Sicily, the Circumetnea Railway is the island’s last remaining narrow-gauge railway. The journey from Catania to the terminus at Riposto takes three hours. Winding its way through lava fields that resemble lunar landscapes and past deserted stations, the train travels more than 100 kilometers to its terminus on the Ionian Sea.\n\n#documentary #dwdocumentary #dwdocs #italy #volcano \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/@DWDocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/@DWDocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/@dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/@dwdochindi\n⮞ DW Dokumenter (Indonesian): https://www.youtube.com/@DWDokumenter\n⮞ DW Doku (German): https://www.youtube.com/@dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2592,
+            "year": 2026,
+            "published_at": "2026-07-24T16:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uWSuGqi_Lo8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uWSuGqi_Lo8",
+                "url": "https://www.youtube.com/watch?v=uWSuGqi_Lo8",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-b80N8Fk2T4A",
+            "episode_number": 3,
+            "title": "Through Kazakhstan by train | DW Documentary",
+            "description": "Each year, a train carrying doctors and medical gear travels through remote areas of Kazakhstan. The project is called Salamatty Kazakhstan, or \"Healthy Kazakhstan.\" The train is underway for eight months and the clinic operates daily.\n\nSalamatty Kazakhstan was launched by the government to improve medical care in the country's sparsely populated regions. Some communities are hundreds of kilometers from the nearest hospital or clinic. The train's timetable is shared online.\n\nIn addition to medical staff, the train crew includes kitchen staff, stewards, and technicians. On its journey of around 20,000 kilometers, the train stops in numerous villages and small towns in the Kazakh countryside. The film follows this unique social project, showing doctors and support staff as they form close bonds during the eight-month journey: working, eating and living together. Patients come to the clinic with physical ailments, but they also share their everyday worries.\n\nThe film offers a rare glimpse into this oil-rich Central Asian country. It gives viewers a sense of the respect and dedication at the heart of these special encounters between two very different worlds.\n\n#documentary #dwdocumentary #dwdocs #kazakhstan #train \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/@DWDocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/@DWDocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/@dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/@dwdochindi\n⮞ DW Dokumenter (Indonesian): https://www.youtube.com/@DWDokumenter\n⮞ DW Doku (German): https://www.youtube.com/@dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 5162,
+            "year": 2026,
+            "published_at": "2026-10-08T16:00:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/b80N8Fk2T4A/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "b80N8Fk2T4A",
+                "url": "https://www.youtube.com/watch?v=b80N8Fk2T4A",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)",
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": "Editorial: rejected 2026-11-05 -- duplicate -- the same video is approved in series dw-train-journeys (DW's own 'Train Ride Documentaries' playlist), which feeds the Scenic Journeys block; excluded here so it never airs twice."
+            }
+        },
+        {
+            "id": "yt-lsPJo3UpKHM",
+            "episode_number": 2,
+            "title": "The Dolomites - Summer in the Italian Alps | DW Documentary",
+            "description": "From rugged peaks to gentle valleys, Italy's Dolomites are idyllic. In this film, nature lovers show us their mountain world and share fascinating stories about life between tradition and modernity.\n\nIn the Dolomites, Italy's \"dolce vita\" culture meets Alpine tradition — the perfect combination for anyone who wants spectacular natural scenery coupled with a diverse culinary scene. Beyond better-known tourist destinations like Seiser Alm, the Tre Cime di Lavaredo and the Rosengarten, there is much to discover in the Dolomites — or \"pale mountains\". In the Friulian Dolomites Nature Park, a team of biologists, veterinarians and animal rangers saves the life of an ibex by performing emergency surgery on a crooked horn. \n\nSouth of Bolzano, a photographer captures the portraits of elderly mountain farmers and alpinists from remote valleys as part of a UNESCO project — using camera technology that's over a century old. A young shepherd couple spends their summer on a secluded high pasture near the Valles Pass, relishing their modest Alpine lifestyle. An entrepreneur from Trento, a city on the Adige River, makes speaker cabinets from the wood of trees felled by a hurricane, while investing in local reforestation. And in Val Gardena, on one of the oldest farms in the Alps, a family offers guests a menu of traditional Ladin food — the regional cuisine — made with ingredients they grow themselves.\n\n#documentary #dwdocumentary #dwdocs #dolomites #alps \n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/@DWDocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/@DWDocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/@dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/@dwdochindi\n⮞ DW Dokumenter (Indonesian): https://www.youtube.com/@DWDokumenter\n⮞ DW Doku (German): https://www.youtube.com/@dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 2566,
+            "year": 2026,
+            "published_at": "2026-10-11T16:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lsPJo3UpKHM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lsPJo3UpKHM",
+                "url": "https://www.youtube.com/watch?v=lsPJo3UpKHM",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        },
+        {
+            "id": "yt-61ODlrzb7Pk",
+            "episode_number": 1,
+            "title": "One electric truck's road trip to Norway | DW Documentary",
+            "description": "Trucker Tobias Wagner's mission: to get from Germany's East Frisia to Norway in an electric truck. A navigation buoy from the Juister Riff in the North Sea went missing and has turned up in Scandinavia. Now, it's Wagner's job to bring it back.\n\nTackling 900 kilometers, three countries and a ferry crossing — all in an electric truck. To make the trip work, Wagner has had to plan his route carefully. Weight, distance and road incline all affect the truck's range. Finding suitable overnight stops is also crucial, since not all truck parking areas have charging stations.\n\nMany in his industry are still skeptical about electric trucks. But freight hauler Nanno Janssen has no doubt: e-trucks are the future. Sixty percent of his fleet already runs on electricity, and he plans to transition the remaining trucks in the coming years. Tobias Wagner is a believer, too. He regularly shares his experiences as \"Elektrotrucker\" on YouTube.\n\nThe film follows Wagner on this unusual assignment. It shows how today's electric mobility is already working for long-haul trucking — and looks at the challenges that remain.\n\n\n\n#documentary #dwdocumentary #dwdocs\n______\n\nDW Documentary gives you knowledge beyond the headlines. Watch top documentaries from German broadcasters and international production companies. Meet intriguing people, travel to distant lands, get a look behind the complexities of daily life and build a deeper understanding of current affairs and global events. Subscribe and explore the world around you with DW Documentary.\n\nSubscribe to: ‬\n⮞ DW Documentary (English): https://www.youtube.com/@DWDocumentary \n⮞ DW Documental (Spanish): https://www.youtube.com/@DWDocumental \n⮞ DW Documentary وثائقية دي دبليو (Arabic): https://www.youtube.com/@dwdocarabia\n⮞ DW Documentary हिन्दी (Hindi): https://www.youtube.com/@dwdochindi\n⮞ DW Dokumenter (Indonesian): https://www.youtube.com/@DWDokumenter\n⮞ DW Doku (German): https://www.youtube.com/@dwdoku\n\nFor more visit: http://www.dw.com/en/tv/docfilm/s-3610\nFollow DW Documentary on Instagram: https://www.instagram.com/dwdocumentary/\nFollow DW Documental on Facebook: https://www.facebook.com/dwdocumental\n\nWe kindly ask viewers to read and stick to the DW netiquette policy on our channel: https://p.dw.com/p/MF1G",
+            "duration": 1702,
+            "year": 2026,
+            "published_at": "2026-10-18T16:00:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/61ODlrzb7Pk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "61ODlrzb7Pk",
+                "url": "https://www.youtube.com/watch?v=61ODlrzb7Pk",
+                "channel_id": "UCW39zufHfsuGgpLviKh297Q",
+                "channel_title": "DW Documentary",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLovlAKbQVz6BE-32_-Q5ojt-Pgqap-Ye9"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "YouTube embed of the official DW Documentary (Deutsche Welle) channel's own public upload (embeddable=true, public, US-playable per regionRestriction, not made-for-kids; checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production. Full-length travel documentary from the channel's own 'Travel | DW Documentary' playlist. "
+            }
+        }
+    ]
+}
