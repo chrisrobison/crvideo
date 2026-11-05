@@ -1,0 +1,19 @@
+{
+  "_note": "\"items\" is empty -- this channel is entirely series-driven, same shape as channels/science and channels/maker. Eight real YouTube imports (each from the creator's own long-form-only uploads playlist, UULF<channel>, so YouTube Shorts are excluded at the source; see each series/<id>/series.json for the full episode list and editorial status) back the 16-block, 24-hour themed daily grid declared in programming.json. Every approved episode carries rights.status \"unverified\" with an honest note: none of this is licensed beyond YouTube's own embedded player, and it needs human rights review before production use.",
+  "schema_version": 2,
+  "title": "Pet Central",
+  "items": [],
+  "series": [
+    { "ref": "../../series/the-dodo/series.json" },
+    { "ref": "../../series/girl-with-the-dogs/series.json" },
+    { "ref": "../../series/jackson-galaxy/series.json" },
+    { "ref": "../../series/zak-george/series.json" },
+    { "ref": "../../series/kikopup/series.json" },
+    { "ref": "../../series/simons-cat/series.json" },
+    { "ref": "../../series/animalogic/series.json" },
+    { "ref": "../../series/kitten-lady/series.json" }
+  ],
+  "continuity": [
+    { "ref": "./continuity.json" }
+  ]
+}
