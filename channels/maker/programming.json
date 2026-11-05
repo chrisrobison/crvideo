@@ -1,0 +1,606 @@
+{
+    "_note": "Recurring-series programming for Maker Channel (see channels/publish.php). This channel's airtime is a 12-hour, 12-show repeating lineup -- twelve real YouTube imports, each editorially approved up to an 18-episode cap (see each series/<id>/series.json), each given one fixed 60-minute daily slot plus a second slot exactly 12 hours later, so the same ordered lineup plays twice every calendar day (wall-to-wall, no gaps), mirroring Science & Engineering's proven lineup shape. Every block opts into multi-episode packing (packing.enabled, mode sequential, on_unfit defer, minimum_remaining 30s) so a one-hour slot plays as many complete episodes as actually fit (most of this catalog's approved episodes run 10-30 minutes) instead of exactly one. boundary.mode is hard on every block: the longest approved episode across the whole catalog is 3596s (Jeremy Fielding's 'Engineer Vs Bee - Round 1'), under the 3600s slot, so no block has ever actually needed to run over -- the handful of episodes that would have exceeded the slot (my mechanics' 3636s/10868s outliers; Clickspring's 4198s 'Chill Out Extended Cut') were left unapproved specifically so every block can stay hard, matching Science & Engineering's own documented posture. Deliberately excludes stuff-made-here (already Science's flagship, reused here would blur Maker's own distinct lineup) even though the architecture fully supports it, independently rotated, if a future editor wants to add it.",
+    "schema_version": 1,
+    "blocks": [
+        {
+            "id": "lineup-workshop-fundamentals-am",
+            "type": "series",
+            "series_id": "this-old-tony",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "00:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-electronics-lab-am",
+            "type": "series",
+            "series_id": "greatscott",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "01:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-fabrication-and-printing-am",
+            "type": "series",
+            "series_id": "ivan-miranda",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "02:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-the-machine-shop-am",
+            "type": "series",
+            "series_id": "clickspring",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "03:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-restoration-workshop-am",
+            "type": "series",
+            "series_id": "my-mechanics",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "04:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-engineering-challenges-am",
+            "type": "series",
+            "series_id": "jeremy-fielding",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "05:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-impossible-builds-am",
+            "type": "series",
+            "series_id": "integza",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "06:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-model-engineering-hour-am",
+            "type": "series",
+            "series_id": "blondihacks",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "07:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-backyard-builds-am",
+            "type": "series",
+            "series_id": "colinfurze",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "08:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-mechanical-marvels-am",
+            "type": "series",
+            "series_id": "wintergatan",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "09:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-tech-build-lab-am",
+            "type": "series",
+            "series_id": "diy-perks",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "10:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-maker-prime-time-am",
+            "type": "series",
+            "series_id": "tested",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "11:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-workshop-fundamentals-pm",
+            "type": "series",
+            "series_id": "this-old-tony",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "12:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-electronics-lab-pm",
+            "type": "series",
+            "series_id": "greatscott",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "13:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-fabrication-and-printing-pm",
+            "type": "series",
+            "series_id": "ivan-miranda",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "14:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-the-machine-shop-pm",
+            "type": "series",
+            "series_id": "clickspring",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "15:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-restoration-workshop-pm",
+            "type": "series",
+            "series_id": "my-mechanics",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "16:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-engineering-challenges-pm",
+            "type": "series",
+            "series_id": "jeremy-fielding",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "17:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-impossible-builds-pm",
+            "type": "series",
+            "series_id": "integza",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "18:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-model-engineering-hour-pm",
+            "type": "series",
+            "series_id": "blondihacks",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "19:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-backyard-builds-pm",
+            "type": "series",
+            "series_id": "colinfurze",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "20:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-mechanical-marvels-pm",
+            "type": "series",
+            "series_id": "wintergatan",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "21:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-tech-build-lab-pm",
+            "type": "series",
+            "series_id": "diy-perks",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "22:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "lineup-maker-prime-time-pm",
+            "type": "series",
+            "series_id": "tested",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "23:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        }
+    ]
+}

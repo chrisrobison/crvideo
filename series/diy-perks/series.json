@@ -1,0 +1,1182 @@
+{
+    "schema_version": 1,
+    "id": "diy-perks",
+    "title": "DIY Perks",
+    "description": "I'm Matt, and here on DIY Perks you'll find plenty of interesting projects on a variety of topics!\n\nWant help with a project? The official forum is a perfect place to start! Don't forget to help others out with your knowledge, too! https://forum.diyperks.com\n\nWe also have a live-chat Discord server so you can talk DIY to like-minded individuals! Check it out! https://discord.gg/diyperks\n\nIf you need to get in touch with Matt directly for sponsorship enquiries, fan mail, or just to say 'hi' (no project questions please) then send an email to diyperks@gmail.com",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/xV8LuvhCzate3ar45xGfsopcV1THwTT6i0jftI999HV8yb-ASDWxnU2DhZUEKDib47UbC7Rtcw=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+        "channel_url": "https://www.youtube.com/channel/UCUQo7nzH1sXVpzL92VesANw",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-4VnCJdYImb8",
+            "episode_number": 1,
+            "title": "Building a NEW kind of invisible PC",
+            "description": "Let's build a new kind of invisible PC!! Also, for a new type of shave visit https://hensonshaving.com/diy or use code diy to receive 100 free blades (2+ years worth) with the purchase of a razor.",
+            "duration": 1236,
+            "year": 2026,
+            "published_at": "2026-09-29T11:30:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4VnCJdYImb8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4VnCJdYImb8",
+                "url": "https://www.youtube.com/watch?v=4VnCJdYImb8",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-7FStfdGjAwc",
+            "episode_number": 2,
+            "title": "A new way to build a PC in 2026!",
+            "description": "Tech is getting expensive, so let's get creative! Also, optimise your workflow! Download Opera for free today: https://opr.as/08-Opera-browser-diyperks\n\nForum FAQ thread: https://forum.diyperks.com/computers/video-recycling-destroyed-tech-into-beautiful-pcs/\n\nSearch term links (these are affiliate links, where I earn a commission if you buy anything through them):\n\neBay US: https://ebay.us/QzBzWz\neBay UK: https://ebay.us/NEsWfC",
+            "duration": 1478,
+            "year": 2026,
+            "published_at": "2026-07-17T12:00:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7FStfdGjAwc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7FStfdGjAwc",
+                "url": "https://www.youtube.com/watch?v=7FStfdGjAwc",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-rqCt61ZbU10",
+            "episode_number": 3,
+            "title": "Building an LED SUPERNOVA!",
+            "description": "What does it take to power one of the world's brightest LEDs? Also, take back your personal data with Incogni! Use code DIYPERKS at the link below and get 60% off an annual plan: https://incogni.com/diyperks",
+            "duration": 1508,
+            "year": 2026,
+            "published_at": "2026-02-28T12:15:13Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/rqCt61ZbU10/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "rqCt61ZbU10",
+                "url": "https://www.youtube.com/watch?v=rqCt61ZbU10",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-o6Z0MxWCbrc",
+            "episode_number": 4,
+            "title": "Building a beautiful mud hut... (a break from technology)",
+            "description": "I built my very own Hobbit House out of mud and straw! Want a better shave? Visit http://hensonshaving.com/DIYperks or use code DIYperks to receive 100 free blades with the purchase of a razor. Just make sure both products are in your cart for the code to take effect.\n\nBuilding a tiny house has a lot of advantages, and in this video Matt experiments with building a hobbit house variety. Using locally sourced clay and straw, with his friends he builds something truly unique - a small habbitable home with very strong ecological credentials. Will it be comfortable enough to spend a night in? Let's find out!",
+            "duration": 1219,
+            "year": 2025,
+            "published_at": "2025-08-31T12:31:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/o6Z0MxWCbrc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "o6Z0MxWCbrc",
+                "url": "https://www.youtube.com/watch?v=o6Z0MxWCbrc",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-EyR2-C9ggi0",
+            "episode_number": 5,
+            "title": "True Wireless Power is FINALLY here (building a TRULY wire-free setup)",
+            "description": "In this video we'll explore the future of wireless power delivery! Also, supercharge your business with Odoo today! https://www.odoo.com/r/KH6\n\nBig thanks to ETI for sending the wireless power sytem over for me to experiment with. If you want to design a product with one (even just a prototype) send them your ideas! https://www.etherdyne.net/evalkit and check out more demos by them here: https://www.youtube.com/@ether-power\n\nForum thread for further discussion, and file downloads for the speakers etc: https://forum.diyperks.com/general-general/3d-wireless-power-delivery/",
+            "duration": 1354,
+            "year": 2025,
+            "published_at": "2025-06-03T13:00:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/EyR2-C9ggi0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "EyR2-C9ggi0",
+                "url": "https://www.youtube.com/watch?v=EyR2-C9ggi0",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-qXrn4MqY1Wo",
+            "episode_number": 6,
+            "title": "DIY \"infinity contrast\" TV -  with 100% recycled parts",
+            "description": "Merging an old TV with an old projector creates magical results! Also, start using Odoo today! https://www.odoo.com/r/y7C\n\n\nDiscuss on the DIY Perks Discord server: https://discord.com/invite/XuTCwVwwnC\n\nForum thread for further development: https://forum.diyperks.com/displays-and-monitors-tvs/diy-infinity-contrast-display-projector-lcd-backlight-mod-development-thread/\n\nOBS Glow Filter: https://obsproject.com/forum/resources/stroke-glow-shadow.1800/",
+            "duration": 1104,
+            "year": 2025,
+            "published_at": "2025-03-01T07:15:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qXrn4MqY1Wo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qXrn4MqY1Wo",
+                "url": "https://www.youtube.com/watch?v=qXrn4MqY1Wo",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-1H4FuNAByUs",
+            "episode_number": 7,
+            "title": "DIY Surround Sound... USING LASERS!",
+            "description": "Let's do surround sound, with lasers! Also, buy the LTT Ratcheting Multi-bit Screwdriver here: https://lmg.gg/perksdriver\n\n3D Models:  https://payhip.com/b/3oXxU\n\nParts links: (these are affiliate links so DIY Perks may earn a commission)\n\nSPDIF/TOSLINK Converters: https://amzn.to/4iD37L0\nCheaper: https://www.aliexpress.us/w/wholesale-analog-to-digital-converter.html?spm=a2g0o.productlist.search.0\n\nTCP115-4 Driver: https://www.parts-express.com/Dayton-Audio-TCP115-4-4-Treated-Paper-Cone-Midbass-Woofer-4-Ohm-295-415\nEU: https://rkn3.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fdayton-audio-tcp115-4.html\n\nTweeter: https://amzn.to/3BfARxa\nEU: https://rkn3.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fdayton-audio-nd25fa-4.html\n\nCentre Channel Tweeter: https://amzn.to/3ZQPqjX\nEU: https://rkn3.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fdayton-audio-nd25fn-4.html\n\n4 Channel Amplifier: https://amzn.to/41saIps\n\nDSP: https://www.aliexpress.us/item/2255799930610711.html\n\nAcrylic tubes will need to be 2x 1000mm lengths, 70mm outside diameter, 66mm inside diameter",
+            "duration": 1286,
+            "year": 2024,
+            "published_at": "2024-12-13T19:45:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1H4FuNAByUs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1H4FuNAByUs",
+                "url": "https://www.youtube.com/watch?v=1H4FuNAByUs",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-o8jFJAtVyr8",
+            "episode_number": 8,
+            "title": "Building the world's largest WORKING iPhone!",
+            "description": "Building the world's largest iphone turned out to be a MASSIVE challenge! Also, get your first Odoo app for free at https://www.odoo.com/r/cQpS\n\nGo and check out Arun's video here: https://youtu.be/CpCZNCm5zgw\n\n#OdooCreatorsClub #OdooApps @Odoo",
+            "duration": 1925,
+            "year": 2024,
+            "published_at": "2024-09-06T13:01:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/o8jFJAtVyr8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "o8jFJAtVyr8",
+                "url": "https://www.youtube.com/watch?v=o8jFJAtVyr8",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-UQ6ueTe8KQM",
+            "episode_number": 9,
+            "title": "Building the ENDGAME invisible PC",
+            "description": "Let's build the ENDGAME invisible PC! Thanks to FlexiSpot for sponsoring this project - they're having their Brand Day sale right now! Use code DIYPERKS to get $50 off on their E7 PRO and E7 PLUS desks: https://bit.ly/4d4HD71",
+            "duration": 1650,
+            "year": 2024,
+            "published_at": "2024-05-23T16:00:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/UQ6ueTe8KQM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "UQ6ueTe8KQM",
+                "url": "https://www.youtube.com/watch?v=UQ6ueTe8KQM",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-W4PHhurAhwc",
+            "episode_number": 10,
+            "title": "Building a REAL PlayStation 5... PORTABLE!",
+            "description": "Let's build the world's first PlayStation 5: Tablet Edition! Visit https://dbrand.com/diyperks if you'd like to customise your own PS5!\n\nCHANNEL LINKS:\nPatreon: https://www.patreon.com/DIYPerks/\nForum: https://forum.diyperks.com\nDiscord: https://discord.gg/diyperks\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1091,
+            "year": 2024,
+            "published_at": "2024-01-15T14:00:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/W4PHhurAhwc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "W4PHhurAhwc",
+                "url": "https://www.youtube.com/watch?v=W4PHhurAhwc",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Gr9cw-ON2q0",
+            "episode_number": 11,
+            "title": "I cooled my PC with a POND!",
+            "description": "My PC is OVERHEATING so it's time to cool it WITH A POND! Full video here: https://www.youtube.com/watch?v=yFswDJPvtPY",
+            "duration": 60,
+            "year": 2023,
+            "published_at": "2023-08-08T15:45:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Gr9cw-ON2q0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Gr9cw-ON2q0",
+                "url": "https://www.youtube.com/watch?v=Gr9cw-ON2q0",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-yFswDJPvtPY",
+            "episode_number": 12,
+            "title": "Building an ACTUALLY water-cooled PC",
+            "description": "Sending PC hardware underwater in style! Thanks to ASUS for sponsoring this build! Visit https://asus.click/DIYPerks to check out the Zenbook Pro 14 Duo OLED for those in search of incredible!\n\nMaking a submersible PC has a lot of challenges, but also a lot of potential benefits. Namely COOLING! Sticking this in a 17c pond should yield impressive results... let's find out.\n\n\nBut thanks to ASUS for sponsoring this build, and for the various manufactures for sending over the hardware:\n\nZotac 4090: https://www.zotac.com/product/graphics_card/zotac-gaming-geforce-rtx-4090-trinity-0\nCrucial T700 SSDs: https://crucial.com/products/ssd/crucial-t700-ssd\nSeasonic Prime Titanium 1000w PSU: https://seasonic.com/prime-ultra-titanium\nWATERCOOLING PARTS: https://www.ekwb.com/\n\n#ASUS #InSearchOfIncredible #Submersible #ISOI2023 #Zenbook #ZenCreator",
+            "duration": 1203,
+            "year": 2023,
+            "published_at": "2023-07-31T19:15:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/yFswDJPvtPY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "yFswDJPvtPY",
+                "url": "https://www.youtube.com/watch?v=yFswDJPvtPY",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-XEspOD1NHr0",
+            "episode_number": 13,
+            "title": "Building EXCEPTIONAL speakers using MODERN TECHNIQUES",
+            "description": "3D printed speakers can sound so good! Ad: Get an exclusive NordVPN deal here\nhttps://nordvpn.com/diyperksvpn it’s risk-free with Nord’s 30-day money-back \nguarantee!\n\nWant to build these speakers for your own gaming or TV setup? The 3D printable files are available for $29.99 - https://payhip.com/b/dhJrS\n\nParts list:\n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nIt's approx $500 to build a pair (so $250 per speaker), which is good value when you think that a Sonos or Bose will set you back at least that much only instead of getting a single unit you get a stereo pair with better audio quality to boot!\n\nSubwoofer: Tang Band W3-1876S\nUSA:  https://www.parts-express.com/Tang-Band-W3-1876S-3-Mini-Subwoofer-264-909\nEU: https://rkn3.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Ftang-band-w3-1876s.html\n\nMidtone Driver: Tang Band W3-1364SA\nUSA: https://www.parts-express.com/Tang-Band-W3-1364SA-3-Bamboo-Cone-Driver-264-844\nEU: https://rkn3.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Ftang-band-w3-1364sa.html\n\nAlternative mid drivers (these performed similarly and fit the enclosure):\nhttps://www.parts-express.com/Tang-Band-W3-2141-3-Paper-Cone-Full-Range-Driver-8-Ohm-264-956\nhttps://www.parts-express.com/Tang-Band-W3-1797S-3-Neodymium-Midrange-Driver-264-888\n\nDigital Signal Processor :\nhttps://ebay.us/i8U1fC\n\nAmplifier:\nhttps://ebay.us/ZWlpBh\n\nTWEETERS are optional, as the midtone driver + DSP sounds great on its own, but for the best quality a good budget tweeter is the SB Acoustics SB26STCN, which is my favourite overall due to its pricing, but a premium option is a Scanspeak D2608/913000 Tweeter. It has a bit more ‘sparkle’ and refinement, but this will ONLY be appreciated if the final speakers are given a signal from a high-quality output source like a dedicated DAC.\n\nIf you want to print the baffles, the recommended magnet size is 10mm diameter round neodymium magnets, with 5mm depth maximum.\n\n\nFixtures and fittings:\n\n\n40pcs M3 threaded inserts (for the speaker drivers)\n40pcs 3mm x 8mm countersunk m3 black screws (for the speaker drivers)\n200pcs Self-tapping 2mm diameter screws, 10mm length max (build platform screws)\n24pcs 3mm diameter self-tapping screws (amplifier screws, DSP chamber, midtone chamber base)\n2x step-down voltage regulators, 5v output (for powering the DSP and fan)\n2x 1000uf capacitor (add across the output of the regulator to reduce interference)\n2x Power Adapters (100w ideally, each. A low cost option is old laptop power adapters)\n1x roll of 16awg wire\n\nRecommended glue is CT1 - it sticks to PLA well enough and doesn't set too quickly allowing the whole speaker to be screwed together before it begins to dry. This allows any spill over to be wiped away (use an old brush to get inside the air guide etc). Sets with some amout of flexibility. Readily availabe in the UK but not sure about equivalents for other territories. Visit the Forum or Discord server to see what the community recommends for each region.\n\nSAFETY NOTES ON PLASTER OF PARIS: If you're stupid with it, it can be dangerous. NEVER put your hands/feet/whatever into plaster of paris EVER. It can suddenly set without warning, creating a lot of heat in the center, so you'll get burned or worse. Because of this never leave a batch of wet plaster of paris in reach of children or pets. Wearing a mask is recommended to not breathe in any dust, and goggles to stop it splashing into your eyes. Stay safe people!",
+            "duration": 1340,
+            "year": 2023,
+            "published_at": "2023-06-09T11:15:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XEspOD1NHr0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XEspOD1NHr0",
+                "url": "https://www.youtube.com/watch?v=XEspOD1NHr0",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ibEN9FTLdkI",
+            "episode_number": 14,
+            "title": "DIY Dual-Layer LCD monitor - can it match OLED??",
+            "description": "Dual-layer LCD monitors aren't hard to make, but can they perform? AD: Want to try Huel? Visit: https://rebrand.ly/mattdiyperks it’s SUPER tasty! Thanks to @HuelYT for the sponsorship!\n\nForum thread: https://forum.diyperks.com/displays-and-monitors-tvs/diy-dual-layer-lcd-monitor/\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://forum.diyperks.com\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 737,
+            "year": 2023,
+            "published_at": "2023-03-13T12:30:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ibEN9FTLdkI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ibEN9FTLdkI",
+                "url": "https://www.youtube.com/watch?v=ibEN9FTLdkI",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-aUKpY0o5tMo",
+            "episode_number": 15,
+            "title": "Triple-Screen Laptop DONE RIGHT!",
+            "description": "Time to make a triple-screen laptop! AD: Want to try Huel? Visit: http://jlinks.io/diyperkshuel it’s SUPER tasty! Thanks to @HuelYT for the sponsorship!\n\nDOWNLOAD PACKS\n3D Printable Enclosure: https://diyperks.com/diy-perks-triple-screen-laptop/\nForum Thread & Discussion: https://forum.diyperks.com/computers/diy-triple-screen-laptop/#post-3309\nLive discussion on Discord: https://discord.gg/DAvEyWJCWC\n\nPlease consider supporting the channel on Patreon: http://patreon.com/diyperks\n\n\n\nOther useful links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nFramework Mainboard: https://frame.work//marketplace/mainboards\n\n4k 120Hz Panel: \nhttps://ebay.us/qrshka\nhttps://www.aliexpress.com/item/1005004255247666.html\n\niPad Retina panels:\nhttps://ebay.us/t5DIPx\nhttps://www.adafruit.com/product/1751\nhttps://www.adafruit.com/product/1716\n\nCables:\nhttps://amzn.to/3wFs7KE\nhttps://amzn.to/3DqbRkk\nhttps://amzn.to/3WS4JEv\nhttps://amzn.to/3kXhK2k\n\n3D Printer:\nhttps://www.prusa3d.com/",
+            "duration": 728,
+            "year": 2023,
+            "published_at": "2023-01-31T11:15:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/aUKpY0o5tMo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "aUKpY0o5tMo",
+                "url": "https://www.youtube.com/watch?v=aUKpY0o5tMo",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-2fX1qYMcfgs",
+            "episode_number": 16,
+            "title": "Building an invisible TV",
+            "description": "Media setups aren't usually this minimal! AD For more info on LG QNED mini LED TV : https://bit.ly/LGQNED91_DIY \n\nParts list:\n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nCrazy-good DSP Amplifiers: https://ndt5.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fdayton-audio-kabd-4100.html\n\nTweeters:  https://ndt5.net/c/?si=14570&li=1627332&wi=363790&ws=&dl=en%2Fsb-acoustics-sb26stcn-c000-4.html\n\nMid drivers: https://ndt5.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fdayton-audio-rs125p-8.html\n\nSubwoofers: https://ndt5.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fsb-acoustics-sw26dbac76-4.html\n\nLower cost but practically identical subwoofers: https://ndt5.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fdayton-audio-ls12-44.html\n\nFor 5.1 audio, one amp needs an additional two inputs, which can be acheived with one of these https://ndt5.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fsure-electronics-aa-ab41161.html (amp's micro switch needs to be in the 'S' position) \n\nThe amps need a programming board to adjust their settings: https://ndt5.net/c/?si=14570&li=1627332&wi=363790&dl=en%2Fdayton-audio-kpx.html which can be utilised with Sigma Studio (free software)\n\n5.1 HDMI Audio decoder board: https://s.click.aliexpress.com/e/_DnErkFt\n\nConcealed hinges: https://amzn.to/3Eq9FdX\n\nFireplace: https://amzn.to/3fPOLLg\n\n3D Plans (Sketchup): https://diyperks.com/ikyteech/DIY-Perks-Invisible-TV-Plans.zip\n\nForum: https://forum.diyperks.com\nDiscord: https://discord.com/invite/XuTCwVwwnC",
+            "duration": 1080,
+            "year": 2022,
+            "published_at": "2022-10-17T10:15:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2fX1qYMcfgs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2fX1qYMcfgs",
+                "url": "https://www.youtube.com/watch?v=2fX1qYMcfgs",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-9cT0jXI7l4E",
+            "episode_number": 17,
+            "title": "Building a Next-Level Camera",
+            "description": "Can this old lens become legendary? I think it can! AD: Regarding HelloFresh, use code POGDIYJULY16 for 16 FREE MEALS across 7 boxes + 3 FREE GIFTS at https://strms.net/hellofresh_diyperks",
+            "duration": 868,
+            "year": 2022,
+            "published_at": "2022-07-30T18:30:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9cT0jXI7l4E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9cT0jXI7l4E",
+                "url": "https://www.youtube.com/watch?v=9cT0jXI7l4E",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-he6xyl_MHXY",
+            "episode_number": 18,
+            "title": "Building the WORLDS FIRST PlayStation 5 slim",
+            "description": "The PlayStation 5 is a BIG console... let's fix that! Also, visit http://dbrand.com/diydarkplates if you'd like to customise your own PS5!\n\nWant to support DIY Perks? http://patreon.com/diyperks\n\nOr buy a cool t-shirt!: https://diy-perks.creator-spring.com/listing/diy-perks-fan\n\nJoin the chat!\nhttps://discord.com/invite/diyperks\nhttp://forum.diyperks.com\n\nThanks to Alphacool for the watercooling parts! https://www.alphacool.com/",
+            "duration": 1747,
+            "year": 2022,
+            "published_at": "2022-06-19T11:00:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/he6xyl_MHXY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "he6xyl_MHXY",
+                "url": "https://www.youtube.com/watch?v=he6xyl_MHXY",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nmU7u_RFFSo",
+            "episode_number": 19,
+            "title": "Building a PC sound deck... with a twist!",
+            "description": "PC Speakers haven't been that great... until now! AD: join BetterHelp and get 10% off your first month at https://betterhelp.com/diyperks\n\nDiscuss this project on the new forum! https://forum.diyperks.com/audio/the-ultimate-pc-sound-system-official-thread/\n\nFULL BUILD GUIDE: https://www.youtube.com/watch?v=408HxcN2gw4\nDownload the resource pack here: https://diyperks.com/the-ultimate-pc-sound-system/\n\n\nCHANNEL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nForum: https://forum.diyperks.com\nDiscord: https://discord.gg/diyperks\nTwitter: https://twitter.com/DIYPerks\n\nPurchasing links for the various components required:\n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nSubwoofer: https://ebay.us/su8tk4\nTweeters: https://amzn.to/3LKEVoy\nMidtone-drivers: https://ebay.us/bLsuag\nAmplifier (subwoofer): https://ebay.us/KPoUSN\nAmplifier (main): https://ebay.us/sjf6c6\nBlack-tack putty: https://amzn.to/3uiRfXf\nLEDs: https://ebay.us/RMQPfs\nLED Channelling: https://amzn.to/3uYC0Sl\nDAC (expensive but GOOD!) https://amzn.to/3v2SEQJ",
+            "duration": 993,
+            "year": 2022,
+            "published_at": "2022-04-08T11:00:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nmU7u_RFFSo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nmU7u_RFFSo",
+                "url": "https://www.youtube.com/watch?v=nmU7u_RFFSo",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-sVc5szSrfIQ",
+            "episode_number": 20,
+            "title": "Pushing DIY to the EXTREME! (ft. Mrwhosetheboss!)",
+            "description": "Sometimes niche situations call for ultra-custom DIY solutions! Big thanks to Arun from Mrwhosetheboss for the opportunity! You can check out his channel @Mrwhosetheboss and his 10m subscriber special here: https://youtube.com/watch?v=mxiEI65M9_M\n\nMassive thanks to Lamar for programming this thing! https://twitter.com/Lite5h4dow\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://forum.diyperks.com\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 672,
+            "year": 2022,
+            "published_at": "2022-03-02T12:30:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sVc5szSrfIQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sVc5szSrfIQ",
+                "url": "https://www.youtube.com/watch?v=sVc5szSrfIQ",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-pUba126uzvU",
+            "episode_number": 21,
+            "title": "Building a DIY submarine",
+            "description": "Building a submarine with full buoyancy control? YES! Also, visit http://kiwico.com/diyperks for your first month of selected crates COMPLETELY FREE! \n\nYou can check out James's finished (and now working!) submarine here! https://www.youtube.com/watch?v=kEanKJhZvA0\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1653,
+            "year": 2021,
+            "published_at": "2021-12-03T14:00:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pUba126uzvU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pUba126uzvU",
+                "url": "https://www.youtube.com/watch?v=pUba126uzvU",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-LoQu3XXIayc",
+            "episode_number": 22,
+            "title": "Building a quality USB-C microphone",
+            "description": "Quality audio for cheap? Sounds good to me! Also, don't forget you can get one free share valued up to £200 by creating a Freetrade account at: https://freetrade.io/diyperks\n\nOfficial forum for further development/help/discussion: https://forum.diyperks.com/microphones/usb-c-microphone-official-topic/\n\n\nParts list:\n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nPDF template and schematic: https://drive.google.com/drive/folders/1jQY1SycV0OChw9_9w9qhMVCW47YFHgBu?usp=sharing\n\nWant to build an XLR version? Try one of these: https://www.jlielectronics.com/diy-accessories/opa-alice-single-channel/\n\nMicrophone capsule UK/EU/Global: https://micbooster.com/jli-microphones/262-jli2555.html\nMicropone USA: https://www.jlielectronics.com/microphone-capsules/jli-2555bxz3-gp/\neBay UK: https://ebay.us/AZW5xw\n\n\nTransistor US: https://ebay.us/3m3kyV\n\nTransistor UK: https://ebay.us/KYIbZB\n\nTHAT1512: https://ebay.us/wvJUzJ\n\nUSB Audio interface: https://amzn.to/3k43hy7\n\nUSB C breakout board: https://amzn.to/3EJa0Fs\n\n7mm brass tube Amazon: https://amzn.to/3BFJ086\n7mm brass tube eBay: https://ebay.us/pZfjF7\n\n6mm brass rod Amazon: https://amzn.to/3mEPDDr\n6mm brass rod eBay: https://ebay.us/LAdYfs\n\n3mm brass rods Amazon: https://amzn.to/3bCP9Hu\n3mm brass rods eBay: https://ebay.us/32ofym\n\n72mm 1.5mm nitrile o-rings Amazon: https://amzn.to/3q6fvtV\n72mm 1.5mm nitrile o-rings eBay: https://ebay.us/y37Lmz\n\nBrass mesh: https://amzn.to/3mG1Zet\n\n15v +- isolator: https://ebay.us/YIIMNe\nCheaper version (but should work): https://ebay.us/Bwgafo or https://uk.rs-online.com/web/p/isolated-dc-dc-converters/2233683\n\nFor the resistors, capacitors, wire, stripboard etc: https://www.bitsbox.co.uk/\n\n\nUSB C info: https://www.youtube.com/watch?v=V-vFtiDYiIw\n\n\nPlease email any comments about the circuit here: DIYPerks at gmail.com\n\n\nAudio Tests: currently recording them, check back later\n\n\nI've had may folk ask if I hold the design copyright to this, so I'd just like to clarify that yes, I do. This is targeted squarely at companies: you'll need to get in touch if you intend to copy my design to sell. For individuals reading this, making one for yourself (or a couple of friends) is fine of course, and encouraged! I just want to let companies know that they can't steal my design for profit without prior arrangement... it's happened before 😄\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1414,
+            "year": 2021,
+            "published_at": "2021-11-03T12:00:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/LoQu3XXIayc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "LoQu3XXIayc",
+                "url": "https://www.youtube.com/watch?v=LoQu3XXIayc",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-WlFVPnGEb8o",
+            "episode_number": 23,
+            "title": "Building an ULTRA-BRIGHT water-cooled TV...",
+            "description": "A watercooled TV... for outside viewing? YES PLEASE!  Also, visit http://kiwico.com/diyperks for your first month of selected crates COMPLETELY FREE!\n\nParts that may be hard to find:\n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nCheap, bright, COBs: https://www.aliexpress.com/item/32831244987.html?spm=a2g0o.productlist.0.0.18a47bcdB9bN3y&algo_pvid=18028301-a497-41d4-b020-51443cfc487e&algo_exp_id=18028301-a497-41d4-b020-51443cfc487e-3&pdp_ext_f=%7B%22sku_id%22%3A%2212000016874885129%22%7D\nWaterpump: https://www.aliexpress.com/item/4000049250416.html?spm=a2g0o.productlist.0.0.3f297752g6mwUe&algo_pvid=76553bfb-719d-4772-a534-52e8d4cf311c&algo_exp_id=76553bfb-719d-4772-a534-52e8d4cf311c-43&pdp_ext_f=%7B%22sku_id%22%3A%2210000000110871267%22%7D\n\n\nPremium LED panels (good for studio lighting ideally):\n\nAliExpress: https://www.aliexpress.com/item/1005001375839369.html?spm=a2g0o.store_pc_allProduct.8148356.1.534b6874YpHvtl\nEbay: https://ebay.us/waBJWJ\n\nHeatsink for above LED panels:\n\nAliExpress: https://www.aliexpress.com/item/1005003151144698.html?spm=a2g0o.store_pc_allProduct.8148356.11.534b6874PoTbDj\nEbay: https://ebay.us/CejK3Q\n\nVoltage boosters for above panels: https://www.aliexpress.com/item/4000078695912.html\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1346,
+            "year": 2021,
+            "published_at": "2021-10-13T13:30:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/WlFVPnGEb8o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "WlFVPnGEb8o",
+                "url": "https://www.youtube.com/watch?v=WlFVPnGEb8o",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-dSJZ7MtKe1w",
+            "episode_number": 24,
+            "title": "Building a Luggable PC",
+            "description": "This is what happens when cutting edge desktop hardware meets portability!  Also, visit http://kiwico.com/diyperks for your first month COMPLETELY FREE!\n\nBig thanks to Synology for the backup NAS system! https://www.synology.com/\n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nThe amazing 50hz subwoofer: https://ndt5.net/c/?si=14570&li=1627332&wi=363790&ws=&dl=en%2Ftang-band-t3-2190s.html\n\nCrucial RAM: https://www.amazon.com/s?k=BL2K32G36C16U4B&ref=nb_sb_noss_2\n\n144hz laptop panels: https://www.ebay.co.uk/itm/193436070087\n\nDC PSU solution: https://hdplex.com/hdplex-800w-dc-atx-with-16v-63vdc-input.html\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1309,
+            "year": 2021,
+            "published_at": "2021-08-31T21:45:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dSJZ7MtKe1w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dSJZ7MtKe1w",
+                "url": "https://www.youtube.com/watch?v=dSJZ7MtKe1w",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-C3GKe7eXbPE",
+            "episode_number": 25,
+            "title": "Building the world's first 'breathing' PC",
+            "description": "Ever wondered if a PC could cool itself by... 'breathing'? Let's find out! Also, visit http://kiwico.com/diyperks for your first month COMPLETELY FREE!\n\n\n10h version of it in action! https://www.youtube.com/watch?v=63ClENxFPNs\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1129,
+            "year": 2021,
+            "published_at": "2021-06-30T14:00:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/C3GKe7eXbPE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "C3GKe7eXbPE",
+                "url": "https://www.youtube.com/watch?v=C3GKe7eXbPE",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-adY-S8AH_Jc",
+            "episode_number": 26,
+            "title": "Build your own portable POWER STATION (1200w, USB-C and MORE!)",
+            "description": "In this video we'll be building a SUPER POWERFUL battery station! Also, regarding Private Internet Access, visit http://www.privateinternetaccess.com/DIYP to get their service for less than $3 a month and 3 extra months for free!\n\nParts list:\n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nBattery cells (UK/EU): https://www.fogstar-wholesale.co.uk/product/molicel-p42a/\n\nBMS Choice 1 (expensive but cool): https://www.energusps.com/shop/product/tiny-bms-s516-30a-16\n\nBMS Choice 2 (cheaper but still cool): https://www.electricskateboarding.co.uk/bms\n\nBMS Choice 3 (probably good but not tested myself, make sure it matches battery type like Li-ion vs Lifepo4): https://ebay.us/Q0URWP\n\nLithium Chargers (UK/EU): https://www.electricskateboarding.co.uk/battery-chargers\n\nLithium Chargers (US): https://ebay.us/ET4sA3\n\n\nDeans connectors: https://amzn.to/2TM1ROp\n\n60v step down regulators (200w): https://amzn.to/3g3QiuT\n\nThreaded inserts: https://amzn.to/357wX5r\n\nNylon bolts: https://amzn.to/351wkdS\n\nPower meter: https://amzn.to/3w4W9Wr\n\nUSB power board (awesome): https://ebay.us/BTsFyd\n\nUSB-C car charger (90w!): https://amzn.to/3g2j2E1\n\nBattery spot welder: https://amzn.to/2RyglAK\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1185,
+            "year": 2021,
+            "published_at": "2021-06-07T21:00:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/adY-S8AH_Jc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "adY-S8AH_Jc",
+                "url": "https://www.youtube.com/watch?v=adY-S8AH_Jc",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-P4Lshbq27nw",
+            "episode_number": 27,
+            "title": "Building a stealthy PlayStation 5...",
+            "description": "The PS5 gets a makeover! Also, you can get the AWESOME dbrand DarkPlates at: http://dbrand.com/DIYdarkplates\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 752,
+            "year": 2021,
+            "published_at": "2021-05-23T13:30:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/P4Lshbq27nw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "P4Lshbq27nw",
+                "url": "https://www.youtube.com/watch?v=P4Lshbq27nw",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-zNHDbXAmY_0",
+            "episode_number": 28,
+            "title": "Transforming dead earbuds into POWERFUL wireless speakers",
+            "description": "Got an old pair of headphones? Time to turn them into speakers! Also, new Audible members get a 30-day free trial. Visit http://audible.com/diyperks or text \"diyperks\" to 500 500 to try Audible today!\n\nAdditional guide can be found here: https://www.patreon.com/posts/52451164\n\nDiscuss this project on the forum! https://forum.diyperks.com/audio/earbuds-to-dual-wireless-stereo-speakers-official-topic/\n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nBroken Galaxy Buds (ebay): https://ebay.us/ehwwHX\n\n(UK link: https://ebay.us/fwrmmp)\n\n\nSpeaker drivers:\n2\" subwoofer and radiator: https://geni.us/SoundImports-PR08\n\n2\" mid/treble unit: https://geni.us/SoundImports-TEBM35\n\n\nAmplifier:\n(US) https://amzn.to/3u8yjb5\n(UK) https://amzn.to/3t3Y1Mv\n\nProtected batteries: https://uk.rs-online.com/web/p/speciality-size-rechargeable-batteries/8801558/\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1087,
+            "year": 2021,
+            "published_at": "2021-04-30T14:00:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zNHDbXAmY_0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zNHDbXAmY_0",
+                "url": "https://www.youtube.com/watch?v=zNHDbXAmY_0",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-VRo-lnBKhLo",
+            "episode_number": 29,
+            "title": "Building a high-end PlayStation 5 (it was HARD!)",
+            "description": "I made a BRASS PlayStation 5! Also, regarding KiwiCo, visit https://kiwico.com/DIYPerks50 to get 50% off your first month of ANY crate!\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 987,
+            "year": 2021,
+            "published_at": "2021-03-25T11:30:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/VRo-lnBKhLo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "VRo-lnBKhLo",
+                "url": "https://www.youtube.com/watch?v=VRo-lnBKhLo",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-DrqdHVeBkp4",
+            "episode_number": 30,
+            "title": "Building a USB-C touchscreen monitor (new for modern devices)",
+            "description": "In this video we'll be building a USB-C monitor! Also the first 1000 people to use this link will get a free trial of Skillshare Premium Membership: https://skl.sh/diyperks02211\n\n\n\nMini speaker units (great for all sorts of projects): \nhttps://www.soundimports.eu/en/tang-band-t0-2008s.html\nhttps://www.soundimports.eu/en/tang-band-t1-1925s.html\n\n\nSelection of interesting LCD panel sets: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\n\nTouchscreen + USB-C: http://ebay.us/yuT4pa\nMini ultrawide: http://ebay.us/G8cK7R\n4k (HDMI + Type C): http://ebay.us/ZACQUG\n144Hz + freesync: http://ebay.us/uAelm7\n\n\nBattery protection board: https://amzn.to/3pkMs1y\n\nHow to make a DIY monitor (simple version): https://www.youtube.com/watch?v=CfirQC99xPc\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 825,
+            "year": 2021,
+            "published_at": "2021-02-15T10:45:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DrqdHVeBkp4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DrqdHVeBkp4",
+                "url": "https://www.youtube.com/watch?v=DrqdHVeBkp4",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-HhWDPG8EROw",
+            "episode_number": 31,
+            "title": "Watercooling my invisible PC... (and other upgrades)",
+            "description": "It's time to watercool my invisible PC! Also the first 1000 people to use this link will get a free trial of Skillshare Premium Membership: https://skl.sh/diyperks01211\n\n\nNot seen my original invisible PC build? https://www.youtube.com/watch?v=Perqf0dOGLk\n\n\nHere's some of the watercooling bits I used from Alphacool: \n\n\n40mm rads: https://www.aquatuning.co.uk/water-cooling/radiators/radiators-active/23800/alphacool-nexxxos-ut60-full-copper-x-flow-40mm-hepta-7x40mm-radiator?c=2741\n\n\nLT pump: https://www.aquatuning.co.uk/water-cooling/pumps/alphacool-dc-lt/dc-lt-pumps/20729/alphacool-dc-lt-2600-ultra-low-noise-ceramic-12v-dc\n\nLT res: https://www.aquatuning.co.uk/water-cooling/reservoirs/tower-tank/dc-lt/24196/alphacool-eisstation-40-dc-lt-reservoir?c=2675\n\nCPU Waterblock: https://www.aquatuning.co.uk/water-cooling/cpu-water-blocks/cpu-water-blocks/amd-am4-ryzen/24199/alphacool-eisblock-xpx-1u-black-acetal-version?c=2641\n\ndouble fittings: https://www.aquatuning.co.uk/water-cooling/fittings/adapters/21537/alphacool-eiszapfen-double-nippel-g1/4-outer-thread-to-g1/4-outer-thread-deep-black?c=2662\n\n12.7mm tubing: https://www.aquatuning.co.uk/water-cooling/tubing/tubes/24732/alphacool-tube-alphatube-tpv-12-7/7-6-black-matte-3-3m-10ft-retail-box?c=2751\n\nfitting set: https://www.aquatuning.co.uk/water-cooling/fittings/compression-fittings/12-77-6mm/25005/alphacool-hf-compression-fitting-tpv-straight-black-6pcs-kit?c=10986\n\n90 degree fittings: https://www.aquatuning.co.uk/water-cooling/fittings/compression-fittings/1310mm/20678/alphacool-eiszapfen-13/10mm-compression-fitting-900-rotatable-g1/4-chrome?c=10986\n\n\nOther components: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nITX motherboard: https://amzn.to/3bBNROi\n\n\n16 core processor: https://amzn.to/2MWL1sL\n\n\nSFX PSU: https://amzn.to/2Kidcl9 (the one I stripped down)\n\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 818,
+            "year": 2021,
+            "published_at": "2021-01-15T13:00:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/HhWDPG8EROw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "HhWDPG8EROw",
+                "url": "https://www.youtube.com/watch?v=HhWDPG8EROw",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-X1u-9YqrIJc",
+            "episode_number": 32,
+            "title": "The only reason to watercool a camera....",
+            "description": "Check out SimpliSafe’s holiday sale by visiting http://simplisafe.com/diyperks. SimpliSafe is award-winning home security that keeps your home safe around the clock! It’s really reliable, easy to use, and there are no contracts.\n\nThe Canon EOS R5 has some serious overheating issues... let's fix it!\n\n\n\nSunlight video: https://www.youtube.com/watch?v=6bqBsHSwPgw\n\n\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1236,
+            "year": 2020,
+            "published_at": "2020-11-26T14:00:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/X1u-9YqrIJc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "X1u-9YqrIJc",
+                "url": "https://www.youtube.com/watch?v=X1u-9YqrIJc",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6bqBsHSwPgw",
+            "episode_number": 33,
+            "title": "Building a realistic artificial sun (for dark winter days)",
+            "description": "In this video we'll be building an artificial SUN! Also, check out http://KiwiCo.com/DIYPerks50 for 50% off your first month of any subscription over at KiwiCo!\n\nOfficial forum thread for this project (for help, discussion etc): https://forum.diyperks.com/lighting/artificial-sunlight-official-topic/\n\n\nPatreon: http://patreon.com/diyperks\n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\n\nRecommended LED: https://www.aliexpress.com/item/1005002687466688.html\n\n\n\n\nWatercooling components:\n\n\nRadiator: https://www.aquatuning.co.uk/water-cooling/radiators/radiators-active/12885/alphacool-nexxxos-xt45-full-copper-420mm-radiator?c=2742\nPump/Reservoir: https://www.aquatuning.co.uk/water-cooling/reservoirs/tower-tank/laing-ddc/21040/alphacool-eisstation-ddc-reservoir-incl.-alphacool-laing-ddc310-pump?c=2675\nWaterblock: https://www.aquatuning.co.uk/advent-special/4.-advent-special/21507/alphacool-eisblock-xpx-cpu-deep-black?c=2640\nTubing: https://www.aquatuning.co.uk/water-cooling/tubing/tubes/27019/alphacool-tube-alphatube-tpv-16/10-black-matte-3-3m-10ft-retailbox?c=2751\nFittings: https://www.aquatuning.co.uk/water-cooling/fittings/compression-fittings/1610mm/21503/alphacool-hf-16/10-compression-fitting-g1/4-deep-black-sixpack?c=10986\nCoolant: https://www.aquatuning.co.uk/water-cooling/water-additives/ready-to-use/16922/alphacool-ckc-cape-kelvin-catcher-clear-kanister-3000ml?c=2758\n\n\n\nMirror film: https://amzn.to/3jL8d8j\n\nBlue Vinyl Wrap: https://amzn.to/3oE5SQ9\n\n\n\nMini LEDs: https://store.yujiintl.com/search?type=article%2Cpage%2Cproduct&q=9w*+led*\nThe 500w LED I used: https://store.yujiintl.com/products/bc-series-high-cri-high-power-cob-led-5600k-bc270h-unit-1pcs\n\n\nMagnifying sheet: https://amzn.to/34K9NTB\n\n\nHere's how to power LEDS: https://www.youtube.com/watch?v=Y06VHj1GvLI\n\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1185,
+            "year": 2020,
+            "published_at": "2020-10-31T17:30:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6bqBsHSwPgw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6bqBsHSwPgw",
+                "url": "https://www.youtube.com/watch?v=6bqBsHSwPgw",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Y06VHj1GvLI",
+            "episode_number": 34,
+            "title": "Building DIY LED lights",
+            "description": "Ever wondered how LEDs actually emit light? This video is for you! Also, regarding Blinkist, visit http://www.blinkist.com/diyperks to get a free 1-week trial and 25% off premium membership!\n\nHere's a link to the LED light array project: https://www.youtube.com/watch?v=DhbMnQt14_o\n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\n\nAnd a link to the voltage regulator: https://amzn.to/34iduP0\nAnd LED: https://rover.ebay.com/rover/1/711-53200-19255-0/1?mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2F10w%2Bcob%2Bemitter&campid=5337657473&toolid=10001&customid=\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 852,
+            "year": 2020,
+            "published_at": "2020-09-30T14:30:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Y06VHj1GvLI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Y06VHj1GvLI",
+                "url": "https://www.youtube.com/watch?v=Y06VHj1GvLI",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-_E0mNSMBmFQ",
+            "episode_number": 35,
+            "title": "Building an invisible monitor...",
+            "description": "This shelf isn't just any shelf... it also has a monitor inside! Also, make sure you visit http://www.privateinternetaccess.com/diyp to get your internet secure today for less than $3 per month + 3 months completely free! \n\n\nOriginal desk PC video: https://www.youtube.com/watch?v=Perqf0dOGLk\n\nLike my work? Consider supporting the channel on Patreon: http://www.patreon.com/diyperks \n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\n\nIiyama monitor:\n(UK) https://amzn.to/2Fs3kSP I'm not sure what this is sold as in other regions. If anyone knows please let me know.\n\nFloating shelf brackets:\n(US) https://amzn.to/3bKWp3o\n(UK) https://amzn.to/2Rd9N6Y\n\n\nCool custom prism brackets (thanks Joe!): https://theironmill.com/shop?olsPage=products%2F1-x-pair-of-prism-wall-brackets\n\n\nThe hover pen seen on the desk is pretty neat as well: https://www.thehoverpen.com/\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 950,
+            "year": 2020,
+            "published_at": "2020-09-10T13:00:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_E0mNSMBmFQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_E0mNSMBmFQ",
+                "url": "https://www.youtube.com/watch?v=_E0mNSMBmFQ",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Perqf0dOGLk",
+            "episode_number": 36,
+            "title": "Building an invisible PC",
+            "description": "In this video we'll be building an invisible PC! Also, regarding KiwiCo, visit http://www.kiwico.com/diyperks for 20% off EVERYTHING or use code DIYPERKS. Hurry, it's valid until the 30th of September!\n\n\nThis build is sleek, stylish, and elegant - a real masterpiece! \n\n\n\nTimestamps:\n\n\n00:00 - Introduction\n01:44 - Outer Shell\n04:46 - Component Prep\n09:01 - Hardwood Illusion\n16:04 - Final Component Mounting\n17:31 - Cooling System\n19:32 - Bottom Panel\n22:17 - Thermals and Sound Tests\n\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks\n\n\n\nDIY Brass & Leather PC: https://www.youtube.com/watch?v=JZZGdWV5WX8\nDIY super silent desk PC: https://www.youtube.com/watch?v=QaoFh1DH51U\n\nATX Template: https://drive.google.com/file/d/14tRyPqhrS7S-T_XOqlgwWBTaEf5OqHoF/view?usp=sharing\n\nLinus' version: https://www.youtube.com/watch?v=UbkhvYWqbhQ\n\n\nNow, some build notes:\n\n\nRegarding the use of acetone, it's not the most dangerous chemical in the world (it's used in nail varnish remover for example) but it's always a good idea to wear suitable gloves when handling it and be in a well ventilated environment during its use so you don't breathe in the fumes. It's also worth noting that the vapours themselves are very flamable, so keep sparks and open flames well away from your work area during use. Again, this is why it's important to be in a well ventilated environment.",
+            "duration": 1627,
+            "year": 2020,
+            "published_at": "2020-08-28T14:30:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Perqf0dOGLk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Perqf0dOGLk",
+                "url": "https://www.youtube.com/watch?v=Perqf0dOGLk",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-mciEZKSvva8",
+            "episode_number": 37,
+            "title": "Broken smartphone to working laptop transformation",
+            "description": "Got a smashed phone? Turn it into a laptop! Also, regarding Blinkist, visit http://blinkist.com/diyperks to get a free 1-week trial and 25% off premium membership!\n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nThis is the screen we'll be using: https://geni.us/USB-C-Monitor\n\nBattery bank: https://amzn.to/3jxYXW5\n\nKeyboard cover: https://amzn.to/2WOGxXe\n\n\nBig thanks to my Patreons for making this video happen! http://patreon.com/diyperks",
+            "duration": 924,
+            "year": 2020,
+            "published_at": "2020-07-24T12:45:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mciEZKSvva8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mciEZKSvva8",
+                "url": "https://www.youtube.com/watch?v=mciEZKSvva8",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-YfvTjQ9MCwY",
+            "episode_number": 38,
+            "title": "Building a TRUE 4k home cinema projector (it’s awesome)",
+            "description": "Despite being homemade, this DIY projector packs a punch! Also, the first 1000 people to use this link will get a 2 month free trial of Skillshare Premium Membership: https://skl.sh/diyperks3\n\n\nIf you enjoy project build guides like this, please consider supporting my work on Patreon: http://www.patreon.com/diyperks\n\n\nThe PDF guide is now available over on the Patreon page: http://www.patreon.com/diyperks\n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nHere are the main components required for this build:\n\nAluminium: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3Daluminium%2Bsheet\n\n\nThreaded rods: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3Dm6%2Bthreaded%2Brods%2B1m\n\n\n\nLED (choose 5600k for pure white): https://store.yujiintl.com/collections/led-cobs/products/bc-series-high-cri-cob-led-bc160h-100w\n\n\nOR (cheaper, but larger diameter - choose 100w) https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fitm%2F183184745144\n\n\n Heatsink: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3Dcpu%2Bheatsink%2B-laptop%2Btower\n\n\nPower board: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3D250w%2BDC%2Bvoltage%2BLED%2Bconstant\n\n\n\nFresnel lenses: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3D7%2Bdiy%2Bfresnel%2B2\n\n\nLCD panel + control board: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3DLCD%2Bmipi%2Bhdmi\n\n\n4K LCD panel + control board: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3D5.5%2B3840%2B2160%2Bcuring\n\n\nLarge format camera lenses: https://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&toolid=11800&pub=5575117832&campid=5337657473&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_nkw%3Dlarge%2Bformat%2Blens%2B%26_sop%3D15\n\n\n\n\nHow to make your own front-surface mirror: https://www.youtube.com/watch?v=IaEaaeajCSI\n\n\n\nVideo on powering LEDs: https://youtu.be/Y06VHj1GvLI?t=609\n\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 1700,
+            "year": 2020,
+            "published_at": "2020-06-15T13:45:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YfvTjQ9MCwY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YfvTjQ9MCwY",
+                "url": "https://www.youtube.com/watch?v=YfvTjQ9MCwY",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-2AecAXinars",
+            "episode_number": 39,
+            "title": "Weird webcam mod that enables eye-contact conversation",
+            "description": "This handy little modification can allow you to make eye-contact with people over the internet. It’s pretty neat! Also, with Honey, you can get the best deals while shopping online: http://joinhoney.com/diyperks - it's FREE and finds coupons for you with just one click. \n\nWebcam wiring up guide: https://youtu.be/C8pFkhkTvqo\nDIY Perks Extra: https://www.youtube.com/channel/UC177ji4tmDiLlW5iKyfJShA/\n\nLike my work? Consider supporting the channel on Patreon: http://patreon.com/diyperks \n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nTwo-way mirror: https://amzn.to/2TJ4Jc0\n\n\nFoamboard: https://amzn.to/3c3aTKB\n\n\nNeed help finding webcams? http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575117832&toolid=10001&campid=5337657473&customid=&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fwebcam%2Blaptop%26_sop%3D15%26LH_ItemCondition%3D3000 \n\nUK Link: http://rover.ebay.com/rover/1/710-53481-19255-0/1?ff3=4&pub=5575117832&toolid=10001&campid=5337657473&customid=&mpre=https%3A%2F%2Fwww.ebay.co.uk%2Fsch%2Fi.html%3F_nkw%3Dwebcam%2Blaptop%26_sop%3D15%26LH_ItemCondition%3D3000 \n\n\n\n\n\nYou can even make a CCTV system from them: https://www.youtube.com/watch?v=CouxmNqxO4A\n\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 808,
+            "year": 2020,
+            "published_at": "2020-05-27T10:45:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/2AecAXinars/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "2AecAXinars",
+                "url": "https://www.youtube.com/watch?v=2AecAXinars",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-V-vFtiDYiIw",
+            "episode_number": 40,
+            "title": "Converting devices to USB Type-C",
+            "description": "USB Type C is great! ...unless you have to use dongles anyway. Let’s fix that! Also, with Blinkist, the first 100 of you to go to https://blinkist.com/diyperks are going to get a 7-day trial and 25% off full membership if you decide to go with them. Sweet! \n\nParts links: \n\nDisclosure: These are affiliate links. If you click them and make a purchase from the various merchants they link to, DIY Perks may earn a commission. Affiliate programs and affiliations include, but are not limited to the eBay Partner Network and Amazon Associates.\n\nParts links below:\n\nUSB C connector board (Amazon) https://amzn.to/35JPunT\n\nUSB C connector board (eBay) http://rover.ebay.com/rover/1/711-53200-19255-0/1?ff3=4&pub=5575117832&toolid=10001&campid=5337657473&customid=&mpre=https%3A%2F%2Fwww.ebay.com%2Fsch%2Fi.html%3F_from%3DR40%26_trksid%3Dm570.l1313%26_nkw%3Dusb%2Bc%2Bconnector%2Bboard%2Bdiy%2B3.1%26_sacat%3D0\n\n\nSoldering iron kit (Amazon) https://amzn.to/2WBlhUa\n\nOFFICIAL LINKS:\nSupport me on Patreon: https://www.patreon.com/DIYPerks/\nOfficial Website: https://www.diyperks.com/\nDiscord: https://diyperks.com/discord-server/\nForums: https://diyperks.com/community/\nTwitter: https://twitter.com/DIYPerks",
+            "duration": 985,
+            "year": 2020,
+            "published_at": "2020-05-08T11:45:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/V-vFtiDYiIw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "V-vFtiDYiIw",
+                "url": "https://www.youtube.com/watch?v=V-vFtiDYiIw",
+                "channel_id": "UCUQo7nzH1sXVpzL92VesANw",
+                "channel_title": "DIY Perks",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}

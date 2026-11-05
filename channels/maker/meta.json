@@ -1,0 +1,15 @@
+{
+    "number": 6,
+    "name": "Maker Channel",
+    "description": "People making, building, repairing, inventing, and occasionally destroying fascinating things: a 12-hour, 12-show lineup (Adam Savage's Tested, DIY Perks, This Old Tony, GreatScott!, Integza, Ivan Miranda, Jeremy Fielding, Wintergatan, Clickspring, Blondihacks, my mechanics, colinfurze) in one-hour slots, repeating every 12 hours.",
+    "logo": "logo.svg",
+    "anchor": "2026-11-05T00:00:00-08:00",
+    "theme": {
+        "bg": "#14110d",
+        "bg2": "#241c12",
+        "fg": "#f6efe4",
+        "muted": "#b8a98f",
+        "accent": "#ff7a1a",
+        "accentWarm": "#ffce3d"
+    }
+}
