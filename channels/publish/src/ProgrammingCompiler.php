@@ -89,7 +89,7 @@ final class ProgrammingCompiler
             $seriesById[$s['id']] = $s;
         }
 
-        $items = [];
+        $groups = []; // one entry per scheduled occurrence that has at least one item -- see BoundaryResolver
         $warnings = [];
         $episodeSets = [];
 
@@ -163,6 +163,8 @@ final class ProgrammingCompiler
                 throw new RuntimeException("block \"$blockId\": duration must be a positive number of seconds.");
             }
 
+            $boundary = BoundaryResolver::normalizeBoundary($block['boundary'] ?? null, $blockId);
+
             $packing = is_array($block['packing'] ?? null) ? $block['packing'] : [];
             $packingEnabled = (bool) ($packing['enabled'] ?? false);
 
@@ -189,7 +191,13 @@ final class ProgrammingCompiler
 
                     $episodeDuration = is_numeric($episode['duration'] ?? null) ? (float) $episode['duration'] : null;
                     $itemDuration = ($episodeDuration !== null && $episodeDuration > 0) ? (int) round($episodeDuration) : $durationSeconds;
-                    $items[] = self::buildItem($episode, $occ['at']->getTimestamp(), $itemDuration);
+                    $startAbs = $occ['at']->getTimestamp();
+                    $groups[] = [
+                        'blockId' => $blockId,
+                        'boundary' => $boundary,
+                        'nominalStart' => $startAbs,
+                        'items' => [self::buildItem($episode, $startAbs, $itemDuration)],
+                    ];
                 }
                 continue;
             }
@@ -256,12 +264,18 @@ final class ProgrammingCompiler
                 }
 
                 $warnings = [...$warnings, ...$packed['warnings']];
+                if (!$packed['scheduled']) {
+                    continue; // nothing packed into this occurrence -- no group, exactly like a non-packing-path gap
+                }
+                $startAbs = $occ['at']->getTimestamp();
                 $offset = 0;
+                $groupItems = [];
                 foreach ($packed['scheduled'] as $sched) {
                     $episode = $episodesById[$sched['episode_id']];
-                    $items[] = self::buildItem($episode, $occ['at']->getTimestamp() + $offset, $sched['duration']);
+                    $groupItems[] = self::buildItem($episode, $startAbs + $offset, $sched['duration']);
                     $offset += $sched['duration'];
                 }
+                $groups[] = ['blockId' => $blockId, 'boundary' => $boundary, 'nominalStart' => $startAbs, 'items' => $groupItems];
             }
 
             if ($checkpointCaptured) {
@@ -272,17 +286,14 @@ final class ProgrammingCompiler
             }
         }
 
-        usort($items, static fn (array $a, array $b): int => $a['start'] <=> $b['start']);
-        for ($i = 1, $count = count($items); $i < $count; $i++) {
-            if ($items[$i]['start'] < $items[$i - 1]['end']) {
-                throw new RuntimeException(sprintf(
-                    'Occurrence "%s" starting %s overlaps the previous occurrence "%s", which runs until %s. '
-                    . 'Adjust block durations or recurrence timing -- publish refuses to emit an overlapping schedule.',
-                    $items[$i]['id'], gmdate('c', $items[$i]['start']),
-                    $items[$i - 1]['id'], gmdate('c', $items[$i - 1]['end']),
-                ));
-            }
-        }
+        // BoundaryResolver is the only place overlap is decided: hard (the default,
+        // and the pre-Phase-3 behavior byte-for-byte) refuses any overlap exactly as
+        // the old inline check always did; soft/elastic may turn a bounded amount of
+        // it into an explicit, reported delay instead. See its header for the full
+        // reasoning.
+        $resolved = BoundaryResolver::resolve($groups);
+        $items = $resolved['items'];
+        $warnings = [...$warnings, ...$resolved['warnings']];
 
         return ['items' => $items, 'warnings' => $warnings, 'episodeSets' => $episodeSets];
     }

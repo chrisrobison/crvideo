@@ -281,6 +281,50 @@ final class ProgrammingCompilerTest
         });
     }
 
+    // ---------------- Phase 3: hard/soft boundaries ----------------
+
+    public function testDefaultBoundaryIsHardAndOverlapIsStillRefusedExactlyAsBeforePhase3(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved', 90000.0)]]];
+        Assert::throws(RuntimeException::class, function () use ($series): void {
+            ProgrammingCompiler::compile(['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-06T00:00:00Z'));
+        });
+    }
+
+    public function testSoftBoundaryAbsorbsAnOverrunFromAPrecedingBlockAsAnExplicitDelay(): void
+    {
+        $series = [
+            ['id' => 'morning', 'title' => 'M', 'url' => '/x', 'episodes' => [$this->episode('m1', 'approved', 4200.0)]], // 70 min, overruns its 1hr slot by 600s
+            ['id' => 'evening', 'title' => 'E', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved', 600.0)]],
+        ];
+        $blockA = $this->dailyBlock('a', 'morning', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '13:00', 'timezone' => 'UTC'], 'duration' => 3600]);
+        $blockB = array_replace($this->dailyBlock('b', 'evening', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '14:00', 'timezone' => 'UTC'], 'duration' => 1800]), [
+            'boundary' => ['mode' => 'soft', 'max_delay' => 900],
+        ]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$blockA, $blockB]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        $byId = [];
+        foreach ($result['items'] as $it) {
+            $byId[$it['id']] = $it;
+        }
+        Assert::same($byId['m1']['end'], $byId['e1']['start'], 'e1 is pushed to start exactly where the overrunning m1 ends, never overlapping it');
+        Assert::same(600, $byId['e1']['delay_seconds']);
+    }
+
+    public function testHardBoundaryAfterASoftOverrunThatDoesNotFitIsRejected(): void
+    {
+        $series = [
+            ['id' => 'morning', 'title' => 'M', 'url' => '/x', 'episodes' => [$this->episode('m1', 'approved', 4500.0)]], // 75 min -- overruns by 900s
+            ['id' => 'noon', 'title' => 'N', 'url' => '/x', 'episodes' => [$this->episode('n1', 'approved', 600.0)]],
+        ];
+        $blockA = $this->dailyBlock('a', 'morning', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '13:00', 'timezone' => 'UTC'], 'duration' => 3600]);
+        $blockB = array_replace($this->dailyBlock('b', 'noon', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '14:00', 'timezone' => 'UTC'], 'duration' => 1800]), [
+            'boundary' => ['mode' => 'hard'],
+        ]);
+        Assert::throws(RuntimeException::class, function () use ($blockA, $blockB, $series): void {
+            ProgrammingCompiler::compile(['blocks' => [$blockA, $blockB]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        });
+    }
+
     public function testPackingResetsRotationStateWhenTheEpisodeSetIsRefreshed(): void
     {
         $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [

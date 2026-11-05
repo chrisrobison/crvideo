@@ -262,6 +262,15 @@ section for the full config (`mode`, `minimum_remaining`,
 / `RotationState.php` for how every mode stays deterministic and
 bounded-cost.
 
+A block can also declare a `boundary` (`hard`, the default and the
+pre-existing behavior; `soft`, with a required `max_delay`; `elastic`,
+for now simplified to behave like `soft`): whether its own nominal start
+time can ever be pushed later by an overrunning predecessor, and by how
+much. A dedicated `BoundaryResolver` stage resolves every block's
+occurrences together, chronologically, after per-block compilation --
+see `channels/publish/README.md`'s "Hard and soft start boundaries"
+section.
+
 ## Worked example: adding a channel end to end
 
 Using `channels/science` (Science & Engineering) as the actual, currently
