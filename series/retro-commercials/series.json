@@ -1,0 +1,4025 @@
+{
+  "schema_version": 1,
+  "id": "retro-commercials",
+  "title": "Retro Commercial Break",
+  "description": "Vintage advertising and sponsored commercial films from the Internet Archive's Prelinger Archives -- car dealers, cereal, cigarettes, and the American sales pitch, mid-century style.",
+  "creator": "Internet Archive (Prelinger Archives)",
+  "year": null,
+  "thumbnail_url": null,
+  "logo_url": null,
+  "source": {
+    "provider": "internet_archive",
+    "query": "collection:(prelinger) AND mediatype:(movies) AND subject:(advertising)",
+    "collection": null
+  },
+  "rotation": {
+    "mode": "sequential",
+    "loop": true
+  },
+  "episodes": [
+    {
+      "id": "ia-TimeSave1936",
+      "episode_number": 1,
+      "title": "Time Savers for House Makers",
+      "description": "Screen ad for instant laundry starch.",
+      "creator": "Unknown",
+      "duration": 59.86,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/TimeSave1936",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "TimeSave1936",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/TimeSave1936/TimeSave1936.mp4",
+        "page_url": "https://archive.org/details/TimeSave1936",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Home economics: Laundry",
+          "Starch"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TimeSave1936; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-MakeMine1948",
+      "episode_number": 2,
+      "title": "Make Mine Freedom",
+      "description": "This Cold War-era cartoon uses humor to tout the dangers of Communism and the benefits of capitalism.",
+      "creator": "Sutherland (John) Productions",
+      "duration": 570.1,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/MakeMine1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "MakeMine1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/MakeMine1948/MakeMine1948.mp4",
+        "page_url": "https://archive.org/details/MakeMine1948",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Cold War",
+          "Animation: Advertising",
+          "Capitalism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Designfo1956",
+      "episode_number": 3,
+      "title": "Design for Dreaming",
+      "description": "Set at the 1956 General Motors Motorama, this is one of the key Populuxe films of the 1950s, showing futuristic dream cars and Frigidaire's \"Kitchen of the Future.\"",
+      "creator": "MPO Productions",
+      "duration": 556.79,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Designfo1956",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Designfo1956",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Designfo1956/Designfo1956.mp4",
+        "page_url": "https://archive.org/details/Designfo1956",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Futurism",
+          "Automobiles: Advertising",
+          "Gender roles"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Designfo1956; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948",
+      "episode_number": 4,
+      "title": "Classic Television Commercials (Part I)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 536.5,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948/ClassicT1948.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-RideforC1937",
+      "episode_number": 5,
+      "title": "Ride for Cinderella, A",
+      "description": "Cinderella relies on a Chevrolet to carry her home by midnight through obstacles and storms.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 650.15,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/RideforC1937",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "RideforC1937",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/RideforC1937/RideforC1937.mp4",
+        "page_url": "https://archive.org/details/RideforC1937",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Animation: Advertising",
+          "Folk tales",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RideforC1937; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Televisi1960",
+      "episode_number": 6,
+      "title": "Television Commercials (1950s-1960s)",
+      "description": "Examples of broadcast advertising from the 1950s and 1960s.",
+      "creator": "Various",
+      "duration": 1515.65,
+      "year": 1950,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Televisi1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Televisi1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Televisi1960/Televisi1960.mp4",
+        "page_url": "https://archive.org/details/Televisi1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Televisi1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-GoingPla1948",
+      "episode_number": 7,
+      "title": "Going Places",
+      "description": "Cold War cartoon defending the profit motive against anti-capitalist critics.",
+      "creator": "Sutherland (John) Productions, Inc.",
+      "duration": 513.91,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/GoingPla1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "GoingPla1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/GoingPla1948/GoingPla1948.mp4",
+        "page_url": "https://archive.org/details/GoingPla1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Economics",
+          "Cold War",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item GoingPla1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-WhyPlayL1949",
+      "episode_number": 8,
+      "title": "Why Play Leap Frog?",
+      "description": "Cold War-era cartoon aimed at convincing workers that increased productivity brings about greater purchasing power.",
+      "creator": "Sutherland (John) Productions, Inc.",
+      "duration": 579.45,
+      "year": 1949,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/WhyPlayL1949",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "WhyPlayL1949",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/WhyPlayL1949/WhyPlayL1949.mp4",
+        "page_url": "https://archive.org/details/WhyPlayL1949",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Economics",
+          "Cold War",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhyPlayL1949; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Breakfas1939",
+      "episode_number": 9,
+      "title": "Breakfast Pals",
+      "description": "Snap, Crackle and Pop take on Soggy, Mushy and Toughy.",
+      "creator": "Cartoon Films, Limited",
+      "duration": 81.15,
+      "year": 1939,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Breakfas1939",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Breakfas1939",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Breakfas1939/Breakfas1939.mp4",
+        "page_url": "https://archive.org/details/Breakfas1939",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Animation: Advertising",
+          "Agriculture: Food industry: Cereals"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Breakfas1939; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-LuckyStr1948_2",
+      "episode_number": 10,
+      "title": "Lucky Strike Cigarette Commercial: Square Dance",
+      "description": "Lucky Strike cigarette commercial with stop-motion animation of square-dancing cigarettes.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 57.99,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/LuckyStr1948_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "LuckyStr1948_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/LuckyStr1948_2/LuckyStr1948_2.mp4",
+        "page_url": "https://archive.org/details/LuckyStr1948_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Substance abuse: Tobacco",
+          "Animation: Stop-motion"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LuckyStr1948_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Corvairi1960",
+      "episode_number": 11,
+      "title": "Corvair in Action, The",
+      "description": "Promotional film for the controversial Chevrolet Corvair.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 388.39,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Corvairi1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Corvairi1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Corvairi1960/Corvairi1960.mp4",
+        "page_url": "https://archive.org/details/Corvairi1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Corvairi1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-1955Chev1955",
+      "episode_number": 12,
+      "title": "1955 Chevrolet Screen Ads",
+      "description": "Ten short theatrical \"screen ads\" promoting the 1955 Chevrolet models.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 527.33,
+      "year": 1955,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/1955Chev1955",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "1955Chev1955",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/1955Chev1955/1955Chev1955.mp4",
+        "page_url": "https://archive.org/details/1955Chev1955",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Advertising: Screen ads"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item 1955Chev1955; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Wonderfu1960",
+      "episode_number": 13,
+      "title": "Wonderful New World of Fords, A (1960 Ford Spot)",
+      "description": "Ford commercial linking new compact cars to futurism and the space frontier.",
+      "creator": "Filmways",
+      "duration": 181.88,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Wonderfu1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Wonderfu1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Wonderfu1960/Wonderfu1960.mp4",
+        "page_url": "https://archive.org/details/Wonderfu1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Automobiles: Advertising",
+          "Futurism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Wonderfu1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-InMyMerr1932",
+      "episode_number": 14,
+      "title": "In My Merry Oldsmobile",
+      "description": "Surprisingly licentious advertising cartoon produced by the Fleischer brothers.",
+      "creator": "Fleischer Studios",
+      "duration": 388.29,
+      "year": 1932,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/InMyMerr1932",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "InMyMerr1932",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/InMyMerr1932/InMyMerr1932.mp4",
+        "page_url": "https://archive.org/details/InMyMerr1932",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Animation: Advertising",
+          "Automobiles: Advertising",
+          "Sexualities"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item InMyMerr1932; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ItsEvery1954",
+      "episode_number": 15,
+      "title": "It's Everybody's Business",
+      "description": "Corporate Cold War-era cartoon linking Bill of Rights to free-enterprise ideology.",
+      "creator": "Sutherland (John) Productions, Inc.",
+      "duration": 1193.19,
+      "year": 1954,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ItsEvery1954",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ItsEvery1954",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ItsEvery1954/ItsEvery1954.mp4",
+        "page_url": "https://archive.org/details/ItsEvery1954",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Cold War",
+          "Capitalism",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ItsEvery1954; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-LuckyStr1948",
+      "episode_number": 16,
+      "title": "Lucky Strike Cigarette Commercial: Marching Cigarettes",
+      "description": "Lucky Strike cigarette commercial with stop-motion animation of marching cigarettes.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 61.23,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/LuckyStr1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "LuckyStr1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/LuckyStr1948/LuckyStr1948.mp4",
+        "page_url": "https://archive.org/details/LuckyStr1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Substance abuse: Tobacco",
+          "Animation: Stop-motion"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LuckyStr1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Cheerios1960",
+      "episode_number": 17,
+      "title": "Cheerios/V-8",
+      "description": "Cereal commercial targeted at children of the space age.",
+      "creator": "Filmways (?)",
+      "duration": 60.93,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Cheerios1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Cheerios1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Cheerios1960/Cheerios1960.mp4",
+        "page_url": "https://archive.org/details/Cheerios1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Space: Culture",
+          "Advertising: Television commercials",
+          "Agriculture: Food industry: Cereals"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Cheerios1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-TouchofM1961",
+      "episode_number": 18,
+      "title": "Touch of Magic, A",
+      "description": "General Motors 1961 Motorama film presenting new cars, appliances and futuristic ideas at their most banal.",
+      "creator": "MPO Television Films, Inc.",
+      "duration": 635.5,
+      "year": 1961,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/TouchofM1961",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "TouchofM1961",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/TouchofM1961/TouchofM1961.mp4",
+        "page_url": "https://archive.org/details/TouchofM1961",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Futurism",
+          "Automobiles: Advertising",
+          "Houses and homes: Kitchens"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TouchofM1961; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_3",
+      "episode_number": 19,
+      "title": "Classic Television Commercials (Part III)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 557.79,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_3/ClassicT1948_3.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_5",
+      "episode_number": 20,
+      "title": "Classic Television Commercials (Part V)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 555.72,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_5",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_5",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_5/ClassicT1948_5.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_5",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_5; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_8",
+      "episode_number": 21,
+      "title": "Classic Television Commercials (Part VIII)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 659.53,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_8",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_8",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_8/ClassicT1948_8.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_8",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_8; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-JustImag1947",
+      "episode_number": 22,
+      "title": "Just Imagine",
+      "description": "Animated character \"Tommy Telephone\" produces a telephone by assembling 433 separate parts.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 627.66,
+      "year": 1947,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/JustImag1947",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "JustImag1947",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/JustImag1947/JustImag1947.mp4",
+        "page_url": "https://archive.org/details/JustImag1947",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Animation: Stop-motion",
+          "Communication: Telephone",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item JustImag1947; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_2",
+      "episode_number": 23,
+      "title": "Classic Television Commercials (Part II)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 715.05,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_2/ClassicT1948_2.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-GreatNew1952",
+      "episode_number": 24,
+      "title": "Great New Star, A",
+      "description": "Dinah Shore promotes the new Chevrolets and sings \"See the U.S.A. in your new Chevrolet.\"",
+      "creator": "Handy (Jam) Organization",
+      "duration": 736.34,
+      "year": 1952,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/GreatNew1952",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "GreatNew1952",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/GreatNew1952/GreatNew1952.mp4",
+        "page_url": "https://archive.org/details/GreatNew1952",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item GreatNew1952; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_4",
+      "episode_number": 25,
+      "title": "Classic Television Commercials (Part IV)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 619.65,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_4/ClassicT1948_4.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_4",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_4; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_7",
+      "episode_number": 26,
+      "title": "Classic Television Commercials (Part VII)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 592.09,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_7",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_7",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_7/05866A.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_7",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_7; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_6",
+      "episode_number": 27,
+      "title": "Classic Television Commercials (Part VI)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 450.08,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_6",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_6",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_6/ClassicT1948_6.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_6",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_6; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-SailingAlong",
+      "episode_number": 28,
+      "title": "Sailing Along",
+      "description": "Plymouth Division, Chrystler Corporation presents Sailing Along, produced by Wilding Picture Productions, Inc.",
+      "creator": "Wilding Picture Productions, Inc.",
+      "duration": 677.66,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/SailingAlong",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "SailingAlong",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/SailingAlong/SailingAlong.mp4",
+        "page_url": "https://archive.org/details/SailingAlong",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "Automobiles: Advertising",
+          "Automobiles: Engineering"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SailingAlong; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Behindth1935",
+      "episode_number": 29,
+      "title": "Behind the Bright Lights",
+      "description": "How Chevrolet's giant electric sign in downtown Chicago works.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 429.73,
+      "year": 1935,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Behindth1935",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Behindth1935",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Behindth1935/Behindth1935.mp4",
+        "page_url": "https://archive.org/details/Behindth1935",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Outdoor",
+          "Electricity",
+          "Chicago"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Behindth1935; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ExtraEss1938",
+      "episode_number": 30,
+      "title": "Extra (Esso Screen Ad)",
+      "description": "Part-animated screen ad for Esso \"Extra\" gasoline.",
+      "creator": "Unknown",
+      "duration": 60.93,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ExtraEss1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ExtraEss1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ExtraEss1938/ExtraEss1938.mp4",
+        "page_url": "https://archive.org/details/ExtraEss1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Animation: Advertising",
+          "Oil industry"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ExtraEss1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-DowntheG1935",
+      "episode_number": 31,
+      "title": "Down the Gasoline Trail",
+      "description": "Cartoon showing what happens to a drop of gasoline from the time it flows into the gas tank to when it is exploded in the engine cylinder. This \"fantastic voyage\" through a glisteningly clean Chevrolet engine is an excellent example of the soft-sell industrial, where the product that's promoted is hardly ever mentioned by name.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 477.34,
+      "year": 1935,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/DowntheG1935",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "DowntheG1935",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/DowntheG1935/DowntheG1935.mp4",
+        "page_url": "https://archive.org/details/DowntheG1935",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Engineering",
+          "Oil industry",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DowntheG1935; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-PegLegPe1938",
+      "episode_number": 32,
+      "title": "Peg-Leg Pedro",
+      "description": "Chevrolet advertising cartoon in Technicolor on a \"Treasure Island\" theme.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 558.66,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/PegLegPe1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "PegLegPe1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/PegLegPe1938/PegLegPe1938.mp4",
+        "page_url": "https://archive.org/details/PegLegPe1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Animation: Advertising",
+          "Automobiles: Advertising",
+          "Pirates"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item PegLegPe1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Coachfor1936",
+      "episode_number": 33,
+      "title": "Coach for Cinderella, A",
+      "description": "Imaginative cartoon that breaks down the parts and features of a Chevrolet automobile into units that can be understood in terms of plant and animal life: caterpillars roll into circles and become automobile tires; in the \"visible V-6\" fireflies equal spark plugs and mice provide motive power. Naturally, tells part of the Cinderella story, too. Animation supervisor thought to be Frank Goldman.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 562.7,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Coachfor1936",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Coachfor1936",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Coachfor1936/Coachfor1936.mp4",
+        "page_url": "https://archive.org/details/Coachfor1936",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Animation: Advertising",
+          "Automobiles: Advertising",
+          "Folk tales"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Coachfor1936; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Tomorrow1954",
+      "episode_number": 34,
+      "title": "Tomorrow's Drivers",
+      "description": "Socialization through driver education begins at a tender age in Phoenix.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 658.93,
+      "year": 1954,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Tomorrow1954",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Tomorrow1954",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Tomorrow1954/Tomorrow1954.mp4",
+        "page_url": "https://archive.org/details/Tomorrow1954",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Children",
+          "Automobiles: Advertising",
+          "Phoenix, Arizona"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Tomorrow1954; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-MeetKing1949",
+      "episode_number": 35,
+      "title": "Meet King Joe",
+      "description": "Cold War cartoon aimed at American workers with the objective of convincing them of their good fortune.",
+      "creator": "Sutherland (John) Productions, Inc.",
+      "duration": 566.17,
+      "year": 1949,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/MeetKing1949",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "MeetKing1949",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/MeetKing1949/MeetKing1949.mp4",
+        "page_url": "https://archive.org/details/MeetKing1949",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Cold War",
+          "Animation: Advertising",
+          "Capitalism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MeetKing1949; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_4",
+      "episode_number": 36,
+      "title": "Oldsmobile Presents the \"Seventy\" B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 49.4,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_4/Oldsmobi1941_4.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_4",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_4; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-FilmMyst1937",
+      "episode_number": 37,
+      "title": "Film Mystery, A (Dreft Screen Ad)",
+      "description": "Screen ad for Dreft detergent, featuring an unconvincing demonstration.",
+      "creator": "Unknown",
+      "duration": 60.13,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/FilmMyst1937",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "FilmMyst1937",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/FilmMyst1937/FilmMyst1937.mp4",
+        "page_url": "https://archive.org/details/FilmMyst1937",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Houses and homes: Kitchens",
+          "Consumerism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item FilmMyst1937; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-WhatMake1952",
+      "episode_number": 38,
+      "title": "What Makes Us Tick",
+      "description": "The animated film explores the life of a typical American family, focusing on John Q Public, who manages his finances through investments and savings. It details how John Q's investments in stocks and bonds contribute to the growth of American industry, using the example of an oil drum manufacturing corporation seeking to expand. The process of forming a corporation, raising capital through stock sales, and the importance of the New York Stock Exchange in facilitating these transactions are explained. The film emphasizes the role of investments in economic growth and the responsibilities that come with being a shareholder.KeywordsAmerican family, investment, stock market, oil drum manufacturing, New York Stock Exchange, corporate finance, economic growth, shareholder responsibilities, savings, financial health.",
+      "creator": "Sutherland (John) Productions",
+      "duration": 695.36,
+      "year": 1952,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/WhatMake1952",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "WhatMake1952",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/WhatMake1952/WhatMake1952.mp4",
+        "page_url": "https://archive.org/details/WhatMake1952",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Economics",
+          "Investing",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhatMake1952; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ToughFri1938",
+      "episode_number": 39,
+      "title": "Tough Friends",
+      "description": "How steel and steel alloys make the modern automobile safer and more durable.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 642.98,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ToughFri1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ToughFri1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ToughFri1938/ToughFri1938.mp4",
+        "page_url": "https://archive.org/details/ToughFri1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Metals: Steel",
+          "Automobiles: Engineering",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ToughFri1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-OldsMinu1948",
+      "episode_number": 40,
+      "title": "Olds Minute Movies [Futuramic 1948]",
+      "description": "Theater advertisements for the first all-new automobile to be placed on the market after World War II, the Oldsmobile Futuramic.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 209.01,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/OldsMinu1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "OldsMinu1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/OldsMinu1948/OldsMinu1948.mp4",
+        "page_url": "https://archive.org/details/OldsMinu1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Automobiles: Advertising",
+          "Design"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item OldsMinu1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Televisi1970",
+      "episode_number": 41,
+      "title": "[Television Commercials: Telephone]",
+      "description": "Three TV commercials; one set in St. Louis, Missouri, another on Mount Washington, New Hampshire, and a quick review of telephone history.",
+      "creator": "Unknown",
+      "duration": 243.38,
+      "year": 1970,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Televisi1970",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Televisi1970",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Televisi1970/Televisi1970.mp4",
+        "page_url": "https://archive.org/details/Televisi1970",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Communication: Telephone",
+          "Advertising: Television commercials",
+          "St. Louis, Missouri"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Televisi1970; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Princess1939",
+      "episode_number": 42,
+      "title": "Princess and the Pauper, The",
+      "description": "Nicky Nome, a spinoff from \"A Coach for Cinderella\" and hero of this cartoon, rescues a treasure-laden pauper from the Valley of Jewels, taking him to the princess on a magic carpet, which transforms itself into a new Chevrolet. Expresses a caricatured view of Arab people, typical of many cartoons of the time.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 592.06,
+      "year": 1939,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Princess1939",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Princess1939",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Princess1939/Princess1939.mp4",
+        "page_url": "https://archive.org/details/Princess1939",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Animation: Advertising",
+          "Automobiles: Advertising",
+          "Orientalism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Princess1939; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-WorkingD1957",
+      "episode_number": 43,
+      "title": "Working Dollars",
+      "description": "Animated explanation of how the stock market works, told through the story of an Everyman named Mr. Finchley",
+      "creator": "Sutherland (John) Productions, Inc..",
+      "duration": 644.54,
+      "year": 1957,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/WorkingD1957",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "WorkingD1957",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/WorkingD1957/WorkingD1957.mp4",
+        "page_url": "https://archive.org/details/WorkingD1957",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Finance",
+          "Investing",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WorkingD1957; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-AllAmeri1936",
+      "episode_number": 44,
+      "title": "All-American Soap Box Derby, The (1936)",
+      "description": "Tribute to the American boy as inventor, engineer and sportsman. Shows contestants building their vehicles and the final competition at Derby Downs in Akron, Ohio.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 626.23,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/AllAmeri1936",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "AllAmeri1936",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/AllAmeri1936/AllAmeri1936.mp4",
+        "page_url": "https://archive.org/details/AllAmeri1936",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Children",
+          "Gender roles",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item AllAmeri1936; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Girlonth1940",
+      "episode_number": 45,
+      "title": "Girl on the Magazine Cover, The",
+      "description": "How professional models (and new automobiles) are photographed.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 528.46,
+      "year": 1940,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Girlonth1940",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Girlonth1940",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Girlonth1940/Girlonth1940.mp4",
+        "page_url": "https://archive.org/details/Girlonth1940",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Gender roles",
+          "Automobiles: Advertising",
+          "Media: Photography"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Girlonth1940; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ThreeSma1940",
+      "episode_number": 46,
+      "title": "Three Smart Daughters (Singer Screen Ad)",
+      "description": "Three young women impress their men with their home sewing skills.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 80.65,
+      "year": 1940,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ThreeSma1940",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ThreeSma1940",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ThreeSma1940/ThreeSma1940.mp4",
+        "page_url": "https://archive.org/details/ThreeSma1940",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Sewing",
+          "Gender roles"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ThreeSma1940; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-opportunities_unlimited",
+      "episode_number": 47,
+      "title": "Opportunities Unlimited",
+      "description": "Presented by LIFE and Fortune Magazines, an animated economic overview of the rise of the \"middle income consumer.\" Directed by Steve Muffatti,animated by Ben Farish, Bill Hudson, Keith Robinson, and Howard Smith. Produced by Transfilm. 0661 PA8718 Opportunities Unlimited 16 Koda comp print;",
+      "creator": "Transfilm",
+      "duration": 1013.3,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/opportunities_unlimited",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "opportunities_unlimited",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/opportunities_unlimited/opportunities_unlimited.mp4",
+        "page_url": "https://archive.org/details/opportunities_unlimited",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "Consumerism",
+          "Economics",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item opportunities_unlimited; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1936_3",
+      "episode_number": 48,
+      "title": "Chevrolet Leader News (Vol. 2, No. 3)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories. Contents include: bathing girls dive from top of Chevrolet automobile; owner of 1913 car trades it in for a new 1936 Chevrolet; Jack Dempsey referees a boys' boxing match; a seven-foot tall giant man inspects the Chevrolet \"Turret Top\"; a fishing expedition in the Ozark Mountains; a car driven into the water so that fish can swim in and be trapped; the Detroit police traffic safety campaign; and a birthday party for children and domestic dogs.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 547.25,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1936_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1936_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1936_3/Chevrole1936_3.mp4",
+        "page_url": "https://archive.org/details/Chevrole1936_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising",
+          "Oddities"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1936_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Adventur1948",
+      "episode_number": 49,
+      "title": "Adventures of Junior Raindrop, The",
+      "description": "Delinquent raindrop explains the need for good watershed management.",
+      "creator": "U.S. Dept. of Agriculture, Forest Service",
+      "duration": 448.18,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Adventur1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Adventur1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Adventur1948/Adventur1948.mp4",
+        "page_url": "https://archive.org/details/Adventur1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Nature: Environment",
+          "Animation: Advertising",
+          "Water"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Adventur1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Nonesuch1934",
+      "episode_number": 50,
+      "title": "Nonesuch Coffee Ad",
+      "description": "Screen ad for Nonesuch Coffee, featuring \"Movie Week\" special.",
+      "creator": "Unknown",
+      "duration": 60.83,
+      "year": 1934,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Nonesuch1934",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Nonesuch1934",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Nonesuch1934/Nonesuch1934.mp4",
+        "page_url": "https://archive.org/details/Nonesuch1934",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Coffee",
+          "Consumerism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Nonesuch1934; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-OvertheW1938",
+      "episode_number": 51,
+      "title": "Over the Waves",
+      "description": "How the Chevrolet suspension system smooths out a rough ride.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 559.13,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/OvertheW1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "OvertheW1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/OvertheW1938/OvertheW1938.mp4",
+        "page_url": "https://archive.org/details/OvertheW1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Engineering",
+          "Amusement parks",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item OvertheW1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-PartyMag1938",
+      "episode_number": 52,
+      "title": "Party Magic (Beich Screen Ad--\"Whiz\" Bar)",
+      "description": "Screen ad for Beich \"Whiz Bar\" candy featuring teenagers and a magic trick.",
+      "creator": "Unknown",
+      "duration": 61.1,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/PartyMag1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "PartyMag1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/PartyMag1938/PartyMag1938.mp4",
+        "page_url": "https://archive.org/details/PartyMag1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Candy",
+          "Magic"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item PartyMag1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1937_2",
+      "episode_number": 53,
+      "title": "Chevrolet Leader News (Vol. 3, No. 2)",
+      "description": "Promotional newsreel containing a variety of Chevrolet-centric stories.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 485.42,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1937_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1937_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1937_2/Chevrole1937_2.mp4",
+        "page_url": "https://archive.org/details/Chevrole1937_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1937_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-SkyBillb1935",
+      "episode_number": 54,
+      "title": "Sky Billboards",
+      "description": "How skywriting works -- and the making of an aerial Chevrolet advertisement.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 454.79,
+      "year": 1935,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/SkyBillb1935",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "SkyBillb1935",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/SkyBillb1935/SkyBillb1935.mp4",
+        "page_url": "https://archive.org/details/SkyBillb1935",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Skywriting",
+          "Aviation: Skywriting",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SkyBillb1935; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-AllinOne1938",
+      "episode_number": 55,
+      "title": "All in One",
+      "description": "Homage to the dog and comparison of canine attributes with Chevrolet features.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 662.86,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/AllinOne1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "AllinOne1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/AllinOne1938/AllinOne1938.mp4",
+        "page_url": "https://archive.org/details/AllinOne1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Animals: Dogs",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item AllinOne1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-OldChine1946",
+      "episode_number": 56,
+      "title": "Old Chinese Proverb: One Picture Is Worth Ten Thousand Words, An",
+      "description": "A tour through the Jerry Fairbanks studios in Hollywood, showing the production of animation, TV films, industrial and advertising films.",
+      "creator": "Fairbanks (Jerry) Productions",
+      "duration": 1326.96,
+      "year": 1946,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/OldChine1946",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "OldChine1946",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/OldChine1946/OldChine1946.mp4",
+        "page_url": "https://archive.org/details/OldChine1946",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Motion pictures: Production",
+          "Motion pictures: Sponsored",
+          "Advertising: Motion pictures"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item OldChine1946; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1954",
+      "episode_number": 57,
+      "title": "[Chevrolet Sales Convention Musical]",
+      "description": "Rare record of song-and-dance at a Chevrolet sales convention, designed to motivate the sales force.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 915.15,
+      "year": 1954,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1954",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1954",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1954/Chevrole1954.mp4",
+        "page_url": "https://archive.org/details/Chevrole1954",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Sales",
+          "Industrial theater",
+          "Advertising: In-house"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1954; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-RoadstoR1950",
+      "episode_number": 58,
+      "title": "Roads to Romance: Coral Gables",
+      "description": "Travelogue, made for theatrical showing, promoting tourism in Coral Gables, Florida. Shows colorful parrots, the University of Miami, and a visit to the beach.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 180.55,
+      "year": 1950,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/RoadstoR1950",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "RoadstoR1950",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/RoadstoR1950/RoadstoR1950.mp4",
+        "page_url": "https://archive.org/details/RoadstoR1950",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Travelogues",
+          "Florida"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RoadstoR1950; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-RoadstoR1950_2",
+      "episode_number": 59,
+      "title": "Roads to Romance: The Santa Cruz Trail and Land of the Giant Cactus",
+      "description": "Travelogue, made for theatrical showing, promoting tourism in Arizona.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 180.08,
+      "year": 1950,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/RoadstoR1950_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "RoadstoR1950_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/RoadstoR1950_2/RoadstoR1950_2.mp4",
+        "page_url": "https://archive.org/details/RoadstoR1950_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Travelogues",
+          "Arizona"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RoadstoR1950_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ToMarket1942",
+      "episode_number": 60,
+      "title": "To Market, To Market (Part I)",
+      "description": "Proliferation of outdoor advertising billboards through Chicago and the methods of analyzing potential advertising sites. This part explains the strategy behind the placement of outdoor media.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1210.41,
+      "year": 1942,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ToMarket1942",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ToMarket1942",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ToMarket1942/ToMarket1942.mp4",
+        "page_url": "https://archive.org/details/ToMarket1942",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Outdoor",
+          "Chicago",
+          "Consumerism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ToMarket1942; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Freedoma1952",
+      "episode_number": 61,
+      "title": "Freedom and Power (Part I)",
+      "description": "This opulently produced film defines freedom as the abundance of electric power, and reviews U.S. history from an electrocentric viewpoint. With animation.",
+      "creator": "Wolff (Raphael G.) Studios, Inc.",
+      "duration": 811.14,
+      "year": 1952,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Freedoma1952",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Freedoma1952",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Freedoma1952/Freedoma1952.mp4",
+        "page_url": "https://archive.org/details/Freedoma1952",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Electricity",
+          "Patriotism",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Freedoma1952; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-RoadsToRoman",
+      "episode_number": 62,
+      "title": "Roads To Romance",
+      "description": "Travelogue, made for theatrical showing and commissioned by Cheverolet, promoting tourism by car in several areas, including Oak Creek Canyon in Arizona, San Luis Obispo and San Diego in California, and Western Michigan.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 723.72,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/RoadsToRoman",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "RoadsToRoman",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/RoadsToRoman/RoadsToRoman.mp4",
+        "page_url": "https://archive.org/details/RoadsToRoman",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Travelogues",
+          "Arizona",
+          "California",
+          "Michigan",
+          "Recreation"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RoadsToRoman; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ToMarket1942_2",
+      "episode_number": 63,
+      "title": "To Market, To Market (Part II)",
+      "description": "Proliferation of outdoor advertising billboards through Chicago and the methods of analyzing potential advertising sites. This part, shot in Kodachrome, contains a tour of Chicago's streets showing outdoor advertising.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 277.58,
+      "year": 1942,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ToMarket1942_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ToMarket1942_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ToMarket1942_2/ToMarket1942_2.mp4",
+        "page_url": "https://archive.org/details/ToMarket1942_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Outdoor",
+          "Chicago",
+          "Consumerism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ToMarket1942_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-TripThe1939",
+      "episode_number": 64,
+      "title": "Trip, The",
+      "description": "Screen ad, in Technicolor, for the 1940 Chevrolet models.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 50.18,
+      "year": 1939,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/TripThe1939",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "TripThe1939",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/TripThe1939/TripThe1939.mp4",
+        "page_url": "https://archive.org/details/TripThe1939",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Advertising: Screen ads",
+          "Car culture"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TripThe1939; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1937",
+      "episode_number": 65,
+      "title": "Chevrolet Leader News (Vol. 3, No. 1)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 553.12,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1937",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1937",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1937/Chevrole1937.mp4",
+        "page_url": "https://archive.org/details/Chevrole1937",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1937; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Frigidai1956",
+      "episode_number": 66,
+      "title": "[Frigidaire Imperial Line]",
+      "description": "Promotional film for Frigidaire dealers showing features of the new Imperial Line of refrigerators.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1207.67,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Frigidai1956",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Frigidai1956",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Frigidai1956/Frigidai1956.mp4",
+        "page_url": "https://archive.org/details/Frigidai1956",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Houses and homes: Kitchens: Refrigerators",
+          "Appliances: Sales",
+          "Advertising: In-house"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Frigidai1956; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-0548_American_Maker",
+      "episode_number": 67,
+      "title": "American Maker",
+      "description": "Relates how Americans build, from youth throughout life, by using their ingenuity not only in technological advancement but in everyday efforts by everyone.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1516.31,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/0548_American_Maker",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "0548_American_Maker",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/0548_American_Maker/0548_American_Maker_13_29_48_15_3mb.mp4",
+        "page_url": "https://archive.org/details/0548_American_Maker",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Chevrolet, industrial films, sponsored films, institutional advertising, automobiles, 1960s, suburbia"
+        ],
+        "mediatype": "movies",
+        "format": "MPEG4",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-roads_to_romance_1",
+      "episode_number": 68,
+      "title": "Roads to Romance (Part I)",
+      "description": "Travelogue, made for theatrical showing and commissioned by Cheverolet, promoting tourism by car in several Natural Parks, including Narragansett Bay in Rhode Island, Minnehaha Parkway in Minneapolis and the Pennsylvania Turnpike. 0631 PA8632 Roads to Romance: from 013.07; 16 Koda pos comp print",
+      "creator": "Handy (Jam) Organization",
+      "duration": 727.01,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/roads_to_romance_1",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "roads_to_romance_1",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/roads_to_romance_1/roads_to_romance_1.mp4",
+        "page_url": "https://archive.org/details/roads_to_romance_1",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Travelogues",
+          "Rhode Island",
+          "Minnesota",
+          "Pennsylvania",
+          "Recreation"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item roads_to_romance_1; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-American1960",
+      "episode_number": 69,
+      "title": "American Maker",
+      "description": "Relates how Americans build, from youth throughout life, by using their ingenuity not only in technological advancement but in everyday efforts by everyone. Promo for 1960 Chevrolets, with excellent footage of Americans at home, work, and leisure, and a short sequence showing futuristic appliances and the manufacturing of telephones and transistor radios (in the United States).",
+      "creator": "Handy (Jam) Organization",
+      "duration": 812.58,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/American1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "American1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/American1960/American1960.mp4",
+        "page_url": "https://archive.org/details/American1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Manufacturing: Automobiles",
+          "Automobiles: Advertising",
+          "1960s"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item American1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1935_2",
+      "episode_number": 70,
+      "title": "Chevrolet Leader News (Vol. 1, No. 2)",
+      "description": "Promotional newsreel containing a variety of Chevrolet-centric stories, including the construction of U.S. 1 linking Key West, Florida with the mainland; a Baltimore ceremony awarding large Chevrolet keys to the oldest auto plant employees; a man leading a pony with his Chevrolet; the \"Evans Auto-Railer,\" an automobile that runs down railroad tracks in Jackson, Michigan; old automobile advertising; a travelogue sequence set in St. Augustine, Florida, the oldest city in North America; and swimsuit models riding atop a Chevrolet in Florida.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 375.58,
+      "year": 1935,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1935_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1935_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1935_2/Chevrole1935_2.mp4",
+        "page_url": "https://archive.org/details/Chevrole1935_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1935_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1936_4",
+      "episode_number": 71,
+      "title": "Chevrolet Leader News (Vol. 2, No. 4)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories, including: the \"Boudoir Express,\" dressing rooms on wheels in which women can change into swimsuits; Detroit police directing traffic with a \"talking safety car\"; miniature model planes at the International Air Derby; petroleum geologists X-raying the ground in search for oil; a seagoing, amphibious automobile navigating a lake; and Mickey, the firefighting cat of Minneapolis.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 539.61,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1936_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1936_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1936_4/Chevrole1936_4.mp4",
+        "page_url": "https://archive.org/details/Chevrole1936_4",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1936_4; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-OtherFel1937",
+      "episode_number": 72,
+      "title": "Other Fellow, The",
+      "description": "Comedian Edgar Kennedy teaches a driving safety lesson.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 494.39,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/OtherFel1937",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "OtherFel1937",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/OtherFel1937/OtherFel1937.mp4",
+        "page_url": "https://archive.org/details/OtherFel1937",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Safety: Automotive",
+          "Automobiles: Advertising",
+          "Social guidance: Etiquette"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item OtherFel1937; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1938",
+      "episode_number": 73,
+      "title": "Chevrolet Leader News (Vol. 4, No. 1)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 449.72,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1938/Chevrole1938.mp4",
+        "page_url": "https://archive.org/details/Chevrole1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-WhenYouK1936",
+      "episode_number": 74,
+      "title": "When You Know",
+      "description": "The parallels between safe flying and safe driving. With footage of Army Air Force cadets studying Morse Code, having their reaction time and depth perception tested, and doing classroom work.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 512.61,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/WhenYouK1936",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "WhenYouK1936",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/WhenYouK1936/WhenYouK1936.mp4",
+        "page_url": "https://archive.org/details/WhenYouK1936",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Aviation: Military",
+          "Automobiles: Advertising",
+          "Safety: Automotive"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhenYouK1936; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Freedoma1952_2",
+      "episode_number": 75,
+      "title": "Freedom and Power (Part II)",
+      "description": "This opulently produced film defines freedom as the abundance of electric power, and reviews U.S. history from an electrocentric viewpoint. With animation.",
+      "creator": "Wolff (Raphael G.) Studios, Inc.",
+      "duration": 784.32,
+      "year": 1952,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Freedoma1952_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Freedoma1952_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Freedoma1952_2/Freedoma1952_2.mp4",
+        "page_url": "https://archive.org/details/Freedoma1952_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Electricity",
+          "Patriotism",
+          "Animation: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Freedoma1952_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Triumpho1933",
+      "episode_number": 76,
+      "title": "Triumph of America (Part I)",
+      "description": "Auto manufacturing as an expression (and motivator) of America's economic success.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 622.32,
+      "year": 1933,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Triumpho1933",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Triumpho1933",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Triumpho1933/Triumpho1933.mp4",
+        "page_url": "https://archive.org/details/Triumpho1933",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: General",
+          "Automobiles: Advertising",
+          "Free enterprise"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Triumpho1933; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1935_3",
+      "episode_number": 77,
+      "title": "Chevrolet Leader News (Vol. 1, No. 3)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories, including: heavy-duty trucks used in construction; St. Augustine, Florida, site of the oldest houses in America; old horseless carriage advertisements; a homemade streamlined house trailer in Guadalupe, California; auto interiors designed by new York jewelers; an Army convoy at Fort Sill, Oklahoma; and a Chihuahua dog standing in for a radiator ornament on a moving car in Grand Rapids, Michigan.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 499.33,
+      "year": 1935,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1935_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1935_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1935_3/Chevrole1935_3.mp4",
+        "page_url": "https://archive.org/details/Chevrole1935_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising",
+          "Animals: Dogs"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1935_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1936_2",
+      "episode_number": 78,
+      "title": "Chevrolet Leader News (Vol. 2, No. 2)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories, including: a Chevrolet pulling an aquaplane along the beach; an isolated Kentucky village linked to the world by motor cars; alligator wrestling; mobility for the Miami Beach police; and new parking meters in Dallas, Texas.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 495.03,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1936_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1936_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1936_2/Chevrole1936_2.mp4",
+        "page_url": "https://archive.org/details/Chevrole1936_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1936_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-roads_to_romance_2",
+      "episode_number": 79,
+      "title": "Roads to Romance (Part II)",
+      "description": "Travelogue, made for theatrical showing and commissioned by Cheverolet, promoting tourism by car in several Natural Parks, including Cayuga Lake in New York, Olympic National Park in Washington, Cedar Breaks National Monument in Utah, and the Columbia River Highwa in Oregon. 0631 PA8632 Roads to Romance: from 013.07; 16 Koda pos comp print",
+      "creator": "Handy (Jam) Organization",
+      "duration": 727.18,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/roads_to_romance_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "roads_to_romance_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/roads_to_romance_2/roads_to_romance_2.mp4",
+        "page_url": "https://archive.org/details/roads_to_romance_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Travelogues",
+          "New York",
+          "Washington",
+          "Utah",
+          "Oregon",
+          "Recreation"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item roads_to_romance_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1939",
+      "episode_number": 80,
+      "title": "Chevrolet Leader News (Vol. 4, No. 2)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories, including: photographing human and automobile models; automobile brake tests on a steep San Francisco street; diamond-tipped machine tools; the Ohio River floods of 1937; and an animal circus featuring performing rats.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 499.73,
+      "year": 1939,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1939",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1939",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1939/Chevrole1939.mp4",
+        "page_url": "https://archive.org/details/Chevrole1939",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising",
+          "San Francisco: Scenics: Historical"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1939; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-thrill_drivers_choice",
+      "episode_number": 81,
+      "title": "Thrill Driver's Choice",
+      "description": "The film showcases the thrilling performances of Joey Chitwood's auto thrill show, featuring a talented team of drivers executing breathtaking stunts with regular production Chevrolet cars. Emphasizing the durability and handling of the 1956 Chevrolet models, the show combines entertainment with a demonstration of the vehicles' capabilities, ensuring audiences see the cars they can buy in action. Chitwood stresses that the same Chevrolet cars used in the show are reliable and built to withstand extreme driving conditions, making them a trusted choice for everyday use.KeywordsJoey Chitwood, auto thrill show, Chevrolet, 1956 models, stunts, durability, handling, entertainment, drivers, performances",
+      "creator": "Chevrolet Motor Division",
+      "duration": 557.28,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/thrill_drivers_choice",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "thrill_drivers_choice",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/thrill_drivers_choice/thrill_drivers_choice.mp4",
+        "page_url": "https://archive.org/details/thrill_drivers_choice",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "Consumerism",
+          "Automobiles: Design And Manufacturing",
+          "Automobiles: Advertising",
+          "Stunts"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item thrill_drivers_choice; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ForGoodL1937",
+      "episode_number": 82,
+      "title": "For Good Living (Brown Derby Beer Promo)",
+      "description": "Sales promotional film for Brown Derby beer, a house brand of Safeway Stores; shows the brewing process.",
+      "creator": "Unknown",
+      "duration": 1138.77,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ForGoodL1937",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ForGoodL1937",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ForGoodL1937/ForGoodL1937.mp4",
+        "page_url": "https://archive.org/details/ForGoodL1937",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Beer",
+          "Beverage industry",
+          "Advertising: In-house"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ForGoodL1937; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Trailoft1951",
+      "episode_number": 83,
+      "title": "Trail of the Rocket (Part I)",
+      "description": "Singers Lucille and Johnny, whose radio show is sponsored by Oldsmobile, are invited to visit the Olds factory to see why the product is superior. While touring the plant, Johnny becomes concerned that another visitor is a Martian spy dedicated to subverting Earth's autonomy. Some might call this film a McCarthyite allegory; others a slow-moving plant tour. Story: Gordon Miller. Camera: John Niklasch. Sound: Ray Esh. Editor: John Cook. Director: Lewis D. Collins. With Lucille and Johnny (Themselves); Barry Hopkins (Mr. Clark); Arnold Coty (Mr. Martin).",
+      "creator": "Wilding Picture Productions, Inc.",
+      "duration": 884.82,
+      "year": 1951,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Trailoft1951",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Trailoft1951",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Trailoft1951/Trailoft1951.mp4",
+        "page_url": "https://archive.org/details/Trailoft1951",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "Automobiles: Manufacturing",
+          "Cold War"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Trailoft1951; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1939_3",
+      "episode_number": 84,
+      "title": "Chevrolet Leader News (Vol. 5, No. 2)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 512.58,
+      "year": 1939,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1939_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1939_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1939_3/Chevrole1939_3.mp4",
+        "page_url": "https://archive.org/details/Chevrole1939_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising",
+          "Agriculture: Poultry"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1939_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1937_4",
+      "episode_number": 85,
+      "title": "Chevrolet Leader News (Vol. 3, No. 4)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 378.85,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1937_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1937_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1937_4/Chevrole1937_4.mp4",
+        "page_url": "https://archive.org/details/Chevrole1937_4",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1937_4; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-CurtissW1944",
+      "episode_number": 86,
+      "title": "Curtiss-Wright Shorts (7 Subjects)",
+      "description": "Short screen ads recruiting workers for aircraft manufacturing during World War II.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 538.11,
+      "year": 1944,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CurtissW1944",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CurtissW1944",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CurtissW1944/CurtissW1944.mp4",
+        "page_url": "https://archive.org/details/CurtissW1944",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Homefront",
+          "Advertising: Screen ads",
+          "Aviation: Manufacturing"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CurtissW1944; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-SheCaugh1940",
+      "episode_number": 87,
+      "title": "She Caught on Quick (Singer Screen Ad)",
+      "description": "How to redecorate a worn-out-looking home with homesewn upholstery.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 79.58,
+      "year": 1940,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/SheCaugh1940",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "SheCaugh1940",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/SheCaugh1940/SheCaugh1940.mp4",
+        "page_url": "https://archive.org/details/SheCaugh1940",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Sewing",
+          "Gender roles"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SheCaugh1940; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-DefenseC1941",
+      "episode_number": 88,
+      "title": "Defense Comes First With Oldsmobile (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles, emphasizing Oldsmobile's adaptability under wartime conditions.",
+      "creator": "Unknown",
+      "duration": 49.68,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/DefenseC1941",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "DefenseC1941",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/DefenseC1941/DefenseC1941.mp4",
+        "page_url": "https://archive.org/details/DefenseC1941",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DefenseC1941; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1936",
+      "episode_number": 89,
+      "title": "Chevrolet Leader News (Vol. 2, No. 1)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories, including: Miami, Florida police practice shooting at stationary targets from moving cars; Southern youngsters learn safe driving habits while driving in kiddie cars and scooters on miniature streets; Chautauqua Lake ferry uses two automobile engines as motive power.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 506.87,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1936",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1936",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1936/Chevrole1936.mp4",
+        "page_url": "https://archive.org/details/Chevrole1936",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1936; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Formatio1936",
+      "episode_number": 90,
+      "title": "Formations",
+      "description": "Defensive driving film explaining the importance of awareness of surrounding vehicles.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 523.56,
+      "year": 1936,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Formatio1936",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Formatio1936",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Formatio1936/Formatio1936.mp4",
+        "page_url": "https://archive.org/details/Formatio1936",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Safety: Driving",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Formatio1936; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-HelpingY1937",
+      "episode_number": 91,
+      "title": "Helping You Sell",
+      "description": "How Chevrolet uses sponsored theatrical motion pictures to promote its products.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 543.78,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/HelpingY1937",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "HelpingY1937",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/HelpingY1937/HelpingY1937.mp4",
+        "page_url": "https://archive.org/details/HelpingY1937",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Motion pictures: Sponsored",
+          "Car culture: Newsreels",
+          "Advertising: Screen ads"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HelpingY1937; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-TrueExpe1938",
+      "episode_number": 92,
+      "title": "True Experience of Officer Harold Sewell, The",
+      "description": "Dramatized screen ad showing how a flashlight powered by Eveready batteries prevents a train wreck.",
+      "creator": "Unknown",
+      "duration": 80.75,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/TrueExpe1938",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "TrueExpe1938",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/TrueExpe1938/TrueExpe1938.mp4",
+        "page_url": "https://archive.org/details/TrueExpe1938",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Screen ads",
+          "Transportation: Railroad",
+          "Batteries"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TrueExpe1938; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1937_3",
+      "episode_number": 93,
+      "title": "Chevrolet Leader News (Vol. 3, No. 3)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 508.88,
+      "year": 1937,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1937_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1937_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1937_3/Chevrole1937_3.mp4",
+        "page_url": "https://archive.org/details/Chevrole1937_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1937_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1938_2",
+      "episode_number": 94,
+      "title": "Chevrolet Leader News (Vol. 4, No. 3)",
+      "description": "Promotional newsreels featuring a variety of Chevrolet-centric stories.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 569.07,
+      "year": 1938,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1938_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1938_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1938_2/Chevrole1938_2.mp4",
+        "page_url": "https://archive.org/details/Chevrole1938_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Car culture: Newsreels",
+          "Automobiles: Advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1938_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941",
+      "episode_number": 95,
+      "title": "Oldsmobile Presents Motoring's Magic Carpet Hydra-Matic B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 50.22,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941/Oldsmobi1941.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Triumpho1933_2",
+      "episode_number": 96,
+      "title": "Triumph of America (Part II)",
+      "description": "Auto manufacturing as an expression (and motivator) of America's economic success.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 660.53,
+      "year": 1933,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Triumpho1933_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Triumpho1933_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Triumpho1933_2/Triumpho1933_2.mp4",
+        "page_url": "https://archive.org/details/Triumpho1933_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: General",
+          "Automobiles: Advertising",
+          "Free enterprise"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Triumpho1933_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_5",
+      "episode_number": 97,
+      "title": "Oldsmobile Presents the \"Sixty\" B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 49.82,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_5",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_5",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_5/Oldsmobi1941_5.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_5",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_5; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_3",
+      "episode_number": 98,
+      "title": "Oldsmobile Presents the \"Custom 8 Cruiser\" B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 50.58,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_3/Oldsmobi1941_3.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_2",
+      "episode_number": 99,
+      "title": "Oldsmobile Presents the B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 49.72,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_2/Oldsmobi1941_2.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-0707PassengerCarScreenAds",
+      "episode_number": 100,
+      "title": "Passenger Car Screen Ads",
+      "description": "Star Bright00:23:00:09 Quick pan down from clear blue sky to red 1953 Chevrolet convertible parked on road in front of row of green trees.00:23:07:27 VS of husband and wife pairs driving on green tree-lined strip of highway in brand new Chevrolet models of 1953.[Lights On00:23:46:05 Crew outside at night of movie set working colored lights. White, Red and Blue lights are turned on. 00:24:05:07 Great shot from backseat inside 1953 Chevrolet looking down straight strip of road cutting through rich green forest. Man drives car with woman wearing a white hat with red stripes seated in the passenger seat. 00:24:53:18 CU from driver’s seat window looking down at steering wheel; woman’s hand in red glove pulls lever behind steering wheel putting car into drive; Woman signals with left arm out window and pulls onto road. Completely New Master Key00:26:17:29 CU hand in white leather glove picks up key on folded red velvet .00:26:20:26 CU White gloved hand inserts key into ignition of car and starts the engine. 00:26:34:20 CU woman’s hand in white glove turns red steering wheel of a Chevrolet with red and white dashboard. 00:26:38:28 VS woman drives 1950s red Chevrolet convertible on highway through rich green landscape and tree-lined road. Make a Wish Reigning Beauty00:27:58:07 Three preppy young men see off a young lady; man in cardigan sweater opens the door of the woman’s red Chevrolet convertible.00:28:04:02 CU Trunk of red Chevrolet convertible filled with suitcases, bag and spare tire, is closed; reflection of man closing the trunk in white polo sweater is seen off the paint of the red trunk. 00:28:07:13 CU woman’s hands turning red Chevrolet steering wheel. VS young woman driving a red convertible. [Something New 00:28:48:24 Newlyweds run out of church.",
+      "creator": "Handy (Jam) Organization; Handy (Jam) Organization",
+      "duration": 405.08,
+      "year": 1952,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/0707PassengerCarScreenAds",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "0707PassengerCarScreenAds",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/0707PassengerCarScreenAds/0707_Passenger_Car_Screen_Ads.mp4",
+        "page_url": "https://archive.org/details/0707PassengerCarScreenAds",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "automobile",
+          "advertising"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    }
+  ]
+}
