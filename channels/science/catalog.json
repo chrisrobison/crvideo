@@ -20,5 +20,8 @@
     { "ref": "../../series/the-backyard-scientist/series.json" },
     { "ref": "../../series/mark-rober/series.json" },
     { "ref": "../../series/kurzgesagt/series.json" }
+  ],
+  "continuity": [
+    { "ref": "./continuity.json" }
   ]
 }

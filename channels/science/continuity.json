@@ -1,0 +1,13 @@
+{
+  "_note": "Phase 10 (docs/series-and-channels.md): Science & Engineering's own continuity assets. No real prerecorded station-id/bumper media exists for this channel yet, so \"station_ids\"/\"filler\" are deliberately left empty -- this project's own instructions are explicit that nonexistent media must never be invented or referenced. Every gap this channel has is therefore filled by the dynamic \"science-up-next\" card alone (see channels/continuity-card.js), which needs no video asset at all. Real station IDs can be added here later (e.g. once produced via OpenArt or any other tool) without any other change -- ContinuityFiller already prefers them over the card whenever one fits.",
+  "schema_version": 1,
+  "station_ids": [],
+  "filler": [],
+  "cards": [
+    { "id": "science-up-next", "template": "science-up-next", "min_duration": 0, "max_duration": 100000 }
+  ],
+  "defaults": {
+    "preferred_card": "science-up-next",
+    "minimum_video_filler": 10
+  }
+}
