@@ -66,7 +66,7 @@ final class ScheduleWriter
             // actually picks the YouTube adapter for it regardless.
             $mediaUrl = ($provider !== null && $provider !== 'youtube' && is_string($source['url'] ?? null)) ? $source['url'] : null;
 
-            $relItems[] = [
+            $relItem = [
                 'type' => 'video',
                 'id' => $it['id'],
                 'start' => $relStart,
@@ -76,6 +76,16 @@ final class ScheduleWriter
                 'source_url' => $it['source_url'],
                 'source' => $source,
             ];
+            // Phase 3 (boundary.mode soft/elastic): a delay is never silently
+            // absorbed -- BoundaryResolver records exactly how many seconds this
+            // occurrence was pushed past its nominal start, carried straight
+            // through onto the published item so the schedule stays self-
+            // documenting (the admin preview and any future continuity/"coming up
+            // next" renderer can read it directly, no re-derivation needed).
+            if (isset($it['delay_seconds']) && $it['delay_seconds'] > 0) {
+                $relItem['delay_seconds'] = $it['delay_seconds'];
+            }
+            $relItems[] = $relItem;
             $used += $relEnd - $relStart;
             $cursor = $relEnd;
         }

@@ -255,6 +255,52 @@ also resets the matching block's rotation state (a cursor position
 computed against one pinned ordering isn't meaningful against another)
 -- reported the same way.
 
+## Hard and soft start boundaries (`boundary`)
+
+```json
+{
+  "id": "evening-news",
+  "type": "series",
+  "series_id": "local-news",
+  "recurrence": { "frequency": "daily", "time": "18:00", "timezone": "America/Los_Angeles" },
+  "duration": 1800,
+  "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-04" },
+  "boundary": { "mode": "soft", "max_delay": 600 }
+}
+```
+
+Absent (the default): `"mode": "hard"` -- **nothing changes**: any overlap
+with the previous occurrence (from this block or any other block in the
+channel) is still a hard publish error, exactly the pre-Phase-3
+behavior, byte-for-byte.
+
+- `"hard"`: this occurrence's nominal start can never move. If the
+  previous occurrence runs past it, publish refuses to emit anything --
+  shorten the preceding block, adjust timing, or give the preceding
+  block room via its own boundary.
+- `"soft"`: this occurrence may begin up to `max_delay` seconds (a
+  required, non-negative number -- there is no unbounded "soft") later
+  than its nominal start. A resulting delay is never silently absorbed:
+  it is recorded on every item in the occurrence (`delay_seconds`) and
+  reported in the publish warnings. An overlap bigger than `max_delay`
+  is still a hard publish error.
+- `"elastic"`: for now, deliberately simplified to behave exactly like
+  `"soft"` (same required `max_delay`) -- full elastic semantics (several
+  consecutive blocks sharing one pooled flexible window, rather than one
+  block's own tolerance) is intentionally deferred rather than half-
+  built. See `src/BoundaryResolver.php`'s header for the reasoning. It
+  still, honestly, "never allows unbounded drift" and "respects the next
+  hard boundary", because those fall straight out of how it's resolved.
+
+Resolution is a single deterministic, chronological left-to-right walk
+across every block's occurrences together (`src/BoundaryResolver.php`):
+it never reorders occurrences, never moves one earlier than its nominal
+start, and a delay cascades correctly if several soft-boundaried
+occurrences are adjacent. It operates purely on the absolute instants
+`Recurrence` already resolved, so it needs no DST-awareness of its own
+-- "the previous program ran N seconds long" is elapsed-time arithmetic,
+not calendar arithmetic, even across a DST transition.
+
 ## Forward window / regeneration workflow
 
 The published window is fixed-length (`--days`, default 14) and does
@@ -317,7 +363,10 @@ three modes (`sequential`/`best_fit`/`hybrid`; every `on_unfit` policy,
 `minimum_remaining`/`safety_margin`, empty/single-episode/all-unavailable
 catalogs, rotation stability across adjacent overlapping publish
 windows, pin-refresh resets, best-fit's deterministic tie-breaking,
-hybrid's main-cursor-never-disturbed guarantee), and a full CLI end-to-
+hybrid's main-cursor-never-disturbed guarantee), hard/soft/elastic
+boundary resolution (preserved hard anchors, within/exceeding-tolerance
+soft delays, cascading adjacent soft blocks, soft-into-hard, DST and
+midnight-crossing delay arithmetic), and a full CLI end-to-
 end run (atomic write + backup, idempotent re-publish,
 `--refresh-episode-set`, `--dry-run`, error cases) -- all via fixtures, no
 real channel ever touched by the test suite.
