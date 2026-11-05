@@ -1,0 +1,1472 @@
+{
+    "schema_version": 1,
+    "id": "oxford-mathematics",
+    "title": "Oxford Mathematics Public Lectures",
+    "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more.  All with the aim of explaining a subject that affects us all.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/ytc/AIdro_n3XALjf1mmV6t2Ev4K97tnP4gO8gyMHpvi2PiLesmfOQ=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+        "channel_url": "https://www.youtube.com/channel/UCLnGGRG__uGSPLBLzyhg8dQ",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-RIx-qHdnM7g",
+            "episode_number": 1,
+            "title": "Is the End in Sight for Theoretical Physics? - Graham Farmelo",
+            "description": "Graham Farmelo's authorised biography of Stephen Hawking was published in September 2026. The title of this talk is the same as the one that Hawking chose for his Lucasian Inaugural Lecture in April 1980. Graham will look at the genesis of his presentation, the splash it made and how views on the subject changed in later decades. With the benefit of these reflections, he will hazard a present-day answer to Hawking’s provocative question.\n\nGraham Farmelo is a biographer and science writer. He has written an acclaimed biography of Paul Dirac as well as his biography of Stephen Hawking.\n\nThe Oxford Mathematics Public Lectures are generously supported by XTX Markets.",
+            "duration": 3470,
+            "year": 2026,
+            "published_at": "2026-11-05T17:00:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RIx-qHdnM7g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RIx-qHdnM7g",
+                "url": "https://www.youtube.com/watch?v=RIx-qHdnM7g",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-S6soMrnQLC4",
+            "episode_number": 2,
+            "title": "White heat",
+            "description": "In 1963 soon-to-be Prime Minister Harold Wilson gave one of the most iconic speeches in UK politics. The future would be forged in the 'white heat of technology'. It still resonates.\n\nBut for one attendee, might it not have been better titled 'the white heat of mathematics'?\n\n#maths #politics #stem",
+            "duration": 69,
+            "year": 2026,
+            "published_at": "2026-11-04T16:05:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/S6soMrnQLC4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "S6soMrnQLC4",
+                "url": "https://www.youtube.com/watch?v=S6soMrnQLC4",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-dX6u-53Eewk",
+            "episode_number": 3,
+            "title": "Introduction to University Mathematics (2026), Lecture 6. First Year Student Lecture",
+            "description": "The seventh lecture in the Introduction to Mathematics course (Lecture 0 is the first) is the last in James Munro's course. These lectures set out the type of mathematics students will be studying in their first year as well as recapping much that they have learnt in high-school.\n\nCourse materials: https://courses.maths.ox.ac.uk/course/view.php?id=6542\n\nYou can watch other lectures in the course here: https://www.youtube.com/playlist?list=PL4d5ZtfQonW1xKVEtYJd1iu9m52ATG7SV\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 3119,
+            "year": 2026,
+            "published_at": "2026-11-02T15:00:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dX6u-53Eewk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dX6u-53Eewk",
+                "url": "https://www.youtube.com/watch?v=dX6u-53Eewk",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-3ylB8ISpEZw",
+            "episode_number": 4,
+            "title": "Whip-crack-away",
+            "description": "We'll be home tonight by the light of the silvery moon. And my heart's a-thumpin' like a mandolin a-plunkin' a tune. When I get home, I'm fixin' to stay. So, whip-crack-away, whip-crack-away, whip-crack-away.\n\n#stem #maths #supersonic",
+            "duration": 116,
+            "year": 2026,
+            "published_at": "2026-11-01T16:12:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3ylB8ISpEZw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3ylB8ISpEZw",
+                "url": "https://www.youtube.com/watch?v=3ylB8ISpEZw",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lHWtLB8jMiQ",
+            "episode_number": 5,
+            "title": "Asking AI",
+            "description": "Here's James Munro on an issue occupying the minds of many maths teachers.\n\nYou can watch his Introduction to University Mathematics course here: https://www.youtube.com/playlist?list=PL4d5ZtfQonW1xKVEtYJd1iu9m52ATG7SV\n\n#stem #ai #maths",
+            "duration": 117,
+            "year": 2026,
+            "published_at": "2026-10-28T15:51:43Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lHWtLB8jMiQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lHWtLB8jMiQ",
+                "url": "https://www.youtube.com/watch?v=lHWtLB8jMiQ",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-jj29uEu7ozU",
+            "episode_number": 6,
+            "title": "Introduction to University Mathematics (2026), Lecture 5. First Year Student Lecture",
+            "description": "The sixth lecture in the Introduction to Mathematics course (Lecture 0 is the first) is our new first year students' first in-person lecture on the first day of term, the first five lectures having been online in preparation. These lectures set out the type of mathematics students will be studying in their first year as well as recapping much that they have learnt in high-school.\n\nCourse materials: https://courses.maths.ox.ac.uk/course/view.php?id=6542\n\nYou can watch other lectures in the course here: https://www.youtube.com/playlist?list=PL4d5ZtfQonW1xKVEtYJd1iu9m52ATG7SV\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 2717,
+            "year": 2026,
+            "published_at": "2026-10-28T00:00:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/jj29uEu7ozU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "jj29uEu7ozU",
+                "url": "https://www.youtube.com/watch?v=jj29uEu7ozU",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-pdZO34VP4PY",
+            "episode_number": 7,
+            "title": "The hole story",
+            "description": "Sometimes mathematicians don't think like everyone else. Muhammad has the hole story.\n\n#maths #math #stem,",
+            "duration": 115,
+            "year": 2026,
+            "published_at": "2026-10-25T16:10:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pdZO34VP4PY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pdZO34VP4PY",
+                "url": "https://www.youtube.com/watch?v=pdZO34VP4PY",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-kqPDanHwFYs",
+            "episode_number": 8,
+            "title": "Sometimes",
+            "description": "If you have never enjoyed maths, you might be tempted to think that anyone studying it at university would love the subject almost 24/7.\n\nIt ain't necessarily so. Here are Nick and Rosie.\n\n#maths #math #stem",
+            "duration": 110,
+            "year": 2026,
+            "published_at": "2026-10-21T15:12:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kqPDanHwFYs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kqPDanHwFYs",
+                "url": "https://www.youtube.com/watch?v=kqPDanHwFYs",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-590wkRwSc4U",
+            "episode_number": 9,
+            "title": "Introduction to University Mathematics (2026), Lecture 4. First Year Student Lecture",
+            "description": "The fifth lecture in the Introduction to Mathematics course (Lecture 0 is the first). In the run-up to the start of term, our first year students can watch an online introductory course which sets out the type of mathematics they will be studying in their first year as well as recapping much that they have learnt in high-school. We will be showing all the course which concludes with two in-person lectures at the beginning of term.\n\nCourse materials: https://courses.maths.ox.ac.uk/course/view.php?id=6542\n\nYou can watch other lectures in the course here: https://www.youtube.com/playlist?list=PL4d5ZtfQonW1xKVEtYJd1iu9m52ATG7SV\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 8067,
+            "year": 2026,
+            "published_at": "2026-10-20T14:00:15Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/590wkRwSc4U/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "590wkRwSc4U",
+                "url": "https://www.youtube.com/watch?v=590wkRwSc4U",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-79r9rCtCjeo",
+            "episode_number": 10,
+            "title": "Only connect",
+            "description": "In response to OpenAI's 'solving' of 100s of maths problems, mathematicians have stressed that mathematics is not just about solutions, but also about the journey. Indeed, the ideas and techniques used in one direction may even produce progress in another. Here's Ramón.\n\n#stem #maths",
+            "duration": 180,
+            "year": 2026,
+            "published_at": "2026-10-18T15:00:40Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/79r9rCtCjeo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "79r9rCtCjeo",
+                "url": "https://www.youtube.com/watch?v=79r9rCtCjeo",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lt9vd2irCy0",
+            "episode_number": 11,
+            "title": "First term, first day, first lecture.",
+            "description": "First term, first day, first lecture. And so it begins. The learning thing. The quest for human understanding.\n\n#maths #students",
+            "duration": 60,
+            "year": 2026,
+            "published_at": "2026-10-14T14:56:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lt9vd2irCy0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lt9vd2irCy0",
+                "url": "https://www.youtube.com/watch?v=lt9vd2irCy0",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Dw_Ye5FpsvE",
+            "episode_number": 12,
+            "title": "Introduction to University Mathematics (2026), Lecture 3. First Year Student Lecture",
+            "description": "The fourth lecture in the Introduction to Mathematics course (Lecture 0 is the first). In the run-up to the start of term, our first year students can watch an online introductory course which sets out the type of mathematics they will be studying in their first year as well as recapping much that they have learnt in high-school. We will be showing all the course which concludes with two in-person lectures at the beginning of term.\n\nCourse materials: https://courses.maths.ox.ac.uk/course/view.php?id=6542\n\nYou can watch other lectures in the course here: https://www.youtube.com/playlist?list=PL4d5ZtfQonW1xKVEtYJd1iu9m52ATG7SV\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 5591,
+            "year": 2026,
+            "published_at": "2026-10-13T14:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Dw_Ye5FpsvE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Dw_Ye5FpsvE",
+                "url": "https://www.youtube.com/watch?v=Dw_Ye5FpsvE",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-ULGfPg7Uw_Y",
+            "episode_number": 13,
+            "title": "While my guitar",
+            "description": "Muhammad plugs in his guitar and plays one of maths' most influential hits.\n\n#maths #music #shorts",
+            "duration": 140,
+            "year": 2026,
+            "published_at": "2026-10-11T14:59:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ULGfPg7Uw_Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ULGfPg7Uw_Y",
+                "url": "https://www.youtube.com/watch?v=ULGfPg7Uw_Y",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-mkpWVxIPzO0",
+            "episode_number": 14,
+            "title": "Rosie and Nick",
+            "description": "Rosie and Nick are just about to start their third year. Before they finished their second year, we had a chat about stuff: maths stuff and Oxford stuff.\n\n#maths #students",
+            "duration": 128,
+            "year": 2026,
+            "published_at": "2026-10-07T15:02:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mkpWVxIPzO0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mkpWVxIPzO0",
+                "url": "https://www.youtube.com/watch?v=mkpWVxIPzO0",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-USZekj182j4",
+            "episode_number": 15,
+            "title": "Introduction to University Mathematics (2026), Lecture 2. First Year Student Lecture",
+            "description": "The third lecture in the Introduction to Mathematics course (Lecture 0 is the first). In the run-up to the start of term, our first year students can watch an online introductory course which sets out the type of mathematics they will be studying in their first year as well as recapping much that they have learnt in high-school. We will be showing all the course which concludes with two in-person lectures at the beginning of term.\n\nCourse materials: https://courses.maths.ox.ac.uk/course/view.php?id=6542\n\nYou can watch other lectures in the course here: https://www.youtube.com/playlist?list=PL4d5ZtfQonW1xKVEtYJd1iu9m52ATG7SV\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 2557,
+            "year": 2026,
+            "published_at": "2026-10-06T14:00:29Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/USZekj182j4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "USZekj182j4",
+                "url": "https://www.youtube.com/watch?v=USZekj182j4",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-KwTe9xthNlQ",
+            "episode_number": 16,
+            "title": "Ramón",
+            "description": "Ramón has just left us for a postdoctoral position in Cambridge (it happens occasionally), but before he departed he discussed his research into using random walks to understand physical systems.\n\nRead the case study: https://www.maths.ox.ac.uk/node/80941\n\n#maths #stem #randomwalk",
+            "duration": 177,
+            "year": 2026,
+            "published_at": "2026-10-04T15:09:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/KwTe9xthNlQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "KwTe9xthNlQ",
+                "url": "https://www.youtube.com/watch?v=KwTe9xthNlQ",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-LWrQjLR3Ri0",
+            "episode_number": 17,
+            "title": "Snakes and Ladders",
+            "description": "Is there any game that doesn't arouse the curiosity of a mathematician, however apparently simple?\n\nHere's Marcus du Sautoy.\n\n#maths #games #snakesandladders",
+            "duration": 140,
+            "year": 2026,
+            "published_at": "2026-09-30T14:44:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/LWrQjLR3Ri0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "LWrQjLR3Ri0",
+                "url": "https://www.youtube.com/watch?v=LWrQjLR3Ri0",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-cASmou81OyY",
+            "episode_number": 18,
+            "title": "Introduction to University Mathematics (2026), Lecture 1. First Year Student Lecture",
+            "description": "The second lecture in the Introduction to Mathematics course. In the run-up to the start of term, our first year students can watch an online introductory course which sets out the type of mathematics they will be studying in their first year as well as recapping much that they have learnt in high-school. We will be showing all the course which concludes with two in-person lectures at the beginning of term.\n\nCourse materials: https://courses.maths.ox.ac.uk/course/view.php?id=6542\n\nYou can watch the first lecture here: https://youtu.be/SVNdjdpRJY0\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 6776,
+            "year": 2026,
+            "published_at": "2026-09-29T14:00:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cASmou81OyY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cASmou81OyY",
+                "url": "https://www.youtube.com/watch?v=cASmou81OyY",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-tGuaNN7fdbY",
+            "episode_number": 19,
+            "title": "Incomplete",
+            "description": "Among his many interests, Kurt Gödel wrote a privately circulated formal proof for the existence of God using modal logic. But it was an earlier work from 1931 that upended mathematics and logic and which still applies today.\n\nHere's Tibo to explain.\n\n#maths #logic",
+            "duration": 139,
+            "year": 2026,
+            "published_at": "2026-09-27T15:07:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/tGuaNN7fdbY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "tGuaNN7fdbY",
+                "url": "https://www.youtube.com/watch?v=tGuaNN7fdbY",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-OtBR5i40l9g",
+            "episode_number": 20,
+            "title": "In the beginning",
+            "description": "Our 'Introduction to University Mathematics' course provides an online primer for our new students prior to the start of their first term. Here James Munro explains how university mathematics differs from maths at high school.\n\nHere's the first lecture: https://youtu.be/SVNdjdpRJY0\n\n#maths #stem #university",
+            "duration": 83,
+            "year": 2026,
+            "published_at": "2026-09-23T14:14:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/OtBR5i40l9g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "OtBR5i40l9g",
+                "url": "https://www.youtube.com/watch?v=OtBR5i40l9g",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-SVNdjdpRJY0",
+            "episode_number": 21,
+            "title": "Introduction to University Mathematics (2026), Lecture 0. First Year Student Lecture",
+            "description": "In the run-up to the start of term, our first year students can watch an online introductory course which sets out the type of mathematics they will be studying in their first year as well as recapping much that they have learnt in high-school. We will be showing all the course which concludes with two in-person lectures at the beginning of term.\n\nCourse materials: https://courses.maths.ox.ac.uk/course/view.php?id=6542\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 4496,
+            "year": 2026,
+            "published_at": "2026-09-23T14:00:24Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/SVNdjdpRJY0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "SVNdjdpRJY0",
+                "url": "https://www.youtube.com/watch?v=SVNdjdpRJY0",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-MSGCM4M3qa8",
+            "episode_number": 22,
+            "title": "Model merging",
+            "description": "Machine-learning models are often fine-tuned for specific tasks from a pre-trained base model. One model might perform well on a language task, another on an image problem, and another on a different domain altogether. Here's Bethan on model merging.\n\nRead the case study: https://www.maths.ox.ac.uk/node/81438\n\n#maths #ai #machinelearning",
+            "duration": 136,
+            "year": 2026,
+            "published_at": "2026-09-20T14:54:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/MSGCM4M3qa8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "MSGCM4M3qa8",
+                "url": "https://www.youtube.com/watch?v=MSGCM4M3qa8",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-9XVB9HEzWGw",
+            "episode_number": 23,
+            "title": "The Parthenon myth",
+            "description": "For over 2,000 years scholars have marvelled at the Parthenon in Athens. The audacity, the beauty. And the architectural genius of the Greeks to introduce curves to correct optical illusions. Brilliant.\n\nExcept they didn't. Here's Alain Goriely.\n\nMore: https://www.theguardian.com/science/2026/sep/16/uk-mathematician-debunks-myth-parthenon-optical-illusions\n\n#maths #architecture #parthenon",
+            "duration": 138,
+            "year": 2026,
+            "published_at": "2026-09-17T14:33:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9XVB9HEzWGw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9XVB9HEzWGw",
+                "url": "https://www.youtube.com/watch?v=9XVB9HEzWGw",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-OQ0RTmPUNQ4",
+            "episode_number": 24,
+            "title": "Geometry: Hyperbolic space - the upper half-space and Poincaré disk models. 2nd Year Student Lecture",
+            "description": "This second lecture from Jason's geometry course, will describe two more ways to view hyperbolic space: on the upper-half of the plane and on the unit disk. In both cases we will describe the symmetries of the hyperbolic model and its geodesics (the shortest paths between points), and see connections to Möbius transformations in complex analysis.\n\nYou can watch the first lecture here: https://youtu.be/m_5Jlquo0W4\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 2852,
+            "year": 2026,
+            "published_at": "2026-09-15T13:00:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/OQ0RTmPUNQ4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "OQ0RTmPUNQ4",
+                "url": "https://www.youtube.com/watch?v=OQ0RTmPUNQ4",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-BuuIFSWxkVI",
+            "episode_number": 25,
+            "title": "Jigsaw",
+            "description": "What does an Oxford mathematical biologist specialising in modelling cancer treatments do after completing their PhD? Why, go and do research at medical school, of course.\n\nKit Gallagher, Schmidt Science Fellow at Harvard Medical School, is your man.\n\n#maths #medicine",
+            "duration": 112,
+            "year": 2026,
+            "published_at": "2026-09-14T13:45:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BuuIFSWxkVI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BuuIFSWxkVI",
+                "url": "https://www.youtube.com/watch?v=BuuIFSWxkVI",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-R9VQnNv5SoI",
+            "episode_number": 26,
+            "title": "AI does the math",
+            "description": "AI is ravenous and is eating mathematicians' lunch. A long-standing problem is solved, others are in its sights. But is this more than just a problem about problems? Here's Fields Medallist James Maynard.\n\nRead the Math and AI Declaration by 25 Fields Medallists: https://mathandai.org/\n\n#ai #maths #math",
+            "duration": 133,
+            "year": 2026,
+            "published_at": "2026-09-11T18:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/R9VQnNv5SoI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "R9VQnNv5SoI",
+                "url": "https://www.youtube.com/watch?v=R9VQnNv5SoI",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-yS1DFy2SnQ0",
+            "episode_number": 27,
+            "title": "Count me in: how mathematics explains music - Sarah Hart",
+            "description": "The great mathematician Gottfried Leibniz said that music is the pleasure the human mind experiences from counting without being aware that it is counting. We love it, in other words, because it is the mathematics of the subconscious.\n\nSarah Hart is a mathematician and author and Professor Emerita of Mathematics at Birkbeck College (University of London). \n\nThe Oxford Mathematics Public Lectures are generously supported by XTX Markets.",
+            "duration": 3134,
+            "year": 2026,
+            "published_at": "2026-09-09T16:00:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/yS1DFy2SnQ0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "yS1DFy2SnQ0",
+                "url": "https://www.youtube.com/watch?v=yS1DFy2SnQ0",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "restricted",
+                "availability_detail": "region restricted (blocked list present)"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-vF7YpIIDIU0",
+            "episode_number": 28,
+            "title": "Every day I write the book",
+            "description": "Every day I write (or don't write) the book. \n\nRoger Penrose on the perils of being Penrose.\n\n#maths #writing #stem",
+            "duration": 116,
+            "year": 2026,
+            "published_at": "2026-09-09T14:19:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vF7YpIIDIU0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vF7YpIIDIU0",
+                "url": "https://www.youtube.com/watch?v=vF7YpIIDIU0",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-yMPrZ6dJ8PE",
+            "episode_number": 29,
+            "title": "Magic: The Gathering",
+            "description": "Complexity isn't big in an age of simplism. But when it comes to games, complexity is in.\n\nSergio gathers the magic.\n\n#shorts #maths #stem #games magicthegatheringcommunity",
+            "duration": 140,
+            "year": 2026,
+            "published_at": "2026-09-07T14:10:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/yMPrZ6dJ8PE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "yMPrZ6dJ8PE",
+                "url": "https://www.youtube.com/watch?v=yMPrZ6dJ8PE",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ziNavE2tfAw",
+            "episode_number": 30,
+            "title": "The loneliness of the long-distance postgraduate",
+            "description": "The loneliness of the long-distance postgraduate.\n\nMathematical biologist Jesús Ait Idir discusses life as a young research student.\n\n#maths #stem #students",
+            "duration": 92,
+            "year": 2026,
+            "published_at": "2026-09-02T14:36:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ziNavE2tfAw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ziNavE2tfAw",
+                "url": "https://www.youtube.com/watch?v=ziNavE2tfAw",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-m_5Jlquo0W4",
+            "episode_number": 31,
+            "title": "Geometry: Hyperbolic space - the hyperboloid model. Oxford Mathematics 2nd Year Student Lecture",
+            "description": "The discovery of hyperbolic geometry in the 19th century was a revolution in mathematics which continues to have impact to the present day, with connections to diverse areas including group theory, number theory and theoretical physics. This lecture will introduce the hyperboloid model for hyperbolic geometry, which is closely linked to the study of Special Relativity.\n\nWe will also be showing the lecture following this one.\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 2821,
+            "year": 2026,
+            "published_at": "2026-09-01T14:00:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/m_5Jlquo0W4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "m_5Jlquo0W4",
+                "url": "https://www.youtube.com/watch?v=m_5Jlquo0W4",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-t6cFj2a8akg",
+            "episode_number": 32,
+            "title": "Perfect numbers",
+            "description": "Oh, it's such a perfect number\nI want to count it with you.\n\nAll part of Robin Wilson's eighteen part series on the equations that add up to mathematics: https://www.youtube.com/playlist?list=PL4d5ZtfQonW0yqeFK__FirrjjmcQFpyye\n\nRobin would also like to apologise for a slip of the tongue at 1.17 when he says 2 to the n is prime when he obviously means 2 to the n-1. However, the graphic is correct. Admin has been sacked (by Admin).\n\n#maths #numbers #stem",
+            "duration": 175,
+            "year": 2026,
+            "published_at": "2026-08-31T13:56:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/t6cFj2a8akg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "t6cFj2a8akg",
+                "url": "https://www.youtube.com/watch?v=t6cFj2a8akg",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-gbEdj80IfFM",
+            "episode_number": 33,
+            "title": "Once upon a time",
+            "description": "Apologies for mentioning the Odyssey (no, not the film), but what can Homer's oral masterpiece teach us about engaging with the general public about science? Here's Marcus du Sautoy, Oxford's Charles Simonyi Professor for the Public Understanding of Science.\n\n#maths #science #stem",
+            "duration": 55,
+            "year": 2026,
+            "published_at": "2026-08-26T15:04:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/gbEdj80IfFM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "gbEdj80IfFM",
+                "url": "https://www.youtube.com/watch?v=gbEdj80IfFM",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Z-Eb94Xc0nA",
+            "episode_number": 34,
+            "title": "It's just a phase",
+            "description": "Sometimes mathematics gives the impression it has an explanation for everything.\n\nDon't worry, it's just a phase it's going through.\n\n#maths #math #stem",
+            "duration": 84,
+            "year": 2026,
+            "published_at": "2026-08-23T14:29:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Z-Eb94Xc0nA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Z-Eb94Xc0nA",
+                "url": "https://www.youtube.com/watch?v=Z-Eb94Xc0nA",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-cbubr04DWXk",
+            "episode_number": 35,
+            "title": "Dynamic",
+            "description": "At the close of his sixteenth and final Dynamics student lecture, Derek Moulton gives a three minute summary of why Dynamics is a big deal. It's a tour de 'force'.\n\nYou can watch the full course via the Dynamics playlist.\n\n#maths #stemlearning",
+            "duration": 180,
+            "year": 2026,
+            "published_at": "2026-08-19T14:16:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cbubr04DWXk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cbubr04DWXk",
+                "url": "https://www.youtube.com/watch?v=cbubr04DWXk",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ridNG_BytkY",
+            "episode_number": 36,
+            "title": "Dynamics, Lectures 15 & 16: Oxford Mathematics 1st Year Student Lecture",
+            "description": "In the final two lectures of Derek Moulton's first year Dynamics course, we begin with the inertia tensor and a rolling cylinder before finishing with Newton’s laws in a non-inertial frame. We are showing the full course of sixteen lectures.\n\nYou can watch other lectures in the course here: https://youtu.be/uyhm8chmf6E\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 6694,
+            "year": 2026,
+            "published_at": "2026-08-19T14:00:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ridNG_BytkY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ridNG_BytkY",
+                "url": "https://www.youtube.com/watch?v=ridNG_BytkY",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-qTWp_MOsKTc",
+            "episode_number": 37,
+            "title": "Riffing with Roger",
+            "description": "'Riffing with Roger', an Oxford Mathematics Unoriginal starring Roger Penrose. And another Roger (sort of).\n\n#maths #ideas #rogerpenrose #stem",
+            "duration": 125,
+            "year": 2026,
+            "published_at": "2026-08-16T15:00:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qTWp_MOsKTc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qTWp_MOsKTc",
+                "url": "https://www.youtube.com/watch?v=qTWp_MOsKTc",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-GXygFTxrAGE",
+            "episode_number": 38,
+            "title": "Dynamics, Lectures 13 & 14: Oxford Mathematics 1st Year Student Lecture",
+            "description": "In the thirteenth and fourteenth lectures of Derek Moulton's first year Dynamics course, we begin with total angular momentum and the 2-body problem before moving on to rotating frames and rigid bodies. We shall be showing the full course of sixteen lectures.\n\nYou can watch other lectures in the course here: https://youtu.be/uyhm8chmf6E\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 6443,
+            "year": 2026,
+            "published_at": "2026-08-12T14:00:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/GXygFTxrAGE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "GXygFTxrAGE",
+                "url": "https://www.youtube.com/watch?v=GXygFTxrAGE",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-pR8SOgukvK4",
+            "episode_number": 39,
+            "title": "Spaghetti alla Sam",
+            "description": "Tough choice. I'll have the Spaghetti alla Sam for main.\n\n#maths #spaghetti",
+            "duration": 136,
+            "year": 2026,
+            "published_at": "2026-08-11T14:41:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pR8SOgukvK4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pR8SOgukvK4",
+                "url": "https://www.youtube.com/watch?v=pR8SOgukvK4",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-mFzAbKJLvtA",
+            "episode_number": 40,
+            "title": "Roger Penrose @95",
+            "description": "Roger Penrose is 95 today. The fire still burns bright.\n\n#maths #rogerpenrose",
+            "duration": 139,
+            "year": 2026,
+            "published_at": "2026-08-08T09:10:49Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mFzAbKJLvtA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mFzAbKJLvtA",
+                "url": "https://www.youtube.com/watch?v=mFzAbKJLvtA",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-xiwE7RpAZUo",
+            "episode_number": 41,
+            "title": "Plutomatics",
+            "description": "It has been erroneously suggested that we are using Pluto, our feline favourite, to sneak maths into the lives of people who don't understand it. Actually, we are using maths to sneak cats into the lives of people who don't understand them.\n\n#maths #catshorts",
+            "duration": 140,
+            "year": 2026,
+            "published_at": "2026-08-05T14:39:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xiwE7RpAZUo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xiwE7RpAZUo",
+                "url": "https://www.youtube.com/watch?v=xiwE7RpAZUo",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-YHZCo1gb_7E",
+            "episode_number": 42,
+            "title": "Dynamics, Lectures 11 & 12: Oxford Mathematics 1st Year Student Lecture",
+            "description": "In the eleventh and twelfth lectures of Derek Moulton's first year Dynamics course, we begin with comets and planetary orbits before moving on to systems of particles. We shall be showing the full course of sixteen lectures.\n\nYou can watch other lectures in the course here: https://youtu.be/uyhm8chmf6E\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 6416,
+            "year": 2026,
+            "published_at": "2026-08-04T15:00:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/YHZCo1gb_7E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "YHZCo1gb_7E",
+                "url": "https://www.youtube.com/watch?v=YHZCo1gb_7E",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-hNF5aX3TJcA",
+            "episode_number": 43,
+            "title": "Pi and maths",
+            "description": "Pi and maths in India are on the menu in the last 'Tower of Babel'. Unlike other mathematical words, Pi has a habit of being the same in many languages.\n\nPi Day is on 14 March each year (geddit?). But if you don't want to be reminded of maths, there's always National Pie Day (US) or Pie Week (UK). Much too filling.\n\n#maths #stem #language",
+            "duration": 99,
+            "year": 2026,
+            "published_at": "2026-08-02T15:00:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hNF5aX3TJcA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hNF5aX3TJcA",
+                "url": "https://www.youtube.com/watch?v=hNF5aX3TJcA",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-sEE8frt7Gjc",
+            "episode_number": 44,
+            "title": "Variations",
+            "description": "Pluto isn't doing much here. In fact he's not doing anything at all. But from his sedentary position, he is demonstrating an important piece of mathematics. Doesn't he always?\n\n#maths #catshorts",
+            "duration": 102,
+            "year": 2026,
+            "published_at": "2026-07-29T14:43:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sEE8frt7Gjc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sEE8frt7Gjc",
+                "url": "https://www.youtube.com/watch?v=sEE8frt7Gjc",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-fn9o-sUNN7c",
+            "episode_number": 45,
+            "title": "3 Minute Thesis Competition 2026",
+            "description": "Seven Oxford Mathematics postgraduate students, with a maximum of 180 seconds and one slide, explain their research. The competition is organised by the Oxford Mathematics SIAM-IMA Student Chapter. Winners announced at the end.\n\nYou can watch all the previous years' competitions here: https://www.youtube.com/playlist?list=PL4d5ZtfQonW1s9jj0WuuYHKenP5AHkRf1",
+            "duration": 1275,
+            "year": 2026,
+            "published_at": "2026-07-28T14:15:35Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fn9o-sUNN7c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fn9o-sUNN7c",
+                "url": "https://www.youtube.com/watch?v=fn9o-sUNN7c",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-PTWL4AbhIeA",
+            "episode_number": 46,
+            "title": "Equations anyone?",
+            "description": "Equations (in seven tongues) and al-Khwarizmi are the stars of Tower of Babel Episode 8. \n\nNote from our historian: as Yassine says, al-Khwarizmi gave his name to the word 'algorithm', but the use of an algorithm to solve what we now call quadratic equations dates back to the Mesopotamians c1800 BC.\n\n#maths #arabic",
+            "duration": 130,
+            "year": 2026,
+            "published_at": "2026-07-26T14:42:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PTWL4AbhIeA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PTWL4AbhIeA",
+                "url": "https://www.youtube.com/watch?v=PTWL4AbhIeA",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-saGI-DXYreA",
+            "episode_number": 47,
+            "title": "Once upon a time",
+            "description": "A long time ago, in a distant land called the English summer, you'd often see, in gardens, long tubes, usually made of rubber or plastic. At the end of these tubes, hands would wave the tube about and water might - or might not - gush. Happy days.\n\n#maths #stem",
+            "duration": 136,
+            "year": 2026,
+            "published_at": "2026-07-22T14:40:51Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/saGI-DXYreA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "saGI-DXYreA",
+                "url": "https://www.youtube.com/watch?v=saGI-DXYreA",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-mCwv2_QBh7M",
+            "episode_number": 48,
+            "title": "Dynamics, Lectures 9 & 10: Oxford Mathematics 1st Year Student Lecture",
+            "description": "In the ninth and tenth lectures of Derek Moulton's first year Dynamics course, we begin with pendulums and motion on a surface before moving on to marble in a bowl and an introduction to inverse square law. We shall be showing the full course of sixteen lectures.\n\nYou can watch other lectures in the course here: https://youtu.be/uyhm8chmf6E\n\nYou can also watch many other student lectures via our main Student Lectures playlist (also check out specific student lectures playlists): https://www.youtube.com/playlist?list=PL4d5ZtfQonW0A4VHeiY0gSkX1QEraaacE\n\nAll first and second year lectures are followed by tutorials where students meet their tutor in pairs to go through the lecture and associated problem sheet and to talk and think more about the maths. Third and fourth year lectures are followed by classes.",
+            "duration": 6461,
+            "year": 2026,
+            "published_at": "2026-07-21T13:58:57Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/mCwv2_QBh7M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "mCwv2_QBh7M",
+                "url": "https://www.youtube.com/watch?v=mCwv2_QBh7M",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        },
+        {
+            "id": "yt-_JXaMulE1Jg",
+            "episode_number": 49,
+            "title": "What's in a word?",
+            "description": "We probably don't spend much time thinking about colleagues' mathematical schooldays. Presumably they were all a bit similar, it being maths, the universal language etc. But behind each story lies language (or lack of it). And political circumstance.\n\nHere's Radek.\n\n#maths #language",
+            "duration": 122,
+            "year": 2026,
+            "published_at": "2026-07-19T14:52:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_JXaMulE1Jg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_JXaMulE1Jg",
+                "url": "https://www.youtube.com/watch?v=_JXaMulE1Jg",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-4oMuV9XW-CQ",
+            "episode_number": 50,
+            "title": "Noether",
+            "description": "Written by Esme Somerside Gregory and devised by Oxford student theatre company Cartesian Productions, 'Noether' chronicles the life of Emmy Noether, a major figure in 20th century mathematics. But the challenges in her life were not only mathematical. In this acclaimed student production, her life is revisited in Emmy and her contemporaries' own words.\n\nRunning time: 62 minutes\n\nInformation about the historians whose work made the play possible: https://canva.link/bnxbsw8mr2pnbcz\n\nNoether is returning in autumn 2026, touring around universities across the UK. More details can be found on Instagram at @cartesianproductions and tickets will soon be on sale at www.ticketsource.com/cartesian-productions.",
+            "duration": 3704,
+            "year": 2026,
+            "published_at": "2026-07-16T16:00:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4oMuV9XW-CQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4oMuV9XW-CQ",
+                "url": "https://www.youtube.com/watch?v=4oMuV9XW-CQ",
+                "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                "channel_title": "Oxford Mathematics",
+                "kind": "live_vod",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture (channel firehose otherwise mostly short-form clips)."
+            }
+        }
+    ]
+}

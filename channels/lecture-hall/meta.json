@@ -1,0 +1,15 @@
+{
+    "number": 4,
+    "name": "The Lecture Hall",
+    "description": "Great lectures and fascinating ideas from universities, scientists, educators, historians, and researchers: full-length courses from MIT and Stanford, public lectures from the Royal Institution, Gresham College, and the Perimeter Institute, and complete lecture series from Yale and Oxford -- in their intended order, never truncated.",
+    "logo": "logo.svg",
+    "anchor": "2026-11-05T00:00:00+00:00",
+    "theme": {
+        "bg": "#0c0a07",
+        "bg2": "#1a140c",
+        "fg": "#f5ecd9",
+        "muted": "#b8a888",
+        "accent": "#c9a24b",
+        "accentWarm": "#8a3b2c"
+    }
+}

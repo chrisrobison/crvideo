@@ -1,0 +1,532 @@
+{
+    "schema_version": 1,
+    "id": "stanford-cs229",
+    "title": "Stanford CS229: Machine Learning",
+    "description": "This playlist features lectures from the Stanford graduate course CS229 Machine Learning.\n\nLearn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nThe graduate course, CS229 Machine Learning, provides a broad introduction to machine learning and statistical pattern recognition. Topics include: supervised learning (generative learning, parametric/non-parametric learning, neural networks); unsupervised learning (clustering, dimensionality reduction); learning theory (bias/variance tradeoffs, practical advice); reinforcement learning and adaptive control. These course lectures discuss recent applications of machine learning, such as to robotic control, data mining, autonomous navigation, bioinformatics, speech recognition, and text and web data processing.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+        "channel_url": null,
+        "playlist_id": "PLaqpC4kq8Gpw"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-DATnpGoGhM8",
+            "episode_number": 1,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 1: Introduction",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 2219,
+            "year": 2026,
+            "published_at": "2026-07-29T23:31:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DATnpGoGhM8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DATnpGoGhM8",
+                "url": "https://www.youtube.com/watch?v=DATnpGoGhM8",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-cmNIMjPYdgM",
+            "episode_number": 2,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 2: Supervised Learning Setup",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4690,
+            "year": 2026,
+            "published_at": "2026-07-29T23:44:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cmNIMjPYdgM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cmNIMjPYdgM",
+                "url": "https://www.youtube.com/watch?v=cmNIMjPYdgM",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-uJF_gL3jhxI",
+            "episode_number": 3,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 3: Weighted Least Squares",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 3734,
+            "year": 2026,
+            "published_at": "2026-07-29T23:51:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uJF_gL3jhxI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uJF_gL3jhxI",
+                "url": "https://www.youtube.com/watch?v=uJF_gL3jhxI",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-8gVi4Rk21Eg",
+            "episode_number": 4,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 4: Exponential Family, GLMs Classification",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4452,
+            "year": 2026,
+            "published_at": "2026-07-29T23:56:43Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/8gVi4Rk21Eg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "8gVi4Rk21Eg",
+                "url": "https://www.youtube.com/watch?v=8gVi4Rk21Eg",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-zRdE8A4UZes",
+            "episode_number": 5,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 5: Gaussian Discriminant Analysis",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4898,
+            "year": 2026,
+            "published_at": "2026-07-30T23:32:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zRdE8A4UZes/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zRdE8A4UZes",
+                "url": "https://www.youtube.com/watch?v=zRdE8A4UZes",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-llnEgyyuYkQ",
+            "episode_number": 6,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 6: Dataset Split, ML Advice",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4707,
+            "year": 2026,
+            "published_at": "2026-07-30T23:39:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/llnEgyyuYkQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "llnEgyyuYkQ",
+                "url": "https://www.youtube.com/watch?v=llnEgyyuYkQ",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-fRM41w9jzQo",
+            "episode_number": 7,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 7: Neural Networks 1 (Architecture)",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4828,
+            "year": 2026,
+            "published_at": "2026-07-30T23:43:45Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fRM41w9jzQo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fRM41w9jzQo",
+                "url": "https://www.youtube.com/watch?v=fRM41w9jzQo",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ne2ngVAoMG8",
+            "episode_number": 8,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 8: Neural Networks 2 (Backprop)",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 3733,
+            "year": 2026,
+            "published_at": "2026-07-30T23:51:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ne2ngVAoMG8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ne2ngVAoMG8",
+                "url": "https://www.youtube.com/watch?v=ne2ngVAoMG8",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-bSmIGBCoffA",
+            "episode_number": 9,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 9: K-Means and GMM (non-EM)",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4590,
+            "year": 2026,
+            "published_at": "2026-07-31T00:02:46Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/bSmIGBCoffA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "bSmIGBCoffA",
+                "url": "https://www.youtube.com/watch?v=bSmIGBCoffA",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-sUS-eTa0l6s",
+            "episode_number": 10,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 10: GMM (EM), PCA",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4806,
+            "year": 2026,
+            "published_at": "2026-07-31T00:06:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/sUS-eTa0l6s/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "sUS-eTa0l6s",
+                "url": "https://www.youtube.com/watch?v=sUS-eTa0l6s",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-dqUMCzWjZSI",
+            "episode_number": 11,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 11: Diffusion Models",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4951,
+            "year": 2026,
+            "published_at": "2026-07-31T20:44:04Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/dqUMCzWjZSI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "dqUMCzWjZSI",
+                "url": "https://www.youtube.com/watch?v=dqUMCzWjZSI",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-_kREM2UAiJ8",
+            "episode_number": 12,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 12: Representation Learning",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4557,
+            "year": 2026,
+            "published_at": "2026-07-31T20:47:27Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_kREM2UAiJ8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_kREM2UAiJ8",
+                "url": "https://www.youtube.com/watch?v=_kREM2UAiJ8",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-lNTajqxxOn4",
+            "episode_number": 13,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 13: LLMs, Next-Word Prediction Loss",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 3642,
+            "year": 2026,
+            "published_at": "2026-07-31T22:19:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/lNTajqxxOn4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "lNTajqxxOn4",
+                "url": "https://www.youtube.com/watch?v=lNTajqxxOn4",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-pwQ0l4hFCVI",
+            "episode_number": 14,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 14: Transformers, In-Context Learning",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4652,
+            "year": 2026,
+            "published_at": "2026-07-31T22:22:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pwQ0l4hFCVI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pwQ0l4hFCVI",
+                "url": "https://www.youtube.com/watch?v=pwQ0l4hFCVI",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-hHC-SF3utxg",
+            "episode_number": 15,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 16: Basic Concept in RL, Policy Gradient",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4399,
+            "year": 2026,
+            "published_at": "2026-07-31T22:26:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hHC-SF3utxg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hHC-SF3utxg",
+                "url": "https://www.youtube.com/watch?v=hHC-SF3utxg",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-xveNBYVTrqw",
+            "episode_number": 16,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 18: GMM (EM), PCA",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4585,
+            "year": 2026,
+            "published_at": "2026-07-31T22:30:12Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xveNBYVTrqw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xveNBYVTrqw",
+                "url": "https://www.youtube.com/watch?v=xveNBYVTrqw",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-J7CossjMvEg",
+            "episode_number": 17,
+            "title": "Stanford CS229 Machine Learning | Spring 2026 | Lecture 20: GMM (EM), PCA",
+            "description": "Learn from the latest CS229 graduate curriculum — now built into XCS229 Machine Learning, our professional education version. Starts November 16, 2026. Enroll now.\n🔗 https://stanford.io/xcs229-261116\n\nFor more information about Stanford’s Artificial Intelligence professional and graduate programs, visit: https://stanford.io/ai\n\nFor information on the graduate course, CS229 Machine Learning, including the syllabus and course materials, visit the course's website: https://cs229.stanford.edu/index.html-spr26\n\nTeaching Team:\nChris Ré, Professor of Computer Science\nTengyu Ma, Assistant Professor of Computer Science",
+            "duration": 4736,
+            "year": 2026,
+            "published_at": "2026-07-31T22:32:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/J7CossjMvEg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "J7CossjMvEg",
+                "url": "https://www.youtube.com/watch?v=J7CossjMvEg",
+                "channel_id": "UCBa5G_ESCn8Yd4vw5U-gIcg",
+                "channel_title": "Stanford Online",
+                "kind": "upload",
+                "embeddable": false,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLaqpC4kq8Gpw"
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}
