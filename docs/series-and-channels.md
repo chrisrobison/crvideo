@@ -470,3 +470,4 @@ shows in the vein of James Burke's *Connections*. None of this is
 scheduled, imported, or otherwise acted on anywhere in this codebase.
 <!-- verifying Workers Builds preview deploy command fix: 2026-11-05T19:55:51Z -->
 <!-- retry after --assets=. fix: 2026-11-05T20:33:49Z -->
+<!-- retry 2, confirming propagation: 2026-11-05T20:35:03Z -->
