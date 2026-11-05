@@ -1,0 +1,1182 @@
+{
+    "schema_version": 1,
+    "id": "greatscott",
+    "title": "GreatScott!",
+    "description": "Awesome Electronics Tutorials, Projects and How To´s\n\nWARNING!: DO NOT SEND MAIL TO THE ADDRESS GIVEN BY THE IMPRINT!\n\nImprint/Impressum:\nGreatScott!\nc/o Block Services\nStuttgarter Str. 106\n70736 Fellbach\n\nWARNING!: DO NOT SEND MAIL TO THE ADDRESS GIVEN BY THE IMPRINT!\n\nDisclaimer:\nThe shown videos are for educational & entertainment purposes only. Use the given information at your own risk. Do not work beyond your capability and always hire a professional if you are not sure what you are doing. Remember: Safety first!\n",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": "https://yt3.ggpht.com/XLvDKb0nskFt02mKB8b9BxJak2O9xgutVgY2ijxkwNKPeGjYKIPF7vcI7okv_J1nwJFSvUGbYQ=s800-c-k-c0x00ffffff-no-rj",
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+        "channel_url": "https://www.youtube.com/channel/UC6mIxFTvXkWQVEHPsEdflzQ",
+        "playlist_id": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-kwvbW6GHNrw",
+            "episode_number": 1,
+            "title": "German House Wiring Color Code Explained! #electronics #wiring #electric #color #code #diy",
+            "description": "Full video: https://youtu.be/DWsVvdd8QJ4\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#electronics #wiring #electric #color #code #diy",
+            "duration": 62,
+            "year": 2026,
+            "published_at": "2026-11-01T16:00:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/kwvbW6GHNrw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "kwvbW6GHNrw",
+                "url": "https://www.youtube.com/watch?v=kwvbW6GHNrw",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-wiTGuvSBNP4",
+            "episode_number": 2,
+            "title": "I tried finding Hidden Gems on AliExpress AGAIN! (Part 21)",
+            "description": "6–32 Layer High-Layer & HDI PCBs — Get Started: https://jlcpcb.com?from=Greatscott2\nMeet JLCPCB at electronica 2026: https://jlcpcb.com/events/electronica-2026\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the featured products here: (affiliate links)\nSunrise Alarm Clock: https://s.click.aliexpress.com/e/_c3cJsvG5\nBit Magnetizer: https://s.click.aliexpress.com/e/_c3IvB48h\nPogo Pin Programmer: https://s.click.aliexpress.com/e/_c3xP2fpb\nInductance Tester: https://s.click.aliexpress.com/e/_c2z2yCel\nWire Feeder: https://s.click.aliexpress.com/e/_c3W9tyBr\nVacuum Pen: https://s.click.aliexpress.com/e/_c4mUSeYD\nIC Clamps: https://s.click.aliexpress.com/e/_c2ztGjZr\n\nPrevious video: https://youtu.be/jfjyx1GvrJk\nPrevious Aliexpress video: https://youtu.be/nnZVXshJH4c\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will be having a closer look at 6 different products I got from Aliexpress. Aliexpress is famous for featuring the newest products/ICs when it comes to electronics but finding those can be a bit difficult. So I tried finding the hidden Gems not only electronics related but in general what I think could be useful. Let's get started!\n\nThanks to JLCPCB for sponsoring this video\n\n0:00 Hidden Gems?\n0:50 Intro\n1:58 Sunrise Alarm Clock\n4:30 Bit Magnetizer\n5:40 Pogo Pin Programmer\n7:04 Induction Tester\n9:15 Wire Feeder\n10:57 Vacuum Pen\n12:06 IC Clamps\n13:30 Verdict",
+            "duration": 844,
+            "year": 2026,
+            "published_at": "2026-10-25T15:50:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wiTGuvSBNP4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wiTGuvSBNP4",
+                "url": "https://www.youtube.com/watch?v=wiTGuvSBNP4",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-j9-aJrMwyrY",
+            "episode_number": 3,
+            "title": "48 Batteries at Once?! #gadget #review #battery #charger #test #teardown",
+            "description": "ADVERTISEMENT – Paid partnership with Voltcraft\nVoltcraft CB48AA (AA):\nhttps://www.conrad.de/de/p/voltcraft-cb48aa-rundzellen-ladegeraet-nimh-liion-mignon-aa-3431409.html\nVoltcraft CB48AAA (AAA):\nhttps://www.conrad.de/de/p/voltcraft-cb48aaa-rundzellen-ladegeraet-nimh-liion-micro-aaa-3428671.html?insert=NA\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#gadget #review #battery #charger #test #teardown",
+            "duration": 104,
+            "year": 2026,
+            "published_at": "2026-10-18T15:00:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/j9-aJrMwyrY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "j9-aJrMwyrY",
+                "url": "https://www.youtube.com/watch?v=j9-aJrMwyrY",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-jfjyx1GvrJk",
+            "episode_number": 4,
+            "title": "Forget Thermal Paste! This Cooling Trick Is Much Better",
+            "description": "Thermal Management Products: https://www.we-online.com/en/components/products/tm\nProduct Navigator: https://www.we-online.com/en/components/productnavigator\nWürth Elektronik Design Software: https://redexpert.we-online.com/we-redexpert/en/#/home\nServices for components: https://www.we-online.com/en/products/components/service\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nPrevious video: https://youtu.be/uDfdo2zfs88\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\nIn this video we will be having a look at a big problem when it comes to handheld gaming devices. HEAT!! The main SoC can get very hot. This is the case with my current Android handheld. So in this video let's find out why thermal paste is not the best solution and how thermal pads, gap filler, Phase Change Material and Graphite sheets can make a HUGE Difference! Let's get started!\n\nWebsites shown in this video:\nhttps://semiconductor.samsung.com/news-events/tech-blog/introducing-a-new-package-architecture-for-improved-thermal-efficiency-in-mobile-application-processors/\nhttps://www.qualcomm.com/smartphones/products/8-series/snapdragon-8-elite-mobile-platform\nhttps://droix.net/blogs/ayn-odin3-review/?srsltid=AfmBOopQpOqsXT55PGDXwC7r037Lfg9au7Ym-NuJHOVKQ-YIqZE2JAzr\nhttps://www.reddit.com/r/OdinHandheld/comments/1qe1vu8/odin_3_stress_test_results/?solution=42d226b83916748842d226b839167488\n\nThanks to Würth Elektronik for sponsoring this video!\n\n0:00 HEAT Problem!!\n1:37 Intro\n2:08 Why No Thermal Paste?\n3:33 Alternatives out there!\n3:57 Testing Thermal Gap Filler\n6:58 The Problem with Phone SoCs\n8:11 Best Gap Filler Setup\n8:45 Testing Phase Change Material\n9:51 Testing Graphite Sheet\n11:08 Verdict",
+            "duration": 705,
+            "year": 2026,
+            "published_at": "2026-10-11T14:50:49Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/jfjyx1GvrJk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "jfjyx1GvrJk",
+                "url": "https://www.youtube.com/watch?v=jfjyx1GvrJk",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-hpnGsvKrw5k",
+            "episode_number": 5,
+            "title": "This OLED Screen needs less Power than.... #aliexpress #gadget #review #oled #screen #diy #kit",
+            "description": "Full video: https://youtu.be/SG0eWf_Cbw0\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#aliexpress #gadget #review #oled #screen #diy #kit",
+            "duration": 58,
+            "year": 2026,
+            "published_at": "2026-10-04T15:00:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hpnGsvKrw5k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hpnGsvKrw5k",
+                "url": "https://www.youtube.com/watch?v=hpnGsvKrw5k",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-uDfdo2zfs88",
+            "episode_number": 6,
+            "title": "Can My DIY AI Beat a Flagship AI? (in a Real Project)",
+            "description": "JLCPCB's HDI PCBs are now available – High Density · Compact · Fast: https://jlcpcb.com/news/hdi-pcb-manufacturing-services\n\nGet $123 in coupons when you register as a new user:\nhttps://jlcpcb.com?from=Greatscott2\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the board shown in the video here: (affiliate links)\nESP32 Sense Board: https://s.click.aliexpress.com/e/_c410CyMZ\nMaix Cam: https://s.click.aliexpress.com/e/_c3upoX5R\n\nPrevious video: https://youtu.be/ZQ62gajj54Y\nRTK GPS Video: https://youtu.be/y0UkxnTC1p4\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\nIn this video we will be having a closer look at AI Vision system when it comes to electronics projects. An AI Vision can basically tell us what it is looking at. Sooooo is a $200 system better than an $80 or $20 one?? Is more expensive better? We will find out by doing a real electronics project, creating our own models and doing lots and lots of tests!! Let's get started!\n\nWebsites that were shown in the video:\nhttps://wiki.sipeed.com/maixvision\nhttps://www.ardusimple.com/product/simplertk2b-starter-kit-mr-ip65/\nhttps://browser.geekbench.com/v6/cpu/compare/2656478?baseline=2808487&utm_source=chatgpt.com\nhttps://github.com/potato-os/core/blob/main/docs/benchmarks/gemma4-pi-benchmark-2026-04-04.md\nhttps://www.tensorflow.org/\nhttps://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html?srsltid=AU7gw4WFGTDThqVEjNOmujjIbWnEgZf-LnVTBXxgKeYiMZ9njf_XYVxe\n\nThanks to JLCPCB for sponsoring this video!\n\n0:00 Vision AI Challenge!\n1:37 Intro\n2:42 $20 ESP32 Sense Board\n4:46 Training my own AI Model\n7:20 Testing my AI Model\n8:25 $80 MaixCam\n10:42 $200 Raspberry Pi AI\n12:33 Verdict",
+            "duration": 825,
+            "year": 2026,
+            "published_at": "2026-09-27T14:47:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uDfdo2zfs88/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uDfdo2zfs88",
+                "url": "https://www.youtube.com/watch?v=uDfdo2zfs88",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-puBFdQQ150c",
+            "episode_number": 7,
+            "title": "Use this Device to detect Radiation around you! #diy #electronics #experiment #wifi #radiation #sdr",
+            "description": "Full video: https://youtu.be/n5KC1TlKKwQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #experiment #wifi #radiation #sdr",
+            "duration": 61,
+            "year": 2026,
+            "published_at": "2026-09-20T15:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/puBFdQQ150c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "puBFdQQ150c",
+                "url": "https://www.youtube.com/watch?v=puBFdQQ150c",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ZQ62gajj54Y",
+            "episode_number": 8,
+            "title": "I Found the Secret to Long Range WiFi!",
+            "description": "Curious how Antennas actually work? Download Mouser's free Antennas Guide: https://mou.sr/4gjf08z\n\nCheck out the antennas featured in this video:\nL-com antenna: https://mou.sr/4weUtrl\nSiretta Oscar 18 directional antenna: https://mou.sr/4z6WBEr\nMore Siretta antenna solutions: https://mou.sr/4z9EVry\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nCheck out the NanoFarfield Test Setup here: \nhttps://www.crowdsupply.com/antenom-antenna-technologies/nanofarfield\nhttps://www.antenit.com/nanofarfield/\n\nPrevious video: https://youtu.be/aKSIhqiKjm4\nPrevious WiFi Antenna video: https://youtu.be/Q_5bna_cyBw\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\nIn this video we will be once again having a closer look at WiFi Antennas. But NOT the standard ones. This time it will be all about directional antennas. I mean those should be better to achieve a wider range, right? So in this video, let's test 3 commercial directional Yagi Antennas, find out how they are made and ultimately create a DIY version. Will my DIY attempt will work at all or even perform better? Let's find out!! :-)\n\nThanks to Mouser for sponsoring this video!\n\n0:00 Long Range WiFi Antenna?\n1:22 Intro\n2:05 Traditional WiFi Antenna Test\n2:55 Buy Directional WiFi Antenna Test\n3:51 Antenna Gain?\n5:13 Radiation Plot?\n5:30 Design of Directional Antennas\n8:09 Creating a DIY Directional Antenna\n9:13 DIY Directional Antenna Test\n11:00 Verdict",
+            "duration": 700,
+            "year": 2026,
+            "published_at": "2026-09-13T14:53:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZQ62gajj54Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ZQ62gajj54Y",
+                "url": "https://www.youtube.com/watch?v=ZQ62gajj54Y",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-pfWeN0SwmX4",
+            "episode_number": 9,
+            "title": "This Tiny Smoke Machine Has One Big Problem! #aliexpress #gadget #review #gem #smoke #machine",
+            "description": "Full video: https://youtu.be/cwU7pMmqieQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#aliexpress #gadget #review #gem #smoke #machine",
+            "duration": 51,
+            "year": 2026,
+            "published_at": "2026-09-06T15:00:36Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pfWeN0SwmX4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pfWeN0SwmX4",
+                "url": "https://www.youtube.com/watch?v=pfWeN0SwmX4",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-aKSIhqiKjm4",
+            "episode_number": 10,
+            "title": "Apparently You Can Hack an Air Conditioner! (+30% Power)",
+            "description": "PCBs (from 2 layers) with free OSP on JLCPCB：https://jlcpcb.com/?from=AAA\nOrder on JLCPCB Desktop APP,  Save $1–$20 Every Time: https://jlcpcb.com/download\n\nYou can get the components for the HACK here: (affiliate links)\nESP32-C3: https://s.click.aliexpress.com/e/_c3ATvmB9\nHeating Pad: https://s.click.aliexpress.com/e/_c3UL59aB\nMOSFET: https://s.click.aliexpress.com/e/_c4VD4cL5\nLM35 Temp Sensor: https://s.click.aliexpress.com/e/_c4Lp1DN9\nDS18B20 Temp Sensor: https://s.click.aliexpress.com/e/_c3g0Y7Rp\nThermal Switch: https://s.click.aliexpress.com/e/_c4oN6D0L\n\nPrevious video: https://youtu.be/nnZVXshJH4c\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this episode of HACKED! we will have a closer look at my AC. Yes, my air conditioner unit. It is only 1 year old and it does in fact work very well. But on not so hot days, I noticed that the cooling power felt a bit weaker. So I dug through the internet and did some experiments to ultimately find out that the output power was actually limited. So let's try to \"HACK\" it and unlock full power ;-) Let's get started!\n\nThanks to JLCPCB for sponsoring this video!\n\n0:00 I am not crazy!!\n1:34 Intro\n2:32 Finding Clues\n4:37 Initial Experiment\n5:53 Creating the HACK\n9:22 Testing the HACK\n10:55 Verdict",
+            "duration": 726,
+            "year": 2026,
+            "published_at": "2026-08-30T14:55:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/aKSIhqiKjm4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "aKSIhqiKjm4",
+                "url": "https://www.youtube.com/watch?v=aKSIhqiKjm4",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-T4Jnip16BRQ",
+            "episode_number": 11,
+            "title": "This LED Sign Reacts to Music!! #diy #electronics #project #led #circuit #engineering #experiment",
+            "description": "Full video: https://youtu.be/Jyrpx9rEGMI\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #project #led #circuit #engineering #experiment",
+            "duration": 66,
+            "year": 2026,
+            "published_at": "2026-08-23T15:00:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/T4Jnip16BRQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "T4Jnip16BRQ",
+                "url": "https://www.youtube.com/watch?v=T4Jnip16BRQ",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-nnZVXshJH4c",
+            "episode_number": 12,
+            "title": "I tried finding Hidden Gems on AliExpress AGAIN! (SPECIAL Part 20)",
+            "description": "Check out https://soldered.com/ and use code \"GreatScott\" for 20% off on your first order\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the featured products here: (affiliate links)\nVoltage Stabilizer: https://s.click.aliexpress.com/e/_c4Uf6tYX\nNut Cracker: https://s.click.aliexpress.com/e/_c3H57dGr\nMini Display: https://de.aliexpress.com/item/1005009941797169.html\nCMOS Kay Cap: https://s.click.aliexpress.com/e/_c3gYJ3Gf\nPipeline Inspection Tank: https://s.click.aliexpress.com/e/_c3yBOnPN\nMini Voltmeter: https://s.click.aliexpress.com/e/_c4Xp4y8j\nWarm Air Blower: https://s.click.aliexpress.com/e/_c3l0kfvp\nBLDC Driver: https://s.click.aliexpress.com/e/_c3tlJscF\nhttps://s.click.aliexpress.com/e/_c3MaKVgr\nInfrared Switch: https://s.click.aliexpress.com/e/_c2Rx8hUf\n\nPrevious video: https://youtu.be/eYx7uxJ802I\nPrevious Aliexpress video: https://youtu.be/6rlUO5NoYO0\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will be having a closer look at 6 different products I got from Aliexpress. Aliexpress is famous for featuring the newest products/ICs when it comes to electronics but finding those can be a bit difficult. So I tried finding the hidden Gems not only electronics related but in general what I think could be useful. Let's get started!\n\nWebsites that were shown during the video: \nhttps://community.home-assistant.io/t/homeplate-e-ink-dashboard-with-inkplate-10/383634\n\nThanks to Soldered for sponsoring this video\n\n0:00 Hidden Gems?\n1:08 Intro\n2:08 Voltage Stabilizer\n4:23 Nut Cracker\n5:30 Mini PC Screen\n6:33 CMOS Key Cap\n7:14 Pipeline Inspection Tank\n9:32 Mini Voltmeter\n10:36 Portable Warm Air Blower\n12:05 BLDC Motor Driver\n13:43 Infrared Switch\n15:09 Verdict",
+            "duration": 941,
+            "year": 2026,
+            "published_at": "2026-08-16T14:57:56Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nnZVXshJH4c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nnZVXshJH4c",
+                "url": "https://www.youtube.com/watch?v=nnZVXshJH4c",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-DQrXqrMx2z8",
+            "episode_number": 13,
+            "title": "This Unprotected Battery Surprised Me! #experiment #battery #engineering #safety #lithiumbattery",
+            "description": "Full video: https://youtu.be/bNNWbm681AI\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#experiment #battery #engineering #safety #lithiumbattery",
+            "duration": 64,
+            "year": 2026,
+            "published_at": "2026-08-09T15:00:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/DQrXqrMx2z8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "DQrXqrMx2z8",
+                "url": "https://www.youtube.com/watch?v=DQrXqrMx2z8",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-eYx7uxJ802I",
+            "episode_number": 14,
+            "title": "Why You Can’t Copy a Car Key (I tried)",
+            "description": "JLCPCB, Advanced PCBs, Your Precision Partner – https://jlcpcb.com/coupon-center\nRapid PCB Prototyping Made Simple. New users get $123 coupons: https://jlcpcb.com/?from=AAA\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the mentioned components/parts here:  (affiliate links)\nSDR: https://s.click.aliexpress.com/e/_c3eFgVlv\nESP32 Mini: https://s.click.aliexpress.com/e/_c4NsAzTd\nCC1101 Board: https://s.click.aliexpress.com/e/_c3GlIlb5\nFaraday Cage: https://s.click.aliexpress.com/e/_c3pekV35\n\nPrevious video: https://youtu.be/1k6PlKaNI-c\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will be having a closer look at RF Remotes. Those can be used to control your garage door, blinds, LEDs or your car. Only problem is when you lose them. So I want to find out how easy it is to basically clone them. So enjoy this journey that involves an SDR, a Flipper Zero, ESP Micocontroller and lots of trying things out. Let's get started!\n\nThanks to JLCPCB for sponsoring this video!\n\n0:00 I lose my Remotes!\n1:26 Intro\n2:32 RF Signal Frequency/Data\n5:00 Easy to Copy?\n6:30 Flipper Zero to the Rescue\n8:02 DIY RF Remote (ESP32)\n9:04 Copy my Car Key?\n11:33 Verdict",
+            "duration": 738,
+            "year": 2026,
+            "published_at": "2026-08-02T14:58:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/eYx7uxJ802I/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "eYx7uxJ802I",
+                "url": "https://www.youtube.com/watch?v=eYx7uxJ802I",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Qj9KCV88C8w",
+            "episode_number": 15,
+            "title": "Smallest Linux Computer in the World?! #aliexpress #gadget #review #raspberrypi #linux #computer",
+            "description": "You can get the featured products here: (affiliate link) https://s.click.aliexpress.com/e/_onbp7Dn\nFull video: https://youtu.be/VyqljSodp6k\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#aliexpress #gadget #review #raspberrypi #linux #computer",
+            "duration": 50,
+            "year": 2026,
+            "published_at": "2026-07-26T15:00:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Qj9KCV88C8w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Qj9KCV88C8w",
+                "url": "https://www.youtube.com/watch?v=Qj9KCV88C8w",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-1k6PlKaNI-c",
+            "episode_number": 16,
+            "title": "I tried Super Useful Future Tech! (That you can use Today)",
+            "description": "Check out the Mouser Electronics Memory game to get a chance to win Altera based Agilex™ 5 E-Series dev board: https://mou.sr/4oKufLj\n\nThe Future Tech Boards mentioned in the video:\nNXP Semiconductors FRDM-i.MX 95 Development Board:  https://mou.sr/4vviwTF\nMorse Micro MM8108-EKH05-01 Wi-Fi® HaLow® IoT Evaluation Kit: https://mou.sr/4vYVbcw\nMorse Micro MM8108-EKH19 Wi-Fi® HaLow® Evaluation Kit: https://mou.sr/4g46zzm\nOnion Tau Cameras & Camera Modules USB-based 3D depth camera: https://bit.ly/4xIKY5O\nQorvo QM33120WDK2 Ultra-Wideband Development Kit: https://mou.sr/4aii6r2\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nPrevious video: https://youtu.be/zkjdM56bA2M\nFuture Tech Part 1: https://youtu.be/TpnBQ9bW4K8\nFuture Tech Part 2: https://youtu.be/NUBv1RQaIX4\nFuture Tech Part 3: https://youtu.be/D86an4uN7FE\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video I will be once again having a closer look at future technology development boards that you can use today. That will include a Raspberry Pi like Single Board Computer focused on NPU, WiFi HaLow, a Lidar Webcam, and a UWB indoor \"GPS\" system. Let's get started! ;-)\n\nThanks to Mouser Electronics for sponsoring this video.\n\n0:00 Future Tech?\n1:05 Intro\n1:42 Single Board Computer\n5:02 Long Range WiFi\n9:01 LiDAR \"Webcam\"\n10:34 Indoor \"GPS\" UWB",
+            "duration": 804,
+            "year": 2026,
+            "published_at": "2026-07-19T14:55:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/1k6PlKaNI-c/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "1k6PlKaNI-c",
+                "url": "https://www.youtube.com/watch?v=1k6PlKaNI-c",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-A7vkrnLDdfo",
+            "episode_number": 17,
+            "title": "Spot Welding is Outdated!! Do this Instead #diy #electronics #experiment #battery #pack #weld #spot",
+            "description": "Full video: https://youtu.be/PKXFP40N1t4\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #experiment #battery #pack #weld #spot",
+            "duration": 56,
+            "year": 2026,
+            "published_at": "2026-07-12T15:00:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/A7vkrnLDdfo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "A7vkrnLDdfo",
+                "url": "https://www.youtube.com/watch?v=A7vkrnLDdfo",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-zkjdM56bA2M",
+            "episode_number": 18,
+            "title": "Stop Trusting Breadboards! Here’s Why!",
+            "description": "UGREEN NAS Collection (official site): https://nas.de.ugreen.com/tpxA5S\nUGREEN NAS DXP4800 GT (official site): https://nas.de.ugreen.com/tRWG26\nUGREEN NAS Collection (Amazon): https://amzn.to/4esUilA\nUGREEN NAS DXP4800 GT (Amazon): https://amzn.to/4emkLRB\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the Winner Breadboard here:\nhttps://eu.mouser.com/ProductDetail/BusBoard-Prototype-Systems/BB830T?qs=VEfmQw3KOauXY1NKV2FuEg%3D%3D&srsltid=AfmBOopP9Cj1RARoJRqmh0Oc9iahea9uIgFIcX1z2W1BgBssUGLUeJYy\n\nPrevious video: https://youtu.be/y0UkxnTC1p4\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will have a closer look at Breadboards....OH Boy! I hate breadboards. Ever since I started with electronics, I never had a good relation to them. Loose Wires, weird behaviour and broken circuits. The list goes on and on. So in this video let me show you why breadboards are bad, what technique I usually use instead and whether a 72€ breadboard can solve all my problems. Let's get started!\n\nThanks to UGREEn for sponsoring this video\n#UGREENNAS #UGREEN\n\n0:00 Breadboards are BAD?\n1:22 Intro\n2:48 Test Candidates\n3:37 Loose Wire Test\n7:02 Max Current Test\n8:59 Parasitic Capacitance Test\n10:12 Verdict",
+            "duration": 662,
+            "year": 2026,
+            "published_at": "2026-07-05T15:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/zkjdM56bA2M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "zkjdM56bA2M",
+                "url": "https://www.youtube.com/watch?v=zkjdM56bA2M",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-3GD2EN_Ty3k",
+            "episode_number": 19,
+            "title": "Produce your own PCB from Home! #diy #pcb #design #circuit #electronics #engineering",
+            "description": "Full video: https://youtu.be/YJgX9Na4rWw\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #pcb #design #circuit #electronics #engineering",
+            "duration": 82,
+            "year": 2026,
+            "published_at": "2026-06-28T15:00:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3GD2EN_Ty3k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3GD2EN_Ty3k",
+                "url": "https://www.youtube.com/watch?v=3GD2EN_Ty3k",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-y0UkxnTC1p4",
+            "episode_number": 20,
+            "title": "GPS Has a HUGE Problem… That We Can Fix? (RTK GPS)",
+            "description": "JLCPCB Premium FPC Starting at Just $2, with advanced base material & Extreme Heat Resistance:\nhttps://jlcpcb.com/resources/flexible-pcb\n\nJoin OSHWLab Stars 2026 for $85,000 in cash prizes and material support\nhttps://oshwlab.com/activities/stars2026?from=AAA\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the featured products here: (affiliate links)\nBNO085: https://s.click.aliexpress.com/e/_c3YMtCah\nBTS7960: https://s.click.aliexpress.com/e/_c425lbeN\nRobot Kit: https://s.click.aliexpress.com/e/_c2uel4wh\nRTK GPS: https://www.ardusimple.com/product/simplertk2b-starter-kit-mr-ip65/\nGPS (NEO-M9N): https://s.click.aliexpress.com/e/_c3i4cB41 \n\nYou can download all GPS Robot files here:\nhttps://www.patreon.com/posts/159803760?\n\nPrevious video: https://youtu.be/6rlUO5NoYO0\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will have a closer look at GPS and find out why it kind of....sucks. Long story short; its precision is not great. But can we improve on that? Yes! With RTK GPS. So in this video I will build a small test robot setup to show you how bad GPS and how awesome RTK GPS is. Let's get started!!\n\nThanks to JLCPCB for sponsoring this video\n\n0:00 GPS is Bad?!\n1:25 Intro\n2:32 Building a Tank Robot\n4:55 GPS Integration\n6:36 GPS Test & Results\n8:30 RTK GPS Integration\n10:24 RTK GPS Test & Results",
+            "duration": 718,
+            "year": 2026,
+            "published_at": "2026-06-21T14:58:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/y0UkxnTC1p4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "y0UkxnTC1p4",
+                "url": "https://www.youtube.com/watch?v=y0UkxnTC1p4",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-wIQXNHjRMDA",
+            "episode_number": 21,
+            "title": "WiFi Jammer defeated by Tin Foil?! #diy #electronics #circuit #experiment #wifi #jammer #emc",
+            "description": "Full video: https://youtu.be/n5KC1TlKKwQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #circuit #experiment #wifi #jammer #emc",
+            "duration": 61,
+            "year": 2026,
+            "published_at": "2026-06-14T15:00:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wIQXNHjRMDA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wIQXNHjRMDA",
+                "url": "https://www.youtube.com/watch?v=wIQXNHjRMDA",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-6rlUO5NoYO0",
+            "episode_number": 22,
+            "title": "I tried finding Hidden Gems on AliExpress AGAIN! (Part 19)",
+            "description": "JLCPCB Advanced 6-layer PCBs: Industrial-grade reliability meets unmatched affordability\nRegister to get $123 New customer coupons: https://jlcpcb.com/?from=AAA\n\nGet Your $30 Coupon! Small Size 6-Layer PCBs Starting at $2: https://jlcpcb.com/6-layer-pcb?from=AAA\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the featured products here: (affiliate links)\nRLCD: https://s.click.aliexpress.com/e/_c3XMVmt9\nPower Monitor: https://de.aliexpress.com/item/1005011682822696.html\nRemote Tester: https://s.click.aliexpress.com/e/_c4ClEcSP\nPicoCalc: https://s.click.aliexpress.com/e/_c4UkLdyX\nFace Recognition Module: https://s.click.aliexpress.com/e/_c3LLlVIL\nMagnetic Power Cable: https://de.aliexpress.com/item/1005006006590694.html\n18650 Dummy Cell: https://s.click.aliexpress.com/e/_c3CmFzR9\n\nPrevious video: https://youtu.be/Q_5bna_cyBw\nPrevious Aliexpress video: https://youtu.be/cwU7pMmqieQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will be having a closer look at 6 different products I got from Aliexpress. Aliexpress is famous for featuring the newest products/ICs when it comes to electronics but finding those can be a bit difficult. So I tried finding the hidden Gems not only electronics related but in general what I think could be useful. Let's get started!\n\nWebsites that were shown during the video: \nhttps://docs.waveshare.com/ESP32-S3-RLCD-4.2\nhttps://www.clockworkpi.com/shop\nhttps://forum.clockworkpi.com/c/picocalc/31\nhttps://esphome.io/components/hlk_fm22x/\nhttps://github.com/WeActStudio/WeActStudio.PowerMonitorV1\nhttps://github.com/laingcc/Picocalc-Coyote-OS\n\nThanks to JLCPCB for sponsoring this video\n\n0:00 Hidden Gems?\n1:53 RLCD\n4:46 Power Monitor\n6:45 Remote Tester\n7:46 PicoCalc\n9:58 Face Recognition Module\n11:36 Magnetic Power Cable\n13:01 Battery Dummy Cell\n13:44 Verdict",
+            "duration": 850,
+            "year": 2026,
+            "published_at": "2026-06-07T14:52:41Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6rlUO5NoYO0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6rlUO5NoYO0",
+                "url": "https://www.youtube.com/watch?v=6rlUO5NoYO0",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-0lHsF84yqzo",
+            "episode_number": 23,
+            "title": "I broke my Mic... So I Built One!! #diy #electronics #microphone #engineering #circuit #amplifier",
+            "description": "Full video: https://youtu.be/ts-JqEVzvDo\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #microphone #engineering #circuit #amplifier",
+            "duration": 60,
+            "year": 2026,
+            "published_at": "2026-05-31T15:00:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0lHsF84yqzo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0lHsF84yqzo",
+                "url": "https://www.youtube.com/watch?v=0lHsF84yqzo",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Q_5bna_cyBw",
+            "episode_number": 24,
+            "title": "I Found the Secret to WiFi Antennas! EB#68",
+            "description": "Check out Mouser free guide to Antennas: https://mou.sr/4tHMrXO\n\nAntennas & Gear used/shown in this video: \nSeeed Studio Vector Network Analyser: https://mou.sr/4diZ99v\nTaoglas Monopole Antenna RP-SMA(M): https://mou.sr/42wVO0j\nTaoglas Flexible Whip Monopole Antenna: https://mou.sr/42yGvnT\nLinx/TE Bare Helical Screw Terminal mount Antennas: https://mou.sr/4cSeuN2\nLinx/TE   PW-LPN Compact Helical Antennas: https://mou.sr/42Dxfic\nTaoglas   GW.20.A151 2dBi 2.4GHz Dipole Antennas: https://mou.sr/4tEgrUc\nDigi Half-wave Antenna: https://mou.sr/4u6n3dO\nAmphenol SAA PCB Antennas: https://mou.sr/4uePXsq\nAmphenol SAA FPC Antennas: https://mou.sr/4tFpK6x\nWALSIN PCB Antennas: https://mou.sr/3QNpxzu\nJOHANSON Technology PCB Antennas: https://mou.sr/3Qss16r\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nPrevious video: https://youtu.be/JsgUMEC-wpc\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this Episode of Electronics Basics, we will be having a closer look at 2.4GHz WiFi antennas. We will find out how they basically work, what commercial one I got is the best and how to make your own. Along the way we will also answer the question whether a bigger antenna is better? There will be tons more like Impedance matching, VNA measurement and resonance circuits! Let's get started!! ;-)\n\nWebsites shown in this video:\nhttps://www.lcdwiki.com/res/PublicFile/esp32-s3_hardware_design_guidelines_en.pdf\nhttps://en.wikipedia.org/wiki/Dipole_antenna\nhttps://en.wikipedia.org/wiki/Radiation_pattern\n\nThanks to Mouser Electronics for sponsoring this video\n\n0:00 Bigger Antenna = Better?\n1:01 Intro\n1:34 The Job of Antennas\n2:31 Resonance??\n3:46 Antenna Length?\n4:30 WiFi Antenna Experiment\n6:40 Dipole Antenna\n6:55 Monopole Antenna \n7:41 Making a DIY Antenna\n8:27 Antenna Resonance\n9:17 50ohm Impedance\n9:34 VNA Tool?\n10:06 Verdict",
+            "duration": 662,
+            "year": 2026,
+            "published_at": "2026-05-24T15:00:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Q_5bna_cyBw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Q_5bna_cyBw",
+                "url": "https://www.youtube.com/watch?v=Q_5bna_cyBw",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Te0TUEKi8ik",
+            "episode_number": 25,
+            "title": "This Indestructible Battery is from the Future!! #diy #battery #lithium #electronics #engineering",
+            "description": "Full video: https://youtu.be/kJXRyWQgOY4\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #battery #lithium #electronics #engineering",
+            "duration": 59,
+            "year": 2026,
+            "published_at": "2026-05-17T15:00:05Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Te0TUEKi8ik/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Te0TUEKi8ik",
+                "url": "https://www.youtube.com/watch?v=Te0TUEKi8ik",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-JsgUMEC-wpc",
+            "episode_number": 26,
+            "title": "I Upgraded my Friend's House for CHEAP! (KNX Vs Shelly)",
+            "description": "Want the full details + 10% storewide discount for Shelly Devices? Link below 👇\nEU, UK, RoW - https://upf.ai/dpng4s70\nUS, Canada, LatAm - https://upf.ai/0gza9as0 \n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nPrevious video: https://youtu.be/-fSjLF4u4kE\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will be having a closer look at Smart Home systems. Now smart homes allow you to for example control the lights, blinds or thermostats from afar with your smartphone. But not only that, you can also create useful applications like turning off all lights when you leave the house. It is pretty handy, but it can also be an expensive thing to have. I was quoted 30.000€ for my house with a KNX system. So I declined and I am currently retrofitting using Shelly. But what are KNX and Shelly and how do they compare? Let's find out and while we are at it, let's upgrade my Friend's House! \n\nWebsites shown in this video:\nhttps://www.voltus.com/en/smart-home-systems/\nhttps://www.knx.org/knx-en/for-professionals/index.php\nhttps://www.shelly.com/\n\nThanks to Shelly for sponsoring this video\n\n0:00 KNX? Shelly?\n1:20 Intro\n2:02 Traditional Wiring\n2:29 KNX Wiring\n4:04 KNX Programming\n4:52 KNX Result\n5:56 Shelly Wiring\n7:13 Shelly Software\n8:17 Friend House Upgrade\n10:20 Verdict",
+            "duration": 690,
+            "year": 2026,
+            "published_at": "2026-05-10T14:57:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JsgUMEC-wpc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JsgUMEC-wpc",
+                "url": "https://www.youtube.com/watch?v=JsgUMEC-wpc",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-fBI588mASOQ",
+            "episode_number": 27,
+            "title": "This Powerbank DIY kit is a Disaster! #aliexpress #gadget #review #electronics #battery #powerbank",
+            "description": "Full video: https://youtu.be/zT0CvQKSKVQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#aliexpress #gadget #review #electronics #battery #powerbank",
+            "duration": 61,
+            "year": 2026,
+            "published_at": "2026-05-03T15:01:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/fBI588mASOQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "fBI588mASOQ",
+                "url": "https://www.youtube.com/watch?v=fBI588mASOQ",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--fSjLF4u4kE",
+            "episode_number": 28,
+            "title": "This Forgotten Transistor is Making a Comeback?! (JFET) EB#67",
+            "description": "Check out the Mouser Electronics Memory game to get a chance to win a 3D printer\nMemory Game: https://mou.sr/4syoGQn\n\nComponents used in the video:\nonsemi JFETs NCh RF Transistor: https://mou.sr/4tLzxHF\nonsemi  JFETs N-Channel Switch: https://mou.sr/3O4wWtu\nCentral Semiconductor JFETs N-ChJFET 25Vds25Vdg 25Vgs 10mA 310mW: https://mou.sr/4mE5FuK\nonsemi JFETs 650V/80MOSICJFETG3TO2: https://mou.sr/4sFCTv8\nAnalog Devices Switching Voltage Regulators CMOS Monolithic Voltage Converter: https://mou.sr/3QdTw3t\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nPrevious video: https://youtu.be/xZImObVqPxY\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this Episode of Electronics Basics, we will have a closer look at JFETs. These are \"forgotten\" transistors that you don't see that often. But are they really obsolete? What Advantages and disadvantages do they come with?? And do the newest SiC JFETs make a difference?? Let's find out! ;-)\n\nThanks to Mouser Electronics for sponsoring this video\n\n0:00 Forgotten Transistor??\n1:06 Intro\n1:42 JFETs are like MOSFETs (Fail)\n3:26 How to drive a JFET (Theory)\n4:35 Practical Ways to drive JFET\n6:28 Big Disadvantage of JFET\n6:55 Advantages of JFET\n7:26 JFET as an Amplifier (Audio)\n8:06 JFET as Constant Current Sink\n8:43 JFET as Variable Resistor\n9:11 SiC JFET & Verdict",
+            "duration": 608,
+            "year": 2026,
+            "published_at": "2026-04-26T14:57:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-fSjLF4u4kE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-fSjLF4u4kE",
+                "url": "https://www.youtube.com/watch?v=-fSjLF4u4kE",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-il6V76Eo1T8",
+            "episode_number": 29,
+            "title": "This tiny Sticker measures your Weight?! #diy #circuit #weight #measure #arduino #esp",
+            "description": "Full video: https://youtu.be/lWFiKMSB_4M\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #circuit #engineering #weight #measure #arduino #esp",
+            "duration": 53,
+            "year": 2026,
+            "published_at": "2026-04-19T15:01:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/il6V76Eo1T8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "il6V76Eo1T8",
+                "url": "https://www.youtube.com/watch?v=il6V76Eo1T8",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-xZImObVqPxY",
+            "episode_number": 30,
+            "title": "This Weird Motor saved me 3500€! (DIY Roller Shutter)",
+            "description": "Check out the Red Pitaya Board here:\nProduct portfolio: https://redpitaya.com/product-portfolio/\nGen 2: https://redpitaya.com/gen2\nFPGA course: https://go.redpitaya.com/fpga-course-for-scientists\nRed Pitaya knowledge base: https://learn.redpitaya.com/\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nPrevious video: https://youtu.be/cwU7pMmqieQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nNow getting a house built is quite expensive. That is why I tried to save money everywhere possible. That includes my roller shutters which are the best thing ever. BUT my electrician wanted 600€ for each electric motor upgrade. That is 6600€ extra. I said NO and in this video I will try to do it myself and save a lot of money doing this ;-) Let's get started!\n\nWebsites that were shown during the video: \nhttps://www.nobily.de/en/Roller-shutter-technology/\n\nThanks to Red Pitaya for sponsoring this video\n\n0:00 How EXPENSIVE?!\n1:28 Intro\n2:39 Cost Overview\n3:01 Looking at an Electric Roller Shutter\n4:50 My DIY Attempt & Problems\n9:00 First Test & Shelly Upgrade\n10:01 Second DIY Attempt (Better)\n10:26 Cost Breakdown & Verdict",
+            "duration": 669,
+            "year": 2026,
+            "published_at": "2026-04-12T14:53:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/xZImObVqPxY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "xZImObVqPxY",
+                "url": "https://www.youtube.com/watch?v=xZImObVqPxY",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt--6w6_dbNRTo",
+            "episode_number": 31,
+            "title": "Turning Useless Power Supplies into High-Speed Chargers! #aliexpress #gadget #review #usb #charger",
+            "description": "Full video: https://youtu.be/zT0CvQKSKVQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#aliexpress #gadget #review #diy #electronics #circuit #usb #charger",
+            "duration": 67,
+            "year": 2026,
+            "published_at": "2026-04-05T15:00:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/-6w6_dbNRTo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "-6w6_dbNRTo",
+                "url": "https://www.youtube.com/watch?v=-6w6_dbNRTo",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-cwU7pMmqieQ",
+            "episode_number": 32,
+            "title": "I tried finding Hidden Gems on AliExpress AGAIN! (Part 18)",
+            "description": "Click this link https://boot.dev/?promo=GREATSCOTT and use my code  GREATSCOTT  to get 25% off your first payment for boot.dev\n\nYou can get the featured products here: (affiliate links)\nAerosol Device: (can't find it anymore)\n20W USB-C Socket Panel: https://s.click.aliexpress.com/e/_c4SnD42r\nNail Gun: https://s.click.aliexpress.com/e/_c3k2Ifr9\nSenseCap Watcher: https://s.click.aliexpress.com/e/_c2u6ZEmB\nMini Smoke Machine: https://s.click.aliexpress.com/e/_c3HqEOMx\nFlying Ball Toy: https://s.click.aliexpress.com/e/_c3qOyMaR\n\nPrevious video: https://youtu.be/Xda1chrQ4yQ\nPrevious Aliexpress video: https://youtu.be/zT0CvQKSKVQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will be having a closer look at 6 different products I got from Aliexpress. Aliexpress is famous for featuring the newest products/ICs when it comes to electronics but finding those can be a bit difficult. So I tried finding the hidden Gems not only electronics related but in general what I think could be useful. Let's get started!\n\nWebsites that were shown during the video: \nhttps://en.wikipedia.org/wiki/Condensed_aerosol_fire_suppression#:~:text=As%20the%20aerosol%20particles%20(K,oxygen%20content%2C%20merely%20displaces%20it.\nhttps://wiki.seeedstudio.com/sensecap_watcher_for_xiaozhi_ai/\nhttps://wiki.seeedstudio.com/ha_dify_watcher_llms/\n\nThanks to Boot.dev for sponsoring this video\n\n0:00 AliExpress Gems?!\n0:58 Intro\n2:20 Aerosol Device\n3:59 20W USB-C Socket Panel\n6:23 Nail Gun\n8:05 SenseCap Watcher\n9:29 Mini Smoke Machine\n10:45 Flying Ball Toy\n12:07 Verdict",
+            "duration": 755,
+            "year": 2026,
+            "published_at": "2026-03-29T14:57:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/cwU7pMmqieQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "cwU7pMmqieQ",
+                "url": "https://www.youtube.com/watch?v=cwU7pMmqieQ",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-ac5Az4e3EJU",
+            "episode_number": 33,
+            "title": "Why LEDs Need the Perfect Resistor? #diy #electronics #basics #engineering #resistor #led",
+            "description": "Facebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #basics #engineering #resistor #led",
+            "duration": 65,
+            "year": 2026,
+            "published_at": "2026-03-22T16:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ac5Az4e3EJU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ac5Az4e3EJU",
+                "url": "https://www.youtube.com/watch?v=ac5Az4e3EJU",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-Xda1chrQ4yQ",
+            "episode_number": 34,
+            "title": "This Finally Fixed My Stair Lights! (Radar)",
+            "description": "Get Your $30 Coupon! Small Size 6-Layer PCBs Starting at $2: https://jlcpcb.com/6-layer-pcb?from=AAA\nDiscover Easy, Affordable, and Reliable PCB manufacturing with JLCPCB!\nRegister to get $123 New customer coupons: https://jlcpcb.com/?from=AAA\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the shown parts/components here: (affiliate links)\nESP32 Boards: https://s.click.aliexpress.com/e/_c3XQH4bH\nRadar Boards: https://s.click.aliexpress.com/e/_c4CUMKVt\nSK6812 LEDs: https://s.click.aliexpress.com/e/_c4p41TPh\n\nYou can download the code/automations/wiring here: https://www.patreon.com/posts/152110456\n\nPrevious video: https://youtu.be/PKXFP40N1t4\nStaircase Video 1: https://youtu.be/5TFPrBQNWok\nStaircase Video 2: https://youtu.be/Dujx3L1Evw8\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nThis is the final part of my staircase light odyssey. The idea was simple. Have some lights near your stairs that light up when it is dark and someone want to go down the stairs. EASY! Right? Well, the first attempt was a fail and the second one kind of worked but came with too many annoying problem. So this time I am using the power of ESPHome and a Radar sensor to make this as simple as possible. Let's get started! ;-)\n\nThanks to JLCPCB for sponsoring this video.\n\n0:00 My Stair Lights still Suck??\n0:49 Intro\n1:50 What to Change?\n3:31 The new Plan!\n5:26 Radar Test\n7:30 LED Test\n9:04 Final Assembly & Verdict",
+            "duration": 649,
+            "year": 2026,
+            "published_at": "2026-03-15T16:00:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Xda1chrQ4yQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Xda1chrQ4yQ",
+                "url": "https://www.youtube.com/watch?v=Xda1chrQ4yQ",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-XAr1qms9IVk",
+            "episode_number": 35,
+            "title": "You are a Giant Antenna?! #diy #electronics #voltage #oscilloscope #engineering #antenna",
+            "description": "Facebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#diy #electronics #voltage #oscilloscope #engineering #antenna",
+            "duration": 46,
+            "year": 2026,
+            "published_at": "2026-03-08T16:00:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/XAr1qms9IVk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "XAr1qms9IVk",
+                "url": "https://www.youtube.com/watch?v=XAr1qms9IVk",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-PKXFP40N1t4",
+            "episode_number": 36,
+            "title": "Is THIS the Battery of the Future? (Weldless)",
+            "description": "Check out the H2D 3D Printer here: https://tidd.ly/3KVINbD\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nYou can get the shown parts/components here: (affiliate links)\nNickel Strip: https://s.click.aliexpress.com/e/_c3CgOGaf\nSpot Welder (better than mine): https://s.click.aliexpress.com/e/_c2Q3wKH9\n3D Model: https://cults3d.com/en/3d-model/gadget/3s2p-weldless-battery-tray-electronics-workshawp\nPress Fit Battery Pack: https://s.click.aliexpress.com/e/_c2zr9xTz\n\nPrevious video: https://youtu.be/n5KC1TlKKwQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nMy old Battery Pack failed on me and was close to causing serious damage. But thankfully I noticed the problem early enough and stopped using it. The problem was a badly made spot welded connection. This got me thinking......do we really need to spot weld battery packs? I mean, it requires extra equipment and you can not easily repair a spot welded pack. So in this video, let's explore some spot weld free battery pack alternatives. Let's get started! ;-)\n\nWebsites that were shown during the video: \nhttps://second-ride.de/en/\nhttps://maki-batteries.com/\n\nThanks to Bambulab for sponsoring this video.\n\n0:00 My Dangerous Battery Pack!\n1:26 Intro\n2:12 Li-Ion 18650 Problem!\n3:09 Spot Welded Battery Pack\n5:15 3D Printed Battery Pack (Weld-free)\n7:20 AliExpress Battery Pack (Weld-free)\n9:05 Buy Version (Weld-free)",
+            "duration": 629,
+            "year": 2026,
+            "published_at": "2026-03-01T15:52:26Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PKXFP40N1t4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PKXFP40N1t4",
+                "url": "https://www.youtube.com/watch?v=PKXFP40N1t4",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-NKRdF-As6Wk",
+            "episode_number": 37,
+            "title": "1mm vs 100W! #electronics #engieering #high #voltage #shock #arc #diode #protection",
+            "description": "Full video: https://youtu.be/MzxBBXpgwrE\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#engieering #high #voltage #shock #arc #diode #protection",
+            "duration": 60,
+            "year": 2026,
+            "published_at": "2026-02-22T16:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/NKRdF-As6Wk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "NKRdF-As6Wk",
+                "url": "https://www.youtube.com/watch?v=NKRdF-As6Wk",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "short",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-n5KC1TlKKwQ",
+            "episode_number": 38,
+            "title": "Stopping a WiFi Jammer and Other Radiation Is Easy?",
+            "description": "Check out Würth Elektronik here:\nWürth Elektronik Shielding Products: https://www.we-online.com/de/components/products/pbs/emc_components/emi_shielding_material?utm_source=youtube&utm_medium=social&utm_campaign=eisos-de-15012026-shielding-greatscott\nShielding DesignKit used in the Video: https://www.we-online.com/de/components/products/DESIGNKIT_304999?utm_source=youtube&utm_medium=social&utm_campaign=eisos-de-15012026-shielding-greatscott\nABC of Shielding Book: https://www.we-online.com/en/components/products/ABC_OF_SHIELDING_ENGLISH?utm_source=youtube&utm_medium=social&utm_campaign=eisos-de-15012026-shielding-greatscott\nUpcoming Webinars about Shielding: https://www.we-online.com/en/news-center/events/webinars?utm_source=youtube&utm_medium=social&utm_campaign=eisos-de-15012026-shielding-greatscott\nThanks to the The University of Valencia for developing the Sniffer Test Setup shown in the video: https://wemc.uv.es/\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott! (AD, Paid Promotion)\n\nPrevious EMC Video: https://youtu.be/YgbrG_72a3A\nPrevious video: https://youtu.be/RhFO9KdI2Mc\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nIn this video we will be having a closer look at problematic electronics circuits like a WiFi jammer or terribly designed power converter. Those produce unwated electromagnetic waves that we want to get rid of. So what to do?? Of course! Add shielding to the mix. I will show you what techniques are out there and how easy it actually is ;-) Let's get started!\n\nWebsites shown in this video: \nhttps://github.com/plutoplus/plutoplus\n\nThanks to the Würth Elektronik for supporting this video.\n\n0:00 Jammer Problem!\n1:46 Intro\n2:16 Shielding Material\n3:01 Noise Source & Sniffer Circuit\n4:50 SDR Showcase\n5:18 Shielding Jammer \n7:48 Shielding Power Converter\n10:04 Verdict",
+            "duration": 657,
+            "year": 2026,
+            "published_at": "2026-02-15T15:58:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/n5KC1TlKKwQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "n5KC1TlKKwQ",
+                "url": "https://www.youtube.com/watch?v=n5KC1TlKKwQ",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-RFqbP2PtizM",
+            "episode_number": 39,
+            "title": "It's Cheap. It Works. It's Dangerous! #aliexpress #gadget #review #ptc #heater #solder #reflow",
+            "description": "Full video: https://youtu.be/VyqljSodp6k\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott...\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h\n\n#aliexpress #gadget #review #ptc #heater #solder #reflow",
+            "duration": 62,
+            "year": 2026,
+            "published_at": "2026-02-08T16:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RFqbP2PtizM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RFqbP2PtizM",
+                "url": "https://www.youtube.com/watch?v=RFqbP2PtizM",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "rejected",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        },
+        {
+            "id": "yt-RhFO9KdI2Mc",
+            "episode_number": 40,
+            "title": "Finally! A Home Upgrade That Makes Sense (E-Ink Display)",
+            "description": "Check out the H2D 3D Printer here: https://tidd.ly/3KVINbD\n\nSign up for Altium Develop and see the difference:  http://altium.com/yt/greatscott!\n(AD, Paid Promotion)\n\nYou can get the components here: (affiliate links)\nE-Ink Display: https://s.click.aliexpress.com/e/_c2R5I2vf\nESP32 Driver Board: https://s.click.aliexpress.com/e/_c4K4IiCN\n5V Power Supply: https://amzn.to/3MMcD2R\nShelly Mini: https://amzn.to/49nad3s\n\nYou can download all project information here: https://www.patreon.com/posts/146504704\n\nSmart Home Dashboard video: https://youtu.be/FntUPnPGfM8\nPrevious video: https://youtu.be/zT0CvQKSKVQ\n\nFacebook: https://www.facebook.com/greatscottlab\nTwitter: https://twitter.com/GreatScottLab\nInstagram: https://www.instagram.com/great.scott.lab/\nTikTok: https://www.tiktok.com/@greatscottlab\nDiscord:  https://discord.gg/zuAvkAuhsY\nSupport me for more videos: https://www.patreon.com/GreatScott?ty=h \n\nTime for another Home Upgrade! As it turns out my Smart Home Dashboard did not get used very often.  So it became kind of like an eye sore overtime and my girlfriend was demanding a useful replacement. So I came up with a big E-Ink Calendar that not only draws very little power, but also connects to the internet and displays our events from Google Calendar for the coming 7 days. I think this project turned out great and super useful! \n\nWebsites that were shown during the video: \nhttps://github.com/ZinggJM/GxEPD2\nhttps://github.com/gooddisplayshare/ESP32epdx\nhttps://www.good-display.com/product/338.html\nhttps://www.good-display.com/product/480.html\nhttps://www.home-assistant.io/integrations/google/\n\nThanks to Bambulab for sponsoring this video.\n\n0:00 Removing my Dashboard?\n1:10 Intro\n1:53 Switch to E-Ink?\n2:54 Testing E-Ink Display\n3:50 Software Overview\n5:02 HomeAssistant Setup\n5:58 E-Ink Setup & Code\n7:50 Wiring\n8:38 Enclosure\n9:56 Final Assembly\n10:45 Verdict",
+            "duration": 685,
+            "year": 2026,
+            "published_at": "2026-02-01T15:55:00Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/RhFO9KdI2Mc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "RhFO9KdI2Mc",
+                "url": "https://www.youtube.com/watch?v=RhFO9KdI2Mc",
+                "channel_id": "UC6mIxFTvXkWQVEHPsEdflzQ",
+                "channel_title": "GreatScott!",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null
+            },
+            "status": "candidate",
+            "rights": {
+                "status": "unverified",
+                "notes": null
+            }
+        }
+    ]
+}

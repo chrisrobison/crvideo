@@ -302,13 +302,26 @@ final class ProgrammingCompiler
     private static function buildItem(array $episode, int $startAbs, int $durationSeconds): array
     {
         $source = is_array($episode['source'] ?? null) ? $episode['source'] : null;
+        // A YouTube episode's source.url IS already the human-readable watch
+        // page, so it's always both the right attribution link and (via
+        // ScheduleWriter's separate, unchanged media_url derivation) never
+        // the thing that becomes media_url. A directly-hosted (html5)
+        // episode's source.url is the actual playable media file -- the
+        // right thing for media_url, but the wrong thing to show as "the
+        // source" (e.g. an archive.org .mp4 download link instead of its
+        // /details/ page). source.page_url (optional; see
+        // ia-import/src/IaSeriesBuilder.php) is exactly that distinct
+        // human-readable link when a provider needs one; falling back to
+        // source.url when absent keeps every existing episode (which never
+        // sets page_url) byte-for-byte unchanged.
+        $sourceUrl = is_string($source['page_url'] ?? null) ? $source['page_url'] : (is_string($source['url'] ?? null) ? $source['url'] : null);
         return [
             'start' => $startAbs,
             'end' => $startAbs + $durationSeconds,
             'id' => $episode['id'],
             'title' => is_string($episode['title'] ?? null) ? $episode['title'] : $episode['id'],
             'source' => $source,
-            'source_url' => is_string($source['url'] ?? null) ? $source['url'] : null,
+            'source_url' => $sourceUrl,
         ];
     }
 }

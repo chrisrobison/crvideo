@@ -1,0 +1,256 @@
+{
+    "_note": "Recurring-series programming for RetroVision (channels/publish.php). Five real Internet Archive-backed shows (see series/retro-*/series.json for exact discovery queries/collections and per-episode editorial review) tile a wall-to-wall 24-hour day, each show airing in two separate dayparts with its own independent sequential rotation cursor (same pattern channels/science already established for its 12-show lineup): a 6-hour overnight deep-dive block for The Computer Chronicles (retro-technology, the largest and longest-running single show in the catalog) plus nine 2-hour blocks, one per remaining daypart. Every block opts into multi-episode packing (packing.enabled, mode sequential, on_unfit defer) so a slot plays as many complete, approved episodes back-to-back as actually fit, instead of exactly one -- these are short archival films/TV episodes (49s-30min), not hour-long shows. boundary.mode is hard on every block: across the whole approved catalog the longest single approved episode is 1790s (Industrial America) / 1776s (Computer Chronicles), both comfortably under even the shortest (7200s) slot, so no block has ever actually needed to run over.",
+    "schema_version": 1,
+    "blocks": [
+        {
+            "id": "after-dark-archives",
+            "type": "series",
+            "series_id": "retro-technology",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "00:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 21600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "good-morning-yesterday",
+            "type": "series",
+            "series_id": "retro-everyday-life",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "06:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "industrial-america",
+            "type": "series",
+            "series_id": "retro-industrial-films",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "08:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "television-time-machine",
+            "type": "series",
+            "series_id": "retro-classic-tv",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "10:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "retro-commercial-break",
+            "type": "series",
+            "series_id": "retro-commercials",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "12:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "the-way-we-lived",
+            "type": "series",
+            "series_id": "retro-everyday-life",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "14:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "science-and-progress",
+            "type": "series",
+            "series_id": "retro-industrial-films",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "16:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "retrovision-prime",
+            "type": "series",
+            "series_id": "retro-classic-tv",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "18:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "vintage-television",
+            "type": "series",
+            "series_id": "retro-commercials",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "20:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "the-future-that-was",
+            "type": "series",
+            "series_id": "retro-technology",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "22:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        }
+    ]
+}

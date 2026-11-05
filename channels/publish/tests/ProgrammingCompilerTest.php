@@ -60,6 +60,35 @@ final class ProgrammingCompilerTest
         Assert::same(['e2', 'e5', 'e2', 'e5'], $ids, 'only e2/e5 (approved) ever air, alternating');
     }
 
+    public function testHtml5EpisodeSourceUrlIsPageUrlNotTheMediaFile(): void
+    {
+        $series = [[
+            'id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [[
+                'id' => 'ia-e1', 'title' => 'E1', 'status' => 'approved', 'duration' => 1800.0,
+                'source' => [
+                    'provider' => 'html5',
+                    'url' => 'https://archive.org/download/e1/e1.mp4',
+                    'page_url' => 'https://archive.org/details/e1',
+                ],
+            ]],
+        ]];
+        $programming = ['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]];
+        $result = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::same('https://archive.org/details/e1', $result['items'][0]['source_url'], 'source_url must prefer page_url over the raw media file link');
+    }
+
+    public function testEpisodeWithNoPageUrlFallsBackToSourceUrlUnchanged(): void
+    {
+        $series = [[
+            'id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+                $this->episode('e1', 'approved'),
+            ],
+        ]];
+        $programming = ['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]];
+        $result = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::same('https://www.youtube.com/watch?v=vid-e1', $result['items'][0]['source_url'], 'no page_url set -- must keep the pre-existing behavior exactly');
+    }
+
     public function testLoopsBackToTheFirstEpisodeAfterTheLast(): void
     {
         $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [

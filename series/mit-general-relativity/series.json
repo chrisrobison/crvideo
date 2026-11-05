@@ -1,0 +1,712 @@
+{
+    "schema_version": 1,
+    "id": "mit-general-relativity",
+    "title": "MIT 8.962 General Relativity",
+    "description": "Instructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\n\n8.962 is MIT's graduate course in general relativity, which covers the basic principles of Einstein's general theory of relativity, differential geometry, experimental tests of general relativity, black holes, and cosmology. \n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+        "channel_url": null,
+        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-iRVfaR3N5K4",
+            "episode_number": 1,
+            "title": "1. Introduction and the geometric viewpoint on physics.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nIntroduction; the geometric viewpoint on physics. Review of Lorentz transformations and Lorentz-invariant intervals. The 4-vector; basis vectors and vector components. Introduction to component notation. The inner product between two 4-vectors, and the metric tensor.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4109,
+            "year": 2020,
+            "published_at": "2020-08-26T14:52:11Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/iRVfaR3N5K4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "iRVfaR3N5K4",
+                "url": "https://www.youtube.com/watch?v=iRVfaR3N5K4",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-TiHHz3sKDbY",
+            "episode_number": 2,
+            "title": "2. Introduction to tensors.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nThe notion of 'coordinate' bases.  Several important 4-vectors for physics: 4-velocity, 4-momentum, 4-acceleration, and their properties.  1-forms, and tensors more generally.  Using the metric and its inverse to raise and lower tensor indices. Introduction to tensor fields. The number flux 4-vector, and its use in defining a conservation law.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4750,
+            "year": 2020,
+            "published_at": "2020-08-26T14:51:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/TiHHz3sKDbY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "TiHHz3sKDbY",
+                "url": "https://www.youtube.com/watch?v=TiHHz3sKDbY",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-H6eR3sG524M",
+            "episode_number": 3,
+            "title": "3. Tensors continued.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nMore on tensors, derivatives, and 1-forms. Contraction of tensor indices; the dual nature of vectors and the associated 1-form found by lowering the vector index.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4301,
+            "year": 2020,
+            "published_at": "2020-08-26T14:51:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/H6eR3sG524M/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "H6eR3sG524M",
+                "url": "https://www.youtube.com/watch?v=H6eR3sG524M",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-h9xaoGkyHwg",
+            "episode_number": 4,
+            "title": "4. Volumes and volume elements; conservation laws.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nVolumes and volume elements, covariant construction using the Levi-Civita tensor. How to go between differential and integral formulations of conservation laws. Electrodynamics in geometric language (4-current, Faraday field tensor). Introduction of the stress-energy tensor, with the perfect fluid stress-energy tensor as a particularly important example.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4769,
+            "year": 2020,
+            "published_at": "2020-08-26T14:50:53Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/h9xaoGkyHwg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "h9xaoGkyHwg",
+                "url": "https://www.youtube.com/watch?v=h9xaoGkyHwg",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-OOmZkNa72t4",
+            "episode_number": 5,
+            "title": "5. The stress energy tensor and the Christoffel symbol.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nMore on the stress-energy tensor: symmetries and the physical meaning of stress-energy components in a given representation.  Differential formulation of conservation of energy and conservation of momentum.  Prelude to curvature: special relativity and tensor analyses in curvilinear coordinates.  The Christoffel symbol and covariant derivatives.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4836,
+            "year": 2020,
+            "published_at": "2020-08-26T14:50:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/OOmZkNa72t4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "OOmZkNa72t4",
+                "url": "https://www.youtube.com/watch?v=OOmZkNa72t4",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-6MssatXXAzc",
+            "episode_number": 6,
+            "title": "6. The principle of equivalence.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nIntroduction to the principle of equivalence: freely falling frames to generalize the inertial frames of special relativity.  Two important variants of the equivalence principle (EP): The weak EP (one cannot distinguish free fall under gravity from uniform acceleration over 'sufficiently small' regions); the Einstein EP (the laws of physics in freely falling frames are identical to those of special relativity over 'sufficiently small' regions).\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4806,
+            "year": 2020,
+            "published_at": "2020-08-26T14:50:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6MssatXXAzc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6MssatXXAzc",
+                "url": "https://www.youtube.com/watch?v=6MssatXXAzc",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-gnWKpHUj11w",
+            "episode_number": 7,
+            "title": "7. Principle of equivalence continued; parallel transport.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nAn examination of local coordinate transformations: proof that the metric of spacetime can be put into a representation that is locally flat (with 'leftover' degrees of freedom corresponding to boosts and rotation).  Deviations from flatness correspond to spacetime curvature.  This lecture also discusses the notion of transport, which must be used to connect points in a manifold in order to define a proper tensor derivative.  Focus here is on 'parallel transport,' which turns out to use the Christoffel symbol introduced in Lecture 5.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4908,
+            "year": 2020,
+            "published_at": "2020-08-26T14:50:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/gnWKpHUj11w/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "gnWKpHUj11w",
+                "url": "https://www.youtube.com/watch?v=gnWKpHUj11w",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-LoIq6KElVxs",
+            "episode_number": 8,
+            "title": "8. Lie transport, Killing vectors, tensor densities.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nDiscussion of a second notion of transport, 'Lie' transport, and the associated Lie derivative.  Use of this derivative to discuss spacetime symmetries, as encapsulated by Killing vectors.  Also discusses 'tensor densities,' volume elements in general spacetimes, and certain tricks and identities that use the determinant of the spacetime metric.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4574,
+            "year": 2020,
+            "published_at": "2020-08-26T14:49:50Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/LoIq6KElVxs/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "LoIq6KElVxs",
+                "url": "https://www.youtube.com/watch?v=LoIq6KElVxs",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-4QPKWFme0k4",
+            "episode_number": 9,
+            "title": "9. Geodesics.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nThe kinematics of bodies in spacetime.  Free fall described by geodesics: trajectories that parallel transport their tangents through spacetime, and extremize the experienced proper time.  How symmetries of spacetime lead to quantities being conserved along geodesics; associated notions of 'energy' and 'angular momentum' for certain spacetimes.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4858,
+            "year": 2020,
+            "published_at": "2020-08-26T14:49:21Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/4QPKWFme0k4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "4QPKWFme0k4",
+                "url": "https://www.youtube.com/watch?v=4QPKWFme0k4",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-JWSdeg4jkoY",
+            "episode_number": 10,
+            "title": "10. Spacetime curvature.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nHow a certain spacetime duplicates the kinematics of Newtonian gravity for slow motion (continuation of lecture 9).  Spacetime curvature, deduced by examining parallel transport of a vector around an infinitesimal parallelogram, described by the Riemann tensor (a 4 index tensor with 20 independent components).\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4853,
+            "year": 2020,
+            "published_at": "2020-08-26T14:49:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JWSdeg4jkoY/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JWSdeg4jkoY",
+                "url": "https://www.youtube.com/watch?v=JWSdeg4jkoY",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-d1dtqw7f6pw",
+            "episode_number": 11,
+            "title": "11. More on spacetime curvature.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nVariants on the Riemann curvature tensor: the Ricci tensor and Ricci scalar, both obtained by taking traces of the Riemann curvature.  The connection of curvature to tides; geodesic deviation.  Finally, the Bianchi identity, an identity describing derivatives of the Riemann curvature.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4794,
+            "year": 2020,
+            "published_at": "2020-08-26T14:48:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/d1dtqw7f6pw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "d1dtqw7f6pw",
+                "url": "https://www.youtube.com/watch?v=d1dtqw7f6pw",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-OIjLUzS6SQA",
+            "episode_number": 12,
+            "title": "12. The Einstein field equation.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nThe Einstein curvature tensor, a variation on the Ricci curvature, defined so that it has vanishing covariant divergence.  Using this tensor, we at last build a field theory for spacetime, motivating the Einstein field equation by arguing how to generalize a gravitational field equation to relativity.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4660,
+            "year": 2020,
+            "published_at": "2020-08-26T14:48:10Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/OIjLUzS6SQA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "OIjLUzS6SQA",
+                "url": "https://www.youtube.com/watch?v=OIjLUzS6SQA",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-JNWXzIFcf3g",
+            "episode_number": 13,
+            "title": "13. The Einstein field equation (variant derivation).",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nA second route to the Einstein field equation, using a variational principle.  (Note, this lecture is due for an overhaul; we were unable to do so as planned in Spring 2020 due to the outbreak of the COVID-19 pandemic.)\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4713,
+            "year": 2020,
+            "published_at": "2020-08-26T14:47:55Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/JNWXzIFcf3g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "JNWXzIFcf3g",
+                "url": "https://www.youtube.com/watch?v=JNWXzIFcf3g",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-9lIgAPvppk0",
+            "episode_number": 14,
+            "title": "14. Linearized gravity I: Principles and static limit.",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nSolving the Einstein field equation by linearizing around a flat background.  We treat spacetime as the metric of special relativity plus a perturbation, examine how quantities transform infinitesimal coordinate transformations (which turn out to be equivalent to gauge transformations in electrodynamics), and develop the Einstein field equation in this limit.  Focusing on static sources, we derive the Newtonian limit.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4480,
+            "year": 2020,
+            "published_at": "2020-08-26T14:47:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/9lIgAPvppk0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "9lIgAPvppk0",
+                "url": "https://www.youtube.com/watch?v=9lIgAPvppk0",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-Oxk2nnuC130",
+            "episode_number": 15,
+            "title": "15. Linearized gravity II: Dynamic sources",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nSolving the linearized field equation for a dynamical source.  Using a radiative Green's function, we find an exact solution for this case.  By carefully considering gauge and gauge-invariant spacetime components, we characterize the nature of the degrees of freedom encoded in this solution.  Of particular relevance to the next two lectures is that two components of this solution describe gravitational radiation in a gauge-invariant manner.  (It's worth reiterating that this lecture is somewhat advanced; students do not need to follow every detail in order to get the lecture's point.)\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4545,
+            "year": 2020,
+            "published_at": "2020-08-26T14:47:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Oxk2nnuC130/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Oxk2nnuC130",
+                "url": "https://www.youtube.com/watch?v=Oxk2nnuC130",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-R2vL2wLqGYg",
+            "episode_number": 16,
+            "title": "16. Gravitational radiation I",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nThe basic properties of gravitational radiation: the nature of the waves, their action on a detector, how the waves arise from time varying source.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 5112,
+            "year": 2020,
+            "published_at": "2020-08-26T14:46:58Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/R2vL2wLqGYg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "R2vL2wLqGYg",
+                "url": "https://www.youtube.com/watch?v=R2vL2wLqGYg",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-pUqA_iHLBWQ",
+            "episode_number": 17,
+            "title": "17. Gravitational radiation II",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nMore advanced properties of gravitational radiation, in particular how to characterize the energy carried by these waves.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 5430,
+            "year": 2020,
+            "published_at": "2020-08-26T14:46:42Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/pUqA_iHLBWQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "pUqA_iHLBWQ",
+                "url": "https://www.youtube.com/watch?v=pUqA_iHLBWQ",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-wBvXOb59l-k",
+            "episode_number": 18,
+            "title": "18. Cosmology I",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nCosmology and cosmological spacetimes.  This is the first spacetime we compute using a symmetry principle.  By requiring that a spacetime be spatially maximally symmetric (i.e., that it have the largest number of possible Killing vectors), we constrain the functional form of its metric.  Imposing the Einstein field equations, we develop a pair of simple equations that control how the overall scale of this spacetime evolves.  The properties of the matter and energy which fill this universe then determine the universe's geometry and how it evolves with time.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 5333,
+            "year": 2020,
+            "published_at": "2020-08-26T14:46:22Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/wBvXOb59l-k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "wBvXOb59l-k",
+                "url": "https://www.youtube.com/watch?v=wBvXOb59l-k",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-p_10lgn2BiI",
+            "episode_number": 19,
+            "title": "19. Cosmology II",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nCosmology continued.  We tie the properties of this spacetime to quantities which can be measured, in particular the redshift of light which is emitted early in the universe's history but is measured now, and three different notions of distance between events and observers.  The current standard paradigm for the nature of the universe, and some outstanding problems which are the focus of modern research.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 5804,
+            "year": 2020,
+            "published_at": "2020-08-26T14:46:07Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/p_10lgn2BiI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "p_10lgn2BiI",
+                "url": "https://www.youtube.com/watch?v=p_10lgn2BiI",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-PVYTNKZDHBo",
+            "episode_number": 20,
+            "title": "20. Spherical compact sources I",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nSpherically symmetric and compact bodies.  We develop the spacetime of a spherical 'star' made of some kind of matter, using the Einstein field equations to develop the Tolman-Oppenheimer-Volkov (TOV) equations which determine this body's structure and that generalize the Newtonian equations of stellar structure to general relativity.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 3820,
+            "year": 2020,
+            "published_at": "2020-08-26T14:45:47Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PVYTNKZDHBo/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PVYTNKZDHBo",
+                "url": "https://www.youtube.com/watch?v=PVYTNKZDHBo",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-K1vpc9YwlQI",
+            "episode_number": 21,
+            "title": "21. Spherical compact sources II",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nHow to solve the TOV equations, and limiting cases.  We examine Buchdahl's theorem, which shows that a body has a maximum compactness and show that if one tries to make a body more compact than this, something weird appears to happen.  In particular, we find very different views of radial infall into this body depending on whether clocks tick per unit proper time (appropriate to the infalling observer) or per unit coordinate time (appropriate to distant observers watching this process).\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4419,
+            "year": 2020,
+            "published_at": "2020-08-26T14:45:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/K1vpc9YwlQI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "K1vpc9YwlQI",
+                "url": "https://www.youtube.com/watch?v=K1vpc9YwlQI",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-ZqF-7bjnzCU",
+            "episode_number": 22,
+            "title": "22. Black holes I",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nWe reconcile the odd behavior of the different views of infall into the spherically symmetrically spacetime by studying the motion of light.  We find that these spacetimes contain a surface beyond which communication is not possible — an 'event horizon' — and therefore constitute black holes.  This class focuses on the non-rotating Schwarzschild black hole; more general forms are known (the rotating Kerr solution being particularly important).  Unfortunately, plans for more detailed discussion were disrupted by the COVID-19 pandemic.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 5195,
+            "year": 2020,
+            "published_at": "2020-08-26T14:45:01Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZqF-7bjnzCU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ZqF-7bjnzCU",
+                "url": "https://www.youtube.com/watch?v=ZqF-7bjnzCU",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-_uNWqE3LS1E",
+            "episode_number": 23,
+            "title": "23. Black holes II",
+            "description": "MIT 8.962 General Relativity, Spring 2020\nInstructor: Scott Hughes\nView the complete course: https://ocw.mit.edu/8-962S20\nYouTube Playlist: https://www.youtube.com/playlist?list=PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx\n\nMotion near black holes.  Taking advantage of the symmetries of a black hole spacetime, we develop simple equations that describe orbits near black holes.  We deduce the existence of an innermost stable orbit — any orbit that is set up inside this radius will either fall into the black hole or rocket out to infinity if slightly disturbed.  We also examine the motion of light near these objects, showing that a 'light ring' exists where light is bent into a circular orbit.  This is closely related to black hole shadow that was observed by the Event Horizon Telescope.\n\nLicense: Creative Commons BY-NC-SA\nMore information at https://ocw.mit.edu/terms\nMore courses at https://ocw.mit.edu\nSupport OCW at http://ow.ly/a1If50zVRlQ\n\nWe encourage constructive comments and discussion on OCW’s YouTube and other social media channels. Personal attacks, hate speech, trolling, and inappropriate comments are not allowed and may be removed. More details at https://ocw.mit.edu/comments.",
+            "duration": 4300,
+            "year": 2020,
+            "published_at": "2020-08-26T14:44:37Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/_uNWqE3LS1E/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "_uNWqE3LS1E",
+                "url": "https://www.youtube.com/watch?v=_uNWqE3LS1E",
+                "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                "channel_title": "MIT OpenCourseWare",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        }
+    ]
+}

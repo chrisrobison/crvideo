@@ -1,0 +1,1072 @@
+{
+    "schema_version": 1,
+    "id": "gresham-lectures",
+    "title": "Gresham College Lectures",
+    "description": "",
+    "creator": null,
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "youtube",
+        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+        "channel_url": null,
+        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "yt-n98aYhZnsUI",
+            "episode_number": 1,
+            "title": "On the Nature of Time According to Modern Physics - Jim Al-Khalili",
+            "description": "0:00 // Introduction — five chapters on the nature of time\n2:08 // The philosophical problems — Parmenides vs Heraclitus\n5:29 // Physical time — time as number, dimension and arrow\n9:35 // What does it mean for time to flow?\n12:46 // Laplace's demon and why the future is unpredictable\n17:19 // Is time fundamental, emergent or just a measuring tool?\n21:37 // The block universe — all moments coexist in spacetime\n23:30 // Time dilation — GPS satellites, black holes and Interstellar\n28:15 // Quantum gravity and the Wheeler-DeWitt equation\n30:32 // The arrow of time — entropy, shuffling cards and the second law\n34:56 // Loschmidt's paradox and the past hypothesis\n38:55 // Does time have a beginning and an end?\n44:39 // Conclusion — time is real but the deepest questions remain open\n\n\n\nWatch the Q&A session here: https://youtu.be/7v2eKvlwuj8\n\n\nThis is the Annual Sir Thomas Gresham Lecture. What does modern physics have to say about the meaning of time? Is it a fundamental feature of reality or merely an emergent property from something deeper? Does time flow, and is the present moment special when Einstein tells us that all times coexist. Where does the arrow of time come from if all the fundamental laws of physics are symmetric in time? This lecture will examine many of these issues and give our best guess answers as we understand the universe today.\n\n\n\nThis lecture was recorded by Jim Al-Khalili on the 23rd of June 2026\n\nJim Al-Khalili is a quantum physicist, author and broadcaster. As an academic, he is Distinguished Professor Emeritus of Physics at the University of Surrey. He received his PhD in nuclear physics in 1989 and has published over 150 papers in the field. His current research interests are in the foundations of quantu mechanics and the exciting new field of quantum biology.\nAs a science communicator Jim hosts BBC Radio 4’s long running show, The Life Scientific, which attracts two million weekly listeners. His many TV science documentaries over the past two decades include Atom, The Story of Electricity and the Bafta nominated Chemistry: a volatile history. His fifteen books on popular science and the history of science have been translated into twenty-six languages. He is currently working on an ambitious new book on the nature of time due out in Autumn 2026.\nJim is a past president of both the British Science Association and Humanists UK and is a recipient of the Royal Society Michael Faraday medal and the Wilkins-Bernal-Medawar medal, the Institute of Physics Kelvin Medal and the Stephen Hawking medal and has ten honorary doctorates from UK universities. He received an OBE from the Queen in 2007 and later a CBE in 2021, both for ‘services to science and public engagement in STEM’. He is a trustee and commissioner on the board of the 1851 Royal Commission and a Fellow of the Science Museums Group.\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/thomas-gresham-26 \n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2762,
+            "year": 2026,
+            "published_at": "2026-09-04T15:00:17Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/n98aYhZnsUI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "n98aYhZnsUI",
+                "url": "https://www.youtube.com/watch?v=n98aYhZnsUI",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-hX94cAh2SaI",
+            "episode_number": 2,
+            "title": "The Shape of Knots: From DNA to Shoestrings and Solar Flares - Alain Goriely",
+            "description": "00:00 I/ Introduction and welcome\n00:49 I/ Why study knots: history and everyday presence\n01:53 I/ Knots in nature, from microbes to solar flares\n03:29 I/ Helmholtz, vortex rings, and the birth of knot science\n04:34 I/ Lord Kelvin, Peter Tait, and the founding of knot theory\n05:56 I/ What is a knot? The mathematical definition\n07:06 I/ Ambient isotopy: when two knots are \"the same\"\n09:13 I/ Beyond knots: braids and links\n10:40 I/ Knot diagrams and the crossing number\n13:53 I/ Reidemeister moves: proving knots are equal\n17:00 I/ Chirality: mirror images and the figure-eight knot\n17:45 I/ Composing knots: the arithmetic of knots\n20:01 I/ Prime knots and the fundamental theorem\n22:15 I/ Classifying knots by crossing number\n25:00 I/ Modern knot tables: billions of knots\n27:02 I/ Unknotting number and the Gordian Knot problem\n33:59 I/ DNA topology and the enzymes that untangle it\n38:16 I/ Transposons, gel electrophoresis, and ideal knots\n45:42 I/ Umbilical cord knots: how and when they form\n52:54 I/ Conclusion: knot theory's reach across science\n\nWatch the Q&A session here: https://youtu.be/DeYwOh9rCgc\n\nKnots are ubiquitous in the world around us, appearing as tangled cords, shoelaces, or the complex structures of DNA. Far from being nuisances, knots have profound and beautiful mathematical properties with tentacular connections to geometry, topology, physics, and biology. This lecture introduces the fascinating world of knot theory, exploring how the mathematical study of knots helps us understand and predict their formation, stability, and behaviour.\n\nThis lecture was recorded by Alain Goriely on 9th May 2026 at Barnard's Inn Hall, London.\n\nProfessor Alain Goriely FRS is Gresham Professor of Geometry.\n\nHe is also a mathematician known for dynamical systems, mathematical biology, and mechanics. He developed the mathematical theory of biological growth and is Director of the Oxford Centre for Industrial and Applied Mathematics. His work spans plant tendrils, seashells, umbilical cords, brain modelling, and applied mathematics outreach.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/shape-knots\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 3273,
+            "year": 2026,
+            "published_at": "2026-08-28T15:00:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/hX94cAh2SaI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "hX94cAh2SaI",
+                "url": "https://www.youtube.com/watch?v=hX94cAh2SaI",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-PusnwdLkEhM",
+            "episode_number": 3,
+            "title": "The Death of the Roman Republic? - Melissa Lane",
+            "description": "00:00 // Welcome and Introduction\n00:16 // Ovid's Claim: \"Caesar Is the Republic\"\n03:52 // Exile: The Danger of Writing Under Augustus\n04:17 // Tonight's Question: Charting Roman Autocracy\n05:30 // Tacitus and the Timeline of Roman History\n07:34 // Tacitism: Tacitus's Legacy in Early Modern Europe\n08:14 // Republic vs Empire: A Terminological Clarification\n09:01 // When Did the Roman Republic Really End?\n10:04 // Rethinking the Republic's \"Fall\"\n11:43 // Lecture Roadmap: Three Parts\n12:56 // Princeps: Augustus's Ambiguous Title\n15:09 // \"Making the Emergency Permanent\"\n20:39 // Did Augustus Really Limit His Own Power?\n22:21 // The 23 BCE Conspiracy and Constitutional Change\n25:33 // Autocratic Legalism: Law as a Tool of Power\n26:33 // From Tiberius to Nero: Eroding the Republic\n28:46 // Tacitus's Verdict on Tiberius and Nero\n32:36 // Seneca, Nero, and the Choice of Exit, Voice, or Loyalty\n36:29 // Tacitus as Author: Writing Truth Under Tyranny\n42:25 // Agricola: Survival and Courage Under Domitian\n\nWatch the Q&A session here: https://youtu.be/BwuejjL2Lvw\n\nDid the Roman republic die with Julius Caesar? With Cicero? With the gradual consolidation of power in the hands of Caesar’s adoptive son, who would in 27 BCE receive from the Senate the additional honorific appellation ‘Augustus’? By looking at how imperial rule preserved remnants and facades of republican language and institutions, this lecture will interrogate the ways in which a popular constitution can be undermined and gradually transmuted into a dictatorial one.\n\nThis lecture was recorded by Melissa Lane on the 18th of June 2026\n\nMelissa Lane is the Class of 1943 Professor of Politics, Princeton University and is also Associated Faculty in the Department of Classics and Department of Philosophy. Previously she was Senior University Lecturer at Cambridge University in the Faculty of History and Fellow of King’s College, Cambridge.\n\nShe studied for her first degree in Social Studies (awarded summa cum laude) at Harvard University, and then took an MPhil and PhD in Philosophy at the University of Cambridge, where she was a student at King’s College, supported by appointments as a Marshall Scholar, Truman Scholar, and Mary Isabel Sibley Fellow of Phi Beta Kappa.\n\nProfessor Lane is an author, lecturer and broadcaster who has received major awards including being named a Guggenheim Fellow, and the Lucy Shoe Meritt Resident in Classical Studies at the American Academy in Rome. She has published widely in journals and authored or introduced nine major books including Greek and Roman Political Ideas; Eco-Republic; and most recently, Of Rule and Office: Plato’s Ideas of the Political, which was awarded the 2024 Book Prize of the Journal of the History of Philosophy, and was published in a paperback edition with modifications in 2025.\n\nProfessor Lane is the only person ever to have delivered both the Carlyle Lectures and the Isaiah Berlin Lectures at the University of Oxford.\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/death-rome\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2707,
+            "year": 2026,
+            "published_at": "2026-08-14T16:00:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PusnwdLkEhM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PusnwdLkEhM",
+                "url": "https://www.youtube.com/watch?v=PusnwdLkEhM",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-VGbab05ABn4",
+            "episode_number": 4,
+            "title": "The Morrigan: The Nightmare Queen - Ronald Hutton",
+            "description": "00:00 | Introduction: Hutton's Final Lecture as Gresham Professor\n00:42 | The Morrigan: Bridget's Dark Alter Ego\n01:26 | A Modern Icon: Global Fame & Worship\n02:34 | Pop Culture: Madonna, Villains & Modern Devotees\n03:53 | What Does \"The Morrigan\" Mean? A Name in Dispute\n05:35 | Nightmare Queen: Tracing Her Terrifying Etymology\n06:13 | Decades of Scholarly Disagreement Over Her Identity\n07:58 | Building Blocks, Never a Structure: The Lecture's Thesis\n14:15 | Battle Spirits: Generic Terrors & Named Goddesses\n18:02 | Meet the Big Five War Goddesses\n21:44 | Magic as a Neutral Cosmic Power\n27:09 | Macha's Three Contradictory Origin Stories\n31:17 | The Badb: Crow Spirit and Doom-Prophet\n36:45 | At Last, The Morrigan: What Makes Her Distinct\n37:59 | Three Distinguishing Features & Cosmic Prophecy\n40:18 | Propositioning Cú Chulainn: Rejection & Revenge\n41:20 | Global Parallels: Athena, Ishtar & Gilgamesh\n43:18 | The Death of Cú Chulainn & the Raven on the Shoulder\n48:00 | What She Is: A War Goddess of Love and Combat\n51:32 | Reclaiming The Morrigan: Freedom in Reinterpretation\n\nWatch the Q&A session here: https://youtu.be/Yb15EWQL59M\n\nThe Morrigan functions today largely as the supreme dark Celtic goddess, associated with violence, sex, shape-shifting and sorcery: the scary side of female power. This talk is designed to search for her in her medieval Irish roots, in order to explain her modern reputation and also to see if she was once a rather different and more complex figure. It locates her as originally one of five different Irish war goddesses, each with their own distinctive characteristics, of whom she was the most unusual. By doing so it also shows why she has survived as a modern celebrity while the others have been forgotten, but also how those others have contributed to her modern image.\n\nThis lecture was recorded by Ronald Hutton on the 17th of June 2026 at Barnard's Inn Hall, London\n\nProfessor Hutton is Professor of History at the University of Bristol. He took degrees at Cambridge and then Oxford Universities, and was a fellow of Magdalen College, Oxford. He is now a Fellow of the British Academy, the Royal Historical Society, the Society of Antiquaries and the Learned Society of Wales, and has won awards for teaching and research.\n\nHe has lectured all over the world, authored twenty books and ninety-six essays, appeared in or presented scores of television and radio programmes, and sits on the editorial boards of six journals concerned with the history of religion and magic.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/goddess-morrigan\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 3188,
+            "year": 2026,
+            "published_at": "2026-08-07T15:00:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/VGbab05ABn4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "VGbab05ABn4",
+                "url": "https://www.youtube.com/watch?v=VGbab05ABn4",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-p6ePMt1IGO4",
+            "episode_number": 5,
+            "title": "There Must be a Better Way: Thoughts on the Future of Family Law - Sir Andrew McFarlane",
+            "description": "0:00 // Introduction — there must be a better way, and why Parliament has finally moved\n6:38 // Four decades of change — Children Act, Domestic Abuse Act and transparency\n9:57 // The June 2025 consultation — reforming financial remedies on divorce\n13:33 // Codification plus — capturing judge-led change in statute\n14:42 // Prenuptial agreements — making qualifying agreements legally binding\n16:22 // Cohabitation — 3.5 million couples and the common law marriage myth\n20:27 // Why should a child's financial support depend on whether parents were married?\n24:10 // Private law and separating parents — keeping families out of court\n29:47 // Child focused courts — social work reports before any hearing, £82 million rollout\n32:28 // Adoption at 100 — a model built for babies that now serves three-year-olds\n35:05 // Lifelong links — maintaining relationships for children in care and care leavers\n36:03 // Enduring relationships policy — the government's new ambition for children in care\n39:17 // Surrogacy — a law unchanged for 30 years and a growing commercial problem\n43:13 // Foreign surrogacy — two women in their 60s, Northern Cyprus and four years in limbo\n49:26 // The commercial elephant in the room — and what Parliament must address\n51:30 // Conclusion — family law has never stood still, and the future will be digital\n\nWatch the Q&A session here: https://youtu.be/XjH-XlyLcMI\n\nThis is the Annual Gray's Inn Reading 2026.\nThe lecture was delivered within three months of Sir Andrew McFarlane’s retirement after 21 years on the Family Bench. Whilst the phrase ‘un-plugged’ may not be appropriate, it is anticipated that the lecturer will no longer feel restrained by judicial caution when commenting upon the future development of Family Justice. In addition to a focus on the future of adoption law and the need for significant reform in relation to the financial rights of cohabitants, the lecturer will use a perspective gained from 8 years as the judicial Head of Family Justice to offer suggestions for reform of the system itself.\n\nThis lecture was recorded by The Rt Hon Sir Andrew McFarlane on the 15th of June 2026\n\nAndrew McFarlane was called to the Bar in 1977 and practiced in chambers in Birmingham until 1993 when he moved to specialist family law chambers in London. He appeared at all levels of court including the House of Lords and the European Court of Human Rights. He was appointed as a QC in 1998. In April 2005 he was appointed to the High Court, Family Division and was for 5 years the Family Division Liaison Judge for the Midland Circuit. He was the legal member of the Government ‘Family Justice Review’ Panel. In July 2011 he was appointed to be a Lord Justice of Appeal sitting full time in the Court of Appeal. On the 28th July 2018 Sir Andrew succeeded Sir James Munby as President of the Family Division and Head of Family Justice; he is due to retire as President at Easter 2026.\nTogether with the late David Hershman he is the co-author of a loose-leaf legal text book entitled “Children: Law and Practice”. In addition, he has contributed to other publications and lectured throughout the UK and abroad.\nSir Andrew has been a trustee of YoungMinds (the national young person’s mental health charity) and is Patron of HOPE Family Centre (Bromyard) and of a prisoner support charity ‘Not Beyond Redemption’. In addition to being Chancellor of the Diocese of Exeter, Sir Andrew was Chairman of the Church of England Clergy Discipline Commission and President of Clergy Discipline Tribunals for 5 years until 2019. He has been a native of Herefordshire and Worcestershire for over 35 years and is a lay canon of Hereford Cathedral.\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/grays-inn-26\n\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3162,
+            "year": 2026,
+            "published_at": "2026-08-04T15:00:39Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/p6ePMt1IGO4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "p6ePMt1IGO4",
+                "url": "https://www.youtube.com/watch?v=p6ePMt1IGO4",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-Bni42PX7C-Y",
+            "episode_number": 6,
+            "title": "Education – And Its Limits - Daniel Susskind",
+            "description": "00:00 // Introduction: What This Talk Covers \n01:44 // The Remarkable Rise of Generative AI \n03:18 // Why \"More Education\" Has Always Been the Answer \n05:57 // Structural vs Frictional Technological Unemployment \n07:18 // The Illusion of \"Future-Proofing\" \n08:19 // Case Study: The UK's Mandatory Coding Curriculum \n14:07 // Why Future Skills Are Impossible to Predict \n16:59 // Preparing for Uncertainty, Not Resolving It \n22:22 // Back to Basics and Critical Use of AI \n32:49 // Rethinking How and When We Educate \n43:19 // The Real Limits of Education\n\nWatch the Q&A session here: https://youtu.be/aJHAgt1iqVk\n\nThe most popular response to the challenge of automation is ‘more education’. This lecture argues that, for now, that is our best response. But ‘more education’ must go beyond simply rethinking what skills will be valuable in the future. We must also rethink how we educate – the way we teach has not really changed for centuries. And we must also rethink when we educate – providing people with a fixed set of skills at the start of their lives is no longer enough. However, there are serious limits to education – it is not the panacea that many imagine.\n\nThis lecture was recorded by Professor Daniel Susskind on the 26th of May 2026\n\nDr Daniel Susskind is a writer and economist. He explores the impact of technology, and particularly AI, on work and society. He is the Mercers’ School Memorial Professor of Business at Gresham College. He is also a Digital Fellow at the Stanford Digital Economy Lab, a Senior Research Associate at the Institute for Ethics in AI at Oxford University, an Associate Member of the Economics Department at Oxford University, and a Research Professor at King’s College London. He is a member of the UK Government’s Expert Panel on AI and the Future of Work. \n\nHis new book, Growth: A Reckoning (2024), was chosen by President Obama as one of his ‘Favourite Books of 2024’ and was a runner-up for the Financial Times Business Book of the Year 2024. He is also the author of A World Without Work (2020), described by The New York Times as \"required reading for any potential presidential candidate thinking about the economy of the future” and a runner-up for the Financial Times Business Book of the Year 2020, and co-author of the best-selling book, The Future of the Professions (2015). His TED Talk, on the future of work, has been viewed more than 1.7 million times. \n\nHis next book, What Should My Children Do? How to Flourish in the Age of AI, will be published in 2026. And his first novel, The Basilisk Stare, will be published in 2027. \n\nPreviously he worked in various roles in the British Government – in the Prime Minister’s Strategy Unit, in the Policy Unit in 10 Downing Street, and in the Cabinet Office. He was a Kennedy Scholar at Harvard University. \n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/education-limits\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3139,
+            "year": 2026,
+            "published_at": "2026-07-31T15:00:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/Bni42PX7C-Y/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "Bni42PX7C-Y",
+                "url": "https://www.youtube.com/watch?v=Bni42PX7C-Y",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-52iu-nUIlaM",
+            "episode_number": 7,
+            "title": "The White Knight: Ice - Helen Czerski",
+            "description": "00:00 // Welcome to the Lecture\n00:41 // Fridtjof Nansen and the Mystery of the Arctic\n01:14 // Crossing Greenland: Nansen's First Expedition\n01:40 // The USS Jeannette and the Trans-Arctic Current Theory\n04:19 // Designing the Fram: A Ship Built Never to Be Crushed\n08:57 // Why the Arctic Is a Human Place, Not Just Wilderness\n09:58 // What's Coming: Physics, MOSAiC, and the Future of Ice\n10:19 // The Physics of Ice: Why Isn't It White?\n13:16 // Albedo: How Ice Reflects the Sun's Energy\n18:08 // Why Ice Floats (and Why That's Bizarre)\n19:15 // The Pink Hedgehog: How Sea Ice Makes Freshwater\n25:56 // Latent Heat: Ice as Earth's Thermal Buffer\n27:29 // Sea Ice vs. Glaciers vs. Icebergs: Know the Difference\n30:01 // Arctic vs. Antarctic: Which Holds More Ice?\n32:21 // Captain Scott and Antarctica's Moving Ice\n39:30 // Modern Exploration: The MOSAiC Expedition\n42:10 // What Scientists Discovered Drifting With the Ice\n47:30 // How Climate Change Is Transforming the Ice\n51:34 // Arctic Amplification and the New Geopolitical Frontier\n55:27 // Closing Thoughts: Ice, Choice, and the Future\n\nWatch the Q&A here: https://youtu.be/AZAi7mIdXFw\n\nThe polar regions are still some of the most inaccessible and least touched by humans, but they are deeply linked to the rest of Earth. We will cover the history of exploring them, the challenges of measuring this environment, and the current state of knowledge about the ice at both poles.  We will also cover the likely future for the polar regions – the incentives driving different actions, what science suggests about the consequences, and coming events to look out for.\n\nThis lecture was recorded by Helen Czerski on the 21st of May 2026 at Barnard’s Inn Hall, London\n\nHelen Czerski is a physicist and oceanographer with a passion for science, sport, books, creativity, hot chocolate and investigating the interesting things in life. \nShe is a Professor at the Department of Mechanical Engineering at University College London and her research focus is the physics of breaking waves and bubbles at the ocean surface. These bubbles change underwater sound and light, help transfer gases from ocean to atmosphere (helping the ocean breathe) and also eject ocean material into the air. She has spent months working on research ships in the Antarctic, the Pacific, the North Atlantic and the Arctic, and is an experienced field scientist. \nHelen has been a regular science presenter on the BBC for 15 years, covering the physics of the natural world in BBC2 landmark documentaries (including ‘Orbit’, ‘Operation iceberg’ and ‘Supersenses’), and the physics of everyday life in a range of BBC4 documentaries (including ‘From ice to fire: The incredible science of temperature’, ‘Sound waves: The symphony of physics’, and ‘Colour: The spectrum of science’, along  with many others). She currently co-hosts BBC Radio 4’s flagship climate and environment programme Rare Earth. \nHelen's first book Storm in a Teacup won the Italian Asimov Prize and the Louis J. Battan Author prize from the American Meteorological Society. Blue Machine won the Wainwright Prize for Conservation Writing. She was awarded the Institute of Physics Gold Medal in 2018 for her work on physics communication, and an Honorary Fellowship of the British Science Association in 2020. She has been a Trustee of Royal Museums Greenwich since 2018, and was one of the 2020 Royal Institution Christmas Lecturers, giving her Lecture on the topic of the ocean. \n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/white-knight\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3457,
+            "year": 2026,
+            "published_at": "2026-07-28T15:00:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/52iu-nUIlaM/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "52iu-nUIlaM",
+                "url": "https://www.youtube.com/watch?v=52iu-nUIlaM",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-eoauXRBstk0",
+            "episode_number": 8,
+            "title": "Cicero In and On Political Crises - Melissa Lane",
+            "description": "00:00 // Introduction: Meet Professor Melissa Lane \n00:15 // Cicero's Dilemma: A Letter on Tyranny \n03:07 // Who Was Cicero? Rise of a \"New Man\" \n05:36 // Philosopher and Statesman of Rome \n09:44 // Five Crises That Defined Cicero's Life \n12:27 // Crisis One: The Gracchi and Land Reform \n18:39 // Crisis Two: Sulla's Dictatorship and Civil War \n23:16 // Crisis Three: The Catiline Conspiracy \n27:13 // Crisis Four: Caesar's Tyranny and Assassination \n31:45 // Crisis Five: Cicero's War Against Mark Antony \n38:09 // Conclusion: Hero of the Republic, or Its Undoing?\n\nWatch the Q&A session here: https://youtu.be/QLC154lRXZ0\n\nAn enthusiast of the Roman mixed constitution, Cicero was elected consul and in that role dramatically curbed the tyrannical ambitions of Catiline. He would later become fatally embroiled in the shifting politics of later generations of ambitious strongmen, while also writing his own theories of constitutional change. This lecture explores Cicero’s life and death as a way to articulate the crises of the late republic.\n\nThis lecture was recorded by Melissa Lane on the 11th of June 2026\n\nMelissa Lane is the Class of 1943 Professor of Politics, Princeton University and is also Associated Faculty in the Department of Classics and Department of Philosophy. Previously she was Senior University Lecturer at Cambridge University in the Faculty of History and Fellow of King’s College, Cambridge.\n\nShe studied for her first degree in Social Studies (awarded summa cum laude) at Harvard University, and then took an MPhil and PhD in Philosophy at the University of Cambridge, where she was a student at King’s College, supported by appointments as a Marshall Scholar, Truman Scholar, and Mary Isabel Sibley Fellow of Phi Beta Kappa.\n\nProfessor Lane is an author, lecturer and broadcaster who has received major awards including being named a Guggenheim Fellow, and the Lucy Shoe Meritt Resident in Classical Studies at the American Academy in Rome. She has published widely in journals and authored or introduced nine major books including Greek and Roman Political Ideas; Eco-Republic; and most recently, Of Rule and Office: Plato’s Ideas of the Political, which was awarded the 2024 Book Prize of the Journal of the History of Philosophy, and was published in a paperback edition with modifications in 2025.\n\nProfessor Lane is the only person ever to have delivered both the Carlyle Lectures and the Isaiah Berlin Lectures at the University of Oxford.\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/cicero\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2600,
+            "year": 2026,
+            "published_at": "2026-07-24T15:00:31Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/eoauXRBstk0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "eoauXRBstk0",
+                "url": "https://www.youtube.com/watch?v=eoauXRBstk0",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-TTBySX_7XSE",
+            "episode_number": 9,
+            "title": "Forging Better Futures for You and AI - Matt Jones",
+            "description": "00:00 // AI as an Environment\n00:34 // Coronation Choir Experiment: How Music Shapes Attention\n02:27 // Reframing Artificial Intelligence: From Tool to Living Environment\n03:41 // Old AI Fears: Faster, Smarter and Assimilating Us\n04:17 // Humanoid Robots, AI Coworkers and AI Companion Pets\n05:28 // Why AI Isn't Human: Mumbai, the Pope and a New Yorker Poem\n09:16 // Three Kinds of Power: Generative, Instrumental and Environmental\n10:38 // Michelangelo and the Power of Material Tools\n11:25 // How Cities, Buffets and Digital Design Shape Behaviour\n12:52 // AI as Agent vs AI as Instrument\n13:26 // Learning AI Like a Violin: How to Avoid \"AI Slop\"\n14:45 // Extended Cognition: Skateboards, Scalpels and the Crutch Story\n17:38 // Memory, the Google Effect and Prompting Claude AI Properly\n22:59 // Co-Creating with AI: Sketch-to-Image Research\n26:26 // Negroponte vs Weiser: The 1992 AI Debate That Predicted Today\n30:49 // Two AI Futures: Personal Butler vs Calm Technology\n33:19 // Cities, Music and the Neuroscience of Anticipation\n39:52 // Desirable Difficulty and the Risk of AI Knowledge Collapse\n44:24 // Critical Thinking, Attention and Tristan Harris on Big Tech\n48:14 // Designing Better AI: Alignment, Nudges and Key Takeaways\n\nWatch the Q&A here: https://youtu.be/FX7ZwIzgz-I\n\nIn this last lecture, I will work to wake us from the AI as Overlord spell. We will explore other possible futures, looking first look at the potential of AI fitting in with us: things we can chat to; humanoid robots; or even devices that draw on understandings of pets to make them more palatable and pleasing. Secondly, I’ll suggest a way to weave AI into everyday life: as a “simple” instrument to enable our souls to sing.\n\nThis lecture was recorded by Professor Matt Jones on the 2nd of June 2026 at Barnard’s Inna Hall, London\n\nMatt Jones is a computer scientist at Swansea University - and a Fellow of the British Computer Society - who works alongside colleagues from many other disciplines and directly with everyday folk across the world to explore the future of digital technologies. Over the last 30-plus years, this human-centred approach has led to novel approaches for, amongst other things,  mobile phone-based information searching and browsing, pedestrian navigation, voice assistants and deformable displays.  \n\nMuch of his work has been driven by intense and sustained engagements with “low resource” communities from informal settlements in India, South Africa, and Kenya. Through their generous and gracious participation, these extra-ordinary users with the fresh and diverse perspectives have stimulated insights into the future of digital technologies for everyone, globally. In all this work, Matt works as part of a long-standing collaborative team with Jen Pearson, Simon Robinson and Thomas Reitmaier (from Swansea) and colleagues in India (including Dani Raju) and South Africa (including Minah Radebe). \n\nHis work has been supported by the UK’s science funders (EPSRC and UKRI). Currently, this funding includes a Fellowship to explore the future of interactive AI and leadership roles in responsible AI and inclusive digital technologies. This funding has led to a series of impactful publications, talks and influences on people, policies, and practices. \n\nMatt has collaborated with private, public and third sector organisations, including Microsoft, the NHS, Google, IIT-B, the BBC and IBM. He is a member of the Foreign and Commonwealth Development Office’s Research Advisory Group and Welsh Government’s AI reviews.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/ai-futures\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 3019,
+            "year": 2026,
+            "published_at": "2026-07-21T15:00:25Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/TTBySX_7XSE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "TTBySX_7XSE",
+                "url": "https://www.youtube.com/watch?v=TTBySX_7XSE",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-3MGeMliunU4",
+            "episode_number": 10,
+            "title": "Current Challenges to the US Constitution - Clive Stafford Smith",
+            "description": "0:00 // Introduction — Trump versus the Constitution after 16 months\n1:27 // The five worst Supreme Court decisions of all time\n3:13 // Dred Scott 1857 — the case that helped start a civil war\n5:33 // Plessy v Ferguson 1896 — separate but equal and Angola prison\n8:38 // Buck v Bell 1927 — eugenics, sterilisation and echoes in the present\n10:43 // Korematsu 1944 — Japanese internment and the road to Guantanamo\n13:39 // Bowers v Hardwick — criminalising sodomy and how Stafford Smith fought it\n18:00 // Lawrence v Texas — how the Supreme Court finally overruled Bowers\n19:18 // The current court — immunity for presidents and the 22 unanimous decisions\n21:38 // Roberts versus Clarence Thomas — two very different conservatives\n23:44 // The biggest decision of this term — Trump's tariffs struck down 6 to 3\n26:19 // Why Britain needs a constitution — prisoners' votes and Cameron's contempt\n27:43 // Criminal cases — death row, mental disability and the court doing its job\n31:20 // First Amendment cases — conversion therapy, gender and street preaching\n35:38 // Louisiana v Calais — gerrymandering, affirmative action and why it will backfire\n42:13 // Conclusion — the Constitution is surviving, but Britain has no such protection\n\n\nWatch the Q&A session here: https://youtu.be/EYtlT4N0z28\n\n\nThe Americans are very proud of their written constitution. During the first 3/8 of President Trump’s second term of office, the constitution has been severely tested. Where has the Constitution succeeded in providing legal safeguards, clarity and stability, and where has it failed? How will the remainder of this presidency look? And what is coming after Trump? \n\n\nThis lecture was recorded by Clive Stafford Smith on the 4th of June 2026\n\nClive Stafford Smith JD OBE is a dual UK-US national, the founder and director of the Justice League a non-profit human rights training centre focused on fostering the next generation of advocates. \nHe was the Senior Prefect at Radley College, where he studied maths and science; then a Morehead Scholar at the University of North Carolina (Chapel Hill), where he took a degree in Politics; and a Stone Merit Scholar each of his three years at Columbia Law School, graduating in 1984. \nHe previously founded and directed the legal action charities Louisiana Capital Assistance Center (1993 in New Orleans) and Reprieve (1999 in London). Since 1984 he has tried many capital cases, and helped to represent over 400 people facing execution in the US and elsewhere. He also brought the first challenge to Guantánamo Bay, where he has secured the release of 87 detainees, and continues to assist the remaining 15.  In all five of the cases he has helped bring to the U.S. Supreme Court the petitioner has prevailed. \nHe has recently taken on the case of Aafia Siddiqui, the woman who has most suffered from the US rendition-to-torture program – abducted with her three children. He continues to work on capital cases in the US, including a Post-Mortem Project where he is investigating the claims of innocence of 184 people executed since 1977.\nClive has published a number of books including Bad Men (2008, describing work in Guantánamo) and Injustice (2012, on the capital case of Kris Maharaj), both of which were short-listed for the Orwell Prize; and most recently The Far Side of the Moon (2023), deconstructing the parallel lives of his father and a client Larry Lonchar, both of whom were labelled Bipolar. He has many other publications, including manuals for the defence of capital cases, and law review articles about aspects of capital defence. He has worked on many films and documentaries, starting with Fourteen Days In May (1987), recently ranked as one of the top BBC documentaries of all time. \n\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/current-challenges-us-constitution\n\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2682,
+            "year": 2026,
+            "published_at": "2026-07-17T15:00:02Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/3MGeMliunU4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "3MGeMliunU4",
+                "url": "https://www.youtube.com/watch?v=3MGeMliunU4",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-a7Nt_UpvmrQ",
+            "episode_number": 11,
+            "title": "Shock of the Nude: Pioneering Women Artists and the Cultural Politics of Modern China - Di Wang",
+            "description": "00:00 | Introducing Dr. Wang: Art, Science & the Body\n01:22 | Setting the Scene: Modernity Fought Through the Body\n02:35 | 1919: Nude Models Arrive at Shanghai Art Academy\n05:11 | The New Cultural Movement & Coeducation\n06:32 | 1925: The Warlord Government Bans Nude Models\n08:03 | \"The Nude Doesn't Belong in China\": One Critic's Case\n09:09 | Brushwork as the True Essence of Modern Art\n11:14 | The Counter-Case: The Nude as Scientific Truth\n11:44 | 1851: A Pioneering Anatomical Treatise in Chinese\n13:29 | Anatomy, Evangelization & Scientific Racism\n14:31 | The Body as a Site of Empire: \"Sick Men of Asia\"\n15:08 | 1892: Medicine First Undresses the Female Body\n16:56 | Eugenics & the Politics of Women's Health\n18:24 | The Nude Goes Global: Transnational Print Networks\n19:20 | The Young Companion: Venus Meets Chinese Beauty\n20:47 | 1927: Breast Binding Bans & the Cult of Curves\n23:48 | March 1927: The Wuhan Women's Emancipation Parade\n27:32 | Pan Yuliang: From Brothel to First Female Professor\n30:20 | War, Exile & the 1941 Paris Salon Attack\n33:45 | Legacy: The Nude Debate Resurfaces in 1979 Beijing\n\nWatch the Q&A session here: https://youtu.be/gmlQqetDMlk\n\nThe bare, naked, nude, and tradition-defying body constituted one of the most radical sites of cultural transformations in China’s pivotal historical transition from the last imperial dynasty to a new Republic. This lecture reveals how the female nude – at the intersection of art, medicine, and science – became deeply entwined with the cultural politics of nationalism and modernisation, structured new racial, gender, and class relations, and simultaneously, shaped the genesis of modern art and visual culture in China.\n\nThis lecture was recorded by Dr Di Wang on the 8th of June 2026 at Barnard's Inn Hall, London\n\nDr Di Wang is an art historian and curator. Her work focuses on art and culture of East Asia from the late-nineteenth century to the present.\n\nFollowing her doctorate at the University of Oxford, she has taught as a departmental lecturer and research associate at the Department of History of Art at Oxford. Her first book project reveals the surprising entanglement of medicine, science, and revolutionary politics in the genesis of a socially engaged modern art and visual culture in China, offering the first inter-disciplinary history on how science and medicine shaped the contours of avant-garde thinking in China during the modern period.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/nude-china\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2202,
+            "year": 2026,
+            "published_at": "2026-07-14T15:00:32Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/a7Nt_UpvmrQ/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "a7Nt_UpvmrQ",
+                "url": "https://www.youtube.com/watch?v=a7Nt_UpvmrQ",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-TADWmqaDyDg",
+            "episode_number": 12,
+            "title": "Pluto Isn’t a Planet - Chris Lintott",
+            "description": "00:00 // Introduction: Why Pluto Isn't a Planet\n03:28 // Discovery of Uranus & a Mysterious Orbit\n05:49 // How Neptune Was Found Through Math\n08:16 // Percival Lowell's Hunt for \"Planet X\"\n09:49 // Clyde Tombaugh Discovers Pluto (1930)\n14:09 // A Brief History of Counting the Planets\n18:02 // Pluto's Odd Orbit Raises Early Doubts\n22:21 // The Kuiper Belt Theory Takes Shape\n26:09 // Discovering Pluto's Moon, Charon\n30:12 // Eris and the Rise of the Trans-Neptunian Objects\n34:27 // The IAU's Chaotic 2006 Vote\n42:43 // New Horizons: Pluto Up Close at Last\n47:38 // The Verdict — Why Pluto Isn't a Planet\n\nWatch the Q&A session here: https://youtu.be/k73e3lnz3pg\n\nIn 2006, the International Astronomical Union adopted a definition of a planet that demoted Pluto to just one of what is likely hundreds of dwarf planets in our Solar System. Exploring the remote Kuiper Belt, this lecture challenges us to think about what kinds of scientific questions are worth our attention, what it means to name something – and why Pluto is worth caring about anyway.\n\nThis lecture was recorded by Chris Lintott on the 3rd of June 2026\n\nProfessor Chris Lintott is a Professor of Astrophysics at the University of Oxford, and a Research Fellow at New College.\n\nHaving been educated at Magdalene College, Cambridge and University College London, his research now ranges from understanding how galaxies form and evolve, to using machine learning to find the most unusual things in the Universe, to predicting the properties of visiting interstellar asteroids. He was the founder of the Zooniverse citizen science platform, which provides opportunities for more than two million online volunteers to contribute to scientific research, and which was the topic of his first book, 'The Crowd and the Cosmos’. His latest book is ‘Our Accidental Universe’. \n\nProfessor Lintott is best known for presenting the BBC's long-running Sky at Night program, and as an accomplished lecturer. Away from work, he cooks, suffers through being a fan of Torquay United and Somerset cricket, and spends time with a rescued lurcher, Mr Max. He can often be found at the helm of Oxford’s science comedy night, ‘Huh, That’s Funny’.\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/pluto-planet\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3108,
+            "year": 2026,
+            "published_at": "2026-07-10T15:00:16Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/TADWmqaDyDg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "TADWmqaDyDg",
+                "url": "https://www.youtube.com/watch?v=TADWmqaDyDg",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-QUsdf6lWPwk",
+            "episode_number": 13,
+            "title": "Plato to Polybius on Constitutional Change - Melissa Lane",
+            "description": "00:00 | Polybius's Question: How Did Rome Conquer the World?\n00:39 | Polybius: Hostage, Historian & Tutor to Scipio\n02:05 | The Fall of Corinth & the Greek Cause\n02:52 | Why Constitutional Stability Matters: Avoiding Stasis\n03:31 | Plato's Circle: The Image of Stability\n04:48 | Adding Growth: Rome's Second Question\n06:23 | Stability vs Growth: Sparta and Rome Compared\n09:30 | Lecture Roadmap: From Greece to Rome\n10:01 | Polybius on Why Constitutions Matter\n11:31 | Herodotus's Three Simple Constitutions\n12:56 | Aristotle's Six-Fold Scheme: Good and Bad Rule\n14:11 | Mixing Constitutions to Avoid Decline\n15:10 | Three Modes of Mixing: Blending, Co-Presence, Counterbalancing\n19:39 | Sparta's Mixed Constitution: Kings, Elders & Assembly\n21:17 | Plato and Aristotle on Sparta's Flaws\n27:42 | Polybius's Active Counterbalancing & the Rust Metaphor\n32:11 | Polybius on Rome's Mixed Constitution\n35:30 | Rome's Elements: Consuls, Senate & Assembly\n40:02 | Polybius's Cycle of Constitutions\n44:45 | Legacy: Adams, Hobbes & the Case for Mixed Government\n\nWatch the Q&A session here: https://youtu.be/-18jnBqpQxQ\n\nPlato in the fourth century BCE penned an indelible sequence of constitutional decline ending in tyranny, as well as a more complex set of possibilities for mixing different constitutional kinds. Two centuries later, Polybius portrayed constitutional change as cyclical, with an eventual collapse of democracy into ‘ochlocracy’ (mob rule) and then reversion to monarchy. These and other ancient authors proposed that a mixed constitution might prevent unwanted political change – an idea that would influence many later generations of political thinkers.\n\nThis lecture was recorded by Melissa Lane on the 28th of May 2026 at Barnard's Inn Hall, London\n\nMelissa Lane is the Class of 1943 Professor of Politics, Princeton University and is also Associated Faculty in the Department of Classics and Department of Philosophy. Previously she was Senior University Lecturer at Cambridge University in the Faculty of History and Fellow of King’s College, Cambridge.\n\nShe studied for her first degree in Social Studies (awarded summa cum laude) at Harvard University, and then took an MPhil and PhD in Philosophy at the University of Cambridge, where she was a student at King’s College, supported by appointments as a Marshall Scholar, Truman Scholar, and Mary Isabel Sibley Fellow of Phi Beta Kappa.\n\nProfessor Lane is an author, lecturer and broadcaster who has received major awards including being named a Guggenheim Fellow, and the Lucy Shoe Meritt Resident in Classical Studies at the American Academy in Rome. She has published widely in journals and authored or introduced nine major books including Greek and Roman Political Ideas; Eco-Republic; and most recently, Of Rule and Office: Plato’s Ideas of the Political, which was awarded the 2024 Book Prize of the Journal of the History of Philosophy.\n\nProfessor Lane is the only person ever to have delivered both the Carlyle Lectures and the Isaiah Berlin Lectures at the University of Oxford.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/plato-polybius\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2863,
+            "year": 2026,
+            "published_at": "2026-07-03T15:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/QUsdf6lWPwk/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "QUsdf6lWPwk",
+                "url": "https://www.youtube.com/watch?v=QUsdf6lWPwk",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-enguwSes0C0",
+            "episode_number": 14,
+            "title": "Going Global: Chinese Independent Documentary - Luke Robinson",
+            "description": "0:00 // Introduction — Chinese independent documentary and the question of going global\n3:28 // The Sundance-K'Nex workshops — training Chinese filmmakers for overseas markets\n7:40 // Story as commodity — character-driven narrative and the three-act structure\n10:07 // The humanitarian industrial logic — NGOs, storytelling and the Open Society Foundation\n14:12 // Plastic China — the film, its subjects and its international success\n16:01 // How the film works — two families, a child's right to education and formal choices\n23:03 // The narrowing of focus — from structural critique to personal story\n28:12 // What the format does — harmonising contradiction rather than confronting it\n31:02 // Screening Plastic China in the UK — what audiences actually felt\n33:21 // Audience responses — moving, shocking, overwhelming\n36:10 // What viewers said they would do next — individual action over structural change\n38:02 // Political mimesis and its limits — affect that short-circuits critique\n40:16 // Worrying about China — liberal frameworks and the problem of difference\n43:14 // Conclusion — the compromises Chinese independent documentary makes to go global\n\n\nWatch the Q&A session here: https://youtu.be/QJMOYmf0CmQ\n\n\nThis lecture will focus on independently produced Chinese documentary cinema as it has entered the Anglophone industry market. Using “Plastic China” by the award-winning director Wang Jiuliang as a case study, I will explore what the implications of cross-border collaborations are for documentary form and content, and how this may encourage a particular set of viewer responses. This will allow me to locate the documentary form in relation to broader liberal arguments over China’s place in the world system and assess the limitations of this approach to “going global” for independent Chinese documentary.\n\n\nThis lecture was recorded by Luke Robinson on the 27th of May 2026\n\nLuke Robinson is a Senior Lecturer/Associate Professor in Film Studies in the Faculty of Media, Arts, and Humanitiies, University of Sussex.\nHe is the author of Independent Chinese Documentary: From the Studio to the Street, and the co-editor of two further collections on Chinese film culture: (with Chris Berry) Chinese Film Festivals: Sites of Translation and (with Chris Berry, Lydia Wu and Sabrina Yu) Chinese Independent Cinema: Past, Present, and a Questionable Future.\nHis writing has appeared in books and journals including DV-made China, The New Chinese Documentary Movement, Vocal Projections, Screening China’s Soft Power, positions: Asia cultures critique, Film Studies, Screen, and Journal of Chinese Cinemas.\nBetween 2019 and 2025 he was co-investigator on the AHRC-funded project, “Independent Cinema in China: State, Market, and Film Culture”. One of the outcomes of this grant was the establishment of the Chinese Independent Film Archive, located at Newcastle University.\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/chinese-documentary\n\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2736,
+            "year": 2026,
+            "published_at": "2026-06-30T15:00:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/enguwSes0C0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "enguwSes0C0",
+                "url": "https://www.youtube.com/watch?v=enguwSes0C0",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-K1E_vYPpM3g",
+            "episode_number": 15,
+            "title": "Should We Manipulate People’s Emotions? - Robin May",
+            "description": "00:07 | Introduction: Can We Manipulate Human Emotions?\n00:52 | You've Already Done It — Since Birth\n01:57 | Personal Space as Emotional Manipulation\n03:04 | Lyndon Johnson & the Proximity Effect\n04:28 | Stress on the Tube: New York Subway Study\n06:45 | Smells & Mood: The Bakery Experiment\n08:46 | The Case For Emotional Manipulation: Hate Crime & Mental Health\n10:25 | The Case Against: Dictators, Abuse & Macbeth\n11:50 | Mood Stabilizers: Lithium & Lamotrigine\n13:47 | Antidepressants: How SSRIs Work\n18:22 | Psychoactive Drugs: MDMA, Ecstasy & Risk\n20:24 | Psilocybin & PTSD: Promising Clinical Trials\n21:56 | Military Use & Ethical Minefields\n23:32 | Cordyceps: The Fungus That Controls Ants\n25:58 | Rabies: A Virus That Lowers Serotonin\n27:47 | Toxoplasma Gondii: The Parasite in 1 in 3 of Us\n31:09 | Brain-Computer Interfaces & Neuralink\n34:52 | The Easiest Mood Hack: Your Diet\n36:01 | The Gut-Brain Axis & the Human Microbiome\n42:48 | Is Your Personality Really Yours — Or Your Bacteria's?\n\nWatch the Q&A session here: https://youtu.be/PWoDmVOSTTA\n\nWe think of emotions as being central to our characters and our sense of self. But emotions are the product of brain chemistry and, like most biological processes, are malleable. Thus far, our ability to artificially manipulate emotions has been extremely rudimentary, but we are on the cusp of a revolution in neuroscience that will open the door to powerful emotional manipulation. How can we navigate the ethical minefield that this will uncover, and what will it mean for our understanding of who we really are?\n\nThis lecture was recorded by Robin May on the 20th of May 2026 at Barnard's Inn Hall, London\n\nProfessor of Infectious Disease at the University of Birmingham, and (interim) Chief Scientist at the UK Health Security Agency, Robin May was appointed Gresham Professor of Physic in May 2022. Between July 2020 and September 2025 he served as Chief Scientific Adviser at the Food Standards Agency (FSA).\n\nProfessor May’s early training was in Plant Sciences at the University of Oxford, followed by a PhD on mammalian cell biology at University College London and the University of Birmingham. After postdoctoral research on gene silencing at the Hubrecht Laboratory, The Netherlands, he returned to the UK in 2005 to establish a research program on human infectious diseases. He was Director of the Institute of Microbiology and Infection at the University of Birmingham from 2017-2020. \n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/peoples-emotions\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2748,
+            "year": 2026,
+            "published_at": "2026-06-23T15:00:28Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/K1E_vYPpM3g/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "K1E_vYPpM3g",
+                "url": "https://www.youtube.com/watch?v=K1E_vYPpM3g",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-ek7pb_JFaQA",
+            "episode_number": 16,
+            "title": "Society and Survival During the Holocaust - Mary Fulbrook",
+            "description": "0:00 // Introduction — why surrounding societies disappear from Holocaust history\n2:54 // The ghettoization of Jewish history in European museums\n7:07 // The three conditions for passivity — ignorance, indifference, impotence\n11:11 // Who helped Jews — rescuers, opportunists and small gestures that saved lives\n13:00 // Jewish survival strategies — ghetto uprisings, fleeing and passing\n15:52 // Hiding and passing under false identity — the psychological cost\n22:22 // Islands of compassion — exceptional communities across Europe\n24:23 // Le Chambon-sur-Lignon — a pastor's sermon and a mountain refuge\n27:21 // Nieuwlande and Villa Emma — 1-to-1 rescue ratios and children's networks\n29:38 // Full here — Baptist minorities and religious belief as motivation for rescue\n32:28 // Volos, Greece — bishop, rabbi and communist partisans cooperating\n36:12 // Hospitable vs hostile environments — local police, partisans and social topography\n42:29 // Conditions for rescue — inclusive community identity and the capacity to act\n44:00 // Conclusion — small gestures matter alongside the wider structures of survival\n\n\nWatch the Q&A session here: https://youtu.be/s1ANDPkSCN8\n\n\nThis lecture focuses on experiences of hiding and help during the Holocaust across Europe, including the German Reich itself, to highlight the significance of surrounding societies for the survival of Jews. In a broad comparative analysis, going beyond a focus on individual rescuers and getting away from generalisations about supposed ‘national characteristics’, Mary Fulbrook illuminates how local power structures and sense of community shaped non-Jewish responses to antisemitic policies, and affected the choices, experiences and chances of Jews attempting to evade persecution in different regions during the war. \n\n\nThis lecture was recorded by Mary Fulbrook on the 18th of May 2026\n\n\nA graduate of Cambridge and Harvard universities, Mary Fulbrook is Professor of German History at University College London (UCL) and a Fellow of the British Academy. Her current research is on rescue and survival across Europe during the Holocaust.\nShe is the author or editor of some 29  books, including Bystander Society: Conformity and Complicity in Nazi Germany and the Holocaust (2023); the Wolfson History Prize-winner Reckonings: Legacies of Nazi Persecution and the Quest for Justice (2018); and the Fraenkel Prize-winning A Small Town near Auschwitz: Ordinary Nazis and the Holocaust (2012), as well as, most recently, Ten Moments that shaped Berlin (2025) and, edited with Jürgen Matthäus, The Cambridge History of the Holocaust Vol. 2: Perpetrating the Holocaust: Policies, Participants, Places (2025).\nOne of her major research areas has been the GDR, on which she wrote Anatomy of a Dictatorship: Inside the GDR, 1949-89 (OUP, 1995) and The People’s State: East German Society from Hitler to Honecker (Yale UP, 2005). Dissonant Lives: Generations and Violence through the German Dictatorships (OUP, 2011; 2 vols. 2017) traces distinctive generational experiences across this traumatic century, from before World War One until after German unification in 1990.  She has also written on German National Identity after the Holocaust (Polity Press, 1999) and Historical Theory (Routledge, 2002). More general books include A Concise History of Germany (CUP, 3rd edn. 2018) and A History of Germany 1918-2020: The Divided Nation (Blackwell, 5th edn 2021). She has directed a series of AHRC-funded interdisciplinary research projects, and is currently directing a collaborative project funded by the AHRC and the German Research Foundation (DFG) jointly with Prof. Christina Morina of Bielefeld University.\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/society-and-survival-during-holocaust\n\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2725,
+            "year": 2026,
+            "published_at": "2026-06-19T15:00:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ek7pb_JFaQA/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ek7pb_JFaQA",
+                "url": "https://www.youtube.com/watch?v=ek7pb_JFaQA",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-EOCQZd_ZRnE",
+            "episode_number": 17,
+            "title": "Music of the Body - Milton Mermikides",
+            "description": "00:00 // Introduction: Three Definitions of Music (Boethius)\n00:40 // Musica Humana: Music and the Human Body\n01:39 // The Voice: The Most Complex Human Behaviour\n02:13 // Musical Phonemes: MRI of Singing Styles\n03:06 // Overtone Singing & Beatboxing – Pushing the Voice's Limits\n04:39 // Bobby McFerrin, Take Six & Human Body Music\n07:52 // When the Voice Loses Control: Sadness, Laughter & Elgar\n09:16 // The Science of Laughter in Music\n13:07 // The Cochlea, Consonance & Dissonance Explained\n15:58 // Microtonal Music: Beyond 12-Tone Equal Temperament\n20:16 // Music Moves at the Speed of Life: Tempo & the Body\n23:14 // Instruments Made in Our Image: Guitar, Flamenco & the Hand\n27:12 // Guido's Hand: How the Body Shaped Music Theory\n30:08 // Django, Jeff Healey & Paul Wittgenstein: Disability & Musical Invention\n34:59 // Music as Medicine: Therapy, Oxytocin & Mental Health\n37:35 // Sonifying Life: Heartbeats, Disease, DNA & the Skull\n43:17 // A Personal Journey: Leukemia, Blood Cells & Music as Autobiography\n45:35 // DNA as Music: Connecting Us All\n\nWatch the Q&A session here: https://youtu.be/dWOgvhcv2Z4\n\nMusic and biology are profoundly entwined. The heart beats, footsteps fall into familiar tempi, and even the movement of our limbs follows a natural rhythmic hierarchy—as if we shape music in our image. The rise and fall of breath, the cadence of laughter, and the wail of a cry all carry musical gestures, woven into our being. Yet our bodies do not just dictate music—they respond to it, from calming stress to thrilling chills. Beyond this, the biological world itself pulses with music: DNA sequences become melody, disease growth swells into an orchestral crescendo, and a hidden music emerges from within us.\n\nThis lecture was recorded by Milton Mermikides on the 13th May 2026 at LSO St Lukes\n\nMilton Mermikides is a composer, guitarist, technologist, academic and educator in a wide range of musical styles and has collaborated with artists and scientists as diverse as Evelyn Glennie, Tim Minchin, Pat Martino, Peter Zinovieff, John Williams and Brian Eno. Son of a CERN nuclear physicist, he was raised with an enthusiasm for both the arts and sciences, an eclecticism which has been maintained throughout his teaching, research and creative career. \n\nHe is a graduate of the London School of Economics (BSc), Berklee College of Music (BMus) and the University of Surrey (PhD). He has lectured, exhibited and given keynote presentations at organisations like the Royal Academy of Music, TEDx, Royal Musical Association, British Library, Smithsonian Institute and The Science Museum and his work has been featured extensively in the press. His music, research and graphic art are published and featured by Oxford University Press, Cambridge University Press, Deutsche Grammophon, Sony and more, and he has won awards, scholarships and commendations for writing, teaching, research and his charity work.      \n\nMilton is Professor of Music at the University of Surrey, Professor of Guitar at the Royal College of Music, Deputy Director of the International Guitar Research Centre, an Ableton Certified Trainer, and lives in London with his wife, the guitarist Bridget Mermikides and their daughter Chloe. He is also a Vice-Chair of Governors at Addison Primary School, a state school which foregrounds music education, offering free instrumental lessons for all on Pupil Premium. \n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/music-body\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2812,
+            "year": 2026,
+            "published_at": "2026-06-16T15:00:30Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/EOCQZd_ZRnE/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "EOCQZd_ZRnE",
+                "url": "https://www.youtube.com/watch?v=EOCQZd_ZRnE",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-uhwF4C303sg",
+            "episode_number": 18,
+            "title": "How Hard is too Hard? An Introduction to Complexity - Colva Roney-Dougal",
+            "description": "00:00 | Introduction: The Party Planning Problem\n01:11 | Modelling the Problem as a Graph\n03:02 | Vertices, Edges & Walking Around the Table\n04:01 | Why the Seating Plan Fails — and How to Fix It\n06:20 | Alan Turing & the Birth of Computing\n07:50 | Problems With No Solution: Undecidable Problems\n08:56 | The Halting Problem Explained\n09:18 | Undecidable Problems: Magic the Gathering & Quantum Computers\n10:47 | Why Solving a Problem Isn't Enough — Time Matters\n11:31 | Measuring Difficulty: Addition, Multiplication & Polynomials\n14:05 | Why Polynomial Time Counts as \"Efficient\"\n17:44 | Cryptography: Hard Problems Protecting Your Data\n18:27 | Prime Numbers & the Factorisation Problem\n20:35 | Job Scheduling: A Real-World NP Problem\n21:09 | Backtrack Search: How Computers Actually Solve Hard Problems\n24:08 | Introducing P vs NP — The Million Dollar Question\n27:01 | The Clay Millennium Prize & Why It Matters\n28:28 | NP-Complete Problems: The Hardest of the Hard\n30:44 | Quantum Computing & the Threat to Encryption\n32:44 | Graph Isomorphism & the Role of Symmetry\n39:11 | Quasi-Polynomial Time: A Recent Breakthrough\n40:13 | How to Win $1 Million: Proving P vs NP\n\nWatch the Q&A session here:  https://youtu.be/kj-ecbvPU88\n\nSome mathematical problems can easily be solved on a computer, whilst some are probably impossible. Complexity theory is how we analyse difficulty, and one of the most famous open problems in mathematics is the question of whether P = NP: if the answer to a problem is easy to check, is the problem actually easy to solve? This lecture introduces the work of Alan Turing and other pioneers in the subject, before bringing us up-to-date with some recent progress.\n\nThis lecture was recorded by Colva Roney-Dougal on the 11th of May 2026 at Barnard's Inn Hall, London\n\nColva Mary Roney-Dougal OBE is a British mathematician specializing in group theory and computational algebra. She is Professor of Pure Mathematics at the University of St Andrews, where she is first female Head of Pure Mathematics.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/hard-complexity\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2663,
+            "year": 2026,
+            "published_at": "2026-06-09T15:00:34Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/uhwF4C303sg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "uhwF4C303sg",
+                "url": "https://www.youtube.com/watch?v=uhwF4C303sg",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-qNX6g0UcYg0",
+            "episode_number": 19,
+            "title": "Making Memory Visible Through Photograph - Julia Winckler",
+            "description": "0:00 // Introduction and origins — migrant women, suitcases and hidden identities\n4:24 // Traces — the Hecker family suitcase and Holocaust post memory\n9:43 // Two Sisters — communicative memory across wartime experiences\n16:07 // Stories from Agadez — participant-led photography in Niger\n24:22 // Interpreters, Hong Kong and the country we always carry with us\n30:35 // Student projects — found photographs, grief and reinserting the absent\n39:21 // Working with professional and community archives\n43:02 // Peacehaven and the speculative garden city by the sea\n47:21 // From Streets to Playgrounds — one 1912 photograph that launched a project\n49:48 // Marilyn Stafford and the children of a demolished Paris neighbourhood\n55:28 // Crawley's new town photographs — 3,000 visitors and faces recognised 65 years on\n58:31 // Conclusion — photography as an ever-evolving memory practice\n\n\nWatch the Q&A session here: https://youtu.be/jfcYs4JWZT4\n\n\nWith an academic background in social, cultural anthropology and photography, I have spent the last twenty-five years working on projects that have bridged photographic and archival research. I have witnessed the power of photography as a means to connect communities. I have experienced first-hand the benefits to participants of enabling an emotional connection and inspiring a sense of validation, of feeling seen and valued and heard. That their story matters. That they matter. \nIn this talk, we will explore the creative mechanisms involved in making memory visible through photography, stimulating engagement in the present.\n\n\n\nThis lecture was recorded by Julia Winckler on the 7th of May 2026\n\n\nJulia Winckler is a photographer, writer, curator and Principal Lecturer at the University of Brighton's School of Art and Media, where she teaches on MA Photography and MA Fine Art and supervises PhD research. She has exhibited and published widely on memory and migration narratives, contested topographies, émigré photographers and photography as activism. With an academic background in cultural anthropology, social work and photography, she has spent the last 25 years developing projects that bridge photographic and archival research.\n\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/making-memory\n\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3700,
+            "year": 2026,
+            "published_at": "2026-06-05T15:00:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/qNX6g0UcYg0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "qNX6g0UcYg0",
+                "url": "https://www.youtube.com/watch?v=qNX6g0UcYg0",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-ZfVITWv4z6o",
+            "episode_number": 20,
+            "title": "Dionysus: Lord of Misrule - Ronald Hutton",
+            "description": "00:00 // Introduction: The \"Dodgy Deities\" Series\n01:44 // Why Was Dionysus Always the Outsider?\n02:42 // Dionysus & Wine: The God of the Morning After\n03:11 // Focus of the Talk: The Cult, Not the Myth\n04:16 // Dionysus as a Vegetation & Agricultural God\n06:34 // The Athenian Festivals of Dionysus\n08:32 // Dionysus the Great Leveller: Wine for All\n11:28 // The Dark & Frightening Side of Dionysus\n18:10 // Dionysus the Transgressor: Women, Madness & the Maenads\n24:53 // The Bacchic Scandal in Rome (186 BCE)\n26:48 // Dionysus, Patron of Drama & Athenian Theatre\n33:45 // The Dionysian Mystery Religion\n40:42 // Dionysus, Death & the Afterlife\n44:22 // Conclusion: The Most Complex Greek God\n\nWatch the Q&A session here: https://youtu.be/HogtfM6MyAA\n\ntreating him as a foreign intruder. This is because he was patron of wine, with all its exciting, convivial and destructive effects. As such he was associated with community, sociability, reconciliation, inspiration and salvation, but also with madness, violence, transgression and fear. He was both the ultimate party animal and the leader of the hippies from hell. This lecture steers a course through his various different attributions, to see if a unity and logic can be found at the heart of them.\n\nThis lecture was recorded by Ronald Hutton on the 6th May 2026 at Barnard’s Inn Hall, London\n\nProfessor Hutton is Professor of History at the University of Bristol. He took degrees at Cambridge and then Oxford Universities, and was a fellow of Magdalen College, Oxford. He is now a Fellow of the British Academy, the Royal Historical Society, the Society of Antiquaries and the Learned Society of Wales, and has won awards for teaching and research.\n\nHe has lectured all over the world, authored twenty books and ninety-six essays, appeared in or presented scores of television and radio programmes, and sits on the editorial boards of six journals concerned with the history of religion and magic.\n\nHe is currently working on the third volume of his biography of Oliver Cromwell. \n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/god-dionysus\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 2798,
+            "year": 2026,
+            "published_at": "2026-06-02T15:00:03Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ZfVITWv4z6o/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ZfVITWv4z6o",
+                "url": "https://www.youtube.com/watch?v=ZfVITWv4z6o",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-FBJ7mo39Ftg",
+            "episode_number": 21,
+            "title": "A Living Planet - Helen Czerski",
+            "description": "0:00 // Introduction\n0:52 // Earth seen from space\n2:37 // The PACE satellite & the living planet\n5:40 // How much life is there? Biomass by the numbers\n7:07 // Inside the animal kingdom\n10:03 // Where is life living?\n11:46 // Land vs ocean: productivity & turnover\n15:07 // We live in a microbial world\n17:32 // Vitamin B12 and our dependency on bacteria\n25:13 // Parrotfish and the white sand beaches\n29:13 // Phytoplankton, DMS, and cloud formation\n33:50 // Animals as ecosystem engineers\n39:40 // Humpback whales as nutrient conveyors\n44:35 // What humans have already removed from the ocean\n47:28 // The IUCN Red List — and what \"least concern\" doesn't mean\n57:06 // Conclusion: life is not a luxury, it's a life support system\n\n\nWatch the Q&A session here: https://youtu.be/-yBjYbu7a98\n\n\nEarth is a living planet. But how much life is there, and what is it doing? We will discuss the distribution of biomass on Earth, and compare the effects of microbes, wild animals, domesticated animals. The aim of this lecture is to provide concrete examples of how life is woven in with the rest of the planetary engine, expanding the importance of biodiversity from sentiment alone to a matter of survival for both whole ecosystems and our own civilisation.\n\n\nThis lecture was recorded by Helen Czerski on the 23nd of March 2026 at Barnard’s Inn Hall, London\n\nHelen Czerski is a physicist and oceanographer with a passion for science, sport, books, creativity, hot chocolate and investigating the interesting things in life. \nShe is a Professor at the Department of Mechanical Engineering at University College London and her research focus is the physics of breaking waves and bubbles at the ocean surface. These bubbles change underwater sound and light, help transfer gases from ocean to atmosphere (helping the ocean breathe) and also eject ocean material into the air. She has spent months working on research ships in the Antarctic, the Pacific, the North Atlantic and the Arctic, and is an experienced field scientist. \nHelen has been a regular science presenter on the BBC for 15 years, covering the physics of the natural world in BBC2 landmark documentaries (including ‘Orbit’, ‘Operation iceberg’ and ‘Supersenses’), and the physics of everyday life in a range of BBC4 documentaries (including ‘From ice to fire: The incredible science of temperature’, ‘Sound waves: The symphony of physics’, and ‘Colour: The spectrum of science’, along  with many others). She currently co-hosts BBC Radio 4’s flagship climate and environment programme Rare Earth. \nHelen's first book Storm in a Teacup won the Italian Asimov Prize and the Louis J. Battan Author prize from the American Meteorological Society. Blue Machine won the Wainwright Prize for Conservation Writing. She was awarded the Institute of Physics Gold Medal in 2018 for her work on physics communication, and an Honorary Fellowship of the British Science Association in 2020. She has been a Trustee of Royal Museums Greenwich since 2018, and was one of the 2020 Royal Institution Christmas Lecturers, giving her Lecture on the topic of the ocean. \n\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/living-planet\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3569,
+            "year": 2026,
+            "published_at": "2026-05-29T15:00:08Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/FBJ7mo39Ftg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "FBJ7mo39Ftg",
+                "url": "https://www.youtube.com/watch?v=FBJ7mo39Ftg",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-0FgEhPnYMRI",
+            "episode_number": 22,
+            "title": "Give Peace a Chance: Legal Implications of the Israel-Palestine Conflict - Clive Stafford Smith",
+            "description": "00:00 | Introduction: Antisemitism, Islamophobia & Missing the Point\n01:00 | Personal Background: Jewish Heritage & Family Revelations\n04:02 | A Gay Jewish Grandfather & Inherited Pacifism\n05:56 | How Clive Saw Israel as a Child\n07:16 | The Shift: From Israeli Heroism to Current Crisis\n08:19 | A History of Jewish Persecution: England to the Holocaust\n10:37 | Holocaust Denial & Antisemitism Just Under the Surface\n12:27 | Islamophobia: The Other Prejudice We Don't Talk About\n13:32 | When Peace Was Possible: The PLO, Nobel Prizes & Oslo\n14:32 | Israel's Political Shift: From Left to Hard Right\n17:25 | Who Is Really to Blame for Chaos in the Middle East?\n18:07 | How Netanyahu Is Fuelling the Antisemitism He Claims to Fight\n20:50 | Al-Qaeda Had 170 Members — Then We Made It a Caliphate\n22:41 | Jordan, the Secret Police & Antisemitism as a Control Mechanism\n26:27 | US Money, Saudi Arabia & How the West Shares the Blame\n27:17 | Netanyahu's Tactics: Death Penalty, Iran & Why It's Counterproductive\n29:10 | Israel's New Death Penalty Law & Why It Will Backfire\n31:55 | Starmer's Proscription of Palestine Action: Monumentally Stupid\n35:10 | What We Can Actually Do: Principles for Peace\n38:01 | If Given Two Choices, There's Always a Third\n39:14 | The Irish Precedent: How the EU Created an Unexpected Solution\n40:07 | Conclusion: A Protectorate for Palestine-Israel\n\nWatch the Q&A session here: https://youtu.be/i_0Pn7MaWH4\n\nWhat does the law say about the on-going tragedy in Palestine and Israel? Why are human rights cases being brought against Benjamin Netanyahu and the Israeli government? The legality of the blockade of Gaza by the IDF has not been effectively changed since 2009: why not? How can law contribute to creating lasting peace in this region? In answering these questions, I will draw on my own Jewish heritage as well as my expertise as a human rights lawyer. \n\nThis lecture was recorded by Clive Stafford Smith on the 30th of April 2026 at Barnard's Inn Hall, London\n\nClive Stafford Smith JD OBE is a dual UK-US national, the founder and director of  the Justice League a non-profit human rights training centre focused on fostering the next generation of advocates. \n\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/israel-palestine-law\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2483,
+            "year": 2026,
+            "published_at": "2026-05-22T15:00:06Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/0FgEhPnYMRI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "0FgEhPnYMRI",
+                "url": "https://www.youtube.com/watch?v=0FgEhPnYMRI",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-KaN1TCGMvmg",
+            "episode_number": 23,
+            "title": "The Shape of Tiles: Regular and Irregular, Hard and Soft - Alain Goriely",
+            "description": "0:00 // Introduction — the mathematics of tilings in the plane and in space\n1:34 // What is a tiling — cells, nodes, corners and the basic definitions\n5:13 // Convex vs non-convex cells and how to assign numbers to a tiling\n8:18 // The symbolic plane — classifying all tilings by two numbers\n9:30 // Regular tilings — the square lattice, Hooke's Micrographia and the hexagonal lattice\n11:12 // The symbolic plane and where all convex polygon tilings sit\n13:33 // Irregular tilings — brickwork, T-junctions and random fractures\n15:35 // The question that changes everything — can we have softer tiles?\n16:46 // Soft tilings in 2D — the minimum is two corners, not three\n17:57 // Softening a lattice — the edge-bending process\n19:33 // Soft cells in nature — epithelial cells, blood cells and Zaha Hadid\n21:12 // Moving to 3D — the Platonic solids, Aristotle's mistake and the truncated octahedron\n23:23 // How many regular tetrahedra fit around a point? (audience vote)\n25:46 // The 3D question — can we soften a cube to zero corners?\n27:36 // The theorem — the minimum in 3D is zero, proved with one shape\n28:44 // Softening any lattice — the edge-bending algorithm in 3D\n33:17 // The Nautilus — its chambers are natural soft cells\n35:36 // Soap bubbles, the Kelvin cell and minimal surfaces\n38:27 // Triply periodic minimal surfaces and the Schwartz P surface\n40:30 // The soft truncated octahedron and its surprising connection to soap films\n42:21 // Microstructure, engineering and building with eggshells\n46:11 // Water in space — the soft cell experiment at the ISS in 2025\n48:10 // Conclusion — nature avoids sharp corners and soft cells are everywhere\n\n\nWatch the Q&A session here: https://youtu.be/vAPZyjnBUFk\n\n\nTiling involves filling a plane or space with repeated elements, known as tiles. This simple concept is deeply embedded in the natural world and human design, appearing in structures as varied as the hexagonal wax cells of a beehive and decorative wallpapers. While regular hard tiles—geometric shapes with straight edges that fit together without gaps or overlaps—are common in human-made designs, nature often favours soft or irregular patterns, shaped by physical forces. In this lecture, I will explore how both regular and irregular tiling patterns, hard and soft, emerge in nature and the underlying mathematical principles that govern their formation.\n\n\nThis lecture was recorded by Alain Goriely on the 28th of April 2026\n\n\nAlain Goriely is a mathematician with broad interests in mathematical methods, mechanics, sciences, and engineering. He is well known for his contributions to dynamical systems, mathematical biology, as well as fundamental and applied mechanics. He is particularly well known for the development of a mathematical theory of biological growth, culminating with his seminal monograph The Mathematics on Mechanics of Biological Growth (2017).\nHe received his PhD from the University of Brussels in 1994 where he became a lecturer. In 1996, he joined the University of Arizona where he established a research group within the renowned Program of Applied Mathematics. In 2010, he joined the University of Oxford as the inaugural Statutory Professor of Mathematical Modelling and fellow of St. Catherine’s College. He is currently the Director of the Oxford Centre for Industrial and Applied Mathematics.\nIn addition, Alain has enjoyed scientific outreach based on problems connected to his research, including tendril perversion in plants, twining plants, umbilical cord knotting, whip cracking, the shape of seashells, brain modelling, and he is the author of a Very Short Introduction to Applied Mathematics (2017). His work has been recognized by a Sloan Fellowship, a Royal Society Wolfson Research Award, the Cozzarelli Prize from the National Academy of Sciences and the Engineering Medal from the Society of Engineering Sciences. He was elected as a Fellow of the Royal Society in 2022.\n\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/shape-tiles\n\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3042,
+            "year": 2026,
+            "published_at": "2026-05-19T15:00:33Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/KaN1TCGMvmg/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "KaN1TCGMvmg",
+                "url": "https://www.youtube.com/watch?v=KaN1TCGMvmg",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-PfdoyIWdmRU",
+            "episode_number": 24,
+            "title": "The Ground We Stand On - Helen Czerski",
+            "description": "00:00 | Introduction: The Hidden World Beneath Our Feet\n01:07 | Darwin's Obsession: Earthworms & the Ground We Ignore\n03:35 | Why Worms Are \"Stupendous\" Engineers\n05:16 | Elephants, Salt & What the Ground Gives Animals\n06:25 | Mark Twain Was Right: Land Is Finite\n07:06 | How Much Land Does Britain Really Use?\n09:01 | The Ground by the Numbers: Species, Water & Carbon\n11:39 | A Journey Through Rock: Grand Canyon to British Geology\n13:41 | Deep Underground: Life Without Light or Oxygen\n20:28 | Microbes That Make Their Own Oxygen Underground\n22:43 | What Is Soil? A Mix of Rock, Water, Air & Life\n26:06 | Burying Your Underpants: The Soil Health Test\n28:35 | How the Ground Stores & Releases Carbon\n32:14 | Peat: A Colossal Carbon Store We Keep Digging Up\n37:52 | Geothermal Energy: Mining Heat From Old Coal Mines\n39:37 | Sutton Hoo & Why the Ground Holds Our Cultural Identity\n40:39 | The Ground Is Moving: Clay, Trains & Satellite Mapping\n44:12 | Global Worming: The Invasive Earthworm Crisis\n47:22 | Land Use, Mining & Who the Ground Really Belongs To\n52:25 | Conclusion: Land Is 3D, Alive & the Foundation of Everything\n\n\nWatch the Q&A session: https://youtu.be/-PSnUoj6yWQ\n\nThe land is often seen as the canvas for human activity: a flat(ish) surface that we can build on, dig into and stand on. Surface area is becoming increasingly valuable – after all, they ain’t making any more of the stuff. This lecture will consider land – both rocks and soil, and build up a picture of what the land we stand on is doing, on both short and very long timescales.  How should we think about the ground and its future?\n\nThis lecture was recorded by Helen Czerski on the 19th of February 2026 at Barnard's Inn Hall, London\n\nHelen Czerski is a physicist and oceanographer with a passion for science, sport, books, creativity, hot chocolate and investigating the interesting things in life. \n\nShe is a Professor at the Department of Mechanical Engineering at University College London and her research focus is the physics of breaking waves and bubbles at the ocean surface. These bubbles change underwater sound and light, help transfer gases from ocean to atmosphere (helping the ocean breathe) and also eject ocean material into the air. She has spent months working on research ships in the Antarctic, the Pacific, the North Atlantic and the Arctic, and is an experienced field scientist. \n\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/ground\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 3204,
+            "year": 2026,
+            "published_at": "2026-05-15T15:00:38Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PfdoyIWdmRU/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PfdoyIWdmRU",
+                "url": "https://www.youtube.com/watch?v=PfdoyIWdmRU",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-5uQWglAwlps",
+            "episode_number": 25,
+            "title": "Why Do We Love? - Robin May",
+            "description": "00:00 | Introduction: What Do We Mean by Love?\n01:31 | The Hallmarks of Infatuation\n05:19 | Physiological Symptoms: Sweat, Heart Rate & Anxiety\n08:20 | Love and the Brain: The HPA Axis Explained\n11:28 | The Amygdala: Why Love Turns Off Your Fear Response\n16:28 | Butterflies, Gut Responses & Autonomic Consequences\n17:37 | How Long Does Infatuation Last?\n20:32 | Long-Term Love: Companionship vs. Obsession\n22:26 | Why Does Romantic Love Exist? The Evolutionary Puzzle\n24:48 | Darwin's Personal Dilemma: To Marry or Not to Marry\n27:02 | The Role of Concealed Ovulation & Attachment Theory\n31:39 | The Overlap Between Parental and Romantic Love\n33:37 | Oxytocin: The Bonding Hormone\n36:08 | Prairie Voles: The Romantic Rodents of Science\n39:16 | Does Oxytocin Actually Drive Human Romance?\n42:49 | Love as Addiction: The Ventral Tegmental Area\n45:16 | Abusive Relationships: When Addiction Turns Harmful\n46:45 | Can Drugs or Therapy Break a Damaging Bond?\n48:10 | Conclusion: Romance Is Good for Your Health\n\nWatch the Q&A session: https://youtu.be/ehJa9F8Fk6M\n\nUntold millions of words have been written about love. It is a unifying theme of music, stories and poetry across all human cultures, and yet we still know very little about its biological basis. Is love for a partner and love for a child the same thing, or two fundamentally different emotions? Can biology explain love at first sight, or falling out of love? And might we ever be able to create a Shakespearean ‘love potion’ that really works?\n\nThis lecture was recorded by Robin May on the 22nd of April 2026 at Barnard's Inn Hall, London\n\nProfessor of Infectious Disease at the University of Birmingham, and (interim) Chief Scientist at the UK Health Security Agency, Robin May was appointed Gresham Professor of Physic in May 2022. Between July 2020 and September 2025 he served as Chief Scientific Adviser at the Food Standards Agency (FSA).\n\nProfessor May’s early training was in Plant Sciences at the University of Oxford, followed by a PhD on mammalian cell biology at University College London and the University of Birmingham. After postdoctoral research on gene silencing at the Hubrecht Laboratory, The Netherlands, he returned to the UK in 2005 to establish a research program on human infectious diseases. He was Director of the Institute of Microbiology and Infection at the University of Birmingham from 2017-2020. \n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/music-mind\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2971,
+            "year": 2026,
+            "published_at": "2026-05-08T15:22:20Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/5uQWglAwlps/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "5uQWglAwlps",
+                "url": "https://www.youtube.com/watch?v=5uQWglAwlps",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-U8XmcJ74wT0",
+            "episode_number": 26,
+            "title": "A World Without Work - Daniel Susskind",
+            "description": "0:00 // Introduction — the two forces technology has on work\n2:00 // Why the Luddites were wrong — and why past tech fears have been misplaced\n2:46 // The age of labor — and the question of whether it can end\n5:45 // Task encroachment — machines taking on everything humans once did\n7:10 // Why AGI claims deserve to be taken seriously — money, talent and progress\n10:48 // How task encroachment weakens the complementing force\n12:18 // The productivity effect — how technology makes workers more productive\n15:32 // Kasparov, Deep Blue and the death of centaur chess\n20:39 // The bigger pie effect — why a growing economy doesn't guarantee more jobs\n25:17 // UK agriculture and manufacturing — bigger output, far fewer workers\n26:38 // The changing pie effect — new industries and why they may not save us\n28:13 // Why we can't predict new jobs — the NHS, Google, prompt engineers\n31:00 // How the complementing force is being hollowed out\n35:27 // Economics changes its mind — from skill bias theory to alarm about AI\n38:18 // The race between education and technology\n39:51 // What economists are saying now about transformative AI\n43:41 // The four problems of a world without work — distribution, contribution, power and meaning\n47:20 // Why Susskind remains optimistic — solving the oldest problem in human history\n\n\n\nWatch the Q&A session here: https://youtu.be/3EYMFuKhzQM\n\n\nIn the future, we may face ‘structural’ technological unemployment in the labour market – where there is no longer enough work to occupy the human workforce. This lecture explains how such a phenomenon is possible at all, particularly given that repeated bouts of automation anxiety in the past have turned out to be wrong. Understanding this challenge is critical given recent claims by the leaders of the large technology companies – that they hope to build an AI that can outperform human beings at every economically useful task, within a decade. \n\nThis lecture was recorded by Daniel Susskind on the 20th of April 2026 at Bernard’s Inn Hall, London\n\nDr Daniel Susskind is a writer and economist. He explores the impact of technology, and particularly AI, on work and society. He is a Research Professor at King’s College London, a Senior Research Associate at the Institute for Ethics in AI at Oxford University, a Digital Fellow at the Stanford Digital Economy Lab, and an Associate Member of the Economics Department at Oxford University. \n \nHis new book, Growth: A Reckoning (2024), was chosen by President Obama as one of his ‘Favourite Books of 2024’ and was a runner-up for the Financial Times Business Book of the Year 2024. He is also the author of A World Without Work (2020), described by The New York Times as \"required reading for any potential presidential candidate thinking about the economy of the future” and a runner-up for the Financial Times Business Book of the Year 2020, and co-author of the best-selling book, The Future of the Professions (2015). His TED Talk, on the future of work, has been viewed more than 1.6 million times. He is currently working on his next book, What Should Our Children Do? How to Flourish in the Age of AI. \n \nPreviously he worked in various roles in the British Government – in the Prime Minister’s Strategy Unit, in the Policy Unit in 10 Downing Street, and in the Cabinet Office. He was a Kennedy Scholar at Harvard University\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/world-without-work\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3058,
+            "year": 2026,
+            "published_at": "2026-05-01T15:00:54Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/U8XmcJ74wT0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "U8XmcJ74wT0",
+                "url": "https://www.youtube.com/watch?v=U8XmcJ74wT0",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-PRsFERE6yks",
+            "episode_number": 27,
+            "title": "The Dictionary City: Londoners and the Oxford English Dictionary - Sarah Ogilvie",
+            "description": "00:00 // Introduction & Famous Dictionary Cities\n01:47 // Brothers Grimm: The Real Lexicographers\n03:03 // London's Secret Role in the OED's Origins\n05:26 // What Makes the OED Different: Diachronic Lexicography\n08:15 // The 1858 Crowdsourcing Revolution\n12:33 // James Murray's Scriptorium & the Flood of Slips\n18:35 // Discovering Murray's Secret Address Books\n22:38 // 3,000 Volunteers: Lunatics, Women & Autodidacts\n28:24 // Margaret Murray: From Calcutta Rooftop to Archaeologist\n34:50 // The Network Hub: Who Really Connected the OED?\n42:42 // Sex Words, Pornographers & Karl Pearson's Contribution\n47:54 // Murray's Final Slip & the Courier Mail's Unlikely Legacy\n\nThe creation of the Oxford English Dictionary was one of the world's first crowd-sourced projects in the nineteenth century. People from all around the world sent in their local words, but no city played a more important role than London. In this lecture, Professor Sarah Ogilvie, author of The Dictionary People: the unsung heroes of the Oxford English Dictionary, tells the fascinating stories of some of the hundreds of\n\nWatch the Q&A session here: https://youtu.be/leasz07iK-g\n\nLondoners who helped create the world's largest English dictionary. She has unearthed a fascinating group of people across all social classes who represent some of the most interesting contributors to the Dictionary from all parts of this great city one hundred and fifty years ago. From a pornographer living in Bloomsbury who sent in sex words, to a servant in Eaton Square, a suffragist in St John's Wood, a plant expert at Kew Gardens, a coin specialist at the Royal Mint, and - yes! - a Gresham Professor of Geometry, this is a people's history of one of our most famous books.\n\nThis lecture was recorded by Professor Sarah Ogilvie on the 16th April 2026 at Barnard’s Inn Hall, London\n\nSarah Ogilvie is Professor of Language and Lexicography at the University of Oxford. A specialist in technology and linguistics, she has previously taught at Cambridge University and Stanford University, and worked at Lab 126, Amazon's innovation lab in Silicon Valley.\n\nA former editor on the Oxford English Dictionary, her most recent book is The Dictionary People: The Unsung Heroes Who Created the OED (Chatto and Windus). She is also author of Words of the World (Cambridge University Press), co-author of Gen Z, Explained (University of Chicago Press), editor of The Cambridge Companion to English Dictionaries, and co-editor of The Whole World in a Book (Oxford University Press).\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/living-planet\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 3172,
+            "year": 2026,
+            "published_at": "2026-04-28T15:00:46Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/PRsFERE6yks/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "PRsFERE6yks",
+                "url": "https://www.youtube.com/watch?v=PRsFERE6yks",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-6DW76SbvGB4",
+            "episode_number": 28,
+            "title": "Music of the Mind - Milton Mermikides",
+            "description": "00:00 | Introduction: The Brain as the Ultimate Technology\n02:55 | Why Music Engages the Entire Brain\n04:18 | Is Music Just \"Auditory Cheesecake\"?\n05:24 | Music for Life: How the Brain Never Loses It\n06:20 | Ravel's Aphasia: When Music Outlasts Language\n07:15 | Pat Martino: Relearning Jazz After Brain Surgery\n08:22 | Clive Wearing: Music Survives Extreme Amnesia\n10:23 | Lightning Strike Creates a Pianist: Tony Cicoria\n11:26 | Music as Memory Thread: Instant Song Recognition\n13:34 | Music as Treatment for Dementia\n14:07 | How We Really Listen: Auditory Scene Analysis\n15:06 | Top-Down Listening: The Cochlear Implant Demo\n16:24 | Phantom Words & Laurel vs. Yanny\n20:24 | The McGurk Effect: Seeing Changes What You Hear\n21:46 | Speech Becomes Song: Diana Deutsch's Sing-Song Effect\n26:08 | Pitch as a Circle: Octave Equivalence Explained\n27:31 | Shepard Tone & the Tritone Paradox\n31:28 | Musical Streaming Illusions on a Single Guitar\n34:00 | Tchaikovsky's Cross Motif & Symphony No. 6\n37:15 | Music, Emotion & Prediction: Mount Groove\n40:15 | Conclusion: Music as Social Signal & Food for Love\n\nWatch the Q&A session: https://youtu.be/D3hZrtRPSpg\n\nWhere does music live in the mind? Is it an evolutionary byproduct, a trick of perception—or something deeper? From Pinker’s auditory cheesecake to sonic illusions like the McGurk effect and Deutsch’s phantom melodies, music plays with our senses in ways we barely comprehend. Yet its ties to language, memory, and emotion suggest it is fundamental to human thought. Can we see its traces in the brain? This lecture explores whether music is a fleeting illusion—or the key to understanding the mind itself.\n\nThis lecture was recorded by Milton Mermikides on the 15th of April 2026 at LSO, London\n\nMilton Mermikides is a composer, guitarist, technologist, academic and educator in a wide range of musical styles and has collaborated with artists and scientists as diverse as Evelyn Glennie, Tim Minchin, Pat Martino, Peter Zinovieff, John Williams and Brian Eno. Son of a CERN nuclear physicist, he was raised with an enthusiasm for both the arts and sciences, an eclecticism which has been maintained throughout his teaching, research and creative career. \n\nHe is a graduate of the London School of Economics (BSc), Berklee College of Music (BMus) and the University of Surrey (PhD). He has lectured, exhibited and given keynote presentations at organisations like the Royal Academy of Music, TEDx, Royal Musical Association, British Library, Smithsonian Institute and The Science Museum and his work has been featured extensively in the press. His music, research and graphic art are published and featured by Oxford University Press, Cambridge University Press, Deutsche Grammophon, Sony and more, and he has won awards, scholarships and commendations for writing, teaching, research and his charity work.      \n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/music-mind\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2727,
+            "year": 2026,
+            "published_at": "2026-04-24T15:00:13Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/6DW76SbvGB4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "6DW76SbvGB4",
+                "url": "https://www.youtube.com/watch?v=6DW76SbvGB4",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-i4A2ZOYiwbw",
+            "episode_number": 29,
+            "title": "\"Unsquaring” the Square Mile: Connecting People with Opportunity - Susan Langley",
+            "description": "0:00 // Introduction — from the East End to Mansion House\n0:46 // Social mobility in Britain is getting worse, not better\n1:24 // The moral and economic case for social mobility\n3:33 // Why business cannot leave this to government alone\n4:37 // A personal story — how belief shaped everything\n6:23 // The Lady Mayor title and why representation matters\n8:16 // Young people who can see the City but don't believe it's for them\n10:30 // Is this a skills gap or an opportunity gap?\n11:36 // The scale of unfilled vacancies across British industry\n12:43 // London's untapped talent pool — the economic inefficiency of exclusion\n13:57 // The macro case — social mobility as national prosperity\n15:10 // The micro case — performance, reputation and recruitment costs\n16:28 // The City of London's historic role in apprenticeships and skills\n18:31 // Three initiatives — West Ham Foundation, cadets and City Insight Days\n22:18 // The stories children are told about themselves\n23:32 // Reading, aspiration and the career adviser who said become a secretary\n25:26 // A call to action — building bridges between potential and opportunity\n\n\nWatch the Q&A session here: https://youtu.be/u_ronwHip7E\n\n\nMoving the conversation on social mobility out of the boardroom and into the mainstream, the Lady Mayor Dame Susan Langley will set out her ambition to connect people with opportunity and “unsquare” the Square Mile: ensuring nobody has to fit in a certain box to thrive in the UK’s financial capital. Joined by an expert panel, she’ll ask how we can change people’s view of the City and break down barriers that might hold people back from fulfilling their potential.  \n\nThis lecture was recorded by Lady Mayor Alderwoman Dame Susan Langley on the 13th of April 2026 at Bernard’s Inn Hall, London\n\nAlderwoman Dame Susan Langley became Lady Mayor of London 7th November 2025. She is the 697th Lord Mayor, the third woman to hold the office, and the first to be styled “Lady Mayor”.\nDame Susan Langley is Chair of Gallagher UK, and the Senior Independent Director for UKAR (Northern Rock Asset Management and Bradford and Bingley). Previously she was the Lead Non-Executive Director for the Home Office, a Trustee for Macmillan Cancer, CEO Financial & Professional Services at the Department for International Trade (DIT), Executive Director North America and Market Development for Lloyd's of London, Director of Lloyd’s Asia and Chairman of Lloyd’s Japan. Prior to this, Susan held various Insurance Board positions. She joined the Insurance Market from PriceWaterhouseCoopers where she was a Principal Consultant working with a range of FTSE 100 companies.\nA founding member of the Government Women's Business Council, she is a past recipient of the Insurance Institute of London (IIL) President’s Award, the FS Women in the City Achievement Award, Women to Watch, Leading Women in Reinsurance and top 20 inspirational City Women. Born in the East End, she is passionate about social mobility and involved in a number of charitable and mentoring roles. In 2015 she received an OBE for services to women in business and in 2023, a DBE for public service to the financial services industry. Dame Susan graduated (BSc Hons) from Southampton University and married Gary in 2003. She is a Liveryman of the Insurers and Drapers and a Freeman of the Goldsmiths. Dame Susan is the Alderwoman for the City of London Aldgate Ward and served as Aldermanic Sheriff of the City of London 2023/2024.\n\n\nThe transcript of the lecture is available from the Gresham College website: https://www.gresham.ac.uk/watch-now/lady-mayor-26\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham College's mission, please consider making a donation: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today\n \nWebsite:  https://gresham.ac.uk\nX: https://x.com/GreshamCollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege\nBluesky: https://bsky.app/profile/greshamcollege.bsky.social \nTikTok: https://www.tiktok.com/@greshamcollege\nSupport Us: https://www.gresham.ac.uk/get-involved/support-us/make-donation/donate-today",
+            "duration": 1725,
+            "year": 2026,
+            "published_at": "2026-04-21T15:01:13Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/i4A2ZOYiwbw/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "i4A2ZOYiwbw",
+                "url": "https://www.youtube.com/watch?v=i4A2ZOYiwbw",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-vIk-_cP95H4",
+            "episode_number": 30,
+            "title": "The Shape of Gravity: Why On Earth Are Planets Spherical? - Alain Goriely",
+            "description": "00:00 // Introduction: The Shape of Planets\n00:44 // Ancient Greeks & the Spherical Earth\n02:50 // Newton vs Cassini: The Great Debate\n08:29 // Measuring the Earth: Triangulation Explained\n12:39 // The Expeditions to Lapland & Peru\n16:45 // Gladys West & Modern Geodesy (GPS)\n18:24 // Fluid Planets: Maclaurin & Jacobi Ellipsoids\n25:24 // Poincaré's Pear-Shaped Planets & Bifurcation\n30:37 // Europa, Earth Tides & the Search for Life\n33:32 // Elastic Planets, Gravitational Collapse & Exoplanets\n\nWatch the Q&A session: https://youtu.be/f6dVA1E-ehg\n\nWe often take for granted that planets, shaped by the force of gravity, are spherical. However, a closer look reveals that the Earth is not a perfect sphere—it is slightly squashed. But is it squashed like a pumpkin or more like a peanut? And is the sphere truly the only possible shape for a planet? As planets grow larger and must sustain increasingly extreme forces, can we still assume they maintain a spherical shape? These seemingly simple questions have fascinated scientists and mathematicians since the time of Newton, giving rise to profound mathematical theories that deepen our understanding of the universe.\n\nThis lecture was recorded by Alain Goriely on the 3rd of March 2026 at Barnard’s Inna Hall, London\n\nAlain Goriely is a mathematician with broad interests in mathematical methods, mechanics, sciences, and engineering. He is well known for his contributions to dynamical systems, mathematical biology, as well as fundamental and applied mechanics. He is particularly well known for the development of a mathematical theory of biological growth, culminating with his seminal monograph The Mathematics on Mechanics of Biological Growth (2017).\n\nHe received his PhD from the University of Brussels in 1994 where he became a lecturer. In 1996, he joined the University of Arizona where he established a research group within the renowned Program of Applied Mathematics. In 2010, he joined the University of Oxford as the inaugural Statutory Professor of Mathematical Modelling and fellow of St. Catherine’s College. He is currently the Director of the Oxford Centre for Industrial and Applied Mathematics.\n\nIn addition, Alain has enjoyed scientific outreach based on problems connected to his research, including tendril perversion in plants, twining plants, umbilical cord knotting, whip cracking, the shape of seashells, brain modelling, and he is the author of a Very Short Introduction to Applied Mathematics (2017). His work has been recognized by a Sloan Fellowship, a Royal Society Wolfson Research Award, the Cozzarelli Prize from the National Academy of Sciences and the Engineering Medal from the Society of Engineering Sciences. He was elected as a Fellow of the Royal Society in 2022.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/shape-gravity\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2926,
+            "year": 2026,
+            "published_at": "2026-04-17T15:01:44Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/vIk-_cP95H4/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "vIk-_cP95H4",
+                "url": "https://www.youtube.com/watch?v=vIk-_cP95H4",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-BRsM6oMrzHI",
+            "episode_number": 31,
+            "title": "The Death of Athenian Democracy? - Melissa Lane",
+            "description": "00:00 // Did Athenian Democracy End with a Bang or Whimper?\n01:37 // What Is Democracy? Inclusion vs Independence\n04:25 // Early Signs of Decline in Athens\n07:54 // Why There’s No Single “End” Date\n10:05 // Defending Democracy: Demosthenes vs Macedon\n16:37 // Athens Defeated: Battle of Chaeronea\n19:59 // Oligarchy Imposed Under Macedonian Rule\n23:08 // Was It Still Democracy? Demetrius’ Reforms\n29:33 // Democracy Restored by Foreign Power\n32:53 // The “Whimper”: Slow Erosion of Democracy\n36:23 // Rome Takes Control of Athens\n39:09 // Conclusion: How Democracies Really End\n\nWatch the Q&A session: https://youtu.be/TMav7kdZFhU\n\nThe death of Athenian democracy is as difficult to date definitively as its birth. Was it 338 BCE, when the battle of Chaeronea brought the city under Macedon’s thumb? Or 322 BCE, when Athens was defeated in another battle, which led to the installing of a Macedonian garrison that would remain in the city for over a century? What kinds of constitution could the Athenians institute in such circumstances, and how do they compare to the heyday of their democracy?\n\nThis lecture was recorded by Melissa Lane on the 12th of March 2026 at Barnard’s Inna Hall, London\n\nMelissa Lane is the Class of 1943 Professor of Politics, Princeton University and is also Associated Faculty in the Department of Classics and Department of Philosophy. Previously she was Senior University Lecturer at Cambridge University in the Faculty of History and Fellow of King’s College, Cambridge.\n\nShe studied for her first degree in Social Studies (awarded summa cum laude) at Harvard University, and then took an MPhil and PhD in Philosophy at the University of Cambridge, where she was a student at King’s College, supported by appointments as a Marshall Scholar, Truman Scholar, and Mary Isabel Sibley Fellow of Phi Beta Kappa.\n\nProfessor Lane is an author, lecturer and broadcaster who has received major awards including being named a Guggenheim Fellow, and the Lucy Shoe Meritt Resident in Classical Studies at the American Academy in Rome. She has published widely in journals and authored or introduced nine major books including Greek and Roman Political Ideas; Eco-Republic; and most recently, Of Rule and Office: Plato’s Ideas of the Political, which was awarded the 2024 Book Prize of the Journal of the History of Philosophy.\n\nProfessor Lane is the only person ever to have delivered both the Carlyle Lectures and the Isaiah Berlin Lectures at the University of Oxford.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/death-athenian-democracy\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2621,
+            "year": 2026,
+            "published_at": "2026-04-14T16:00:14Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/BRsM6oMrzHI/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "BRsM6oMrzHI",
+                "url": "https://www.youtube.com/watch?v=BRsM6oMrzHI",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-AVbxIlHhhlc",
+            "episode_number": 32,
+            "title": "Guantánamo on the Euphrates? Syria in a Time of Opportunity - Clive Stafford Smith",
+            "description": "00:06 | Introduction: Western Policy Failures in the Middle East\n00:45 | The Pattern of Mistakes: From Somalia to Iran\n02:27 | Afghanistan: A $6 Trillion Failure\n04:01 | Libya, Iraq & Yemen: The Same Story\n05:45 | Syria & Iran: No Plan, No Exit Strategy\n07:06 | You Can't Bomb the World Into Peace\n08:24 | Is There a Plan for Syria?\n09:57 | Assad, the Arab Spring & Western Preference for Dictators\n10:50 | The Kurdish Region: Rojava & Northeast Syria\n12:04 | How Britain Drew the Lines That Broke Kurdistan\n14:01 | Al-Julani & the Fall of Assad: Nobody Saw It Coming\n14:23 | Bilal Abdul Karim: The American Journalist ISIS Tried to Kill\n16:57 | Negotiating With HTS: A Lawyer Calls ISIS\n18:24 | Working With the Kurds in Northeast Syria\n21:18 | Guantanamo on the Euphrates: 78,000 Detainees\n24:56 | Getting Americans Out of the Syrian Camps\n27:55 | Roger Waters & the Orphan Children\n31:07 | Shamima Begum & Britain's Nationality Stripping\n32:52 | Jack Letts: The ADHD Kid Britain Abandoned\n37:09 | What a Real Plan for Syria Could Look Like\n\nWatch the Q&A session: https://youtu.be/TKgkdxh7RFE\n\nIn this lecture, Professor Stafford Smith looks at current challenges and opportunities in Syria. He has visited Syria mainly to help Camp Roj and Camp Al-Hol prisoners (including Shamima Begum and 60,000 others), while also dealing with Syrian opposition group Hay'at Tahrir al-Sham (HTS), when they imprisoned and tortured some of his clients. Now in power, HTS are facing the consequences of years of civil war. What are the challenges and what can advocates do to help them?\n\nThis lecture was recorded by Stafford Smith on the 19th of March 2026 at Barnard’s Inn Hall, London\n\nClive Stafford Smith JD OBE is a dual UK-US national, the founder and director of  the Justice League, a non-profit human rights training centre focused on fostering the next generation of advocates. \n\nHe was the Senior Prefect at Radley College, where he studied maths and science; then a Morehead Scholar at the University of North Carolina (Chapel Hill), where he took a degree in Politics; and a Stone Merit Scholar each of his three years at Columbia Law School, graduating in 1984. \n\nHe previously founded and directed the legal action charities Louisiana Capital Assistance Center (1993 in New Orleans) and Reprieve (1999 in London). Since 1984 he has tried many capital cases, and helped to represent over 400 people facing execution in the US and elsewhere. He also brought the first challenge to Guantánamo Bay, where he has secured the release of 85 detainees, and continues to assist the remaining 30.  In all five of the cases he has helped bring to the U.S. Supreme Court the petitioner has prevailed. \n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/guantanamo-syria\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2542,
+            "year": 2026,
+            "published_at": "2026-04-10T15:00:19Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/AVbxIlHhhlc/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "AVbxIlHhhlc",
+                "url": "https://www.youtube.com/watch?v=AVbxIlHhhlc",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-7WfG-JPFt1k",
+            "episode_number": 33,
+            "title": "The Universe’s 100th Birthday: Galactic Fireworks and Little Red Dots - Chris Lintott",
+            "description": "00:00 // Introduction & The Mystery of Little Red Dots\n01:00 // James Webb Space Telescope: Launch & Mission\n02:06 // JWST's First Images & The Discovery of Little Red Dots\n03:47 // Why Little Red Dots Are the Hottest Topic in Astrophysics\n04:25 // Our Place in the Universe: The Milky Way\n05:21 // The Great Debate: Do Other Galaxies Exist?\n06:03 // Edwin Hubble & The Discovery of External Galaxies\n08:05 // Hubble's 1926 Paper: Mapping the Universe\n10:14 // The Expanding Universe & Counting Galaxies\n12:22 // The Need for Bigger Telescopes: George Hale's Vision\n14:35 // Galaxy Evolution: How the Universe Changes Over Time\n18:32 // The Keck Telescopes & Hubble Deep Field\n20:39 // Galaxy Mergers & Collisions\n22:44 // Quasars & The Discovery of Black Holes\n27:10 // Black Holes as the Universe's Most Efficient Power Source\n30:41 // Galaxy Zoo & Galaxies That Switch States\n32:17 // Returning to Little Red Dots: What Do We Know?\n35:44 // Three Problems: Why Simple Explanations Fail\n39:18 // The Quasi-Star Theory: Zombie Stars & Growing Black Holes\n46:15 // Conclusion: What Little Red Dots Tell Us About the Cosmos\n\nWatch the Q&A session here: https://youtu.be/5JstI6rQoWg\n\n100 years ago this year, Edwin Hubble published the first conclusive evidence that there were galaxies beyond the Milky Way. This lecture, using new results from our latest space telescopes and ground-based instruments, surveys the diversity of systems that we’ve found since, from giant and beautiful spirals to mysterious Little Red Dots.\n\nThis lecture was recorded by Chris Lintott on 18th March 2026 at Conway Hall, London.\n\nProfessor Chris Lintott is a Professor of Astrophysics at the University of Oxford, and a Research Fellow at New College.\n\nHaving been educated at Magdalene College, Cambridge and University College London, his research now ranges from understanding how galaxies form and evolve, to using machine learning to find the most unusual things in the Universe, to predicting the properties of visiting interstellar asteroids. He was the founder of the Zooniverse citizen science platform, which provides opportunities for more than two million online volunteers to contribute to scientific research, and which was the topic of his first book, 'The Crowd and the Cosmos’. His latest book is ‘Our Accidental Universe’. \n\nProfessor Lintott is best known for presenting the BBC's long-running Sky at Night program, and as an accomplished lecturer. Away from work, he cooks, suffers through being a fan of Torquay United and Somerset cricket, and spends time with a rescued lurcher, Mr Max. He can often be found at the helm of Oxford’s science comedy night, ‘Huh, That’s Funny’.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/universe-100\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2914,
+            "year": 2026,
+            "published_at": "2026-04-08T14:00:09Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/7WfG-JPFt1k/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "7WfG-JPFt1k",
+                "url": "https://www.youtube.com/watch?v=7WfG-JPFt1k",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-nE4HMZ56AG8",
+            "episode_number": 34,
+            "title": "Bridget: Goddess and Saint - Ronald Hutton",
+            "description": "00:00 | Introduction: Who Is Bridget?\n01:06 | Four Different Bridgets: An Overview\n05:53 | The Modern Bridget: A Recent Invention\n06:45 | French Nationalism & the Celtic Revival\n08:50 | The Irish Literary Revival & Whitley Stokes\n10:14 | Scottish Nationalists & William Sharp\n12:11 | The Golden Bough & Popular Myth-Making\n13:56 | The Folkloric Bridget: Customs & Traditions\n17:40 | Brigid's Cross: Tracing a Folk Tradition\n19:10 | Carmina Gadelica: Beauty vs. Authenticity\n23:10 | The Medieval Saint: Sources & Problems\n27:14 | Political Rivalry Behind the Hagiographies\n29:29 | The Saint's Miracles & Personality\n35:06 | The Medieval Goddess: Scarce Evidence\n41:19 | The Sacred Fire at Kildare\n44:17 | Was Brigid Ever a Fire Goddess?\n46:47 | Conclusion: Freedom in Ambiguity\n\nWatch the Q&A session: https://youtu.be/wgm4VTlszMo\n\nBridget is the most popular Celtic goddess or saint in modern spirituality. She straddles the pagan and Christian division as no other figure does, and remains entirely benign while being also independent and capable. She is at once the Mother Saint of Gaelic people and a pagan goddess of healing, poetry and smithcraft. This lecture examines the very tangled history that lies behind this identity. It asks if the goddess became the saint, or if they were different beings, and how good the evidence is for the existence of a real woman or a genuine pagan deity behind all the mythology.\n\nThis lecture was recorded by Ronald Hutton on the 10th of March 2026 at Barnard’s Inna Hall, London\n\nProfessor Hutton is Professor of History at the University of Bristol. He took degrees at Cambridge and then Oxford Universities, and was a fellow of Magdalen College, Oxford. He is now a Fellow of the British Academy, the Royal Historical Society, the Society of Antiquaries and the Learned Society of Wales, and has won awards for teaching and research.\n\nHe has lectured all over the world, authored twenty books and ninety-six essays, appeared in or presented scores of television and radio programmes, and sits on the editorial boards of six journals concerned with the history of religion and magic.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/goddess-bridget\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2952,
+            "year": 2026,
+            "published_at": "2026-04-03T15:01:18Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/nE4HMZ56AG8/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "nE4HMZ56AG8",
+                "url": "https://www.youtube.com/watch?v=nE4HMZ56AG8",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        },
+        {
+            "id": "yt-ozn7pfPvgu0",
+            "episode_number": 35,
+            "title": "Oligarchs and Their Discontents - Melissa Lane",
+            "description": "00:00 // Introduction: Oligarchs & Their Discontents\n00:33 // Roman Patricians vs. Plebeians: The First Secession\n02:00 // What Is Oligarchy? Defining the Rule of the Few\n02:45 // Two Models of Oligarchic Power: Accommodation vs. Irredentism\n04:20 // The Accommodation Model: Menenius Agrippa's Body Politic Speech\n05:52 // The Irredentist Model: Coriolanus & Reactionary Resistance\n07:48 // Rome's Elitist Constitution: Why Accommodation Had Limits\n09:22 // Athens vs. Rome: Bottom-Up vs. Top-Down Power Structures\n11:40 // Athenian Democracy & Popular Accountability of Elites\n13:00 // Oligarchy as a Reaction to Democracy: The Greek World\n14:55 // The Peloponnesian War & The Rise of Oligarchic Revolts\n16:42 // The First Oligarchic Coup: The Council of 400 (411 BCE)\n18:00 // How the 400 Seized Power & Dismantled Democracy\n21:00 // The Fall of the 400 & Restoration of Democracy\n23:29 // The Second Oligarchic Takeover: The Thirty Tyrants (404 BCE)\n25:07 // How the Thirty Ruled Without Office: Unchecked Power\n28:00 // The Fall of the Thirty & The Restoration of Athenian Democracy\n29:12 // Amnesty & Accountability: Athens' Third Way\n33:40 // Lessons for Modern Democracies: Poland & Post-Populist Regimes\n35:00 // Conclusion: Taming Oligarchs — An Enduring Democratic Challenge\n\nWatch the Q&A session here: https://youtu.be/fCeO268VfsI\n\nOligarchical factions in Athens twice succeeded in taking power within and against the democracy: in 411 and 404 BCE. Before those events, an anonymous ‘Old Oligarch’ offered his perspective on the workings of democratic politics. In Rome, the ancient ‘secession of the plebs’ was later followed by the Gracchi brothers’ iconic efforts to curb patrician powers. This lecture looks at the dynamics of oligarchic power within ancient popular regimes and to what extent it was successfully resisted.\n\nThis lecture was recorded by Professor Melissa Lane on 5th March 2026 at Barnard’s Inn Hall, London.\n\nMelissa Lane is the Class of 1943 Professor of Politics, Princeton University and is also Associated Faculty in the Department of Classics and Department of Philosophy. Previously she was Senior University Lecturer at Cambridge University in the Faculty of History and Fellow of King’s College, Cambridge.\n\nShe studied for her first degree in Social Studies (awarded summa cum laude) at Harvard University, and then took an MPhil and PhD in Philosophy at the University of Cambridge, where she was a student at King’s College, supported by appointments as a Marshall Scholar, Truman Scholar, and Mary Isabel Sibley Fellow of Phi Beta Kappa.\n\nProfessor Lane is an author, lecturer and broadcaster who has received major awards including being named a Guggenheim Fellow, and the Lucy Shoe Meritt Resident in Classical Studies at the American Academy in Rome. She has published widely in journals and authored or introduced nine major books including Greek and Roman Political Ideas; Eco-Republic; and most recently, Of Rule and Office: Plato’s Ideas of the Political, which was awarded the 2024 Book Prize of the Journal of the History of Philosophy.\n\nProfessor Lane is the only person ever to have delivered both the Carlyle Lectures and the Isaiah Berlin Lectures at the University of Oxford.\n\nThe transcript and downloadable versions of the lecture are available from the Gresham College website: https://www.gresham.ac.uk/watch-now/oligarchs-discontents\n\nGresham College has offered free public lectures for over 400 years, thanks to the generosity of our supporters. There are currently over 2,500 lectures free to access. We believe that everyone should have the opportunity to learn from some of the greatest minds. To support Gresham's mission, please consider making a donation: https://gresham.ac.uk/support/\n\nWebsite:  https://gresham.ac.uk\nTwitter:  https://twitter.com/greshamcollege\nFacebook: https://facebook.com/greshamcollege\nInstagram: https://instagram.com/greshamcollege",
+            "duration": 2202,
+            "year": 2026,
+            "published_at": "2026-03-31T15:00:57Z",
+            "thumbnail_url": "https://i.ytimg.com/vi/ozn7pfPvgu0/hqdefault.jpg",
+            "guests": [],
+            "source": {
+                "provider": "youtube",
+                "video_id": "ozn7pfPvgu0",
+                "url": "https://www.youtube.com/watch?v=ozn7pfPvgu0",
+                "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                "channel_title": "Gresham College",
+                "kind": "upload",
+                "embeddable": true,
+                "made_for_kids": false,
+                "privacy_status": "public",
+                "availability": "available",
+                "availability_detail": null,
+                "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "Approved for The Lecture Hall (2026-11-05): complete on-topic lecture."
+            }
+        }
+    ]
+}

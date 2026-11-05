@@ -1,0 +1,13 @@
+{
+    "_note": "\"items\" is empty -- this channel is entirely series-driven. All five series below are real Internet Archive imports (ia-import/ia-series-import.php, see series/<id>/series.json for the exact discovery query/collection used and each episode's editorial status/rights). Most but not all episodes are approved for rotation -- see programming.json for the recurring blocks that air them.",
+    "schema_version": 2,
+    "title": "RetroVision",
+    "items": [],
+    "series": [
+        { "ref": "../../series/retro-commercials/series.json" },
+        { "ref": "../../series/retro-industrial-films/series.json" },
+        { "ref": "../../series/retro-technology/series.json" },
+        { "ref": "../../series/retro-classic-tv/series.json" },
+        { "ref": "../../series/retro-everyday-life/series.json" }
+    ]
+}

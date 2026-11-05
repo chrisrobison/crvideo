@@ -1,0 +1,3507 @@
+{
+  "schema_version": 1,
+  "id": "retro-industrial-films",
+  "title": "Industrial America",
+  "description": "Corporate and industrial films from the Internet Archive's Prelinger Archives: factory tours, process films, and corporate image-building from mid-century American business.",
+  "creator": "Internet Archive (Prelinger Archives)",
+  "year": null,
+  "thumbnail_url": null,
+  "logo_url": null,
+  "source": {
+    "provider": "internet_archive",
+    "query": "collection:(prelinger) AND mediatype:(movies) AND (subject:(industrial) OR subject:(business) OR subject:(corporations))",
+    "collection": null
+  },
+  "rotation": {
+    "mode": "sequential",
+    "loop": true
+  },
+  "episodes": [
+    {
+      "id": "ia-Doctorin1946",
+      "episode_number": 1,
+      "title": "Doctor in Industry (Part I)",
+      "description": "Epic history of industrial medicine in the first half of the 20th century, showing how manufacturers and the medical profession came to terms with one another and culminating in GM's rehabilitation program for returned World War II veterans. Directed by Haford Kerbawy.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1127.86,
+      "year": 1946,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Doctorin1946",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Doctorin1946",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Doctorin1946/Doctorin1946.mp4",
+        "page_url": "https://archive.org/details/Doctorin1946",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Medicine: Industrial medicine",
+          "Medicine: Occupational health",
+          "World War II: Postwar issues"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Doctorin1946; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Technico1949",
+      "episode_number": 2,
+      "title": "Technicolor for Industrial Films",
+      "description": "Film promoting use of Technicolor process to industrial film producers.",
+      "creator": "Technicolor Corporation",
+      "duration": 489.92,
+      "year": 1949,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Technico1949",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Technico1949",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Technico1949/Technico1949.mp4",
+        "page_url": "https://archive.org/details/Technico1949",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Motion pictures: History",
+          "Motion pictures: Production",
+          "Motion pictures: Industrial"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Technico1949; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_4",
+      "episode_number": 3,
+      "title": "Oldsmobile Presents the \"Seventy\" B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 49.4,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_4/Oldsmobi1941_4.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_4",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_4; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-history_of_communication",
+      "episode_number": 4,
+      "title": "Communication",
+      "description": "Interested animated instructional film detailing electronic communications in the early part of the century. Interestingly enough, the popular vocational school DeVry claims that they began as a school in 1931, with no mention of the production of these informational films as early as (in the case of this film) 1928. 0616 PA8110 History of Communication",
+      "creator": "DeVry School Films, Inc.",
+      "duration": 1168.15,
+      "year": 1928,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/history_of_communication",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "history_of_communication",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/history_of_communication/history_of_communication.mp4",
+        "page_url": "https://archive.org/details/history_of_communication",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Communication: Telephone",
+          "Motion Pictures: Sponsored",
+          "Motion Pictures: Industrial",
+          "Electronics",
+          "Engineering"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item history_of_communication; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-DialDForDesi",
+      "episode_number": 5,
+      "title": "Dial D For Design (Pt 1)",
+      "description": "Produced by Cinefonics, Inc (a division of Cook Research Laboratories) and based on Engineering and Systems Integration Studies by Cook Research Laboratories. Written and Produced by Charles O. Probst, Directed by Ronald S. Klein. Opening title card: The purpose of this film is to illustrate a method to design, develop and test integrated displays and controls in accordance with MIL-P-25996. Obviously specific procedures vary according to contracts and projects. For further details contact Flight Control Laboratory, Wright Air Development Center.",
+      "creator": "Cinefonics, Inc.",
+      "duration": 770.76,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/DialDForDesi",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "DialDForDesi",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/DialDForDesi/DialDForDesi.mp4",
+        "page_url": "https://archive.org/details/DialDForDesi",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "Motion Pictures: Industrial",
+          "Engineering",
+          "Weapons"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DialDForDesi; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-DialDForDesi_2",
+      "episode_number": 6,
+      "title": "Dial D For Design (Pt 2)",
+      "description": "Produced by Cinefonics, Inc (a division of Cook Research Laboratories) and based on Engineering and Systems Integration Studies by Cook Research Laboratories. Written and Produced by Charles O. Probst, Directed by Ronald S. Klein. Opening title card: The purpose of this film is to illustrate a method to design, develop and test integrated displays and controls in accordance with MIL-P-25996. Obviously specific procedures vary according to contracts and projects. For further details contact Flight Control Laboratory, Wright Air Development Center.",
+      "creator": "Cinefonics, Inc.",
+      "duration": 953.95,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/DialDForDesi_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "DialDForDesi_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/DialDForDesi_2/DialDForDesi_2.mp4",
+        "page_url": "https://archive.org/details/DialDForDesi_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "Motion Pictures: Industrial",
+          "Engineering",
+          "Weapons"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DialDForDesi_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Chevrole1954",
+      "episode_number": 7,
+      "title": "[Chevrolet Sales Convention Musical]",
+      "description": "Rare record of song-and-dance at a Chevrolet sales convention, designed to motivate the sales force.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 915.15,
+      "year": 1954,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Chevrole1954",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Chevrole1954",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Chevrole1954/Chevrole1954.mp4",
+        "page_url": "https://archive.org/details/Chevrole1954",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Sales",
+          "Industrial theater",
+          "Advertising: In-house"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Chevrole1954; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Aluminum1956_2",
+      "episode_number": 8,
+      "title": "Aluminum on the March (Part II)",
+      "description": "How aluminum contributes to everyday living and national defense: appliances, packaging, airplanes, etc. With great stop-motion animation and excellent imagery of aluminum-enabled Fifties America.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 845.68,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Aluminum1956_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Aluminum1956_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Aluminum1956_2/Aluminum1956_2.mp4",
+        "page_url": "https://archive.org/details/Aluminum1956_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Metals: Aluminum",
+          "Animation: Stop-motion",
+          "Design: Industrial"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Aluminum1956_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Aluminum1956",
+      "episode_number": 9,
+      "title": "Aluminum on the March (Part I)",
+      "description": "PLEASE NOTE: A one-part, higher-quality version of this film is now here.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 819.72,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Aluminum1956",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Aluminum1956",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Aluminum1956/Aluminum1956.mp4",
+        "page_url": "https://archive.org/details/Aluminum1956",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Metals: Aluminum",
+          "Animation: Stop-motion",
+          "Design: Industrial"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Aluminum1956; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-NewspaperSto",
+      "episode_number": 10,
+      "title": "Newspaper Story",
+      "description": "Steps in the completion of a newspaper story from recording the incident through the taking & finishing of pictures, writing, editing, setting in type, printing the paper & distributing it are depicted. Produced by Encyclopedia Britannica Films, Inc. in collaboration with Kenneth E. Olson, LL.D, Northwestern University.",
+      "creator": "Encyclopedia Britannica Films, Inc.",
+      "duration": 988.46,
+      "year": 1950,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/NewspaperSto",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "NewspaperSto",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/NewspaperSto/NewspaperSto.mp4",
+        "page_url": "https://archive.org/details/NewspaperSto",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Industrial",
+          "Journalism",
+          "Publishing"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item NewspaperSto; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-0548_American_Maker",
+      "episode_number": 11,
+      "title": "American Maker",
+      "description": "Relates how Americans build, from youth throughout life, by using their ingenuity not only in technological advancement but in everyday efforts by everyone.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1516.31,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/0548_American_Maker",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "0548_American_Maker",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/0548_American_Maker/0548_American_Maker_13_29_48_15_3mb.mp4",
+        "page_url": "https://archive.org/details/0548_American_Maker",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Chevrolet, industrial films, sponsored films, institutional advertising, automobiles, 1960s, suburbia"
+        ],
+        "mediatype": "movies",
+        "format": "MPEG4",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-TheseAre1944",
+      "episode_number": 12,
+      "title": "These Are the People",
+      "description": "Workers of a Wisconsin town mobilize for World War II production.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 957.66,
+      "year": 1944,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/TheseAre1944",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "TheseAre1944",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/TheseAre1944/TheseAre1944.mp4",
+        "page_url": "https://archive.org/details/TheseAre1944",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Homefront",
+          "World War II: Industrial production",
+          "Occupations: Pulp and paper"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TheseAre1944; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Manpower1943",
+      "episode_number": 13,
+      "title": "Manpower",
+      "description": "The battle for industrial production in World War II.",
+      "creator": "U.S. Office of War Information",
+      "duration": 513.48,
+      "year": 1943,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Manpower1943",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Manpower1943",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Manpower1943/Manpower1943.mp4",
+        "page_url": "https://archive.org/details/Manpower1943",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Homefront",
+          "World War II: Industrial production"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Manpower1943; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-DefenseC1941",
+      "episode_number": 14,
+      "title": "Defense Comes First With Oldsmobile (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles, emphasizing Oldsmobile's adaptability under wartime conditions.",
+      "creator": "Unknown",
+      "duration": 49.68,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/DefenseC1941",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "DefenseC1941",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/DefenseC1941/DefenseC1941.mp4",
+        "page_url": "https://archive.org/details/DefenseC1941",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DefenseC1941; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Unfinish1948",
+      "episode_number": 15,
+      "title": "Unfinished Business",
+      "description": "Postwar adjustment is easy for a young World War II veteran who is welcomed back to his job at U.S. Steel with a position, training courses, and counseling.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1213.75,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Unfinish1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Unfinish1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Unfinish1948/Unfinish1948.mp4",
+        "page_url": "https://archive.org/details/Unfinish1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Postwar issues",
+          "Occupations: Steelworkers",
+          "World War II: Industrial production"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Unfinish1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ThesePeo1944",
+      "episode_number": 16,
+      "title": "These People",
+      "description": "Frigidaire plant converts to military production during World War II.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 929.9,
+      "year": 1944,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ThesePeo1944",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ThesePeo1944",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ThesePeo1944/ThesePeo1944.mp4",
+        "page_url": "https://archive.org/details/ThesePeo1944",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Homefront",
+          "Occupations",
+          "World War II: Industrial production"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ThesePeo1944; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941",
+      "episode_number": 17,
+      "title": "Oldsmobile Presents Motoring's Magic Carpet Hydra-Matic B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 50.22,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941/Oldsmobi1941.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-202275_Television_Commercials_Classic_Comedy",
+      "episode_number": 18,
+      "title": "Television Commercials: Classic and Comedy",
+      "description": "Assembled reel of \"classic\" television commercials. Note: Sound on film print is out of sync.",
+      "creator": null,
+      "duration": 1414.83,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/202275_Television_Commercials_Classic_Comedy",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "202275_Television_Commercials_Classic_Comedy",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/202275_Television_Commercials_Classic_Comedy/202275_Television_Commercials_Classic_Comedy_master.intros_H.264.ia.mp4",
+        "page_url": "https://archive.org/details/202275_Television_Commercials_Classic_Comedy",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Business",
+          "Commerce",
+          "Capitalism",
+          "1960s",
+          "1970s",
+          "Beverages",
+          "Gender roles"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Doctorin1946_2",
+      "episode_number": 19,
+      "title": "Doctor in Industry (Part II)",
+      "description": "Epic history of industrial medicine in the first half of the 20th century, showing how manufacturers and the medical profession came to terms with one another and culminating in GM's rehabilitation program for returned World War II veterans. Directed by Haford Kerbawy.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1125.19,
+      "year": 1946,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Doctorin1946_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Doctorin1946_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Doctorin1946_2/Doctorin1946_2.mp4",
+        "page_url": "https://archive.org/details/Doctorin1946_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Medicine: Industrial medicine",
+          "Medicine: Occupational health",
+          "World War II: Postwar issues"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Doctorin1946_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-CloseHar1942",
+      "episode_number": 20,
+      "title": "Close Harmony",
+      "description": "Discussion on the need for unity between labor and management as the U.S. mobilizes for World War II.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 663.33,
+      "year": 1942,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/CloseHar1942",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "CloseHar1942",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/CloseHar1942/CloseHar1942.mp4",
+        "page_url": "https://archive.org/details/CloseHar1942",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Homefront",
+          "World War II: Industrial production",
+          "Race relations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item CloseHar1942; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Successi1928",
+      "episode_number": 21,
+      "title": "Success in Business",
+      "description": "Story of a middle-class white-collar worker who finds the way to succeed in business, making his wife and family happy and enjoying affluence.",
+      "creator": "Unknown",
+      "duration": 676.74,
+      "year": 1928,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Successi1928",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Successi1928",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Successi1928/Successi1928.mp4",
+        "page_url": "https://archive.org/details/Successi1928",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Business",
+          "Occupations: Clerical"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Successi1928; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_5",
+      "episode_number": 22,
+      "title": "Oldsmobile Presents the \"Sixty\" B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 49.82,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_5",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_5",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_5/Oldsmobi1941_5.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_5",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_5; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-MenandJo1944",
+      "episode_number": 23,
+      "title": "Men and Jobs",
+      "description": "How the U.S. government tried to match every person to a job during World War II.",
+      "creator": "Berndt-Maurer Corporation",
+      "duration": 526.96,
+      "year": 1944,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/MenandJo1944",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "MenandJo1944",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/MenandJo1944/MenandJo1944.mp4",
+        "page_url": "https://archive.org/details/MenandJo1944",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Homefront",
+          "World War II: Industrial production",
+          "Labor: 1940s"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MenandJo1944; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_3",
+      "episode_number": 24,
+      "title": "Oldsmobile Presents the \"Custom 8 Cruiser\" B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 50.58,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_3/Oldsmobi1941_3.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-winning_against_odds",
+      "episode_number": 25,
+      "title": "Winning Against Odds",
+      "description": "0586 PA8230 Winning Against Odds",
+      "creator": "Caterpillar Tractor Co.",
+      "duration": 647.64,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/winning_against_odds",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "winning_against_odds",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/winning_against_odds/winning_against_odds.mp4",
+        "page_url": "https://archive.org/details/winning_against_odds",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "World War II: Homefront",
+          "World War II: Industrial Production"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item winning_against_odds; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Oldsmobi1941_2",
+      "episode_number": 26,
+      "title": "Oldsmobile Presents the B-44 (1942 Oldsmobile Playlets)",
+      "description": "Theatrical screen ad for one of the last pre-World War II automobiles.",
+      "creator": "Unknown",
+      "duration": 49.72,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Oldsmobi1941_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Oldsmobi1941_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Oldsmobi1941_2/Oldsmobi1941_2.mp4",
+        "page_url": "https://archive.org/details/Oldsmobi1941_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Automobiles: Advertising",
+          "World War II: Industrial production",
+          "World War II: Prewar preparedness"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Oldsmobi1941_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Doctorin1946_3",
+      "episode_number": 27,
+      "title": "Doctor in Industry (Part III)",
+      "description": "Epic history of industrial medicine in the first half of the 20th century, showing how manufacturers and the medical profession came to terms with one another and culminating in GM's rehabilitation program for returned World War II veterans. Directed by Haford Kerbawy.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 1125.19,
+      "year": 1946,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Doctorin1946_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Doctorin1946_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Doctorin1946_3/Doctorin1946_3.mp4",
+        "page_url": "https://archive.org/details/Doctorin1946_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Medicine: Industrial medicine",
+          "Medicine: Occupational health",
+          "World War II: Postwar issues"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Doctorin1946_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Suggesti1945",
+      "episode_number": 28,
+      "title": "Suggestion Box",
+      "description": "How war plant workers made suggestions that resulted in efficiency and economy.",
+      "creator": "U.S. Office of War Information",
+      "duration": 535.24,
+      "year": 1945,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Suggesti1945",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Suggesti1945",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Suggesti1945/Suggesti1945.mp4",
+        "page_url": "https://archive.org/details/Suggesti1945",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "World War II: Homefront",
+          "World War II: Industrial production"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Suggesti1945; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-pages_from_an_open_book_1",
+      "episode_number": 29,
+      "title": "Pages From an Open Book (Part I)",
+      "description": "Report on Metropolitan Insurance business operations for 1947. PA9071 Pages From an Open Book 16 Koda print",
+      "creator": "Metropolitan Insurance",
+      "duration": 1256.83,
+      "year": 1947,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/pages_from_an_open_book_1",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "pages_from_an_open_book_1",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/pages_from_an_open_book_1/pages_from_an_open_book_1.mp4",
+        "page_url": "https://archive.org/details/pages_from_an_open_book_1",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "Occupations: Insurance",
+          "Business"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item pages_from_an_open_book_1; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-6360MoodOfSanFrancisco01133811",
+      "episode_number": 30,
+      "title": "Mood of San Francisco",
+      "description": "Mood of San Franciscoca. early 1960s",
+      "creator": "American Airlines",
+      "duration": 274.56,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6360MoodOfSanFrancisco01133811",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6360MoodOfSanFrancisco01133811",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6360MoodOfSanFrancisco01133811/6360_Mood_of_San_Francisco_01_13_38_11.mp4",
+        "page_url": "https://archive.org/details/6360MoodOfSanFrancisco01133811",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-0316FlyingBusinessman",
+      "episode_number": 31,
+      "title": "Flying Businessman",
+      "description": "About using general aviation in business. VS night shots of airline neon signs at airport (Western Airlines) VS people at airport counter, clerk VS flight attendants and passengers inside airplane (good) People receiving service, passengers talking, etc. 2 businessmen talking in adjoining seats Businessman-types disembarking from plane down stairway VS air taxi service VS Air Taxi service signs VS U-Drive and Rent-a-Car signs VS People being picked up by airport courtesy cars Businessman getting into courtesy car VS courtesy cars driving Men entering St. Louis Post-Dispatch plane Secretary transcribing on plane CU executive dictating on plane CU pencil pointing out details on blueprint of corporate plane CU woman applying lipstick in mirror on corporate plane CU executive taking off glasses thoughtfully while riding on plane CU executive talking on air to ground phone, handing papers to subordinate Executive adjusting air flow Man washing face in bathroom VS executives on rural airstrips Sheep rancher forcing sheep into trailer VS various kinds of businessmen who might own planes, some shown with planes (good); narrator explains who they are Flight student / lesson / instruction sequence Businessmen inspecting plane (pre-purchase or pre-flight lesson) VS instructor and businessman engaged in flight instruction CU hand checking instruments on Cessna (CU Cessna wheel in front of frame) CU brown shoes with holes in them depressing pedals VS flight instruction, seen from inside and outside the aircraft Student and instructor sitting in café, served by waitress Instructor watching student Aerocar sequence (good!) (futuristic family or small-business airplane meant for personal transportation) last few minutes not fully logged",
+      "creator": "Film Originals",
+      "duration": 786.48,
+      "year": 1953,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/0316FlyingBusinessman",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "0316FlyingBusinessman",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/0316FlyingBusinessman/0316_Flying_Businessman.mp4",
+        "page_url": "https://archive.org/details/0316FlyingBusinessman",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "aviation",
+          "business"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-170005-001",
+      "episode_number": 32,
+      "title": "Home movie: 170005_001: California and Oregon places with Celilo Falls",
+      "description": "Home movie: 170005_001: California and Oregon places with Celilo Falls",
+      "creator": null,
+      "duration": 1956.06,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/170005-001",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "170005-001",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/170005-001/170005_001.ia.mp4",
+        "page_url": "https://archive.org/details/170005-001",
+        "license": null,
+        "collections": [
+          "prelingerhomemovies",
+          "prelinger"
+        ],
+        "subjects": [
+          "1940s",
+          "California",
+          "Visalia",
+          "parade",
+          "Oregon",
+          "Multnomah Falls",
+          "Columbia River gorge",
+          "Crown Point",
+          "Bonneville Dam",
+          "U.S. 30",
+          "The Dalles dam",
+          "Mount Hood",
+          "railroad bridge",
+          "Cascade mountains",
+          "Crooked River",
+          "Deschutes River",
+          "Pacific Ocean",
+          "beach",
+          "Highway 101",
+          "Yaquina Bay",
+          "Newport",
+          "Carquinez Strait",
+          "San Francisco Bay",
+          "car ferry",
+          "industrial shoreline",
+          "Contra Costa County",
+          "San Francisco-Oakland Bay Bridge construction",
+          "Celilo Falls",
+          "tribes",
+          "tribal fishing"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-0316AirportAmerica",
+      "episode_number": 33,
+      "title": "Airport America",
+      "description": "Advocates increased airport construction, especially in rural America. Describes the centrality of general aviation to the U.S. economy. Many aerials of American townscapes, farms throughout Steam train Couple cranking and driving old cranked automobile (supposed to be 1903) Rutted road Crowded LA freeway – many cars in one direction, few in another The “Stack” near downtown LA Old barnstorming pilot; well-dressed couple gets out of old biplane Passengers at North Platte airport VS crowds at airport Passengers greeting plane Skeletons of new terminal buildings under construction VS aerials and street-level shots of small American towns (good) Aerial small-town airport Old yellow-cab station wagon pulling in at small-town airport VS small-town airports Sign: Vicksburg Airport, Vicksburg, Miss. VS small private planes at small airports Man whitewashing lines on stones to form control boundary at small airport Aerials of rural airports Construction and survey crews at small airports (VS) VS harvestable crops (wheat sheaves) VS wheat harvesting with 2 combines and trucks Man painting cropduster – sign “South Carolina Aerial Surveying Service Inc.” VS man starting engine on biplane VS biplane cropdusting CU pilot with goggles looking into and onside of camera which is placed in cockpit of cropduster (good obsessive image showing cropdusting) Farmer paying check to pilot Airplane lands in field to deliver spare part to harvesting combine (music same as Goodbye Mr. Roach hatching sequence) VS harvesting and maintenance VS burned tree trunks and timber post forest fire Forest Service plane taking off at airstrip VS Smokejumpers parachuting out of plane (seen from plane window looking back) Air-to-air shot looking down on insect-spraying plane, spraying insecticide from both sings Logger felling tree (Douglas fir?) VS logging; trees breaking and falling Logging truck with logs pulling away with sunset in background Cart pulling gleaming plane out of hangar VS runways from above Le Tourneau marked on airplane rudder Union Oil Company on airplane rudder Businessmen leaving terminal building Firestone HQ Kraft Foods Company HQ Men in white shirts and ties entering Raytheon corporate plane Businessmen walking into “Idaho National Bank” Aerial of open pit mining Shot of smokestacks (good) Workers leaving factory VS heavy industry CU oil well counterweight rotating Oil well at sunset (good) Man puts suitcase into luggage compartment of small plane marked “Fitzpatrick Drilling Company” Two men unloading stretcher from red air ambulance Another crop dusting shot Airplane taxiing thru wheat field Family getting into small plane Couple with rifles getting into red plane (sportsmen) Passengers leaving small plane marked Provincetown-Boston Airline Small plane taxiing by hangar marked “Aircraft Division” Aerial (low) of small town Narrator: “The air is the greatest freeway man will ever know. It doesn’t have to be built or maintained. It touches every city and town.”",
+      "creator": "Film Originals; National Association of State Aviation Officials",
+      "duration": 851.03,
+      "year": 1954,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/0316AirportAmerica",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "0316AirportAmerica",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/0316AirportAmerica/0316_Airport_America.mp4",
+        "page_url": "https://archive.org/details/0316AirportAmerica",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "aviation",
+          "business",
+          "agriculture"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-pages_from_an_open_book_2",
+      "episode_number": 34,
+      "title": "Pages From an Open Book (Part II)",
+      "description": "Report on Metropolitan Insurance business operations for 1947. PA9071 Pages From an Open Book 16 Koda print",
+      "creator": "Metropolitan Insurance",
+      "duration": 1256.3,
+      "year": 1947,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/pages_from_an_open_book_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "pages_from_an_open_book_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/pages_from_an_open_book_2/pages_from_an_open_book_2.mp4",
+        "page_url": "https://archive.org/details/pages_from_an_open_book_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: Sponsored",
+          "Occupations: Insurance",
+          "Business"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item pages_from_an_open_book_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-6407LongCorridorThe01004108",
+      "episode_number": 35,
+      "title": "Long Corridor, The",
+      "description": "A George Reuter Organization Production. Director: Gordon Weisenborn. Cameraman: Loren Tutell. Editor: Arthur F. Ellis. Art Director: Chas. M. Reiter. Assistant Cameraman: George Blease. Assistant Director: Gene Balsley.",
+      "creator": "Vogue Wright Studios",
+      "duration": 1239.55,
+      "year": 1955,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6407LongCorridorThe01004108",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6407LongCorridorThe01004108",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6407LongCorridorThe01004108/6407_Long_Corridor_The_01_00_41_08.mp4",
+        "page_url": "https://archive.org/details/6407LongCorridorThe01004108",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-6407FogOverPortland01214405",
+      "episode_number": 36,
+      "title": "Fog Over Portland",
+      "description": "Produced by Vogue Wright Studios in collaboration with the George Reuter Organization.",
+      "creator": "Vogue Wright Studios",
+      "duration": 1092.87,
+      "year": 1953,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6407FogOverPortland01214405",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6407FogOverPortland01214405",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6407FogOverPortland01214405/6407_Fog_Over_Portland_01_21_44_05.mp4",
+        "page_url": "https://archive.org/details/6407FogOverPortland01214405",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-0026MakingANewDayOutOfTuesday02322300",
+      "episode_number": 37,
+      "title": "Making a New Day Out of Tuesday",
+      "description": "Making a New Day Out of Tuesday",
+      "creator": "Ironrite Company",
+      "duration": 1688.41,
+      "year": 1946,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/0026MakingANewDayOutOfTuesday02322300",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "0026MakingANewDayOutOfTuesday02322300",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/0026MakingANewDayOutOfTuesday02322300/0026_Making_a_New_Day_Out_of_Tuesday_02_32_23_00.mp4",
+        "page_url": "https://archive.org/details/0026MakingANewDayOutOfTuesday02322300",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-6346OpportunityUnlimited01432600",
+      "episode_number": 38,
+      "title": "Opportunity Unlimited",
+      "description": "Many good stock shots to be logged.Directed by Edward Seward. Narrated by George Bryan. Produced by John Bransby. Written and Supervised by J. Kenneth Roden.",
+      "creator": "Bransby (John) Productions (uncredited)",
+      "duration": 880.02,
+      "year": 1953,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6346OpportunityUnlimited01432600",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6346OpportunityUnlimited01432600",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6346OpportunityUnlimited01432600/6346_Opportunity_Unlimited_01_43_26_00.mp4",
+        "page_url": "https://archive.org/details/6346OpportunityUnlimited01432600",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-6336LenoxHallmarkOfExcellence01164100",
+      "episode_number": 39,
+      "title": "Lenox: Hallmark of Excellence",
+      "description": "Story of Lenox china and crystal.",
+      "creator": "Charles (Henry) Studios",
+      "duration": 1168.02,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6336LenoxHallmarkOfExcellence01164100",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6336LenoxHallmarkOfExcellence01164100",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6336LenoxHallmarkOfExcellence01164100/6336_Lenox_Hallmark_of_Excellence_01_16_41_00.mp4",
+        "page_url": "https://archive.org/details/6336LenoxHallmarkOfExcellence01164100",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Flying_Businessman",
+      "episode_number": 40,
+      "title": "Flying Businessman",
+      "description": "Film about the usefulness of airplanes to businessmen. Showcases airplanes that are designed specifically for business use with beds, typewriters, and desks. Also encourages businessmen to learn how to pilot an airplane in support of their work. Partial shot list: VS night shots of airline neon signs at airport (Western Airlines) VS people at airport counter, clerk VS flight attendants and passengers inside airplane (good) People receiving service, passengers talking, etc. 2 businessmen talking in adjoining seats Businessman-types disembarking from plane down stairway VS air taxi service VS Air Taxi service signs VS U-Drive and Rent-a-Car signs VS People being picked up by airport courtesy cars Businessman getting into courtesy car VS courtesy cars driving Men entering St. Louis Post-Dispatch plane Secretary transcribing on plane CU executive dictating on plane CU pencil pointing out details on blueprint of corporate plane CU woman applying lipstick in mirror on corporate plane CU executive taking off glasses thoughtfully while riding on plane CU executive talking on air to ground phone, handing papers to subordinate Executive adjusting air flow Man washing face in bathroom VS executives on rural airstrips Sheep rancher forcing sheep into trailer VS various kinds of businessmen who might own planes, some shown with planes (good); narrator explains who they are Flight student / lesson / instruction sequence Businessmen inspecting plane (pre-purchase or pre-flight lesson) VS instructor and businessman engaged in flight instruction CU hand checking instruments on Cessna (CU Cessna wheel in front of frame) CU brown shoes with holes in them depressing pedals VS flight instruction, seen from inside and outside the aircraft Student and instructor sitting in café, served by waitress Instructor watching student Aerocar sequence (good!) (futuristic family or small-business airplane meant for personal transportation) last few minutes not fully logged",
+      "creator": "Film Originals",
+      "duration": 787.63,
+      "year": 1953,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Flying_Businessman",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Flying_Businessman",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Flying_Businessman/Flying_Businessman_master.intros.mp4",
+        "page_url": "https://archive.org/details/Flying_Businessman",
+        "license": "\"Copyright MCMLIII Film Originals.\" No renewal shown in Copyright Office records.",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1950s",
+          "Aviation and aerospace",
+          "Industry",
+          "Business",
+          "Transportation",
+          "Vocations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-6406FrozenFoodLocker01444228",
+      "episode_number": 41,
+      "title": "[Frozen Food Locker]",
+      "description": "[Frozen Food Locker]",
+      "creator": null,
+      "duration": 950.7,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6406FrozenFoodLocker01444228",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6406FrozenFoodLocker01444228",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6406FrozenFoodLocker01444228/6406_Frozen_Food_Locker_01_44_42_28.mp4",
+        "page_url": "https://archive.org/details/6406FrozenFoodLocker01444228",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-everybody-knows-001",
+      "episode_number": 42,
+      "title": "Everybody Knows",
+      "description": "Sponsored by Chamber of Commerce of the United States. Featuring Robert Rockwell. Story and screen play by Norman Weissman. Produced and directed by Richard Galbreath.",
+      "creator": "Galbreath (Richard)",
+      "duration": 919.83,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/everybody-knows-001",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "everybody-knows-001",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/everybody-knows-001/Everybody_Knows_001.mp4",
+        "page_url": "https://archive.org/details/everybody-knows-001",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Capitalism",
+          "business",
+          "labor",
+          "free enterprise"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-6408OaklandTomorrowsCityToday01004500",
+      "episode_number": 43,
+      "title": "Oakland: Tomorrow's City Today",
+      "description": "A/B roll. Director of Photography: Harold A. Zell. Scenario by Lee Rashall. Narrated by John Grover. Executive Producer: Gerald L. Karski.",
+      "creator": "Motion Picture Service Co.",
+      "duration": 1790.45,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6408OaklandTomorrowsCityToday01004500",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6408OaklandTomorrowsCityToday01004500",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6408OaklandTomorrowsCityToday01004500/6408_Oakland_Tomorrows_City_Today_01_00_45_00.mp4",
+        "page_url": "https://archive.org/details/6408OaklandTomorrowsCityToday01004500",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-6408OaklandTomorrowsCityToday01304324",
+      "episode_number": 44,
+      "title": "Oakland: Tomorrow's City Today",
+      "description": "A-B roll. Director of Photography: Harold A. Zell. Scenario by Lee Rashall. Narrated by John Grover. Executive Producer: Gerald L. Karski.",
+      "creator": "Motion Picture Service Co.",
+      "duration": 1706.48,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6408OaklandTomorrowsCityToday01304324",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6408OaklandTomorrowsCityToday01304324",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6408OaklandTomorrowsCityToday01304324/6408_Oakland_Tomorrows_City_Today_01_30_43_24.mp4",
+        "page_url": "https://archive.org/details/6408OaklandTomorrowsCityToday01304324",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-0051CheckAndLetMeKnow03113608",
+      "episode_number": 45,
+      "title": "Check . . . And Let Me Know",
+      "description": "Goof on the process of industrial filmmaking. The film depicts a conversation among company executives regarding potential promotional opportunities and investments. It starts with one executive mentioning an accidental discovery of a film prospect during a plane conversation with Mr. Snodgrass, president of Snodgrass and Company, who showed interest in making a film for Lightning Electric.As the discussion unfolds, various executives debate the feasibility and costs of making commercial industrial films. They contemplate the benefits of using movies for business promotion, mentioning a particular film about an electric pancake turner, and explore the idea of commissioning their own promotional film for under $5,000.The narrative shifts to an internal debate about spending $5,000 on 500 electric toasters as Christmas presents for clients versus using the funds for a sales promotion movie. Eventually, it is decided to allocate the budget towards producing the movie. They emphasize the importance of adhering to the budget, underscoring the company’s focus on cost-effective promotional strategies. The film concludes with a reminder that the decision came from the top management, reflecting the hierarchical nature of corporate decision-making.",
+      "creator": "Calvin Workshop",
+      "duration": 657.9,
+      "year": 1962,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/0051CheckAndLetMeKnow03113608",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "0051CheckAndLetMeKnow03113608",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/0051CheckAndLetMeKnow03113608/0051_Check_And_Let_Me_Know_03_11_36_08.mp4",
+        "page_url": "https://archive.org/details/0051CheckAndLetMeKnow03113608",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "industrial film"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Studebaker_Promo",
+      "episode_number": 46,
+      "title": "Studebaker Sales Training Film",
+      "description": "Studebaker sales training film. Includes footage of an automobile test drive through California scenery with many oil derricks visible, a spirited discussion between car salesperson and customer regarding price, and a sales meeting. Seems to be the last 10 minutes of a film only.",
+      "creator": null,
+      "duration": 571.24,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Studebaker_Promo",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Studebaker_Promo",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Studebaker_Promo/Studebaker_Promo.intros.ia.mp4",
+        "page_url": "https://archive.org/details/Studebaker_Promo",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1940s",
+          "Automobiles",
+          "Business",
+          "Car culture",
+          "Commerce",
+          "Labor",
+          "Vocations",
+          "Extractive industries"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-202222_Wilmington",
+      "episode_number": 47,
+      "title": "Wilmington",
+      "description": "(Newsreel #30). \"This documentary is about a 'company town.' The DuPont family controls the state of Delaware as if it were a private kingdom through the giant DuPont Corporation. Their normal image as benevolent, philanthropic liberals is challenged when they called the National Guard into Wilmington after the assassination of Dr. Martin Luther King, Jr. to occupy the city for ten months. Through interviews and verite footage, the film exposes how the DuPont Corporation dominates its workers through its control of education, media, politics and the economy.\" (https://www.twn.org/catalog/pages/responsive/cpage.aspx?rec=892&card=price. accessed: 2024-05-06)",
+      "creator": "Newsreel",
+      "duration": 909.5,
+      "year": 1970,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/202222_Wilmington",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "202222_Wilmington",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/202222_Wilmington/202222_Wilmington_master.intros.mp4",
+        "page_url": "https://archive.org/details/202222_Wilmington",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "1970s",
+          "Activism",
+          "Corporations",
+          "People of African origin or descent",
+          "Black history and culture ",
+          "Racism--Resistance to ",
+          "Civil rights"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200507_What_is_a_Corporation",
+      "episode_number": 48,
+      "title": "What Is a Corporation?",
+      "description": "\"Uses the story of Walter Brown, a businessman, to differentiate the three principal forms of business ownership: single proprietorship, partnership, and corporation. He learns the advantages of a corporation in protecting individual members from financial responsibility for the other members. Presents a basic vocabulary for the study of business ownership.\" (Educational Film/Video Locator, 3rd Edition)",
+      "creator": "Coronet Instructional Films",
+      "duration": 645.33,
+      "year": 1949,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200507_What_is_a_Corporation",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200507_What_is_a_Corporation",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200507_What_is_a_Corporation/What_is_a_Corporation_master.intros.mp4",
+        "page_url": "https://archive.org/details/200507_What_is_a_Corporation",
+        "license": "Notice states: \"Copyright MCMXLIX David A. Smart.\" (c) David A. Smart, 17Jun49; MP4222. No renewal shown in Catalog of Copyright Entries.",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1940s",
+          "Business",
+          "Corporations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-footage_panix_VMen",
+      "episode_number": 49,
+      "title": "V-Men",
+      "description": "Film produced by Roland Reed Productions for Westinghouse Electric Company, ca. 1936. On the importance of \"vitaminized\" cooking to preserve nutrients in food. The film discusses the importance of nutrition and the impact of cooking methods on the vitamin content of food. It highlights that a significant portion of Americans are undernourished and emphasizes the vital role of vitamins and minerals in maintaining health. The film introduces the concept of \"vitamed cooking,\" which preserves essential nutrients better than traditional cooking methods. It presents scientific findings on vitamin retention, demonstrating that proper cooking techniques can significantly enhance the nutritional value of meals. The film concludes by encouraging families to adopt these methods for better health.Keywordsnutrition, vitamins, minerals, cooking methods, vitamed cooking, health, undernourishment, American families, food preservation, cooking techniques",
+      "creator": "Reed (Roland) Productions",
+      "duration": 1001.65,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/footage_panix_VMen",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "footage_panix_VMen",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/footage_panix_VMen/V_Men.mp4",
+        "page_url": "https://archive.org/details/footage_panix_VMen",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Industrial films",
+          "sponsored films",
+          "vitamins",
+          "food",
+          "cooking",
+          "home economics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200303_Strohm_0050_R1-p1",
+      "episode_number": 50,
+      "title": "[Salute To Farmer Television Spots] (Part 1)",
+      "description": "A series of television commercials about the Federal Land Bank system released during the 50th anniversary of the creation of the Federal Land Bank in 1917. can reads: \"#41 Salute to Farmer + Shell\" leader reads: \"Federal Land Bank TV Spot #1; reel 3 reads: \"Salute to Farmer NOT COMPLETE\" This film is in multiple files due to a scanning issue. This reel has several skips in audio especially in first version.",
+      "creator": "Jack Lieb Productions",
+      "duration": 430.83,
+      "year": 1967,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200303_Strohm_0050_R1",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200303_Strohm_0050_R1",
+        "part_index": 1,
+        "part_count": 2,
+        "url": "https://archive.org/download/200303_Strohm_0050_R1/200303_Strohm_0050_R1_001_master.intros.mp4",
+        "page_url": "https://archive.org/details/200303_Strohm_0050_R1",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Agriculture",
+          "Industry",
+          "Food",
+          "Business"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200303_Strohm_0050_R1-p2",
+      "episode_number": 51,
+      "title": "[Salute To Farmer Television Spots] (Part 2)",
+      "description": "A series of television commercials about the Federal Land Bank system released during the 50th anniversary of the creation of the Federal Land Bank in 1917. can reads: \"#41 Salute to Farmer + Shell\" leader reads: \"Federal Land Bank TV Spot #1; reel 3 reads: \"Salute to Farmer NOT COMPLETE\" This film is in multiple files due to a scanning issue. This reel has several skips in audio especially in first version.",
+      "creator": "Jack Lieb Productions",
+      "duration": 208.83,
+      "year": 1967,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200303_Strohm_0050_R1",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200303_Strohm_0050_R1",
+        "part_index": 2,
+        "part_count": 2,
+        "url": "https://archive.org/download/200303_Strohm_0050_R1/200303_Strohm_0050_R1_002_master.intros.mp4",
+        "page_url": "https://archive.org/details/200303_Strohm_0050_R1",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Agriculture",
+          "Industry",
+          "Food",
+          "Business"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "Item contains multiple candidate video files with no clear link between them; treated as separate parts, but this may be wrong (e.g. unrelated encodings). Review manually.",
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Commute_Suit",
+      "episode_number": 52,
+      "title": "Commute Suit",
+      "description": "Outtakes from film about what people wear while commuting. Footage includes Long Island Railroad commuters, POVs of men's suits, and appears to promote \"Commuter Apparel.\"",
+      "creator": "Commuter Apparel",
+      "duration": 1556.04,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Commute_Suit",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Commute_Suit",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Commute_Suit/Commute_Suit.intros.ia.mp4",
+        "page_url": "https://archive.org/details/Commute_Suit",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Clothing and fashion",
+          "Business",
+          "Transportation",
+          "Cities"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200405_Presentation_Film",
+      "episode_number": 53,
+      "title": "Presentation Film",
+      "description": "Executive man seated at desk delivering remarks to promote management training materials including films and brochures. Shows scenes from training film THE TIME IS NOW (1955) featuring Walter Matthau. Label on can: The True Security Program Produced for The Mutual Benefit Life Insurance Company by Henry Strauss & Co.",
+      "creator": "Henry Strauss & Co.",
+      "duration": 517.84,
+      "year": 1955,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200405_Presentation_Film",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200405_Presentation_Film",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200405_Presentation_Film/200405_Presentation_Film_master.intros.mp4",
+        "page_url": "https://archive.org/details/200405_Presentation_Film",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Business",
+          " Capitalism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-010053-001",
+      "episode_number": 54,
+      "title": "Home movie: 010053_001: 1930s and 1940s colonial Southeast Asia",
+      "description": "Home movie: 010053_001: 1930s and 1940s colonial Southeast Asia",
+      "creator": null,
+      "duration": 869.5,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/010053-001",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "010053-001",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/010053-001/010053_001.ia.mp4",
+        "page_url": "https://archive.org/details/010053-001",
+        "license": null,
+        "collections": [
+          "prelingerhomemovies",
+          "prelinger"
+        ],
+        "subjects": [
+          "1930s",
+          "1940s",
+          "Southeast Asia",
+          "cruise ship",
+          "colonization",
+          "labor",
+          "agricultural labor",
+          "industrial labor",
+          "Rousillac Canadian Mission School",
+          "Philippines",
+          "Malaysia",
+          "Thailand",
+          "oil industry",
+          "banana plantation",
+          "laundry in a waterfall",
+          "flower merchant"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200340_Good_Neighbors_Awards_04_R1",
+      "episode_number": 55,
+      "title": "Good Neighbors Awards 04 (Reel 1)",
+      "description": "Outtakes from the film shot for the Good Neighbors Awards of 1963 and likely 1971. Includes footage of the Johnson & Johnson headquarters and manufacturing plant in New Brunswick, New Jersey; the Great American Life Insurance Companies offices; and IBM headquarters. The reel contains many excellent imagery of mid-20th-century suburban offices, office workers, office procedures and office parks. note in can reads: \"4th 1963 GN; Reel 1: Allied Chemical, Western Electric, Foster Wheeler, Woodward-Clyde-Sherrard, McGraw Hill; Reel 2: Volkswagon of America, Johnson + Johnson, Great American Life Insurance Companies; missing: Sandoz\" can reads: 4th 1963 Good Neighbors",
+      "creator": "Henry Charles Studios",
+      "duration": 3097.33,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200340_Good_Neighbors_Awards_04_R1",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200340_Good_Neighbors_Awards_04_R1",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200340_Good_Neighbors_Awards_04_R1/200340_Good_Neighbors_Awards_04_R1_master.intros.mp4",
+        "page_url": "https://archive.org/details/200340_Good_Neighbors_Awards_04_R1",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "1970s",
+          "Business",
+          "Corporations",
+          "Architecture",
+          "Labor",
+          "Industry",
+          "Manufacturing",
+          "Communication",
+          "Information"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-010053-001_202005",
+      "episode_number": 56,
+      "title": "Home movie: 010053_001: 1930s and 1940s colonial Southeast Asia",
+      "description": "Home movie: 010053_001: 1930s and 1940s colonial Southeast Asia",
+      "creator": null,
+      "duration": 869.5,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/010053-001_202005",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "010053-001_202005",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/010053-001_202005/010053_001.ia.mp4",
+        "page_url": "https://archive.org/details/010053-001_202005",
+        "license": null,
+        "collections": [
+          "prelingerhomemovies",
+          "prelinger"
+        ],
+        "subjects": [
+          "1930s",
+          "1940s",
+          "Southeast Asia",
+          "cruise ship",
+          "colonization",
+          "labor",
+          "agricultural labor",
+          "industrial labor",
+          "Rousillac Canadian Mission School",
+          "Philippines",
+          "Malaysia",
+          "Thailand",
+          "oil industry",
+          "banana plantation",
+          "laundry in a waterfall",
+          "flower merchant"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-201942_Camera_Eye_On_New_Jersey",
+      "episode_number": 57,
+      "title": "Camera Eye on New Jersey",
+      "description": "Sponsored film about infrastructure and industry in the state of New Jersey. Can notes: \"Work print / Camera Eye On New Jersey 1960\"",
+      "creator": "Henry Charles Studios",
+      "duration": 1761.58,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/201942_Camera_Eye_On_New_Jersey",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "201942_Camera_Eye_On_New_Jersey",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/201942_Camera_Eye_On_New_Jersey/201942_Camera_Eye_On_New_Jersey_master.intros_H.264.ia.mp4",
+        "page_url": "https://archive.org/details/201942_Camera_Eye_On_New_Jersey",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          " Industry",
+          " Business",
+          " Infrastructure"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-204061_Singer_Collection_000742",
+      "episode_number": 58,
+      "title": "Home Movie: Richard M. Singer Collection: 000742",
+      "description": "Documentation of the 1952 Millstone Construction holiday party held at the Wendell Oliver Pruitt Homes Housing Project. Can marked: \"1953 [1952] Party\"",
+      "creator": "Richard M. Singer",
+      "duration": 326.71,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/204061_Singer_Collection_000742",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "204061_Singer_Collection_000742",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/204061_Singer_Collection_000742/204061_Singer_Collection_000742_master.intros.mp4",
+        "page_url": "https://archive.org/details/204061_Singer_Collection_000742",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "prelingerhomemovies"
+        ],
+        "subjects": [
+          "1950s",
+          "Holidays",
+          "Celebrations and ceremonies",
+          "Construction",
+          "Corporations",
+          "Drugs alcohol tobacco",
+          "Labor",
+          "People of African origin or descent"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-204541_Home_Movie_011057",
+      "episode_number": 59,
+      "title": "Home Movie: 011057",
+      "description": "In the 1930s residents and workers shyly pose for the camera in the small town of Lodi, Ohio, as the filmmaker tours the town's commercial, cultural and civic sites and entices everyone: clerks, station attendants, nurses, store staff, and bus drivers (and more), to pause their activities and pose with their places of work. Tape label on can: \"#1 Lodi Vill\" Tape label on can bottom: \"Lodi Village #3\" Notes inside can state: \"Lodi Films / Auto Club\"",
+      "creator": null,
+      "duration": 482.06,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/204541_Home_Movie_011057",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "204541_Home_Movie_011057",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/204541_Home_Movie_011057/204541_Home_Movie_011057_master.intros.mp4",
+        "page_url": "https://archive.org/details/204541_Home_Movie_011057",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "prelingerhomemovies"
+        ],
+        "subjects": [
+          "1930s",
+          "Automobiles",
+          "Rural life",
+          "Labor",
+          "Business"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-001225_202005",
+      "episode_number": 60,
+      "title": "Home movie: 001225: 1939 California musical family backstage",
+      "description": "Home movie: 001225: 1939 California musical family backstage",
+      "creator": null,
+      "duration": 919.78,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/001225_202005",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "001225_202005",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/001225_202005/001225.ia.mp4",
+        "page_url": "https://archive.org/details/001225_202005",
+        "license": null,
+        "collections": [
+          "prelingerhomemovies",
+          "prelinger"
+        ],
+        "subjects": [
+          "1939",
+          "California",
+          "backstage",
+          "auditorium",
+          "Oroville",
+          "cooks",
+          "servers",
+          "industrial kitchen",
+          "Sacramento valley",
+          "road trip",
+          "Albany",
+          "Golden Gate Fields"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-201539_Home_Movie_004136",
+      "episode_number": 61,
+      "title": "Home Movie: 004136",
+      "description": "Footage documenting the construction of Ronald Moran Cadillac, an automobile dealership in Hermosa Beach, California; founded in 1948, later known as Penske Cadillac Buick GMC of South Bay. Possibly sponsored film footage. Possibly originally accompanied by an audio track. Can notes: \"Ronald Moran Car Dealer\" Cyan lab processed date: Sep 67",
+      "creator": null,
+      "duration": 1503.58,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/201539_Home_Movie_004136",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "201539_Home_Movie_004136",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/201539_Home_Movie_004136/201539_Home_Movie_004136_master.intros.mp4",
+        "page_url": "https://archive.org/details/201539_Home_Movie_004136",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "prelingerhomemovies"
+        ],
+        "subjects": [
+          "Automobiles",
+          " Car culture",
+          " Business",
+          " Industry",
+          " Land use",
+          " Labor",
+          " Architecture",
+          " 1960s"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200996_Sageworks",
+      "episode_number": 62,
+      "title": "Sageworks",
+      "description": "This silent color negative roll was filmed at a branch of Bowery Savings Bank in May, 1980. There are many takes of several scripted scenes between bank employees and customers. A sound recordist and operator are present in some shots, but the corresponding sound recording has not been located. Can notes: \"MovieLab New York, NY / Lab Order No : IE68507 / Customer: Sageworks / 550430 / Reel 1 / Camera Roll No: 7-8-9 / Material: Orig\"",
+      "creator": null,
+      "duration": 1747.38,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200996_Sageworks",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200996_Sageworks",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200996_Sageworks/200996_Sageworks_master.intros_H.264.ia.mp4",
+        "page_url": "https://archive.org/details/200996_Sageworks",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1980s",
+          " Finance",
+          " Business",
+          " Vocations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-202885_Supply_The_Demand_A_Roll",
+      "episode_number": 63,
+      "title": "Supply the Demand (A-Roll)",
+      "description": "A-roll (of A/B rolls; see item 202884 for B-roll) of an in-house production by IBM detailing the manufacture of industrial cards utilizing photographic emulsions. Can notes: \" A & B Rolls / \"Supply The Demand\" / Orig. / I.B.M. (OWEGO)\" Leader: \"A Roll Orig. Eco / Produced by IBM Space Guidance Center- Owego, N.Y.\"",
+      "creator": "IBM Space Guidance Center Motion Picture Department",
+      "duration": 806.08,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/202885_Supply_The_Demand_A_Roll",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "202885_Supply_The_Demand_A_Roll",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/202885_Supply_The_Demand_A_Roll/202885_Supply_The_Demand_A_Roll_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/202885_Supply_The_Demand_A_Roll",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Business",
+          "Industry",
+          "Technology",
+          "Manufacturing",
+          "Computers"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200412_1st_1960_Good_Neighbors",
+      "episode_number": 64,
+      "title": "1st 1960 Good Neighbors",
+      "description": "Outtakes of scenes in New Jersey including office buildings, reception, meeting rooms, and lobby, office workers, and downtown streets. Some footage from these location shoots was used in the film CAMERA-EYE ON NEW JERSEY (Henry Charles Studios, 1960). Possible companies based on notes in can: GV Controls; Esso Research & Engineering; Champlain Company; Prudential Insurance Co; Jersey Central / New Jersey Power & Light; Heinemann Electric; Atlantic City Electric; Bendix; Singer Company",
+      "creator": "Henry Charles Studios",
+      "duration": 1397.25,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200412_1st_1960_Good_Neighbors",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200412_1st_1960_Good_Neighbors",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200412_1st_1960_Good_Neighbors/200412_1st_1960_Good_Neighbors_master.intros.mp4",
+        "page_url": "https://archive.org/details/200412_1st_1960_Good_Neighbors",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Business",
+          " Industry"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200508_The_Salesman",
+      "episode_number": 65,
+      "title": "The Salesman: A Film Lesson in Vocational Guidance",
+      "description": "Jim, a hardware and appliances storeowner, learns how to become an effective salesperson and is able to grow his modest store into a successful department store. Educational film about the value of good salesmanship in business. From Title card: \"A Film Lesson in Vocational Guidance\" Possibly shot in Oakland, California.",
+      "creator": "Neighborhood Motion Picture Service, Inc.",
+      "duration": 893.06,
+      "year": 1928,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200508_The_Salesman",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200508_The_Salesman",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200508_The_Salesman/The_Salesman_master.intros.mp4",
+        "page_url": "https://archive.org/details/200508_The_Salesman",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1920s",
+          "Commerce",
+          "Business",
+          "Vocations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-201106_Mode-Art_Can_2799_R3",
+      "episode_number": 66,
+      "title": "Mode-Art Can 2799 (Reel 3)",
+      "description": "Outtakes of an industrial film about United States Steel's SEMESTRA Schools and USS Homes programs. Features static and zoom shots of empty classrooms, a living room, and house and school building exteriors, as well as close-up images of text from the SEMESTRA Schools booklet. Film is mostly in soft focus. Tape on film states: #4167 \"Schools\" New W/P of Re-shoot Transparencies Leader: OR # 20979 Animation Arts Eco ORG. 8-26-71 Grease marker on film: Transparency of Model Home, The Animators, Homada W.P.",
+      "creator": "Mode-Art Pictures",
+      "duration": 212.21,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/201106_Mode-Art_Can_2799_R3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "201106_Mode-Art_Can_2799_R3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/201106_Mode-Art_Can_2799_R3/201106_Mode-Art_Can_2799_R3_master.intros.mp4",
+        "page_url": "https://archive.org/details/201106_Mode-Art_Can_2799_R3",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1970s",
+          "Schools",
+          "Housing",
+          "Construction",
+          "Interior decoration",
+          "Corporations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200352_Good_Neighbors_Awards_04_R2",
+      "episode_number": 67,
+      "title": "Good Neighbors Awards 04 (Reel 2)",
+      "description": "Outtake footage for the Good Neighbors Awards of 1963, including images of the Volkswagen of America headquarters in Englewood Cliffs, New Jersey; the Johnson & Johnson headquarters in New Brunswick, New Jersey; and the Great American Life Insurance Companies New Jersey offices. Reel contains excellent images of mid-20th-century offices and office workers. note in can reads: \"4th 1963 GN; Reel 1: Allied Chemical, Western Electric, Foster Wheeler, Woodward-Clyde-Sherrard, McGraw Hill; Reel 2: Volkswagen of America, Johnson + Johnson, Great American Life Insurance Companies; missing: Sandoz\" can reads: 4th 1963 Good Neighbors leader reads: \"pict ekta orig. 'V1-2-3-Volkswagen ';'Great American Insurance Co'; Henry Charles Studios\"",
+      "creator": "Henry Charles Studios",
+      "duration": 1590.79,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200352_Good_Neighbors_Awards_04_R2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200352_Good_Neighbors_Awards_04_R2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200352_Good_Neighbors_Awards_04_R2/200352_Good_Neighbors_Awards_04_R2_master.intros.mp4",
+        "page_url": "https://archive.org/details/200352_Good_Neighbors_Awards_04_R2",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Automobiles",
+          "Business",
+          "Corporations",
+          "Architecture",
+          "Interior decoration",
+          "Manufacturing"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-202884_Supply_The_Demand_B_Roll",
+      "episode_number": 68,
+      "title": "Supply the Demand (B-Roll)",
+      "description": "B-roll (of A/B rolls; see item 202885 for A-roll) of an in-house production by IBM detailing the manufacture of industrial cards utilizing photographic emulsions. Can notes: \" A & B Rolls / \"Supply The Demand\" / Orig. / I.B.M. (OWEGO)\" Leader: \"B Roll Orig. Eco / Produced by IBM Space Guidance Center- Owego, N.Y.\"",
+      "creator": "IBM Space Guidance Center Motion Picture Department",
+      "duration": 807.83,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/202884_Supply_The_Demand_B_Roll",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "202884_Supply_The_Demand_B_Roll",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/202884_Supply_The_Demand_B_Roll/202884_Supply_The_Demand_B_Roll_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/202884_Supply_The_Demand_B_Roll",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Business",
+          "Industry",
+          "Technology",
+          "Manufacturing",
+          "Computers"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Strohm_0035",
+      "episode_number": 69,
+      "title": "Strohm 0035",
+      "description": "The New Jersey Business and Industry Association meeting of many men around a large table evaluating and examining exhibits in conference room interiors. can notes: \"NJ BIA Judging\"",
+      "creator": "John Strohm",
+      "duration": 158.83,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Strohm_0035",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Strohm_0035",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Strohm_0035/Strohm_0035.intros.mp4",
+        "page_url": "https://archive.org/details/Strohm_0035",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Business",
+          "Industry"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Mode-Art_Can_1612",
+      "episode_number": 70,
+      "title": "Mode-Art Can 1612",
+      "description": "Outtakes from Mode-Art Pictures production number 1518. Footage of teenage boys traveling to the 25th annual American Legion Mountaineer Boys' State Leadership Academy at Jackson's Mill State Historic Area in West Virginia.",
+      "creator": "Mode-Art Pictures",
+      "duration": 1447.92,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Mode-Art_Can_1612",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Mode-Art_Can_1612",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Mode-Art_Can_1612/Mode-Art_Can_1612_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/Mode-Art_Can_1612",
+        "license": "Copyright owned by Prelinger Archives.",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Children",
+          "Patriotism",
+          "Education",
+          "Corporations",
+          "Military",
+          "Youth"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200749_Calvin_0330",
+      "episode_number": 71,
+      "title": "Calvin 0330",
+      "description": "Outtakes from Annual Sales Meeting Film (PR Movie — 1967). Overs memo dated 7/22/67.",
+      "creator": "Calvin Productions",
+      "duration": 2451.33,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200749_Calvin_0330",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200749_Calvin_0330",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200749_Calvin_0330/200749_Calvin_0330_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/200749_Calvin_0330",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Industry",
+          "Manufacturing",
+          "Corporations",
+          "Labor"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200684_Calvin_0337",
+      "episode_number": 72,
+      "title": "Calvin 0337",
+      "description": "Outtakes of a sponsored industrial film shot primarily in Hesston, Kansas. Most of the footage on this reel depicts farm equipment at work in crop fields. Notes on Box: Client: Hesston Mfg. Title: The Major Decision Company Production: 3306 Notes on sheet Overs Memo- Date: 2/3/68 Editor: Durham Tracer No. 7-9600 Client: Hesston Corp Title: \"The Major Decision\" Box Number: 3306",
+      "creator": "Calvin Productions",
+      "duration": 1862.67,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200684_Calvin_0337",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200684_Calvin_0337",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200684_Calvin_0337/200684_Calvin_0337_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/200684_Calvin_0337",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Industrialization",
+          "Agriculture",
+          "Corporations",
+          "Industry"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-201934_E-Award",
+      "episode_number": 73,
+      "title": "[Army/Navy \"E\"-Award Film]",
+      "description": "Unidentified corporate sponsored film made for a company receiving an US Army-Navy \"E\" Award during World War II for achieving excellence in efficient wartime production. Includes a luncheon and a rodeo show. Can notes: \"Reel-2 / 1827\" Note in can: \"Sil. Vim / Date 3-12 / Emul 383-11 / Feet 2x103 / Title Boulder Dam / Oper. MH / One Part Pro Masters\"",
+      "creator": null,
+      "duration": 591.79,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/201934_E-Award",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "201934_E-Award",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/201934_E-Award/201934_E-Award_master.intros_H.264.ia.mp4",
+        "page_url": "https://archive.org/details/201934_E-Award",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "prelingerhomemovies"
+        ],
+        "subjects": [
+          "1940s",
+          " Business",
+          " Military",
+          " Animals",
+          " Patriotism",
+          " World War II"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Mode-Art_Can_2730",
+      "episode_number": 74,
+      "title": "Mode-Art Can 2730",
+      "description": "Outtakes showing office and residential buildings, the U.S. Steel Corporation Newsletter, U.S. Steel headquarters interiors, steelworkers, molten metal, and more. Mode-Art production number: 3854",
+      "creator": "Mode-Art Pictures",
+      "duration": 2152.21,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Mode-Art_Can_2730",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Mode-Art_Can_2730",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Mode-Art_Can_2730/Mode-Art_Can_2730_master.intros.mp4",
+        "page_url": "https://archive.org/details/Mode-Art_Can_2730",
+        "license": "Copyright owned by Prelinger Archives.",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1970s",
+          "Industry",
+          "Corporations",
+          "Labor"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200681_Calvin_0334",
+      "episode_number": 75,
+      "title": "Calvin 0334",
+      "description": "Outtakes for an industrial film promoting Hesston Manufacturing Corporation, featuring shots of the company plant's manufacturing floor interior and aerial views filmed from a helicopter of the entire compound.",
+      "creator": "Calvin Productions",
+      "duration": 1796.33,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200681_Calvin_0334",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200681_Calvin_0334",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200681_Calvin_0334/200681_Calvin_0334_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/200681_Calvin_0334",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Industry",
+          "Labor",
+          "Industrialization",
+          "Gender roles",
+          "Corporations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-203497_Metzler_Collection_005176",
+      "episode_number": 76,
+      "title": "Home Movie: Metzler Collection: 005176",
+      "description": "A Ford company picnic with employees grilling food, playing baseball, swimming, and more. Camp Dearborn was opened under the racist former mayor of Dearborn, Orville Hubbard, and was racially segregated until 1965. See this article for context about its eventual integration: https://www.newspapers.com/article/the-windsor-star-camp-dearborn-injustice/93721922/ (accessed: 2024-02-27) note on container: \"FORD 1952 CAMP DEARBORN COMPANY PICNIC. 1952 FORD XMAS PARTY\" can engraving: \"BELL & HOWELL CO CHICAGO\"",
+      "creator": "Dick and Doris Metzler",
+      "duration": 843.81,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/203497_Metzler_Collection_005176",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "203497_Metzler_Collection_005176",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/203497_Metzler_Collection_005176/203497_Metzler_Collection_005176_master.intros.mp4",
+        "page_url": "https://archive.org/details/203497_Metzler_Collection_005176",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "prelingerhomemovies"
+        ],
+        "subjects": [
+          "1950s",
+          "Corporations",
+          "Leisure and recreation",
+          "Games and play",
+          "Food"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200318_Good_Neighbors_Awards_08_R2",
+      "episode_number": 77,
+      "title": "Good Neighbors Awards 08 (Reel 2)",
+      "description": "Outtakes for the Good Neighbors Awards film of 1963 and 1967. Includes footage of Warner Lambert, Sandoz, and Johnson + Johnson offices and plants. can notes: \"1967 Good Neighbors\" note found in can reads: \"8th 1967 GN; Reel 1: NJMA, Midland Ross, Midland Ross, J+J Distributing Co, Tenneco Chemicals, Medical Park, Ultronic -?; Reel 2: Warner Lambert, Warner Lambert, Sandoz, Sandoz --> some splices, Sandoz, Johnson + Johnson; Missing: First National State Building, Quail Hill, Oakite [?] Products Inc\"",
+      "creator": "Henry Charles Studios",
+      "duration": 2136,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200318_Good_Neighbors_Awards_08_R2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200318_Good_Neighbors_Awards_08_R2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200318_Good_Neighbors_Awards_08_R2/200318_Good_Neighbors_Awards_08_R2_master.intros.mp4",
+        "page_url": "https://archive.org/details/200318_Good_Neighbors_Awards_08_R2",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Business",
+          "Corporations",
+          "Industry",
+          "Architecture",
+          "Labor",
+          "Manufacturing",
+          "Transportation"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200682_Calvin_0335",
+      "episode_number": 78,
+      "title": "Calvin 0335",
+      "description": "Outtakes from a Hesston Corporation sponsored film featuring scenes of farm equipment manufacture, demonstration in the field, and testing. Notes on Box: \"Client: Hesston Mfg. Title: The Major Decision Company Production: 3306\" Notes on sheet \"Overs Memo- Date: 2/3/68 Editor: Durham Tracer No. 7-9600 Client: Hesston Corp Title: \"The Major Decision\" \" Box Number: 3306\"",
+      "creator": "Calvin Productions",
+      "duration": 1587.83,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200682_Calvin_0335",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200682_Calvin_0335",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200682_Calvin_0335/200682_Calvin_0335_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/200682_Calvin_0335",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Industrialization",
+          "Industry",
+          "Corporations",
+          "Manufacturing",
+          "Labor",
+          "Agriculture"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-200317_Good_Neighbors_Awards_08_R1",
+      "episode_number": 79,
+      "title": "Good Neighbors Awards 08 (Reel 1)",
+      "description": "Outtakes from footage shot for the Good Neighbors Awards film of 1967 and likely 1973. Includes footage of Midland Ross, J+J Distributing Co, Tenneco Chemicals, Ultronic, Medical Park, and NJMA. can notes: \"1967 Good Neighbors\" note found in can reads: \"8th 1967 GN; Reel 1: NJMA, Midland Ross, Midland Ross, J+J Distributing Co, Tenneco Chemicals, Medical Park, Ultronic -?; Reel 2: Warner Lambert, Warner Lambert, Sandoz, Sandoz --> some splices, Sandoz, Johnson + Johnson; Missing: First National State Building, Quail Hill, Oakite [?] Products Inc\"",
+      "creator": "Henry Charles Studios",
+      "duration": 2364.88,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/200317_Good_Neighbors_Awards_08_R1",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "200317_Good_Neighbors_Awards_08_R1",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/200317_Good_Neighbors_Awards_08_R1/200317_Good_Neighbors_Awards_08_R1_master.intros.mp4",
+        "page_url": "https://archive.org/details/200317_Good_Neighbors_Awards_08_R1",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "1970s",
+          "Industry",
+          "Business",
+          "Corporations",
+          "Manufacturing"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Mode-Art_Can_1621",
+      "episode_number": 80,
+      "title": "Mode-Art Can 1621",
+      "description": "Trims for the Westinghouse Electric Corporation production \"Transmission for Tomorrow.\" Mode-Art Pictures production number 1501. Includes footage related to and documenting the \"Apple Grove 750,000 volt Transmission Research Project,\" a high-voltage power transmission project of American Electric Power and Westinghouse Electric Corporation.",
+      "creator": "Mode-Art Pictures",
+      "duration": 1217.42,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Mode-Art_Can_1621",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Mode-Art_Can_1621",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Mode-Art_Can_1621/Mode-Art_Can_1621_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/Mode-Art_Can_1621",
+        "license": "Copyright owned by Prelinger Archives.",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Labor",
+          "Electricity",
+          "Energy",
+          "Infrastructure",
+          "Corporations"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Mode-Art_Can_1604",
+      "episode_number": 81,
+      "title": "Mode-Art Can 1604",
+      "description": "Outtakes from Mode-Art Production #1391 for U.S. Steel, National Tube Division. Footage includes: a woman using typewriter (Friden Flexowriter) with punched tape; workers leaving the factory (U.S. Steel, National Tube Div. Lorain, Ohio); General Electric data tape device; various shots of invoices and other administrative documents; train car entering and departing factory; aerial shots of factory.",
+      "creator": "Mode-Art Pictures",
+      "duration": 1458.04,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Mode-Art_Can_1604",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Mode-Art_Can_1604",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Mode-Art_Can_1604/Mode-Art_Can_1604_master.intros.ia.mp4",
+        "page_url": "https://archive.org/details/Mode-Art_Can_1604",
+        "license": "Copyright owned by Prelinger Archives.",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "1960s",
+          "Labor",
+          "Industry",
+          "Business",
+          "Extractive industries"
+        ],
+        "mediatype": "movies",
+        "format": "h.264 IA",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    }
+  ]
+}

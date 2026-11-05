@@ -1,0 +1,3570 @@
+{
+    "_publish": {
+        "generated_at": "2026-11-05T21:08:14+00:00",
+        "window": {
+            "start": "2026-11-05T00:00:00+00:00",
+            "end": "2026-11-19T00:00:00+00:00"
+        },
+        "episode_sets": [
+            {
+                "block_id": "physics-and-astronomy-overnight",
+                "series_id": "mit-general-relativity",
+                "version": 1,
+                "episode_count": 23
+            },
+            {
+                "block_id": "overnight-university",
+                "series_id": "perimeter-institute",
+                "version": 1,
+                "episode_count": 13
+            },
+            {
+                "block_id": "mathematics-oxford",
+                "series_id": "oxford-mathematics",
+                "version": 1,
+                "episode_count": 15
+            },
+            {
+                "block_id": "mathematics-mit",
+                "series_id": "mit-math-for-cs",
+                "version": 1,
+                "episode_count": 24
+            },
+            {
+                "block_id": "computer-science-cs50",
+                "series_id": "cs50x-lectures",
+                "version": 1,
+                "episode_count": 12
+            },
+            {
+                "block_id": "the-royal-institution",
+                "series_id": "royal-institution-physics",
+                "version": 1,
+                "episode_count": 27
+            },
+            {
+                "block_id": "history-and-civilization",
+                "series_id": "yale-ukraine",
+                "version": 1,
+                "episode_count": 23
+            },
+            {
+                "block_id": "economics-and-society",
+                "series_id": "stanford-ecorner",
+                "version": 1,
+                "episode_count": 28
+            },
+            {
+                "block_id": "the-evening-lecture",
+                "series_id": "gresham-lectures",
+                "version": 1,
+                "episode_count": 35
+            }
+        ]
+    },
+    "schema_version": 1,
+    "channel": "The Lecture Hall",
+    "blocks": [
+        {
+            "block": 1,
+            "type": "normal",
+            "duration": 1209600,
+            "used": 515249,
+            "remaining": 694351,
+            "relative_start": 0,
+            "items": [
+                {
+                    "type": "gap",
+                    "start": 0,
+                    "duration": 1800
+                },
+                {
+                    "type": "video",
+                    "id": "yt-hg1pCXugMrM",
+                    "start": 1800,
+                    "duration": 3852,
+                    "title": "Reid Hoffman - SIER Distinguished Lectureship: A Candid Fireside Chat on the Entrepreneurial Journey",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=hg1pCXugMrM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "hg1pCXugMrM",
+                        "url": "https://www.youtube.com/watch?v=hg1pCXugMrM",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 5652,
+                    "duration": 1548
+                },
+                {
+                    "type": "video",
+                    "id": "yt-ozn7pfPvgu0",
+                    "start": 7200,
+                    "duration": 2202,
+                    "title": "Oligarchs and Their Discontents - Melissa Lane",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=ozn7pfPvgu0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "ozn7pfPvgu0",
+                        "url": "https://www.youtube.com/watch?v=ozn7pfPvgu0",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 9402,
+                    "duration": 19398
+                },
+                {
+                    "type": "video",
+                    "id": "yt-iRVfaR3N5K4",
+                    "start": 28800,
+                    "duration": 4109,
+                    "title": "1. Introduction and the geometric viewpoint on physics.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=iRVfaR3N5K4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "iRVfaR3N5K4",
+                        "url": "https://www.youtube.com/watch?v=iRVfaR3N5K4",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 32909,
+                    "duration": 3091
+                },
+                {
+                    "type": "video",
+                    "id": "yt-hFLoCaqx7TA",
+                    "start": 36000,
+                    "duration": 4180,
+                    "title": "The Invisible Universe: Dark Matter, the Higgs & Why We Exist | Marcela Carena",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=hFLoCaqx7TA",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "hFLoCaqx7TA",
+                        "url": "https://www.youtube.com/watch?v=hFLoCaqx7TA",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 40180,
+                    "duration": 3020
+                },
+                {
+                    "type": "video",
+                    "id": "yt-RIx-qHdnM7g",
+                    "start": 43200,
+                    "duration": 3470,
+                    "title": "Is the End in Sight for Theoretical Physics? - Graham Farmelo",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=RIx-qHdnM7g",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "RIx-qHdnM7g",
+                        "url": "https://www.youtube.com/watch?v=RIx-qHdnM7g",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 46670,
+                    "duration": 7330
+                },
+                {
+                    "type": "video",
+                    "id": "yt-sbpCTjmw85g",
+                    "start": 54000,
+                    "duration": 4727,
+                    "title": "Lecture 1: Predicates, Sets, and Proofs",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=sbpCTjmw85g",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "sbpCTjmw85g",
+                        "url": "https://www.youtube.com/watch?v=sbpCTjmw85g",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 58727,
+                    "duration": 2473
+                },
+                {
+                    "type": "video",
+                    "id": "yt-HJP0a6vKvlo",
+                    "start": 61200,
+                    "duration": 104,
+                    "title": "CS50x - Introduction",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=HJP0a6vKvlo",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "HJP0a6vKvlo",
+                        "url": "https://www.youtube.com/watch?v=HJP0a6vKvlo",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 61304,
+                    "duration": 14296
+                },
+                {
+                    "type": "video",
+                    "id": "yt-laKp1XeEF74",
+                    "start": 75600,
+                    "duration": 3754,
+                    "title": "Black Holes and the Fundamental Laws of Physics - with Jerome Gauntlett",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=laKp1XeEF74",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "laKp1XeEF74",
+                        "url": "https://www.youtube.com/watch?v=laKp1XeEF74",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 79354,
+                    "duration": 3446
+                },
+                {
+                    "type": "video",
+                    "id": "yt-bJczLlwp-d8",
+                    "start": 82800,
+                    "duration": 2765,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 1: Ukrainian Questions Posed by Russian Invasion",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=bJczLlwp-d8",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "bJczLlwp-d8",
+                        "url": "https://www.youtube.com/watch?v=bJczLlwp-d8",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 85565,
+                    "duration": 2635
+                },
+                {
+                    "type": "video",
+                    "id": "yt-bTxL01xq1W4",
+                    "start": 88200,
+                    "duration": 2805,
+                    "title": "Carina Hong (Axiom) - The Frontier of AI for Math [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=bTxL01xq1W4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "bTxL01xq1W4",
+                        "url": "https://www.youtube.com/watch?v=bTxL01xq1W4",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 91005,
+                    "duration": 2595
+                },
+                {
+                    "type": "video",
+                    "id": "yt-n98aYhZnsUI",
+                    "start": 93600,
+                    "duration": 2762,
+                    "title": "On the Nature of Time According to Modern Physics - Jim Al-Khalili",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=n98aYhZnsUI",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "n98aYhZnsUI",
+                        "url": "https://www.youtube.com/watch?v=n98aYhZnsUI",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 96362,
+                    "duration": 18838
+                },
+                {
+                    "type": "video",
+                    "id": "yt-TiHHz3sKDbY",
+                    "start": 115200,
+                    "duration": 4750,
+                    "title": "2. Introduction to tensors.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=TiHHz3sKDbY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "TiHHz3sKDbY",
+                        "url": "https://www.youtube.com/watch?v=TiHHz3sKDbY",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 119950,
+                    "duration": 2450
+                },
+                {
+                    "type": "video",
+                    "id": "yt-xMdrXj4lihs",
+                    "start": 122400,
+                    "duration": 3659,
+                    "title": "Curiosity and the Cosmos: CBC IDEAS at Perimeter Institute",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=xMdrXj4lihs",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "xMdrXj4lihs",
+                        "url": "https://www.youtube.com/watch?v=xMdrXj4lihs",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 126059,
+                    "duration": 3541
+                },
+                {
+                    "type": "video",
+                    "id": "yt-dX6u-53Eewk",
+                    "start": 129600,
+                    "duration": 3119,
+                    "title": "Introduction to University Mathematics (2026), Lecture 6. First Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=dX6u-53Eewk",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "dX6u-53Eewk",
+                        "url": "https://www.youtube.com/watch?v=dX6u-53Eewk",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 132719,
+                    "duration": 7681
+                },
+                {
+                    "type": "video",
+                    "id": "yt-_NYsYuzMLs0",
+                    "start": 140400,
+                    "duration": 4778,
+                    "title": "Lecture 2: Contradiction and Induction",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=_NYsYuzMLs0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "_NYsYuzMLs0",
+                        "url": "https://www.youtube.com/watch?v=_NYsYuzMLs0",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 145178,
+                    "duration": 2422
+                },
+                {
+                    "type": "video",
+                    "id": "yt-SlqjA04_dpk",
+                    "start": 147600,
+                    "duration": 9018,
+                    "title": "CS50x - Lecture 1 - C",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=SlqjA04_dpk",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "SlqjA04_dpk",
+                        "url": "https://www.youtube.com/watch?v=SlqjA04_dpk",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 156618,
+                    "duration": 5382
+                },
+                {
+                    "type": "video",
+                    "id": "yt-q7v5NtV8v6I",
+                    "start": 162000,
+                    "duration": 2567,
+                    "title": "Why Everything You Thought You Knew About Quantum Physics is Different - with Philip Ball",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=q7v5NtV8v6I",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "q7v5NtV8v6I",
+                        "url": "https://www.youtube.com/watch?v=q7v5NtV8v6I",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 164567,
+                    "duration": 4633
+                },
+                {
+                    "type": "video",
+                    "id": "yt-0LaEmaMAkpM",
+                    "start": 169200,
+                    "duration": 2780,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 2: The Genesis of Nations",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=0LaEmaMAkpM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "0LaEmaMAkpM",
+                        "url": "https://www.youtube.com/watch?v=0LaEmaMAkpM",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 171980,
+                    "duration": 2620
+                },
+                {
+                    "type": "video",
+                    "id": "yt-E1s1fb-DyUk",
+                    "start": 174600,
+                    "duration": 2872,
+                    "title": "Michael Bernstein (Simile) - The Future of AI Simulation [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=E1s1fb-DyUk",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "E1s1fb-DyUk",
+                        "url": "https://www.youtube.com/watch?v=E1s1fb-DyUk",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 177472,
+                    "duration": 2528
+                },
+                {
+                    "type": "video",
+                    "id": "yt-hX94cAh2SaI",
+                    "start": 180000,
+                    "duration": 3273,
+                    "title": "The Shape of Knots: From DNA to Shoestrings and Solar Flares - Alain Goriely",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=hX94cAh2SaI",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "hX94cAh2SaI",
+                        "url": "https://www.youtube.com/watch?v=hX94cAh2SaI",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 183273,
+                    "duration": 18327
+                },
+                {
+                    "type": "video",
+                    "id": "yt-H6eR3sG524M",
+                    "start": 201600,
+                    "duration": 4301,
+                    "title": "3. Tensors continued.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=H6eR3sG524M",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "H6eR3sG524M",
+                        "url": "https://www.youtube.com/watch?v=H6eR3sG524M",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 205901,
+                    "duration": 2899
+                },
+                {
+                    "type": "video",
+                    "id": "yt-CzpJkCw1EDE",
+                    "start": 208800,
+                    "duration": 3161,
+                    "title": "Interstellar Objects and the New Solar System | Chris Lintott",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=CzpJkCw1EDE",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "CzpJkCw1EDE",
+                        "url": "https://www.youtube.com/watch?v=CzpJkCw1EDE",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 211961,
+                    "duration": 4039
+                },
+                {
+                    "type": "video",
+                    "id": "yt-jj29uEu7ozU",
+                    "start": 216000,
+                    "duration": 2717,
+                    "title": "Introduction to University Mathematics (2026), Lecture 5. First Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=jj29uEu7ozU",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "jj29uEu7ozU",
+                        "url": "https://www.youtube.com/watch?v=jj29uEu7ozU",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 218717,
+                    "duration": 8083
+                },
+                {
+                    "type": "video",
+                    "id": "yt-GOgA8JGUiwI",
+                    "start": 226800,
+                    "duration": 5050,
+                    "title": "Lecture 3: Casework and Strong Induction",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=GOgA8JGUiwI",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "GOgA8JGUiwI",
+                        "url": "https://www.youtube.com/watch?v=GOgA8JGUiwI",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 231850,
+                    "duration": 2150
+                },
+                {
+                    "type": "video",
+                    "id": "yt-h5Gc1n8ZuU8",
+                    "start": 234000,
+                    "duration": 8735,
+                    "title": "CS50x - Lecture 2 - Arrays",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=h5Gc1n8ZuU8",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "h5Gc1n8ZuU8",
+                        "url": "https://www.youtube.com/watch?v=h5Gc1n8ZuU8",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 242735,
+                    "duration": 5665
+                },
+                {
+                    "type": "video",
+                    "id": "yt-wwgQVZju1ZM",
+                    "start": 248400,
+                    "duration": 3598,
+                    "title": "Jim Al-Khalili - Quantum Life: How Physics Can Revolutionise Biology",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=wwgQVZju1ZM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "wwgQVZju1ZM",
+                        "url": "https://www.youtube.com/watch?v=wwgQVZju1ZM",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 251998,
+                    "duration": 3602
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Om_A5TTQMm0",
+                    "start": 255600,
+                    "duration": 2880,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 3: Geography and Ancient History",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Om_A5TTQMm0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Om_A5TTQMm0",
+                        "url": "https://www.youtube.com/watch?v=Om_A5TTQMm0",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 258480,
+                    "duration": 2520
+                },
+                {
+                    "type": "video",
+                    "id": "yt-2kEkOX32gtY",
+                    "start": 261000,
+                    "duration": 2765,
+                    "title": "Vineet Edupuganti (Cogent Security) - First Principles in the AI Era [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=2kEkOX32gtY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "2kEkOX32gtY",
+                        "url": "https://www.youtube.com/watch?v=2kEkOX32gtY",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 263765,
+                    "duration": 2635
+                },
+                {
+                    "type": "video",
+                    "id": "yt-PusnwdLkEhM",
+                    "start": 266400,
+                    "duration": 2707,
+                    "title": "The Death of the Roman Republic? - Melissa Lane",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=PusnwdLkEhM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "PusnwdLkEhM",
+                        "url": "https://www.youtube.com/watch?v=PusnwdLkEhM",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 269107,
+                    "duration": 18893
+                },
+                {
+                    "type": "video",
+                    "id": "yt-h9xaoGkyHwg",
+                    "start": 288000,
+                    "duration": 4769,
+                    "title": "4. Volumes and volume elements; conservation laws.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=h9xaoGkyHwg",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "h9xaoGkyHwg",
+                        "url": "https://www.youtube.com/watch?v=h9xaoGkyHwg",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 292769,
+                    "duration": 2431
+                },
+                {
+                    "type": "video",
+                    "id": "yt-jcwRm9hcJ2c",
+                    "start": 295200,
+                    "duration": 1026,
+                    "title": "Quantum Metrology: Pushing the Limits of Measurement | Sisi Zhou",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=jcwRm9hcJ2c",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "jcwRm9hcJ2c",
+                        "url": "https://www.youtube.com/watch?v=jcwRm9hcJ2c",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 296226,
+                    "duration": 6174
+                },
+                {
+                    "type": "video",
+                    "id": "yt-590wkRwSc4U",
+                    "start": 302400,
+                    "duration": 8067,
+                    "title": "Introduction to University Mathematics (2026), Lecture 4. First Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=590wkRwSc4U",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "590wkRwSc4U",
+                        "url": "https://www.youtube.com/watch?v=590wkRwSc4U",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 310467,
+                    "duration": 2733
+                },
+                {
+                    "type": "video",
+                    "id": "yt-gVdrFsnOo_s",
+                    "start": 313200,
+                    "duration": 4876,
+                    "title": "Lecture 4: State Machines",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=gVdrFsnOo_s",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "gVdrFsnOo_s",
+                        "url": "https://www.youtube.com/watch?v=gVdrFsnOo_s",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 318076,
+                    "duration": 2324
+                },
+                {
+                    "type": "video",
+                    "id": "yt-6Svu_ae5ebk",
+                    "start": 320400,
+                    "duration": 7176,
+                    "title": "CS50x - Lecture 3 - Algorithms",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=6Svu_ae5ebk",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "6Svu_ae5ebk",
+                        "url": "https://www.youtube.com/watch?v=6Svu_ae5ebk",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 327576,
+                    "duration": 7224
+                },
+                {
+                    "type": "video",
+                    "id": "yt--6rWqJhDv7M",
+                    "start": 334800,
+                    "duration": 3294,
+                    "title": "The Physics and Philosophy of Time - with Carlo Rovelli",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=-6rWqJhDv7M",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "-6rWqJhDv7M",
+                        "url": "https://www.youtube.com/watch?v=-6rWqJhDv7M",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 338094,
+                    "duration": 3906
+                },
+                {
+                    "type": "video",
+                    "id": "yt-zhCK5uGJ3Tw",
+                    "start": 342000,
+                    "duration": 2919,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 4: Before Europe",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=zhCK5uGJ3Tw",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "zhCK5uGJ3Tw",
+                        "url": "https://www.youtube.com/watch?v=zhCK5uGJ3Tw",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 344919,
+                    "duration": 2481
+                },
+                {
+                    "type": "video",
+                    "id": "yt-QMfrkoMRJh8",
+                    "start": 347400,
+                    "duration": 3566,
+                    "title": "Stanford Educators on AI: The Next Wave of Entrepreneurship Education (Presented by STVP)",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=QMfrkoMRJh8",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "QMfrkoMRJh8",
+                        "url": "https://www.youtube.com/watch?v=QMfrkoMRJh8",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 350966,
+                    "duration": 1834
+                },
+                {
+                    "type": "video",
+                    "id": "yt-VGbab05ABn4",
+                    "start": 352800,
+                    "duration": 3188,
+                    "title": "The Morrigan: The Nightmare Queen - Ronald Hutton",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=VGbab05ABn4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "VGbab05ABn4",
+                        "url": "https://www.youtube.com/watch?v=VGbab05ABn4",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 355988,
+                    "duration": 18412
+                },
+                {
+                    "type": "video",
+                    "id": "yt-OOmZkNa72t4",
+                    "start": 374400,
+                    "duration": 4836,
+                    "title": "5. The stress energy tensor and the Christoffel symbol.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=OOmZkNa72t4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "OOmZkNa72t4",
+                        "url": "https://www.youtube.com/watch?v=OOmZkNa72t4",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 379236,
+                    "duration": 2364
+                },
+                {
+                    "type": "video",
+                    "id": "yt-qtDUm6P1pZM",
+                    "start": 381600,
+                    "duration": 1379,
+                    "title": "The Future of Quantum Computing with Michele Mosca",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=qtDUm6P1pZM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "qtDUm6P1pZM",
+                        "url": "https://www.youtube.com/watch?v=qtDUm6P1pZM",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 382979,
+                    "duration": 5821
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Dw_Ye5FpsvE",
+                    "start": 388800,
+                    "duration": 5591,
+                    "title": "Introduction to University Mathematics (2026), Lecture 3. First Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Dw_Ye5FpsvE",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Dw_Ye5FpsvE",
+                        "url": "https://www.youtube.com/watch?v=Dw_Ye5FpsvE",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 394391,
+                    "duration": 5209
+                },
+                {
+                    "type": "video",
+                    "id": "yt-nqOPy2d6ihY",
+                    "start": 399600,
+                    "duration": 4941,
+                    "title": "Lecture 5: Sums",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=nqOPy2d6ihY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "nqOPy2d6ihY",
+                        "url": "https://www.youtube.com/watch?v=nqOPy2d6ihY",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 404541,
+                    "duration": 2259
+                },
+                {
+                    "type": "video",
+                    "id": "yt-db0H0U13YsA",
+                    "start": 406800,
+                    "duration": 8395,
+                    "title": "CS50x - Lecture 4 - Memory",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=db0H0U13YsA",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "db0H0U13YsA",
+                        "url": "https://www.youtube.com/watch?v=db0H0U13YsA",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 415195,
+                    "duration": 6005
+                },
+                {
+                    "type": "video",
+                    "id": "yt-S3xH97Su-KY",
+                    "start": 421200,
+                    "duration": 3227,
+                    "title": "The Physics of Magnetic Monopoles - with Felix Flicker",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=S3xH97Su-KY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "S3xH97Su-KY",
+                        "url": "https://www.youtube.com/watch?v=S3xH97Su-KY",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 424427,
+                    "duration": 3973
+                },
+                {
+                    "type": "video",
+                    "id": "yt-36XiKhamtQo",
+                    "start": 428400,
+                    "duration": 3094,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 5: Vikings, Slavers, Lawgivers: The Kyiv State",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=36XiKhamtQo",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "36XiKhamtQo",
+                        "url": "https://www.youtube.com/watch?v=36XiKhamtQo",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 431494,
+                    "duration": 2306
+                },
+                {
+                    "type": "video",
+                    "id": "yt-M5-Uft9nX68",
+                    "start": 433800,
+                    "duration": 2795,
+                    "title": "Eric Ries (The Lean Startup) - Be the Human Spark [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=M5-Uft9nX68",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "M5-Uft9nX68",
+                        "url": "https://www.youtube.com/watch?v=M5-Uft9nX68",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 436595,
+                    "duration": 2605
+                },
+                {
+                    "type": "video",
+                    "id": "yt-p6ePMt1IGO4",
+                    "start": 439200,
+                    "duration": 3162,
+                    "title": "There Must be a Better Way: Thoughts on the Future of Family Law - Sir Andrew McFarlane",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=p6ePMt1IGO4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "p6ePMt1IGO4",
+                        "url": "https://www.youtube.com/watch?v=p6ePMt1IGO4",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 442362,
+                    "duration": 18438
+                },
+                {
+                    "type": "video",
+                    "id": "yt-6MssatXXAzc",
+                    "start": 460800,
+                    "duration": 4806,
+                    "title": "6. The principle of equivalence.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=6MssatXXAzc",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "6MssatXXAzc",
+                        "url": "https://www.youtube.com/watch?v=6MssatXXAzc",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 465606,
+                    "duration": 2394
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Mw60FH5iflI",
+                    "start": 468000,
+                    "duration": 3278,
+                    "title": "Training Sand to Think: Artificial General Intelligence & Future of Physics",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Mw60FH5iflI",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Mw60FH5iflI",
+                        "url": "https://www.youtube.com/watch?v=Mw60FH5iflI",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 471278,
+                    "duration": 3922
+                },
+                {
+                    "type": "video",
+                    "id": "yt-USZekj182j4",
+                    "start": 475200,
+                    "duration": 2557,
+                    "title": "Introduction to University Mathematics (2026), Lecture 2. First Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=USZekj182j4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "USZekj182j4",
+                        "url": "https://www.youtube.com/watch?v=USZekj182j4",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 477757,
+                    "duration": 8243
+                },
+                {
+                    "type": "video",
+                    "id": "yt-6dQQAn4L24s",
+                    "start": 486000,
+                    "duration": 4706,
+                    "title": "Lecture 6: Asymptotics",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=6dQQAn4L24s",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "6dQQAn4L24s",
+                        "url": "https://www.youtube.com/watch?v=6dQQAn4L24s",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 490706,
+                    "duration": 2494
+                },
+                {
+                    "type": "video",
+                    "id": "yt-PmAI76OGE_E",
+                    "start": 493200,
+                    "duration": 7430,
+                    "title": "CS50x - Lecture 5 - Data Structures",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=PmAI76OGE_E",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "PmAI76OGE_E",
+                        "url": "https://www.youtube.com/watch?v=PmAI76OGE_E",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 500630,
+                    "duration": 6970
+                },
+                {
+                    "type": "video",
+                    "id": "yt-gKrjOD3ZeO0",
+                    "start": 507600,
+                    "duration": 3718,
+                    "title": "The World According to Physics - with Jim Al-Khalili",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=gKrjOD3ZeO0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "gKrjOD3ZeO0",
+                        "url": "https://www.youtube.com/watch?v=gKrjOD3ZeO0",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 511318,
+                    "duration": 3482
+                },
+                {
+                    "type": "video",
+                    "id": "yt-IlvE6tgPEf8",
+                    "start": 514800,
+                    "duration": 3075,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 6: The Grand Duchy of Lithuania",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=IlvE6tgPEf8",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "IlvE6tgPEf8",
+                        "url": "https://www.youtube.com/watch?v=IlvE6tgPEf8",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 517875,
+                    "duration": 2325
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Zb1LClh3lHo",
+                    "start": 520200,
+                    "duration": 2786,
+                    "title": "Adam Nash (Daffy) - Making Great Products [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Zb1LClh3lHo",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Zb1LClh3lHo",
+                        "url": "https://www.youtube.com/watch?v=Zb1LClh3lHo",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 522986,
+                    "duration": 2614
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Bni42PX7C-Y",
+                    "start": 525600,
+                    "duration": 3139,
+                    "title": "Education – And Its Limits - Daniel Susskind",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Bni42PX7C-Y",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Bni42PX7C-Y",
+                        "url": "https://www.youtube.com/watch?v=Bni42PX7C-Y",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 528739,
+                    "duration": 18461
+                },
+                {
+                    "type": "video",
+                    "id": "yt-gnWKpHUj11w",
+                    "start": 547200,
+                    "duration": 4908,
+                    "title": "7. Principle of equivalence continued; parallel transport.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=gnWKpHUj11w",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "gnWKpHUj11w",
+                        "url": "https://www.youtube.com/watch?v=gnWKpHUj11w",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 552108,
+                    "duration": 2292
+                },
+                {
+                    "type": "video",
+                    "id": "yt-cNWS8Sd3O-k",
+                    "start": 554400,
+                    "duration": 3717,
+                    "title": "CBC IDEAS at Perimeter - The Numbers That Shape Our Universe",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=cNWS8Sd3O-k",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "cNWS8Sd3O-k",
+                        "url": "https://www.youtube.com/watch?v=cNWS8Sd3O-k",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 558117,
+                    "duration": 3483
+                },
+                {
+                    "type": "video",
+                    "id": "yt-cASmou81OyY",
+                    "start": 561600,
+                    "duration": 6776,
+                    "title": "Introduction to University Mathematics (2026), Lecture 1. First Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=cASmou81OyY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "cASmou81OyY",
+                        "url": "https://www.youtube.com/watch?v=cASmou81OyY",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 568376,
+                    "duration": 4024
+                },
+                {
+                    "type": "video",
+                    "id": "yt-PvuwfciiH2U",
+                    "start": 572400,
+                    "duration": 4404,
+                    "title": "Lecture 7: Recurrences",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=PvuwfciiH2U",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "PvuwfciiH2U",
+                        "url": "https://www.youtube.com/watch?v=PvuwfciiH2U",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 576804,
+                    "duration": 2796
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Rl0ludWTLxs",
+                    "start": 579600,
+                    "duration": 8972,
+                    "title": "CS50x - Lecture 6 - Python",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Rl0ludWTLxs",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Rl0ludWTLxs",
+                        "url": "https://www.youtube.com/watch?v=Rl0ludWTLxs",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 588572,
+                    "duration": 5428
+                },
+                {
+                    "type": "video",
+                    "id": "yt-0WWjCICqDK8",
+                    "start": 594000,
+                    "duration": 4614,
+                    "title": "High-voltage physics - with David Ricketts",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=0WWjCICqDK8",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "0WWjCICqDK8",
+                        "url": "https://www.youtube.com/watch?v=0WWjCICqDK8",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 598614,
+                    "duration": 2586
+                },
+                {
+                    "type": "video",
+                    "id": "yt-CMpkBOTCgCM",
+                    "start": 601200,
+                    "duration": 3048,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 7. Rise of Muscovite Power",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=CMpkBOTCgCM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "CMpkBOTCgCM",
+                        "url": "https://www.youtube.com/watch?v=CMpkBOTCgCM",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 604248,
+                    "duration": 2352
+                },
+                {
+                    "type": "video",
+                    "id": "yt-iRL2mypbN5M",
+                    "start": 606600,
+                    "duration": 2819,
+                    "title": "Ryan Nece (Next Legacy Partners) - Learning from Achievement and Adversity [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=iRL2mypbN5M",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "iRL2mypbN5M",
+                        "url": "https://www.youtube.com/watch?v=iRL2mypbN5M",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 609419,
+                    "duration": 2581
+                },
+                {
+                    "type": "video",
+                    "id": "yt-52iu-nUIlaM",
+                    "start": 612000,
+                    "duration": 3457,
+                    "title": "The White Knight: Ice - Helen Czerski",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=52iu-nUIlaM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "52iu-nUIlaM",
+                        "url": "https://www.youtube.com/watch?v=52iu-nUIlaM",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 615457,
+                    "duration": 18143
+                },
+                {
+                    "type": "video",
+                    "id": "yt-LoIq6KElVxs",
+                    "start": 633600,
+                    "duration": 4574,
+                    "title": "8. Lie transport, Killing vectors, tensor densities.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=LoIq6KElVxs",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "LoIq6KElVxs",
+                        "url": "https://www.youtube.com/watch?v=LoIq6KElVxs",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 638174,
+                    "duration": 2626
+                },
+                {
+                    "type": "video",
+                    "id": "yt-1MeQOl-FeRU",
+                    "start": 640800,
+                    "duration": 3960,
+                    "title": "Ka'satstenhera – Unity of Hearts and Minds by Jay Havens | Perimeter Institute Public Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=1MeQOl-FeRU",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "1MeQOl-FeRU",
+                        "url": "https://www.youtube.com/watch?v=1MeQOl-FeRU",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 644760,
+                    "duration": 3240
+                },
+                {
+                    "type": "video",
+                    "id": "yt-SVNdjdpRJY0",
+                    "start": 648000,
+                    "duration": 4496,
+                    "title": "Introduction to University Mathematics (2026), Lecture 0. First Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=SVNdjdpRJY0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "SVNdjdpRJY0",
+                        "url": "https://www.youtube.com/watch?v=SVNdjdpRJY0",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 652496,
+                    "duration": 6304
+                },
+                {
+                    "type": "video",
+                    "id": "yt-XW9xERSeenI",
+                    "start": 658800,
+                    "duration": 4740,
+                    "title": "Lecture 8: Divisibility",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=XW9xERSeenI",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "XW9xERSeenI",
+                        "url": "https://www.youtube.com/watch?v=XW9xERSeenI",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 663540,
+                    "duration": 2460
+                },
+                {
+                    "type": "video",
+                    "id": "yt-oqRU2So6Z2Y",
+                    "start": 666000,
+                    "duration": 8133,
+                    "title": "CS50x - Lecture 7 - SQL",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=oqRU2So6Z2Y",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "oqRU2So6Z2Y",
+                        "url": "https://www.youtube.com/watch?v=oqRU2So6Z2Y",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 674133,
+                    "duration": 6267
+                },
+                {
+                    "type": "video",
+                    "id": "yt-r8ySRS9cXiM",
+                    "start": 680400,
+                    "duration": 2659,
+                    "title": "Is This a New Kind of Physics? - with Harry Cliff, Paula Alvarez Cartelle and Ben Allanach",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=r8ySRS9cXiM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "r8ySRS9cXiM",
+                        "url": "https://www.youtube.com/watch?v=r8ySRS9cXiM",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 683059,
+                    "duration": 4541
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Bp495Uz_Cq4",
+                    "start": 687600,
+                    "duration": 3078,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 8. Early Jews of Modern Ukraine",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Bp495Uz_Cq4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Bp495Uz_Cq4",
+                        "url": "https://www.youtube.com/watch?v=Bp495Uz_Cq4",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 690678,
+                    "duration": 2322
+                },
+                {
+                    "type": "video",
+                    "id": "yt-HfjFBGjgegc",
+                    "start": 693000,
+                    "duration": 2961,
+                    "title": "Jake Miller (Fellow) - Designing Products Around Customer Experience [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=HfjFBGjgegc",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "HfjFBGjgegc",
+                        "url": "https://www.youtube.com/watch?v=HfjFBGjgegc",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 695961,
+                    "duration": 2439
+                },
+                {
+                    "type": "video",
+                    "id": "yt-eoauXRBstk0",
+                    "start": 698400,
+                    "duration": 2600,
+                    "title": "Cicero In and On Political Crises - Melissa Lane",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=eoauXRBstk0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "eoauXRBstk0",
+                        "url": "https://www.youtube.com/watch?v=eoauXRBstk0",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 701000,
+                    "duration": 19000
+                },
+                {
+                    "type": "video",
+                    "id": "yt-4QPKWFme0k4",
+                    "start": 720000,
+                    "duration": 4858,
+                    "title": "9. Geodesics.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=4QPKWFme0k4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "4QPKWFme0k4",
+                        "url": "https://www.youtube.com/watch?v=4QPKWFme0k4",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 724858,
+                    "duration": 2342
+                },
+                {
+                    "type": "video",
+                    "id": "yt-eFC5k3JXVgA",
+                    "start": 727200,
+                    "duration": 2956,
+                    "title": "100 Years of Quantum: Perspectives on its Past, Present, and Future",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=eFC5k3JXVgA",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "eFC5k3JXVgA",
+                        "url": "https://www.youtube.com/watch?v=eFC5k3JXVgA",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 730156,
+                    "duration": 4244
+                },
+                {
+                    "type": "video",
+                    "id": "yt-OQ0RTmPUNQ4",
+                    "start": 734400,
+                    "duration": 2852,
+                    "title": "Geometry: Hyperbolic space - the upper half-space and Poincaré disk models. 2nd Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=OQ0RTmPUNQ4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "OQ0RTmPUNQ4",
+                        "url": "https://www.youtube.com/watch?v=OQ0RTmPUNQ4",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 737252,
+                    "duration": 7948
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Nn8nBPyzzQ0",
+                    "start": 745200,
+                    "duration": 4786,
+                    "title": "Lecture 9: Modular Arithmetic",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Nn8nBPyzzQ0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Nn8nBPyzzQ0",
+                        "url": "https://www.youtube.com/watch?v=Nn8nBPyzzQ0",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 749986,
+                    "duration": 2414
+                },
+                {
+                    "type": "video",
+                    "id": "yt--9bo8HlSxwQ",
+                    "start": 752400,
+                    "duration": 2869,
+                    "title": "CS50x - Artificial Intelligence",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=-9bo8HlSxwQ",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "-9bo8HlSxwQ",
+                        "url": "https://www.youtube.com/watch?v=-9bo8HlSxwQ",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 755269,
+                    "duration": 11531
+                },
+                {
+                    "type": "video",
+                    "id": "yt-aN4zmEY9i_U",
+                    "start": 766800,
+                    "duration": 5201,
+                    "title": "Smashing Physics - with Jon Butterworth and Brian Cox",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=aN4zmEY9i_U",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "aN4zmEY9i_U",
+                        "url": "https://www.youtube.com/watch?v=aN4zmEY9i_U",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 772001,
+                    "duration": 1999
+                },
+                {
+                    "type": "video",
+                    "id": "yt-_IBll--m7qI",
+                    "start": 774000,
+                    "duration": 2963,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 9. Polish Power and Cossack Revolution",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=_IBll--m7qI",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "_IBll--m7qI",
+                        "url": "https://www.youtube.com/watch?v=_IBll--m7qI",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 776963,
+                    "duration": 2437
+                },
+                {
+                    "type": "video",
+                    "id": "yt-k8-OvuT4Cqs",
+                    "start": 779400,
+                    "duration": 3030,
+                    "title": "Ellen Ochoa (NASA) - Leadership Lessons from Space [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=k8-OvuT4Cqs",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "k8-OvuT4Cqs",
+                        "url": "https://www.youtube.com/watch?v=k8-OvuT4Cqs",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 782430,
+                    "duration": 2370
+                },
+                {
+                    "type": "video",
+                    "id": "yt-TTBySX_7XSE",
+                    "start": 784800,
+                    "duration": 3019,
+                    "title": "Forging Better Futures for You and AI - Matt Jones",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=TTBySX_7XSE",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "TTBySX_7XSE",
+                        "url": "https://www.youtube.com/watch?v=TTBySX_7XSE",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 787819,
+                    "duration": 18581
+                },
+                {
+                    "type": "video",
+                    "id": "yt-JWSdeg4jkoY",
+                    "start": 806400,
+                    "duration": 4853,
+                    "title": "10. Spacetime curvature.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=JWSdeg4jkoY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "JWSdeg4jkoY",
+                        "url": "https://www.youtube.com/watch?v=JWSdeg4jkoY",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 811253,
+                    "duration": 2347
+                },
+                {
+                    "type": "video",
+                    "id": "yt-eIXSmhg78HY",
+                    "start": 813600,
+                    "duration": 4182,
+                    "title": "100 Years of Quantum: Perspectives on its Past, Present, and Future",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=eIXSmhg78HY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "eIXSmhg78HY",
+                        "url": "https://www.youtube.com/watch?v=eIXSmhg78HY",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 817782,
+                    "duration": 3018
+                },
+                {
+                    "type": "video",
+                    "id": "yt-m_5Jlquo0W4",
+                    "start": 820800,
+                    "duration": 2821,
+                    "title": "Geometry: Hyperbolic space - the hyperboloid model. Oxford Mathematics 2nd Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=m_5Jlquo0W4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "m_5Jlquo0W4",
+                        "url": "https://www.youtube.com/watch?v=m_5Jlquo0W4",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 823621,
+                    "duration": 7979
+                },
+                {
+                    "type": "video",
+                    "id": "yt-hRDOmMEZtPo",
+                    "start": 831600,
+                    "duration": 4869,
+                    "title": "Lecture 10: Cryptography",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=hRDOmMEZtPo",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "hRDOmMEZtPo",
+                        "url": "https://www.youtube.com/watch?v=hRDOmMEZtPo",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 836469,
+                    "duration": 2331
+                },
+                {
+                    "type": "video",
+                    "id": "yt-yYst7puZXjw",
+                    "start": 838800,
+                    "duration": 8532,
+                    "title": "CS50x - Lecture 8 - HTML, CSS, JavaScript",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=yYst7puZXjw",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "yYst7puZXjw",
+                        "url": "https://www.youtube.com/watch?v=yYst7puZXjw",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 847332,
+                    "duration": 5868
+                },
+                {
+                    "type": "video",
+                    "id": "yt-qoDZKlcdPNM",
+                    "start": 853200,
+                    "duration": 4731,
+                    "title": "Computation and the Fundamental Theory of Physics - with Stephen Wolfram",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=qoDZKlcdPNM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "qoDZKlcdPNM",
+                        "url": "https://www.youtube.com/watch?v=qoDZKlcdPNM",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 857931,
+                    "duration": 2469
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Wdn0zcCXjQY",
+                    "start": 860400,
+                    "duration": 2994,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 10. Global Empires",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Wdn0zcCXjQY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Wdn0zcCXjQY",
+                        "url": "https://www.youtube.com/watch?v=Wdn0zcCXjQY",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 863394,
+                    "duration": 2406
+                },
+                {
+                    "type": "video",
+                    "id": "yt-mHYO5Vj7pBw",
+                    "start": 865800,
+                    "duration": 2774,
+                    "title": "Elizabeth Weil (Scribble Ventures) - A People-Centered Journey [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=mHYO5Vj7pBw",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "mHYO5Vj7pBw",
+                        "url": "https://www.youtube.com/watch?v=mHYO5Vj7pBw",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 868574,
+                    "duration": 2626
+                },
+                {
+                    "type": "video",
+                    "id": "yt-3MGeMliunU4",
+                    "start": 871200,
+                    "duration": 2682,
+                    "title": "Current Challenges to the US Constitution - Clive Stafford Smith",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=3MGeMliunU4",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "3MGeMliunU4",
+                        "url": "https://www.youtube.com/watch?v=3MGeMliunU4",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 873882,
+                    "duration": 18918
+                },
+                {
+                    "type": "video",
+                    "id": "yt-d1dtqw7f6pw",
+                    "start": 892800,
+                    "duration": 4794,
+                    "title": "11. More on spacetime curvature.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=d1dtqw7f6pw",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "d1dtqw7f6pw",
+                        "url": "https://www.youtube.com/watch?v=d1dtqw7f6pw",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 897594,
+                    "duration": 2406
+                },
+                {
+                    "type": "video",
+                    "id": "yt-2zIqyiUlD4Q",
+                    "start": 900000,
+                    "duration": 4793,
+                    "title": "CBC Radio Quirks & Quarks: 50th Anniversary Episode at Perimeter Institute",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=2zIqyiUlD4Q",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "2zIqyiUlD4Q",
+                        "url": "https://www.youtube.com/watch?v=2zIqyiUlD4Q",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 904793,
+                    "duration": 2407
+                },
+                {
+                    "type": "video",
+                    "id": "yt-ridNG_BytkY",
+                    "start": 907200,
+                    "duration": 6694,
+                    "title": "Dynamics, Lectures 15 & 16: Oxford Mathematics 1st Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=ridNG_BytkY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "ridNG_BytkY",
+                        "url": "https://www.youtube.com/watch?v=ridNG_BytkY",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 913894,
+                    "duration": 4106
+                },
+                {
+                    "type": "video",
+                    "id": "yt-cB0UijRfOCQ",
+                    "start": 918000,
+                    "duration": 4876,
+                    "title": "Lecture 11: Graphs and Coloring",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=cB0UijRfOCQ",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "cB0UijRfOCQ",
+                        "url": "https://www.youtube.com/watch?v=cB0UijRfOCQ",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 922876,
+                    "duration": 2324
+                },
+                {
+                    "type": "video",
+                    "id": "yt-am7POvSZ4GE",
+                    "start": 925200,
+                    "duration": 8796,
+                    "title": "CS50x - Lecture 9 - Flask",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=am7POvSZ4GE",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "am7POvSZ4GE",
+                        "url": "https://www.youtube.com/watch?v=am7POvSZ4GE",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 933996,
+                    "duration": 5604
+                },
+                {
+                    "type": "video",
+                    "id": "yt-fl9oDJzfg58",
+                    "start": 939600,
+                    "duration": 2449,
+                    "title": "Existential physics: answering life's biggest questions - with Sabine Hossenfelder",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=fl9oDJzfg58",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "fl9oDJzfg58",
+                        "url": "https://www.youtube.com/watch?v=fl9oDJzfg58",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 942049,
+                    "duration": 4751
+                },
+                {
+                    "type": "video",
+                    "id": "yt-hde-2h5eEQI",
+                    "start": 946800,
+                    "duration": 2905,
+                    "title": "Timothy Snyder: Making of Modern Ukraine. Class 11.Ottoman Retreat, Russian Power,Ukrainian Populism",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=hde-2h5eEQI",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "hde-2h5eEQI",
+                        "url": "https://www.youtube.com/watch?v=hde-2h5eEQI",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 949705,
+                    "duration": 2495
+                },
+                {
+                    "type": "video",
+                    "id": "yt-AzIvPB1c8lg",
+                    "start": 952200,
+                    "duration": 2817,
+                    "title": "Tracy Chou (Block Party) - Founding a Mission-Driven Startup [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=AzIvPB1c8lg",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "AzIvPB1c8lg",
+                        "url": "https://www.youtube.com/watch?v=AzIvPB1c8lg",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 955017,
+                    "duration": 2583
+                },
+                {
+                    "type": "video",
+                    "id": "yt-a7Nt_UpvmrQ",
+                    "start": 957600,
+                    "duration": 2202,
+                    "title": "Shock of the Nude: Pioneering Women Artists and the Cultural Politics of Modern China - Di Wang",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=a7Nt_UpvmrQ",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "a7Nt_UpvmrQ",
+                        "url": "https://www.youtube.com/watch?v=a7Nt_UpvmrQ",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 959802,
+                    "duration": 19398
+                },
+                {
+                    "type": "video",
+                    "id": "yt-OIjLUzS6SQA",
+                    "start": 979200,
+                    "duration": 4660,
+                    "title": "12. The Einstein field equation.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=OIjLUzS6SQA",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "OIjLUzS6SQA",
+                        "url": "https://www.youtube.com/watch?v=OIjLUzS6SQA",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 983860,
+                    "duration": 2540
+                },
+                {
+                    "type": "video",
+                    "id": "yt-w63qjrDB9qM",
+                    "start": 986400,
+                    "duration": 4944,
+                    "title": "CBC Radio Quirks & Quarks: 50th Anniversary Episode",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=w63qjrDB9qM",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "w63qjrDB9qM",
+                        "url": "https://www.youtube.com/watch?v=w63qjrDB9qM",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 991344,
+                    "duration": 2256
+                },
+                {
+                    "type": "video",
+                    "id": "yt-GXygFTxrAGE",
+                    "start": 993600,
+                    "duration": 6443,
+                    "title": "Dynamics, Lectures 13 & 14: Oxford Mathematics 1st Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=GXygFTxrAGE",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "GXygFTxrAGE",
+                        "url": "https://www.youtube.com/watch?v=GXygFTxrAGE",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1000043,
+                    "duration": 4357
+                },
+                {
+                    "type": "video",
+                    "id": "yt-CEd313PPKXQ",
+                    "start": 1004400,
+                    "duration": 4904,
+                    "title": "Lecture 12: Matching",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=CEd313PPKXQ",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "CEd313PPKXQ",
+                        "url": "https://www.youtube.com/watch?v=CEd313PPKXQ",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1009304,
+                    "duration": 2296
+                },
+                {
+                    "type": "video",
+                    "id": "yt-ApQTgFkf8TU",
+                    "start": 1011600,
+                    "duration": 3125,
+                    "title": "CS50x - Lecture 10 - The End",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=ApQTgFkf8TU",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "ApQTgFkf8TU",
+                        "url": "https://www.youtube.com/watch?v=ApQTgFkf8TU",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1014725,
+                    "duration": 11275
+                },
+                {
+                    "type": "video",
+                    "id": "yt-n4RbkTCp16k",
+                    "start": 1026000,
+                    "duration": 3355,
+                    "title": "At the limits of astrophysics – with Katy Clough",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=n4RbkTCp16k",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "n4RbkTCp16k",
+                        "url": "https://www.youtube.com/watch?v=n4RbkTCp16k",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1029355,
+                    "duration": 3845
+                },
+                {
+                    "type": "video",
+                    "id": "yt-WO_SuY-4Sow",
+                    "start": 1033200,
+                    "duration": 2878,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 12. Habsburg Curiosity",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=WO_SuY-4Sow",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "WO_SuY-4Sow",
+                        "url": "https://www.youtube.com/watch?v=WO_SuY-4Sow",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1036078,
+                    "duration": 2522
+                },
+                {
+                    "type": "video",
+                    "id": "yt-SyLEXYKdqc0",
+                    "start": 1038600,
+                    "duration": 2993,
+                    "title": "Harry Tannenbaum (Mill) - Setting the Goal at Delight [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=SyLEXYKdqc0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "SyLEXYKdqc0",
+                        "url": "https://www.youtube.com/watch?v=SyLEXYKdqc0",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1041593,
+                    "duration": 2407
+                },
+                {
+                    "type": "video",
+                    "id": "yt-TADWmqaDyDg",
+                    "start": 1044000,
+                    "duration": 3108,
+                    "title": "Pluto Isn’t a Planet - Chris Lintott",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=TADWmqaDyDg",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "TADWmqaDyDg",
+                        "url": "https://www.youtube.com/watch?v=TADWmqaDyDg",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1047108,
+                    "duration": 18492
+                },
+                {
+                    "type": "video",
+                    "id": "yt-JNWXzIFcf3g",
+                    "start": 1065600,
+                    "duration": 4713,
+                    "title": "13. The Einstein field equation (variant derivation).",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=JNWXzIFcf3g",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "JNWXzIFcf3g",
+                        "url": "https://www.youtube.com/watch?v=JNWXzIFcf3g",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1070313,
+                    "duration": 2487
+                },
+                {
+                    "type": "video",
+                    "id": "yt-BOo7Lc-25a0",
+                    "start": 1072800,
+                    "duration": 3543,
+                    "title": "Katie Mack on How the Universe Ends | Perimeter Institute Public Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=BOo7Lc-25a0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "BOo7Lc-25a0",
+                        "url": "https://www.youtube.com/watch?v=BOo7Lc-25a0",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1076343,
+                    "duration": 3657
+                },
+                {
+                    "type": "video",
+                    "id": "yt-YHZCo1gb_7E",
+                    "start": 1080000,
+                    "duration": 6416,
+                    "title": "Dynamics, Lectures 11 & 12: Oxford Mathematics 1st Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=YHZCo1gb_7E",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "YHZCo1gb_7E",
+                        "url": "https://www.youtube.com/watch?v=YHZCo1gb_7E",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1086416,
+                    "duration": 4384
+                },
+                {
+                    "type": "video",
+                    "id": "yt-BVpOkj7W_xE",
+                    "start": 1090800,
+                    "duration": 4923,
+                    "title": "Lecture 13: Connectivity and Trees",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=BVpOkj7W_xE",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "BVpOkj7W_xE",
+                        "url": "https://www.youtube.com/watch?v=BVpOkj7W_xE",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1095723,
+                    "duration": 2277
+                },
+                {
+                    "type": "video",
+                    "id": "yt-HJP0a6vKvlo",
+                    "start": 1098000,
+                    "duration": 104,
+                    "title": "CS50x - Introduction",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=HJP0a6vKvlo",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "HJP0a6vKvlo",
+                        "url": "https://www.youtube.com/watch?v=HJP0a6vKvlo",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1098104,
+                    "duration": 14296
+                },
+                {
+                    "type": "video",
+                    "id": "yt-iH4XJHJ8AOw",
+                    "start": 1112400,
+                    "duration": 3831,
+                    "title": "Fashion, Faith and Fantasy in Physics - with Roger Penrose",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=iH4XJHJ8AOw",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "iH4XJHJ8AOw",
+                        "url": "https://www.youtube.com/watch?v=iH4XJHJ8AOw",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1116231,
+                    "duration": 3369
+                },
+                {
+                    "type": "video",
+                    "id": "yt-Q9ciocrFK8w",
+                    "start": 1119600,
+                    "duration": 3030,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 13. Republics and Revolutions",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=Q9ciocrFK8w",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "Q9ciocrFK8w",
+                        "url": "https://www.youtube.com/watch?v=Q9ciocrFK8w",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1122630,
+                    "duration": 2370
+                },
+                {
+                    "type": "video",
+                    "id": "yt-4lH6fwDBODY",
+                    "start": 1125000,
+                    "duration": 2977,
+                    "title": "Kit Rodgers, Ben Jun, and Paul Kocher (Cryptography Research, Inc.) [Entire Talk]",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=4lH6fwDBODY",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "4lH6fwDBODY",
+                        "url": "https://www.youtube.com/watch?v=4lH6fwDBODY",
+                        "channel_id": "UCctkeBNtFIOn7Yl_9TTj_4w",
+                        "channel_title": "Stanford eCorner",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1127977,
+                    "duration": 2423
+                },
+                {
+                    "type": "video",
+                    "id": "yt-QUsdf6lWPwk",
+                    "start": 1130400,
+                    "duration": 2863,
+                    "title": "Plato to Polybius on Constitutional Change - Melissa Lane",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=QUsdf6lWPwk",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "QUsdf6lWPwk",
+                        "url": "https://www.youtube.com/watch?v=QUsdf6lWPwk",
+                        "channel_id": "UC1t6kKXoBvjdr8m9KJ2Fx7A",
+                        "channel_title": "Gresham College",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1133263,
+                    "duration": 18737
+                },
+                {
+                    "type": "video",
+                    "id": "yt-9lIgAPvppk0",
+                    "start": 1152000,
+                    "duration": 4480,
+                    "title": "14. Linearized gravity I: Principles and static limit.",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=9lIgAPvppk0",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "9lIgAPvppk0",
+                        "url": "https://www.youtube.com/watch?v=9lIgAPvppk0",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1156480,
+                    "duration": 2720
+                },
+                {
+                    "type": "video",
+                    "id": "yt-hFLoCaqx7TA",
+                    "start": 1159200,
+                    "duration": 4180,
+                    "title": "The Invisible Universe: Dark Matter, the Higgs & Why We Exist | Marcela Carena",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=hFLoCaqx7TA",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "hFLoCaqx7TA",
+                        "url": "https://www.youtube.com/watch?v=hFLoCaqx7TA",
+                        "channel_id": "UCpHvNclapYpq8b0ZnGRoMeg",
+                        "channel_title": "Perimeter Institute for Theoretical Physics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1163380,
+                    "duration": 3020
+                },
+                {
+                    "type": "video",
+                    "id": "yt-mCwv2_QBh7M",
+                    "start": 1166400,
+                    "duration": 6461,
+                    "title": "Dynamics, Lectures 9 & 10: Oxford Mathematics 1st Year Student Lecture",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=mCwv2_QBh7M",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "mCwv2_QBh7M",
+                        "url": "https://www.youtube.com/watch?v=mCwv2_QBh7M",
+                        "channel_id": "UCLnGGRG__uGSPLBLzyhg8dQ",
+                        "channel_title": "Oxford Mathematics",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1172861,
+                    "duration": 4339
+                },
+                {
+                    "type": "video",
+                    "id": "yt-E33i67e_X9Q",
+                    "start": 1177200,
+                    "duration": 4742,
+                    "title": "Lecture 14: Digraphs and DAGs",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=E33i67e_X9Q",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "E33i67e_X9Q",
+                        "url": "https://www.youtube.com/watch?v=E33i67e_X9Q",
+                        "channel_id": "UCEBb1b_L6zDS3xTUrIALZOw",
+                        "channel_title": "MIT OpenCourseWare",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1181942,
+                    "duration": 2458
+                },
+                {
+                    "type": "video",
+                    "id": "yt-SlqjA04_dpk",
+                    "start": 1184400,
+                    "duration": 9018,
+                    "title": "CS50x - Lecture 1 - C",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=SlqjA04_dpk",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "SlqjA04_dpk",
+                        "url": "https://www.youtube.com/watch?v=SlqjA04_dpk",
+                        "channel_id": "UCcabW7890RKJzL968QWEykA",
+                        "channel_title": "CS50",
+                        "kind": "live_vod",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1193418,
+                    "duration": 5382
+                },
+                {
+                    "type": "video",
+                    "id": "yt-aXg3edeUrtc",
+                    "start": 1198800,
+                    "duration": 3986,
+                    "title": "Physics experiments that changed the world – with Suzie Sheehy",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=aXg3edeUrtc",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "aXg3edeUrtc",
+                        "url": "https://www.youtube.com/watch?v=aXg3edeUrtc",
+                        "channel_id": "UCYeF244yNGuFefuFKqxIAXw",
+                        "channel_title": "The Royal Institution",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1202786,
+                    "duration": 3214
+                },
+                {
+                    "type": "video",
+                    "id": "yt-9JUzxdeYRZc",
+                    "start": 1206000,
+                    "duration": 3102,
+                    "title": "Timothy Snyder: The Making of Modern Ukraine. Class 14. Interwar Poland’s Ukrainians",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=9JUzxdeYRZc",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "9JUzxdeYRZc",
+                        "url": "https://www.youtube.com/watch?v=9JUzxdeYRZc",
+                        "channel_id": "UC4EY_qnSeAP1xGsh61eOoJA",
+                        "channel_title": "YaleCourses",
+                        "kind": "upload",
+                        "embeddable": true,
+                        "made_for_kids": false,
+                        "privacy_status": "public",
+                        "availability": "available",
+                        "availability_detail": null,
+                        "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
+                    }
+                },
+                {
+                    "type": "gap",
+                    "start": 1209102,
+                    "duration": 498
+                }
+            ]
+        }
+    ]
+}
