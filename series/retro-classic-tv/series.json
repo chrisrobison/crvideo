@@ -1,0 +1,1688 @@
+{
+  "schema_version": 1,
+  "id": "retro-classic-tv",
+  "title": "Television Time Machine",
+  "description": "Vintage television itself as a subject -- early-TV promotional films, classic TV commercial reels, and broadcast-technology curiosities from the Internet Archive's Prelinger Archives.",
+  "creator": "Internet Archive (Prelinger Archives)",
+  "year": null,
+  "thumbnail_url": null,
+  "logo_url": null,
+  "source": {
+    "provider": "internet_archive",
+    "query": "collection:(prelinger) AND mediatype:(movies) AND subject:(television)",
+    "collection": null
+  },
+  "rotation": {
+    "mode": "sequential",
+    "loop": true
+  },
+  "episodes": [
+    {
+      "id": "ia-ClassicT1948",
+      "episode_number": 1,
+      "title": "Classic Television Commercials (Part I)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 536.5,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948/ClassicT1948.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Televisi1960",
+      "episode_number": 2,
+      "title": "Television Commercials (1950s-1960s)",
+      "description": "Examples of broadcast advertising from the 1950s and 1960s.",
+      "creator": "Various",
+      "duration": 1515.65,
+      "year": 1950,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Televisi1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Televisi1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Televisi1960/Televisi1960.mp4",
+        "page_url": "https://archive.org/details/Televisi1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Televisi1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-LuckyStr1948_2",
+      "episode_number": 3,
+      "title": "Lucky Strike Cigarette Commercial: Square Dance",
+      "description": "Lucky Strike cigarette commercial with stop-motion animation of square-dancing cigarettes.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 57.99,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/LuckyStr1948_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "LuckyStr1948_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/LuckyStr1948_2/LuckyStr1948_2.mp4",
+        "page_url": "https://archive.org/details/LuckyStr1948_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Substance abuse: Tobacco",
+          "Animation: Stop-motion"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LuckyStr1948_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Wonderfu1960",
+      "episode_number": 4,
+      "title": "Wonderful New World of Fords, A (1960 Ford Spot)",
+      "description": "Ford commercial linking new compact cars to futurism and the space frontier.",
+      "creator": "Filmways",
+      "duration": 181.88,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Wonderfu1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Wonderfu1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Wonderfu1960/Wonderfu1960.mp4",
+        "page_url": "https://archive.org/details/Wonderfu1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Automobiles: Advertising",
+          "Futurism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Wonderfu1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-LuckyStr1948",
+      "episode_number": 5,
+      "title": "Lucky Strike Cigarette Commercial: Marching Cigarettes",
+      "description": "Lucky Strike cigarette commercial with stop-motion animation of marching cigarettes.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 61.23,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/LuckyStr1948",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "LuckyStr1948",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/LuckyStr1948/LuckyStr1948.mp4",
+        "page_url": "https://archive.org/details/LuckyStr1948",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Substance abuse: Tobacco",
+          "Animation: Stop-motion"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LuckyStr1948; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Cheerios1960",
+      "episode_number": 6,
+      "title": "Cheerios/V-8",
+      "description": "Cereal commercial targeted at children of the space age.",
+      "creator": "Filmways (?)",
+      "duration": 60.93,
+      "year": 1960,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Cheerios1960",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Cheerios1960",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Cheerios1960/Cheerios1960.mp4",
+        "page_url": "https://archive.org/details/Cheerios1960",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Space: Culture",
+          "Advertising: Television commercials",
+          "Agriculture: Food industry: Cereals"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Cheerios1960; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_3",
+      "episode_number": 7,
+      "title": "Classic Television Commercials (Part III)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 557.79,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_3/ClassicT1948_3.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_3",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_3; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_5",
+      "episode_number": 8,
+      "title": "Classic Television Commercials (Part V)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 555.72,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_5",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_5",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_5/ClassicT1948_5.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_5",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_5; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_8",
+      "episode_number": 9,
+      "title": "Classic Television Commercials (Part VIII)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 659.53,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_8",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_8",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_8/ClassicT1948_8.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_8",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_8; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Televisi1961",
+      "episode_number": 10,
+      "title": "Television Remote Control (Tuner)",
+      "description": "Early technology to enable the channel-surfer.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 346.68,
+      "year": 1961,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Televisi1961",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Televisi1961",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Televisi1961/Televisi1961.mp4",
+        "page_url": "https://archive.org/details/Televisi1961",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Televisi1961; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_2",
+      "episode_number": 11,
+      "title": "Classic Television Commercials (Part II)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 715.05,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_2/ClassicT1948_2.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_4",
+      "episode_number": 12,
+      "title": "Classic Television Commercials (Part IV)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 619.65,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_4/ClassicT1948_4.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_4",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_4; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_7",
+      "episode_number": 13,
+      "title": "Classic Television Commercials (Part VII)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 592.09,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_7",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_7",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_7/05866A.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_7",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_7; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-ClassicT1948_6",
+      "episode_number": 14,
+      "title": "Classic Television Commercials (Part VI)",
+      "description": "Collection of TV commercials significant to the history and development of TV as an advertising medium.",
+      "creator": "Various",
+      "duration": 450.08,
+      "year": 1948,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/ClassicT1948_6",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "ClassicT1948_6",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/ClassicT1948_6/ClassicT1948_6.mp4",
+        "page_url": "https://archive.org/details/ClassicT1948_6",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Advertising: Television commercials",
+          "Consumerism",
+          "Advertising: History"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ClassicT1948_6; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-tomorrow_television",
+      "episode_number": 15,
+      "title": "Television Tomorrow",
+      "description": "0641 PA8692 Television Tomorrow 16 B&W comp print",
+      "creator": null,
+      "duration": 736.85,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/tomorrow_television",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "tomorrow_television",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/tomorrow_television/tomorrow_television.mp4",
+        "page_url": "https://archive.org/details/tomorrow_television",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Motion Pictures: In Education",
+          "Media: Television"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item tomorrow_television; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Radioand1940",
+      "episode_number": 16,
+      "title": "Radio and Television",
+      "description": "View of the radio industry as it existed in 1940, showing potential occupations at every level. Introduces the new industry of television, emphasizing its need for specially skilled workers. Useful imagery of the electronic media in the pre-World War II era.",
+      "creator": "Holmes (Burton) Films, Inc.",
+      "duration": 631,
+      "year": 1940,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Radioand1940",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Radioand1940",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Radioand1940/14783.mp4",
+        "page_url": "https://archive.org/details/Radioand1940",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Occupations: Broadcasting",
+          "Media: Radio",
+          "Media: Television"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Radioand1940; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-StoryofT1956",
+      "episode_number": 17,
+      "title": "Story of Television, The",
+      "description": "PLEASE NOTE: A more complete version with the full color sequence at the end is here. RCA's corporate history of pre-1956 developments in television.",
+      "creator": "Ganz (William J.) Co.",
+      "duration": 890.26,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/StoryofT1956",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "StoryofT1956",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/StoryofT1956/StoryofT1956.mp4",
+        "page_url": "https://archive.org/details/StoryofT1956",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television",
+          "Electronics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item StoryofT1956; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Magicint1941",
+      "episode_number": 18,
+      "title": "Magic in the Air (1941)",
+      "description": "How TV works and the promise of its youth.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 478.48,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Magicint1941",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Magicint1941",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Magicint1941/Magicint1941.mp4",
+        "page_url": "https://archive.org/details/Magicint1941",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television",
+          "Electronics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Magicint1941; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-RCAPrese1939",
+      "episode_number": 19,
+      "title": "RCA Presentation: Television, An",
+      "description": "Early promotional film introducing TV to the American public, probably coordinated with the rollout of scheduled broadcasting at the 1939 New York World's Fair. Shows scenes of television production at the National Broadcasting Company (NBC) studios at Rockefeller Center, New York City, using equipment manufactured by NBC's corporate parent RCA.",
+      "creator": "Radio Corporation of America (RCA)",
+      "duration": 543.28,
+      "year": 1939,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/RCAPrese1939",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "RCAPrese1939",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/RCAPrese1939/RCAPrese1939.mp4",
+        "page_url": "https://archive.org/details/RCAPrese1939",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RCAPrese1939; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Tomorrow1941_2",
+      "episode_number": 20,
+      "title": "Tomorrow Always Comes (Part II)",
+      "description": "Time-travel story promoting rayon lingerie.",
+      "creator": "Lamont-Clemens, Inc.",
+      "duration": 955.12,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Tomorrow1941_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Tomorrow1941_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Tomorrow1941_2/Tomorrow1941_2.mp4",
+        "page_url": "https://archive.org/details/Tomorrow1941_2",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Fashion: Industry",
+          "Media: Television",
+          "Synthetics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Tomorrow1941_2; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Televisi1970",
+      "episode_number": 21,
+      "title": "[Television Commercials: Telephone]",
+      "description": "Three TV commercials; one set in St. Louis, Missouri, another on Mount Washington, New Hampshire, and a quick review of telephone history.",
+      "creator": "Unknown",
+      "duration": 243.38,
+      "year": 1970,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Televisi1970",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Televisi1970",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Televisi1970/Televisi1970.mp4",
+        "page_url": "https://archive.org/details/Televisi1970",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Communication: Telephone",
+          "Advertising: Television commercials",
+          "St. Louis, Missouri"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Televisi1970; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Magicint1955",
+      "episode_number": 22,
+      "title": "Magic in the Air (1955)",
+      "description": "Introduces television and explains the workings of early television technology.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 492.66,
+      "year": 1955,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Magicint1955",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Magicint1955",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Magicint1955/Magicint1955.mp4",
+        "page_url": "https://archive.org/details/Magicint1955",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television",
+          "Technology",
+          "Sports: Baseball"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Magicint1955; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Hillsbor1959",
+      "episode_number": 23,
+      "title": "Hillsborough with New Hideaway Styling, The",
+      "description": "Promotes a new console television that folds into a piece of furniture so as to conceal the all-seeing picture tube. We have the picture, but not the soundtrack of this film.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 153.02,
+      "year": 1959,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Hillsbor1959",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Hillsbor1959",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Hillsbor1959/Hillsbor1959.mp4",
+        "page_url": "https://archive.org/details/Hillsbor1959",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television",
+          "Furniture",
+          "Houses and homes: Interior decoration"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Hillsbor1959; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-NewSeven1959",
+      "episode_number": 24,
+      "title": "New Seven-Function Remote Control for Color",
+      "description": "Promotes an early version of the television remote control. We have the picture, but not the soundtrack of this film.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 204.77,
+      "year": 1959,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/NewSeven1959",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "NewSeven1959",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/NewSeven1959/NewSeven1959.mp4",
+        "page_url": "https://archive.org/details/NewSeven1959",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television",
+          "Electronics",
+          "Technology"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item NewSeven1959; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-WelcomeG1957",
+      "episode_number": 25,
+      "title": "Welcome Guest in the House, A",
+      "description": "Tribute to television as servant of the public in the Cold War era.",
+      "creator": "Unknown",
+      "duration": 1419.82,
+      "year": 1957,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/WelcomeG1957",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "WelcomeG1957",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/WelcomeG1957/WelcomeG1957.mp4",
+        "page_url": "https://archive.org/details/WelcomeG1957",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television",
+          "Cold War",
+          "Journalism"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WelcomeG1957; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Tomorrow1941",
+      "episode_number": 26,
+      "title": "Tomorrow Always Comes (Part I)",
+      "description": "Time-travel story promoting rayon lingerie.",
+      "creator": "Lamont-Clemens, Inc.",
+      "duration": 867.47,
+      "year": 1941,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Tomorrow1941",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Tomorrow1941",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Tomorrow1941/Tomorrow1941.mp4",
+        "page_url": "https://archive.org/details/Tomorrow1941",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Fashion: Industry",
+          "Media: Television",
+          "Synthetics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Tomorrow1941; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_9",
+      "episode_number": 27,
+      "title": "Science in Action: Submarines (Part I)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. This episode is devoted to submarines, their design and operation, the duties of the crew and the use of the escape lung. Guests: Fleet Admiral Chester Nimitz and Vice Admiral Charles Lockwood. Animal of the Week: Toucan. Host: Dr. Earl S. Herald.",
+      "creator": "California Academy of Sciences",
+      "duration": 856.16,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_9",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_9",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_9/Sciencei1956_9.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_9",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Submarines"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Sciencei1956_9; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Programm1959",
+      "episode_number": 28,
+      "title": "Programmer with Magic Memory: Another Newsmaker",
+      "description": "Presents a special device that automatically tunes in your favorite preselected TV shows. This is a silent film.",
+      "creator": "Handy (Jam) Organization",
+      "duration": 245.61,
+      "year": 1959,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Programm1959",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Programm1959",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Programm1959/Programm1959.mp4",
+        "page_url": "https://archive.org/details/Programm1959",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Media: Television",
+          "Leisure",
+          "User interfaces"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Programm1959; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_10",
+      "episode_number": 29,
+      "title": "Science in Action: Submarines (Part II)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. This episode is devoted to submarines, their design and operation, the duties of the crew and the use of the escape lung. Guests: Fleet Admiral Chester Nimitz and Vice Admiral Charles Lockwood. Animal of the Week: Toucan. Host: Dr. Earl S. Herald.",
+      "creator": "California Academy of Sciences",
+      "duration": 915.25,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_10",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_10",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_10/Sciencei1956_10.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_10",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Submarines"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Sciencei1956_10; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_11",
+      "episode_number": 30,
+      "title": "Science in Action: The Flow of Heat (Part I)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. Guest: Dr. Harvey R. White (University of California). Animal of the Week: Gopher. Host: Dr. Earl S. Herald.",
+      "creator": "California Academy of Sciences",
+      "duration": 861.76,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_11",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_11",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_11/Sciencei1956_11.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_11",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Physics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Sciencei1956_11; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_3",
+      "episode_number": 31,
+      "title": "Science in Action: Drilling for Oil (Part I)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. In this episode, host Earl Herald interviews Howard G. Vesper, VP of Standard Oil Company of California, about the science of oil drilling.",
+      "creator": "California Academy of Sciences",
+      "duration": 742.34,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_3",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_3",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_3/50509A.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_3",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Oil Industry",
+          "Occupations: Oil Workers"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_8",
+      "episode_number": 32,
+      "title": "Science in Action: Rivers of Ice (Part II)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. This program is devoted to glaciers, and also includes a promo for the Academy of Sciences. Guests: Father Bernard Hubbard, the \"Glacier Priest\" (Santa Clara University, Department of Geology), and Dick Nile (student at San Francisco's Mission High School), demonstrating a precipitator. Animal of the Week: California Ground Squirrel. Host: Dr. Earl S. Herald. Date thought to be 1956.",
+      "creator": "California Academy of Sciences",
+      "duration": 954.45,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_8",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_8",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_8/Sciencei1956_8.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_8",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Arctic: Exploration"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "approved",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Sciencei1956_8; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_2",
+      "episode_number": 33,
+      "title": "Science in Action: Aero Medicine (Part II)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. This episode is dedicated to the study of the effects of space travel on human physiology.",
+      "creator": "California Academy of Sciences",
+      "duration": 698.23,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_2",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_2",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_2/50507B.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_2",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Space: Culture",
+          "Health and Hygiene"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-6270HMTexasTravelsAndTelevisedMoonWalk01181613",
+      "episode_number": 34,
+      "title": "[Home Movies: Texas Travels and Televised Moon Walk]",
+      "description": "Container marked: \"No. II.\" and \"1. Texas Shots. 2. Trip to Waco. 3. Ft. Worth. 4. Waco & Austin. 5. Sparkles. 6. 1st Man on Moon.\" Large Christmas tree / family / three children / turkey on dining table / 3 children opening gifts Youngest's 5th birthday with birthday cake 2 girls, ages 5 and 10, dressed as nurses Grandma in rocking chair (rocker) watches TV Exterior: Holiday Inn sign: \"Fight Poverty the American Way Go to Work\", then pan right to motel swimming pool where people are hanging around in lounge chairs (good) Kids in swimming pool, dad and 5-year-old, then whole family in pool Riding horses in grassy corral Mother gallops solo (good shot) Car in carport with Texas plates, presumably a new Chevrolet VS suburbia, young kids sitting on grass by street (good) Mom drives up, pulls into driveway Another Christmas morning Kids are older; dachshunds present; people play with dogs, one sits up for treats Long Christmas gifts sequence Moon shot sequence: blank television set with countdown to moon landing; short still animated description of Apollo 11, then full-screen live telecast of Armstrong / Aldrin mission, including first step on moon; split-screen shot of President Nixon speaking with astronauts; title on screen \"Live Color TV Image of Moon\" (with full moon); Michael Collins in capsule with floating objects Family at lunch table",
+      "creator": null,
+      "duration": 1050.26,
+      "year": 1969,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/6270HMTexasTravelsAndTelevisedMoonWalk01181613",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "6270HMTexasTravelsAndTelevisedMoonWalk01181613",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/6270HMTexasTravelsAndTelevisedMoonWalk01181613/6270_HM_Texas_Travels_and_Televised_Moon_Walk_01_18_16_13.mp4",
+        "page_url": "https://archive.org/details/6270HMTexasTravelsAndTelevisedMoonWalk01181613",
+        "license": null,
+        "collections": [
+          "prelingerhomemovies",
+          "prelinger"
+        ],
+        "subjects": [
+          "home movies",
+          "christmas",
+          "birthday",
+          "television"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Sciencei1956",
+      "episode_number": 35,
+      "title": "Science in Action: Aero Medicine (Part I)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. This episode is dedicated to the study of the effects of space travel on human physiology.",
+      "creator": "California Academy of Sciences",
+      "duration": 837.14,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956/50507A.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Space: Culture",
+          "Health and Hygiene"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "approved",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_5",
+      "episode_number": 36,
+      "title": "Science in Action: Radar Defense Screen (Part I)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. In this episode, host Earl Herald interviews Brigadeer General James W. Andrew of the U.S. Air Force, about the uses and technology of radar as an air defense tool.",
+      "creator": "California Academy of Sciences",
+      "duration": 850.32,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_5",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_5",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_5/50504A.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_5",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Atomic-nuclear: Civil Defense",
+          "Radar"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_12",
+      "episode_number": 37,
+      "title": "Science in Action: The Flow of Heat (Part II)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. Guest: Dr. Harvey R. White (University of California). Animal of the Week: Gopher. Host: Dr. Earl S. Herald.",
+      "creator": "California Academy of Sciences",
+      "duration": 656.76,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_12",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_12",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_12/Sciencei1956_12.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_12",
+        "license": "http://creativecommons.org/licenses/publicdomain/",
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Physics"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": []
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "public_domain",
+        "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Sciencei1956_12; reviewed 2026-11-05)."
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_7",
+      "episode_number": 38,
+      "title": "Science in Action: Rivers of Ice (Part I)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. This program is devoted to glaciers, and also includes a promo for the Academy of Sciences. Guests: Father Bernard Hubbard, the \"Glacier Priest\" (Santa Clara University, Department of Geology), and Dick Nile (student at San Francisco's Mission High School), demonstrating a precipitator. Animal of the Week: California Ground Squirrel...",
+      "creator": "California Academy of Sciences",
+      "duration": 962.13,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_7",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_7",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_7/50505A.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_7",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Arctic: Exploration"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_6",
+      "episode_number": 39,
+      "title": "Science in Action: Radar Defense Screen (Part II)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. In this episode, host Earl Herald interviews Brigadeer General James W. Andrew of the U.S. Air Force, about the uses and technology of radar as an air defense tool.",
+      "creator": "California Academy of Sciences",
+      "duration": 683.08,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_6",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_6",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_6/50504B.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_6",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Atomic-nuclear: Civil Defense",
+          "Radar"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-Sciencei1956_4",
+      "episode_number": 40,
+      "title": "Science in Action: Drilling for Oil (Part II)",
+      "description": "Kinescope of Fifties science TV program featuring discussions and demonstrations. In this episode, host Earl Herald interviews Howard G. Vesper, VP of Standard Oil Company of California, about the science of oil drilling.",
+      "creator": "California Academy of Sciences",
+      "duration": 784.95,
+      "year": 1956,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/Sciencei1956_4",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "Sciencei1956_4",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/Sciencei1956_4/50509B.mp4",
+        "page_url": "https://archive.org/details/Sciencei1956_4",
+        "license": null,
+        "collections": [
+          "prelinger",
+          "moviesandfilms"
+        ],
+        "subjects": [
+          "Science",
+          "Television programs",
+          "Oil Industry",
+          "Occupations: Oil Workers"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    },
+    {
+      "id": "ia-1002BargainBasementClip",
+      "episode_number": 41,
+      "title": "Bargain Basement Clip",
+      "description": "A 1950s television program called \"Bargain Basement,\" where various products are showcased at discounted prices. The show highlights several items, starting with a battery solution that prevents rust and corrosion, priced at $2.98. Next, a needlepoint kit for children is offered for $1.00. The Phoenix cream, enriched with vitamins for dry skin, is promoted for $2.98 with a money-back guarantee if unsatisfied after 60 days. The show also presents \"My Fair Lady\" perfume for $1.00, cultured pearl pendants for $2.98, and a handy dandy multi-use tool with magnets for $2.98. A portable check writer, designed to prevent check fraud, is available for $9.95. Additionally, a chopper for kitchen use is priced at $1.98, and a camera kit with a roll of free film for $9.95. Throughout the show, the hosts encourage viewers to send cash, checks, or money orders to purchase these bargains, ending with a recap of all the products and their prices.",
+      "creator": null,
+      "duration": 951.11,
+      "year": null,
+      "published_at": null,
+      "thumbnail_url": "https://archive.org/services/img/1002BargainBasementClip",
+      "guests": [],
+      "source": {
+        "provider": "html5",
+        "identifier": "1002BargainBasementClip",
+        "part_index": 1,
+        "part_count": 1,
+        "url": "https://archive.org/download/1002BargainBasementClip/1002_Bargain_Basement_Clip.mp4",
+        "page_url": "https://archive.org/details/1002BargainBasementClip",
+        "license": null,
+        "collections": [
+          "prelinger"
+        ],
+        "subjects": [
+          "local television",
+          "bargains",
+          "sales",
+          "infomercial"
+        ],
+        "mediatype": "movies",
+        "format": "h.264",
+        "duration_source": "file_length",
+        "availability": "available",
+        "availability_detail": null,
+        "warnings": [
+          "No license/rights information found; do not assume this item is redistributable."
+        ]
+      },
+      "status": "candidate",
+      "rights": {
+        "status": "unverified",
+        "notes": null
+      }
+    }
+  ]
+}

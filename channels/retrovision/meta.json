@@ -1,0 +1,15 @@
+{
+    "number": 5,
+    "name": "RetroVision",
+    "description": "A journey through the history of television, advertising, technology, and everyday life -- vintage commercials, industrial and corporate films, the Computer Chronicles, and historical American curiosities, mostly 1930s-1990s, from the Internet Archive.",
+    "anchor": "2026-11-05T00:00:00+00:00",
+    "logo": "logo.svg",
+    "theme": {
+        "bg": "#1a1510",
+        "bg2": "#2b2118",
+        "fg": "#f3e9d2",
+        "muted": "#b9a988",
+        "accent": "#d9a441",
+        "accentWarm": "#c1452f"
+    }
+}
