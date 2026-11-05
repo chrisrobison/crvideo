@@ -20,7 +20,7 @@
 
 import { fetchJson, resolveCatalog } from "./catalog-resolver.js";
 import {
-  Html5PlayerAdapter, YouTubePlayerAdapter, resolveProvider, computeBackoffMs, computeDriftCorrection,
+  Html5PlayerAdapter, YouTubePlayerAdapter, ContinuityRenderer, resolveProvider, computeBackoffMs, computeDriftCorrection,
 } from "./player-adapters.js";
 
 export const CHANNEL_ID = /^[a-z0-9][a-z0-9-]*$/;
@@ -75,11 +75,19 @@ export function buildTimeline(schedule, anchor = 0) {
       const end = start + Number(item.duration);
       if (!(end > start)) continue;
       const { provider, videoId } = resolveProvider(item);
-      const playable = item.type !== "gap" && provider !== null;
+      // A "continuity" item (Phase 4/5/6) is never driven through a PlayerAdapter --
+      // it has no provider and is rendered, not played -- but it IS a real,
+      // compiler-decided occurrence, not an undefined/empty gap.
+      const isContinuity = item.type === "continuity";
+      const playable = item.type !== "gap" && !isContinuity && provider !== null;
       entries.push({
         type: item.type,
         id: item.id ?? null,
         title: item.title || (playable ? item.id : null),
+        description: item.description || null,
+        thumbnailUrl: item.thumbnail_url || null,
+        template: item.template || null,
+        nextProgramId: item.next_program_id ?? null,
         playable,
         provider,
         videoId,
@@ -95,7 +103,10 @@ export function buildTimeline(schedule, anchor = 0) {
   return { entries, cycle: blockStart, anchor };
 }
 
-const GAP_ENTRY = { type: "gap", id: null, title: null, playable: false, provider: null, videoId: null, mediaUrl: null, sourceUrl: null };
+const GAP_ENTRY = {
+  type: "gap", id: null, title: null, description: null, thumbnailUrl: null, template: null, nextProgramId: null,
+  playable: false, provider: null, videoId: null, mediaUrl: null, sourceUrl: null,
+};
 
 /** What is on at time t: the entry plus its absolute startsAt/endsAt. Time
  *  the schedule leaves uncovered comes back as a synthetic gap entry. */
@@ -162,6 +173,13 @@ export async function loadChannel(id, meta = null) {
     name: meta.name || schedule.channel || id,
     description: meta.description || "",
     logo: meta.logo ? new URL(meta.logo, base).href : null,
+    // Optional per-channel continuity-card theme (Phase 5): a plain
+    // {bg,bg2,fg,muted,accent,accentWarm} map of CSS custom-property
+    // values -- see continuity-card.js's :host defaults for the generic
+    // fallback used when a channel sets none of this. Never interpreted
+    // or validated here; it's just handed straight through to whatever
+    // renders the card.
+    theme: (meta.theme && typeof meta.theme === "object") ? meta.theme : null,
     catalogUrl: new URL(meta.catalog || "catalog.json", base).href,
     timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0),
   };
@@ -237,13 +255,14 @@ const MAX_RETRIES_PER_PROGRAM = 5; // bounded: after this many failures, stop re
  * (autoplay was refused; call resume() from a click).
  */
 export class BroadcastPlayer {
-  constructor(video, { youtubeContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
-    Object.assign(this, { video, youtubeContainer, onAiring, onState });
+  constructor(video, { youtubeContainer = null, continuityContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
+    Object.assign(this, { video, youtubeContainer, continuityContainer, onAiring, onState });
     this.timeline = null;
     this.airing = null;
     this.state = null;
     this.activeProvider = null;
     this.activeAdapter = null;
+    this.channelMeta = null;
     this.muted = true;
     this.failures = 0;
     this.retryAt = 0;
@@ -259,12 +278,22 @@ export class BroadcastPlayer {
       html5: new Html5PlayerAdapter(video, { onStateChange, onError }),
       youtube: youtubeContainer ? new YouTubePlayerAdapter(youtubeContainer, { onStateChange, onError }) : null,
     };
+    // continuity (Phase 5/6): only built when a page actually passes a
+    // container (watch.html's full player; index.html's small guide
+    // preview doesn't) -- without one, a "continuity" airing falls back
+    // to the ordinary station-break slate, same as an unsupported
+    // provider already does.
+    this.continuityRenderer = continuityContainer ? new ContinuityRenderer(continuityContainer) : null;
 
     this.tick = this.tick.bind(this);
   }
 
-  setTimeline(timeline) {
+  /** Channel display info (name/logo) handed to the continuity card.
+   *  Optional second argument to setTimeline() so existing callers
+   *  (just `player.setTimeline(channel.timeline)`) keep working unchanged. */
+  setTimeline(timeline, channelMeta = null) {
     this.timeline = timeline;
+    this.channelMeta = channelMeta;
     this.airing = null;
     this.tick();
   }
@@ -329,6 +358,31 @@ export class BroadcastPlayer {
     this.retriesExhausted = false;
     this.onAiring(airing);
 
+    // A continuity occurrence (Phase 4/5/6) is a dedicated third case, checked
+    // before the ordinary playable/not-playable branching below: it is never
+    // "played" through an adapter, just rendered. Whichever adapter was
+    // active is paused and hidden first -- including the YouTube iframe,
+    // which per its own required presentation is never drawn under/behind
+    // anything else -- exactly the same "pause, never destroy" rule as any
+    // other program transition.
+    if (airing.type === "continuity" && this.continuityRenderer) {
+      if (this.activeAdapter) this.activeAdapter.pause();
+      this.activeProvider = null;
+      this.activeAdapter = null;
+      this.video.hidden = true;
+      if (this.youtubeContainer) this.youtubeContainer.hidden = true;
+      const next = nextProgram(this.timeline, airing.startsAt);
+      this.continuityRenderer.show(
+        this.channelMeta,
+        next ? { title: next.title, description: next.description, thumbnailUrl: next.thumbnailUrl, startsAt: next.startsAt } : null,
+        now,
+        { startsAt: airing.startsAt, endsAt: airing.endsAt },
+      );
+      this.setState("continuity");
+      return;
+    }
+    this.continuityRenderer?.hide();
+
     const adapter = airing.playable ? (airing.provider === "youtube" ? this.adapters.youtube : this.adapters.html5) : null;
     // Pause (never destroy) whichever adapter is being switched away from
     // -- the YouTube iframe in particular stays alive and is reused via
@@ -365,6 +419,7 @@ export class BroadcastPlayer {
     clearInterval(this.timer);
     this.adapters.html5.destroy();
     this.adapters.youtube?.destroy();
+    this.continuityRenderer?.destroy();
   }
 
   load() {
