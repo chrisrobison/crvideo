@@ -131,6 +131,25 @@ Two independent fields, both per-episode:
   every refresh -- see "which fields a refresh touches" in
   `youtube-import/README.md`. Nothing strips or overwrites attribution.
 
+## A directly-hosted (Internet Archive) series
+
+Every series described above has so far been YouTube-sourced. A series
+can equally be built from Internet Archive (or any other directly-hosted)
+media -- `ia-import/ia-series-import.php` (new, additive; see
+`ia-import/README.md`'s "ia-series-import.php" section) writes the same
+`series.json` schema, reusing `ia-import`'s existing metadata-fetching and
+media-resolution code (`ArchiveMetadataClient`, `MediaResolver`) rather
+than duplicating it. Two schema details that section explains in full:
+a directly-hosted episode's `source.provider` is always the literal
+string `"html5"` (the only non-`"youtube"` value `channels/broadcast.js`
+actually wires to a visible player -- see that file's header), and such
+an episode carries **two** URLs (`source.url`, the actual playable media
+file; `source.page_url`, the human-readable attribution page) where a
+YouTube episode only ever needed one. `channels/publish/src/
+ProgrammingCompiler.php` prefers `page_url` for the published
+`source_url` when present, falling back to `url` otherwise -- so every
+pre-existing (YouTube-only) series compiles identically to before.
+
 ## `catalog.json` and series inclusion
 
 ```json

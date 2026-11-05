@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "identifier": "Conquerb1943",
+    "title": "Conquer by the Clock",
+    "description": "World War II era US Government film about wartime production efficiency.",
+    "creator": "US Office of War Information",
+    "date": "1943",
+    "subject": "World War II; Propaganda; Industry",
+    "collection": "prelinger",
+    "mediatype": "movies"
+  },
+  "files": [
+    { "name": "Conquerb1943.mp4", "format": "h.264", "length": "12:34" },
+    { "name": "Conquerb1943_archive.torrent", "format": "Archive BitTorrent", "size": "5000" },
+    { "name": "Conquerb1943_meta.xml", "format": "Metadata", "size": "600" },
+    { "name": "Conquerb1943_thumb.jpg", "format": "Thumbnail", "size": "9000" }
+  ]
+}
