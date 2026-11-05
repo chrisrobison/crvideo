@@ -1,0 +1,15 @@
+{
+    "number": 7,
+    "name": "Pet Central",
+    "description": "Warm, funny, and genuinely useful television for animal people: rescue stories from The Dodo and Kitten Lady, grooming and big personalities with Girl With The Dogs, cat behavior with Jackson Galaxy, positive-reinforcement dog training from Zak George and Kikopup, Simon's Cat cartoons in the morning, and Animalogic's deep dives into why animals do what they do -- an eight-show, 24-hour daily lineup built around themed dayparts from Morning Cuteness to Evening Pet Stories.",
+    "logo": "logo.svg",
+    "anchor": "2026-11-05T00:00:00-08:00",
+    "theme": {
+        "bg": "#170d14",
+        "bg2": "#2a1624",
+        "fg": "#fff3ec",
+        "muted": "#c9a7b6",
+        "accent": "#ff6b8b",
+        "accentWarm": "#ffb877"
+    }
+}

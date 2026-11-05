@@ -1,0 +1,406 @@
+{
+    "_note": "Recurring-series programming for Pet Central (see channels/publish.php). A 24-hour themed daily grid, wall-to-wall with no gaps between blocks, mapping the requested dayparts onto eight real YouTube imports: 00-06 Overnight pet stories/reruns (Kikopup, Animalogic, The Dodo), 06-08 Morning Cuteness (Simon's Cat), 08-10 Dog Training Academy (Zak George 08-09, Kikopup 09-10), 10-12 Cat Central (Jackson Galaxy), 12-14 Rescue Stories (The Dodo 12-13, Kitten Lady 13-14), 14-16 Grooming & Pet Care (Girl With The Dogs), 16-18 Animal Personalities (Simon's Cat 16-17, Girl With The Dogs 17-18), 18-20 Pet Central Prime (Zak George's serialized Reality Dog Training / New Puppy Survival Guide), 20-22 Animal Behavior (Animalogic 20-21, Jackson Galaxy 21-22), 22-24 Evening Pet Stories (Kitten Lady). Every series airs in exactly two blocks of DIFFERENT lengths (one 120-min, one 60-min): rotation/packing state is per block, so two same-length blocks of one series would replay the identical sequence each day; different lengths consume at different rates and drift apart. Every block opts into multi-episode packing (sequential, on_unfit defer, minimum_remaining 30s) because no series' episodes run close to its slot length (medians ~3-16 min); leftover minutes go to the pet-central-up-next continuity card. boundary.mode is hard everywhere: no approved episode in any of these series exceeds 3540s (anything longer was left unapproved), so every episode fits even the 60-minute blocks.",
+    "schema_version": 1,
+    "blocks": [
+        {
+            "id": "overnight-reruns-kikopup",
+            "type": "series",
+            "series_id": "kikopup",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "00:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "overnight-reruns-animalogic",
+            "type": "series",
+            "series_id": "animalogic",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "02:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "overnight-pet-stories-dodo",
+            "type": "series",
+            "series_id": "the-dodo",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "04:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "morning-cuteness-simons-cat",
+            "type": "series",
+            "series_id": "simons-cat",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "06:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "dog-training-academy-zak-george",
+            "type": "series",
+            "series_id": "zak-george",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "08:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "dog-training-academy-kikopup",
+            "type": "series",
+            "series_id": "kikopup",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "09:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "cat-central-jackson-galaxy",
+            "type": "series",
+            "series_id": "jackson-galaxy",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "10:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "rescue-stories-dodo",
+            "type": "series",
+            "series_id": "the-dodo",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "12:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "rescue-stories-kitten-lady",
+            "type": "series",
+            "series_id": "kitten-lady",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "13:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "grooming-pet-care-girl-with-the-dogs",
+            "type": "series",
+            "series_id": "girl-with-the-dogs",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "14:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "animal-personalities-simons-cat",
+            "type": "series",
+            "series_id": "simons-cat",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "16:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "animal-personalities-girl-with-the-dogs",
+            "type": "series",
+            "series_id": "girl-with-the-dogs",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "17:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "pet-central-prime-zak-george",
+            "type": "series",
+            "series_id": "zak-george",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "18:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "animal-behavior-animalogic",
+            "type": "series",
+            "series_id": "animalogic",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "20:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "animal-behavior-jackson-galaxy",
+            "type": "series",
+            "series_id": "jackson-galaxy",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "21:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 3600,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "evening-pet-stories-kitten-lady",
+            "type": "series",
+            "series_id": "kitten-lady",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "22:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        }
+    ]
+}

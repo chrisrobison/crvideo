@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80">
+  <rect x="2" y="2" width="116" height="76" rx="10" fill="#170d14"/>
+  <rect x="2" y="2" width="116" height="76" rx="10" fill="none" stroke="#ff6b8b" stroke-width="3"/>
+  <g transform="translate(60,34)" fill="#ffb877">
+    <ellipse cx="-17" cy="-8" rx="5.5" ry="7" transform="rotate(-25 -17 -8)"/>
+    <ellipse cx="-6" cy="-17" rx="5.5" ry="7.5" transform="rotate(-8 -6 -17)"/>
+    <ellipse cx="6" cy="-17" rx="5.5" ry="7.5" transform="rotate(8 6 -17)"/>
+    <ellipse cx="17" cy="-8" rx="5.5" ry="7" transform="rotate(25 17 -8)"/>
+    <path d="M 0 -4 C 9 -4 17 6 16 13 C 15 19 9 19 4 17 C 1.5 16 -1.5 16 -4 17 C -9 19 -15 19 -16 13 C -17 6 -9 -4 0 -4 Z"/>
+  </g>
+  <text x="60" y="68" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="11" letter-spacing="2" fill="#fff3ec" text-anchor="middle">PET CENTRAL</text>
+</svg>
