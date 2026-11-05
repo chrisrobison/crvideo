@@ -110,8 +110,43 @@ each block's shape server-side, including actually calling
 a throwaway one-day window, result discarded) to validate
 `recurrence`/`rotation.anchor_date` -- this validation cannot drift out
 of sync with what `publish.php` itself enforces, because it IS what
-`publish.php` enforces. `publish` builds a whitelisted argv for
+`publish.php` enforces. The same is true of a block's optional
+`packing` and `boundary` (see `channels/publish/README.md`): when
+present, they're validated via `EpisodePacker::normalizeConfig()` /
+`BoundaryResolver::normalizeBoundary()` directly, the exact same
+functions the real compiler runs. `publish` builds a whitelisted argv for
 `channels/publish.php`.
+
+### Packing and boundary controls (PROGRAMMING tab)
+
+Each block in `cf-channel-admin.js`'s editor has two collapsed,
+progressive-disclosure `<details>` groups below the basic recurrence
+fields, each defaulting to today's pre-existing behavior (closed/off) so
+an operator who never opens them sees no change at all:
+
+- **Multi-episode packing**: a single checkbox ("fill this block with as
+  many complete episodes as fit") that, when checked, reveals `mode`,
+  `on_unfit`, `minimum_remaining`, `safety_margin`, and
+  `allow_repeat_within_block` -- each with a one-line plain-language
+  explanation, not just the raw field name.
+- **Start time boundary**: a `mode` select (`hard`/`soft`/`elastic`,
+  defaulting to `hard`) that reveals `max_delay` only when it isn't
+  `hard`.
+
+### Schedule preview
+
+There is no separate JavaScript approximation of the compiler to keep in
+sync -- the PROGRAMMING tab's existing "Preview (dry run)" button already
+runs the real `channels/publish.php --dry-run --verbose` (see `publish`
+above), and `PublishReporter`'s verbose listing walks the compiler's own
+final, fully-resolved item list, so it already reflects multi-episode
+packing, boundary delays (and their `delay_seconds`), and continuity
+occurrences automatically -- every one of those features was built
+directly into `ProgrammingCompiler`'s shared path, not a separate admin-
+only code path. This is deliberately the "equivalent detailed preview
+through the existing dry-run publishing interface" the feature spec
+allows in place of a bespoke visual timeline; a richer visual rendering
+of the same dry-run data remains a nice-to-have for a future pass.
 
 ## Safety model
 
@@ -168,13 +203,14 @@ of sync with what `publish.php` itself enforces, because it IS what
 php server/tests/run-tests.php
 ```
 
-60 tests (`AdminSupportTest`, `SeriesAdminTest`, `ChannelAdminTest`)
+66 tests (`AdminSupportTest`, `SeriesAdminTest`, `ChannelAdminTest`)
 against isolated fixtures under `server/tests/fixtures/repo/` -- never
 the real `series/`/`channels/` trees. Covers id/path whitelisting
 (including rejecting path-traversal strings), atomic-write/backup
 behavior, the argv-array subprocess runner (including a literal shell-
 metacharacter payload, proving no shell is ever invoked), every
-`save_episode`/`save_catalog`/`save_programming` validation rule, and
+`save_episode`/`save_catalog`/`save_programming` validation rule
+(including `packing`/`boundary`), and
 `refresh`/`new_import`/`publish` argv construction. The real
 `youtube-import.php` subprocess (which needs live API credentials) is
 never actually invoked by the automated suite -- only its argv-building
