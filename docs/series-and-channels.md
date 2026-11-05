@@ -252,11 +252,15 @@ published before this feature, Science & Engineering included, keeps
 compiling identically unless it opts in) and needs one more small,
 gitignored, per-block state file (`.publish/<channel>.<block>.rotation.json`)
 beyond the episode-set pin, to remember where a block's sequential
-consumption of pinned episodes currently is across publish runs. See
-`channels/publish/README.md`'s "Multi-episode packing" section for the
-full config (`mode`, `minimum_remaining`, `safety_margin`, `on_unfit`)
-and `channels/publish/src/EpisodePacker.php` / `RotationState.php` for
-how it stays deterministic and bounded-cost.
+consumption of pinned episodes currently is across publish runs. A block also picks a `packing.mode`: `"sequential"` (pinned order,
+default), `"best_fit"` (minimize leftover time, order doesn't matter),
+or `"hybrid"` (prefer the main sequential show, fall back to a bounded,
+separately-rotated alternate for filler without disturbing the main
+cursor). See `channels/publish/README.md`'s "Multi-episode packing"
+section for the full config (`mode`, `minimum_remaining`,
+`safety_margin`, `on_unfit`) and `channels/publish/src/EpisodePacker.php`
+/ `RotationState.php` for how every mode stays deterministic and
+bounded-cost.
 
 ## Worked example: adding a channel end to end
 

@@ -175,9 +175,26 @@ pinned episodes, in rotation order, as actually fit in the block's
 or isn't scheduled this occurrence at all. All fields but `enabled` have
 sane defaults:
 
-- `mode`: only `"sequential"` is implemented so far (play episodes in
-  their pinned order, fitting as many complete ones as possible).
-  `"best_fit"`/`"hybrid"` are a later phase.
+- `mode`:
+  - `"sequential"` (default): play episodes in their pinned order,
+    fitting as many complete ones as possible. Best for structured/
+    episodic series where airing order matters.
+  - `"best_fit"`: ignores pinned order -- at each pick, greedily takes
+    whichever eligible episode minimizes leftover time (a bounded,
+    deterministic search, never exhaustive/combinatorial). Ties break by
+    distance from a fairness cursor that rotates forward past whatever
+    was just used (so one conveniently-sized episode can't dominate
+    every occurrence), then by pinned index. `on_unfit` doesn't apply to
+    this mode -- every occurrence already considers every eligible
+    episode. Best for collections where order doesn't matter.
+  - `"hybrid"`: prefers the main sequential cursor whenever it fits (the
+    scheduled show stays recognizable); when it doesn't, makes one
+    bounded search through a *separate* alternate rotation
+    (`alt_cursor`, its own small piece of persisted state) for filler.
+    The main cursor is never disturbed by an alternate pick -- it always
+    resumes exactly where it left off -- and the alternate rotation
+    itself advances past whatever it used, so repeated filler needs
+    don't always reach for the same episode.
 - `minimum_remaining` (seconds, default 0): once fitting another episode
   would leave less than this much time afterward (and it isn't the exact
   remainder), stop packing -- leaves a deliberate, continuity-sized gap
@@ -295,10 +312,12 @@ Covers: daily/weekly/monthly determinism (including explicit DST spring-
 forward/fall-back cases and month-end clamping against this system's real
 timezone database), the PHP `CatalogResolver`'s path-safety parity with
 `channels/catalog-resolver.js`, approved-episode-set pinning, episode
-selection/rotation/loop/overlap policies, multi-episode packing (every
-`on_unfit` policy, `minimum_remaining`/`safety_margin`, empty/single-
-episode/all-unavailable catalogs, rotation stability across adjacent
-overlapping publish windows, pin-refresh resets), and a full CLI end-to-
+selection/rotation/loop/overlap policies, multi-episode packing in all
+three modes (`sequential`/`best_fit`/`hybrid`; every `on_unfit` policy,
+`minimum_remaining`/`safety_margin`, empty/single-episode/all-unavailable
+catalogs, rotation stability across adjacent overlapping publish
+windows, pin-refresh resets, best-fit's deterministic tie-breaking,
+hybrid's main-cursor-never-disturbed guarantee), and a full CLI end-to-
 end run (atomic write + backup, idempotent re-publish,
 `--refresh-episode-set`, `--dry-run`, error cases) -- all via fixtures, no
 real channel ever touched by the test suite.
@@ -320,8 +339,6 @@ the correct program and the correct offset into it.
   window can shift any not-yet-elapsed occurrence in the currently
   published window, which is an accepted, operator-opt-in consequence of
   explicitly passing `--refresh-episode-set`.
-- Packing's `mode` only implements `"sequential"` so far -- `"best_fit"`
-  and `"hybrid"` are a later phase (see `docs/series-and-channels.md`).
 - Rotation state (see "Rotation state" above) resets if a publish's
   `--window-start` moves to an occurrence earlier than the last known
   checkpoint -- there is no history before it to replay from. The

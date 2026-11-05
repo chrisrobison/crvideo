@@ -191,4 +191,85 @@ final class EpisodePackerTest
         $result = EpisodePacker::packOccurrence(3600, $ids, $episodes, $state, $this->config(), false, 3600, 'b', 'o1');
         Assert::count(0, $result['scheduled']);
     }
+
+    // ---------------- best_fit ----------------
+
+    public function testBestFitMinimizesLeftoverRegardlessOfPinnedOrder(): void
+    {
+        $ids = ['e1', 'e2', 'e3'];
+        $episodes = $this->episodes(['e1' => 1000, 'e2' => 3500, 'e3' => 3300]); // e2 leaves the least leftover (100s) in a 3600s slot
+        $config = $this->config(['mode' => 'best_fit']);
+        $result = EpisodePacker::packOccurrence(3600, $ids, $episodes, $this->emptyState(), $config, true, 3600, 'b', 'o1');
+        Assert::same(['e2'], array_map(static fn ($s) => $s['episode_id'], $result['scheduled']));
+        Assert::same(100, 3600 - $result['usedSeconds']);
+    }
+
+    public function testBestFitTieBreaksDeterministicallyByTheFairnessCursorThenPinnedIndex(): void
+    {
+        $ids = ['e1', 'e2', 'e3'];
+        $episodes = $this->episodes(['e1' => 1200, 'e2' => 1200, 'e3' => 1200]); // exact three-way tie every round
+        $config = $this->config(['mode' => 'best_fit']);
+        $result = EpisodePacker::packOccurrence(3600, $ids, $episodes, $this->emptyState(), $config, true, 3600, 'b', 'o1');
+        Assert::same(['e1', 'e2', 'e3'], array_map(static fn ($s) => $s['episode_id'], $result['scheduled']), 'ties resolve in pinned order when the fairness cursor starts at 0');
+
+        // Repeating the SAME inputs must repeat the SAME order (determinism), not just "some" order.
+        $again = EpisodePacker::packOccurrence(3600, $ids, $episodes, $this->emptyState(), $config, true, 3600, 'b', 'o1');
+        Assert::same(json_encode($result['scheduled']), json_encode($again['scheduled']));
+    }
+
+    public function testBestFitNeverRepeatsAnEpisodeWithinOneOccurrenceByDefault(): void
+    {
+        $ids = ['e1'];
+        $episodes = $this->episodes(['e1' => 600]);
+        $config = $this->config(['mode' => 'best_fit']);
+        $result = EpisodePacker::packOccurrence(3600, $ids, $episodes, $this->emptyState(), $config, true, 3600, 'b', 'o1');
+        Assert::same(['e1'], array_map(static fn ($s) => $s['episode_id'], $result['scheduled']));
+    }
+
+    // ---------------- hybrid ----------------
+
+    public function testHybridBehavesLikeSequentialWhenTheMainCursorAlwaysFits(): void
+    {
+        $ids = ['e1', 'e2', 'e3'];
+        $episodes = $this->episodes(['e1' => 1200, 'e2' => 1200, 'e3' => 1200]);
+        $config = $this->config(['mode' => 'hybrid']);
+        $result = EpisodePacker::packOccurrence(3600, $ids, $episodes, $this->emptyState(), $config, true, 3600, 'b', 'o1');
+        Assert::same(['e1', 'e2', 'e3'], array_map(static fn ($s) => $s['episode_id'], $result['scheduled']));
+    }
+
+    public function testHybridFillsWithABoundedAlternateWithoutDisturbingTheMainCursor(): void
+    {
+        $ids = ['e1', 'e2', 'e3'];
+        $episodes = $this->episodes(['e1' => 1200, 'e2' => 3000, 'e3' => 1200]); // e2 is the "main" show episode up next but too big for the gap
+        $config = $this->config(['mode' => 'hybrid']);
+        $occ1 = EpisodePacker::packOccurrence(3600, $ids, $episodes, $this->emptyState(), $config, true, 3600, 'b', 'o1');
+        Assert::same(['e1', 'e3'], array_map(static fn ($s) => $s['episode_id'], $occ1['scheduled']), 'e1 plays, e2 does not fit, e3 fills the gap as an alternate');
+        Assert::same(1, $occ1['state']['cursor'], 'the main cursor is held at e2 -- the alternate fill never advanced it');
+
+        // Next occurrence: with a full fresh slot, e2 (the main show) resumes exactly where it left off, in order.
+        $occ2 = EpisodePacker::packOccurrence(3600, $ids, $episodes, $occ1['state'], $config, true, 3600, 'b', 'o2');
+        Assert::same('e2', array_map(static fn ($s) => $s['episode_id'], $occ2['scheduled'])[0], 'the main show resumes in sequence, unaffected by the earlier filler pick');
+    }
+
+    public function testHybridFallsBackToHoldingTheMainCursorWhenNoAlternateFitsEither(): void
+    {
+        $ids = ['e1', 'e2', 'e3'];
+        $episodes = $this->episodes(['e1' => 1200, 'e2' => 3000, 'e3' => 3000]); // nothing else fits after e1 either
+        $config = $this->config(['mode' => 'hybrid']);
+        $result = EpisodePacker::packOccurrence(3600, $ids, $episodes, $this->emptyState(), $config, true, 3600, 'b', 'o1');
+        Assert::same(['e1'], array_map(static fn ($s) => $s['episode_id'], $result['scheduled']));
+        Assert::same(1, $result['state']['cursor'], 'main cursor held at e2, same as "defer" would do');
+        Assert::true(count($result['warnings']) >= 1);
+    }
+
+    public function testHybridAlternateRotationAdvancesPastWhateverFillerItUsed(): void
+    {
+        $ids = ['e1', 'e2', 'e3', 'e4'];
+        $episodes = $this->episodes(['e1' => 3600, 'e2' => 3600, 'e3' => 600, 'e4' => 600]); // e1 fills the whole slot by itself
+        $config = $this->config(['mode' => 'hybrid']);
+        // Start the main cursor at e1 (fits exactly, no filler needed) to isolate the altCursor behavior across occurrences.
+        $occ1 = EpisodePacker::packOccurrence(3600, $ids, $episodes, ['cursor' => 0, 'deferred' => [], 'altCursor' => 0], $config, true, 3600, 'b', 'o1');
+        Assert::same(['e1'], array_map(static fn ($s) => $s['episode_id'], $occ1['scheduled']));
+        Assert::same(0, $occ1['state']['altCursor'], 'untouched -- no alternate was needed this occurrence');
+    }
 }

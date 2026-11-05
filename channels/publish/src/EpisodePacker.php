@@ -13,13 +13,37 @@ declare(strict_types=1);
 // this class owns none of that, which is what keeps it trivially unit-
 // testable with plain arrays and no filesystem/clock involved.
 //
-// Sequential mode only (packing.mode "best_fit"/"hybrid" are a later
-// phase -- see docs/series-and-channels.md). An episode is NEVER
-// truncated to fit; it either plays in full or is not scheduled this
-// occurrence at all.
+// Three packing.mode values (Phase 2 of docs/series-and-channels.md). An
+// episode is NEVER truncated to fit; it either plays in full or is not
+// scheduled this occurrence at all, in every mode:
 //
-// on_unfit policy, applied the moment the next sequential episode does
-// not fit in whatever time remains in the occurrence:
+//   - "sequential" (packSequential): play pinned episodes in their
+//     defined order, fitting as many complete ones as possible. Best
+//     for structured/episodic series where airing order matters.
+//   - "best_fit" (packBestFit): at each pick, choose from every eligible
+//     (fitting, not-yet-used-this-occurrence) pinned episode the one
+//     that minimizes leftover time -- a bounded O(pinnedCount^2) greedy
+//     search per occurrence, never an exhaustive/combinatorial one.
+//     Deterministic tie-break: smallest leftover first, then closest
+//     (wrapping) to a fairness cursor that rotates forward past whatever
+//     was just used (so one "perfectly-sized" episode can't dominate
+//     every occurrence forever), then lowest pinned index. Order doesn't
+//     matter for this mode, so `on_unfit` doesn't apply -- every
+//     occurrence already searches every eligible episode.
+//   - "hybrid" (packHybrid): prefer the main sequential cursor whenever
+//     it fits (the scheduled show stays recognizable); when it doesn't,
+//     search a BOUNDED, SEPARATE rotation of "alternate" episodes for
+//     filler, using its own cursor (`altCursor`) so (a) the main
+//     sequence's cursor is never disturbed by filler picks -- it always
+//     resumes exactly where it left off -- and (b) no single alternate
+//     is reused every time one is needed, which would otherwise starve
+//     the rest of the catalog of ever being used as filler.
+//
+// on_unfit policy ("sequential" mode only -- see packSequential; hybrid's
+// own, simpler "find one bounded alternate, else hold" rule is described
+// above, and best_fit has no notion of "the next" episode at all),
+// applied the moment the next sequential episode does not fit in
+// whatever time remains in the occurrence:
 //   - "defer" (the conservative default): stop packing this occurrence.
 //     The rotation cursor is deliberately NOT advanced past the unfit
 //     episode -- which is exactly what gives it priority again: the very
@@ -57,14 +81,15 @@ final class EpisodePacker
 {
     private const DEFAULT_ON_UNFIT = 'defer';
     private const VALID_ON_UNFIT = ['defer', 'skip_for_block', 'allow_overrun'];
+    private const VALID_MODES = ['sequential', 'best_fit', 'hybrid'];
 
     /** @return array{mode:string, minimumRemaining:int, safetyMargin:int, onUnfit:string, allowRepeatWithinBlock:bool} */
     public static function normalizeConfig(array $packing, string $blockId): array
     {
         $mode = is_string($packing['mode'] ?? null) ? $packing['mode'] : 'sequential';
-        if ($mode !== 'sequential') {
+        if (!in_array($mode, self::VALID_MODES, true)) {
             throw new RuntimeException(
-                "block \"$blockId\": packing.mode \"$mode\" is not implemented yet -- only \"sequential\" is supported so far."
+                "block \"$blockId\": packing.mode \"$mode\" is invalid -- must be one of: " . implode(', ', self::VALID_MODES)
             );
         }
         $onUnfit = is_string($packing['on_unfit'] ?? null) ? $packing['on_unfit'] : self::DEFAULT_ON_UNFIT;
@@ -90,18 +115,47 @@ final class EpisodePacker
     /**
      * @param list<string> $pinnedIds pinned (EpisodeSetPin) order -- rotation.loop governs wraparound exactly as the non-packing path does.
      * @param array<string,array<string,mixed>> $episodesById
-     * @param array{cursor:int, deferred:list<array{episode_id:string,pinned_index:int}>} $state entering this occurrence
+     * @param array{cursor:int, deferred:list<array{episode_id:string,pinned_index:int}>, altCursor?:int} $state entering this occurrence
      * @param array{mode:string, minimumRemaining:int, safetyMargin:int, onUnfit:string, allowRepeatWithinBlock:bool} $config
      * @param bool $loop rotation.loop -- when false, the cursor never wraps; running past the end simply ends packing for every future occurrence too.
      * @param int $fallbackDuration the block's nominal duration, used when an episode's own duration is unknown (same fallback rule the non-packing path already uses).
      * @return array{
      *   scheduled: list<array{episode_id:string, duration:int}>,
-     *   state: array{cursor:int, deferred:list<array{episode_id:string,pinned_index:int}>},
+     *   state: array{cursor:int, deferred:list<array{episode_id:string,pinned_index:int}>, altCursor:int},
      *   usedSeconds: int,
      *   warnings: list<string>,
      * }
      */
     public static function packOccurrence(
+        int $availableSeconds,
+        array $pinnedIds,
+        array $episodesById,
+        array $state,
+        array $config,
+        bool $loop,
+        int $fallbackDuration,
+        string $blockId,
+        string $occurrenceLabel,
+    ): array {
+        return match ($config['mode']) {
+            'best_fit' => self::packBestFit($availableSeconds, $pinnedIds, $episodesById, $state, $config, $fallbackDuration, $blockId, $occurrenceLabel),
+            'hybrid' => self::packHybrid($availableSeconds, $pinnedIds, $episodesById, $state, $config, $loop, $fallbackDuration, $blockId, $occurrenceLabel),
+            default => self::packSequential($availableSeconds, $pinnedIds, $episodesById, $state, $config, $loop, $fallbackDuration, $blockId, $occurrenceLabel),
+        };
+    }
+
+    /** Duration to use for a pinned episode: its own series.json duration if known and positive, else the block's nominal duration. Null if it's no longer approved/present at all. */
+    private static function episodeDuration(array $episodesById, int $fallbackDuration, string $episodeId): ?int
+    {
+        $ep = $episodesById[$episodeId] ?? null;
+        if ($ep === null || ($ep['status'] ?? null) !== 'approved') {
+            return null;
+        }
+        $d = is_numeric($ep['duration'] ?? null) ? (float) $ep['duration'] : null;
+        return ($d !== null && $d > 0) ? (int) round($d) : $fallbackDuration;
+    }
+
+    private static function packSequential(
         int $availableSeconds,
         array $pinnedIds,
         array $episodesById,
@@ -120,14 +174,7 @@ final class EpisodePacker
         $cursor = $state['cursor'];
         $deferred = $state['deferred'];
 
-        $durationOf = function (string $episodeId) use ($episodesById, $fallbackDuration): ?int {
-            $ep = $episodesById[$episodeId] ?? null;
-            if ($ep === null || ($ep['status'] ?? null) !== 'approved') {
-                return null; // no longer present/approved -- caller treats this as "drop it"
-            }
-            $d = is_numeric($ep['duration'] ?? null) ? (float) $ep['duration'] : null;
-            return ($d !== null && $d > 0) ? (int) round($d) : $fallbackDuration;
-        };
+        $durationOf = static fn (string $episodeId): ?int => self::episodeDuration($episodesById, $fallbackDuration, $episodeId);
         $trySchedule = function (string $episodeId, int $pinnedIndex) use (
             &$scheduled, &$scheduledIds, &$remaining, $durationOf, $config, &$warnings, $blockId, $occurrenceLabel,
         ): bool {
@@ -265,7 +312,177 @@ final class EpisodePacker
 
         return [
             'scheduled' => $scheduled,
-            'state' => ['cursor' => $cursor, 'deferred' => $dedupedDeferred],
+            'state' => ['cursor' => $cursor, 'deferred' => $dedupedDeferred, 'altCursor' => $state['altCursor'] ?? 0],
+            'usedSeconds' => $availableSeconds - $remaining,
+            'warnings' => $warnings,
+        ];
+    }
+
+    /**
+     * "best_fit": no notion of sequence -- every occurrence independently
+     * searches every eligible pinned episode and greedily takes whichever
+     * minimizes leftover time, repeating until nothing more fits. `state.cursor`
+     * here is purely a fairness tie-break anchor (see the file header), not a
+     * strict position; it rotates forward past whatever was just used.
+     */
+    private static function packBestFit(
+        int $availableSeconds,
+        array $pinnedIds,
+        array $episodesById,
+        array $state,
+        array $config,
+        int $fallbackDuration,
+        string $blockId,
+        string $occurrenceLabel,
+    ): array {
+        $pinnedCount = count($pinnedIds);
+        $scheduled = [];
+        $scheduledIds = [];
+        $remaining = $availableSeconds;
+        $cursor = $state['cursor'];
+
+        $maxAttempts = $config['allowRepeatWithinBlock'] ? $pinnedCount * 4 : $pinnedCount;
+        for ($attempts = 0; $attempts < $maxAttempts && $pinnedCount > 0; $attempts++) {
+            $best = null;
+            for ($i = 0; $i < $pinnedCount; $i++) {
+                $id = $pinnedIds[$i];
+                if (!$config['allowRepeatWithinBlock'] && isset($scheduledIds[$id])) {
+                    continue;
+                }
+                $duration = self::episodeDuration($episodesById, $fallbackDuration, $id);
+                if ($duration === null || $duration + $config['safetyMargin'] > $remaining) {
+                    continue;
+                }
+                $leftover = $remaining - $duration;
+                if ($leftover > 0 && $leftover < $config['minimumRemaining']) {
+                    continue;
+                }
+                $distance = Recurrence::floorMod($i - $cursor, $pinnedCount); // deterministic tie-break: closest (wrapping) to the fairness anchor
+                if (
+                    $best === null
+                    || $leftover < $best['leftover']
+                    || ($leftover === $best['leftover'] && $distance < $best['distance'])
+                    || ($leftover === $best['leftover'] && $distance === $best['distance'] && $i < $best['idx'])
+                ) {
+                    $best = ['idx' => $i, 'id' => $id, 'duration' => $duration, 'leftover' => $leftover, 'distance' => $distance];
+                }
+            }
+            if ($best === null) {
+                break; // nothing eligible fits anymore this occurrence -- stop, leave the rest as a gap
+            }
+            $scheduled[] = ['episode_id' => $best['id'], 'duration' => $best['duration']];
+            $scheduledIds[$best['id']] = true;
+            $remaining -= $best['duration'];
+            $cursor = $best['idx'] + 1;
+        }
+
+        $warnings = [];
+        if (!$scheduled && $pinnedCount > 0 && $availableSeconds > 0) {
+            $warnings[] = "block \"$blockId\" occurrence $occurrenceLabel: nothing could be packed into this occurrence under packing.mode=best_fit "
+                . '(every eligible episode is longer than the available time); left entirely as a gap.';
+        }
+
+        return [
+            'scheduled' => $scheduled,
+            'state' => ['cursor' => $cursor, 'deferred' => [], 'altCursor' => $state['altCursor'] ?? 0],
+            'usedSeconds' => $availableSeconds - $remaining,
+            'warnings' => $warnings,
+        ];
+    }
+
+    /**
+     * "hybrid": prefer the main sequential cursor whenever it fits (the
+     * scheduled show stays recognizable); when it doesn't, make one bounded
+     * attempt to fill the gap from a SEPARATE alternate rotation
+     * (`state.altCursor`) instead of giving up immediately. The main cursor
+     * is never advanced by an alternate pick -- it always resumes exactly
+     * where it left off -- and the alternate rotation advances past whatever
+     * it used, so repeated filler needs don't always reach for the same
+     * episode.
+     */
+    private static function packHybrid(
+        int $availableSeconds,
+        array $pinnedIds,
+        array $episodesById,
+        array $state,
+        array $config,
+        bool $loop,
+        int $fallbackDuration,
+        string $blockId,
+        string $occurrenceLabel,
+    ): array {
+        $pinnedCount = count($pinnedIds);
+        $scheduled = [];
+        $scheduledIds = [];
+        $remaining = $availableSeconds;
+        $cursor = $state['cursor'];
+        $altCursor = $state['altCursor'] ?? 0;
+        $warnings = [];
+
+        $fits = static function (?int $duration, int $remaining, array $config): bool {
+            if ($duration === null || $duration + $config['safetyMargin'] > $remaining) {
+                return false;
+            }
+            $leftover = $remaining - $duration;
+            return !($leftover > 0 && $leftover < $config['minimumRemaining']);
+        };
+
+        $maxAttempts = $pinnedCount * 2; // the main sequence, plus at most one bounded alternate-fill pass per main step
+        for ($attempts = 0; $attempts < $maxAttempts && $pinnedCount > 0; $attempts++) {
+            if (!$loop && ($cursor < 0 || $cursor >= $pinnedCount)) {
+                break; // non-looping main rotation has run out (or hasn't started)
+            }
+            $idx = Recurrence::floorMod($cursor, $pinnedCount);
+            $mainId = $pinnedIds[$idx];
+            $mainAlreadyUsed = !$config['allowRepeatWithinBlock'] && isset($scheduledIds[$mainId]);
+            if (!$mainAlreadyUsed) {
+                $d = self::episodeDuration($episodesById, $fallbackDuration, $mainId);
+                if ($fits($d, $remaining, $config)) {
+                    $scheduled[] = ['episode_id' => $mainId, 'duration' => $d];
+                    $scheduledIds[$mainId] = true;
+                    $remaining -= $d;
+                    $cursor++;
+                    continue; // primary series stays recognizable: keep going in sequence as long as it fits
+                }
+            }
+
+            // Main sequence is stuck (or already used up this occurrence) -- one bounded
+            // search through the separate alternate rotation for filler.
+            $found = null;
+            for ($lookahead = 0; $lookahead < $pinnedCount; $lookahead++) {
+                $candidateIdx = Recurrence::floorMod($altCursor + $lookahead, $pinnedCount);
+                $candidateId = $pinnedIds[$candidateIdx];
+                if (!$config['allowRepeatWithinBlock'] && isset($scheduledIds[$candidateId])) {
+                    continue;
+                }
+                $d = self::episodeDuration($episodesById, $fallbackDuration, $candidateId);
+                if ($fits($d, $remaining, $config)) {
+                    $found = ['idx' => $candidateIdx, 'id' => $candidateId, 'duration' => $d];
+                    break;
+                }
+            }
+            if ($found === null) {
+                if (!$mainAlreadyUsed) {
+                    $warnings[] = "block \"$blockId\" occurrence $occurrenceLabel: the next episode in the main sequence (\"$mainId\") does not fit "
+                        . 'and no approved alternate fits either (packing.mode=hybrid); the main cursor is held for a future occurrence.';
+                }
+                break; // main cursor intentionally left exactly where it is
+            }
+            $scheduled[] = ['episode_id' => $found['id'], 'duration' => $found['duration']];
+            $scheduledIds[$found['id']] = true;
+            $remaining -= $found['duration'];
+            $altCursor = $found['idx'] + 1;
+            // main cursor deliberately untouched -- loop again and re-check it against the now-smaller remaining.
+        }
+
+        if (!$scheduled && $pinnedCount > 0 && $availableSeconds > 0) {
+            $warnings[] = "block \"$blockId\" occurrence $occurrenceLabel: nothing could be packed into this occurrence under packing.mode=hybrid "
+                . '(every eligible episode is longer than the available time); left entirely as a gap.';
+        }
+
+        return [
+            'scheduled' => $scheduled,
+            'state' => ['cursor' => $cursor, 'deferred' => [], 'altCursor' => $altCursor],
             'usedSeconds' => $availableSeconds - $remaining,
             'warnings' => $warnings,
         ];

@@ -36,7 +36,7 @@ final class RotationStateTest
 
     public function testSaveThenLoadRoundTripsExactly(): void
     {
-        RotationState::save($this->stateDir, 'chan', 'b', 1, 5, [['episode_id' => 'e9', 'pinned_index' => 2]], 10, $this->utc('2026-11-04T00:00:00Z'));
+        RotationState::save($this->stateDir, 'chan', 'b', 1, 5, [['episode_id' => 'e9', 'pinned_index' => 2]], 0, 10, $this->utc('2026-11-04T00:00:00Z'));
         $s = RotationState::load($this->stateDir, 'chan', 'b', 1);
         Assert::same(5, $s['cursor']);
         Assert::same(['episode_id' => 'e9', 'pinned_index' => 2], $s['deferred'][0]);
@@ -45,7 +45,7 @@ final class RotationStateTest
 
     public function testAPinVersionMismatchResetsWithAWarningReason(): void
     {
-        RotationState::save($this->stateDir, 'chan', 'b', 1, 5, [], 10, $this->utc('2026-11-04T00:00:00Z'));
+        RotationState::save($this->stateDir, 'chan', 'b', 1, 5, [], 0, 10, $this->utc('2026-11-04T00:00:00Z'));
         $s = RotationState::load($this->stateDir, 'chan', 'b', 2); // pin was refreshed to version 2
         Assert::same(0, $s['cursor']);
         Assert::true($s['reset']);
@@ -54,8 +54,8 @@ final class RotationStateTest
 
     public function testSaveNeverRegressesAnAlreadyAdvancedCheckpointForTheSamePinVersion(): void
     {
-        RotationState::save($this->stateDir, 'chan', 'b', 1, 5, [], 20, $this->utc('2026-11-10T00:00:00Z'));
-        RotationState::save($this->stateDir, 'chan', 'b', 1, 999, [], 5, $this->utc('2026-11-01T00:00:00Z')); // earlier index -- must be ignored
+        RotationState::save($this->stateDir, 'chan', 'b', 1, 5, [], 0, 20, $this->utc('2026-11-10T00:00:00Z'));
+        RotationState::save($this->stateDir, 'chan', 'b', 1, 999, [], 0, 5, $this->utc('2026-11-01T00:00:00Z')); // earlier index -- must be ignored
         $s = RotationState::load($this->stateDir, 'chan', 'b', 1);
         Assert::same(5, $s['cursor'], 'the regression attempt (cursor 999) must never have been written');
         Assert::same(20, $s['checkpoint_occurrence_index']);
@@ -63,8 +63,8 @@ final class RotationStateTest
 
     public function testDifferentBlocksOfTheSameChannelAreIndependentFiles(): void
     {
-        RotationState::save($this->stateDir, 'chan', 'morning', 1, 3, [], 1, $this->utc('2026-11-01T00:00:00Z'));
-        RotationState::save($this->stateDir, 'chan', 'evening', 1, 7, [], 1, $this->utc('2026-11-01T00:00:00Z'));
+        RotationState::save($this->stateDir, 'chan', 'morning', 1, 3, [], 0, 1, $this->utc('2026-11-01T00:00:00Z'));
+        RotationState::save($this->stateDir, 'chan', 'evening', 1, 7, [], 0, 1, $this->utc('2026-11-01T00:00:00Z'));
         Assert::same(3, RotationState::load($this->stateDir, 'chan', 'morning', 1)['cursor']);
         Assert::same(7, RotationState::load($this->stateDir, 'chan', 'evening', 1)['cursor']);
     }
