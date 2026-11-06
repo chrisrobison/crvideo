@@ -1,0 +1,534 @@
+{
+    "schema_version": 1,
+    "id": "film-day-marriage-and-the-office",
+    "title": "Marriage & the Office",
+    "description": "Social-guidance films for grown-ups from the Internet Archive's Prelinger Archives -- marriage, housework, office etiquette, and the workplace politics of mid-century American domestic and clerical life.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "HowDoYou1950",
+            "episode_number": 1,
+            "title": "How Do You Know It's Love?",
+            "description": "Gives students a basis for thinking clearly about real love and shows that mere conviction of love is not enough to insure lasting happiness. A drama.",
+            "creator": "Coronet Instructional Films",
+            "duration": 777.88,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowDoYou1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowDoYou1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowDoYou1950/HowDoYou1950.mp4",
+                "page_url": "https://archive.org/details/HowDoYou1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Psychology",
+                    "Marriage"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowDoYou1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "SocialCl1957",
+            "episode_number": 2,
+            "title": "Social Class in America",
+            "description": "Shows the differences in the life experience of three male babies from three different social classes. One young man succeeds his father as president of the family manufacturing company. Another, a middle-class white-collar worker at the same company, leaves the town of his birth and moves to New York City where he becomes a respected advertising art director, thus rising in social status. A third, born into the working class, trains as a mechanic and holds an influential job at a service station. The sociological tone of the film does not mask a sobering narrative of the limitations that social class divisions inflict on all Americans.",
+            "creator": "Knickerbocker Productions",
+            "duration": 889.72,
+            "year": 1957,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/SocialCl1957",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "SocialCl1957",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/SocialCl1957/SocialCl1957.mp4",
+                "page_url": "https://archive.org/details/SocialCl1957",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Sociology",
+                    "Class",
+                    "1950s"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SocialCl1957; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "FamilyLi1949",
+            "episode_number": 3,
+            "title": "Family Life",
+            "description": "Impossible drama proving that proper management of schedules, responsibilities, privileges and finances leads to a happier home.",
+            "creator": "Coronet Instructional Films",
+            "duration": 588.99,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/FamilyLi1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "FamilyLi1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/FamilyLi1949/FamilyLi1949.mp4",
+                "page_url": "https://archive.org/details/FamilyLi1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item FamilyLi1949; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "OfficeEt1950",
+            "episode_number": 4,
+            "title": "Office Etiquette",
+            "description": "Do's and don'ts film portraying ways in which office etiquette contributes to success in office relationships. Follows a young woman who is seeking her first secretarial job and shows examples of good (and hilariously bad) on-the-job behavior.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 795.16,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/OfficeEt1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "OfficeEt1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/OfficeEt1950/OfficeEt1950.mp4",
+                "page_url": "https://archive.org/details/OfficeEt1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Social guidance: Etiquette",
+                    "Occupations: Clerical"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item OfficeEt1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0862_Our_Changing_Family_Life_E00944_14_11_22_23",
+            "episode_number": 5,
+            "title": "Our Changing Family Life",
+            "description": "CONTRASTS THE CLOSELY-INTEGRATED FAMILY OF THE 1880'S WITH THE FAMILY OF TODAY. EXPLAINS HOW INDUSTRIALIZATION, URBANIZATION & THE POLITICAL & ECONOMIC EMANCIPATION OF WOMEN HAVE CHANGED THE TRADITIONAL PATTERN OF FAMILY LIFE. 01:12:07:15 Rural family, two boys, older man and older woman (grandparents or parents), playing dominoes at dinner table. 01:12:34:13 VS middle-age woman in proper Victorian style dress rocking in rocking chair helping little girl with bow in hair with her homework. CU little girl writing on paper on desk by light of oil lamp. 01:12:48:10 VS teenage girl playing piano for teenage boy in late-nineteenth century shirt tie and vest. Boy leans on piano and watches girl adoringly. Mother enters room, sits at piano and plays while boy and girl exchange flirtatious gazes. MS girl begins to sing along to piano music. Father and little sister enter room and surround mother at piano; all begin to sing. Rest of family enters, nine total, all crowded around piano sing. 01:15:17:01 VS industrial workers leaving factory. Crowds of workers coming or going from work. 01:15:56:09 Woman window shopping stops at store window; looks at books on display. Titles: “Intimate Story by Rose Franken”, “The American Everyday Cookbook”, CU “Susan B. Anthony: Champion of Women’s Rights.” 01:16:20:01 VS people in the workplace. Man and woman at draft tables; two women working on machine parts, attaching wires; woman stamping papers; woman working with electronics and radar-like monitor. 01:16:36:20 Butcher cutting meat. 01:16:43:03 VS woman looking into microscope. Woman using optical device. Young woman using stethoscope-looking apparatus attached to machine. Female operator at telephone switchboard, patching calls, flipping switches. 01:16:53:04 Two people waiting on arriving training at Hackettstown stop. 01:16:54:19 Train conductor pulling break lever. 01:16:55:23 Three young girls, one young woman, waving goodbye to prim and proper looking 1950s family of two girls and young boy as they depart on train. 01:17:11:02 Rural family loads belongings onto bed of truck. 01:17:21:03 CU Broadway and Wall St. street sign; mob of people of Wall St. 01:17:25:08 VS New York City Stock exchange in action. Trading on the floor. 01:17:33:12 VS workers in long line wearing coats and caps. Man in overalls with pipe. 01:17:46:00 VS exploding battleship; lots of smoke. Plane peeling away in the sky. Battleship on fire. 01:17:57:23 VS people waving goodbye to ship full of army soldiers. 01:18:08:17 VS in huge warehouse airplane assembly line with female workers. “Rosy the riveter” working on all parts of plane building. 01:18:19:22 VS men coming home from WWII to; women waiting impatiently for their husbands; warm embraces. 01:18:34:10 VS middle-age man and woman, backs to camera, facing judge with US flag behind him. MS woman breaks down crying. 01:19:17:11 Man sows land with Farmall tractor; drives past camera. 01:19:53:10 Woman sits in chair across from grandmotherly older woman, reading. TV sets sits between the two. 01:20:00:26 VS older farmer in cap changes oil in McCormick Farmall tractor. Old woman rings bell, calls for meal time. Family, two generations, sits down at kitchen table. 01:20:48:15 VS shot of bald man and woman watching TV from couch; camera angle from behind and in front. 01:21:37:17 Teenage boy and girl formally dressed get in 1950s style convertible and drive off. 01:21:51:23 VS old man reading paper in rocking chair on porch. Two preteen boys in front yard playing catch. Old man joins in game of catch. 01:22:59:29 Father enters kitchen where wife is cooking; greeted by cute young daughter; lifts up cute baby boy. 01:23:23:13 Husband smoke at dinner table while wife cleans up. 01:24:31:07 VS four men playing cards. 01:25:54:03 VS newlyweds exit church, enter car, drive off.",
+            "creator": "Knickerbocker Productions",
+            "duration": 360.22,
+            "year": 1957,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0862_Our_Changing_Family_Life_E00944_14_11_22_23",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0862_Our_Changing_Family_Life_E00944_14_11_22_23",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0862_Our_Changing_Family_Life_E00944_14_11_22_23/0862_Our_Changing_Family_Life_E00944_14_11_22_23.mp4",
+                "page_url": "https://archive.org/details/0862_Our_Changing_Family_Life_E00944_14_11_22_23",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0862_Our_Changing_Family_Life_E00944_14_11_22_23; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "OfficeCo1952",
+            "episode_number": 6,
+            "title": "Office Courtesy: Meeting the Public",
+            "description": "Assisted by an instructive dream, a secretary learns how to be more personable and thus render her job more enjoyable.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 687.12,
+            "year": 1952,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/OfficeCo1952",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "OfficeCo1952",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/OfficeCo1952/OfficeCo1952.mp4",
+                "page_url": "https://archive.org/details/OfficeCo1952",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Occupations: Clerical",
+                    "Gender roles"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item OfficeCo1952; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Supervis1944",
+            "episode_number": 7,
+            "title": "Supervising Women Workers",
+            "description": "Management addresses the special problems of women workers with concern and a heavy dose of sexism.",
+            "creator": "Kerkow (Herbert) Productions",
+            "duration": 636.8,
+            "year": 1944,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Supervis1944",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Supervis1944",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Supervis1944/Supervis1944.mp4",
+                "page_url": "https://archive.org/details/Supervis1944",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "World War II: Homefront"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Supervis1944; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "MotherTa1952",
+            "episode_number": 8,
+            "title": "Mother Takes a Holiday (Part I)",
+            "description": "How the all-electric home emancipates women: a drama of how the women in the family manipulate their men to upgrade the laundry facilities.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 809.61,
+            "year": 1952,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MotherTa1952",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MotherTa1952",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MotherTa1952/MotherTa1952.mp4",
+                "page_url": "https://archive.org/details/MotherTa1952",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Gender roles",
+                    "Appliances: Sales",
+                    "Home economics: Laundry"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MotherTa1952; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Jealousy1954",
+            "episode_number": 9,
+            "title": "Jealousy",
+            "description": "Dramatizes the origin and nature of a wife's jealousy.",
+            "creator": "Affiliated Film Producers",
+            "duration": 949.78,
+            "year": 1954,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Jealousy1954",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Jealousy1954",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Jealousy1954/Jealousy1954.mp4",
+                "page_url": "https://archive.org/details/Jealousy1954",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Marriage",
+                    "Gender roles",
+                    "Psychology"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Jealousy1954; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "WhosBoss1950",
+            "episode_number": 10,
+            "title": "Who's Boss?",
+            "description": "Husband and wife struggle to attain a balance of power in their marriage. This neorealist social guidance film was directed by Alexander Hammid.",
+            "creator": "Affiliated Film Producers",
+            "duration": 938.47,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhosBoss1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhosBoss1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhosBoss1950/WhosBoss1950.mp4",
+                "page_url": "https://archive.org/details/WhosBoss1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Marriage",
+                    "Social guidance: Marriage",
+                    "Gender roles"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhosBoss1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "new_girl_in_the_office_1",
+            "episode_number": 11,
+            "title": "New Girl in the Office (Part I)",
+            "description": "Presented by the Government's Committee on Government Contracts, produced by On Film, Inc. and directed by Lewis Freedman. Starring Ed Asner, Lester Rawlins, Chase Crowley and Gail Fisher. 0547 PA8288 New Girl in the Office",
+            "creator": "On Film, Inc.",
+            "duration": 997.68,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/new_girl_in_the_office_1",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "new_girl_in_the_office_1",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/new_girl_in_the_office_1/new_girl_in_the_office_1.mp4",
+                "page_url": "https://archive.org/details/new_girl_in_the_office_1",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Race Relations",
+                    "Mental Hygiene",
+                    "Social Guidance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item new_girl_in_the_office_1; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "YourFami1948",
+            "episode_number": 12,
+            "title": "Your Family",
+            "description": "Family values in action bring happiness and concord.",
+            "creator": "Coronet Instructional Films",
+            "duration": 637.67,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/YourFami1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "YourFami1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/YourFami1948/YourFami1948.mp4",
+                "page_url": "https://archive.org/details/YourFami1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Families",
+                    "Amateur films"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item YourFami1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "SharingW1949",
+            "episode_number": 13,
+            "title": "Sharing Work At Home",
+            "description": "A family cooperates to an unbelievable degree.",
+            "creator": "Coronet Instructional Films",
+            "duration": 620.45,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/SharingW1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "SharingW1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/SharingW1949/SharingW1949.mp4",
+                "page_url": "https://archive.org/details/SharingW1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SharingW1949; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}

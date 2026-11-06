@@ -1,0 +1,816 @@
+{
+    "schema_version": 1,
+    "id": "film-day-wired-world",
+    "title": "Wired World",
+    "description": "Telephone, radio, television, and the first computers, from the Internet Archive's Prelinger Archives -- how 20th-century America talked, broadcast, and began to compute.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "0767_Incredible_Machine_The_20_26_47_00",
+            "episode_number": 1,
+            "title": "Incredible Machine, The",
+            "description": "Informs viewer of the experimental advances in audiovisual communications techniques Bell Telephone Laboratories' researchers are experimenting with: computer graphics, synthesized speech, computer-made movies and music, and designing prototypical devices. 20:27:20:29 CU man working on 1980s computer screen tracing line with digital pen over graph on screen, sheet music above graph, audio track jumbled notes corresponding to music written on computer screen. 20:27:39:28 man holds pen to digital draught table tracing lines that appear on black computer screen in green. 20:27:44:21 CU typewriter typing random letters on page, camera pan out to man who says “nice”, computer in robotic voice repeats over and over again word “nice”; CU black computer screen producing line in steps corresponding to intonation of computer’s pronunciation of word “nice.” 20:28:02:27 Two design engineers working on Graphic-1 computer; CU disembodied engineer’s hand presses pen to round scope touch-screen, drawing points on screen; men draw circuits directly on cathode ray tube screen; computer screen flashes “Data Incomplete On Amplifier.” 20:30:22:03 CU red tinted shot of disembodied finger presses button labeled “Execute;” CU two rows of blinking yellow lights; flashing graph on computer screen. 20:30:34:23 CU disembodied hands, on holding red pencil, the other strip of film; man with large moustache looks at strip of film and asks man at chalkboard holding piece of chalk questions; men are discussing idea for early digital movie. 20:31:37:17 Great footage from early Beflicks (Bell Laboratories Flicks) digital movie. 20:31:51:09 Man gives projectionist reels for Beflicks movie; VS man loads film reel in projector, focuses lens; CU disembodied hand punches buttons, each only momentarily in focus as it is punched, fingers press rewind then play button; CU film on projector begins to wind. Excerpted footage from Beflicks films, graphic in first frame has text which reads “The language speaks of pictures as mosaic;” great footage from 1980s digital movie, abstract moving images and letters, text “Man and…His world; Terre des Hommes; El Hombre Y Su Mundo; Der Mensch und Seine Welt” in abstract moving patters, highly pixilated material. 20:33:28:22 CU filmmaker with moustache talks about his dreams of making digital movies; great sound bites “I’ll be able to sit some place, maybe in a railroad station and write a movie, or maybe even pick up a telephone eventually and write a movie.” 20:33:25:07 Simple graphic of rotating sphere with suitcase-like object in its orbit, clock in top right corner of frame. 20:34:50:14 Man and woman seated behind project at table, man presses button on table turning off the lights, then turns on the movie projector; great footage of op-art film with man perceptual effects. 20:35:37:04 CU black and white page filled with small strange combination of simple symbols including: swastika, car, building, American flag, star of David, cross, cat, mask, peace symbol, television set, airplane; camera pans out to show small symbols transform into picture of two flying birds. 20:36:06:21 Great shot sifting through sheets of punched cards producing electronic music, row of flashing buttons on bottom of machine; CU man using pen to write directly on cathode ray tube monitor to program music; standard music notation on top of screen and geometric shaped graphed in center of screen; man does demonstration for another man on 1980s electronic music computer, computer plays music and sings with robotic voice “Daisy Daisy give me your answer true, I’m half crazy all for the love of you..” 20:37:33:24 CU spinning film reel; CU digital produced graph of sound wave of sound on audio track; great shot two men wearing black framed glasses sitting behind reels of film. 20:38:44:27 Great shot of plaster model of head in profile with open mouth, camera pan around model which is split in two and looks into exposed internal portion of model of human head; CU two spinning red reels of film; audio track robot voice speaks Shakespeare quote “To be or not to be, that is the question…”; CU rows of blinking “Op Code” lights; CU disembodied hand writes with chalk on blackboard various consonant letters of alphabet; woman brings man writing on blackboard cup of coffee; man writes on blackboard in chalk “I like my coffee black” and underlines word “black”, CU disembodied woman’s hand types on typewriter; woman flips switch on control board of switches, audio track monotone robot voice says line “I like my coffee black.” 20:41:06:05 CU man looks at film on reel.",
+            "creator": "Murphy (Owen) Productions",
+            "duration": 899.07,
+            "year": 1968,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0767_Incredible_Machine_The_20_26_47_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0767_Incredible_Machine_The_20_26_47_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0767_Incredible_Machine_The_20_26_47_00/0767_Incredible_Machine_The_20_26_47_00_3mb.mp4",
+                "page_url": "https://archive.org/details/0767_Incredible_Machine_The_20_26_47_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0767_Incredible_Machine_The_20_26_47_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "Televisi1961",
+            "episode_number": 2,
+            "title": "Television Remote Control (Tuner)",
+            "description": "Early technology to enable the channel-surfer.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 346.68,
+            "year": 1961,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Televisi1961",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Televisi1961",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Televisi1961/Televisi1961.mp4",
+                "page_url": "https://archive.org/details/Televisi1961",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Media: Television"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Televisi1961; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HearandN1958",
+            "episode_number": 3,
+            "title": "Hear and Now",
+            "description": "How radio brings news and information to Americans. With footage of many news events covered by radio and images everyday life in the late 1950s. Explains how radio serves in the Cold War and during natural disasters.",
+            "creator": "Unknown",
+            "duration": 1084.95,
+            "year": 1958,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HearandN1958",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HearandN1958",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HearandN1958/HearandN1958.mp4",
+                "page_url": "https://archive.org/details/HearandN1958",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Media: Radio",
+                    "Communication: Radio",
+                    "Journalism"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HearandN1958; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Telegram1956",
+            "episode_number": 4,
+            "title": "Telegram for America",
+            "description": "History, technology and 1950s-era practice of the telegraphy business.",
+            "creator": "Transfilm",
+            "duration": 1170.07,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Telegram1956",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Telegram1956",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Telegram1956/Telegram1956.mp4",
+                "page_url": "https://archive.org/details/Telegram1956",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "dlarc",
+                    "americana",
+                    "dlarc-videos"
+                ],
+                "subjects": [
+                    "Communication: Telegrams"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Telegram1956; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Nationat1951",
+            "episode_number": 5,
+            "title": "Nation at Your Fingertips, The",
+            "description": "How direct long distance dialing made the U.S. a smaller place, and how instantaneous direct communication between Americans without operator assistance became possible.",
+            "creator": "Audio Productions, Inc.",
+            "duration": 653.22,
+            "year": 1951,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Nationat1951",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Nationat1951",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Nationat1951/Nationat1951.mp4",
+                "page_url": "https://archive.org/details/Nationat1951",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Communication: Telephone",
+                    "Infrastructure: Information"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Nationat1951; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Technico1949",
+            "episode_number": 6,
+            "title": "Technicolor for Industrial Films",
+            "description": "Film promoting use of Technicolor process to industrial film producers.",
+            "creator": "Technicolor Corporation",
+            "duration": 489.92,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Technico1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Technico1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Technico1949/Technico1949.mp4",
+                "page_url": "https://archive.org/details/Technico1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Motion pictures: History",
+                    "Motion pictures: Production",
+                    "Motion pictures: Industrial"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Technico1949; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "LivingSt1958",
+            "episode_number": 7,
+            "title": "Living Stereo",
+            "description": "Introducing stereophonic phonograph records.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 462.43,
+            "year": 1958,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/LivingSt1958",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "LivingSt1958",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/LivingSt1958/LivingSt1958.mp4",
+                "page_url": "https://archive.org/details/LivingSt1958",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Media: Phonograph"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item LivingSt1958; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Story_of_Television_The",
+            "episode_number": 8,
+            "title": "Story of Television, The",
+            "description": "Shows efforts of the Radio Corporation of America (RCA) in the creation, development and introduction of the all-electronic TV system; explains how science made television a working reality. David Sarnoff tells of the early research and experiments. Shown is the first successful picture tube, the first experimental TV station, the problems of improving piucture quality and reducing the size and cost of components at the transmitting and receiving ends, and the function of mobile units. Actual scenes from TV \"firsts\" are included -- President Roosevelt opening the 1939 New York World's Fair, the visit of the King and Queen of England, and the 1940 Republican Convention in Philadelphia. Animated diagrams demonstrate how a TV camera converts electronic beams into a picture. 03:00:00:00 - 03:56:46:23 B/W Sound 1956 RCA promotional film about television tracing scientific development of electronic television systems from 1920s to 1950s. Chairman David Sarnoff & Vladimir Zworykin recount early research and experiments, honing of picture tubes. Animated diagrams of TV transmission, reception. TV event \"firsts\" - President Roosevelt opening the 1939 New York World's Fair, King and Queen of England, and the 1940 Republican Convention in Philadelphia. Second film- TV- \"A Welcome Guest in The House,\" narrated by Don Ameche. TV's role in modern society seen through role in shaping young boy's goals, imagination. News events, politics, drama, community advocate, advertiser, bastion of American values & freedom. 3rd film explains scientific theory of television broadcasting. 03:00:00:00 - 03:02:17:09 B/W Sound 1956 Title on simulated TV screen. VO: \"The signature of every century has been its skyline.\" VS architectural landmarks. Ancient- Egyptian sphinx, Old- Greek Acropolis, Roman ruins, Medieval- cathedral Modern- New York City skyline. PAN TV antennas on suburban houses. \"Metal fingers beckoning to the invisible...Our era- the era of television.\" Young woman climbs hill, looks out over landscape. \"The dream of television has persisted for centuries.\" Devices to extend range of human eyesight- binoculars, giant telescopes. \"Could man fling pictures to the sky and gather them at a distant point.\" 03:02:17:10 - 03:05:26:18 B/W Sound 1956 TU RCA building New York City. \"Two men took up this challenge (in the 1920s). They shared the irresistible dream of television.\" David Sarnoff- RCA Chairman of The Board, Dr. Vladymir Zworykin- inventor of modern electronic television. Sarnoff recalls their first meeting when Zworykin proposed idea for television development. \"You were an excellent salesman- and I was a good dreamer.\" They discuss cost of RCA's development, value. Sarnoff: \"We've extended our sight far beyond the horizon.\" Original picture tube on desk. Zworykin shows him modern \"grandchild\" of original electronic tube. Sarnoff: reduce costs of television so that \"color television may be within the reach of everyone.\" 03:05:26:19 - 03:06:07:07 B/W Sound 1956 VO host. Television tube development. CU original 1923 iconoscope developed by Zworykin. Changed from early disk system. Modern orthicon from television camera. Kinescope first developed in 1929. Larger kinescope. Animated cross-section diagram of TV camera. Process of light refraction, electromagnetic beam scanning picture of dancing girl. Signals broadcast through antenna tower. Cross-section of receiving TV set reassembling picture w/ kinescope. 03:06:07:08 - 03:09:30:15 B/W Sound 1956 Empire State Building, NYC. VO- In 1931, National Broadcasting Company erects antenna on top of building for RCA. RCA refined scanning lines for greater detail. 1937- RCA NBC mobile TV broadcasting vans. Two men place large boxy TV camera on tripod. Engineers monitor signal in control room of van. 03:09:30:16 - 03:11:35:20 B/W Sound ca. 1939 New York World's Fair 1939. World's Fair logo flag waves. Television debuts at fair. VS RCA exhibit building. (still) David Sarnoff at podium. \"We have added radio sight to sound.\" First president televised- FDR officially opens the World of Tomorrow. King & Queen of England take televised tour. Other TV milestones- NBC televises first baseball game- August 1939, 1940 political conventions, Two cameramen prepare camera, subject for TV shoot. 03:11:35:21 - 03:13:15:05 B/W Sound ca. 1941 Spinning newspaper headlines. VO host: 1941- WWII declared. RCA research center, Princeton, NJ. VS Scientists experiment w/ electronic components- meters, lab equipment. Military products- sonar for submarines, night vision sniper-scope, 1945- Japan surrenders- VJ, VE day celebrations in streets. 1949- first TV presidential inauguration of Harry Truman. 03:13:15:06 - 03:14:45:11 B/W Silent 1956 Male & female workers on assembly lines in television factory- putting electronics in cases, boxing sets. Fleet of TV service trucks w/ ladders on roofs in parking lot. VO host: \"TV has entered our homes, our lives... an exhilarating component of our American way of life.\" VS antennas, transmitters. B&W as foundation for color TV.",
+            "creator": "Ganz (William J.) Co.",
+            "duration": 1561.99,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Story_of_Television_The",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Story_of_Television_The",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Story_of_Television_The/0829_Story_of_Television_The_11_00_55_00_3mb.mp4",
+                "page_url": "https://archive.org/details/Story_of_Television_The",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item Story_of_Television_The; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "Telephon1946",
+            "episode_number": 9,
+            "title": "Telephone and Telegraph",
+            "description": "Telecommunications workers in the analog era.",
+            "creator": "Holmes (Burton) Films, Inc.",
+            "duration": 634.7,
+            "year": 1946,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Telephon1946",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Telephon1946",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Telephon1946/Telephon1946.mp4",
+                "page_url": "https://archive.org/details/Telephon1946",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Communications",
+                    "Communication: Telephone",
+                    "Communication: Telegraph"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Telephon1946; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "201576_The_Big_Bounce",
+            "episode_number": 10,
+            "title": "The Big Bounce",
+            "description": "Documents the development, technological innovations, and first flight of the first first telecommunications satellite, developed as part of Project Echo by NASA, Bell Laboratories, and Remington Rand. This film was reproduced on DVD by NYU's MIAP program in collaboration with the Orphan Films Symposium on the “Orphans in Space” DVD, c. 2013, produced by Walter Forsberg, et alia., in collaboration with Megan P. and the Prelinger Archives among other archives. Following is \"The Big Bounce\" narration script written by Megan Prelinger for the DVD: 1. The Maker This film is a Jerry Fairbanks Production, one of many that Fairbanks produced for the Bell System in their series of sponsored films that were targeted at general audiences. A few Bell System films produced by Fairbanks have become cult classics, including \"Adventures in Telezonia\" and \"Once Upon a Honeymoon\". Jerry Fairbanks was born in San Francisco in 1904 and was a cinematographer, aviator and an inventor. As a young man he shot aerial views of cities from his own airplane, and in the 1930s and 1940s founded Scientific Films, Inc. to produce short subjects. He made films in partnership with POPULAR SCIENCE magazine, light treatments of new developments in science and technology, including plastics and television. Fairbanks is credited with the invention of the multi-cam system for shooting television programs in studio. https://en.wikipedia.org/wiki/Jerry_Fairbanks (retrieved 7/24/23) 2. The Satellite Echo One, the first of two satellites launched as Project Echo https://en.wikipedia.org/wiki/Project_Echo (retrieved 7/24/23) was launched in August of 1960. It is historically significant as the first satellite to transmit a communications signal long distance. Echo was a “passive” satellite -- it was a shiny balloon that transmitted a signal through reflection. The communications signal originated on Earth and was received on Earth -- it only bounced off the Echo satellite. Hence the name of this film, “The Big Bounce.” According to Life magazine, Echo was nicknamed the “satelloon” by engineers working on the project. When it launched, Echo was one of 14 satellites in orbit around the Earth. In its deflated state, it was 157 feet long. While it was in development, it was stored flat and rolled up in a large aircraft hangar, held together and prevented from blowing around by devices that looked like giant clothespins. Despite its size, its mylar skin was so thin that it weighed only 136 pounds. 3. The Future of Trans-World Geosynchronous Satellite Coverage The Echo satellite was a short step in time away from global telecommunications. Satellite technology was developing so rapidly in the early 1960s that really significant new developments were clustered together in just a few years. Telstar, for example, was the first active, direct relay communications satellite. A dramatic leap beyond the technology of Echo, it launched only two years later. This film, “The Big Bounce” discusses geosynchronous satellites as a future possibility; the first of those was Syncom 3 which launched just four years after Echo, in 1964. Full global coverage by satellites followed by 1968. https://en.wikipedia.org/wiki/Geosynchronous_satellite (retrieved 7/24/23) 4. Political, Cultural, and Technological Context Echo was launched into a complex geopolitical environment. 1960 was a pretty hot year in the Cold War between the U.S. and the Soviet Union. In May of that year a United States U-2 spy plane was shot down over the Soviet Union, and its pilot, Francis Gary Powers, was captured as a spy. This led to an international incident and a considerable escalation in Cold War tensions. The same week that Echo was launched, Powers was sentenced inside the USSR for espionage and was sent to a Soviet prison for two years. The U.S. was looking for good news in both space and military technology, and found it that summer in both. Echo was launched August 12, and then that same week, the experimental X-15 space plane --a project of the Air Force, the Navy, and NASA -- reached a new altitude height of over 131,000 feet (almost 26 miles). At the time, that was the highest above Earth that any human being had ever traveled. Remember, this is all a year before the first orbit of Earth by Yuri Gagarin. The Naval Research Laboratory was involved in Echo - although unpublicized at the time - as naturally there was strategic military interest in Echo. It was the subject of experiments to refine U.S. telemetric readings on major cities in the Soviet Union for the purpose of better missile aim. That contradiction is characteristic of the often simultaneous military and peaceful uses of space technology. Echo was publicly marketed as peaceful since it was not in itself a weapon and did not carry a weapon, and was not overseen by any military agency. The commemorative postage stamp for Echo issued by the Post Office in 1960 bore the slogan “Communications for Peace.” Yet once in the air, it was subject to appropriative use by the Navy and did result in improved missile sightings on Moscow. 5. A Few Words on Echo’s Technology Project Echo was headed by NASA, with guidance technology provided by Bell Laboratories and Remington Rand-Univac, https://en.wikipedia.org/wiki/UNIVAC (retrieved 7/24/23) who built the ground-based navigational computer. This was the same command guidance system that had placed NASA’s Tiros I weather satellite into its orbit three months earlier, in May of 1960. The Echo satellite itself was structurally very simple -- basically just a big balloon. What was technologically innovative about Project Echo as a telecommunications experiment was the computer designed to navigate its launch, and the radio receiver developed to handle the signal reception. That radio receiver had three parts: - a 50-foot long horn-shaped antenna, which had been previously developed for use in overland radio relay - a highly sensitive ruby amplifier; called a “maser” amplifier, it was cooled by liquid helium to negative 456 degrees Fahrenheit to enhance its sensitivity https://physics.aps.org/story/v15/st4 (retrieved 7/24/23) - Not mentioned in the film is the third part of that receiver, a special demodulation circuit developed at Bell Labs as part of their ongoing work in formulating new kinds of computer circuits. 6. The Role of Bell Laboratories I’d like to talk about the history of Bell Laboratories, because of the lab’s role in developing the most sophisticated technological elements of Project Echo. https://www.bell-labs.com/about/#Our-History Bell Laboratories was the research laboratory that grew out of Alexander Graham Bell’s own garage workshop for the study of the transmission of sound. The laboratory was informally the research laboratory of AT&T until 1925, when it was incorporated. In the first quarter of the 20th century, AT&T had to work very hard to maintain its dominance over the burgeoning telephone industry. The company had succeeded in transmitting a telephone call over 1,000 miles in 1900, but faced considerable technical challenges in transmitting over longer distances. In 1909 the company publicly announced a goal of transmitting a telephone call coast-to-coast. However the existing line technologies allowed signals to dissipate into static after a thousand miles. AT&T consolidated its research department as Bell Laboratories, a laboratory that was solely dedicated to developing the technology needed to extend -- and extend and extend -- the reach of telephone transmissions. By the time Bell Laboratories was working on Echo, it was a fifty-one year old laboratory with two Nobel Prizes in physics awarded to lead researchers. Perhaps most notably, the transistor was invented at the Laboratory in 1948. The Laboratory’s work in long-distance transmission lent easily to military applications - it was Bell Laboratories that first suggested to the U.S. Army that missiles could be controlled and guided remotely through computer technology. The result of that first collaboration between the Lab and the military was the Nike missile. 7. The Flight of Echo and Its Impact Once launched, Echo orbited at nearly 16,000 miles per hour, one thousand miles above the Earth. It circumnavigated the globe once every two hours! While it was up there, some other things that it did were to facilitate the first long-distance electronic mail, in the form of a fax. A letter was scanned and entered into a facsimile machine in Washington, D.C., which then converted the message to a telephone signal, where it was phoned in to the U.S. Naval Research Laboratory at Stump Neck, Maryland, and from there was bounced off Echo to Bell Laboratories communications center in New Jersey. The Laboratory then forwarded the fax to the Newark Post Office via telephone lines. The message was issued by the Postmaster General of the U.S., and was addressed, to “Mr. and Mrs. America, care of Postmaster, Everywhere, U.S.A.” No kidding! Echo was also used to transmit photographic images across the country, another first. The anticipated lifespan of the Echo satellite was one year -- after a year it suffered from a wrinkled surface that caused it to become ineffectual as a signal transmitter. The wrinkling was caused by three factors acting together: partial loss of internal gas pressure; the effect of air drag; and thermal stress on the mylar skin caused by rotating between the hot side of Earth, in the sun’s path, and the cold side of Earth, in the shadow of the sun. Echo lost its usefulness in 1961. It however then remained aloft for seven more years. It re-entered the atmosphere and burned up in May of 1968 -- how revolutionary! ________________ Sources consulted: Crystal Fire: The Invention of the Transistor and the Birth of the Information Age by Michael Riordan and Lillian Hoddeson. New York: W.W. Norton, 1997. Bell Laboratories Record: December 1960, p. 471 (“news in brief”) September 1960, “Project Echo Transmits Telephone Messages Via Satellite” Life magazine: August 22, 1960, pp. 19 - 27 (series of articles gathered under the umbrella “Our Greatest Week in Space”) all available at the Prelinger Library in San Francisco",
+            "creator": "Jerry Fairbanks Productions",
+            "duration": 881.43,
+            "year": 1962,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/201576_The_Big_Bounce",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "201576_The_Big_Bounce",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/201576_The_Big_Bounce/201576_The_Big_Bounce_master.intros.mp4",
+                "page_url": "https://archive.org/details/201576_The_Big_Bounce",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "1960s",
+                    " Communication",
+                    " Aviation and aerospace",
+                    " Science"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 201576_The_Big_Bounce; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "long_distance",
+            "episode_number": 11,
+            "title": "Long Distance",
+            "description": "The film \"Long Distance\" explores the significance of long-distance communication in America, highlighting the intricate network of wires and technologies that connect people across vast distances. It emphasizes the evolution of communication from isolation to unity, showcasing the contributions of engineers, builders, and pioneers in creating a transcontinental network. The narrative intertwines the historical journey of America with the advancements in communication, illustrating how voices, music, and written messages traverse the country and beyond, facilitating connections and sharing vital information.Keywordslong distance, communication, network, technology, America, history, unity, pioneers, wires, transcontinental, voice, music, written messages, telecommunications",
+            "creator": "Audio Productions",
+            "duration": 878.18,
+            "year": 1941,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/long_distance",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "long_distance",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/long_distance/long_distance.mp4",
+                "page_url": "https://archive.org/details/long_distance",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "telephones",
+                    "communication",
+                    "Bell System",
+                    "Manifest Destiny",
+                    "United States expansion"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item long_distance; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Sentinel1955",
+            "episode_number": 12,
+            "title": "Sentinel in the Sky",
+            "description": "Modern radar for passenger aircraft. Shows how man has always reached for vision of the things beyond his sight, beginning, perhaps, with the ancient sailor who first climbed the mast to see over the horizon. In modern times the quest has led to such airborne aids as the gyro compass, horizon indicator and radio direction finding navigational systems. Sequences on radar show its basics and how it works in modern planes. Director: Marvin Dreyer.",
+            "creator": "Strauss (Henry) and Company, Inc.",
+            "duration": 881.51,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Sentinel1955",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Sentinel1955",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Sentinel1955/Sentinel1955.mp4",
+                "page_url": "https://archive.org/details/Sentinel1955",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Animation",
+                    "Radar",
+                    "Aviation: Navigation"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Sentinel1955; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "FactsAboutFi",
+            "episode_number": 13,
+            "title": "Facts About Film",
+            "description": "The Atlanta Board of Education and the International Film Bureau present Facts about Film. Produced by Phototronics, Inc.",
+            "creator": "Phototronics, Inc.",
+            "duration": 602.6,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/FactsAboutFi",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "FactsAboutFi",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/FactsAboutFi/FactsAboutFi.mp4",
+                "page_url": "https://archive.org/details/FactsAboutFi",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: Production",
+                    "Motion Pictures: Projection"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item FactsAboutFi; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Philosophy_of_Computing",
+            "episode_number": 14,
+            "title": "Philosophy of Computing",
+            "description": "Educational film explaining digital and analog computers to a lay audience, expressing the state of computing technology in the mid-1950s with a focus on mainframe machines. Introducing computing as an outgrowth of mathematical calculation together with information systems and data processing systems, the film goes on to explain the operational principles of both digital and analog machines and roles they play in technological environments including banking, finance, aviation and aerospace, and music. Contributing to the culture of masculinization of computer programming, all programmers depicted in the film are male even though programming at the time had a substantial history and significant proportion of women in the field.",
+            "creator": "University of Louisville, Speed Scientific School",
+            "duration": 588.67,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Philosophy_of_Computing",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Philosophy_of_Computing",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Philosophy_of_Computing/Philosophy_Of_Computing_master.intros.mp4",
+                "page_url": "https://archive.org/details/Philosophy_of_Computing",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "1950s",
+                    "Technology",
+                    "Computers",
+                    "Science"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item Philosophy_of_Computing; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "Magicint1941",
+            "episode_number": 15,
+            "title": "Magic in the Air (1941)",
+            "description": "How TV works and the promise of its youth.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 478.48,
+            "year": 1941,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Magicint1941",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Magicint1941",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Magicint1941/Magicint1941.mp4",
+                "page_url": "https://archive.org/details/Magicint1941",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Media: Television",
+                    "Electronics"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Magicint1941; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Electronic_Computers_Improve_Management_Control",
+            "episode_number": 16,
+            "title": "Electronic Computers Improve Management Control",
+            "description": "Shows how a solution to a specific management control problem may be provided by electronic data processing methods. Describes a variety of new business machines and discusses their use in the design of an efficient production control system. Includes black and white footage of many very early computers.",
+            "creator": "Simon (Kurt) for the Media Center, UCLA",
+            "duration": 911.11,
+            "year": 1957,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Electronic_Computers_Improve_Management_Control",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Electronic_Computers_Improve_Management_Control",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Electronic_Computers_Improve_Management_Control/0317_Electronic_Computers_Improve_Management_Control_18_45_55_02_3mb.mp4",
+                "page_url": "https://archive.org/details/Electronic_Computers_Improve_Management_Control",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item Electronic_Computers_Improve_Management_Control; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "0808_Computer_Calculator_for_Math_and_Science_05_28_16_00",
+            "episode_number": 17,
+            "title": "Computer Calculator for Math and Science",
+            "description": "Great 1970s early computer footage. Hewlett-Packard computer model 9100 Computing Calculator. Physics class uses computing calculator and X-Y plotter in class. Early educational application of computers. 05:29:51:16 VS Man in suit exhibiting the 9100 Computing Calculator. Calculator is syncs to TV screen or early computer monitor. Electron printer mounts on top of computing calculator. 05:33:48:09 X-Y plotter printer prints on graph part curve from formula quadratic equation entered in the Computing Calculator. 05:34:31:18 VS punch card runs through card reader attached to Hewlett-Packard computing calculator. 05:37:08:02 VS physics teacher writes on blackboard and instructs class using computing calculator. Students watch X-Y plotter printer in awe.",
+            "creator": "Unknown",
+            "duration": 1250.01,
+            "year": 1970,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0808_Computer_Calculator_for_Math_and_Science_05_28_16_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0808_Computer_Calculator_for_Math_and_Science_05_28_16_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0808_Computer_Calculator_for_Math_and_Science_05_28_16_00/0808_Computer_Calculator_for_Math_and_Science_05_28_16_00_3mb.mp4",
+                "page_url": "https://archive.org/details/0808_Computer_Calculator_for_Math_and_Science_05_28_16_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0808_Computer_Calculator_for_Math_and_Science_05_28_16_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "Backofth1938",
+            "episode_number": 18,
+            "title": "Back of the Mike",
+            "description": "Insider's view of the 1930s radio studio showing the production of dramatic sound effects.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 555.49,
+            "year": 1938,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Backofth1938",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Backofth1938",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Backofth1938/Backofth1938.mp4",
+                "page_url": "https://archive.org/details/Backofth1938",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Media: Radio",
+                    "Perception: Sound"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Backofth1938; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "200443_Sounds_Familiar",
+            "episode_number": 19,
+            "title": "Sounds Familiar",
+            "description": "\"The audience is invited to listen to the telephone voice of famous theatrical stars who sound familiar, and to guess their identity. Explains how the telephone instrument transmits and reproduces the human voice. Scenes of Western Electric show how the telephone is manufactured\" (Educational Film Guide, 1954-1958)",
+            "creator": "Audio Productions, Inc.",
+            "duration": 1467.79,
+            "year": 1957,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/200443_Sounds_Familiar",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "200443_Sounds_Familiar",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/200443_Sounds_Familiar/200443_Sounds_Familiar_master.intros.mp4",
+                "page_url": "https://archive.org/details/200443_Sounds_Familiar",
+                "license": "No copyright notice shown on print. Not registered for copyright 1950-59.",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "1950s",
+                    "Technology",
+                    "Communication",
+                    "Manufacturing",
+                    "Electronics"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA cataloging notes no copyright notice on the print/film (No copyright notice shown on print. Not registered for copyright 1950-59.); treated as public domain under pre-1964 US copyright-notice requirements (archive.org item 200443_Sounds_Familiar; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "RCAPrese1939",
+            "episode_number": 20,
+            "title": "RCA Presentation: Television, An",
+            "description": "Early promotional film introducing TV to the American public, probably coordinated with the rollout of scheduled broadcasting at the 1939 New York World's Fair. Shows scenes of television production at the National Broadcasting Company (NBC) studios at Rockefeller Center, New York City, using equipment manufactured by NBC's corporate parent RCA.",
+            "creator": "Radio Corporation of America (RCA)",
+            "duration": 543.28,
+            "year": 1939,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/RCAPrese1939",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "RCAPrese1939",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/RCAPrese1939/RCAPrese1939.mp4",
+                "page_url": "https://archive.org/details/RCAPrese1939",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Media: Television"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RCAPrese1939; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}
