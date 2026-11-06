@@ -48,6 +48,8 @@ output is -- not something to hand-edit.
   "blocks": [
     {
       "id": "technology-hour",
+      "title": "Technology Hour",
+      "description": "A deep dive into everyday technology, old and new.",
       "type": "series",
       "series_id": "technology-connections",
       "recurrence": {
@@ -75,6 +77,16 @@ output is -- not something to hand-edit.
 }
 ```
 
+- `title`/`description` (optional): editorial metadata for the channel
+  **guide** -- distinct from any individual episode's own title/
+  description. If omitted, publish resolves a display title from the
+  block's series title, then the title this exact block was last
+  published with, then (as a legacy last resort) the first scheduled
+  episode's own title -- see `docs/guide-update.md` for the full
+  fallback order and why, and `ProgrammingCompiler::resolveProgramTitle()`/
+  `resolveProgramDescription()` for the implementation. There is no
+  episode-description fallback for `description` -- it stays null rather
+  than blur into an individual video's own description.
 - `series_id` must be one of the series the channel's own `catalog.json`
   "series" array already references -- publish refuses to schedule a
   series the channel hasn't declared.
@@ -301,6 +313,40 @@ occurrences are adjacent. It operates purely on the absolute instants
 -- "the previous program ran N seconds long" is elapsed-time arithmetic,
 not calendar arithmetic, even across a DST transition.
 
+## Program-level identity for the guide (`programs`, `program_id`)
+
+Every episode (and, where applicable, in-block filler) `schedule.json`
+describes stays associated with the logical programming-block occurrence
+it belongs to, so the channel guide can render one cell per *scheduled
+program* -- e.g. a one-hour "Electronics Lab" block containing five
+packed videos -- instead of one cell per individual video. This is a
+small, additive extension of the existing schema:
+
+- A top-level `"programs"` array (one entry per scheduled occurrence,
+  omitted entirely when there are none -- e.g. a channel with no
+  `programming.json` at all): `occurrence_id` (`"<blockId>@<nominal
+  start, Unix seconds>"` -- stable, and guaranteed distinct for an AM vs.
+  a PM showing of the same series, or any two different occurrences of
+  the same block), `block_id`, the resolved `title`/`description`,
+  `series_id`/`series_title`, `boundary_mode`, and both the program's
+  *nominal* (`nominal_start`/`nominal_end`, before any boundary delay)
+  and *effective* (`start`/`end`, the presentation window the guide
+  should actually draw) window, in the same window-relative seconds
+  every item already uses.
+- Each `video`/`continuity` item (and, where it falls entirely inside a
+  program's own window, a `gap` item covering the block's own unfilled
+  remainder) gets a compact `program_id` referencing that `occurrence_id`.
+  A `gap` outside every program's window -- a genuine inter-program
+  station break -- is left untagged.
+
+This is deliberately the *smallest* backward-compatible representation:
+no existing consumer reads `"programs"` or `program_id` at all, so every
+pre-existing channel's `schedule.json` and every piece of code that
+reads it (the player, `catalog-resolver.js`, any other tooling) is
+completely unaffected. See `docs/guide-update.md` for the frontend side
+(`buildEpgTimeline()` in `channels/broadcast.js`, which projects this
+into the guide's program-level cells) and the full design rationale.
+
 ## Broadcast continuity and filler (`continuity.json`)
 
 A channel opts in by adding a `"continuity"` array to its `catalog.json`
@@ -481,6 +527,10 @@ PHP output and the JS player agree: it loads a real compiled
 `schedule.json` through the actual, unmodified
 `buildTimeline()`/`locate()` and confirms joining mid-episode resolves
 the correct program and the correct offset into it.
+`channels/tests/epg-timeline.test.js` and
+`channels/tests/published-schedule-programs.test.js` cover the
+program-level guide projection the same way (unit-level, and against a
+real compiled fixture) -- see `docs/guide-update.md`.
 
 ## Known limitations
 
