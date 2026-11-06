@@ -4,84 +4,199 @@
     "blocks": [
         {
             "id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
             "type": "series",
             "series_id": "mit-general-relativity",
-            "recurrence": { "frequency": "daily", "time": "00:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "00:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 6300,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "soft", "max_delay": 1200 }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "soft",
+                "max_delay": 1200
+            }
         },
         {
             "id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
             "type": "series",
             "series_id": "perimeter-institute",
-            "recurrence": { "frequency": "daily", "time": "02:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "02:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 5400,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "soft", "max_delay": 1800 }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "soft",
+                "max_delay": 1800
+            }
         },
         {
             "id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
             "type": "series",
             "series_id": "oxford-mathematics",
-            "recurrence": { "frequency": "daily", "time": "04:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "04:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 8400,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "soft", "max_delay": 2400 }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "soft",
+                "max_delay": 2400
+            }
         },
         {
             "id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
             "type": "series",
             "series_id": "mit-math-for-cs",
-            "recurrence": { "frequency": "daily", "time": "07:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "07:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 5400,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "soft", "max_delay": 1500 }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "soft",
+                "max_delay": 1500
+            }
         },
         {
             "id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
             "type": "series",
             "series_id": "cs50x-lectures",
-            "recurrence": { "frequency": "daily", "time": "09:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "09:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 9300,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "soft", "max_delay": 3000 }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "soft",
+                "max_delay": 3000
+            }
         },
         {
             "id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
             "type": "series",
             "series_id": "royal-institution-physics",
-            "recurrence": { "frequency": "daily", "time": "13:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "13:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 5400,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "soft", "max_delay": 1500 }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "soft",
+                "max_delay": 1500
+            }
         },
         {
             "id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
             "type": "series",
             "series_id": "yale-ukraine",
-            "recurrence": { "frequency": "daily", "time": "15:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "15:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 3600,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "hard" }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "hard"
+            }
         },
         {
             "id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
             "type": "series",
             "series_id": "stanford-ecorner",
-            "recurrence": { "frequency": "daily", "time": "16:30", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "16:30",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 4500,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "soft", "max_delay": 1200 }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "soft",
+                "max_delay": 1200
+            }
         },
         {
             "id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
             "type": "series",
             "series_id": "gresham-lectures",
-            "recurrence": { "frequency": "daily", "time": "18:00", "timezone": "America/Los_Angeles" },
+            "recurrence": {
+                "frequency": "daily",
+                "time": "18:00",
+                "timezone": "America/Los_Angeles"
+            },
             "duration": 4500,
-            "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-05" },
-            "boundary": { "mode": "hard" }
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "boundary": {
+                "mode": "hard"
+            }
         }
     ]
 }

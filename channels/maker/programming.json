@@ -4,6 +4,8 @@
     "blocks": [
         {
             "id": "lineup-workshop-fundamentals-am",
+            "title": "Workshop Fundamentals",
+            "description": "Featuring This Old Tony.",
             "type": "series",
             "series_id": "this-old-tony",
             "recurrence": {
@@ -29,6 +31,8 @@
         },
         {
             "id": "lineup-electronics-lab-am",
+            "title": "Electronics Lab",
+            "description": "Hands-on electronics projects, circuits and experiments -- featuring GreatScott!",
             "type": "series",
             "series_id": "greatscott",
             "recurrence": {
@@ -54,6 +58,8 @@
         },
         {
             "id": "lineup-fabrication-and-printing-am",
+            "title": "Fabrication and Printing",
+            "description": "I make projects about what makes me tick. (featuring Ivan Miranda.)",
             "type": "series",
             "series_id": "ivan-miranda",
             "recurrence": {
@@ -79,6 +85,8 @@
         },
         {
             "id": "lineup-the-machine-shop-am",
+            "title": "The Machine Shop",
+            "description": "I'm Chris from Clickspring, and I create videos on the Art of Clock and Watchmaking. (featuring Clickspring.)",
             "type": "series",
             "series_id": "clickspring",
             "recurrence": {
@@ -104,6 +112,8 @@
         },
         {
             "id": "lineup-restoration-workshop-am",
+            "title": "Restoration Workshop",
+            "description": "I'm uploading videos about restorations and also new creations. (featuring my mechanics.)",
             "type": "series",
             "series_id": "my-mechanics",
             "recurrence": {
@@ -129,6 +139,8 @@
         },
         {
             "id": "lineup-engineering-challenges-am",
+            "title": "Engineering Challenges",
+            "description": "My goal is simple. (featuring Jeremy Fielding.)",
             "type": "series",
             "series_id": "jeremy-fielding",
             "recurrence": {
@@ -154,6 +166,8 @@
         },
         {
             "id": "lineup-impossible-builds-am",
+            "title": "Impossible Builds",
+            "description": "Tomatoes are disgusting! (featuring Integza.)",
             "type": "series",
             "series_id": "integza",
             "recurrence": {
@@ -179,6 +193,8 @@
         },
         {
             "id": "lineup-model-engineering-hour-am",
+            "title": "Model Engineering Hour",
+            "description": "The Blondihacks Channel features projects and educational videos by Quinn Dunki, covering topics ranging from electronics, home-brew computing, machine shop wor… (featuring Blondihacks.)",
             "type": "series",
             "series_id": "blondihacks",
             "recurrence": {
@@ -204,6 +220,8 @@
         },
         {
             "id": "lineup-backyard-builds-am",
+            "title": "Backyard Builds",
+            "description": "This channel is the home of crazy inventions, brilliant world records and constant disregard to health and safety. (featuring colinfurze.)",
             "type": "series",
             "series_id": "colinfurze",
             "recurrence": {
@@ -229,6 +247,8 @@
         },
         {
             "id": "lineup-mechanical-marvels-am",
+            "title": "Mechanical Marvels",
+            "description": "Music & Engineering, and sometimes some stupid ideas, or actually quite often :) Welcome! (featuring Wintergatan.)",
             "type": "series",
             "series_id": "wintergatan",
             "recurrence": {
@@ -254,6 +274,8 @@
         },
         {
             "id": "lineup-tech-build-lab-am",
+            "title": "Tech Build Lab",
+            "description": "I'm Matt, and here on DIY Perks you'll find plenty of interesting projects on a variety of topics! (featuring DIY Perks.)",
             "type": "series",
             "series_id": "diy-perks",
             "recurrence": {
@@ -279,6 +301,8 @@
         },
         {
             "id": "lineup-maker-prime-time-am",
+            "title": "Maker Prime Time",
+            "description": "Adam Savage’s Tested is a content platform and community playground for makers and curious minds. (featuring Adam Savage's Tested.)",
             "type": "series",
             "series_id": "tested",
             "recurrence": {
@@ -304,6 +328,8 @@
         },
         {
             "id": "lineup-workshop-fundamentals-pm",
+            "title": "Workshop Fundamentals",
+            "description": "Featuring This Old Tony.",
             "type": "series",
             "series_id": "this-old-tony",
             "recurrence": {
@@ -329,6 +355,8 @@
         },
         {
             "id": "lineup-electronics-lab-pm",
+            "title": "Electronics Lab",
+            "description": "Hands-on electronics projects, circuits and experiments -- featuring GreatScott!",
             "type": "series",
             "series_id": "greatscott",
             "recurrence": {
@@ -354,6 +382,8 @@
         },
         {
             "id": "lineup-fabrication-and-printing-pm",
+            "title": "Fabrication and Printing",
+            "description": "I make projects about what makes me tick. (featuring Ivan Miranda.)",
             "type": "series",
             "series_id": "ivan-miranda",
             "recurrence": {
@@ -379,6 +409,8 @@
         },
         {
             "id": "lineup-the-machine-shop-pm",
+            "title": "The Machine Shop",
+            "description": "I'm Chris from Clickspring, and I create videos on the Art of Clock and Watchmaking. (featuring Clickspring.)",
             "type": "series",
             "series_id": "clickspring",
             "recurrence": {
@@ -404,6 +436,8 @@
         },
         {
             "id": "lineup-restoration-workshop-pm",
+            "title": "Restoration Workshop",
+            "description": "I'm uploading videos about restorations and also new creations. (featuring my mechanics.)",
             "type": "series",
             "series_id": "my-mechanics",
             "recurrence": {
@@ -429,6 +463,8 @@
         },
         {
             "id": "lineup-engineering-challenges-pm",
+            "title": "Engineering Challenges",
+            "description": "My goal is simple. (featuring Jeremy Fielding.)",
             "type": "series",
             "series_id": "jeremy-fielding",
             "recurrence": {
@@ -454,6 +490,8 @@
         },
         {
             "id": "lineup-impossible-builds-pm",
+            "title": "Impossible Builds",
+            "description": "Tomatoes are disgusting! (featuring Integza.)",
             "type": "series",
             "series_id": "integza",
             "recurrence": {
@@ -479,6 +517,8 @@
         },
         {
             "id": "lineup-model-engineering-hour-pm",
+            "title": "Model Engineering Hour",
+            "description": "The Blondihacks Channel features projects and educational videos by Quinn Dunki, covering topics ranging from electronics, home-brew computing, machine shop wor… (featuring Blondihacks.)",
             "type": "series",
             "series_id": "blondihacks",
             "recurrence": {
@@ -504,6 +544,8 @@
         },
         {
             "id": "lineup-backyard-builds-pm",
+            "title": "Backyard Builds",
+            "description": "This channel is the home of crazy inventions, brilliant world records and constant disregard to health and safety. (featuring colinfurze.)",
             "type": "series",
             "series_id": "colinfurze",
             "recurrence": {
@@ -529,6 +571,8 @@
         },
         {
             "id": "lineup-mechanical-marvels-pm",
+            "title": "Mechanical Marvels",
+            "description": "Music & Engineering, and sometimes some stupid ideas, or actually quite often :) Welcome! (featuring Wintergatan.)",
             "type": "series",
             "series_id": "wintergatan",
             "recurrence": {
@@ -554,6 +598,8 @@
         },
         {
             "id": "lineup-tech-build-lab-pm",
+            "title": "Tech Build Lab",
+            "description": "I'm Matt, and here on DIY Perks you'll find plenty of interesting projects on a variety of topics! (featuring DIY Perks.)",
             "type": "series",
             "series_id": "diy-perks",
             "recurrence": {
@@ -579,6 +625,8 @@
         },
         {
             "id": "lineup-maker-prime-time-pm",
+            "title": "Maker Prime Time",
+            "description": "Adam Savage’s Tested is a content platform and community playground for makers and curious minds. (featuring Adam Savage's Tested.)",
             "type": "series",
             "series_id": "tested",
             "recurrence": {

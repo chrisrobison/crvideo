@@ -4,6 +4,8 @@
     "blocks": [
         {
             "id": "after-dark-archives",
+            "title": "After Dark Archives",
+            "description": "The classic PBS television series on personal computing and technology (1983-2002), from the Internet Archive -- a weekly look at the machines that were about t… (featuring The Computer Chronicles.)",
             "type": "series",
             "series_id": "retro-technology",
             "recurrence": {
@@ -29,6 +31,8 @@
         },
         {
             "id": "good-morning-yesterday",
+            "title": "Good Morning Yesterday",
+            "description": "Everyday American life from the Internet Archive's Prelinger Archives: cars, homes, and fashion as they looked and were sold, decade by decade. (featuring The Way We Lived.)",
             "type": "series",
             "series_id": "retro-everyday-life",
             "recurrence": {
@@ -54,6 +58,8 @@
         },
         {
             "id": "industrial-america",
+            "title": "Industrial America",
+            "description": "Corporate and industrial films from the Internet Archive's Prelinger Archives: factory tours, process films, and corporate image-building from mid-century Ameri… (featuring Industrial America.)",
             "type": "series",
             "series_id": "retro-industrial-films",
             "recurrence": {
@@ -79,6 +85,8 @@
         },
         {
             "id": "television-time-machine",
+            "title": "Television Time Machine",
+            "description": "Vintage television itself as a subject -- early-TV promotional films, classic TV commercial reels, and broadcast-technology curiosities from the Internet Archiv… (featuring Television Time Machine.)",
             "type": "series",
             "series_id": "retro-classic-tv",
             "recurrence": {
@@ -104,6 +112,8 @@
         },
         {
             "id": "retro-commercial-break",
+            "title": "Retro Commercial Break",
+            "description": "Vintage advertising and sponsored commercial films from the Internet Archive's Prelinger Archives -- car dealers, cereal, cigarettes, and the American sales pit… (featuring Retro Commercial Break.)",
             "type": "series",
             "series_id": "retro-commercials",
             "recurrence": {
@@ -129,6 +139,8 @@
         },
         {
             "id": "the-way-we-lived",
+            "title": "The Way We Lived",
+            "description": "Everyday American life from the Internet Archive's Prelinger Archives: cars, homes, and fashion as they looked and were sold, decade by decade. (featuring The Way We Lived.)",
             "type": "series",
             "series_id": "retro-everyday-life",
             "recurrence": {
@@ -154,6 +166,8 @@
         },
         {
             "id": "science-and-progress",
+            "title": "Science and Progress",
+            "description": "Corporate and industrial films from the Internet Archive's Prelinger Archives: factory tours, process films, and corporate image-building from mid-century Ameri… (featuring Industrial America.)",
             "type": "series",
             "series_id": "retro-industrial-films",
             "recurrence": {
@@ -179,6 +193,8 @@
         },
         {
             "id": "retrovision-prime",
+            "title": "Retrovision Prime",
+            "description": "Vintage television itself as a subject -- early-TV promotional films, classic TV commercial reels, and broadcast-technology curiosities from the Internet Archiv… (featuring Television Time Machine.)",
             "type": "series",
             "series_id": "retro-classic-tv",
             "recurrence": {
@@ -204,6 +220,8 @@
         },
         {
             "id": "vintage-television",
+            "title": "Vintage Television",
+            "description": "Vintage advertising and sponsored commercial films from the Internet Archive's Prelinger Archives -- car dealers, cereal, cigarettes, and the American sales pit… (featuring Retro Commercial Break.)",
             "type": "series",
             "series_id": "retro-commercials",
             "recurrence": {
@@ -229,6 +247,8 @@
         },
         {
             "id": "the-future-that-was",
+            "title": "The Future That was",
+            "description": "The classic PBS television series on personal computing and technology (1983-2002), from the Internet Archive -- a weekly look at the machines that were about t… (featuring The Computer Chronicles.)",
             "type": "series",
             "series_id": "retro-technology",
             "recurrence": {
