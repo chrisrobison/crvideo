@@ -146,4 +146,46 @@ final class ContinuityFillerTest
         Assert::same(0, $all[0]['start']);
         Assert::same(2000, end($all)['end']);
     }
+
+    // ---------------- Phase 7: program-level attribution ----------------
+
+    private function program(string $occurrenceId, int $start, int $end): array
+    {
+        return ['occurrence_id' => $occurrenceId, 'start' => $start, 'end' => $end];
+    }
+
+    public function testAFillerEntirelyInsideAProgramsWindowInheritsItsProgramId(): void
+    {
+        // A packed occurrence's own under-filled remainder (0..1000 is the
+        // program's full nominal slot; the scheduled episode only used 0..700).
+        $items = [['start' => 0, 'end' => 700, 'id' => 'e1', 'title' => 'E1', 'source' => null, 'source_url' => null, 'program_id' => 'b@0']];
+        $programs = [$this->program('b@0', 0, 1000)];
+        $result = ContinuityFiller::fill($items, 0, 1000, $this->continuity([], [$this->card('generic', 0, 300)]), $programs);
+        Assert::count(2, $result['items']);
+        Assert::same('b@0', $result['items'][0]['program_id'], 'the real scheduled episode keeps its program_id');
+        Assert::same('b@0', $result['items'][1]['program_id'], 'the filler covering the under-filled remainder inherits the SAME program_id');
+    }
+
+    public function testAFillerInAGenuineInterProgramGapIsNotAttributedToEitherNeighbor(): void
+    {
+        $items = [
+            ['start' => 0, 'end' => 500, 'id' => 'e1', 'title' => 'E1', 'source' => null, 'source_url' => null, 'program_id' => 'a@0'],
+            ['start' => 600, 'end' => 1000, 'id' => 'e2', 'title' => 'E2', 'source' => null, 'source_url' => null, 'program_id' => 'b@600'],
+        ];
+        // A real station break between the two programs' own windows (500..600),
+        // not inside either one's [start,end).
+        $programs = [$this->program('a@0', 0, 500), $this->program('b@600', 600, 1000)];
+        $result = ContinuityFiller::fill($items, 0, 1000, $this->continuity([], [$this->card('generic', 0, 300)]), $programs);
+        $filler = array_values(array_filter($result['items'], static fn ($it) => ($it['kind'] ?? 'video') === 'continuity'));
+        Assert::count(1, $filler);
+        Assert::true(!isset($filler[0]['program_id']), 'a genuine inter-program gap must never be mislabeled as part of either neighbor');
+    }
+
+    public function testNoProgramsPassedLeavesEveryFillerWithoutAProgramId(): void
+    {
+        // Default behavior (no $programs argument) -- every pre-existing test
+        // above in this file relies on this staying exactly as it was.
+        $result = ContinuityFiller::fill([], 0, 50, $this->continuity([], [$this->card('generic', 0, 300)]));
+        Assert::true(!isset($result['items'][0]['program_id']));
+    }
 }

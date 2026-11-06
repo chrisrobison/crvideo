@@ -13,6 +13,21 @@ final class BoundaryResolverTest
         return ['blockId' => $blockId, 'boundary' => BoundaryResolver::normalizeBoundary($boundary, $blockId), 'nominalStart' => $nominalStart, 'items' => $items];
     }
 
+    /** Same as group() but with the Phase 2/3 program-identity keys populated,
+     *  the same shape ProgrammingCompiler actually builds. */
+    private function programGroup(string $blockId, array $boundary, int $nominalStart, int $durationSeconds, array $items, string $title = 'Title'): array
+    {
+        return [
+            ...$this->group($blockId, $boundary, $nominalStart, $items),
+            'durationSeconds' => $durationSeconds,
+            'occurrenceId' => "$blockId@$nominalStart",
+            'programTitle' => $title,
+            'programDescription' => null,
+            'seriesId' => 's',
+            'seriesTitle' => 'S',
+        ];
+    }
+
     public function testDefaultBoundaryIsHardWhenAbsent(): void
     {
         $b = BoundaryResolver::normalizeBoundary(null, 'b');
@@ -203,5 +218,73 @@ final class BoundaryResolverTest
                 Assert::true($result['items'][$i]['start'] >= $result['items'][$i - 1]['end'], 'never overlaps the previous item');
             }
         }
+    }
+
+    // ---------------- Phase 3/4: program-level identity ----------------
+
+    public function testGroupsWithNoProgramKeysProduceNoProgramsBackwardCompatible(): void
+    {
+        // Every pre-existing test above in this file builds groups with the
+        // group() helper (no occurrenceId/programTitle/...) -- resolve() must
+        // keep working for them exactly as before, with an empty "programs" list.
+        $groups = [$this->group('a', ['mode' => 'hard'], 1000, [$this->item('e1', 1000, 500)])];
+        $result = BoundaryResolver::resolve($groups);
+        Assert::count(0, $result['programs']);
+    }
+
+    public function testResolveEmitsOneProgramPerOccurrenceGroupCoveringItsEffectiveWindow(): void
+    {
+        $groups = [$this->programGroup('b', ['mode' => 'hard'], 1000, 1800, [
+            $this->item('e1', 1000, 500), $this->item('e2', 1500, 300),
+        ], 'My Show')];
+        $result = BoundaryResolver::resolve($groups);
+        Assert::count(1, $result['programs']);
+        $p = $result['programs'][0];
+        Assert::same('b@1000', $p['occurrence_id']);
+        Assert::same('b', $p['block_id']);
+        Assert::same('My Show', $p['title']);
+        Assert::same(1000, $p['nominal_start']);
+        Assert::same(2800, $p['nominal_end'], 'nominal end is the full configured block duration, not just the packed items');
+        Assert::same(1000, $p['start']);
+        Assert::same(2800, $p['end']);
+    }
+
+    public function testEveryItemInAProgramGroupCarriesItsOccurrenceIdAsProgramId(): void
+    {
+        $groups = [$this->programGroup('b', ['mode' => 'hard'], 1000, 1800, [
+            $this->item('e1', 1000, 500), $this->item('e2', 1500, 300),
+        ])];
+        $result = BoundaryResolver::resolve($groups);
+        Assert::same('b@1000', $result['items'][0]['program_id']);
+        Assert::same('b@1000', $result['items'][1]['program_id']);
+    }
+
+    public function testSoftBoundaryDelayShiftsTheProgramsEffectiveWindowButNotItsNominalOne(): void
+    {
+        $groups = [
+            $this->group('a', ['mode' => 'hard'], 1000, [$this->item('e1', 1000, 700)]), // ends 1700, 100s late for b
+            $this->programGroup('b', ['mode' => 'soft', 'max_delay' => 300], 1600, 500, [$this->item('e2', 1600, 500)]),
+        ];
+        $result = BoundaryResolver::resolve($groups);
+        $p = $result['programs'][0];
+        Assert::same('b', $p['block_id']);
+        Assert::same(1600, $p['nominal_start'], 'the nominal slot never moves');
+        Assert::same(2100, $p['nominal_end']);
+        Assert::same(1700, $p['start'], 'the EFFECTIVE window is shifted by the absorbed delay');
+        Assert::same(2200, $p['end']);
+    }
+
+    public function testTwoDistinctOccurrencesOfTheSameBlockIdGetDistinctOccurrenceIds(): void
+    {
+        // Same block, two different scheduled instants (e.g. two different days,
+        // or an AM/PM pair modeled as the same block firing twice) -- Phase 3
+        // requires these never be confused with each other.
+        $groups = [
+            $this->programGroup('b', ['mode' => 'hard'], 1000, 500, [$this->item('e1', 1000, 500)]),
+            $this->programGroup('b', ['mode' => 'hard'], 90000, 500, [$this->item('e2', 90000, 500)]),
+        ];
+        $result = BoundaryResolver::resolve($groups);
+        Assert::count(2, $result['programs']);
+        Assert::true($result['programs'][0]['occurrence_id'] !== $result['programs'][1]['occurrence_id']);
     }
 }
