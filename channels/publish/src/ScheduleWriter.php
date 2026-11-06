@@ -55,6 +55,44 @@ final class ScheduleWriter
             throw new RuntimeException('Publish window end must be after its start.');
         }
 
+        // Phase 3/4/7 of docs/guide-update.md: computed up front (relative seconds,
+        // same convention as every item below) so the gap-insertion below can
+        // attribute a genuinely unfilled portion of a block (e.g. packing's
+        // minimum_remaining left a remainder, and this channel has no
+        // continuity.json to cover it -- ContinuityFiller never even sees it, since
+        // it only runs when continuity assets/cards exist) to its OWN enclosing
+        // program, the same way an actual continuity filler already is. Without
+        // this, that leftover time would be written as a second, unattributed
+        // "gap" item sitting INSIDE a program occurrence's effective window --
+        // which the program's own EPG cell already spans end to end -- and the
+        // guide's two timeline entries would overlap. A gap that falls outside
+        // every program's window (a genuine inter-program station break) is
+        // deliberately left untagged.
+        $relPrograms = [];
+        foreach ($programs as $p) {
+            $relPrograms[] = [
+                'occurrence_id' => $p['occurrence_id'],
+                'block_id' => $p['block_id'],
+                'title' => $p['title'],
+                'description' => $p['description'],
+                'series_id' => $p['series_id'],
+                'series_title' => $p['series_title'],
+                'boundary_mode' => $p['boundary_mode'],
+                'nominal_start' => $p['nominal_start'] - $windowStartTs,
+                'nominal_end' => $p['nominal_end'] - $windowStartTs,
+                'start' => $p['start'] - $windowStartTs,
+                'end' => $p['end'] - $windowStartTs,
+            ];
+        }
+        $enclosingProgramId = static function (int $relStart, int $relEnd) use ($relPrograms): ?string {
+            foreach ($relPrograms as $p) {
+                if ($relStart >= $p['start'] && $relEnd <= $p['end']) {
+                    return $p['occurrence_id'];
+                }
+            }
+            return null;
+        };
+
         $relItems = [];
         $cursor = 0;
         $used = 0;
@@ -62,7 +100,13 @@ final class ScheduleWriter
             $relStart = $it['start'] - $windowStartTs;
             $relEnd = $it['end'] - $windowStartTs;
             if ($relStart > $cursor) {
-                $relItems[] = ['type' => 'gap', 'start' => $cursor, 'duration' => $relStart - $cursor];
+                $gapProgramId = $enclosingProgramId($cursor, $relStart);
+                $relItems[] = [
+                    'type' => 'gap',
+                    'start' => $cursor,
+                    'duration' => $relStart - $cursor,
+                    ...($gapProgramId !== null ? ['program_id' => $gapProgramId] : []),
+                ];
             }
 
             if (($it['kind'] ?? 'video') === 'continuity') {
@@ -136,32 +180,23 @@ final class ScheduleWriter
             $cursor = $relEnd;
         }
         if ($cursor < $windowSeconds) {
-            $relItems[] = ['type' => 'gap', 'start' => $cursor, 'duration' => $windowSeconds - $cursor];
+            $trailingProgramId = $enclosingProgramId($cursor, $windowSeconds);
+            $relItems[] = [
+                'type' => 'gap',
+                'start' => $cursor,
+                'duration' => $windowSeconds - $cursor,
+                ...($trailingProgramId !== null ? ['program_id' => $trailingProgramId] : []),
+            ];
         }
 
         // Phase 3/4 of docs/guide-update.md: one entry per logical programming
-        // occurrence, in the same window-relative seconds as every item's own
-        // start/duration above -- the program-level EPG projection's source of
-        // truth. A legacy channel (no programming.json, e.g. Film Day at School)
-        // or one not yet opted into block title/description metadata produces []
-        // here, so "programs" is simply omitted from the written file -- identical
-        // to every schedule.json written before this feature existed.
-        $relPrograms = [];
-        foreach ($programs as $p) {
-            $relPrograms[] = [
-                'occurrence_id' => $p['occurrence_id'],
-                'block_id' => $p['block_id'],
-                'title' => $p['title'],
-                'description' => $p['description'],
-                'series_id' => $p['series_id'],
-                'series_title' => $p['series_title'],
-                'boundary_mode' => $p['boundary_mode'],
-                'nominal_start' => $p['nominal_start'] - $windowStartTs,
-                'nominal_end' => $p['nominal_end'] - $windowStartTs,
-                'start' => $p['start'] - $windowStartTs,
-                'end' => $p['end'] - $windowStartTs,
-            ];
-        }
+        // occurrence (the $relPrograms computed above), in the same window-
+        // relative seconds as every item's own start/duration -- the program-level
+        // EPG projection's source of truth. A legacy channel (no programming.json,
+        // e.g. Film Day at School) or one not yet opted into block title/
+        // description metadata produces [] here, so "programs" is simply omitted
+        // from the written file -- identical to every schedule.json written before
+        // this feature existed.
 
         $schedule = [
             '_publish' => [
