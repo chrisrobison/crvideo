@@ -1,0 +1,1239 @@
+{
+    "schema_version": 1,
+    "id": "film-day-the-working-world",
+    "title": "The Working World",
+    "description": "Vocational-guidance and industrial-process films from the Internet Archive's Prelinger Archives -- trades, careers, factories, and the consumer economics of banking, money, and meat, as taught to generations of American students.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "Consumin1967",
+            "episode_number": 1,
+            "title": "Consuming Women (Women as Consumers)",
+            "description": "Strange, highly generalized portrait of the American woman consumer.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 206.07,
+            "year": 1967,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Consumin1967",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Consumin1967",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Consumin1967/Consumin1967.mp4",
+                "page_url": "https://archive.org/details/Consumin1967",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Consumerism",
+                    "Gender roles"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Consumin1967; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Aluminum1956",
+            "episode_number": 2,
+            "title": "Aluminum on the March (Part I)",
+            "description": "PLEASE NOTE: A one-part, higher-quality version of this film is now here.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 819.72,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Aluminum1956",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Aluminum1956",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Aluminum1956/Aluminum1956.mp4",
+                "page_url": "https://archive.org/details/Aluminum1956",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Metals: Aluminum",
+                    "Animation: Stop-motion",
+                    "Design: Industrial"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Aluminum1956; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "MasterHa1936",
+            "episode_number": 3,
+            "title": "Master Hands (Part I)",
+            "description": "Classic \"capitalist realist\" drama showing the manufacture of Chevrolets from foundry to finished vehicles. Though ostensibly a tribute to the \"master hands\" of the assembly line workers, it seems more of a paean to the designers of this impressive mass production system. Filmed in Flint, Michigan, just months before the United Auto Workers won union recognition with their famous sitdown strikes. Released the same year as two other films with which it shares similarities: MODERN TIMES and TRIUMPH OF THE WILL. Selected for the 1999 National Film Registry of \"artistically, culturally, and socially significant\" films.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 296.1,
+            "year": 1936,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MasterHa1936",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MasterHa1936",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MasterHa1936/MasterHa1936.mp4",
+                "page_url": "https://archive.org/details/MasterHa1936",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Automobiles: Manufacturing",
+                    "Labor: 1930s",
+                    "Occupations: Automotive"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MasterHa1936; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Usingthe1947",
+            "episode_number": 4,
+            "title": "Using the Bank",
+            "description": "Banking services and procedures in the pre-computer era.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 624.32,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Usingthe1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Usingthe1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Usingthe1947/Usingthe1947.mp4",
+                "page_url": "https://archive.org/details/Usingthe1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Economics",
+                    "Occupations: Banking industry",
+                    "Finance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Usingthe1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "American1956_4",
+            "episode_number": 5,
+            "title": "American Engineer (Part IV)",
+            "description": "Tribute to engineers and their role in improving American life through technology.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 190.36,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/American1956_4",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "American1956_4",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/American1956_4/American1956_4.mp4",
+                "page_url": "https://archive.org/details/American1956_4",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Engineering",
+                    "Automobiles: Design and manufacturing",
+                    "Manufacturing"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item American1956_4; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Photogra1946",
+            "episode_number": 6,
+            "title": "Photography",
+            "description": "Careers in photography and cinematography.",
+            "creator": "Holmes (Burton) Films, Inc.",
+            "duration": 583.52,
+            "year": 1946,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Photogra1946",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Photogra1946",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Photogra1946/Photogra1946.mp4",
+                "page_url": "https://archive.org/details/Photogra1946",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Photography",
+                    "Media: Photography",
+                    "Motion pictures: Production"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Photogra1946; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "WhatIsMo1947",
+            "episode_number": 7,
+            "title": "What Is Money?",
+            "description": "Following the journey of a five-dollar bill through many transactions, the film shows how money functions as a standard of value and future payment, a storehouse of value and a convenient medium of exchange.",
+            "creator": "Coronet Instructional Films",
+            "duration": 632.8,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhatIsMo1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhatIsMo1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhatIsMo1947/WhatIsMo1947.mp4",
+                "page_url": "https://archive.org/details/WhatIsMo1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Economics"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhatIsMo1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "IWanttoB1941",
+            "episode_number": 8,
+            "title": "I Want to Be a Secretary",
+            "description": "Follows a young woman through her clerical training and job search. Shows pre-World War II offices and office workers, primarily women. One of Coronet's earliest educational films.",
+            "creator": "Coronet Instructional Films",
+            "duration": 951.08,
+            "year": 1941,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/IWanttoB1941",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "IWanttoB1941",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/IWanttoB1941/IWanttoB1941.mp4",
+                "page_url": "https://archive.org/details/IWanttoB1941",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Occupations: Clerical",
+                    "Gender roles"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item IWanttoB1941; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Typesett1960",
+            "episode_number": 9,
+            "title": "Typesetting: Linotype (Part I)",
+            "description": "How mechanical typesetting works. The film explores the intricate workings of mechanical typesetting machines, particularly the linotype and intertype machines, which revolutionized printing in the late 19th century. It details the process of composing, casting, and distributing type for printing, emphasizing the roles of various components such as keyboards, matrices, and casting mechanisms. The film also highlights advancements in automation, including the use of perforated tape to operate the machines without direct human intervention, allowing for high-speed typesetting essential for modern publishing.Keywordstypesetting, linotype, intertype, mechanical machines, printing process, automation, matrices, casting, publishing, high-speed typesetting",
+            "creator": "Salesian Vocational and Technical Schools, Italy",
+            "duration": 1071.34,
+            "year": 1960,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Typesett1960",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Typesett1960",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Typesett1960/Typesett1960.mp4",
+                "page_url": "https://archive.org/details/Typesett1960",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Communication: Typesetting",
+                    "Occupations: Printing"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Typesett1960; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Woodwork1940",
+            "episode_number": 10,
+            "title": "Woodworker, The",
+            "description": "Woodworking in mills, construction and cabinetmaking.",
+            "creator": "Holmes (Burton) Films, Inc.",
+            "duration": 642.18,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Woodwork1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Woodwork1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Woodwork1940/Woodwork1940.mp4",
+                "page_url": "https://archive.org/details/Woodwork1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Woodworking"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Woodwork1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Accordin1952",
+            "episode_number": 11,
+            "title": "According to Plan: The Story of Modern Sidewalls for the Homes of America",
+            "description": "The beauty and functionality of asbestos sidewalls. With a visit to Levittown, N.Y. and an interview with Norman Denny, vice president of materials for Levitt & Sons, builders. An excellent film on Fifties standardized building processes.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 1077.88,
+            "year": 1952,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Accordin1952",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Accordin1952",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Accordin1952/Accordin1952.mp4",
+                "page_url": "https://archive.org/details/Accordin1952",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Houses and homes",
+                    "Minerals: Asbestos",
+                    "Suburbia"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Accordin1952; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "how_to_buy_meat_1",
+            "episode_number": 12,
+            "title": "How to Buy Meat  (Part I)",
+            "description": "Presents a U. S. Department of Agriculture's consumer meat specialist who gives valuable tips on buying and preparing meat by using the USDA grades of quality.",
+            "creator": "Unknown",
+            "duration": 1060.42,
+            "year": 1970,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/how_to_buy_meat_1",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "how_to_buy_meat_1",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/how_to_buy_meat_1/how_to_buy_meat_1.mp4",
+                "page_url": "https://archive.org/details/how_to_buy_meat_1",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "need keyword"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item how_to_buy_meat_1; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "StoryofS1930",
+            "episode_number": 13,
+            "title": "Story of Selecting Kosher Meat Products for Their Stores, The",
+            "description": "Kosher meat slaughter, inspection, and butchering; shoppers in Stroh and Goldberg butcher shops. Probably filmed in New York City. CONTENT ADVISORY: Disturbing slaughterhouse scenes.",
+            "creator": "Unknown",
+            "duration": 624.99,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/StoryofS1930",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "StoryofS1930",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/StoryofS1930/StoryofS1930.mp4",
+                "page_url": "https://archive.org/details/StoryofS1930",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Judaism",
+                    "Meat: Inspection",
+                    "Meat: Production"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item StoryofS1930; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0661_Opportunities_Unlimited",
+            "episode_number": 14,
+            "title": "Opportunities Unlimited",
+            "description": "1950s part-animated film about the middle-income consumer in the 1950s. Nice animation illustrating patterns and habits of post-war consumption. 10:19:24:02 Cartoon of 1950s man in suit pushes wheelbarrow up to a market, food appears in wheelbarrow, then clothing store, clothes appear in the wheelbarrow John Jones builders, a house appears in the wheelbarrow, furniture and appliances store, autos. Nice little animation about post-war American consumption. 10:23:31:14 CU cartoon sign for the U.S. Bureau of Economic Stability, pan down to two doors open to cartoon factory machine, pan up factory machine to various signs: credit control, Inflation choke (her machine gauges look like eyes and mouth and exhaust looks like it is shooting out of machines ears), Deflation Valve. 10:25:54:16 MS door opens to show cartoon man wearing suit and hat holding a sack of money smiling, zoom in on smiling man’s face. 10:26:10:05 Jam-packed city square with text “Expanding Population” superimposed over shot, probably New York City; VS 1950s people walking up sidewalk, Stern’s Department store in background; heavy sidewalk traffic near East 54th St.; heavy human traffic on streets in New York City 1950s, Nedick’s restaurant in background. 10:26:47:13 Pan over 1950s canned food products without brand names: Luncheon Meat, Boned Chicken, Chopped Meats, Orange Juice, Pressure Container, Cake Mix, Soluble Coffee; VS inside supermarket 1950s. 10:27:11:06 Aerial of huge highway stacked interchange; VS construction workers laying concrete for new highway; 1950s cars on highway passing underneath overpass; VS from car on highway in 1950s. 10:28:08:21 1950s housewife wearing apron in kitchen plugs in toaster oven, text “Opportunity- Re-Wiring The Home” superimposed briefly over shot, woman presses button down on another electrical appliance and the power goes out leaving the room dark; silhouette of man in dark house lights lighter, MS angry face of husband yelling it wife illuminated by light from lighter. 10:29:06:14 CU sign “No Parking This Side”; fire hydrant; tracking shot 1950s parked cars along side of urban street; CU sign “Keep Driveway Clear”; aerial of huge arch bridge; pan over concrete frames of building on construction site for housing project; yellow Jefferson County School bus drives past concrete Library building. 10:29:24:26 Pan over chemistry lab equipment, CU scientist looks at glass slide, text superimposed “Opportunity- New Products”. 10:29:34:05 Aerial of large 1950s jet plane, probably Boeing plane. 10:29:37:05 CU 1950s modern stove top automatically flips 180 degrees and becomes part of smooth counter surface. 10:29:39:26 LS man lying in hospital bed with sheet covering him up to his waist; large machine swivels over man’s body, looks like a machine for medical radiation. 10:29:44:08 Scientist in lab coat walks through restricted door to Radioactive Materials Laboratory; VS scientists working in laboratory 10:29:55:10 VS huge hall filled with hundreds of engineers working at drafting tables. 10:30:15:05 LS suburbia, text superimposed “Opportunity The Suburbs”; VS suburban tract housing; construction workers building suburban homes; modern suburban home made of concrete blocks 10:30:56:07 VS teacher leading classroom with pointer at the blackboard, teacher points to concentric rings drawn in chalk, superimposed text “Opportunity- Education”; crowd of over 100 school children walking up stair into museum-like building with roman columns, The N.C.R Auditorium (Dayton, Ohio); students in graduation gowns walking up steps into auditorium passing between the Roman columns 10:31:25:29 Pan over packed huge circular public pool, text superimposed “Opportunity- Leisure Time.” 10:31:30:35 1950s workers leaving factory walking past camera. 10:31:38:04 Man working in textile factory producing sheets of red and orange material. 10:31:47:25 MS man fishing in stream, man picks fish up out of stream in net 10:31:59:07 VS CU engineers working on technical drawing; large architect or engineer with almost his entire body on the draft table drawing 10:32:12:14 MS man wearing protective mask welding; men working on assembly line. 10:32:15:17 1950s futuristic prototype of car in showroom 10:32:19:27 Aerial of plane making sharp turn peeling away from camera down toward clouds. 10:32:27:06 Great tracking shot on narrow bridge leading up to truss bridge; VS construction sites and construction workers, airport construction site; aerial of airport",
+            "creator": "Transfilm",
+            "duration": 1019.05,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0661_Opportunities_Unlimited",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0661_Opportunities_Unlimited",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0661_Opportunities_Unlimited/0661_Opportunities_Unlimited_10_16_25_00.mp4",
+                "page_url": "https://archive.org/details/0661_Opportunities_Unlimited",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0661_Opportunities_Unlimited; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "Storyofa1956",
+            "episode_number": 15,
+            "title": "Story of a Star, The",
+            "description": "Chemistry gives birth to new synthetics benefitting women, in this case sheer stockings.",
+            "creator": "Audio Productions, Inc.",
+            "duration": 488.56,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Storyofa1956",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Storyofa1956",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Storyofa1956/Storyofa1956.mp4",
+                "page_url": "https://archive.org/details/Storyofa1956",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Fashion",
+                    "Synthetics",
+                    "Gender roles"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Storyofa1956; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "BanksAndCred",
+            "episode_number": 16,
+            "title": "Banks And Credits",
+            "description": "Coronet Instructional Films (a division of Esquire Inc.) presents Banks and Credit. Educational collaborator James Harvey Dodd, PhD., Professor of Economics and Business Administration, Mary Washington College at University of Virginia",
+            "creator": "Coronet Instructional Films",
+            "duration": 635.14,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/BanksAndCred",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "BanksAndCred",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/BanksAndCred/BanksAndCred.mp4",
+                "page_url": "https://archive.org/details/BanksAndCred",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: In Education",
+                    "Occupations: Banking Industry",
+                    "Economics",
+                    "Finance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item BanksAndCred; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0525_Steel_A_Symphony_of_Industry_00_11_34_12",
+            "episode_number": 17,
+            "title": "Steel: A Symphony of Industry",
+            "description": "An impression of a basic industry. 23:11:32:00 Steel: A Symphony of Industry 23:11:38:00 strange “collage” like shots of factories - superimposed with med wide shot of marching workers (23:11:53:00) 23:12:17:00 wide shot of back steel cranes, oil rig-like structures (23:12:19:00) 23:12:27:00 med shot of construction worker standing on girder 23:12:29:00 MCU of construction worker shouting - “Steel” appears over his chest (23:12:31:00) 23:12:36:00 CU of steel girder - girder lifted away from camera, up huge steel structure (23:12:44:00) 23:12:45:00 MCU of construction worker shouting - “Steel” appears over his chest (23:12:47:00) wide shots of various factories using steel 23:13:00:00 wide pan of ship building yard (23:13:05:00) 23:13:07:00 wide shot of two huge steel black cranes (23:13:10:00) 23:13:11:00 med wide shot of bridge made of steel girders (23:13:17:00) 23:13:24:00 med wide shot down assembly line - tin cans? (23:13:29:00) 23:13:34:00 wide shot from above of single train coming down center track of numerous parallel tracks (23:13:36:00) 23:13:42:00 wide aerial shot of huge open mine - words “Iron Ore” superimposed on shot (23:13:46:00) 23:14:47:00 wide aerial shot of strip mine (23:14:59:00) 23:13:50:00 wide shot of factory - “Coal” appears over shot (23:13:54:00) 23:13:55:00 wide shot of another strip mine - “Limestone” appears over shot (23:14:00:00) 23:14:01:00 med shot of freight train - “Coke” appears over shot (23:14:04:00) 23:14:05:00 nice quick sequence of freight ships, trains (23:14:11:00) 23:14:12:00 wide shot of train yard 23:14:14:00 - VO - “It’s greatness lies in glowing furnaces and smoking stacks, in...” 23:14:19:00 wide pan of huge bleak factory on waterfront VO - “...skilled labor, inventive genius and the spirit of enterprise which is so typical of America....” (23:14:34:00) 23:14:36:00 wide shot of steel factory (23:14:40:00) 23:14:50:00 aerial wide pan of steel mill with cars in parking lot (23:15:01:00) several med wide shots of steel mill- cranes transporting raw materials 23:15:18:00 med wide shot looking up at huge factory tower (23:15:20:00) 23:15:21:00 med shot looking down into container being filled with raw materials (23:15:31:00) 23:15:32:00 med shot of container moving up huge tower (23:15:34:00) 23:15:35:00 wide shot of container moving up tower to furnace (23:15:41:00) 23:15:42:00 wide shot of huge furnace structure (23:15:45:00) 23:15:46:00 med wide shot inside factory - at base of furnace (23:15:50:00) 23:15:51:00 med shot of workers in protective gear (23:15:57:00) 23:15:58:00 MCU of worker in protective helmet (23:16:03:00) VO - “..that asbestos suit and helmet would protect...” 23:16:04:00 med shot of worker at base of furnace (23:16:05:00) 23:16:07:00 MCU of another worker with huge wheel (23:16:08:00) 23:16:09:00 MCU of furnace with molten metal (23:16:15:00) 23:16:18:00 med shot of inside of furnace, molten metal (23:16:20:00) 23:16:23:00 med wide pan of furnace area of factory (23:16:27:00) 23:16:25:00 VO - “With modern mechanical devices and highly developed... 23:16:28:00 weird MCU looking up at worker turning wheel VO - “...safety measures that enable them ...” (23:16:30:00) 23:16:31:00 more med shot of furnace, molten metal (23:16:34:00) VO - “...to control the flow of molten metal with less danger to themselves than you face...” 23:16:35:00 med shot of molten metal in cement conduit VO - “...everyday in your home or on the street. Today the American steel mill is as safe a place to work as any industrial establishment.” (23:16:42:00) 23:16:43:00 more med shots of smoke-filled factory (23:16:51:00) 23:16:52:00 med shot of worker tending huge steaming pit of molten metal (23:17:01:00) 23:17:02:00 MCU of metal steaming under grate (23:17:07:00) 23:17:08:00 med wide shot of metal pouring down open channel (23:17:13:00) 23:17:14:00 med shot - huge black pots of metal move past camera on conveyor, huge furnace in background (23:17:20:00) 23:17:21:00 med shot - large pots of metal lifted up by crane like machine (23:17:24:00) 23:17:25:00 med shot of interior of steel mill (23:17:26:00) 23:17:27:00 MCU of huge pot tipping, molten metal pouring out , sparks flying (23:17:32:00) 23:17:33:00 CU of huge pot pouring metal (23:17:35:00) 23:17:36:00 med shot of metal pouring into larger container - spraying and smoking (23:17:38:00) 23:17:39:00 med wide shot of factory interior lit up by molten metal (23:17:41:00) 23:17:42:00 med shot of worker in factory silhouetted against light from molten metal (23:17:46:00) 23:17:47:00 med wide shot - workers at controls (23:17:51:00) 23:17:52:00 more med steel mill interior (23:18:00:00) 23:18:01:00 med shot of workers at controls (23:18:03:00) 23:18:04:00 med shot of spray of molten metal - sparks and black smoke (23:18:12:00) 23:18:13:00 med wide shot of another furnace in steel mill (23:18:15:00) 23:18:17:00 med shot of furnace - spray of sparks, smoke (23:18:20:00) 23:18:21:00 med shot of cauldron of molten steel (23:18:26:00) 23:18:27:00 MCU of cauldron of molten metal (23:18:33:00) 23:18:34:00 wide shot of factory interior -men working at open pits of molten steel (23:18:49:00) 23:18:50:00 wide shot of factory interior with open pits of molten metal at night (23:18:56:00) 23:18:57:00 wide shot of factory interior in daylight? (23:19:07:00) 23:19:08:00 med shot of train-like conveyor with huge open crates of scrap metal to be used in steel mill (23:19:41:00) 23:19:42:00 another wide shot of factory interior with open pits of metal, workers, huge conveyor belt moves through center (23:19:59:00) 23:20:00:00 another wide shot of factory interior - at night - workers shoveling material into furnaces (23:20:13:00) 23:20:19:00 med shot of furnace - huge shovel-like machine dumps material into furnace (23:20:29:00) 23:20:33:00 another wide shot of steel mill at night - lights from many open pits of metal (23:20:36:00) 23:20:37:00 med shot of giant crane traveling through factory [visible below] (23:20:45:00) 20:20:46:00 MCU of worker with goggles, open shirt (20:20:47:00) 23:20:51:00 med wide shot of furnace door opening, huge crane (23:20:53:00) 23:20:54:00 MCU of worker at controls 23:20:56:00 med wide shot of furnace door opening, huge crane dumping contents 23:20:59:00 wide shot of dark factory interior (23:21:00:00) 23:21:05:00 another med shot of crane full of material, furnace below (23:21:07:00) 23:21:08:00 MCU of worker (23:21:09:00) 23:21:10:00 med shot of crane above furnace 23:21:13:00 MCU of crane operator 23:21:16:00 med shot of crane above furnace (23:21:21:00) VO - “Frightful anger in this job?” 23:21:22:00 MCU of huge crane dumping contents into furnace VO - “Not at all! Millions of dollars have been spent by modern steel mills...” (23:21:27:00) 23:21:28:00 med shot of workers VO - “... of America for safety...”(23:21:33:00) 23:21:34:00 MCU of huge crane pouring metal (23:21:40:00) 23:21:41:00 MCU of worker (23:21:42:00) 23:41:43:00 MCU of huge crane (21:21:46:00) 23:21:47:00 med shot of huge crane, furnace below (23:21:55:00) 23:21:56:00 MCU of back of worker at controls (23:21:57:00) 23:21:58:00 med wide shot of factory, huge hooks on conveyor belt in ceiling above furnaces (23:22:01:00) 23:22:02:00 MCU of worker using instrument to look at furnace (23:22:06:00) 23:22:07:00 MCU of molten metal in furnace -little spoon dips into it to get sample (23:22:14:00) 23:22:15:00 med shot of worker stepping back, carrying spoon away from open furnace (23:22:22:00) 23:22:23:00 CU of worker wearing goggles (23:22:24:00) 23:22:25:00 MCU of worker using pincers to pick up piece of hot metal (23:22:27:00) 23:22:28:00 CU of pincers dunking hot metal in liquid - lots of steam (23:22:32:00) 23:22:33:00 MCU of scientist in lab (23:22:42:00) 22:23:43:00 med shot of scientist and lab equipment (23:22:47:00) 23:22:48:00 MCU of scientist doing experiment (23:22:51:00) 23:22:51:00 med shot of rows of glass tubes and vials - lab equipment (23:22:54:00) 23:22:55:00 MCU of scientist doing experiment (23:23:02:00) 23:23:03:00 wide shot of steel mill at night - lights from furnaces (23:23:05:00) 23:23:06:00 - med shot - line of men carrying long rod over their heads (23:23:12:00) 23:23:13:00 wide shot of factory interior (23:23:15:00) 23:23:16:00 MCU of worker in protective coat, helmet (23:23:22:00) 23:23:23:00 wide shot of factory interior-several workers visible 23:23:25:0) MCU of workers pushing long pole into furnace- dramatic shot (23:23:29:00) 23:23:30:00 med wide shot of furnace, molten metal (23:23:36:00) 23:23:37:00 med shot of smoke from furnace (23:23:38:00) 23:23:44:00 med wide shot of smoking furnace, men on platform in background (23:23:52:00) 23:23:53:00 MCU of smoke, molten metal (23:23:59:00) 23:24:00:00 med wide shot of smoking furnace - molten metal overflowing (23:24:15:00) 23:24:16:00 - wide shot of trains arriving in factory at night, giant hooks hanging from girders (23:24:18:00) 23:24:33:00 med wide shot of molten metal being poured into molds (23:24:46:00) 23:24:47:00 med shot of huge iron ingots on conveyor belt (23:24:52:00) med shots of molds being lifted from ingots 23:25:03:00 med shot of mold being lifted from ingot (23:25:05:00) 23:25:27:00 med shot - huge white-hot block of metal being lifted from dark pit (23:25:10:00) 23:25:14:00 med shot of white-hot rectangle of meal on conveyor belt, drops with a splash of molten metal into a machine (23:25:20:00) more med shots of huge metal ingot being pushed around by machine 23:25:44:00 wide shot of dark factory - huge machine (23:25:53:00) 23:26:01:00 MCU of white-hot sheet of steel moving along conveyor belt in machine (23:26:04:00) 23:26:07:00 MCU of white-hot sheet of steel moving along conveyor belt in machine (23:26:17:00) 23:26:18:00 med wide shot of steaming pits, sheet of metal in dark factory (23:26:37:00) 23:27:12:00 med shot of very thin piece of metal coming out of machine (23:27:20:00) 23:27:28:00 med shot of sheet of metal moving under huge roller - mirror-like finish (23:27:51:00) 23:28:08:00 med shot of steaming tub, silhouette of man’s arms at controls in front of it (23:28:16:00) 23:28:27:00 MCU of white-hot ingot being shaped on mill (23:28:39:00) 23:28:41:00 MCU of white-hot ingot being shaped on mill (23:28:47:00) [intercut with MCUs of worker ] 23:28:50:00 MCU of white-hot ingot being shaped on mill (23:29:00:00) 23:29:03:00 MCU of white-hot ingot being shaped into girder (23:29:09:00) 23:29:10:00 wide shot of mill interior - daylight 23:29:12:00 crossfade to MCU of cauldron of boiling metal (23:29:15:00) 23:29:16:00 window in cauldron of steel - med wide shot of plow, wide shot of cars on city street, skyscraper, CU of hands typing (23:25:00) 23:29:26:00 funky spilt screen combination of numerous steel products - center circle of lady using various kitchen appliances (23:29:35:00) 23:29:36:00 med shot of train approaching camera, reflection of city skyline on shiny train car (23:29:37:00) 23:29:38:00 med wide shot of steel factory at dusk - lots of white smoke from black smokestacks (23:29:41:00) 23:29:42:00 cross fade to another shot of steel mill 23:29:45:00 superimposed wide shot of workers walking 23:29:47:00 superimposed wide shots of factory layered with shot of workers (23:29:54:00) 23:29:54:00 Title over layered sequence of steel mill shots - “Men and steel provide a nation with its comforts, its luxuries, and its progress!” (23:30:04:00) 23:30:06:00 wide shot of huge cauldron of steel - looks like its going to pour steel all over superimposed workers 23:30:10:00 cross fade to outline of US superimposed over walking workers (23:30:13:00)",
+            "creator": "Audio Productions, Inc.",
+            "duration": 1134.66,
+            "year": 1936,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0525_Steel_A_Symphony_of_Industry_00_11_34_12",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0525_Steel_A_Symphony_of_Industry_00_11_34_12",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0525_Steel_A_Symphony_of_Industry_00_11_34_12/0525_Steel_A_Symphony_of_Industry_00_11_34_12.mp4",
+                "page_url": "https://archive.org/details/0525_Steel_A_Symphony_of_Industry_00_11_34_12",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0525_Steel_A_Symphony_of_Industry_00_11_34_12; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "HowtoKee1949",
+            "episode_number": 18,
+            "title": "How to Keep a Job",
+            "description": "What you need to do to stay employed: choose the right job, get along with colleagues, maintain positive attitude, etc.",
+            "creator": "Coronet Instructional Films",
+            "duration": 682.65,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowtoKee1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowtoKee1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowtoKee1949/HowtoKee1949.mp4",
+                "page_url": "https://archive.org/details/HowtoKee1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Vocational training",
+                    "Social guidance",
+                    "Teenagers"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowtoKee1949; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "machine-master_or_slave",
+            "episode_number": 19,
+            "title": "Machine : Master or Slave?",
+            "description": "The film explores the impact of labor-saving machinery on employment and the economy. As factories ramp up production for defense needs, workers face potential layoffs due to automation. The narrative follows a group of factory workers and managers grappling with rising inventories and the challenge of selling increased output at higher prices. Despite aggressive marketing efforts, the lack of consumer purchasing power leads to a failure in sales campaigns. The film ultimately raises questions about balancing technological advancement with job security and the need for economic prosperity to enable consumer spending.Keywordsautomation, employment, labor-saving machines, production, layoffs, marketing, consumer purchasing power, economic prosperity, sales campaigns, job security",
+            "creator": "Unknown",
+            "duration": 980.95,
+            "year": 1941,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/machine-master_or_slave",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "machine-master_or_slave",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/machine-master_or_slave/machine-master_or_slave.mp4",
+                "page_url": "https://archive.org/details/machine-master_or_slave",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item machine-master_or_slave; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Progress1960",
+            "episode_number": 20,
+            "title": "Progress Parade",
+            "description": "News release reflecting innovations and happenings from the petroleum industry. Includes a sequence on \"fishing\" for a lost drill bit, soothing an infant with baby oil, how LP gas serves us in the home and on the job, how a \"Citadel\" service station operator serves his community, and a research program at Louisiana State University that investigates (and finds no) effects on oysters from nearby oil drilling.",
+            "creator": "Unknown",
+            "duration": 795.6,
+            "year": 1960,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Progress1960",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Progress1960",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Progress1960/Progress1960.mp4",
+                "page_url": "https://archive.org/details/Progress1960",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Oil industry",
+                    "Occupations: Petroleum workers",
+                    "Environment"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Progress1960; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0992_This_Is_Automation_01_23_07_15",
+            "episode_number": 21,
+            "title": "This Is Automation",
+            "description": "a bunch of promising stock shots workers walking into factory cookies on mass production line much more three executives examining large plant model",
+            "creator": "Wolff (Raphael G,) Studios",
+            "duration": 1638.02,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0992_This_Is_Automation_01_23_07_15",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0992_This_Is_Automation_01_23_07_15",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0992_This_Is_Automation_01_23_07_15/0992_This_Is_Automation_01_23_07_15.mp4",
+                "page_url": "https://archive.org/details/0992_This_Is_Automation_01_23_07_15",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0992_This_Is_Automation_01_23_07_15; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "1371TheChickenofTomorrow",
+            "episode_number": 22,
+            "title": "Chicken of Tomorrow, The",
+            "description": "How scientific agriculture changes the life and taste of the chicken.",
+            "creator": "Audio Productions",
+            "duration": 1140.53,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/1371TheChickenofTomorrow",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "1371TheChickenofTomorrow",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/1371TheChickenofTomorrow/1371TheChickenofTomorrow.mp4",
+                "page_url": "https://archive.org/details/1371TheChickenofTomorrow",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "poultry",
+                    "farming"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 1371TheChickenofTomorrow; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "HomeElec1944",
+            "episode_number": 23,
+            "title": "Home Electrical Appliances",
+            "description": "Principles and maintenance of everyday appliances.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 649.42,
+            "year": 1944,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HomeElec1944",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HomeElec1944",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HomeElec1944/HomeElec1944.mp4",
+                "page_url": "https://archive.org/details/HomeElec1944",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Electricity",
+                    "Houses and homes: Appliances",
+                    "Appliances"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HomeElec1944; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Hoteland",
+            "episode_number": 24,
+            "title": "Hotel and Restaurant Workers",
+            "description": "",
+            "creator": "AFL-CIO",
+            "duration": 771.97,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Hoteland",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Hoteland",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Hoteland/Hoteland.mp4",
+                "page_url": "https://archive.org/details/Hoteland",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Service"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Hoteland; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "DialDForDesi",
+            "episode_number": 25,
+            "title": "Dial D For Design (Pt 1)",
+            "description": "Produced by Cinefonics, Inc (a division of Cook Research Laboratories) and based on Engineering and Systems Integration Studies by Cook Research Laboratories. Written and Produced by Charles O. Probst, Directed by Ronald S. Klein. Opening title card: The purpose of this film is to illustrate a method to design, develop and test integrated displays and controls in accordance with MIL-P-25996. Obviously specific procedures vary according to contracts and projects. For further details contact Flight Control Laboratory, Wright Air Development Center.",
+            "creator": "Cinefonics, Inc.",
+            "duration": 770.76,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/DialDForDesi",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "DialDForDesi",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/DialDForDesi/DialDForDesi.mp4",
+                "page_url": "https://archive.org/details/DialDForDesi",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: Sponsored",
+                    "Motion Pictures: Industrial",
+                    "Engineering",
+                    "Weapons"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DialDForDesi; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "DialDForDesi_2",
+            "episode_number": 26,
+            "title": "Dial D For Design (Pt 2)",
+            "description": "Produced by Cinefonics, Inc (a division of Cook Research Laboratories) and based on Engineering and Systems Integration Studies by Cook Research Laboratories. Written and Produced by Charles O. Probst, Directed by Ronald S. Klein. Opening title card: The purpose of this film is to illustrate a method to design, develop and test integrated displays and controls in accordance with MIL-P-25996. Obviously specific procedures vary according to contracts and projects. For further details contact Flight Control Laboratory, Wright Air Development Center.",
+            "creator": "Cinefonics, Inc.",
+            "duration": 953.95,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/DialDForDesi_2",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "DialDForDesi_2",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/DialDForDesi_2/DialDForDesi_2.mp4",
+                "page_url": "https://archive.org/details/DialDForDesi_2",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: Sponsored",
+                    "Motion Pictures: Industrial",
+                    "Engineering",
+                    "Weapons"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DialDForDesi_2; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Hired1940",
+            "episode_number": 27,
+            "title": "Hired!",
+            "description": "Quirky Chevrolet sales film.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 1112.78,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Hired1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Hired1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Hired1940/Hired1940.mp4",
+                "page_url": "https://archive.org/details/Hired1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Sales: Training"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Hired1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Forestry1946",
+            "episode_number": 28,
+            "title": "Forestry and Forest Industries",
+            "description": "Forest rangers at work and people engaged in harvesting, processing, and distributing forest products.",
+            "creator": "Holmes (Burton) Films",
+            "duration": 617.48,
+            "year": 1946,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Forestry1946",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Forestry1946",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Forestry1946/Forestry1946.mp4",
+                "page_url": "https://archive.org/details/Forestry1946",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Forestry"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Forestry1946; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Printing1947",
+            "episode_number": 29,
+            "title": "Printing",
+            "description": "Printing occupations, opportunities and technologies before electronics and computers changed the world.",
+            "creator": "Holmes (Burton) Films, Inc.",
+            "duration": 640.94,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Printing1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Printing1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Printing1947/Printing1947.mp4",
+                "page_url": "https://archive.org/details/Printing1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Printing",
+                    "Communication: Printing"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Printing1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Libraria1947",
+            "episode_number": 30,
+            "title": "Librarian, The",
+            "description": "Shows the work of different library personnel.",
+            "creator": "Holmes (Burton) Films, Inc.",
+            "duration": 613.25,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Libraria1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Libraria1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Libraria1947/Libraria1947.mp4",
+                "page_url": "https://archive.org/details/Libraria1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Librarians"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Libraria1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Pharmaci1946",
+            "episode_number": 31,
+            "title": "Pharmacist, The",
+            "description": "Career opportunities.",
+            "creator": "Holmes (Burton) Films, Inc.",
+            "duration": 580.11,
+            "year": 1946,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Pharmaci1946",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Pharmaci1946",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Pharmaci1946/Pharmaci1946.mp4",
+                "page_url": "https://archive.org/details/Pharmaci1946",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Occupations: Pharmacy"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Pharmaci1946; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}

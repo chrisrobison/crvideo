@@ -1,0 +1,683 @@
+{
+    "schema_version": 1,
+    "id": "film-day-safety-first",
+    "title": "Safety First",
+    "description": "Civil-defense drills, \"scared straight\" crime dramas, and workplace/traffic safety shorts from the Internet Archive's Prelinger Archives -- duck-and-cover atomic preparedness, juvenile-delinquency cautionary tales, and everyday hazard-avoidance films shown to generations of American schoolchildren.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "0771_Duck_and_Cover_12_33_20_12",
+            "episode_number": 1,
+            "title": "Duck and Cover",
+            "description": "This film, a combination of animated cartoon and live action, shows young children what to do in case of an atomic attack. The film opens with \"Bert the Turtle\" wobbling down the street and singing a song, \"Duck and Cover.\" When there is a bright flash, Bert immediately ducks into his shell covering. The narrator explains that when there is a bright flash -- brighter than the sun -- children should follow Bert's example. The film shifts to a classroom of first or second grade youngsters who are practicing what to do in the case of an atomic attack. The narrator explains that boys and girls should know what to do in case of an atomic attack just as they know what do do in case of a fire. He explains that this new danger can cause several types of injury. He tells them that it can knock them down or burn them. As the youngsters listen, the narrator explains to them that many schools are talking about atomic attacks and that many youngsters and their teachers are learning the best ways of protection. The rules which he explains are demonstrated by youngsters who are shown in the school yard, playing at home, and walking down the street. The simple rule that they should be like Bert, who ducks and covers, is emphasized. At school youngsters are shown getting under their desks and covering the backs of their necks, or going to a special area in the basement, where they lie down on their stomachs and put their hands over the back of their necks. At home they get under the table or davenport. On the street they fall down along the curb or get into the entrance of a building. The Civil Defense worker is shown as a helper who will answer their questions, tell them when the danger is over, and give them help. The film ends by suggesting that, whether they are in the city or the country and whether they are at home or away, they must always be ready to duck and cover when there is an atomic explosion. \"Bert the Turtle\" once again sings his song and shows how he, too, ducks and covers when there is a bright flash. (Educational Screen, March 1952) The widespread fear and suspicion with which many of us regard technology has little to do with the approaching millennium. It's actually been a long time in the making, and for us, one of its main enablers was civil defense. If A Is For Atom was produced to reassure us of the atom's essential goodness, Duck and Cover was made to frighten us. Produced for showing to schoolchildren, it presents the atomic bomb as a mysterious, frightening, and capricious force. Just five brief soundbites say it all: \"You know how bad sunburn can be. The atomic bomb flash could burn you worse than a terrible sunburn, especially where you're not covered.\" \"Always remember, the flash of an atomic bomb can come at any time, no matter where you may be.\" \"Sometimes the bomb may explode without any warning.\" \"Getting ready means we will all have to be able to take care of ourselves. A bomb might explode when there are no grownups near. Paul and Patty know this, and they're always ready to take care of themselves.\" \"Sundays, holidays, vacation time...we must be ready every day, all the time, to do the right thing if the atomic bomb explodes.\" This is the original cut of Duck and Cover as it was released to schools. In 1982, segments of Duck and Cover were used in the documentary film Atomic Café and edited into an original sequence together with footage from various other public and private sources. That version — which most people think is the original one — is actually the creation of co-directors Kevin Rafferty, Jayne Loader and Pierce Rafferty.",
+            "creator": "Archer Productions, Inc.",
+            "duration": 555.5,
+            "year": 1951,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0771_Duck_and_Cover_12_33_20_12",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0771_Duck_and_Cover_12_33_20_12",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0771_Duck_and_Cover_12_33_20_12/0771_Duck_and_Cover_12_33_20_12.mp4",
+                "page_url": "https://archive.org/details/0771_Duck_and_Cover_12_33_20_12",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0771_Duck_and_Cover_12_33_20_12; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "WhatAbou1955",
+            "episode_number": 2,
+            "title": "What About Juvenile Delinquency?",
+            "description": "Jim leaves the gang after it attacks his father, and joins other teenagers at City Hall to argue against the imposition of a curfew. Drama filmed in Lawrence, Kansas.",
+            "creator": "Centron Productions",
+            "duration": 687.42,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhatAbou1955",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhatAbou1955",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhatAbou1955/WhatAbou1955.mp4",
+                "page_url": "https://archive.org/details/WhatAbou1955",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Juvenile delinquency",
+                    "Social guidance",
+                    "Crime and criminals"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhatAbou1955; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0840_Girls_Beware_12_42_58_00",
+            "episode_number": 3,
+            "title": "Girls Beware",
+            "description": "Like its precursor Name Unknown (1951), Girls Beware is a trilogy of tragedies brought about by teenage girls' attempts at independent behavior. The first, a story of a young woman who accepts a babysitting job from a man whom she does not know, ends with a report that her body has been found on a lonely desert road. As Norma Neufner (the policewoman who narrates the film) says, \"You can never find the right words to tell a mother her daughter has been murdered. Judy hadn't done anything wrong, she'd only been careless.\" The second part tells how two young teens, craving male attention, permit themselves to be picked up by two older boys they meet at the movies, boys who are strangers. Sally's mother wisely forbids her from going out with the boys again, but Elizabeth rides up to the top of \"Lookout Peak\" (actually San Pedro Hill in Los Angeles County) with the two and pays a high price for her adventurism. The third story concerns Mary and Robert, who meet at the \"Ah-Ha\" hamburger stand, an artifact of the early sixties L.A. landscape. In this environment, kids enjoy a great deal of freedom, and it's precisely unrestrained freedom that will get them into trouble. Mary meets Robert, who \"frequented the malt shop in his spare time, which was considerable as he had finished high school and didn't work. Here he sought out the company of young teenagers because he wasn't accepted by those of his own age group.\" Robert, a slacker par excellence, corrupts Mary. In the words of Patrolwoman Neufner, \"They began to go to secluded places and their relationship became more intimate. Mary knew things were getting out of hand because Bob became more and more demanding, but not wishing to lose his friendship, or the prestige she enjoyed from her friends from having an older boyfriend, she complied with his desires.\" The camera rises from the couple making out on the ground to a shot of the trees and sky, somehow alluding to an unspeakable reality. \"Then Mary found she was in trouble and had to tell her parents. But now it was too late for advice and Mary had to be taken out of school and placed under the guidance of juvenile authorities.\" Girls Beware isn't just a warning against the possibility of murder, rape and abduction by strangers, but about the negative consequences of ordinary sexual activity, such as pregnancy and coming under the control of juvenile authorities. It responds with a message of fear to the strong impulses of sexual energy and adventurism that adolescents feel, and implicitly tells its young audience that society cannot offer a safe haven to independent or unguarded women.",
+            "creator": "Davis (Sid) Productions",
+            "duration": 611.65,
+            "year": 1961,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0840_Girls_Beware_12_42_58_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0840_Girls_Beware_12_42_58_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0840_Girls_Beware_12_42_58_00/0840_Girls_Beware_12_42_58_00.mp4",
+                "page_url": "https://archive.org/details/0840_Girls_Beware_12_42_58_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0840_Girls_Beware_12_42_58_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "crimes_of_carelessness",
+            "episode_number": 4,
+            "title": "Crimes of Carelessness",
+            "description": "",
+            "creator": "Unknown",
+            "duration": 588.82,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/crimes_of_carelessness",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "crimes_of_carelessness",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/crimes_of_carelessness/crimes_of_carelessness.mp4",
+                "page_url": "https://archive.org/details/crimes_of_carelessness",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item crimes_of_carelessness; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "AskMeDon1961",
+            "episode_number": 5,
+            "title": "Ask Me, Don't Tell Me",
+            "description": "San Francisco teenage gangs and the unfriendly world they inhabit.",
+            "creator": "Myers (David)",
+            "duration": 1338.24,
+            "year": 1961,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/AskMeDon1961",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "AskMeDon1961",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/AskMeDon1961/AskMeDon1961.mp4",
+                "page_url": "https://archive.org/details/AskMeDon1961",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "San Francisco: Juvenile delinquents",
+                    "Teenagers",
+                    "Juvenile delinquency"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item AskMeDon1961; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0831_Roscoes_Rules_00_31_48_00",
+            "episode_number": 6,
+            "title": "Roscoe's Rules",
+            "description": "Children receive safety instructions from police officer at school. Police officer uses Roscoe the drumming bear to help children remember four safety rules. Four children experience situations where they call upon the golden rules to help them decide what to do. 00:31:53:16 CU little bear puppet with red bowtie dances and plays drum. 15:32:19:07 Sign on brick wall for Merlinda School in West Covina, California 15:32:25:07 VS children playing in school playground; boys and girls on monkey bars and jungle gym, girls playing hop scotch. Boy sitting on top of jungle gym, audio track narrates “That’s Jeff, he really likes recess a lot.” Girls on teeter-totter. Police officer arrives on playground with female teacher to talk to children. CU teacher blows whistle, children run to teacher and sit down on grass. 15:34:02:12 Stop light and walk signal switch from red Don’t Walk to green Walk. Street sign reads Cameron Ave. 15:34:05:07 Great high-angle shot of large group of kids cross street in crosswalk. 15:34:31:16 VS Police office kneeling down on grass in front of second grade class forming a half circle around him; police officer pulls out a toy drummer bear and places it on the box in front of him, the class applauds. Police officer turns on monkey which then begins to play its drum. Audio track “this little fellow is a friend of Smokey the Bear. Does anyone know who Smokey the Bear is?” VS children enthusiastically raising hands. CU toy drummer bear plays drum. 15:35:11:11 Great shot of school teacher sitting on grass lefts up green sign with white text “We always go straight home from school.” VS children seated cross-legged on grass. 15:35:31:06 VS CU mechanical drumming bear; teacher lifts up yellow sign with black text “We never get into a car without our parents’permission”. 15:35:40:24 CU VS drumming mechanical toy bear; teacher lifts red sign with white text “We never take gifts from anyone without our parents’ permission.” VS drumming bear; teacher lifts off grass blue sign with white text “We never walk or play in lonely places.” 15:36:14:15 Great shot police officer kneeling on one knee holding toy of Roscoe the drumming bear. School children all stand up and swarm around police officer holding toy of Roscoe the bear. 15:36:30:13 CU school bell ringing. 15:36:43:03 CU left turn signal of yellow school bus, school bus pulls away from camera. 15:36:51:21 VS boy about ten years old walks along sidewalk in suburban California neighborhood, smiles and waves to two friends playing football in front yard of house, boys invite him to join; CU Roscoe the drumming bear plays drum, audio track man’s voice “We always go straight home from school;” boy continues on his way. 15:37:27:28 Boy about nine years old walking to school on sidewalk through suburban neighborhood, woman in car pulls up alongside him and asks if he needs a ride; CU Roscoe the bear plays drum, audio track “We never get into a car without our parents’ permission.” Boy declines offer and continues walking on sidewalk. 15:38:08:23 Two girls about eight years old walking on sidewalk go their separate ways; CU cute puppy, man on bunch drops dogs leash and dog runs up to little girl; man offers girl candy from unmarked plastic bag; CU Roscoe the drumming bear, audio track “We never take gifts from anyone without our parents’ permission.” 15:38:54:28 Great shot of four kids around eight to ten years old playing in park on spinning platform. 15:39:10:14 CU top of slide with snow-capped mountains in background; four children two boys and two girls one by one enter frame and slide down slide; great shot of from side of swing set while children swing; children slide down slide one by one; four children on jungle gym; audio track bell rings; CU girl looks back at sound of bell. 15:39:38:18 Clock on Spanish revival architectural style clock tower reads 3:00. 15:39:51:08 VS girl walking home stops at corner and looks down empty dirty alleyway; CU Roscoe the drumming bear. audio track “We never walk or play in lonely places.” Girl walks on sidewalk past shop Golden Touch Coiffures.",
+            "creator": "Davis (Sid) Productions",
+            "duration": 609.04,
+            "year": 1960,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0831_Roscoes_Rules_00_31_48_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0831_Roscoes_Rules_00_31_48_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0831_Roscoes_Rules_00_31_48_00/0831_Roscoes_Rules_00_31_48_00_3mb.mp4",
+                "page_url": "https://archive.org/details/0831_Roscoes_Rules_00_31_48_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0831_Roscoes_Rules_00_31_48_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "YourChan1972",
+            "episode_number": 7,
+            "title": "Your Chance to Live: Earthwatch",
+            "description": "Presents the story of a teenage couple caught in the tragic path of a Tsunami as a means of explaining the nature of earthquakes and the consequences of their power.",
+            "creator": "Screenscope",
+            "duration": 782.88,
+            "year": 1972,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/YourChan1972",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "YourChan1972",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/YourChan1972/YourChan1972.mp4",
+                "page_url": "https://archive.org/details/YourChan1972",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Earthquakes",
+                    "Tsunamis",
+                    "Civil defense"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item YourChan1972; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "DontTalk1950",
+            "episode_number": 8,
+            "title": "Don't Talk to Strangers",
+            "description": "Dramatized film warning children of the dangers of strangers.",
+            "creator": "Unknown",
+            "duration": 787.92,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/DontTalk1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "DontTalk1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/DontTalk1950/DontTalk1950.mp4",
+                "page_url": "https://archive.org/details/DontTalk1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Police",
+                    "Crime and criminals",
+                    "Children: Safety"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DontTalk1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "BigManOnCamp",
+            "episode_number": 9,
+            "title": "Big Man On Campus",
+            "description": "Tells the story of Jerry Warner, a junior high school student who finds himself in trouble with the authorities and realizes that it is his own attitude and behavior that have caused his predicament. \"Produced with the cooperation of the Los Angeles City School District, the Inglewood Unified School District, and the Inglewood Police Department.\"",
+            "creator": "Unknown",
+            "duration": 617.09,
+            "year": 1958,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/BigManOnCamp",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "BigManOnCamp",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/BigManOnCamp/BigManOnCamp.mp4",
+                "page_url": "https://archive.org/details/BigManOnCamp",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "need keyword"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item BigManOnCamp; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0995_Danger_Women_at_Work_01_15_48_19",
+            "episode_number": 10,
+            "title": "Danger — Women at Work!",
+            "description": "World War II-vintage film on health and occupational safety issues facing women workers Old-time footage of male workers leaving factory door and dispersing MS line of women punching in at time clock and entering plant HA looking down at women walking by on sidewalk VS women in machine shop foreman explains dangers of hair, jewelry, high heeled shoes and skirts to woman dissolves into same woman dressed in sensible, safe gear (pants, hairnet, flats) VS woman's feet stepping on scale VS CU well-balanced meals HA very busy urban street corner, people crossing street, bus in traffic Many great shots of women working in factories, but film wobbles left and right VS combat LS covered wagons on road moving upper right to lower left in frame Antique stock shot of Western pioneer woman firing gun, presumably at Indians Parade of uniformed WACs VS women factory workers (better quality than before)",
+            "creator": "Vision Educational Productions",
+            "duration": 571.59,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0995_Danger_Women_at_Work_01_15_48_19",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0995_Danger_Women_at_Work_01_15_48_19",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0995_Danger_Women_at_Work_01_15_48_19/0995_Danger_Women_at_Work_01_15_48_19.mp4",
+                "page_url": "https://archive.org/details/0995_Danger_Women_at_Work_01_15_48_19",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0995_Danger_Women_at_Work_01_15_48_19; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "safety_in_offices",
+            "episode_number": 11,
+            "title": "Safety in Offices",
+            "description": "This is one of the few films that shows the dangers of the white-collar life. Mandated (we can guess) to grab and hold the attention of the tired war worker, this film revels in carelessness, surprise, and pratfalls. FUNNY ACCIDENT SITUATIONS AT WORK!!",
+            "creator": "Unknown",
+            "duration": 585.79,
+            "year": 1944,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/safety_in_offices",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "safety_in_offices",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/safety_in_offices/safety_in_offices.mp4",
+                "page_url": "https://archive.org/details/safety_in_offices",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "need keyword"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item safety_in_offices; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "RightorW1951",
+            "episode_number": 12,
+            "title": "Right or Wrong? (Making Moral Decisions)",
+            "description": "Assessing the behavior of a juvenile delinquent who refuses to rat on his companions.",
+            "creator": "Coronet Instructional Films",
+            "duration": 652.19,
+            "year": 1951,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/RightorW1951",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "RightorW1951",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/RightorW1951/RightorW1951.mp4",
+                "page_url": "https://archive.org/details/RightorW1951",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Juvenile delinquency"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RightorW1951; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "DriveYou1955",
+            "episode_number": 13,
+            "title": "Drive Your Bicycle",
+            "description": "Slow-moving bicycle safety film shot in Glendale and Burbank, California by a family-owned film production company. Encourages boys and girls to \"drive their bicycles\" and prepare for becoming automobile drivers by learning to practice the \"rules of the road.\" Good views of the mid-1950s suburban Southern California landscape.",
+            "creator": "Sullivan Company",
+            "duration": 647.55,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/DriveYou1955",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "DriveYou1955",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/DriveYou1955/DriveYou1955.mp4",
+                "page_url": "https://archive.org/details/DriveYou1955",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Bicycles",
+                    "Bicycles: Safety",
+                    "Car culture: Children"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DriveYou1955; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "YourPerm1951",
+            "episode_number": 14,
+            "title": "Your Permit to Drive",
+            "description": "Talking driver's license narrates this hymn to the beneficial effects of highways, cars, and driving.",
+            "creator": "General Motors Photographic",
+            "duration": 618.79,
+            "year": 1951,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/YourPerm1951",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "YourPerm1951",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/YourPerm1951/YourPerm1951.mp4",
+                "page_url": "https://archive.org/details/YourPerm1951",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Safety: Driving",
+                    "Car culture",
+                    "Infrastructure: Roads and highways"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item YourPerm1951; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "WhyVanda1955",
+            "episode_number": 15,
+            "title": "Why Vandalism?",
+            "description": "Life of a teenage outsider; what makes him that way and how his anger flares into violence.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 975.01,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhyVanda1955",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhyVanda1955",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhyVanda1955/WhyVanda1955.mp4",
+                "page_url": "https://archive.org/details/WhyVanda1955",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Juvenile delinquency",
+                    "Psychology",
+                    "Crime and criminals"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhyVanda1955; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Earthqua1973",
+            "episode_number": 16,
+            "title": "Earthquake",
+            "description": "San Fernando Valley earthquake of Feb. 1971, Sylmar, California.",
+            "creator": "U.S. Department of Agriculture",
+            "duration": 1673.94,
+            "year": 1973,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Earthqua1973",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Earthqua1973",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Earthqua1973/Earthqua1973.mp4",
+                "page_url": "https://archive.org/details/Earthqua1973",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Earthquakes"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Earthqua1973; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "202248_Freeway_Driving",
+            "episode_number": 17,
+            "title": "Freeway Driving",
+            "description": "Educational film about safe driving on Los Angeles freeways. A document of freeway adjacent, urban landscapes of Los Angeles. From Index to 16mm Educational Films: \"Presents proper techniques for driving on the freeway\"",
+            "creator": "Fass-Levy Films",
+            "duration": 368.21,
+            "year": 1959,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/202248_Freeway_Driving",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "202248_Freeway_Driving",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/202248_Freeway_Driving/202248_Freeway_Driving_master.intros.mp4",
+                "page_url": "https://archive.org/details/202248_Freeway_Driving",
+                "license": "No copyright notice seen on film.",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "1950s",
+                    "Automobiles",
+                    "Car culture",
+                    "Safety",
+                    "Transportation"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA cataloging notes no copyright notice on the print/film (No copyright notice seen on film.); treated as public domain under pre-1964 US copyright-notice requirements (archive.org item 202248_Freeway_Driving; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}

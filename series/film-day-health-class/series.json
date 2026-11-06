@@ -1,0 +1,531 @@
+{
+    "schema_version": 1,
+    "id": "film-day-health-class",
+    "title": "Health Class",
+    "description": "Personal hygiene, nutrition, disease prevention, and mental-health instruction from the Internet Archive's Prelinger Archives -- the classroom health unit, decade by decade, from germ theory to \"keeping mentally fit.\"",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "JoanAvoi1947",
+            "episode_number": 1,
+            "title": "Joan Avoids a Cold",
+            "description": "How young children must behave to avoid transmitting germs to one another.",
+            "creator": "Coronet Instructional Films",
+            "duration": 625.39,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/JoanAvoi1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "JoanAvoi1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/JoanAvoi1947/JoanAvoi1947.mp4",
+                "page_url": "https://archive.org/details/JoanAvoi1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Health and hygiene"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item JoanAvoi1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0016_Alcohol_and_the_Human_Body_16_00_36_00",
+            "episode_number": 2,
+            "title": "Alcohol and the Human Body",
+            "description": "Traces the course of alcohol through the body until it either oxidizes or escapes, and shows the effects of alcohol on the brain. Dramatizes the case of a problem drinker, including a treatment.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 777.82,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0016_Alcohol_and_the_Human_Body_16_00_36_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0016_Alcohol_and_the_Human_Body_16_00_36_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0016_Alcohol_and_the_Human_Body_16_00_36_00/0016_Alcohol_and_the_Human_Body_16_00_36_00.mp4",
+                "page_url": "https://archive.org/details/0016_Alcohol_and_the_Human_Body_16_00_36_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0016_Alcohol_and_the_Human_Body_16_00_36_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "bacteria_friend_and_foe",
+            "episode_number": 3,
+            "title": "Bacteria: Friend and Foe",
+            "description": "Produced by Encyclopedia Britannica Films, Inc., in collaboration with Stewart A. Koser, Ph.D, Department of Bacteriology and Parasitology, the University of Chicago, Warren Everote, Producer. 0595 PA8087 Bacteria: Friend and Foe",
+            "creator": "Encyclopedia Britannica Films, Inc.",
+            "duration": 614.81,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/bacteria_friend_and_foe",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "bacteria_friend_and_foe",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/bacteria_friend_and_foe/bacteria_friend_and_foe.mp4",
+                "page_url": "https://archive.org/details/bacteria_friend_and_foe",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "Motion Pictures: In Education",
+                    "Science",
+                    "Health and Hygiene"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item bacteria_friend_and_foe; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Personal1950",
+            "episode_number": 4,
+            "title": "Personal Hygiene (Part I)",
+            "description": "Military training drama showing how the residents of a barracks convince a sloppy soldier to clean up his act. With many folk songs on cleanliness.",
+            "creator": "U.S. Army",
+            "duration": 897.1,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Personal1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Personal1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Personal1950/Personal1950.mp4",
+                "page_url": "https://archive.org/details/Personal1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Health and hygiene",
+                    "Military",
+                    "Music: Folk"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Personal1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Preventi1940",
+            "episode_number": 5,
+            "title": "Preventing the Spread of Disease",
+            "description": "Health film using unusual imagery and metaphors to impart lessons in hygiene.",
+            "creator": "National Motion Picture Company",
+            "duration": 648.08,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Preventi1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Preventi1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Preventi1940/Preventi1940.mp4",
+                "page_url": "https://archive.org/details/Preventi1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Health and hygiene",
+                    "Children",
+                    "Medicine: Infectious diseases"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Preventi1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HowMuchA1958",
+            "episode_number": 6,
+            "title": "How Much Affection?",
+            "description": "How far can young people go in petting and still stay within the bounds of personal standards and social mores?",
+            "creator": "Crawley Films",
+            "duration": 1188.76,
+            "year": 1958,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowMuchA1958",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowMuchA1958",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowMuchA1958/HowMuchA1958.mp4",
+                "page_url": "https://archive.org/details/HowMuchA1958",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Sex education",
+                    "Teenagers",
+                    "Social guidance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowMuchA1958; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "GeneralH1928",
+            "episode_number": 7,
+            "title": "General Health Habits",
+            "description": "Personal hygiene, 1920s-style.",
+            "creator": "Unknown",
+            "duration": 382.18,
+            "year": 1928,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/GeneralH1928",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "GeneralH1928",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/GeneralH1928/GeneralH1928.mp4",
+                "page_url": "https://archive.org/details/GeneralH1928",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Health and hygiene"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item GeneralH1928; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "MentalHe1952",
+            "episode_number": 8,
+            "title": "Mental Health: Keeping Mentally Fit",
+            "description": "The four steps in acquiring, maintaining and improving mental health: express emotions naturally, respect yourself, respect others, and solve problems as they arise.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 732,
+            "year": 1952,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MentalHe1952",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MentalHe1952",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MentalHe1952/MentalHe1952.mp4",
+                "page_url": "https://archive.org/details/MentalHe1952",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Psychology",
+                    "Mental hygiene"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MentalHe1952; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "BodyCare1948",
+            "episode_number": 9,
+            "title": "Body Care and Grooming",
+            "description": "Exhaustive (and sexist) explanation of personal care and daily habits of cleanliness, demonstrating how to keep the skin, hair, nails, and teeth clean and healthy. Partially filmed at Cornell University, Ithaca, N.Y.",
+            "creator": "Audio Productions",
+            "duration": 1023.69,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/BodyCare1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "BodyCare1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/BodyCare1948/BodyCare1948.mp4",
+                "page_url": "https://archive.org/details/BodyCare1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Health and hygiene",
+                    "Colleges and universities",
+                    "Gender roles"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item BodyCare1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Overcomi1950",
+            "episode_number": 10,
+            "title": "Overcoming Fear",
+            "description": "How Bill overcomes his fear of the water through understanding its sources.",
+            "creator": "Coronet Instructional Films",
+            "duration": 758.83,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Overcomi1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Overcomi1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Overcomi1950/Overcomi1950.mp4",
+                "page_url": "https://archive.org/details/Overcomi1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Psychology"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Overcomi1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "200374_Youre_Growing_Up",
+            "episode_number": 11,
+            "title": "You're Growing Up",
+            "description": "Deals with some of the complicated physical and emotional processes of growing up. Four major periods of physical growth are considered: birth to age three, age four to ten, eleven to sixteen, and seventeen to twenty. Discusses the normality of individual differences and attempts to alleviate some of the fears resulting from natural physical and emotional changes.",
+            "creator": "Sid Davis",
+            "duration": 636.8,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/200374_Youre_Growing_Up",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "200374_Youre_Growing_Up",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/200374_Youre_Growing_Up/200374_Youre_Growing_Up_master.intros.mp4",
+                "page_url": "https://archive.org/details/200374_Youre_Growing_Up",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Suburbia",
+                    " Children",
+                    " Youth"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 200374_Youre_Growing_Up; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "unconscious_motivation",
+            "episode_number": 12,
+            "title": "Unconscious Motivation",
+            "description": "",
+            "creator": "Unknown",
+            "duration": 2338.18,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/unconscious_motivation",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "unconscious_motivation",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/unconscious_motivation/unconscious_motivation.mp4",
+                "page_url": "https://archive.org/details/unconscious_motivation",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item unconscious_motivation; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Laborand1950",
+            "episode_number": 13,
+            "title": "Labor and Childbirth",
+            "description": "Diagrammatic explanation from the Baby Boom era.",
+            "creator": "Medical Arts Productions (San Francisco, Calif.)",
+            "duration": 967.87,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Laborand1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Laborand1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Laborand1950/Laborand1950.mp4",
+                "page_url": "https://archive.org/details/Laborand1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Medicine: Obstetrics"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Laborand1950; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}

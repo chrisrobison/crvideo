@@ -1,0 +1,414 @@
+{
+    "schema_version": 1,
+    "id": "film-day-on-the-move",
+    "title": "On the Move",
+    "description": "Roads, railroads, airports, and the infrastructure of getting around, from the Internet Archive's Prelinger Archives -- mid-century America in transit.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "Arteries1941",
+            "episode_number": 1,
+            "title": "Arteries of New York City",
+            "description": "Shows transportation corridors leading into and out of New York City, and efforts at transportation and infrastructure planning.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 567.63,
+            "year": 1941,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Arteries1941",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Arteries1941",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Arteries1941/Arteries1941.mp4",
+                "page_url": "https://archive.org/details/Arteries1941",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "New York City",
+                    "Transportation: General",
+                    "City planning"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Arteries1941; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HowtoGoP1954",
+            "episode_number": 2,
+            "title": "How to Go Places",
+            "description": "Actress Gale Storm and family take a road trip in their Chevrolet and review the do's and don'ts of auto traveling.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 640.54,
+            "year": 1954,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowtoGoP1954",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowtoGoP1954",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowtoGoP1954/HowtoGoP1954.mp4",
+                "page_url": "https://archive.org/details/HowtoGoP1954",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Tourism",
+                    "Travelogues",
+                    "Car culture: General"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowtoGoP1954; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Wheelsof1950",
+            "episode_number": 3,
+            "title": "Wheels of Progress",
+            "description": "Operations of the Rock Island Lines. Includes shots of high-speed \"Rocket\" freight trains; the operation of classification yards; and scenes of agricultural and industrial areas served by the railroad. Writer and Director: John A. McGee.",
+            "creator": "Zenith Cinema Services, Inc.",
+            "duration": 1142.88,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Wheelsof1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Wheelsof1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Wheelsof1950/Wheelsof1950.mp4",
+                "page_url": "https://archive.org/details/Wheelsof1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Transportation: Railroad",
+                    "U.S.: Midwest",
+                    "Occupations: Railroad"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Wheelsof1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Boats1938",
+            "episode_number": 4,
+            "title": "Boats",
+            "description": "Trip down the Hudson River from Albany to New York City.",
+            "creator": "ERPI Classroom Films, Inc.",
+            "duration": 607.94,
+            "year": 1938,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Boats1938",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Boats1938",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Boats1938/Boats1938.mp4",
+                "page_url": "https://archive.org/details/Boats1938",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Transportation: Water",
+                    "New York City: History"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Boats1938; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "AirportT1948",
+            "episode_number": 5,
+            "title": "Airport, The",
+            "description": "Functions of the modern airport, showing all aspects of airline passenger service.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 631.4,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/AirportT1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "AirportT1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/AirportT1948/AirportT1948.mp4",
+                "page_url": "https://archive.org/details/AirportT1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Aviation: Operations",
+                    "Transportation: Air"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item AirportT1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "american_road_1",
+            "episode_number": 6,
+            "title": "American Road, The (Part I)",
+            "description": "Shows development of transportation in the United States during the first half of the 20th century, emphasizing growth of automobile industry, roads and highways.",
+            "creator": "Unknown",
+            "duration": 1058.47,
+            "year": 1953,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/american_road_1",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "american_road_1",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/american_road_1/american_road_1.mp4",
+                "page_url": "https://archive.org/details/american_road_1",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "need keyword"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item american_road_1; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Building1948",
+            "episode_number": 7,
+            "title": "Building a Highway",
+            "description": "Major steps in the construction of a two-lane (pre-Interstate) highway.",
+            "creator": "Encyclopaedia Britannica Films, Inc.",
+            "duration": 637.8,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Building1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Building1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Building1948/Building1948.mp4",
+                "page_url": "https://archive.org/details/Building1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Infrastructure: Roads and highways"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Building1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Wheelsof1927",
+            "episode_number": 8,
+            "title": "Wheels of Progress",
+            "description": "Reviews the history of transportation in the U.S. and promotes the economic and social benefits of more and better public roads..",
+            "creator": "U.S. Bureau of Public Roads, Department of Agriculture, Educational Film Service",
+            "duration": 852.82,
+            "year": 1927,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Wheelsof1927",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Wheelsof1927",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Wheelsof1927/Wheelsof1927.mp4",
+                "page_url": "https://archive.org/details/Wheelsof1927",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Infrastructure: Roads and highways",
+                    "Automobiles: History"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Wheelsof1927; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Passenge1955",
+            "episode_number": 9,
+            "title": "Passenger Train, The (Second Edition)",
+            "description": "A young boy travels from Chicago, Illinois to Lamy, New Mexico via passenger train.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 644.38,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Passenge1955",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Passenge1955",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Passenge1955/Passenge1955.mp4",
+                "page_url": "https://archive.org/details/Passenge1955",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Transportation: Railroad",
+                    "Tourism",
+                    "U.S.: West"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Passenge1955; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Californ1929",
+            "episode_number": 10,
+            "title": "[California State Highway 101 Opening]",
+            "description": "Opening of California State Highway 101 at San Francisco, with 50,000 people in attendance; parade of automobiles from San Francisco Civic Center; Mayor James \"Sunny Jim\" Rolph of San Francisco; Mayor Taylor of San Mateo; county supervisors; Queen Clara Carli; aerial views of highway and air-to-air shots of airplane carrying dignitaries. The highway linked San Francisco with northern San Mateo County to the south.",
+            "creator": "Unknown",
+            "duration": 222.52,
+            "year": 1929,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Californ1929",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Californ1929",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Californ1929/Californ1929.mp4",
+                "page_url": "https://archive.org/details/Californ1929",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "San Francisco: Infrastructure",
+                    "Celebrations",
+                    "Infrastructure: Roads and highways"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Californ1929; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}
