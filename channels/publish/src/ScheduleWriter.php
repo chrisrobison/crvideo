@@ -84,13 +84,32 @@ final class ScheduleWriter
                 'end' => $p['end'] - $windowStartTs,
             ];
         }
-        $enclosingProgramId = static function (int $relStart, int $relEnd) use ($relPrograms): ?string {
-            foreach ($relPrograms as $p) {
-                if ($relStart >= $p['start'] && $relEnd <= $p['end']) {
-                    return $p['occurrence_id'];
+        // Splits [relStart,relEnd) into one or more segments, each either fully
+        // inside one program's effective window (tagged with its occurrence_id)
+        // or fully outside every one (untagged). Ordinarily a single gap is
+        // either entirely a block's own under-filled remainder or entirely a
+        // genuine inter-program station break, but this stays correct even when
+        // one raw gap happens to straddle a program's own end and further
+        // genuinely-unscheduled time beyond it (e.g. the very last program in a
+        // published window, with nothing scheduled after it) -- the in-program
+        // portion still gets attributed, and only the truly-uncovered remainder
+        // past it is left as its own, unattributed station break.
+        $splitGapByPrograms = static function (int $relStart, int $relEnd) use ($relPrograms): array {
+            $segments = [];
+            $cursor = $relStart;
+            while ($cursor < $relEnd) {
+                $owner = null;
+                foreach ($relPrograms as $p) {
+                    if ($cursor >= $p['start'] && $cursor < $p['end']) {
+                        $owner = $p;
+                        break; // programs never overlap -- at most one can ever match
+                    }
                 }
+                $segEnd = $owner !== null ? min($relEnd, $owner['end']) : $relEnd;
+                $segments[] = [$cursor, $segEnd, $owner['occurrence_id'] ?? null];
+                $cursor = $segEnd;
             }
-            return null;
+            return $segments;
         };
 
         $relItems = [];
@@ -100,13 +119,14 @@ final class ScheduleWriter
             $relStart = $it['start'] - $windowStartTs;
             $relEnd = $it['end'] - $windowStartTs;
             if ($relStart > $cursor) {
-                $gapProgramId = $enclosingProgramId($cursor, $relStart);
-                $relItems[] = [
-                    'type' => 'gap',
-                    'start' => $cursor,
-                    'duration' => $relStart - $cursor,
-                    ...($gapProgramId !== null ? ['program_id' => $gapProgramId] : []),
-                ];
+                foreach ($splitGapByPrograms($cursor, $relStart) as [$segStart, $segEnd, $segProgramId]) {
+                    $relItems[] = [
+                        'type' => 'gap',
+                        'start' => $segStart,
+                        'duration' => $segEnd - $segStart,
+                        ...($segProgramId !== null ? ['program_id' => $segProgramId] : []),
+                    ];
+                }
             }
 
             if (($it['kind'] ?? 'video') === 'continuity') {
@@ -180,13 +200,14 @@ final class ScheduleWriter
             $cursor = $relEnd;
         }
         if ($cursor < $windowSeconds) {
-            $trailingProgramId = $enclosingProgramId($cursor, $windowSeconds);
-            $relItems[] = [
-                'type' => 'gap',
-                'start' => $cursor,
-                'duration' => $windowSeconds - $cursor,
-                ...($trailingProgramId !== null ? ['program_id' => $trailingProgramId] : []),
-            ];
+            foreach ($splitGapByPrograms($cursor, $windowSeconds) as [$segStart, $segEnd, $segProgramId]) {
+                $relItems[] = [
+                    'type' => 'gap',
+                    'start' => $segStart,
+                    'duration' => $segEnd - $segStart,
+                    ...($segProgramId !== null ? ['program_id' => $segProgramId] : []),
+                ];
+            }
         }
 
         // Phase 3/4 of docs/guide-update.md: one entry per logical programming

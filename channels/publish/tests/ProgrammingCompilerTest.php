@@ -369,4 +369,120 @@ final class ProgrammingCompilerTest
         $ids = array_map(static fn ($i) => $i['id'], $result['items']);
         Assert::same(['e1', 'e2', 'e3'], $ids);
     }
+
+    // ---------------- Phase 2/3: program-level identity & metadata ----------------
+
+    public function testEveryOccurrenceGetsAStableOccurrenceIdFromItsBlockIdAndNominalStart(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved')]]];
+        $result = ProgrammingCompiler::compile(['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-04T00:00:00Z'));
+        Assert::count(2, $result['programs']);
+        Assert::true($result['programs'][0]['occurrence_id'] !== $result['programs'][1]['occurrence_id'], 'two different days must not share an occurrence id');
+        Assert::same('b', $result['programs'][0]['block_id']);
+        Assert::same($result['programs'][0]['occurrence_id'], $result['items'][0]['program_id']);
+    }
+
+    public function testPackedOccurrenceProducesExactlyOneProgramCoveringEveryPackedEpisode(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 1380.0), $this->episode('e2', 'approved', 1080.0), $this->episode('e3', 'approved', 960.0),
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::count(1, $result['programs'], 'one program occurrence, regardless of how many episodes got packed into it');
+        Assert::count(3, $result['items']);
+        foreach ($result['items'] as $it) {
+            Assert::same($result['programs'][0]['occurrence_id'], $it['program_id'], 'every packed episode belongs to the same program');
+        }
+    }
+
+    public function testAmAndPmBlocksOfTheSameSeriesAreDistinctProgramsEvenWithIdenticalTitles(): void
+    {
+        $series = [['id' => 's', 'title' => 'Great Show', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved')]]];
+        $am = $this->dailyBlock('lineup-x-am', 's', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '01:00', 'timezone' => 'UTC']]);
+        $pm = $this->dailyBlock('lineup-x-pm', 's', '2026-11-02', ['recurrence' => ['frequency' => 'daily', 'time' => '13:00', 'timezone' => 'UTC']]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$am, $pm]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::count(2, $result['programs']);
+        Assert::same('Great Show', $result['programs'][0]['title']);
+        Assert::same('Great Show', $result['programs'][1]['title'], 'identical titles are expected -- same series, different slot');
+        Assert::true($result['programs'][0]['occurrence_id'] !== $result['programs'][1]['occurrence_id'], 'AM and PM must never be confused with each other');
+    }
+
+    public function testExplicitBlockTitleTakesPriorityOverTheSeriesTitle(): void
+    {
+        $series = [['id' => 's', 'title' => 'Series Title', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved')]]];
+        $block = $this->dailyBlock('b', 's', '2026-11-02', ['title' => 'Editorial Title']);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::same('Editorial Title', $result['programs'][0]['title']);
+    }
+
+    public function testSeriesTitleIsUsedWhenTheBlockHasNoExplicitTitle(): void
+    {
+        $series = [['id' => 's', 'title' => 'Series Title', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved')]]];
+        $result = ProgrammingCompiler::compile(['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::same('Series Title', $result['programs'][0]['title']);
+    }
+
+    public function testPreviouslyPublishedTitleIsUsedWhenNeitherTheBlockNorTheSeriesProvidesOne(): void
+    {
+        $series = [['id' => 's', 'title' => '', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved')]]];
+        // A series.json with no title would itself be rejected by CatalogResolver
+        // before reaching here, so simulate the realistic case -- a series WITH a
+        // title that happens to carry no useful one through to this tier -- by
+        // asserting the explicit previouslyPublished map wins over the (blank)
+        // series title and the episode fallback.
+        $series[0]['title'] = null;
+        $previous = ['b' => ['title' => 'Last Published Title', 'description' => null]];
+        $result = ProgrammingCompiler::compile(['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'), $previous);
+        Assert::same('Last Published Title', $result['programs'][0]['title']);
+    }
+
+    public function testFirstEpisodeTitleIsTheFinalFallbackWhenNothingElseIsKnown(): void
+    {
+        $series = [['id' => 's', 'title' => null, 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved')]]];
+        $result = ProgrammingCompiler::compile(['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::same('Title e1', $result['programs'][0]['title'], 'falls all the way back to the first scheduled episode\'s own title');
+    }
+
+    public function testProgramDescriptionNeverFallsBackToAnEpisodesOwnDescription(): void
+    {
+        // Phase 2 explicitly requires the program description stay distinct from
+        // any individual video's description -- unlike title, there is no
+        // episode-description fallback tier at all.
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [[
+            'id' => 'e1', 'title' => 'E1', 'status' => 'approved', 'duration' => 1800.0, 'description' => 'Episode-level description',
+            'source' => ['provider' => 'youtube', 'video_id' => 'v1', 'url' => 'https://example.test/v1'],
+        ]]]];
+        $result = ProgrammingCompiler::compile(['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::null($result['programs'][0]['description']);
+    }
+
+    public function testExplicitBlockDescriptionIsUsedWhenProvided(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [$this->episode('e1', 'approved')]]];
+        $block = $this->dailyBlock('b', 's', '2026-11-02', ['description' => 'Editorial description.']);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
+        Assert::same('Editorial description.', $result['programs'][0]['description']);
+    }
+
+    public function testOccurrenceIdentityStaysDistinctAcrossADaylightSavingTransition(): void
+    {
+        // US fall-back, America/Los_Angeles, 2026-11-01: a daily 00:30 block fires
+        // once the day before and once the day after a 25-real-hour calendar day.
+        // Phase 3 requires these remain two distinct, correctly identified programs
+        // regardless of the underlying DST arithmetic (already Recurrence's job).
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 600.0), $this->episode('e2', 'approved', 600.0),
+        ]]];
+        $block = $this->dailyBlock('b', 's', '2026-10-31', [
+            'recurrence' => ['frequency' => 'daily', 'time' => '00:30', 'timezone' => 'America/Los_Angeles'],
+        ]);
+        $result = ProgrammingCompiler::compile(
+            ['blocks' => [$block]], $series, $this->stateDir, 'chan', false,
+            $this->utc('2026-10-31T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'),
+        );
+        Assert::count(3, $result['programs']);
+        $occurrenceIds = array_map(static fn ($p) => $p['occurrence_id'], $result['programs']);
+        Assert::same(count($occurrenceIds), count(array_unique($occurrenceIds)), 'no two occurrences across the DST transition share an id');
+    }
 }

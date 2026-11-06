@@ -1,6 +1,6 @@
 {
     "_publish": {
-        "generated_at": "2026-11-06T01:53:04+00:00",
+        "generated_at": "2026-11-06T01:58:26+00:00",
         "window": {
             "start": "2026-11-05T00:00:00+00:00",
             "end": "2026-11-19T00:00:00+00:00"
@@ -104,7 +104,13 @@
                 {
                     "type": "gap",
                     "start": 5652,
-                    "duration": 1548
+                    "duration": 648,
+                    "program_id": "economics-and-society@1793838600"
+                },
+                {
+                    "type": "gap",
+                    "start": 6300,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -133,7 +139,13 @@
                 {
                     "type": "gap",
                     "start": 9402,
-                    "duration": 19398
+                    "duration": 2298,
+                    "program_id": "the-evening-lecture@1793844000"
+                },
+                {
+                    "type": "gap",
+                    "start": 11700,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -162,7 +174,13 @@
                 {
                     "type": "gap",
                     "start": 32909,
-                    "duration": 3091
+                    "duration": 2191,
+                    "program_id": "physics-and-astronomy-overnight@1793865600"
+                },
+                {
+                    "type": "gap",
+                    "start": 35100,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -190,7 +208,13 @@
                 {
                     "type": "gap",
                     "start": 40180,
-                    "duration": 3020
+                    "duration": 1220,
+                    "program_id": "overnight-university@1793872800"
+                },
+                {
+                    "type": "gap",
+                    "start": 41400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -218,7 +242,13 @@
                 {
                     "type": "gap",
                     "start": 46670,
-                    "duration": 7330
+                    "duration": 4930,
+                    "program_id": "mathematics-oxford@1793880000"
+                },
+                {
+                    "type": "gap",
+                    "start": 51600,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -247,7 +277,13 @@
                 {
                     "type": "gap",
                     "start": 58727,
-                    "duration": 2473
+                    "duration": 673,
+                    "program_id": "mathematics-mit@1793890800"
+                },
+                {
+                    "type": "gap",
+                    "start": 59400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -276,7 +312,13 @@
                 {
                     "type": "gap",
                     "start": 61304,
-                    "duration": 14296
+                    "duration": 9196,
+                    "program_id": "computer-science-cs50@1793898000"
+                },
+                {
+                    "type": "gap",
+                    "start": 70500,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -305,7 +347,13 @@
                 {
                     "type": "gap",
                     "start": 79354,
-                    "duration": 3446
+                    "duration": 1646,
+                    "program_id": "the-royal-institution@1793912400"
+                },
+                {
+                    "type": "gap",
+                    "start": 81000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -334,7 +382,13 @@
                 {
                     "type": "gap",
                     "start": 85565,
-                    "duration": 2635
+                    "duration": 835,
+                    "program_id": "history-and-civilization@1793919600"
+                },
+                {
+                    "type": "gap",
+                    "start": 86400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -362,7 +416,13 @@
                 {
                     "type": "gap",
                     "start": 91005,
-                    "duration": 2595
+                    "duration": 1695,
+                    "program_id": "economics-and-society@1793925000"
+                },
+                {
+                    "type": "gap",
+                    "start": 92700,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -391,7 +451,13 @@
                 {
                     "type": "gap",
                     "start": 96362,
-                    "duration": 18838
+                    "duration": 1738,
+                    "program_id": "the-evening-lecture@1793930400"
+                },
+                {
+                    "type": "gap",
+                    "start": 98100,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -420,7 +486,13 @@
                 {
                     "type": "gap",
                     "start": 119950,
-                    "duration": 2450
+                    "duration": 1550,
+                    "program_id": "physics-and-astronomy-overnight@1793952000"
+                },
+                {
+                    "type": "gap",
+                    "start": 121500,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -448,7 +520,13 @@
                 {
                     "type": "gap",
                     "start": 126059,
-                    "duration": 3541
+                    "duration": 1741,
+                    "program_id": "overnight-university@1793959200"
+                },
+                {
+                    "type": "gap",
+                    "start": 127800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -476,7 +554,13 @@
                 {
                     "type": "gap",
                     "start": 132719,
-                    "duration": 7681
+                    "duration": 5281,
+                    "program_id": "mathematics-oxford@1793966400"
+                },
+                {
+                    "type": "gap",
+                    "start": 138000,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -505,7 +589,13 @@
                 {
                     "type": "gap",
                     "start": 145178,
-                    "duration": 2422
+                    "duration": 622,
+                    "program_id": "mathematics-mit@1793977200"
+                },
+                {
+                    "type": "gap",
+                    "start": 145800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -534,7 +624,13 @@
                 {
                     "type": "gap",
                     "start": 156618,
-                    "duration": 5382
+                    "duration": 282,
+                    "program_id": "computer-science-cs50@1793984400"
+                },
+                {
+                    "type": "gap",
+                    "start": 156900,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -563,7 +659,13 @@
                 {
                     "type": "gap",
                     "start": 164567,
-                    "duration": 4633
+                    "duration": 2833,
+                    "program_id": "the-royal-institution@1793998800"
+                },
+                {
+                    "type": "gap",
+                    "start": 167400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -592,7 +694,13 @@
                 {
                     "type": "gap",
                     "start": 171980,
-                    "duration": 2620
+                    "duration": 820,
+                    "program_id": "history-and-civilization@1794006000"
+                },
+                {
+                    "type": "gap",
+                    "start": 172800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -620,7 +728,13 @@
                 {
                     "type": "gap",
                     "start": 177472,
-                    "duration": 2528
+                    "duration": 1628,
+                    "program_id": "economics-and-society@1794011400"
+                },
+                {
+                    "type": "gap",
+                    "start": 179100,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -649,7 +763,13 @@
                 {
                     "type": "gap",
                     "start": 183273,
-                    "duration": 18327
+                    "duration": 1227,
+                    "program_id": "the-evening-lecture@1794016800"
+                },
+                {
+                    "type": "gap",
+                    "start": 184500,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -678,7 +798,13 @@
                 {
                     "type": "gap",
                     "start": 205901,
-                    "duration": 2899
+                    "duration": 1999,
+                    "program_id": "physics-and-astronomy-overnight@1794038400"
+                },
+                {
+                    "type": "gap",
+                    "start": 207900,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -706,7 +832,13 @@
                 {
                     "type": "gap",
                     "start": 211961,
-                    "duration": 4039
+                    "duration": 2239,
+                    "program_id": "overnight-university@1794045600"
+                },
+                {
+                    "type": "gap",
+                    "start": 214200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -734,7 +866,13 @@
                 {
                     "type": "gap",
                     "start": 218717,
-                    "duration": 8083
+                    "duration": 5683,
+                    "program_id": "mathematics-oxford@1794052800"
+                },
+                {
+                    "type": "gap",
+                    "start": 224400,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -763,7 +901,13 @@
                 {
                     "type": "gap",
                     "start": 231850,
-                    "duration": 2150
+                    "duration": 350,
+                    "program_id": "mathematics-mit@1794063600"
+                },
+                {
+                    "type": "gap",
+                    "start": 232200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -792,7 +936,13 @@
                 {
                     "type": "gap",
                     "start": 242735,
-                    "duration": 5665
+                    "duration": 565,
+                    "program_id": "computer-science-cs50@1794070800"
+                },
+                {
+                    "type": "gap",
+                    "start": 243300,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -821,7 +971,13 @@
                 {
                     "type": "gap",
                     "start": 251998,
-                    "duration": 3602
+                    "duration": 1802,
+                    "program_id": "the-royal-institution@1794085200"
+                },
+                {
+                    "type": "gap",
+                    "start": 253800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -850,7 +1006,13 @@
                 {
                     "type": "gap",
                     "start": 258480,
-                    "duration": 2520
+                    "duration": 720,
+                    "program_id": "history-and-civilization@1794092400"
+                },
+                {
+                    "type": "gap",
+                    "start": 259200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -878,7 +1040,13 @@
                 {
                     "type": "gap",
                     "start": 263765,
-                    "duration": 2635
+                    "duration": 1735,
+                    "program_id": "economics-and-society@1794097800"
+                },
+                {
+                    "type": "gap",
+                    "start": 265500,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -907,7 +1075,13 @@
                 {
                     "type": "gap",
                     "start": 269107,
-                    "duration": 18893
+                    "duration": 1793,
+                    "program_id": "the-evening-lecture@1794103200"
+                },
+                {
+                    "type": "gap",
+                    "start": 270900,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -936,7 +1110,13 @@
                 {
                     "type": "gap",
                     "start": 292769,
-                    "duration": 2431
+                    "duration": 1531,
+                    "program_id": "physics-and-astronomy-overnight@1794124800"
+                },
+                {
+                    "type": "gap",
+                    "start": 294300,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -964,7 +1144,13 @@
                 {
                     "type": "gap",
                     "start": 296226,
-                    "duration": 6174
+                    "duration": 4374,
+                    "program_id": "overnight-university@1794132000"
+                },
+                {
+                    "type": "gap",
+                    "start": 300600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -992,7 +1178,13 @@
                 {
                     "type": "gap",
                     "start": 310467,
-                    "duration": 2733
+                    "duration": 333,
+                    "program_id": "mathematics-oxford@1794139200"
+                },
+                {
+                    "type": "gap",
+                    "start": 310800,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -1021,7 +1213,13 @@
                 {
                     "type": "gap",
                     "start": 318076,
-                    "duration": 2324
+                    "duration": 524,
+                    "program_id": "mathematics-mit@1794150000"
+                },
+                {
+                    "type": "gap",
+                    "start": 318600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1050,7 +1248,13 @@
                 {
                     "type": "gap",
                     "start": 327576,
-                    "duration": 7224
+                    "duration": 2124,
+                    "program_id": "computer-science-cs50@1794157200"
+                },
+                {
+                    "type": "gap",
+                    "start": 329700,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -1079,7 +1283,13 @@
                 {
                     "type": "gap",
                     "start": 338094,
-                    "duration": 3906
+                    "duration": 2106,
+                    "program_id": "the-royal-institution@1794171600"
+                },
+                {
+                    "type": "gap",
+                    "start": 340200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1108,7 +1318,13 @@
                 {
                     "type": "gap",
                     "start": 344919,
-                    "duration": 2481
+                    "duration": 681,
+                    "program_id": "history-and-civilization@1794178800"
+                },
+                {
+                    "type": "gap",
+                    "start": 345600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1136,7 +1352,13 @@
                 {
                     "type": "gap",
                     "start": 350966,
-                    "duration": 1834
+                    "duration": 934,
+                    "program_id": "economics-and-society@1794184200"
+                },
+                {
+                    "type": "gap",
+                    "start": 351900,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1165,7 +1387,13 @@
                 {
                     "type": "gap",
                     "start": 355988,
-                    "duration": 18412
+                    "duration": 1312,
+                    "program_id": "the-evening-lecture@1794189600"
+                },
+                {
+                    "type": "gap",
+                    "start": 357300,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -1194,7 +1422,13 @@
                 {
                     "type": "gap",
                     "start": 379236,
-                    "duration": 2364
+                    "duration": 1464,
+                    "program_id": "physics-and-astronomy-overnight@1794211200"
+                },
+                {
+                    "type": "gap",
+                    "start": 380700,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1222,7 +1456,13 @@
                 {
                     "type": "gap",
                     "start": 382979,
-                    "duration": 5821
+                    "duration": 4021,
+                    "program_id": "overnight-university@1794218400"
+                },
+                {
+                    "type": "gap",
+                    "start": 387000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1250,7 +1490,13 @@
                 {
                     "type": "gap",
                     "start": 394391,
-                    "duration": 5209
+                    "duration": 2809,
+                    "program_id": "mathematics-oxford@1794225600"
+                },
+                {
+                    "type": "gap",
+                    "start": 397200,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -1279,7 +1525,13 @@
                 {
                     "type": "gap",
                     "start": 404541,
-                    "duration": 2259
+                    "duration": 459,
+                    "program_id": "mathematics-mit@1794236400"
+                },
+                {
+                    "type": "gap",
+                    "start": 405000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1308,7 +1560,13 @@
                 {
                     "type": "gap",
                     "start": 415195,
-                    "duration": 6005
+                    "duration": 905,
+                    "program_id": "computer-science-cs50@1794243600"
+                },
+                {
+                    "type": "gap",
+                    "start": 416100,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -1337,7 +1595,13 @@
                 {
                     "type": "gap",
                     "start": 424427,
-                    "duration": 3973
+                    "duration": 2173,
+                    "program_id": "the-royal-institution@1794258000"
+                },
+                {
+                    "type": "gap",
+                    "start": 426600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1366,7 +1630,13 @@
                 {
                     "type": "gap",
                     "start": 431494,
-                    "duration": 2306
+                    "duration": 506,
+                    "program_id": "history-and-civilization@1794265200"
+                },
+                {
+                    "type": "gap",
+                    "start": 432000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1394,7 +1664,13 @@
                 {
                     "type": "gap",
                     "start": 436595,
-                    "duration": 2605
+                    "duration": 1705,
+                    "program_id": "economics-and-society@1794270600"
+                },
+                {
+                    "type": "gap",
+                    "start": 438300,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1423,7 +1699,13 @@
                 {
                     "type": "gap",
                     "start": 442362,
-                    "duration": 18438
+                    "duration": 1338,
+                    "program_id": "the-evening-lecture@1794276000"
+                },
+                {
+                    "type": "gap",
+                    "start": 443700,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -1452,7 +1734,13 @@
                 {
                     "type": "gap",
                     "start": 465606,
-                    "duration": 2394
+                    "duration": 1494,
+                    "program_id": "physics-and-astronomy-overnight@1794297600"
+                },
+                {
+                    "type": "gap",
+                    "start": 467100,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1480,7 +1768,13 @@
                 {
                     "type": "gap",
                     "start": 471278,
-                    "duration": 3922
+                    "duration": 2122,
+                    "program_id": "overnight-university@1794304800"
+                },
+                {
+                    "type": "gap",
+                    "start": 473400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1508,7 +1802,13 @@
                 {
                     "type": "gap",
                     "start": 477757,
-                    "duration": 8243
+                    "duration": 5843,
+                    "program_id": "mathematics-oxford@1794312000"
+                },
+                {
+                    "type": "gap",
+                    "start": 483600,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -1537,7 +1837,13 @@
                 {
                     "type": "gap",
                     "start": 490706,
-                    "duration": 2494
+                    "duration": 694,
+                    "program_id": "mathematics-mit@1794322800"
+                },
+                {
+                    "type": "gap",
+                    "start": 491400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1566,7 +1872,13 @@
                 {
                     "type": "gap",
                     "start": 500630,
-                    "duration": 6970
+                    "duration": 1870,
+                    "program_id": "computer-science-cs50@1794330000"
+                },
+                {
+                    "type": "gap",
+                    "start": 502500,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -1595,7 +1907,13 @@
                 {
                     "type": "gap",
                     "start": 511318,
-                    "duration": 3482
+                    "duration": 1682,
+                    "program_id": "the-royal-institution@1794344400"
+                },
+                {
+                    "type": "gap",
+                    "start": 513000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1624,7 +1942,13 @@
                 {
                     "type": "gap",
                     "start": 517875,
-                    "duration": 2325
+                    "duration": 525,
+                    "program_id": "history-and-civilization@1794351600"
+                },
+                {
+                    "type": "gap",
+                    "start": 518400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1652,7 +1976,13 @@
                 {
                     "type": "gap",
                     "start": 522986,
-                    "duration": 2614
+                    "duration": 1714,
+                    "program_id": "economics-and-society@1794357000"
+                },
+                {
+                    "type": "gap",
+                    "start": 524700,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1681,7 +2011,13 @@
                 {
                     "type": "gap",
                     "start": 528739,
-                    "duration": 18461
+                    "duration": 1361,
+                    "program_id": "the-evening-lecture@1794362400"
+                },
+                {
+                    "type": "gap",
+                    "start": 530100,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -1710,7 +2046,13 @@
                 {
                     "type": "gap",
                     "start": 552108,
-                    "duration": 2292
+                    "duration": 1392,
+                    "program_id": "physics-and-astronomy-overnight@1794384000"
+                },
+                {
+                    "type": "gap",
+                    "start": 553500,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1738,7 +2080,13 @@
                 {
                     "type": "gap",
                     "start": 558117,
-                    "duration": 3483
+                    "duration": 1683,
+                    "program_id": "overnight-university@1794391200"
+                },
+                {
+                    "type": "gap",
+                    "start": 559800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1766,7 +2114,13 @@
                 {
                     "type": "gap",
                     "start": 568376,
-                    "duration": 4024
+                    "duration": 1624,
+                    "program_id": "mathematics-oxford@1794398400"
+                },
+                {
+                    "type": "gap",
+                    "start": 570000,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -1795,7 +2149,13 @@
                 {
                     "type": "gap",
                     "start": 576804,
-                    "duration": 2796
+                    "duration": 996,
+                    "program_id": "mathematics-mit@1794409200"
+                },
+                {
+                    "type": "gap",
+                    "start": 577800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1824,7 +2184,13 @@
                 {
                     "type": "gap",
                     "start": 588572,
-                    "duration": 5428
+                    "duration": 328,
+                    "program_id": "computer-science-cs50@1794416400"
+                },
+                {
+                    "type": "gap",
+                    "start": 588900,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -1853,7 +2219,13 @@
                 {
                     "type": "gap",
                     "start": 598614,
-                    "duration": 2586
+                    "duration": 786,
+                    "program_id": "the-royal-institution@1794430800"
+                },
+                {
+                    "type": "gap",
+                    "start": 599400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1882,7 +2254,13 @@
                 {
                     "type": "gap",
                     "start": 604248,
-                    "duration": 2352
+                    "duration": 552,
+                    "program_id": "history-and-civilization@1794438000"
+                },
+                {
+                    "type": "gap",
+                    "start": 604800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -1910,7 +2288,13 @@
                 {
                     "type": "gap",
                     "start": 609419,
-                    "duration": 2581
+                    "duration": 1681,
+                    "program_id": "economics-and-society@1794443400"
+                },
+                {
+                    "type": "gap",
+                    "start": 611100,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1939,7 +2323,13 @@
                 {
                     "type": "gap",
                     "start": 615457,
-                    "duration": 18143
+                    "duration": 1043,
+                    "program_id": "the-evening-lecture@1794448800"
+                },
+                {
+                    "type": "gap",
+                    "start": 616500,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -1968,7 +2358,13 @@
                 {
                     "type": "gap",
                     "start": 638174,
-                    "duration": 2626
+                    "duration": 1726,
+                    "program_id": "physics-and-astronomy-overnight@1794470400"
+                },
+                {
+                    "type": "gap",
+                    "start": 639900,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -1996,7 +2392,13 @@
                 {
                     "type": "gap",
                     "start": 644760,
-                    "duration": 3240
+                    "duration": 1440,
+                    "program_id": "overnight-university@1794477600"
+                },
+                {
+                    "type": "gap",
+                    "start": 646200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2024,7 +2426,13 @@
                 {
                     "type": "gap",
                     "start": 652496,
-                    "duration": 6304
+                    "duration": 3904,
+                    "program_id": "mathematics-oxford@1794484800"
+                },
+                {
+                    "type": "gap",
+                    "start": 656400,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -2053,7 +2461,13 @@
                 {
                     "type": "gap",
                     "start": 663540,
-                    "duration": 2460
+                    "duration": 660,
+                    "program_id": "mathematics-mit@1794495600"
+                },
+                {
+                    "type": "gap",
+                    "start": 664200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2082,7 +2496,13 @@
                 {
                     "type": "gap",
                     "start": 674133,
-                    "duration": 6267
+                    "duration": 1167,
+                    "program_id": "computer-science-cs50@1794502800"
+                },
+                {
+                    "type": "gap",
+                    "start": 675300,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -2111,7 +2531,13 @@
                 {
                     "type": "gap",
                     "start": 683059,
-                    "duration": 4541
+                    "duration": 2741,
+                    "program_id": "the-royal-institution@1794517200"
+                },
+                {
+                    "type": "gap",
+                    "start": 685800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2140,7 +2566,13 @@
                 {
                     "type": "gap",
                     "start": 690678,
-                    "duration": 2322
+                    "duration": 522,
+                    "program_id": "history-and-civilization@1794524400"
+                },
+                {
+                    "type": "gap",
+                    "start": 691200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2168,7 +2600,13 @@
                 {
                     "type": "gap",
                     "start": 695961,
-                    "duration": 2439
+                    "duration": 1539,
+                    "program_id": "economics-and-society@1794529800"
+                },
+                {
+                    "type": "gap",
+                    "start": 697500,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -2197,7 +2635,13 @@
                 {
                     "type": "gap",
                     "start": 701000,
-                    "duration": 19000
+                    "duration": 1900,
+                    "program_id": "the-evening-lecture@1794535200"
+                },
+                {
+                    "type": "gap",
+                    "start": 702900,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -2226,7 +2670,13 @@
                 {
                     "type": "gap",
                     "start": 724858,
-                    "duration": 2342
+                    "duration": 1442,
+                    "program_id": "physics-and-astronomy-overnight@1794556800"
+                },
+                {
+                    "type": "gap",
+                    "start": 726300,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -2254,7 +2704,13 @@
                 {
                     "type": "gap",
                     "start": 730156,
-                    "duration": 4244
+                    "duration": 2444,
+                    "program_id": "overnight-university@1794564000"
+                },
+                {
+                    "type": "gap",
+                    "start": 732600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2282,7 +2738,13 @@
                 {
                     "type": "gap",
                     "start": 737252,
-                    "duration": 7948
+                    "duration": 5548,
+                    "program_id": "mathematics-oxford@1794571200"
+                },
+                {
+                    "type": "gap",
+                    "start": 742800,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -2311,7 +2773,13 @@
                 {
                     "type": "gap",
                     "start": 749986,
-                    "duration": 2414
+                    "duration": 614,
+                    "program_id": "mathematics-mit@1794582000"
+                },
+                {
+                    "type": "gap",
+                    "start": 750600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2340,7 +2808,13 @@
                 {
                     "type": "gap",
                     "start": 755269,
-                    "duration": 11531
+                    "duration": 6431,
+                    "program_id": "computer-science-cs50@1794589200"
+                },
+                {
+                    "type": "gap",
+                    "start": 761700,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -2369,7 +2843,13 @@
                 {
                     "type": "gap",
                     "start": 772001,
-                    "duration": 1999
+                    "duration": 199,
+                    "program_id": "the-royal-institution@1794603600"
+                },
+                {
+                    "type": "gap",
+                    "start": 772200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2398,7 +2878,13 @@
                 {
                     "type": "gap",
                     "start": 776963,
-                    "duration": 2437
+                    "duration": 637,
+                    "program_id": "history-and-civilization@1794610800"
+                },
+                {
+                    "type": "gap",
+                    "start": 777600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2426,7 +2912,13 @@
                 {
                     "type": "gap",
                     "start": 782430,
-                    "duration": 2370
+                    "duration": 1470,
+                    "program_id": "economics-and-society@1794616200"
+                },
+                {
+                    "type": "gap",
+                    "start": 783900,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -2455,7 +2947,13 @@
                 {
                     "type": "gap",
                     "start": 787819,
-                    "duration": 18581
+                    "duration": 1481,
+                    "program_id": "the-evening-lecture@1794621600"
+                },
+                {
+                    "type": "gap",
+                    "start": 789300,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -2484,7 +2982,13 @@
                 {
                     "type": "gap",
                     "start": 811253,
-                    "duration": 2347
+                    "duration": 1447,
+                    "program_id": "physics-and-astronomy-overnight@1794643200"
+                },
+                {
+                    "type": "gap",
+                    "start": 812700,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -2512,7 +3016,13 @@
                 {
                     "type": "gap",
                     "start": 817782,
-                    "duration": 3018
+                    "duration": 1218,
+                    "program_id": "overnight-university@1794650400"
+                },
+                {
+                    "type": "gap",
+                    "start": 819000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2540,7 +3050,13 @@
                 {
                     "type": "gap",
                     "start": 823621,
-                    "duration": 7979
+                    "duration": 5579,
+                    "program_id": "mathematics-oxford@1794657600"
+                },
+                {
+                    "type": "gap",
+                    "start": 829200,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -2569,7 +3085,13 @@
                 {
                     "type": "gap",
                     "start": 836469,
-                    "duration": 2331
+                    "duration": 531,
+                    "program_id": "mathematics-mit@1794668400"
+                },
+                {
+                    "type": "gap",
+                    "start": 837000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2598,7 +3120,13 @@
                 {
                     "type": "gap",
                     "start": 847332,
-                    "duration": 5868
+                    "duration": 768,
+                    "program_id": "computer-science-cs50@1794675600"
+                },
+                {
+                    "type": "gap",
+                    "start": 848100,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -2627,7 +3155,13 @@
                 {
                     "type": "gap",
                     "start": 857931,
-                    "duration": 2469
+                    "duration": 669,
+                    "program_id": "the-royal-institution@1794690000"
+                },
+                {
+                    "type": "gap",
+                    "start": 858600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2656,7 +3190,13 @@
                 {
                     "type": "gap",
                     "start": 863394,
-                    "duration": 2406
+                    "duration": 606,
+                    "program_id": "history-and-civilization@1794697200"
+                },
+                {
+                    "type": "gap",
+                    "start": 864000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2684,7 +3224,13 @@
                 {
                     "type": "gap",
                     "start": 868574,
-                    "duration": 2626
+                    "duration": 1726,
+                    "program_id": "economics-and-society@1794702600"
+                },
+                {
+                    "type": "gap",
+                    "start": 870300,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -2713,7 +3259,13 @@
                 {
                     "type": "gap",
                     "start": 873882,
-                    "duration": 18918
+                    "duration": 1818,
+                    "program_id": "the-evening-lecture@1794708000"
+                },
+                {
+                    "type": "gap",
+                    "start": 875700,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -2742,7 +3294,13 @@
                 {
                     "type": "gap",
                     "start": 897594,
-                    "duration": 2406
+                    "duration": 1506,
+                    "program_id": "physics-and-astronomy-overnight@1794729600"
+                },
+                {
+                    "type": "gap",
+                    "start": 899100,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -2770,7 +3328,13 @@
                 {
                     "type": "gap",
                     "start": 904793,
-                    "duration": 2407
+                    "duration": 607,
+                    "program_id": "overnight-university@1794736800"
+                },
+                {
+                    "type": "gap",
+                    "start": 905400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2798,7 +3362,13 @@
                 {
                     "type": "gap",
                     "start": 913894,
-                    "duration": 4106
+                    "duration": 1706,
+                    "program_id": "mathematics-oxford@1794744000"
+                },
+                {
+                    "type": "gap",
+                    "start": 915600,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -2827,7 +3397,13 @@
                 {
                     "type": "gap",
                     "start": 922876,
-                    "duration": 2324
+                    "duration": 524,
+                    "program_id": "mathematics-mit@1794754800"
+                },
+                {
+                    "type": "gap",
+                    "start": 923400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2856,7 +3432,13 @@
                 {
                     "type": "gap",
                     "start": 933996,
-                    "duration": 5604
+                    "duration": 504,
+                    "program_id": "computer-science-cs50@1794762000"
+                },
+                {
+                    "type": "gap",
+                    "start": 934500,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -2885,7 +3467,13 @@
                 {
                     "type": "gap",
                     "start": 942049,
-                    "duration": 4751
+                    "duration": 2951,
+                    "program_id": "the-royal-institution@1794776400"
+                },
+                {
+                    "type": "gap",
+                    "start": 945000,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2914,7 +3502,13 @@
                 {
                     "type": "gap",
                     "start": 949705,
-                    "duration": 2495
+                    "duration": 695,
+                    "program_id": "history-and-civilization@1794783600"
+                },
+                {
+                    "type": "gap",
+                    "start": 950400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -2942,7 +3536,13 @@
                 {
                     "type": "gap",
                     "start": 955017,
-                    "duration": 2583
+                    "duration": 1683,
+                    "program_id": "economics-and-society@1794789000"
+                },
+                {
+                    "type": "gap",
+                    "start": 956700,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -2971,7 +3571,13 @@
                 {
                     "type": "gap",
                     "start": 959802,
-                    "duration": 19398
+                    "duration": 2298,
+                    "program_id": "the-evening-lecture@1794794400"
+                },
+                {
+                    "type": "gap",
+                    "start": 962100,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -3000,7 +3606,13 @@
                 {
                     "type": "gap",
                     "start": 983860,
-                    "duration": 2540
+                    "duration": 1640,
+                    "program_id": "physics-and-astronomy-overnight@1794816000"
+                },
+                {
+                    "type": "gap",
+                    "start": 985500,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -3028,7 +3640,13 @@
                 {
                     "type": "gap",
                     "start": 991344,
-                    "duration": 2256
+                    "duration": 456,
+                    "program_id": "overnight-university@1794823200"
+                },
+                {
+                    "type": "gap",
+                    "start": 991800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3056,7 +3674,13 @@
                 {
                     "type": "gap",
                     "start": 1000043,
-                    "duration": 4357
+                    "duration": 1957,
+                    "program_id": "mathematics-oxford@1794830400"
+                },
+                {
+                    "type": "gap",
+                    "start": 1002000,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -3085,7 +3709,13 @@
                 {
                     "type": "gap",
                     "start": 1009304,
-                    "duration": 2296
+                    "duration": 496,
+                    "program_id": "mathematics-mit@1794841200"
+                },
+                {
+                    "type": "gap",
+                    "start": 1009800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3114,7 +3744,13 @@
                 {
                     "type": "gap",
                     "start": 1014725,
-                    "duration": 11275
+                    "duration": 6175,
+                    "program_id": "computer-science-cs50@1794848400"
+                },
+                {
+                    "type": "gap",
+                    "start": 1020900,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -3143,7 +3779,13 @@
                 {
                     "type": "gap",
                     "start": 1029355,
-                    "duration": 3845
+                    "duration": 2045,
+                    "program_id": "the-royal-institution@1794862800"
+                },
+                {
+                    "type": "gap",
+                    "start": 1031400,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3172,7 +3814,13 @@
                 {
                     "type": "gap",
                     "start": 1036078,
-                    "duration": 2522
+                    "duration": 722,
+                    "program_id": "history-and-civilization@1794870000"
+                },
+                {
+                    "type": "gap",
+                    "start": 1036800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3200,7 +3848,13 @@
                 {
                     "type": "gap",
                     "start": 1041593,
-                    "duration": 2407
+                    "duration": 1507,
+                    "program_id": "economics-and-society@1794875400"
+                },
+                {
+                    "type": "gap",
+                    "start": 1043100,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -3229,7 +3883,13 @@
                 {
                     "type": "gap",
                     "start": 1047108,
-                    "duration": 18492
+                    "duration": 1392,
+                    "program_id": "the-evening-lecture@1794880800"
+                },
+                {
+                    "type": "gap",
+                    "start": 1048500,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -3258,7 +3918,13 @@
                 {
                     "type": "gap",
                     "start": 1070313,
-                    "duration": 2487
+                    "duration": 1587,
+                    "program_id": "physics-and-astronomy-overnight@1794902400"
+                },
+                {
+                    "type": "gap",
+                    "start": 1071900,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -3286,7 +3952,13 @@
                 {
                     "type": "gap",
                     "start": 1076343,
-                    "duration": 3657
+                    "duration": 1857,
+                    "program_id": "overnight-university@1794909600"
+                },
+                {
+                    "type": "gap",
+                    "start": 1078200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3314,7 +3986,13 @@
                 {
                     "type": "gap",
                     "start": 1086416,
-                    "duration": 4384
+                    "duration": 1984,
+                    "program_id": "mathematics-oxford@1794916800"
+                },
+                {
+                    "type": "gap",
+                    "start": 1088400,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -3343,7 +4021,13 @@
                 {
                     "type": "gap",
                     "start": 1095723,
-                    "duration": 2277
+                    "duration": 477,
+                    "program_id": "mathematics-mit@1794927600"
+                },
+                {
+                    "type": "gap",
+                    "start": 1096200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3372,7 +4056,13 @@
                 {
                     "type": "gap",
                     "start": 1098104,
-                    "duration": 14296
+                    "duration": 9196,
+                    "program_id": "computer-science-cs50@1794934800"
+                },
+                {
+                    "type": "gap",
+                    "start": 1107300,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -3401,7 +4091,13 @@
                 {
                     "type": "gap",
                     "start": 1116231,
-                    "duration": 3369
+                    "duration": 1569,
+                    "program_id": "the-royal-institution@1794949200"
+                },
+                {
+                    "type": "gap",
+                    "start": 1117800,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3430,7 +4126,13 @@
                 {
                     "type": "gap",
                     "start": 1122630,
-                    "duration": 2370
+                    "duration": 570,
+                    "program_id": "history-and-civilization@1794956400"
+                },
+                {
+                    "type": "gap",
+                    "start": 1123200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3458,7 +4160,13 @@
                 {
                     "type": "gap",
                     "start": 1127977,
-                    "duration": 2423
+                    "duration": 1523,
+                    "program_id": "economics-and-society@1794961800"
+                },
+                {
+                    "type": "gap",
+                    "start": 1129500,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -3487,7 +4195,13 @@
                 {
                     "type": "gap",
                     "start": 1133263,
-                    "duration": 18737
+                    "duration": 1637,
+                    "program_id": "the-evening-lecture@1794967200"
+                },
+                {
+                    "type": "gap",
+                    "start": 1134900,
+                    "duration": 17100
                 },
                 {
                     "type": "video",
@@ -3516,7 +4230,13 @@
                 {
                     "type": "gap",
                     "start": 1156480,
-                    "duration": 2720
+                    "duration": 1820,
+                    "program_id": "physics-and-astronomy-overnight@1794988800"
+                },
+                {
+                    "type": "gap",
+                    "start": 1158300,
+                    "duration": 900
                 },
                 {
                     "type": "video",
@@ -3544,7 +4264,13 @@
                 {
                     "type": "gap",
                     "start": 1163380,
-                    "duration": 3020
+                    "duration": 1220,
+                    "program_id": "overnight-university@1794996000"
+                },
+                {
+                    "type": "gap",
+                    "start": 1164600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3572,7 +4298,13 @@
                 {
                     "type": "gap",
                     "start": 1172861,
-                    "duration": 4339
+                    "duration": 1939,
+                    "program_id": "mathematics-oxford@1795003200"
+                },
+                {
+                    "type": "gap",
+                    "start": 1174800,
+                    "duration": 2400
                 },
                 {
                     "type": "video",
@@ -3601,7 +4333,13 @@
                 {
                     "type": "gap",
                     "start": 1181942,
-                    "duration": 2458
+                    "duration": 658,
+                    "program_id": "mathematics-mit@1795014000"
+                },
+                {
+                    "type": "gap",
+                    "start": 1182600,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
@@ -3630,7 +4368,13 @@
                 {
                     "type": "gap",
                     "start": 1193418,
-                    "duration": 5382
+                    "duration": 282,
+                    "program_id": "computer-science-cs50@1795021200"
+                },
+                {
+                    "type": "gap",
+                    "start": 1193700,
+                    "duration": 5100
                 },
                 {
                     "type": "video",
@@ -3659,7 +4403,13 @@
                 {
                     "type": "gap",
                     "start": 1202786,
-                    "duration": 3214
+                    "duration": 1414,
+                    "program_id": "the-royal-institution@1795035600"
+                },
+                {
+                    "type": "gap",
+                    "start": 1204200,
+                    "duration": 1800
                 },
                 {
                     "type": "video",
