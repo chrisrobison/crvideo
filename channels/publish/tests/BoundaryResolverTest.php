@@ -249,6 +249,25 @@ final class BoundaryResolverTest
         Assert::same(2800, $p['end']);
     }
 
+    public function testOverrunItemsExtendTheProgramsEffectiveEndPastItsNominalDuration(): void
+    {
+        // packing.on_unfit=allow_overrun (EpisodePacker) can schedule an item whose
+        // actual end runs past nominalStart + the block's configured duration, as
+        // long as it doesn't actually collide with the next occurrence. The
+        // program's effective 'end' must track that real content end -- not the
+        // nominal duration -- or the EPG shows a phantom gap while the overrun
+        // item is still airing (and "currently airing" lookups miss it).
+        $groups = [$this->programGroup('b', ['mode' => 'hard'], 1000, 1800, [
+            $this->item('e1', 1000, 500), $this->item('e2', 1500, 2000), // ends 3500, 700s past the nominal 2800 end
+        ], 'My Show')];
+        $result = BoundaryResolver::resolve($groups);
+        $p = $result['programs'][0];
+        Assert::same(1000, $p['nominal_start']);
+        Assert::same(2800, $p['nominal_end'], 'nominal end is unaffected -- it is still the intended slot');
+        Assert::same(1000, $p['start']);
+        Assert::same(3500, $p['end'], 'the effective end must cover the actual overrun content, not understate it');
+    }
+
     public function testEveryItemInAProgramGroupCarriesItsOccurrenceIdAsProgramId(): void
     {
         $groups = [$this->programGroup('b', ['mode' => 'hard'], 1000, 1800, [
