@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "blocks": [
+    {
+      "id": "daily-hour",
+      "title": "Demo Hour",
+      "description": "A demo program for the program-level EPG fixture.",
+      "type": "series",
+      "series_id": "demo-series",
+      "recurrence": { "frequency": "daily", "time": "13:00", "timezone": "America/Los_Angeles" },
+      "duration": 1800,
+      "rotation": { "mode": "sequential", "loop": true, "anchor_date": "2026-11-02" },
+      "packing": { "enabled": true, "mode": "sequential", "on_unfit": "defer", "minimum_remaining": 30 },
+      "boundary": { "mode": "hard" }
+    }
+  ]
+}

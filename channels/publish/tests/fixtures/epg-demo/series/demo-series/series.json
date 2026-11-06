@@ -1,0 +1,28 @@
+{
+  "id": "demo-series",
+  "title": "Demo Series",
+  "description": "A fixture series with two short approved episodes.",
+  "episodes": [
+    {
+      "id": "ep1",
+      "title": "Episode One",
+      "status": "approved",
+      "duration": 900,
+      "source": { "provider": "youtube", "video_id": "aaa111", "url": "https://www.youtube.com/watch?v=aaa111" }
+    },
+    {
+      "id": "ep2",
+      "title": "Episode Two",
+      "status": "approved",
+      "duration": 600,
+      "source": { "provider": "youtube", "video_id": "bbb222", "url": "https://www.youtube.com/watch?v=bbb222" }
+    },
+    {
+      "id": "ep3",
+      "title": "Episode Three (not yet reviewed)",
+      "status": "candidate",
+      "duration": 900,
+      "source": { "provider": "youtube", "video_id": "ccc333", "url": "https://www.youtube.com/watch?v=ccc333" }
+    }
+  ]
+}

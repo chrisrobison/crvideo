@@ -1,0 +1,6 @@
+{
+    "number": 1,
+    "name": "Demo Channel",
+    "description": "Fixture channel for program-level EPG tests.",
+    "anchor": "2026-11-02T00:00:00-08:00"
+}

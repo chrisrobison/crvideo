@@ -1,0 +1,200 @@
+{
+    "_publish": {
+        "generated_at": "2026-11-06T02:00:48+00:00",
+        "window": {
+            "start": "2026-11-02T00:00:00-08:00",
+            "end": "2026-11-05T00:00:00-08:00"
+        },
+        "episode_sets": [
+            {
+                "block_id": "daily-hour",
+                "series_id": "demo-series",
+                "version": 1,
+                "episode_count": 2
+            }
+        ]
+    },
+    "schema_version": 1,
+    "channel": "Demo Channel",
+    "blocks": [
+        {
+            "block": 1,
+            "type": "normal",
+            "duration": 259200,
+            "used": 4500,
+            "remaining": 254700,
+            "relative_start": 0,
+            "items": [
+                {
+                    "type": "gap",
+                    "start": 0,
+                    "duration": 46800
+                },
+                {
+                    "type": "video",
+                    "id": "ep1",
+                    "start": 46800,
+                    "duration": 900,
+                    "title": "Episode One",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=aaa111",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "aaa111",
+                        "url": "https://www.youtube.com/watch?v=aaa111"
+                    },
+                    "program_id": "daily-hour@1793653200"
+                },
+                {
+                    "type": "video",
+                    "id": "ep2",
+                    "start": 47700,
+                    "duration": 600,
+                    "title": "Episode Two",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=bbb222",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "bbb222",
+                        "url": "https://www.youtube.com/watch?v=bbb222"
+                    },
+                    "program_id": "daily-hour@1793653200"
+                },
+                {
+                    "type": "gap",
+                    "start": 48300,
+                    "duration": 300,
+                    "program_id": "daily-hour@1793653200"
+                },
+                {
+                    "type": "gap",
+                    "start": 48600,
+                    "duration": 84600
+                },
+                {
+                    "type": "video",
+                    "id": "ep1",
+                    "start": 133200,
+                    "duration": 900,
+                    "title": "Episode One",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=aaa111",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "aaa111",
+                        "url": "https://www.youtube.com/watch?v=aaa111"
+                    },
+                    "program_id": "daily-hour@1793739600"
+                },
+                {
+                    "type": "video",
+                    "id": "ep2",
+                    "start": 134100,
+                    "duration": 600,
+                    "title": "Episode Two",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=bbb222",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "bbb222",
+                        "url": "https://www.youtube.com/watch?v=bbb222"
+                    },
+                    "program_id": "daily-hour@1793739600"
+                },
+                {
+                    "type": "gap",
+                    "start": 134700,
+                    "duration": 300,
+                    "program_id": "daily-hour@1793739600"
+                },
+                {
+                    "type": "gap",
+                    "start": 135000,
+                    "duration": 84600
+                },
+                {
+                    "type": "video",
+                    "id": "ep1",
+                    "start": 219600,
+                    "duration": 900,
+                    "title": "Episode One",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=aaa111",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "aaa111",
+                        "url": "https://www.youtube.com/watch?v=aaa111"
+                    },
+                    "program_id": "daily-hour@1793826000"
+                },
+                {
+                    "type": "video",
+                    "id": "ep2",
+                    "start": 220500,
+                    "duration": 600,
+                    "title": "Episode Two",
+                    "media_url": null,
+                    "source_url": "https://www.youtube.com/watch?v=bbb222",
+                    "source": {
+                        "provider": "youtube",
+                        "video_id": "bbb222",
+                        "url": "https://www.youtube.com/watch?v=bbb222"
+                    },
+                    "program_id": "daily-hour@1793826000"
+                },
+                {
+                    "type": "gap",
+                    "start": 221100,
+                    "duration": 300,
+                    "program_id": "daily-hour@1793826000"
+                },
+                {
+                    "type": "gap",
+                    "start": 221400,
+                    "duration": 37800
+                }
+            ]
+        }
+    ],
+    "programs": [
+        {
+            "occurrence_id": "daily-hour@1793653200",
+            "block_id": "daily-hour",
+            "title": "Demo Hour",
+            "description": "A demo program for the program-level EPG fixture.",
+            "series_id": "demo-series",
+            "series_title": "Demo Series",
+            "boundary_mode": "hard",
+            "nominal_start": 46800,
+            "nominal_end": 48600,
+            "start": 46800,
+            "end": 48600
+        },
+        {
+            "occurrence_id": "daily-hour@1793739600",
+            "block_id": "daily-hour",
+            "title": "Demo Hour",
+            "description": "A demo program for the program-level EPG fixture.",
+            "series_id": "demo-series",
+            "series_title": "Demo Series",
+            "boundary_mode": "hard",
+            "nominal_start": 133200,
+            "nominal_end": 135000,
+            "start": 133200,
+            "end": 135000
+        },
+        {
+            "occurrence_id": "daily-hour@1793826000",
+            "block_id": "daily-hour",
+            "title": "Demo Hour",
+            "description": "A demo program for the program-level EPG fixture.",
+            "series_id": "demo-series",
+            "series_title": "Demo Series",
+            "boundary_mode": "hard",
+            "nominal_start": 219600,
+            "nominal_end": 221400,
+            "start": 219600,
+            "end": 221400
+        }
+    ]
+}
