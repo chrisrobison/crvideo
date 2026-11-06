@@ -4885,5 +4885,17 @@
                 "No license/rights information found; do not assume this item is redistributable."
             ]
         }
+    ],
+    "series": [
+        { "ref": "../../series/film-day-safety-first/series.json" },
+        { "ref": "../../series/film-day-health-class/series.json" },
+        { "ref": "../../series/film-day-mind-your-manners/series.json" },
+        { "ref": "../../series/film-day-marriage-and-the-office/series.json" },
+        { "ref": "../../series/film-day-civics-hour/series.json" },
+        { "ref": "../../series/film-day-science-shorts/series.json" },
+        { "ref": "../../series/film-day-wired-world/series.json" },
+        { "ref": "../../series/film-day-the-working-world/series.json" },
+        { "ref": "../../series/film-day-on-the-move/series.json" },
+        { "ref": "../../series/film-day-shorts-and-curiosities/series.json" }
     ]
 }

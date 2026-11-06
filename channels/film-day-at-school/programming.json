@@ -1,0 +1,330 @@
+{
+    "_note": "Recurring-series programming for Film Day at School (channels/publish.php), replacing the channel's original one-off ia-import 'balanced' bin-packed schedule.json with the standard architecture (see docs/guide-update.md and the RetroVision precedent, channels/retrovision/programming.json). All 167 real Internet Archive items from catalog.json were re-curated by actual subject matter (see series/film-day-*/series.json) into ten thematic series -- Safety First, Health Class, Mind Your Manners, Marriage & the Office, Civics Hour, Science Shorts, Wired World, The Working World, On the Move, and Shorts & Curiosities -- each a themed 'class period' tiling a wall-to-wall 24-hour school day in twelve 2-hour blocks. The two largest episode pools (The Working World, 31 episodes; Mind Your Manners, 21 episodes) each air twice daily, in independent AM/PM blocks with their own rotation cursors, the same pattern RetroVision uses for its largest show. Every block opts into multi-episode packing (packing.enabled, mode sequential, on_unfit defer) so a 2-hour slot plays as many complete, approved short films back-to-back as actually fit -- these are archival films/shorts (20s-3284s), not hour-long shows. boundary.mode is hard on every block: the longest single approved episode in any theme is 3284s (The Middleton Family at the New York World's Fair, in Civics Hour), comfortably under the 7200s slot duration, so no block has ever actually needed to run over.",
+    "schema_version": 1,
+    "blocks": [
+        {
+            "id": "health-class",
+            "title": "Health Class",
+            "description": "Personal hygiene, nutrition, disease prevention, and mental-health instruction from the Internet Archive's Prelinger Archives -- the classroom health unit, decade by decade, from germ theory to \"keeping mentally fit.\"",
+            "type": "series",
+            "series_id": "film-day-health-class",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "00:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "civics-hour",
+            "title": "Civics Hour",
+            "description": "American history, government, and civic life from the Internet Archive's Prelinger Archives -- the Bill of Rights, Congress, World's Fairs, wartime homefront propaganda, and the project of building postwar America.",
+            "type": "series",
+            "series_id": "film-day-civics-hour",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "02:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "science-shorts",
+            "title": "Science Shorts",
+            "description": "Natural science and classroom physics from the Internet Archive's Prelinger Archives -- sound, light, color, electricity, and the small creatures (and smaller atoms) a mid-century science class might cover.",
+            "type": "series",
+            "series_id": "film-day-science-shorts",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "04:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "the-working-world-am",
+            "title": "The Working World",
+            "description": "Vocational-guidance and industrial-process films from the Internet Archive's Prelinger Archives -- trades, careers, factories, and the consumer economics of banking, money, and meat, as taught to generations of American students.",
+            "type": "series",
+            "series_id": "film-day-the-working-world",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "06:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "mind-your-manners-am",
+            "title": "Mind Your Manners",
+            "description": "Teenage social-guidance films from the Internet Archive's Prelinger Archives: dating, grooming, popularity, honesty, and the agony of adolescence as mid-century classroom-film producers imagined it.",
+            "type": "series",
+            "series_id": "film-day-mind-your-manners",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "08:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "safety-first",
+            "title": "Safety First",
+            "description": "Civil-defense drills, \"scared straight\" crime dramas, and workplace/traffic safety shorts from the Internet Archive's Prelinger Archives -- duck-and-cover atomic preparedness, juvenile-delinquency cautionary tales, and everyday hazard-avoidance films shown to generations of American schoolchildren.",
+            "type": "series",
+            "series_id": "film-day-safety-first",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "10:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "wired-world",
+            "title": "Wired World",
+            "description": "Telephone, radio, television, and the first computers, from the Internet Archive's Prelinger Archives -- how 20th-century America talked, broadcast, and began to compute.",
+            "type": "series",
+            "series_id": "film-day-wired-world",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "12:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "on-the-move",
+            "title": "On the Move",
+            "description": "Roads, railroads, airports, and the infrastructure of getting around, from the Internet Archive's Prelinger Archives -- mid-century America in transit.",
+            "type": "series",
+            "series_id": "film-day-on-the-move",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "14:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "marriage-and-the-office",
+            "title": "Marriage & the Office",
+            "description": "Social-guidance films for grown-ups from the Internet Archive's Prelinger Archives -- marriage, housework, office etiquette, and the workplace politics of mid-century American domestic and clerical life.",
+            "type": "series",
+            "series_id": "film-day-marriage-and-the-office",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "16:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "shorts-and-curiosities",
+            "title": "Shorts & Curiosities",
+            "description": "Newsreels, novelty shorts, and one-of-a-kind oddities from the Internet Archive's Prelinger Archives -- too short or too strange to fit any other period on the schedule.",
+            "type": "series",
+            "series_id": "film-day-shorts-and-curiosities",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "18:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "the-working-world-pm",
+            "title": "The Working World",
+            "description": "Vocational-guidance and industrial-process films from the Internet Archive's Prelinger Archives -- trades, careers, factories, and the consumer economics of banking, money, and meat, as taught to generations of American students.",
+            "type": "series",
+            "series_id": "film-day-the-working-world",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "20:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        },
+        {
+            "id": "mind-your-manners-pm",
+            "title": "Mind Your Manners",
+            "description": "Teenage social-guidance films from the Internet Archive's Prelinger Archives: dating, grooming, popularity, honesty, and the agony of adolescence as mid-century classroom-film producers imagined it.",
+            "type": "series",
+            "series_id": "film-day-mind-your-manners",
+            "recurrence": {
+                "frequency": "daily",
+                "time": "22:00",
+                "timezone": "America/Los_Angeles"
+            },
+            "duration": 7200,
+            "rotation": {
+                "mode": "sequential",
+                "loop": true,
+                "anchor_date": "2026-11-05"
+            },
+            "packing": {
+                "enabled": true,
+                "mode": "sequential",
+                "on_unfit": "defer",
+                "minimum_remaining": 30
+            },
+            "boundary": {
+                "mode": "hard"
+            }
+        }
+    ]
+}
