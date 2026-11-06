@@ -1,5 +1,5 @@
 {
-    "_note": "Recurring-series programming for Film Day at School (channels/publish.php), replacing the channel's original one-off ia-import 'balanced' bin-packed schedule.json with the standard architecture (see docs/guide-update.md and the RetroVision precedent, channels/retrovision/programming.json). All 167 real Internet Archive items from catalog.json were re-curated by actual subject matter (see series/film-day-*/series.json) into ten thematic series -- Safety First, Health Class, Mind Your Manners, Marriage & the Office, Civics Hour, Science Shorts, Wired World, The Working World, On the Move, and Shorts & Curiosities -- each a themed 'class period' tiling a wall-to-wall 24-hour school day in twelve 2-hour blocks. The two largest episode pools (The Working World, 31 episodes; Mind Your Manners, 21 episodes) each air twice daily, in independent AM/PM blocks with their own rotation cursors, the same pattern RetroVision uses for its largest show. Every block opts into multi-episode packing (packing.enabled, mode sequential, on_unfit defer) so a 2-hour slot plays as many complete, approved short films back-to-back as actually fit -- these are archival films/shorts (20s-3284s), not hour-long shows. boundary.mode is hard on every block: the longest single approved episode in any theme is 3284s (The Middleton Family at the New York World's Fair, in Civics Hour), comfortably under the 7200s slot duration, so no block has ever actually needed to run over.",
+    "_note": "Recurring-series programming for Film Day at School (channels/publish.php), replacing the channel's original one-off ia-import 'balanced' bin-packed schedule.json with the standard architecture (see docs/guide-update.md and the RetroVision precedent, channels/retrovision/programming.json). All 167 real Internet Archive items from catalog.json were re-curated by actual subject matter (see series/film-day-*/series.json) into ten thematic series -- Safety First, Health Class, Mind Your Manners, Marriage & the Office, Civics Hour, Science Shorts, Wired World, The Working World, On the Move, and Shorts & Curiosities -- each a themed 'class period', nine of twelve blocks a full 2 hours. The two largest episode pools (The Working World, 31 episodes, 24,007s total; Mind Your Manners, 21 episodes, 16,244s total) each air twice daily in independent AM/PM blocks -- but same-duration AM/PM blocks of one series advance in lockstep and replay the IDENTICAL lineup every day (same bug Maker Channel's own _note already warns about and avoids): each pair's PM block is deliberately a different length (5400s vs. the AM block's 7200s) so the two consume their shared pool at different rates and actually drift apart, the same technique Maker already uses. Shorts & Curiosities' pool is only 7 episodes/4,899s total -- far short of a 2-hour slot -- so its block is also 5400s, not 7200s; all three shortened blocks leave a genuine, intentional gap (station break) between their own real content and the next fixed-time block, rather than silently padding out 2-hour slots they can't actually fill or mislabeling true dead air as program content. Every block opts into multi-episode packing (packing.enabled, mode sequential, on_unfit defer) so a slot plays as many complete, approved short films back-to-back as actually fit -- these are archival films/shorts (20s-3284s), not hour-long shows. boundary.mode is hard on every block: the longest single approved episode in any theme is 3284s (The Middleton Family at the New York World's Fair, in Civics Hour), comfortably under even the shortened 5400s slots, so no block has ever actually needed to run over.",
     "schema_version": 1,
     "blocks": [
         {
@@ -256,7 +256,7 @@
                 "time": "18:00",
                 "timezone": "America/Los_Angeles"
             },
-            "duration": 7200,
+            "duration": 5400,
             "rotation": {
                 "mode": "sequential",
                 "loop": true,
@@ -283,7 +283,7 @@
                 "time": "20:00",
                 "timezone": "America/Los_Angeles"
             },
-            "duration": 7200,
+            "duration": 5400,
             "rotation": {
                 "mode": "sequential",
                 "loop": true,
@@ -310,7 +310,7 @@
                 "time": "22:00",
                 "timezone": "America/Los_Angeles"
             },
-            "duration": 7200,
+            "duration": 5400,
             "rotation": {
                 "mode": "sequential",
                 "loop": true,
