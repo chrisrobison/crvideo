@@ -1,0 +1,839 @@
+{
+    "schema_version": 1,
+    "id": "film-day-mind-your-manners",
+    "title": "Mind Your Manners",
+    "description": "Teenage social-guidance films from the Internet Archive's Prelinger Archives: dating, grooming, popularity, honesty, and the agony of adolescence as mid-century classroom-film producers imagined it.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "ShyGuy1947",
+            "episode_number": 1,
+            "title": "Shy Guy",
+            "description": "Phil (Dick York), new in his high school, follows his father's suggestion and observes the most popular students to determine what makes them popular. By offering to help others he becomes popular himself and sheds his shyness.",
+            "creator": "Coronet Instructional Films",
+            "duration": 815.32,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ShyGuy1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ShyGuy1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ShyGuy1947/ShyGuy1947.mp4",
+                "page_url": "https://archive.org/details/ShyGuy1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Teenagers"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ShyGuy1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "WhattoDo1950",
+            "episode_number": 2,
+            "title": "What to Do on a Date",
+            "description": "A high school senior learns how and where to ask a girl for a date, where to take her for a good time, and how to avoid spending too much money or being bored by commercialized amusements. Director: Ted Peshak. Cameraman: Dale Sharkey. Writers: George Tychsen, Bradford. Editor: Dick Kirschner. Narrator: George Stone.",
+            "creator": "Coronet Instructional Films",
+            "duration": 645.95,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhattoDo1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhattoDo1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhattoDo1950/WhattoDo1950.mp4",
+                "page_url": "https://archive.org/details/WhattoDo1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Dating",
+                    "Teenagers"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhattoDo1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HowtoBeW1949",
+            "episode_number": 3,
+            "title": "How to Be Well Groomed",
+            "description": "Siblings Don and Sue show how they keep themselves well groomed throughout the school week and for their Friday night dates.",
+            "creator": "Coronet Instructional Films",
+            "duration": 640.97,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowtoBeW1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowtoBeW1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowtoBeW1949/HowtoBeW1949.mp4",
+                "page_url": "https://archive.org/details/HowtoBeW1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Health and hygiene"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowtoBeW1949; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Benefits1950",
+            "episode_number": 4,
+            "title": "Benefits of Looking Ahead, The",
+            "description": "Nick cannot plan ahead, but is convinced to do so after imagining himself as a drifter or a bum.",
+            "creator": "Coronet Instructional Films",
+            "duration": 629.1,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Benefits1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Benefits1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Benefits1950/Benefits1950.mp4",
+                "page_url": "https://archive.org/details/Benefits1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Morality",
+                    "Teenagers"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Benefits1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "ActYourA1949",
+            "episode_number": 5,
+            "title": "Act Your Age",
+            "description": "Jim, an emotionally immature teen, learns to evaluate his personality and to better work out his problems.",
+            "creator": "Coronet Instructional Films",
+            "duration": 801.74,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ActYourA1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ActYourA1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ActYourA1949/ActYourA1949.mp4",
+                "page_url": "https://archive.org/details/ActYourA1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Psychology",
+                    "Teenagers"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ActYourA1949; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "DinnerPa1945",
+            "episode_number": 6,
+            "title": "Dinner Party",
+            "description": "Dramatized presentation of proper table etiquette for teenagers, heavy on criticism and guilt.",
+            "creator": "Simmel-Meservey",
+            "duration": 966.1,
+            "year": 1945,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/DinnerPa1945",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "DinnerPa1945",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/DinnerPa1945/DinnerPa1945.mp4",
+                "page_url": "https://archive.org/details/DinnerPa1945",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance: Etiquette"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item DinnerPa1945; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "BetterUs1950",
+            "episode_number": 7,
+            "title": "Better Use of Leisure Time",
+            "description": "How to make the most of your free time.",
+            "creator": "Coronet Instructional Films",
+            "duration": 632.17,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/BetterUs1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "BetterUs1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/BetterUs1950/BetterUs1950.mp4",
+                "page_url": "https://archive.org/details/BetterUs1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item BetterUs1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "PlayingT1950",
+            "episode_number": 8,
+            "title": "Playing Together",
+            "description": "Good behavior during a child's leisure time.",
+            "creator": "Children's Productions",
+            "duration": 599.23,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/PlayingT1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "PlayingT1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/PlayingT1950/PlayingT1950.mp4",
+                "page_url": "https://archive.org/details/PlayingT1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance: Etiquette",
+                    "Children",
+                    "Recreation"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item PlayingT1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0769_So_Youre_Going_to_High_School_18_16_46_00",
+            "episode_number": 9,
+            "title": "So, You're Going to High School",
+            "description": "18:17:02:07 1950s Teenagers working in wood shop, cutting wood with saws. Teenage girls in Home Education courses working in kitchen, girl shows class her pie. 18:17:22:25 High-angle shot of large technical high school in New York; VS students working in various workshop classes in technical high school, boys looking at blueprint; building a house in workshop; working in industrial chemistry lab; pouring molten metal from furnace into a mold; teenagers, mostly female, playing in high school orchestra music class; boy in letterman jackets showing other younger boy the timpani drums; boy in gym class doing demonstration, boy’s P.E. uniform T-shirt reads Bryant with a picture of an owl; boys punching boxing bag; teenage boy on the gymnastic horse coached by teacher while class watches him. 18:20:08:23 Teenage boys working on car engine in auto shop class; boys welding; boys in printmaking class; VS boys and girl in pottery and sculpture class; young woman wearing glasses soldering; girl at sewing machine in sewing class; teacher instructs two girls on fitting a dress onto a mannequin in front of the blackboard. 18:22:38:28 VS 1950s interpretive dance class, girls in black leotards dancing to woman beating a drum; girls doing choreographer interpretive dances. Boys in wood shop class. 18:23:49:25 Teenage boy and girl with teacher demonstrate science experiment in front of class, blackboard with chalk writing on it behind them. 18:24:42:21 Boy approaches school teacher at desk lined with books holding a poster, text on poster reads “What kind of high schools are there in our city? To which high schools can graduates of our school go?” 18:25:52:19 CU held between disembodied fingers for Directory of the Public High School of the City of New York. 18:28:01:13 MS boy fills out form at desk with mother looking over his shoulder; CU disembodied hand holding pan fill out form for P.S 152 high school in New York, boys writes in French as his desired language class. 18:28:44:05 VS 1950s boy taking entrance exam test for high school, CU boy’s scratch sheet with long division and math problems worked out in pen; CU type-written paper addressed to parents congratulating them on their son’s admission to high school. 18:29:18:23 Three girls at blackboard, one reading dictation, another writing dictation in chalk on chalkboard in stenographer’s code, third watches for errors. 18:29:29:08 CU White and Black girls practicing cello. 18:29:55:02 Boys and girls filing into auditorium through separate doorways. 18:30:29:22 High-angle shot high school students working on test; CU disembodied hand leafs through multiple choice answer sheet. 18:31:51:24 VS two woman in winter coats window shopping. 18:32:09:22 Parents and daughter at dinner table, girl shows father paper form; CU father and daughter looking form; Father lights up cigarette. 18:34:16:19 CU boy looks at his reflection in mirror as he puts boutonniere in his 1950s style brown suit. 18:34:34:20 VS boys and girls about 13 years old wearing white dresses and black suits, boys with boutonnieres girls with flowers on their dresses, march through separate doorways in single file line.",
+            "creator": "Unknown",
+            "duration": 1100,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0769_So_Youre_Going_to_High_School_18_16_46_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0769_So_Youre_Going_to_High_School_18_16_46_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0769_So_Youre_Going_to_High_School_18_16_46_00/0769_So_Youre_Going_to_High_School_18_16_46_00_3mb.mp4",
+                "page_url": "https://archive.org/details/0769_So_Youre_Going_to_High_School_18_16_46_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0769_So_Youre_Going_to_High_School_18_16_46_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "Everyday1948",
+            "episode_number": 10,
+            "title": "Everyday Courtesy",
+            "description": "Courtesy in connection with invitations, telephone conversations, introductions and entertaining guests.",
+            "creator": "Coronet Instructional Films",
+            "duration": 535.9,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Everyday1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Everyday1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Everyday1948/Everyday1948.mp4",
+                "page_url": "https://archive.org/details/Everyday1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Social guidance: Etiquette"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Everyday1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "ArrangingThe",
+            "episode_number": 11,
+            "title": "Arranging The Tea Table",
+            "description": "Explains the reasoning behind attractive and correct tea-table arranging. One of the satellite films that accompanied Let's Give a Tea. See also Arranging a Buffet Supper.",
+            "creator": "Unknown",
+            "duration": 463.43,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ArrangingThe",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ArrangingThe",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ArrangingThe/ArrangingThe.mp4",
+                "page_url": "https://archive.org/details/ArrangingThe",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "need keyword"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ArrangingThe; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Maintain1947",
+            "episode_number": 12,
+            "title": "Maintaining Classroom Discipline",
+            "description": "Good and bad methods of disciplining inappropriate classsroom behavior.",
+            "creator": "McGraw-Hill Films",
+            "duration": 824.09,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Maintain1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Maintain1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Maintain1947/Maintain1947.mp4",
+                "page_url": "https://archive.org/details/Maintain1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Society: Education"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Maintain1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Patternf1948",
+            "episode_number": 13,
+            "title": "Pattern for Smartness",
+            "description": "Home-sewed clothes as high fashion.",
+            "creator": "Hartley Productions",
+            "duration": 1124.46,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Patternf1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Patternf1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Patternf1948/Patternf1948.mp4",
+                "page_url": "https://archive.org/details/Patternf1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Sewing",
+                    "Fashion"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Patternf1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "SnobThe1958",
+            "episode_number": 14,
+            "title": "Snob, The",
+            "description": "Why is a high-school girl such a snob?",
+            "creator": "Centron Productions",
+            "duration": 803.57,
+            "year": 1958,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/SnobThe1958",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "SnobThe1958",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/SnobThe1958/SnobThe1958.mp4",
+                "page_url": "https://archive.org/details/SnobThe1958",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SnobThe1958; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HowtoSay1951",
+            "episode_number": 15,
+            "title": "How to Say No: Moral Maturity",
+            "description": "How to say no to unwanted smoking, drinking and petting, and still keep your friends.",
+            "creator": "Coronet Instructional Films",
+            "duration": 630.36,
+            "year": 1951,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowtoSay1951",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowtoSay1951",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowtoSay1951/HowtoSay1951.mp4",
+                "page_url": "https://archive.org/details/HowtoSay1951",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Gender roles",
+                    "Social guidance: Etiquette"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowtoSay1951; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "YourThri1948",
+            "episode_number": 16,
+            "title": "Your Thrift Habits",
+            "description": "Modern-day moral tale resembling Ben Franklin's autobiography.",
+            "creator": "Coronet Instructional Films",
+            "duration": 634.77,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/YourThri1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "YourThri1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/YourThri1948/YourThri1948.mp4",
+                "page_url": "https://archive.org/details/YourThri1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Morality",
+                    "Economics"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item YourThri1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "MindYour1953",
+            "episode_number": 17,
+            "title": "Mind Your Manners",
+            "description": "How teenagers can cultivate good manners by manifesting a real desire to get along with others.",
+            "creator": "Coronet Instructional Films",
+            "duration": 641.88,
+            "year": 1953,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MindYour1953",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MindYour1953",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MindYour1953/MindYour1953.mp4",
+                "page_url": "https://archive.org/details/MindYour1953",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Social guidance: Etiquette",
+                    "Teenagers"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MindYour1953; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "TableMan1947",
+            "episode_number": 18,
+            "title": "Table Manners",
+            "description": "Emily Post narrates this traditionally minded film.",
+            "creator": "Christy Associates, Inc.",
+            "duration": 607.67,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TableMan1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TableMan1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TableMan1947/TableMan1947.mp4",
+                "page_url": "https://archive.org/details/TableMan1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance: Etiquette",
+                    "Post, Emily"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TableMan1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HowHones1950",
+            "episode_number": 19,
+            "title": "How Honest Are You?",
+            "description": "For teenagers, honesty can come easy or hard, depending on the stakes.",
+            "creator": "Coronet Instructional Films",
+            "duration": 829.8,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowHones1950",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowHones1950",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowHones1950/HowHones1950.mp4",
+                "page_url": "https://archive.org/details/HowHones1950",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowHones1950; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0720_American_Girl_An_11_01_02_00",
+            "episode_number": 20,
+            "title": "American Girl, An",
+            "description": "",
+            "creator": "Dynamic Films",
+            "duration": 1720.02,
+            "year": 1950,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0720_American_Girl_An_11_01_02_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0720_American_Girl_An_11_01_02_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0720_American_Girl_An_11_01_02_00/0720_American_Girl_An_11_01_02_00.mp4",
+                "page_url": "https://archive.org/details/0720_American_Girl_An_11_01_02_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0720_American_Girl_An_11_01_02_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "0527_Are_You_Popular_E00020_01_09_07_27",
+            "episode_number": 21,
+            "title": "Are You Popular?",
+            "description": "DRAMATIZES BEHAVIOR OF TWO TEEN-AGERS TO ILLUSTRATE CHARACTERISTICS OF PERSONALITY WHICH LEAD TO POPULARITY & SUCCESS IN DATING. CONTRASTS CAROLYN, ATTRACTIVE NEWCOMER IN HIGH SCHOOL, WITH GINNY, WHO IS WILLING TO DATE ALL THE BOYS BUT IS UNPOPULAR WITH BOTH BOYS & GIRLS. SHOWS HOW CAROLYN & WALLY ARE CAREFUL OF THEIR APPEARANCE, POLITE, CONSIDERATE IN ARRANGING DATES, ETC.",
+            "creator": "Coronet Instructional Films",
+            "duration": 597.87,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0527_Are_You_Popular_E00020_01_09_07_27",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0527_Are_You_Popular_E00020_01_09_07_27",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0527_Are_You_Popular_E00020_01_09_07_27/0527_Are_You_Popular_E00020_01_09_07_27.mp4",
+                "page_url": "https://archive.org/details/0527_Are_You_Popular_E00020_01_09_07_27",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0527_Are_You_Popular_E00020_01_09_07_27; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        }
+    ]
+}

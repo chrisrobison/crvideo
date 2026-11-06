@@ -1,0 +1,734 @@
+{
+    "schema_version": 1,
+    "id": "film-day-civics-hour",
+    "title": "Civics Hour",
+    "description": "American history, government, and civic life from the Internet Archive's Prelinger Archives -- the Bill of Rights, Congress, World's Fairs, wartime homefront propaganda, and the project of building postwar America.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "Conquerb1943",
+            "episode_number": 1,
+            "title": "Conquer by the Clock",
+            "description": "Encourages American workers to make the best possible use of their time in a war where industrial production and combat are synchronized on an international level.",
+            "creator": "RKO-Pathe",
+            "duration": 640.47,
+            "year": 1943,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Conquerb1943",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Conquerb1943",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Conquerb1943/Conquerb1943.mp4",
+                "page_url": "https://archive.org/details/Conquerb1943",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "World War II: Homefront",
+                    "Timekeeping",
+                    "Globalization"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Conquerb1943; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0022_Dont_Be_a_Sucker_22_33_53_00",
+            "episode_number": 2,
+            "title": "Don't Be a Sucker",
+            "description": "Like The House I Live In, this film warns that Americans will lose their country if they let themselves be turned into \"suckers\" by the forces of fanaticism and hatred. This thesis is rendered more powerful by the ever-present example of Nazi Germany, whose capsule history is dramatized as part of this film. There's a great deal of good sense in this film and more than a bit of wartime populism: \"Let's not think about 'we' and 'they.' Let's think about 'us'!\"] It's interesting to think of this film in the light of Cold War anti-Communist politics, which really came into their own in the year this film was made. Were the witch-hunting politicians and citizens of the late Forties and early Fifties protecting the people, or were they themselves acting like \"suckers?\"",
+            "creator": "U.S. War Department",
+            "duration": 1049.09,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0022_Dont_Be_a_Sucker_22_33_53_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0022_Dont_Be_a_Sucker_22_33_53_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0022_Dont_Be_a_Sucker_22_33_53_00/0022_Dont_Be_a_Sucker_22_33_53_00.mp4",
+                "page_url": "https://archive.org/details/0022_Dont_Be_a_Sucker_22_33_53_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "facism",
+                    "facist",
+                    "WWII",
+                    "Nazi",
+                    "antifacism"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0022_Dont_Be_a_Sucker_22_33_53_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "middleton_family_worlds_fair_1939",
+            "episode_number": 3,
+            "title": "The Middleton Family at the New York World's Fair",
+            "description": "1939, sound, 55 min, Technicolor, 35mm. Transferred from a 35mm nitrate print. See: Andrew Wood, \"The Middleton Family at the New York World's Fair,\" http://www.sjsu.edu/faculty/wooda/middleton/index1.html. This drama illustrates the contribution of free enterprise, technology, and Westinghouse products to the American way of life. The Middleton Family at the New York World's Fair pits an anti-capitalist bohemian artist boyfriend against an all-American electrical engineer who believes in improving society by working through corporations. The Middletons experience Westinghouse's technological marvels at the Fair and win back their daughter from her leftist boyfriend. Memorable moments: the dishwashing contest between Mrs. Modern and Mrs. Drudge; Electro, the smoking robot; and the Westinghouse time capsule.",
+            "creator": "Unknown",
+            "duration": 3283.77,
+            "year": 1939,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/middleton_family_worlds_fair_1939",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "middleton_family_worlds_fair_1939",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/middleton_family_worlds_fair_1939/middleton_family_at_the_worlds_fair_1939.mp4",
+                "page_url": "https://archive.org/details/middleton_family_worlds_fair_1939",
+                "license": "Public Domain.",
+                "collections": [
+                    "prelinger",
+                    "moviesandfilms"
+                ],
+                "subjects": [
+                    "World's Fairs",
+                    "technology",
+                    "capitalism",
+                    "communism",
+                    "time capsules"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared \"Public Domain.\" (archive.org item middleton_family_worlds_fair_1939; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "203431_Education_is_Everybodys_Business",
+            "episode_number": 4,
+            "title": "Education is Everybody's Business",
+            "description": "Content advisory: Stylized animated figures make everyone look silly, but when mobilized to depict communities of color can produce racist visual tropes, seen here briefly at the 16-minute mark. Animated film produced to inspire investment in American education systems at all levels. With modernist animation styles consistent with children's television programming of the 1960s, in this film the blocky and whimsical animations express ideas about wealth creation, innovation, and population growth, demographic change and economic growth. The production's depictions of cities, schools, colleges and universities are all stylized and whimsically warped in the way that animation can defamiliarize what may otherwise be overly familiar scenes, as a technique to foreground new ideas. From The National Union Catalog, 1958–1963, v. 53, Motion Pictures and Filmstrips, Part One: Titles / Rowman and Littlefield, Inc., New York, 1963: \"Education is everybody's business (Motion picture) Council for Financial Aid to Education. Made and Releeased by John Sutherland Productions, 1960. 17 min., color, 16mm. Summary: An animated film which discusses the past, present, and future of higher education. Shows the dramatic changes since the turn of the century in America's economic and social life, emphasizing the important role of higher education in providing the essential training, research, and specialized services needed in a dynamic, expanding society. Projects the problems that education will face in the coming decade, and suggests various solutions to these problems.\" -- Another issue. 1. Education, Higher, 2. Council for Financial Aid to Education. 3. Sutherland (John) Productions, Inc., Association Films / 378 / Fi A 60-3266",
+            "creator": "John Sutherland Productions",
+            "duration": 1063.96,
+            "year": 1960,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/203431_Education_is_Everybodys_Business",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "203431_Education_is_Everybodys_Business",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/203431_Education_is_Everybodys_Business/203431_Education_is_Everybodys_Business_master.intros.mp4",
+                "page_url": "https://archive.org/details/203431_Education_is_Everybodys_Business",
+                "license": "\"Copyright 1960 by Council for Financial Aid to Education\"",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "19th century",
+                    "1950s",
+                    "1960s",
+                    "Education",
+                    "Universities and colleges",
+                    "Vocations"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "restricted",
+                "notes": "IA metadata carries an explicit copyright notice: \"\"Copyright 1960 by Council for Financial Aid to Education\"\" (archive.org item 203431_Education_is_Everybodys_Business; reviewed 2026-11-06). No creator permission on file -- not public domain."
+            }
+        },
+        {
+            "id": "ManofAct1955",
+            "episode_number": 5,
+            "title": "Man of Action",
+            "description": "Animated plea for urban renewal connected with 1950s efforts to \"redevelop\" American city centers.",
+            "creator": "Transfilm Productions",
+            "duration": 809.01,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ManofAct1955",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ManofAct1955",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ManofAct1955/ManofAct1955.mp4",
+                "page_url": "https://archive.org/details/ManofAct1955",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Urban renewal",
+                    "Animation"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ManofAct1955; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Aroundth1940",
+            "episode_number": 6,
+            "title": "Around the World in New York",
+            "description": "Views of immigrant and ethnic communities in New York City.",
+            "creator": "Unknown",
+            "duration": 781.31,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Aroundth1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Aroundth1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Aroundth1940/Aroundth1940.mp4",
+                "page_url": "https://archive.org/details/Aroundth1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "New York City",
+                    "Immigration",
+                    "Chinese Americans"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Aroundth1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Lifeinth1949",
+            "episode_number": 7,
+            "title": "Life in the Central Valley of California",
+            "description": "Shows the agriculture, trade and infrastructure of California's Central Valley, all made possible by irrigation.",
+            "creator": "Coronet Instructional Films",
+            "duration": 622.32,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Lifeinth1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Lifeinth1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Lifeinth1949/Lifeinth1949.mp4",
+                "page_url": "https://archive.org/details/Lifeinth1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "California: History and culture",
+                    "California: Central Valley"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Lifeinth1949; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "our_bill_of_rights",
+            "episode_number": 8,
+            "title": "Our Bill Of Rights",
+            "description": "Presents the arguments both for and against the addition of the first ten amendments, the Bill of Rights, to the Constitution. Portrays Franklin, Washington and others in their historic roles.",
+            "creator": "Unknown",
+            "duration": 1236.05,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/our_bill_of_rights",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "our_bill_of_rights",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/our_bill_of_rights/our_bill_of_rights.mp4",
+                "page_url": "https://archive.org/details/our_bill_of_rights",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item our_bill_of_rights; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0042_Capitalism_E00102_18_20_52_00",
+            "episode_number": 9,
+            "title": "Capitalism",
+            "description": "Widgets give way to weenies as the \"Western High School Radio Forum\" discusses the meaning of capitalism in terms designed to make sense to teenagers. Capitalism is one of many \"free-enterprise education\" films released in the first few years of the Cold War. Unlike many films produced under corporate sponsorship, it avoids taking jabs at socialism, Russia or New Deal government programs. Nonetheless, it uses the common Coronet device of showing a group collectively engaged in coming to terms with an idea -- a process with predetermined conclusions. In this respect, I imagine that it's not so different from Soviet educational films. Discussion of capitalism and what it means to people in all walks of life. Setting is a high-school radio forum, with a spirited informal discussion of the problem by members of the panel just before going on the air. \"In this film we point the way toward a clearer understanding of capitalism by presenting some of its important aspects. We do not attempt to cover the entire subject nor to define capitalism. It is for you to develop conclusions as to what capitalism means by considering the material presented here, by further study in other sources, and by discussing your own [obscured] opinions\" A group of teenagers on a radio program have a discussion about what capitalism is.",
+            "creator": "Coronet Instructional Films",
+            "duration": 574.72,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0042_Capitalism_E00102_18_20_52_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0042_Capitalism_E00102_18_20_52_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0042_Capitalism_E00102_18_20_52_00/0042_Capitalism_E00102_18_20_52_00-0010.mp4",
+                "page_url": "https://archive.org/details/0042_Capitalism_E00102_18_20_52_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0042_Capitalism_E00102_18_20_52_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "0544_Cities_How_They_Grow_Second_Edition_14_19_59_02",
+            "episode_number": 10,
+            "title": "Cities: How They Grow (Second Edition)",
+            "description": "A study of our increasing urban population. Departing from the usual statistics and the sociological problems which are a result of the cities' growth, we learn that by observing what the workers of the city do, we can find out why the city grew. A CITY IS DEFINED & AN ATTEMPT IS MADE TO SHOW THAT IT CONSISTS OF 2 KINDS OF PEOPLE - \"BUILDERS\" & \"FILLERS\". ASPECTS OF GREAT CITIES SHOWN; WHY CITIES DIE & ARE KNOWN AS \"GHOST TOWNS\". Many stock shots that need to be logged. 21:01:26:29 1950s urban people crossing street, camera pans from people up high-rise building, probably in New York City. 21:01:50:05 High-angle 1950s cars on highway driving away from camera toward big city in distance. 21:02:19:26 VS covered wagons; river boat with two large smokestacks producing trails of black smoke. 21:03:03:04 Antique head saw at old-fashioned sawmill cutting log in two. 21:03:14:08 Pan up large pipes of 1940s to 1950s oil refinery; VS steel mill. 21:03:41:05 Great shot of large cattle farm; sheep herded into livestock transportation train car. 21:04:18:24 VS workers, men and women, working in cotton mill; machines spooling cotton yarn; CU machinery. 21:04:36:24 Reenactment of immigrants around 1900 waiting to be examined at an immigration entrance facility; MS doctor holding stethoscope examines the eyes of an immigrant wearing hat with shabby beard. 21:04:45:24 CU harvester combine tractor plowing through field of grain. 21:05:04:17 CU freight train pulls away from camera, train produced enormous cloud of smoke. 21:05:11:21 Low-angle LS the White House, backs of family and older couple with backs toward camera walking toward the White House; map highlights features of Washington D.C. city planning, the wheel and spoke design. 21:06:30:18 Aerial of highway in New York City metropolitan area. 21:06:35:09 Great high-angle shot large crowd of 1940s men circled around watching an extremely violent street fight. 21:06:39:07 Street scene in poor New York City neighborhood; kids playing in the street, mothers and young girls watching over babies in strollers; great shot of poor New York City brick buildings, clotheslines hanging over fire escapes, woman standing on fire escape taking clothes off clothesline. 21:06:44:22 Aerial Manhattan in 1940s; VS street level crowded New York City streets in late 1940s. 21:07:01:02 4 New York City street kids hanging out in back alley, one smoking a cigarette while the others play cards. 21:07:07:06 LS area of heavy industry, numerous smokestacks, extremely polluted smoke-filled air, train crosses frame in foreground. 21:07:13:10 Police officer writes a ticket to a man in a 1940s car. 21:07:18:22 VS voting poll in 1940s; shot shows White men, women, and an African-American man entering poll booths to vote. 21:07:29:23 Hoover Dam. 21:07:41:05 Generators in 1940s power plant; pan from electricity substation’s transmission lines, along power cables transmission tower, cut to telephone line; CU disembodied arms of female telegrapher, typing out telegraph. 21:08:06:21 Engineers working on 1940s United Airlines plane on runway; United Airlines plane taking off runway. 21:08:24:00 1940s construction workers putting up wood frame of wall in house in long row of houses under construction in suburban housing development; cut to lush upscale suburban neighborhood with no road, only sidewalk cutting between houses. 21:08:35:01 Pan up art deco skyscraper, probably the RCA building (now the GE building) in Rockefeller Center, mid-town Manhattan, New York City. 21:08:42:28 Great shot construction worker tosses glowing hot nail to skyscraper construction worker; CU glowing nail hammers into steel beam; two construction workers precariously perched on steel beam of skyscraper frame, one man drills into steel beam. 21:08:54:00 Great shot highway in 1940s. 21:08:59:10 Three 1940s girls playing jump rope in park. 21:09:06:09 Great LS Queensborough bridge. 21:09:19:04 Two 1940s women walk out of a “Free Public Library.” 21:09:21:29 MS 1940s woman working at desk in large office stamping papers. 21:09:28:17 Front of movie theatre in 1940s. 21:09:33:06 CU disembodied musician’ hand pressing notes on fingerboard of violin. 21:09:37:24 Great shot man and woman doing rehearsing ballet dance routine.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 554.09,
+            "year": 1952,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0544_Cities_How_They_Grow_Second_Edition_14_19_59_02",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0544_Cities_How_They_Grow_Second_Edition_14_19_59_02",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0544_Cities_How_They_Grow_Second_Edition_14_19_59_02/0544_Cities_How_They_Grow_Second_Edition_14_19_59_02.mp4",
+                "page_url": "https://archive.org/details/0544_Cities_How_They_Grow_Second_Edition_14_19_59_02",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0544_Cities_How_They_Grow_Second_Edition_14_19_59_02; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "Powersof1947",
+            "episode_number": 11,
+            "title": "Powers of Congress, The",
+            "description": "Mr. Williams drops off to sleep for a few minutes to find himself confronted with a world in which Congress has been suspended and federal authority dissolved.",
+            "creator": "Coronet Instructional Films",
+            "duration": 629.56,
+            "year": 1947,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Powersof1947",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Powersof1947",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Powersof1947/Powersof1947.mp4",
+                "page_url": "https://archive.org/details/Powersof1947",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Political science",
+                    "Surrealism",
+                    "Anti-statism"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Powersof1947; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "WhatAbou1959",
+            "episode_number": 12,
+            "title": "What About Prejudice?",
+            "description": "Pioneering film that encourages youth to look into themselves for the causes of prejudice.",
+            "creator": "Centron Corporation",
+            "duration": 689.06,
+            "year": 1959,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhatAbou1959",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhatAbou1959",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhatAbou1959/WhatAbou1959.mp4",
+                "page_url": "https://archive.org/details/WhatAbou1959",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Racism",
+                    "Prejudice",
+                    "Schools"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhatAbou1959; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Censorsh1963",
+            "episode_number": 13,
+            "title": "Censorship: A Question of Judgment?",
+            "description": "Should the sponsor of a high-school newspaper have the power to determine whether a picture of a student fight should be printed?",
+            "creator": "Horizon Productions Services",
+            "duration": 264.6,
+            "year": 1963,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Censorsh1963",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Censorsh1963",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Censorsh1963/19437.mp4",
+                "page_url": "https://archive.org/details/Censorsh1963",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Social guidance",
+                    "Censorship"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Censorsh1963; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Problems1944",
+            "episode_number": 14,
+            "title": "Problems of Housing",
+            "description": "Modernizing antiquated U.S. housing stock to bring it up to health and safety standards.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 642.94,
+            "year": 1944,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Problems1944",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Problems1944",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Problems1944/Problems1944.mp4",
+                "page_url": "https://archive.org/details/Problems1944",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Houses and homes",
+                    "World War II: Postwar issues",
+                    "Architecture"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Problems1944; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "New_Spirit_for_76",
+            "episode_number": 15,
+            "title": "New Spirit for '76, A",
+            "description": "On preparations for the United States Bicentennial celebrations in 1976.",
+            "creator": "American Revolution Bicentennial Commission",
+            "duration": 563.22,
+            "year": 1975,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/New_Spirit_for_76",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "New_Spirit_for_76",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/New_Spirit_for_76/0337_New_Spirit_for_76_A_14_46_10_00_3mb.mp4",
+                "page_url": "https://archive.org/details/New_Spirit_for_76",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item New_Spirit_for_76; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "RiverThe1937",
+            "episode_number": 16,
+            "title": "River, The (Part I)",
+            "description": "Classic documentary history of the exploitation of the resources of the Mississippi River Valley and the work being done to rehabilitate and reclaim the area. Director and writer: Pare Lorentz. Narrator: Thomas Chalmers. Photography: Willard Van Dyke, Stacey Woodard and Floyd Crosby. Editor: Leo Zochling. Music: Virgil Thomson.",
+            "creator": "U.S. Department of Agriculture, Resettlement Administration",
+            "duration": 915.35,
+            "year": 1937,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/RiverThe1937",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "RiverThe1937",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/RiverThe1937/RiverThe1937.mp4",
+                "page_url": "https://archive.org/details/RiverThe1937",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "New Deal: Conservation",
+                    "Rivers: Mississippi",
+                    "Infrastructure"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item RiverThe1937; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "EarlySet1940",
+            "episode_number": 17,
+            "title": "Early Settlers of New England (Salem 1626-1629)",
+            "description": "Dramatized impressions of the life of the pioneer settlers in a New England colony.",
+            "creator": "Encyclopaedia Britannica Films",
+            "duration": 353.95,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/EarlySet1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "EarlySet1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/EarlySet1940/EarlySet1940.mp4",
+                "page_url": "https://archive.org/details/EarlySet1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "U.S. History: Colonial"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item EarlySet1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "StoryofJ1915",
+            "episode_number": 18,
+            "title": "Story of Jewel City, The",
+            "description": "Fantasy film produced for the Panama-Pacific International Exposition.",
+            "creator": "Exposition Players Corporation",
+            "duration": 543.41,
+            "year": 1915,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/StoryofJ1915",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "StoryofJ1915",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/StoryofJ1915/StoryofJ1915.mp4",
+                "page_url": "https://archive.org/details/StoryofJ1915",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "World's Fairs: San Francisco, 1915"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item StoryofJ1915; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}
