@@ -91,6 +91,13 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .row-detail p{margin:0;color:#c3cbd9;font-size:14px;line-height:1.5}
 .row-detail .close{position:absolute;top:8px;right:8px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:16px;border-radius:5px}
 .row-detail .close:hover{background:var(--cell);color:var(--text)}
+.row-detail .airing-now{clear:both;margin:10px 0 0;color:var(--accent);font-size:13px;font-weight:700}
+.row-detail .episodes{clear:both;list-style:none;margin:10px 0 0;padding:0;max-height:220px;overflow-y:auto;border-top:1px solid var(--border)}
+.row-detail .episodes li{display:flex;align-items:baseline;gap:8px;padding:7px 0;border-bottom:1px solid var(--border);font-size:13px}
+.row-detail .episodes li.current{background:rgba(255,204,51,.08);margin:0 -8px;padding:7px 8px;border-radius:4px}
+.row-detail .ep-time{flex:0 0 auto;color:var(--accent);font-variant-numeric:tabular-nums;font-weight:700;min-width:4.5em}
+.row-detail .ep-title{flex:1 1 auto;min-width:0;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.row-detail .ep-sub{flex:0 0 auto;color:var(--muted);font-size:12px;white-space:nowrap}
 
 @media (max-width:900px){
   .preview{grid-template-columns:1fr;gap:14px;padding:16px}
@@ -139,7 +146,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 <script type="module">
 import {
   listChannels, loadChannel, loadCatalog, locate, airings, nextProgram, now, syncClock,
-  clock, minutesLeft, plainText, BroadcastPlayer,
+  clock, minutesLeft, plainText, BroadcastPlayer, episodeAiringTimes,
 } from "./broadcast.js";
 
 const SLOT = 1800;
@@ -255,7 +262,13 @@ function renderGrid() {
 
     const detail = el("div", "row-detail");
     const lane = el("div", "lane");
-    for (const a of airings(ch.timeline, windowStart, until)) {
+    // Phase 5 of docs/guide-update.md: the guide renders the PROGRAM-level
+    // projection (one cell per scheduled program occurrence, e.g. an hour
+    // of "Electronics Lab" however many videos got packed into it) --
+    // never the raw per-video playback timeline. See buildEpgTimeline()
+    // in broadcast.js; ch.timeline (the playback timeline) is untouched
+    // and still drives the preview player above.
+    for (const a of airings(ch.epgTimeline, windowStart, until)) {
       const left = Math.max(a.startsAt, windowStart);
       const right = Math.min(a.endsAt, until);
       const isNow = a.startsAt <= t && t < a.endsAt;
@@ -272,12 +285,17 @@ function renderGrid() {
       cell.style.width = `${(right - left) * PX_PER_SEC - 4}px`;
       cell.classList.toggle("now", isNow);
       cell.classList.toggle("cut", a.startsAt < windowStart);
-      cell.title = `${a.title}\n${clock(a.startsAt)} – ${clock(a.endsAt)}`;
+      const range = `${clock(a.startsAt)} – ${clock(a.endsAt)}`;
+      // Secondary text (Phase 5): the originating series/publisher, when
+      // known -- optional, and never a substitute for the program title
+      // itself, which always stays the prominent line.
+      const secondary = a.seriesTitle || null;
+      cell.title = secondary ? `${a.title}\n${secondary}\n${range}` : `${a.title}\n${range}`;
       cell.tabIndex = -1;
-      cell.append(el("span", "t", a.title), el("span", "s", `${clock(a.startsAt)} – ${clock(a.endsAt)}`));
+      cell.append(el("span", "t", a.title), el("span", "s", secondary ? `${range} · ${secondary}` : range));
       // The "now" cell (or the channel button/number) tunes the channel.
       // Any other -- future -- timeslot just expands this row with a
-      // detailed accounting of that episode; it never changes the channel.
+      // detailed accounting of that program; it never changes the channel.
       cell.addEventListener("click", () => {
         if (isNow) openChannel(ch.id);
         else toggleDetail(row, detail, ch, a);
@@ -303,10 +321,16 @@ function placeNowLines() {
   for (const line of document.querySelectorAll(".nowline")) line.style.left = left;
 }
 
-/** Expands/collapses a row's detail card for a given future airing.
- *  Clicking the same already-expanded timeslot again collapses it;
- *  clicking a different timeslot in the same row swaps the content.
- *  Never calls openChannel() -- that's the whole point. */
+/** Expands/collapses a row's detail card for a given future (or current)
+ *  airing. Clicking the same already-expanded timeslot again collapses
+ *  it; clicking a different timeslot in the same row swaps the content.
+ *  Never calls openChannel() -- that's the whole point (Phase 6: selecting
+ *  a future program must never unexpectedly change playback). `a` is
+ *  either a program-level airing (has `.episodes`, built from
+ *  buildEpgTimeline()'s grouping) or a legacy per-item airing with no
+ *  programming-block identity at all (Phase 8, e.g. Film Day at School) --
+ *  renderProgramDetail()/renderEpisodeDetail() below render whichever one
+ *  this actually is. */
 async function toggleDetail(row, detailEl, ch, a) {
   const key = String(a.startsAt);
   if (row.dataset.expanded === key) {
@@ -326,10 +350,17 @@ async function toggleDetail(row, detailEl, ch, a) {
 
   detailEl.replaceChildren(close, el("p", null, "Loading…"));
 
-  const item = await loadCatalog(ch).then((c) => findCatalogItem(c, a.id)).catch(() => null);
+  const catalog = await loadCatalog(ch).catch(() => new Map());
   if (row.dataset.expanded !== key) return; // moved on before this resolved
 
   detailEl.replaceChildren(close);
+  if (Array.isArray(a.episodes)) renderProgramDetail(detailEl, ch, a, catalog);
+  else renderEpisodeDetail(detailEl, a, findCatalogItem(catalog, a.id));
+}
+
+/** Phase 8 legacy fallback, unchanged from before program-level grouping
+ *  existed: a single video/episode's own detail card. */
+function renderEpisodeDetail(detailEl, a, item) {
   if (item?.thumbnail_url) {
     const img = el("img", "thumb");
     img.src = item.thumbnail_url;
@@ -342,6 +373,60 @@ async function toggleDetail(row, detailEl, ch, a) {
   if (item?.creator) metaParts.push(item.creator);
   detailEl.append(el("div", "meta", metaParts.join(" · ")));
   detailEl.append(el("p", null, item ? plainText(item.description) || "No description available." : "No details available for this episode."));
+}
+
+/** Phase 6: the full program-level detail card -- program title/
+ *  description, channel + timing + total duration + series/publisher,
+ *  which underlying episode is airing right now (if this program IS the
+ *  one currently on), and the ordered list of every actual video/filler
+ *  scheduled within it. Nothing here is hardcoded -- every label comes
+ *  from the published schedule (titles/times) or the channel's catalog
+ *  (thumbnails/creator), resolved the same way the legacy per-episode
+ *  card above always has. */
+function renderProgramDetail(detailEl, ch, a, catalog) {
+  const firstCatalogItem = a.episodes[0] ? findCatalogItem(catalog, a.episodes[0].id) : null;
+  if (firstCatalogItem?.thumbnail_url) {
+    const img = el("img", "thumb");
+    img.src = firstCatalogItem.thumbnail_url;
+    img.alt = "";
+    detailEl.append(img);
+  }
+  detailEl.append(el("h3", null, a.title));
+
+  const totalMinutes = Math.max(1, Math.round((a.endsAt - a.startsAt) / 60));
+  const metaParts = [
+    `${clock(a.startsAt)} – ${clock(a.endsAt)}`,
+    ch.number != null ? `Ch ${ch.number} ${ch.name}` : ch.name,
+    `${totalMinutes} min`,
+  ];
+  if (a.seriesTitle) metaParts.push(a.seriesTitle);
+  detailEl.append(el("div", "meta", metaParts.join(" · ")));
+  if (a.description) detailEl.append(el("p", null, a.description));
+
+  const t = now();
+  const airingNowEpisode = (a.startsAt <= t && t < a.endsAt)
+    ? a.episodes.find((ep) => {
+      const times = episodeAiringTimes(a, ep);
+      return times.startsAt <= t && t < times.endsAt;
+    })
+    : null;
+  if (airingNowEpisode) {
+    detailEl.append(el("p", "airing-now", `Currently airing: ${airingNowEpisode.title || "Untitled"}`));
+  }
+
+  const list = el("ul", "episodes");
+  for (const ep of a.episodes) {
+    const { startsAt } = episodeAiringTimes(a, ep);
+    const li = el("li");
+    if (ep === airingNowEpisode) li.classList.add("current");
+    const catalogItem = ep.id ? findCatalogItem(catalog, ep.id) : null;
+    li.append(el("span", "ep-time", clock(startsAt)));
+    li.append(el("span", "ep-title", ep.title || (ep.playable ? ep.id : "Station break")));
+    const providerBits = [catalogItem?.creator, minutesLeft(Math.max(1, ep.end - ep.start))].filter(Boolean);
+    if (providerBits.length) li.append(el("span", "ep-sub", providerBits.join(" · ")));
+    list.append(li);
+  }
+  detailEl.append(list);
 }
 
 let hoverTimer = 0;
