@@ -4,6 +4,8 @@
     "blocks": [
         {
             "id": "overnight-reruns-comedy-central",
+            "title": "After Hours Stand-Up",
+            "description": "Overnight stand-up reruns from Comedy Central.",
             "type": "series",
             "series_id": "comedy-central-stand-up",
             "recurrence": {
@@ -29,6 +31,8 @@
         },
         {
             "id": "overnight-reruns-just-for-laughs",
+            "title": "Festival Replay",
+            "description": "Overnight highlights from the Just for Laughs festival.",
             "type": "series",
             "series_id": "just-for-laughs",
             "recurrence": {
@@ -54,6 +58,8 @@
         },
         {
             "id": "overnight-reruns-dont-tell",
+            "title": "Underground Comedy",
+            "description": "Pop-up stand-up sets from Don't Tell Comedy.",
             "type": "series",
             "series_id": "dont-tell-comedy",
             "recurrence": {
@@ -79,6 +85,8 @@
         },
         {
             "id": "overnight-reruns-keaton",
+            "title": "Silent Comedy Classics",
+            "description": "Early silent-film comedy shorts, overnight.",
             "type": "series",
             "series_id": "keaton-arbuckle-shorts",
             "recurrence": {
@@ -104,6 +112,8 @@
         },
         {
             "id": "classic-comedy-chaplin",
+            "title": "Chaplin Classics",
+            "description": "Charlie Chaplin's classic silent comedy shorts.",
             "type": "series",
             "series_id": "chaplin-shorts",
             "recurrence": {
@@ -129,6 +139,8 @@
         },
         {
             "id": "classic-comedy-keaton",
+            "title": "Buster Keaton Theater",
+            "description": "Buster Keaton and Fatty Arbuckle's silent comedy shorts.",
             "type": "series",
             "series_id": "keaton-arbuckle-shorts",
             "recurrence": {
@@ -154,6 +166,8 @@
         },
         {
             "id": "comedy-matinee-dry-bar",
+            "title": "Comedy Matinee",
+            "description": "Clean stand-up comedy from Dry Bar Comedy.",
             "type": "series",
             "series_id": "dry-bar-comedy",
             "recurrence": {
@@ -179,6 +193,8 @@
         },
         {
             "id": "comedy-matinee-gaffigan",
+            "title": "Food for Thought",
+            "description": "A short dose of Jim Gaffigan's food-obsessed comedy.",
             "type": "series",
             "series_id": "jim-gaffigan",
             "recurrence": {
@@ -204,6 +220,8 @@
         },
         {
             "id": "comedy-matinee-chaplin",
+            "title": "Afternoon With Chaplin",
+            "description": "More of Charlie Chaplin's classic silent comedy shorts.",
             "type": "series",
             "series_id": "chaplin-shorts",
             "recurrence": {
@@ -229,6 +247,8 @@
         },
         {
             "id": "standup-showcase-dry-bar",
+            "title": "Stand-Up Showcase",
+            "description": "An afternoon lineup of clean stand-up from Dry Bar Comedy.",
             "type": "series",
             "series_id": "dry-bar-comedy",
             "recurrence": {
@@ -254,6 +274,8 @@
         },
         {
             "id": "standup-showcase-gaffigan",
+            "title": "Dad Jokes Done Right",
+            "description": "An hour of Jim Gaffigan's family-friendly stand-up.",
             "type": "series",
             "series_id": "jim-gaffigan",
             "recurrence": {
@@ -279,6 +301,8 @@
         },
         {
             "id": "happy-hour-dont-tell",
+            "title": "Comedy Happy Hour",
+            "description": "Pop-up stand-up sets from Don't Tell Comedy.",
             "type": "series",
             "series_id": "dont-tell-comedy",
             "recurrence": {
@@ -304,6 +328,8 @@
         },
         {
             "id": "prime-dry-bar",
+            "title": "Comedy Club Prime",
+            "description": "Prime-time clean stand-up from Dry Bar Comedy.",
             "type": "series",
             "series_id": "dry-bar-comedy",
             "recurrence": {
@@ -329,6 +355,8 @@
         },
         {
             "id": "prime-comedy-central",
+            "title": "Prime Time Stand-Up",
+            "description": "Prime-time stand-up specials from Comedy Central.",
             "type": "series",
             "series_id": "comedy-central-stand-up",
             "recurrence": {
@@ -354,6 +382,8 @@
         },
         {
             "id": "late-night-just-for-laughs",
+            "title": "Late Night Laughs",
+            "description": "Closing out the night with highlights from Just for Laughs.",
             "type": "series",
             "series_id": "just-for-laughs",
             "recurrence": {
