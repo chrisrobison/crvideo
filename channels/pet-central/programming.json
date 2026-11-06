@@ -4,6 +4,8 @@
     "blocks": [
         {
             "id": "overnight-reruns-kikopup",
+            "title": "Late-Night Dog School",
+            "description": "Overnight reruns of real dog training, straight from Kikopup's channel.",
             "type": "series",
             "series_id": "kikopup",
             "recurrence": {
@@ -29,6 +31,8 @@
         },
         {
             "id": "overnight-reruns-animalogic",
+            "title": "Animal Science After Dark",
+            "description": "Overnight animal science and natural history, from Animalogic.",
             "type": "series",
             "series_id": "animalogic",
             "recurrence": {
@@ -54,6 +58,8 @@
         },
         {
             "id": "overnight-pet-stories-dodo",
+            "title": "Late-Night Feel-Good Stories",
+            "description": "Overnight rescue and reunion stories from The Dodo.",
             "type": "series",
             "series_id": "the-dodo",
             "recurrence": {
@@ -79,6 +85,8 @@
         },
         {
             "id": "morning-cuteness-simons-cat",
+            "title": "Cuteness Overload",
+            "description": "Simon's Cat's animated comic antics to start your morning.",
             "type": "series",
             "series_id": "simons-cat",
             "recurrence": {
@@ -104,6 +112,8 @@
         },
         {
             "id": "dog-training-academy-zak-george",
+            "title": "Just Dogs",
+            "description": "Real-world dog training with Zak George.",
             "type": "series",
             "series_id": "zak-george",
             "recurrence": {
@@ -129,6 +139,8 @@
         },
         {
             "id": "dog-training-academy-kikopup",
+            "title": "Just Dogs",
+            "description": "More hands-on dog training, from Kikopup.",
             "type": "series",
             "series_id": "kikopup",
             "recurrence": {
@@ -154,6 +166,8 @@
         },
         {
             "id": "cat-central-jackson-galaxy",
+            "title": "Just Cats",
+            "description": "Cat behavior and care with Jackson Galaxy.",
             "type": "series",
             "series_id": "jackson-galaxy",
             "recurrence": {
@@ -179,6 +193,8 @@
         },
         {
             "id": "rescue-stories-dodo",
+            "title": "Happy Endings",
+            "description": "Rescue and reunion stories from The Dodo.",
             "type": "series",
             "series_id": "the-dodo",
             "recurrence": {
@@ -204,6 +220,8 @@
         },
         {
             "id": "rescue-stories-kitten-lady",
+            "title": "Kitten Rescue Diaries",
+            "description": "Orphaned-kitten care and rescue stories from Kitten Lady.",
             "type": "series",
             "series_id": "kitten-lady",
             "recurrence": {
@@ -229,6 +247,8 @@
         },
         {
             "id": "grooming-pet-care-girl-with-the-dogs",
+            "title": "Paws & Polish",
+            "description": "Grooming and pet-care tips from Girl With The Dogs.",
             "type": "series",
             "series_id": "girl-with-the-dogs",
             "recurrence": {
@@ -254,6 +274,8 @@
         },
         {
             "id": "animal-personalities-simons-cat",
+            "title": "Animals Being Bros",
+            "description": "Simon's Cat's animated personalities and antics.",
             "type": "series",
             "series_id": "simons-cat",
             "recurrence": {
@@ -279,6 +301,8 @@
         },
         {
             "id": "animal-personalities-girl-with-the-dogs",
+            "title": "Animals Being Bros",
+            "description": "Real dogs, real personalities, from Girl With The Dogs.",
             "type": "series",
             "series_id": "girl-with-the-dogs",
             "recurrence": {
@@ -304,6 +328,8 @@
         },
         {
             "id": "pet-central-prime-zak-george",
+            "title": "Puppy Diaries",
+            "description": "Zak George's serialized new-puppy survival guide.",
             "type": "series",
             "series_id": "zak-george",
             "recurrence": {
@@ -329,6 +355,8 @@
         },
         {
             "id": "animal-behavior-animalogic",
+            "title": "Wild Minds",
+            "description": "Animal behavior and natural history, from Animalogic.",
             "type": "series",
             "series_id": "animalogic",
             "recurrence": {
@@ -354,6 +382,8 @@
         },
         {
             "id": "animal-behavior-jackson-galaxy",
+            "title": "Cat Psychology",
+            "description": "Understanding cat behavior with Jackson Galaxy.",
             "type": "series",
             "series_id": "jackson-galaxy",
             "recurrence": {
@@ -379,6 +409,8 @@
         },
         {
             "id": "evening-pet-stories-kitten-lady",
+            "title": "Bedtime Kitten Tales",
+            "description": "Evening kitten care and rescue stories from Kitten Lady.",
             "type": "series",
             "series_id": "kitten-lady",
             "recurrence": {
