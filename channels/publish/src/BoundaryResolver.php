@@ -90,15 +90,26 @@ final class BoundaryResolver
      *   blockId: string,
      *   boundary: array{mode:string, maxDelaySeconds:int},
      *   nominalStart: int,
+     *   durationSeconds?: int,
+     *   occurrenceId?: string,
+     *   programTitle?: string,
+     *   programDescription?: ?string,
+     *   seriesId?: ?string,
+     *   seriesTitle?: ?string,
      *   items: list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}>,
      * }> $groups one entry per scheduled occurrence that actually has at least one item, across every block.
-     * @return array{items: list<array<string,mixed>>, warnings: list<string>}
+     *        The program* / occurrenceId / durationSeconds keys (Phase 2/3 of docs/
+     *        guide-update.md) are optional so this class keeps working unchanged for
+     *        any caller (tests included) that only ever built the pre-existing
+     *        blockId/boundary/nominalStart/items shape.
+     * @return array{items: list<array<string,mixed>>, warnings: list<string>, programs: list<array<string,mixed>>}
      */
     public static function resolve(array $groups): array
     {
         usort($groups, static fn (array $a, array $b): int => $a['nominalStart'] <=> $b['nominalStart']);
 
         $items = [];
+        $programs = [];
         $warnings = [];
         $prevEnd = null;
         $prevLabel = null;
@@ -139,18 +150,48 @@ final class BoundaryResolver
                 );
             }
 
+            $occurrenceId = $g['occurrenceId'] ?? null;
             foreach ($g['items'] as $it) {
                 $it['start'] += $delay;
                 $it['end'] += $delay;
                 if ($delay > 0) {
                     $it['delay_seconds'] = $delay;
                 }
+                if ($occurrenceId !== null) {
+                    // Phase 3: every generated occurrence stays associated with its
+                    // source programming block via this reference -- explicit identity,
+                    // never re-derived later from adjacency or title matching.
+                    $it['program_id'] = $occurrenceId;
+                }
                 $items[] = $it;
             }
             $prevEnd = $items[count($items) - 1]['end'];
             $prevLabel = $items[count($items) - 1]['id'];
+
+            if ($occurrenceId !== null) {
+                // Phase 4: the program's EFFECTIVE presentation window -- its nominal
+                // slot, shifted by whatever delay (if any) this occurrence absorbed.
+                // Phase 7: a hard-boundaried occurrence has delay 0, so this is simply
+                // its intended slot; a soft/elastic one may legitimately run later than
+                // nominal, and this is the boundary the EPG must actually draw to avoid
+                // ever showing two cells overlapping.
+                $durationSeconds = $g['durationSeconds'] ?? ($g['items'][count($g['items']) - 1]['end'] - $g['nominalStart']);
+                $programs[] = [
+                    'occurrence_id' => $occurrenceId,
+                    'block_id' => $g['blockId'],
+                    'title' => $g['programTitle'] ?? null,
+                    'description' => $g['programDescription'] ?? null,
+                    'series_id' => $g['seriesId'] ?? null,
+                    'series_title' => $g['seriesTitle'] ?? null,
+                    'boundary_mode' => $boundary['mode'],
+                    'nominal_start' => $g['nominalStart'],
+                    'nominal_end' => $g['nominalStart'] + $durationSeconds,
+                    'start' => $g['nominalStart'] + $delay,
+                    'end' => $g['nominalStart'] + $delay + $durationSeconds,
+                ];
+            }
         }
 
-        return ['items' => $items, 'warnings' => $warnings];
+        return ['items' => $items, 'warnings' => $warnings, 'programs' => $programs];
     }
 }

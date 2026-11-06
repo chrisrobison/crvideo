@@ -190,9 +190,29 @@ function publish_main(array $argv): int
     $dryRun = !empty($opt['dry-run']);
     $verbose = !empty($opt['verbose']);
 
+    // Phase 2 metadata fallback tier 3 ("the title/description this block was
+    // last published with"): read whatever schedule.json this channel already
+    // has (if any) before it gets overwritten below, and index its "programs"
+    // collection by block_id. A channel publishing for the first time, or one
+    // whose existing schedule.json predates this feature entirely, simply has
+    // nothing here -- ProgrammingCompiler falls through to its next tier.
+    $previousPrograms = [];
+    $existingSchedulePath = "$channelDir/schedule.json";
+    if (is_file($existingSchedulePath)) {
+        $existingSchedule = json_decode((string) file_get_contents($existingSchedulePath), true);
+        if (is_array($existingSchedule)) {
+            foreach ($existingSchedule['programs'] ?? [] as $p) {
+                $blockIdKey = is_string($p['block_id'] ?? null) ? $p['block_id'] : null;
+                if ($blockIdKey !== null && !isset($previousPrograms[$blockIdKey])) {
+                    $previousPrograms[$blockIdKey] = ['title' => $p['title'] ?? null, 'description' => $p['description'] ?? null];
+                }
+            }
+        }
+    }
+
     try {
         $compiled = ProgrammingCompiler::compile(
-            $programming, $resolved['series'], $stateDir, $channelId, $refresh, $windowStart, $windowEnd,
+            $programming, $resolved['series'], $stateDir, $channelId, $refresh, $windowStart, $windowEnd, $previousPrograms,
         );
     } catch (Throwable $e) {
         fwrite(STDERR, 'Error: ' . $e->getMessage() . "\n");
@@ -207,7 +227,9 @@ function publish_main(array $argv): int
     foreach ($continuity['errors'] as $e) {
         fwrite(STDERR, "Warning: $e\n");
     }
-    $filled = ContinuityFiller::fill($compiled['items'], $windowStart->getTimestamp(), $windowEnd->getTimestamp(), $continuity);
+    $filled = ContinuityFiller::fill(
+        $compiled['items'], $windowStart->getTimestamp(), $windowEnd->getTimestamp(), $continuity, $compiled['programs'],
+    );
     $compiled['items'] = $filled['items'];
     $compiled['warnings'] = [...$compiled['warnings'], ...$filled['warnings']];
 
@@ -215,7 +237,7 @@ function publish_main(array $argv): int
 
     if (!$dryRun) {
         ScheduleWriter::writeSchedule(
-            "$channelDir/schedule.json", $channelName, $compiled['items'], $windowStart, $windowEnd, $compiled['episodeSets'],
+            "$channelDir/schedule.json", $channelName, $compiled['items'], $windowStart, $windowEnd, $compiled['episodeSets'], $compiled['programs'],
         );
         ScheduleWriter::updateAnchor($metaPath, $windowStart);
     }

@@ -62,6 +62,27 @@ declare(strict_types=1);
 // capture on its own -- see that file's header for why a checkpoint
 // (rather than a full history) is enough to stay both deterministic and
 // bounded-cost.
+//
+// Program-level EPG metadata (docs/guide-update.md): every episode that
+// this class schedules is also (via BoundaryResolver) grouped into one
+// logical "programming occurrence" -- the thing a traditional cable guide
+// would show as a single cell, regardless of how many individual
+// episodes got packed into it. Each occurrence gets:
+//
+//   - occurrence_id: "<blockId>@<nominalStartUnixSeconds>" -- stable and
+//     unique per scheduled instant, so an AM and a PM showing of the same
+//     series_id (or the same block on two different days) are never
+//     confused with each other, and the EPG never has to guess occurrence
+//     boundaries from titles or adjacency.
+//   - A resolved display title/description (see resolveProgramTitle/
+//     resolveProgramDescription below) -- editorial metadata for the
+//     guide, distinct from any individual episode's own title/description.
+//
+// This is computed once per block (title/description resolution) and once
+// per occurrence (occurrence_id, nominal timing) here; BoundaryResolver is
+// what actually stamps it onto the flattened item list and derives each
+// occurrence's EFFECTIVE (post-delay) presentation window -- see its
+// header for why that belongs there rather than here.
 
 final class ProgrammingCompiler
 {
@@ -69,10 +90,17 @@ final class ProgrammingCompiler
      * @param array{blocks?: list<array<string,mixed>>} $programming decoded programming.json
      * @param list<array{id:string,title:string,url:string,episodes:list<array<string,mixed>>}> $resolvedSeries
      *        CatalogResolver::resolveCatalog()'s "series" list for this channel.
+     * @param array<string,array{title:?string,description:?string}> $previousPrograms
+     *        block_id -> the title/description it was last published with (see
+     *        resolveProgramTitle/resolveProgramDescription's fallback tier 3). Pass
+     *        [] (the default) when there is no previous schedule.json to consult --
+     *        e.g. a channel's first-ever publish, or one not yet migrated to carrying
+     *        a "programs" collection at all.
      * @return array{
      *   items: list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}>,
      *   warnings: list<string>,
      *   episodeSets: list<array{block_id:string,series_id:string,version:int,episode_count:int}>,
+     *   programs: list<array<string,mixed>>,
      * }
      */
     public static function compile(
@@ -83,6 +111,7 @@ final class ProgrammingCompiler
         bool $refreshEpisodeSet,
         DateTimeImmutable $windowStart,
         DateTimeImmutable $windowEnd,
+        array $previousPrograms = [],
     ): array {
         $seriesById = [];
         foreach ($resolvedSeries as $s) {
@@ -165,6 +194,19 @@ final class ProgrammingCompiler
 
             $boundary = BoundaryResolver::normalizeBoundary($block['boundary'] ?? null, $blockId);
 
+            // Phase 2/3: editorial program metadata for the guide -- resolved once per
+            // block (title/description never vary occurrence to occurrence; only the
+            // occurrence_id and timing do). See resolveProgramTitle()'s header for the
+            // fallback order.
+            $seriesTitle = is_string($seriesById[$seriesId]['title'] ?? null) ? $seriesById[$seriesId]['title'] : null;
+            $seriesDescription = is_string($seriesById[$seriesId]['description'] ?? null) ? $seriesById[$seriesId]['description'] : null;
+            $blockTitle = is_string($block['title'] ?? null) && $block['title'] !== '' ? $block['title'] : null;
+            $blockDescription = is_string($block['description'] ?? null) && $block['description'] !== '' ? $block['description'] : null;
+            $previous = $previousPrograms[$blockId] ?? null;
+            $previousTitle = is_string($previous['title'] ?? null) ? $previous['title'] : null;
+            $previousDescription = is_string($previous['description'] ?? null) ? $previous['description'] : null;
+            $programDescription = self::resolveProgramDescription($blockDescription, $seriesDescription, $previousDescription);
+
             $packing = is_array($block['packing'] ?? null) ? $block['packing'] : [];
             $packingEnabled = (bool) ($packing['enabled'] ?? false);
 
@@ -192,11 +234,18 @@ final class ProgrammingCompiler
                     $episodeDuration = is_numeric($episode['duration'] ?? null) ? (float) $episode['duration'] : null;
                     $itemDuration = ($episodeDuration !== null && $episodeDuration > 0) ? (int) round($episodeDuration) : $durationSeconds;
                     $startAbs = $occ['at']->getTimestamp();
+                    $item = self::buildItem($episode, $startAbs, $itemDuration);
                     $groups[] = [
                         'blockId' => $blockId,
                         'boundary' => $boundary,
                         'nominalStart' => $startAbs,
-                        'items' => [self::buildItem($episode, $startAbs, $itemDuration)],
+                        'durationSeconds' => $durationSeconds,
+                        'occurrenceId' => "$blockId@$startAbs",
+                        'programTitle' => self::resolveProgramTitle($blockTitle, $seriesTitle, $previousTitle, $item['title']),
+                        'programDescription' => $programDescription,
+                        'seriesId' => $seriesId,
+                        'seriesTitle' => $seriesTitle,
+                        'items' => [$item],
                     ];
                 }
                 continue;
@@ -275,7 +324,18 @@ final class ProgrammingCompiler
                     $groupItems[] = self::buildItem($episode, $startAbs + $offset, $sched['duration']);
                     $offset += $sched['duration'];
                 }
-                $groups[] = ['blockId' => $blockId, 'boundary' => $boundary, 'nominalStart' => $startAbs, 'items' => $groupItems];
+                $groups[] = [
+                    'blockId' => $blockId,
+                    'boundary' => $boundary,
+                    'nominalStart' => $startAbs,
+                    'durationSeconds' => $durationSeconds,
+                    'occurrenceId' => "$blockId@$startAbs",
+                    'programTitle' => self::resolveProgramTitle($blockTitle, $seriesTitle, $previousTitle, $groupItems[0]['title']),
+                    'programDescription' => $programDescription,
+                    'seriesId' => $seriesId,
+                    'seriesTitle' => $seriesTitle,
+                    'items' => $groupItems,
+                ];
             }
 
             if ($checkpointCaptured) {
@@ -295,7 +355,48 @@ final class ProgrammingCompiler
         $items = $resolved['items'];
         $warnings = [...$warnings, ...$resolved['warnings']];
 
-        return ['items' => $items, 'warnings' => $warnings, 'episodeSets' => $episodeSets];
+        return ['items' => $items, 'warnings' => $warnings, 'episodeSets' => $episodeSets, 'programs' => $resolved['programs']];
+    }
+
+    /**
+     * Phase 2 fallback order for a program's guide-facing TITLE:
+     *   1. The block's own explicit "title".
+     *   2. Its associated series' title.
+     *   3. The title this exact block was last published with (so a title that was
+     *      itself only ever resolved via tier 4 below doesn't flicker between
+     *      different episode titles release to release merely because packing/
+     *      rotation picked a different first episode this time).
+     *   4. The first scheduled episode's own title (or id) -- a legacy fallback,
+     *      never a hard failure. Generating a name directly from the internal
+     *      block id is deliberately not in this list: by the time this is called
+     *      the occurrence always has at least one item, so tier 4 always resolves.
+     */
+    private static function resolveProgramTitle(?string $blockTitle, ?string $seriesTitle, ?string $previousTitle, string $episodeFallbackTitle): string
+    {
+        foreach ([$blockTitle, $seriesTitle, $previousTitle] as $candidate) {
+            if (is_string($candidate) && $candidate !== '') {
+                return $candidate;
+            }
+        }
+        return $episodeFallbackTitle;
+    }
+
+    /**
+     * Same idea as resolveProgramTitle() for the program's guide-facing
+     * DESCRIPTION, except there is no episode-description fallback tier --
+     * mixing an individual episode's description into the program's own
+     * (editorial, block-level) description would blur exactly the distinction
+     * Phase 2 requires ("They must be distinct from the actual video title and
+     * description."). Absent everywhere, this is simply null.
+     */
+    private static function resolveProgramDescription(?string $blockDescription, ?string $seriesDescription, ?string $previousDescription): ?string
+    {
+        foreach ([$blockDescription, $seriesDescription, $previousDescription] as $candidate) {
+            if (is_string($candidate) && $candidate !== '') {
+                return $candidate;
+            }
+        }
+        return null;
     }
 
     /** @return array{start:int,end:int,id:string,title:string,source:?array,source_url:?string} */
