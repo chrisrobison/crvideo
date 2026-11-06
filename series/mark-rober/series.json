@@ -41,7 +41,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -63,14 +63,14 @@
                 "url": "https://www.youtube.com/watch?v=Q4nEdB1cfUk",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -121,14 +121,14 @@
                 "url": "https://www.youtube.com/watch?v=eXv6fWonvUM",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -150,14 +150,14 @@
                 "url": "https://www.youtube.com/watch?v=5N17EbYJBwQ",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -186,7 +186,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -244,7 +244,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -273,7 +273,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -295,14 +295,14 @@
                 "url": "https://www.youtube.com/watch?v=KLJxCWeYGoE",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -331,7 +331,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -360,7 +360,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -382,14 +382,14 @@
                 "url": "https://www.youtube.com/watch?v=GRbokvmv-2M",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -418,7 +418,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -440,14 +440,14 @@
                 "url": "https://www.youtube.com/watch?v=eMG3FWEwJnk",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -469,14 +469,14 @@
                 "url": "https://www.youtube.com/watch?v=--LXDh44cBQ",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -534,7 +534,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -563,7 +563,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -592,7 +592,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -621,7 +621,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -650,7 +650,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -672,14 +672,14 @@
                 "url": "https://www.youtube.com/watch?v=6VCyrdMLrcY",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -737,7 +737,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -759,14 +759,14 @@
                 "url": "https://www.youtube.com/watch?v=wJMrk69WOdw",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -795,7 +795,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -853,7 +853,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -882,7 +882,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -911,7 +911,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -940,7 +940,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -969,7 +969,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -991,14 +991,14 @@
                 "url": "https://www.youtube.com/watch?v=lSDoCbQsKxY",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1027,7 +1027,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1056,7 +1056,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1085,7 +1085,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1114,7 +1114,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1172,7 +1172,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1223,14 +1223,14 @@
                 "url": "https://www.youtube.com/watch?v=PrWBvvwZ-4o",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1281,14 +1281,14 @@
                 "url": "https://www.youtube.com/watch?v=ZGhPz6FINWA",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1317,7 +1317,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1368,14 +1368,14 @@
                 "url": "https://www.youtube.com/watch?v=mnDe3BaEBxc",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1397,14 +1397,14 @@
                 "url": "https://www.youtube.com/watch?v=D1sCU41SRVU",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1433,7 +1433,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1455,14 +1455,14 @@
                 "url": "https://www.youtube.com/watch?v=dmr0Q5ambKk",
                 "channel_id": "UCY1kMZp36IQSyNx_9h4mpCg",
                 "channel_title": "Mark Rober",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."

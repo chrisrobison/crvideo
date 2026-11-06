@@ -99,7 +99,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -215,7 +215,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -244,7 +244,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -469,14 +469,14 @@
                 "url": "https://www.youtube.com/watch?v=lCq9fMO2_Vs",
                 "channel_id": "UCk0fGHsCEzGig-rSzkfCjMw",
                 "channel_title": "The Engineering Mindset",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -498,14 +498,14 @@
                 "url": "https://www.youtube.com/watch?v=5hWFH3j2cCk",
                 "channel_id": "UCk0fGHsCEzGig-rSzkfCjMw",
                 "channel_title": "The Engineering Mindset",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -679,7 +679,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -824,7 +824,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -853,7 +853,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -911,7 +911,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -940,7 +940,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -969,7 +969,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1027,7 +1027,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1114,7 +1114,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1201,7 +1201,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1252,14 +1252,14 @@
                 "url": "https://www.youtube.com/watch?v=avm9vN09C0k",
                 "channel_id": "UCk0fGHsCEzGig-rSzkfCjMw",
                 "channel_title": "The Engineering Mindset",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1310,14 +1310,14 @@
                 "url": "https://www.youtube.com/watch?v=NPM3wSb7veU",
                 "channel_id": "UCk0fGHsCEzGig-rSzkfCjMw",
                 "channel_title": "The Engineering Mindset",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1346,7 +1346,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1368,14 +1368,14 @@
                 "url": "https://www.youtube.com/watch?v=i8YcmhtLv-4",
                 "channel_id": "UCk0fGHsCEzGig-rSzkfCjMw",
                 "channel_title": "The Engineering Mindset",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -1455,14 +1455,14 @@
                 "url": "https://www.youtube.com/watch?v=J9U_WvmYtCY",
                 "channel_id": "UCk0fGHsCEzGig-rSzkfCjMw",
                 "channel_title": "The Engineering Mindset",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."

@@ -34,14 +34,14 @@
                 "url": "https://www.youtube.com/watch?v=637GVfsjSp8",
                 "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
                 "channel_title": "TheBackyardScientist",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -63,14 +63,14 @@
                 "url": "https://www.youtube.com/watch?v=b8yxCa9tnGw",
                 "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
                 "channel_title": "TheBackyardScientist",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -92,14 +92,14 @@
                 "url": "https://www.youtube.com/watch?v=cxd4DsHGups",
                 "channel_id": "UC06E4Y_-ybJgBUMtXx8uNNw",
                 "channel_title": "TheBackyardScientist",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -128,7 +128,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -157,7 +157,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -186,7 +186,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -244,7 +244,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -273,7 +273,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -331,7 +331,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -389,7 +389,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
@@ -447,7 +447,7 @@
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "Approved for the 12-hour multi-channel lineup (2026-11-04); rights left unverified."
