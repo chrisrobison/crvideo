@@ -6604,7 +6604,7 @@
                 "url": "https://www.youtube.com/watch?v=K9vSrUiJlFU",
                 "channel_id": "UCZzFRKsgVMhGTxffpzgTJlQ",
                 "channel_title": "Zak George",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
@@ -6612,7 +6612,7 @@
                 "availability_detail": null,
                 "playlist_id": "UULFZzFRKsgVMhGTxffpzgTJlQ"
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "YouTube embed of the creator's own public upload (embeddable=true, public, checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production."

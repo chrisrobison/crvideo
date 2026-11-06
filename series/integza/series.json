@@ -92,14 +92,14 @@
                 "url": "https://www.youtube.com/watch?v=3kVhp9ZuAo0",
                 "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
                 "channel_title": "Integza",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": null
@@ -179,14 +179,14 @@
                 "url": "https://www.youtube.com/watch?v=0AeJkIOiK0Q",
                 "channel_id": "UC2avWDLN1EI3r1RZ_dlSxCw",
                 "channel_title": "Integza",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
                 "availability": "available",
                 "availability_detail": null
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": null

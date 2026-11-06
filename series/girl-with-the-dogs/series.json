@@ -2104,7 +2104,7 @@
                 "url": "https://www.youtube.com/watch?v=GlXk0vlVsA4",
                 "channel_id": "UCUFnGWHIQvybwmR7XDh7-9A",
                 "channel_title": "Girl With The Dogs",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
@@ -2112,7 +2112,7 @@
                 "availability_detail": null,
                 "playlist_id": "UULFUFnGWHIQvybwmR7XDh7-9A"
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "YouTube embed of the creator's own public upload (embeddable=true, public, checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production."
@@ -4654,7 +4654,7 @@
                 "url": "https://www.youtube.com/watch?v=7g9jvaCU4b0",
                 "channel_id": "UCUFnGWHIQvybwmR7XDh7-9A",
                 "channel_title": "Girl With The Dogs",
-                "kind": "upload",
+                "kind": "short",
                 "embeddable": true,
                 "made_for_kids": false,
                 "privacy_status": "public",
@@ -4662,7 +4662,7 @@
                 "availability_detail": null,
                 "playlist_id": "UULFUFnGWHIQvybwmR7XDh7-9A"
             },
-            "status": "approved",
+            "status": "rejected",
             "rights": {
                 "status": "unverified",
                 "notes": "YouTube embed of the creator's own public upload (embeddable=true, public, checked at import 2026-11-05). No license, permission, or public-domain evidence on file -- airs only via YouTube's standard embedded player under YouTube's Terms of Service. Requires human rights review before production."
