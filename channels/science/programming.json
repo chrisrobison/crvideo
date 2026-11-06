@@ -4,6 +4,8 @@
     "blocks": [
         {
             "id": "lineup-techmoan-am",
+            "title": "Techmoan",
+            "description": "Enjoying the best and worst of new and old technology. (featuring Techmoan.)",
             "type": "series",
             "series_id": "techmoan",
             "recurrence": {
@@ -29,6 +31,8 @@
         },
         {
             "id": "lineup-scishow-am",
+            "title": "Scishow",
+            "description": "SciShow explores the unexpected. (featuring SciShow.)",
             "type": "series",
             "series_id": "scishow",
             "recurrence": {
@@ -54,6 +58,8 @@
         },
         {
             "id": "lineup-plasma-channel-am",
+            "title": "Plasma Channel",
+            "description": "Hi, I'm Jay. (featuring Plasma Channel.)",
             "type": "series",
             "series_id": "plasma-channel",
             "recurrence": {
@@ -79,6 +85,8 @@
         },
         {
             "id": "lineup-real-engineering-am",
+            "title": "Real Engineering",
+            "description": "The home of innovation (featuring Real Engineering.)",
             "type": "series",
             "series_id": "real-engineering",
             "recurrence": {
@@ -104,6 +112,8 @@
         },
         {
             "id": "lineup-stuff-made-here-am",
+            "title": "Stuff Made Here",
+            "description": "I've been building things for as long as I can remember. (featuring Stuff Made Here.)",
             "type": "series",
             "series_id": "stuff-made-here",
             "recurrence": {
@@ -129,6 +139,8 @@
         },
         {
             "id": "lineup-the-engineering-mindset-am",
+            "title": "The Engineering Mindset",
+            "description": "Subscribe now to gain core Engineering knowledge and skills through mind-blowing tutorials The Engineering Mindset was started in 2015 by its founder, Paul Evan… (featuring The Engineering Mindset.)",
             "type": "series",
             "series_id": "the-engineering-mindset",
             "recurrence": {
@@ -154,6 +166,8 @@
         },
         {
             "id": "lineup-veritasium-am",
+            "title": "Veritasium",
+            "description": "An element of truth - videos about science, education, and anything else we find interesting. (featuring Veritasium.)",
             "type": "series",
             "series_id": "veritasium",
             "recurrence": {
@@ -179,6 +193,8 @@
         },
         {
             "id": "lineup-vsauce-am",
+            "title": "Vsauce",
+            "description": "Our World is Amazing. (featuring Vsauce.)",
             "type": "series",
             "series_id": "vsauce",
             "recurrence": {
@@ -204,6 +220,8 @@
         },
         {
             "id": "lineup-smarter-every-day-am",
+            "title": "Smarter Every Day",
+            "description": "I explore the world using science. (featuring SmarterEveryDay.)",
             "type": "series",
             "series_id": "smarter-every-day",
             "recurrence": {
@@ -229,6 +247,8 @@
         },
         {
             "id": "lineup-the-backyard-scientist-am",
+            "title": "The Backyard Scientist",
+            "description": "Aloha YouTubers, I am The Backyard Scientist! (featuring TheBackyardScientist.)",
             "type": "series",
             "series_id": "the-backyard-scientist",
             "recurrence": {
@@ -254,6 +274,8 @@
         },
         {
             "id": "lineup-mark-rober-am",
+            "title": "Mark Rober",
+            "description": "Former NASA engineer. (featuring Mark Rober.)",
             "type": "series",
             "series_id": "mark-rober",
             "recurrence": {
@@ -279,6 +301,8 @@
         },
         {
             "id": "lineup-kurzgesagt-am",
+            "title": "Kurzgesagt",
+            "description": "Animation videos explaining things with optimistic nihilism since 12,013. (featuring Kurzgesagt – In a Nutshell.)",
             "type": "series",
             "series_id": "kurzgesagt",
             "recurrence": {
@@ -304,6 +328,8 @@
         },
         {
             "id": "lineup-techmoan-pm",
+            "title": "Techmoan",
+            "description": "Enjoying the best and worst of new and old technology. (featuring Techmoan.)",
             "type": "series",
             "series_id": "techmoan",
             "recurrence": {
@@ -329,6 +355,8 @@
         },
         {
             "id": "lineup-scishow-pm",
+            "title": "Scishow",
+            "description": "SciShow explores the unexpected. (featuring SciShow.)",
             "type": "series",
             "series_id": "scishow",
             "recurrence": {
@@ -354,6 +382,8 @@
         },
         {
             "id": "lineup-plasma-channel-pm",
+            "title": "Plasma Channel",
+            "description": "Hi, I'm Jay. (featuring Plasma Channel.)",
             "type": "series",
             "series_id": "plasma-channel",
             "recurrence": {
@@ -379,6 +409,8 @@
         },
         {
             "id": "lineup-real-engineering-pm",
+            "title": "Real Engineering",
+            "description": "The home of innovation (featuring Real Engineering.)",
             "type": "series",
             "series_id": "real-engineering",
             "recurrence": {
@@ -404,6 +436,8 @@
         },
         {
             "id": "lineup-stuff-made-here-pm",
+            "title": "Stuff Made Here",
+            "description": "I've been building things for as long as I can remember. (featuring Stuff Made Here.)",
             "type": "series",
             "series_id": "stuff-made-here",
             "recurrence": {
@@ -429,6 +463,8 @@
         },
         {
             "id": "lineup-the-engineering-mindset-pm",
+            "title": "The Engineering Mindset",
+            "description": "Subscribe now to gain core Engineering knowledge and skills through mind-blowing tutorials The Engineering Mindset was started in 2015 by its founder, Paul Evan… (featuring The Engineering Mindset.)",
             "type": "series",
             "series_id": "the-engineering-mindset",
             "recurrence": {
@@ -454,6 +490,8 @@
         },
         {
             "id": "lineup-veritasium-pm",
+            "title": "Veritasium",
+            "description": "An element of truth - videos about science, education, and anything else we find interesting. (featuring Veritasium.)",
             "type": "series",
             "series_id": "veritasium",
             "recurrence": {
@@ -479,6 +517,8 @@
         },
         {
             "id": "lineup-vsauce-pm",
+            "title": "Vsauce",
+            "description": "Our World is Amazing. (featuring Vsauce.)",
             "type": "series",
             "series_id": "vsauce",
             "recurrence": {
@@ -504,6 +544,8 @@
         },
         {
             "id": "lineup-smarter-every-day-pm",
+            "title": "Smarter Every Day",
+            "description": "I explore the world using science. (featuring SmarterEveryDay.)",
             "type": "series",
             "series_id": "smarter-every-day",
             "recurrence": {
@@ -529,6 +571,8 @@
         },
         {
             "id": "lineup-the-backyard-scientist-pm",
+            "title": "The Backyard Scientist",
+            "description": "Aloha YouTubers, I am The Backyard Scientist! (featuring TheBackyardScientist.)",
             "type": "series",
             "series_id": "the-backyard-scientist",
             "recurrence": {
@@ -554,6 +598,8 @@
         },
         {
             "id": "lineup-mark-rober-pm",
+            "title": "Mark Rober",
+            "description": "Former NASA engineer. (featuring Mark Rober.)",
             "type": "series",
             "series_id": "mark-rober",
             "recurrence": {
@@ -579,6 +625,8 @@
         },
         {
             "id": "lineup-kurzgesagt-pm",
+            "title": "Kurzgesagt",
+            "description": "Animation videos explaining things with optimistic nihilism since 12,013. (featuring Kurzgesagt – In a Nutshell.)",
             "type": "series",
             "series_id": "kurzgesagt",
             "recurrence": {

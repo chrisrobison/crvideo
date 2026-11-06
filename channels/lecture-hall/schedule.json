@@ -1,6 +1,6 @@
 {
     "_publish": {
-        "generated_at": "2026-11-05T21:08:14+00:00",
+        "generated_at": "2026-11-06T01:53:04+00:00",
         "window": {
             "start": "2026-11-05T00:00:00+00:00",
             "end": "2026-11-19T00:00:00+00:00"
@@ -98,7 +98,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1793838600"
                 },
                 {
                     "type": "gap",
@@ -126,7 +127,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1793844000"
                 },
                 {
                     "type": "gap",
@@ -154,7 +156,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1793865600"
                 },
                 {
                     "type": "gap",
@@ -181,7 +184,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1793872800"
                 },
                 {
                     "type": "gap",
@@ -208,7 +212,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1793880000"
                 },
                 {
                     "type": "gap",
@@ -236,7 +241,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1793890800"
                 },
                 {
                     "type": "gap",
@@ -264,7 +270,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1793898000"
                 },
                 {
                     "type": "gap",
@@ -292,7 +299,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1793912400"
                 },
                 {
                     "type": "gap",
@@ -320,7 +328,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1793919600"
                 },
                 {
                     "type": "gap",
@@ -347,7 +356,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1793925000"
                 },
                 {
                     "type": "gap",
@@ -375,7 +385,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1793930400"
                 },
                 {
                     "type": "gap",
@@ -403,7 +414,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1793952000"
                 },
                 {
                     "type": "gap",
@@ -430,7 +442,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1793959200"
                 },
                 {
                     "type": "gap",
@@ -457,7 +470,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1793966400"
                 },
                 {
                     "type": "gap",
@@ -485,7 +499,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1793977200"
                 },
                 {
                     "type": "gap",
@@ -513,7 +528,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1793984400"
                 },
                 {
                     "type": "gap",
@@ -541,7 +557,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1793998800"
                 },
                 {
                     "type": "gap",
@@ -569,7 +586,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794006000"
                 },
                 {
                     "type": "gap",
@@ -596,7 +614,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794011400"
                 },
                 {
                     "type": "gap",
@@ -624,7 +643,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794016800"
                 },
                 {
                     "type": "gap",
@@ -652,7 +672,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794038400"
                 },
                 {
                     "type": "gap",
@@ -679,7 +700,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794045600"
                 },
                 {
                     "type": "gap",
@@ -706,7 +728,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794052800"
                 },
                 {
                     "type": "gap",
@@ -734,7 +757,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794063600"
                 },
                 {
                     "type": "gap",
@@ -762,7 +786,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794070800"
                 },
                 {
                     "type": "gap",
@@ -790,7 +815,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794085200"
                 },
                 {
                     "type": "gap",
@@ -818,7 +844,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794092400"
                 },
                 {
                     "type": "gap",
@@ -845,7 +872,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794097800"
                 },
                 {
                     "type": "gap",
@@ -873,7 +901,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794103200"
                 },
                 {
                     "type": "gap",
@@ -901,7 +930,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794124800"
                 },
                 {
                     "type": "gap",
@@ -928,7 +958,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794132000"
                 },
                 {
                     "type": "gap",
@@ -955,7 +986,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794139200"
                 },
                 {
                     "type": "gap",
@@ -983,7 +1015,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794150000"
                 },
                 {
                     "type": "gap",
@@ -1011,7 +1044,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794157200"
                 },
                 {
                     "type": "gap",
@@ -1039,7 +1073,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794171600"
                 },
                 {
                     "type": "gap",
@@ -1067,7 +1102,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794178800"
                 },
                 {
                     "type": "gap",
@@ -1094,7 +1130,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794184200"
                 },
                 {
                     "type": "gap",
@@ -1122,7 +1159,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794189600"
                 },
                 {
                     "type": "gap",
@@ -1150,7 +1188,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794211200"
                 },
                 {
                     "type": "gap",
@@ -1177,7 +1216,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794218400"
                 },
                 {
                     "type": "gap",
@@ -1204,7 +1244,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794225600"
                 },
                 {
                     "type": "gap",
@@ -1232,7 +1273,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794236400"
                 },
                 {
                     "type": "gap",
@@ -1260,7 +1302,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794243600"
                 },
                 {
                     "type": "gap",
@@ -1288,7 +1331,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794258000"
                 },
                 {
                     "type": "gap",
@@ -1316,7 +1360,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794265200"
                 },
                 {
                     "type": "gap",
@@ -1343,7 +1388,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794270600"
                 },
                 {
                     "type": "gap",
@@ -1371,7 +1417,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794276000"
                 },
                 {
                     "type": "gap",
@@ -1399,7 +1446,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794297600"
                 },
                 {
                     "type": "gap",
@@ -1426,7 +1474,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794304800"
                 },
                 {
                     "type": "gap",
@@ -1453,7 +1502,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794312000"
                 },
                 {
                     "type": "gap",
@@ -1481,7 +1531,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794322800"
                 },
                 {
                     "type": "gap",
@@ -1509,7 +1560,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794330000"
                 },
                 {
                     "type": "gap",
@@ -1537,7 +1589,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794344400"
                 },
                 {
                     "type": "gap",
@@ -1565,7 +1618,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794351600"
                 },
                 {
                     "type": "gap",
@@ -1592,7 +1646,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794357000"
                 },
                 {
                     "type": "gap",
@@ -1620,7 +1675,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794362400"
                 },
                 {
                     "type": "gap",
@@ -1648,7 +1704,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794384000"
                 },
                 {
                     "type": "gap",
@@ -1675,7 +1732,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794391200"
                 },
                 {
                     "type": "gap",
@@ -1702,7 +1760,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794398400"
                 },
                 {
                     "type": "gap",
@@ -1730,7 +1789,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794409200"
                 },
                 {
                     "type": "gap",
@@ -1758,7 +1818,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794416400"
                 },
                 {
                     "type": "gap",
@@ -1786,7 +1847,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794430800"
                 },
                 {
                     "type": "gap",
@@ -1814,7 +1876,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794438000"
                 },
                 {
                     "type": "gap",
@@ -1841,7 +1904,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794443400"
                 },
                 {
                     "type": "gap",
@@ -1869,7 +1933,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794448800"
                 },
                 {
                     "type": "gap",
@@ -1897,7 +1962,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794470400"
                 },
                 {
                     "type": "gap",
@@ -1924,7 +1990,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794477600"
                 },
                 {
                     "type": "gap",
@@ -1951,7 +2018,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794484800"
                 },
                 {
                     "type": "gap",
@@ -1979,7 +2047,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794495600"
                 },
                 {
                     "type": "gap",
@@ -2007,7 +2076,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794502800"
                 },
                 {
                     "type": "gap",
@@ -2035,7 +2105,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794517200"
                 },
                 {
                     "type": "gap",
@@ -2063,7 +2134,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794524400"
                 },
                 {
                     "type": "gap",
@@ -2090,7 +2162,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794529800"
                 },
                 {
                     "type": "gap",
@@ -2118,7 +2191,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794535200"
                 },
                 {
                     "type": "gap",
@@ -2146,7 +2220,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794556800"
                 },
                 {
                     "type": "gap",
@@ -2173,7 +2248,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794564000"
                 },
                 {
                     "type": "gap",
@@ -2200,7 +2276,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794571200"
                 },
                 {
                     "type": "gap",
@@ -2228,7 +2305,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794582000"
                 },
                 {
                     "type": "gap",
@@ -2256,7 +2334,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794589200"
                 },
                 {
                     "type": "gap",
@@ -2284,7 +2363,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794603600"
                 },
                 {
                     "type": "gap",
@@ -2312,7 +2392,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794610800"
                 },
                 {
                     "type": "gap",
@@ -2339,7 +2420,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794616200"
                 },
                 {
                     "type": "gap",
@@ -2367,7 +2449,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794621600"
                 },
                 {
                     "type": "gap",
@@ -2395,7 +2478,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794643200"
                 },
                 {
                     "type": "gap",
@@ -2422,7 +2506,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794650400"
                 },
                 {
                     "type": "gap",
@@ -2449,7 +2534,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794657600"
                 },
                 {
                     "type": "gap",
@@ -2477,7 +2563,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794668400"
                 },
                 {
                     "type": "gap",
@@ -2505,7 +2592,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794675600"
                 },
                 {
                     "type": "gap",
@@ -2533,7 +2621,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794690000"
                 },
                 {
                     "type": "gap",
@@ -2561,7 +2650,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794697200"
                 },
                 {
                     "type": "gap",
@@ -2588,7 +2678,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794702600"
                 },
                 {
                     "type": "gap",
@@ -2616,7 +2707,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794708000"
                 },
                 {
                     "type": "gap",
@@ -2644,7 +2736,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794729600"
                 },
                 {
                     "type": "gap",
@@ -2671,7 +2764,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794736800"
                 },
                 {
                     "type": "gap",
@@ -2698,7 +2792,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794744000"
                 },
                 {
                     "type": "gap",
@@ -2726,7 +2821,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794754800"
                 },
                 {
                     "type": "gap",
@@ -2754,7 +2850,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794762000"
                 },
                 {
                     "type": "gap",
@@ -2782,7 +2879,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794776400"
                 },
                 {
                     "type": "gap",
@@ -2810,7 +2908,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794783600"
                 },
                 {
                     "type": "gap",
@@ -2837,7 +2936,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794789000"
                 },
                 {
                     "type": "gap",
@@ -2865,7 +2965,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794794400"
                 },
                 {
                     "type": "gap",
@@ -2893,7 +2994,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794816000"
                 },
                 {
                     "type": "gap",
@@ -2920,7 +3022,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794823200"
                 },
                 {
                     "type": "gap",
@@ -2947,7 +3050,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794830400"
                 },
                 {
                     "type": "gap",
@@ -2975,7 +3079,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794841200"
                 },
                 {
                     "type": "gap",
@@ -3003,7 +3108,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794848400"
                 },
                 {
                     "type": "gap",
@@ -3031,7 +3137,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794862800"
                 },
                 {
                     "type": "gap",
@@ -3059,7 +3166,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794870000"
                 },
                 {
                     "type": "gap",
@@ -3086,7 +3194,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794875400"
                 },
                 {
                     "type": "gap",
@@ -3114,7 +3223,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794880800"
                 },
                 {
                     "type": "gap",
@@ -3142,7 +3252,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794902400"
                 },
                 {
                     "type": "gap",
@@ -3169,7 +3280,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794909600"
                 },
                 {
                     "type": "gap",
@@ -3196,7 +3308,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1794916800"
                 },
                 {
                     "type": "gap",
@@ -3224,7 +3337,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1794927600"
                 },
                 {
                     "type": "gap",
@@ -3252,7 +3366,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1794934800"
                 },
                 {
                     "type": "gap",
@@ -3280,7 +3395,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1794949200"
                 },
                 {
                     "type": "gap",
@@ -3308,7 +3424,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1794956400"
                 },
                 {
                     "type": "gap",
@@ -3335,7 +3452,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "economics-and-society@1794961800"
                 },
                 {
                     "type": "gap",
@@ -3363,7 +3481,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLU3TaPgchJtSPXI81h3ngbODObreJWiSJ"
-                    }
+                    },
+                    "program_id": "the-evening-lecture@1794967200"
                 },
                 {
                     "type": "gap",
@@ -3391,7 +3510,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP629n_3fX7HmKKgin_rqGzbx"
-                    }
+                    },
+                    "program_id": "physics-and-astronomy-overnight@1794988800"
                 },
                 {
                     "type": "gap",
@@ -3418,7 +3538,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "overnight-university@1794996000"
                 },
                 {
                     "type": "gap",
@@ -3445,7 +3566,8 @@
                         "privacy_status": "public",
                         "availability": "available",
                         "availability_detail": null
-                    }
+                    },
+                    "program_id": "mathematics-oxford@1795003200"
                 },
                 {
                     "type": "gap",
@@ -3473,7 +3595,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLUl4u3cNGP61VNvICqk2HXJTonnKgAc9d"
-                    }
+                    },
+                    "program_id": "mathematics-mit@1795014000"
                 },
                 {
                     "type": "gap",
@@ -3501,7 +3624,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLhQjrBD2T380hlTqAU8HfvVepCcjCqTg6"
-                    }
+                    },
+                    "program_id": "computer-science-cs50@1795021200"
                 },
                 {
                     "type": "gap",
@@ -3529,7 +3653,8 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLbnrZHfNEDZznRvKKOIHO2w4cww3iBAI1"
-                    }
+                    },
+                    "program_id": "the-royal-institution@1795035600"
                 },
                 {
                     "type": "gap",
@@ -3557,14 +3682,1656 @@
                         "availability": "available",
                         "availability_detail": null,
                         "playlist_id": "PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_"
-                    }
+                    },
+                    "program_id": "history-and-civilization@1795042800"
                 },
                 {
                     "type": "gap",
                     "start": 1209102,
-                    "duration": 498
+                    "duration": 498,
+                    "program_id": "history-and-civilization@1795042800"
                 }
             ]
+        }
+    ],
+    "programs": [
+        {
+            "occurrence_id": "economics-and-society@1793838600",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 1800,
+            "nominal_end": 6300,
+            "start": 1800,
+            "end": 6300
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1793844000",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 7200,
+            "nominal_end": 11700,
+            "start": 7200,
+            "end": 11700
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1793865600",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 28800,
+            "nominal_end": 35100,
+            "start": 28800,
+            "end": 35100
+        },
+        {
+            "occurrence_id": "overnight-university@1793872800",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 36000,
+            "nominal_end": 41400,
+            "start": 36000,
+            "end": 41400
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1793880000",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 43200,
+            "nominal_end": 51600,
+            "start": 43200,
+            "end": 51600
+        },
+        {
+            "occurrence_id": "mathematics-mit@1793890800",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 54000,
+            "nominal_end": 59400,
+            "start": 54000,
+            "end": 59400
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1793898000",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 61200,
+            "nominal_end": 70500,
+            "start": 61200,
+            "end": 70500
+        },
+        {
+            "occurrence_id": "the-royal-institution@1793912400",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 75600,
+            "nominal_end": 81000,
+            "start": 75600,
+            "end": 81000
+        },
+        {
+            "occurrence_id": "history-and-civilization@1793919600",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 82800,
+            "nominal_end": 86400,
+            "start": 82800,
+            "end": 86400
+        },
+        {
+            "occurrence_id": "economics-and-society@1793925000",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 88200,
+            "nominal_end": 92700,
+            "start": 88200,
+            "end": 92700
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1793930400",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 93600,
+            "nominal_end": 98100,
+            "start": 93600,
+            "end": 98100
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1793952000",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 115200,
+            "nominal_end": 121500,
+            "start": 115200,
+            "end": 121500
+        },
+        {
+            "occurrence_id": "overnight-university@1793959200",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 122400,
+            "nominal_end": 127800,
+            "start": 122400,
+            "end": 127800
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1793966400",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 129600,
+            "nominal_end": 138000,
+            "start": 129600,
+            "end": 138000
+        },
+        {
+            "occurrence_id": "mathematics-mit@1793977200",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 140400,
+            "nominal_end": 145800,
+            "start": 140400,
+            "end": 145800
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1793984400",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 147600,
+            "nominal_end": 156900,
+            "start": 147600,
+            "end": 156900
+        },
+        {
+            "occurrence_id": "the-royal-institution@1793998800",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 162000,
+            "nominal_end": 167400,
+            "start": 162000,
+            "end": 167400
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794006000",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 169200,
+            "nominal_end": 172800,
+            "start": 169200,
+            "end": 172800
+        },
+        {
+            "occurrence_id": "economics-and-society@1794011400",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 174600,
+            "nominal_end": 179100,
+            "start": 174600,
+            "end": 179100
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794016800",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 180000,
+            "nominal_end": 184500,
+            "start": 180000,
+            "end": 184500
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794038400",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 201600,
+            "nominal_end": 207900,
+            "start": 201600,
+            "end": 207900
+        },
+        {
+            "occurrence_id": "overnight-university@1794045600",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 208800,
+            "nominal_end": 214200,
+            "start": 208800,
+            "end": 214200
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794052800",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 216000,
+            "nominal_end": 224400,
+            "start": 216000,
+            "end": 224400
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794063600",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 226800,
+            "nominal_end": 232200,
+            "start": 226800,
+            "end": 232200
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794070800",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 234000,
+            "nominal_end": 243300,
+            "start": 234000,
+            "end": 243300
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794085200",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 248400,
+            "nominal_end": 253800,
+            "start": 248400,
+            "end": 253800
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794092400",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 255600,
+            "nominal_end": 259200,
+            "start": 255600,
+            "end": 259200
+        },
+        {
+            "occurrence_id": "economics-and-society@1794097800",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 261000,
+            "nominal_end": 265500,
+            "start": 261000,
+            "end": 265500
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794103200",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 266400,
+            "nominal_end": 270900,
+            "start": 266400,
+            "end": 270900
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794124800",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 288000,
+            "nominal_end": 294300,
+            "start": 288000,
+            "end": 294300
+        },
+        {
+            "occurrence_id": "overnight-university@1794132000",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 295200,
+            "nominal_end": 300600,
+            "start": 295200,
+            "end": 300600
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794139200",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 302400,
+            "nominal_end": 310800,
+            "start": 302400,
+            "end": 310800
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794150000",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 313200,
+            "nominal_end": 318600,
+            "start": 313200,
+            "end": 318600
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794157200",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 320400,
+            "nominal_end": 329700,
+            "start": 320400,
+            "end": 329700
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794171600",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 334800,
+            "nominal_end": 340200,
+            "start": 334800,
+            "end": 340200
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794178800",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 342000,
+            "nominal_end": 345600,
+            "start": 342000,
+            "end": 345600
+        },
+        {
+            "occurrence_id": "economics-and-society@1794184200",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 347400,
+            "nominal_end": 351900,
+            "start": 347400,
+            "end": 351900
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794189600",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 352800,
+            "nominal_end": 357300,
+            "start": 352800,
+            "end": 357300
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794211200",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 374400,
+            "nominal_end": 380700,
+            "start": 374400,
+            "end": 380700
+        },
+        {
+            "occurrence_id": "overnight-university@1794218400",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 381600,
+            "nominal_end": 387000,
+            "start": 381600,
+            "end": 387000
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794225600",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 388800,
+            "nominal_end": 397200,
+            "start": 388800,
+            "end": 397200
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794236400",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 399600,
+            "nominal_end": 405000,
+            "start": 399600,
+            "end": 405000
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794243600",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 406800,
+            "nominal_end": 416100,
+            "start": 406800,
+            "end": 416100
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794258000",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 421200,
+            "nominal_end": 426600,
+            "start": 421200,
+            "end": 426600
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794265200",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 428400,
+            "nominal_end": 432000,
+            "start": 428400,
+            "end": 432000
+        },
+        {
+            "occurrence_id": "economics-and-society@1794270600",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 433800,
+            "nominal_end": 438300,
+            "start": 433800,
+            "end": 438300
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794276000",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 439200,
+            "nominal_end": 443700,
+            "start": 439200,
+            "end": 443700
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794297600",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 460800,
+            "nominal_end": 467100,
+            "start": 460800,
+            "end": 467100
+        },
+        {
+            "occurrence_id": "overnight-university@1794304800",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 468000,
+            "nominal_end": 473400,
+            "start": 468000,
+            "end": 473400
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794312000",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 475200,
+            "nominal_end": 483600,
+            "start": 475200,
+            "end": 483600
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794322800",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 486000,
+            "nominal_end": 491400,
+            "start": 486000,
+            "end": 491400
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794330000",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 493200,
+            "nominal_end": 502500,
+            "start": 493200,
+            "end": 502500
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794344400",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 507600,
+            "nominal_end": 513000,
+            "start": 507600,
+            "end": 513000
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794351600",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 514800,
+            "nominal_end": 518400,
+            "start": 514800,
+            "end": 518400
+        },
+        {
+            "occurrence_id": "economics-and-society@1794357000",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 520200,
+            "nominal_end": 524700,
+            "start": 520200,
+            "end": 524700
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794362400",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 525600,
+            "nominal_end": 530100,
+            "start": 525600,
+            "end": 530100
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794384000",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 547200,
+            "nominal_end": 553500,
+            "start": 547200,
+            "end": 553500
+        },
+        {
+            "occurrence_id": "overnight-university@1794391200",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 554400,
+            "nominal_end": 559800,
+            "start": 554400,
+            "end": 559800
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794398400",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 561600,
+            "nominal_end": 570000,
+            "start": 561600,
+            "end": 570000
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794409200",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 572400,
+            "nominal_end": 577800,
+            "start": 572400,
+            "end": 577800
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794416400",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 579600,
+            "nominal_end": 588900,
+            "start": 579600,
+            "end": 588900
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794430800",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 594000,
+            "nominal_end": 599400,
+            "start": 594000,
+            "end": 599400
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794438000",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 601200,
+            "nominal_end": 604800,
+            "start": 601200,
+            "end": 604800
+        },
+        {
+            "occurrence_id": "economics-and-society@1794443400",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 606600,
+            "nominal_end": 611100,
+            "start": 606600,
+            "end": 611100
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794448800",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 612000,
+            "nominal_end": 616500,
+            "start": 612000,
+            "end": 616500
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794470400",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 633600,
+            "nominal_end": 639900,
+            "start": 633600,
+            "end": 639900
+        },
+        {
+            "occurrence_id": "overnight-university@1794477600",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 640800,
+            "nominal_end": 646200,
+            "start": 640800,
+            "end": 646200
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794484800",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 648000,
+            "nominal_end": 656400,
+            "start": 648000,
+            "end": 656400
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794495600",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 658800,
+            "nominal_end": 664200,
+            "start": 658800,
+            "end": 664200
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794502800",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 666000,
+            "nominal_end": 675300,
+            "start": 666000,
+            "end": 675300
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794517200",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 680400,
+            "nominal_end": 685800,
+            "start": 680400,
+            "end": 685800
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794524400",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 687600,
+            "nominal_end": 691200,
+            "start": 687600,
+            "end": 691200
+        },
+        {
+            "occurrence_id": "economics-and-society@1794529800",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 693000,
+            "nominal_end": 697500,
+            "start": 693000,
+            "end": 697500
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794535200",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 698400,
+            "nominal_end": 702900,
+            "start": 698400,
+            "end": 702900
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794556800",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 720000,
+            "nominal_end": 726300,
+            "start": 720000,
+            "end": 726300
+        },
+        {
+            "occurrence_id": "overnight-university@1794564000",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 727200,
+            "nominal_end": 732600,
+            "start": 727200,
+            "end": 732600
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794571200",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 734400,
+            "nominal_end": 742800,
+            "start": 734400,
+            "end": 742800
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794582000",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 745200,
+            "nominal_end": 750600,
+            "start": 745200,
+            "end": 750600
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794589200",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 752400,
+            "nominal_end": 761700,
+            "start": 752400,
+            "end": 761700
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794603600",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 766800,
+            "nominal_end": 772200,
+            "start": 766800,
+            "end": 772200
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794610800",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 774000,
+            "nominal_end": 777600,
+            "start": 774000,
+            "end": 777600
+        },
+        {
+            "occurrence_id": "economics-and-society@1794616200",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 779400,
+            "nominal_end": 783900,
+            "start": 779400,
+            "end": 783900
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794621600",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 784800,
+            "nominal_end": 789300,
+            "start": 784800,
+            "end": 789300
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794643200",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 806400,
+            "nominal_end": 812700,
+            "start": 806400,
+            "end": 812700
+        },
+        {
+            "occurrence_id": "overnight-university@1794650400",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 813600,
+            "nominal_end": 819000,
+            "start": 813600,
+            "end": 819000
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794657600",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 820800,
+            "nominal_end": 829200,
+            "start": 820800,
+            "end": 829200
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794668400",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 831600,
+            "nominal_end": 837000,
+            "start": 831600,
+            "end": 837000
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794675600",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 838800,
+            "nominal_end": 848100,
+            "start": 838800,
+            "end": 848100
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794690000",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 853200,
+            "nominal_end": 858600,
+            "start": 853200,
+            "end": 858600
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794697200",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 860400,
+            "nominal_end": 864000,
+            "start": 860400,
+            "end": 864000
+        },
+        {
+            "occurrence_id": "economics-and-society@1794702600",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 865800,
+            "nominal_end": 870300,
+            "start": 865800,
+            "end": 870300
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794708000",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 871200,
+            "nominal_end": 875700,
+            "start": 871200,
+            "end": 875700
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794729600",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 892800,
+            "nominal_end": 899100,
+            "start": 892800,
+            "end": 899100
+        },
+        {
+            "occurrence_id": "overnight-university@1794736800",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 900000,
+            "nominal_end": 905400,
+            "start": 900000,
+            "end": 905400
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794744000",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 907200,
+            "nominal_end": 915600,
+            "start": 907200,
+            "end": 915600
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794754800",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 918000,
+            "nominal_end": 923400,
+            "start": 918000,
+            "end": 923400
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794762000",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 925200,
+            "nominal_end": 934500,
+            "start": 925200,
+            "end": 934500
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794776400",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 939600,
+            "nominal_end": 945000,
+            "start": 939600,
+            "end": 945000
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794783600",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 946800,
+            "nominal_end": 950400,
+            "start": 946800,
+            "end": 950400
+        },
+        {
+            "occurrence_id": "economics-and-society@1794789000",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 952200,
+            "nominal_end": 956700,
+            "start": 952200,
+            "end": 956700
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794794400",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 957600,
+            "nominal_end": 962100,
+            "start": 957600,
+            "end": 962100
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794816000",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 979200,
+            "nominal_end": 985500,
+            "start": 979200,
+            "end": 985500
+        },
+        {
+            "occurrence_id": "overnight-university@1794823200",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 986400,
+            "nominal_end": 991800,
+            "start": 986400,
+            "end": 991800
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794830400",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 993600,
+            "nominal_end": 1002000,
+            "start": 993600,
+            "end": 1002000
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794841200",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 1004400,
+            "nominal_end": 1009800,
+            "start": 1004400,
+            "end": 1009800
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794848400",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 1011600,
+            "nominal_end": 1020900,
+            "start": 1011600,
+            "end": 1020900
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794862800",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 1026000,
+            "nominal_end": 1031400,
+            "start": 1026000,
+            "end": 1031400
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794870000",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 1033200,
+            "nominal_end": 1036800,
+            "start": 1033200,
+            "end": 1036800
+        },
+        {
+            "occurrence_id": "economics-and-society@1794875400",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 1038600,
+            "nominal_end": 1043100,
+            "start": 1038600,
+            "end": 1043100
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794880800",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 1044000,
+            "nominal_end": 1048500,
+            "start": 1044000,
+            "end": 1048500
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794902400",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 1065600,
+            "nominal_end": 1071900,
+            "start": 1065600,
+            "end": 1071900
+        },
+        {
+            "occurrence_id": "overnight-university@1794909600",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 1072800,
+            "nominal_end": 1078200,
+            "start": 1072800,
+            "end": 1078200
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1794916800",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 1080000,
+            "nominal_end": 1088400,
+            "start": 1080000,
+            "end": 1088400
+        },
+        {
+            "occurrence_id": "mathematics-mit@1794927600",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 1090800,
+            "nominal_end": 1096200,
+            "start": 1090800,
+            "end": 1096200
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1794934800",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 1098000,
+            "nominal_end": 1107300,
+            "start": 1098000,
+            "end": 1107300
+        },
+        {
+            "occurrence_id": "the-royal-institution@1794949200",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 1112400,
+            "nominal_end": 1117800,
+            "start": 1112400,
+            "end": 1117800
+        },
+        {
+            "occurrence_id": "history-and-civilization@1794956400",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 1119600,
+            "nominal_end": 1123200,
+            "start": 1119600,
+            "end": 1123200
+        },
+        {
+            "occurrence_id": "economics-and-society@1794961800",
+            "block_id": "economics-and-society",
+            "title": "Economics and Society",
+            "description": "The team at Stanford eCorner believes in the powerful combination of evidence and imagination. (featuring Stanford eCorner.)",
+            "series_id": "stanford-ecorner",
+            "series_title": "Stanford eCorner",
+            "boundary_mode": "soft",
+            "nominal_start": 1125000,
+            "nominal_end": 1129500,
+            "start": 1125000,
+            "end": 1129500
+        },
+        {
+            "occurrence_id": "the-evening-lecture@1794967200",
+            "block_id": "the-evening-lecture",
+            "title": "The Evening Lecture",
+            "description": "Featuring Gresham College Lectures.",
+            "series_id": "gresham-lectures",
+            "series_title": "Gresham College Lectures",
+            "boundary_mode": "hard",
+            "nominal_start": 1130400,
+            "nominal_end": 1134900,
+            "start": 1130400,
+            "end": 1134900
+        },
+        {
+            "occurrence_id": "physics-and-astronomy-overnight@1794988800",
+            "block_id": "physics-and-astronomy-overnight",
+            "title": "Physics and Astronomy Overnight",
+            "description": "Instructor: Scott Hughes View the complete course: https://ocw.mit.edu/8-962S20 8.962 is MIT's graduate course in general relativity, which covers the basic pri… (featuring MIT 8.962 General Relativity.)",
+            "series_id": "mit-general-relativity",
+            "series_title": "MIT 8.962 General Relativity",
+            "boundary_mode": "soft",
+            "nominal_start": 1152000,
+            "nominal_end": 1158300,
+            "start": 1152000,
+            "end": 1158300
+        },
+        {
+            "occurrence_id": "overnight-university@1794996000",
+            "block_id": "overnight-university",
+            "title": "Overnight University",
+            "description": "Perimeter Institute is a world-leading center for theoretical physics, dedicated to unraveling the deepest mysteries of the universe. (featuring Perimeter Institute Public Lectures.)",
+            "series_id": "perimeter-institute",
+            "series_title": "Perimeter Institute Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 1159200,
+            "nominal_end": 1164600,
+            "start": 1159200,
+            "end": 1164600
+        },
+        {
+            "occurrence_id": "mathematics-oxford@1795003200",
+            "block_id": "mathematics-oxford",
+            "title": "Mathematics Oxford",
+            "description": "The Oxford Mathematics YouTube Channel features public lectures, student lectures, research films and more. (featuring Oxford Mathematics Public Lectures.)",
+            "series_id": "oxford-mathematics",
+            "series_title": "Oxford Mathematics Public Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 1166400,
+            "nominal_end": 1174800,
+            "start": 1166400,
+            "end": 1174800
+        },
+        {
+            "occurrence_id": "mathematics-mit@1795014000",
+            "block_id": "mathematics-mit",
+            "title": "Mathematics Mit",
+            "description": "Instructor: Zachary Abel, Brynmor Chapman, Erik Demaine View the complete course: https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-20… (featuring MIT 6.1200J Mathematics for Computer Science.)",
+            "series_id": "mit-math-for-cs",
+            "series_title": "MIT 6.1200J Mathematics for Computer Science",
+            "boundary_mode": "soft",
+            "nominal_start": 1177200,
+            "nominal_end": 1182600,
+            "start": 1177200,
+            "end": 1182600
+        },
+        {
+            "occurrence_id": "computer-science-cs50@1795021200",
+            "block_id": "computer-science-cs50",
+            "title": "Computer Science Cs50",
+            "description": "This is CS50, Harvard University's introduction to the intellectual enterprises of computer science and the art of programming, for concentrators and non-concen… (featuring CS50x Lectures (Harvard).)",
+            "series_id": "cs50x-lectures",
+            "series_title": "CS50x Lectures (Harvard)",
+            "boundary_mode": "soft",
+            "nominal_start": 1184400,
+            "nominal_end": 1193700,
+            "start": 1184400,
+            "end": 1193700
+        },
+        {
+            "occurrence_id": "the-royal-institution@1795035600",
+            "block_id": "the-royal-institution",
+            "title": "The Royal Institution",
+            "description": "From quantum mechanics to cosmology, the questions at the frontier of the discipline continue to challenge and redefine what we thought we knew about the nature… (featuring The Royal Institution: Top Physics Lectures.)",
+            "series_id": "royal-institution-physics",
+            "series_title": "The Royal Institution: Top Physics Lectures",
+            "boundary_mode": "soft",
+            "nominal_start": 1198800,
+            "nominal_end": 1204200,
+            "start": 1198800,
+            "end": 1204200
+        },
+        {
+            "occurrence_id": "history-and-civilization@1795042800",
+            "block_id": "history-and-civilization",
+            "title": "History and Civilization",
+            "description": "Ukraine must have existed as a society and polity on 23 February 2022, else Ukrainians would not have collectively resisted Russian invasion the next day. (featuring Yale: The Making of Modern Ukraine (Timothy Snyder).)",
+            "series_id": "yale-ukraine",
+            "series_title": "Yale: The Making of Modern Ukraine (Timothy Snyder)",
+            "boundary_mode": "hard",
+            "nominal_start": 1206000,
+            "nominal_end": 1209600,
+            "start": 1206000,
+            "end": 1209600
         }
     ]
 }
