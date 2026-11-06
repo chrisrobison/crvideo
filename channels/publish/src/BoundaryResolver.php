@@ -176,6 +176,19 @@ final class BoundaryResolver
                 // nominal, and this is the boundary the EPG must actually draw to avoid
                 // ever showing two cells overlapping.
                 $durationSeconds = $g['durationSeconds'] ?? ($g['items'][count($g['items']) - 1]['end'] - $g['nominalStart']);
+                // The nominal slot's end, shifted by this occurrence's own delay (if
+                // any) -- the "intended" end. But packing.on_unfit=allow_overrun can
+                // let an item's actual end run past that (EpisodePacker schedules the
+                // unfit episode anyway rather than deferring it), and that is legal as
+                // long as it didn't collide with the next occurrence above (or this
+                // program would never have reached this line). $prevEnd is this
+                // group's last item's real end, already shifted by $delay -- use
+                // whichever is later so the EPG's presentation window actually covers
+                // the content airing within it instead of understating it and leaving
+                // a phantom gap while the overrun item is still playing.
+                $nominalEndWithDelay = $g['nominalStart'] + $delay + $durationSeconds;
+                $actualItemsEnd = $items[count($items) - 1]['end'];
+                $effectiveEnd = max($nominalEndWithDelay, $actualItemsEnd);
                 $programs[] = [
                     'occurrence_id' => $occurrenceId,
                     'block_id' => $g['blockId'],
@@ -187,7 +200,7 @@ final class BoundaryResolver
                     'nominal_start' => $g['nominalStart'],
                     'nominal_end' => $g['nominalStart'] + $durationSeconds,
                     'start' => $g['nominalStart'] + $delay,
-                    'end' => $g['nominalStart'] + $delay + $durationSeconds,
+                    'end' => $effectiveEnd,
                 ];
             }
         }
