@@ -74,33 +74,140 @@ export function buildTimeline(schedule, anchor = 0) {
       const start = blockStart + Number(item.start);
       const end = start + Number(item.duration);
       if (!(end > start)) continue;
-      const { provider, videoId } = resolveProvider(item);
       // A "continuity" item (Phase 4/5/6) is never driven through a PlayerAdapter --
       // it has no provider and is rendered, not played -- but it IS a real,
       // compiler-decided occurrence, not an undefined/empty gap.
-      const isContinuity = item.type === "continuity";
-      const playable = item.type !== "gap" && !isContinuity && provider !== null;
-      entries.push({
-        type: item.type,
-        id: item.id ?? null,
-        title: item.title || (playable ? item.id : null),
-        description: item.description || null,
-        thumbnailUrl: item.thumbnail_url || null,
-        template: item.template || null,
-        nextProgramId: item.next_program_id ?? null,
-        playable,
-        provider,
-        videoId,
-        mediaUrl: item.media_url || null,
-        sourceUrl: item.source_url || (item.source && item.source.url) || null,
-        start, end,
-      });
+      entries.push(mapScheduleItem(item, start, end));
     }
     blockStart += length;
   }
   if (!entries.length || !(blockStart > 0)) throw new Error("Schedule has nothing to air.");
   entries.sort((a, b) => a.start - b.start);
   return { entries, cycle: blockStart, anchor };
+}
+
+/**
+ * Phase 4 of docs/guide-update.md: the GUIDE-facing projection of a
+ * published schedule.json, as opposed to buildTimeline()'s PLAYBACK-facing
+ * one above. Same raw input, same per-item absolute-cycle-position math
+ * (an item's `program_id`, if any, never changes where or how long it
+ * airs) -- the only difference is what counts as one "entry":
+ *
+ *   - An item carrying a `program_id` that resolves against this
+ *     schedule's top-level `programs` collection (Phase 3) is folded into
+ *     that program's single guide entry, as one of its ordered
+ *     `episodes`, instead of becoming its own entry. This is what turns
+ *     five packed videos (or a packed video plus its trailing
+ *     continuity filler -- Phase 7) into one "Electronics Lab" cell.
+ *   - Any item with no resolvable `program_id` -- every item in a legacy,
+ *     non-programming.json schedule (Phase 8, e.g. Film Day at School),
+ *     or a genuine inter-program station break in a programming.json-
+ *     sourced one -- passes through as its own entry, byte-for-byte the
+ *     same shape buildTimeline() would have produced for it. This is the
+ *     legacy/standalone-short-program fallback: nothing is ever grouped
+ *     by guessing from titles or adjacency, only from this explicit
+ *     reference.
+ *
+ * A program entry's own start/end are its EFFECTIVE presentation window
+ * (schedule.json programs[].start/end -- already shifted by any boundary
+ * delay; see BoundaryResolver), not a derived min/max over its episodes,
+ * so Phase 7's "two EPG cells never overlap" holds even when a block's
+ * own episodes under-fill it.
+ *
+ * Returned entries share buildTimeline()'s {start,end,playable,...} shape
+ * (plus `episodes` on a program entry), so the existing locate()/
+ * airings() functions below work completely unchanged over either
+ * timeline. This function never reads anything playback-specific and
+ * never mutates its input -- the player keeps using buildTimeline()'s
+ * timeline, completely unaffected by whatever the guide does with this one.
+ */
+export function buildEpgTimeline(schedule, anchor = 0) {
+  const programsById = new Map();
+  for (const p of schedule.programs || []) {
+    if (p && typeof p.occurrence_id === "string") programsById.set(p.occurrence_id, p);
+  }
+
+  const episodesByProgram = new Map(); // occurrence_id -> ordered episode entries
+  const entries = [];
+  let blockStart = 0;
+  for (const block of schedule.blocks || []) {
+    const length = Number(block.duration);
+    if (!(length > 0)) continue;
+    for (const item of block.items || []) {
+      const start = blockStart + Number(item.start);
+      const end = start + Number(item.duration);
+      if (!(end > start)) continue;
+      const mapped = mapScheduleItem(item, start, end);
+      const programId = typeof item.program_id === "string" ? item.program_id : null;
+      if (programId !== null && programsById.has(programId)) {
+        let episodes = episodesByProgram.get(programId);
+        if (!episodes) episodesByProgram.set(programId, (episodes = []));
+        episodes.push(mapped);
+      } else {
+        entries.push(mapped);
+      }
+    }
+    blockStart += length;
+  }
+
+  for (const [occurrenceId, episodes] of episodesByProgram) {
+    const p = programsById.get(occurrenceId);
+    episodes.sort((a, b) => a.start - b.start);
+    entries.push({
+      type: "program",
+      id: occurrenceId,
+      blockId: p.block_id,
+      title: p.title || episodes[0].title || occurrenceId,
+      description: p.description || null,
+      seriesId: p.series_id || null,
+      seriesTitle: p.series_title || null,
+      boundaryMode: p.boundary_mode || "hard",
+      playable: true,
+      episodes,
+      start: p.start,
+      end: p.end,
+    });
+  }
+
+  if (!entries.length || !(blockStart > 0)) throw new Error("Schedule has nothing to air.");
+  entries.sort((a, b) => a.start - b.start);
+  return { entries, cycle: blockStart, anchor };
+}
+
+/** Phase 6: an episode's own absolute (wall-clock) start/end, given the
+ *  program-level airing (as returned by locate()/airings() over an EPG
+ *  timeline) it belongs to. Pure arithmetic from fields already on both
+ *  objects (airing.start/.startsAt are the same cycle-relative/absolute
+ *  pair every airing carries) -- no separate lookup, no re-deriving
+ *  boundaries from anything other than the schedule's own data. */
+export function episodeAiringTimes(programAiring, episode) {
+  const offset = programAiring.startsAt - programAiring.start;
+  return { startsAt: episode.start + offset, endsAt: episode.end + offset };
+}
+
+/** Maps one raw schedule item (already placed at absolute cycle-relative
+ *  start/end) into the common entry shape both buildTimeline() and
+ *  buildEpgTimeline() use. Shared so the two projections can never drift
+ *  apart on what a "video"/"continuity"/"gap" item means. */
+function mapScheduleItem(item, start, end) {
+  const { provider, videoId } = resolveProvider(item);
+  const isContinuity = item.type === "continuity";
+  const playable = item.type !== "gap" && !isContinuity && provider !== null;
+  return {
+    type: item.type,
+    id: item.id ?? null,
+    title: item.title || (playable ? item.id : null),
+    description: item.description || null,
+    thumbnailUrl: item.thumbnail_url || null,
+    template: item.template || null,
+    nextProgramId: item.next_program_id ?? null,
+    playable,
+    provider,
+    videoId,
+    mediaUrl: item.media_url || null,
+    sourceUrl: item.source_url || (item.source && item.source.url) || null,
+    start, end,
+  };
 }
 
 const GAP_ENTRY = {
@@ -182,6 +289,12 @@ export async function loadChannel(id, meta = null) {
     theme: (meta.theme && typeof meta.theme === "object") ? meta.theme : null,
     catalogUrl: new URL(meta.catalog || "catalog.json", base).href,
     timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0),
+    // Phase 4/5 of docs/guide-update.md: the guide's own program-level
+    // projection of the same schedule -- see buildEpgTimeline()'s header.
+    // Never read by BroadcastPlayer/watch.html; only the channel guide
+    // (index.html) uses this field, so playback is completely unaffected
+    // by anything built here.
+    epgTimeline: buildEpgTimeline(schedule, Number.isFinite(anchor) ? anchor : 0),
   };
 }
 
