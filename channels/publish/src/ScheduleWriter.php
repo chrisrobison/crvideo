@@ -33,6 +33,12 @@ final class ScheduleWriter
      * @param list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}> $items
      *        already sorted ascending by start, already validated non-overlapping.
      * @param list<array{block_id:string,series_id:string,version:int,episode_count:int}> $episodeSets
+     * @param list<array{occurrence_id:string,block_id:string,title:?string,description:?string,series_id:?string,series_title:?string,boundary_mode:string,nominal_start:int,nominal_end:int,start:int,end:int}> $programs
+     *        BoundaryResolver's resolved program-occurrence collection (Phase 3/4 of
+     *        docs/guide-update.md). [] (the default) for a channel with no
+     *        programming.json-sourced occurrences -- schedule.json then carries no
+     *        "programs" key at all, identical to every schedule written before this
+     *        feature existed.
      */
     public static function writeSchedule(
         string $path,
@@ -41,6 +47,7 @@ final class ScheduleWriter
         DateTimeImmutable $windowStart,
         DateTimeImmutable $windowEnd,
         array $episodeSets,
+        array $programs = [],
     ): array {
         $windowStartTs = $windowStart->getTimestamp();
         $windowSeconds = $windowEnd->getTimestamp() - $windowStartTs;
@@ -71,6 +78,11 @@ final class ScheduleWriter
                     'duration' => $relEnd - $relStart,
                     'template' => $it['template'],
                     'next_program_id' => $it['next_program_id'] ?? null,
+                    // Phase 3/7: present only when this continuity card sits inside a
+                    // programming block's own effective window (e.g. covering its
+                    // under-filled remainder) -- absent for a genuine inter-program
+                    // station break, same distinction Phase 7 requires everywhere else.
+                    ...(isset($it['program_id']) ? ['program_id' => $it['program_id']] : []),
                 ];
                 $used += $relEnd - $relStart;
                 $cursor = $relEnd;
@@ -111,12 +123,44 @@ final class ScheduleWriter
                 // identical either way, an ordinary direct-media "video" item.
                 $relItem['continuity_category'] = $it['continuity_category'];
             }
+            if (isset($it['program_id'])) {
+                // Phase 3: the compact reference back into this schedule's top-level
+                // "programs" collection (see below) -- the smallest backward-compatible
+                // way to preserve this episode's logical programming-block identity.
+                // Absent for any item with no known program (legacy schedules, or a
+                // genuine station break between programs).
+                $relItem['program_id'] = $it['program_id'];
+            }
             $relItems[] = $relItem;
             $used += $relEnd - $relStart;
             $cursor = $relEnd;
         }
         if ($cursor < $windowSeconds) {
             $relItems[] = ['type' => 'gap', 'start' => $cursor, 'duration' => $windowSeconds - $cursor];
+        }
+
+        // Phase 3/4 of docs/guide-update.md: one entry per logical programming
+        // occurrence, in the same window-relative seconds as every item's own
+        // start/duration above -- the program-level EPG projection's source of
+        // truth. A legacy channel (no programming.json, e.g. Film Day at School)
+        // or one not yet opted into block title/description metadata produces []
+        // here, so "programs" is simply omitted from the written file -- identical
+        // to every schedule.json written before this feature existed.
+        $relPrograms = [];
+        foreach ($programs as $p) {
+            $relPrograms[] = [
+                'occurrence_id' => $p['occurrence_id'],
+                'block_id' => $p['block_id'],
+                'title' => $p['title'],
+                'description' => $p['description'],
+                'series_id' => $p['series_id'],
+                'series_title' => $p['series_title'],
+                'boundary_mode' => $p['boundary_mode'],
+                'nominal_start' => $p['nominal_start'] - $windowStartTs,
+                'nominal_end' => $p['nominal_end'] - $windowStartTs,
+                'start' => $p['start'] - $windowStartTs,
+                'end' => $p['end'] - $windowStartTs,
+            ];
         }
 
         $schedule = [
@@ -136,6 +180,7 @@ final class ScheduleWriter
                 'relative_start' => 0,
                 'items' => $relItems,
             ]],
+            ...($relPrograms ? ['programs' => $relPrograms] : []),
         ];
 
         self::atomicWriteJson($path, $schedule);

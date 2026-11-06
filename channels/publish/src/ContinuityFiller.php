@@ -41,6 +41,26 @@ declare(strict_types=1);
 // those exist, broadcast.js's existing "no provider -> not playable"
 // rule already shows it as an ordinary station-break slate, never
 // breaking anything.
+//
+// Program-level EPG (docs/guide-update.md, Phase 7): a filler occurrence
+// created here to cover a programming block's own UNDER-FILLED remainder
+// (e.g. packing's minimum_remaining left the last few minutes of an hour
+// slot unfilled) must stay part of that block's guide presentation, not
+// become its own tiny EPG cell. One created to cover a GENUINE gap between
+// two unrelated programs (or where there is no program scheduled at all)
+// must NOT be attributed to either neighbor -- that would misrepresent
+// airtime that was never actually part of either program.
+//
+// $programs (optional; the BoundaryResolver-resolved occurrence list, each
+// with its already-EFFECTIVE, post-delay "start"/"end" presentation
+// window) is what makes this an explicit-boundary decision rather than a
+// guess from adjacency: after filling, every produced filler item whose
+// own [start,end) falls ENTIRELY within one program's window is stamped
+// with that program's occurrence_id, exactly as if it had been one of the
+// episodes EpisodePacker itself selected. A filler spanning a boundary
+// (shouldn't happen for a hard-boundaried block, since packing never
+// overflows one) or sitting in genuinely unscheduled time is left
+// unattributed -- it renders as its own station-break cell, same as today.
 
 final class ContinuityFiller
 {
@@ -50,9 +70,10 @@ final class ContinuityFiller
     /**
      * @param list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}> $items sorted, non-overlapping (BoundaryResolver's output)
      * @param array{assets:list<array<string,mixed>>, cards:list<array<string,mixed>>, defaults:array{preferredCard:?string,minimumVideoFiller:int}} $continuity
+     * @param list<array{occurrence_id:string,start:int,end:int}> $programs BoundaryResolver's resolved program occurrences (effective, post-delay windows), for attributing an in-block filler to its owning program. Pass [] (the default) for a channel with no programming.json-sourced occurrences at all.
      * @return array{items: list<array<string,mixed>>, warnings: list<string>}
      */
-    public static function fill(array $items, int $windowStartTs, int $windowEndTs, array $continuity): array
+    public static function fill(array $items, int $windowStartTs, int $windowEndTs, array $continuity, array $programs = []): array
     {
         if (!$continuity['assets'] && !$continuity['cards']) {
             return ['items' => $items, 'warnings' => []]; // no continuity configured for this channel -- opt-out, zero change
@@ -91,6 +112,27 @@ final class ContinuityFiller
                 }
             }
             $merged[$i]['next_program_id'] = $next;
+        }
+
+        // Phase 7: attribute any filler item this pass just created (both station-id
+        // videos and dynamic cards) to the single program whose effective window
+        // fully contains it, if any. Items that were already real scheduled episodes
+        // already carry their program_id from BoundaryResolver and are left alone.
+        // Programs never overlap (BoundaryResolver's whole job), so at most one can
+        // ever match.
+        if ($programs) {
+            foreach ($merged as &$it) {
+                if (isset($it['program_id'])) {
+                    continue;
+                }
+                foreach ($programs as $p) {
+                    if ($it['start'] >= $p['start'] && $it['end'] <= $p['end']) {
+                        $it['program_id'] = $p['occurrence_id'];
+                        break;
+                    }
+                }
+            }
+            unset($it);
         }
 
         return ['items' => $merged, 'warnings' => $warnings];
