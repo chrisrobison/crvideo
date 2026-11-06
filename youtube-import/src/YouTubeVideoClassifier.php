@@ -27,8 +27,16 @@ final class YouTubeVideoClassifier
      *  treated as a Short. The Data API exposes no authoritative "is a
      *  Short" field as of this writing; this is a documented heuristic,
      *  not a guarantee -- same spirit as ia-import's documented multi-part
-     *  naming heuristic in MediaResolver. */
-    private const SHORT_MAX_SECONDS = 60.0;
+     *  naming heuristic in MediaResolver.
+     *
+     *  180s, not 60s: YouTube raised the Shorts length limit from 60
+     *  seconds to 3 minutes in 2024. A 60s cutoff let genuine
+     *  Shorts-format clips in the 61-180s range slip through classified
+     *  as ordinary "upload" (long-form) videos -- which is exactly how
+     *  several already-imported series ended up with approved
+     *  "episodes" that were actually just Shorts (see the cleanup pass
+     *  that corrected the already-imported data when this was raised). */
+    private const SHORT_MAX_SECONDS = 180.0;
 
     /**
      * @param array<string,mixed> $item one videos.list item

@@ -36,6 +36,29 @@ final class YouTubeVideoClassifierTest
         Assert::same(38.0, $c['duration']);
     }
 
+    public function testAVideoInTheRaisedShortsRangeIsClassifiedAsShortNotUpload(): void
+    {
+        // YouTube raised the Shorts length limit from 60s to 3 minutes in
+        // 2024; a video in the 61-180s range is a Short, not ordinary
+        // long-form "upload" content, even though it clears the old 60s
+        // heuristic.
+        $c = YouTubeVideoClassifier::classify($this->video(['contentDetails' => ['duration' => 'PT2M30S']]));
+        Assert::same('short', $c['kind']);
+        Assert::same(150.0, $c['duration']);
+    }
+
+    public function testExactlyThreeMinutesIsStillAShortInclusiveBoundary(): void
+    {
+        $c = YouTubeVideoClassifier::classify($this->video(['contentDetails' => ['duration' => 'PT3M']]));
+        Assert::same('short', $c['kind']);
+    }
+
+    public function testOneSecondOverThreeMinutesIsAnOrdinaryUpload(): void
+    {
+        $c = YouTubeVideoClassifier::classify($this->video(['contentDetails' => ['duration' => 'PT3M1S']]));
+        Assert::same('upload', $c['kind']);
+    }
+
     public function testUpcomingLiveStreamDurationIsNullNotZero(): void
     {
         $raw = $this->video([
