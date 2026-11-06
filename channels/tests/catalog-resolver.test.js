@@ -50,16 +50,56 @@ test("a flat, series-less catalog.json (the pre-series format) still resolves un
   assert.equal(items.get("film-b").creator, "Studio Two");
 });
 
-test("the real channels/film-day-at-school/catalog.json resolves as a legacy catalog with zero series", async () => {
+test("the real channels/film-day-at-school/catalog.json keeps its 167 legacy flat items AND resolves its ten thematic series references", async () => {
+  // As of the feature/film-day-thematic-blocks migration, this catalog is
+  // no longer series-less: it still carries its original 167-item flat
+  // "items" array (the ia-import-produced legacy format, untouched) *and*
+  // now references ten series/film-day-*/series.json files (one per
+  // thematic re-curation bucket) resolved via publish.php's
+  // programming.json. Both halves of the schema must keep resolving
+  // together -- this is the real-world proof that adding "series" refs to
+  // an already-flat catalog.json doesn't disturb the flat items at all.
   const url = new URL("../film-day-at-school/catalog.json", import.meta.url);
   const { items, series, errors } = await resolveCatalog(url, { fetchJson: fsFetchJson });
   assert.deepEqual(errors, []);
-  assert.deepEqual(series, []);
   // The real catalog has 167 flat items as of this writing; assert "many,
   // and all present" rather than hardcoding the exact count so a future
   // re-import doesn't spuriously fail this test.
   assert.ok(items.size > 100, `expected >100 items, got ${items.size}`);
   assert.ok(items.has("0771_Duck_and_Cover_12_33_20_12"));
+
+  assert.equal(series.length, 10, `expected 10 thematic series, got ${series.length}`);
+  const seriesIds = series.map((s) => s.id).sort();
+  assert.deepEqual(seriesIds, [
+    "film-day-civics-hour",
+    "film-day-health-class",
+    "film-day-marriage-and-the-office",
+    "film-day-mind-your-manners",
+    "film-day-on-the-move",
+    "film-day-safety-first",
+    "film-day-science-shorts",
+    "film-day-shorts-and-curiosities",
+    "film-day-the-working-world",
+    "film-day-wired-world",
+  ]);
+  // Every one of the 167 flat catalog items is accounted for across the
+  // ten series' episode lists -- the re-curation dropped nothing. `items`
+  // merges the flat entries (keyed by their own id) with the series-
+  // derived ones (keyed "<seriesId>:<episodeId>"), so its size is the sum
+  // of both halves; the resolved `series` array only carries episodeCount,
+  // not the episodes themselves, so summing episodeCount is the
+  // resolver-level way to check coverage against the flat item count.
+  const rawCatalog = JSON.parse(readFileSync(fileURLToPath(url), "utf8"));
+  const flatItemCount = rawCatalog.items.length;
+  const totalSeriesEpisodes = series.reduce((sum, s) => sum + s.episodeCount, 0);
+  assert.equal(totalSeriesEpisodes, flatItemCount, "every flat catalog item should have exactly one matching series episode");
+  assert.equal(items.size, flatItemCount * 2, "items should hold both the flat entry and the series-derived entry for every item");
+
+  // Spot-check: a flat item's own id, re-keyed under its assigned series,
+  // resolves to a distinct entry in `items` with the same underlying data.
+  const key = "film-day-safety-first:0771_Duck_and_Cover_12_33_20_12";
+  assert.ok(items.has(key), `expected series-derived key "${key}" in items`);
+  assert.equal(items.get(key).title, items.get("0771_Duck_and_Cover_12_33_20_12").title);
 });
 
 test("the real channels/film-day-at-school/schedule.json still builds a valid timeline", () => {

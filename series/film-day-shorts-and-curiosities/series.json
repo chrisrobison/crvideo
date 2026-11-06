@@ -1,0 +1,295 @@
+{
+    "schema_version": 1,
+    "id": "film-day-shorts-and-curiosities",
+    "title": "Shorts & Curiosities",
+    "description": "Newsreels, novelty shorts, and one-of-a-kind oddities from the Internet Archive's Prelinger Archives -- too short or too strange to fit any other period on the schedule.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "200923_Marijuana_Man",
+            "episode_number": 1,
+            "title": "Marijuana Man",
+            "description": "Content warning: This film includes a brief sequence depicting violence against women. Film following a humble marijuana farmer in the hills of California, sharing his bud with the people he comes across, while dodging a DEA helicopter soaring overhead.",
+            "creator": "Unknown",
+            "duration": 1615.63,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/200923_Marijuana_Man",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "200923_Marijuana_Man",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/200923_Marijuana_Man/200923_Marijuana_Man_master.intros.mp4",
+                "page_url": "https://archive.org/details/200923_Marijuana_Man",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "1960s",
+                    "Counterculture",
+                    "Sexism"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 200923_Marijuana_Man; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "6007_Trip_to_the_Moon_A_08_38_20_04",
+            "episode_number": 2,
+            "title": "Trip to the Moon, A",
+            "description": "animated journey from Earth to Moon",
+            "creator": "Unknown",
+            "duration": 550.4,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/6007_Trip_to_the_Moon_A_08_38_20_04",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "6007_Trip_to_the_Moon_A_08_38_20_04",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/6007_Trip_to_the_Moon_A_08_38_20_04/6007_Trip_to_the_Moon_A_08_38_20_04.mp4",
+                "page_url": "https://archive.org/details/6007_Trip_to_the_Moon_A_08_38_20_04",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 6007_Trip_to_the_Moon_A_08_38_20_04; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "NewsMaga00_2",
+            "episode_number": 3,
+            "title": "News Magazine of the Screen, The (Vol. 2, Issue 9)",
+            "description": "Newsreel stories reformatted for educational presentation.",
+            "creator": "Warner Pathé News",
+            "duration": 1450.82,
+            "year": 1952,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/NewsMaga00_2",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "NewsMaga00_2",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/NewsMaga00_2/NewsMaga00_2.mp4",
+                "page_url": "https://archive.org/details/NewsMaga00_2",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Newsreels"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item NewsMaga00_2; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Lindberg1927",
+            "episode_number": 4,
+            "title": "[Lindbergh's Flight and Return]",
+            "description": "Aviator Charles A. Lindbergh takes off from New York on his solo transatlantic flight between America and Europe and arrives in Paris; newsreels conclude with his return to the U.S.",
+            "creator": "Fox News / Kinograms",
+            "duration": 424.76,
+            "year": 1927,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Lindberg1927",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Lindberg1927",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Lindberg1927/Lindberg1927.mp4",
+                "page_url": "https://archive.org/details/Lindberg1927",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Aviation: History",
+                    "Lindbergh, Charles Augustus"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Lindberg1927; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "MexicanHatDa",
+            "episode_number": 5,
+            "title": "Mexican Hat Dance",
+            "description": "",
+            "creator": "Unknown",
+            "duration": 121.62,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/MexicanHatDa",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "MexicanHatDa",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/MexicanHatDa/MexicanHatDa.mp4",
+                "page_url": "https://archive.org/details/MexicanHatDa",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "soundie"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item MexicanHatDa; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "silence",
+            "episode_number": 6,
+            "title": "Silence!",
+            "description": "Advertisement telling patrons to be quiet and watch the movie, using very interesting superimpositions.",
+            "creator": "Unknown",
+            "duration": 19.88,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/silence",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "silence",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/silence/silence.mp4",
+                "page_url": "https://archive.org/details/silence",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Movie Theaters: Advertisements"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item silence; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "TowersTh1957",
+            "episode_number": 7,
+            "title": "Towers, The",
+            "description": "Simon Rodilla and the building of the Watts Towers in south-central Los Angeles.",
+            "creator": "Rembrandt Films",
+            "duration": 715.48,
+            "year": 1957,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/TowersTh1957",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "TowersTh1957",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/TowersTh1957/TowersTh1957.mp4",
+                "page_url": "https://archive.org/details/TowersTh1957",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Art and artists: Self-taught",
+                    "Los Angeles"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item TowersTh1957; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}

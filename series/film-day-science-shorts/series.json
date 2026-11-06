@@ -1,0 +1,675 @@
+{
+    "schema_version": 1,
+    "id": "film-day-science-shorts",
+    "title": "Science Shorts",
+    "description": "Natural science and classroom physics from the Internet Archive's Prelinger Archives -- sound, light, color, electricity, and the small creatures (and smaller atoms) a mid-century science class might cover.",
+    "creator": "Internet Archive (Prelinger Archives, and other donors)",
+    "year": null,
+    "thumbnail_url": null,
+    "logo_url": null,
+    "source": {
+        "provider": "internet_archive",
+        "query": null,
+        "collection": null
+    },
+    "rotation": {
+        "mode": "sequential",
+        "loop": true
+    },
+    "episodes": [
+        {
+            "id": "WhiteMag1940",
+            "episode_number": 1,
+            "title": "White Magic",
+            "description": "The physics, science and applications of light.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 456.12,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhiteMag1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhiteMag1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhiteMag1940/WhiteMag1940.mp4",
+                "page_url": "https://archive.org/details/WhiteMag1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Perception: Light"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhiteMag1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00",
+            "episode_number": 2,
+            "title": "Black Widow Spider: Her Life Cycle and Her Enemies",
+            "description": "18:04:58:28 CU Underside of black widow spider on web over title credits; VS CU black widow spider on web; CU red hourglass mark on black widow spider. Microscopic CU comb-foot of spider. Black widow sitting on piece of wood poked by stick. VS black widow hiding places; hand pulls back blanket lying outside, black widow hiding beside piece of wood; CU black widow on wall beside outdoor faucet. 18:06:37:01 VS CU black widow spinning web around cockroach. CU black widow fangs. Pan over black widows irregular web. Microscopic CU compares strand of black widow spider web to strand of human hair. 18:07:23:09 VS CU disembodied hands taking black widow silk sample, spider on round wood black beside glass slide. microscope and jars with specimens on table. 18:07:39:05 VS CU male black widow spider; black widows mating; VS CU female black widow spider with swollen sack, spider lays egg sack; VS various stages of spiders spinning protective web around eggs sack; VS CU black widow spider eggs; baby black widow spiders hatching; VS baby black widow spiders; VS black widows in various stages of development. 18:13:02:20 Preying mantis eating black widow spider. Alligator Lizard. Mud-dauber wasp; VS fly that preys on black widow’s egg sack; VS maggots eating black widow spider eggs, maggots pupate and undergo metamorphosis, flies hatch. VS CU black widow. The End superimposed over shot of black widow hanging from web.",
+            "creator": "Middlecham (Ken) Productions",
+            "duration": 718.01,
+            "year": 1960,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00/0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00_3mb.mp4",
+                "page_url": "https://archive.org/details/0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0769_Black_Widow_Spider_Her_Life_Cycle_and_Her_Enemies_18_04_42_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "HowaWatc1949",
+            "episode_number": 3,
+            "title": "How a Watch Works",
+            "description": "A simple demonstration of the basic design and operation of a watch, including stop-motion animation showing a watch being assembled from many parts.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 1158.26,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowaWatc1949",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowaWatc1949",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowaWatc1949/HowaWatc1949.mp4",
+                "page_url": "https://archive.org/details/HowaWatc1949",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Animation: Stop-motion",
+                    "Timekeeping"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowaWatc1949; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "electromagnetism",
+            "episode_number": 4,
+            "title": "Electromagnetism",
+            "description": "",
+            "creator": "Unknown",
+            "duration": 626.52,
+            "year": null,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/electromagnetism",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "electromagnetism",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/electromagnetism/electromagnetism.mp4",
+                "page_url": "https://archive.org/details/electromagnetism",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item electromagnetism; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0559_Color_Harmony",
+            "episode_number": 5,
+            "title": "Color Harmony",
+            "description": "The human eye and its function in seeing colors separately and in combination. Color vision explained. 09:01:19:10 Great underwater shot of a swimming sea turtle 09:01:29:12 Underwater shot of a young man swimming after a sea turtle then aggressively grabbing it and tormenting it. 09:01:43:10 CU lobster on the sand; CU disembodied hand reaches down to pick up lobster; POV shot from hand approaching the lobster zoom to extreme CU lobster’s eye. 09:02:00:15 CU clam worms; CU face of clam worm 09:02:18:29 Great shot young woman, with short brown hair in 1940s style, lifts camera up to her eye and looks into it; shot slowly zooms in on camera up against woman’s face; shot dissolves into anatomical drawing of an eye looking through the real camera, superimposed arrows compare parts of the eye and its related function with parts of the camera and their functions; camera dissolves from shot; audio track narration compares the anatomy of the eye to the mechanisms of the camera 09:03:23:22 Sphere with hole in the middle representing an eye watches a little wood marionette of a man dancing on a platform 09:03:44:29 disembodied arm slides large lens mounted on a slide into a slot over a round hole in a large sphere representing an eye; CU upside down marionette doll dancing inside rectangular hole cut out of sphere 09:03:54:29 Anatomical drawing of an eyeball facing a wood marionette-like doll of a man dancing rapidly; animation shows dozens of line emanating out from the dancing toy representing reflected light, some of the rays enter the eye; lines drawn from object to back of eye, superimposed upside down shrunken image of dancing toy superimposed in back of eye 09:04:53:14 CU anatomical drawing of an eye, disembodied hand holding fountain pen enters frame and draws box around the nerve fibers of the retina, box is enlarged; disembodied hand draws box around the visual cells, box is enlarged to fill frame, rods and cones are identified; VS animated drawing illustrative the physiology of sight. 09:06:28:18 CU BW shot of painter’s palette with thumb of painter holding it sticking out through the thumb hole; shot changes from BW to color; VS cartoon in color illustrates how cones work in color vision. 09:07:55:04 Animation shows light passing through a prism, full spectrum of rainbow projected onto screen; various colors are separated by way of mirror, animation illustrates how separated colors are mixed to make different colors. 09:08:26:27 Animation beginning with circle of white light shows how various colors are separated, recombined in different way; animation creates a color wheel; VS animation demonstrating basic color theory. 09:09:54:23 Profile of late 1940s to early 1950s car in showroom, shot is shown with yellow filter, then wipes to red filter, wipes to blue filter, wipes through black filter to give end result of a blue car. 09:10:25:20 colorful kaleidoscope shot. 09:10:48:11 Cartoon shows paint on wood painter’s palette, animation shows paint melt into the form of a car as a rainbow washes over the frame, cartoon of blue 1950s Chevrolet driving through the country, dissolves to a green car driving through mountainous terrain; dissolves to brown car driving through the countryside 09:11:30:27 VS CU dashboard of early 1950s car, probably Chevrolet; CU interior shot of backseat of car; dissolves to CU trunk of car with license plate 000 000; dissolves to CU hood and tire cover in front of car with whitewall tires; CU front grill of late 1940s early 1950s copper colored Chevrolet 09:11:52:09 CU spinning Chevrolet hubcap with various colored lights reflecting off it.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 665.59,
+            "year": 1938,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0559_Color_Harmony",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0559_Color_Harmony",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0559_Color_Harmony/0559_Color_Harmony_09_00_59_17_3mb.mp4",
+                "page_url": "https://archive.org/details/0559_Color_Harmony",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "MPEG4",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0559_Color_Harmony; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "principles_of_electricity",
+            "episode_number": 6,
+            "title": "Principles of Electricity",
+            "description": "Breaks down structure of matter into atoms and, by use of conventional symbols, shows the action of electrons within an atom. The principles involved in the flow of current are explained and a volt, ampere and Ohm are defined. Scientific Advisors: Dr. Saul Dushman; Dr. Roman Smoluchowski; Dr. David Harker",
+            "creator": "Unknown",
+            "duration": 1200.17,
+            "year": 1945,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/principles_of_electricity",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "principles_of_electricity",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/principles_of_electricity/principles_of_electricity.mp4",
+                "page_url": "https://archive.org/details/principles_of_electricity",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "need keyword"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item principles_of_electricity; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Natureof1948",
+            "episode_number": 7,
+            "title": "Nature of Sound, The",
+            "description": "Boy uses his radio equipment to demonstrate how sound is produced and transmitted.",
+            "creator": "Coronet Instructional Films",
+            "duration": 644.44,
+            "year": 1948,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Natureof1948",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Natureof1948",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Natureof1948/Natureof1948.mp4",
+                "page_url": "https://archive.org/details/Natureof1948",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger",
+                    "dlarc",
+                    "americana",
+                    "dlarc-videos"
+                ],
+                "subjects": [
+                    "Perception: Sound"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Natureof1948; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Heavenly1920",
+            "episode_number": 8,
+            "title": "Heavenly Bodies",
+            "description": "Visionary 1920s film containing imaginative astrophysical visualizations.",
+            "creator": "Unknown",
+            "duration": 608.04,
+            "year": 1920,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Heavenly1920",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Heavenly1920",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Heavenly1920/Heavenly1920.mp4",
+                "page_url": "https://archive.org/details/Heavenly1920",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Astronomy",
+                    "Physics"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Heavenly1920; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HowYouSe1936",
+            "episode_number": 9,
+            "title": "How You See It",
+            "description": "How persistence of vision makes motion pictures possible.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 478.15,
+            "year": 1936,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowYouSe1936",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowYouSe1936",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowYouSe1936/HowYouSe1936.mp4",
+                "page_url": "https://archive.org/details/HowYouSe1936",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Perception: Vision",
+                    "Automobiles: Stunts",
+                    "Motion pictures: Apparatus"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowYouSe1936; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "ant_city",
+            "episode_number": 10,
+            "title": "Ant City",
+            "description": "Depicts ants as social creatures living in complex societies. Shows ways they control their environment. Ken Smith sez: This is probably the most genuinely entertaining of all the John Kieran's Kaleidoscope films. The poor ants are anthropomorphised to the nth degree; we even hear The Wedding March when the queen and her drone fly away from the nest. Kieran's patter has never been more meandering; he sounds like a befuddled uncle narrating home movies. Clumsy but enjoyable. PESTILENCE (ANTS) VS of ants: Building and repairing their city. Birthing of grub. Mating with queen. Attacking a caterpillar.",
+            "creator": "Moss (Paul F.)",
+            "duration": 599.02,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ant_city",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ant_city",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ant_city/ant_city.mp4",
+                "page_url": "https://archive.org/details/ant_city",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ant_city; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "ColorHar1956",
+            "episode_number": 11,
+            "title": "Color Harmony for Your Home",
+            "description": "The Colorizer system of paint matching and mixing, with a tribute to the role color consciousness plays in everyday life and modern design.",
+            "creator": "Rippey, Henderson and Bucknum, Inc.",
+            "duration": 1227.96,
+            "year": 1956,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/ColorHar1956",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "ColorHar1956",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/ColorHar1956/ColorHar1956.mp4",
+                "page_url": "https://archive.org/details/ColorHar1956",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Perception: Color",
+                    "Design",
+                    "Houses and homes: Paint"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item ColorHar1956; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "HowtheEa1940",
+            "episode_number": 12,
+            "title": "How the Ear Functions",
+            "description": "Structure and function of the human hearing system, with excellent animation.",
+            "creator": "Bosse (Karl Kurt)",
+            "duration": 698.73,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/HowtheEa1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "HowtheEa1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/HowtheEa1940/HowtheEa1940.mp4",
+                "page_url": "https://archive.org/details/HowtheEa1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Perception: Sound",
+                    "Animation"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item HowtheEa1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "0037_Gift_of_Green_13_00_46_00",
+            "episode_number": 13,
+            "title": "Gift of Green",
+            "description": "Explains through animation the process of photosynthesis. Discusses its importance to our daily lives. 13:00:50 Color - lots of shots of trees and plants 13:03:06 Nice factory smokestacks CU Plants - animation of photosynthesis Time lapse of flowers blooming 13:08:21 CU Potatoes 13:08:23 CU Corn more shots of fruit on trees 13:09:28 CU Medicine bottle - \"digitalis\" VO: \"Other medicines that come from plants are digitalis, belladonna and strychnine.\" 13:09:30 CU Belladonna 13:09:32 CU Strychnine 13:10:48 Horrific factory image - belching smoke stacks 13:13:33 Images of dinosaurs - stills (paintings ?) 13:14:08 More smokestacks - pan of factory 13:14:40 CU Oil wells - hard to see more More factories",
+            "creator": "Flaherty (David)",
+            "duration": 932.97,
+            "year": 1946,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/0037_Gift_of_Green_13_00_46_00",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "0037_Gift_of_Green_13_00_46_00",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/0037_Gift_of_Green_13_00_46_00/0037_Gift_of_Green_13_00_46_00.mp4",
+                "page_url": "https://archive.org/details/0037_Gift_of_Green_13_00_46_00",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 0037_Gift_of_Green_13_00_46_00; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "4083_Seasonal_Changes_In_Trees",
+            "episode_number": 14,
+            "title": "Seasonal Changes in Trees",
+            "description": "Introduces scientific study of trees, including classification & seasonal aspects. Stresses careful observation.",
+            "creator": "Coronet Instructional Films",
+            "duration": 649.33,
+            "year": 1949,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/4083_Seasonal_Changes_In_Trees",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "4083_Seasonal_Changes_In_Trees",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/4083_Seasonal_Changes_In_Trees/4083_Seasonal_Changes_In_Trees.mp4",
+                "page_url": "https://archive.org/details/4083_Seasonal_Changes_In_Trees",
+                "license": null,
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": [
+                    "No license/rights information found; do not assume this item is redistributable."
+                ]
+            },
+            "status": "approved",
+            "rights": {
+                "status": "unverified",
+                "notes": "No license declared in IA metadata (archive.org item 4083_Seasonal_Changes_In_Trees; reviewed 2026-11-06). No license/rights information found; do not assume this item is redistributable."
+            }
+        },
+        {
+            "id": "WhyStudy1955_2",
+            "episode_number": 15,
+            "title": "Why Study Science?",
+            "description": "Family discusses how the study of science can help son and daughter make intelligent decisions on problems they will confront in the world.",
+            "creator": "Centron Productions",
+            "duration": 709.81,
+            "year": 1955,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/WhyStudy1955_2",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "WhyStudy1955_2",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/WhyStudy1955_2/WhyStudy1955_2.mp4",
+                "page_url": "https://archive.org/details/WhyStudy1955_2",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Science",
+                    "Occupations: Scientific"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item WhyStudy1955_2; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "Somethin1940",
+            "episode_number": 16,
+            "title": "Something for Nothing",
+            "description": "Cartoonist Rube Goldberg creates a little animation to explain how fuel is converted to power in the modern automobile engine.",
+            "creator": "Handy (Jam) Organization",
+            "duration": 527.83,
+            "year": 1940,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/Somethin1940",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "Somethin1940",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/Somethin1940/Somethin1940.mp4",
+                "page_url": "https://archive.org/details/Somethin1940",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "Animation: Rube Goldberg",
+                    "Automobiles: Engineering"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item Somethin1940; reviewed 2026-11-06)."
+            }
+        },
+        {
+            "id": "SoundWavesAn",
+            "episode_number": 17,
+            "title": "Sound Waves And Their Sources",
+            "description": "Sources of sounds and characteristics of sound waves, shown by means of oscilloscopes and animated diagrams.",
+            "creator": "Unknown",
+            "duration": 617.59,
+            "year": 1933,
+            "published_at": null,
+            "thumbnail_url": "https://archive.org/services/img/SoundWavesAn",
+            "guests": [],
+            "source": {
+                "provider": "html5",
+                "identifier": "SoundWavesAn",
+                "part_index": 1,
+                "part_count": 1,
+                "url": "https://archive.org/download/SoundWavesAn/SoundWavesAn.mp4",
+                "page_url": "https://archive.org/details/SoundWavesAn",
+                "license": "http://creativecommons.org/licenses/publicdomain/",
+                "collections": [
+                    "prelinger"
+                ],
+                "subjects": [
+                    "need keyword"
+                ],
+                "mediatype": "movies",
+                "format": "h.264",
+                "duration_source": "file_length",
+                "availability": "available",
+                "availability_detail": null,
+                "warnings": []
+            },
+            "status": "approved",
+            "rights": {
+                "status": "public_domain",
+                "notes": "IA-declared public domain license: http://creativecommons.org/licenses/publicdomain/ (archive.org item SoundWavesAn; reviewed 2026-11-06)."
+            }
+        }
+    ]
+}
