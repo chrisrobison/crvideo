@@ -82,11 +82,35 @@ final class ContinuityFiller
         $warnings = [];
         $eligibleAssets = array_values(array_filter($continuity['assets'], static fn (array $a): bool => $a['status'] === 'approved'));
 
+        // A raw gap is filled per PROGRAM-BOUNDARY segment, never as one
+        // continuous run straddling where one program's effective window ends
+        // and the next one's begins. Without this, a single fillGap() call
+        // covering, say, a packed block's own trailing under-fill remainder
+        // PLUS the next occurrence's leading reserved span (ProgrammingCompiler's
+        // $minimumLeadInSeconds -- see its header) would produce one card
+        // whose END falls past the first program's own `end`, so it could
+        // never satisfy the strict per-program containment check below --
+        // leaving it unattributed and, worse, overlapping both programs' EPG
+        // cells (buildEpgTimeline() in broadcast.js has no notion of a single
+        // guide entry owned by two programs at once). Splitting first is
+        // exactly ScheduleWriter::writeSchedule()'s own `$splitGapByPrograms`
+        // idea, applied one stage earlier -- before a gap becomes a concrete
+        // item at all, rather than after.
+        $fillGapByPrograms = function (int $start, int $end) use ($eligibleAssets, $continuity, $programs): array {
+            $out = [];
+            foreach (self::splitByProgramBoundaries($start, $end, $programs) as [$segStart, $segEnd]) {
+                foreach (self::fillGap($segStart, $segEnd, $eligibleAssets, $continuity['cards'], $continuity['defaults']) as $fillerItem) {
+                    $out[] = $fillerItem;
+                }
+            }
+            return $out;
+        };
+
         $merged = [];
         $cursor = $windowStartTs;
         foreach ($items as $it) {
             if ($it['start'] > $cursor) {
-                foreach (self::fillGap($cursor, $it['start'], $eligibleAssets, $continuity['cards'], $continuity['defaults']) as $fillerItem) {
+                foreach ($fillGapByPrograms($cursor, $it['start']) as $fillerItem) {
                     $merged[] = $fillerItem;
                 }
             }
@@ -94,7 +118,7 @@ final class ContinuityFiller
             $cursor = max($cursor, $it['end']);
         }
         if ($windowEndTs > $cursor) {
-            foreach (self::fillGap($cursor, $windowEndTs, $eligibleAssets, $continuity['cards'], $continuity['defaults']) as $fillerItem) {
+            foreach ($fillGapByPrograms($cursor, $windowEndTs) as $fillerItem) {
                 $merged[] = $fillerItem;
             }
         }
@@ -136,6 +160,60 @@ final class ContinuityFiller
         }
 
         return ['items' => $merged, 'warnings' => $warnings];
+    }
+
+    /**
+     * Splits [start,end) into one or more [segStart,segEnd) pairs, cut at
+     * every point where one program's effective window ends and/or another
+     * begins -- identical in spirit (and, deliberately, in algorithm) to
+     * ScheduleWriter::writeSchedule()'s own `$splitGapByPrograms`. A sub-
+     * interval that falls in genuinely unscheduled time (outside every
+     * program) is still returned as its own segment, just never merged
+     * across a boundary with one that falls inside a program's window.
+     * @param list<array{occurrence_id:string,start:int,end:int}> $programs
+     * @return list<array{0:int,1:int}>
+     */
+    private static function splitByProgramBoundaries(int $start, int $end, array $programs): array
+    {
+        if (!$programs) {
+            return [[$start, $end]];
+        }
+        $segments = [];
+        $cursor = $start;
+        while ($cursor < $end) {
+            $owner = null;
+            foreach ($programs as $p) {
+                if ($cursor >= $p['start'] && $cursor < $p['end']) {
+                    $owner = $p;
+                    break; // programs never overlap -- at most one can ever match
+                }
+            }
+            if ($owner !== null) {
+                $segEnd = min($end, $owner['end']);
+            } else {
+                // Unowned (genuinely unscheduled) time: stop at whichever comes
+                // first, $end or the start of the NEXT program -- never run past
+                // where that program's own window begins. Without this, a raw
+                // gap landing in unowned territory but extending past a
+                // following program's start (exactly what ProgrammingCompiler's
+                // $minimumLeadInSeconds now does routinely: a program's own
+                // first real item starts a few seconds AFTER its nominal/
+                // effective window begins) would swallow the front of that
+                // program's window into an unattributed segment instead of
+                // stopping at its boundary and letting the next loop iteration
+                // pick it up as owned.
+                $nextStart = $end;
+                foreach ($programs as $p) {
+                    if ($p['start'] > $cursor && $p['start'] < $nextStart) {
+                        $nextStart = $p['start'];
+                    }
+                }
+                $segEnd = $nextStart;
+            }
+            $segments[] = [$cursor, $segEnd];
+            $cursor = $segEnd;
+        }
+        return $segments;
     }
 
     /** @return list<array<string,mixed>> */

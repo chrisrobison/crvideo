@@ -1,5 +1,5 @@
 {
-  "_note": "Phase 10 (docs/series-and-channels.md): Science & Engineering's own continuity assets. No real prerecorded station-id/bumper media exists for this channel yet, so \"station_ids\"/\"filler\" are deliberately left empty -- this project's own instructions are explicit that nonexistent media must never be invented or referenced. Every gap this channel has is therefore filled by the dynamic \"science-up-next\" card alone (see channels/continuity-card.js), which needs no video asset at all. Real station IDs can be added here later (e.g. once produced via OpenArt or any other tool) without any other change -- ContinuityFiller already prefers them over the card whenever one fits.",
+  "_note": "Phase 10 (docs/series-and-channels.md): Science & Engineering's own continuity assets. No real prerecorded station-id/bumper media exists for this channel yet, so \"station_ids\"/\"filler\" are deliberately left empty -- this project's own instructions are explicit that nonexistent media must never be invented or referenced. Every gap this channel has is therefore filled by the dynamic \"science-up-next\" card alone (see channels/continuity-card.js), which needs no video asset at all. Real station IDs can be added here later (e.g. once produced via OpenArt or any other tool) without any other change -- ContinuityFiller already prefers them over the card whenever one fits. minimum_lead_in guarantees that same card runs at least 10s before EVERY program, not just packing leftovers -- see channels/publish/README.md's \"Broadcast continuity and filler\" section. Its actual on-screen look (a themed canvas background) comes from channels/science/theme.json, read client-side.",
   "schema_version": 1,
   "station_ids": [],
   "filler": [],
@@ -8,6 +8,7 @@
   ],
   "defaults": {
     "preferred_card": "science-up-next",
-    "minimum_video_filler": 10
+    "minimum_video_filler": 10,
+    "minimum_lead_in": 10
   }
 }

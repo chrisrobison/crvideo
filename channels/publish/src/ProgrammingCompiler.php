@@ -96,6 +96,21 @@ final class ProgrammingCompiler
      *        [] (the default) when there is no previous schedule.json to consult --
      *        e.g. a channel's first-ever publish, or one not yet migrated to carrying
      *        a "programs" collection at all.
+     * @param int $minimumLeadInSeconds reserve this many seconds at the FRONT of every
+     *        occurrence (in both the packing and non-packing paths below), deliberately
+     *        left unpacked so it stays an ordinary uncovered interval -- which
+     *        ContinuityFiller already fills with a continuity card for any gap, and
+     *        already folds into the occurrence's own `episodes[]` if that gap falls
+     *        inside the program's effective window (it always will here, since the
+     *        occurrence's own `nominalStart`/`durationSeconds` -- used to compute that
+     *        window in BoundaryResolver -- are deliberately left at the FULL slot,
+     *        never shrunk). This is what guarantees a channel-configured minimum "Up
+     *        Next" bumper runs before every single program, not just wherever packing
+     *        happened to leave a leftover. Default 0 is a byte-for-byte no-op, exactly
+     *        like every other opt-in flag in this class (packing.enabled, boundary.mode,
+     *        continuity.json itself) -- see channels/publish.php, which resolves
+     *        continuity.json's `defaults.minimum_lead_in` BEFORE calling compile() and
+     *        passes it here.
      * @return array{
      *   items: list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}>,
      *   warnings: list<string>,
@@ -112,6 +127,7 @@ final class ProgrammingCompiler
         DateTimeImmutable $windowStart,
         DateTimeImmutable $windowEnd,
         array $previousPrograms = [],
+        int $minimumLeadInSeconds = 0,
     ): array {
         $seriesById = [];
         foreach ($resolvedSeries as $s) {
@@ -210,8 +226,16 @@ final class ProgrammingCompiler
             $packing = is_array($block['packing'] ?? null) ? $block['packing'] : [];
             $packingEnabled = (bool) ($packing['enabled'] ?? false);
 
+            // See this method's $minimumLeadInSeconds doc above: reserved, never
+            // more than the block's own slot (leaving at least 1s nominally for
+            // the episode itself -- an episode that still doesn't fit afterward
+            // overruns exactly as it already could before this existed, caught
+            // by BoundaryResolver's overlap check, same as always).
+            $leadIn = min($minimumLeadInSeconds, max(0, $durationSeconds - 1));
+
             if (!$packingEnabled) {
-                // Pre-packing path, unchanged: exactly one episode per occurrence.
+                // Pre-packing path, unchanged except for $leadIn: exactly one
+                // episode per occurrence.
                 $occurrences = Recurrence::occurrences($block['recurrence'] ?? [], $anchorDate, $windowStart, $windowEnd);
                 foreach ($occurrences as $occ) {
                     $n = $occ['index'];
@@ -234,7 +258,11 @@ final class ProgrammingCompiler
                     $episodeDuration = is_numeric($episode['duration'] ?? null) ? (float) $episode['duration'] : null;
                     $itemDuration = ($episodeDuration !== null && $episodeDuration > 0) ? (int) round($episodeDuration) : $durationSeconds;
                     $startAbs = $occ['at']->getTimestamp();
-                    $item = self::buildItem($episode, $startAbs, $itemDuration);
+                    // nominalStart/durationSeconds below stay the FULL slot (not
+                    // shifted by $leadIn) -- see $minimumLeadInSeconds's doc: that's
+                    // what keeps the reserved lead-in inside this program's own
+                    // effective window instead of becoming its own unattributed gap.
+                    $item = self::buildItem($episode, $startAbs + $leadIn, $itemDuration);
                     $groups[] = [
                         'blockId' => $blockId,
                         'boundary' => $boundary,
@@ -299,8 +327,14 @@ final class ProgrammingCompiler
                     $checkpointAtToSave = $occ['at'];
                 }
 
+                // $leadIn (see this method's $minimumLeadInSeconds doc) is carved off
+                // the front: the packer only ever sees $durationSeconds - $leadIn as
+                // available, so it never schedules into the reserved span -- but the
+                // fallback duration passed below stays the FULL $durationSeconds
+                // (unrelated to how much room is actually left; it's just the stand-in
+                // "duration" used for an episode whose own is unknown, same as always).
                 $packed = EpisodePacker::packOccurrence(
-                    $durationSeconds, $pinnedIds, $episodesById,
+                    $durationSeconds - $leadIn, $pinnedIds, $episodesById,
                     ['cursor' => $cursor, 'deferred' => $deferred, 'altCursor' => $altCursor],
                     $config, $loop, $durationSeconds, $blockId, $occ['at']->format('c'),
                 );
@@ -317,7 +351,7 @@ final class ProgrammingCompiler
                     continue; // nothing packed into this occurrence -- no group, exactly like a non-packing-path gap
                 }
                 $startAbs = $occ['at']->getTimestamp();
-                $offset = 0;
+                $offset = $leadIn; // reserve [startAbs, startAbs+leadIn) -- see $minimumLeadInSeconds's doc
                 $groupItems = [];
                 foreach ($packed['scheduled'] as $sched) {
                     $episode = $episodesById[$sched['episode_id']];

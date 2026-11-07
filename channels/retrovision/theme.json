@@ -1,0 +1,9 @@
+{
+  "_note": "RetroVision's bumper theme (see channels/continuity-card.js). 'starfield' is a code-generated canvas animation -- no video asset exists or is referenced.",
+  "schema_version": 1,
+  "bumpers": [
+    { "id": "starfield", "template": "retrovision-up-next", "weight": 1,
+      "background": { "type": "canvas", "generator": "starfield" },
+      "content": { "type": "up-next" } }
+  ]
+}

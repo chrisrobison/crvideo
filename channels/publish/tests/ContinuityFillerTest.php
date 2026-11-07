@@ -188,4 +188,58 @@ final class ContinuityFillerTest
         $result = ContinuityFiller::fill([], 0, 50, $this->continuity([], [$this->card('generic', 0, 300)]));
         Assert::true(!isset($result['items'][0]['program_id']));
     }
+
+    public function testARawGapStraddlingTwoAdjacentProgramsIsSplitIntoTwoCardsNeverOneOverlappingOne(): void
+    {
+        // Reproduces an actual bug found publishing real channels once
+        // ProgrammingCompiler's minimum_lead_in existed: program A's trailing
+        // under-filled remainder (700..1000, inside A's own 0..1000 window)
+        // sits immediately next to program B's newly-reserved leading span
+        // (1000..1010, inside B's own 1000..2000 window) -- ONE raw, unbroken
+        // gap (700..1010) spanning BOTH programs' windows back to back, with
+        // no genuinely-unscheduled time between them at all. Filling it as a
+        // single card would produce one occurrence whose end (1010) falls
+        // past program A's own end (1000) -- failing the strict containment
+        // check below, left unattributed, and overlapping BOTH programs' EPG
+        // cells in buildEpgTimeline(). It must instead split exactly at 1000,
+        // like ScheduleWriter::writeSchedule()'s own $splitGapByPrograms.
+        $items = [
+            ['start' => 0, 'end' => 700, 'id' => 'e1', 'title' => 'E1', 'source' => null, 'source_url' => null, 'program_id' => 'a@0'],
+            ['start' => 1010, 'end' => 2000, 'id' => 'e2', 'title' => 'E2', 'source' => null, 'source_url' => null, 'program_id' => 'b@1000'],
+        ];
+        $programs = [$this->program('a@0', 0, 1000), $this->program('b@1000', 1000, 2000)];
+        $result = ContinuityFiller::fill($items, 0, 2000, $this->continuity([], [$this->card('generic', 0, 300)]), $programs);
+        $filler = array_values(array_filter($result['items'], static fn ($it) => ($it['kind'] ?? 'video') === 'continuity'));
+        Assert::count(2, $filler, 'two separate cards, one per program, never one straddling both');
+        Assert::same(700, $filler[0]['start']);
+        Assert::same(1000, $filler[0]['end'], 'the first card ends exactly at program A\'s own end, never later');
+        Assert::same('a@0', $filler[0]['program_id']);
+        Assert::same(1000, $filler[1]['start']);
+        Assert::same(1010, $filler[1]['end']);
+        Assert::same('b@1000', $filler[1]['program_id']);
+    }
+
+    public function testARawGapThatIsGenuinelyUnownedThenRunsIntoAProgramsLeadInIsSplitAtThatProgramsStart(): void
+    {
+        // A GENUINE inter-program station break (500..1000, matching neither
+        // neighbor) immediately followed by program B's reserved lead-in
+        // (1000..1010, inside B's own window) -- one raw, unbroken gap
+        // (500..1010) that starts in truly unowned time but runs into a
+        // program's start partway through. Must split at 1000: the first
+        // segment stays unattributed, the second belongs to B.
+        $items = [
+            ['start' => 0, 'end' => 500, 'id' => 'e1', 'title' => 'E1', 'source' => null, 'source_url' => null, 'program_id' => 'a@0'],
+            ['start' => 1010, 'end' => 2000, 'id' => 'e2', 'title' => 'E2', 'source' => null, 'source_url' => null, 'program_id' => 'b@1000'],
+        ];
+        $programs = [$this->program('a@0', 0, 500), $this->program('b@1000', 1000, 2000)];
+        $result = ContinuityFiller::fill($items, 0, 2000, $this->continuity([], [$this->card('generic', 0, 300)]), $programs);
+        $filler = array_values(array_filter($result['items'], static fn ($it) => ($it['kind'] ?? 'video') === 'continuity'));
+        Assert::count(2, $filler, 'two separate cards -- the genuine break, then B\'s lead-in -- never one swallowing both');
+        Assert::same(500, $filler[0]['start']);
+        Assert::same(1000, $filler[0]['end'], 'the unowned segment stops exactly where B\'s window starts, never later');
+        Assert::true(!isset($filler[0]['program_id']), 'the genuine inter-program portion is never attributed to B');
+        Assert::same(1000, $filler[1]['start']);
+        Assert::same(1010, $filler[1]['end']);
+        Assert::same('b@1000', $filler[1]['program_id']);
+    }
 }

@@ -1,0 +1,9 @@
+{
+  "_note": "Pet Central's bumper theme (see channels/continuity-card.js). 'waves' is a code-generated canvas animation -- no video asset exists or is referenced.",
+  "schema_version": 1,
+  "bumpers": [
+    { "id": "waves", "template": "pet-central-up-next", "weight": 1,
+      "background": { "type": "canvas", "generator": "waves" },
+      "content": { "type": "up-next" } }
+  ]
+}

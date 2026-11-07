@@ -358,6 +358,34 @@ and player integration are a later phase (continuity occurrences compile
 correctly today; they render as an ordinary station-break slate in the
 existing player until that phase lands).
 
+`continuity.json`'s `defaults.minimum_lead_in` (seconds) goes further
+than exact-gap-coverage: `ProgrammingCompiler` reserves that much time
+at the front of **every** occurrence it builds, not just wherever
+packing happens to leave a leftover, so a continuity card is guaranteed
+to run at least that long before every program -- including two
+back-to-back programs with no natural gap at all. See `channels/publish/
+src/ProgrammingCompiler.php`'s `$minimumLeadInSeconds` doc for exactly
+how the reserved span stays inside the program's own effective window
+(so it folds into that program's guide cell, never becoming an
+unattributed one of its own) at zero cost to every existing, unaffected
+code path. 0 (the default) is a byte-for-byte no-op.
+
+A channel can also author an optional `channels/<id>/theme.json`
+(resolved client-side by `broadcast.js`'s `loadTheme()`, never at
+publish time) describing what its continuity card actually looks like
+beyond the plain default "Coming Up Next" info block: a weighted list of
+`bumpers`, each pairing a background (`"video-loop"` with a channel-
+supplied asset, or a built-in `"canvas"` animation -- see `continuity-
+card.js`'s `CANVAS_GENERATORS`, no asset needed at all) with content
+(the default up-next info, or a `"quote"` card drawing from a named
+`quoteDecks` entry -- an SNL-"Deep Thoughts"-style aside). Which bumper
+renders for a given occurrence is picked **deterministically** from its
+own absolute `startsAt` (`continuity-card.js`'s `pickWeightedIndex()`),
+never `Math.random()` -- the same determinism contract as everything
+else here: two viewers tuned to the same occurrence at the same instant
+always see the same bumper. No `theme.json` (every channel today)
+renders exactly the pre-existing plain card.
+
 ## Determinism and schedule publication (Phase 8)
 
 Everything built across these phases shares the same determinism

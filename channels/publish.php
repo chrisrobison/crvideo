@@ -210,23 +210,33 @@ function publish_main(array $argv): int
         }
     }
 
+    // Resolved BEFORE compile() (moved ahead of its previous position, right after
+    // the Phase 4 gap-filling call below) because ProgrammingCompiler now also
+    // needs defaults.minimum_lead_in -- it reserves that time at the front of
+    // EVERY occurrence it builds, not just the leftover gaps ContinuityFiller
+    // fills afterward. See ProgrammingCompiler::compile()'s $minimumLeadInSeconds
+    // doc. A channel with no continuity.json reference still gets 0 here (this
+    // call's own default), so it's completely unaffected either way.
+    $continuity = ContinuityResolver::resolveCatalog($catalogPath);
+    foreach ($continuity['errors'] as $e) {
+        fwrite(STDERR, "Warning: $e\n");
+    }
+
     try {
         $compiled = ProgrammingCompiler::compile(
             $programming, $resolved['series'], $stateDir, $channelId, $refresh, $windowStart, $windowEnd, $previousPrograms,
+            $continuity['defaults']['minimumLeadIn'],
         );
     } catch (Throwable $e) {
         fwrite(STDERR, 'Error: ' . $e->getMessage() . "\n");
         return 1;
     }
 
-    // Phase 4: fill every remaining gap with continuity occurrences, if (and only
-    // if) this channel's catalog.json references at least one continuity.json --
-    // see ContinuityResolver/ContinuityFiller's headers. A channel that doesn't is
-    // completely unaffected: fill() hands back its input unchanged.
-    $continuity = ContinuityResolver::resolveCatalog($catalogPath);
-    foreach ($continuity['errors'] as $e) {
-        fwrite(STDERR, "Warning: $e\n");
-    }
+    // Phase 4: fill every remaining gap (including every reserved lead-in above)
+    // with continuity occurrences, if (and only if) this channel's catalog.json
+    // references at least one continuity.json -- see ContinuityResolver/
+    // ContinuityFiller's headers. A channel that doesn't is completely
+    // unaffected: fill() hands back its input unchanged.
     $filled = ContinuityFiller::fill(
         $compiled['items'], $windowStart->getTimestamp(), $windowEnd->getTimestamp(), $continuity, $compiled['programs'],
     );

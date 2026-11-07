@@ -387,7 +387,7 @@ own schedule, with no migration required for anyone else.
     { "id": "up-next", "template": "up-next", "min_duration": 5, "max_duration": 300 },
     { "id": "station-id", "template": "station-id", "min_duration": 3, "max_duration": 120 }
   ],
-  "defaults": { "preferred_card": "up-next", "minimum_video_filler": 10 }
+  "defaults": { "preferred_card": "up-next", "minimum_video_filler": 10, "minimum_lead_in": 10 }
 }
 ```
 
@@ -409,6 +409,19 @@ own schedule, with no migration required for anyone else.
   merged); `defaults` keys are last-wins across the referenced list in
   `catalog.json`'s own order (so a channel-specific file listed after a
   network-wide one can override just the default it cares about).
+- `defaults.minimum_lead_in` (seconds, default 0) is different from the
+  other two: it's not consumed by `ContinuityFiller` at all.
+  `ProgrammingCompiler` reads it (via `publish.php`, which now resolves
+  `continuity.json` *before* compiling) and reserves that much time at
+  the **front of every single occurrence it builds** -- not just
+  wherever packing happened to leave a leftover -- so a continuity card
+  is guaranteed to run at least this long before every program, even two
+  back-to-back programs with no natural gap between them at all. The
+  reserved span still ends up as an ordinary uncovered interval by the
+  time `ContinuityFiller` runs, so it's filled (and attributed to the
+  program it precedes) by the exact same unchanged logic described
+  below. 0 is a byte-for-byte no-op -- every `continuity.json` published
+  before this field existed keeps compiling identically.
 
 ### Exact gap coverage (`ContinuityFiller`)
 
