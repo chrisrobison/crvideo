@@ -9,5 +9,8 @@
         { "ref": "../../series/retro-technology/series.json" },
         { "ref": "../../series/retro-classic-tv/series.json" },
         { "ref": "../../series/retro-everyday-life/series.json" }
+    ],
+    "continuity": [
+        { "ref": "./continuity.json" }
     ]
 }

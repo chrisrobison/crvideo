@@ -2,7 +2,7 @@
     "number": 3,
     "name": "Science & Engineering",
     "description": "Recurring science and engineering programming: a 12-hour, 12-show lineup (Techmoan, SciShow, Plasma Channel, Real Engineering, Stuff Made Here, The Engineering Mindset, Veritasium, Vsauce, Smarter Every Day, The Backyard Scientist, Mark Rober, Kurzgesagt) in one-hour slots, repeating every 12 hours.",
-    "anchor": "2026-11-05T00:00:00-08:00",
+    "anchor": "2026-11-07T00:00:00+00:00",
     "theme": {
         "bg": "#070a12",
         "bg2": "#101a2c",

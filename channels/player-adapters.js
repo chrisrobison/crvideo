@@ -49,8 +49,17 @@ export class ContinuityRenderer {
    * @param {{title:string, description?:string, thumbnailUrl?:string, startsAt:number}|null} program the UPCOMING program, not this card itself
    * @param {() => number} clockNow
    * @param {{startsAt:number, endsAt:number}} cardSpan this continuity occurrence's own span, for the progress bar
+   * @param {?string} template this occurrence's own continuity card "template" id
+   *        (schedule.json's `cards[].template`, from continuity.json) -- narrows
+   *        which `bumperTheme.bumpers` are eligible; see continuity-card.js.
+   * @param {{bumpers?:Array<object>, quoteDecks?:Record<string,string[]>}|null} bumperTheme
+   *        the channel's resolved `theme.json` (see broadcast.js's loadTheme()),
+   *        NOT the same thing as `channel.theme` below -- that's the small,
+   *        pre-existing color-token palette from meta.json. null (the default,
+   *        and every channel without a theme.json) renders the plain generic
+   *        card exactly as before this parameter existed.
    */
-  show(channel, program, clockNow, cardSpan) {
+  show(channel, program, clockNow, cardSpan, template = null, bumperTheme = null) {
     if (!this.card) {
       this.card = document.createElement("cr-continuity-card");
       this.container.appendChild(this.card);
@@ -67,6 +76,8 @@ export class ContinuityRenderer {
     }
     this.card.channel = channel;
     this.card.clockNow = clockNow;
+    this.card.template = template;
+    this.card.theme = bumperTheme;
     this.card.program = program;
     this.card.setCardSpan(cardSpan.startsAt, cardSpan.endsAt);
     this.container.hidden = false;

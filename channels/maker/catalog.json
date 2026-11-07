@@ -16,5 +16,8 @@
     { "ref": "../../series/wintergatan/series.json" },
     { "ref": "../../series/diy-perks/series.json" },
     { "ref": "../../series/tested/series.json" }
+  ],
+  "continuity": [
+    { "ref": "./continuity.json" }
   ]
 }

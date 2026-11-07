@@ -9,6 +9,7 @@
   ],
   "defaults": {
     "preferred_card": "station-id",
-    "minimum_video_filler": 10
+    "minimum_video_filler": 10,
+    "minimum_lead_in": 5
   }
 }

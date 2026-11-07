@@ -105,7 +105,23 @@ final class ScheduleWriter
                         break; // programs never overlap -- at most one can ever match
                     }
                 }
-                $segEnd = $owner !== null ? min($relEnd, $owner['end']) : $relEnd;
+                if ($owner !== null) {
+                    $segEnd = min($relEnd, $owner['end']);
+                } else {
+                    // Unowned time: stop at the next program's own start (never
+                    // run past where its window begins) -- see ContinuityFiller::
+                    // splitByProgramBoundaries()'s identical fix for why this
+                    // matters once a program's first real item can start a few
+                    // seconds after its nominal/effective window does
+                    // (ProgrammingCompiler's $minimumLeadInSeconds).
+                    $nextStart = $relEnd;
+                    foreach ($relPrograms as $p) {
+                        if ($p['start'] > $cursor && $p['start'] < $nextStart) {
+                            $nextStart = $p['start'];
+                        }
+                    }
+                    $segEnd = $nextStart;
+                }
                 $segments[] = [$cursor, $segEnd, $owner['occurrence_id'] ?? null];
                 $cursor = $segEnd;
             }

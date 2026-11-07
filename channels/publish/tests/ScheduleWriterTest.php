@@ -118,6 +118,38 @@ final class ScheduleWriterTest
         Assert::true(!isset($gaps[1]['program_id']));
     }
 
+    public function testAnUnownedGapThatRunsIntoALaterProgramsStartStopsRightAtThatBoundary(): void
+    {
+        // Program A ends at +1800s with nothing left unfilled (its content ran
+        // exactly to its own end); a genuine station break follows; program B's
+        // own window starts at +2000s, but its first real item (e.g. after
+        // ProgrammingCompiler reserves a lead-in -- see its
+        // $minimumLeadInSeconds doc) doesn't begin until +2010s. The ONE raw
+        // gap this leaves (1800..2010) starts in genuinely unowned time and
+        // must stop exactly at 2000 (B's own start), not run 10s into B's
+        // window unattributed.
+        $windowStart = $this->utc('2026-11-02T00:00:00Z');
+        $start = $windowStart->getTimestamp();
+        $items = [
+            $this->videoItem('e1', $start, $start + 1800, 'a@' . $start),
+            $this->videoItem('e2', $start + 2010, $start + 3000, 'b@' . ($start + 2000)),
+        ];
+        $programs = [
+            $this->program('a@' . $start, 'a', $start, $start + 1800, 'Show A'),
+            $this->program('b@' . ($start + 2000), 'b', $start + 2000, $start + 3000, 'Show B'),
+        ];
+        $schedule = ScheduleWriter::writeSchedule($this->path, 'Chan', $items, $windowStart, $windowStart->modify('+3000 seconds'), [], $programs);
+
+        $gaps = array_values(array_filter($schedule['blocks'][0]['items'], static fn ($it) => $it['type'] === 'gap'));
+        Assert::count(2, $gaps, 'the genuine break, then B\'s own lead-in -- never one segment swallowing both');
+        Assert::same(1800, $gaps[0]['start']);
+        Assert::same(200, $gaps[0]['duration'], 'stops exactly at B\'s start (2000), never later');
+        Assert::true(!isset($gaps[0]['program_id']));
+        Assert::same(2000, $gaps[1]['start']);
+        Assert::same(10, $gaps[1]['duration']);
+        Assert::same('b@' . ($start + 2000), $gaps[1]['program_id']);
+    }
+
     public function testAGapOutsideEveryProgramsWindowIsNeverTagged(): void
     {
         $windowStart = $this->utc('2026-11-02T00:00:00Z');

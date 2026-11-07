@@ -14,5 +14,8 @@
     { "ref": "../../series/stanford-ecorner/series.json" },
     { "ref": "../../series/perimeter-institute/series.json" },
     { "ref": "../../series/oxford-mathematics/series.json" }
+  ],
+  "continuity": [
+    { "ref": "./continuity.json" }
   ]
 }

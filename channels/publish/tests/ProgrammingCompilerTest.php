@@ -485,4 +485,79 @@ final class ProgrammingCompilerTest
         $occurrenceIds = array_map(static fn ($p) => $p['occurrence_id'], $result['programs']);
         Assert::same(count($occurrenceIds), count(array_unique($occurrenceIds)), 'no two occurrences across the DST transition share an id');
     }
+
+    // ---------------- Mandatory lead-in (the "Up Next" bumper guarantee) ----------------
+
+    public function testOmittingMinimumLeadInSecondsIsByteForByteUnchanged(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 300.0), $this->episode('e2', 'approved', 300.0),
+        ]]];
+        $programming = ['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]];
+        // Two independent state dirs (not $this->stateDir reused across both calls)
+        // so the only possible difference between the two results is the new
+        // trailing parameter itself -- a shared dir would also spuriously differ
+        // in the episode-set-pin "repinned" warning, which fires once per fresh dir.
+        $stateDirA = $this->stateDir . '-a';
+        $stateDirB = $this->stateDir . '-b';
+        $withDefault = ProgrammingCompiler::compile($programming, $series, $stateDirA, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-04T00:00:00Z'));
+        $withExplicitZero = ProgrammingCompiler::compile($programming, $series, $stateDirB, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-04T00:00:00Z'), [], 0);
+        self::rrmdir($stateDirA);
+        self::rrmdir($stateDirB);
+        Assert::same(json_encode($withDefault), json_encode($withExplicitZero), 'omitting the new parameter must match passing 0 explicitly');
+    }
+
+    private static function rrmdir(string $dir): void
+    {
+        if (!is_dir($dir)) {
+            return;
+        }
+        foreach (glob("$dir/*") ?: [] as $f) {
+            unlink($f);
+        }
+        rmdir($dir);
+    }
+
+    public function testNonPackingLeadInDelaysTheEpisodeButNotTheProgramsOwnWindow(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 300.0), // well short of the 1800s slot either way
+        ]]];
+        $programming = ['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]];
+        $result = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'), [], 10);
+        $slotStart = $this->utc('2026-11-02T00:00:00Z')->getTimestamp();
+        Assert::same($slotStart + 10, $result['items'][0]['start'], 'the episode itself starts 10s into the slot, leaving a reservable gap in front of it');
+        Assert::same($slotStart, $result['programs'][0]['start'], 'the PROGRAM\'s own effective window still starts at the nominal slot boundary, so the reserved gap stays inside it');
+    }
+
+    public function testPackingLeadInReducesTheBudgetHandedToThePackerAndShiftsEveryItem(): void
+    {
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 1380.0), // 23 min
+            $this->episode('e2', 'approved', 1080.0), // 18 min
+            $this->episode('e3', 'approved', 960.0),  // 16 min -- e1+e2+e3 = 3420s, fits in a 3600s slot even with a 10s lead-in (3590s left)
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'), [], 10);
+        $slotStart = $this->utc('2026-11-02T00:00:00Z')->getTimestamp();
+        $ids = array_map(static fn ($i) => $i['id'], $result['items']);
+        Assert::same(['e1', 'e2', 'e3'], $ids, 'the same episodes still fit after reserving 10s for the bumper');
+        Assert::same($slotStart + 10, $result['items'][0]['start'], 'the first packed episode is pushed 10s into the slot');
+        Assert::same($slotStart, $result['programs'][0]['start'], 'the program\'s effective window is still the full nominal slot, so the reserved gap is this program\'s own lead-in, not a separate cell');
+    }
+
+    public function testPackingLeadInCanPushAnEpisodeThatOtherwiseFitOutOfTheOccurrence(): void
+    {
+        // Same durations as testPackingFillsAnHourWithSeveralEpisodesAndDefersTheOneThatDoesNotFit
+        // (e1+e2+e3 = 3420s, exactly 180s of slack in a 3600s slot) -- a 200s lead-in eats more
+        // than that slack, so e3 no longer fits and is deferred instead, exactly like any other
+        // "doesn't fit" case EpisodePacker already handles (on_unfit=defer, the config default).
+        $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
+            $this->episode('e1', 'approved', 1380.0), $this->episode('e2', 'approved', 1080.0), $this->episode('e3', 'approved', 960.0),
+        ]]];
+        $block = $this->dailyPackedBlock('b', 's', '2026-11-02', [], ['duration' => 3600]);
+        $result = ProgrammingCompiler::compile(['blocks' => [$block]], $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'), [], 200);
+        $ids = array_map(static fn ($i) => $i['id'], $result['items']);
+        Assert::same(['e1', 'e2'], $ids, 'e3 is deferred once the lead-in eats into its would-be slack, never truncated');
+    }
 }

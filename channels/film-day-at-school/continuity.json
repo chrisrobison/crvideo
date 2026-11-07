@@ -1,0 +1,14 @@
+{
+  "_note": "Film Day at School's own continuity assets, following channels/science/continuity.json's pattern exactly. No real prerecorded station-id/bumper media exists for this channel, so \"station_ids\"/\"filler\" are deliberately empty -- nonexistent media is never invented or referenced. Every gap (including the mandatory minimum_lead_in before every program -- see channels/publish/README.md's \"Broadcast continuity and filler\" section) is covered by the dynamic \"film-day-up-next\" card alone (see channels/continuity-card.js), which needs no video asset. Its actual on-screen look comes from channels/film-day-at-school/theme.json, read client-side.",
+  "schema_version": 1,
+  "station_ids": [],
+  "filler": [],
+  "cards": [
+    { "id": "film-day-up-next", "template": "film-day-up-next", "min_duration": 0, "max_duration": 100000 }
+  ],
+  "defaults": {
+    "preferred_card": "film-day-up-next",
+    "minimum_video_filler": 10,
+    "minimum_lead_in": 10
+  }
+}

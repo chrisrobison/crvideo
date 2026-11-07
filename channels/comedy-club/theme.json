@@ -1,0 +1,24 @@
+{
+  "_note": "Comedy Club's bumper theme (see channels/continuity-card.js). 'quote' pairs a canvas background with a short deadpan one-liner from quoteDecks.placeholder below, in the spirit of a classic SNL-style 'Deep Thoughts' aside -- these are original placeholder lines written for this project, not reproductions of any copyrighted material, and are meant to be swapped out for the operator's own material. 'up-next' is the plain info card for the rest of the time. Both backgrounds are code-generated canvas animations; no video asset exists or is referenced. Selection is deterministic per occurrence (see pickWeightedIndex() in continuity-card.js), never random.",
+  "schema_version": 1,
+  "bumpers": [
+    { "id": "up-next", "template": "comedy-club-up-next", "weight": 2,
+      "background": { "type": "canvas", "generator": "waves" },
+      "content": { "type": "up-next" } },
+    { "id": "deep-thoughts", "template": "comedy-club-up-next", "weight": 1,
+      "background": { "type": "canvas", "generator": "starfield" },
+      "content": { "type": "quote", "deck": "placeholder", "label": "Deep Thoughts" } }
+  ],
+  "quoteDecks": {
+    "placeholder": [
+      "I used to think the glass was half empty. Then I remembered I don't own that glass.",
+      "A clock is just a circle that's nervous about time.",
+      "If a tree falls in the forest and nobody's there, it still has to fill out the paperwork.",
+      "Somewhere out there, a goose is having a worse day than you. Hang in there.",
+      "I named my houseplant 'Deductible' so watering it would feel like adult responsibility.",
+      "The ocean is just weather that got really, really committed.",
+      "Every staircase is an escalator that gave up.",
+      "I respect toast. It knows exactly what it is, and it stays warm about it."
+    ]
+  }
+}

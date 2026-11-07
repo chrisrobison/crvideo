@@ -32,8 +32,15 @@ declare(strict_types=1);
 //        separate list purely for operator readability, merged into the
 //        exact same selection pool as station_ids */ ],
 //     "cards": [ { "id", "template", "min_duration", "max_duration" } ],
-//     "defaults": { "preferred_card", "minimum_video_filler" }
+//     "defaults": { "preferred_card", "minimum_video_filler", "minimum_lead_in" }
 //   }
+//
+// "minimum_lead_in" (seconds, default 0): ProgrammingCompiler reserves this
+// much time at the FRONT of every occurrence -- for EVERY program, not just
+// wherever packing happens to leave a leftover -- so a continuity card
+// always has at least this long to render before the program it precedes.
+// 0 (the default, and every continuity.json published before this field
+// existed) is a byte-for-byte no-op.
 //
 // Multiple referenced files merge: station_ids/filler/cards concatenate
 // (a duplicate asset id across files is reported, never silently
@@ -50,7 +57,7 @@ final class ContinuityResolver
      * @return array{
      *   assets: list<array{id:string,title:string,category:string,duration:int,status:string,source:?array}>,
      *   cards: list<array{id:string,template:string,minDuration:int,maxDuration:int}>,
-     *   defaults: array{preferredCard:?string,minimumVideoFiller:int},
+     *   defaults: array{preferredCard:?string,minimumVideoFiller:int,minimumLeadIn:int},
      *   errors: list<string>,
      * }
      */
@@ -59,7 +66,7 @@ final class ContinuityResolver
         $errors = [];
         $assets = [];
         $cards = [];
-        $defaults = ['preferredCard' => null, 'minimumVideoFiller' => 0];
+        $defaults = ['preferredCard' => null, 'minimumVideoFiller' => 0, 'minimumLeadIn' => 0];
 
         if (!is_file($catalogAbsolutePath)) {
             return self::empty();
@@ -141,16 +148,19 @@ final class ContinuityResolver
                 if (is_numeric($doc['defaults']['minimum_video_filler'] ?? null)) {
                     $defaults['minimumVideoFiller'] = max(0, (int) $doc['defaults']['minimum_video_filler']);
                 }
+                if (is_numeric($doc['defaults']['minimum_lead_in'] ?? null)) {
+                    $defaults['minimumLeadIn'] = max(0, (int) $doc['defaults']['minimum_lead_in']);
+                }
             }
         }
 
         return ['assets' => $assets, 'cards' => $cards, 'defaults' => $defaults, 'errors' => $errors];
     }
 
-    /** @return array{assets:list<array<string,mixed>>, cards:list<array<string,mixed>>, defaults:array{preferredCard:?string,minimumVideoFiller:int}, errors:list<string>} */
+    /** @return array{assets:list<array<string,mixed>>, cards:list<array<string,mixed>>, defaults:array{preferredCard:?string,minimumVideoFiller:int,minimumLeadIn:int}, errors:list<string>} */
     private static function empty(): array
     {
-        return ['assets' => [], 'cards' => [], 'defaults' => ['preferredCard' => null, 'minimumVideoFiller' => 0], 'errors' => []];
+        return ['assets' => [], 'cards' => [], 'defaults' => ['preferredCard' => null, 'minimumVideoFiller' => 0, 'minimumLeadIn' => 0], 'errors' => []];
     }
 
     /** @return array{asset: array{id:string,title:string,category:string,duration:int,status:string,source:?array}}|array{error:string} */
