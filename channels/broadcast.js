@@ -49,6 +49,58 @@ export async function syncClock(url = new URL("channels.php", CHANNELS_URL)) {
 /** Broadcast time, in seconds since the Unix epoch. */
 export const now = () => (Date.now() + clockSkewMs) / 1000;
 
+// ---------- title display ----------
+
+// A few short tokens that are almost always acronyms/initialisms rather
+// than "shouting", so fixShoutingTitle() below leaves them exactly as the
+// source wrote them even when they're part of an otherwise-shouted run.
+const TITLE_CASE_ACRONYMS = new Set([
+  "dw", "us", "uk", "usa", "un", "eu", "uae", "rok", "nyc", "la", "tv",
+  "rv", "atv", "diy", "fbi", "cia", "nasa", "gps", "atm", "suv", "ok",
+]);
+
+const TITLE_CASE_MINOR_WORDS = new Set([
+  "a", "an", "and", "as", "at", "but", "by", "for", "from", "in", "into",
+  "nor", "of", "on", "onto", "or", "over", "so", "the", "to", "up", "vs",
+  "via", "with", "yet",
+]);
+
+const isAllCapsCore = (tok) => {
+  const core = tok.replace(/[^A-Za-z]/g, "");
+  return core.length >= 2 && core === core.toUpperCase();
+};
+
+/** Turns YouTube-style ALL-CAPS "SHOUTING" into normal title case, one
+ *  word at a time, so it only ever touches text that was actually
+ *  all-caps -- an already mixed-case title (or the mixed-case part of a
+ *  partly-shouted one, e.g. a parenthetical) passes through byte-for-byte.
+ *  A token is rewritten only when it's part of a run of 2+ consecutive
+ *  all-caps tokens, or is a single isolated all-caps token of 5+ letters;
+ *  a short isolated all-caps token (DW, US, ROK, ...) is almost always an
+ *  acronym, not shouting, so it's left alone, and a few common acronyms
+ *  are protected even inside a shouted run. Minor words (the, of, in...)
+ *  are lowercased unless they open the title, matching normal title-case
+ *  style. Opt in per channel via meta.json's "fixAllCapsTitles": true --
+ *  see loadChannel() -- never applied unconditionally. */
+export function fixShoutingTitle(title) {
+  if (!title) return title;
+  const tokens = title.split(" ");
+  const flags = tokens.map(isAllCapsCore);
+  const n = tokens.length;
+  return tokens.map((tok, i) => {
+    const bare = tok.toLowerCase().replace(/^[^a-z]+|[^a-z]+$/g, "");
+    if (!flags[i] || TITLE_CASE_ACRONYMS.has(bare)) return tok;
+    let run = 1;
+    for (let j = i - 1; j >= 0 && flags[j]; j--) run++;
+    for (let j = i + 1; j < n && flags[j]; j++) run++;
+    const coreLen = tok.replace(/[^A-Za-z]/g, "").length;
+    if (run < 2 && coreLen < 5) return tok;
+    const lower = tok.toLowerCase();
+    if (i > 0 && TITLE_CASE_MINOR_WORDS.has(bare)) return lower;
+    return lower.replace(/[a-z]/, (c) => c.toUpperCase());
+  }).join(" ");
+}
+
 // ---------- timeline ----------
 
 const mod = (a, n) => ((a % n) + n) % n;
@@ -64,7 +116,7 @@ const mod = (a, n) => ((a % n) + n) % n;
  *  not guessed from a URL. An item with no "source" at all but a
  *  media_url is the pre-existing, still fully supported, implicit "html5"
  *  convention every ia-import-produced schedule.json already uses. */
-export function buildTimeline(schedule, anchor = 0) {
+export function buildTimeline(schedule, anchor = 0, formatTitle = null) {
   const entries = [];
   let blockStart = 0;
   for (const block of schedule.blocks || []) {
@@ -77,7 +129,7 @@ export function buildTimeline(schedule, anchor = 0) {
       // A "continuity" item (Phase 4/5/6) is never driven through a PlayerAdapter --
       // it has no provider and is rendered, not played -- but it IS a real,
       // compiler-decided occurrence, not an undefined/empty gap.
-      entries.push(mapScheduleItem(item, start, end));
+      entries.push(mapScheduleItem(item, start, end, formatTitle));
     }
     blockStart += length;
   }
@@ -121,7 +173,7 @@ export function buildTimeline(schedule, anchor = 0) {
  * never mutates its input -- the player keeps using buildTimeline()'s
  * timeline, completely unaffected by whatever the guide does with this one.
  */
-export function buildEpgTimeline(schedule, anchor = 0) {
+export function buildEpgTimeline(schedule, anchor = 0, formatTitle = null) {
   const programsById = new Map();
   for (const p of schedule.programs || []) {
     if (p && typeof p.occurrence_id === "string") programsById.set(p.occurrence_id, p);
@@ -137,7 +189,7 @@ export function buildEpgTimeline(schedule, anchor = 0) {
       const start = blockStart + Number(item.start);
       const end = start + Number(item.duration);
       if (!(end > start)) continue;
-      const mapped = mapScheduleItem(item, start, end);
+      const mapped = mapScheduleItem(item, start, end, formatTitle);
       const programId = typeof item.program_id === "string" ? item.program_id : null;
       if (programId !== null && programsById.has(programId)) {
         let episodes = episodesByProgram.get(programId);
@@ -153,11 +205,12 @@ export function buildEpgTimeline(schedule, anchor = 0) {
   for (const [occurrenceId, episodes] of episodesByProgram) {
     const p = programsById.get(occurrenceId);
     episodes.sort((a, b) => a.start - b.start);
+    const rawTitle = p.title || episodes[0].title || occurrenceId;
     entries.push({
       type: "program",
       id: occurrenceId,
       blockId: p.block_id,
-      title: p.title || episodes[0].title || occurrenceId,
+      title: formatTitle ? formatTitle(rawTitle) : rawTitle,
       description: p.description || null,
       seriesId: p.series_id || null,
       seriesTitle: p.series_title || null,
@@ -189,14 +242,15 @@ export function episodeAiringTimes(programAiring, episode) {
  *  start/end) into the common entry shape both buildTimeline() and
  *  buildEpgTimeline() use. Shared so the two projections can never drift
  *  apart on what a "video"/"continuity"/"gap" item means. */
-function mapScheduleItem(item, start, end) {
+function mapScheduleItem(item, start, end, formatTitle = null) {
   const { provider, videoId } = resolveProvider(item);
   const isContinuity = item.type === "continuity";
   const playable = item.type !== "gap" && !isContinuity && provider !== null;
+  const rawTitle = item.title || (playable ? item.id : null);
   return {
     type: item.type,
     id: item.id ?? null,
-    title: item.title || (playable ? item.id : null),
+    title: formatTitle && rawTitle ? formatTitle(rawTitle) : rawTitle,
     description: item.description || null,
     thumbnailUrl: item.thumbnail_url || null,
     template: item.template || null,
@@ -274,6 +328,12 @@ export async function loadChannel(id, meta = null) {
   meta ??= await fetchJson(new URL("meta.json", base));
   const schedule = await fetchJson(new URL(meta.schedule || "schedule.json", base));
   const anchor = meta.anchor ? Date.parse(meta.anchor) / 1000 : 0;
+  // Opt-in, per channel: meta.json's "fixAllCapsTitles": true runs every
+  // episode/program title through fixShoutingTitle() above (e.g. World
+  // Explorer's Kara and Nate/Mark Wiens/Geography Now imports, whose
+  // source titles are inconsistently YELLING). Off by default so no
+  // other channel's titles change underneath it.
+  const formatTitle = meta.fixAllCapsTitles ? fixShoutingTitle : null;
   return {
     id,
     number: Number.isFinite(meta.number) ? meta.number : null,
@@ -288,13 +348,13 @@ export async function loadChannel(id, meta = null) {
     // renders the card.
     theme: (meta.theme && typeof meta.theme === "object") ? meta.theme : null,
     catalogUrl: new URL(meta.catalog || "catalog.json", base).href,
-    timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0),
+    timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0, formatTitle),
     // Phase 4/5 of docs/guide-update.md: the guide's own program-level
     // projection of the same schedule -- see buildEpgTimeline()'s header.
     // Never read by BroadcastPlayer/watch.html; only the channel guide
     // (index.html) uses this field, so playback is completely unaffected
     // by anything built here.
-    epgTimeline: buildEpgTimeline(schedule, Number.isFinite(anchor) ? anchor : 0),
+    epgTimeline: buildEpgTimeline(schedule, Number.isFinite(anchor) ? anchor : 0, formatTitle),
   };
 }
 
