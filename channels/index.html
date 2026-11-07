@@ -15,6 +15,7 @@
 html,body{height:100%}
 html,body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 body{display:flex;flex-direction:column}
+body.player-expanded{overflow:hidden}
 button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:left}
 :focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 
@@ -25,11 +26,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 
 .preview{flex:0 0 auto;display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:24px;padding:20px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0d1322,var(--bg))}
 .screen{position:relative;aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden;cursor:pointer;box-shadow:0 0 0 1px var(--border)}
-.screen video{width:100%;height:100%;object-fit:contain;display:block}
-.screen .badge{position:absolute;top:10px;left:10px;background:var(--live);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;padding:3px 7px;border-radius:4px}
-.screen .slate{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:radial-gradient(circle at 50% 40%,#18213a,#05070c);color:var(--muted);text-align:center;padding:16px}
-.screen .slate img{max-width:30%;max-height:35%}
-.screen .hover-hint{position:absolute;inset:auto 0 0 0;padding:28px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:700;opacity:0;transition:opacity .15s}
+.screen .badge{position:absolute;top:10px;left:10px;background:var(--live);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;padding:3px 7px;border-radius:4px;pointer-events:none;z-index:1}
+.screen .hover-hint{position:absolute;inset:auto 0 0 0;padding:28px 12px 10px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:700;opacity:0;transition:opacity .15s;pointer-events:none;z-index:1}
 .screen:hover .hover-hint,.screen:focus-visible .hover-hint{opacity:1}
 [hidden]{display:none!important}
 
@@ -47,6 +45,19 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .next b{color:var(--text)}
 .watch{align-self:flex-start;margin-top:6px;background:var(--accent);color:#14100a;font-weight:800;padding:10px 16px;border-radius:6px}
 .watch:hover{filter:brightness(1.08)}
+
+/* The expanded "theater" overlay -- the SAME <cr-channel-player> element
+   gets reparented in here (see expandChannel()/collapsePlayer()) rather
+   than a second instance ever being created, so nothing it's already
+   playing ever restarts. view-transition-name on the player itself is
+   what lets the browser morph its box from the small tile above to this
+   full-viewport one instead of just cutting/cross-fading between them. */
+#watchOverlay{position:fixed;inset:0;background:#000;z-index:50}
+#watchOverlay[hidden]{display:none}
+cr-channel-player{view-transition-name:cr-player}
+@media (prefers-reduced-motion:reduce){
+  ::view-transition-group(*),::view-transition-old(*),::view-transition-new(*){animation:none!important}
+}
 
 /* The grid is its own scroll container (both axes) so the sticky ruler
    (top) and sticky channel column (left) can stick relative to it, and so
@@ -121,12 +132,10 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 </header>
 
 <section class="preview" id="preview" hidden>
-  <button class="screen" id="screen" aria-label="Watch this channel">
-    <video id="previewVideo" muted playsinline autoplay></video>
-    <div class="slate" id="previewSlate" hidden><img id="slateLogo" alt=""><div id="slateText"></div></div>
+  <div class="screen" id="screen" role="button" tabindex="0" aria-label="Watch this channel">
     <span class="badge">LIVE</span>
     <span class="hover-hint">Watch full screen ›</span>
-  </button>
+  </div>
   <div class="info">
     <div class="ch-line"><span class="num" id="pNum"></span><img id="pLogo" alt=""><span id="pName"></span></div>
     <h1 id="pTitle"></h1>
@@ -143,11 +152,14 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
   <div id="rows"></div>
 </section>
 
+<div id="watchOverlay" hidden></div>
+
 <script type="module">
 import {
   listChannels, loadChannel, loadCatalog, locate, airings, nextProgram, now, syncClock,
-  clock, minutesLeft, plainText, BroadcastPlayer, episodeAiringTimes,
+  clock, minutesLeft, plainText, episodeAiringTimes,
 } from "./broadcast.js";
+import "./player-view.js";
 
 const SLOT = 1800;
 // How much of the schedule the grid shows at once -- scroll sideways to
@@ -171,38 +183,29 @@ let focused = null;
 let windowStart = 0;
 const span = HORIZON;
 let nextBoundary = Infinity;
-const openWindows = new Map();
 
-const preview = new BroadcastPlayer($("previewVideo"), {
-  onAiring: () => renderPreview(),
-  onState: (state, airing) => {
-    const slate = state === "slate" || state === "error" || !airing?.playable;
-    $("previewSlate").hidden = !slate;
-    $("slateText").textContent = state === "error" ? "Signal lost, reconnecting…" : "Station break";
-  },
+// The one and only player instance for this page -- also the guide's own
+// small "what's on" preview. Compact by default (minimal chrome, sized by
+// its .tile parent); expandChannel()/collapsePlayer() below just move this
+// SAME element between `tile` and `watchOverlay` and flip `compact`,
+// wrapped in a View Transition -- never create a second instance, never
+// reload the stream. See channels/player-view.js's header for why this is
+// what lets the click that expands it also be the click that unmutes it.
+const player = document.createElement("cr-channel-player");
+player.compact = true;
+player.standalone = false; // this page owns the URL/title, not the player
+$("screen").appendChild(player);
+player.addEventListener("cr-channel-change", (e) => {
+  const match = channels.find((c) => c.id === e.detail.channel.id);
+  if (match) setFocus(match, { tune: false }); // already tuned -- just sync the guide's own UI
 });
+// The title/progress-bar/description panel re-renders whenever the
+// player's own airing changes (a program transition, or tune() loading a
+// freshly focused channel for the first time) -- same trigger the
+// pre-existing small preview player used before this element replaced it.
+player.addEventListener("cr-airing", () => renderPreview());
 
-/** Opens the channel in its own window. The video starts muted and live on
- *  load; one click there turns on sound and full screen. */
-function openChannel(id) {
-  const existing = openWindows.get(id);
-  if (existing && !existing.closed) { existing.focus(); return; }
-  const url = new URL(`watch.html?ch=${encodeURIComponent(id)}`, location.href).href;
-  const w = window.open(url, `crvideo-${id}`,
-    `popup,left=0,top=0,width=${screen.availWidth},height=${screen.availHeight}`);
-  if (w) openWindows.set(id, w);
-  else location.href = url;
-}
-
-/** Start of the current local half hour. */
-function halfHourStart(t) {
-  const tz = new Date(t * 1000).getTimezoneOffset() * 60;
-  return Math.floor((t - tz) / SLOT) * SLOT + tz;
-}
-
-const pxLeft = (t) => (t - windowStart) * PX_PER_SEC;
-
-/** A published occurrence's `id` (see channels/publish/src/
+/** An published occurrence's `id` (see channels/publish/src/
  *  ProgrammingCompiler.php) is always the episode's own raw id (e.g.
  *  "yt-xxx"), but a series-sourced catalog.json indexes its episodes as
  *  "<seriesId>:<episodeId>" (see catalog-resolver.js, for collision
@@ -219,6 +222,14 @@ function findCatalogItem(catalog, id) {
   }
   return null;
 }
+
+/** Start of the current local half hour. */
+function halfHourStart(t) {
+  const tz = new Date(t * 1000).getTimezoneOffset() * 60;
+  return Math.floor((t - tz) / SLOT) * SLOT + tz;
+}
+
+const pxLeft = (t) => (t - windowStart) * PX_PER_SEC;
 
 function renderGrid() {
   const t = now();
@@ -257,7 +268,7 @@ function renderGrid() {
     if (ch.number != null) chan.append(el("span", "num", String(ch.number)));
     if (ch.logo) { const img = el("img"); img.src = ch.logo; img.alt = ""; chan.append(img); }
     chan.append(el("span", "name", ch.name));
-    chan.addEventListener("click", () => openChannel(ch.id));
+    chan.addEventListener("click", () => expandChannel(ch.id));
     main.append(chan);
 
     const detail = el("div", "row-detail");
@@ -267,7 +278,7 @@ function renderGrid() {
     // of "Electronics Lab" however many videos got packed into it) --
     // never the raw per-video playback timeline. See buildEpgTimeline()
     // in broadcast.js; ch.timeline (the playback timeline) is untouched
-    // and still drives the preview player above.
+    // and still drives the player above.
     for (const a of airings(ch.epgTimeline, windowStart, until)) {
       const left = Math.max(a.startsAt, windowStart);
       const right = Math.min(a.endsAt, until);
@@ -293,11 +304,11 @@ function renderGrid() {
       cell.title = secondary ? `${a.title}\n${secondary}\n${range}` : `${a.title}\n${range}`;
       cell.tabIndex = -1;
       cell.append(el("span", "t", a.title), el("span", "s", secondary ? `${range} · ${secondary}` : range));
-      // The "now" cell (or the channel button/number) tunes the channel.
+      // The "now" cell (or the channel button/number) opens the channel.
       // Any other -- future -- timeslot just expands this row with a
       // detailed accounting of that program; it never changes the channel.
       cell.addEventListener("click", () => {
-        if (isNow) openChannel(ch.id);
+        if (isNow) expandChannel(ch.id);
         else toggleDetail(row, detail, ch, a);
       });
       lane.append(cell);
@@ -324,9 +335,9 @@ function placeNowLines() {
 /** Expands/collapses a row's detail card for a given future (or current)
  *  airing. Clicking the same already-expanded timeslot again collapses
  *  it; clicking a different timeslot in the same row swaps the content.
- *  Never calls openChannel() -- that's the whole point (Phase 6: selecting
- *  a future program must never unexpectedly change playback). `a` is
- *  either a program-level airing (has `.episodes`, built from
+ *  Never calls expandChannel() -- that's the whole point (Phase 6:
+ *  selecting a future program must never unexpectedly change playback).
+ *  `a` is either a program-level airing (has `.episodes`, built from
  *  buildEpgTimeline()'s grouping) or a legacy per-item airing with no
  *  programming-block identity at all (Phase 8, e.g. Film Day at School) --
  *  renderProgramDetail()/renderEpisodeDetail() below render whichever one
@@ -435,7 +446,11 @@ function hoverFocus(ch) {
   hoverTimer = setTimeout(() => setFocus(ch), 180);
 }
 
-function setFocus(ch) {
+/** Moves the guide's "what's on" focus to `ch` -- tunes the shared player
+ *  (unless it's already there, e.g. we're just syncing UI after the
+ *  player's OWN remote control changed channel -- see the
+ *  cr-channel-change listener above) and updates the info panel. */
+function setFocus(ch, { tune = true } = {}) {
   clearTimeout(hoverTimer);
   if (focused?.id === ch.id) return;
   focused = ch;
@@ -445,16 +460,14 @@ function setFocus(ch) {
   $("pName").textContent = ch.name;
   $("pLogo").hidden = !ch.logo;
   if (ch.logo) $("pLogo").src = ch.logo;
-  $("slateLogo").hidden = !ch.logo;
-  if (ch.logo) $("slateLogo").src = ch.logo;
   $("pWatch").textContent = ch.number != null ? `Watch channel ${ch.number}` : `Watch ${ch.name}`;
-  preview.setTimeline(ch.timeline);
+  if (tune) player.tune(ch.id);
 }
 
 async function renderPreview() {
   const ch = focused;
   if (!ch) return;
-  const a = preview.airing || locate(ch.timeline);
+  const a = player.player.airing || locate(ch.timeline);
   const t = now();
   $("pTitle").textContent = a.playable ? a.title : "Station break";
   $("pRange").textContent = `${clock(a.startsAt)} – ${clock(a.endsAt)}`;
@@ -467,19 +480,79 @@ async function renderPreview() {
   $("pDesc").textContent = a.playable ? "" : ch.description;
   if (!a.playable) return;
   const item = findCatalogItem(await loadCatalog(ch), a.id);
-  if (focused !== ch || preview.airing?.startsAt !== a.startsAt || !item) return;
+  if (focused !== ch || player.player.airing?.startsAt !== a.startsAt || !item) return;
   $("pMeta").textContent = [item.year, item.creator].filter(Boolean).join(" · ");
   $("pDesc").textContent = plainText(item.description);
 }
 
 function updateProgress() {
-  const a = preview.airing;
+  const a = player.player.airing;
   if (!a) return;
   const t = now();
   const done = Math.min(1, Math.max(0, (t - a.startsAt) / (a.endsAt - a.startsAt)));
   $("pBar").style.width = `${done * 100}%`;
   $("pLeft").textContent = `${minutesLeft(a.endsAt - t)} left`;
 }
+
+// ---------- expand/collapse (View Transitions) ----------
+// The player is never destroyed or recreated here -- only moved between
+// `tile` and `watchOverlay` and flipped between compact/full. See
+// channels/player-view.js's header for why that's what keeps playback
+// gapless across the transition.
+
+const tile = $("screen");
+const overlay = $("watchOverlay");
+let expanded = false;
+
+const reduceMotion = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+function animatedMove(move) {
+  if (document.startViewTransition && !reduceMotion()) document.startViewTransition(move);
+  else move();
+}
+
+async function expandChannel(id) {
+  // engage() is called synchronously, in this click handler's own call
+  // stack, BEFORE any await -- that's what lets this same click both
+  // unmute and (for a NEW channel) wait on tune() without losing the
+  // browser's user-activation grant for either one. Real OS fullscreen is
+  // skipped here -- the view transition below already fills the viewport
+  // with CSS, which is the "full screen player" effect; a dblclick or 'f'
+  // once expanded still goes properly fullscreen same as watch.html.
+  player.engage({ fullscreen: false });
+  if (player.channel?.id !== id) await player.tune(id);
+  if (expanded) return; // already showing the (now possibly re-tuned) player full-size
+
+  animatedMove(() => {
+    overlay.appendChild(player);
+    player.compact = false;
+    overlay.hidden = false;
+    document.body.classList.add("player-expanded");
+  });
+  expanded = true;
+}
+
+function collapsePlayer() {
+  if (!expanded) return;
+  animatedMove(() => {
+    tile.appendChild(player);
+    player.compact = true;
+    overlay.hidden = true;
+    document.body.classList.remove("player-expanded");
+  });
+  expanded = false;
+}
+
+// The player's own built-in "‹ Channel guide" link (part of its normal
+// full-mode chrome) would otherwise just navigate to "./" -- intercepted
+// here so it shrinks back into the tile instead, exactly like any other
+// cancelable DOM event a reusable component exposes for this.
+player.addEventListener("cr-back", (e) => {
+  if (!expanded) return; // standalone watch.html has no listener at all -- navigates normally
+  e.preventDefault();
+  collapsePlayer();
+});
+addEventListener("keydown", (e) => { if (expanded && e.key === "Escape") collapsePlayer(); });
 
 function everySecond() {
   const t = now();
@@ -497,8 +570,11 @@ $("rows").addEventListener("keydown", (e) => {
   const next = chans[Math.min(chans.length - 1, Math.max(0, i + (e.key === "ArrowDown" ? 1 : -1)))];
   if (next) { e.preventDefault(); next.focus(); }
 });
-$("screen").addEventListener("click", () => focused && openChannel(focused.id));
-$("pWatch").addEventListener("click", () => focused && openChannel(focused.id));
+$("screen").addEventListener("click", () => focused && expandChannel(focused.id));
+$("screen").addEventListener("keydown", (e) => {
+  if ((e.key === "Enter" || e.key === " ") && focused) { e.preventDefault(); expandChannel(focused.id); }
+});
+$("pWatch").addEventListener("click", () => focused && expandChannel(focused.id));
 
 async function init() {
   document.documentElement.style.setProperty("--lane-w", `${HORIZON * PX_PER_SEC}px`);
@@ -524,7 +600,6 @@ async function init() {
   $("preview").hidden = false;
   setFocus(channels.find((c) => c.id === saved) || channels[0]);
   renderGrid();
-  preview.start();
   setInterval(everySecond, 1000);
 }
 
