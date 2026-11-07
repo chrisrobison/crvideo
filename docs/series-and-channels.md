@@ -320,15 +320,26 @@ whichever adapter was active first (the YouTube iframe's required
 presentation is never drawn under anything else), then renders the card
 with the real upcoming program's info (via the existing `nextProgram()`
 timeline helper) and the continuity occurrence's own exact span. A page
-that passes no `continuityContainer` (e.g. the channel guide's small
-preview in `index.html`) is completely unaffected -- a continuity airing
-simply falls back to the ordinary not-playable station-break slate,
-exactly like an unsupported provider already does.
+that builds its own `BroadcastPlayer` and passes no `continuityContainer`
+is unaffected -- a continuity airing simply falls back to the ordinary
+not-playable station-break slate, exactly like an unsupported provider
+already does.
 
-`watch.html` is the first integration: a `#continuityHost` element,
-passed as `continuityContainer`, shown/hidden independently of the
+The integration itself lives in `channels/player-view.js`'s
+`<cr-channel-player>` -- a `.continuityHost` element inside its shadow
+DOM, passed as `continuityContainer`, shown/hidden independently of the
 pre-existing generic "Up Next" slate (which still handles the plain-gap,
-no-program-at-all case exactly as before).
+no-program-at-all case exactly as before). This is the ONE player
+implementation shared by `channels/watch.html` (a thin standalone
+bootstrap around it) and `channels/index.html` (which mounts the exact
+same element, in its `compact` attribute's minimal-chrome mode, as the
+guide's own small preview -- expanding it in place, via a View
+Transition, rather than ever creating a second instance; see
+`player-view.js`'s own header for why that's also what lets a YouTube-
+or continuity-sourced program in the small preview tile render exactly
+the same way it would full-size, just small, instead of being skipped
+the way a page with no `continuityContainer`/`youtubeContainer` at all
+would skip it).
 
 **What's unit-tested vs. what still needs a real browser** (same honesty
 standard this project already applies to the YouTube player adapter):
@@ -357,6 +368,78 @@ exact-gap-coverage rules. The dynamic card's actual on-screen rendering
 and player integration are a later phase (continuity occurrences compile
 correctly today; they render as an ordinary station-break slate in the
 existing player until that phase lands).
+
+`continuity.json`'s `defaults.minimum_lead_in` (seconds) goes further
+than exact-gap-coverage: `ProgrammingCompiler` reserves that much time
+at the front of **every** occurrence it builds, not just wherever
+packing happens to leave a leftover, so a continuity card is guaranteed
+to run at least that long before every program -- including two
+back-to-back programs with no natural gap at all. See `channels/publish/
+src/ProgrammingCompiler.php`'s `$minimumLeadInSeconds` doc for exactly
+how the reserved span stays inside the program's own effective window
+(so it folds into that program's guide cell, never becoming an
+unattributed one of its own) at zero cost to every existing, unaffected
+code path. 0 (the default) is a byte-for-byte no-op.
+
+A channel can also author an optional `channels/<id>/theme.json`
+(resolved client-side by `broadcast.js`'s `loadTheme()`, never at
+publish time) describing what its continuity card actually looks like
+beyond the plain default "Coming Up Next" info block: a weighted list of
+`bumpers`, each pairing a background (`"video-loop"` with a channel-
+supplied asset, or a built-in `"canvas"` animation -- see `continuity-
+card.js`'s `CANVAS_GENERATORS`, no asset needed at all) with content
+(the default up-next info, or a `"quote"` card drawing from a named
+`quoteDecks` entry -- an SNL-"Deep Thoughts"-style aside). Which bumper
+renders for a given occurrence is picked **deterministically** from its
+own absolute `startsAt` (`continuity-card.js`'s `pickWeightedIndex()`),
+never `Math.random()` -- the same determinism contract as everything
+else here: two viewers tuned to the same occurrence at the same instant
+always see the same bumper. No `theme.json` (every channel today)
+renders exactly the pre-existing plain card.
+
+## One shared player, in-page expand/collapse (`<cr-channel-player>`)
+
+`channels/player-view.js` defines `<cr-channel-player>`: the full
+player -- `BroadcastPlayer` wiring, the "Up Next" slate, the continuity
+card host, the lower info bar, OSD, the mute/fullscreen "engage" gesture,
+and keyboard remote control (channel surf/dial) -- as one dependency-
+free Shadow DOM custom element, the same convention as `<cr-continuity-
+card>`. `channels/watch.html` is now a thin bootstrap that mounts one of
+these full-size and `.tune()`s it from `?ch=`; it's still the standalone,
+deep-linkable page (kiosk/TV browsers, OBS browser sources, "open in its
+own window"), just no longer its own separate implementation.
+
+`channels/index.html` mounts the exact same element, in its `compact`
+attribute's mode (minimal chrome, sized by its parent instead of the
+viewport), as the guide's own small "what's on" preview -- replacing
+what used to be a second, simpler `BroadcastPlayer` with no YouTube/
+continuity support and a `window.open()` to a brand-new `watch.html`
+popup for actually watching. Clicking the preview (or a "now" cell, or
+the Watch button) instead calls `ChannelPlayer.engage()` (unmute, since
+the click's own user-activation is what a browser requires for that)
+synchronously in the click handler, then reparents this SAME element
+from the small tile into a full-viewport overlay and flips `compact`
+off, both wrapped in `document.startViewTransition()` so the browser
+morphs its box instead of cutting between two unrelated states. Moving
+a connected custom element (and the `<video>`/YouTube iframe inside it)
+to a new parent within the same document does not pause, reload, or
+re-buffer it -- which is what makes the whole expand gapless: there was
+never a second player instance to begin with, so there's nothing to
+restart. Collapsing (the player's own built-in "‹ Channel guide" link --
+intercepted via its cancelable `cr-back` event -- or Escape) reverses
+the same move. Real browser Fullscreen is a separate, explicit action
+(dblclick, 'f') from this in-page "theater" expand, which fills the
+viewport with CSS/the view transition alone; `engage({fullscreen:
+false})` is what skips requesting it automatically on that first click.
+Every browser without View Transition support (or with
+`prefers-reduced-motion: reduce`) still gets the exact same DOM move,
+just without the animation.
+
+**Needs a real browser to verify** (same standing exception as `<cr-
+continuity-card>`'s own shadow-DOM rendering): the view transition's
+visual morph, fullscreen engagement, and canvas bumper animations have
+no meaningful headless/unit coverage and are not part of the automated
+suite.
 
 ## Determinism and schedule publication (Phase 8)
 

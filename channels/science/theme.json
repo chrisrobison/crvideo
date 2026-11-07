@@ -1,0 +1,12 @@
+{
+  "_note": "Science & Engineering's bumper theme (see channels/continuity-card.js and docs/series-and-channels.md's 'Dynamic continuity rendering and playback' section). Both backgrounds below are code-generated canvas animations -- no video asset exists or is referenced. Which one renders for a given continuity occurrence is picked deterministically from the occurrence's own start time (never at random), so every viewer tuned in at the same instant sees the same one.",
+  "schema_version": 1,
+  "bumpers": [
+    { "id": "starfield", "template": "science-up-next", "weight": 1,
+      "background": { "type": "canvas", "generator": "starfield" },
+      "content": { "type": "up-next" } },
+    { "id": "waves", "template": "science-up-next", "weight": 1,
+      "background": { "type": "canvas", "generator": "waves" },
+      "content": { "type": "up-next" } }
+  ]
+}

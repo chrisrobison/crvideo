@@ -1,0 +1,9 @@
+{
+  "_note": "World Explorer's bumper theme (see channels/continuity-card.js). 'waves' is a code-generated canvas animation -- no video asset exists or is referenced yet. A real looping travel-footage background (background.type='video-loop', background.url pointing at an actual hosted file) can be swapped in here later without touching anything else; none is invented in the meantime.",
+  "schema_version": 1,
+  "bumpers": [
+    { "id": "waves", "template": "world-explorer-up-next", "weight": 1,
+      "background": { "type": "canvas", "generator": "waves" },
+      "content": { "type": "up-next" } }
+  ]
+}
