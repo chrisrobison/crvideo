@@ -4897,5 +4897,8 @@
         { "ref": "../../series/film-day-the-working-world/series.json" },
         { "ref": "../../series/film-day-on-the-move/series.json" },
         { "ref": "../../series/film-day-shorts-and-curiosities/series.json" }
+    ],
+    "continuity": [
+        { "ref": "./continuity.json" }
     ]
 }

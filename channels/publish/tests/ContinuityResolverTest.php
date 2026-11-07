@@ -47,6 +47,13 @@ final class ContinuityResolverTest
         $result = ContinuityResolver::resolveCatalog($this->fixture('channels/sample/catalog.json'));
         Assert::same('up-next', $result['defaults']['preferredCard'], 'overridden by the channel-specific (second) ref');
         Assert::same(10, $result['defaults']['minimumVideoFiller'], 'kept from the network-wide (first) ref since the second never sets it');
+        Assert::same(5, $result['defaults']['minimumLeadIn'], 'kept from the network-wide (first) ref since the second never sets it either');
+    }
+
+    public function testMinimumLeadInDefaultsToZeroWhenNoReferencedFileSetsIt(): void
+    {
+        $result = ContinuityResolver::resolveCatalog($this->fixture('channels/sample-no-continuity/catalog.json'));
+        Assert::same(0, $result['defaults']['minimumLeadIn']);
     }
 
     public function testAMissingReferencedContinuityFileIsReportedNotFatal(): void

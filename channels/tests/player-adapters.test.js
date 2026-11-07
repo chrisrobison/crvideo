@@ -25,7 +25,7 @@ import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
 import { computeBackoffMs, computeDriftCorrection, resolveProvider } from "../player-adapters.js";
-import { formatCountdown } from "../continuity-card.js";
+import { formatCountdown, hashSeed, pickWeightedIndex } from "../continuity-card.js";
 import { buildTimeline, locate, airings, nextProgram } from "../broadcast.js";
 
 // ---------- computeBackoffMs ----------
@@ -259,4 +259,41 @@ test("formatCountdown shows plain seconds under a minute", () => {
 test("formatCountdown never goes negative -- clamps to \"starting now\"", () => {
   assert.equal(formatCountdown(0), "starting now");
   assert.equal(formatCountdown(-5), "starting now");
+});
+
+// ---------- deterministic bumper selection (continuity-card.js) ----------
+// This project's whole continuity system is built on "two viewers at the
+// same occurrence see the same thing" -- these cover the pure selection
+// math pickWeightedIndex()/hashSeed() use, never Math.random().
+
+test("hashSeed is a pure function of its input -- same seed, same hash, every call", () => {
+  assert.equal(hashSeed("continuity-1793577600"), hashSeed("continuity-1793577600"));
+  assert.notEqual(hashSeed("continuity-1793577600"), hashSeed("continuity-1793577601"));
+});
+
+test("pickWeightedIndex is deterministic -- repeated calls with the same seed always pick the same index", () => {
+  const weights = [1, 1, 1, 1, 1];
+  const first = pickWeightedIndex(weights, "occurrence-42");
+  for (let i = 0; i < 20; i++) {
+    assert.equal(pickWeightedIndex(weights, "occurrence-42"), first);
+  }
+});
+
+test("pickWeightedIndex returns an in-range index across many different seeds", () => {
+  for (let i = 0; i < 200; i++) {
+    const idx = pickWeightedIndex([2, 1, 1], `seed-${i}`);
+    assert.ok(idx >= 0 && idx <= 2);
+  }
+});
+
+test("pickWeightedIndex never picks a zero-weight item", () => {
+  for (let i = 0; i < 200; i++) {
+    const idx = pickWeightedIndex([0, 5, 0], `seed-${i}`);
+    assert.equal(idx, 1);
+  }
+});
+
+test("pickWeightedIndex falls back to index 0 for an empty or all-zero list rather than throwing", () => {
+  assert.equal(pickWeightedIndex([], "seed"), 0);
+  assert.equal(pickWeightedIndex([0, 0, 0], "seed"), 0);
 });

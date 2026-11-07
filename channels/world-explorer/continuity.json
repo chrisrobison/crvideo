@@ -1,5 +1,5 @@
 {
-  "_note": "World Explorer's own continuity assets, following channels/science/continuity.json's pattern exactly. No real prerecorded station-id/bumper media exists for this channel, so \"station_ids\"/\"filler\" are deliberately empty -- nonexistent media is never invented or referenced. Every packing remainder (a slot's leftover minutes when no further approved episode fits) is covered by the dynamic \"world-explorer-up-next\" card alone (see channels/continuity-card.js), which needs no video asset. Real station IDs can be added here later without any other change.",
+  "_note": "World Explorer's own continuity assets, following channels/science/continuity.json's pattern exactly. No real prerecorded station-id/bumper media exists for this channel, so \"station_ids\"/\"filler\" are deliberately empty -- nonexistent media is never invented or referenced. Every packing remainder (a slot's leftover minutes when no further approved episode fits) is covered by the dynamic \"world-explorer-up-next\" card alone (see channels/continuity-card.js), which needs no video asset. Real station IDs can be added here later without any other change. minimum_lead_in guarantees that same card runs at least 10s before EVERY program, not just packing leftovers -- see channels/publish/README.md's \"Broadcast continuity and filler\" section. Its actual on-screen look (a themed canvas background) comes from channels/world-explorer/theme.json, read client-side -- a real looping travel-footage background can be dropped in there later (background.type=\"video-loop\") once an actual asset exists; none is invented here.",
   "schema_version": 1,
   "station_ids": [],
   "filler": [],
@@ -8,6 +8,7 @@
   ],
   "defaults": {
     "preferred_card": "world-explorer-up-next",
-    "minimum_video_filler": 10
+    "minimum_video_filler": 10,
+    "minimum_lead_in": 10
   }
 }

@@ -348,6 +348,14 @@ export async function loadChannel(id, meta = null) {
     // renders the card.
     theme: (meta.theme && typeof meta.theme === "object") ? meta.theme : null,
     catalogUrl: new URL(meta.catalog || "catalog.json", base).href,
+    // Optional per-channel BUMPER theme (channels/<id>/theme.json) -- NOT
+    // the same thing as `theme` just above (that's the small color-token
+    // palette). This one describes the actual "Up Next" card content: a
+    // weighted set of background/content treatments (looping video,
+    // canvas animation, a quote deck, ...) a continuity card picks from
+    // deterministically -- see loadTheme() and continuity-card.js. Lazily
+    // resolved (like catalogUrl/loadCatalog() below), never fetched here.
+    themeUrl: new URL(meta.bumperTheme || "theme.json", base).href,
     timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0, formatTitle),
     // Phase 4/5 of docs/guide-update.md: the guide's own program-level
     // projection of the same schedule -- see buildEpgTimeline()'s header.
@@ -375,6 +383,21 @@ export function loadCatalog(channel) {
       .catch(() => new Map()));
   }
   return catalogs.get(channel.catalogUrl);
+}
+
+const themes = new Map();
+
+/** A channel's optional `theme.json` (bumper background/content config --
+ *  see continuity-card.js's header and ContinuityRenderer.show()'s
+ *  `bumperTheme` param), cached per channel. Resolves to `null` -- never
+ *  throws -- when the file is missing or malformed, which is exactly what
+ *  renders every channel's pre-existing plain generic continuity card:
+ *  this is a pure enrichment layer, same posture as loadCatalog() above. */
+export function loadTheme(channel) {
+  if (!themes.has(channel.themeUrl)) {
+    themes.set(channel.themeUrl, fetchJson(channel.themeUrl).catch(() => null));
+  }
+  return themes.get(channel.themeUrl);
 }
 
 // ---------- formatting ----------
@@ -550,6 +573,8 @@ export class BroadcastPlayer {
         next ? { title: next.title, description: next.description, thumbnailUrl: next.thumbnailUrl, startsAt: next.startsAt } : null,
         now,
         { startsAt: airing.startsAt, endsAt: airing.endsAt },
+        airing.template,
+        this.channelMeta?.bumperTheme ?? null,
       );
       this.setState("continuity");
       return;
