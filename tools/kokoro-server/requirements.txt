@@ -1,0 +1,9 @@
+# Kokoro TTS HTTP microservice - direct dependencies only.
+# Installed/verified against Python 3.11.2 on x86_64 Linux (2026-11-08).
+#
+# kokoro-onnx pulls in numpy, phonemizer, and espeakng-loader (bundled espeak-ng
+# shared library + data, no system package needed) as its own transitive deps.
+# No web framework is used - server.py is built on the stdlib http.server.
+
+kokoro-onnx==0.6.1
+onnxruntime==1.31.1

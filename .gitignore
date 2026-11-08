@@ -38,3 +38,20 @@ channels/*/meta.json.bak
 # before each overwrite (admin_atomic_write_json in server/lib/AdminSupport.php).
 channels/*/catalog.json.bak
 channels/*/programming.json.bak
+
+# AI continuity announcer (channels/announcer/) -- local build/queue state,
+# same posture as channels/*/.publish/: never committed.
+channels/*/.announcer/
+channels/*/announcements.json.bak
+channels/*/announcements.json.lock
+channels/announcer/config.local.php
+
+# Generated announcement MP3s -- regenerable build artifacts (see
+# channels/announcer/README.md to regenerate), not committed, same
+# posture as /cache/.
+media/announcements/
+
+# Kokoro TTS microservice (tools/kokoro-server/) -- large downloaded model
+# files and its local Python virtualenv, never committed.
+tools/kokoro-server/models/
+tools/kokoro-server/.venv/

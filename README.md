@@ -145,6 +145,14 @@ starts as editorial `status: "candidate"`; only an editor approving it
 channel -- see "Editorial status and content rights" in
 `docs/series-and-channels.md`.
 
+## AI continuity announcer (`channels/announcer/`)
+
+Opt-in, per channel (`channels/<id>/announcer.json`): writes a broadcast-style "coming up
+next" script for each of `schedule.json`'s continuity transitions (AI writer, with a
+deterministic template fallback), synthesizes it with [Kokoro TTS](tools/kokoro-server/)
+into a cached MP3, and records it in `channels/<id>/announcements.json` -- without ever
+blocking schedule compilation. `channels/announcer/README.md`.
+
 ## Admin / editorial tooling
 
 - **`server/`** -- standalone PHP endpoints: `download-cache.php` (cron
@@ -189,6 +197,8 @@ publication" in `docs/series-and-channels.md`.
 | `docs/admin-ui.md` | The SERIES/PROGRAMMING admin tabs and their (lack of) access control. |
 | `docs/science-packing-report.md` | A worked example of the Science channel's multi-episode packing. |
 | `channels/publish/README.md` | `publish.php` CLI reference and `programming.json`/`continuity.json` schema. |
+| `channels/announcer/README.md` | The AI continuity announcer: architecture, caching, CLI, setup. |
+| `tools/kokoro-server/README.md` | The standalone Kokoro TTS HTTP microservice (local or remote). |
 | `ia-import/README.md` | `ia-import.php` CLI reference and input format. |
 | `youtube-import/README.md` | `youtube-import.php` CLI reference, credentials, and editorial-status handling. |
 | `server/README.md` | The cache downloader and admin endpoints. |
@@ -202,6 +212,7 @@ channel, real credentials, or the network:
 
 ```sh
 php channels/publish/tests/run-tests.php   # publish.php: recurrence, packing, boundaries, continuity, CLI
+php channels/announcer/tests/run-tests.php # AI announcer: contexts, caching, job queue, writer/TTS validation
 php ia-import/tests/run-tests.php          # ia-import.php
 php youtube-import/tests/run-tests.php     # youtube-import.php
 php server/tests/run-tests.php             # admin endpoints
@@ -225,3 +236,6 @@ or an explicit local file, never hardcoded:
 - `scheduler/drive-config.local.php` -- the Drive OAuth client id for
   `channel.html`'s key-serving endpoint -- `scheduler/GOOGLE_DRIVE_SETUP.md`.
 - `.env` / `.env.sh` -- local environment convenience, never committed.
+- `channels/announcer/config.local.php` -- Kokoro endpoint/auth-token overrides for the AI
+  announcer (no key needed for the AI writer itself -- it uses the `claude` CLI's existing
+  OAuth session) -- `channels/announcer/README.md`.
