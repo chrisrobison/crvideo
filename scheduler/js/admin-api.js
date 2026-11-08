@@ -16,6 +16,7 @@
 
 const SERIES_ENDPOINT = "../server/series-admin.php";
 const CHANNEL_ENDPOINT = "../server/channel-admin.php";
+const ANNOUNCER_ENDPOINT = "../server/announcer-admin.php";
 
 async function getJson(url) {
   const r = await fetch(url, { cache: "no-store" });
@@ -47,4 +48,18 @@ export const channelAdminApi = {
   saveCatalog: (channelId, seriesIds) => postJson(CHANNEL_ENDPOINT, { action: "save_catalog", channel_id: channelId, series_ids: seriesIds }),
   saveProgramming: (channelId, blocks) => postJson(CHANNEL_ENDPOINT, { action: "save_programming", channel_id: channelId, blocks }),
   publish: (channelId, opts) => postJson(CHANNEL_ENDPOINT, { action: "publish", channel_id: channelId, ...opts }),
+};
+
+// server/announcer-admin.php -- the AI continuity announcer's admin
+// surface (Pass 2 of channels/announcer/README.md). See that file's own
+// header for exactly what each action does; this is a thin, un-opinionated
+// wrapper, same posture as channelAdminApi above.
+export const announcerAdminApi = {
+  list: () => getJson(`${ANNOUNCER_ENDPOINT}?action=list`).then((r) => r.channels),
+  voices: (channelId) => getJson(`${ANNOUNCER_ENDPOINT}?action=voices&channel_id=${encodeURIComponent(channelId)}`),
+  saveConfig: (channelId, config) => postJson(ANNOUNCER_ENDPOINT, { action: "save_config", channel_id: channelId, config }),
+  previewVoice: (channelId, voice) => postJson(ANNOUNCER_ENDPOINT, { action: "preview_voice", channel_id: channelId, voice }),
+  regenerate: (channelId, transitionId, opts) => postJson(ANNOUNCER_ENDPOINT, { action: "regenerate", channel_id: channelId, transition_id: transitionId, ...opts }),
+  generateQueue: (channelId) => postJson(ANNOUNCER_ENDPOINT, { action: "generate_queue", channel_id: channelId }),
+  approveScript: (channelId, scriptHash, text) => postJson(ANNOUNCER_ENDPOINT, { action: "approve_script", channel_id: channelId, script_hash: scriptHash, text }),
 };

@@ -356,6 +356,14 @@ export async function loadChannel(id, meta = null) {
     // deterministically -- see loadTheme() and continuity-card.js. Lazily
     // resolved (like catalogUrl/loadCatalog() below), never fetched here.
     themeUrl: new URL(meta.bumperTheme || "theme.json", base).href,
+    // The AI continuity announcer's manifest (channels/announcer/,
+    // channels/<id>/announcements.json) -- see loadAnnouncements() and
+    // BroadcastPlayer's continuity branch, which plays the matching
+    // "coming up next" narration MP3 (if any) under a continuity card.
+    // Lazily resolved, same posture as catalogUrl/themeUrl: a channel
+    // with no announcer enabled (the default, and every channel before
+    // this existed) just gets back an empty list and nothing changes.
+    announcementsUrl: new URL(meta.announcements || "announcements.json", base).href,
     timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0, formatTitle),
     // Phase 4/5 of docs/guide-update.md: the guide's own program-level
     // projection of the same schedule -- see buildEpgTimeline()'s header.
@@ -398,6 +406,58 @@ export function loadTheme(channel) {
     themes.set(channel.themeUrl, fetchJson(channel.themeUrl).catch(() => null));
   }
   return themes.get(channel.themeUrl);
+}
+
+const announcementManifests = new Map();
+
+/** A channel's optional `announcements.json` (the AI continuity
+ *  announcer's published manifest -- see channels/announcer/README.md),
+ *  cached per channel. Resolves to `[]` -- never throws -- when the file
+ *  is missing/malformed/empty, which is exactly what every channel
+ *  without the announcer enabled already looks like: a pure enrichment
+ *  layer, same posture as loadCatalog()/loadTheme() above. */
+export function loadAnnouncements(channel) {
+  if (!announcementManifests.has(channel.announcementsUrl)) {
+    announcementManifests.set(
+      channel.announcementsUrl,
+      fetchJson(channel.announcementsUrl)
+        .then((doc) => (Array.isArray(doc?.announcements) ? doc.announcements : []))
+        .catch(() => []),
+    );
+  }
+  return announcementManifests.get(channel.announcementsUrl);
+}
+
+/**
+ * Picks the "coming up next" narration audio URL for a continuity airing,
+ * from a channel's announcements.json array (loadAnnouncements()).
+ * Matches by transitionId -- the continuity schedule item's own `id`,
+ * which `mapScheduleItem()` carries through unchanged as `airing.id`
+ * (see AnnouncementContextBuilder.php, which builds each announcement's
+ * `transitionId` from that exact same field).
+ *
+ * Guards against stale audio left over from before a schedule change
+ * (spec section 11, "A schedule that changes during audio generation"):
+ * if both sides know which episode is coming up next and they disagree,
+ * the audio is discarded rather than narrating the wrong program. This
+ * mirrors AnnouncerPipeline::checkStale()'s own parallel check server-
+ * side (which is what keeps that disagreement rare to begin with) using
+ * data the player already has on hand -- no extra request.
+ *
+ * Returns null if there is nothing usable, which is exactly today's
+ * silent-card behavior -- the default, and every channel whose announcer
+ * isn't enabled.
+ */
+export function findAnnouncementAudio(announcements, airing) {
+  if (!Array.isArray(announcements) || !airing) return null;
+  const match = announcements.find(
+    (a) => a && a.transitionId === airing.id && a.type === "coming_up_next" && a.status === "ready" && a.audio,
+  );
+  if (!match) return null;
+  if (airing.nextProgramId != null && match.toEpisodeId != null && airing.nextProgramId !== match.toEpisodeId) {
+    return null; // stale -- the schedule's actual upcoming episode no longer matches what this was generated for
+  }
+  return match.audio;
 }
 
 // ---------- formatting ----------
@@ -513,6 +573,24 @@ export class BroadcastPlayer {
   setMuted(muted) {
     this.muted = muted;
     this.activeAdapter?.setMuted(muted);
+    // The continuity narration track (Pass 2 of channels/announcer/) is
+    // "channel audio" exactly like any program's own soundtrack -- a
+    // viewer's mute/unmute choice must follow them into and out of a
+    // continuity card, not reset to always-muted or always-audible.
+    this.continuityRenderer?.setMuted(muted);
+  }
+
+  /** Patches fields onto the CURRENT channelMeta object in place --
+   *  e.g. a bumper theme or announcements manifest that finished loading
+   *  after setTimeline() already ran (see player-view.js's tune(), which
+   *  kicks those fetches off in parallel with the synchronous
+   *  setTimeline() call rather than blocking on them). Deliberately never
+   *  touches `timeline`/`airing`/calls tick() -- unlike calling
+   *  setTimeline() again, this can never interrupt or reload whatever is
+   *  currently playing; it just means the NEXT read of channelMeta (the
+   *  next tick(), or the next continuity card) sees the fresher data. */
+  updateChannelMeta(patch) {
+    this.channelMeta = { ...(this.channelMeta || {}), ...patch };
   }
 
   isMuted() {
@@ -568,6 +646,7 @@ export class BroadcastPlayer {
       this.video.hidden = true;
       if (this.youtubeContainer) this.youtubeContainer.hidden = true;
       const next = nextProgram(this.timeline, airing.startsAt);
+      const audioUrl = findAnnouncementAudio(this.channelMeta?.announcements, airing);
       this.continuityRenderer.show(
         this.channelMeta,
         next ? { title: next.title, description: next.description, thumbnailUrl: next.thumbnailUrl, startsAt: next.startsAt } : null,
@@ -575,7 +654,9 @@ export class BroadcastPlayer {
         { startsAt: airing.startsAt, endsAt: airing.endsAt },
         airing.template,
         this.channelMeta?.bumperTheme ?? null,
+        audioUrl,
       );
+      this.continuityRenderer.setMuted(this.muted);
       this.setState("continuity");
       return;
     }

@@ -151,7 +151,10 @@ Opt-in, per channel (`channels/<id>/announcer.json`): writes a broadcast-style "
 next" script for each of `schedule.json`'s continuity transitions (AI writer, with a
 deterministic template fallback), synthesizes it with [Kokoro TTS](tools/kokoro-server/)
 into a cached MP3, and records it in `channels/<id>/announcements.json` -- without ever
-blocking schedule compilation. `channels/announcer/README.md`.
+blocking schedule compilation. A continuity card on `watch.html`/`index.html` plays the
+matching narration automatically; a "Continuity announcer" section in the PROGRAMMING admin
+tab (`server/announcer-admin.php`) edits the config, previews voices, and can regenerate or
+approve individual announcements. `channels/announcer/README.md`.
 
 ## Admin / editorial tooling
 
@@ -159,19 +162,20 @@ blocking schedule compilation. `channels/announcer/README.md`.
   job pre-fetching the next couple of Drive segments to local disk so
   `sync-player.html` never hits Drive's anti-automation block),
   `publish-playlist.php` (lets the scheduler push a new `playlist.json`
-  live), and `series-admin.php`/`channel-admin.php` (back the SERIES/
-  PROGRAMMING tabs below). `server/README.md`.
+  live), and `series-admin.php`/`channel-admin.php`/`announcer-admin.php`
+  (back the SERIES/PROGRAMMING tabs below, the last for the "Continuity
+  announcer" section specifically). `server/README.md`.
 - **`scheduler/`** (ChannelFlow) -- the admin UI: its original SCHEDULE
   tab (Drive folder picker, media library, rundown/timeline editor for
   `playlist.json`) plus newer SERIES tabs (episode approval, triggering
   a `youtube-import.php` refresh) and PROGRAMMING tabs (editing a
   channel's `catalog.json`/`programming.json`, previewing or running
-  `publish.php`) layered on top, additively -- switching tabs never
-  unmounts anything. `scheduler/GOOGLE_DRIVE_SETUP.md` for the Drive
-  OAuth setup.
+  `publish.php`, plus a "Continuity announcer" section per channel) layered
+  on top, additively -- switching tabs never unmounts anything.
+  `scheduler/GOOGLE_DRIVE_SETUP.md` for the Drive OAuth setup.
 
 > **Before deploying any of this reachable from the internet:** the
-> SERIES/PROGRAMMING admin endpoints have **no login, no API key, no IP
+> SERIES/PROGRAMMING/announcer admin endpoints have **no login, no API key, no IP
 > restriction at all** -- a deliberate, explicit decision, not an
 > oversight. Read `docs/admin-ui.md` in full before exposing them.
 
