@@ -1,0 +1,46 @@
+{
+    "schema_version": 1,
+    "announcements": [
+        {
+            "id": "science-continuity-1794016800-next",
+            "channelId": "science",
+            "type": "coming_up_next",
+            "transitionId": "continuity-1794016800",
+            "fromProgramId": "lineup-the-engineering-mindset-pm@1794013200",
+            "toProgramId": "lineup-veritasium-pm@1794016800",
+            "toEpisodeId": "yt-eyZEqSPeMwg",
+            "voice": "af_heart",
+            "text": "Next, at six o'clock, it's Veritasium. An element of truth: science, education, and anything else that happens to be interesting. Stay with us.",
+            "audio": "/media/announcements/science/9045a5329a19cd54f721f2517a3605acb97ab5c0cbaca9feecd0a69ffd9552cc.mp3",
+            "duration": 9.744,
+            "status": "ready",
+            "scriptHash": "290a78d79ecc4e0ebf2520b5097bfb5f60860e219ea3942d501f9a0de38e0cf3",
+            "audioHash": "9045a5329a19cd54f721f2517a3605acb97ab5c0cbaca9feecd0a69ffd9552cc",
+            "provider": "claude-cli",
+            "model": "sonnet",
+            "scheduledStartTime": 1794016810,
+            "generatedAt": "2026-11-08T16:58:34+00:00"
+        },
+        {
+            "id": "science-continuity-1794009600-next",
+            "channelId": "science",
+            "type": "coming_up_next",
+            "transitionId": "continuity-1794009600",
+            "fromProgramId": null,
+            "toProgramId": "lineup-stuff-made-here-pm@1794009600",
+            "toEpisodeId": "yt-2OfjZ3ORJfc",
+            "voice": "af_heart",
+            "text": "At four o'clock, it's Stuff Made Here. Expect months of software upgrades, a robotic golf club, and a determined attempt to teach it some physics. Stay with us.",
+            "audio": "/media/announcements/science/87993f98f60ce6fb83e548c624e46cf90494f4c7a64f32307ac11a5c7c41dcd1.mp3",
+            "duration": 10.104,
+            "status": "ready",
+            "scriptHash": "4d4f36678fc520a2ccab5f162afbe1ad5d8e207949cc8ee99203b96f64482ac2",
+            "audioHash": "87993f98f60ce6fb83e548c624e46cf90494f4c7a64f32307ac11a5c7c41dcd1",
+            "provider": "claude-cli",
+            "model": "sonnet",
+            "scheduledStartTime": 1794009610,
+            "generatedAt": "2026-11-08T16:58:34+00:00"
+        }
+    ],
+    "updatedAt": "2026-11-08T16:58:34+00:00"
+}
