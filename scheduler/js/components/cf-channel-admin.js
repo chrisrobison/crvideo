@@ -1,5 +1,6 @@
 // cf-channel-admin — channel/catalog/programming management view
-// (phase 6, admin UI).
+// (phase 6, admin UI), plus the AI continuity announcer's own admin
+// section (Pass 2 of channels/announcer/README.md).
 //
 // Lists every channels/*/meta.json (scanned server-side by
 // server/channel-admin.php -- this component never hardcodes channel
@@ -7,17 +8,32 @@
 // references and edit/add/remove programming.json's recurring blocks,
 // and can preview (--dry-run) or run channels/publish.php.
 //
+// The "Continuity announcer" section (server/announcer-admin.php) is a
+// separate, independently-loaded concern bolted onto the same per-channel
+// card: it edits channels/<id>/announcer.json (voice, style/tone, which
+// announcement types, writer/TTS provider), lists/plays/regenerates the
+// channel's current channels/<id>/announcements.json entries, and can
+// preview a Kokoro voice or enqueue the backlog of missing announcements.
+// A failure loading or saving announcer data never blocks the catalog/
+// programming sections above it -- the two concerns are fetched and
+// rendered independently.
+//
 // No access control: see docs/admin-ui.md. Anyone who can load this page
-// can change channel programming and trigger a real publish from here.
+// can change channel programming and announcer config and trigger a real
+// publish or a real `claude`+Kokoro generation run from here.
 
 import { baseComponentCSS, escapeHtml, toast } from "../utils.js";
-import { channelAdminApi, seriesAdminApi } from "../admin-api.js";
+import { channelAdminApi, seriesAdminApi, announcerAdminApi } from "../admin-api.js";
 
 const FREQUENCIES = ["daily", "weekly", "monthly"];
 const WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
 const PACKING_MODES = ["sequential", "best_fit", "hybrid"];
 const ON_UNFIT_POLICIES = ["defer", "skip_for_block", "allow_overrun"];
 const BOUNDARY_MODES = ["hard", "soft", "elastic"];
+
+const ANNOUNCEMENT_TYPES = ["coming_up_next", "now_showing", "still_ahead", "channel_id", "lineup_preview", "return_from_break"];
+const SUPPRESS_MODES = ["short", "suppress", "normal"];
+const WRITER_PROVIDERS = ["claude-cli", "template", "mock"];
 
 function blockRowHtml(block, allSeriesIds) {
   const rec = block.recurrence || {};
@@ -143,6 +159,95 @@ function wireBlockRow(row) {
   row.querySelector(".remove-block-btn").addEventListener("click", () => row.remove());
 }
 
+// ---------- Continuity announcer section ----------
+
+const DEFAULT_ANNOUNCER_CONFIG = {
+  enabled: false,
+  voice: "af_heart",
+  speed: 1.0,
+  language: "en-us",
+  style: "Clear, friendly broadcast announcer",
+  tone: "Neutral, warm, professional",
+  targetDuration: 12,
+  types: ["coming_up_next"],
+  consecutiveSameSeries: "short",
+  writer: { provider: "claude-cli", model: "sonnet" },
+  tts: { provider: "kokoro-http", endpoint: "http://127.0.0.1:8178" },
+};
+
+function announcerRowHtml(entry) {
+  const statusPill = entry.status === "ready" ? "" : " muted";
+  return `
+    <div class="an-row" data-transition="${escapeHtml(entry.transitionId || "")}" data-hash="${escapeHtml(entry.scriptHash || "")}">
+      <div class="an-row-top">
+        <span class="pill${statusPill}">${escapeHtml(entry.type || "")}</span>
+        <span class="muted">${escapeHtml(entry.transitionId || "")}</span>
+        <span class="muted">${entry.duration ? `${Number(entry.duration).toFixed(1)}s` : ""}</span>
+        <span class="muted">${escapeHtml(entry.status || "unknown")}</span>
+        <span class="spacer"></span>
+        <button class="an-edit-btn ghost" data-hash="${escapeHtml(entry.scriptHash || "")}">Edit</button>
+        <button class="an-regen-btn ghost" data-transition="${escapeHtml(entry.transitionId || "")}">Regenerate</button>
+      </div>
+      <div class="an-row-text">${escapeHtml(entry.text || "")}</div>
+      ${entry.audio ? `<audio controls preload="none" src="${escapeHtml(entry.audio)}"></audio>` : `<span class="muted">No audio yet.</span>`}
+    </div>
+  `;
+}
+
+function announcerSectionHtml(channelId, announcer) {
+  const hasJson = !!announcer?.hasAnnouncerJson;
+  const cfg = { ...DEFAULT_ANNOUNCER_CONFIG, ...(announcer?.config || {}) };
+  const writer = { ...DEFAULT_ANNOUNCER_CONFIG.writer, ...(cfg.writer || {}) };
+  const types = Array.isArray(cfg.types) && cfg.types.length ? cfg.types : DEFAULT_ANNOUNCER_CONFIG.types;
+  const announcements = Array.isArray(announcer?.announcements) ? announcer.announcements : [];
+  const queue = announcer?.queue || { pending: 0, running: 0, done: 0, error: 0 };
+  const queueBusy = queue.pending > 0 || queue.running > 0;
+
+  return `
+    <section class="announcer-section" data-channel="${escapeHtml(channelId)}">
+      <h2>Continuity announcer</h2>
+      ${!hasJson ? `<p class="hint-note">Not configured yet for this channel -- nothing is generated until you save a config below (the single opt-in gate).</p>` : ""}
+      <div class="block-grid">
+        <label class="field"><div class="field-value"><label class="loop-label"><input type="checkbox" class="an-enabled" ${cfg.enabled ? "checked" : ""}> Enabled</label></div></label>
+        <label class="field">Voice<div class="field-value"><input class="an-voice" value="${escapeHtml(cfg.voice)}" list="an-voices-${escapeHtml(channelId)}"><datalist id="an-voices-${escapeHtml(channelId)}"></datalist></div></label>
+        <label class="field">Speed<div class="field-value"><input class="an-speed" type="number" step="0.1" min="0.5" max="2.0" value="${cfg.speed}"></div></label>
+        <label class="field">Language<div class="field-value"><input class="an-language" value="${escapeHtml(cfg.language)}"></div></label>
+        <label class="field">Target duration (s)<div class="field-value"><input class="an-duration" type="number" min="5" max="60" value="${cfg.targetDuration}"></div></label>
+        <label class="field">Consecutive same-series<div class="field-value"><select class="an-suppress">
+          ${SUPPRESS_MODES.map((m) => `<option value="${m}" ${m === cfg.consecutiveSameSeries ? "selected" : ""}>${m}</option>`).join("")}
+        </select></div></label>
+        <label class="field">Writer provider<div class="field-value"><select class="an-writer-provider">
+          ${WRITER_PROVIDERS.map((p) => `<option value="${p}" ${p === writer.provider ? "selected" : ""}>${p}</option>`).join("")}
+        </select></div></label>
+        <label class="field">Writer model<div class="field-value"><input class="an-writer-model" value="${escapeHtml(writer.model || "")}"></div></label>
+      </div>
+      <label class="field">Style<div class="field-value"><input class="an-style" value="${escapeHtml(cfg.style)}"></div></label>
+      <label class="field">Tone<div class="field-value"><input class="an-tone" value="${escapeHtml(cfg.tone)}"></div></label>
+      <div class="field">Announcement types<div class="field-value">
+        <div class="series-checklist">
+          ${ANNOUNCEMENT_TYPES.map((t) => `
+            <label class="series-check"><input type="checkbox" class="an-type-input" value="${t}" ${types.includes(t) ? "checked" : ""}> ${t}</label>
+          `).join("")}
+        </div>
+      </div></div>
+      <div class="row an-toolbar" style="gap:8px; flex-wrap:wrap; align-items:center;">
+        <button class="an-voices-btn ghost">Load voices from Kokoro</button>
+        <button class="an-preview-btn ghost">Preview voice</button>
+        <button class="an-save-btn primary">Save announcer config</button>
+        <button class="an-generate-btn" ${hasJson ? "" : "disabled"}>Generate missing (queue)</button>
+        <span class="pill ${queueBusy ? "" : "muted"}">queue: ${queue.pending} pending · ${queue.running} running · ${queue.error} error</span>
+      </div>
+      <audio class="an-preview-audio" controls hidden></audio>
+      <pre class="an-output hidden"></pre>
+
+      <h2 style="margin-top:16px;">Announcements (${announcements.length})</h2>
+      <div class="an-list">
+        ${announcements.map(announcerRowHtml).join("") || `<span class="muted">No announcements generated yet.</span>`}
+      </div>
+    </section>
+  `;
+}
+
 class CfChannelAdmin extends HTMLElement {
   constructor() {
     super();
@@ -150,6 +255,11 @@ class CfChannelAdmin extends HTMLElement {
     this._allSeriesIds = [];
     this._loading = true;
     this._error = null;
+    // Keyed by channel id -- fetched independently of _channels (a
+    // failure here never blocks the catalog/programming sections above
+    // it; see this file's header).
+    this._announcer = new Map();
+    this._announcerError = null;
   }
 
   connectedCallback() {
@@ -172,6 +282,18 @@ class CfChannelAdmin extends HTMLElement {
       this._error = e.message;
     }
     this._loading = false;
+    this._renderBody();
+    this._reloadAnnouncer();
+  }
+
+  async _reloadAnnouncer() {
+    this._announcerError = null;
+    try {
+      const list = await announcerAdminApi.list();
+      this._announcer = new Map(list.map((a) => [a.id, a]));
+    } catch (e) {
+      this._announcerError = e.message;
+    }
     this._renderBody();
   }
 
@@ -216,6 +338,16 @@ class CfChannelAdmin extends HTMLElement {
         .empty{ padding:40px; text-align:center; color:var(--text-muted); }
         .error{ color:#ffb4b4; padding:12px 16px; background:var(--live-soft); border-radius:var(--radius-sm); margin-bottom:12px; }
         .warn-note{ font-size:12px; color:var(--warn); }
+        .announcer-section .an-output{ background:var(--bg-elevated); border:1px solid var(--border); border-radius:var(--radius-sm);
+          padding:10px; font:11px/1.5 var(--mono); white-space:pre-wrap; word-break:break-word; max-height:220px; overflow:auto; margin-top:10px; }
+        .an-preview-audio{ margin-top:8px; display:block; width:100%; max-width:360px; }
+        .an-list{ display:flex; flex-direction:column; gap:8px; margin-top:8px; }
+        .an-row{ background:var(--bg-elevated); border:1px solid var(--border); border-radius:var(--radius-sm); padding:10px 12px; }
+        .an-row-top{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+        .an-row-top .spacer{ flex:1; }
+        .an-row-text{ font-size:13px; margin:8px 0; line-height:1.4; }
+        .an-row-text textarea{ width:100%; box-sizing:border-box; font:inherit; min-height:60px; }
+        .an-row audio{ width:100%; max-width:420px; display:block; }
       </style>
       <div class="toolbar">
         <h1>Channels &amp; programming</h1>
@@ -286,6 +418,8 @@ class CfChannelAdmin extends HTMLElement {
             </div>
             <pre class="publish-output hidden"></pre>
           </section>
+
+          ${this._announcerError && !this._announcer.has(c.id) ? `<div class="error">Could not load continuity announcer data: ${escapeHtml(this._announcerError)}</div>` : announcerSectionHtml(c.id, this._announcer.get(c.id))}
         </div>
       </details>
     `;
@@ -293,6 +427,8 @@ class CfChannelAdmin extends HTMLElement {
 
   _wireChannelCard(card, c) {
     card.querySelectorAll(".block-row").forEach(wireBlockRow);
+    const announcerSection = card.querySelector(".announcer-section");
+    if (announcerSection) this._wireAnnouncerSection(announcerSection, c);
 
     card.querySelector(".add-block-btn").addEventListener("click", () => {
       const editor = card.querySelector(".blocks-editor");
@@ -349,6 +485,144 @@ class CfChannelAdmin extends HTMLElement {
     };
     card.querySelector(".pub-preview-btn").addEventListener("click", () => runPublish(true));
     card.querySelector(".pub-run-btn").addEventListener("click", () => runPublish(false));
+  }
+
+  _readAnnouncerConfig(section) {
+    const q = (sel) => section.querySelector(sel);
+    const types = Array.from(section.querySelectorAll(".an-type-input:checked")).map((i) => i.value);
+    return {
+      enabled: q(".an-enabled").checked,
+      voice: q(".an-voice").value.trim(),
+      speed: Number(q(".an-speed").value) || 1.0,
+      language: q(".an-language").value.trim(),
+      style: q(".an-style").value,
+      tone: q(".an-tone").value,
+      targetDuration: Number(q(".an-duration").value) || 12,
+      types,
+      consecutiveSameSeries: q(".an-suppress").value,
+      writer: { provider: q(".an-writer-provider").value, model: q(".an-writer-model").value.trim() || "sonnet" },
+      // Deliberately no `tts` key here -- it's a deployment-level setting
+      // (which Kokoro server/provider), not edited from this UI; omitting
+      // it tells server/announcer-admin.php to leave whatever this
+      // channel's announcer.json already has for it completely untouched
+      // (see that file's save_config/announcer_admin_normalize_config()).
+    };
+  }
+
+  _wireAnnouncerSection(section, c) {
+    const channelId = c.id;
+    const output = section.querySelector(".an-output");
+    const showOutput = (text) => {
+      output.classList.remove("hidden");
+      output.textContent = text;
+    };
+
+    section.querySelector(".an-save-btn").addEventListener("click", async () => {
+      try {
+        const config = this._readAnnouncerConfig(section);
+        await announcerAdminApi.saveConfig(channelId, config);
+        toast(`Saved continuity announcer config for ${channelId}.`, "good");
+        this._reloadAnnouncer();
+      } catch (e) {
+        toast(e.message, "danger");
+      }
+    });
+
+    section.querySelector(".an-voices-btn").addEventListener("click", async () => {
+      try {
+        const { voices, error } = await announcerAdminApi.voices(channelId);
+        const datalist = section.querySelector(`#an-voices-${cssEscape(channelId)}`) || section.querySelector("datalist");
+        datalist.innerHTML = voices.map((v) => `<option value="${escapeHtml(v)}"></option>`).join("");
+        if (voices.length) toast(`Loaded ${voices.length} voice(s) from Kokoro.`, "good");
+        else toast(error ? `Could not reach Kokoro: ${error}` : "Kokoro reported no voices.", "danger");
+      } catch (e) {
+        toast(e.message, "danger");
+      }
+    });
+
+    section.querySelector(".an-preview-btn").addEventListener("click", async () => {
+      const voice = section.querySelector(".an-voice").value.trim();
+      if (!voice) { toast("Enter a voice first.", "danger"); return; }
+      try {
+        const { url } = await announcerAdminApi.previewVoice(channelId, voice);
+        const audio = section.querySelector(".an-preview-audio");
+        audio.hidden = false;
+        audio.src = url;
+        audio.play?.().catch(() => { /* autoplay refused -- the visible controls still let the editor hit play */ });
+      } catch (e) {
+        toast(e.message, "danger");
+      }
+    });
+
+    section.querySelector(".an-generate-btn").addEventListener("click", async () => {
+      showOutput("Enqueuing…");
+      try {
+        const result = await announcerAdminApi.generateQueue(channelId);
+        showOutput(`exit code: ${result.exitCode}\n\n${result.stdout}${result.stderr ? `\n--- stderr ---\n${result.stderr}` : ""}`);
+        toast("Missing announcements enqueued -- run announce-worker.php to process them.", "good");
+      } catch (e) {
+        showOutput(e.message);
+        toast(e.message, "danger");
+      }
+    });
+
+    section.querySelectorAll(".an-regen-btn").forEach((btn) => {
+      btn.addEventListener("click", async () => {
+        const transitionId = btn.dataset.transition;
+        if (!transitionId) return;
+        showOutput(`Regenerating ${transitionId}…`);
+        btn.disabled = true;
+        try {
+          const result = await announcerAdminApi.regenerate(channelId, transitionId, { force: true });
+          showOutput(`exit code: ${result.exitCode}\n\n${result.stdout}${result.stderr ? `\n--- stderr ---\n${result.stderr}` : ""}`);
+          toast(result.exitCode === 0 ? `Regenerated ${transitionId}.` : `Regeneration reported an error for ${transitionId}.`, result.exitCode === 0 ? "good" : "danger");
+          this._reloadAnnouncer();
+        } catch (e) {
+          showOutput(e.message);
+          toast(e.message, "danger");
+        } finally {
+          btn.disabled = false;
+        }
+      });
+    });
+
+    section.querySelectorAll(".an-edit-btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const row = btn.closest(".an-row");
+        const textEl = row.querySelector(".an-row-text");
+        const hash = btn.dataset.hash;
+        if (!hash) { toast("This entry has no script hash to approve against.", "danger"); return; }
+        if (row.querySelector(".an-edit-save")) return; // already editing
+        const original = textEl.textContent;
+        textEl.innerHTML = `<textarea class="an-edit-input">${escapeHtml(original)}</textarea>`;
+        btn.textContent = "Cancel";
+        const saveBtn = document.createElement("button");
+        saveBtn.className = "an-edit-save ghost";
+        saveBtn.textContent = "Approve";
+        btn.after(saveBtn);
+
+        const cancel = () => {
+          textEl.textContent = original;
+          btn.textContent = "Edit";
+          saveBtn.remove();
+          btn.removeEventListener("click", cancelHandler);
+        };
+        const cancelHandler = () => cancel();
+        btn.addEventListener("click", cancelHandler, { once: true });
+
+        saveBtn.addEventListener("click", async () => {
+          const text = row.querySelector(".an-edit-input").value.trim();
+          if (!text) { toast("Text cannot be empty.", "danger"); return; }
+          try {
+            await announcerAdminApi.approveScript(channelId, hash, text);
+            toast("Approved -- this wording will not be overwritten by routine regeneration.", "good");
+            this._reloadAnnouncer();
+          } catch (e) {
+            toast(e.message, "danger");
+          }
+        });
+      });
+    });
   }
 }
 

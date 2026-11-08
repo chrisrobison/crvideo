@@ -58,8 +58,13 @@ export class ContinuityRenderer {
    *        pre-existing color-token palette from meta.json. null (the default,
    *        and every channel without a theme.json) renders the plain generic
    *        card exactly as before this parameter existed.
+   * @param {?string} audioUrl this occurrence's AI continuity announcer
+   *        narration MP3 (see broadcast.js's findAnnouncementAudio()), or
+   *        null -- the default, and every channel whose announcer isn't
+   *        enabled -- for a silent card exactly as before this parameter
+   *        existed.
    */
-  show(channel, program, clockNow, cardSpan, template = null, bumperTheme = null) {
+  show(channel, program, clockNow, cardSpan, template = null, bumperTheme = null, audioUrl = null) {
     if (!this.card) {
       this.card = document.createElement("cr-continuity-card");
       this.container.appendChild(this.card);
@@ -80,11 +85,21 @@ export class ContinuityRenderer {
     this.card.theme = bumperTheme;
     this.card.program = program;
     this.card.setCardSpan(cardSpan.startsAt, cardSpan.endsAt);
+    this.card.audioUrl = audioUrl;
     this.container.hidden = false;
+  }
+
+  /** Mirrors BroadcastPlayer.setMuted()'s mute state onto the narration
+   *  track -- the announcer's voice-over is "channel audio" exactly like
+   *  any program's own soundtrack, so a viewer's mute/unmute choice must
+   *  follow them into and out of a continuity card. */
+  setMuted(muted) {
+    this.card?.setMuted(muted);
   }
 
   hide() {
     this.container.hidden = true;
+    if (this.card) this.card.audioUrl = null; // stop narration immediately -- never let it keep playing over the next program
   }
 
   destroy() {
