@@ -498,7 +498,27 @@ function updateProgress() {
 // The player is never destroyed or recreated here -- only moved between
 // `tile` and `watchOverlay` and flipped between compact/full. See
 // channels/player-view.js's header for why that's what keeps playback
-// gapless across the transition.
+// gapless across the transition -- which depends on reparent() below
+// actually using moveBefore(), not appendChild(). A plain appendChild()
+// move IS safe for the <video> element itself (a media element that's
+// removed and reinserted within the same microtask/task is explicitly
+// exempted from the spec's "pause when removed" steps), but an <iframe>
+// -- the YouTube provider's -- has no such exemption: moving it to a new
+// parent ANYWHERE in the document, even synchronously, discards its
+// browsing context and forces a fresh navigation, which breaks the
+// already-established YT.IFrame API handshake and surfaces as this
+// component's own "error" state the next time it's driven. moveBefore()
+// is the DOM's purpose-built, state-preserving move (it also skips this
+// custom element's connectedCallback/disconnectedCallback entirely,
+// which is fine -- nothing here depends on either firing for a reparent)
+// -- fall back to appendChild() only where moveBefore() isn't supported,
+// same graceful-degradation posture as the view transition itself.
+function reparent(parent, node) {
+  if (typeof parent.moveBefore === "function") {
+    try { parent.moveBefore(node, null); return; } catch { /* unsupported for this move -- fall back */ }
+  }
+  parent.appendChild(node);
+}
 
 const tile = $("screen");
 const overlay = $("watchOverlay");
@@ -524,7 +544,7 @@ async function expandChannel(id) {
   if (expanded) return; // already showing the (now possibly re-tuned) player full-size
 
   animatedMove(() => {
-    overlay.appendChild(player);
+    reparent(overlay, player);
     player.compact = false;
     overlay.hidden = false;
     document.body.classList.add("player-expanded");
@@ -535,7 +555,7 @@ async function expandChannel(id) {
 function collapsePlayer() {
   if (!expanded) return;
   animatedMove(() => {
-    tile.appendChild(player);
+    reparent(tile, player);
     player.compact = true;
     overlay.hidden = true;
     document.body.classList.remove("player-expanded");
