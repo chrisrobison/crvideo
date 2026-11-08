@@ -65,6 +65,24 @@ require PUBLISH_ROOT . '/publish/src/ProgrammingCompiler.php';
 require PUBLISH_ROOT . '/publish/src/ScheduleWriter.php';
 require PUBLISH_ROOT . '/publish/src/PublishReporter.php';
 
+// AI continuity announcer (channels/announcer/) -- strictly opt-in per
+// channel via channels/<id>/announcer.json; see that module's README.md.
+// Required unconditionally (same posture as every other require above)
+// since the module itself is a no-op for any channel without that file.
+require PUBLISH_ROOT . '/announcer/src/ContentHash.php';
+require PUBLISH_ROOT . '/announcer/src/AnnouncerConfig.php';
+require PUBLISH_ROOT . '/announcer/src/AnnouncementContextBuilder.php';
+require PUBLISH_ROOT . '/announcer/src/AiWriterInterface.php';
+require PUBLISH_ROOT . '/announcer/src/WriterPromptBuilder.php';
+require PUBLISH_ROOT . '/announcer/src/TemplateAiWriter.php';
+require PUBLISH_ROOT . '/announcer/src/TtsProviderInterface.php';
+require PUBLISH_ROOT . '/announcer/src/AudioProcessor.php';
+require PUBLISH_ROOT . '/announcer/src/JobQueue.php';
+require PUBLISH_ROOT . '/announcer/src/ScriptCache.php';
+require PUBLISH_ROOT . '/announcer/src/AudioCache.php';
+require PUBLISH_ROOT . '/announcer/src/AnnouncementManifestWriter.php';
+require PUBLISH_ROOT . '/announcer/src/AnnouncerPipeline.php';
+
 function publish_usage(): string
 {
     return <<<USAGE
@@ -250,6 +268,34 @@ function publish_main(array $argv): int
             "$channelDir/schedule.json", $channelName, $compiled['items'], $windowStart, $windowEnd, $compiled['episodeSets'], $compiled['programs'],
         );
         ScheduleWriter::updateAnchor($metaPath, $windowStart);
+
+        // AI continuity announcer (channels/announcer/): enqueue-only --
+        // never calls an AI writer or Kokoro here, so this can never slow
+        // down or fail schedule compilation itself (channels/announce-
+        // worker.php does the actual AI+TTS work, asynchronously). A
+        // channel with no channels/<id>/announcer.json (or "enabled":
+        // false in it) is completely unaffected, same opt-in posture as
+        // continuity.json. Any failure here is reported but never turns
+        // an otherwise-successful publish into a failed one -- the base
+        // schedule is already written and valid at this point.
+        try {
+            $announcerRoot = PUBLISH_ROOT . '/announcer';
+            $seriesRoot = dirname(PUBLISH_ROOT) . '/series';
+            $pipeline = new AnnouncerPipeline($channelsRoot, $announcerRoot, $seriesRoot, dirname(PUBLISH_ROOT));
+            $announcerResult = $pipeline->enqueueForSchedule($channelId);
+            if (!empty($announcerResult['enabled'])) {
+                if (isset($announcerResult['error'])) {
+                    fwrite(STDERR, "Warning: announcer enqueue step: {$announcerResult['error']}\n");
+                } else {
+                    printf(
+                        "Announcer: %d enqueued, %d reused (of %d eligible transition(s)). Run channels/announce-worker.php to process the queue.\n",
+                        $announcerResult['enqueued'], $announcerResult['reused'], $announcerResult['contexts'],
+                    );
+                }
+            }
+        } catch (Throwable $e) {
+            fwrite(STDERR, 'Warning: announcer enqueue step failed (the schedule itself was still published successfully): ' . $e->getMessage() . "\n");
+        }
     }
 
     return 0;
