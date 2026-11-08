@@ -420,12 +420,24 @@ the click's own user-activation is what a browser requires for that)
 synchronously in the click handler, then reparents this SAME element
 from the small tile into a full-viewport overlay and flips `compact`
 off, both wrapped in `document.startViewTransition()` so the browser
-morphs its box instead of cutting between two unrelated states. Moving
-a connected custom element (and the `<video>`/YouTube iframe inside it)
-to a new parent within the same document does not pause, reload, or
-re-buffer it -- which is what makes the whole expand gapless: there was
-never a second player instance to begin with, so there's nothing to
-restart. Collapsing (the player's own built-in "‹ Channel guide" link --
+morphs its box instead of cutting between two unrelated states. That
+reparenting (`index.html`'s `reparent()`) MUST go through `moveBefore()`,
+not `appendChild()`: a plain DOM move is fine for the `<video>` element
+itself (synchronously removing and reinserting a media element within
+the same task is explicitly exempt from the spec's "pause when removed"
+steps), but the YouTube provider's `<iframe>` has no such exemption --
+*any* move of an iframe, anywhere in the document, discards its
+browsing context and forces a fresh navigation, breaking the already-
+established YT IFrame API handshake. `moveBefore()` is the DOM's
+purpose-built state-preserving move (it also skips this custom
+element's `connectedCallback`/`disconnectedCallback`, which nothing
+here depends on firing for a reparent anyway) and is what actually makes
+the expand gapless, including for YouTube-sourced channels; `appendChild()`
+is only a fallback for browsers without it, same graceful-degradation
+posture as the view transition itself -- there, a YouTube-sourced
+expand still reloads the embed (and briefly errors), a known limitation
+of those browsers rather than this code. Collapsing (the player's own
+built-in "‹ Channel guide" link --
 intercepted via its cancelable `cr-back` event -- or Escape) reverses
 the same move. Real browser Fullscreen is a separate, explicit action
 (dblclick, 'f') from this in-page "theater" expand, which fills the
