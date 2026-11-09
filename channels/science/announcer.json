@@ -1,7 +1,7 @@
 {
-    "_note": "Sample AI continuity announcer configuration (channels/announcer/README.md). Absent entirely, this channel's announcer stays off -- this file is the one and only opt-in switch. Voice \"af_heart\" is a real voice bundled in Kokoro's default voices-v1.0.bin (see tools/kokoro-server/); it is an EXAMPLE, not a requirement -- any voice GET /voices on your Kokoro server reports is valid here.",
+    "_note": "AI continuity announcer configuration (channels/announcer/README.md). Absent entirely, this channel's announcer stays off -- this file is the one and only opt-in switch. Voice \"am_adam\" is a real voice bundled in Kokoro's default voices-v1.0.bin (see tools/kokoro-server/); any voice GET /voices on your Kokoro server reports is valid here.",
     "enabled": true,
-    "voice": "af_heart",
+    "voice": "am_adam",
     "speed": 1.0,
     "language": "en-us",
     "style": "Clear, slightly dry science-channel announcer",

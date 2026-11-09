@@ -17,6 +17,10 @@ Thumbs.db
 /server/service-account.json
 /server/*.log
 
+# Cron logs for the announcer worker/GC (channels/announce-worker.php,
+# channels/announce-gc.php) -- operational output, never committed.
+/channels/*.log
+
 # Shared secret for the scheduler's publish endpoint -- a secret, never committed.
 /server/publish-secret.php
 

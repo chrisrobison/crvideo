@@ -27,6 +27,7 @@ require __DIR__ . '/../src/AudioCache.php';
 require __DIR__ . '/../src/JobQueue.php';
 require __DIR__ . '/../src/AnnouncementManifestWriter.php';
 require __DIR__ . '/../src/AnnouncerPipeline.php';
+require __DIR__ . '/../src/AnnouncerGc.php';
 
 final class AssertionFailed extends Exception
 {
