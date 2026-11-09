@@ -14,11 +14,13 @@ import "./components/cf-program-monitor.js";
 import "./components/cf-drive-folder-picker.js";
 import "./components/cf-series-admin.js";
 import "./components/cf-channel-admin.js";
+import "./components/cf-bump-creator.js";
 import { viewState } from "./view.js";
 
 // Toggles which top-level view section is visible -- see view.js. The
 // pre-existing SCHEDULE markup is untouched; this just adds [data-view]
-// containers around it and the two new admin views, and shows exactly one.
+// containers around it and the admin views added alongside it, and shows
+// exactly one.
 function applyView() {
   document.querySelectorAll("[data-view]").forEach((el) => {
     el.hidden = el.dataset.view !== viewState.current;

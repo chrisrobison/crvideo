@@ -17,6 +17,7 @@
 const SERIES_ENDPOINT = "../server/series-admin.php";
 const CHANNEL_ENDPOINT = "../server/channel-admin.php";
 const ANNOUNCER_ENDPOINT = "../server/announcer-admin.php";
+const BUMP_ENDPOINT = "../server/bump-admin.php";
 
 async function getJson(url) {
   const r = await fetch(url, { cache: "no-store" });
@@ -62,4 +63,15 @@ export const announcerAdminApi = {
   regenerate: (channelId, transitionId, opts) => postJson(ANNOUNCER_ENDPOINT, { action: "regenerate", channel_id: channelId, transition_id: transitionId, ...opts }),
   generateQueue: (channelId) => postJson(ANNOUNCER_ENDPOINT, { action: "generate_queue", channel_id: channelId }),
   approveScript: (channelId, scriptHash, text) => postJson(ANNOUNCER_ENDPOINT, { action: "approve_script", channel_id: channelId, script_hash: scriptHash, text }),
+};
+
+// server/bump-admin.php -- the bump creator's admin surface (see
+// bumps/README.md for the full schema). Same thin, un-opinionated wrapper
+// posture as the others above.
+export const bumpAdminApi = {
+  list: () => getJson(`${BUMP_ENDPOINT}?action=list`).then((r) => r.bumps),
+  media: () => getJson(`${BUMP_ENDPOINT}?action=media`),
+  create: (bump) => postJson(BUMP_ENDPOINT, { action: "create", ...bump }).then((r) => r.bump),
+  update: (id, bump) => postJson(BUMP_ENDPOINT, { action: "update", id, ...bump }).then((r) => r.bump),
+  delete: (id) => postJson(BUMP_ENDPOINT, { action: "delete", id }),
 };

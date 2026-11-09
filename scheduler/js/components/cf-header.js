@@ -277,7 +277,7 @@ class CfHeader extends HTMLElement {
             ChannelFlow
           </div>
           <nav>
-            <a data-view="schedule" class="active">SCHEDULE</a><a data-view="series">SERIES</a><a data-view="programming">PROGRAMMING</a><a>PLAYOUT</a><a>STREAM</a><a>TOGETHER</a>
+            <a data-view="schedule" class="active">SCHEDULE</a><a data-view="series">SERIES</a><a data-view="programming">PROGRAMMING</a><a data-view="bumps">BUMPS</a><a>PLAYOUT</a><a>STREAM</a><a>TOGETHER</a>
           </nav>
           <select class="channel-select schedule-only-controls"></select>
           <div class="date-nav schedule-only-controls">
