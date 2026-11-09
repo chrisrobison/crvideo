@@ -58,7 +58,7 @@
 //     wants the plain navigation, just doesn't listen.
 
 import {
-  CHANNEL_ID, listChannels, loadChannel, loadCatalog, loadTheme, airings, nextProgram, now, clock, minutesLeft,
+  CHANNEL_ID, listChannels, loadChannel, loadCatalog, loadTheme, loadAnnouncements, airings, nextProgram, now, clock, minutesLeft,
   BroadcastPlayer,
 } from "./broadcast.js";
 
@@ -285,7 +285,25 @@ export class ChannelPlayer extends HTMLElementBase {
     }
     const q = (sel) => this._root.querySelector(sel);
     loadTheme(next).then((bumperTheme) => {
-      if (this._channel === next) this._bumperTheme = bumperTheme;
+      if (this._channel !== next) return;
+      this._bumperTheme = bumperTheme;
+      // Patches the already-running player's channelMeta in place rather
+      // than calling setTimeline() again -- see BroadcastPlayer.
+      // updateChannelMeta()'s header: this never interrupts/reloads
+      // whatever is currently playing, it just means a continuity card
+      // that appears AFTER this resolves picks up the theme (one that's
+      // already on screen when this resolves won't retroactively gain
+      // it, same trade-off as before this existed).
+      this.player.updateChannelMeta({ bumperTheme });
+    });
+    // AI continuity announcer (Pass 2): this channel's announcements.json
+    // manifest (see broadcast.js's loadAnnouncements()/
+    // findAnnouncementAudio()) -- empty array, and no behavior change at
+    // all, for every channel whose announcer isn't enabled.
+    loadAnnouncements(next).then((announcements) => {
+      if (this._channel !== next) return;
+      this._announcements = announcements;
+      this.player.updateChannelMeta({ announcements });
     });
     for (const img of [q(".bug"), q(".slateLogo"), q(".lLogo")]) {
       img.hidden = !next.logo;
@@ -294,7 +312,9 @@ export class ChannelPlayer extends HTMLElementBase {
     q(".num").textContent = next.number ?? "";
     q(".lName").textContent = next.name;
     if (next.number != null) this._flashOsd(String(next.number));
-    this.player.setTimeline(next.timeline, { name: next.name, logo: next.logo, theme: next.theme, bumperTheme: this._bumperTheme });
+    this.player.setTimeline(next.timeline, {
+      name: next.name, logo: next.logo, theme: next.theme, bumperTheme: this._bumperTheme, announcements: this._announcements,
+    });
     this._updateHint();
     if (changed) this.dispatchEvent(new CustomEvent("cr-channel-change", { detail: { channel: next } }));
   }

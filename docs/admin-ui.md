@@ -22,8 +22,8 @@ visible; nothing is unmounted.
 ## No access control (read this before deploying)
 
 **This admin UI has no login, no API key, no IP restriction -- nothing.**
-Anyone who can reach `server/series-admin.php` or
-`server/channel-admin.php` on the server can, right now, without
+Anyone who can reach `server/series-admin.php`,
+`server/channel-admin.php`, or `server/announcer-admin.php` on the server can, right now, without
 authenticating:
 
 - change any episode's editorial status/rights in any series,
@@ -32,7 +32,10 @@ authenticating:
   (consuming quota, and -- for a brand-new import -- creating a new
   `series/<id>/series.json` file),
 - trigger a real `channels/publish.php` run that overwrites a channel's
-  `schedule.json`.
+  `schedule.json`,
+- edit any channel's AI continuity announcer config (including which
+  voice/writer/TTS provider it uses), and trigger a real `claude` CLI +
+  Kokoro TTS generation run from it (see `channels/announcer/README.md`).
 
 This is a **deliberate, explicit product decision** for this phase, not
 an oversight -- recorded here so it's never mistaken for one. It was
@@ -58,15 +61,17 @@ reach it can administer the whole catalog."
 
 - `scheduler/js/view.js` -- the tiny view-switcher (plain `EventTarget`,
   same convention as `store.js`).
-- `scheduler/js/admin-api.js` -- fetch wrappers for the two endpoints.
+- `scheduler/js/admin-api.js` -- fetch wrappers for all three endpoints.
   Deliberately independent of `store.js`'s state (a different backend,
   a different data model).
 - `scheduler/js/components/cf-series-admin.js` -- the SERIES tab.
-- `scheduler/js/components/cf-channel-admin.js` -- the PROGRAMMING tab.
+- `scheduler/js/components/cf-channel-admin.js` -- the PROGRAMMING tab,
+  plus (bolted onto the same per-channel card, not a separate tab) the
+  "Continuity announcer" section for `server/announcer-admin.php`.
 - `server/lib/AdminSupport.php` -- shared bootstrap: the auth hook,
   id/path whitelisting, atomic JSON writes, and the subprocess runner.
-- `server/series-admin.php`, `server/channel-admin.php` -- the two
-  endpoints.
+- `server/series-admin.php`, `server/channel-admin.php`,
+  `server/announcer-admin.php` -- the three endpoints.
 
 ## Endpoints
 
@@ -116,6 +121,34 @@ present, they're validated via `EpisodePacker::normalizeConfig()` /
 `BoundaryResolver::normalizeBoundary()` directly, the exact same
 functions the real compiler runs. `publish` builds a whitelisted argv for
 `channels/publish.php`.
+
+### `server/announcer-admin.php`
+
+```
+GET  ?action=list
+GET  ?action=voices&channel_id=ID
+POST {"action":"save_config", "channel_id", "config"}
+POST {"action":"preview_voice", "channel_id", "voice"}
+POST {"action":"regenerate", "channel_id", "transition_id", "force"?/"force_script"?/"force_audio"?}
+POST {"action":"generate_queue", "channel_id"}
+POST {"action":"approve_script", "channel_id", "script_hash", "text"}
+```
+
+A sibling to `channel-admin.php` (same relationship as `series-admin.php`
+being its own sibling) for the AI continuity announcer feature -- see
+`channels/announcer/README.md` for the full picture. `list` resolves each
+channel's EFFECTIVE config through the exact same `AnnouncerConfig::
+resolve()` the real pipeline uses (never a reimplementation), so what
+this endpoint shows can't drift from what a real run would do, and never
+echoes back a Kokoro `authToken` even if one is configured. `save_config`
+validates every field server-side (voice/speed/language/style/tone/
+duration bounds, the announcement-type enum, writer/TTS provider enums,
+TTS endpoint must be `http(s)://`). `regenerate`/`generate_queue` build a
+whitelisted argv for `channels/announce.php` (`--sync --transition=ID` or
+a plain async enqueue, respectively) and run it the same way `publish`
+runs `channels/publish.php`. `preview_voice` synthesizes one short fixed
+sample line through the channel's real configured TTS provider -- never
+arbitrary user-supplied text through an unbounded synthesis call.
 
 ### Packing and boundary controls (PROGRAMMING tab)
 
@@ -203,21 +236,23 @@ of the same dry-run data remains a nice-to-have for a future pass.
 php server/tests/run-tests.php
 ```
 
-66 tests (`AdminSupportTest`, `SeriesAdminTest`, `ChannelAdminTest`)
-against isolated fixtures under `server/tests/fixtures/repo/` -- never
-the real `series/`/`channels/` trees. Covers id/path whitelisting
-(including rejecting path-traversal strings), atomic-write/backup
-behavior, the argv-array subprocess runner (including a literal shell-
-metacharacter payload, proving no shell is ever invoked), every
-`save_episode`/`save_catalog`/`save_programming` validation rule
-(including `packing`/`boundary`), and
-`refresh`/`new_import`/`publish` argv construction. The real
-`youtube-import.php` subprocess (which needs live API credentials) is
-never actually invoked by the automated suite -- only its argv-building
-logic is tested directly; `channels/publish.php` (which needs no
-network) is exercised for real against a fixture-only channel id in one
-test, proving the wiring end to end without the real `channels/` tree
-being reachable.
+86 tests (`AdminSupportTest`, `SeriesAdminTest`, `ChannelAdminTest`,
+`AnnouncerAdminTest`) against isolated fixtures under
+`server/tests/fixtures/repo/` -- never the real `series/`/`channels/`
+trees. Covers id/path whitelisting (including rejecting path-traversal
+strings), atomic-write/backup behavior, the argv-array subprocess runner
+(including a literal shell-metacharacter payload, proving no shell is
+ever invoked), every `save_episode`/`save_catalog`/`save_programming`/
+`announcer-admin.php` `save_config` validation rule (including
+`packing`/`boundary`), and `refresh`/`new_import`/`publish`/
+`announcer-admin.php` `regenerate` argv construction. The real
+`youtube-import.php` subprocess (which needs live API credentials) and
+`announce.php`'s `--sync`/`generate_queue` subprocess (which needs a real
+`claude` CLI and Kokoro server) are never actually invoked by the
+automated suite -- only their argv-building logic is tested directly;
+`channels/publish.php` (which needs no network) is exercised for real
+against a fixture-only channel id in one test, proving the wiring end to
+end without the real `channels/` tree being reachable.
 
 **What still needs a real browser** (no DOM/browser available in this
 environment, same honesty standard as the YouTube player adapter
@@ -231,4 +266,9 @@ legibly, and that the end-to-end click-through (save a status, click
 refresh, click publish) looks right. See the phase 6 report for exactly
 what *was* verified against the real `server/*.php` endpoints via direct
 HTTP calls (curl), as a substitute proof for the backend side of that
-same round trip.
+same round trip. The same applies to the "Continuity announcer" section's
+"Load voices"/"Preview voice" buttons (need a real Kokoro server and a
+browser's `<audio>` playback) and the inline announcement `<audio>`
+players and regenerate/approve buttons -- their backend logic is covered
+by `AnnouncerAdminTest`, but the actual click-through is manual/browser-
+verified only, same as everything else in this list.

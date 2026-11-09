@@ -91,4 +91,47 @@ final class KokoroHttpTtsProvider implements TtsProviderInterface
         $token = is_string($ttsConfig['authToken'] ?? null) ? $ttsConfig['authToken'] : null;
         return new self($endpoint, $timeout, $token);
     }
+
+    /**
+     * GET <endpoint>/voices (see tools/kokoro-server/server.py's do_GET) --
+     * used only by the Pass 2 admin UI's voice picker (server/announcer-
+     * admin.php), never by the generation pipeline itself. Never throws:
+     * an unreachable/misconfigured server just means the admin UI falls
+     * back to a plain text input instead of a populated dropdown.
+     *
+     * @param array<string,mixed> $ttsConfig
+     * @return array{voices: list<string>, error: ?string}
+     */
+    public static function listVoices(array $ttsConfig, int $timeoutSeconds = 10): array
+    {
+        $endpoint = is_string($ttsConfig['endpoint'] ?? null) ? $ttsConfig['endpoint'] : 'http://127.0.0.1:8178';
+        $token = is_string($ttsConfig['authToken'] ?? null) ? $ttsConfig['authToken'] : null;
+        $url = rtrim($endpoint, '/') . '/voices';
+
+        $headers = [];
+        if ($token !== null && $token !== '') {
+            $headers[] = "Authorization: Bearer $token";
+        }
+
+        $ch = curl_init($url);
+        curl_setopt_array($ch, [
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_HTTPHEADER => $headers,
+            CURLOPT_TIMEOUT => $timeoutSeconds,
+            CURLOPT_CONNECTTIMEOUT => min(5, $timeoutSeconds),
+        ]);
+        $body = curl_exec($ch);
+        $status = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        $err = curl_error($ch);
+        curl_close($ch);
+
+        if ($body === false || $status !== 200) {
+            return ['voices' => [], 'error' => $err !== '' ? $err : "Kokoro /voices request failed (HTTP $status)."];
+        }
+        $decoded = json_decode((string) $body, true);
+        $list = is_array($decoded['voices'] ?? null) ? $decoded['voices'] : [];
+        $voices = array_values(array_filter($list, 'is_string'));
+        sort($voices);
+        return ['voices' => $voices, 'error' => null];
+    }
 }
