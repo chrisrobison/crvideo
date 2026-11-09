@@ -88,13 +88,15 @@ cr-channel-player{view-transition-name:cr-player}
 .nowline{position:absolute;top:0;bottom:0;width:2px;background:var(--live);z-index:1;pointer-events:none}
 .empty{padding:40px 20px;color:var(--muted)}
 
-/* A future timeslot's "detailed accounting" -- sticks just right of the
-   (always-visible) channel label regardless of scroll position, rather
-   than living wherever its timeslot happens to have scrolled to. Never
+/* A future timeslot's "detailed accounting" -- sticks to the left edge of
+   the viewport (not wherever its timeslot happens to have scrolled to on
+   the much-wider --lane-w timeline) and spans the full screen width,
+   rather than being squeezed into a narrow column next to the channel
+   label while the rest of that very wide row sits empty beside it. Never
    tunes the channel; it's purely informational (see the click handling
    in the script -- only the "now" cell or the channel button itself
    opens the channel). */
-.row-detail{display:none;position:sticky;left:var(--chan-w);z-index:2;width:min(560px,calc(100vw - var(--chan-w) - 24px));margin:10px 14px 16px;padding:14px 40px 14px 14px;background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.4)}
+.row-detail{display:none;position:sticky;left:0;z-index:2;width:calc(100vw - 40px);margin:10px 20px 16px;padding:14px 40px 14px 14px;background:var(--panel);border:1px solid var(--border);border-radius:8px;box-shadow:0 10px 28px rgba(0,0,0,.4)}
 .row.expanded .row-detail{display:block}
 .row-detail .thumb{display:block;width:160px;max-width:40%;border-radius:6px;float:left;margin:0 12px 8px 0}
 .row-detail h3{margin:0 0 6px;font-size:16px;line-height:1.3}
@@ -121,7 +123,6 @@ cr-channel-player{view-transition-name:cr-player}
   .chan .name{display:none}
   .chan img{max-width:44px}
   .ruler .day{padding:10px 16px}
-  .row-detail{width:min(420px,calc(100vw - var(--chan-w) - 16px))}
 }
 </style>
 </head>
@@ -317,7 +318,6 @@ function renderGrid() {
     main.append(lane);
     row.append(main, detail);
 
-    row.addEventListener("mouseenter", () => hoverFocus(ch));
     row.addEventListener("focusin", () => setFocus(ch));
     rows.append(row);
   }
@@ -440,18 +440,15 @@ function renderProgramDetail(detailEl, ch, a, catalog) {
   detailEl.append(list);
 }
 
-let hoverTimer = 0;
-function hoverFocus(ch) {
-  clearTimeout(hoverTimer);
-  hoverTimer = setTimeout(() => setFocus(ch), 180);
-}
-
 /** Moves the guide's "what's on" focus to `ch` -- tunes the shared player
  *  (unless it's already there, e.g. we're just syncing UI after the
  *  player's OWN remote control changed channel -- see the
- *  cr-channel-change listener above) and updates the info panel. */
+ *  cr-channel-change listener above) and updates the info panel. Only
+ *  ever called from a click (the channel label/number or the "now"
+ *  cell -- see expandChannel()) or keyboard focus, NEVER from a hover --
+ *  the top preview must not jump to whatever row the pointer happens to
+ *  be resting on. */
 function setFocus(ch, { tune = true } = {}) {
-  clearTimeout(hoverTimer);
   if (focused?.id === ch.id) return;
   focused = ch;
   try { localStorage.setItem(FOCUS_KEY, ch.id); } catch { /* optional */ }
