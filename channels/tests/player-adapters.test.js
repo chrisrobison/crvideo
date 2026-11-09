@@ -26,7 +26,7 @@ import { fileURLToPath } from "node:url";
 
 import { computeBackoffMs, computeDriftCorrection, resolveProvider } from "../player-adapters.js";
 import { formatCountdown, hashSeed, pickWeightedIndex } from "../continuity-card.js";
-import { buildTimeline, locate, airings, nextProgram } from "../broadcast.js";
+import { buildTimeline, locate, airings, nextProgram, findAnnouncementAudio } from "../broadcast.js";
 
 // ---------- computeBackoffMs ----------
 
@@ -296,4 +296,81 @@ test("pickWeightedIndex never picks a zero-weight item", () => {
 test("pickWeightedIndex falls back to index 0 for an empty or all-zero list rather than throwing", () => {
   assert.equal(pickWeightedIndex([], "seed"), 0);
   assert.equal(pickWeightedIndex([0, 0, 0], "seed"), 0);
+});
+
+// ---------- findAnnouncementAudio (broadcast.js) ----------
+// Pass 2 playback wiring: matches a continuity airing against the AI
+// continuity announcer's channels/<id>/announcements.json manifest
+// (see channels/announcer/src/AnnouncementContextBuilder.php, whose
+// `transitionId` is exactly the continuity schedule item's own `id` --
+// the same field mapScheduleItem() carries through as `airing.id`).
+
+const BASE_AIRING = { type: "continuity", id: "continuity-1793577600", nextProgramId: "yt-abc123" };
+const READY_ANNOUNCEMENT = {
+  transitionId: "continuity-1793577600", type: "coming_up_next", status: "ready",
+  audio: "/media/announcements/science/hash1.mp3", toEpisodeId: "yt-abc123",
+};
+
+test("findAnnouncementAudio matches a ready coming_up_next announcement by transitionId", () => {
+  assert.equal(findAnnouncementAudio([READY_ANNOUNCEMENT], BASE_AIRING), "/media/announcements/science/hash1.mp3");
+});
+
+test("findAnnouncementAudio returns null when nothing matches this transition", () => {
+  assert.equal(findAnnouncementAudio([{ ...READY_ANNOUNCEMENT, transitionId: "continuity-9999999999" }], BASE_AIRING), null);
+});
+
+test("findAnnouncementAudio ignores a non-ready (still generating/errored) entry", () => {
+  assert.equal(findAnnouncementAudio([{ ...READY_ANNOUNCEMENT, status: "pending" }], BASE_AIRING), null);
+});
+
+test("findAnnouncementAudio ignores an entry with no type===coming_up_next (e.g. channel_id)", () => {
+  assert.equal(findAnnouncementAudio([{ ...READY_ANNOUNCEMENT, type: "channel_id", transitionId: "channel-id" }], BASE_AIRING), null);
+});
+
+test("findAnnouncementAudio discards a stale entry whose toEpisodeId disagrees with the schedule's actual next program (spec section 11)", () => {
+  assert.equal(findAnnouncementAudio([{ ...READY_ANNOUNCEMENT, toEpisodeId: "yt-some-other-episode" }], BASE_AIRING), null);
+});
+
+test("findAnnouncementAudio still matches when either side doesn't know the next-episode id (nothing to disagree on)", () => {
+  assert.equal(findAnnouncementAudio([{ ...READY_ANNOUNCEMENT, toEpisodeId: null }], BASE_AIRING), "/media/announcements/science/hash1.mp3");
+  assert.equal(findAnnouncementAudio([READY_ANNOUNCEMENT], { ...BASE_AIRING, nextProgramId: null }), "/media/announcements/science/hash1.mp3");
+});
+
+test("findAnnouncementAudio returns null for a missing/empty manifest or a non-continuity airing", () => {
+  assert.equal(findAnnouncementAudio([], BASE_AIRING), null);
+  assert.equal(findAnnouncementAudio(null, BASE_AIRING), null);
+  assert.equal(findAnnouncementAudio(undefined, BASE_AIRING), null);
+  assert.equal(findAnnouncementAudio([READY_ANNOUNCEMENT], null), null);
+});
+
+test("findAnnouncementAudio requires a real audio URL on the matched entry", () => {
+  assert.equal(findAnnouncementAudio([{ ...READY_ANNOUNCEMENT, audio: null }], BASE_AIRING), null);
+});
+
+// ---------- continuity airing carries the fields findAnnouncementAudio needs ----------
+// Grounds the above purely-synthetic fixtures against the REAL timeline
+// builder: a continuity schedule item's own `id`/`next_program_id` must
+// actually survive into the `airing` object switchTo() hands to
+// findAnnouncementAudio(), or the matching above would never fire for
+// real data.
+
+test("buildTimeline carries a continuity item's id/next_program_id through as airing.id/airing.nextProgramId", () => {
+  const schedule = {
+    blocks: [{
+      duration: 120,
+      items: [
+        { type: "video", id: "ep-1", title: "Episode One", start: 0, duration: 60, program_id: "prog-a", media_url: "https://example.org/ep1.mp4" },
+        { type: "continuity", id: "continuity-1793577600", start: 60, duration: 10, next_program_id: "ep-2" },
+        { type: "video", id: "ep-2", title: "Episode Two", start: 70, duration: 50, program_id: "prog-b", media_url: "https://example.org/ep2.mp4" },
+      ],
+    }],
+  };
+  const tl = buildTimeline(schedule, 0);
+  const continuityEntry = tl.entries.find((e) => e.type === "continuity");
+  assert.equal(continuityEntry.id, "continuity-1793577600");
+  assert.equal(continuityEntry.nextProgramId, "ep-2");
+  const located = locate(tl, 65);
+  assert.equal(located.type, "continuity");
+  assert.equal(located.id, "continuity-1793577600");
+  assert.equal(located.nextProgramId, "ep-2");
 });

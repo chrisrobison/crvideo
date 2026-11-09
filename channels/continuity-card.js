@@ -177,6 +177,7 @@ const TEMPLATE = `
 </style>
 <video class="bgvideo" hidden muted loop playsinline></video>
 <canvas class="bgcanvas" hidden></canvas>
+<audio class="va" hidden preload="none"></audio>
 <div class="scrim" hidden></div>
 <div class="wrap">
   <div class="info">
@@ -311,6 +312,8 @@ export class ContinuityCard extends HTMLElementBase {
     this._cardStartsAt = null;
     this._cardEndsAt = null;
     this._canvasRaf = 0;
+    this._audioUrl = null;
+    this._muted = true;
   }
 
   connectedCallback() {
@@ -319,12 +322,14 @@ export class ContinuityCard extends HTMLElementBase {
     this._renderStatic();
     this._renderBumper();
     this._tick();
+    this._syncAudio();
   }
 
   disconnectedCallback() {
     document.removeEventListener("visibilitychange", this._onVisible);
     clearInterval(this._timer);
     this._stopCanvas();
+    this._stopAudio();
   }
 
   /** @param {{bumpers?:Array<{id?:string,template?:string,weight?:number,background?:object,content?:object}>, quoteDecks?:Record<string,string[]>}|null} theme
@@ -373,6 +378,52 @@ export class ContinuityCard extends HTMLElementBase {
   }
 
   get clockNow() { return this._clockNow; }
+
+  /** @param {?string} url this occurrence's AI continuity announcer
+   *  narration MP3 (see broadcast.js's findAnnouncementAudio()), or null
+   *  for a silent card -- the default, and every channel whose announcer
+   *  isn't enabled, behaves exactly as before this property existed.
+   *  Deliberately always (re)starts playback from the top, even when
+   *  `url` is byte-for-byte the same string as last time: the schedule's
+   *  broadcast cycle repeats (see broadcast.js's header comment), so the
+   *  exact same cached MP3 legitimately airs again on the next lap, and
+   *  ContinuityRenderer.show() -- the only caller -- only ever sets this
+   *  once per genuinely new occurrence, never twice for the one card
+   *  instance already on screen. */
+  set audioUrl(url) {
+    this._audioUrl = url || null;
+    this._syncAudio();
+  }
+
+  get audioUrl() { return this._audioUrl; }
+
+  /** Mirrors the surrounding player's mute state onto the narration
+   *  track -- see player-adapters.js's ContinuityRenderer.setMuted(). */
+  setMuted(muted) {
+    this._muted = !!muted;
+    const audio = this._root.querySelector(".va");
+    if (audio) audio.muted = this._muted;
+  }
+
+  _syncAudio() {
+    const audio = this._root.querySelector(".va");
+    if (!audio) return;
+    if (!this._audioUrl) {
+      this._stopAudio();
+      return;
+    }
+    audio.muted = this._muted;
+    if (audio.src !== this._audioUrl) audio.src = this._audioUrl;
+    audio.currentTime = 0;
+    audio.play?.().catch(() => { /* autoplay refused -- same posture as the bumper background video; the card still renders fine silently */ });
+  }
+
+  _stopAudio() {
+    const audio = this._root.querySelector(".va");
+    if (!audio) return;
+    audio.pause();
+    audio.removeAttribute("src");
+  }
 
   _startTicking() {
     clearInterval(this._timer);

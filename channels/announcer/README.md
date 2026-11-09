@@ -6,10 +6,14 @@ deterministic template fallback), synthesizes it with [Kokoro TTS](../../tools/k
 into a cached, CDN-friendly MP3, and records the result in a per-channel announcement
 manifest. Strictly opt-in, per channel, and never blocks schedule compilation.
 
-This is **Pass 1**: the core pipeline (context building, AI writing, TTS synthesis,
-caching, job queue, CLI, `publish.php` integration, tests). Admin UI, the admin API, and
-`continuity-card.js` `<audio>` playback wiring are a deferred Pass 2 -- the manifest/asset
-side built here is already shaped for that to be purely additive.
+**Pass 1** built the core pipeline (context building, AI writing, TTS synthesis, caching,
+job queue, CLI, `publish.php` integration, tests). **Pass 2** adds the admin UI (a
+"Continuity announcer" section in `scheduler/js/components/cf-channel-admin.js`), its
+backend (`server/announcer-admin.php`), and the actual playback wiring: a continuity card
+on `watch.html`/`index.html` now plays the matching narration MP3 (if one exists and is
+still fresh for what's actually airing) instead of staying silent. Both passes are purely
+additive -- a channel with no `announcer.json` behaves exactly as it did before any of
+this existed.
 
 ## How it fits into the existing architecture
 
@@ -191,6 +195,60 @@ php channels/announce-worker.php --verbose
 php channels/announce.php --channel=science --sync --transition=continuity-1794009600
 ```
 
+### 5. Admin UI (Pass 2)
+
+A "Continuity announcer" section in `scheduler/js/components/cf-channel-admin.js`
+(`scheduler/index.html`, same page as the existing catalog/programming editors), backed by
+a new sibling endpoint `server/announcer-admin.php`. Per channel, it lets an editor:
+
+- toggle `enabled` and edit voice/speed/language/style/tone/target duration/announcement
+  types/consecutive-same-series behavior/writer provider+model -- everything in
+  `announcer.json` except `tts` (the Kokoro endpoint is a deployment setting, not a
+  per-channel editorial one, so it's shown but not editable here),
+- **Load voices from Kokoro**, which calls `GET /voices` on the channel's configured
+  Kokoro server (`KokoroHttpTtsProvider::listVoices()`) and populates the voice field's
+  autocomplete list -- harmless if the server isn't reachable, it just means typing the
+  voice id by hand instead,
+- **Preview voice**, which synthesizes one short fixed sample line through the real TTS
+  provider and plays it back, so an editor can audition a voice without touching any real
+  schedule content,
+- see every currently-generated announcement for the channel (type, transition, text,
+  duration, status, an inline `<audio>` player) and **Regenerate** any one of them
+  synchronously (`channels/announce.php --sync --transition=ID --force`, run as a
+  subprocess -- the exact same code path a cron worker uses, never reimplemented),
+  **Generate missing (queue)** to enqueue the backlog for a worker run to pick up, and
+  **Edit -> Approve** a script's wording so routine regeneration never silently overwrites
+  it (`ScriptCache::approve()`).
+
+Same "no access control" posture as `channel-admin.php`/`series-admin.php` (see
+`docs/admin-ui.md`): anyone who can reach this page can edit any channel's announcer
+config and trigger a real `claude` CLI + Kokoro run from it.
+
+### 6. Playback wiring (Pass 2)
+
+`continuity-card.js`'s `<cr-continuity-card>` now has an `.audioUrl` property backing a
+hidden `<audio>` element: setting it (re)starts narration playback from the top; setting it
+to `null` stops it. `player-adapters.js`'s `ContinuityRenderer.show()` takes the resolved
+audio URL as its new trailing parameter and `setMuted()` mirrors the player's mute state
+onto it (the narration is "channel audio" exactly like any program's own soundtrack, so a
+viewer's mute choice follows them into and out of a continuity card).
+
+The URL itself comes from `broadcast.js`'s `findAnnouncementAudio(announcements, airing)`:
+it matches a continuity airing's own `id` (== the announcement's `transitionId` -- the
+same schedule continuity item both sides key off) against a `coming_up_next`, `status:
+"ready"` entry in the channel's `announcements.json` (fetched by the new
+`loadAnnouncements()`, same cached/fail-to-`[]` posture as `loadCatalog()`/`loadTheme()`).
+It also re-checks `toEpisodeId` against the airing's own `nextProgramId` and discards the
+match on disagreement -- the client-side half of spec section 11's "a schedule that
+changes during audio generation," mirroring `AnnouncerPipeline::checkStale()`'s equivalent
+server-side check with data the player already has on hand.
+
+`BroadcastPlayer.updateChannelMeta()` lets `player-view.js`'s `tune()` patch in the
+announcements manifest (and, as a side benefit, the bumper theme) once its async fetch
+resolves, without calling `setTimeline()` again -- which would reset `airing` and visibly
+reload whatever is currently playing. The trade-off: a continuity card that's already on
+screen when the fetch resolves won't retroactively start narrating; the next one will.
+
 ## Verified end-to-end on real sample data
 
 Using the real, already-published `channels/science/schedule.json` (no synthetic fixtures),
@@ -240,6 +298,20 @@ forced regeneration). All run against a synthetic fixture tree (`tests/TestFixtu
 never the real `channels/`/`series/` directories, using `MockAiWriter`/`MockTtsProvider` --
 no network, no `claude` CLI, no Kokoro server required to run the suite.
 
+Pass 2's own additions: `server/tests/AnnouncerAdminTest.php` (20 tests, run as part of
+`php server/tests/run-tests.php`) covers `server/announcer-admin.php`'s pure logic --
+listing/config resolution, `save_config` validation (every rejected shape: bad voice,
+out-of-range speed, empty/unknown announcement types, unknown writer provider, non-http
+TTS endpoint, overlong text), the `regenerate` action's argv-building (never actually
+shelling out), and `approve_script`. `channels/tests/player-adapters.test.js` gained
+`findAnnouncementAudio()` coverage (matching, staleness discarding, missing-manifest/
+non-continuity-airing fallbacks) plus a real-`buildTimeline()` check that a continuity
+item's `id`/`next_program_id` actually survive into the `airing` object those matches key
+off. Deliberately **not** covered by an automated test (needs a real Kokoro server/browser,
+same posture as `YouTubePlayerAdapter` already being manual/browser-verified only): the
+admin UI's "Load voices"/"Preview voice" buttons, and `<cr-continuity-card>`'s actual
+`<audio>` element playback/autoplay behavior.
+
 Re-run the rest of the existing suite to confirm nothing else regressed:
 
 ```bash
@@ -269,3 +341,27 @@ source of truth. Highlights: `--channel=ID` / `--all-channels`, `--date=`/`--fro
   `WriterPromptBuilder` branches stubbed to a generic brief and are reachable via
   `announcer.json`'s `types`, but only `coming_up_next` and `channel_id` were exercised
   against real data end-to-end in this pass.
+
+## Known Pass-2 simplifications
+
+- **`channel_id` audio is generated and cached but never automatically played.** It isn't
+  tied to any one `schedule.json` continuity occurrence (`AnnouncementContextBuilder`
+  builds exactly one, stable `transitionId: "channel-id"` per channel, not per airing), and
+  nothing in `schedule.json`'s compiler currently carves out a dedicated slot for a station
+  ID drop the way it does for a `coming_up_next` continuity card. `findAnnouncementAudio()`
+  only ever matches `type === "coming_up_next"` for exactly this reason. Wiring a real
+  airtime for station IDs (e.g. its own schedule item type, or periodic insertion) is future
+  work; today it's reachable from the admin UI (regenerate/preview) but not from playback.
+- **The admin UI's `tts` (Kokoro endpoint/provider) is shown but not editable.** It's a
+  deployment-level setting (which Kokoro server a channel talks to), not a per-channel
+  editorial one -- changing it is a `channels/<id>/announcer.json` edit outside the UI, or a
+  `config.local.php`/env var change for every channel at once.
+- **No "delete announcement" admin action.** Regenerate-with-force covers "redo it";
+  removing an entry outright (e.g. after disabling a type) isn't exposed yet -- the next
+  `publish.php`/`announce.php` run's `AnnouncementManifestWriter::pruneExcept()` already
+  removes anything no longer eligible, so this mostly self-heals on its own.
+- **A continuity card already on screen when its channel's announcements/theme fetch
+  resolves won't retroactively start narrating** (see `BroadcastPlayer.updateChannelMeta()`'s
+  header) -- only the next continuity occurrence will. In practice the fetch is a small
+  same-origin JSON request that resolves well within one 500ms player tick, so this only
+  matters if a continuity card happens to start in the same instant as the channel tune.

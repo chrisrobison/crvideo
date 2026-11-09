@@ -17,6 +17,7 @@ declare(strict_types=1);
 
 require __DIR__ . '/../series-admin.php';
 require __DIR__ . '/../channel-admin.php';
+require __DIR__ . '/../announcer-admin.php';
 
 final class AssertionFailed extends Exception
 {

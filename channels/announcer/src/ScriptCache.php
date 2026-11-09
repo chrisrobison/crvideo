@@ -46,9 +46,17 @@ final class ScriptCache
     }
 
     /** Marks an existing cached script as manually approved/edited -- never
-     *  called by routine (re)generation, only by the Pass 2 admin editor. */
+     *  called by routine (re)generation, only by the Pass 2 admin editor.
+     *  Works whether or not a script already exists for $hash (an editor
+     *  can write a brand-new approved line for a transition that hasn't
+     *  been generated yet), so this creates the scripts/ directory itself
+     *  rather than relying on a prior put() having already done so. */
     public static function approve(string $channelDir, string $hash, string $text): void
     {
+        $dir = self::dirFor($channelDir);
+        if (!is_dir($dir) && !mkdir($dir, 0775, true) && !is_dir($dir)) {
+            throw new RuntimeException("Failed to create directory: $dir");
+        }
         $entry = self::get($channelDir, $hash) ?? ['hash' => $hash];
         $entry['text'] = $text;
         $entry['approved'] = true;
