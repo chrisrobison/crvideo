@@ -74,4 +74,8 @@ export const bumpAdminApi = {
   create: (bump) => postJson(BUMP_ENDPOINT, { action: "create", ...bump }).then((r) => r.bump),
   update: (id, bump) => postJson(BUMP_ENDPOINT, { action: "update", id, ...bump }).then((r) => r.bump),
   delete: (id) => postJson(BUMP_ENDPOINT, { action: "delete", id }),
+  // Channel scheduling (channels/<id>/bump-schedule.json) -- a separate
+  // concern from the bump definitions above, see bump-admin.php's header.
+  schedules: () => getJson(`${BUMP_ENDPOINT}?action=schedules`).then((r) => r.channels),
+  saveSchedule: (channelId, enabled, rules) => postJson(BUMP_ENDPOINT, { action: "save_schedule", channel_id: channelId, enabled, rules }).then((r) => r.schedule),
 };

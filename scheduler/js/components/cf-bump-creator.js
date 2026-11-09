@@ -10,8 +10,16 @@
 // read straight from channels/broadcast.js (read-only; this view never
 // writes anything into a channel).
 //
+// A bottom "Scheduling" panel is a SEPARATE concern: which channel(s)
+// actually show a bump live, and when (clock-anchored -- "every hour, on
+// the hour, for 12s" -- see channels/player-adapters.js's "bump
+// scheduling" header for why this is driven by the player's own wall
+// clock rather than published into any schedule.json). Saved to each
+// channel's own channels/<id>/bump-schedule.json via the same
+// server/bump-admin.php endpoint's save_schedule/schedules actions.
+//
 // No access control: see docs/admin-ui.md. Anyone who can load this page
-// can create/edit/delete any bump.
+// can create/edit/delete any bump and change what any channel schedules.
 
 import { baseComponentCSS, escapeHtml, toast } from "../utils.js";
 import { bumpAdminApi } from "../admin-api.js";
@@ -19,6 +27,7 @@ import "../../../channels/bump-player.js";
 
 const BG_TYPES = ["video", "color"]; // "image" exists in the schema/backend for later; nothing under media/ to pick from yet, so it's not offered here
 const AUDIO_SOURCES = ["music", "ambience"];
+const SCHEDULE_PERIODS = { hour: "Every hour", halfHour: "Every half hour", day: "Every day" };
 
 function emptyBump() {
   return {
@@ -102,6 +111,59 @@ function bumpRowHtml(bump, isActive) {
   `;
 }
 
+function scheduleRuleRowHtml(rule, bumps) {
+  return `
+    <div class="sched-rule-row">
+      <select class="sr-bump">
+        <option value="">— choose a bump —</option>
+        ${bumps.map((b) => `<option value="${escapeHtml(b.id)}" ${b.id === rule.bumpId ? "selected" : ""}>${escapeHtml(b.name || b.id)}</option>`).join("")}
+      </select>
+      <select class="sr-every">
+        ${Object.entries(SCHEDULE_PERIODS).map(([k, label]) => `<option value="${k}" ${k === rule.every ? "selected" : ""}>${escapeHtml(label)}</option>`).join("")}
+      </select>
+      <label class="sr-field">Offset (s)<input class="sr-offset" type="number" min="0" value="${rule.offsetSeconds ?? 0}"></label>
+      <label class="sr-field">Duration (s)<input class="sr-duration" type="number" min="1" value="${rule.durationSeconds ?? 12}"></label>
+      <button class="sr-remove ghost icon-btn" title="Remove rule">✕</button>
+    </div>
+  `;
+}
+
+function readScheduleRuleRow(row) {
+  const bumpId = row.querySelector(".sr-bump").value;
+  if (!bumpId) return null;
+  return {
+    bumpId,
+    every: row.querySelector(".sr-every").value,
+    offsetSeconds: Number(row.querySelector(".sr-offset").value) || 0,
+    durationSeconds: Number(row.querySelector(".sr-duration").value) || 12,
+  };
+}
+
+function scheduleChannelHtml(channel, bumps) {
+  return `
+    <details class="sched-channel" data-channel="${escapeHtml(channel.id)}" ${channel.enabled && channel.rules.length ? "open" : ""}>
+      <summary>
+        <span class="sched-channel-name">${escapeHtml(channel.name)}</span>
+        <span class="badge ${channel.enabled && channel.rules.length ? "" : "muted"}" data-tone="${channel.enabled && channel.rules.length ? "live" : ""}">
+          ${channel.enabled && channel.rules.length ? `${channel.rules.length} rule${channel.rules.length === 1 ? "" : "s"} live` : "off"}
+        </span>
+        <span class="spacer"></span>
+      </summary>
+      <div class="sched-channel-body">
+        <label class="loop-label"><input type="checkbox" class="sched-enabled" ${channel.enabled ? "checked" : ""}> Show scheduled bumps on this channel</label>
+        <div class="sched-rules">
+          ${channel.rules.map((r) => scheduleRuleRowHtml(r, bumps)).join("")}
+        </div>
+        <div class="row" style="gap:8px; margin-top:8px;">
+          <button class="sched-add-rule-btn ghost" ${bumps.length ? "" : "disabled"}>+ Add rule</button>
+          <button class="sched-save-btn primary">Save schedule</button>
+        </div>
+        ${!bumps.length ? `<p class="hint-note">Build at least one bump above before scheduling it.</p>` : ""}
+      </div>
+    </details>
+  `;
+}
+
 const SAMPLE_UPCOMING = [
   { title: "Sample Show One", startsAt: Math.floor(Date.now() / 1000) + 5 * 60 },
   { title: "Sample Show Two", startsAt: Math.floor(Date.now() / 1000) + 35 * 60 },
@@ -113,6 +175,7 @@ class CfBumpCreator extends HTMLElement {
     super();
     this._bumps = [];
     this._media = { video: [], music: [], ambience: [], channels: [] };
+    this._schedules = [];
     this._loading = true;
     this._error = null;
     this._editingId = null; // null => unsaved new bump
@@ -134,9 +197,10 @@ class CfBumpCreator extends HTMLElement {
     this._error = null;
     this._renderBody();
     try {
-      const [bumps, media] = await Promise.all([bumpAdminApi.list(), bumpAdminApi.media()]);
+      const [bumps, media, schedules] = await Promise.all([bumpAdminApi.list(), bumpAdminApi.media(), bumpAdminApi.schedules()]);
       this._bumps = bumps;
       this._media = media;
+      this._schedules = schedules;
     } catch (e) {
       this._error = e.message;
     }
@@ -211,6 +275,19 @@ class CfBumpCreator extends HTMLElement {
         .sample-rows input[type="text"]{ flex:1; }
         .sample-rows input[type="time"]{ width:110px; }
         .hint-note{ font-size:11px; color:var(--text-muted); margin:6px 0 0; line-height:1.5; }
+        .scheduling{ margin-top:16px; }
+        .sched-channel{ background:var(--bg-elevated); border:1px solid var(--border); border-radius:var(--radius-sm); margin-bottom:10px; overflow:hidden; }
+        .sched-channel summary{ list-style:none; cursor:pointer; display:flex; align-items:center; gap:10px; padding:10px 14px; }
+        .sched-channel summary::-webkit-details-marker{ display:none; }
+        .sched-channel[open] summary{ border-bottom:1px solid var(--border); }
+        .sched-channel-name{ font-weight:700; font-size:13px; }
+        .sched-channel-body{ padding:14px; }
+        .loop-label{ display:flex; align-items:center; gap:6px; font-size:13px; margin-bottom:10px; }
+        .sched-rules{ display:flex; flex-direction:column; gap:8px; }
+        .sched-rule-row{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+        .sched-rule-row select{ flex:1; min-width:140px; }
+        .sr-field{ display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text-muted); text-transform:none; letter-spacing:0; white-space:nowrap; }
+        .sr-field input{ width:70px; }
       </style>
       <div class="toolbar">
         <h1>Bumps</h1>
@@ -239,6 +316,13 @@ class CfBumpCreator extends HTMLElement {
         <div class="panel editor"></div>
         <div class="panel preview"></div>
       </div>
+      <div class="panel scheduling">
+        <h2>Scheduling</h2>
+        <p class="hint-note">Which channel(s) actually show a bump live, and when -- clock-anchored (e.g. "every hour, on the hour, for 12s"), independent of the schedule's own programming. See bumps/README.md.</p>
+        <div class="sched-channels">
+          ${this._schedules.map((c) => scheduleChannelHtml(c, this._bumps)).join("") || `<div class="hint-note">No channels found.</div>`}
+        </div>
+      </div>
     `;
 
     body.querySelector(".new-bump-btn").addEventListener("click", () => this._newBump());
@@ -260,6 +344,42 @@ class CfBumpCreator extends HTMLElement {
 
     this._renderEditor(body.querySelector(".editor"));
     this._renderPreview(body.querySelector(".preview"));
+    this._wireScheduling(body.querySelector(".sched-channels"));
+  }
+
+  // ---------- scheduling ----------
+
+  _wireScheduling(el) {
+    if (!el) return;
+    el.querySelectorAll(".sched-channel").forEach((channelEl) => {
+      const channelId = channelEl.dataset.channel;
+
+      channelEl.querySelector(".sched-add-rule-btn").addEventListener("click", () => {
+        const wrapper = document.createElement("div");
+        wrapper.innerHTML = scheduleRuleRowHtml({ every: "hour", offsetSeconds: 0, durationSeconds: 12 }, this._bumps);
+        const row = wrapper.firstElementChild;
+        channelEl.querySelector(".sched-rules").appendChild(row);
+        this._wireScheduleRuleRow(row);
+      });
+
+      channelEl.querySelectorAll(".sched-rule-row").forEach((row) => this._wireScheduleRuleRow(row));
+
+      channelEl.querySelector(".sched-save-btn").addEventListener("click", async () => {
+        const enabled = channelEl.querySelector(".sched-enabled").checked;
+        const rules = Array.from(channelEl.querySelectorAll(".sched-rule-row")).map(readScheduleRuleRow).filter(Boolean);
+        try {
+          await bumpAdminApi.saveSchedule(channelId, enabled, rules);
+          toast(`Saved schedule for ${channelId}.`, "good");
+          this.reload();
+        } catch (err) {
+          toast(err.message, "danger");
+        }
+      });
+    });
+  }
+
+  _wireScheduleRuleRow(row) {
+    row.querySelector(".sr-remove").addEventListener("click", () => row.remove());
   }
 
   // ---------- editor ----------

@@ -24,7 +24,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
-import { computeBackoffMs, computeDriftCorrection, resolveProvider } from "../player-adapters.js";
+import { computeBackoffMs, computeDriftCorrection, resolveProvider, bumpRuleWindow, locateActiveBump } from "../player-adapters.js";
 import { formatCountdown, hashSeed, pickWeightedIndex } from "../continuity-card.js";
 import { buildTimeline, locate, airings, nextProgram, findAnnouncementAudio } from "../broadcast.js";
 
@@ -373,4 +373,63 @@ test("buildTimeline carries a continuity item's id/next_program_id through as ai
   assert.equal(located.type, "continuity");
   assert.equal(located.id, "continuity-1793577600");
   assert.equal(located.nextProgramId, "ep-2");
+});
+
+// ---------- bumpRuleWindow / locateActiveBump (clock-anchored bump scheduling) ----------
+
+test("bumpRuleWindow fires exactly on the hour by default", () => {
+  const rule = { bumpId: "forest-interlude", every: "hour", durationSeconds: 12 };
+  const hourStart = 18 * 3600; // an arbitrary exact hour boundary, in epoch seconds
+  assert.equal(bumpRuleWindow(rule, hourStart - 1), null); // one second before -- not yet
+  assert.deepEqual(bumpRuleWindow(rule, hourStart), { bumpId: "forest-interlude", startsAt: hourStart, endsAt: hourStart + 12 });
+  assert.deepEqual(bumpRuleWindow(rule, hourStart + 11.9), { bumpId: "forest-interlude", startsAt: hourStart, endsAt: hourStart + 12 });
+  assert.equal(bumpRuleWindow(rule, hourStart + 12), null); // window has closed
+});
+
+test("bumpRuleWindow honors a non-zero offsetSeconds", () => {
+  const rule = { bumpId: "x", every: "hour", offsetSeconds: 30, durationSeconds: 10 };
+  const hourStart = 5 * 3600;
+  assert.equal(bumpRuleWindow(rule, hourStart + 29), null);
+  assert.deepEqual(bumpRuleWindow(rule, hourStart + 30), { bumpId: "x", startsAt: hourStart + 30, endsAt: hourStart + 40 });
+  assert.equal(bumpRuleWindow(rule, hourStart + 40), null);
+});
+
+test("bumpRuleWindow supports halfHour and day periods", () => {
+  assert.notEqual(bumpRuleWindow({ bumpId: "x", every: "halfHour", durationSeconds: 5 }, 1800), null);
+  assert.notEqual(bumpRuleWindow({ bumpId: "x", every: "day", durationSeconds: 5 }, 86400), null);
+});
+
+test("bumpRuleWindow returns null for an unrecognized `every`, a missing bumpId, or a non-positive duration", () => {
+  assert.equal(bumpRuleWindow({ bumpId: "x", every: "fortnight", durationSeconds: 5 }, 0), null);
+  assert.equal(bumpRuleWindow({ every: "hour", durationSeconds: 5 }, 0), null);
+  assert.equal(bumpRuleWindow({ bumpId: "x", every: "hour", durationSeconds: 0 }, 0), null);
+  assert.equal(bumpRuleWindow(null, 0), null);
+});
+
+test("bumpRuleWindow never throws on a malformed rule", () => {
+  assert.doesNotThrow(() => bumpRuleWindow({}, 123));
+  assert.doesNotThrow(() => bumpRuleWindow({ every: "hour" }, 123));
+});
+
+test("locateActiveBump picks the first matching rule in array order", () => {
+  const hourStart = 7 * 3600;
+  const rules = [
+    { bumpId: "first", every: "hour", durationSeconds: 10 },
+    { bumpId: "second", every: "halfHour", durationSeconds: 10 },
+  ];
+  // Both rules' windows are open at the top of the hour (hour AND half-hour boundaries coincide there) -- "first" wins by array order.
+  assert.equal(locateActiveBump(rules, hourStart).bumpId, "first");
+});
+
+test("locateActiveBump returns null when no rule matches, or the list is empty/missing", () => {
+  assert.equal(locateActiveBump([{ bumpId: "x", every: "hour", durationSeconds: 10 }], 5000), null);
+  assert.equal(locateActiveBump([], 0), null);
+  assert.equal(locateActiveBump(undefined, 0), null);
+  assert.equal(locateActiveBump(null, 0), null);
+});
+
+test("two independent lookups at the same instant agree on bump state -- deterministic, clock-derived, same contract as locate()", () => {
+  const rules = [{ bumpId: "forest-interlude", every: "hour", durationSeconds: 12 }];
+  const t = 42 * 3600 + 3; // 3 seconds into an hour
+  assert.deepEqual(locateActiveBump(rules, t), locateActiveBump(rules, t));
 });

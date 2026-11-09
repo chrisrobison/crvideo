@@ -20,8 +20,9 @@ a channel that's opted in. A **bump** (this directory) is a complete,
 individually authored unit an editor builds and previews by hand in the
 bump creator UI (`scheduler/` → BUMPS), combining a specific video, a
 specific audio bed (or two), and optionally a specific pre-generated
-announcement clip. The two systems don't reference each other (yet) --
-see "Not yet wired into live playback" below.
+announcement clip. The two systems don't reference each other -- see
+"Live scheduling" below for how a bump actually gets on the air, which
+is a deliberately different mechanism than theme.json's bumpers.
 
 ## Storage
 
@@ -110,13 +111,47 @@ announcements, preview live with `<cr-bump>` against either hand-typed
 sample upcoming-show rows or a real channel's real current lineup
 (reusing `channels/broadcast.js` read-only, client-side), then save.
 
-## Not yet wired into live playback
+## Live scheduling
 
-This phase only covers *defining, storing, and previewing* bumps. Nothing
-here makes a published schedule actually play one in lieu of a video --
-that would mean teaching `channels/publish/src/ContinuityResolver.php`
-(or `channels/<id>/continuity.json`) to reference a `bumps/<id>.json` the
-way it already references `theme.json`'s bumpers, and teaching
-`BroadcastPlayer`/`<cr-continuity-card>` (or a sibling renderer built on
-`<cr-bump>`) to render one during a real broadcast gap. Left for a
-follow-up once the authoring side has been used for a while.
+A bump goes on the air by WALL CLOCK, never by being published into
+`schedule.json`. Each channel has its own optional
+`channels/<id>/bump-schedule.json`:
+
+```json
+{
+  "schema_version": 1,
+  "enabled": true,
+  "rules": [
+    { "bumpId": "forest-interlude", "every": "hour", "offsetSeconds": 0, "durationSeconds": 12 }
+  ]
+}
+```
+
+`every` is `"hour"` / `"halfHour"` / `"day"`; `offsetSeconds` (default 0)
+is how far into that period the window opens (0 = exactly on the hour);
+`durationSeconds` is how long it stays up. Written/read through the same
+`server/bump-admin.php` (its `schedules`/`save_schedule` actions), edited
+from the bump creator UI's bottom "Scheduling" panel -- pick a channel,
+toggle it on, add a rule naming one of the bumps above.
+
+**Why clock-anchored and client-side, not published into the schedule:**
+`channels/publish/src/ContinuityFiller.php` can only fill a gap that
+already exists between packed programming -- it has no operation that
+carves a slot out of an otherwise contiguous block, so most hour
+boundaries have no gap to insert into. Driving it from
+`BroadcastPlayer.tick()`'s own wall clock instead (see
+`channels/player-adapters.js`'s "bump scheduling" header for the full
+rationale) sidesteps that entirely and is unconditional: it always fires,
+regardless of how tightly packed the channel's programming is. Every
+viewer's player independently computes the identical window from the
+same absolute instant -- same determinism contract `locate()`/`airings()`
+already rely on.
+
+A bump DRAWS OVER whatever's airing without pausing the underlying
+schedule -- exactly like a real broadcast station break, and the same
+trade-off this project's continuity cards already make: a viewer who
+watches through it simply misses that slice of the program, and the
+program resumes at its own now-current live point (a hard reseek
+forward, not a plain resume) once the window closes. A bump preempts
+even a continuity occurrence baked into the published schedule, since
+it's an explicit, guaranteed interruption rather than organic filler.

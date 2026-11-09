@@ -26,6 +26,7 @@
 // ---------- continuity (Phase 5/6: dynamic "Coming Up Next" cards) ----------
 
 import "./continuity-card.js"; // side-effect: registers <cr-continuity-card>
+import "./bump-player.js"; // side-effect: registers <cr-bump>
 
 /**
  * Mounts/updates/hides a <cr-continuity-card> inside a container element
@@ -105,6 +106,112 @@ export class ContinuityRenderer {
   destroy() {
     this.card?.remove();
     this.card = null;
+  }
+}
+
+// ---------- bump scheduling (clock-anchored, e.g. "top of the hour") ----------
+//
+// A bump (see bumps/README.md, channels/bump-player.js) is scheduled onto a
+// channel entirely CLIENT-SIDE, by wall clock -- never by publishing it
+// into schedule.json. channels/publish/src/ContinuityFiller.php can only
+// fill an already-uncovered gap (see its header/ProgrammingCompiler.php);
+// it has no operation that carves a slot out of an otherwise contiguous,
+// tightly packed program block, so there is no reliable way to guarantee
+// "this airs for 12s starting exactly on the hour" from the publish side
+// alone -- most hour boundaries simply have no gap to fill. Driving it from
+// the player's own clock instead (BroadcastPlayer.tick(), same 500ms loop
+// already computing locate()) sidesteps that limitation entirely: every
+// viewer independently computes the identical wall-clock window from the
+// same absolute instant, exactly the same determinism contract locate()/
+// airings() already rely on, and it's unconditional -- it always fires,
+// whatever the underlying program's schedule looks like. The tradeoff,
+// accepted deliberately: like a continuity card, it draws OVER whatever
+// would otherwise be airing without pausing the underlying schedule, so a
+// viewer who watches through it simply misses that slice of the program --
+// identical to how a real broadcast station break works, and the same
+// trade-off this project's continuity cards already make.
+
+export const BUMP_RULE_PERIODS = { hour: 3600, halfHour: 1800, day: 86400 };
+
+/**
+ * The clock-anchored window (if any) ONE bump schedule rule
+ * ({bumpId, every, offsetSeconds, durationSeconds}) defines around time
+ * `t`. `every` selects the period ("hour" -> every 3600s, etc. -- see
+ * BUMP_RULE_PERIODS); `offsetSeconds` (default 0) is how far into each
+ * period the window starts (0 = exactly on the hour/half-hour/day);
+ * `durationSeconds` is how long it stays up. Pure function of (rule, t) --
+ * returns null for an unrecognized `every` or when `t` doesn't fall inside
+ * the window, never throws on a malformed rule.
+ */
+export function bumpRuleWindow(rule, t) {
+  const period = BUMP_RULE_PERIODS[rule?.every];
+  if (!period || !rule?.bumpId) return null;
+  const offset = Math.max(0, Math.min(period - 1, Number(rule.offsetSeconds) || 0));
+  const duration = Math.max(0, Number(rule.durationSeconds) || 0);
+  if (duration <= 0) return null;
+  const startsAt = Math.floor((t - offset) / period) * period + offset;
+  const endsAt = startsAt + duration;
+  if (t < startsAt || t >= endsAt) return null;
+  return { bumpId: rule.bumpId, startsAt, endsAt };
+}
+
+/** The first rule (in array order) whose window currently contains `t`, or
+ *  null if none does -- the channel's whole bump schedule reduces to one
+ *  "is a bump active right now, and which one" check per tick(). */
+export function locateActiveBump(rules, t) {
+  if (!Array.isArray(rules)) return null;
+  for (const rule of rules) {
+    const window = bumpRuleWindow(rule, t);
+    if (window) return window;
+  }
+  return null;
+}
+
+/**
+ * Mounts/updates/hides a <cr-bump> inside a container element the caller
+ * owns -- same posture as ContinuityRenderer just below: not a
+ * PlayerAdapter (a bump is driven by the clock, not "tuned"), so
+ * BroadcastPlayer calls this directly rather than through the adapter
+ * interface.
+ */
+export class BumpRenderer {
+  constructor(container) {
+    this.container = container;
+    this.el = null;
+  }
+
+  /**
+   * @param {object} definition a full bump JSON object (bumps/<id>.json -- see bumps/README.md)
+   * @param {Array<{title:string, startsAt:number, subtitle?:string}>} upcoming the channel's REAL upcoming programs, never invented here
+   * @param {{name?:string, logo?:string}|null} channel
+   * @param {() => number} clockNow
+   * @param {boolean} muted
+   */
+  show(definition, upcoming, channel, clockNow, muted) {
+    if (!this.el) {
+      this.el = document.createElement("cr-bump");
+      this.container.appendChild(this.el);
+    }
+    this.el.clockNow = clockNow;
+    this.el.channel = channel;
+    this.el.definition = definition;
+    this.el.upcoming = upcoming;
+    this.el.play({ muted });
+    this.container.hidden = false;
+  }
+
+  setMuted(muted) {
+    this.el?.setMuted(muted);
+  }
+
+  hide() {
+    this.container.hidden = true;
+    this.el?.stop();
+  }
+
+  destroy() {
+    this.el?.remove();
+    this.el = null;
   }
 }
 

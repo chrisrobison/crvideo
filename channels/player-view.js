@@ -58,8 +58,8 @@
 //     wants the plain navigation, just doesn't listen.
 
 import {
-  CHANNEL_ID, listChannels, loadChannel, loadCatalog, loadTheme, loadAnnouncements, airings, nextProgram, now, clock, minutesLeft,
-  BroadcastPlayer,
+  CHANNEL_ID, listChannels, loadChannel, loadCatalog, loadTheme, loadAnnouncements, loadBumpSchedule, loadBumpDefinitionsFor,
+  airings, nextProgram, now, clock, minutesLeft, BroadcastPlayer,
 } from "./broadcast.js";
 
 const COMING_UP = 4; // programs listed under "Coming Up", after the "Up Next" one
@@ -111,6 +111,8 @@ video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: con
 
 .continuityHost { position: absolute; inset: 0; }
 .continuityHost cr-continuity-card { position: absolute; inset: 0; }
+.bumpHost { position: absolute; inset: 0; }
+.bumpHost cr-bump { position: absolute; inset: 0; }
 
 .bug { position: absolute; top: clamp(8px,3vh,32px); right: clamp(8px,3vw,40px); height: clamp(20px,6vh,64px); opacity: .55; pointer-events: none; }
 
@@ -148,6 +150,7 @@ video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: con
 <video class="screen" muted playsinline autoplay></video>
 <div class="ytPlayer" hidden></div>
 <div class="continuityHost" hidden></div>
+<div class="bumpHost" hidden></div>
 
 <div class="slate" hidden>
   <div class="card">
@@ -213,6 +216,7 @@ export class ChannelPlayer extends HTMLElementBase {
     this.player = new BroadcastPlayer(q(".screen"), {
       youtubeContainer: q(".ytPlayer"),
       continuityContainer: q(".continuityHost"),
+      bumpContainer: q(".bumpHost"),
       onAiring: (airing) => this._onAiring(airing),
       onState: (state, airing) => this._onState(state, airing),
     });
@@ -305,6 +309,25 @@ export class ChannelPlayer extends HTMLElementBase {
       this._announcements = announcements;
       this.player.updateChannelMeta({ announcements });
     });
+    // Clock-anchored bump schedule (see player-adapters.js's "bump
+    // scheduling" header and BroadcastPlayer.tick()'s bump branch): an
+    // empty rules list, and no behavior change at all, for every channel
+    // without a bump-schedule.json. Each referenced bumps/<id>.json is
+    // resolved in the SAME chain (not a separate fire-and-forget) so
+    // `bumpDefinitions` is never patched in before `bumpSchedule` is --
+    // tick() looks a bumpId up in bumpDefinitions only after matching a
+    // rule in bumpSchedule, so a half-updated pair could never actually
+    // enter a bump, but keeping them in one update avoids that window
+    // entirely rather than relying on that.
+    loadBumpSchedule(next).then(async (schedule) => {
+      if (this._channel !== next) return;
+      const rules = schedule.enabled ? schedule.rules : [];
+      const bumpDefinitions = await loadBumpDefinitionsFor(rules);
+      if (this._channel !== next) return;
+      this._bumpSchedule = rules;
+      this._bumpDefinitions = bumpDefinitions;
+      this.player.updateChannelMeta({ bumpSchedule: rules, bumpDefinitions });
+    });
     for (const img of [q(".bug"), q(".slateLogo"), q(".lLogo")]) {
       img.hidden = !next.logo;
       if (next.logo) img.src = next.logo;
@@ -314,6 +337,7 @@ export class ChannelPlayer extends HTMLElementBase {
     if (next.number != null) this._flashOsd(String(next.number));
     this.player.setTimeline(next.timeline, {
       name: next.name, logo: next.logo, theme: next.theme, bumperTheme: this._bumperTheme, announcements: this._announcements,
+      bumpSchedule: this._bumpSchedule, bumpDefinitions: this._bumpDefinitions,
     });
     this._updateHint();
     if (changed) this.dispatchEvent(new CustomEvent("cr-channel-change", { detail: { channel: next } }));
@@ -369,10 +393,12 @@ export class ChannelPlayer extends HTMLElementBase {
   _onState(state, airing) {
     const q = (sel) => this._root.querySelector(sel);
     const continuity = state === "continuity";
-    const slate = !continuity && (state === "slate" || state === "error" || !airing?.playable);
+    const bump = state === "bump";
+    const slate = !continuity && !bump && (state === "slate" || state === "error" || !airing?.playable);
     q(".slate").hidden = !slate;
     q(".continuityHost").hidden = !continuity;
-    this.classList.toggle("on-break", slate || continuity);
+    q(".bumpHost").hidden = !bump;
+    this.classList.toggle("on-break", slate || continuity || bump);
     q(".msg").hidden = state !== "error";
     q(".spinner").hidden = !(state === "loading" || state === "buffering");
     if (state === "blocked") {

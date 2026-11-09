@@ -325,4 +325,112 @@ final class BumpAdminTest
         Assert::count(1, $science['announcements']);
         Assert::same('continuity-1', $science['announcements'][0]['transitionId']);
     }
+
+    // ---------- channel bump scheduling ----------
+
+    private function createBump(): string
+    {
+        return bump_admin_create($this->validBody(), $this->bumpsDir, $this->mediaRoot)['bump']['id'];
+    }
+
+    public function testNormalizeScheduleRuleRejectsAnUnknownBumpId(): void
+    {
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_normalize_schedule_rule(['bumpId' => 'does-not-exist', 'every' => 'hour', 'durationSeconds' => 12], $this->bumpsDir);
+        });
+    }
+
+    public function testNormalizeScheduleRuleRejectsAnUnknownPeriod(): void
+    {
+        $id = $this->createBump();
+        Assert::throws(BumpAdminValidationError::class, function () use ($id): void {
+            bump_admin_normalize_schedule_rule(['bumpId' => $id, 'every' => 'fortnight', 'durationSeconds' => 12], $this->bumpsDir);
+        });
+    }
+
+    public function testNormalizeScheduleRuleDefaultsOffsetToZero(): void
+    {
+        $id = $this->createBump();
+        $rule = bump_admin_normalize_schedule_rule(['bumpId' => $id, 'every' => 'hour', 'durationSeconds' => 12], $this->bumpsDir);
+        Assert::same(0.0, $rule['offsetSeconds']);
+    }
+
+    public function testNormalizeScheduleRuleRejectsAnOffsetAtOrPastThePeriod(): void
+    {
+        $id = $this->createBump();
+        Assert::throws(BumpAdminValidationError::class, function () use ($id): void {
+            bump_admin_normalize_schedule_rule(['bumpId' => $id, 'every' => 'hour', 'offsetSeconds' => 3600, 'durationSeconds' => 12], $this->bumpsDir);
+        });
+    }
+
+    public function testNormalizeScheduleRuleRejectsANonPositiveDuration(): void
+    {
+        $id = $this->createBump();
+        Assert::throws(BumpAdminValidationError::class, function () use ($id): void {
+            bump_admin_normalize_schedule_rule(['bumpId' => $id, 'every' => 'hour', 'durationSeconds' => 0], $this->bumpsDir);
+        });
+    }
+
+    public function testNormalizeScheduleRejectsMoreThanTheRuleLimit(): void
+    {
+        $id = $this->createBump();
+        $rules = array_fill(0, BUMP_ADMIN_MAX_SCHEDULE_RULES + 1, ['bumpId' => $id, 'every' => 'hour', 'durationSeconds' => 12]);
+        Assert::throws(BumpAdminValidationError::class, function () use ($rules): void {
+            bump_admin_normalize_schedule(['rules' => $rules], $this->bumpsDir);
+        });
+    }
+
+    public function testSaveScheduleRejectsUnknownChannel(): void
+    {
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_save_schedule(['channel_id' => 'no-such-channel', 'enabled' => true, 'rules' => []], $this->channelsDir, $this->bumpsDir);
+        });
+    }
+
+    public function testSaveScheduleWritesBumpScheduleJsonForTheChannel(): void
+    {
+        $id = $this->createBump();
+        $result = bump_admin_save_schedule(
+            ['channel_id' => 'science', 'enabled' => true, 'rules' => [['bumpId' => $id, 'every' => 'hour', 'durationSeconds' => 12]]],
+            $this->channelsDir,
+            $this->bumpsDir,
+        );
+        Assert::true($result['schedule']['enabled']);
+        Assert::count(1, $result['schedule']['rules']);
+        $written = json_decode((string) file_get_contents("$this->channelsDir/science/bump-schedule.json"), true);
+        Assert::same($id, $written['rules'][0]['bumpId']);
+        Assert::same('hour', $written['rules'][0]['every']);
+    }
+
+    public function testListSchedulesIncludesEveryChannelEvenWithoutAScheduleFile(): void
+    {
+        $list = bump_admin_list_schedules($this->channelsDir);
+        $byId = [];
+        foreach ($list as $c) {
+            $byId[$c['id']] = $c;
+        }
+        Assert::true(isset($byId['science']));
+        Assert::true(!$byId['science']['enabled']);
+        Assert::count(0, $byId['science']['rules']);
+    }
+
+    public function testListSchedulesReflectsASavedSchedule(): void
+    {
+        $id = $this->createBump();
+        bump_admin_save_schedule(
+            ['channel_id' => 'science', 'enabled' => true, 'rules' => [['bumpId' => $id, 'every' => 'halfHour', 'durationSeconds' => 8]]],
+            $this->channelsDir,
+            $this->bumpsDir,
+        );
+        $list = bump_admin_list_schedules($this->channelsDir);
+        $science = null;
+        foreach ($list as $c) {
+            if ($c['id'] === 'science') {
+                $science = $c;
+            }
+        }
+        Assert::notNull($science);
+        Assert::true($science['enabled']);
+        Assert::same('halfHour', $science['rules'][0]['every']);
+    }
 }

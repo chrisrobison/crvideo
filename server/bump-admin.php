@@ -35,6 +35,22 @@ declare(strict_types=1);
 //                          creator UI always submits the complete object)
 // POST {action:"delete", id}
 //                       -> removes bumps/<id>.json
+//
+// A bump's PLAYBACK scheduling -- which channel shows it, and when -- is a
+// completely separate concern, stored per channel (channels/<id>/
+// bump-schedule.json), never inside the bump's own JSON: the same bump can
+// be scheduled on several channels, or on none, independent of how it was
+// built. See channels/player-adapters.js's "bump scheduling" header for WHY
+// this is resolved and driven entirely client-side (by wall clock) rather
+// than published into schedule.json.
+//
+// GET  ?action=schedules -> every channel's current bump-schedule.json
+//                            (or {enabled:false, rules:[]} if it has none)
+// POST {action:"save_schedule", channel_id, enabled, rules}
+//                       -> full replace of channels/<id>/bump-schedule.json.
+//                          Each rule is {bumpId, every, offsetSeconds?,
+//                          durationSeconds} -- "every" is "hour"/"halfHour"/
+//                          "day"; `bumpId` must reference an existing bump.
 
 require_once __DIR__ . '/lib/AdminSupport.php';
 
@@ -44,6 +60,8 @@ const BUMP_ADMIN_ID_PATTERN = '/^[a-z0-9][a-z0-9-]{0,59}$/';
 const BUMP_ADMIN_BG_TYPES = ['video', 'image', 'color'];
 const BUMP_ADMIN_AUDIO_SOURCES = ['music', 'ambience', 'custom'];
 const BUMP_ADMIN_STYLE_KEYS = ['accent', 'accentWarm', 'bg', 'bg2', 'fg', 'muted'];
+const BUMP_ADMIN_SCHEDULE_PERIODS = ['hour' => 3600, 'halfHour' => 1800, 'day' => 86400];
+const BUMP_ADMIN_MAX_SCHEDULE_RULES = 20;
 const BUMP_ADMIN_MAX_AUDIO_LAYERS = 2; // matches the two fixed <audio> slots in channels/bump-player.js's template
 
 final class BumpAdminValidationError extends RuntimeException
@@ -381,6 +399,82 @@ function bump_admin_list_media(string $repoRoot = ADMIN_ROOT, string $channelsDi
     return ['video' => $video, 'music' => $music, 'ambience' => $ambience, 'channels' => $channels];
 }
 
+// ---------- channel bump scheduling (channels/<id>/bump-schedule.json) ----------
+
+/** @return array{bumpId:string, every:string, offsetSeconds:float, durationSeconds:float} */
+function bump_admin_normalize_schedule_rule(mixed $rule, string $bumpsDir): array
+{
+    if (!is_array($rule)) {
+        throw new BumpAdminValidationError('Each schedule rule must be an object.');
+    }
+    $bumpId = $rule['bumpId'] ?? null;
+    if (!bump_admin_valid_id($bumpId) || !is_file("$bumpsDir/$bumpId.json")) {
+        throw new BumpAdminValidationError('rules[].bumpId must reference an existing bump.');
+    }
+    $every = $rule['every'] ?? null;
+    if (!is_string($every) || !array_key_exists($every, BUMP_ADMIN_SCHEDULE_PERIODS)) {
+        throw new BumpAdminValidationError('rules[].every must be one of: ' . implode(', ', array_keys(BUMP_ADMIN_SCHEDULE_PERIODS)));
+    }
+    $period = BUMP_ADMIN_SCHEDULE_PERIODS[$every];
+    $offset = $rule['offsetSeconds'] ?? 0;
+    if (!is_numeric($offset) || $offset < 0 || $offset >= $period) {
+        throw new BumpAdminValidationError("rules[].offsetSeconds must be between 0 and " . ($period - 1) . " for every=\"$every\".");
+    }
+    $duration = $rule['durationSeconds'] ?? null;
+    if (!is_numeric($duration) || $duration <= 0 || $duration > $period) {
+        throw new BumpAdminValidationError('rules[].durationSeconds must be a positive number of seconds, at most one full period.');
+    }
+    return ['bumpId' => (string) $bumpId, 'every' => $every, 'offsetSeconds' => (float) $offset, 'durationSeconds' => (float) $duration];
+}
+
+/** @return array{enabled:bool, rules:list<array>} */
+function bump_admin_normalize_schedule(array $body, string $bumpsDir = BUMP_ADMIN_ROOT): array
+{
+    $rules = $body['rules'] ?? [];
+    if (!is_array($rules) || !array_is_list($rules)) {
+        throw new BumpAdminValidationError('rules must be a list.');
+    }
+    if (count($rules) > BUMP_ADMIN_MAX_SCHEDULE_RULES) {
+        throw new BumpAdminValidationError('rules supports at most ' . BUMP_ADMIN_MAX_SCHEDULE_RULES . ' entries.');
+    }
+    return [
+        'enabled' => (bool) ($body['enabled'] ?? false),
+        'rules' => array_map(fn (mixed $r): array => bump_admin_normalize_schedule_rule($r, $bumpsDir), $rules),
+    ];
+}
+
+/** @return array{schedule: array<string,mixed>} */
+function bump_admin_save_schedule(array $body, string $channelsDir = ADMIN_CHANNELS_DIR, string $bumpsDir = BUMP_ADMIN_ROOT): array
+{
+    $channelId = $body['channel_id'] ?? null;
+    $dir = admin_existing_channel_dir($channelId, $channelsDir);
+    if ($dir === null) {
+        throw new BumpAdminValidationError('Unknown or invalid channel_id.');
+    }
+    $normalized = bump_admin_normalize_schedule($body, $bumpsDir);
+    $doc = ['schema_version' => 1] + $normalized;
+    admin_atomic_write_json("$dir/bump-schedule.json", $doc);
+    return ['schedule' => $doc];
+}
+
+/** @return list<array{id:string, name:string, enabled:bool, rules:list<array>}> every channel, whether or not it has a bump-schedule.json yet */
+function bump_admin_list_schedules(string $channelsDir = ADMIN_CHANNELS_DIR): array
+{
+    $out = [];
+    foreach (admin_list_channel_dirs($channelsDir) as $id => $dir) {
+        $meta = is_file("$dir/meta.json") ? json_decode((string) file_get_contents("$dir/meta.json"), true) : null;
+        $path = "$dir/bump-schedule.json";
+        $doc = is_file($path) ? json_decode((string) file_get_contents($path), true) : null;
+        $out[] = [
+            'id' => $id,
+            'name' => is_array($meta) && is_string($meta['name'] ?? null) ? $meta['name'] : $id,
+            'enabled' => is_array($doc) && ($doc['enabled'] ?? false) === true,
+            'rules' => is_array($doc) && is_array($doc['rules'] ?? null) ? $doc['rules'] : [],
+        ];
+    }
+    return $out;
+}
+
 // ---------------------------------------------------------------------
 // HTTP dispatch -- runs only when actually serving a web request, never
 // when this file is `require`d by the test suite (SAPI is "cli" there).
@@ -397,6 +491,9 @@ if (PHP_SAPI !== 'cli') {
             if ($action === 'media') {
                 admin_json_response(200, ['ok' => true] + bump_admin_list_media());
             }
+            if ($action === 'schedules') {
+                admin_json_response(200, ['ok' => true, 'channels' => bump_admin_list_schedules()]);
+            }
             admin_json_response(400, ['ok' => false, 'error' => 'Unknown GET action.']);
         }
 
@@ -407,6 +504,7 @@ if (PHP_SAPI !== 'cli') {
                 'create' => bump_admin_create($body),
                 'update' => bump_admin_update($body),
                 'delete' => bump_admin_delete($body),
+                'save_schedule' => bump_admin_save_schedule($body),
                 default => throw new BumpAdminValidationError('Unknown action.'),
             };
             admin_json_response(200, ['ok' => true] + $result);

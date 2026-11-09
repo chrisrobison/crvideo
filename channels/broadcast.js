@@ -20,7 +20,8 @@
 
 import { fetchJson, resolveCatalog } from "./catalog-resolver.js";
 import {
-  Html5PlayerAdapter, YouTubePlayerAdapter, ContinuityRenderer, resolveProvider, computeBackoffMs, computeDriftCorrection,
+  Html5PlayerAdapter, YouTubePlayerAdapter, ContinuityRenderer, BumpRenderer,
+  resolveProvider, computeBackoffMs, computeDriftCorrection, locateActiveBump,
 } from "./player-adapters.js";
 
 export const CHANNEL_ID = /^[a-z0-9][a-z0-9-]*$/;
@@ -364,6 +365,16 @@ export async function loadChannel(id, meta = null) {
     // with no announcer enabled (the default, and every channel before
     // this existed) just gets back an empty list and nothing changes.
     announcementsUrl: new URL(meta.announcements || "announcements.json", base).href,
+    // Optional per-channel BUMP schedule (channels/<id>/bump-schedule.json)
+    // -- clock-anchored rules ("every hour, on the hour, for 12s, show
+    // bump X") naming a bumps/<id>.json by id. NOT the bumper theme above
+    // (themeUrl) and NOT baked into schedule.json -- see player-adapters.js's
+    // "bump scheduling" header for why this is resolved and driven entirely
+    // client-side. Lazily resolved, same posture as catalogUrl/themeUrl/
+    // announcementsUrl: a channel with no bump-schedule.json (the default,
+    // and every channel before this existed) gets back {enabled:false,
+    // rules:[]} and nothing about its playback changes at all.
+    bumpScheduleUrl: new URL(meta.bumpSchedule || "bump-schedule.json", base).href,
     timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0, formatTitle),
     // Phase 4/5 of docs/guide-update.md: the guide's own program-level
     // projection of the same schedule -- see buildEpgTimeline()'s header.
@@ -426,6 +437,53 @@ export function loadAnnouncements(channel) {
     );
   }
   return announcementManifests.get(channel.announcementsUrl);
+}
+
+const bumpSchedules = new Map();
+
+/** A channel's optional `bump-schedule.json` (clock-anchored bump rules --
+ *  see player-adapters.js's "bump scheduling" header and
+ *  BroadcastPlayer.tick()'s bump branch below), cached per channel.
+ *  Resolves to `{enabled:false, rules:[]}` -- never throws -- when the
+ *  file is missing/malformed/disabled, which is exactly what every channel
+ *  without a bump schedule configured already looks like: a pure
+ *  enrichment layer, same posture as loadTheme()/loadAnnouncements(). */
+export function loadBumpSchedule(channel) {
+  if (!bumpSchedules.has(channel.bumpScheduleUrl)) {
+    bumpSchedules.set(channel.bumpScheduleUrl, fetchJson(channel.bumpScheduleUrl)
+      .then((doc) => ({
+        enabled: doc?.enabled === true,
+        rules: Array.isArray(doc?.rules) ? doc.rules : [],
+      }))
+      .catch(() => ({ enabled: false, rules: [] })));
+  }
+  return bumpSchedules.get(channel.bumpScheduleUrl);
+}
+
+const bumpDefinitions = new Map();
+
+/** One bump's own JSON definition (bumps/<id>.json -- a plain static file,
+ *  global/not per-channel, see bumps/README.md), cached by id. Resolves to
+ *  `null` -- never throws -- for an unknown/malformed id, which simply
+ *  means that rule's window is skipped (see BroadcastPlayer.tick()) rather
+ *  than crashing anything. */
+export function loadBumpDefinition(id) {
+  if (!bumpDefinitions.has(id)) {
+    bumpDefinitions.set(id, fetchJson(new URL(`../bumps/${id}.json`, CHANNELS_URL)).catch(() => null));
+  }
+  return bumpDefinitions.get(id);
+}
+
+/** Resolves every bumpId a channel's bump-schedule.json `rules` actually
+ *  reference into `{[id]: definition}}` (an entry is simply absent, never
+ *  null, for an id that failed to resolve) -- the shape
+ *  BroadcastPlayer.tick() looks bump definitions up in. */
+export async function loadBumpDefinitionsFor(rules) {
+  const ids = [...new Set((rules || []).map((r) => r?.bumpId).filter(Boolean))];
+  const defs = await Promise.all(ids.map((id) => loadBumpDefinition(id)));
+  const out = {};
+  ids.forEach((id, i) => { if (defs[i]) out[id] = defs[i]; });
+  return out;
 }
 
 /**
@@ -511,8 +569,8 @@ const MAX_RETRIES_PER_PROGRAM = 5; // bounded: after this many failures, stop re
  * (autoplay was refused; call resume() from a click).
  */
 export class BroadcastPlayer {
-  constructor(video, { youtubeContainer = null, continuityContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
-    Object.assign(this, { video, youtubeContainer, continuityContainer, onAiring, onState });
+  constructor(video, { youtubeContainer = null, continuityContainer = null, bumpContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
+    Object.assign(this, { video, youtubeContainer, continuityContainer, bumpContainer, onAiring, onState });
     this.timeline = null;
     this.airing = null;
     this.state = null;
@@ -524,6 +582,7 @@ export class BroadcastPlayer {
     this.retryAt = 0;
     this.retriesExhausted = false;
     this.lastDriftCheck = 0;
+    this.activeBump = null; // {bumpId, startsAt, endsAt} while a clock-anchored bump is drawn over whatever's airing -- see tick()'s bump branch
 
     const onStateChange = (state) => {
       if (state === "playing") { this.failures = 0; this.retriesExhausted = false; }
@@ -540,6 +599,11 @@ export class BroadcastPlayer {
     // to the ordinary station-break slate, same as an unsupported
     // provider already does.
     this.continuityRenderer = continuityContainer ? new ContinuityRenderer(continuityContainer) : null;
+    // Bump scheduling (see player-adapters.js's "bump scheduling" header):
+    // only built when a page passes a container, same opt-in posture as
+    // continuityRenderer above -- a page that doesn't pass one just never
+    // shows a bump, same as it never has.
+    this.bumpRenderer = bumpContainer ? new BumpRenderer(bumpContainer) : null;
 
     this.tick = this.tick.bind(this);
   }
@@ -578,6 +642,7 @@ export class BroadcastPlayer {
     // viewer's mute/unmute choice must follow them into and out of a
     // continuity card, not reset to always-muted or always-audible.
     this.continuityRenderer?.setMuted(muted);
+    this.bumpRenderer?.setMuted(muted);
   }
 
   /** Patches fields onto the CURRENT channelMeta object in place --
@@ -605,6 +670,23 @@ export class BroadcastPlayer {
 
   tick() {
     if (!this.timeline) return;
+
+    // Bump scheduling (see player-adapters.js's "bump scheduling" header):
+    // checked FIRST, ahead of everything else below, including a
+    // continuity occurrence baked into the published schedule -- a bump is
+    // an explicit, clock-guaranteed interruption, so it always wins any
+    // overlap rather than the two needing a tie-break. Neither `this.airing`
+    // nor the underlying adapter's position is touched while a bump's
+    // window is open; see _enterBump()/_exitBump().
+    const bumpWindow = this.bumpRenderer ? locateActiveBump(this.channelMeta?.bumpSchedule, now()) : null;
+    if (bumpWindow) {
+      if (!this.activeBump || this.activeBump.startsAt !== bumpWindow.startsAt || this.activeBump.bumpId !== bumpWindow.bumpId) {
+        this._enterBump(bumpWindow);
+      }
+      return;
+    }
+    if (this.activeBump) this._exitBump();
+
     const loc = locate(this.timeline);
     if (!this.airing || Math.abs(loc.startsAt - this.airing.startsAt) > 0.001) {
       this.switchTo(loc);
@@ -623,6 +705,57 @@ export class BroadcastPlayer {
         );
         if (target !== null) this.activeAdapter.seek(target);
       }
+    }
+  }
+
+  /** Draws a clock-anchored bump over whatever is currently airing,
+   *  without touching `this.airing`/the underlying schedule at all -- see
+   *  player-adapters.js's "bump scheduling" header for why this is a
+   *  deliberate overlay, never a pause. A no-op (the window is simply
+   *  skipped, as if it never matched) if that bump's own definition
+   *  hasn't resolved yet -- see broadcast.js's loadBumpDefinitionsFor(),
+   *  which player-view.js's tune() races in parallel with setTimeline(). */
+  _enterBump(window) {
+    const definition = this.channelMeta?.bumpDefinitions?.[window.bumpId];
+    if (!definition) return;
+    this.activeBump = window;
+    if (this.activeAdapter) this.activeAdapter.pause();
+    this.video.hidden = true;
+    if (this.youtubeContainer) this.youtubeContainer.hidden = true;
+    this.continuityRenderer?.hide();
+    const upcoming = airings(this.timeline, now(), now() + 12 * 3600)
+      .filter((a) => a.playable)
+      .slice(0, 6)
+      .map((a) => ({ title: a.title, startsAt: a.startsAt }));
+    this.bumpRenderer.show(definition, upcoming, this.channelMeta, now, this.muted);
+    this.setState("bump");
+  }
+
+  /** Reverses _enterBump() once its window closes. Real time kept
+   *  advancing the whole time the bump was drawn over whatever it
+   *  interrupted (see this file's "bump scheduling" header), so this is
+   *  never a plain resume from wherever playback happened to be paused:
+   *
+   *  - A normal html5/youtube program was active: resume IN PLACE with a
+   *    hard reseek to its now-current live point -- deliberately NOT a
+   *    full switchTo()/load() cycle, which would force an unnecessary
+   *    rebuffer of a video that was simply paused, not actually swapped.
+   *  - A continuity card (or a slate/gap -- `this.activeAdapter` is null
+   *    either way) was showing instead: there's nothing to resume in
+   *    place, so `this.airing` is cleared to force the very next ordinary
+   *    tick() to call switchTo() fresh, reusing ITS already-correct
+   *    per-type logic rather than re-deriving it here. */
+  _exitBump() {
+    this.activeBump = null;
+    this.bumpRenderer?.hide();
+    if (this.activeAdapter) {
+      this.video.hidden = this.activeProvider !== "html5";
+      if (this.youtubeContainer) this.youtubeContainer.hidden = this.activeProvider !== "youtube";
+      this.activeAdapter.play();
+      this.activeAdapter.seek(Math.max(0, now() - (this.airing?.startsAt ?? now())));
+      this.lastDriftCheck = 0; // force an immediate drift re-check next tick rather than waiting out DRIFT_CHECK_MS
+    } else {
+      this.airing = null;
     }
   }
 
@@ -699,6 +832,7 @@ export class BroadcastPlayer {
     this.adapters.html5.destroy();
     this.adapters.youtube?.destroy();
     this.continuityRenderer?.destroy();
+    this.bumpRenderer?.destroy();
   }
 
   load() {
