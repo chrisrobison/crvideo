@@ -1,0 +1,16 @@
+{
+    "_note": "AI continuity announcer configuration (channels/announcer/README.md). Absent entirely, this channel's announcer stays off -- this file is the one and only opt-in switch. Voice \"am_adam\" is a real voice bundled in Kokoro's default voices-v1.0.bin (see tools/kokoro-server/); any voice GET /voices on your Kokoro server reports is valid here.",
+    "enabled": true,
+    "voice": "am_adam",
+    "speed": 1.0,
+    "language": "en-us",
+    "style": "Warm, friendly pet-channel announcer",
+    "tone": "Cheerful, affectionate, family-friendly",
+    "targetDuration": 12,
+    "types": ["coming_up_next", "channel_id"],
+    "writer": {
+        "provider": "claude-cli",
+        "model": "sonnet"
+    },
+    "automaticGeneration": true
+}
