@@ -315,6 +315,16 @@ const YT_FATAL_ERROR_CODES = new Set([100, 101, 150]);
  * below only disable the unrelated end-of-video "related videos" grid
  * and annotations, which YouTube's own docs list as ordinary embed
  * options, not a branding workaround.
+ *
+ * `container` itself is NEVER handed to `new YT.Player(...)` directly --
+ * see _ensurePlayer()'s disposable `mount` child. The IFrame API replaces
+ * whatever element you give its constructor with the `<iframe>` itself,
+ * which would silently detach `container` from the document the first
+ * time a video loads -- exactly the node BroadcastPlayer.switchTo() (see
+ * broadcast.js) toggles `.hidden` on to show/hide this adapter against
+ * the HTML5 <video> underneath it. Routing the API's replacement onto a
+ * throwaway inner element keeps `container` a stable, always-attached
+ * node that still visibly contains the iframe either way.
  */
 export class YouTubePlayerAdapter extends PlayerAdapter {
   constructor(container, { onStateChange = () => {}, onError = () => {} } = {}) {
@@ -337,8 +347,14 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
 
   _ensurePlayer() {
     if (this._playerPromise) return this._playerPromise;
+    // See this class's docblock: hand the API a disposable mount it's
+    // free to replace, never `this.container` itself.
+    const mount = document.createElement("div");
+    mount.style.width = "100%";
+    mount.style.height = "100%";
+    this.container.appendChild(mount);
     this._playerPromise = loadYouTubeIframeApi().then((YT) => new Promise((resolve) => {
-      this.player = new YT.Player(this.container, {
+      this.player = new YT.Player(mount, {
         height: "100%",
         width: "100%",
         playerVars: {
