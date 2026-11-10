@@ -138,6 +138,8 @@ const TEMPLATE = `
 
 const HTMLElementBase = typeof HTMLElement !== "undefined" ? HTMLElement : class {};
 
+const REPO_ROOT_URL = new URL("../", import.meta.url);
+
 export class BumpPlayer extends HTMLElementBase {
   constructor() {
     super();
@@ -239,7 +241,14 @@ export class BumpPlayer extends HTMLElementBase {
    *  every other media reference in this project already uses (plain
    *  static files, never a PHP streaming endpoint -- see bumps/README.md). */
   _resolveUrl(path) {
-    return String(path || "").replace(/^\/+/, "");
+    const rel = String(path || "").replace(/^\/+/, "");
+    if (!rel) return "";
+    // Resolve against the repo root (this module lives in channels/), NOT
+    // the hosting page -- the admin UI is at scheduler/ and live channels
+    // under channels/, so a page-relative "media/..." 404s on both. Also
+    // makes the result absolute, matching what el.src reads back, so the
+    // `el.src !== url` checks below don't reload media on every edit.
+    return new URL(rel, REPO_ROOT_URL).href;
   }
 
   _wireAnnouncement() {

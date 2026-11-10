@@ -600,6 +600,9 @@ class CfBumpCreator extends HTMLElement {
       el.querySelector("cr-bump").stop();
     });
 
+    // _renderEditor() already pushed the draft, but before this <cr-bump>
+    // existed (it targeted the previous render's element) -- push again now.
+    this._pushDraftToPreview();
     this._pushPreviewUpcoming();
   }
 
