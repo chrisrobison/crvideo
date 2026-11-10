@@ -165,7 +165,11 @@ is `"continue"` (the default, used for live playback), `"loop"`, or
 `bump-state` (play/pause), `bump-media` (when media metadata loads, with
 real clip lengths) and `bump-ended` (only with `"stop"`). Setting
 `.definition` while playing is safe: only sources whose URL changed are
-reloaded, and playback continues from the current time.
+reloaded, and playback continues from the current time. Two editor-only
+properties, `.masterVolume` (monitor level) and `.hiddenLayers` (the
+timeline's eye toggles: `"text"`, `"voice"`, `"music"`, `"background"`),
+affect only the preview. Live playback never sets them, and they are
+never part of a bump definition.
 
 ## The creator UI
 

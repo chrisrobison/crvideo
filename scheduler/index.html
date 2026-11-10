@@ -36,6 +36,10 @@
      lower cascade priority than ANY author rule, not lower specificity. */
   [data-view][hidden]{ display:none !important; }
   .admin-view{ padding:16px 20px 24px; max-width:1400px; margin:0 auto; }
+  /* Bump Studio is a full-bleed, viewport-height workspace: its panels
+     scroll independently instead of the page. */
+  .app:has(> .studio-view:not([hidden])){ height:100vh; min-height:0; }
+  .studio-view{ flex:1; min-height:0; }
 </style>
 </head>
 <body>
@@ -61,8 +65,8 @@
   <div data-view="programming" class="admin-view" hidden>
     <cf-channel-admin></cf-channel-admin>
   </div>
-  <div data-view="bumps" class="admin-view" hidden>
-    <cf-bump-creator></cf-bump-creator>
+  <div data-view="bumps" class="studio-view" hidden>
+    <cf-bump-studio></cf-bump-studio>
   </div>
 </div>
 <cf-drive-folder-picker></cf-drive-folder-picker>

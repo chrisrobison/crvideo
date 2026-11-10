@@ -12,11 +12,11 @@
 // object (background/audio/announcement/upcoming/style); `.upcoming` is
 // the caller-supplied list of real {title, startsAt, subtitle?} entries --
 // NEVER invented or stored here, see bumps/README.md's "upcoming.count"
-// note for why. The bump creator UI (scheduler/js/components/
-// cf-bump-creator.js) feeds either hand-typed sample rows or a real
+// note for why. The Bump Studio preview (scheduler/js/components/
+// bump-studio/bump-preview.js) feeds either editable sample rows or a real
 // channel's real current lineup (via channels/broadcast.js, read-only);
-// a future live-playback integration would feed the real channel being
-// interrupted.
+// live playback (BumpRenderer in player-adapters.js) feeds the real channel
+// being interrupted.
 //
 // Unlike continuity-card.js (which auto-renders/auto-plays its narration
 // the instant ContinuityRenderer.show() sets its properties, because it's
@@ -297,6 +297,8 @@ export class BumpPlayer extends HTMLElementBase {
     this._muted = true;
     this._clock = new CompositionClock();
     this._endBehavior = "continue";
+    this._masterVolume = 1; // preview-only monitor level, never part of a bump definition
+    this._hiddenLayers = new Set(); // preview-only "eye" toggles: "text" | "voice" | "music" | "background"
     this._forceSeek = new Set(); // media elements whose metadata just arrived -- re-seek them on the next _sync()
     this._lastSeekAt = new WeakMap();
     this._wired = false;
@@ -375,6 +377,30 @@ export class BumpPlayer extends HTMLElementBase {
   }
 
   get endBehavior() { return this._endBehavior; }
+
+  /** Editor monitor level (0-1) applied on top of every layer's own volume.
+   *  Preview-only: live playback never sets it, and it is never saved. */
+  set masterVolume(v) {
+    this._masterVolume = clampVolume(v, 1);
+    this._applyVolumes();
+  }
+
+  get masterVolume() { return this._masterVolume; }
+
+  /** Editor-only layer visibility ("text", "voice", "music", "background"),
+   *  the timeline's eye toggles. Hidden audio layers are silenced and a
+   *  hidden background falls back to the plain default backdrop; timing is
+   *  unaffected. Live playback never sets this. */
+  set hiddenLayers(list) {
+    this._hiddenLayers = new Set(Array.isArray(list) || list instanceof Set ? list : []);
+    const q = (sel) => this._root.querySelector(sel);
+    const hideBg = this._hiddenLayers.has("background");
+    for (const sel of [".bgvideo", ".bgimage", ".bgcolor"]) q(sel).style.visibility = hideBg ? "hidden" : "";
+    this._applyVolumes();
+    this._sync();
+  }
+
+  get hiddenLayers() { return [...this._hiddenLayers]; }
 
   /** Current composition time in seconds (see the timing header above). */
   get currentTime() { return compositionTime(this._clock.elapsed, this._definition, this._endBehavior); }
@@ -483,12 +509,16 @@ export class BumpPlayer extends HTMLElementBase {
   _applyVolumes() {
     const layers = this._definition?.audio || [];
     const ann = this._root.querySelector(".announcement");
-    const ducked = this._clock.playing && !ann.hidden && !ann.paused && !ann.ended;
+    const ducked = this._clock.playing && !ann.hidden && !ann.paused && !ann.ended && !this._hiddenLayers?.has("voice");
     const duckTo = this._definition?.announcement?.duckTo ?? 0.3;
+    const master = this._masterVolume ?? 1;
+    const musicOff = this._hiddenLayers?.has("music");
     this._bgAudioEls().forEach((el, i) => {
       if (el.hidden) return;
-      el.volume = ducked ? duckedVolume(layers[i]?.volume, duckTo) : clampVolume(layers[i]?.volume);
+      const v = ducked ? duckedVolume(layers[i]?.volume, duckTo) : clampVolume(layers[i]?.volume);
+      el.volume = musicOff ? 0 : v * master;
     });
+    ann.volume = this._hiddenLayers?.has("voice") ? 0 : master;
   }
 
   /** Starts playback at composition time `offset` (default 0 -- from the
@@ -575,7 +605,7 @@ export class BumpPlayer extends HTMLElementBase {
     const annDur = Number.isFinite(ann.duration) && ann.duration > 0 ? ann.duration : null;
     const state = layerStateAt(def, t, { announcementDuration: annDur });
 
-    q(".wrap").classList.toggle("text-off", !state.textVisible);
+    q(".wrap").classList.toggle("text-off", !state.textVisible || this._hiddenLayers.has("text"));
 
     const video = q(".bgvideo");
     if (!video.hidden && video.getAttribute("src")) this._drive(video, t, true, playing, force);

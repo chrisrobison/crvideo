@@ -14,7 +14,7 @@ import "./components/cf-program-monitor.js";
 import "./components/cf-drive-folder-picker.js";
 import "./components/cf-series-admin.js";
 import "./components/cf-channel-admin.js";
-import "./components/cf-bump-creator.js";
+import "./components/bump-studio/cf-bump-studio.js";
 import { viewState } from "./view.js";
 
 // Toggles which top-level view section is visible -- see view.js. The
