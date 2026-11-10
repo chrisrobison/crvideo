@@ -159,6 +159,13 @@ class CfBumpStudio extends HTMLElement {
         root.getElementById(`ws-${w}`).hidden = w !== s.workspace;
       }
     }
+    if (keys.has("workspace") || keys.has("status")) {
+      // The bump picker / Save / Revert act on Compose's draft; elsewhere
+      // they'd read as saving the schedule or library, so only the unsaved
+      // pill stays visible (it still says a bump draft is pending).
+      const compose = s.workspace === "compose";
+      for (const sel of ["#picker", ".revert", ".save"]) root.querySelector(sel).hidden = !compose;
+    }
     if (keys.has("bumps") || keys.has("selection") || keys.has("status")) this._renderPicker();
     if (keys.has("draft") || keys.has("selection") || keys.has("saving") || keys.has("status")) {
       root.querySelector(".pill.draft").hidden = !store.isDirty && !store.isNew;

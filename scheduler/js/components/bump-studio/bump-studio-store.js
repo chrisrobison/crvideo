@@ -14,7 +14,8 @@
 //
 // Components subscribe to one "change" event; `detail.keys` names which
 // slices changed ("bumps", "selection", "draft", "layer", "workspace",
-// "preview", "playback", "schedules", "media", "status", "saving") and
+// "preview", "playback", "schedules", "media", "status", "saving",
+// "scheduleFocus") and
 // `detail.source` names who caused it, so a component can skip re-rendering
 // in response to its own edit (keeping focus/caret/drag state intact).
 
@@ -53,6 +54,7 @@ class BumpStudioStore extends EventTarget {
       draft: null,
       layer: "background",
       workspace: "compose",
+      scheduleFocus: null, // channel id another workspace asked Schedule to show (see openInSchedule)
       preview: {
         source: "sample", // "sample" | a channel id
         sample: clone(DEFAULT_SAMPLE),
@@ -197,6 +199,14 @@ class BumpStudioStore extends EventTarget {
     if (!this.select(id)) return false;
     this.setWorkspace("compose");
     return true;
+  }
+
+  /** Library -> Schedule with a channel shown. The Schedule workspace owns
+   *  its unsaved-edit guard, so this only publishes the request. */
+  openInSchedule(channelId) {
+    this.state.scheduleFocus = channelId;
+    this.emit("scheduleFocus");
+    this.setWorkspace("schedule");
   }
 
   // ---------- persistence (explicit actions only) ----------

@@ -50,7 +50,10 @@ declare(strict_types=1);
 // than published into schedule.json.
 //
 // GET  ?action=schedules -> every channel's current bump-schedule.json
-//                            (or {enabled:false, rules:[]} if it has none)
+//                            (or {enabled:false, rules:[]} if it has none),
+//                            plus read-only display hints: `logo` (repo-
+//                            relative path, or null) and `accent` (the
+//                            channel theme's accent color, or null)
 // POST {action:"save_schedule", channel_id, enabled, rules}
 //                       -> full replace of channels/<id>/bump-schedule.json.
 //                          Each rule is {bumpId, every, offsetSeconds?,
@@ -544,7 +547,7 @@ function bump_admin_save_schedule(array $body, string $channelsDir = ADMIN_CHANN
     return ['schedule' => $doc];
 }
 
-/** @return list<array{id:string, name:string, enabled:bool, rules:list<array>}> every channel, whether or not it has a bump-schedule.json yet */
+/** @return list<array{id:string, name:string, enabled:bool, rules:list<array>, logo:?string, accent:?string}> every channel, whether or not it has a bump-schedule.json yet */
 function bump_admin_list_schedules(string $channelsDir = ADMIN_CHANNELS_DIR): array
 {
     $out = [];
@@ -552,11 +555,17 @@ function bump_admin_list_schedules(string $channelsDir = ADMIN_CHANNELS_DIR): ar
         $meta = is_file("$dir/meta.json") ? json_decode((string) file_get_contents("$dir/meta.json"), true) : null;
         $path = "$dir/bump-schedule.json";
         $doc = is_file($path) ? json_decode((string) file_get_contents($path), true) : null;
+        $logo = is_array($meta) && is_string($meta['logo'] ?? null) ? basename($meta['logo']) : null;
+        $accent = is_array($meta) && is_string($meta['theme']['accent'] ?? null) ? $meta['theme']['accent'] : null;
         $out[] = [
             'id' => $id,
             'name' => is_array($meta) && is_string($meta['name'] ?? null) ? $meta['name'] : $id,
             'enabled' => is_array($doc) && ($doc['enabled'] ?? false) === true,
             'rules' => is_array($doc) && is_array($doc['rules'] ?? null) ? $doc['rules'] : [],
+            // Display-only hints for the Schedule workspace's channel list
+            // (additive; never part of bump-schedule.json).
+            'logo' => $logo !== null && $logo !== '' && is_file("$dir/$logo") ? "channels/$id/$logo" : null,
+            'accent' => $accent !== null && preg_match('/^#[0-9a-fA-F]{3,8}$/', $accent) ? $accent : null,
         ];
     }
     return $out;

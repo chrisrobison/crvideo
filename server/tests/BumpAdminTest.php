@@ -580,4 +580,20 @@ final class BumpAdminTest
         Assert::true($science['enabled']);
         Assert::same('halfHour', $science['rules'][0]['every']);
     }
+
+    public function testListSchedulesAddsLogoAndAccentDisplayHints(): void
+    {
+        file_put_contents("$this->channelsDir/science/meta.json", json_encode(['name' => 'Science & Engineering', 'logo' => 'logo.svg', 'theme' => ['accent' => '#4dd8e6']]));
+        file_put_contents("$this->channelsDir/science/logo.svg", '<svg/>');
+        mkdir("$this->channelsDir/plain", 0775, true);
+        file_put_contents("$this->channelsDir/plain/meta.json", json_encode(['name' => 'Plain', 'logo' => 'missing.svg', 'theme' => ['accent' => 'red; x']]));
+        $byId = [];
+        foreach (bump_admin_list_schedules($this->channelsDir) as $c) {
+            $byId[$c['id']] = $c;
+        }
+        Assert::same('channels/science/logo.svg', $byId['science']['logo']);
+        Assert::same('#4dd8e6', $byId['science']['accent']);
+        Assert::null($byId['plain']['logo']); // a logo file that doesn't exist is not advertised
+        Assert::null($byId['plain']['accent']); // nor a non-color accent
+    }
 }
