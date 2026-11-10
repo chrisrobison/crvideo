@@ -8,10 +8,10 @@
 // can create/edit/delete any bump and change what any channel schedules.
 
 import { escapeHtml, toast } from "../../utils.js";
-import { studioStore as store, WORKSPACES } from "./bump-studio-store.js";
+import { studioStore as store, WORKSPACES, changeOf } from "./bump-studio-store.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import { studioCSS, icons } from "./studio-ui.js";
 import { viewState } from "../../view.js";
-import { TOPICS, subscribe } from "../../../../js/bus.js";
 import "./bump-compose.js";
 import "./bump-schedule-workspace.js";
 import "./bump-library-workspace.js";
@@ -21,7 +21,7 @@ const TAB_ICONS = { compose: icons.edit, schedule: icons.calendar, library: icon
 
 class CfBumpStudio extends HTMLElement {
   connectedCallback() {
-    if (this.shadowRoot) return;
+    if (this.shadowRoot) { this._listen(); return; }
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
@@ -99,25 +99,31 @@ class CfBumpStudio extends HTMLElement {
       if (viewState.current !== "bumps") return;
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") { e.preventDefault(); this._save(); }
     };
-    document.addEventListener("keydown", this._onKey);
-    this._onChange = (e) => this._render(e.detail);
-    store.addEventListener("change", this._onChange);
+    this._listen();
     this._render({ keys: new Set(["status", "workspace", "draft"]) });
+  }
+
+  _listen() {
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    document.addEventListener("keydown", this._onKey, { signal });
+    subscribe(TOPICS.STUDIO_CHANGED, (msg) => this._render(changeOf(msg)), { signal });
     // Load lazily, the first time the BUMPS view is actually shown, so the
     // other scheduler views never pay for bump data or media metadata.
     // (retained: the current view arrives immediately.)
-    let done = false;
-    const off = subscribe(TOPICS.APP_VIEW_STATE, ({ data }) => {
-      if (done || data?.view !== "bumps" || store.state.status !== "idle") return;
-      done = true;
-      queueMicrotask(() => off()); // a retained delivery can arrive before subscribe() has returned `off`
-      store.load();
-    }, { retained: true });
+    if (store.state.status === "idle") {
+      let done = false;
+      const off = subscribe(TOPICS.APP_VIEW_STATE, ({ data }) => {
+        if (done || data?.view !== "bumps" || store.state.status !== "idle") return;
+        done = true;
+        queueMicrotask(() => off()); // a retained delivery can arrive before subscribe() has returned `off`
+        store.load();
+      }, { retained: true, signal });
+    }
   }
 
   disconnectedCallback() {
-    document.removeEventListener("keydown", this._onKey);
-    store.removeEventListener("change", this._onChange);
+    this._subs?.abort();
   }
 
   async _save() {

@@ -15,7 +15,8 @@
 // automatically (duration mismatches and overlaps are only flagged).
 
 import { escapeHtml, toast } from "../../utils.js";
-import { studioStore as store } from "./bump-studio-store.js";
+import { studioStore as store, changeOf } from "./bump-studio-store.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import { studioCSS, icons, makeThumb, mediaUrl } from "./studio-ui.js";
 import { effectiveDuration, bumpDuration } from "./bump-model.js";
 import {
@@ -43,7 +44,7 @@ class BumpScheduleWorkspace extends HTMLElement {
   }
 
   connectedCallback() {
-    if (this.shadowRoot) return;
+    if (this.shadowRoot) { this._listen(); return; }
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
@@ -228,8 +229,7 @@ class BumpScheduleWorkspace extends HTMLElement {
     });
     root.querySelector(".save-all").addEventListener("click", () => this._save());
 
-    this._onChange = ({ detail }) => {
-      const k = detail.keys;
+    this._onChange = ({ keys: k }) => {
       if (k.has("scheduleFocus") && store.state.scheduleFocus) {
         const id = store.state.scheduleFocus;
         store.state.scheduleFocus = null;
@@ -246,17 +246,22 @@ class BumpScheduleWorkspace extends HTMLElement {
       }
       if (k.has("workspace")) this._tick();
     };
-    store.addEventListener("change", this._onChange);
     this._onUnload = (e) => { if (this._isDirty()) { e.preventDefault(); e.returnValue = ""; } };
-    window.addEventListener("beforeunload", this._onUnload);
-    this._timer = setInterval(() => this._tick(), 1000);
+    this._listen();
     if (store.state.status === "ready") this._loadChannel(store.state.schedules[0]?.id || null);
     else this._renderAll();
   }
 
+  _listen() {
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    subscribe(TOPICS.STUDIO_CHANGED, (msg) => this._onChange(changeOf(msg)), { signal });
+    window.addEventListener("beforeunload", this._onUnload, { signal });
+    this._timer = setInterval(() => this._tick(), 1000);
+  }
+
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
-    window.removeEventListener("beforeunload", this._onUnload);
+    this._subs?.abort();
     clearInterval(this._timer);
   }
 

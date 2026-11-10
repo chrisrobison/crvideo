@@ -9,7 +9,8 @@
 // The Duration stepper here edits the bump's real `duration` field.
 
 import { escapeHtml } from "../../utils.js";
-import { studioStore as store } from "./bump-studio-store.js";
+import { studioStore as store, changeOf, PLAYBACK_CHANGE } from "./bump-studio-store.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import { studioCSS, icons } from "./studio-ui.js";
 import { fmtTime, effectiveDuration, bumpDuration, DEFAULT_BUMP_DURATION, MIN_DURATION, MAX_DURATION } from "./bump-model.js";
 import "../../../../channels/bump-player.js";
@@ -22,7 +23,7 @@ function parseDur(text) {
 
 class BumpPreview extends HTMLElement {
   connectedCallback() {
-    if (this.shadowRoot) return;
+    if (this.shadowRoot) { store.player = this._el; this._listen(); return; }
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
@@ -165,22 +166,29 @@ class BumpPreview extends HTMLElement {
     this._onDocDown = (e) => {
       if (!q(".pop").hidden && !e.composedPath().includes(q(".src"))) this._toggleSample(false);
     };
-    document.addEventListener("pointerdown", this._onDocDown);
 
+    // <cr-bump>'s DOM events (bump-time is per-frame) feed the store's
+    // transport slice directly -- never through the bus.
     const pushPlayback = () => store.setPlayback({ time: this._el.currentTime, duration: this._el.duration, playing: this._el.playing });
     this._el.addEventListener("bump-time", pushPlayback);
     this._el.addEventListener("bump-state", pushPlayback);
     this._el.addEventListener("bump-ended", pushPlayback);
     this._el.addEventListener("bump-media", (e) => store.setPlayback({ durations: e.detail }));
 
-    this._onChange = ({ detail }) => this._update(detail);
-    store.addEventListener("change", this._onChange);
+    this._listen();
     this._update({ keys: new Set(["selection", "draft", "preview", "playback", "media"]) });
   }
 
+  _listen() {
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    document.addEventListener("pointerdown", this._onDocDown, { signal });
+    subscribe(TOPICS.STUDIO_CHANGED, (msg) => this._update(changeOf(msg)), { signal });
+    store.transport.addEventListener("playback", () => this._update(PLAYBACK_CHANGE), { signal });
+  }
+
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
-    document.removeEventListener("pointerdown", this._onDocDown);
+    this._subs?.abort();
     if (store.player === this._el) store.player = null;
   }
 

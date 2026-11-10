@@ -15,7 +15,8 @@
 // background video shows a filmstrip repeated per pass.
 
 import { escapeHtml, toast } from "../../utils.js";
-import { studioStore as store } from "./bump-studio-store.js";
+import { studioStore as store, changeOf, PLAYBACK_CHANGE } from "./bump-studio-store.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import { studioCSS, icons, rafThrottle, mediaUrl } from "./studio-ui.js";
 import { audioPeaks, waveformUrl, filmstrip } from "./media-peaks.js";
 import {
@@ -39,7 +40,7 @@ class BumpTimeline extends HTMLElement {
   }
 
   connectedCallback() {
-    if (this.shadowRoot) return;
+    if (this.shadowRoot) { this._listen(); return; }
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
@@ -173,22 +174,28 @@ class BumpTimeline extends HTMLElement {
       if (e.key === "ArrowUp") { e.preventDefault(); items[(i - 1 + items.length) % items.length]?.focus(); }
     });
     this._onDocDown = (e) => { if (!e.composedPath().includes(menu)) this._closeMenu(); };
-    document.addEventListener("pointerdown", this._onDocDown);
 
     new ResizeObserver(() => { this._renderRuler(); this._renderPlayhead(); }).observe(this._scroller);
-    this._onChange = ({ detail }) => {
-      const k = detail.keys;
-      if (k.has("playback")) this._renderPlayhead();
-      if (this._drag && detail.source === "timeline") return; // our own drag echo -- the DOM is already up to date
-      if (k.has("draft") || k.has("selection") || k.has("media") || k.has("layer") || k.has("preview") || (k.has("playback") && this._durationsChanged())) this._render();
-    };
-    store.addEventListener("change", this._onChange);
+    this._listen();
     this._render();
   }
 
+  _listen() {
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    document.addEventListener("pointerdown", this._onDocDown, { signal });
+    subscribe(TOPICS.STUDIO_CHANGED, (msg) => this._onChange(changeOf(msg)), { signal });
+    store.transport.addEventListener("playback", () => this._onChange(PLAYBACK_CHANGE), { signal });
+  }
+
+  _onChange({ keys: k, source }) {
+    if (k.has("playback")) this._renderPlayhead();
+    if (this._drag && source === "timeline") return; // our own drag echo -- the DOM is already up to date
+    if (k.has("draft") || k.has("selection") || k.has("media") || k.has("layer") || k.has("preview") || (k.has("playback") && this._durationsChanged())) this._render();
+  }
+
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
-    document.removeEventListener("pointerdown", this._onDocDown);
+    this._subs?.abort();
   }
 
   _duration() { return effectiveDuration(store.state.draft); }

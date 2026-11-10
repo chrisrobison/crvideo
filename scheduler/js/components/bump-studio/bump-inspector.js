@@ -11,7 +11,8 @@
 // so typing in a field never re-renders the field you're typing in, and
 // drags on the timeline update the inspector's numbers live.
 
-import { studioStore as store, LAYERS } from "./bump-studio-store.js";
+import { studioStore as store, LAYERS, changeOf, PLAYBACK_CHANGE } from "./bump-studio-store.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import { studioCSS, icons, mediaUrl } from "./studio-ui.js";
 import { fileLabel, findAnnouncement } from "./bump-model.js";
 import { GeneralSection } from "./inspector-general.js";
@@ -55,7 +56,7 @@ class Audition {
 
 class BumpInspector extends HTMLElement {
   connectedCallback() {
-    if (this.shadowRoot) return;
+    if (this.shadowRoot) { this._listen(); return; }
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
@@ -99,13 +100,19 @@ class BumpInspector extends HTMLElement {
     this.shadowRoot.querySelector(".trash").addEventListener("click", () => {
       if (store.state.layer === "announcer") store.updateDraft((d) => { d.announcement = null; }, "inspector");
     });
-    this._onChange = ({ detail }) => this._update(detail);
-    store.addEventListener("change", this._onChange);
+    this._listen();
     this._mountSection();
   }
 
+  _listen() {
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    subscribe(TOPICS.STUDIO_CHANGED, (msg) => this._update(changeOf(msg)), { signal });
+    store.transport.addEventListener("playback", () => this._update(PLAYBACK_CHANGE), { signal });
+  }
+
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
+    this._subs?.abort();
     this._section?.destroy?.();
     this._audition.stop();
   }
