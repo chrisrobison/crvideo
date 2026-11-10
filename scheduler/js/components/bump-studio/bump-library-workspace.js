@@ -5,15 +5,17 @@
 //
 // Selection here is local to the Library (browsing never touches Compose's
 // draft or trips its unsaved-changes guard). Double-click / Enter / "Open
-// in Compose" loads the bump into Compose through store.openInCompose(),
-// which does guard unsaved edits. Rename / Duplicate / Delete go through
-// the store's existing actions. Deleting a scheduled bump lists the
+// in Compose" publishes the `studio.compose.open` bus command (handled by
+// store.openInCompose(), which does guard unsaved edits); "used by"
+// channel chips publish `studio.schedule.open`. Rename / Duplicate /
+// Delete go through the store's existing actions. Deleting a scheduled bump lists the
 // affected channels and never edits their schedules (the backend doesn't
 // either -- rules pointing at a deleted bump stay until removed in
 // Schedule, and the player skips them).
 
 import { escapeHtml, toast } from "../../utils.js";
-import { studioStore as store } from "./bump-studio-store.js";
+import { studioStore as store, changeOf } from "./bump-studio-store.js";
+import { TOPICS, publish, subscribe } from "../../../../js/bus.js";
 import { studioCSS, icons, makeThumb, mediaUrl } from "./studio-ui.js";
 import {
   fileLabel, bumpDuration, effectiveDuration, findAnnouncement, announcementTypeLabel, STYLE_DEFAULTS,
@@ -60,7 +62,7 @@ class BumpLibraryWorkspace extends HTMLElement {
   }
 
   connectedCallback() {
-    if (this.shadowRoot) return;
+    if (this.shadowRoot) { this._listen(); return; }
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
@@ -254,12 +256,12 @@ class BumpLibraryWorkspace extends HTMLElement {
     });
     results.addEventListener("dblclick", (e) => {
       const item = e.target.closest("[data-id]");
-      if (item && !e.target.closest(".kebab, .nm input")) store.openInCompose(item.dataset.id);
+      if (item && !e.target.closest(".kebab, .nm input")) publish(TOPICS.STUDIO_COMPOSE_OPEN, { id: item.dataset.id });
     });
     results.addEventListener("keydown", (e) => {
       const item = e.target.closest("[data-id]");
       if (!item || e.target.closest("input")) return;
-      if (e.key === "Enter") { e.preventDefault(); store.openInCompose(item.dataset.id); }
+      if (e.key === "Enter") { e.preventDefault(); publish(TOPICS.STUDIO_COMPOSE_OPEN, { id: item.dataset.id }); }
       else if (e.key === " ") { e.preventDefault(); this._select(item.dataset.id); }
       else if (e.key === "ArrowDown" || e.key === "ArrowUp" || e.key === "ArrowRight" || e.key === "ArrowLeft") {
         const items = [...results.querySelectorAll("[data-id]")];
@@ -284,7 +286,6 @@ class BumpLibraryWorkspace extends HTMLElement {
       else if (e.key === "Tab") this._closeMenu();
     });
     this._onDocDown = (e) => { if (this._menu && !e.composedPath().includes(menu)) this._closeMenu(); };
-    document.addEventListener("pointerdown", this._onDocDown, true);
     this._onScroll = () => this._closeMenu();
     this.addEventListener("scroll", this._onScroll, { passive: true });
 
@@ -314,19 +315,24 @@ class BumpLibraryWorkspace extends HTMLElement {
       if (bump?.background?.type === "video" && e.detail?.video) { this._bgDur.set(bump.background.url, e.detail.video); this._fillBgDur(); }
     });
 
-    this._onChange = ({ detail }) => {
-      const k = detail.keys;
+    this._onChange = ({ keys: k }) => {
       if (k.has("workspace") && store.state.workspace !== "library") { this._el.stop(); this._closeMenu(); this._renderHud(); }
       if (["bumps", "schedules", "status", "media"].some((x) => k.has(x))) this._renderAll();
       else if (k.has("preview") && this._selected) this._el.upcoming = store.state.preview.upcoming;
     };
-    store.addEventListener("change", this._onChange);
+    this._listen();
     this._renderAll();
   }
 
+  _listen() {
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    document.addEventListener("pointerdown", this._onDocDown, { capture: true, signal });
+    subscribe(TOPICS.STUDIO_CHANGED, (msg) => this._onChange(changeOf(msg)), { signal });
+  }
+
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
-    document.removeEventListener("pointerdown", this._onDocDown, true);
+    this._subs?.abort();
   }
 
   // ---------- data ----------
@@ -632,7 +638,7 @@ class BumpLibraryWorkspace extends HTMLElement {
         ${ICON.palette}<dt>Accent color</dt><dd><span class="chip-sw" style="background:${escapeHtml(accent || STYLE_DEFAULTS.accent)}"></span>${escapeHtml((accent || STYLE_DEFAULTS.accent).toUpperCase())}${accent ? "" : ` <span class="faint">(default)</span>`}</dd>
       </dl>
       <button class="open primary" style="width:100%; margin-top:12px">${ICON.open}<span>Open in Compose</span></button>`;
-    body.querySelector(".open").addEventListener("click", () => store.openInCompose(b.id));
+    body.querySelector(".open").addEventListener("click", () => publish(TOPICS.STUDIO_COMPOSE_OPEN, { id: b.id }));
     const refs = store.referencesTo(b.id);
     used.innerHTML = `<h3>Used by channels (${refs.length})</h3>${refs.length ? `<ul>${refs.map((c) => {
       const meta = store.state.schedules.find((s) => s.id === c.id) || {};
@@ -641,7 +647,7 @@ class BumpLibraryWorkspace extends HTMLElement {
       return `<li><button data-ch="${escapeHtml(c.id)}" title="Show ${escapeHtml(c.name)}'s schedule">${lg}<span><span class="cn">${escapeHtml(c.name)}</span><span class="cr" style="display:block">${escapeHtml(rules)}</span></span>
         <span class="st ${c.enabled ? "active" : "off"}">${c.enabled ? "Active" : "Disabled"}</span></button></li>`;
     }).join("")}</ul>` : `<p class="small muted" style="margin:0">Not scheduled on any channel.</p>`}`;
-    used.querySelectorAll("button[data-ch]").forEach((btn) => btn.addEventListener("click", () => store.openInSchedule(btn.dataset.ch)));
+    used.querySelectorAll("button[data-ch]").forEach((btn) => btn.addEventListener("click", () => publish(TOPICS.STUDIO_SCHEDULE_OPEN, { channelId: btn.dataset.ch })));
   }
 
   _renderHud() {
@@ -704,7 +710,7 @@ class BumpLibraryWorkspace extends HTMLElement {
     this._closeMenu();
     const bump = this._bump(id);
     if (!bump) return;
-    if (act === "open") store.openInCompose(id);
+    if (act === "open") publish(TOPICS.STUDIO_COMPOSE_OPEN, { id });
     else if (act === "rename") this._startRename(id);
     else if (act === "duplicate") {
       try {

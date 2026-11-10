@@ -1,4 +1,5 @@
 import { store } from "../store.js";
+import { SCHEDULER_CHANGE_TOPICS, subscribe } from "../../../js/bus.js";
 import {
   baseComponentCSS, escapeHtml, secToTimeValue, timeValueToSec, fmtHMS, parseHMSToSec, toast,
 } from "../utils.js";
@@ -16,13 +17,13 @@ class CfDetailsPanel extends HTMLElement {
     if (!this.shadowRoot) {
       this.attachShadow({ mode: "open" });
       this._render();
-      this._onChange = (e) => { if (e.detail.reason !== "tick") this._renderBody(); };
-      store.addEventListener("change", this._onChange);
     }
+    this._subs = new AbortController();
+    subscribe(SCHEDULER_CHANGE_TOPICS, () => this._renderBody(), { signal: this._subs.signal });
     this._renderBody();
   }
 
-  disconnectedCallback() { store.removeEventListener("change", this._onChange); }
+  disconnectedCallback() { this._subs?.abort(); }
 
   _render() {
     this.shadowRoot.innerHTML = `

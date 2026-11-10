@@ -1,4 +1,5 @@
 import { store } from "../store.js";
+import { SCHEDULER_CHANGE_TOPICS, subscribe } from "../../../js/bus.js";
 import { baseComponentCSS, escapeHtml } from "../utils.js";
 
 const BAR_COUNT = 22;
@@ -33,8 +34,6 @@ class CfProgramMonitor extends HTMLElement {
     if (!this.shadowRoot) {
       this.attachShadow({ mode: "open" });
       this._render();
-      this._onChange = (e) => { if (e.detail.reason !== "tick") this._renderScreen(); };
-      store.addEventListener("change", this._onChange);
       this.shadowRoot.querySelector(".fullscreen-btn").addEventListener("click", () => {
         const stage = this.shadowRoot.querySelector(".stage");
         if (stage.requestFullscreen) stage.requestFullscreen().catch(() => {});
@@ -42,11 +41,13 @@ class CfProgramMonitor extends HTMLElement {
       this._meterLoop = setInterval(() => this._tickMeters(), 160);
       this._viewerLoop = setInterval(() => this._tickViewers(), 2500);
     }
+    this._subs = new AbortController();
+    subscribe(SCHEDULER_CHANGE_TOPICS, () => this._renderScreen(), { signal: this._subs.signal });
     this._renderScreen();
   }
 
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
+    this._subs?.abort();
     clearInterval(this._meterLoop);
     clearInterval(this._viewerLoop);
   }

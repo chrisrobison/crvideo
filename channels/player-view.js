@@ -56,11 +56,20 @@
 //     real navigation) calls `event.preventDefault()`, which also
 //     cancels the link's own default navigation -- watch.html, which
 //     wants the plain navigation, just doesn't listen.
+//   - `cr-airing` event: fired on every airing (program/break) change.
+//
+// Page bus (js/bus.js, docs/bus-topics.md): the DOM events above stay the
+// element's API for its direct host; the discrete, page-level facts are
+// ALSO published on the bus -- player.state (retained snapshot),
+// player.channel.changed, player.program.changed, player.bump.started /
+// player.bump.ended. Nothing per-frame (video time, <cr-bump>'s
+// bump-time) is ever published.
 
 import {
   CHANNEL_ID, listChannels, loadChannel, loadCatalog, loadTheme, loadAnnouncements, loadBumpSchedule, loadBumpDefinitionsFor,
   airings, nextProgram, now, clock, minutesLeft, BroadcastPlayer,
 } from "./broadcast.js";
+import { TOPICS, publish, publishState } from "../js/bus.js";
 
 const COMING_UP = 4; // programs listed under "Coming Up", after the "Up Next" one
 
@@ -210,6 +219,7 @@ export class ChannelPlayer extends HTMLElementBase {
     this._dialTimer = 0;
     this._engaged = false;
     this._slateKey = null;
+    this._busBump = null; // the activeBump last announced on the bus
     this._boundKeydown = (e) => this._onKeydown(e);
 
     const q = (sel) => this._root.querySelector(sel);
@@ -248,7 +258,7 @@ export class ChannelPlayer extends HTMLElementBase {
     this.player.start();
     this._wake();
     if (!this._everySecond) {
-      this._everySecond = setInterval(() => this._renderInfo(), 1000);
+      this._everySecond = setInterval(() => { this._renderInfo(); this._publishPlayerState(); }, 1000);
     }
     if (!this.compact) document.addEventListener("keydown", this._boundKeydown);
   }
@@ -340,7 +350,10 @@ export class ChannelPlayer extends HTMLElementBase {
       bumpSchedule: this._bumpSchedule, bumpDefinitions: this._bumpDefinitions,
     });
     this._updateHint();
-    if (changed) this.dispatchEvent(new CustomEvent("cr-channel-change", { detail: { channel: next } }));
+    if (changed) {
+      this.dispatchEvent(new CustomEvent("cr-channel-change", { detail: { channel: next } }));
+      publish(TOPICS.PLAYER_CHANNEL_CHANGED, { channelId: next.id, name: next.name ?? null, number: next.number ?? null });
+    }
   }
 
   // ---------- sound + full screen ----------
@@ -388,6 +401,35 @@ export class ChannelPlayer extends HTMLElementBase {
     // transition AND right after tune() first loads a channel, same
     // triggering as this element's own _renderInfo() above.
     this.dispatchEvent(new CustomEvent("cr-airing", { detail: { airing } }));
+    publish(TOPICS.PLAYER_PROGRAM_CHANGED, {
+      channelId: this._channel?.id ?? null, title: airing.playable ? airing.title : null,
+      playable: !!airing.playable, startsAt: airing.startsAt ?? null, endsAt: airing.endsAt ?? null,
+    });
+    this._publishPlayerState();
+  }
+
+  /** Mirrors the player's discrete state onto the bus: the retained
+   *  player.state snapshot (publishState() skips unchanged snapshots, so
+   *  the 1 Hz call from connectedCallback's timer is cheap) plus
+   *  player.bump.started/ended whenever BroadcastPlayer.activeBump changes
+   *  (checked here rather than only on state changes, because two
+   *  back-to-back bump windows never leave the "bump" state). */
+  _publishPlayerState() {
+    const channelId = this._channel?.id ?? null;
+    const bump = this.player.activeBump;
+    const prev = this._busBump;
+    if (prev !== bump && (prev?.bumpId !== bump?.bumpId || prev?.startsAt !== bump?.startsAt)) {
+      if (prev) publish(TOPICS.PLAYER_BUMP_ENDED, { channelId, bumpId: prev.bumpId });
+      if (bump) publish(TOPICS.PLAYER_BUMP_STARTED, { channelId, bumpId: bump.bumpId, startsAt: bump.startsAt ?? null, endsAt: bump.endsAt ?? null });
+    }
+    this._busBump = bump;
+    const a = this.player.airing;
+    publishState(TOPICS.PLAYER_STATE, {
+      channelId, state: this.player.state ?? null,
+      title: a?.playable ? a.title : null, playable: !!a?.playable,
+      startsAt: a?.startsAt ?? null, endsAt: a?.endsAt ?? null,
+      bumpId: bump?.bumpId ?? null,
+    });
   }
 
   _onState(state, airing) {
@@ -406,6 +448,7 @@ export class ChannelPlayer extends HTMLElementBase {
       q(".hint").hidden = false;
     }
     this._renderInfo();
+    this._publishPlayerState();
   }
 
   _renderInfo() {

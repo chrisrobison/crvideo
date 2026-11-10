@@ -6,6 +6,7 @@
 // everything else in ChannelFlow stays framework/dependency free.
 import { GOOGLE_CLIENT_ID } from "./drive-config.js";
 import { toast } from "./utils.js";
+import { TOPICS, publishState } from "../../js/bus.js";
 
 const SCOPE = "https://www.googleapis.com/auth/drive";
 const GIS_SRC = "https://accounts.google.com/gsi/client";
@@ -16,9 +17,9 @@ let accessToken = null;
 let tokenExpiresAt = 0;
 let gisLoadPromise = null;
 
-export const driveEvents = new EventTarget();
-
-function emit(detail) { driveEvents.dispatchEvent(new CustomEvent("change", { detail })); }
+// Connection changes are announced as the retained `drive.auth.state`
+// bus topic ({connected}); see docs/bus-topics.md.
+function emit(detail) { publishState(TOPICS.DRIVE_AUTH_STATE, detail); }
 
 // Restore a still-valid token so a page reload doesn't force re-auth mid-session.
 (function restoreToken() {
@@ -206,3 +207,6 @@ export async function writeJsonFile(folderId, name, obj) {
   if (!res.ok) throw new Error(`Drive upload failed: ${res.status} ${(await res.text()).slice(0, 200)}`);
   return res.json();
 }
+
+// Initial snapshot (a token restored from sessionStorage counts as connected).
+emit({ connected: isConnected() });

@@ -3,7 +3,8 @@
 // through the store, which guards unsaved edits.
 
 import { escapeHtml, toast } from "../../utils.js";
-import { studioStore as store } from "./bump-studio-store.js";
+import { studioStore as store, changeOf } from "./bump-studio-store.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import { studioCSS, icons, makeThumb } from "./studio-ui.js";
 import { DEFAULT_BUMP_DURATION } from "./bump-model.js";
 
@@ -17,7 +18,7 @@ class BumpList extends HTMLElement {
   }
 
   connectedCallback() {
-    if (this.shadowRoot) return;
+    if (this.shadowRoot) { this._listen(); return; }
     this.attachShadow({ mode: "open" });
     this.shadowRoot.innerHTML = `
       <style>
@@ -104,20 +105,23 @@ class BumpList extends HTMLElement {
       else if (e.key === "ArrowUp") { e.preventDefault(); items[(i - 1 + items.length) % items.length].focus(); }
     });
     this._onDocDown = (e) => { if (!e.composedPath().includes(root.querySelector(".menu"))) this._closeMenu(); };
-    document.addEventListener("pointerdown", this._onDocDown);
-
-    this._onChange = ({ detail }) => {
-      const k = detail.keys;
-      if (k.has("bumps") || k.has("selection") || k.has("schedules") || k.has("status")) this._renderList();
-      else if (k.has("draft")) this._renderDirty();
-    };
-    store.addEventListener("change", this._onChange);
+    this._listen();
     this._renderList();
   }
 
+  _listen() {
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    document.addEventListener("pointerdown", this._onDocDown, { signal });
+    subscribe(TOPICS.STUDIO_CHANGED, (msg) => {
+      const k = changeOf(msg).keys;
+      if (k.has("bumps") || k.has("selection") || k.has("schedules") || k.has("status")) this._renderList();
+      else if (k.has("draft")) this._renderDirty();
+    }, { signal });
+  }
+
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
-    document.removeEventListener("pointerdown", this._onDocDown);
+    this._subs?.abort();
   }
 
   _visibleBumps() {

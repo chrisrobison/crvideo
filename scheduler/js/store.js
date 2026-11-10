@@ -1,12 +1,17 @@
-// ChannelFlow application state — a plain EventTarget-based store.
-// Components subscribe with store.addEventListener('change', handler)
-// and re-render. No framework, no virtual DOM: just events + DOM writes.
+// ChannelFlow application state. The store owns the state and its
+// mutators; every mutation is announced on the page bus (js/bus.js, topics
+// mapped in store-notify.js -- e.g. scheduler.blocks.changed,
+// scheduler.channel.state). Components subscribe to those topics and
+// re-read state from here. No framework, no virtual DOM: just bus
+// messages + DOM writes.
 
 import {
   uid, DAY_SECONDS, todayKey, dateKey, nowUTCSeconds,
   unionCoverage, countOverlaps, toast, fmtHMS, secToClock,
 } from "./utils.js";
 import * as drive from "./drive.js";
+import { publish, publishState } from "../../js/bus.js";
+import { schedulerNotifications, schedulerInitialState } from "./store-notify.js";
 
 const STORAGE_KEY = "channelflow:v1";
 const ASSET_BASE = "../"; // sample mp4s live one directory up from /scheduler/
@@ -125,9 +130,8 @@ function defaultSchedule(fillerTitle = "Morning Replay") {
   };
 }
 
-class Store extends EventTarget {
+class Store {
   constructor() {
-    super();
     this.channels = [
       { id: "mabuhay", name: "Mabuhay TV" },
       { id: "cinema", name: "Classic Cinema" },
@@ -150,6 +154,7 @@ class Store extends EventTarget {
     this._liveTimezone = null; // remembered from the last loadLiveSchedule(), reused on publish
 
     this._load();
+    for (const n of schedulerInitialState(this)) publishState(n.topic, n.data);
     this._probeDurations();
     this._tick = this._tick.bind(this);
     setInterval(this._tick, 1000);
@@ -194,8 +199,13 @@ class Store extends EventTarget {
     } catch (_) { /* storage full/unavailable — keep working in memory */ }
   }
 
-  _emit(reason) {
-    this.dispatchEvent(new CustomEvent("change", { detail: { reason } }));
+  /** Announces a mutation on the bus (see store-notify.js for the
+   *  reason -> topic mapping). */
+  _emit(reason, opts) {
+    for (const n of schedulerNotifications(reason, this, opts)) {
+      if (n.state) publishState(n.topic, n.data);
+      else publish(n.topic, n.data);
+    }
   }
 
   // ---------- probing real media durations ----------
@@ -826,7 +836,7 @@ class Store extends EventTarget {
       let msg = `Published ${data.entries} segment${data.entries === 1 ? "" : "s"} to the live channel.`;
       if (skipped) msg += ` ${skipped} segment${skipped === 1 ? "" : "s"} without a driveFileId/url were skipped.`;
       toast(msg, "good");
-      this._emit("publish");
+      this._emit("publish", { target: "live" });
     } catch (e) {
       toast(`Live publish failed: ${e.message}`, "danger");
     }

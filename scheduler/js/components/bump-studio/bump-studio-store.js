@@ -12,14 +12,26 @@
 // saveSchedule() -- all explicit user actions. Editing a draft therefore
 // never changes what any channel airs until Save.
 //
-// Components subscribe to one "change" event; `detail.keys` names which
-// slices changed ("bumps", "selection", "draft", "layer", "workspace",
-// "preview", "playback", "schedules", "media", "status", "saving",
-// "scheduleFocus") and
-// `detail.source` names who caused it, so a component can skip re-rendering
-// in response to its own edit (keeping focus/caret/drag state intact).
+// Notifications go out on the page bus (js/bus.js, docs/bus-topics.md):
+//
+//   studio.changed {keys, source} -- one message per mutation. `keys` names
+//     which slices changed ("bumps", "selection", "draft", "layer",
+//     "workspace", "preview", "schedules", "media", "status", "saving",
+//     "scheduleFocus") and `source` names who caused it, so a component
+//     can skip re-rendering in response to its own edit (keeping focus/
+//     caret/drag state intact). Studio components subscribe to this and
+//     re-read `studioStore.state`.
+//   bumps.* / studio.*.state -- semantic topics derived from the same
+//     mutations for anything page-level (see publishDerived()).
+//   studio.compose.open / studio.schedule.open -- commands this store
+//     handles (cross-workspace hand-offs, e.g. from the Library).
+//
+// The "playback" slice is the exception: it changes at the preview's
+// frame rate (<cr-bump> bump-time), so it never touches the bus. It is
+// announced as a plain `playback` DOM event on `studioStore.transport`.
 
 import { bumpAdminApi } from "../../admin-api.js";
+import { TOPICS, publish, publishState, subscribe } from "../../../../js/bus.js";
 import {
   emptyDraft, draftFromBump, toPayload, draftsEqual, validateDraft, clampTiming,
   referencesTo, uniqueName,
@@ -39,9 +51,8 @@ const DEFAULT_SAMPLE = [
 
 const clone = (v) => JSON.parse(JSON.stringify(v));
 
-class BumpStudioStore extends EventTarget {
+class BumpStudioStore {
   constructor() {
-    super();
     this.state = {
       status: "idle", // "idle" | "loading" | "ready" | "error"
       error: null,
@@ -67,15 +78,42 @@ class BumpStudioStore extends EventTarget {
       playback: { time: 0, duration: 0, playing: false, muted: false, loop: false, volume: 1, durations: { video: null, audio: [null, null], announcement: null } },
     };
     this.player = null; // the preview's <cr-bump>, registered by bump-preview.js
+    this.transport = new EventTarget(); // per-frame "playback" events -- deliberately NOT on the bus
     this._broadcast = null;
     this._channelCache = new Map();
     this._refreshSampleUpcoming();
+    this._publishDerived(["status", "workspace", "selection", "draft"], null);
+    subscribe(TOPICS.STUDIO_COMPOSE_OPEN, ({ data }) => { if (data?.id) this.openInCompose(data.id); });
+    subscribe(TOPICS.STUDIO_SCHEDULE_OPEN, ({ data }) => { if (data?.channelId) this.openInSchedule(data.channelId); });
   }
 
-  // ---------- events ----------
+  // ---------- notifications ----------
 
+  /** Announces that `keys` slices changed (see the header). */
   emit(keys, source = null) {
-    this.dispatchEvent(new CustomEvent("change", { detail: { keys: new Set([].concat(keys)), source } }));
+    const list = [...new Set([].concat(keys))];
+    publish(TOPICS.STUDIO_CHANGED, { keys: list, source });
+    this._publishDerived(list, source);
+  }
+
+  /** Semantic, page-level topics derived from a mutation. State topics go
+   *  through publishState(), so e.g. bumps.draft.state is only republished
+   *  when the draft's save flags actually change, not on every keystroke. */
+  _publishDerived(keys, source) {
+    const s = this.state;
+    const has = (k) => keys.includes(k);
+    if (has("status")) publishState(TOPICS.STUDIO_STATUS_STATE, { status: s.status, error: s.error });
+    if (has("workspace")) publishState(TOPICS.STUDIO_WORKSPACE_STATE, { workspace: s.workspace });
+    if (has("bumps")) publish(TOPICS.BUMPS_LIST_CHANGED, { count: s.bumps.length, source });
+    if (has("selection") || has("draft") || has("bumps")) publishState(TOPICS.BUMPS_SELECTION_STATE, { id: s.selectedId, isNew: this.isNew });
+    if (has("selection") || has("draft") || has("saving")) {
+      publishState(TOPICS.BUMPS_DRAFT_STATE, { id: s.selectedId, isNew: this.isNew, dirty: this.isDirty, canSave: this.canSave });
+    }
+  }
+
+  /** Per-frame transport notification (time/playing/durations/volume...). */
+  _emitPlayback() {
+    this.transport.dispatchEvent(new Event("playback"));
   }
 
   // ---------- derived ----------
@@ -194,15 +232,17 @@ class BumpStudioStore extends EventTarget {
     this.emit("workspace");
   }
 
-  /** Library -> Compose with a bump loaded (guards unsaved edits). */
+  /** Library -> Compose with a bump loaded (guards unsaved edits). Also
+   *  reachable as the `studio.compose.open` bus command. */
   openInCompose(id) {
     if (!this.select(id)) return false;
     this.setWorkspace("compose");
     return true;
   }
 
-  /** Library -> Schedule with a channel shown. The Schedule workspace owns
-   *  its unsaved-edit guard, so this only publishes the request. */
+  /** Library -> Schedule with a channel shown (also reachable as the
+   *  `studio.schedule.open` bus command). The Schedule workspace owns its
+   *  unsaved-edit guard, so this only records the request for it. */
   openInSchedule(channelId) {
     this.state.scheduleFocus = channelId;
     this.emit("scheduleFocus");
@@ -220,6 +260,7 @@ class BumpStudioStore extends EventTarget {
     this.emit("saving");
     try {
       const payload = toPayload(draft);
+      const wasNew = !this.state.selectedId;
       const saved = this.state.selectedId
         ? await bumpAdminApi.update(this.state.selectedId, payload)
         : await bumpAdminApi.create(payload);
@@ -228,6 +269,7 @@ class BumpStudioStore extends EventTarget {
       this.state.saved = draftFromBump(saved);
       this.state.draft = clone(this.state.saved);
       this.emit(["bumps", "selection", "draft"], "save");
+      publish(wasNew ? TOPICS.BUMPS_ITEM_CREATED : TOPICS.BUMPS_ITEM_SAVED, { id: saved.id, name: saved.name ?? null, source: "save" });
       return saved;
     } finally {
       this.state.saving = false;
@@ -252,6 +294,7 @@ class BumpStudioStore extends EventTarget {
       keys.push("draft");
     }
     this.emit(keys, "rename");
+    publish(TOPICS.BUMPS_ITEM_SAVED, { id: saved.id, name: saved.name ?? null, source: "rename" });
     return saved;
   }
 
@@ -266,6 +309,7 @@ class BumpStudioStore extends EventTarget {
     this._upsertBump(saved);
     this._loadSelection(saved.id);
     this.emit(["bumps", "selection", "draft"], "duplicate");
+    publish(TOPICS.BUMPS_ITEM_CREATED, { id: saved.id, name: saved.name ?? null, source: "duplicate" });
     return saved;
   }
 
@@ -283,6 +327,7 @@ class BumpStudioStore extends EventTarget {
       keys.push("selection", "draft");
     }
     this.emit(keys, "remove");
+    publish(TOPICS.BUMPS_ITEM_DELETED, { id });
   }
 
   _upsertBump(saved) {
@@ -298,6 +343,7 @@ class BumpStudioStore extends EventTarget {
     const schedule = await bumpAdminApi.saveSchedule(channelId, enabled, rules);
     this.state.schedules = this.state.schedules.map((c) => (c.id === channelId ? { ...c, enabled: schedule.enabled, rules: schedule.rules } : c));
     this.emit("schedules");
+    publish(TOPICS.BUMPS_SCHEDULE_SAVED, { channelId, enabled: !!schedule.enabled, ruleCount: (schedule.rules || []).length });
     return schedule;
   }
 
@@ -369,7 +415,7 @@ class BumpStudioStore extends EventTarget {
 
   setPlayback(patch) {
     Object.assign(this.state.playback, patch);
-    this.emit("playback");
+    this._emitPlayback();
   }
 
   /** Play from the playhead (or from 0 when parked at the end). Must be
@@ -392,7 +438,7 @@ class BumpStudioStore extends EventTarget {
   setMuted(muted) {
     this.state.playback.muted = !!muted;
     this.player?.setMuted(!!muted);
-    this.emit("playback");
+    this._emitPlayback();
   }
 
   /** Preview monitor level (0-1); never saved. */
@@ -400,7 +446,7 @@ class BumpStudioStore extends EventTarget {
     this.state.playback.volume = Math.min(1, Math.max(0, Number(v) || 0));
     if (this.player) this.player.masterVolume = this.state.playback.volume;
     if (this.state.playback.volume > 0 && this.state.playback.muted) this.setMuted(false);
-    this.emit("playback");
+    this._emitPlayback();
   }
 
   /** Timeline eye toggle -- hides/silences a layer in the PREVIEW only. */
@@ -415,11 +461,18 @@ class BumpStudioStore extends EventTarget {
   setLoop(loop) {
     this.state.playback.loop = !!loop;
     if (this.player) this.player.endBehavior = loop ? "loop" : "stop";
-    this.emit("playback");
+    this._emitPlayback();
   }
 }
 
 export const studioStore = new BumpStudioStore();
+
+/** A studio.changed bus message as the `{keys: Set, source}` shape the
+ *  studio components' update methods take. */
+export const changeOf = (msg) => ({ keys: new Set(msg.data?.keys || []), source: msg.data?.source ?? null });
+
+/** What a studioStore.transport "playback" event means in that shape. */
+export const PLAYBACK_CHANGE = Object.freeze({ keys: new Set(["playback"]), source: null });
 
 // Reloading/closing the tab must not silently discard unsaved work.
 if (typeof window !== "undefined") {
