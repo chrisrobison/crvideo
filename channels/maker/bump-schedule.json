@@ -1,0 +1,18 @@
+{
+    "schema_version": 1,
+    "enabled": true,
+    "rules": [
+        {
+            "bumpId": "workshop-hour",
+            "every": "hour",
+            "offsetSeconds": 0,
+            "durationSeconds": 15
+        },
+        {
+            "bumpId": "simple-color-card",
+            "every": "hour",
+            "offsetSeconds": 1800,
+            "durationSeconds": 10
+        }
+    ]
+}

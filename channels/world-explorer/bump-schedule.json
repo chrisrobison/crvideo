@@ -1,0 +1,18 @@
+{
+    "schema_version": 1,
+    "enabled": true,
+    "rules": [
+        {
+            "bumpId": "ocean-drift",
+            "every": "hour",
+            "offsetSeconds": 0,
+            "durationSeconds": 15
+        },
+        {
+            "bumpId": "night-owl",
+            "every": "hour",
+            "offsetSeconds": 1800,
+            "durationSeconds": 10
+        }
+    ]
+}
