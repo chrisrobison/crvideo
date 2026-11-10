@@ -301,6 +301,142 @@ final class BumpAdminTest
         Assert::same('Zeta Bump', $list[1]['name']);
     }
 
+    // ---------- schema_version 2: duration + timing (bumps/README.md "Timing") ----------
+
+    public function testCreateWithoutDurationStaysSchemaVersion1WithNoTimingFields(): void
+    {
+        $bump = bump_admin_create($this->validBody(), $this->bumpsDir, $this->mediaRoot)['bump'];
+        Assert::same(1, $bump['schema_version']);
+        Assert::true(!array_key_exists('duration', $bump), 'v1 bump must not gain a duration');
+        Assert::same(['count' => 3, 'label' => 'Coming Up'], $bump['upcoming']);
+        $onDisk = json_decode((string) file_get_contents("$this->bumpsDir/{$bump['id']}.json"), true);
+        Assert::same(1, $onDisk['schema_version']);
+        Assert::true(!array_key_exists('duration', $onDisk));
+    }
+
+    public function testCreateWithDurationAndTimingWritesSchemaVersion2(): void
+    {
+        $bump = bump_admin_create($this->validBody([
+            'duration' => 15,
+            'announcement' => ['url' => 'media/announcements/science/abc123.mp3', 'duckTo' => 0.3, 'start' => 2],
+            'upcoming' => ['count' => 3, 'label' => 'Coming Up', 'start' => 1.5, 'end' => 14],
+        ]), $this->bumpsDir, $this->mediaRoot)['bump'];
+        Assert::same(2, $bump['schema_version']);
+        Assert::same(15.0, $bump['duration']);
+        Assert::same(2.0, $bump['announcement']['start']);
+        Assert::same(1.5, $bump['upcoming']['start']);
+        Assert::same(14.0, $bump['upcoming']['end']);
+    }
+
+    public function testSaveAndReloadPreservesTiming(): void
+    {
+        $created = bump_admin_create($this->validBody(['duration' => 20, 'upcoming' => ['count' => 2, 'label' => 'Next', 'start' => 3, 'end' => 18]]), $this->bumpsDir, $this->mediaRoot)['bump'];
+        $list = bump_admin_list($this->bumpsDir);
+        Assert::same(20.0, (float) $list[0]['duration']);
+        Assert::same(3.0, (float) $list[0]['upcoming']['start']);
+        Assert::same(18.0, (float) $list[0]['upcoming']['end']);
+        // Re-saving the reloaded document through update round-trips unchanged.
+        $updated = bump_admin_update($list[0] + ['id' => $created['id']], $this->bumpsDir, $this->mediaRoot)['bump'];
+        Assert::same(2, $updated['schema_version']);
+        Assert::same(['count' => 2, 'label' => 'Next', 'start' => 3.0, 'end' => 18.0], $updated['upcoming']);
+    }
+
+    public function testUpdateDroppingDurationReturnsToSchemaVersion1(): void
+    {
+        $id = bump_admin_create($this->validBody(['duration' => 12]), $this->bumpsDir, $this->mediaRoot)['bump']['id'];
+        $updated = bump_admin_update($this->validBody(['id' => $id]), $this->bumpsDir, $this->mediaRoot)['bump'];
+        Assert::same(1, $updated['schema_version']);
+        Assert::true(!array_key_exists('duration', $updated));
+    }
+
+    public function testExistingVersion1RepoBumpsStillValidate(): void
+    {
+        // Every real bumps/*.json in the repo must still pass normalization
+        // unchanged (against the real media/ tree) and stay version 1.
+        $realMedia = dirname(__DIR__, 2) . '/media';
+        if (!is_dir($realMedia)) {
+            return; // media/ is not part of every checkout
+        }
+        foreach (glob(dirname(__DIR__, 2) . '/bumps/*.json') ?: [] as $path) {
+            $doc = json_decode((string) file_get_contents($path), true);
+            Assert::same(1, $doc['schema_version'], basename($path));
+            try {
+                $normalized = bump_admin_normalize($doc, $realMedia);
+            } catch (BumpAdminValidationError $e) {
+                if (str_contains($e->getMessage(), 'existing file')) {
+                    continue; // a referenced media file is absent in this checkout -- not a schema problem
+                }
+                throw $e;
+            }
+            Assert::same(1, bump_admin_schema_version($normalized), basename($path));
+            Assert::same($doc['upcoming'], $normalized['upcoming'], basename($path));
+        }
+    }
+
+    public function testDurationRejectsOutOfRangeValues(): void
+    {
+        foreach ([0, -5, 301, 'abc'] as $bad) {
+            Assert::throws(BumpAdminValidationError::class, function () use ($bad): void {
+                bump_admin_normalize($this->validBody(['duration' => $bad]), $this->mediaRoot);
+            }, 'duration ' . var_export($bad, true));
+        }
+    }
+
+    public function testTimingFieldsRequireADuration(): void
+    {
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_normalize($this->validBody(['upcoming' => ['count' => 3, 'start' => 1]]), $this->mediaRoot);
+        });
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_normalize($this->validBody(['announcement' => ['url' => 'media/announcements/science/abc123.mp3', 'start' => 1]]), $this->mediaRoot);
+        });
+    }
+
+    public function testTimingRejectsNegativeStart(): void
+    {
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_normalize($this->validBody(['duration' => 15, 'upcoming' => ['count' => 3, 'start' => -1]]), $this->mediaRoot);
+        });
+    }
+
+    public function testTimingRejectsEndPastDuration(): void
+    {
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_normalize($this->validBody(['duration' => 15, 'upcoming' => ['count' => 3, 'end' => 16]]), $this->mediaRoot);
+        });
+    }
+
+    public function testTimingRejectsEndNotAfterStart(): void
+    {
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_normalize($this->validBody(['duration' => 15, 'upcoming' => ['count' => 3, 'start' => 5, 'end' => 5]]), $this->mediaRoot);
+        });
+        Assert::throws(BumpAdminValidationError::class, function (): void {
+            bump_admin_normalize($this->validBody(['duration' => 15, 'upcoming' => ['count' => 3, 'start' => 15]]), $this->mediaRoot);
+        });
+    }
+
+    public function testAnnouncementStartMustBeInsideTheComposition(): void
+    {
+        $ann = ['url' => 'media/announcements/science/abc123.mp3'];
+        Assert::throws(BumpAdminValidationError::class, function () use ($ann): void {
+            bump_admin_normalize($this->validBody(['duration' => 10, 'announcement' => $ann + ['start' => 10]]), $this->mediaRoot);
+        });
+        Assert::throws(BumpAdminValidationError::class, function () use ($ann): void {
+            bump_admin_normalize($this->validBody(['duration' => 10, 'announcement' => $ann + ['start' => -0.5]]), $this->mediaRoot);
+        });
+        $ok = bump_admin_normalize($this->validBody(['duration' => 10, 'announcement' => $ann + ['start' => 9.5]]), $this->mediaRoot);
+        Assert::same(9.5, $ok['announcement']['start']);
+    }
+
+    public function testDurationAloneIsValidAndOmitsTimingFields(): void
+    {
+        $n = bump_admin_normalize($this->validBody(['duration' => 15]), $this->mediaRoot);
+        Assert::same(15.0, $n['duration']);
+        Assert::same(['count' => 3, 'label' => 'Coming Up'], $n['upcoming']);
+        Assert::same(2, bump_admin_schema_version($n));
+    }
+
     // ---------- media listing ----------
 
     public function testListMediaFindsFixtureFilesByExtension(): void
@@ -310,6 +446,17 @@ final class BumpAdminTest
         Assert::same('bg05.mp4', $media['video'][0]['name']);
         Assert::count(1, $media['music']);
         Assert::count(1, $media['ambience']);
+        Assert::count(0, $media['image'], 'no media/images/ dir in the fixture -> empty, not missing');
+    }
+
+    public function testListMediaFindsStillImages(): void
+    {
+        mkdir("$this->workDir/media/images", 0775, true);
+        file_put_contents("$this->workDir/media/images/card.png", 'x');
+        file_put_contents("$this->workDir/media/images/notes.txt", 'x');
+        $media = bump_admin_list_media($this->repoRoot, $this->channelsDir);
+        Assert::count(1, $media['image']);
+        Assert::same('media/images/card.png', $media['image'][0]['url']);
     }
 
     public function testListMediaOnlyOffersReadyAnnouncementsWithAudio(): void

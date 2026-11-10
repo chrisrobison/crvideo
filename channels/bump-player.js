@@ -65,6 +65,143 @@ export function normalizeUpcoming(list, count) {
     .slice(0, n);
 }
 
+// ---------- composition timing (schema_version 2, see bumps/README.md "Timing") ----------
+//
+// ONE composition-time model shared by the editor preview and live channel
+// playback: `t` = seconds since the bump began. Everything the player
+// shows/plays is a pure function of `t` (layerStateAt / mediaPosition),
+// and `t` itself is always DERIVED from a clock reading (CompositionClock),
+// never accumulated from timer ticks -- so a throttled background tab, a
+// late rAF, or a slow media seek can never make it drift. Live playback
+// starts the clock at the clock-derived offset into the scheduled window
+// (BumpRenderer.show()'s `offset`), so a viewer who tunes in mid-bump sees
+// and hears exactly what everyone else does at that instant.
+
+/** Composition length the EDITOR uses for a bump with no explicit
+ *  `duration` (every schema_version-1 bump). Display/preview only: it never
+ *  changes on-air behavior -- a v1 bump on air still runs for exactly its
+ *  schedule rule's durationSeconds, with no composition looping. */
+export const DEFAULT_BUMP_DURATION = 15;
+
+/** A bump's explicit composition length in seconds, or null (v1 / unset). */
+export function bumpDuration(def) {
+  const d = Number(def?.duration);
+  return Number.isFinite(d) && d > 0 ? d : null;
+}
+
+/** Explicit duration, else the documented editor default. */
+export function effectiveDuration(def, fallback = DEFAULT_BUMP_DURATION) {
+  return bumpDuration(def) ?? fallback;
+}
+
+/** Normalized timing for a definition. `upcomingEnd` is Infinity when not
+ *  set, so a v1 bump's text is visible for the whole interruption window
+ *  exactly as before; announcementStart 0 matches v1's "plays at once". */
+export function bumpTiming(def) {
+  const duration = bumpDuration(def);
+  const num = (v, fb) => (Number.isFinite(Number(v)) && v !== null && v !== "" ? Number(v) : fb);
+  const announcementStart = Math.max(0, num(def?.announcement?.start, 0));
+  const upcomingStart = Math.max(0, num(def?.upcoming?.start, 0));
+  const upcomingEnd = num(def?.upcoming?.end, Infinity);
+  return { duration, announcementStart, upcomingStart, upcomingEnd };
+}
+
+/**
+ * Maps real elapsed seconds since the bump began to composition time.
+ * mode "continue" (live default): a bump WITH an explicit duration loops
+ * its composition when the schedule window outlasts it; a v1 bump (no
+ * duration) just keeps running, exactly as before. "loop": always wrap at
+ * the effective duration. "stop": clamp at the effective duration.
+ */
+export function compositionTime(elapsed, def, mode = "continue") {
+  const e = Math.max(0, Number(elapsed) || 0);
+  const explicit = bumpDuration(def);
+  if (mode === "stop") return Math.min(e, effectiveDuration(def));
+  const wrapAt = mode === "loop" ? effectiveDuration(def) : explicit;
+  return wrapAt ? e % wrapAt : e;
+}
+
+/**
+ * What should be visible/audible at composition time `t`. `announcementDuration`
+ * is the clip's real length when known (metadata loaded), else null --
+ * then the clip counts as active from its start until it ends on its own.
+ */
+export function layerStateAt(def, t, { announcementDuration = null } = {}) {
+  const { announcementStart, upcomingStart, upcomingEnd } = bumpTiming(def);
+  const textVisible = t >= upcomingStart && t < upcomingEnd;
+  let announcement = null;
+  if (def?.announcement?.url) {
+    const offset = t - announcementStart;
+    const known = Number.isFinite(announcementDuration) && announcementDuration > 0;
+    const active = offset >= 0 && (!known || offset < announcementDuration);
+    announcement = { active, offset: Math.max(0, offset), before: offset < 0 };
+  }
+  return { textVisible, announcement };
+}
+
+/** Where a media element should be at composition time `t`: looping media
+ *  wraps by its own length; one-shot media clamps at its end. `mediaDuration`
+ *  unknown (metadata not loaded) => `t` as-is. */
+export function mediaPosition(t, mediaDuration, loop) {
+  if (!Number.isFinite(mediaDuration) || mediaDuration <= 0) return Math.max(0, t);
+  return loop ? ((t % mediaDuration) + mediaDuration) % mediaDuration : Math.min(Math.max(0, t), mediaDuration);
+}
+
+/** True when a playing element is far enough from `target` to need a seek
+ *  -- a small tolerance so we never fight the element's own clock. For
+ *  looping media the distance is measured around the loop seam. */
+export function needsResync(current, target, { tolerance = 0.35, loopLength = null } = {}) {
+  if (!Number.isFinite(current) || !Number.isFinite(target)) return false;
+  let diff = Math.abs(current - target);
+  if (Number.isFinite(loopLength) && loopLength > 0) diff = Math.min(diff, loopLength - diff);
+  return diff > tolerance;
+}
+
+/** How a schedule rule's window relates to a bump's composition length:
+ *  "open" (v1 bump -- the rule alone decides), "exact", "cut" (the window
+ *  ends before the composition does), or "loop" (it outlasts it). */
+export function scheduleFit(ruleDurationSeconds, def) {
+  const d = bumpDuration(def);
+  const r = Number(ruleDurationSeconds);
+  if (!d || !Number.isFinite(r)) return "open";
+  if (Math.abs(r - d) < 0.01) return "exact";
+  return r < d ? "cut" : "loop";
+}
+
+/**
+ * A play/pause/seek clock whose reading is always computed from `now()`
+ * (seconds, monotonic) rather than accumulated -- see the header above.
+ */
+export class CompositionClock {
+  constructor(now = () => (typeof performance !== "undefined" ? performance.now() : Date.now()) / 1000) {
+    this._now = now;
+    this._base = 0; // composition-elapsed seconds at _anchor
+    this._anchor = 0;
+    this.playing = false;
+  }
+
+  /** Real elapsed seconds (unwrapped -- map through compositionTime()). */
+  get elapsed() {
+    return this.playing ? this._base + (this._now() - this._anchor) : this._base;
+  }
+
+  play(from = this.elapsed) {
+    this._base = Math.max(0, Number(from) || 0);
+    this._anchor = this._now();
+    this.playing = true;
+  }
+
+  pause() {
+    this._base = this.elapsed;
+    this.playing = false;
+  }
+
+  seek(to) {
+    this._base = Math.max(0, Number(to) || 0);
+    this._anchor = this._now();
+  }
+}
+
 const TEMPLATE = `
 <style>
 :host {
@@ -109,6 +246,10 @@ const TEMPLATE = `
 
 .empty { color: var(--bp-muted); font-style: italic; }
 
+/* Text layer timing (upcoming.start/end): faded, not removed, so layout never jumps. */
+.wrap > :not(.brand) { transition: opacity .35s ease; }
+.wrap.text-off > :not(.brand) { opacity: 0; }
+
 @media (max-width: 640px) {
   .wrap { text-align: center; align-items: center; }
   .brand { justify-content: center; }
@@ -120,9 +261,9 @@ const TEMPLATE = `
 <img class="bgimage" hidden alt="">
 <div class="bgcolor" hidden></div>
 <div class="scrim"></div>
-<audio class="bgaudio0" hidden loop preload="none"></audio>
-<audio class="bgaudio1" hidden loop preload="none"></audio>
-<audio class="announcement" hidden preload="none"></audio>
+<audio class="bgaudio0" hidden loop preload="metadata"></audio>
+<audio class="bgaudio1" hidden loop preload="metadata"></audio>
+<audio class="announcement" hidden preload="metadata"></audio>
 <div class="wrap">
   <div class="brand"><img alt="" hidden><span class="name"></span></div>
   <div class="eyebrow"></div>
@@ -140,6 +281,8 @@ const HTMLElementBase = typeof HTMLElement !== "undefined" ? HTMLElement : class
 
 const REPO_ROOT_URL = new URL("../", import.meta.url);
 
+const END_BEHAVIORS = ["continue", "loop", "stop"];
+
 export class BumpPlayer extends HTMLElementBase {
   constructor() {
     super();
@@ -150,16 +293,35 @@ export class BumpPlayer extends HTMLElementBase {
     this._channel = null;
     this._clockNow = () => Date.now() / 1000;
     this._timer = 0;
+    this._raf = 0;
     this._muted = true;
-    this._onAnnouncementPlay = () => this._duck();
-    this._onAnnouncementEnded = () => this._unduck();
+    this._clock = new CompositionClock();
+    this._endBehavior = "continue";
+    this._forceSeek = new Set(); // media elements whose metadata just arrived -- re-seek them on the next _sync()
+    this._lastSeekAt = new WeakMap();
+    this._wired = false;
+    this._onMediaMeta = (e) => {
+      this._forceSeek.add(e.target);
+      this._sync();
+      this.dispatchEvent(new CustomEvent("bump-media", { detail: this.mediaDurations }));
+    };
+    this._onAnnouncementChange = () => this._applyVolumes();
+    this._frame = () => {
+      this._raf = 0;
+      this._sync();
+      this._emitTime();
+      if (this._clock.playing) this._raf = requestAnimationFrame(this._frame);
+    };
   }
 
   connectedCallback() {
-    this._wireAnnouncement();
+    this._wireMedia();
     this._renderStatic();
     this._tick();
-    this._timer = setInterval(() => this._tick(), 1000);
+    // 1s safety net: rAF stops entirely in a background tab, but the
+    // composition clock keeps reading real time, so this just re-aligns
+    // media/text with it (never advances anything by itself).
+    this._timer = setInterval(() => { this._tick(); this._sync(); }, 1000);
   }
 
   disconnectedCallback() {
@@ -167,12 +329,17 @@ export class BumpPlayer extends HTMLElementBase {
     this.stop();
   }
 
-  /** @param {object|null} definition a full bump JSON object (see bumps/README.md), or null to reset to the plain default background. */
+  /** @param {object|null} definition a full bump JSON object (see bumps/README.md), or null to reset to the plain default background.
+   *  Safe to set repeatedly while playing (the editor does, on every edit):
+   *  only sources that actually changed are reloaded, and playback continues
+   *  from the current composition time. */
   set definition(definition) {
     this._definition = definition || null;
     this._applyBackground(this._definition?.background || null);
     this._applyStyle(this._definition?.style || null);
+    this._applySources();
     this._renderStatic();
+    this._sync();
   }
 
   get definition() { return this._definition; }
@@ -200,6 +367,30 @@ export class BumpPlayer extends HTMLElementBase {
 
   get clockNow() { return this._clockNow; }
 
+  /** What happens when real elapsed time passes the composition length --
+   *  see compositionTime(). "continue" (default, live playback), "loop",
+   *  or "stop" (pauses at the end and fires `bump-ended`; the editor). */
+  set endBehavior(mode) {
+    this._endBehavior = END_BEHAVIORS.includes(mode) ? mode : "continue";
+  }
+
+  get endBehavior() { return this._endBehavior; }
+
+  /** Current composition time in seconds (see the timing header above). */
+  get currentTime() { return compositionTime(this._clock.elapsed, this._definition, this._endBehavior); }
+
+  /** Effective composition length: `duration`, else DEFAULT_BUMP_DURATION. */
+  get duration() { return effectiveDuration(this._definition); }
+
+  get playing() { return this._clock.playing; }
+
+  /** Real lengths of the loaded media (seconds), or null while unknown. */
+  get mediaDurations() {
+    const d = (el) => (!el.hidden && el.getAttribute("src") && Number.isFinite(el.duration) && el.duration > 0 ? el.duration : null);
+    const q = (sel) => this._root.querySelector(sel);
+    return { video: d(q(".bgvideo")), audio: this._bgAudioEls().map(d), announcement: d(q(".announcement")) };
+  }
+
   _applyStyle(style) {
     const vars = { accent: "--bp-accent", accentWarm: "--bp-accent-warm", bg: "--bp-bg", bg2: "--bp-bg-2", fg: "--bp-fg", muted: "--bp-muted" };
     for (const [key, cssVar] of Object.entries(vars)) {
@@ -223,17 +414,38 @@ export class BumpPlayer extends HTMLElementBase {
     if (type === "video" && background.url) {
       const url = this._resolveUrl(background.url);
       if (video.src !== url) video.src = url;
-    } else {
+    } else if (video.hasAttribute("src")) {
+      video.pause();
       video.removeAttribute("src");
     }
 
     if (type === "image" && background.url) {
-      image.src = this._resolveUrl(background.url);
+      const url = this._resolveUrl(background.url);
+      if (image.src !== url) image.src = url;
     } else {
       image.removeAttribute("src");
     }
 
     color.style.background = type === "color" ? (background.color || "") : "";
+  }
+
+  /** Points the audio/announcement elements at the definition's files --
+   *  only touching an element whose url actually changed, so editing a
+   *  volume or label never restarts audio that's already playing. */
+  _applySources() {
+    const setSrc = (el, path) => {
+      if (path) {
+        el.hidden = false;
+        const url = this._resolveUrl(path);
+        if (el.src !== url) el.src = url;
+      } else {
+        el.hidden = true;
+        if (el.hasAttribute("src")) { el.pause(); el.removeAttribute("src"); }
+      }
+    };
+    const layers = this._definition?.audio || [];
+    this._bgAudioEls().forEach((el, i) => setSrc(el, layers[i]?.url || null));
+    setSrc(this._root.querySelector(".announcement"), this._definition?.announcement?.url || null);
   }
 
   /** Bump JSON stores repo-root-relative paths (e.g. "media/video/bg05.mp4")
@@ -247,83 +459,85 @@ export class BumpPlayer extends HTMLElementBase {
     // the hosting page -- the admin UI is at scheduler/ and live channels
     // under channels/, so a page-relative "media/..." 404s on both. Also
     // makes the result absolute, matching what el.src reads back, so the
-    // `el.src !== url` checks below don't reload media on every edit.
+    // `el.src !== url` checks don't reload media on every edit.
     return new URL(rel, REPO_ROOT_URL).href;
   }
 
-  _wireAnnouncement() {
-    const audio = this._root.querySelector(".announcement");
-    audio.addEventListener("play", this._onAnnouncementPlay);
-    audio.addEventListener("ended", this._onAnnouncementEnded);
-    audio.addEventListener("pause", this._onAnnouncementEnded);
+  _wireMedia() {
+    if (this._wired) return;
+    this._wired = true;
+    const q = (sel) => this._root.querySelector(sel);
+    for (const el of [q(".bgvideo"), ...this._bgAudioEls(), q(".announcement")]) {
+      el.addEventListener("loadedmetadata", this._onMediaMeta);
+    }
+    const ann = q(".announcement");
+    for (const type of ["playing", "pause", "ended"]) ann.addEventListener(type, this._onAnnouncementChange);
   }
 
   _bgAudioEls() {
     return [this._root.querySelector(".bgaudio0"), this._root.querySelector(".bgaudio1")];
   }
 
-  _duck() {
+  /** Ducks the audio layers to `volume * duckTo` while the announcement is
+   *  actually audible, restores them otherwise. */
+  _applyVolumes() {
     const layers = this._definition?.audio || [];
+    const ann = this._root.querySelector(".announcement");
+    const ducked = this._clock.playing && !ann.hidden && !ann.paused && !ann.ended;
     const duckTo = this._definition?.announcement?.duckTo ?? 0.3;
     this._bgAudioEls().forEach((el, i) => {
       if (el.hidden) return;
-      el.volume = duckedVolume(layers[i]?.volume, duckTo);
+      el.volume = ducked ? duckedVolume(layers[i]?.volume, duckTo) : clampVolume(layers[i]?.volume);
     });
   }
 
-  _unduck() {
-    const layers = this._definition?.audio || [];
-    this._bgAudioEls().forEach((el, i) => {
-      if (el.hidden) return;
-      el.volume = clampVolume(layers[i]?.volume);
-    });
-  }
-
-  /** Starts (or restarts, from the top) background video/audio and the
-   *  announcement clip, if any. Call this directly from a user gesture's
+  /** Starts playback at composition time `offset` (default 0 -- from the
+   *  top, the original behavior). Call this directly from a user gesture's
    *  own call stack when `muted` is false -- same autoplay-policy posture
    *  as BroadcastPlayer/ContinuityRenderer elsewhere in this project; a
-   *  refused unmuted autoplay is tolerated silently either way. */
-  play({ muted = this._muted } = {}) {
+   *  refused unmuted autoplay is tolerated silently either way. Live
+   *  playback passes the clock-derived offset into the scheduled window. */
+  play({ muted = this._muted, offset = 0 } = {}) {
     this.setMuted(muted);
-    const q = (sel) => this._root.querySelector(sel);
-    const video = q(".bgvideo");
-    if (!video.hidden) { video.currentTime = 0; video.play?.().catch(() => {}); }
-
-    const layers = this._definition?.audio || [];
-    this._bgAudioEls().forEach((el, i) => {
-      const layer = layers[i];
-      if (!layer) { el.hidden = true; el.removeAttribute("src"); return; }
-      el.hidden = false;
-      const url = this._resolveUrl(layer.url);
-      if (el.src !== url) el.src = url;
-      el.volume = clampVolume(layer.volume);
-      el.currentTime = 0;
-      el.play?.().catch(() => {});
-    });
-
-    const announcement = q(".announcement");
-    const announcementDef = this._definition?.announcement;
-    if (announcementDef?.url) {
-      announcement.hidden = false;
-      const url = this._resolveUrl(announcementDef.url);
-      if (announcement.src !== url) announcement.src = url;
-      announcement.currentTime = 0;
-      announcement.play?.().catch(() => {});
-    } else {
-      announcement.hidden = true;
-      announcement.removeAttribute("src");
-    }
+    this._applySources();
+    this._clock.play(offset);
+    this._sync({ force: true }); // synchronous: the media .play() calls stay inside the caller's gesture
+    if (!this._raf && typeof requestAnimationFrame !== "undefined") this._raf = requestAnimationFrame(this._frame);
+    this._emitState();
   }
 
-  /** Pauses everything without tearing down sources -- a subsequent
-   *  play() restarts cleanly from the top either way. */
+  /** Freezes at the current composition time (play({offset}) resumes). */
+  pause() {
+    this._clock.pause();
+    this._pauseAll();
+    this._emitState();
+  }
+
+  /** Moves to composition time `t`, keeping the current play/pause state. */
+  seek(t) {
+    const max = this._endBehavior === "stop" ? this.duration : Infinity;
+    this._clock.seek(Math.min(Math.max(0, Number(t) || 0), max));
+    this._sync({ force: true });
+    this._emitTime();
+  }
+
+  /** Pauses everything and rewinds to 0 without tearing down sources -- a
+   *  subsequent play() restarts cleanly from the top either way. */
   stop() {
+    this._clock.pause();
+    this._clock.seek(0);
+    this._pauseAll();
+    this._sync({ force: true });
+    this._emitState();
+  }
+
+  _pauseAll() {
     const q = (sel) => this._root.querySelector(sel);
     q(".bgvideo").pause?.();
     this._bgAudioEls().forEach((el) => el.pause?.());
     q(".announcement").pause?.();
-    this._unduck();
+    if (this._raf) { cancelAnimationFrame(this._raf); this._raf = 0; }
+    this._applyVolumes();
   }
 
   setMuted(muted) {
@@ -335,6 +549,84 @@ export class BumpPlayer extends HTMLElementBase {
   }
 
   isMuted() { return this._muted; }
+
+  /**
+   * Reconciles every layer with the current composition time -- the ONLY
+   * place media is started, stopped, or seeked once playback is running.
+   * Idempotent and cheap; called per animation frame while playing, from
+   * the 1s safety-net interval, and after any definition/seek change.
+   */
+  _sync({ force = false } = {}) {
+    if (!this._wired) return;
+    const q = (sel) => this._root.querySelector(sel);
+    const def = this._definition;
+
+    if (this._endBehavior === "stop" && this._clock.playing && this._clock.elapsed >= this.duration) {
+      this._clock.pause();
+      this._clock.seek(this.duration);
+      this._pauseAll();
+      this._emitState();
+      this.dispatchEvent(new CustomEvent("bump-ended"));
+    }
+
+    const playing = this._clock.playing;
+    const t = this.currentTime;
+    const ann = q(".announcement");
+    const annDur = Number.isFinite(ann.duration) && ann.duration > 0 ? ann.duration : null;
+    const state = layerStateAt(def, t, { announcementDuration: annDur });
+
+    q(".wrap").classList.toggle("text-off", !state.textVisible);
+
+    const video = q(".bgvideo");
+    if (!video.hidden && video.getAttribute("src")) this._drive(video, t, true, playing, force);
+
+    const layers = def?.audio || [];
+    this._bgAudioEls().forEach((el, i) => {
+      if (layers[i] && el.getAttribute("src")) this._drive(el, t, true, playing, force);
+    });
+
+    if (state.announcement && ann.getAttribute("src")) {
+      if (state.announcement.active) {
+        this._drive(ann, state.announcement.offset, false, playing, force);
+      } else {
+        if (!ann.paused) ann.pause();
+        if (force && ann.readyState >= 1) {
+          try { ann.currentTime = state.announcement.before ? 0 : (annDur ?? 0); } catch { /* not seekable yet */ }
+        }
+      }
+    }
+    this._applyVolumes();
+  }
+
+  /** Puts one media element where composition time says it should be. */
+  _drive(el, target, loop, playing, force) {
+    force = this._forceSeek.delete(el) || force;
+    const dur = Number.isFinite(el.duration) && el.duration > 0 ? el.duration : null;
+    if (!loop && dur !== null && target >= dur) { // one-shot clip already finished at this point in the composition
+      if (!el.paused) el.pause();
+      return;
+    }
+    if (el.readyState >= 1) {
+      const pos = mediaPosition(target, dur, loop);
+      const now = typeof performance !== "undefined" ? performance.now() : Date.now();
+      const recentlySeeked = now - (this._lastSeekAt.get(el) || 0) < 1000;
+      if (force || (!el.seeking && !recentlySeeked && needsResync(el.currentTime, pos, { loopLength: loop ? dur : null }))) {
+        try { el.currentTime = pos; this._lastSeekAt.set(el, now); } catch { /* not seekable yet -- loadedmetadata re-forces */ }
+      }
+    } else {
+      this._forceSeek.add(el); // seek once metadata arrives (see _onMediaMeta)
+    }
+    if (playing && el.paused) el.play?.()?.catch?.(() => {});
+    else if (!playing && !el.paused) el.pause();
+  }
+
+  _emitTime() {
+    this.dispatchEvent(new CustomEvent("bump-time", { detail: { time: this.currentTime, duration: this.duration, playing: this._clock.playing } }));
+  }
+
+  _emitState() {
+    this.dispatchEvent(new CustomEvent("bump-state", { detail: { playing: this._clock.playing, time: this.currentTime } }));
+  }
 
   _renderStatic() {
     const q = (sel) => this._root.querySelector(sel);

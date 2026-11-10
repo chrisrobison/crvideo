@@ -24,15 +24,20 @@ declare(strict_types=1);
 //
 // GET  ?action=list    -> every bumps/*.json, in full
 // GET  ?action=media   -> what's available to build a bump FROM: every
-//                         media/video, media/music, media/ambience file,
+//                         media/video, media/images, media/music,
+//                         media/ambience file,
 //                         and every channel's "ready" announcements (with
 //                         their text, for a human-readable picker -- never
 //                         raw content-hashed filenames alone)
-// POST {action:"create", name, background, audio?, announcement?, upcoming?, style?, description?}
+// POST {action:"create", name, background, audio?, announcement?, upcoming?, style?, description?, duration?}
 //                       -> derives a new id from `name`, writes bumps/<id>.json
-// POST {action:"update", id, name, background, audio?, announcement?, upcoming?, style?, description?}
+// POST {action:"update", id, name, background, audio?, announcement?, upcoming?, style?, description?, duration?}
 //                       -> full replace of an existing bumps/<id>.json (the
 //                          creator UI always submits the complete object)
+//                       `duration` (seconds) and the timing fields
+//                       announcement.start / upcoming.start / upcoming.end
+//                       are optional (schema_version 2, bumps/README.md);
+//                       a bump saved without `duration` stays version 1.
 // POST {action:"delete", id}
 //                       -> removes bumps/<id>.json
 //
@@ -63,6 +68,12 @@ const BUMP_ADMIN_STYLE_KEYS = ['accent', 'accentWarm', 'bg', 'bg2', 'fg', 'muted
 const BUMP_ADMIN_SCHEDULE_PERIODS = ['hour' => 3600, 'halfHour' => 1800, 'day' => 86400];
 const BUMP_ADMIN_MAX_SCHEDULE_RULES = 20;
 const BUMP_ADMIN_MAX_AUDIO_LAYERS = 2; // matches the two fixed <audio> slots in channels/bump-player.js's template
+// schema_version 2 (see bumps/README.md "Timing"): an optional intrinsic
+// composition length plus a few per-layer timing fields, all in seconds.
+// A bump with no `duration` is written exactly as before (schema_version
+// 1, no timing fields) -- v2 is opt-in per bump, never a migration.
+const BUMP_ADMIN_MIN_DURATION = 1;
+const BUMP_ADMIN_MAX_DURATION = 300;
 
 final class BumpAdminValidationError extends RuntimeException
 {
@@ -181,7 +192,42 @@ function bump_admin_normalize_audio_layers(mixed $layers, string $mediaRoot = BU
     return $out;
 }
 
-function bump_admin_normalize_announcement(mixed $ann, string $mediaRoot = BUMP_ADMIN_MEDIA_ROOT): ?array
+/** Optional bump-level composition length (schema_version 2). null =>
+ *  not set (a version-1 bump; editors preview it at the documented
+ *  default, and live playback keeps its version-1 behavior exactly). */
+function bump_admin_normalize_duration(mixed $duration): ?float
+{
+    if ($duration === null) {
+        return null;
+    }
+    if (!is_numeric($duration) || $duration < BUMP_ADMIN_MIN_DURATION || $duration > BUMP_ADMIN_MAX_DURATION) {
+        throw new BumpAdminValidationError('duration must be a number of seconds between ' . BUMP_ADMIN_MIN_DURATION . ' and ' . BUMP_ADMIN_MAX_DURATION . '.');
+    }
+    return round((float) $duration, 3);
+}
+
+/** One optional timing field (seconds into the composition). Every timing
+ *  field requires an explicit bump `duration` -- an end/offset can only be
+ *  validated against a known composition length, and a version-1 bump's
+ *  on-air length is whatever its schedule rule says. */
+function bump_admin_normalize_time(mixed $value, string $field, ?float $duration): ?float
+{
+    if ($value === null) {
+        return null;
+    }
+    if ($duration === null) {
+        throw new BumpAdminValidationError("$field requires the bump to have a duration.");
+    }
+    if (!is_numeric($value) || $value < 0) {
+        throw new BumpAdminValidationError("$field must be a nonnegative number of seconds.");
+    }
+    if ($value > $duration) {
+        throw new BumpAdminValidationError("$field must not exceed the bump's duration ($duration s).");
+    }
+    return round((float) $value, 3);
+}
+
+function bump_admin_normalize_announcement(mixed $ann, string $mediaRoot = BUMP_ADMIN_MEDIA_ROOT, ?float $duration = null): ?array
 {
     if ($ann === null) {
         return null;
@@ -211,10 +257,17 @@ function bump_admin_normalize_announcement(mixed $ann, string $mediaRoot = BUMP_
         throw new BumpAdminValidationError('announcement.duckTo must be a number between 0 and 1.');
     }
     $out['duckTo'] = (float) $duckTo;
+    $start = bump_admin_normalize_time($ann['start'] ?? null, 'announcement.start', $duration);
+    if ($start !== null) {
+        if ($start >= $duration) {
+            throw new BumpAdminValidationError('announcement.start must be earlier than the end of the bump.');
+        }
+        $out['start'] = $start;
+    }
     return $out;
 }
 
-function bump_admin_normalize_upcoming(mixed $upcoming): array
+function bump_admin_normalize_upcoming(mixed $upcoming, ?float $duration = null): array
 {
     $upcoming = is_array($upcoming) ? $upcoming : [];
     $count = $upcoming['count'] ?? 3;
@@ -225,7 +278,22 @@ function bump_admin_normalize_upcoming(mixed $upcoming): array
     if (!is_string($label) || strlen($label) > 40) {
         throw new BumpAdminValidationError('upcoming.label must be a string of at most 40 characters.');
     }
-    return ['count' => (int) $count, 'label' => trim($label) !== '' ? $label : 'Coming Up'];
+    $out = ['count' => (int) $count, 'label' => trim($label) !== '' ? $label : 'Coming Up'];
+    $start = bump_admin_normalize_time($upcoming['start'] ?? null, 'upcoming.start', $duration);
+    $end = bump_admin_normalize_time($upcoming['end'] ?? null, 'upcoming.end', $duration);
+    if ($start !== null && $end === null && $start >= $duration) {
+        throw new BumpAdminValidationError('upcoming.start must be earlier than the end of the bump.');
+    }
+    if ($end !== null && $end <= ($start ?? 0.0)) {
+        throw new BumpAdminValidationError('upcoming.end must be greater than upcoming.start.');
+    }
+    if ($start !== null) {
+        $out['start'] = $start;
+    }
+    if ($end !== null) {
+        $out['end'] = $end;
+    }
+    return $out;
 }
 
 function bump_admin_normalize_style(mixed $style): array
@@ -260,22 +328,37 @@ function bump_admin_normalize_description(mixed $d): string
     return $d;
 }
 
-/** @return array<string,mixed> every field EXCEPT id/schema_version/timestamps */
+/** @return array<string,mixed> every field EXCEPT id/schema_version/timestamps
+ *  (`duration` is present only when the bump has one -- see bump_admin_schema_version()) */
 function bump_admin_normalize(array $body, string $mediaRoot = BUMP_ADMIN_MEDIA_ROOT): array
 {
     $name = $body['name'] ?? null;
     if (!is_string($name) || trim($name) === '' || strlen($name) > 120) {
         throw new BumpAdminValidationError('name must be a non-empty string of at most 120 characters.');
     }
-    return [
+    $duration = bump_admin_normalize_duration($body['duration'] ?? null);
+    $out = [
         'name' => trim($name),
         'description' => bump_admin_normalize_description($body['description'] ?? null),
+    ];
+    if ($duration !== null) {
+        $out['duration'] = $duration;
+    }
+    return $out + [
         'background' => bump_admin_normalize_background($body['background'] ?? null, $mediaRoot),
         'audio' => bump_admin_normalize_audio_layers($body['audio'] ?? [], $mediaRoot),
-        'announcement' => bump_admin_normalize_announcement($body['announcement'] ?? null, $mediaRoot),
-        'upcoming' => bump_admin_normalize_upcoming($body['upcoming'] ?? null),
+        'announcement' => bump_admin_normalize_announcement($body['announcement'] ?? null, $mediaRoot, $duration),
+        'upcoming' => bump_admin_normalize_upcoming($body['upcoming'] ?? null, $duration),
         'style' => bump_admin_normalize_style($body['style'] ?? null),
     ];
+}
+
+/** 2 when the normalized bump uses any schema_version-2 field (they all
+ *  require `duration`, so that's the single tell), else 1 -- a bump that
+ *  never opts into timing is stored byte-for-byte in the version-1 shape. */
+function bump_admin_schema_version(array $normalized): int
+{
+    return array_key_exists('duration', $normalized) ? 2 : 1;
 }
 
 // ---------- list / create / update / delete ----------
@@ -310,7 +393,7 @@ function bump_admin_create(array $body, string $bumpsDir = BUMP_ADMIN_ROOT, stri
     $normalized['style'] = $normalized['style'] ?: new stdClass(); // an empty PHP array json_encode()s as [] -- force {} so the schema (bumps/README.md) is never ambiguous about style's shape
     $id = bump_admin_unique_id(bump_admin_slugify($normalized['name']), $bumpsDir);
     $now = gmdate('c');
-    $doc = ['schema_version' => 1, 'id' => $id] + $normalized + ['createdAt' => $now, 'updatedAt' => $now];
+    $doc = ['schema_version' => bump_admin_schema_version($normalized), 'id' => $id] + $normalized + ['createdAt' => $now, 'updatedAt' => $now];
     admin_atomic_write_json("$bumpsDir/$id.json", $doc);
     return ['bump' => $doc];
 }
@@ -326,7 +409,7 @@ function bump_admin_update(array $body, string $bumpsDir = BUMP_ADMIN_ROOT, stri
     $createdAt = is_array($existing) && is_string($existing['createdAt'] ?? null) ? $existing['createdAt'] : gmdate('c');
     $normalized = bump_admin_normalize($body, $mediaRoot);
     $normalized['style'] = $normalized['style'] ?: new stdClass();
-    $doc = ['schema_version' => 1, 'id' => $id] + $normalized + ['createdAt' => $createdAt, 'updatedAt' => gmdate('c')];
+    $doc = ['schema_version' => bump_admin_schema_version($normalized), 'id' => $id] + $normalized + ['createdAt' => $createdAt, 'updatedAt' => gmdate('c')];
     admin_atomic_write_json("$bumpsDir/$id.json", $doc);
     return ['bump' => $doc];
 }
@@ -365,13 +448,17 @@ function bump_admin_list_dir_files(string $dir, string $relPrefix, array $extens
     return $out;
 }
 
-/** @return array{video:list<array>, music:list<array>, ambience:list<array>, channels:list<array{id:string,name:string,announcements:list<array>}>} */
+/** @return array{video:list<array>, image:list<array>, music:list<array>, ambience:list<array>, channels:list<array{id:string,name:string,announcements:list<array>}>} */
 function bump_admin_list_media(string $repoRoot = ADMIN_ROOT, string $channelsDir = ADMIN_CHANNELS_DIR): array
 {
     $mediaDir = "$repoRoot/media";
     $video = bump_admin_list_dir_files("$mediaDir/video", 'media/video', ['mp4', 'webm', 'mov', 'm4v']);
     $music = bump_admin_list_dir_files("$mediaDir/music", 'media/music', ['mp3', 'm4a', 'ogg', 'wav']);
     $ambience = bump_admin_list_dir_files("$mediaDir/ambience", 'media/ambience', ['mp3', 'm4a', 'ogg', 'wav']);
+    // Still-image backgrounds (background.type "image"). Additive: an
+    // empty list (no media/images/ directory yet) just means the editor
+    // doesn't offer image backgrounds.
+    $image = bump_admin_list_dir_files("$mediaDir/images", 'media/images', ['jpg', 'jpeg', 'png', 'webp', 'gif']);
 
     $channels = [];
     foreach (admin_list_channel_dirs($channelsDir) as $id => $dir) {
@@ -396,7 +483,7 @@ function bump_admin_list_media(string $repoRoot = ADMIN_ROOT, string $channelsDi
         ];
     }
 
-    return ['video' => $video, 'music' => $music, 'ambience' => $ambience, 'channels' => $channels];
+    return ['video' => $video, 'image' => $image, 'music' => $music, 'ambience' => $ambience, 'channels' => $channels];
 }
 
 // ---------- channel bump scheduling (channels/<id>/bump-schedule.json) ----------

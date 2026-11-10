@@ -186,8 +186,12 @@ export class BumpRenderer {
    * @param {{name?:string, logo?:string}|null} channel
    * @param {() => number} clockNow
    * @param {boolean} muted
+   * @param {number} [offset=0] seconds since the bump's scheduled window
+   *   opened (clock-derived -- `now() - window.startsAt`), so a viewer who
+   *   tunes in mid-bump starts at the same composition time as everyone
+   *   else instead of from the top. See bump-player.js's timing header.
    */
-  show(definition, upcoming, channel, clockNow, muted) {
+  show(definition, upcoming, channel, clockNow, muted, offset = 0) {
     if (!this.el) {
       this.el = document.createElement("cr-bump");
       this.container.appendChild(this.el);
@@ -196,7 +200,7 @@ export class BumpRenderer {
     this.el.channel = channel;
     this.el.definition = definition;
     this.el.upcoming = upcoming;
-    this.el.play({ muted });
+    this.el.play({ muted, offset: Math.max(0, Number(offset) || 0) });
     this.container.hidden = false;
   }
 

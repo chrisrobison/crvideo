@@ -85,6 +85,65 @@ these files while the bump creator UI might also be open on it.
   `bg`, `bg2`, `fg`, `muted`) -- same small palette convention as a
   channel's own `meta.json` `theme` field.
 
+## Timing (schema_version 2, optional)
+
+A bump may opt into an intrinsic **composition length** and a few
+per-layer timing fields. All are in **seconds**, measured from the moment
+the bump begins:
+
+```json
+{
+  "schema_version": 2,
+  "id": "comedy-club-spotlight",
+  "name": "Comedy Club Spotlight",
+  "duration": 15,
+  "background": { "type": "video", "url": "media/video/bg01.mp4" },
+  "audio": [{ "source": "music", "url": "media/music/bg-music04.mp3", "volume": 0.6 }],
+  "announcement": { "url": "media/announcements/...mp3", "duckTo": 0.3, "start": 2 },
+  "upcoming": { "count": 3, "label": "Coming Up", "start": 0, "end": 15 },
+  "style": {}
+}
+```
+
+| Field | Meaning | When absent |
+|---|---|---|
+| `duration` | Composition length, 1-300 s | Not set: a version-1 bump. Editors preview it at the **default of 15 s** (`DEFAULT_BUMP_DURATION` in `channels/bump-player.js`); on air nothing changes |
+| `announcement.start` | When the voice clip starts | 0 (plays immediately, as in v1) |
+| `upcoming.start` | When the text layer appears | 0 |
+| `upcoming.end` | When the text layer disappears (`> start`) | Visible until the bump ends, as in v1 |
+
+Rules (enforced by `server/bump-admin.php`): every timing field requires
+`duration`; starts are nonnegative; ends are greater than starts and never
+past `duration`; `announcement.start` is earlier than `duration`.
+`schema_version` is **derived** on save: 2 when `duration` is present,
+otherwise 1, so a bump that never uses timing is stored exactly in the
+version-1 shape. Existing version-1 files load and play unchanged; no
+migration is needed or performed.
+
+**Duration vs. the schedule rule.** A bump's `duration` is its intended
+composition length. A channel's rule `durationSeconds` still decides how
+long the bump actually interrupts that channel and is never rewritten when
+a bump's duration changes. When the two differ, the bump is either **cut
+short** (window shorter than the composition) or **looped** (the window
+outlasts it, and the composition restarts from 0, voice included).
+`scheduleFit(ruleDurationSeconds, bump)` in `channels/bump-player.js`
+returns `"exact" | "cut" | "loop" | "open"` (`"open"` = a v1 bump, where
+the rule alone decides) for UIs that need to warn about this.
+
+**One composition-time model.** `<cr-bump>` computes everything from a
+single composition time `t`, the seconds since the bump began. It is always
+derived from a clock reading (`CompositionClock`) and never accumulated
+from timer ticks, so throttled background tabs and late frames cannot
+drift it. Video and music loop by their own length (`t mod length`), the
+voice clip is a one-shot positioned at `announcement.start`, and the text
+layer fades in and out at `upcoming.start` / `upcoming.end`. Elements more
+than about 0.35 s off are re-seeked. Live playback starts the composition
+at the clock-derived offset into the scheduled window
+(`now() - window.startsAt`), so a viewer who tunes in mid-bump sees and
+hears the same moment as everyone else. The editor preview uses the same
+component and the same model, with `endBehavior = "stop"` so it stops at
+the end.
+
 Every `url` in a bump is validated by `server/bump-admin.php` to resolve
 to a real, existing file *inside* `media/` (realpath containment, not
 just a string prefix check) -- a bump can never reference a path outside
@@ -96,20 +155,38 @@ that tree.
 -- same posture as `channels/continuity-card.js`). Takes `.definition`
 (a bump JSON object, exactly this schema), `.upcoming` (the caller-
 supplied list of `{title, startsAt, subtitle?}`), optional `.channel`
-(`{name, logo}` branding), and `.clockNow`. `.play()`/`.stop()`/
-`.setMuted()` are explicit, caller-driven controls -- nothing auto-plays
-on mount, since the bump creator UI mounts one to edit fields well before
-anyone's clicked a preview button.
+(`{name, logo}` branding), and `.clockNow`. `.play({muted, offset})`,
+`.pause()`, `.seek(t)`, `.stop()` and `.setMuted()` are explicit,
+caller-driven controls. Nothing auto-plays on mount, since the editor
+mounts one well before anyone has clicked play. Read-only `.currentTime`,
+`.duration` (effective) and `.mediaDurations` report state. `.endBehavior`
+is `"continue"` (the default, used for live playback), `"loop"`, or
+`"stop"`. The element fires `bump-time` (every frame while playing),
+`bump-state` (play/pause), `bump-media` (when media metadata loads, with
+real clip lengths) and `bump-ended` (only with `"stop"`). Setting
+`.definition` while playing is safe: only sources whose URL changed are
+reloaded, and playback continues from the current time.
 
 ## The creator UI
 
-`scheduler/` (the ChannelFlow dashboard) → **BUMPS** tab
-(`scheduler/js/components/cf-bump-creator.js`, talking to
-`server/bump-admin.php`). Pick a background/audio/announcement from what
-actually exists under `media/` and each channel's generated
-announcements, preview live with `<cr-bump>` against either hand-typed
-sample upcoming-show rows or a real channel's real current lineup
-(reusing `channels/broadcast.js` read-only, client-side), then save.
+`scheduler/` (the ChannelFlow dashboard) → **BUMPS** tab, the **Bump
+Studio** (`scheduler/js/components/bump-studio/`, talking to
+`server/bump-admin.php`). It has three workspaces:
+
+- **Compose**: a searchable bump list, a persistent 16:9 `<cr-bump>`
+  preview with a multitrack timeline under it, and a contextual inspector
+  for Background / Music / Announcer / Text. Pick media from what actually
+  exists under `media/` and each channel's already-generated announcements
+  (the studio never generates narration). Preview against editable sample
+  programming or a real channel's current lineup, read-only through
+  `channels/broadcast.js`. Preview data is never saved, and nothing
+  reaches a channel until you click Save.
+- **Schedule**: per-channel `bump-schedule.json` rules.
+- **Library**: an overview of every bump.
+
+Still images for `background.type: "image"` are listed from
+`media/images/` (jpg/png/webp/gif). The editor offers image backgrounds
+only when that directory has files in it.
 
 ## Live scheduling
 
@@ -131,7 +208,7 @@ A bump goes on the air by WALL CLOCK, never by being published into
 is how far into that period the window opens (0 = exactly on the hour);
 `durationSeconds` is how long it stays up. Written/read through the same
 `server/bump-admin.php` (its `schedules`/`save_schedule` actions), edited
-from the bump creator UI's bottom "Scheduling" panel -- pick a channel,
+from the Bump Studio's **Schedule** workspace -- pick a channel,
 toggle it on, add a rule naming one of the bumps above.
 
 **Why clock-anchored and client-side, not published into the schedule:**

@@ -727,7 +727,9 @@ export class BroadcastPlayer {
       .filter((a) => a.playable)
       .slice(0, 6)
       .map((a) => ({ title: a.title, startsAt: a.startsAt }));
-    this.bumpRenderer.show(definition, upcoming, this.channelMeta, now, this.muted);
+    // Start at the clock-derived point INTO the window (0 when this tick is
+    // the one that opened it; >0 for a viewer who tunes in mid-bump).
+    this.bumpRenderer.show(definition, upcoming, this.channelMeta, now, this.muted, now() - window.startsAt);
     this.setState("bump");
   }
 
