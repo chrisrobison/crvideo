@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- LARC/PAN message bus (vendor/larc/pan.js, see docs/bus-topics.md). Must precede every module script. -->
+<script type="importmap">{ "imports": { "@larcjs/core": "../vendor/larc/pan.js" } }</script>
 <title>Watch</title>
 <style>
 html,body{margin:0;height:100%;background:#000}
@@ -10,6 +12,7 @@ cr-channel-player{display:block;width:100%;height:100%}
 </style>
 </head>
 <body>
+<pan-bus hidden></pan-bus>
 <cr-channel-player id="player"></cr-channel-player>
 
 <script type="module">

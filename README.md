@@ -128,6 +128,13 @@ Dependency-free ES modules, no framework:
   tile, which expands this exact same element in place via a View
   Transition rather than ever creating a second instance).
 
+Components and stores on a page talk through one page-level message bus: the
+[LARC/PAN](https://github.com/larcjs/larc) bus (`@larcjs/core` 3.0.1,
+vendored as `vendor/larc/pan.js` -- see `vendor/larc/README.md` for
+provenance and update steps), mapped in each page's import map and used
+only through `js/bus.js`. Stores publish state/events on it and
+components subscribe to it; `docs/bus-topics.md` is the topic dictionary.
+
 ## Content pipelines
 
 Two standalone CLI importers, each independently documented and tested:
@@ -198,6 +205,7 @@ publication" in `docs/series-and-channels.md`.
 | --- | ------ |
 | `docs/series-and-channels.md` | The whole series/catalog/recurring-programming/continuity design; start here for anything `channels/` or `publish.php`-related. |
 | `docs/guide-update.md` | Why/how the guide renders one cell per *program*, not per video. |
+| `docs/bus-topics.md` | The LARC/PAN page bus: topic dictionary, naming/retained-state rules, request/reply, what stays a DOM event. |
 | `docs/admin-ui.md` | The SERIES/PROGRAMMING admin tabs and their (lack of) access control. |
 | `docs/science-packing-report.md` | A worked example of the Science channel's multi-episode packing. |
 | `channels/publish/README.md` | `publish.php` CLI reference and `programming.json`/`continuity.json` schema. |
