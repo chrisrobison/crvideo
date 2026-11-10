@@ -1,4 +1,5 @@
 import { store } from "../store.js";
+import { TOPICS, SCHEDULER_CHANGE_TOPICS, subscribe } from "../../../js/bus.js";
 import { baseComponentCSS, escapeHtml, secToClock, DAY_SECONDS, clamp } from "../utils.js";
 import { toast } from "../utils.js";
 
@@ -47,16 +48,15 @@ class CfTimeline extends HTMLElement {
       this._zoom = this._loadZoom();
       this.attachShadow({ mode: "open" });
       this._render();
-      this._onChange = (e) => {
-        if (e.detail.reason === "tick") this._updatePlayhead();
-        else this._renderTracks();
-      };
-      store.addEventListener("change", this._onChange);
     }
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    subscribe(TOPICS.SCHEDULER_TICK, () => this._updatePlayhead(), { signal });
+    subscribe(SCHEDULER_CHANGE_TOPICS, () => this._renderTracks(), { signal });
     this._renderTracks();
   }
 
-  disconnectedCallback() { store.removeEventListener("change", this._onChange); }
+  disconnectedCallback() { this._subs?.abort(); }
 
   // ---------- zoom ----------
   _loadZoom() {

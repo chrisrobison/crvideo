@@ -1,4 +1,5 @@
 import { store } from "../store.js";
+import { TOPICS, SCHEDULER_CHANGE_TOPICS, subscribe } from "../../../js/bus.js";
 import { baseComponentCSS, escapeHtml, secToClock, fmtHMS } from "../utils.js";
 
 const COLLAPSED_COUNT = 6;
@@ -11,17 +12,18 @@ class CfRundown extends HTMLElement {
     if (!this.shadowRoot) {
       this.attachShadow({ mode: "open" });
       this._render();
-      this._onChange = (e) => { if (e.detail.reason !== "tick" || true) this._renderRows(); };
-      store.addEventListener("change", this._onChange);
       this.shadowRoot.querySelector(".show-all").addEventListener("click", () => {
         store.rundownShowAll = !store.rundownShowAll;
         this._renderRows();
       });
     }
+    // Rows show on-air/next status, so the 1 Hz tick re-renders too.
+    this._subs = new AbortController();
+    subscribe([...SCHEDULER_CHANGE_TOPICS, TOPICS.SCHEDULER_TICK], () => this._renderRows(), { signal: this._subs.signal });
     this._renderRows();
   }
 
-  disconnectedCallback() { store.removeEventListener("change", this._onChange); }
+  disconnectedCallback() { this._subs?.abort(); }
 
   _render() {
     this.shadowRoot.innerHTML = `

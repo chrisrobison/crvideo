@@ -5,7 +5,7 @@
 import { escapeHtml } from "../../utils.js";
 import { icons } from "./studio-ui.js";
 import { h, setValue, searchBoxHtml, pct, pickerCSS } from "./inspector-common.js";
-import { viewState } from "../../view.js";
+import { TOPICS, publish } from "../../../../js/bus.js";
 import { findAnnouncement, announcementTypeLabel, bumpTiming, ensureDuration, effectiveDuration, roundTime } from "./bump-model.js";
 
 export class AnnouncerSection {
@@ -69,7 +69,7 @@ export class AnnouncerSection {
         <p>No generated announcements are available yet.</p>
         <p class="small faint">Announcements are written and voiced by the announcer pipeline, not here.</p>
         <button class="go ghost small">Open Programming → Continuity announcer</button></div>`));
-      picker.querySelector(".go").addEventListener("click", () => viewState.setView("programming"));
+      picker.querySelector(".go").addEventListener("click", () => publish(TOPICS.APP_VIEW_OPEN, { view: "programming" }));
     } else {
       const total = channels.reduce((n, c) => n + c.announcements.length, 0);
       picker.append(h(`<div>

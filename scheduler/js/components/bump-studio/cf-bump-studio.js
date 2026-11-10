@@ -11,6 +11,7 @@ import { escapeHtml, toast } from "../../utils.js";
 import { studioStore as store, WORKSPACES } from "./bump-studio-store.js";
 import { studioCSS, icons } from "./studio-ui.js";
 import { viewState } from "../../view.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import "./bump-compose.js";
 import "./bump-schedule-workspace.js";
 import "./bump-library-workspace.js";
@@ -104,13 +105,14 @@ class CfBumpStudio extends HTMLElement {
     this._render({ keys: new Set(["status", "workspace", "draft"]) });
     // Load lazily, the first time the BUMPS view is actually shown, so the
     // other scheduler views never pay for bump data or media metadata.
-    const loadIfVisible = () => {
-      if (viewState.current !== "bumps" || store.state.status !== "idle") return;
+    // (retained: the current view arrives immediately.)
+    let done = false;
+    const off = subscribe(TOPICS.APP_VIEW_STATE, ({ data }) => {
+      if (done || data?.view !== "bumps" || store.state.status !== "idle") return;
+      done = true;
+      queueMicrotask(() => off()); // a retained delivery can arrive before subscribe() has returned `off`
       store.load();
-      viewState.removeEventListener("change", loadIfVisible);
-    };
-    viewState.addEventListener("change", loadIfVisible);
-    loadIfVisible();
+    }, { retained: true });
   }
 
   disconnectedCallback() {

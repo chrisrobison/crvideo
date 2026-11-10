@@ -16,6 +16,7 @@ import "./components/cf-series-admin.js";
 import "./components/cf-channel-admin.js";
 import "./components/bump-studio/cf-bump-studio.js";
 import { viewState } from "./view.js";
+import { TOPICS, subscribe } from "../../js/bus.js";
 
 // Toggles which top-level view section is visible -- see view.js. The
 // pre-existing SCHEDULE markup is untouched; this just adds [data-view]
@@ -26,5 +27,5 @@ function applyView() {
     el.hidden = el.dataset.view !== viewState.current;
   });
 }
-viewState.addEventListener("change", applyView);
+subscribe(TOPICS.APP_VIEW_STATE, applyView);
 applyView();

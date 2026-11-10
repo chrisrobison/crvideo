@@ -1,4 +1,5 @@
 import { store } from "../store.js";
+import { TOPICS, SCHEDULER_CHANGE_TOPICS, subscribe } from "../../../js/bus.js";
 import { baseComponentCSS } from "../utils.js";
 import { fmtHoursMinutes } from "../utils.js";
 import "./cf-stat-card.js";
@@ -20,13 +21,15 @@ class CfStatBar extends HTMLElement {
           <cf-stat-card icon="live" tone="live" label="Live"></cf-stat-card>
         </div>
       `;
-      this._onChange = () => this._render();
-      store.addEventListener("change", this._onChange);
     }
+    // Re-renders on every scheduler change, including the 1 Hz tick (the
+    // "Live" card depends on the current time).
+    this._subs = new AbortController();
+    subscribe([...SCHEDULER_CHANGE_TOPICS, TOPICS.SCHEDULER_TICK], () => this._render(), { signal: this._subs.signal });
     this._render();
   }
 
-  disconnectedCallback() { store.removeEventListener("change", this._onChange); }
+  disconnectedCallback() { this._subs?.abort(); }
 
   _render() {
     const stats = store.computeStats();

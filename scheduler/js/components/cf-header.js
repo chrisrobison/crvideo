@@ -2,6 +2,7 @@ import { store } from "../store.js";
 import { baseComponentCSS, escapeHtml, dateLabel, dateLabelFull, secToClock, toast } from "../utils.js";
 import * as drive from "../drive.js";
 import { viewState } from "../view.js";
+import { TOPICS, SCHEDULER_CHANGE_TOPICS, publish, subscribe } from "../../../js/bus.js";
 import "./cf-toggle.js";
 
 class CfHeader extends HTMLElement {
@@ -14,31 +15,25 @@ class CfHeader extends HTMLElement {
     if (!this.shadowRoot) {
       this.attachShadow({ mode: "open" });
       this._render();
-      this._onChange = (e) => {
-        if (e.detail.reason === "tick") this._renderClock();
-        else this._render();
-      };
-      this._onDriveChange = () => { this._profile = null; this._renderDriveBody(); this._render(); };
       this._onDocClick = (e) => {
         if (e.composedPath().includes(this)) return;
         this.shadowRoot.querySelectorAll(".drive-menu").forEach((details) => {
           if (details.open) details.open = false;
         });
       };
-      this._onViewChange = () => this._renderNavActive();
-      store.addEventListener("change", this._onChange);
-      drive.driveEvents.addEventListener("change", this._onDriveChange);
-      document.addEventListener("click", this._onDocClick);
-      viewState.addEventListener("change", this._onViewChange);
     }
+    this._subs = new AbortController();
+    const signal = this._subs.signal;
+    subscribe(TOPICS.SCHEDULER_TICK, () => this._renderClock(), { signal });
+    subscribe(SCHEDULER_CHANGE_TOPICS, () => this._render(), { signal });
+    subscribe(TOPICS.DRIVE_AUTH_STATE, () => { this._profile = null; this._renderDriveBody(); this._render(); }, { signal });
+    subscribe(TOPICS.APP_VIEW_STATE, () => this._renderNavActive(), { signal });
+    document.addEventListener("click", this._onDocClick, { signal });
     this._render();
   }
 
   disconnectedCallback() {
-    store.removeEventListener("change", this._onChange);
-    drive.driveEvents.removeEventListener("change", this._onDriveChange);
-    document.removeEventListener("click", this._onDocClick);
-    viewState.removeEventListener("change", this._onViewChange);
+    this._subs?.abort();
   }
 
   _wire() {
@@ -57,7 +52,7 @@ class CfHeader extends HTMLElement {
     root.querySelector("nav").addEventListener("click", (e) => {
       const a = e.target.closest("a[data-view]");
       if (!a) return;
-      viewState.setView(a.dataset.view);
+      publish(TOPICS.APP_VIEW_OPEN, { view: a.dataset.view });
     });
   }
 

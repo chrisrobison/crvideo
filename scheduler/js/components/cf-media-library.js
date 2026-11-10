@@ -1,4 +1,5 @@
 import { store } from "../store.js";
+import { TOPICS, subscribe } from "../../../js/bus.js";
 import { baseComponentCSS, fmtBytes } from "../utils.js";
 import "./cf-media-item.js";
 
@@ -17,15 +18,13 @@ class CfMediaLibrary extends HTMLElement {
       this.attachShadow({ mode: "open" });
       this._render();
       this._wire();
-      this._onChange = (e) => {
-        if (["media", "media-duration", "media-thumbnail"].includes(e.detail.reason)) this._renderList();
-      };
-      store.addEventListener("change", this._onChange);
     }
+    this._subs = new AbortController();
+    subscribe(TOPICS.SCHEDULER_MEDIA_CHANGED, () => this._renderList(), { signal: this._subs.signal });
     this._renderList();
   }
 
-  disconnectedCallback() { store.removeEventListener("change", this._onChange); }
+  disconnectedCallback() { this._subs?.abort(); }
 
   _wire() {
     const root = this.shadowRoot;
