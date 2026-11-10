@@ -1,0 +1,34 @@
+{
+    "schema_version": 1,
+    "id": "night-owl",
+    "name": "Night Owl",
+    "description": "Late-night ambient with no voice-over.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg05.mp4"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music10.mp3",
+            "volume": 0.4
+        },
+        {
+            "source": "ambience",
+            "url": "media/ambience/ocean.mp3",
+            "volume": 0.25
+        }
+    ],
+    "announcement": null,
+    "upcoming": {
+        "count": 5,
+        "label": "Overnight"
+    },
+    "style": {
+        "accent": "#b8a1ff",
+        "accentWarm": "#6ee7f9",
+        "bg": "#05060f"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "id": "ustv-ident",
+    "name": "USTV Ident",
+    "description": "Short station ID with the USTV voice tag.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg10.mp4"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music09.mp3",
+            "volume": 0.6
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/ustv/eedf036c64dff6d7918968d80c9a040a7b851cbf8d663d4a7d150885fba75e74.mp3",
+        "channelId": "ustv",
+        "transitionId": "channel-id",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 3,
+        "label": "Coming Up"
+    },
+    "style": {
+        "accent": "#4cc9f0",
+        "accentWarm": "#f72585"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

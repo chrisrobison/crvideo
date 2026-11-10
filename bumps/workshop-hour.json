@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "id": "workshop-hour",
+    "name": "Workshop Hour",
+    "description": "Steady groove for the Maker channel.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg06.mp4"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music05.mp3",
+            "volume": 0.55
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/maker/39428de76832f6363d4c4c4dbb3464bb5d745b9e6885caf90a5ab1853c3d3186.mp3",
+        "channelId": "maker",
+        "transitionId": "continuity-1794009600",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 4,
+        "label": "On the Bench"
+    },
+    "style": {
+        "accent": "#ffa62b",
+        "accentWarm": "#16db93"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

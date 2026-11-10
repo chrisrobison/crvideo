@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "id": "prairie-sunset",
+    "name": "Prairie Sunset",
+    "description": "Wide-open grasslands with warm tones.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg09.mp4"
+    },
+    "audio": [
+        {
+            "source": "ambience",
+            "url": "media/ambience/grasslands.mp3",
+            "volume": 0.45
+        },
+        {
+            "source": "music",
+            "url": "media/music/bg-music08.mp3",
+            "volume": 0.5
+        }
+    ],
+    "announcement": null,
+    "upcoming": {
+        "count": 3,
+        "label": "Tonight"
+    },
+    "style": {
+        "accent": "#ffd166",
+        "accentWarm": "#ef476f"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

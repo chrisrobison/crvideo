@@ -1,0 +1,38 @@
+{
+    "schema_version": 1,
+    "id": "ocean-drift",
+    "name": "Ocean Drift",
+    "description": "Waves and a slow pad for the travel channel.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg02.mp4"
+    },
+    "audio": [
+        {
+            "source": "ambience",
+            "url": "media/ambience/ocean.mp3",
+            "volume": 0.5
+        },
+        {
+            "source": "music",
+            "url": "media/music/bg-music01.mp3",
+            "volume": 0.4
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/world-explorer/ab6c399f8bc765bd36e880b2bc911686c5f79badeefc7f2308caaecec5f4fef5.mp3",
+        "channelId": "world-explorer",
+        "transitionId": "continuity-1794009600",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 4,
+        "label": "Up Next on World Explorer"
+    },
+    "style": {
+        "accent": "#5ad1ff",
+        "accentWarm": "#ffb36b"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

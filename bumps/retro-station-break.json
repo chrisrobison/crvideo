@@ -1,0 +1,35 @@
+{
+    "schema_version": 1,
+    "id": "retro-station-break",
+    "name": "Retro Station Break",
+    "description": "Vintage-flavored break for RetroVision.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg04.mp4"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music00.mp3",
+            "volume": 0.65
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/retrovision/9ef7c9bbdcdadc965f3d3f73037d2580d19736f9b07689652bfe8fff2c5f5de6.mp3",
+        "channelId": "retrovision",
+        "transitionId": "continuity-1794009600",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 2,
+        "label": "Coming Up Next"
+    },
+    "style": {
+        "accent": "#ff6b6b",
+        "accentWarm": "#ffe66d",
+        "bg": "#1b0f0a",
+        "fg": "#fff4e0"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

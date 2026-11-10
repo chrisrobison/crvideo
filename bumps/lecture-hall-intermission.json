@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "id": "lecture-hall-intermission",
+    "name": "Lecture Hall Intermission",
+    "description": "Understated break between lectures.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg03.mp4"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music02.mp3",
+            "volume": 0.45
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/lecture-hall/12990639acb3d4060704841b7ebc41056141870f223ff5a682504469a4c6239a.mp3",
+        "channelId": "lecture-hall",
+        "transitionId": "continuity-1794009600",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 3,
+        "label": "Next Lecture"
+    },
+    "style": {
+        "accent": "#a0c4ff",
+        "accentWarm": "#ffd6a5"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

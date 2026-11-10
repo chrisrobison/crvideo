@@ -1,0 +1,27 @@
+{
+    "schema_version": 1,
+    "id": "simple-color-card",
+    "name": "Simple Color Card",
+    "description": "Fallback solid-color bump, no video.",
+    "background": {
+        "type": "color",
+        "color": "#14213d"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music03.mp3",
+            "volume": 0.5
+        }
+    ],
+    "announcement": null,
+    "upcoming": {
+        "count": 3,
+        "label": "Coming Up"
+    },
+    "style": {
+        "accent": "#fca311"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

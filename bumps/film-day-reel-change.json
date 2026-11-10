@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "id": "film-day-reel-change",
+    "name": "Film Day Reel Change",
+    "description": "Classroom-film reel change for Film Day at School.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg08.mp4"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music07.mp3",
+            "volume": 0.5
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/film-day-at-school/78f87267c51c18896c54b3c17109e912c1554d6c5cf335bc941f1babc3dffb26.mp3",
+        "channelId": "film-day-at-school",
+        "transitionId": "continuity-1794009600",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 2,
+        "label": "Next Reel"
+    },
+    "style": {
+        "accent": "#e9c46a",
+        "accentWarm": "#e76f51"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

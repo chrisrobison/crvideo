@@ -1,0 +1,38 @@
+{
+    "schema_version": 1,
+    "id": "forest-interlude",
+    "name": "Forest Interlude",
+    "description": "Calm woodland bed with soft music under the science lineup.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg05.mp4"
+    },
+    "audio": [
+        {
+            "source": "ambience",
+            "url": "media/ambience/forest.mp3",
+            "volume": 0.4
+        },
+        {
+            "source": "music",
+            "url": "media/music/bg-music03.mp3",
+            "volume": 0.55
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/science/edcf1b3d01c76a34faf7c07eb8fbede14e36dfbc21dd9695f9503b0469684036.mp3",
+        "channelId": "science",
+        "transitionId": "continuity-1794016800",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 3,
+        "label": "Coming Up"
+    },
+    "style": {
+        "accent": "#9be37a",
+        "accentWarm": "#e3c55a"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

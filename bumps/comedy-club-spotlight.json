@@ -1,0 +1,33 @@
+{
+    "schema_version": 1,
+    "id": "comedy-club-spotlight",
+    "name": "Comedy Club Spotlight",
+    "description": "Upbeat music bed for the comedy lineup.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg01.mp4"
+    },
+    "audio": [
+        {
+            "source": "music",
+            "url": "media/music/bg-music04.mp3",
+            "volume": 0.6
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/comedy-club/0bcbb14b5d06d7542285c3d188e459ad9c36938befaea279756275aa0dd6b94b.mp3",
+        "channelId": "comedy-club",
+        "transitionId": "continuity-1794009600",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 3,
+        "label": "Next Up on Stage"
+    },
+    "style": {
+        "accent": "#f72585",
+        "accentWarm": "#ffbe0b"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}

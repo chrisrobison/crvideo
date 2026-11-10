@@ -1,0 +1,38 @@
+{
+    "schema_version": 1,
+    "id": "jungle-expedition",
+    "name": "Jungle Expedition",
+    "description": "Dense jungle ambience for wildlife blocks.",
+    "background": {
+        "type": "video",
+        "url": "media/video/bg07.mp4"
+    },
+    "audio": [
+        {
+            "source": "ambience",
+            "url": "media/ambience/jungle.mp3",
+            "volume": 0.5
+        },
+        {
+            "source": "music",
+            "url": "media/music/bg-music06.mp3",
+            "volume": 0.35
+        }
+    ],
+    "announcement": {
+        "url": "media/announcements/pet-central/3eb92352804d183b7420011f3773de54330fd48d4bc5aa3b53cb9097fa1e7bae.mp3",
+        "channelId": "pet-central",
+        "transitionId": "continuity-1794009600",
+        "duckTo": 0.3
+    },
+    "upcoming": {
+        "count": 3,
+        "label": "Still To Come"
+    },
+    "style": {
+        "accent": "#7ee081",
+        "accentWarm": "#ff9f43"
+    },
+    "createdAt": "2026-11-10T03:18:02+00:00",
+    "updatedAt": "2026-11-10T03:18:02+00:00"
+}
