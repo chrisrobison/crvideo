@@ -1,0 +1,26 @@
+{
+    "schema_version": 1,
+    "announcements": [
+        {
+            "id": "ustv-channel-id-id",
+            "channelId": "ustv",
+            "type": "channel_id",
+            "transitionId": "channel-id",
+            "fromProgramId": null,
+            "toProgramId": null,
+            "toEpisodeId": null,
+            "voice": "am_adam",
+            "text": "You're tuned to USTV.",
+            "audio": "/media/announcements/ustv/eedf036c64dff6d7918968d80c9a040a7b851cbf8d663d4a7d150885fba75e74.mp3",
+            "duration": 1.656,
+            "status": "ready",
+            "scriptHash": "ffa1e78c097c7b9307976060892d35b142874c11efd3da33a4100be871a6cc7a",
+            "audioHash": "eedf036c64dff6d7918968d80c9a040a7b851cbf8d663d4a7d150885fba75e74",
+            "provider": "template",
+            "model": null,
+            "scheduledStartTime": null,
+            "generatedAt": "2026-11-09T22:50:34+00:00"
+        }
+    ],
+    "updatedAt": "2026-11-09T22:50:34+00:00"
+}

@@ -3,7 +3,7 @@
     "name": "World Explorer",
     "description": "A 24-hour atlas of travel, geography and culture: Rick Steves' public-television tours of Europe at breakfast and again in prime time, DW Travel's European city reports, Geography Now's country-by-country profiles through the late morning, Kara and Nate's overland journeys, DW Documentary's long-form travel films and its slow-travel train rides at night, and Mark Wiens' street-food journeys -- with prime time organized as a nightly trip across the map (Europe, then Asia & the Middle East, then Africa & Latin America) and the small hours given over to public-domain travelogues from the 1910s to the 1940s.",
     "logo": "logo.svg",
-    "anchor": "2026-11-07T00:00:00+00:00",
+    "anchor": "2026-11-10T00:00:00-08:00",
     "fixAllCapsTitles": true,
     "theme": {
         "bg": "#071d22",
