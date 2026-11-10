@@ -22,7 +22,8 @@ declare(strict_types=1);
 // real file INSIDE media/ -- never trusted as a bare string, same posture
 // as every path/id AdminSupport.php already guards elsewhere in this repo.
 //
-// GET  ?action=list    -> every bumps/*.json, in full
+// GET  ?action=list    -> every bumps/*.json, in full, plus a read-only
+//                         `modifiedAt` (the file's mtime, ISO 8601 UTC)
 // GET  ?action=media   -> what's available to build a bump FROM: every
 //                         media/video, media/images, media/music,
 //                         media/ambience file,
@@ -380,6 +381,11 @@ function bump_admin_list(string $bumpsDir = BUMP_ADMIN_ROOT): array
             continue;
         }
         $data['id'] = $id;
+        // Additive, read-only: the file's last-modified time (ISO 8601,
+        // UTC) for the Library's "Modified" column. Never written back --
+        // create/update build the stored document from scratch.
+        $mtime = filemtime($path);
+        $data['modifiedAt'] = $mtime === false ? null : gmdate('c', $mtime);
         $out[] = $data;
     }
     usort($out, fn (array $a, array $b): int => strcasecmp((string) ($a['name'] ?? ''), (string) ($b['name'] ?? '')));

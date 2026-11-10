@@ -301,6 +301,26 @@ final class BumpAdminTest
         Assert::same('Zeta Bump', $list[1]['name']);
     }
 
+    public function testListAddsTheFileModifiedTimeAsModifiedAt(): void
+    {
+        $id = bump_admin_create($this->validBody(), $this->bumpsDir, $this->mediaRoot)['bump']['id'];
+        touch("$this->bumpsDir/$id.json", 1794000000);
+        clearstatcache();
+        $list = bump_admin_list($this->bumpsDir);
+        Assert::same(gmdate('c', 1794000000), $list[0]['modifiedAt']);
+    }
+
+    public function testModifiedAtIsNeverWrittenIntoTheBumpFile(): void
+    {
+        $id = bump_admin_create($this->validBody(), $this->bumpsDir, $this->mediaRoot)['bump']['id'];
+        $listed = bump_admin_list($this->bumpsDir)[0];
+        // The editor round-trips whatever it was given; an update carrying
+        // modifiedAt must still store only schema fields.
+        bump_admin_update($listed + ['id' => $id], $this->bumpsDir, $this->mediaRoot);
+        $stored = json_decode((string) file_get_contents("$this->bumpsDir/$id.json"), true);
+        Assert::true(!array_key_exists('modifiedAt', $stored));
+    }
+
     // ---------- schema_version 2: duration + timing (bumps/README.md "Timing") ----------
 
     public function testCreateWithoutDurationStaysSchemaVersion1WithNoTimingFields(): void
