@@ -43,10 +43,22 @@
 
 export const TOPICS = Object.freeze({
   // ---- app shell (scheduler/index.html) ----
-  /** state, retained. {view} -- which top-level scheduler view is shown ("schedule"|"series"|"programming"|"bumps"). Owner: scheduler/js/view.js. */
+  /** state, retained. {view} -- which top-level scheduler view is shown ("schedule"|"series"|"programming"|"bumps"|"explorer"). Owner: scheduler/js/view.js. */
   APP_VIEW_STATE: "app.view.state",
   /** command. {view} -- switch the top-level scheduler view. Handled by scheduler/js/view.js. */
   APP_VIEW_OPEN: "app.view.open",
+
+  // ---- Explorer (scheduler/js/components/explorer/) ----
+  /** state, retained. {mode, channel, series, episode, airing, t, cat, asset, q} -- Explorer's current selection (semantic ids only; `airing` is a start timestamp in epoch seconds). Owner: explorer-store.js. */
+  EXPLORER_ROUTE_STATE: "explorer.route.state",
+  /** command. {mode?, channel?, series?, episode?, airing?, t?, cat?, asset?, q?} -- switch to Explorer and select that entity (same fields and validation as Explorer's URL). Handled by explorer-store.js. */
+  EXPLORER_OPEN: "explorer.route.open",
+
+  // ---- hand-offs into the existing editors (read-only focus; never mutate) ----
+  /** command. {seriesId, episodeId?} -- reveal a series (and episode row) in the Series review view. Handled by cf-series-admin. */
+  SERIES_REVIEW_OPEN: "series.review.open",
+  /** command. {channelId, blockId?} -- reveal a channel (and programming block) in the Programming view. Handled by cf-channel-admin. */
+  PROGRAMMING_CHANNEL_OPEN: "programming.channel.open",
 
   // ---- Google Drive auth (scheduler/js/drive.js) ----
   /** state, retained. {connected} -- whether a valid Drive OAuth token is held. */

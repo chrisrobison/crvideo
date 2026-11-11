@@ -189,8 +189,28 @@ it with `{ retained: true }`).
 
 | Topic | Kind | Retained | Payload | Notes |
 | --- | --- | --- | --- | --- |
-| `app.view.state` | state | yes | `{view}` -- `"schedule"\|"series"\|"programming"\|"bumps"` | Which top-level section is visible. `main.js` toggles `[data-view]` from it; `cf-header` highlights its nav; `cf-bump-studio` lazy-loads on first `"bumps"`. |
+| `app.view.state` | state | yes | `{view}` -- `"schedule"\|"series"\|"programming"\|"bumps"\|"explorer"` | Which top-level section is visible. `main.js` toggles `[data-view]` from it; `cf-header` highlights its nav; `cf-bump-studio` lazy-loads on first `"bumps"`. |
 | `app.view.open` | command | no | `{view}` | Switch view. Published by `cf-header`'s nav and Bump Studio's "set up the announcer" link; handled by `view.js`. |
+
+`view.js` also keeps `?view=<name>` in the URL (`history.pushState` on every
+change, `popstate` -> view) so Back returns from Bump Studio to Explorer; the
+`explorer` view's own query parameters are owned by `explorer-store.js`.
+
+### Explorer -- `scheduler/js/components/explorer/explorer-store.js`
+
+Explorer is a read-only browser/inspector (see `docs/explorer.md`). It publishes
+its selection and accepts a command to be driven from elsewhere; all hand-offs
+to editors are commands those editors own.
+
+| Topic | Kind | Retained | Payload | Notes |
+| --- | --- | --- | --- | --- |
+| `explorer.route.state` | state | yes | `{mode, channel, series, episode, airing, t, cat, asset, q}` | Semantic ids only. `airing` is the airing's start in epoch seconds (an airing is `channel` + start, never an episode id); `asset` is a typed ref (`{kind:"bump",id}` etc.). |
+| `explorer.route.open` | command | no | same fields | Switch to Explorer and select that entity. Validated exactly like the URL (malformed ids are dropped). |
+| `series.review.open` | command | no | `{seriesId, episodeId?}` | Published by Explorer's "Open in Series Review"; handled by `cf-series-admin` (opens the series card, scrolls to the episode row; changes nothing). |
+| `programming.channel.open` | command | no | `{channelId, blockId?}` | Published by Explorer's "Open in Programming"; handled by `cf-channel-admin` (opens the channel card; changes nothing). |
+
+Bump Studio hand-offs reuse the existing `studio.compose.open` (`{id}`) and
+`studio.schedule.open` (`{channelId}`) after `app.view.open {view:"bumps"}`.
 
 ### Google Drive -- `scheduler/js/drive.js`
 

@@ -18,6 +18,7 @@ const SERIES_ENDPOINT = "../server/series-admin.php";
 const CHANNEL_ENDPOINT = "../server/channel-admin.php";
 const ANNOUNCER_ENDPOINT = "../server/announcer-admin.php";
 const BUMP_ENDPOINT = "../server/bump-admin.php";
+const EXPLORER_ENDPOINT = "../server/explorer-admin.php";
 
 async function getJson(url) {
   const r = await fetch(url, { cache: "no-store" });
@@ -78,4 +79,12 @@ export const bumpAdminApi = {
   // concern from the bump definitions above, see bump-admin.php's header.
   schedules: () => getJson(`${BUMP_ENDPOINT}?action=schedules`).then((r) => r.channels),
   saveSchedule: (channelId, enabled, rules) => postJson(BUMP_ENDPOINT, { action: "save_schedule", channel_id: channelId, enabled, rules }).then((r) => r.schedule),
+};
+
+// server/explorer-admin.php -- READ-ONLY compact projections of series/*/series.json
+// for CRVideo Explorer (the full series list above is ~6 MB). GET only.
+export const explorerAdminApi = {
+  seriesIndex: () => getJson(`${EXPLORER_ENDPOINT}?action=series_index`).then((r) => r.series),
+  series: (id) => getJson(`${EXPLORER_ENDPOINT}?action=series&id=${encodeURIComponent(id)}`).then((r) => r.series),
+  episodeIndex: () => getJson(`${EXPLORER_ENDPOINT}?action=episode_index`).then((r) => r.episodes),
 };

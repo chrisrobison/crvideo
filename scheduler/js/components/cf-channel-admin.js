@@ -24,6 +24,7 @@
 
 import { baseComponentCSS, escapeHtml, toast } from "../utils.js";
 import { channelAdminApi, seriesAdminApi, announcerAdminApi } from "../admin-api.js";
+import { TOPICS, subscribe } from "../../../js/bus.js";
 
 const FREQUENCIES = ["daily", "weekly", "monthly"];
 const WEEKDAYS = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
@@ -267,7 +268,27 @@ class CfChannelAdmin extends HTMLElement {
       this.attachShadow({ mode: "open" });
       this._render();
     }
+    // Explorer hand-off: reveal a channel (and programming block). Pure
+    // navigation -- opens a <details> and scrolls; never edits anything.
+    subscribe(TOPICS.PROGRAMMING_CHANNEL_OPEN, ({ data }) => {
+      if (typeof data?.channelId !== "string") return;
+      this._pendingFocus = { channelId: data.channelId, blockId: typeof data.blockId === "string" ? data.blockId : null };
+      this._applyFocus();
+    });
     this.reload();
+  }
+
+  _applyFocus() {
+    const f = this._pendingFocus;
+    const body = this.shadowRoot?.querySelector(".body");
+    if (!f || !body) return;
+    const card = body.querySelector(`details[data-channel="${cssEscape(f.channelId)}"]`);
+    if (!card) return;
+    this._pendingFocus = null;
+    card.open = true;
+    const row = f.blockId ? [...card.querySelectorAll(".block-row")].find((r) => (r.dataset.block || r.querySelector(".b-id")?.value) === f.blockId) : null;
+    (row || card).scrollIntoView({ block: "start", behavior: "smooth" });
+    (row || card).animate?.([{ outline: "2px solid var(--accent)" }, { outline: "2px solid transparent" }], { duration: 1800 });
   }
 
   async reload() {
@@ -371,6 +392,7 @@ class CfChannelAdmin extends HTMLElement {
       const card = body.querySelector(`details[data-channel="${cssEscape(c.id)}"]`);
       if (card) this._wireChannelCard(card, c);
     }
+    this._applyFocus();
   }
 
   _channelCardHtml(c) {
