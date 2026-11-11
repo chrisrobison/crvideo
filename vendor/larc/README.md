@@ -10,11 +10,11 @@ its import map (`../vendor/larc/pan.js` from `scheduler/` and
 | | |
 | --- | --- |
 | Package | `@larcjs/core` (NOT `core-lite`) |
-| Version | 3.0.1 |
+| Version | 3.0.2 |
 | Upstream repo | https://github.com/larcjs/larc |
-| Fetched from | https://cdn.jsdelivr.net/npm/@larcjs/core@3.0.1/index.js |
-| Date fetched | 2026-11-10 |
-| sha256 | `922b0709b8f7829721f25c2820d85f113ba690cf3712a7760ce7d374e407c169` |
+| Fetched from | https://cdn.jsdelivr.net/npm/@larcjs/core@3.0.2/index.js |
+| Date fetched | 2026-11-11 |
+| sha256 | `097ebcbe478bca2f497ed2f0295df8fd278d313593e62c54c74b8e2e4f8c382b` |
 | Contents | `PanBus` (`<pan-bus>` element), `PanClient`, `ensureBus()`, `createClient()` -- one file, no imports |
 
 ## Updating

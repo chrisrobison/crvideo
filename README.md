@@ -129,7 +129,7 @@ Dependency-free ES modules, no framework:
   Transition rather than ever creating a second instance).
 
 Components and stores on a page talk through one page-level message bus: the
-[LARC/PAN](https://github.com/larcjs/larc) bus (`@larcjs/core` 3.0.1,
+[LARC/PAN](https://github.com/larcjs/larc) bus (`@larcjs/core` 3.0.2,
 vendored as `vendor/larc/pan.js` -- see `vendor/larc/README.md` for
 provenance and update steps), mapped in each page's import map and used
 only through `js/bus.js`. Stores publish state/events on it and

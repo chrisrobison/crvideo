@@ -184,7 +184,7 @@ export function createMemoryBackend() {
   return backend;
 }
 
-/** Backend over the real vendored LARC bus (`@larcjs/core` 3.0.1). */
+/** Backend over the real vendored LARC bus (`@larcjs/core` 3.0.2). */
 async function createPanBackend() {
   const { createClient, PanClient } = await import("@larcjs/core");
   const client = createClient(document); // ensureBus() + a document-hosted client used for publish/request
@@ -199,7 +199,7 @@ async function createPanBackend() {
       busEl.append(host);
       const sub = new PanClient(host);
       const off = sub.subscribe(topics, handler, { retained });
-      return () => { off(); host.remove(); };
+      return () => { off(); sub.dispose(); host.remove(); };
     },
     request(topic, data, opts) { return client.request(topic, data, opts); },
   };
