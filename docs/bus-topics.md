@@ -3,7 +3,7 @@
 Every page with component code (`scheduler/index.html`,
 `channels/index.html`, `channels/watch.html`) runs one page-level
 message bus: [LARC/PAN](https://github.com/larcjs/larc), `@larcjs/core`
-3.0.1, vendored byte-for-byte as `vendor/larc/pan.js` (provenance and
+3.0.2, vendored byte-for-byte as `vendor/larc/pan.js` (provenance and
 update steps: `vendor/larc/README.md`). Stores and custom elements talk
 through it instead of through ad-hoc `EventTarget`s, so a new component
 (the coming scheduling-UI revamp, a debug panel, a second player) can
