@@ -80,7 +80,8 @@ export function renderAiring(store) {
   const ov = overlays.map((o) => `
       <div class="ov" data-shadowed="${o.shadowed}" style="left:${pct(Math.max(o.startsAt, from))};width:${wpct(Math.max(o.startsAt, from), Math.min(o.endsAt, to))}"
         title="Bump overlay: ${esc(bumpDefs.get(o.bumpId)?.name || o.bumpId)} ${esc(fmtTime(o.startsAt, true))}–${esc(fmtTime(o.endsAt, true))}${o.shadowed ? " (an earlier rule wins here)" : ""}"></div>`).join("");
-  const marker = t >= from && t <= to ? `<div class="marker" style="left:${pct(t)}"><span>${inside ? "+" + esc(fmtDuration(t - a.startsAt)) : esc(fmtTime(t, true))}</span></div>` : "";
+  const markerFrac = (t - from) / span;
+  const marker = t >= from && t <= to ? `<div class="marker${markerFrac > 0.8 ? " end" : ""}" style="left:${pct(t)}"><span>${inside ? "+" + esc(fmtDuration(t - a.startsAt)) : esc(fmtTime(t, true))}</span></div>` : "";
   const timeline = section("Continuity timeline", `
     <div class="tl" role="img" aria-label="Timeline of published items around this airing">
       <div class="tl-track">${seg}${marker}</div>

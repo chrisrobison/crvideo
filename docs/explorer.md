@@ -90,3 +90,49 @@ channels/tests/explorer-*.test.js, server/tests/ExplorerAdminTest.php
 4. Production asset explorer (bumps, announcements, media), where-used.
 5. Global search, relationships.
 6. Polish: keyboard, responsive, resize, history, a11y.
+
+---
+
+## What was built (as of this branch)
+
+Open it from the **EXPLORER** tab in ChannelFlow, or deep-link:
+
+```
+scheduler/?view=explorer&channel=science&series=techmoan&episode=yt-3H3QRtDTE4Y
+scheduler/?view=explorer&channel=science&airing=1794384010&t=1794543420     # airing = start (epoch s); t = inspected instant
+scheduler/?view=explorer&mode=production&cat=bumps&asset=bump:forest-interlude
+scheduler/?view=explorer&q=bridge&scope=episodes
+```
+
+- **Programs**: Channels -> Shows -> Episodes | Schedule -> Airings, with a contextual Inspector
+  (channel, series, episode, airing, asset). A series is reachable without a channel (All shows).
+- **Time travel** (toolbar): any instant; answers come from the *published* schedule via
+  `broadcast.js` `locate()`. Outside `_publish.window` the result is an explicit out-of-range state.
+- **Production**: Bumps, voiceover announcements, music, ambience, background videos (libraries that
+  exist in the repo) with a "Where used" column. Bump previews use the existing `<cr-bump>`.
+- **Search**: one box (Ctrl/Cmd+K), client-side over metadata, grouped by type, scope chips, and a
+  relationship inspector for the picked result.
+- **Hand-offs** (all read-only commands over the bus): Programming (`programming.channel.open`),
+  Series Review (`series.review.open`), Bump Studio compose/schedule (`studio.compose.open`,
+  `studio.schedule.open`). Browser Back returns to the exact Explorer state.
+- **Keyboard**: Up/Down/Home/End within a column; Enter/Space selects; Right selects and enters the next
+  column; Left goes back a column; Enter on the selected item (or double-click) opens its editor;
+  Esc clears search / closes the audio dock; Ctrl/Cmd+K focuses search.
+
+### Honest limits
+
+- Playback health, audience, "on air", asset availability checks, drift/sync, LUFS: **not known**, not shown.
+- Series have no category/tags/season in `series.json`: shown as "Not recorded".
+- Search "airings" covers only the channel schedules loaded (all of them load in the background, one at a time).
+- Episode preview plays through the YouTube iframe adapter (or a native `<video>` for directly hosted
+  files). Videos whose provider disallows embedding show the reason and a link to the source instead.
+- Continuity cards are previewed with the channel's own `<cr-continuity-card>`; announcements play in a dock.
+- Not built (optional per spec): node-link relationship diagram, per-column resizing (the Inspector
+  splitter is resizable), a server-side search API.
+- Pre-existing, unrelated: the Series tab eagerly renders all ~9.8k episode rows at page load (~4 s main-thread
+  stall) regardless of the visible view. Explorer does not depend on it, but it affects first-load responsiveness.
+
+### Tests
+
+`node --test channels/tests/*.test.js` (route, model, store, view history, plus the existing suites) and
+`php server/tests/run-tests.php` (ExplorerAdminTest).

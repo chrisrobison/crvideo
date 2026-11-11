@@ -199,8 +199,9 @@ class ExplorerBrowser extends HTMLElement {
     wrap.scrollLeft = hScroll;
     // The selection changed: keep the newest column fully in view (the Inspector stays put).
     const routeKey = JSON.stringify([store.route.mode, store.route.channel, store.route.series, store.route.episode, store.route.airing, store.route.cat, store.route.asset]);
-    if (routeKey !== this._routeKey) {
-      this._routeKey = routeKey;
+    if (routeKey !== this._routeKey) { this._routeKey = routeKey; this._routeAt = performance.now(); }
+    // Re-check for a short settle window after each selection: columns fill in as data arrives.
+    if (performance.now() - (this._routeAt || 0) < 4000) {
       const els = [...wrap.querySelectorAll(".col")];
       const last = els[els.length - 1];
       if (last && els.length > 1 && last.offsetLeft + last.offsetWidth > wrap.clientWidth + wrap.scrollLeft - 2) {

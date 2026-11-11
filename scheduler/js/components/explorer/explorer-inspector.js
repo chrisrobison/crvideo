@@ -271,6 +271,8 @@ class ExplorerInspector extends HTMLElement {
     audio.addEventListener("error", () => { dock.querySelector(".dock-l").textContent = "The audio file could not be played."; });
   }
 
+  closeDock(quiet = false) { this._closeDock(quiet); }
+
   _closeDock(quiet = false) {
     const dock = this.shadowRoot?.querySelector(".dock");
     if (!dock || dock.hidden) return;
@@ -336,6 +338,7 @@ const STYLE = `
   .tl-none{ font-size:11.5px; margin-top:4px; }
   .marker{ position:absolute; top:-4px; bottom:-4px; width:2px; background:#fff; z-index:3; box-shadow:0 0 6px rgba(255,255,255,.7); }
   .marker span{ position:absolute; top:-18px; left:50%; transform:translateX(-50%); background:#fff; color:#0b0d13; font-size:10.5px; font-weight:800; padding:1px 5px; border-radius:4px; white-space:nowrap; }
+  .marker.end span{ left:auto; right:-2px; transform:none; }
   table.mini tr[data-sel="true"]{ background:var(--accent-soft); }
   .ann{ display:flex; align-items:flex-start; gap:10px; padding:8px 0; border-bottom:1px solid var(--border-soft); } .ann:last-child{ border-bottom:0; }
   .ann > button{ padding:6px 8px; flex:0 0 auto; } .ann .grow{ flex:1; min-width:0; } .script-s{ font-size:13px; font-style:italic; }

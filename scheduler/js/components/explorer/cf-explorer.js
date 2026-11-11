@@ -5,11 +5,13 @@
 // draws it and forwards input.
 
 import { explorerStore as store } from "./explorer-store.js";
+import { TOPICS, subscribe } from "../../../../js/bus.js";
 import { routeCrumbs } from "./explorer-route.js";
 import { esc, explorerCSS, icons, fmtDateTime, toInputs, fromInputs, tzName, titleCase } from "./explorer-ui.js";
 import { renderSearchView, docKey } from "./explorer-search.js";
 import "./explorer-browser.js";
 import "./explorer-inspector.js";
+import { stopPreview } from "./explorer-media.js";
 
 const WIDTH_KEY = "explorer.inspectorWidth";
 const MIN_W = 340;
@@ -65,6 +67,11 @@ class CfExplorer extends HTMLElement {
     this._wire();
 
     this._off = store.init();
+    // Previews must never keep playing behind another view (or a hidden tab).
+    this._busCtl = new AbortController();
+    subscribe(TOPICS.APP_VIEW_STATE, ({ data }) => { if (data?.view !== "explorer") { stopPreview(); this.inspector.closeDock?.(true); } }, { retained: true, signal: this._busCtl.signal });
+    this._onHidden = () => { if (document.hidden) stopPreview(); };
+    document.addEventListener("visibilitychange", this._onHidden);
     this._unsub = store.subscribe(() => this._schedule());
     this._tick = setInterval(() => { if (store.active && store.route.t === null) this._schedule(); }, 30000);
     this._onKey = (e) => {
@@ -76,7 +83,8 @@ class CfExplorer extends HTMLElement {
   }
 
   disconnectedCallback() {
-    this._off?.(); this._unsub?.(); clearInterval(this._tick);
+    this._off?.(); this._unsub?.(); clearInterval(this._tick); this._busCtl?.abort(); stopPreview();
+    document.removeEventListener("visibilitychange", this._onHidden);
     document.removeEventListener("keydown", this._onKey);
   }
 
