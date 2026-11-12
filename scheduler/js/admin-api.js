@@ -18,6 +18,7 @@ const SERIES_ENDPOINT = "../server/series-admin.php";
 const CHANNEL_ENDPOINT = "../server/channel-admin.php";
 const ANNOUNCER_ENDPOINT = "../server/announcer-admin.php";
 const BUMP_ENDPOINT = "../server/bump-admin.php";
+const EXPLORER_ENDPOINT = "../server/explorer-admin.php";
 
 async function getJson(url) {
   const r = await fetch(url, { cache: "no-store" });
@@ -51,10 +52,9 @@ export const channelAdminApi = {
   publish: (channelId, opts) => postJson(CHANNEL_ENDPOINT, { action: "publish", channel_id: channelId, ...opts }),
 };
 
-// server/announcer-admin.php -- the AI continuity announcer's admin
-// surface (Pass 2 of channels/announcer/README.md). See that file's own
-// header for exactly what each action does; this is a thin, un-opinionated
-// wrapper, same posture as channelAdminApi above.
+// server/announcer-admin.php -- the AI continuity announcer's admin surface
+// (see channels/announcer/README.md). A thin wrapper; see that file's header
+// for what each action does.
 export const announcerAdminApi = {
   list: () => getJson(`${ANNOUNCER_ENDPOINT}?action=list`).then((r) => r.channels),
   voices: (channelId) => getJson(`${ANNOUNCER_ENDPOINT}?action=voices&channel_id=${encodeURIComponent(channelId)}`),
@@ -78,4 +78,12 @@ export const bumpAdminApi = {
   // concern from the bump definitions above, see bump-admin.php's header.
   schedules: () => getJson(`${BUMP_ENDPOINT}?action=schedules`).then((r) => r.channels),
   saveSchedule: (channelId, enabled, rules) => postJson(BUMP_ENDPOINT, { action: "save_schedule", channel_id: channelId, enabled, rules }).then((r) => r.schedule),
+};
+
+// server/explorer-admin.php -- READ-ONLY compact projections of series/*/series.json
+// for CRVideo Explorer (the full series list above is ~6 MB). GET only.
+export const explorerAdminApi = {
+  seriesIndex: () => getJson(`${EXPLORER_ENDPOINT}?action=series_index`).then((r) => r.series),
+  series: (id) => getJson(`${EXPLORER_ENDPOINT}?action=series&id=${encodeURIComponent(id)}`).then((r) => r.series),
+  episodeIndex: () => getJson(`${EXPLORER_ENDPOINT}?action=episode_index`).then((r) => r.episodes),
 };

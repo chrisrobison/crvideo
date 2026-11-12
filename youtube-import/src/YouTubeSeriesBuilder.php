@@ -4,7 +4,7 @@ declare(strict_types=1);
 // youtube-import/src/YouTubeSeriesBuilder.php
 //
 // Merges freshly fetched YouTube video metadata into a series.json (the
-// portable series schema from phase 1 -- see series/*/series.json), either
+// portable series schema; see series/*/series.json), either
 // creating one from scratch or refreshing an existing one. This is where
 // the spec's "Import safety and refreshes" rules actually live:
 //
@@ -23,7 +23,7 @@ declare(strict_types=1);
 // dirty bit to allow safely re-syncing an untouched title/description --
 // that would need to persist a shadow copy of "the last value we wrote"
 // to tell "never touched" apart from "edited back to coincidentally the
-// same text," which is more machinery than this phase needs. Treating
+// same text," which is more machinery than it is worth. Treating
 // those fields as frozen at creation time is the simpler rule that can
 // never clobber a hand edit, which is the hard requirement; the cost is
 // that a title YouTube later corrects won't auto-sync, which an editor

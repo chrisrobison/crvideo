@@ -4,52 +4,37 @@ declare(strict_types=1);
 // channels/publish/src/RotationState.php
 //
 // Persisted rotation-cursor checkpoint for PACKING-ENABLED blocks (see
-// ProgrammingCompiler's packing path). This is new state that
-// EpisodeSetPin does not cover: EpisodeSetPin snapshots WHICH episodes
-// are eligible and in what order ("the pinned list"); this file tracks
-// WHERE a block's sequential consumption of that list currently is, now
-// that a single occurrence can consume more than one episode -- so
-// "advance by one episode per occurrence" (the old, still-used-when-
-// packing-is-disabled rule) is no longer enough to know what plays next.
+// ProgrammingCompiler's packing path). EpisodeSetPin snapshots WHICH episodes
+// are eligible and in what order; this file tracks WHERE a block's sequential
+// consumption of that list is. A single occurrence can consume several
+// episodes, so the non-packing rule "advance by one episode per occurrence"
+// can no longer tell what plays next.
 //
-// Why a checkpoint, not a full per-occurrence ledger: the schedule's
-// composition for a given occurrence is a pure function of (a) the
-// pinned episode list and (b) the rotation cursor/deferred-queue state
-// *entering* that occurrence. Two separate compiles that start from the
-// same entering state and walk the same occurrences forward produce
-// identical results, so we never need to remember every occurrence ever
-// published -- just one checkpoint: the state entering the most recent
-// publish window's own first occurrence. Every later publish re-derives
-// (replays) everything from that checkpoint forward to the new window's
-// end, then advances the checkpoint to ITS OWN window's first occurrence
-// -- never past it, which is what keeps republishing the same (or an
-// overlapping) window idempotent: replay starts from the same checkpoint
-// and reproduces the same state and the same emitted items every time.
-// Replay cost is bounded by how far the window has moved forward since
-// the last publish (normally a few days -- see publish.php's "Rollover /
-// regeneration workflow"), never by the channel's total lifetime.
+// Why a checkpoint, not a per-occurrence ledger: an occurrence's composition
+// is a pure function of (a) the pinned list and (b) the cursor/deferred-queue
+// state *entering* it. Compiles that start from the same entering state and
+// walk the same occurrences forward give identical results, so only one
+// checkpoint is kept: the state entering the most recent publish window's
+// first occurrence. Each publish replays from that checkpoint to the new
+// window's end, then advances the checkpoint to its own window's first
+// occurrence, never past it. That makes republishing the same (or an
+// overlapping) window idempotent. Replay cost is bounded by how far the
+// window moved since the last publish (normally a few days; see publish.php's
+// rollover notes), not by the channel's lifetime.
 //
-// Documented limitation (same honesty standard as EpisodeSetPin's "Known
-// limitations" and this project's other state files): publishing a
-// window whose first occurrence is EARLIER than the current checkpoint
-// (an operator deliberately moving --window-start backward past a
-// previously advanced checkpoint) is not something this file can replay
-// correctly -- there is no history before the checkpoint to re-derive
-// from. That case resets rotation state to the beginning (cursor 0, no
-// deferred episodes) with a clear warning rather than silently guessing;
-// it is the packing-path equivalent of re-publishing from scratch. The
-// ordinary forward-rolling workflow this project already documents never
-// hits it.
+// Limitation: publishing a window whose first occurrence is EARLIER than the
+// checkpoint (an operator moving --window-start backward) can't be replayed,
+// because there is no history before the checkpoint. Rotation state resets
+// to the beginning (cursor 0, no deferred episodes) with a warning rather
+// than guessing; normal forward rolling never hits it.
 //
-// Also resets (with a warning) whenever the pinned episode-set version
-// it was last computed against no longer matches the current pin's
-// version (see EpisodeSetPin) -- a cursor position/deferred-episode-id
-// list computed against one pinned ordering is not meaningful against a
-// different one.
+// State also resets (with a warning) when the pinned episode-set version it
+// was computed against no longer matches the current pin's (see
+// EpisodeSetPin): a cursor and deferred ids computed against one ordering
+// are meaningless against another.
 //
-// State files are intentionally NOT source-controlled (channels/publish/
-// .gitignore already covers channels/<id>/.publish/) -- same operational
-// posture as EpisodeSetPin.
+// State files are not source-controlled (channels/publish/.gitignore covers
+// channels/<id>/.publish/), like EpisodeSetPin's.
 
 final class RotationState
 {

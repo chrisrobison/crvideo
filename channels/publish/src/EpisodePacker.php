@@ -3,79 +3,57 @@ declare(strict_types=1);
 
 // channels/publish/src/EpisodePacker.php
 //
-// Pure, single-occurrence packing decision: given how much time is
-// available in one scheduled occurrence and a block's pinned episode
-// list + where its rotation currently is, decide which episode(s) to
-// play, in order, and the rotation state entering the NEXT occurrence.
-// This is intentionally the only place "does episode X fit in the time
-// I have left" is decided -- ProgrammingCompiler owns *when* occurrences
-// happen and persisting state across publish runs (see RotationState);
-// this class owns none of that, which is what keeps it trivially unit-
-// testable with plain arrays and no filesystem/clock involved.
+// Pure, single-occurrence packing decision: given the time available in one
+// occurrence and a block's pinned episode list plus its rotation state,
+// decide which episode(s) to play, in order, and the rotation state entering
+// the NEXT occurrence. This is the only place "does episode X fit in the time
+// I have left" is decided. ProgrammingCompiler owns *when* occurrences happen
+// and RotationState persists state across publish runs; this class owns
+// neither, so it is unit-testable with plain arrays and no filesystem/clock.
 //
-// Three packing.mode values (Phase 2 of docs/series-and-channels.md). An
-// episode is NEVER truncated to fit; it either plays in full or is not
-// scheduled this occurrence at all, in every mode:
+// An episode is NEVER truncated to fit: in every mode it plays in full or is
+// not scheduled this occurrence. packing.mode values:
 //
-//   - "sequential" (packSequential): play pinned episodes in their
-//     defined order, fitting as many complete ones as possible. Best
-//     for structured/episodic series where airing order matters.
+//   - "sequential" (packSequential): play pinned episodes in defined order,
+//     fitting as many complete ones as possible. For episodic series where
+//     order matters.
 //   - "best_fit" (packBestFit): at each pick, choose from every eligible
-//     (fitting, not-yet-used-this-occurrence) pinned episode the one
-//     that minimizes leftover time -- a bounded O(pinnedCount^2) greedy
-//     search per occurrence, never an exhaustive/combinatorial one.
-//     Deterministic tie-break: smallest leftover first, then closest
-//     (wrapping) to a fairness cursor that rotates forward past whatever
-//     was just used (so one "perfectly-sized" episode can't dominate
-//     every occurrence forever), then lowest pinned index. Order doesn't
-//     matter for this mode, so `on_unfit` doesn't apply -- every
-//     occurrence already searches every eligible episode.
-//   - "hybrid" (packHybrid): prefer the main sequential cursor whenever
-//     it fits (the scheduled show stays recognizable); when it doesn't,
-//     search a BOUNDED, SEPARATE rotation of "alternate" episodes for
-//     filler, using its own cursor (`altCursor`) so (a) the main
-//     sequence's cursor is never disturbed by filler picks -- it always
-//     resumes exactly where it left off -- and (b) no single alternate
-//     is reused every time one is needed, which would otherwise starve
-//     the rest of the catalog of ever being used as filler.
+//     (fitting, not yet used this occurrence) pinned episode the one that
+//     minimizes leftover time: a bounded O(pinnedCount^2) greedy search per
+//     occurrence, never exhaustive. Tie-break: smallest leftover, then closest
+//     (wrapping) to a fairness cursor that rotates past whatever was just used
+//     (so one perfectly sized episode can't dominate every occurrence), then
+//     lowest pinned index. Order doesn't matter, so `on_unfit` doesn't apply.
+//   - "hybrid" (packHybrid): prefer the main sequential cursor whenever it
+//     fits (the show stays recognizable); otherwise search a bounded, separate
+//     rotation of "alternate" episodes for filler, with its own cursor
+//     (`altCursor`) so (a) the main cursor is never disturbed by filler picks
+//     and (b) no single alternate is reused every time, which would starve the
+//     rest of the catalog.
 //
-// on_unfit policy ("sequential" mode only -- see packSequential; hybrid's
-// own, simpler "find one bounded alternate, else hold" rule is described
-// above, and best_fit has no notion of "the next" episode at all),
-// applied the moment the next sequential episode does not fit in
-// whatever time remains in the occurrence:
-//   - "defer" (the conservative default): stop packing this occurrence.
-//     The rotation cursor is deliberately NOT advanced past the unfit
-//     episode -- which is exactly what gives it priority again: the very
-//     next occurrence tries it FIRST, with a full fresh slot. Nothing
-//     separate needs to be "remembered" for this case. (If the episode
-//     is longer than the block's own configured duration, no future
-//     occurrence of THIS block will ever fit it either -- see the
-//     dedicated warning for that, which names the fix: a larger
-//     duration, or a different on_unfit policy.)
-//   - "skip_for_block": look ahead, bounded by the pinned list's own
-//     length (so this can never loop unboundedly even with a tiny
-//     catalog), for the next episode that DOES fit; every pinned episode
-//     skipped over to reach it (including the original unfit one) is
-//     added to a small deferred queue -- tried first, oldest first, at
-//     every future occurrence, ahead of the sequential cursor -- so
-//     nothing pinned is ever permanently dropped from rotation just
-//     because this occurrence found something else to play instead. When
-//     no alternative fits either, this degrades to exactly what "defer"
-//     does (cursor held, nothing queued).
+// on_unfit policy (sequential mode only; hybrid has its own simpler "find one
+// bounded alternate, else hold" rule and best_fit has no "next" episode),
+// applied when the next sequential episode doesn't fit the remaining time:
+//   - "defer" (the default): stop packing this occurrence. The cursor is NOT
+//     advanced past the unfit episode, which gives it priority at the next
+//     occurrence with a full fresh slot; nothing else needs remembering. (If
+//     the episode is longer than the block's own duration, no future
+//     occurrence will fit it either; a dedicated warning names the fix: a
+//     larger duration or a different on_unfit policy.)
+//   - "skip_for_block": look ahead, bounded by the pinned list's length, for
+//     the next episode that does fit. Every episode skipped to reach it
+//     (including the unfit one) joins a small deferred queue, tried first
+//     (oldest first) at every future occurrence ahead of the sequential
+//     cursor, so nothing is permanently dropped. If nothing fits either, this
+//     degrades to "defer" (cursor held, nothing queued).
 //   - "allow_overrun": schedule the unfit episode anyway, letting the
-//     occurrence run longer than its nominal slot. This is only ever
-//     safe because ProgrammingCompiler's existing overlap check (see its
-//     header comment) still refuses to publish a schedule where that
-//     overrun collides with the next scheduled occurrence -- exactly
-//     the same safety net a single, naturally-overlong episode already
-//     relied on before packing existed.
+//     occurrence run past its nominal slot. Safe because ProgrammingCompiler's
+//     overlap check (BoundaryResolver) still refuses a schedule where the
+//     overrun collides with the next occurrence.
 //
-// An episode is never scheduled twice within the same occurrence unless
-// packing.allow_repeat_within_block is true (default false) -- with a
-// catalog of N pinned episodes this is also naturally bounded: no more
-// than N distinct "new" sequential picks are ever attempted for one
-// occurrence.
+// An episode is never scheduled twice in one occurrence unless
+// packing.allow_repeat_within_block is true (default false); with N pinned
+// episodes, at most N distinct "new" sequential picks are attempted.
 
 final class EpisodePacker
 {

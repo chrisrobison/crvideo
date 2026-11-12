@@ -3,21 +3,17 @@ declare(strict_types=1);
 
 // channels/publish/src/ContinuityResolver.php
 //
-// Resolves a channel's `continuity.json` reference(s) -- a new, optional
-// top-level `"continuity": [{"ref": "..."}]` array in catalog.json,
-// resolved with the EXACT SAME path-safety rules as the existing
-// `"series"` array (see CatalogResolver.php's header: relative-only,
-// root-contained, no scheme/protocol-relative reference). This is the
-// "reusable assets... shared between channels" mechanism Phase 4 asks
-// for: a channel's catalog.json can reference both a network-wide
-// continuity.json (station IDs/cards every channel can use) and its own
-// station-specific one, merged into a single pool.
+// Resolves a channel's `continuity.json` reference(s): an optional top-level
+// `"continuity": [{"ref": "..."}]` array in catalog.json, resolved with the
+// same path-safety rules as the `"series"` array (see CatalogResolver.php:
+// relative-only, root-contained, no scheme/protocol-relative reference). A
+// channel's catalog.json can reference both a network-wide continuity.json
+// (station IDs/cards every channel can use) and its own, merged into one
+// pool.
 //
-// Absent entirely (no "continuity" array in catalog.json): resolves to
-// an EMPTY pool, which is what tells ProgrammingCompiler/ContinuityFiller
-// to do absolutely nothing different -- every channel published before
-// this phase keeps producing plain, uncovered "gap" blocks exactly as
-// before, unless it opts in by referencing at least one continuity.json.
+// With no "continuity" array, the pool is EMPTY, which tells
+// ProgrammingCompiler/ContinuityFiller to do nothing: uncovered time stays
+// plain "gap" blocks.
 //
 // continuity.json schema (schema_version 1):
 //
@@ -36,11 +32,9 @@ declare(strict_types=1);
 //   }
 //
 // "minimum_lead_in" (seconds, default 0): ProgrammingCompiler reserves this
-// much time at the FRONT of every occurrence -- for EVERY program, not just
-// wherever packing happens to leave a leftover -- so a continuity card
-// always has at least this long to render before the program it precedes.
-// 0 (the default, and every continuity.json published before this field
-// existed) is a byte-for-byte no-op.
+// much time at the FRONT of every occurrence, for every program (not just
+// where packing leaves a leftover), so a continuity card always has at least
+// this long to render before the program it precedes. 0 is a no-op.
 //
 // Multiple referenced files merge: station_ids/filler/cards concatenate
 // (a duplicate asset id across files is reported, never silently

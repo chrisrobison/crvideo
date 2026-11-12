@@ -1,14 +1,12 @@
 // channels/tests/epg-timeline.test.js
 //
-// Unit tests for buildEpgTimeline() (Phase 4 of docs/guide-update.md) --
-// the guide-facing program-level projection of a published schedule.json,
-// alongside the existing playback-facing buildTimeline(). Every schedule
-// object below is built by hand (the same shape ScheduleWriter.php
-// actually writes: one "normal" block, flat `items`, an optional
-// top-level `programs` collection) rather than loaded from a fixture,
-// since buildEpgTimeline() is a pure function of exactly that plain data.
-// channels/tests/published-schedule.test.js separately proves the real
-// PHP-compiled-and-written output loads correctly end to end.
+// Unit tests for buildEpgTimeline(), the guide-facing program-level
+// projection of a published schedule.json (buildTimeline() is the
+// playback-facing one). Schedules are built by hand in the shape
+// ScheduleWriter.php writes (one "normal" block, flat `items`, an optional
+// top-level `programs` collection), since buildEpgTimeline() is a pure
+// function of that data. published-schedule.test.js separately checks real
+// PHP-compiled output end to end.
 
 import { test } from "node:test";
 import assert from "node:assert/strict";

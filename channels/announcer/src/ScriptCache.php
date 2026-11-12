@@ -9,8 +9,7 @@ declare(strict_types=1);
 // channels/<id>/.announcer/scripts/<hash>.json -- gitignored build
 // state, same posture as channels/<id>/.publish/.
 //
-// "approved" (set once a human edits/approves a script via the Pass 2
-// admin UI) is the one flag routine regeneration must never clear or
+// "approved" (set once a human edits/approves a script via the admin UI) is the one flag routine regeneration must never clear or
 // overwrite -- AnnouncerPipeline only ever calls put() for a NEW hash
 // (the hash already encodes every input that should trigger a rewrite;
 // an approved entry simply never gets looked up again once its inputs
@@ -46,7 +45,7 @@ final class ScriptCache
     }
 
     /** Marks an existing cached script as manually approved/edited -- never
-     *  called by routine (re)generation, only by the Pass 2 admin editor.
+     *  called by routine (re)generation, only by the admin editor.
      *  Works whether or not a script already exists for $hash (an editor
      *  can write a brand-new approved line for a transition that hasn't
      *  been generated yet), so this creates the scripts/ directory itself

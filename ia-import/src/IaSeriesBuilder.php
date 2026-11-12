@@ -23,20 +23,15 @@ declare(strict_types=1);
 // a later refresh): title, description, creator, guests, status, rights,
 // episode_number.
 //
-// A directly-hosted episode's "source.provider" is always exactly the
-// literal string "html5" -- not "internet_archive" or anything else. This
-// is not cosmetic: channels/broadcast.js's provider dispatch (see its
-// header and channels/player-adapters.js) only special-cases "youtube"
-// (the iframe adapter) and the literal string "html5" (shows the <video>
-// element and routes to Html5PlayerAdapter); any other provider string is
-// accepted by the schema but never wired to an adapter or made visible
-// (see channels/broadcast.js's own "future-proofing" comment on
-// resolveProvider()). "html5" is also exactly what every pre-existing
-// ia-import-produced schedule.json already uses implicitly (no "source" at
-// all, just a bare media_url) -- series.json episodes need an explicit
-// "source" object (for episode_number/attribution/licensing bookkeeping),
-// so they use the explicit, equally-recognized spelling rather than
-// omitting "source" entirely, which would lose per-episode attribution.
+// A directly-hosted episode's "source.provider" is always the literal string
+// "html5", not "internet_archive" or anything else. This is functional:
+// channels/broadcast.js's provider dispatch (see player-adapters.js) only
+// special-cases "youtube" (the iframe adapter) and "html5" (the <video>
+// element via Html5PlayerAdapter); any other provider string passes the schema
+// but is never wired to an adapter or made visible. Schedules produced by
+// ia-import.php use "html5" implicitly (a bare media_url, no "source"), but
+// series.json episodes need an explicit "source" object for episode_number/
+// attribution/licensing bookkeeping, so they spell it out.
 //
 // New episodes are appended as status "candidate", rights {"status":
 // "unverified", "notes": null} -- always, regardless of what IA's own

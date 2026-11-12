@@ -2,68 +2,49 @@
 //
 // <cr-channel-player>: the one full-player implementation shared by
 // channels/watch.html (standalone, full-viewport, deep-linkable) and
-// channels/index.html (the guide's own small preview tile, which can
-// expand this exact same element in place). Before this existed, the
-// guide opened watch.html in a brand-new popup window via window.open()
-// -- a second, separate player instance that had to reload/re-buffer the
-// stream from scratch, and whose first click (inside that new window)
-// could only unmute audio, never also start it, because a freshly
-// opened window's very first paint carries no user-activation of its
-// own. Folding playback into one reusable element lets the SAME click
-// that expands the guide's preview into this component's full-chrome
-// mode also unmute + go fullscreen (see engage()) -- and, because
-// expanding never tears down or recreates this element, never
-// re-buffers either: see channels/index.html's expandChannel(), which
-// just reparents this same, already-playing element.
+// channels/index.html (the guide's small preview tile, which expands this
+// same element in place). Because expanding never tears down or recreates
+// the element, the stream isn't re-buffered, and the same click that expands
+// it can also unmute and go fullscreen (see engage()); a freshly opened
+// window's first paint carries no user activation, which is why a popup
+// player could only unmute. See index.html's expandChannel(), which just
+// reparents the already-playing element.
 //
-// Shadow DOM, no build step, same dependency-free convention as
-// continuity-card.js. Every element that used to be sized `position:
-// fixed; inset:0` against the *viewport* (because watch.html WAS the
-// viewport) is now `position:absolute; inset:0` against *this host
-// element* instead -- :host itself carries the "am I filling the
-// viewport or sized by my parent tile" decision via the `compact`
-// attribute (see the CSS below), so every single one of those
-// descendants works unchanged in either mode.
+// Shadow DOM, no build step, like continuity-card.js. Descendants are sized
+// `position:absolute; inset:0` against this host; :host itself decides
+// whether it fills the viewport or is sized by its parent via the `compact`
+// attribute (see the CSS).
 //
-// Public surface a host page actually uses:
-//   - `compact` attribute/property: minimal chrome, sized by the
-//     parent (the guide's small tile) instead of the viewport. Toggling
-//     it is purely cosmetic -- the underlying BroadcastPlayer instance,
-//     and whatever is currently loaded/playing, is completely
-//     unaffected either way.
-//   - `standalone` property (default true): whether this instance owns
-//     the page's own URL/title (watch.html) or not (index.html, which
-//     has its own guide URL to protect). false suppresses the
-//     history.replaceState()/document.title side effects tune() and
-//     onAiring() would otherwise perform.
+// Public surface a host page uses:
+//   - `compact` attribute/property: minimal chrome, sized by the parent.
+//     Purely cosmetic; the BroadcastPlayer and what it's playing are
+//     unaffected.
+//   - `standalone` property (default true): whether this instance owns the
+//     page's URL/title (watch.html) or not (index.html). false suppresses the
+//     history.replaceState()/document.title side effects of tune() and
+//     onAiring().
 //   - `.tune(channelId)`: load and switch to a channel.
-//   - `.engage()`: unmute + request fullscreen on THIS element. Always
-//     call this directly from a click/keydown handler, never from
-//     inside a `document.startViewTransition()` callback or any other
-//     microtask -- browsers only grant unmuted autoplay/fullscreen to a
-//     call still carrying the original user gesture's activation.
-//   - `.player` (the underlying BroadcastPlayer) / `.channel` (the
-//     currently loaded channel record): read-only, for a host that
-//     wants its own rich "what's on" UI (e.g. index.html's title/
-//     progress bar/description panel) without reaching into internals.
-//   - `cr-channel-change` event: fired after tune() actually switches to
-//     a different channel (including via remote-control channel
-//     surfing/dialing while this element has focus) -- lets a host keep
-//     its own UI (e.g. the guide's "focused" row highlight) in sync.
+//   - `.engage()`: unmute + request fullscreen on this element. Call it
+//     directly from a click/keydown handler, never from inside a
+//     `document.startViewTransition()` callback or other microtask: browsers
+//     grant unmuted autoplay/fullscreen only to a call still carrying the
+//     original user activation.
+//   - `.player` (the BroadcastPlayer) / `.channel` (the loaded channel
+//     record): read-only, for hosts that build their own "what's on" UI.
+//   - `cr-channel-change` event: fired after tune() switches to a different
+//     channel (including via remote-control surfing), so a host can keep its
+//     own UI in sync.
 //   - `cr-back` event (cancelable): the built-in "‹ Channel guide" link
-//     dispatches this before navigating. A host that wants its own
-//     behavior instead (index.html: shrink back into the tile, not a
-//     real navigation) calls `event.preventDefault()`, which also
-//     cancels the link's own default navigation -- watch.html, which
-//     wants the plain navigation, just doesn't listen.
+//     dispatches it before navigating. A host that wants its own behavior
+//     (index.html: shrink back into the tile) calls `event.preventDefault()`,
+//     which also cancels the link's navigation; watch.html just doesn't listen.
 //   - `cr-airing` event: fired on every airing (program/break) change.
 //
-// Page bus (js/bus.js, docs/bus-topics.md): the DOM events above stay the
-// element's API for its direct host; the discrete, page-level facts are
-// ALSO published on the bus -- player.state (retained snapshot),
-// player.channel.changed, player.program.changed, player.bump.started /
-// player.bump.ended. Nothing per-frame (video time, <cr-bump>'s
-// bump-time) is ever published.
+// Page bus (js/bus.js, docs/bus-topics.md): the DOM events above remain the
+// API for the direct host; discrete page-level facts are also published on
+// the bus -- player.state (retained snapshot), player.channel.changed,
+// player.program.changed, player.bump.started / player.bump.ended. Nothing
+// per-frame (video time, <cr-bump>'s bump-time) is published.
 
 import {
   CHANNEL_ID, listChannels, loadChannel, loadCatalog, loadTheme, loadAnnouncements, loadBumpSchedule, loadBumpDefinitionsFor,
@@ -235,13 +216,9 @@ export class ChannelPlayer extends HTMLElementBase {
       const allowDefault = this.dispatchEvent(new CustomEvent("cr-back", { cancelable: true }));
       if (!allowDefault) e.preventDefault();
     });
-    // Click-to-engage/dblclick-to-fullscreen are this component's OWN
-    // gesture handling for when it's the full, primary player -- exactly
-    // watch.html's pre-existing behavior. In compact mode (the guide's
-    // small preview tile) a click means something the HOST page decides
-    // (index.html: expand into the full view), so this component stays
-    // out of the way entirely rather than also engaging/fullscreening the
-    // still-tiny tile underneath whatever the host is about to do.
+    // Click-to-engage/dblclick-to-fullscreen apply only when this is the full
+    // player. In compact mode a click means whatever the HOST decides
+    // (index.html: expand), so this component stays out of the way.
     this.addEventListener("click", (e) => {
       if (this.compact || e.target.closest("a, button")) return;
       const wasEngaged = this._engaged && !this.player.isMuted();
@@ -301,34 +278,20 @@ export class ChannelPlayer extends HTMLElementBase {
     loadTheme(next).then((bumperTheme) => {
       if (this._channel !== next) return;
       this._bumperTheme = bumperTheme;
-      // Patches the already-running player's channelMeta in place rather
-      // than calling setTimeline() again -- see BroadcastPlayer.
-      // updateChannelMeta()'s header: this never interrupts/reloads
-      // whatever is currently playing, it just means a continuity card
-      // that appears AFTER this resolves picks up the theme (one that's
-      // already on screen when this resolves won't retroactively gain
-      // it, same trade-off as before this existed).
+      // Patch the running player's channelMeta in place (see
+      // BroadcastPlayer.updateChannelMeta()): a continuity card that appears
+      // after this resolves picks up the theme; one already on screen doesn't.
       this.player.updateChannelMeta({ bumperTheme });
     });
-    // AI continuity announcer (Pass 2): this channel's announcements.json
-    // manifest (see broadcast.js's loadAnnouncements()/
-    // findAnnouncementAudio()) -- empty array, and no behavior change at
-    // all, for every channel whose announcer isn't enabled.
+    // This channel's announcements.json manifest (see loadAnnouncements()).
     loadAnnouncements(next).then((announcements) => {
       if (this._channel !== next) return;
       this._announcements = announcements;
       this.player.updateChannelMeta({ announcements });
     });
-    // Clock-anchored bump schedule (see player-adapters.js's "bump
-    // scheduling" header and BroadcastPlayer.tick()'s bump branch): an
-    // empty rules list, and no behavior change at all, for every channel
-    // without a bump-schedule.json. Each referenced bumps/<id>.json is
-    // resolved in the SAME chain (not a separate fire-and-forget) so
-    // `bumpDefinitions` is never patched in before `bumpSchedule` is --
-    // tick() looks a bumpId up in bumpDefinitions only after matching a
-    // rule in bumpSchedule, so a half-updated pair could never actually
-    // enter a bump, but keeping them in one update avoids that window
-    // entirely rather than relying on that.
+    // Clock-anchored bump schedule (see player-adapters.js's "bump scheduling"
+    // header). Each referenced bumps/<id>.json is resolved in the same chain
+    // so `bumpDefinitions` is never patched in before `bumpSchedule`.
     loadBumpSchedule(next).then(async (schedule) => {
       if (this._channel !== next) return;
       const rules = schedule.enabled ? schedule.rules : [];
@@ -357,18 +320,14 @@ export class ChannelPlayer extends HTMLElementBase {
   }
 
   // ---------- sound + full screen ----------
-  // Call engage() directly from a user gesture (click/keydown) -- never
-  // from inside a promise callback or a document.startViewTransition()
-  // updateCallback -- so the browser still credits it as the original
-  // gesture for unmuted autoplay/requestFullscreen().
+  // Call engage() directly from a user gesture (click/keydown), never from a
+  // promise callback or startViewTransition() callback, so the browser still
+  // credits the original gesture for unmuted autoplay/requestFullscreen().
 
-  /** Unmute (+, by default, request real browser fullscreen). Always call
-   *  this directly from the click/keydown handler itself -- see this
-   *  class's header. `{ fullscreen: false }` skips the OS-level
-   *  fullscreen request -- e.g. channels/index.html's in-page "theater"
-   *  expand, which fills the viewport with CSS/a view transition instead
-   *  and leaves real fullscreen as a separate, explicit action (dblclick/
-   *  'f', unchanged either way). */
+  /** Unmute (+, by default, request real browser fullscreen); see the class
+   *  header for the user-gesture requirement. `{ fullscreen: false }` skips
+   *  the OS-level fullscreen request, e.g. index.html's in-page "theater"
+   *  expand, which leaves real fullscreen as a separate action (dblclick/'f'). */
   engage({ fullscreen = true } = {}) {
     if (this.player.state === "blocked") this.player.resume();
     this.player.setMuted(false);
@@ -395,11 +354,8 @@ export class ChannelPlayer extends HTMLElementBase {
     }
     this._renderInfo();
     if (airing.playable) this._showInfo(7000);
-    // For a host page with its own "what's on" UI alongside this element
-    // (e.g. channels/index.html's title/progress-bar/description panel
-    // next to the compact preview tile) -- fires on every program
-    // transition AND right after tune() first loads a channel, same
-    // triggering as this element's own _renderInfo() above.
+    // For hosts with their own "what's on" UI next to this element; fires on
+    // every program transition and right after tune() first loads a channel.
     this.dispatchEvent(new CustomEvent("cr-airing", { detail: { airing } }));
     publish(TOPICS.PLAYER_PROGRAM_CHANGED, {
       channelId: this._channel?.id ?? null, title: airing.playable ? airing.title : null,
@@ -541,11 +497,9 @@ export class ChannelPlayer extends HTMLElementBase {
     this._idleTimer = setTimeout(() => this.classList.add("idle"), 3000);
   }
 
-  // ---------- remote control (channel surf/dial) -- only wired up while
-  // this element isn't compact; see attributeChangedCallback/connected/
-  // disconnectedCallback above. Keeps the guide page's own arrow-key row
-  // navigation free of interference while this is just a small preview
-  // tile, exactly as it always has been. ----------
+  // ---------- remote control (channel surf/dial) -- wired up only while this
+  // element isn't compact, so the guide's arrow-key row navigation isn't
+  // intercepted by the small preview tile. ----------
 
   async _surf(step) {
     try { this._lineup ??= await listChannels(); } catch { return; }

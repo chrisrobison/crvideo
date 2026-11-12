@@ -4,28 +4,23 @@ declare(strict_types=1);
 // channels/publish/src/ScheduleWriter.php
 //
 // Compiles ProgrammingCompiler's flat, absolute-timestamped item list into
-// the EXISTING schedule.json shape (schema_version/channel/blocks/items,
-// gaps filling every uncovered interval -- the same "gap is the only way
-// empty time is represented" rule ia-import's own output already follows)
-// and writes it, plus updates the channel's meta.json "anchor" to the
-// window's start instant. The existing player (broadcast.js) needs no
-// changes at all to read this: it is just one "normal" block whose
-// duration is the real elapsed seconds of the published window (which
-// may differ slightly from `days * 86400` across a DST transition --
-// that's correct; it's the real wall-clock-to-wall-clock elapsed time,
-// not an approximation) anchored at the window's own start.
+// the existing schedule.json shape (schema_version/channel/blocks/items, with
+// a gap item for every uncovered interval, as in ia-import's output) and
+// writes it, then updates the channel's meta.json "anchor" to the window's
+// start instant. broadcast.js reads it unchanged: it is one ordinary block
+// whose duration is the real elapsed seconds of the published window (which
+// can differ slightly from `days * 86400` across a DST transition, correctly)
+// anchored at the window's start.
 //
-// Deliberate consequence of this design (documented, not a bug): once
-// real time passes the published window's end, buildTimeline's existing
-// modulo-based cycle wrapping takes over and the window simply repeats
-// from its own start -- the channel does not go dark or crash, it just
-// keeps airing the last published window on a loop until publish.php is
-// run again to produce a fresh forward window. See channels/publish.php
-// --help for the republish/rollover workflow.
+// Consequence of this design: once real time passes the window's end,
+// buildTimeline's modulo cycle wrapping repeats the window from its start,
+// so the channel keeps airing the last published window on a loop until
+// publish.php is run again. See channels/publish.php --help for the
+// republish/rollover workflow.
 //
 // Writes are atomic (temp file + rename) with a single-generation ".bak"
-// backup, the same convention as youtube-import/src/YouTubeSeriesWriter.php
-// and server/publish-playlist.php.
+// backup, like youtube-import/src/YouTubeSeriesWriter.php and
+// server/publish-playlist.php.
 
 final class ScheduleWriter
 {
@@ -34,11 +29,9 @@ final class ScheduleWriter
      *        already sorted ascending by start, already validated non-overlapping.
      * @param list<array{block_id:string,series_id:string,version:int,episode_count:int}> $episodeSets
      * @param list<array{occurrence_id:string,block_id:string,title:?string,description:?string,series_id:?string,series_title:?string,boundary_mode:string,nominal_start:int,nominal_end:int,start:int,end:int}> $programs
-     *        BoundaryResolver's resolved program-occurrence collection (Phase 3/4 of
-     *        docs/guide-update.md). [] (the default) for a channel with no
-     *        programming.json-sourced occurrences -- schedule.json then carries no
-     *        "programs" key at all, identical to every schedule written before this
-     *        feature existed.
+     *        BoundaryResolver's resolved program-occurrence collection (see
+     *        docs/guide-update.md). [] for a channel with no programming.json-sourced
+     *        occurrences; schedule.json then carries no "programs" key at all.
      */
     public static function writeSchedule(
         string $path,
@@ -55,19 +48,15 @@ final class ScheduleWriter
             throw new RuntimeException('Publish window end must be after its start.');
         }
 
-        // Phase 3/4/7 of docs/guide-update.md: computed up front (relative seconds,
-        // same convention as every item below) so the gap-insertion below can
-        // attribute a genuinely unfilled portion of a block (e.g. packing's
-        // minimum_remaining left a remainder, and this channel has no
-        // continuity.json to cover it -- ContinuityFiller never even sees it, since
-        // it only runs when continuity assets/cards exist) to its OWN enclosing
-        // program, the same way an actual continuity filler already is. Without
-        // this, that leftover time would be written as a second, unattributed
-        // "gap" item sitting INSIDE a program occurrence's effective window --
-        // which the program's own EPG cell already spans end to end -- and the
-        // guide's two timeline entries would overlap. A gap that falls outside
-        // every program's window (a genuine inter-program station break) is
-        // deliberately left untagged.
+        // Computed up front (relative seconds, like every item below) so gap
+        // insertion can attribute an unfilled portion of a block (e.g. packing's
+        // minimum_remaining left a remainder and the channel has no continuity.json,
+        // so ContinuityFiller never sees it) to its own enclosing program, as a
+        // continuity filler already is. Otherwise that time would be a second,
+        // unattributed "gap" item inside a program's effective window, which the
+        // program's EPG cell already spans, and the guide's two timeline entries
+        // would overlap. A gap outside every program's window (a genuine
+        // inter-program station break) is left untagged.
         $relPrograms = [];
         foreach ($programs as $p) {
             $relPrograms[] = [
@@ -84,16 +73,13 @@ final class ScheduleWriter
                 'end' => $p['end'] - $windowStartTs,
             ];
         }
-        // Splits [relStart,relEnd) into one or more segments, each either fully
-        // inside one program's effective window (tagged with its occurrence_id)
-        // or fully outside every one (untagged). Ordinarily a single gap is
-        // either entirely a block's own under-filled remainder or entirely a
-        // genuine inter-program station break, but this stays correct even when
-        // one raw gap happens to straddle a program's own end and further
-        // genuinely-unscheduled time beyond it (e.g. the very last program in a
-        // published window, with nothing scheduled after it) -- the in-program
-        // portion still gets attributed, and only the truly-uncovered remainder
-        // past it is left as its own, unattributed station break.
+        // Splits [relStart,relEnd) into segments, each fully inside one program's
+        // effective window (tagged with its occurrence_id) or fully outside every
+        // one (untagged). Usually a gap is entirely one or the other, but this stays
+        // correct when a raw gap straddles a program's end and further unscheduled
+        // time beyond it (e.g. the last program in a window): the in-program portion
+        // is attributed and only the remainder is left as an unattributed station
+        // break.
         $splitGapByPrograms = static function (int $relStart, int $relEnd) use ($relPrograms): array {
             $segments = [];
             $cursor = $relStart;
@@ -108,12 +94,10 @@ final class ScheduleWriter
                 if ($owner !== null) {
                     $segEnd = min($relEnd, $owner['end']);
                 } else {
-                    // Unowned time: stop at the next program's own start (never
-                    // run past where its window begins) -- see ContinuityFiller::
-                    // splitByProgramBoundaries()'s identical fix for why this
-                    // matters once a program's first real item can start a few
-                    // seconds after its nominal/effective window does
-                    // (ProgrammingCompiler's $minimumLeadInSeconds).
+                    // Unowned time: stop at the next program's own start. See
+                    // ContinuityFiller::splitByProgramBoundaries()'s identical fix:
+                    // a program's first real item can start a few seconds after its
+                    // effective window does (ProgrammingCompiler's $minimumLeadInSeconds).
                     $nextStart = $relEnd;
                     foreach ($relPrograms as $p) {
                         if ($p['start'] > $cursor && $p['start'] < $nextStart) {
@@ -146,11 +130,10 @@ final class ScheduleWriter
             }
 
             if (($it['kind'] ?? 'video') === 'continuity') {
-                // Phase 4/5: a dynamically-rendered continuity card -- no media asset at
-                // all. The compiler already decided its template, exact duration, and
-                // which program follows; the player only ever computes a countdown
-                // display from this and the broadcast clock (see docs/series-and-
-                // channels.md), never anything about WHAT plays or for how long.
+                // A dynamically rendered continuity card: no media asset. The compiler
+                // decided its template, exact duration and the program that follows; the
+                // player only computes a countdown from this and the broadcast clock (see
+                // docs/series-and-channels.md).
                 $relItems[] = [
                     'type' => 'continuity',
                     'id' => $it['id'],
@@ -158,10 +141,9 @@ final class ScheduleWriter
                     'duration' => $relEnd - $relStart,
                     'template' => $it['template'],
                     'next_program_id' => $it['next_program_id'] ?? null,
-                    // Phase 3/7: present only when this continuity card sits inside a
-                    // programming block's own effective window (e.g. covering its
-                    // under-filled remainder) -- absent for a genuine inter-program
-                    // station break, same distinction Phase 7 requires everywhere else.
+                    // Present only when this card sits inside a programming block's
+                    // effective window (e.g. covering its under-filled remainder); absent
+                    // for a genuine inter-program station break.
                     ...(isset($it['program_id']) ? ['program_id' => $it['program_id']] : []),
                 ];
                 $used += $relEnd - $relStart;
@@ -171,11 +153,9 @@ final class ScheduleWriter
 
             $source = $it['source'];
             $provider = is_array($source) && is_string($source['provider'] ?? null) ? $source['provider'] : null;
-            // A directly-hosted (non-YouTube) episode's source.url IS a playable
-            // media file; YouTube's source.url is a watch-page link, never a
-            // media file, so it never populates media_url -- the player's
-            // structured provider resolution (not URL sniffing) is what
-            // actually picks the YouTube adapter for it regardless.
+            // A directly-hosted (non-YouTube) episode's source.url is a playable media
+            // file. YouTube's is a watch-page link, so it never populates media_url; the
+            // player picks the YouTube adapter from the structured provider, not the URL.
             $mediaUrl = ($provider !== null && $provider !== 'youtube' && is_string($source['url'] ?? null)) ? $source['url'] : null;
 
             $relItem = [
@@ -188,27 +168,22 @@ final class ScheduleWriter
                 'source_url' => $it['source_url'],
                 'source' => $source,
             ];
-            // Phase 3 (boundary.mode soft/elastic): a delay is never silently
-            // absorbed -- BoundaryResolver records exactly how many seconds this
-            // occurrence was pushed past its nominal start, carried straight
-            // through onto the published item so the schedule stays self-
-            // documenting (the admin preview and any future continuity/"coming up
-            // next" renderer can read it directly, no re-derivation needed).
+            // boundary.mode soft/elastic: a delay is never silently absorbed.
+            // BoundaryResolver records how many seconds this occurrence was pushed past
+            // its nominal start, and it's carried onto the published item so the
+            // schedule is self-documenting (no re-derivation needed by readers).
             if (isset($it['delay_seconds']) && $it['delay_seconds'] > 0) {
                 $relItem['delay_seconds'] = $it['delay_seconds'];
             }
             if (isset($it['continuity_category'])) {
-                // Marks a ContinuityFiller-sourced station-id/filler occurrence as such
-                // (vs. an actual scheduled episode) -- purely informational; playback is
-                // identical either way, an ordinary direct-media "video" item.
+                // Marks a ContinuityFiller-sourced station-id/filler item (vs. a scheduled
+                // episode). Informational only; playback is identical.
                 $relItem['continuity_category'] = $it['continuity_category'];
             }
             if (isset($it['program_id'])) {
-                // Phase 3: the compact reference back into this schedule's top-level
-                // "programs" collection (see below) -- the smallest backward-compatible
-                // way to preserve this episode's logical programming-block identity.
-                // Absent for any item with no known program (legacy schedules, or a
-                // genuine station break between programs).
+                // Compact reference into this schedule's top-level "programs" collection
+                // (below), preserving the episode's logical programming-block identity.
+                // Absent for items with no known program (e.g. a genuine station break).
                 $relItem['program_id'] = $it['program_id'];
             }
             $relItems[] = $relItem;
@@ -226,14 +201,11 @@ final class ScheduleWriter
             }
         }
 
-        // Phase 3/4 of docs/guide-update.md: one entry per logical programming
-        // occurrence (the $relPrograms computed above), in the same window-
-        // relative seconds as every item's own start/duration -- the program-level
-        // EPG projection's source of truth. A legacy channel (no programming.json,
-        // e.g. Film Day at School) or one not yet opted into block title/
-        // description metadata produces [] here, so "programs" is simply omitted
-        // from the written file -- identical to every schedule.json written before
-        // this feature existed.
+        // One entry per logical programming occurrence (the $relPrograms above), in
+        // the same window-relative seconds as item starts: the source of truth for the
+        // program-level EPG projection. A channel with no programming.json (e.g. Film
+        // Day at School) or without block title/description metadata produces [], and
+        // "programs" is omitted from the written file.
 
         $schedule = [
             '_publish' => [
@@ -259,10 +231,9 @@ final class ScheduleWriter
         return $schedule;
     }
 
-    /** Updates only meta.json's "anchor" field (to the window's start, as
-     *  an ISO-8601 instant) -- every other field an operator or an
-     *  earlier phase wrote (name, description, number, logo, hidden...)
-     *  is read back and preserved untouched. */
+    /** Updates only meta.json's "anchor" field (to the window's start, as an
+     *  ISO-8601 instant); every other field (name, description, number, logo,
+     *  hidden...) is read back and preserved. */
     public static function updateAnchor(string $metaPath, DateTimeImmutable $windowStart): void
     {
         $meta = is_file($metaPath) ? json_decode((string) file_get_contents($metaPath), true) : null;

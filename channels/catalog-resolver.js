@@ -1,69 +1,45 @@
 // Resolves a channel catalog.json's `series` references into a flat map of
-// playable entries, shared by the channel guide (index.html) and the watch
-// player (watch.html) via broadcast.js.
+// playable entries, shared by the channel guide and the watch player via
+// broadcast.js.
 //
-// Background: a catalog.json historically held only a flat `items` array
-// (one row per piece of media, keyed by id -- see channels/film-day-at-
-// school/catalog.json, produced by ia-import). That format keeps working
-// unchanged (schema_version 1, or no schema_version at all, with no
-// `series` key -- see resolveCatalog() below). This module *adds* an
-// optional `series` array of references to externally-maintained
-// series.json files (see series/<id>/series.json for the format), so a
-// show's metadata can be written once and reused across channels instead
-// of copy-pasted into every catalog that airs it.
+// A catalog.json holds a flat `items` array (one row per piece of media,
+// keyed by id; produced by ia-import) and, optionally, a `series` array of
+// references to externally maintained series/<id>/series.json files, so a
+// show's metadata is written once and reused across channels.
 //
-// This module is deliberately plain data in, plain data out: no DOM, no
-// built-in network client baked into the resolution logic itself (callers
-// inject `fetchJson`), so it can run under Node for tests and, so the same
-// rules (safe reference resolution, one include level, duplicate/collision
-// detection) can be mirrored in PHP -- see channels/publish/src/CatalogResolver.php,
-// added in phase 4's publish step, which must be kept in lockstep with this
-// file (same root-escape rule, same depth-1 limit, same dedup/collision
-// handling; there is no shared source between the two implementations, by
-// design -- see that file's header for the specifics of what must match).
+// Plain data in, plain data out: no DOM, and callers inject `fetchJson`, so
+// this runs under Node for tests. The reference-resolution rules (root-escape
+// check, one include level, duplicate/collision handling) are mirrored in
+// channels/publish/src/CatalogResolver.php; there is no shared source, so
+// the two must be kept in lockstep (see that file's header).
 //
-// An episode's "status" (series.json's episode.status) is one of:
-//   "candidate" -- imported but not reviewed; the default for anything an
-//                  importer writes. Never eligible for scheduling.
-//   "approved"  -- an editor has reviewed it and cleared it to air. Only
-//                  "approved" episodes are eligible for the publish step's
-//                  recurring-series rotation (channels/publish/).
-//   "rejected"  -- reviewed and declined; kept in the file (never deleted)
-//                  so it isn't re-imported as a new candidate.
-//   "disabled"  -- was approved and may have aired before, but is
-//                  temporarily pulled from rotation without un-approving
-//                  it for good (e.g. a rights question came up). Distinct
-//                  from "rejected" (permanent) and "candidate" (never yet
-//                  reviewed).
-// This module itself doesn't filter by status -- it indexes every episode
-// a series.json lists, status included, so a catalog-metadata consumer
-// (e.g. the guide) can still look up and display any episode by id. Status
-// *filtering* is the publish step's job, not this resolver's.
+// An episode's "status" (series.json episode.status):
+//   "candidate" -- imported but not reviewed; the default for importers.
+//                  Never eligible for scheduling.
+//   "approved"  -- cleared to air; the only status the publish step's
+//                  recurring-series rotation (channels/publish/) uses.
+//   "rejected"  -- reviewed and declined; kept in the file so it isn't
+//                  re-imported as a new candidate.
+//   "disabled"  -- approved but temporarily pulled from rotation (e.g. a
+//                  rights question), distinct from permanent "rejected".
+// This module indexes every episode regardless of status so the guide can
+// display any episode by id; status filtering belongs to the publish step.
 //
-// Separately, an episode's "rights" ({"status", "notes"}) tracks content
-// licensing, independent of editorial status above. Suggested rights.status
-// values: "unverified" (the default -- nothing has been checked; this is
-// what every importer-written episode gets and NEVER anything else, since
-// neither ia-import nor youtube-import infers rights from a video simply
-// being publicly fetchable), "creator_permission", "licensed",
-// "public_domain", "restricted". This field is editorial bookkeeping only
-// -- see docs/series-and-channels.md ("Editorial status and content
-// rights") for the full policy, including why "creator_permission" here
-// never overrides YouTube's own API terms or unlocks any different
-// playback behavior.
+// An episode's "rights" ({"status", "notes"}) tracks licensing independently
+// of editorial status. Suggested rights.status values: "unverified" (the
+// default, and all an importer ever writes -- public fetchability is never
+// treated as a license), "creator_permission", "licensed", "public_domain",
+// "restricted". Editorial bookkeeping only; see docs/series-and-channels.md
+// ("Editorial status and content rights").
 
 /** Series ids and episode ids must be filesystem/URL-safe tokens -- the
  *  same shape as CHANNEL_ID in broadcast.js. */
 export const SERIES_ID = /^[a-z0-9][a-z0-9-]*$/;
 
-/** series.json may not itself reference further series.json files. One
- *  include level only; see resolveCatalog()'s handling of a loaded
- *  series's own `series` field. */
+/** series.json may not itself reference further series.json files (one include level). */
 export const MAX_SERIES_DEPTH = 1;
 
-/** Default JSON fetcher (browser `fetch`, no caching beyond what the HTTP
- *  cache headers say -- same as broadcast.js's own fetchJson). Tests and
- *  any non-browser caller pass their own `fetchJson` instead. */
+/** Default JSON fetcher. Tests and non-browser callers pass their own. */
 export async function fetchJson(url) {
   const r = await fetch(url, { cache: "no-cache" });
   if (!r.ok) throw new Error(`${url}: HTTP ${r.status}`);
@@ -108,9 +84,8 @@ export function resolveRef(catalogUrl, ref, root = defaultRoot(catalogUrl)) {
   return { url };
 }
 
-/** channels/<id>/catalog.json -> two directories up is the repo root
- *  shared by channels/ and series/. Callers (e.g. a future PHP mirror, or
- *  a catalog living somewhere else) can pass an explicit `root` instead. */
+/** channels/<id>/catalog.json -> two directories up is the repo root shared
+ *  by channels/ and series/. Callers may pass an explicit `root` instead. */
 function defaultRoot(catalogUrl) {
   return new URL("../../", catalogUrl);
 }
@@ -144,17 +119,13 @@ export async function loadSeries(url, fetchJsonFn = fetchJson) {
 }
 
 /**
- * Resolves a channel's catalog.json: its flat `items` plus every series it
- * references, into one id -> item Map (what loadCatalog() in broadcast.js
- * has always returned, so existing callers don't change). Also returns the
- * loaded series' show-level metadata and a list of every problem hit along
- * the way -- missing/malformed files, unsafe references, duplicate
- * references, and colliding ids are all reported, never thrown, so a
- * broken reference degrades the one channel, not the whole guide.
- *
- * Episode ids are indexed as "<seriesId>:<episodeId>" -- collision-
- * resistant by construction, since two different series can never produce
- * the same key even if they happen to reuse an episode id internally.
+ * Resolves a channel's catalog.json (flat `items` plus every referenced
+ * series) into one id -> item Map. Also returns the loaded series' show-level
+ * metadata and every problem hit along the way (missing/malformed files,
+ * unsafe or duplicate references, colliding ids). Problems are reported,
+ * never thrown, so a broken reference degrades one channel, not the guide.
+ * Episode ids are indexed as "<seriesId>:<episodeId>", so two series that
+ * reuse an episode id can't collide.
  *
  * @returns {Promise<{items: Map<string,object>, series: object[], errors: string[]}>}
  */
@@ -176,7 +147,7 @@ export async function resolveCatalog(catalogUrl, { fetchJson: fetchJsonFn = fetc
     return { items, series, errors };
   }
 
-  // ---- flat items (the pre-existing, still fully supported format) ----
+  // ---- flat items ----
   for (const item of Array.isArray(raw.items) ? raw.items : []) {
     if (!item || typeof item.id !== "string" || !item.id) {
       errors.push(`catalog item missing a string "id"`);

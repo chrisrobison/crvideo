@@ -207,7 +207,7 @@ test("a malformed youtube item (missing video_id) locates as an unplayable gap-l
   assert.equal(loc.provider, null);
 });
 
-// ---------- continuity (Phase 4/5/6) ----------
+// ---------- continuity ----------
 
 test("a continuity schedule item is a real, playable-false, non-gap entry carrying its template/next-program fields", () => {
   const tl = buildTimeline(schedule([
@@ -299,11 +299,10 @@ test("pickWeightedIndex falls back to index 0 for an empty or all-zero list rath
 });
 
 // ---------- findAnnouncementAudio (broadcast.js) ----------
-// Pass 2 playback wiring: matches a continuity airing against the AI
-// continuity announcer's channels/<id>/announcements.json manifest
-// (see channels/announcer/src/AnnouncementContextBuilder.php, whose
-// `transitionId` is exactly the continuity schedule item's own `id` --
-// the same field mapScheduleItem() carries through as `airing.id`).
+// Matches a continuity airing against the announcer's channels/<id>/
+// announcements.json manifest (see AnnouncementContextBuilder.php, whose
+// `transitionId` is the continuity item's own `id`, carried through
+// mapScheduleItem() as `airing.id`).
 
 const BASE_AIRING = { type: "continuity", id: "continuity-1793577600", nextProgramId: "yt-abc123" };
 const READY_ANNOUNCEMENT = {

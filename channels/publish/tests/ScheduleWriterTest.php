@@ -3,12 +3,10 @@ declare(strict_types=1);
 
 // channels/publish/tests/ScheduleWriterTest.php
 //
-// Covers Phase 3/4/7 of docs/guide-update.md's additions to ScheduleWriter:
-// the top-level "programs" collection (window-relative, omitted when empty
-// for backward compatibility) and attributing a genuinely unfilled block
-// remainder -- a plain "gap" item ContinuityFiller never even saw, because
-// this channel has no continuity.json at all -- to its own enclosing
-// program, so the EPG's program-level cell and this gap never end up as
+// Covers the top-level "programs" collection (window-relative, omitted when
+// empty) and attributing an unfilled block remainder (a plain "gap" item
+// ContinuityFiller never saw, because the channel has no continuity.json) to
+// its enclosing program, so the EPG's program cell and this gap never become
 // two overlapping guide timeline entries.
 
 final class ScheduleWriterTest

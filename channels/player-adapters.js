@@ -1,43 +1,30 @@
 // Provider-specific playback adapters used by BroadcastPlayer (see
-// broadcast.js). Internet Archive (and any other directly-hosted file)
-// plays through a plain <video> element via Html5PlayerAdapter, exactly
-// as it always has; a YouTube-hosted episode plays through the official
-// YouTube IFrame Player API via YouTubePlayerAdapter. BroadcastPlayer picks
-// between them per-airing using structured provider metadata (see
-// resolveProvider() below) -- never by sniffing a URL string.
+// broadcast.js). Direct files (Internet Archive etc.) play through a plain
+// <video> via Html5PlayerAdapter; YouTube episodes play through the official
+// IFrame Player API via YouTubePlayerAdapter. The provider is chosen per
+// airing from structured metadata (see resolveProvider()), never by sniffing
+// a URL.
 //
-// Both adapters implement the same small surface (the spec's suggested
-// PlayerAdapter shape): load(source, offsetSeconds), play(), pause(),
-// seek(seconds), getCurrentTime(), getDuration(), destroy() -- plus
-// setMuted()/isMuted() (needed to preserve a viewer's mute/volume choice
-// across a program or provider transition) and a state-change callback
-// used for the shared "loading/playing/buffering/ended/error/blocked"
-// vocabulary BroadcastPlayer drives its UI from.
+// Both adapters implement load(source, offsetSeconds), play(), pause(),
+// seek(seconds), getCurrentTime(), getDuration(), destroy(), setMuted()/
+// isMuted() and a state-change callback using the shared vocabulary
+// "loading/playing/buffering/ended/error/blocked".
 //
-// Nothing here ever downloads, caches, proxies, or extracts a YouTube
-// media stream -- playback is entirely inside YouTube's own iframe/player,
-// which is also why YouTube's own controls, branding, and any ads it
-// serves are left exactly as YouTube renders them (no overlay is ever
-// drawn on top of the iframe itself; CRVideo's own transport UI -- the
-// channel-number flash, the lower-third info bar, the tap-to-unmute hint
-// -- stays in the surrounding page chrome, same as it already is for
-// HTML5 playback in watch.html).
+// Nothing here downloads, caches, proxies or extracts a YouTube media
+// stream: playback stays inside YouTube's own iframe, and no overlay is ever
+// drawn on top of it (CRVideo's transport UI lives in the surrounding page).
 
-// ---------- continuity (Phase 5/6: dynamic "Coming Up Next" cards) ----------
+// ---------- continuity cards ----------
 
 import "./continuity-card.js"; // side-effect: registers <cr-continuity-card>
 import "./bump-player.js"; // side-effect: registers <cr-bump>
 
 /**
- * Mounts/updates/hides a <cr-continuity-card> inside a container element
- * the caller owns (consistent placement with Html5PlayerAdapter/
- * YouTubePlayerAdapter, but NOT a PlayerAdapter itself -- a continuity
- * card is never "played, paused, or sought", just rendered, so forcing
- * it through that media-playback-shaped interface would only add
- * meaningless no-op methods). BroadcastPlayer calls this directly.
- * Never creates a fake video URL and never draws over an active
- * YouTube iframe -- see BroadcastPlayer.switchTo(), which always pauses/
- * hides the outgoing adapter first.
+ * Mounts/updates/hides a <cr-continuity-card> inside a container the caller
+ * owns. Not a PlayerAdapter: a card is rendered, never played, paused or
+ * sought. BroadcastPlayer calls this directly, and always pauses/hides the
+ * outgoing adapter first (see switchTo()) so a card is never drawn over a
+ * YouTube iframe.
  */
 export class ContinuityRenderer {
   constructor(container) {
@@ -50,30 +37,17 @@ export class ContinuityRenderer {
    * @param {{title:string, description?:string, thumbnailUrl?:string, startsAt:number}|null} program the UPCOMING program, not this card itself
    * @param {() => number} clockNow
    * @param {{startsAt:number, endsAt:number}} cardSpan this continuity occurrence's own span, for the progress bar
-   * @param {?string} template this occurrence's own continuity card "template" id
-   *        (schedule.json's `cards[].template`, from continuity.json) -- narrows
-   *        which `bumperTheme.bumpers` are eligible; see continuity-card.js.
+   * @param {?string} template this occurrence's card "template" id (schedule.json `cards[].template`); narrows which `bumperTheme.bumpers` are eligible (see continuity-card.js)
    * @param {{bumpers?:Array<object>, quoteDecks?:Record<string,string[]>}|null} bumperTheme
-   *        the channel's resolved `theme.json` (see broadcast.js's loadTheme()),
-   *        NOT the same thing as `channel.theme` below -- that's the small,
-   *        pre-existing color-token palette from meta.json. null (the default,
-   *        and every channel without a theme.json) renders the plain generic
-   *        card exactly as before this parameter existed.
-   * @param {?string} audioUrl this occurrence's AI continuity announcer
-   *        narration MP3 (see broadcast.js's findAnnouncementAudio()), or
-   *        null -- the default, and every channel whose announcer isn't
-   *        enabled -- for a silent card exactly as before this parameter
-   *        existed.
+   *        the channel's resolved theme.json (see loadTheme()); not `channel.theme`, which is the small color-token palette. null renders the plain generic card.
+   * @param {?string} audioUrl this occurrence's announcer narration MP3 (see findAnnouncementAudio()), or null for a silent card
    */
   show(channel, program, clockNow, cardSpan, template = null, bumperTheme = null, audioUrl = null) {
     if (!this.card) {
       this.card = document.createElement("cr-continuity-card");
       this.container.appendChild(this.card);
     }
-    // Per-channel theming lives entirely in the page/caller (never
-    // hardcoded in continuity-card.js itself) -- see loadChannel()'s
-    // `theme` field in broadcast.js. Unset properties simply keep the
-    // component's own generic defaults.
+    // Theming comes from the caller (loadChannel()'s `theme`), never hardcoded here; unset properties keep the component's defaults.
     const vars = { bg: "--cc-bg", bg2: "--cc-bg-2", fg: "--cc-fg", muted: "--cc-muted", accent: "--cc-accent", accentWarm: "--cc-accent-warm" };
     for (const [key, cssVar] of Object.entries(vars)) {
       const value = channel?.theme?.[key];
@@ -90,10 +64,8 @@ export class ContinuityRenderer {
     this.container.hidden = false;
   }
 
-  /** Mirrors BroadcastPlayer.setMuted()'s mute state onto the narration
-   *  track -- the announcer's voice-over is "channel audio" exactly like
-   *  any program's own soundtrack, so a viewer's mute/unmute choice must
-   *  follow them into and out of a continuity card. */
+  /** Mirrors BroadcastPlayer's mute state onto the narration track, so a
+   *  viewer's choice follows them into and out of a continuity card. */
   setMuted(muted) {
     this.card?.setMuted(muted);
   }
@@ -111,37 +83,26 @@ export class ContinuityRenderer {
 
 // ---------- bump scheduling (clock-anchored, e.g. "top of the hour") ----------
 //
-// A bump (see bumps/README.md, channels/bump-player.js) is scheduled onto a
-// channel entirely CLIENT-SIDE, by wall clock -- never by publishing it
-// into schedule.json. channels/publish/src/ContinuityFiller.php can only
-// fill an already-uncovered gap (see its header/ProgrammingCompiler.php);
-// it has no operation that carves a slot out of an otherwise contiguous,
-// tightly packed program block, so there is no reliable way to guarantee
-// "this airs for 12s starting exactly on the hour" from the publish side
-// alone -- most hour boundaries simply have no gap to fill. Driving it from
-// the player's own clock instead (BroadcastPlayer.tick(), same 500ms loop
-// already computing locate()) sidesteps that limitation entirely: every
-// viewer independently computes the identical wall-clock window from the
-// same absolute instant, exactly the same determinism contract locate()/
-// airings() already rely on, and it's unconditional -- it always fires,
-// whatever the underlying program's schedule looks like. The tradeoff,
-// accepted deliberately: like a continuity card, it draws OVER whatever
-// would otherwise be airing without pausing the underlying schedule, so a
-// viewer who watches through it simply misses that slice of the program --
-// identical to how a real broadcast station break works, and the same
-// trade-off this project's continuity cards already make.
+// A bump (see bumps/README.md, bump-player.js) is scheduled client-side by
+// wall clock, never published into schedule.json. ContinuityFiller.php can
+// only fill an already-uncovered gap; it cannot carve a slot out of a
+// tightly packed block, so "airs for 12s exactly on the hour" can't be
+// guaranteed from the publish side. Instead BroadcastPlayer.tick() derives
+// the window from the same wall clock as locate(), so every viewer computes
+// the identical window and it fires regardless of the schedule's shape.
+// Tradeoff: like a continuity card, a bump draws OVER whatever is airing
+// without pausing the underlying schedule, so a viewer misses that slice of
+// the program, as in a real station break.
 
 export const BUMP_RULE_PERIODS = { hour: 3600, halfHour: 1800, day: 86400 };
 
 /**
- * The clock-anchored window (if any) ONE bump schedule rule
- * ({bumpId, every, offsetSeconds, durationSeconds}) defines around time
- * `t`. `every` selects the period ("hour" -> every 3600s, etc. -- see
- * BUMP_RULE_PERIODS); `offsetSeconds` (default 0) is how far into each
- * period the window starts (0 = exactly on the hour/half-hour/day);
- * `durationSeconds` is how long it stays up. Pure function of (rule, t) --
- * returns null for an unrecognized `every` or when `t` doesn't fall inside
- * the window, never throws on a malformed rule.
+ * The window (if any) one bump rule ({bumpId, every, offsetSeconds,
+ * durationSeconds}) defines around time `t`. `every` selects the period
+ * (see BUMP_RULE_PERIODS), `offsetSeconds` (default 0) is how far into each
+ * period the window starts, `durationSeconds` how long it stays up. Pure
+ * function of (rule, t): returns null for an unrecognized `every` or when
+ * `t` is outside the window; never throws on a malformed rule.
  */
 export function bumpRuleWindow(rule, t) {
   const period = BUMP_RULE_PERIODS[rule?.every];
@@ -155,9 +116,8 @@ export function bumpRuleWindow(rule, t) {
   return { bumpId: rule.bumpId, startsAt, endsAt };
 }
 
-/** The first rule (in array order) whose window currently contains `t`, or
- *  null if none does -- the channel's whole bump schedule reduces to one
- *  "is a bump active right now, and which one" check per tick(). */
+/** The first rule (array order) whose window contains `t`, or null: one
+ *  "is a bump active, and which" check per tick(). */
 export function locateActiveBump(rules, t) {
   if (!Array.isArray(rules)) return null;
   for (const rule of rules) {
@@ -168,11 +128,8 @@ export function locateActiveBump(rules, t) {
 }
 
 /**
- * Mounts/updates/hides a <cr-bump> inside a container element the caller
- * owns -- same posture as ContinuityRenderer just below: not a
- * PlayerAdapter (a bump is driven by the clock, not "tuned"), so
- * BroadcastPlayer calls this directly rather than through the adapter
- * interface.
+ * Mounts/updates/hides a <cr-bump> inside a container the caller owns. Like
+ * ContinuityRenderer, not a PlayerAdapter: a bump is driven by the clock.
  */
 export class BumpRenderer {
   constructor(container) {
@@ -186,10 +143,9 @@ export class BumpRenderer {
    * @param {{name?:string, logo?:string}|null} channel
    * @param {() => number} clockNow
    * @param {boolean} muted
-   * @param {number} [offset=0] seconds since the bump's scheduled window
-   *   opened (clock-derived -- `now() - window.startsAt`), so a viewer who
-   *   tunes in mid-bump starts at the same composition time as everyone
-   *   else instead of from the top. See bump-player.js's timing header.
+   * @param {number} [offset=0] seconds since the bump's window opened
+   *   (`now() - window.startsAt`), so a viewer tuning in mid-bump starts at
+   *   the same composition time as everyone else (see bump-player.js).
    */
   show(definition, upcoming, channel, clockNow, muted, offset = 0) {
     if (!this.el) {
@@ -221,20 +177,16 @@ export class BumpRenderer {
 
 // ---------- pure, unit-testable helpers ----------
 
-/** Exponential backoff, capped -- same formula BroadcastPlayer's HTML5
- *  path has always used (2s, 4s, 8s, 16s, 30s, 30s, ...). `attempt` is
- *  1-based (the first retry is attempt 1). */
+/** Exponential backoff, capped (2s, 4s, 8s, 16s, 30s, ...). `attempt` is 1-based. */
 export function computeBackoffMs(attempt, { base = 2000, max = 30000 } = {}) {
   return Math.min(max, base * 2 ** Math.max(0, attempt - 1));
 }
 
 /**
- * Decides whether a player sitting at `currentTime` needs to jump to
- * `targetTime` to stay on the channel's live point, and if so, to where.
- * Returns null when no correction is needed (including "the file is
- * basically over, let it end naturally rather than seek past its end").
- * This is exactly the math seekToLive() used to do inline against a
- * <video> element, factored out so both adapters (and tests) share it.
+ * Decides whether a player at `currentTime` must jump to `targetTime` to stay
+ * on the live point, and if so, to where. Returns null when no correction is
+ * needed (including when the file is nearly over: let it end rather than
+ * seek past its end). Shared by both adapters and tests.
  */
 export function computeDriftCorrection(currentTime, targetTime, tolerance, duration) {
   if (!Number.isFinite(targetTime) || !Number.isFinite(currentTime)) return null;
@@ -244,12 +196,9 @@ export function computeDriftCorrection(currentTime, targetTime, tolerance, durat
 }
 
 /**
- * Structured provider selection for a schedule entry -- reads the
- * optional "source" object ia-import/youtube-import both already write
- * onto catalog/series items (see the per-series series.json files under
- * series/, whose episodes already carry a "source":
- * {"provider": "youtube", ...} field), extended minimally to
- * schedule.json's own items. Never inspects media_url/source_url text.
+ * Structured provider selection for a schedule entry, from the optional
+ * "source" object ({"provider": "youtube", ...}) that series.json episodes
+ * and schedule.json items carry. Never inspects media_url/source_url text.
  *
  * @param {{source?: {provider?: string, video_id?: string}|null, media_url?: string|null}} item
  * @returns {{provider: string|null, videoId: string|null}}
@@ -264,16 +213,14 @@ export function resolveProvider(item) {
   if (provider) {
     return { provider, videoId: null }; // a recognized-but-unhandled provider (future-proofing)
   }
-  // Legacy convention: no "source" object at all, just a flat media_url --
-  // exactly every existing ia-import-produced schedule.json entry.
+  // No "source": a flat media_url means html5 (the convention ia-import schedules use).
   return { provider: item && item.media_url ? "html5" : null, videoId: null };
 }
 
 // ---------- shared base "interface" ----------
 
-/** Documents the shape every adapter implements; not actually required to
- *  be the prototype parent (duck-typing is enough), but subclassing it
- *  keeps "did I implement everything" obvious. */
+/** The shape every adapter implements. Subclassing is optional (duck typing
+ *  works) but makes "did I implement everything" obvious. */
 export class PlayerAdapter {
   /** @param {string} source provider-specific: a media URL (Html5) or a YouTube video id. */
   load(source, offsetSeconds) { throw new Error("load() not implemented"); } // eslint-disable-line no-unused-vars
@@ -290,12 +237,9 @@ export class PlayerAdapter {
 // ---------- HTML5 (Internet Archive / any direct file) ----------
 
 /**
- * A faithful extraction of the <video>-element logic BroadcastPlayer has
- * always used (phase 1's broadcast.js) into the adapter shape: same
- * muted-autoplay setup, same "never stays paused" behavior, same
- * NotAllowedError -> "blocked" handling. Behavior is unchanged; only the
- * retry/backoff and drift-correction *policy* now lives in BroadcastPlayer
- * (shared with YouTubePlayerAdapter) rather than duplicated per adapter.
+ * <video>-element playback: muted autoplay, never stays paused, and
+ * NotAllowedError -> "blocked". Retry/backoff and drift-correction policy
+ * live in BroadcastPlayer, shared with YouTubePlayerAdapter.
  */
 export class Html5PlayerAdapter extends PlayerAdapter {
   constructor(video, { onStateChange = () => {}, onError = () => {} } = {}) {
@@ -411,31 +355,23 @@ function loadYouTubeIframeApi() {
   return iframeApiPromise;
 }
 
-// YT.PlayerError codes (see the IFrame API docs): 100 = video not found
-// (removed/private), 101 & 150 = the uploader has disabled embedding.
-// Both are permanent for this video -- retrying changes nothing, so
-// BroadcastPlayer treats them as immediately exhausted (see `fatal`
-// below), not just another transient failure to back off and retry.
+// YT.PlayerError codes: 100 = video not found (removed/private), 101 & 150 =
+// embedding disabled. All permanent, so BroadcastPlayer treats them as
+// immediately exhausted (`fatal`) rather than retrying.
 const YT_FATAL_ERROR_CODES = new Set([100, 101, 150]);
 
 /**
- * Wraps one YT.Player bound to `container` (a plain DOM element the
- * caller owns and positions -- never styled or covered by this class).
- * Per YouTube's terms, this class never hides or replaces the player's
- * own controls/branding and never serves or suppresses ads: playerVars
- * below only disable the unrelated end-of-video "related videos" grid
- * and annotations, which YouTube's own docs list as ordinary embed
- * options, not a branding workaround.
+ * Wraps one YT.Player bound to `container` (a DOM element the caller owns
+ * and positions; never styled or covered here). Per YouTube's terms this
+ * class never hides or replaces the player's controls/branding and never
+ * touches ads; playerVars only disable the end-of-video related-videos grid
+ * and annotations, which are ordinary embed options.
  *
- * `container` itself is NEVER handed to `new YT.Player(...)` directly --
- * see _ensurePlayer()'s disposable `mount` child. The IFrame API replaces
- * whatever element you give its constructor with the `<iframe>` itself,
- * which would silently detach `container` from the document the first
- * time a video loads -- exactly the node BroadcastPlayer.switchTo() (see
- * broadcast.js) toggles `.hidden` on to show/hide this adapter against
- * the HTML5 <video> underneath it. Routing the API's replacement onto a
- * throwaway inner element keeps `container` a stable, always-attached
- * node that still visibly contains the iframe either way.
+ * `container` is never handed to `new YT.Player(...)`: the IFrame API
+ * replaces the element it is given with the `<iframe>`, which would detach
+ * `container` from the document -- the node BroadcastPlayer.switchTo()
+ * toggles `.hidden` on. The API gets a disposable inner `mount` instead
+ * (see _ensurePlayer()), keeping `container` stable and attached.
  */
 export class YouTubePlayerAdapter extends PlayerAdapter {
   constructor(container, { onStateChange = () => {}, onError = () => {} } = {}) {
@@ -458,8 +394,7 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
 
   _ensurePlayer() {
     if (this._playerPromise) return this._playerPromise;
-    // See this class's docblock: hand the API a disposable mount it's
-    // free to replace, never `this.container` itself.
+    // Disposable mount for the IFrame API to replace; never `this.container` (see class docblock).
     const mount = document.createElement("div");
     mount.style.width = "100%";
     mount.style.height = "100%";
@@ -515,11 +450,9 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
     player.loadVideoById({ videoId, startSeconds: Math.max(0, offsetSeconds) });
     if (this.muted) player.mute(); else { player.unMute(); player.setVolume(100); }
 
-    // The IFrame API gives no promise/rejection for refused autoplay the
-    // way HTML5 <video>.play() does. If playback hasn't reached PLAYING or
-    // BUFFERING shortly after being requested, treat it as autoplay having
-    // been blocked -- same outward "blocked" state as the HTML5 adapter,
-    // resolved the same way (a user gesture calling resume()/play()).
+    // The IFrame API doesn't reject refused autoplay like <video>.play().
+    // If playback hasn't reached PLAYING/BUFFERING shortly after being
+    // requested, report "blocked" (resolved by a user gesture calling resume()).
     clearTimeout(this._blockTimer);
     this._blockTimer = setTimeout(() => {
       if (this.state === "loading") this._setState("blocked");

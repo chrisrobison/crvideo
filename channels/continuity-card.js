@@ -1,63 +1,36 @@
 // channels/continuity-card.js
 //
-// <cr-continuity-card>: a reusable, dependency-free Web Component that
-// renders a "Coming Up Next" broadcast continuity card (Phase 5 of docs/
-// series-and-channels.md). Native custom element, shadow DOM, plain CSS
-// -- no React, no build step, no video-rendering framework, no
-// prerecorded asset of any kind.
+// <cr-continuity-card>: a dependency-free Web Component (shadow DOM, plain
+// CSS, no build step, no prerecorded assets) that renders a "Coming Up Next"
+// broadcast continuity card.
 //
-// What it decides: nothing about scheduling. It only ever displays
-// whatever `.program` and `.channel` it's given and formats a countdown
-// from `.program.startsAt` against its own clock function (`.clockNow`,
-// defaulting to `() => Date.now() / 1000`, overridden by callers to the
-// project's drift-corrected broadcast clock -- see broadcast.js's
-// `now()`). The compiler decided this card's own exact start/duration
-// and which program follows; this component never invents or guesses
-// either one, and never seeks/plays/loads any media.
+// It decides nothing about scheduling: it displays the `.program` and
+// `.channel` it's given and formats a countdown from `.program.startsAt`
+// against `.clockNow` (defaults to `() => Date.now() / 1000`; callers pass
+// the drift-corrected broadcast clock, broadcast.js's `now()`). The compiler
+// decides the card's start/duration and the program that follows.
 //
-// Determinism/robustness this component is responsible for:
-//   - A page refresh mid-card must show the same program and the
-//     correct remaining countdown. Guaranteed by construction: every
-//     render recomputes the countdown from the ABSOLUTE instant
-//     `.program.startsAt` and the current clock reading -- nothing is
-//     ever accumulated/incremented across ticks, so there is no drift
-//     to correct and no state to lose on reload.
-//   - A background tab whose timers get suspended: the same "always
-//     recompute from absolute instants" property means a late or
-//     delayed tick is simply a late correct answer, never a wrong one;
-//     the `visibilitychange` listener forces one extra render the
-//     instant the tab becomes visible again, so the countdown never sits
-//     on stale text while the user is actually looking at it.
-//   - Two viewers opening the same channel at the same instant see the
-//     same program and the same countdown (subject to ordinary clock
-//     skew/render latency) because both compute it the same way from
-//     the same compiled schedule -- this component has no viewer-
-//     specific state of any kind.
+// Determinism: every render recomputes the countdown from the absolute
+// instant `.program.startsAt` and the current clock, accumulating nothing
+// across ticks. A reload mid-card, a suspended background tab, or two
+// viewers at the same instant therefore all show the correct countdown
+// (a `visibilitychange` listener forces one extra render when the tab
+// becomes visible again). The component holds no viewer-specific state.
 //
 // Theming: every color is a CSS custom property on :host with a neutral
-// default (an unbranded dark slate). A specific channel's identity (e.g.
-// Science & Engineering's dark background + cyan highlights + warm
-// accent) is layered on by the PAGE that uses this component, reading
-// the channel's own meta.json theme (see docs/series-and-channels.md) --
-// never hardcoded in here, so a brand-new channel with no theme
-// configured still gets a perfectly reasonable, generic-looking card.
+// default. A channel's identity is layered on by the page, from the
+// channel's meta.json theme (see docs/series-and-channels.md); never
+// hardcoded here.
 //
-// Bumper presentation (optional `.theme`/`.template`, backed by a new
-// per-channel `channels/<id>/theme.json` -- see broadcast.js's
-// loadTheme()): a channel can go beyond the default "Coming Up Next"
-// info card with its own background (a looping ambient video, or one of
-// a small set of built-in canvas animations -- see CANVAS_GENERATORS
-// below) and content (the default up-next info, or a themed "quote"
-// card -- e.g. an SNL-"Deep Thoughts"-style deck of short lines). Which
-// one actually renders for THIS occurrence is picked deterministically
-// from `theme.bumpers` (weighted) via pickWeightedIndex() below, seeded
-// by the occurrence's own absolute `startsAt` -- never Math.random() --
-// which is what keeps this consistent with every other piece of this
-// project's determinism contract: two viewers who tune in to the same
-// occurrence at the same instant must see the exact same bumper, not
-// independently-random ones. No `.theme` at all (the default, and every
-// channel published before this existed) renders exactly the plain
-// generic card this component has always rendered.
+// Bumper presentation (optional `.theme`/`.template`, from
+// `channels/<id>/theme.json`; see loadTheme()): a channel can replace the
+// default info card with its own background (a looping ambient video or a
+// built-in canvas animation, see CANVAS_GENERATORS) and content (the up-next
+// info or a themed "quote" card). The bumper for an occurrence is chosen
+// from `theme.bumpers` (weighted) by pickWeightedIndex(), seeded by the
+// occurrence's absolute `startsAt` -- never Math.random() -- so two viewers
+// at the same instant see the same bumper. With no `.theme` the plain
+// generic card renders.
 
 const TEMPLATE = `
 <style>
@@ -150,21 +123,17 @@ const TEMPLATE = `
   .thumb { width: 100%; max-width: 320px; margin: 0 auto; }
 }
 
-/* Bumper background layers (Phase: theme.json) -- stacked behind .wrap,
-   always inset:0, exactly one visible at a time. A video/canvas
-   background gets a dark scrim behind the content so text stays legible
-   regardless of what's playing underneath; the plain default (no
-   background layer at all) keeps the existing radial-gradient look with
-   no scrim, byte-for-byte unchanged. */
+/* Bumper background layers, stacked behind .wrap, one visible at a time. A
+   video/canvas background gets a dark scrim so text stays legible; the plain
+   default (no layer) keeps the radial-gradient look with no scrim. */
 .bgvideo, .bgcanvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .bgvideo[hidden], .bgcanvas[hidden] { display: none; }
 .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,6,10,.55), rgba(5,6,10,.82)); }
 .scrim[hidden] { display: none; }
 .wrap, .quote { position: relative; z-index: 1; }
 
-/* Quote content (an alternative to the default "Coming Up Next" info
-   block -- e.g. an SNL-"Deep Thoughts"-style card). Reuses the same grid
-   padding as .wrap so either one fills the card identically. */
+/* Quote content, an alternative to the default "Coming Up Next" block.
+   Reuses .wrap's grid padding so either fills the card identically. */
 .quote {
   display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
   gap: clamp(10px, 2.4vh, 20px); height: 100%; box-sizing: border-box;
@@ -210,14 +179,10 @@ function formatCountdown(seconds) {
   return m > 0 ? `starts in ${m}:${String(r).padStart(2, "0")}` : `starts in ${r}s`;
 }
 
-// ---------- deterministic selection (never Math.random() -- see the
-// header comment above: two viewers at the same occurrence must see the
-// same bumper) ----------
+// ---------- deterministic selection (never Math.random(); see header) ----------
 
-/** 32-bit FNV-1a -- small, fast, good-enough distribution for picking
- *  among a handful of bumpers/quotes; not a cryptographic hash. Pure
- *  function of its input string, so the same seed always maps to the
- *  same number for every viewer and every re-render. */
+/** 32-bit FNV-1a: small, fast, good-enough distribution for picking among a
+ *  handful of bumpers/quotes; not cryptographic. Pure function of its input. */
 export function hashSeed(seed) {
   let h = 0x811c9dc5;
   const s = String(seed);
@@ -229,10 +194,9 @@ export function hashSeed(seed) {
 }
 
 /** Picks an index from `weights` (one non-negative number per item)
- *  deterministically from `seed` -- the same seed+weights always
- *  returns the same index. Falls back to index 0 for an empty/all-zero
- *  list rather than throwing, so a misconfigured theme.json degrades to
- *  "always the first bumper" instead of crashing the card. */
+ *  deterministically from `seed`. Falls back to 0 for an empty/all-zero list
+ *  so a misconfigured theme.json degrades to "always the first bumper"
+ *  instead of crashing the card. */
 export function pickWeightedIndex(weights, seed) {
   const total = weights.reduce((sum, w) => sum + Math.max(0, w), 0);
   if (!(total > 0)) return 0;
@@ -246,11 +210,10 @@ export function pickWeightedIndex(weights, seed) {
 }
 
 // ---------- built-in canvas bumper backgrounds ----------
-// Each generator draws one frame into `ctx` (already sized to the
-// canvas's device-pixel dimensions) given elapsed seconds `t`. Purely
-// decorative/ambient -- never broadcast-synced, so it's fine for this to
-// run off performance.now() rather than the project's drift-corrected
-// clock. New ones can be added here without touching anything else.
+// Each generator draws one frame into `ctx` (already sized to the canvas's
+// device pixels) given elapsed seconds `t`. Purely decorative, not
+// broadcast-synced, so it runs off performance.now(). New ones can be added
+// here without touching anything else.
 const CANVAS_GENERATORS = {
   waves(ctx, w, h, t) {
     ctx.clearRect(0, 0, w, h);
@@ -274,8 +237,7 @@ const CANVAS_GENERATORS = {
     ctx.fillRect(0, 0, w, h);
     const count = 140;
     for (let i = 0; i < count; i++) {
-      // Deterministic per-star layout (not animation-frame-random): derived
-      // from the star's own index, so stars don't reshuffle every frame.
+      // Layout derived from the star's own index so stars don't reshuffle every frame.
       const seed = hashSeed(`star:${i}`);
       const x = (seed % 1000) / 1000 * w;
       const y = ((seed >>> 10) % 1000) / 1000 * h;
@@ -289,10 +251,8 @@ const CANVAS_GENERATORS = {
   },
 };
 
-// Guards against evaluation in a non-browser environment (e.g. this
-// project's `node --test` unit tests, which import player-adapters.js
-// -- and therefore this file -- without a DOM). `typeof` never throws
-// for an unresolvable identifier, unlike referencing it directly.
+// Guards against evaluation without a DOM (`node --test` imports this file
+// via player-adapters.js). `typeof` doesn't throw for unresolvable identifiers.
 const HTMLElementBase = typeof HTMLElement !== "undefined" ? HTMLElement : class {};
 
 export class ContinuityCard extends HTMLElementBase {
@@ -333,9 +293,8 @@ export class ContinuityCard extends HTMLElementBase {
   }
 
   /** @param {{bumpers?:Array<{id?:string,template?:string,weight?:number,background?:object,content?:object}>, quoteDecks?:Record<string,string[]>}|null} theme
-   *  parsed `channels/<id>/theme.json` (see broadcast.js's loadTheme()), or
-   *  null for the default plain card -- exactly what every channel without
-   *  one still gets. */
+   *  parsed `channels/<id>/theme.json` (see loadTheme()), or null for the
+   *  default plain card. */
   set theme(theme) {
     this._theme = theme || null;
     this._renderBumper();
@@ -344,10 +303,9 @@ export class ContinuityCard extends HTMLElementBase {
   get theme() { return this._theme; }
 
   /** @param {?string} template this occurrence's continuity card "template"
-   *  id (schedule.json's `cards[].template`, from continuity.json -- see
-   *  ContinuityResolver.php). Used only to narrow `theme.bumpers` to ones
-   *  that declare a matching `.template`; a bumper with no `.template` at
-   *  all is eligible regardless. */
+   *  id (schedule.json `cards[].template`; see ContinuityResolver.php). Narrows
+   *  `theme.bumpers` to those declaring a matching `.template`; a bumper with
+   *  no `.template` is always eligible. */
   set template(template) {
     this._template = template || null;
     this._renderBumper();
@@ -379,17 +337,12 @@ export class ContinuityCard extends HTMLElementBase {
 
   get clockNow() { return this._clockNow; }
 
-  /** @param {?string} url this occurrence's AI continuity announcer
-   *  narration MP3 (see broadcast.js's findAnnouncementAudio()), or null
-   *  for a silent card -- the default, and every channel whose announcer
-   *  isn't enabled, behaves exactly as before this property existed.
-   *  Deliberately always (re)starts playback from the top, even when
-   *  `url` is byte-for-byte the same string as last time: the schedule's
-   *  broadcast cycle repeats (see broadcast.js's header comment), so the
-   *  exact same cached MP3 legitimately airs again on the next lap, and
-   *  ContinuityRenderer.show() -- the only caller -- only ever sets this
-   *  once per genuinely new occurrence, never twice for the one card
-   *  instance already on screen. */
+  /** @param {?string} url this occurrence's announcer narration MP3 (see
+   *  findAnnouncementAudio()), or null for a silent card.
+   *  Always (re)starts playback from the top, even for an identical `url`:
+   *  the broadcast cycle repeats, so the same cached MP3 legitimately airs
+   *  again on the next lap, and ContinuityRenderer.show() sets this only once
+   *  per new occurrence. */
   set audioUrl(url) {
     this._audioUrl = url || null;
     this._syncAudio();
@@ -397,8 +350,7 @@ export class ContinuityCard extends HTMLElementBase {
 
   get audioUrl() { return this._audioUrl; }
 
-  /** Mirrors the surrounding player's mute state onto the narration
-   *  track -- see player-adapters.js's ContinuityRenderer.setMuted(). */
+  /** Mirrors the player's mute state onto the narration track. */
   setMuted(muted) {
     this._muted = !!muted;
     const audio = this._root.querySelector(".va");
@@ -449,10 +401,9 @@ export class ContinuityCard extends HTMLElementBase {
     q(".start").textContent = p ? timeFormat.format(new Date(p.startsAt * 1000)) : "";
   }
 
-  /** Recomputes the countdown (and the progress bar, if the card's own
-   *  span is known) from the current clock reading -- never from an
-   *  incrementing counter, so a late/suspended tick or a fresh page
-   *  load always lands on the correct remaining time. */
+  /** Recomputes the countdown (and progress bar, if the card's span is known)
+   *  from the current clock reading, never from a counter, so a late tick or
+   *  fresh load shows the correct remaining time. */
   _tick() {
     const p = this._program;
     const countEl = this._root.querySelector(".count");
@@ -472,10 +423,9 @@ export class ContinuityCard extends HTMLElementBase {
     }
   }
 
-  /** Optional: the card occurrence's OWN span (not the next program's),
-   *  used both to drive the shrinking progress bar AND (its `startsAt`)
-   *  as the deterministic seed for which bumper/quote this occurrence
-   *  shows -- see pickWeightedIndex()'s header. */
+  /** Optional: this card occurrence's OWN span (not the next program's).
+   *  Drives the shrinking progress bar and, via `startsAt`, seeds the
+   *  bumper/quote pick (see pickWeightedIndex()). */
   setCardSpan(startsAt, endsAt) {
     this._cardStartsAt = startsAt;
     this._cardEndsAt = endsAt;
@@ -483,19 +433,16 @@ export class ContinuityCard extends HTMLElementBase {
     this._renderBumper();
   }
 
-  /** The seed for this occurrence's deterministic bumper/quote pick: the
-   *  card's own span start if known (every real publish calls
-   *  setCardSpan()), else the upcoming program's start as a reasonable
-   *  fallback for a caller that only ever sets `.program` (e.g. a test). */
+  /** Seed for this occurrence's bumper/quote pick: the card's span start if
+   *  known, else the upcoming program's start (for callers that only set
+   *  `.program`, e.g. tests). */
   _seed() {
     return this._cardStartsAt ?? this._program?.startsAt ?? 0;
   }
 
-  /** Picks and applies this occurrence's bumper (background + content)
-   *  from `.theme`, deterministically from `_seed()`. No `.theme` at all
-   *  renders exactly the plain default this component has always shown --
-   *  background layers hidden, the original "Coming Up Next" info block
-   *  shown, byte-for-byte the pre-existing look. */
+  /** Picks and applies this occurrence's bumper (background + content) from
+   *  `.theme`, deterministically from `_seed()`. With no `.theme`, background
+   *  layers stay hidden and the plain "Coming Up Next" block shows. */
   _renderBumper() {
     const q = (sel) => this._root.querySelector(sel);
     const bumpers = (this._theme?.bumpers || []).filter((b) => !b.template || b.template === this._template);

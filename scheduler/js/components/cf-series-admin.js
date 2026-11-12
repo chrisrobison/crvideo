@@ -1,4 +1,4 @@
-// cf-series-admin — episode review/approval view (phase 6, admin UI).
+// cf-series-admin — episode review/approval view.
 //
 // Lists every series/*/series.json (scanned server-side by
 // server/series-admin.php -- this component never hardcodes series ids),
@@ -10,6 +10,7 @@
 
 import { baseComponentCSS, escapeHtml, fmtHMS, toast } from "../utils.js";
 import { seriesAdminApi } from "../admin-api.js";
+import { TOPICS, subscribe } from "../../../js/bus.js";
 
 const STATUS_VALUES = ["candidate", "approved", "rejected", "disabled"];
 const RIGHTS_VALUES = ["unverified", "creator_permission", "licensed", "public_domain", "restricted"];
@@ -38,7 +39,27 @@ class CfSeriesAdmin extends HTMLElement {
       this.attachShadow({ mode: "open" });
       this._render();
     }
+    // Explorer hand-off: reveal a series/episode. Pure navigation -- opens a
+    // <details> and scrolls; never edits anything.
+    subscribe(TOPICS.SERIES_REVIEW_OPEN, ({ data }) => {
+      if (typeof data?.seriesId !== "string") return;
+      this._pendingFocus = { seriesId: data.seriesId, episodeId: typeof data.episodeId === "string" ? data.episodeId : null };
+      this._applyFocus();
+    });
     this.reload();
+  }
+
+  _applyFocus() {
+    const f = this._pendingFocus;
+    const body = this.shadowRoot?.querySelector(".body");
+    if (!f || !body) return;
+    const card = body.querySelector(`details[data-series="${cssEscape(f.seriesId)}"]`);
+    if (!card) return; // not rendered yet (still loading) -- retried after the next render
+    this._pendingFocus = null;
+    card.open = true;
+    const row = f.episodeId ? card.querySelector(`tr[data-episode="${cssEscape(f.episodeId)}"]`) : null;
+    (row || card).scrollIntoView({ block: "center", behavior: "smooth" });
+    (row || card).animate?.([{ outline: "2px solid var(--accent)" }, { outline: "2px solid transparent" }], { duration: 1800 });
   }
 
   async reload() {
@@ -178,6 +199,7 @@ class CfSeriesAdmin extends HTMLElement {
       if (!card) continue;
       this._wireSeriesCard(card, s);
     }
+    this._applyFocus();
   }
 
   _seriesCardHtml(s) {

@@ -74,8 +74,8 @@ const BUMP_ADMIN_MAX_SCHEDULE_RULES = 20;
 const BUMP_ADMIN_MAX_AUDIO_LAYERS = 2; // matches the two fixed <audio> slots in channels/bump-player.js's template
 // schema_version 2 (see bumps/README.md "Timing"): an optional intrinsic
 // composition length plus a few per-layer timing fields, all in seconds.
-// A bump with no `duration` is written exactly as before (schema_version
-// 1, no timing fields) -- v2 is opt-in per bump, never a migration.
+// A bump with no `duration` is written as schema_version 1 with no timing
+// fields; v2 is opt-in per bump.
 const BUMP_ADMIN_MIN_DURATION = 1;
 const BUMP_ADMIN_MAX_DURATION = 300;
 
@@ -358,8 +358,8 @@ function bump_admin_normalize(array $body, string $mediaRoot = BUMP_ADMIN_MEDIA_
 }
 
 /** 2 when the normalized bump uses any schema_version-2 field (they all
- *  require `duration`, so that's the single tell), else 1 -- a bump that
- *  never opts into timing is stored byte-for-byte in the version-1 shape. */
+ *  require `duration`, so that's the single tell), else 1 (a bump
+ *  that never opts into timing keeps the version-1 shape). */
 function bump_admin_schema_version(array $normalized): int
 {
     return array_key_exists('duration', $normalized) ? 2 : 1;

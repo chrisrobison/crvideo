@@ -85,11 +85,8 @@ final class CatalogResolver
             $series[] = [
                 'id' => $s['id'],
                 'title' => $s['title'],
-                // "description" (Phase 2 of docs/series-and-channels.md's program-level
-                // EPG extension): the show-level description a programming block falls
-                // back to for its guide-facing description when the block itself sets
-                // none. Purely additive -- every caller that only ever read id/title/
-                // url/episodes (which is all of them, before this) is unaffected.
+                // Show-level description: what a programming block falls back to for
+                // its guide-facing description when it sets none.
                 'description' => is_string($s['description'] ?? null) ? $s['description'] : null,
                 'url' => $path,
                 'episodes' => is_array($s['episodes'] ?? null) ? $s['episodes'] : [],

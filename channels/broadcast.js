@@ -11,12 +11,9 @@
 // meta.json may set "anchor" (an ISO timestamp) to choose when the cycle's
 // first block airs; by default the loop is anchored to the Unix epoch.
 //
-// catalog.json (optional per channel) enriches schedule items with year/
-// creator/description for display, and may also reference externally
-// maintained series.json files (see catalog-resolver.js and series/*). That
-// resolution logic lives in its own module so it can be reused outside the
-// browser later; loadCatalog() below is just the thin, cached wrapper the
-// guide and player already called.
+// catalog.json (optional per channel) enriches schedule items with display
+// metadata and may reference external series.json files; see
+// catalog-resolver.js.
 
 import { fetchJson, resolveCatalog } from "./catalog-resolver.js";
 import {
@@ -52,9 +49,7 @@ export const now = () => (Date.now() + clockSkewMs) / 1000;
 
 // ---------- title display ----------
 
-// A few short tokens that are almost always acronyms/initialisms rather
-// than "shouting", so fixShoutingTitle() below leaves them exactly as the
-// source wrote them even when they're part of an otherwise-shouted run.
+// Tokens treated as acronyms: left as-is even inside a shouted run.
 const TITLE_CASE_ACRONYMS = new Set([
   "dw", "us", "uk", "usa", "un", "eu", "uae", "rok", "nyc", "la", "tv",
   "rv", "atv", "diy", "fbi", "cia", "nasa", "gps", "atm", "suv", "ok",
@@ -109,14 +104,9 @@ const mod = (a, n) => ((a % n) + n) % n;
 /** Flatten ia-import's blocks into one sorted list of entries with start/end
  *  in seconds from the start of the cycle. Block offsets are accumulated here
  *  rather than read from `relative_start`, which doesn't account for overflow
- *  blocks longer than the slot.
- *
- *  Each item's provider is read from its own structured "source" field
- *  (the same {"provider": ..., "video_id": ...} shape series.json's
- *  episodes already use -- see player-adapters.js's resolveProvider()),
- *  not guessed from a URL. An item with no "source" at all but a
- *  media_url is the pre-existing, still fully supported, implicit "html5"
- *  convention every ia-import-produced schedule.json already uses. */
+ *  blocks longer than the slot. Provider comes from each item's structured
+ *  "source" field (see resolveProvider()); an item with only a media_url is
+ *  implicitly "html5". */
 export function buildTimeline(schedule, anchor = 0, formatTitle = null) {
   const entries = [];
   let blockStart = 0;
@@ -127,9 +117,6 @@ export function buildTimeline(schedule, anchor = 0, formatTitle = null) {
       const start = blockStart + Number(item.start);
       const end = start + Number(item.duration);
       if (!(end > start)) continue;
-      // A "continuity" item (Phase 4/5/6) is never driven through a PlayerAdapter --
-      // it has no provider and is rendered, not played -- but it IS a real,
-      // compiler-decided occurrence, not an undefined/empty gap.
       entries.push(mapScheduleItem(item, start, end, formatTitle));
     }
     blockStart += length;
@@ -140,39 +127,25 @@ export function buildTimeline(schedule, anchor = 0, formatTitle = null) {
 }
 
 /**
- * Phase 4 of docs/guide-update.md: the GUIDE-facing projection of a
- * published schedule.json, as opposed to buildTimeline()'s PLAYBACK-facing
- * one above. Same raw input, same per-item absolute-cycle-position math
- * (an item's `program_id`, if any, never changes where or how long it
- * airs) -- the only difference is what counts as one "entry":
+ * The GUIDE-facing projection of a published schedule.json (buildTimeline()
+ * is the playback-facing one). Same input and cycle-position math; the
+ * difference is what counts as one entry:
  *
- *   - An item carrying a `program_id` that resolves against this
- *     schedule's top-level `programs` collection (Phase 3) is folded into
- *     that program's single guide entry, as one of its ordered
- *     `episodes`, instead of becoming its own entry. This is what turns
- *     five packed videos (or a packed video plus its trailing
- *     continuity filler -- Phase 7) into one "Electronics Lab" cell.
- *   - Any item with no resolvable `program_id` -- every item in a legacy,
- *     non-programming.json schedule (Phase 8, e.g. Film Day at School),
- *     or a genuine inter-program station break in a programming.json-
- *     sourced one -- passes through as its own entry, byte-for-byte the
- *     same shape buildTimeline() would have produced for it. This is the
- *     legacy/standalone-short-program fallback: nothing is ever grouped
- *     by guessing from titles or adjacency, only from this explicit
- *     reference.
+ *   - An item whose `program_id` resolves in the schedule's top-level
+ *     `programs` is folded into that program's single entry as one of its
+ *     ordered `episodes` (e.g. five packed videos plus trailing continuity
+ *     filler become one "Electronics Lab" cell).
+ *   - Any other item (a schedule without programs, or a station break
+ *     between programs) passes through as its own entry, identical to what
+ *     buildTimeline() produces. Nothing is grouped by title or adjacency.
  *
- * A program entry's own start/end are its EFFECTIVE presentation window
- * (schedule.json programs[].start/end -- already shifted by any boundary
- * delay; see BoundaryResolver), not a derived min/max over its episodes,
- * so Phase 7's "two EPG cells never overlap" holds even when a block's
- * own episodes under-fill it.
+ * A program entry's start/end are its effective presentation window
+ * (programs[].start/end, already shifted by any boundary delay; see
+ * BoundaryResolver), not min/max over its episodes, so two EPG cells never
+ * overlap even when a block's episodes under-fill it.
  *
- * Returned entries share buildTimeline()'s {start,end,playable,...} shape
- * (plus `episodes` on a program entry), so the existing locate()/
- * airings() functions below work completely unchanged over either
- * timeline. This function never reads anything playback-specific and
- * never mutates its input -- the player keeps using buildTimeline()'s
- * timeline, completely unaffected by whatever the guide does with this one.
+ * Entries share buildTimeline()'s shape (plus `episodes` on programs), so
+ * locate()/airings() work over either timeline. Never mutates its input.
  */
 export function buildEpgTimeline(schedule, anchor = 0, formatTitle = null) {
   const programsById = new Map();
@@ -228,12 +201,8 @@ export function buildEpgTimeline(schedule, anchor = 0, formatTitle = null) {
   return { entries, cycle: blockStart, anchor };
 }
 
-/** Phase 6: an episode's own absolute (wall-clock) start/end, given the
- *  program-level airing (as returned by locate()/airings() over an EPG
- *  timeline) it belongs to. Pure arithmetic from fields already on both
- *  objects (airing.start/.startsAt are the same cycle-relative/absolute
- *  pair every airing carries) -- no separate lookup, no re-deriving
- *  boundaries from anything other than the schedule's own data. */
+/** An episode's absolute (wall-clock) start/end, given the program-level
+ *  airing (from locate()/airings() over an EPG timeline) it belongs to. */
 export function episodeAiringTimes(programAiring, episode) {
   const offset = programAiring.startsAt - programAiring.start;
   return { startsAt: episode.start + offset, endsAt: episode.end + offset };
@@ -329,11 +298,9 @@ export async function loadChannel(id, meta = null) {
   meta ??= await fetchJson(new URL("meta.json", base));
   const schedule = await fetchJson(new URL(meta.schedule || "schedule.json", base));
   const anchor = meta.anchor ? Date.parse(meta.anchor) / 1000 : 0;
-  // Opt-in, per channel: meta.json's "fixAllCapsTitles": true runs every
-  // episode/program title through fixShoutingTitle() above (e.g. World
-  // Explorer's Kara and Nate/Mark Wiens/Geography Now imports, whose
-  // source titles are inconsistently YELLING). Off by default so no
-  // other channel's titles change underneath it.
+  // Opt-in per channel: meta.json's "fixAllCapsTitles" runs titles through
+  // fixShoutingTitle(), for imports whose source titles are inconsistently
+  // all-caps.
   const formatTitle = meta.fixAllCapsTitles ? fixShoutingTitle : null;
   return {
     id,
@@ -341,46 +308,23 @@ export async function loadChannel(id, meta = null) {
     name: meta.name || schedule.channel || id,
     description: meta.description || "",
     logo: meta.logo ? new URL(meta.logo, base).href : null,
-    // Optional per-channel continuity-card theme (Phase 5): a plain
-    // {bg,bg2,fg,muted,accent,accentWarm} map of CSS custom-property
-    // values -- see continuity-card.js's :host defaults for the generic
-    // fallback used when a channel sets none of this. Never interpreted
-    // or validated here; it's just handed straight through to whatever
-    // renders the card.
+    // Optional continuity-card color tokens ({bg,bg2,fg,muted,accent,accentWarm});
+    // passed through unvalidated (see continuity-card.js :host defaults).
     theme: (meta.theme && typeof meta.theme === "object") ? meta.theme : null,
     catalogUrl: new URL(meta.catalog || "catalog.json", base).href,
-    // Optional per-channel BUMPER theme (channels/<id>/theme.json) -- NOT
-    // the same thing as `theme` just above (that's the small color-token
-    // palette). This one describes the actual "Up Next" card content: a
-    // weighted set of background/content treatments (looping video,
-    // canvas animation, a quote deck, ...) a continuity card picks from
-    // deterministically -- see loadTheme() and continuity-card.js. Lazily
-    // resolved (like catalogUrl/loadCatalog() below), never fetched here.
+    // Bumper theme (channels/<id>/theme.json): the weighted background/content
+    // treatments a continuity card picks from. Distinct from `theme` above.
+    // Lazily fetched; see loadTheme().
     themeUrl: new URL(meta.bumperTheme || "theme.json", base).href,
-    // The AI continuity announcer's manifest (channels/announcer/,
-    // channels/<id>/announcements.json) -- see loadAnnouncements() and
-    // BroadcastPlayer's continuity branch, which plays the matching
-    // "coming up next" narration MP3 (if any) under a continuity card.
-    // Lazily resolved, same posture as catalogUrl/themeUrl: a channel
-    // with no announcer enabled (the default, and every channel before
-    // this existed) just gets back an empty list and nothing changes.
+    // AI announcer manifest (channels/<id>/announcements.json). Lazily
+    // fetched; see loadAnnouncements().
     announcementsUrl: new URL(meta.announcements || "announcements.json", base).href,
-    // Optional per-channel BUMP schedule (channels/<id>/bump-schedule.json)
-    // -- clock-anchored rules ("every hour, on the hour, for 12s, show
-    // bump X") naming a bumps/<id>.json by id. NOT the bumper theme above
-    // (themeUrl) and NOT baked into schedule.json -- see player-adapters.js's
-    // "bump scheduling" header for why this is resolved and driven entirely
-    // client-side. Lazily resolved, same posture as catalogUrl/themeUrl/
-    // announcementsUrl: a channel with no bump-schedule.json (the default,
-    // and every channel before this existed) gets back {enabled:false,
-    // rules:[]} and nothing about its playback changes at all.
+    // Clock-anchored bump rules (channels/<id>/bump-schedule.json), resolved
+    // and driven client-side; see player-adapters.js's "bump scheduling"
+    // header. Lazily fetched.
     bumpScheduleUrl: new URL(meta.bumpSchedule || "bump-schedule.json", base).href,
     timeline: buildTimeline(schedule, Number.isFinite(anchor) ? anchor : 0, formatTitle),
-    // Phase 4/5 of docs/guide-update.md: the guide's own program-level
-    // projection of the same schedule -- see buildEpgTimeline()'s header.
-    // Never read by BroadcastPlayer/watch.html; only the channel guide
-    // (index.html) uses this field, so playback is completely unaffected
-    // by anything built here.
+    // Guide-only projection (see buildEpgTimeline()); BroadcastPlayer never reads it.
     epgTimeline: buildEpgTimeline(schedule, Number.isFinite(anchor) ? anchor : 0, formatTitle),
   };
 }
@@ -388,10 +332,9 @@ export async function loadChannel(id, meta = null) {
 const catalogs = new Map();
 
 /** A channel's catalog.json as a Map of item id -> item (year, creator,
- *  description...), with any series it references (see catalog-
- *  resolver.js) merged in under "<seriesId>:<episodeId>" keys. Optional:
- *  resolves to an empty Map if the catalog is missing. A catalog with no
- *  "series" array behaves exactly as before (legacy, flat-items-only). */
+ *  description...), with any referenced series merged in under
+ *  "<seriesId>:<episodeId>" keys (see catalog-resolver.js). Resolves to an
+ *  empty Map if the catalog is missing. */
 export function loadCatalog(channel) {
   if (!catalogs.has(channel.catalogUrl)) {
     catalogs.set(channel.catalogUrl, resolveCatalog(channel.catalogUrl, { fetchJson })
@@ -406,12 +349,8 @@ export function loadCatalog(channel) {
 
 const themes = new Map();
 
-/** A channel's optional `theme.json` (bumper background/content config --
- *  see continuity-card.js's header and ContinuityRenderer.show()'s
- *  `bumperTheme` param), cached per channel. Resolves to `null` -- never
- *  throws -- when the file is missing or malformed, which is exactly what
- *  renders every channel's pre-existing plain generic continuity card:
- *  this is a pure enrichment layer, same posture as loadCatalog() above. */
+/** A channel's optional theme.json (see continuity-card.js), cached per
+ *  channel. Resolves to `null` -- never throws -- when missing or malformed. */
 export function loadTheme(channel) {
   if (!themes.has(channel.themeUrl)) {
     themes.set(channel.themeUrl, fetchJson(channel.themeUrl).catch(() => null));
@@ -421,12 +360,9 @@ export function loadTheme(channel) {
 
 const announcementManifests = new Map();
 
-/** A channel's optional `announcements.json` (the AI continuity
- *  announcer's published manifest -- see channels/announcer/README.md),
- *  cached per channel. Resolves to `[]` -- never throws -- when the file
- *  is missing/malformed/empty, which is exactly what every channel
- *  without the announcer enabled already looks like: a pure enrichment
- *  layer, same posture as loadCatalog()/loadTheme() above. */
+/** A channel's optional announcements.json (the announcer's manifest; see
+ *  channels/announcer/README.md), cached per channel. Resolves to `[]` --
+ *  never throws -- when missing, malformed or empty. */
 export function loadAnnouncements(channel) {
   if (!announcementManifests.has(channel.announcementsUrl)) {
     announcementManifests.set(
@@ -441,13 +377,10 @@ export function loadAnnouncements(channel) {
 
 const bumpSchedules = new Map();
 
-/** A channel's optional `bump-schedule.json` (clock-anchored bump rules --
- *  see player-adapters.js's "bump scheduling" header and
- *  BroadcastPlayer.tick()'s bump branch below), cached per channel.
- *  Resolves to `{enabled:false, rules:[]}` -- never throws -- when the
- *  file is missing/malformed/disabled, which is exactly what every channel
- *  without a bump schedule configured already looks like: a pure
- *  enrichment layer, same posture as loadTheme()/loadAnnouncements(). */
+/** A channel's optional bump-schedule.json (see player-adapters.js's "bump
+ *  scheduling" header), cached per channel. Resolves to
+ *  `{enabled:false, rules:[]}` -- never throws -- when missing, malformed or
+ *  disabled. */
 export function loadBumpSchedule(channel) {
   if (!bumpSchedules.has(channel.bumpScheduleUrl)) {
     bumpSchedules.set(channel.bumpScheduleUrl, fetchJson(channel.bumpScheduleUrl)
@@ -462,11 +395,9 @@ export function loadBumpSchedule(channel) {
 
 const bumpDefinitions = new Map();
 
-/** One bump's own JSON definition (bumps/<id>.json -- a plain static file,
- *  global/not per-channel, see bumps/README.md), cached by id. Resolves to
- *  `null` -- never throws -- for an unknown/malformed id, which simply
- *  means that rule's window is skipped (see BroadcastPlayer.tick()) rather
- *  than crashing anything. */
+/** One bump's definition (global bumps/<id>.json, see bumps/README.md),
+ *  cached by id. Resolves to `null` -- never throws -- for an unknown or
+ *  malformed id; that rule's window is then skipped. */
 export function loadBumpDefinition(id) {
   if (!bumpDefinitions.has(id)) {
     bumpDefinitions.set(id, fetchJson(new URL(`../bumps/${id}.json`, CHANNELS_URL)).catch(() => null));
@@ -474,10 +405,8 @@ export function loadBumpDefinition(id) {
   return bumpDefinitions.get(id);
 }
 
-/** Resolves every bumpId a channel's bump-schedule.json `rules` actually
- *  reference into `{[id]: definition}}` (an entry is simply absent, never
- *  null, for an id that failed to resolve) -- the shape
- *  BroadcastPlayer.tick() looks bump definitions up in. */
+/** Resolves the bumpIds referenced by `rules` into `{[id]: definition}`;
+ *  ids that fail to resolve are omitted. */
 export async function loadBumpDefinitionsFor(rules) {
   const ids = [...new Set((rules || []).map((r) => r?.bumpId).filter(Boolean))];
   const defs = await Promise.all(ids.map((id) => loadBumpDefinition(id)));
@@ -487,24 +416,15 @@ export async function loadBumpDefinitionsFor(rules) {
 }
 
 /**
- * Picks the "coming up next" narration audio URL for a continuity airing,
- * from a channel's announcements.json array (loadAnnouncements()).
- * Matches by transitionId -- the continuity schedule item's own `id`,
- * which `mapScheduleItem()` carries through unchanged as `airing.id`
- * (see AnnouncementContextBuilder.php, which builds each announcement's
- * `transitionId` from that exact same field).
+ * Picks the "coming up next" narration URL for a continuity airing from a
+ * channel's announcements array. Matches on transitionId, the continuity
+ * item's own `id` (see AnnouncementContextBuilder.php).
  *
- * Guards against stale audio left over from before a schedule change
- * (spec section 11, "A schedule that changes during audio generation"):
- * if both sides know which episode is coming up next and they disagree,
- * the audio is discarded rather than narrating the wrong program. This
- * mirrors AnnouncerPipeline::checkStale()'s own parallel check server-
- * side (which is what keeps that disagreement rare to begin with) using
- * data the player already has on hand -- no extra request.
- *
- * Returns null if there is nothing usable, which is exactly today's
- * silent-card behavior -- the default, and every channel whose announcer
- * isn't enabled.
+ * If both sides know the next episode and they disagree, the audio is stale
+ * (the schedule changed after generation) and is discarded rather than
+ * narrating the wrong program. This mirrors AnnouncerPipeline::checkStale()
+ * using data already on hand. Returns null when nothing is usable (a silent
+ * card).
  */
 export function findAnnouncementAudio(announcements, airing) {
   if (!Array.isArray(announcements) || !airing) return null;
@@ -543,30 +463,23 @@ const DRIFT_CHECK_MS = 5000;
 const MAX_RETRIES_PER_PROGRAM = 5; // bounded: after this many failures, stop retrying until the schedule itself advances
 
 /**
- * Keeps playback on the live point of a channel, across whichever
- * provider is currently scheduled (HTML5 <video> for Internet-Archive-
- * style direct files via Html5PlayerAdapter, or YouTube's IFrame API via
- * YouTubePlayerAdapter -- see player-adapters.js). It starts muted
- * (browsers only allow muted autoplay without a user gesture), never
- * stays paused, follows the wall clock from program to program, and
- * re-seeks if buffering lets it fall behind.
+ * Keeps playback on the live point of a channel across providers (HTML5
+ * <video> via Html5PlayerAdapter, YouTube IFrame via YouTubePlayerAdapter;
+ * see player-adapters.js). Starts muted (browsers only allow muted autoplay
+ * without a gesture), never stays paused, follows the wall clock from
+ * program to program, and re-seeks if buffering lets it fall behind.
  *
- * `video` is the <video> element used for HTML5 playback, exactly as
- * before. `youtubeContainer`, if given, is a separate plain element (e.g.
- * an empty <div>) the YouTube iframe is mounted into when a scheduled
- * program's source.provider is "youtube"; its visibility is toggled
- * opposite the <video> element's as programs change. Without it, a
- * YouTube-provider program is treated the same as a failed program (see
- * MAX_RETRIES_PER_PROGRAM) -- shown as a station break for the rest of
- * its slot rather than crashing anything else on the page. This is how
- * index.html's small preview (no youtubeContainer) stays simple while
- * watch.html's full player (which passes one) can actually play it.
+ * `video` is the <video> element for HTML5 playback. `youtubeContainer`, if
+ * given, is an empty element the YouTube iframe mounts into; without it a
+ * YouTube program is treated as failed (a station break for the rest of its
+ * slot). `continuityContainer` and `bumpContainer` likewise opt in to
+ * continuity cards and bumps.
  *
  * onAiring(airing) fires when the program changes; onState(state, airing)
- * reports "loading" | "playing" | "buffering" | "slate" (gap, the file
- * ended before its slot did, or no adapter is available for this
- * program's provider) | "error" (retrying, up to a bound) | "blocked"
- * (autoplay was refused; call resume() from a click).
+ * reports "loading" | "playing" | "buffering" | "slate" (gap, file ended
+ * early, or no adapter for the provider) | "error" (retrying, up to a bound)
+ * | "blocked" (autoplay refused; call resume() from a click) | "continuity"
+ * | "bump".
  */
 export class BroadcastPlayer {
   constructor(video, { youtubeContainer = null, continuityContainer = null, bumpContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
@@ -582,7 +495,7 @@ export class BroadcastPlayer {
     this.retryAt = 0;
     this.retriesExhausted = false;
     this.lastDriftCheck = 0;
-    this.activeBump = null; // {bumpId, startsAt, endsAt} while a clock-anchored bump is drawn over whatever's airing -- see tick()'s bump branch
+    this.activeBump = null; // {bumpId, startsAt, endsAt} while a bump is drawn over the program; see tick()
 
     const onStateChange = (state) => {
       if (state === "playing") { this.failures = 0; this.retriesExhausted = false; }
@@ -593,24 +506,16 @@ export class BroadcastPlayer {
       html5: new Html5PlayerAdapter(video, { onStateChange, onError }),
       youtube: youtubeContainer ? new YouTubePlayerAdapter(youtubeContainer, { onStateChange, onError }) : null,
     };
-    // continuity (Phase 5/6): only built when a page actually passes a
-    // container (watch.html's full player; index.html's small guide
-    // preview doesn't) -- without one, a "continuity" airing falls back
-    // to the ordinary station-break slate, same as an unsupported
-    // provider already does.
+    // Continuity cards and bumps are opt-in: built only when the page passes
+    // a container. Without one, a continuity airing falls back to the slate
+    // and bumps never show.
     this.continuityRenderer = continuityContainer ? new ContinuityRenderer(continuityContainer) : null;
-    // Bump scheduling (see player-adapters.js's "bump scheduling" header):
-    // only built when a page passes a container, same opt-in posture as
-    // continuityRenderer above -- a page that doesn't pass one just never
-    // shows a bump, same as it never has.
     this.bumpRenderer = bumpContainer ? new BumpRenderer(bumpContainer) : null;
 
     this.tick = this.tick.bind(this);
   }
 
-  /** Channel display info (name/logo) handed to the continuity card.
-   *  Optional second argument to setTimeline() so existing callers
-   *  (just `player.setTimeline(channel.timeline)`) keep working unchanged. */
+  /** `channelMeta` (name, logo, theme...) is handed to the continuity card. */
   setTimeline(timeline, channelMeta = null) {
     this.timeline = timeline;
     this.channelMeta = channelMeta;
@@ -630,30 +535,20 @@ export class BroadcastPlayer {
     this.activeAdapter?.play();
   }
 
-  /** Mute/unmute, preserved across program and provider transitions
-   *  (e.g. a viewer who unmuted stays unmuted moving from an Internet
-   *  Archive film into a YouTube-sourced one) for as long as each
-   *  provider permits programmatic control of it. */
+  /** Mute/unmute, preserved across program and provider transitions where
+   *  the provider permits programmatic control. */
   setMuted(muted) {
     this.muted = muted;
     this.activeAdapter?.setMuted(muted);
-    // The continuity narration track (Pass 2 of channels/announcer/) is
-    // "channel audio" exactly like any program's own soundtrack -- a
-    // viewer's mute/unmute choice must follow them into and out of a
-    // continuity card, not reset to always-muted or always-audible.
+    // Narration and bumps are channel audio too: the viewer's choice follows them.
     this.continuityRenderer?.setMuted(muted);
     this.bumpRenderer?.setMuted(muted);
   }
 
-  /** Patches fields onto the CURRENT channelMeta object in place --
-   *  e.g. a bumper theme or announcements manifest that finished loading
-   *  after setTimeline() already ran (see player-view.js's tune(), which
-   *  kicks those fetches off in parallel with the synchronous
-   *  setTimeline() call rather than blocking on them). Deliberately never
-   *  touches `timeline`/`airing`/calls tick() -- unlike calling
-   *  setTimeline() again, this can never interrupt or reload whatever is
-   *  currently playing; it just means the NEXT read of channelMeta (the
-   *  next tick(), or the next continuity card) sees the fresher data. */
+  /** Patches fields onto the current channelMeta in place, for data that
+   *  finished loading after setTimeline() (see player-view.js's tune()).
+   *  Unlike calling setTimeline() again, this never interrupts what's
+   *  playing; the next tick() or continuity card sees the new data. */
   updateChannelMeta(patch) {
     this.channelMeta = { ...(this.channelMeta || {}), ...patch };
   }
@@ -671,13 +566,10 @@ export class BroadcastPlayer {
   tick() {
     if (!this.timeline) return;
 
-    // Bump scheduling (see player-adapters.js's "bump scheduling" header):
-    // checked FIRST, ahead of everything else below, including a
-    // continuity occurrence baked into the published schedule -- a bump is
-    // an explicit, clock-guaranteed interruption, so it always wins any
-    // overlap rather than the two needing a tie-break. Neither `this.airing`
-    // nor the underlying adapter's position is touched while a bump's
-    // window is open; see _enterBump()/_exitBump().
+    // Bumps are checked first: a bump is a clock-guaranteed interruption, so
+    // it wins any overlap (including a scheduled continuity card) without a
+    // tie-break. `this.airing` and the adapter position are untouched while
+    // its window is open; see _enterBump()/_exitBump().
     const bumpWindow = this.bumpRenderer ? locateActiveBump(this.channelMeta?.bumpSchedule, now()) : null;
     if (bumpWindow) {
       if (!this.activeBump || this.activeBump.startsAt !== bumpWindow.startsAt || this.activeBump.bumpId !== bumpWindow.bumpId) {
@@ -708,13 +600,10 @@ export class BroadcastPlayer {
     }
   }
 
-  /** Draws a clock-anchored bump over whatever is currently airing,
-   *  without touching `this.airing`/the underlying schedule at all -- see
-   *  player-adapters.js's "bump scheduling" header for why this is a
-   *  deliberate overlay, never a pause. A no-op (the window is simply
-   *  skipped, as if it never matched) if that bump's own definition
-   *  hasn't resolved yet -- see broadcast.js's loadBumpDefinitionsFor(),
-   *  which player-view.js's tune() races in parallel with setTimeline(). */
+  /** Draws a clock-anchored bump over whatever is airing without touching
+   *  `this.airing`: an overlay, never a pause (see player-adapters.js's "bump
+   *  scheduling" header). No-op if the bump's definition hasn't resolved yet
+   *  (see loadBumpDefinitionsFor()). */
   _enterBump(window) {
     const definition = this.channelMeta?.bumpDefinitions?.[window.bumpId];
     if (!definition) return;
@@ -727,26 +616,18 @@ export class BroadcastPlayer {
       .filter((a) => a.playable)
       .slice(0, 6)
       .map((a) => ({ title: a.title, startsAt: a.startsAt }));
-    // Start at the clock-derived point INTO the window (0 when this tick is
-    // the one that opened it; >0 for a viewer who tunes in mid-bump).
+    // Start at the clock-derived point into the window (>0 for a viewer who tunes in mid-bump).
     this.bumpRenderer.show(definition, upcoming, this.channelMeta, now, this.muted, now() - window.startsAt);
     this.setState("bump");
   }
 
-  /** Reverses _enterBump() once its window closes. Real time kept
-   *  advancing the whole time the bump was drawn over whatever it
-   *  interrupted (see this file's "bump scheduling" header), so this is
-   *  never a plain resume from wherever playback happened to be paused:
-   *
-   *  - A normal html5/youtube program was active: resume IN PLACE with a
-   *    hard reseek to its now-current live point -- deliberately NOT a
-   *    full switchTo()/load() cycle, which would force an unnecessary
-   *    rebuffer of a video that was simply paused, not actually swapped.
-   *  - A continuity card (or a slate/gap -- `this.activeAdapter` is null
-   *    either way) was showing instead: there's nothing to resume in
-   *    place, so `this.airing` is cleared to force the very next ordinary
-   *    tick() to call switchTo() fresh, reusing ITS already-correct
-   *    per-type logic rather than re-deriving it here. */
+  /** Reverses _enterBump(). Real time kept advancing under the bump, so this
+   *  is not a plain resume:
+   *  - An html5/youtube program was active: resume in place with a hard
+   *    reseek to the live point. A full switchTo()/load() would force an
+   *    unnecessary rebuffer of a video that was only paused.
+   *  - A continuity card or slate was showing (`activeAdapter` is null):
+   *    clear `this.airing` so the next tick() runs switchTo() fresh. */
   _exitBump() {
     this.activeBump = null;
     this.bumpRenderer?.hide();
@@ -755,7 +636,7 @@ export class BroadcastPlayer {
       if (this.youtubeContainer) this.youtubeContainer.hidden = this.activeProvider !== "youtube";
       this.activeAdapter.play();
       this.activeAdapter.seek(Math.max(0, now() - (this.airing?.startsAt ?? now())));
-      this.lastDriftCheck = 0; // force an immediate drift re-check next tick rather than waiting out DRIFT_CHECK_MS
+      this.lastDriftCheck = 0; // re-check drift on the next tick
     } else {
       this.airing = null;
     }
@@ -767,13 +648,10 @@ export class BroadcastPlayer {
     this.retriesExhausted = false;
     this.onAiring(airing);
 
-    // A continuity occurrence (Phase 4/5/6) is a dedicated third case, checked
-    // before the ordinary playable/not-playable branching below: it is never
-    // "played" through an adapter, just rendered. Whichever adapter was
-    // active is paused and hidden first -- including the YouTube iframe,
-    // which per its own required presentation is never drawn under/behind
-    // anything else -- exactly the same "pause, never destroy" rule as any
-    // other program transition.
+    // A continuity occurrence is rendered, never played through an adapter,
+    // so it's handled before the playable branching. The active adapter is
+    // paused and hidden first (including the YouTube iframe, which must
+    // never be drawn behind anything else).
     if (airing.type === "continuity" && this.continuityRenderer) {
       if (this.activeAdapter) this.activeAdapter.pause();
       this.activeProvider = null;
@@ -798,10 +676,7 @@ export class BroadcastPlayer {
     this.continuityRenderer?.hide();
 
     const adapter = airing.playable ? (airing.provider === "youtube" ? this.adapters.youtube : this.adapters.html5) : null;
-    // Pause (never destroy) whichever adapter is being switched away from
-    // -- the YouTube iframe in particular stays alive and is reused via
-    // loadVideoById() the next time a YouTube program comes up, rather
-    // than being torn down and recreated for every program transition.
+    // Pause, never destroy: the YouTube iframe is reused via loadVideoById() for the next YouTube program.
     if (this.activeAdapter && this.activeAdapter !== adapter) this.activeAdapter.pause();
 
     if (adapter) {
@@ -812,10 +687,7 @@ export class BroadcastPlayer {
       this.activeAdapter.setMuted(this.muted);
       this.load();
     } else {
-      // Either a station break (no program scheduled) or a program whose
-      // provider this page has no adapter for (e.g. a YouTube program on
-      // a page that didn't pass a youtubeContainer) -- both show the same
-      // slate; there's nothing to retry.
+      // A station break, or a provider this page has no adapter for. Both show the slate and aren't retried.
       this.activeProvider = null;
       this.activeAdapter = null;
       this.video.hidden = true;
@@ -824,11 +696,8 @@ export class BroadcastPlayer {
     }
   }
 
-  /** Fully tears down both adapters (including destroying the YouTube
-   *  iframe, if one was ever created) and stops the polling loop. Neither
-   *  index.html nor watch.html calls this today -- each creates one
-   *  BroadcastPlayer for the page's lifetime -- but it's here for any
-   *  future caller that needs to unmount a player outright. */
+  /** Fully tears down both adapters (including the YouTube iframe) and
+   *  stops the polling loop. */
   destroy() {
     clearInterval(this.timer);
     this.adapters.html5.destroy();
@@ -845,14 +714,10 @@ export class BroadcastPlayer {
     this.activeAdapter.load(source, Math.max(0, offset));
   }
 
-  /** A playback failure from whichever adapter is active. Bounded
-   *  retries with exponential backoff; a `fatal` error (e.g. YouTube
-   *  reporting the video was removed or can't be embedded) skips
-   *  straight to "no more retries" since trying again can't help.
-   *  Once exhausted, this program just sits in "error" (shown as a
-   *  station break) until the schedule's own clock moves on to the next
-   *  one -- "falling back to approved programming" is that next program
-   *  airing on time, same as any gap recovers today. */
+  /** A playback failure from the active adapter. Retries are bounded with
+   *  exponential backoff; a `fatal` error (e.g. video removed or not
+   *  embeddable) skips straight to exhausted. Once exhausted, the program
+   *  sits in "error" (shown as a slate) until the schedule's clock moves on. */
   fail(err) {
     this.failures++;
     if (err?.fatal || this.failures > MAX_RETRIES_PER_PROGRAM) {

@@ -3,60 +3,41 @@ declare(strict_types=1);
 
 // channels/publish/src/BoundaryResolver.php
 //
-// Phase 3 of docs/series-and-channels.md: a dedicated stage that decides
-// what happens when one occurrence's content would run into the next
-// one's nominal start time, instead of that overlap logic being
-// scattered through ProgrammingCompiler. ProgrammingCompiler's per-block
-// loops decide WHICH episodes air WHEN, each independently, exactly as
-// before Phase 3 -- grouping them into "occurrence groups" (one group per
-// scheduled occurrence; a packing-enabled occurrence's several items
-// travel together as one group, since a boundary decision shifts an
-// entire occurrence, never splits it). This class is the only place that
-// then walks every block's groups together, in chronological order, and
-// decides whether an overlap is allowed to become an explicit, bounded
-// delay, or must fail the whole publish.
+// A dedicated stage that decides what happens when one occurrence's content
+// would run into the next one's nominal start, so overlap logic isn't
+// scattered through ProgrammingCompiler. The compiler decides which episodes
+// air when, per block, and groups them into "occurrence groups" (one per
+// scheduled occurrence; a packing-enabled occurrence's items travel together
+// because a boundary decision shifts a whole occurrence, never splits it).
+// This class walks every block's groups together in chronological order and
+// decides whether an overlap becomes an explicit, bounded delay or fails the
+// whole publish.
 //
-// boundary.mode (per block; absent defaults to "hard" -- the exact
-// pre-Phase-3 behavior, so every already-published channel is completely
-// unaffected unless it opts in):
-//   - "hard" (default): this occurrence's own nominal start is an anchor
-//     that can never move. If the previous occurrence's (possibly
-//     already-delayed) end runs past it, that is an impossible
-//     combination -- publish refuses to emit anything, the same hard
-//     failure this project always had for any overlap.
-//   - "soft": this occurrence may begin up to boundary.max_delay seconds
-//     later than its nominal start (required, a non-negative number of
-//     seconds -- "any delay must be explicitly represented", never an
-//     unbounded allowance). Every item in the occurrence shifts by the
-//     same delay, preserving their relative timing within it; the delay
-//     is recorded on each item (`delay_seconds`) rather than silently
-//     absorbed, and reported in the publish warnings. An overlap bigger
-//     than max_delay is, again, an impossible combination -- refused.
-//   - "elastic": for this initial version, deliberately simplified to
-//     behave exactly like "soft" (same required, explicit max_delay
-//     bound) -- see docs/series-and-channels.md for why full elastic
-//     semantics (several consecutive blocks sharing one pooled flexible
-//     window, rather than one block's own tolerance) is deferred rather
-//     than half-built. It still, honestly, "must respect the next hard
-//     boundary" and "never allows unbounded drift", because those rules
-//     fall straight out of being resolved the same way "soft" is: a
-//     later hard-boundaried occurrence still refuses any leftover
-//     overlap, and the delay is still capped by an explicit number.
+// boundary.mode (per block; absent means "hard"):
+//   - "hard" (default): the occurrence's nominal start is an immovable anchor.
+//     If the previous occurrence's (possibly delayed) end runs past it,
+//     publish refuses to emit anything.
+//   - "soft": the occurrence may begin up to boundary.max_delay seconds after
+//     its nominal start (required, non-negative: any delay must be explicit
+//     and bounded). Every item shifts by the same delay, preserving relative
+//     timing; the delay is recorded on each item (`delay_seconds`) and
+//     reported in the publish warnings. An overlap bigger than max_delay is
+//     refused.
+//   - "elastic": deliberately simplified to behave exactly like "soft" (see
+//     docs/series-and-channels.md for why pooled flexible windows across
+//     consecutive blocks are deferred). It still respects the next hard
+//     boundary and never allows unbounded drift, because it resolves the same
+//     way "soft" does.
 //
-// Resolution never moves an occurrence EARLIER than its nominal start
-// (only later, and only when its own boundary allows it), never
-// reorders occurrences, and is a single deterministic left-to-right walk
-// in nominal-start order -- the same inputs always produce the same
-// delays. It never looks at wall-clock "now": a channel's local-time
-// recurrence semantics (DST included) are entirely Recurrence's job,
-// already resolved to absolute instants before this class ever sees
-// them; shifting a resolved instant later by N seconds is DST-agnostic
-// arithmetic, not calendar arithmetic, which is exactly correct for "the
-// previous program ran N seconds long" (an elapsed-time fact, not a
-// calendar one). Nothing here is ever re-run against a historical
-// window, so previously published occurrences are never rewritten by a
-// later compile -- callers only ever feed it one compile's own set of
-// occurrence groups.
+// Resolution never moves an occurrence earlier than its nominal start, never
+// reorders occurrences, and is a single deterministic left-to-right walk in
+// nominal-start order, so the same inputs always produce the same delays. It
+// never looks at wall-clock "now": local-time recurrence semantics (DST
+// included) are Recurrence's job and are already absolute instants here, and
+// shifting an instant later by N seconds is elapsed-time arithmetic, which is
+// correct for "the previous program ran N seconds long". Callers feed it one
+// compile's own groups only, so previously published occurrences are never
+// rewritten.
 
 final class BoundaryResolver
 {
@@ -98,10 +79,8 @@ final class BoundaryResolver
      *   seriesTitle?: ?string,
      *   items: list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}>,
      * }> $groups one entry per scheduled occurrence that actually has at least one item, across every block.
-     *        The program* / occurrenceId / durationSeconds keys (Phase 2/3 of docs/
-     *        guide-update.md) are optional so this class keeps working unchanged for
-     *        any caller (tests included) that only ever built the pre-existing
-     *        blockId/boundary/nominalStart/items shape.
+     *        The program* / occurrenceId / durationSeconds keys are optional so
+     *        callers (tests included) can pass just blockId/boundary/nominalStart/items.
      * @return array{items: list<array<string,mixed>>, warnings: list<string>, programs: list<array<string,mixed>>}
      */
     public static function resolve(array $groups): array
@@ -158,9 +137,8 @@ final class BoundaryResolver
                     $it['delay_seconds'] = $delay;
                 }
                 if ($occurrenceId !== null) {
-                    // Phase 3: every generated occurrence stays associated with its
-                    // source programming block via this reference -- explicit identity,
-                    // never re-derived later from adjacency or title matching.
+                    // Explicit identity: every occurrence stays associated with its source
+                    // block via this reference, never re-derived from adjacency or titles.
                     $it['program_id'] = $occurrenceId;
                 }
                 $items[] = $it;
@@ -169,23 +147,17 @@ final class BoundaryResolver
             $prevLabel = $items[count($items) - 1]['id'];
 
             if ($occurrenceId !== null) {
-                // Phase 4: the program's EFFECTIVE presentation window -- its nominal
-                // slot, shifted by whatever delay (if any) this occurrence absorbed.
-                // Phase 7: a hard-boundaried occurrence has delay 0, so this is simply
-                // its intended slot; a soft/elastic one may legitimately run later than
-                // nominal, and this is the boundary the EPG must actually draw to avoid
-                // ever showing two cells overlapping.
+                // The program's EFFECTIVE presentation window: its nominal slot shifted
+                // by any delay this occurrence absorbed (0 for a hard boundary). A
+                // soft/elastic occurrence may run later than nominal, and this is the
+                // boundary the EPG must draw to avoid showing two overlapping cells.
                 $durationSeconds = $g['durationSeconds'] ?? ($g['items'][count($g['items']) - 1]['end'] - $g['nominalStart']);
-                // The nominal slot's end, shifted by this occurrence's own delay (if
-                // any) -- the "intended" end. But packing.on_unfit=allow_overrun can
-                // let an item's actual end run past that (EpisodePacker schedules the
-                // unfit episode anyway rather than deferring it), and that is legal as
-                // long as it didn't collide with the next occurrence above (or this
-                // program would never have reached this line). $prevEnd is this
-                // group's last item's real end, already shifted by $delay -- use
-                // whichever is later so the EPG's presentation window actually covers
-                // the content airing within it instead of understating it and leaving
-                // a phantom gap while the overrun item is still playing.
+                // The nominal slot's end shifted by this occurrence's delay. But
+                // packing.on_unfit=allow_overrun can let an item run past that (it's legal
+                // if it didn't collide with the next occurrence above). $prevEnd is this
+                // group's last item's real end, already shifted by $delay; use whichever
+                // is later so the EPG window covers the content actually airing instead
+                // of leaving a phantom gap during the overrun.
                 $nominalEndWithDelay = $g['nominalStart'] + $delay + $durationSeconds;
                 $actualItemsEnd = $items[count($items) - 1]['end'];
                 $effectiveEnd = max($nominalEndWithDelay, $actualItemsEnd);

@@ -125,12 +125,10 @@ function series_admin_save_episode(array $body, string $seriesDir = ADMIN_SERIES
     $found = false;
     foreach ($series['episodes'] as $i => $ep) {
         if (is_array($ep) && ($ep['id'] ?? null) === $episodeId) {
-            // Only these two fields are ever touched here -- everything
-            // else (title, description, duration, thumbnail_url,
-            // published_at, source.*, guests, episode_number) is left
-            // byte-for-byte as it was, exactly like youtube-import.php's
-            // own refresh logic promises never to clobber an editor's
-            // edit, just inverted: here it's the editor whose edit must
+            // Only these two fields are touched here; everything else (title,
+            // description, duration, thumbnail_url, published_at, source.*,
+            // guests, episode_number) is left as it was. This is the inverse of
+            // youtube-import.php's refresh promise: an editor's edit here must
             // never clobber a YouTube-sourced field.
             $series['episodes'][$i]['status'] = $status;
             $series['episodes'][$i]['rights'] = ['status' => $rightsStatus, 'notes' => $notes];

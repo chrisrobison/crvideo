@@ -42,6 +42,9 @@
      scroll independently instead of the page. */
   .app:has(> .studio-view:not([hidden])){ height:100vh; min-height:0; }
   .studio-view{ flex:1; min-height:0; }
+  /* Explorer is likewise a full-bleed workspace whose columns scroll independently. */
+  .app:has(> .explorer-view:not([hidden])){ height:100vh; min-height:0; }
+  .explorer-view{ flex:1; min-height:0; }
 </style>
 </head>
 <body>
@@ -70,6 +73,9 @@
   </div>
   <div data-view="bumps" class="studio-view" hidden>
     <cf-bump-studio></cf-bump-studio>
+  </div>
+  <div data-view="explorer" class="explorer-view" hidden>
+    <cf-explorer></cf-explorer>
   </div>
 </div>
 <cf-drive-folder-picker></cf-drive-folder-picker>

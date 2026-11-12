@@ -23,7 +23,7 @@ visible; nothing is unmounted.
 
 **This admin UI has no login, no API key, no IP restriction -- nothing.**
 Anyone who can reach `server/series-admin.php`,
-`server/channel-admin.php`, or `server/announcer-admin.php` on the server can, right now, without
+`server/channel-admin.php`, `server/announcer-admin.php` or `server/explorer-admin.php` on the server can, right now, without
 authenticating:
 
 - change any episode's editorial status/rights in any series,
@@ -33,6 +33,9 @@ authenticating:
   `series/<id>/series.json` file),
 - trigger a real `channels/publish.php` run that overwrites a channel's
   `schedule.json`,
+- read every series' episode list, editorial status and rights notes through `server/explorer-admin.php`
+  (read-only; CRVideo Explorer's endpoint -- it calls the same `admin_require_auth()` hook, so a
+  future access check covers it with no other change),
 - edit any channel's AI continuity announcer config (including which
   voice/writer/TTS provider it uses), and trigger a real `claude` CLI +
   Kokoro TTS generation run from it (see `channels/announcer/README.md`).
