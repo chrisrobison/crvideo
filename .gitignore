@@ -59,3 +59,7 @@ media/announcements/
 # files and its local Python virtualenv, never committed.
 tools/kokoro-server/models/
 tools/kokoro-server/.venv/
+
+# Sample demo media served from the web root (referenced by schedule.html and
+# scheduler/js/store.js) -- large binaries, kept on disk but never committed.
+/video-00*.mp4
