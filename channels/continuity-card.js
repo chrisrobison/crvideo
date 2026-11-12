@@ -136,7 +136,9 @@ const TEMPLATE = `
    behind this card, so the card is just its text on a light scrim. */
 :host([overlay]) { background: none !important; }
 :host([overlay]) .bgvideo, :host([overlay]) .bgcanvas { display: none; }
-:host([overlay]) .scrim { display: block; background: linear-gradient(180deg, rgba(5,6,10,.35), rgba(5,6,10,.12) 55%, rgba(5,6,10,.35)); }
+/* Info block anchored bottom-left; the filler's line is centered above it. */
+:host([overlay]) .wrap { position: absolute; left: 0; right: 0; bottom: 0; min-height: 0; align-items: end; padding-bottom: clamp(16px, 5vh, 48px); }
+:host([overlay]) .scrim { display: block; background: linear-gradient(180deg, rgba(5,6,10,.15), rgba(5,6,10,.12) 50%, rgba(5,6,10,.6)); }
 
 /* Quote content, an alternative to the default "Coming Up Next" block.
    Reuses .wrap's grid padding so either fills the card identically. */

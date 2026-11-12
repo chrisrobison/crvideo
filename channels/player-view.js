@@ -75,7 +75,14 @@ video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: con
   padding: clamp(14px,6vh,72px) clamp(12px,6vw,96px); background: radial-gradient(circle at 30% 35%,#1b2643,#020306 75%); }
 .card { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: clamp(16px,5vw,88px); align-items: center; width: min(1400px,100%); }
 .card img { display: block; height: clamp(28px,9vh,96px); margin-bottom: clamp(10px,4vh,40px); }
-.fillerHost:not([hidden]) ~ .slate { background: none; }
+.fillerHost:not([hidden]) ~ .slate { background: none; align-items: flex-end; justify-content: flex-start; padding-bottom: clamp(16px,5vh,48px); }
+.fillerHost:not([hidden]) ~ .slate .card { width: min(1400px,100%); align-items: end; }
+/* Sized by height so the block stays within the bottom ~40% the filler leaves for it. */
+.fillerHost:not([hidden]) ~ .slate .card img { height: clamp(24px,6vh,56px); margin-bottom: clamp(6px,2vh,20px); }
+.fillerHost:not([hidden]) ~ .slate .upnext .title { font-size: clamp(18px,4.6vh,48px); margin: 4px 0 8px; }
+.fillerHost:not([hidden]) ~ .slate .upnext .when { font-size: clamp(13px,2.6vh,24px); }
+.fillerHost:not([hidden]) ~ .slate .coming ol { font-size: clamp(12px,2.6vh,22px); row-gap: clamp(4px,1.4vh,12px); margin-top: 6px; }
+.fillerHost:not([hidden]) ~ .slate .coming .t { -webkit-line-clamp: 1; }
 .slate .label { color: var(--accent); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: clamp(11px,1.4vw,18px); }
 .upnext .title { font-size: clamp(20px,4.8vw,76px); font-weight: 800; line-height: 1.05; margin: 8px 0 12px; text-wrap: balance; }
 .upnext .when { font-size: clamp(14px,2vw,28px); font-variant-numeric: tabular-nums; }

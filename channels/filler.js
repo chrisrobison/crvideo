@@ -135,9 +135,12 @@ const STYLE = `
 .filler { position: absolute; inset: 0; background: #05070c; overflow: hidden; }
 .filler cr-bump { position: absolute; inset: 0; }
 .scrim { position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(ellipse at center, rgba(0,0,0,.08), rgba(0,0,0,.5)), linear-gradient(to top, rgba(0,0,0,.6), transparent 45%); }
-.line { position: absolute; left: 0; right: 0; bottom: clamp(24px, 9vh, 110px); padding: 0 clamp(16px, 8vw, 140px);
-  display: flex; flex-direction: column; align-items: center; gap: .5em; text-align: center; color: #fff; pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,.08), rgba(0,0,0,.5)), linear-gradient(to top, rgba(0,0,0,.7), transparent 55%); }
+/* The line is centered in the space above the info block (the up-next card
+   or slate, which the player anchors bottom-left and which needs roughly
+   --filler-info-h of the height). */
+.line { position: absolute; left: 0; right: 0; top: 0; bottom: var(--filler-info-h, 40%); padding: 0 clamp(16px, 8vw, 140px);
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: .5em; text-align: center; color: #fff; pointer-events: none;
   text-shadow: 0 2px 14px rgba(0,0,0,.85); transition: opacity .7s ease; }
 .line.off { opacity: 0; }
 .line .kind { font: 800 clamp(10px, 1.2vw, 16px)/1 system-ui, sans-serif; letter-spacing: .22em; text-transform: uppercase; color: var(--filler-accent, #ffcc33); }
