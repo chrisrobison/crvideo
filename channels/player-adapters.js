@@ -41,8 +41,9 @@ export class ContinuityRenderer {
    * @param {{bumpers?:Array<object>, quoteDecks?:Record<string,string[]>}|null} bumperTheme
    *        the channel's resolved theme.json (see loadTheme()); not `channel.theme`, which is the small color-token palette. null renders the plain generic card.
    * @param {?string} audioUrl this occurrence's announcer narration MP3 (see findAnnouncementAudio()), or null for a silent card
+   * @param {boolean} overlay true when something else (the filler scene) draws behind the card: drops the card's own bumper background and scrim
    */
-  show(channel, program, clockNow, cardSpan, template = null, bumperTheme = null, audioUrl = null) {
+  show(channel, program, clockNow, cardSpan, template = null, bumperTheme = null, audioUrl = null, overlay = false) {
     if (!this.card) {
       this.card = document.createElement("cr-continuity-card");
       this.container.appendChild(this.card);
@@ -61,6 +62,7 @@ export class ContinuityRenderer {
     this.card.program = program;
     this.card.setCardSpan(cardSpan.startsAt, cardSpan.endsAt);
     this.card.audioUrl = audioUrl;
+    this.card.toggleAttribute("overlay", overlay);
     this.container.hidden = false;
   }
 
