@@ -203,10 +203,8 @@ player.addEventListener("cr-channel-change", (e) => {
   const match = channels.find((c) => c.id === e.detail.channel.id);
   if (match) setFocus(match, { tune: false }); // already tuned -- just sync the guide's own UI
 });
-// The title/progress-bar/description panel re-renders whenever the
-// player's own airing changes (a program transition, or tune() loading a
-// freshly focused channel for the first time) -- same trigger the
-// pre-existing small preview player used before this element replaced it.
+// The panel re-renders on every airing change (a program transition, or
+// tune() loading a freshly focused channel).
 player.addEventListener("cr-airing", () => renderPreview());
 
 /** An published occurrence's `id` (see channels/publish/src/
@@ -277,12 +275,10 @@ function renderGrid() {
 
     const detail = el("div", "row-detail");
     const lane = el("div", "lane");
-    // Phase 5 of docs/guide-update.md: the guide renders the PROGRAM-level
-    // projection (one cell per scheduled program occurrence, e.g. an hour
-    // of "Electronics Lab" however many videos got packed into it) --
-    // never the raw per-video playback timeline. See buildEpgTimeline()
-    // in broadcast.js; ch.timeline (the playback timeline) is untouched
-    // and still drives the player above.
+    // The guide renders the PROGRAM-level projection (one cell per scheduled
+    // program occurrence, however many videos were packed into it), not the raw
+    // per-video playback timeline; see buildEpgTimeline(). ch.timeline still
+    // drives the player above.
     for (const a of airings(ch.epgTimeline, windowStart, until)) {
       const left = Math.max(a.startsAt, windowStart);
       const right = Math.min(a.endsAt, until);
@@ -301,9 +297,7 @@ function renderGrid() {
       cell.classList.toggle("now", isNow);
       cell.classList.toggle("cut", a.startsAt < windowStart);
       const range = `${clock(a.startsAt)} – ${clock(a.endsAt)}`;
-      // Secondary text (Phase 5): the originating series/publisher, when
-      // known -- optional, and never a substitute for the program title
-      // itself, which always stays the prominent line.
+    // Secondary text: the originating series/publisher, when known; never replaces the program title.
       const secondary = a.seriesTitle || null;
       cell.title = secondary ? `${a.title}\n${secondary}\n${range}` : `${a.title}\n${range}`;
       cell.tabIndex = -1;
@@ -335,16 +329,13 @@ function placeNowLines() {
   for (const line of document.querySelectorAll(".nowline")) line.style.left = left;
 }
 
-/** Expands/collapses a row's detail card for a given future (or current)
- *  airing. Clicking the same already-expanded timeslot again collapses
- *  it; clicking a different timeslot in the same row swaps the content.
- *  Never calls expandChannel() -- that's the whole point (Phase 6:
- *  selecting a future program must never unexpectedly change playback).
- *  `a` is either a program-level airing (has `.episodes`, built from
- *  buildEpgTimeline()'s grouping) or a legacy per-item airing with no
- *  programming-block identity at all (Phase 8, e.g. Film Day at School) --
- *  renderProgramDetail()/renderEpisodeDetail() below render whichever one
- *  this actually is. */
+/** Expands/collapses a row's detail card for an airing. Clicking the expanded
+ *  timeslot again collapses it; a different timeslot in the same row swaps the
+ *  content. Never calls expandChannel(): selecting a future program must not
+ *  change playback. `a` is either a program-level airing (has `.episodes`,
+ *  from buildEpgTimeline()) or a per-item airing with no programming-block
+ *  identity (e.g. Film Day at School); renderProgramDetail()/
+ *  renderEpisodeDetail() handle each. */
 async function toggleDetail(row, detailEl, ch, a) {
   const key = String(a.startsAt);
   if (row.dataset.expanded === key) {
@@ -372,8 +363,7 @@ async function toggleDetail(row, detailEl, ch, a) {
   else renderEpisodeDetail(detailEl, a, findCatalogItem(catalog, a.id));
 }
 
-/** Phase 8 legacy fallback, unchanged from before program-level grouping
- *  existed: a single video/episode's own detail card. */
+/** A single video/episode's own detail card (airings with no program grouping). */
 function renderEpisodeDetail(detailEl, a, item) {
   if (item?.thumbnail_url) {
     const img = el("img", "thumb");
@@ -389,14 +379,11 @@ function renderEpisodeDetail(detailEl, a, item) {
   detailEl.append(el("p", null, item ? plainText(item.description) || "No description available." : "No details available for this episode."));
 }
 
-/** Phase 6: the full program-level detail card -- program title/
- *  description, channel + timing + total duration + series/publisher,
- *  which underlying episode is airing right now (if this program IS the
- *  one currently on), and the ordered list of every actual video/filler
- *  scheduled within it. Nothing here is hardcoded -- every label comes
- *  from the published schedule (titles/times) or the channel's catalog
- *  (thumbnails/creator), resolved the same way the legacy per-episode
- *  card above always has. */
+/** The program-level detail card: program title/description, channel, timing,
+ *  total duration, series/publisher, which episode is airing now (if this
+ *  program is on), and the ordered list of every video/filler within it. Labels
+ *  come from the published schedule or the channel's catalog (thumbnails/
+ *  creator). */
 function renderProgramDetail(detailEl, ch, a, catalog) {
   const firstCatalogItem = a.episodes[0] ? findCatalogItem(catalog, a.episodes[0].id) : null;
   if (firstCatalogItem?.thumbnail_url) {

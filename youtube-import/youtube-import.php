@@ -7,9 +7,9 @@ declare(strict_types=1);
 // Standalone CLI: imports a YouTube channel's uploads or a specific
 // playlist via the official YouTube Data API v3 (metadata only -- no
 // video files are ever fetched, no watch pages are scraped, no yt-dlp),
-// and writes/refreshes a portable series.json (see series/*/series.json,
-// added in phase 1 of this project). No framework, no Composer -- plain
-// PHP, manually required, the same style as ia-import/ia-import.php.
+// and writes/refreshes a portable series.json (see series/*/series.json).
+// No framework, no Composer: plain PHP, manually required, in the same style
+// as ia-import/ia-import.php.
 //
 // Importing never publishes anything: every new video becomes a
 // "candidate" episode. See src/YouTubeSeriesBuilder.php for exactly which

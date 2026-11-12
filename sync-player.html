@@ -159,7 +159,7 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
       return normalized;
     }
 
-    // Legacy absolute-date manifest (one-off schedule for a specific calendar day).
+    // Absolute-date manifest (a one-off schedule for a specific calendar day).
     recurring = false;
     timezone = null;
     const list = Array.isArray(data) ? data : data.entries;
@@ -259,8 +259,8 @@ html,body{margin:0;width:100%;height:100%;background:#000;overflow:hidden;font-f
     return capped * (0.75 + Math.random() * 0.5);
   }
 
-  /** Always-visible (not just ?debug) failure indicator -- previously a
-   *  blocked/403'd stream failed completely silently from the viewer's side. */
+  /** Always-visible (not just ?debug) failure indicator, so a blocked/403'd
+   *  stream isn't silent for the viewer. */
   function showError(message) {
     status.classList.remove("hidden");
     status.textContent = message;

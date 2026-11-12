@@ -4,15 +4,12 @@
 // compiles recurring-series programming into a schedule.json; this test
 // loads a REAL compiled schedule.json (committed at
 // channels/tests/fixtures/published-schedule-sample/, generated once by
-// running `php channels/publish.php` against a small fixture channel --
-// see that directory's generation command in the phase 4 report) through
-// the REAL, unmodified player code (buildTimeline/locate from
-// broadcast.js) and proves two things end to end, not just at either side
-// in isolation:
+// running `php channels/publish.php` against a small fixture channel) through
+// the real player code (buildTimeline/locate from broadcast.js) and proves two
+// things end to end:
 //
-//   1. A calendar-recurrence-compiled schedule is just an ordinary
-//      schedule.json as far as the player is concerned -- no player code
-//      needed to change (phase 4's core design constraint).
+//   1. A calendar-recurrence-compiled schedule is an ordinary schedule.json as
+//      far as the player is concerned; no player changes were needed.
 //   2. "Joining a broadcast in the middle of an episode" -- tuning in at
 //      an arbitrary instant inside a published episode's airtime --
 //      resolves to the correct videoId/provider AND the correct offset

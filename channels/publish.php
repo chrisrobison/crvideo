@@ -5,9 +5,8 @@ declare(strict_types=1);
 // channels/publish.php
 //
 // Compiles a channel's recurring-series programming (channels/<id>/
-// programming.json) into the existing schedule.json the player already
-// knows how to read, so no player code needs to know about recurrence
-// rules, timezones, or series rotation at all:
+// programming.json) into the schedule.json the player already reads, so no
+// player code needs to know about recurrence rules, timezones or rotation:
 //
 //   catalog.json (+ series/*/series.json)  --\
 //   programming.json                          >--  publish.php  -->  schedule.json (+ meta.json's "anchor")
@@ -28,28 +27,19 @@ declare(strict_types=1);
 //   --verbose                 List every occurrence and warning, not just counts
 //   --help                    Display this message
 //
-// A channel with no programming.json is not something this tool touches
-// at all -- its schedule.json keeps being whatever ia-import (or a human)
-// produced, exactly as before. Only channels that opt in with a
-// programming.json are affected, and running this OVERWRITES that
-// channel's schedule.json (atomically, keeping schedule.json.bak and
-// meta.json.bak) -- for such a channel, schedule.json is a build
-// artifact from this point on, the same way ia-import's schedule.json
-// output is, not something to hand-edit.
+// A channel with no programming.json is not touched; its schedule.json stays
+// whatever ia-import (or a human) produced. For a channel with one, running
+// this OVERWRITES schedule.json (atomically, keeping schedule.json.bak and
+// meta.json.bak): it is a build artifact, not something to hand-edit.
 //
-// Rollover / regeneration: the published window is fixed-length and does
-// not extend itself. Once real time passes the window's end, the
-// channel's existing wall-clock-cycle player behavior repeats the last
-// published window rather than going dark -- but episode rotation does
-// NOT keep advancing while that happens (the window has to actually be
-// regenerated for rotation to continue). Re-run this command again
-// (manually, or on a schedule you set up outside this tool -- e.g. a
-// nightly cron calling it for every channel with a programming.json --
-// no daemon/background worker is built or required here) comfortably
-// before --days runs out to produce the next window; running it with the
-// same (or an overlapping) window is idempotent -- same approved-episode-
-// set pin, same recurrence math, same output (aside from the "_publish.
-// generated_at" timestamp).
+// Rollover: the published window is fixed-length and does not extend itself.
+// Once real time passes its end, the player repeats the last published window
+// rather than going dark, but episode rotation does NOT advance until the
+// window is regenerated. Re-run this (manually or from an external schedule
+// such as a nightly cron; no daemon is built or required) comfortably before
+// --days runs out. Running it again with the same or an overlapping window is
+// idempotent: same approved-episode-set pin, same recurrence math, same
+// output (aside from the "_publish.generated_at" timestamp).
 
 const PUBLISH_ROOT = __DIR__;
 
@@ -65,10 +55,9 @@ require PUBLISH_ROOT . '/publish/src/ProgrammingCompiler.php';
 require PUBLISH_ROOT . '/publish/src/ScheduleWriter.php';
 require PUBLISH_ROOT . '/publish/src/PublishReporter.php';
 
-// AI continuity announcer (channels/announcer/) -- strictly opt-in per
-// channel via channels/<id>/announcer.json; see that module's README.md.
-// Required unconditionally (same posture as every other require above)
-// since the module itself is a no-op for any channel without that file.
+// AI continuity announcer (channels/announcer/): opt-in per channel via
+// channels/<id>/announcer.json; see that module's README.md. Required
+// unconditionally since the module is a no-op for channels without that file.
 require PUBLISH_ROOT . '/announcer/src/ContentHash.php';
 require PUBLISH_ROOT . '/announcer/src/AnnouncerConfig.php';
 require PUBLISH_ROOT . '/announcer/src/AnnouncementContextBuilder.php';
@@ -145,10 +134,8 @@ function publish_main(array $argv): int
         fwrite(STDERR, "Error: invalid channel id \"$channelId\".\n");
         return 1;
     }
-    // --channels-root exists for the test suite (an isolated temp directory
-    // tree shaped like channels/<id>/ + series/<id>/), so tests never touch
-    // the real repo; real usage never needs it (default: this file's own
-    // directory, i.e. the real channels/).
+    // --channels-root exists for the test suite (an isolated temp tree shaped like
+    // channels/<id>/ + series/<id>/); real usage defaults to this file's directory.
     $channelsRoot = isset($opt['channels-root']) ? (string) $opt['channels-root'] : PUBLISH_ROOT;
     $channelDir = "$channelsRoot/$channelId";
     if (!is_dir($channelDir)) {
@@ -208,12 +195,11 @@ function publish_main(array $argv): int
     $dryRun = !empty($opt['dry-run']);
     $verbose = !empty($opt['verbose']);
 
-    // Phase 2 metadata fallback tier 3 ("the title/description this block was
-    // last published with"): read whatever schedule.json this channel already
-    // has (if any) before it gets overwritten below, and index its "programs"
-    // collection by block_id. A channel publishing for the first time, or one
-    // whose existing schedule.json predates this feature entirely, simply has
-    // nothing here -- ProgrammingCompiler falls through to its next tier.
+    // Fallback tier 3 for program title/description ("what this block was last
+    // published with"): read the existing schedule.json (if any) before it's
+    // overwritten and index its "programs" by block_id. With none (a first
+    // publish, or a schedule predating "programs"), ProgrammingCompiler falls
+    // through to its next tier.
     $previousPrograms = [];
     $existingSchedulePath = "$channelDir/schedule.json";
     if (is_file($existingSchedulePath)) {
@@ -228,13 +214,11 @@ function publish_main(array $argv): int
         }
     }
 
-    // Resolved BEFORE compile() (moved ahead of its previous position, right after
-    // the Phase 4 gap-filling call below) because ProgrammingCompiler now also
-    // needs defaults.minimum_lead_in -- it reserves that time at the front of
-    // EVERY occurrence it builds, not just the leftover gaps ContinuityFiller
-    // fills afterward. See ProgrammingCompiler::compile()'s $minimumLeadInSeconds
-    // doc. A channel with no continuity.json reference still gets 0 here (this
-    // call's own default), so it's completely unaffected either way.
+    // Resolved before compile() because ProgrammingCompiler needs
+    // defaults.minimum_lead_in: it reserves that time at the front of every
+    // occurrence it builds, not just the gaps ContinuityFiller fills afterward
+    // (see ProgrammingCompiler::compile()'s $minimumLeadInSeconds). A channel
+    // with no continuity.json reference gets 0.
     $continuity = ContinuityResolver::resolveCatalog($catalogPath);
     foreach ($continuity['errors'] as $e) {
         fwrite(STDERR, "Warning: $e\n");
@@ -250,11 +234,9 @@ function publish_main(array $argv): int
         return 1;
     }
 
-    // Phase 4: fill every remaining gap (including every reserved lead-in above)
-    // with continuity occurrences, if (and only if) this channel's catalog.json
-    // references at least one continuity.json -- see ContinuityResolver/
-    // ContinuityFiller's headers. A channel that doesn't is completely
-    // unaffected: fill() hands back its input unchanged.
+    // Fill every remaining gap (including every reserved lead-in above) with
+    // continuity occurrences, only if this channel's catalog.json references at
+    // least one continuity.json; otherwise fill() returns its input unchanged.
     $filled = ContinuityFiller::fill(
         $compiled['items'], $windowStart->getTimestamp(), $windowEnd->getTimestamp(), $continuity, $compiled['programs'],
     );
@@ -269,15 +251,11 @@ function publish_main(array $argv): int
         );
         ScheduleWriter::updateAnchor($metaPath, $windowStart);
 
-        // AI continuity announcer (channels/announcer/): enqueue-only --
-        // never calls an AI writer or Kokoro here, so this can never slow
-        // down or fail schedule compilation itself (channels/announce-
-        // worker.php does the actual AI+TTS work, asynchronously). A
-        // channel with no channels/<id>/announcer.json (or "enabled":
-        // false in it) is completely unaffected, same opt-in posture as
-        // continuity.json. Any failure here is reported but never turns
-        // an otherwise-successful publish into a failed one -- the base
-        // schedule is already written and valid at this point.
+        // AI continuity announcer: enqueue-only. It never calls an AI writer or
+        // Kokoro here, so it can't slow or fail compilation (channels/announce-
+        // worker.php does that work asynchronously). Opt-in per channel via
+        // announcer.json. A failure here is reported but never fails an otherwise
+        // successful publish; the schedule is already written and valid.
         try {
             $announcerRoot = PUBLISH_ROOT . '/announcer';
             $seriesRoot = dirname(PUBLISH_ROOT) . '/series';

@@ -9,15 +9,13 @@ declare(strict_types=1);
 // already reads), or by an explicit identifier list -- into a portable
 // series.json (see docs/series-and-channels.md and
 // youtube-import/youtube-import.php, which this deliberately mirrors).
-//
-// This is NOT a replacement for ia-import.php. That tool's fixed-block
-// catalog.json/schedule.json pipeline (used by channels/film-day-at-school
-// today) is untouched and keeps working exactly as before. This is a
-// second, additive output shape for IA content: a reusable series.json an
-// editor can approve episodes in and a channel can air on a recurring
-// schedule via channels/publish.php, the same way every YouTube-sourced
-// series already does. Metadata fetching/resolution (ArchiveMetadataClient,
-// MediaResolver, DurationParser) is fully shared with ia-import.php; only
+// This does not replace ia-import.php, whose fixed-block catalog.json/
+// schedule.json pipeline (used by channels/film-day-at-school) is untouched.
+// This is a second output shape for IA content: a reusable series.json an
+// editor can approve episodes in and a channel can air on a recurring schedule
+// via channels/publish.php, as YouTube-sourced series do. Metadata fetching/
+// resolution (ArchiveMetadataClient, MediaResolver, DurationParser) is shared
+// with ia-import.php; only the final "what do we write" step differs.
 // the final "what do we write" step differs.
 //
 // Importing never publishes anything: every new item becomes a

@@ -3,10 +3,9 @@ declare(strict_types=1);
 
 // server/announcer-admin.php
 //
-// Backend for the admin UI's "Continuity announcer" section (Pass 2 of
-// channels/announcer/README.md -- a sibling to server/channel-admin.php,
-// same posture as server/series-admin.php being channel-admin.php's own
-// sibling: one file per editorial domain). Lets an editor:
+// Backend for the admin UI's "Continuity announcer" section (see
+// channels/announcer/README.md; a sibling to server/channel-admin.php, one
+// file per editorial domain). Lets an editor:
 //
 //   - view every channel's effective announcer config (global defaults +
 //     channels/<id>/announcer.json merged, via AnnouncerConfig::resolve()
@@ -206,11 +205,9 @@ function announcer_admin_normalize_config(mixed $config): array
     $out['writer'] = ['provider' => $writerProvider, 'model' => $writerModel];
 
     // tts is a deployment-level setting (which Kokoro server/provider a
-    // channel talks to), not exposed for editing in the admin UI (see
-    // channels/announcer/README.md's Pass 2 notes) -- unlike every other
-    // field above, it's validated and included ONLY if the caller
-    // actually sent one, so a request that omits it (every real save
-    // from the UI today) leaves whatever the channel's announcer.json
+    // channel talks to), not editable in the admin UI. Unlike the fields
+    // above, it's validated and included ONLY if the caller sent one, so a
+    // request that omits it (every save from the UI) leaves whatever the channel's announcer.json
     // already has for `tts` completely untouched by the merge in
     // announcer_admin_save_config(), instead of clobbering a real
     // per-channel endpoint/provider override with a fabricated default.

@@ -1,6 +1,5 @@
-// cf-channel-admin — channel/catalog/programming management view
-// (phase 6, admin UI), plus the AI continuity announcer's own admin
-// section (Pass 2 of channels/announcer/README.md).
+// cf-channel-admin — channel/catalog/programming management view, plus the
+// AI continuity announcer's admin section (see channels/announcer/README.md).
 //
 // Lists every channels/*/meta.json (scanned server-side by
 // server/channel-admin.php -- this component never hardcodes channel

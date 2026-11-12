@@ -1,4 +1,4 @@
-// cf-series-admin — episode review/approval view (phase 6, admin UI).
+// cf-series-admin — episode review/approval view.
 //
 // Lists every series/*/series.json (scanned server-side by
 // server/series-admin.php -- this component never hardcodes series ids),

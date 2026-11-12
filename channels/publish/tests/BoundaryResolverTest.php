@@ -13,8 +13,8 @@ final class BoundaryResolverTest
         return ['blockId' => $blockId, 'boundary' => BoundaryResolver::normalizeBoundary($boundary, $blockId), 'nominalStart' => $nominalStart, 'items' => $items];
     }
 
-    /** Same as group() but with the Phase 2/3 program-identity keys populated,
-     *  the same shape ProgrammingCompiler actually builds. */
+    /** Same as group() but with the program-identity keys populated, the same
+     *  shape ProgrammingCompiler builds. */
     private function programGroup(string $blockId, array $boundary, int $nominalStart, int $durationSeconds, array $items, string $title = 'Title'): array
     {
         return [
@@ -220,13 +220,12 @@ final class BoundaryResolverTest
         }
     }
 
-    // ---------------- Phase 3/4: program-level identity ----------------
+    // ---------------- program-level identity ----------------
 
     public function testGroupsWithNoProgramKeysProduceNoProgramsBackwardCompatible(): void
     {
-        // Every pre-existing test above in this file builds groups with the
-        // group() helper (no occurrenceId/programTitle/...) -- resolve() must
-        // keep working for them exactly as before, with an empty "programs" list.
+        // Groups built with group() (no occurrenceId/programTitle/...) must still
+        // resolve, with an empty "programs" list.
         $groups = [$this->group('a', ['mode' => 'hard'], 1000, [$this->item('e1', 1000, 500)])];
         $result = BoundaryResolver::resolve($groups);
         Assert::count(0, $result['programs']);
@@ -296,8 +295,8 @@ final class BoundaryResolverTest
     public function testTwoDistinctOccurrencesOfTheSameBlockIdGetDistinctOccurrenceIds(): void
     {
         // Same block, two different scheduled instants (e.g. two different days,
-        // or an AM/PM pair modeled as the same block firing twice) -- Phase 3
-        // requires these never be confused with each other.
+        // or an AM/PM pair modeled as the same block firing twice); these must
+        // never be confused with each other.
         $groups = [
             $this->programGroup('b', ['mode' => 'hard'], 1000, 500, [$this->item('e1', 1000, 500)]),
             $this->programGroup('b', ['mode' => 'hard'], 90000, 500, [$this->item('e2', 90000, 500)]),

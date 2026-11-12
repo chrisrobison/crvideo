@@ -52,10 +52,9 @@ export const channelAdminApi = {
   publish: (channelId, opts) => postJson(CHANNEL_ENDPOINT, { action: "publish", channel_id: channelId, ...opts }),
 };
 
-// server/announcer-admin.php -- the AI continuity announcer's admin
-// surface (Pass 2 of channels/announcer/README.md). See that file's own
-// header for exactly what each action does; this is a thin, un-opinionated
-// wrapper, same posture as channelAdminApi above.
+// server/announcer-admin.php -- the AI continuity announcer's admin surface
+// (see channels/announcer/README.md). A thin wrapper; see that file's header
+// for what each action does.
 export const announcerAdminApi = {
   list: () => getJson(`${ANNOUNCER_ENDPOINT}?action=list`).then((r) => r.channels),
   voices: (channelId) => getJson(`${ANNOUNCER_ENDPOINT}?action=voices&channel_id=${encodeURIComponent(channelId)}`),

@@ -86,7 +86,7 @@ final class ProgrammingCompilerTest
         ]];
         $programming = ['blocks' => [$this->dailyBlock('b', 's', '2026-11-02')]];
         $result = ProgrammingCompiler::compile($programming, $series, $this->stateDir, 'chan', false, $this->utc('2026-11-02T00:00:00Z'), $this->utc('2026-11-03T00:00:00Z'));
-        Assert::same('https://www.youtube.com/watch?v=vid-e1', $result['items'][0]['source_url'], 'no page_url set -- must keep the pre-existing behavior exactly');
+        Assert::same('https://www.youtube.com/watch?v=vid-e1', $result['items'][0]['source_url'], 'no page_url set -- source_url falls back to source.url');
     }
 
     public function testLoopsBackToTheFirstEpisodeAfterTheLast(): void
@@ -203,7 +203,7 @@ final class ProgrammingCompilerTest
         Assert::same(json_encode($a['items']), json_encode($b['items']));
     }
 
-    // ---------------- Phase 1: multi-episode packing ----------------
+    // ---------------- multi-episode packing ----------------
 
     private function dailyPackedBlock(string $id, string $seriesId, string $anchorDate, array $packingOverrides = [], array $overrides = []): array
     {
@@ -310,7 +310,7 @@ final class ProgrammingCompilerTest
         });
     }
 
-    // ---------------- Phase 3: hard/soft boundaries ----------------
+    // ---------------- hard/soft boundaries ----------------
 
     public function testDefaultBoundaryIsHardAndOverlapIsStillRefusedExactlyAsBeforePhase3(): void
     {
@@ -370,7 +370,7 @@ final class ProgrammingCompilerTest
         Assert::same(['e1', 'e2', 'e3'], $ids);
     }
 
-    // ---------------- Phase 2/3: program-level identity & metadata ----------------
+    // ---------------- program-level identity & metadata ----------------
 
     public function testEveryOccurrenceGetsAStableOccurrenceIdFromItsBlockIdAndNominalStart(): void
     {
@@ -446,9 +446,8 @@ final class ProgrammingCompilerTest
 
     public function testProgramDescriptionNeverFallsBackToAnEpisodesOwnDescription(): void
     {
-        // Phase 2 explicitly requires the program description stay distinct from
-        // any individual video's description -- unlike title, there is no
-        // episode-description fallback tier at all.
+        // The program description must stay distinct from any individual video's
+        // description: unlike title, there is no episode-description fallback tier.
         $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [[
             'id' => 'e1', 'title' => 'E1', 'status' => 'approved', 'duration' => 1800.0, 'description' => 'Episode-level description',
             'source' => ['provider' => 'youtube', 'video_id' => 'v1', 'url' => 'https://example.test/v1'],
@@ -469,8 +468,8 @@ final class ProgrammingCompilerTest
     {
         // US fall-back, America/Los_Angeles, 2026-11-01: a daily 00:30 block fires
         // once the day before and once the day after a 25-real-hour calendar day.
-        // Phase 3 requires these remain two distinct, correctly identified programs
-        // regardless of the underlying DST arithmetic (already Recurrence's job).
+        // These must remain two distinct, correctly identified programs regardless
+        // of the underlying DST arithmetic (Recurrence's job).
         $series = [['id' => 's', 'title' => 'S', 'url' => '/x', 'episodes' => [
             $this->episode('e1', 'approved', 600.0), $this->episode('e2', 'approved', 600.0),
         ]]];

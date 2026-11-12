@@ -147,7 +147,7 @@ final class ContinuityFillerTest
         Assert::same(2000, end($all)['end']);
     }
 
-    // ---------------- Phase 7: program-level attribution ----------------
+    // ---------------- program-level attribution ----------------
 
     private function program(string $occurrenceId, int $start, int $end): array
     {
@@ -183,8 +183,7 @@ final class ContinuityFillerTest
 
     public function testNoProgramsPassedLeavesEveryFillerWithoutAProgramId(): void
     {
-        // Default behavior (no $programs argument) -- every pre-existing test
-        // above in this file relies on this staying exactly as it was.
+        // Default behavior: no $programs argument means no attribution.
         $result = ContinuityFiller::fill([], 0, 50, $this->continuity([], [$this->card('generic', 0, 300)]));
         Assert::true(!isset($result['items'][0]['program_id']));
     }

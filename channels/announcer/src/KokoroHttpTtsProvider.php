@@ -94,7 +94,7 @@ final class KokoroHttpTtsProvider implements TtsProviderInterface
 
     /**
      * GET <endpoint>/voices (see tools/kokoro-server/server.py's do_GET) --
-     * used only by the Pass 2 admin UI's voice picker (server/announcer-
+     * used only by the admin UI's voice picker (server/announcer-
      * admin.php), never by the generation pipeline itself. Never throws:
      * an unreachable/misconfigured server just means the admin UI falls
      * back to a plain text input instead of a populated dropdown.

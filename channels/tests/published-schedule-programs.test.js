@@ -1,7 +1,7 @@
 // channels/tests/published-schedule-programs.test.js
 //
 // Same cross-boundary integration approach as published-schedule.test.js,
-// extended to the program-level EPG (Phase 4/9 of docs/guide-update.md):
+// extended to the program-level EPG:
 // loads a REAL schedule.json compiled and written by the actual, unmodified
 // PHP publisher (channels/publish.php) through the REAL, unmodified
 // buildEpgTimeline()/locate()/airings() -- not just buildTimeline() -- and

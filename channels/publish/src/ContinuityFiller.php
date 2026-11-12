@@ -3,64 +3,50 @@ declare(strict_types=1);
 
 // channels/publish/src/ContinuityFiller.php
 //
-// Phase 4 of docs/series-and-channels.md: turns every uncovered interval
-// left by BoundaryResolver's final item list into real, gap-free
-// continuity occurrences, using the resolved continuity pool
-// (ContinuityResolver) and this priority order:
+// Turns every uncovered interval left in BoundaryResolver's final item list
+// into gap-free continuity occurrences, using the resolved continuity pool
+// (ContinuityResolver) in this priority order:
 //
-//   1. Additional episodes from the scheduled series -- already fully
-//      handled upstream by EpisodePacker; by the time items reach this
-//      class, packing has already used every episode that fits. There
-//      is nothing left for this class to do for that tier.
-//   2. Approved short-form filler / station IDs with known durations --
-//      a short, bounded chain (never more than MAX_STATION_IDS_PER_GAP)
-//      of real media assets, each picked to minimize what's left
-//      afterward (same deterministic best-fit idea as EpisodePacker's
-//      best_fit mode: largest-that-fits, ties broken by configured
-//      order).
-//   3. Whatever remains after that -- which, for a gap smaller than
-//      `defaults.minimum_video_filler`, is the WHOLE gap, since station
-//      IDs are not even attempted below that threshold -- is covered by
-//      EXACTLY ONE dynamic continuity card sized to the exact remainder.
-//      A card never needs a prerecorded asset, so it is always available
-//      as the final fallback: a gap is never left undefined, and this
-//      class never emits more than one card per gap, which is what keeps
-//      a long stretch with no filler assets from turning into hundreds
-//      of tiny occurrences.
+//   1. Additional episodes from the scheduled series: already handled
+//      upstream by EpisodePacker, so nothing is left for this class to do.
+//   2. Approved short-form filler / station IDs with known durations: a
+//      short chain (at most MAX_STATION_IDS_PER_GAP) of real media assets,
+//      each picked to minimize what's left (the same deterministic best-fit
+//      as EpisodePacker's best_fit mode: largest that fits, ties broken by
+//      configured order).
+//   3. Whatever remains (the WHOLE gap when it's smaller than
+//      `defaults.minimum_video_filler`, since station IDs aren't attempted
+//      below that) is covered by exactly one dynamic continuity card sized
+//      to the remainder. A card needs no prerecorded asset, so it's always
+//      available: a gap is never left undefined, and one card per gap keeps
+//      a long stretch with no filler assets from becoming hundreds of tiny
+//      occurrences.
 //
-// A channel that references no continuity.json at all (ContinuityResolver
-// returns an empty pool) is untouched: fill() returns its input items
-// completely unchanged, so every channel published before this phase
-// keeps producing plain "gap" blocks exactly as before.
+// A channel with no continuity.json (ContinuityResolver returns an empty
+// pool) is untouched: fill() returns its input items unchanged, leaving
+// plain "gap" blocks.
 //
-// Station-ID/filler occurrences are ordinary "video" items (they play
-// through the existing Html5PlayerAdapter, same as any other directly-
-// hosted media -- no player change needed for them at all); a dynamic
-// card is a new "continuity" item (kind: "continuity"), which needs the
-// Phase 5/6 renderer and player adapter to actually display -- until
-// those exist, broadcast.js's existing "no provider -> not playable"
-// rule already shows it as an ordinary station-break slate, never
-// breaking anything.
+// Station-ID/filler occurrences are ordinary "video" items played through
+// Html5PlayerAdapter. A dynamic card is a "continuity" item (kind:
+// "continuity"), rendered by ContinuityRenderer; a player without one falls
+// back to the station-break slate via broadcast.js's "no provider -> not
+// playable" rule.
 //
-// Program-level EPG (docs/guide-update.md, Phase 7): a filler occurrence
-// created here to cover a programming block's own UNDER-FILLED remainder
-// (e.g. packing's minimum_remaining left the last few minutes of an hour
-// slot unfilled) must stay part of that block's guide presentation, not
-// become its own tiny EPG cell. One created to cover a GENUINE gap between
-// two unrelated programs (or where there is no program scheduled at all)
-// must NOT be attributed to either neighbor -- that would misrepresent
-// airtime that was never actually part of either program.
+// Program-level EPG (docs/guide-update.md): a filler created to cover a
+// programming block's own UNDER-FILLED remainder (e.g. packing's
+// minimum_remaining left the last minutes of an hour slot) must stay part of
+// that block's guide presentation, not become its own tiny EPG cell. One
+// covering a GENUINE gap between unrelated programs (or where nothing is
+// scheduled) must not be attributed to either neighbor.
 //
-// $programs (optional; the BoundaryResolver-resolved occurrence list, each
-// with its already-EFFECTIVE, post-delay "start"/"end" presentation
-// window) is what makes this an explicit-boundary decision rather than a
-// guess from adjacency: after filling, every produced filler item whose
-// own [start,end) falls ENTIRELY within one program's window is stamped
-// with that program's occurrence_id, exactly as if it had been one of the
-// episodes EpisodePacker itself selected. A filler spanning a boundary
-// (shouldn't happen for a hard-boundaried block, since packing never
-// overflows one) or sitting in genuinely unscheduled time is left
-// unattributed -- it renders as its own station-break cell, same as today.
+// $programs (optional; BoundaryResolver's occurrence list, each with its
+// effective, post-delay "start"/"end" window) makes this an explicit-boundary
+// decision rather than a guess from adjacency: after filling, every filler
+// item whose [start,end) falls entirely within one program's window is
+// stamped with that program's occurrence_id, as if EpisodePacker had
+// selected it. A filler spanning a boundary (shouldn't happen for a
+// hard-boundaried block) or in unscheduled time is left unattributed and
+// renders as its own station-break cell.
 
 final class ContinuityFiller
 {
@@ -70,7 +56,7 @@ final class ContinuityFiller
     /**
      * @param list<array{start:int,end:int,id:string,title:string,source:?array,source_url:?string}> $items sorted, non-overlapping (BoundaryResolver's output)
      * @param array{assets:list<array<string,mixed>>, cards:list<array<string,mixed>>, defaults:array{preferredCard:?string,minimumVideoFiller:int}} $continuity
-     * @param list<array{occurrence_id:string,start:int,end:int}> $programs BoundaryResolver's resolved program occurrences (effective, post-delay windows), for attributing an in-block filler to its owning program. Pass [] (the default) for a channel with no programming.json-sourced occurrences at all.
+     * @param list<array{occurrence_id:string,start:int,end:int}> $programs BoundaryResolver's resolved program occurrences (effective, post-delay windows), for attributing an in-block filler to its owning program. Pass [] for a channel with no programming.json-sourced occurrences.
      * @return array{items: list<array<string,mixed>>, warnings: list<string>}
      */
     public static function fill(array $items, int $windowStartTs, int $windowEndTs, array $continuity, array $programs = []): array
@@ -82,20 +68,16 @@ final class ContinuityFiller
         $warnings = [];
         $eligibleAssets = array_values(array_filter($continuity['assets'], static fn (array $a): bool => $a['status'] === 'approved'));
 
-        // A raw gap is filled per PROGRAM-BOUNDARY segment, never as one
-        // continuous run straddling where one program's effective window ends
-        // and the next one's begins. Without this, a single fillGap() call
-        // covering, say, a packed block's own trailing under-fill remainder
-        // PLUS the next occurrence's leading reserved span (ProgrammingCompiler's
-        // $minimumLeadInSeconds -- see its header) would produce one card
-        // whose END falls past the first program's own `end`, so it could
-        // never satisfy the strict per-program containment check below --
-        // leaving it unattributed and, worse, overlapping both programs' EPG
-        // cells (buildEpgTimeline() in broadcast.js has no notion of a single
-        // guide entry owned by two programs at once). Splitting first is
-        // exactly ScheduleWriter::writeSchedule()'s own `$splitGapByPrograms`
-        // idea, applied one stage earlier -- before a gap becomes a concrete
-        // item at all, rather than after.
+        // A raw gap is filled per PROGRAM-BOUNDARY segment, never as one run
+        // straddling where one program's effective window ends and the next
+        // begins. Otherwise a single fillGap() covering, say, a packed block's
+        // trailing under-fill PLUS the next occurrence's leading reserved span
+        // (ProgrammingCompiler's $minimumLeadInSeconds) would produce one card
+        // ending past the first program's own `end`: it would fail the strict
+        // containment check below, stay unattributed, and overlap both programs'
+        // EPG cells (buildEpgTimeline() has no notion of one guide entry owned by
+        // two programs). This is ScheduleWriter's `$splitGapByPrograms` idea
+        // applied earlier, before the gap becomes a concrete item.
         $fillGapByPrograms = function (int $start, int $end) use ($eligibleAssets, $continuity, $programs): array {
             $out = [];
             foreach (self::splitByProgramBoundaries($start, $end, $programs) as [$segStart, $segEnd]) {
@@ -138,12 +120,10 @@ final class ContinuityFiller
             $merged[$i]['next_program_id'] = $next;
         }
 
-        // Phase 7: attribute any filler item this pass just created (both station-id
-        // videos and dynamic cards) to the single program whose effective window
-        // fully contains it, if any. Items that were already real scheduled episodes
-        // already carry their program_id from BoundaryResolver and are left alone.
-        // Programs never overlap (BoundaryResolver's whole job), so at most one can
-        // ever match.
+        // Attribute any filler this pass created (station-id videos and dynamic
+        // cards) to the single program whose effective window fully contains it.
+        // Real scheduled episodes already carry their program_id from
+        // BoundaryResolver. Programs never overlap, so at most one can match.
         if ($programs) {
             foreach ($merged as &$it) {
                 if (isset($it['program_id'])) {
@@ -163,13 +143,12 @@ final class ContinuityFiller
     }
 
     /**
-     * Splits [start,end) into one or more [segStart,segEnd) pairs, cut at
-     * every point where one program's effective window ends and/or another
-     * begins -- identical in spirit (and, deliberately, in algorithm) to
-     * ScheduleWriter::writeSchedule()'s own `$splitGapByPrograms`. A sub-
-     * interval that falls in genuinely unscheduled time (outside every
-     * program) is still returned as its own segment, just never merged
-     * across a boundary with one that falls inside a program's window.
+     * Splits [start,end) into [segStart,segEnd) pairs, cut wherever one
+     * program's effective window ends and/or another begins; the same
+     * algorithm as ScheduleWriter::writeSchedule()'s `$splitGapByPrograms`. A
+     * sub-interval in unscheduled time (outside every program) is returned as
+     * its own segment, never merged across a boundary with one inside a
+     * program's window.
      * @param list<array{occurrence_id:string,start:int,end:int}> $programs
      * @return list<array{0:int,1:int}>
      */
@@ -191,17 +170,12 @@ final class ContinuityFiller
             if ($owner !== null) {
                 $segEnd = min($end, $owner['end']);
             } else {
-                // Unowned (genuinely unscheduled) time: stop at whichever comes
-                // first, $end or the start of the NEXT program -- never run past
-                // where that program's own window begins. Without this, a raw
-                // gap landing in unowned territory but extending past a
-                // following program's start (exactly what ProgrammingCompiler's
-                // $minimumLeadInSeconds now does routinely: a program's own
-                // first real item starts a few seconds AFTER its nominal/
-                // effective window begins) would swallow the front of that
-                // program's window into an unattributed segment instead of
-                // stopping at its boundary and letting the next loop iteration
-                // pick it up as owned.
+                // Unowned (unscheduled) time: stop at $end or the start of the NEXT
+                // program, whichever comes first. A raw gap in unowned territory that
+                // extends past a following program's start (routine with
+                // $minimumLeadInSeconds: a program's first real item starts a few
+                // seconds after its effective window begins) would otherwise swallow
+                // the front of that window into an unattributed segment.
                 $nextStart = $end;
                 foreach ($programs as $p) {
                     if ($p['start'] > $cursor && $p['start'] < $nextStart) {
@@ -271,9 +245,9 @@ final class ContinuityFiller
         if ($qualifying) {
             return $qualifying[0]; // first qualifying card in configured order -- deterministic
         }
-        // No configured card's [min_duration, max_duration] covers this exact remainder (or
-        // none are configured at all) -- the universal, always-available fallback. A dynamic
-        // card needs no prerecorded asset, so this never leaves an undefined hole.
+        // No configured card's [min_duration, max_duration] covers this remainder (or
+        // none are configured): the always-available fallback, since a dynamic card
+        // needs no prerecorded asset.
         return ['id' => self::FALLBACK_CARD_TEMPLATE, 'template' => self::FALLBACK_CARD_TEMPLATE, 'minDuration' => 0, 'maxDuration' => PHP_INT_MAX];
     }
 

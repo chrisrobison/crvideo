@@ -1,32 +1,25 @@
 // channels/bump-player.js
 //
-// <cr-bump>: a dependency-free Web Component (shadow DOM, no build step --
-// same posture as channels/continuity-card.js) that renders a produced
-// "bump" interstitial: a looping background video/image/color, 0-2 looping
-// background-audio layers, an optional single voice-over clip, and a list
-// of upcoming shows' titles/times. See bumps/README.md for the full
-// schema and the "not the same thing as theme.json's bumpers" distinction.
+// <cr-bump>: a dependency-free Web Component (shadow DOM, no build step,
+// like continuity-card.js) that renders a produced "bump" interstitial: a
+// looping background video/image/color, 0-2 looping background-audio layers,
+// an optional single voice-over clip, and a list of upcoming shows. See
+// bumps/README.md for the schema and how this differs from theme.json's
+// bumpers.
 //
-// This component decides NOTHING about scheduling or content -- same
-// contract as continuity-card.js. `.definition` is the bump's own JSON
-// object (background/audio/announcement/upcoming/style); `.upcoming` is
-// the caller-supplied list of real {title, startsAt, subtitle?} entries --
-// NEVER invented or stored here, see bumps/README.md's "upcoming.count"
-// note for why. The Bump Studio preview (scheduler/js/components/
-// bump-studio/bump-preview.js) feeds either editable sample rows or a real
-// channel's real current lineup (via channels/broadcast.js, read-only);
-// live playback (BumpRenderer in player-adapters.js) feeds the real channel
-// being interrupted.
+// It decides nothing about scheduling or content. `.definition` is the
+// bump's JSON object; `.upcoming` is the caller-supplied list of real
+// {title, startsAt, subtitle?} entries, never invented or stored here (see
+// bumps/README.md's "upcoming.count" note). The Bump Studio preview
+// (bump-studio/bump-preview.js) feeds sample rows or a real channel's
+// current lineup; live playback (BumpRenderer in player-adapters.js) feeds
+// the channel being interrupted.
 //
-// Unlike continuity-card.js (which auto-renders/auto-plays its narration
-// the instant ContinuityRenderer.show() sets its properties, because it's
-// always mounted into an already-live, always-playing broadcast), nothing
-// here auto-plays on connect: the creator UI mounts one well before anyone
-// has clicked a preview button, and firing audio/video the instant a field
-// changes while editing would be unusable. Playback is only ever started
-// by an explicit `.play()` call (ideally from a user gesture's own call
-// stack, same autoplay-policy posture as the rest of this project) and
-// stopped by `.stop()`; `.setMuted()` can be called at any time.
+// Unlike continuity-card.js, nothing auto-plays on connect: the creator UI
+// mounts one well before anyone clicks preview, and firing audio/video on
+// every field change while editing would be unusable. Playback starts only
+// via an explicit `.play()` (ideally inside a user gesture, for autoplay
+// policy) and ends with `.stop()`; `.setMuted()` can be called at any time.
 
 import { formatCountdown } from "./continuity-card.js";
 
@@ -52,11 +45,9 @@ export function duckedVolume(base, duckTo) {
 }
 
 /** Slices/validates a caller-supplied upcoming-shows list down to at most
- *  `count` playable entries with a finite `startsAt` -- never throws on a
- *  malformed entry (an unknown/partial item is just dropped), since this
- *  feeds straight into rendering with no other validation layer in front
- *  of it (unlike every PHP-side bump field, which server/bump-admin.php
- *  already validates before it's ever stored). */
+ *  `count` playable entries with a finite `startsAt`. Never throws: a
+ *  malformed entry is dropped, since this feeds rendering with no other
+ *  validation in front of it (server/bump-admin.php validates stored fields). */
 export function normalizeUpcoming(list, count) {
   const n = Math.max(0, Math.min(6, Math.trunc(Number(count) || 0)));
   if (!Array.isArray(list) || n === 0) return [];
@@ -474,10 +465,8 @@ export class BumpPlayer extends HTMLElementBase {
     setSrc(this._root.querySelector(".announcement"), this._definition?.announcement?.url || null);
   }
 
-  /** Bump JSON stores repo-root-relative paths (e.g. "media/video/bg05.mp4")
-   *  -- resolved here against this document's own base, same convention
-   *  every other media reference in this project already uses (plain
-   *  static files, never a PHP streaming endpoint -- see bumps/README.md). */
+  /** Bump JSON stores repo-root-relative paths (e.g. "media/video/bg05.mp4"),
+   *  resolved here to plain static-file URLs (see bumps/README.md). */
   _resolveUrl(path) {
     const rel = String(path || "").replace(/^\/+/, "");
     if (!rel) return "";

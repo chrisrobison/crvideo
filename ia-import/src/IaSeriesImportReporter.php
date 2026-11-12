@@ -3,9 +3,9 @@ declare(strict_types=1);
 
 // ia-import/src/IaSeriesImportReporter.php
 //
-// Prints the stdout summary -- byte-for-byte the same shape as
-// youtube-import/src/YouTubeImportReporter.php, so both importers read the
-// same way in a terminal.
+// Prints the stdout summary, in the same shape as
+// youtube-import/src/YouTubeImportReporter.php so both importers read alike in
+// a terminal.
 
 final class IaSeriesImportReporter
 {

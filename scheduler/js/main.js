@@ -19,10 +19,9 @@ import "./components/explorer/cf-explorer.js";
 import { viewState } from "./view.js";
 import { TOPICS, subscribe } from "../../js/bus.js";
 
-// Toggles which top-level view section is visible -- see view.js. The
-// pre-existing SCHEDULE markup is untouched; this just adds [data-view]
-// containers around it and the admin views added alongside it, and shows
-// exactly one.
+// Toggles which top-level view section is visible (see view.js). Adds
+// [data-view] containers around the SCHEDULE markup and the admin views, and
+// shows exactly one.
 function applyView() {
   document.querySelectorAll("[data-view]").forEach((el) => {
     el.hidden = el.dataset.view !== viewState.current;

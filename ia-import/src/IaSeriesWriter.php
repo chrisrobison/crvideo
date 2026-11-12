@@ -3,12 +3,12 @@ declare(strict_types=1);
 
 // ia-import/src/IaSeriesWriter.php
 //
-// Reads/writes a series.json for the IA series importer -- byte-for-byte
-// the same atomic-write convention as youtube-import/src/YouTubeSeriesWriter.php
-// (temp file + rename, one-generation ".bak"). Deliberately a separate,
-// duplicated class rather than a shared one: these two importers have no
-// shared runtime today (see docs/series-and-channels.md's note on
-// CatalogResolver.php/catalog-resolver.js needing to be "kept in lockstep
+// Reads/writes a series.json for the IA series importer, using the same
+// atomic-write convention as youtube-import/src/YouTubeSeriesWriter.php (temp
+// file + rename, one-generation ".bak"). Deliberately duplicated rather than
+// shared: the two importers have no shared runtime (see
+// docs/series-and-channels.md on CatalogResolver.php/catalog-resolver.js being
+// kept in lockstep by hand for the same reason).
 // by hand" for the same reason), and this file is ~20 lines either way.
 
 final class IaSeriesWriter
