@@ -24,7 +24,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
-import { computeBackoffMs, computeDriftCorrection, resolveProvider, bumpRuleWindow, locateActiveBump } from "../player-adapters.js";
+import { Html5PlayerAdapter, YouTubePlayerAdapter, computeBackoffMs, computeDriftCorrection, resolveProvider, bumpRuleWindow, locateActiveBump } from "../player-adapters.js";
 import { formatCountdown, hashSeed, pickWeightedIndex } from "../continuity-card.js";
 import { buildTimeline, locate, airings, nextProgram, findAnnouncementAudio } from "../broadcast.js";
 
@@ -431,4 +431,59 @@ test("two independent lookups at the same instant agree on bump state -- determi
   const rules = [{ bumpId: "forest-interlude", every: "hour", durationSeconds: 12 }];
   const t = 42 * 3600 + 3; // 3 seconds into an hour
   assert.deepEqual(locateActiveBump(rules, t), locateActiveBump(rules, t));
+});
+
+
+// ---------- deliberate pause vs. "never stays paused" ----------
+
+/** Minimal <video> stand-in that fires listeners synchronously, like a real pause event. */
+function fakeVideo() {
+  const listeners = {};
+  const v = {
+    paused: true, ended: false, readyState: 0, played: 0,
+    addEventListener(type, fn) { (listeners[type] ||= []).push(fn); },
+    removeEventListener() {},
+    removeAttribute() {},
+    load() {},
+    play() { v.paused = false; v.played++; return Promise.resolve(); },
+    pause() { v.paused = true; (listeners.pause || []).forEach((fn) => fn()); },
+  };
+  return v;
+}
+
+test("Html5PlayerAdapter.pause() is deliberate: the never-stays-paused listener does not resume it", () => {
+  const video = fakeVideo();
+  const adapter = new Html5PlayerAdapter(video);
+  adapter.load("https://archive.org/x.mp4", 0);
+  adapter._setState("playing");
+  const playedBefore = video.played;
+  adapter.pause();
+  assert.equal(video.paused, true);
+  assert.equal(video.played, playedBefore);
+});
+
+test("Html5PlayerAdapter still resumes an external pause, and load()/play() clear a deliberate one", () => {
+  const video = fakeVideo();
+  const adapter = new Html5PlayerAdapter(video);
+  adapter.load("https://archive.org/x.mp4", 0);
+  adapter._setState("playing");
+  video.pause(); // external (media key / OS)
+  assert.equal(video.paused, false);
+  adapter.pause();
+  assert.equal(video.paused, true);
+  adapter.load("https://archive.org/y.mp4", 0);
+  assert.equal(video.paused, false);
+});
+
+test("YouTubePlayerAdapter.pause() is deliberate: a PAUSED state event does not resume it", () => {
+  const adapter = new YouTubePlayerAdapter({});
+  let resumed = 0;
+  adapter.player = { pauseVideo() {}, playVideo() { resumed++; } };
+  adapter.state = "playing";
+  adapter.pause();
+  adapter._handleStateChange({ data: 2 }, { PlayerState: { PLAYING: 1, BUFFERING: 3, ENDED: 0, PAUSED: 2 } });
+  assert.equal(resumed, 0);
+  adapter.play(); // explicit play clears the suspension
+  adapter._handleStateChange({ data: 2 }, { PlayerState: { PLAYING: 1, BUFFERING: 3, ENDED: 0, PAUSED: 2 } });
+  assert.equal(resumed, 2);
 });

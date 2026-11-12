@@ -688,6 +688,7 @@ export class BroadcastPlayer {
       this.load();
     } else {
       // A station break, or a provider this page has no adapter for. Both show the slate and aren't retried.
+      this.activeAdapter?.pause();
       this.activeProvider = null;
       this.activeAdapter = null;
       this.video.hidden = true;
