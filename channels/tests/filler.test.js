@@ -2,14 +2,14 @@
 //
 // The pure parts of filler.js: the deterministic scene/line walk, deck
 // building, and how a bump is reduced to a filler scene. The renderers
-// (FillerRenderer/FillerBed) are DOM/media wiring and need a browser.
+// (FillerRenderer) are DOM/media wiring and need a browser.
 
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 
 import {
-  pickIndex, buildDeck, pickLine, pickScene, toFillerDefinition, bedUrlFor, LINE_SECONDS, SCENE_SECONDS,
+  pickIndex, buildDeck, pickLine, pickScene, toFillerDefinition, scaleVolumes, preferPictures, LINE_SECONDS, SCENE_SECONDS,
 } from "../filler.js";
 
 const read = (rel) => JSON.parse(readFileSync(new URL(rel, import.meta.url), "utf8"));
@@ -68,11 +68,21 @@ test("toFillerDefinition strips the voice-over and closes the upcoming-text laye
   assert.equal(def.announcement.url, "a.mp3", "input is not mutated");
 });
 
-test("bedUrlFor prefers the music layer, then any layer, else null", () => {
-  assert.equal(bedUrlFor({ audio: [{ source: "ambience", url: "a.mp3" }, { source: "music", url: "m.mp3" }] }), "m.mp3");
-  assert.equal(bedUrlFor({ audio: [{ source: "ambience", url: "a.mp3" }] }), "a.mp3");
-  assert.equal(bedUrlFor({ audio: [] }), null);
-  assert.equal(bedUrlFor(null), null);
+test("scaleVolumes scales every layer, clamps to 0-1, defaults a missing volume, and leaves the input alone", () => {
+  const def = { audio: [{ url: "a", volume: 0.4 }, { url: "b" }, { url: "c", volume: 4 }] };
+  const q = scaleVolumes(def, 0.5);
+  assert.deepEqual(q.audio.map((l) => l.volume), [0.2, 0.3, 1]);
+  assert.equal(def.audio[0].volume, 0.4);
+  assert.equal(scaleVolumes(null, 0.5), null);
+  assert.deepEqual(scaleVolumes({ id: "x" }, 0.5), { id: "x" });
+});
+
+test("preferPictures drops color-only scenes unless nothing else is left", () => {
+  const video = { id: "v", background: { type: "video", url: "x.mp4" } };
+  const color = { id: "c", background: { type: "color", color: "#000" } };
+  assert.deepEqual(preferPictures([color, video]), [video]);
+  assert.deepEqual(preferPictures([color]), [color]);
+  assert.deepEqual(preferPictures([]), []);
 });
 
 test("shipped filler data: every scene bump exists, has sound, and the deck is big enough to not feel repetitive", () => {

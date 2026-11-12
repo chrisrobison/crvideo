@@ -7,48 +7,858 @@
             "author": "Benjamin Franklin"
         },
         {
+            "text": "When fortune knocks, open the door."
+        },
+        {
+            "text": "Before we set our hearts too much on anything, let us examine how happy are those who already possess it."
+        },
+        {
+            "text": "The eyes are the window to the soul."
+        },
+        {
+            "text": "A fault confessed is half redressed."
+        },
+        {
+            "text": "Beware the frumious Bandersnatch."
+        },
+        {
+            "text": "I used to be clueless about math, but I turned that around 360 degrees."
+        },
+        {
+            "text": "All men think all men mortal, but themselves."
+        },
+        {
+            "text": "It takes as much courage to have tried and failed as it does to have tried and succeeded."
+        },
+        {
+            "text": "A friend to all is a friend to none."
+        },
+        {
+            "text": "A great many people mistake opinions for thoughts."
+        },
+        {
+            "text": "The shortest answer is doing."
+        },
+        {
+            "text": "Experience is the comb that nature gives us when we are bald."
+        },
+        {
+            "text": "I don't know the key to success, but the key to failure is trying to please everybody."
+        },
+        {
+            "text": "Speak not of my debts unless you mean to pay them."
+        },
+        {
+            "text": "Nothing would be done at all if a man waited until he could do it so well that no one could find fault with it."
+        },
+        {
+            "text": "The smallest deed is better than the greatest intention."
+        },
+        {
+            "text": "A country can be judged by the quality of its proverbs."
+        },
+        {
+            "text": "The impossible is often the untried."
+        },
+        {
+            "text": "Experience keeps a dear school, but fools will learn in no other."
+        },
+        {
+            "text": "Fool me once, shame on you. Fool me twice, shame on me."
+        },
+        {
+            "text": "I am always doing that which I cannot do, in order that I may learn how to do it."
+        },
+        {
+            "text": "Always love your enemies - nothing annoys them so much."
+        },
+        {
+            "text": "Do not use a hatchet to remove a fly from your friend's forehead."
+        },
+        {
+            "text": "Before you criticize someone, walk a mile in his shoes. That way, if he gets angry, he'll be a mile away, and barefoot."
+        },
+        {
             "text": "Those who bring sunshine to the lives of others cannot keep it from themselves",
             "author": "Sir James M. Barrie"
+        },
+        {
+            "text": "You may make mistakes, but you are not a failure until you start blaming someone else."
+        },
+        {
+            "text": "The best substitute for experience is being sixteen."
+        },
+        {
+            "text": "It is hard to fail, but it is worse never to have tried to succeed."
+        },
+        {
+            "text": "In this life we get nothing save by effort."
+        },
+        {
+            "text": "Truth often suffers more by the heat of its defenders than the arguments of those that oppose it."
+        },
+        {
+            "text": "A wise man hears one word and understands two."
         },
         {
             "text": "The course of true love never did run smooth.",
             "author": "William Shakespeare, A Midsummer Night's Dream"
         },
         {
+            "text": "There are no such things as strangers, only friends that we have not yet met"
+        },
+        {
+            "text": "The sum of man's problems come from his inability to be alone in a silent room."
+        },
+        {
+            "text": "The Earth has music for those who listen."
+        },
+        {
+            "text": "Education is an admirable thing, but it is well to remember from time to time that nothing that is worth knowing can be taught."
+        },
+        {
+            "text": "No problem is so big and complicated that it can't be run away from."
+        },
+        {
+            "text": "That which was hard to endure is sweet to remember."
+        },
+        {
+            "text": "There are two tragedies in life: The first is not to get your heart's desire, the second is to get it."
+        },
+        {
+            "text": "The only thing we have to fear is fear itself."
+        },
+        {
+            "text": "Failure is simply the opportunity to begin again, this time more intelligently."
+        },
+        {
+            "text": "Love they to live that honor and love have."
+        },
+        {
+            "text": "We do not so much need the help of our friends as the confidence of their help when in need."
+        },
+        {
+            "text": "Anything more than the truth would be too much."
+        },
+        {
+            "text": "The true value of a human being can be found in the degree to which he has attained liberation from the self."
+        },
+        {
             "text": "In the middle of difficulty, lies opportunity.",
             "author": "Albert Einstein"
+        },
+        {
+            "text": "The more you know, the less you understand."
+        },
+        {
+            "text": "This statement is false."
+        },
+        {
+            "text": "To let a fool kiss you is stupid, to let a kiss fool you is worse."
+        },
+        {
+            "text": "A man convinced against his will, is of the same opinion still."
+        },
+        {
+            "text": "Little is the number that think with their own mind and feel with their own heart."
+        },
+        {
+            "text": "Even a fool knows we can't reach the stars, but that doesn't stop the wise man from trying."
+        },
+        {
+            "text": "Man is the only creature who has the ability to blush, or the need.",
+            "author": "Mark Twain"
+        },
+        {
+            "text": "Better to remain silent and be thought a fool, than to speak and remove all doubt."
+        },
+        {
+            "text": "I find that the harder I work, the more luck I seem to have."
+        },
+        {
+            "text": "Do or do not, there is no try."
+        },
+        {
+            "text": "War doesn't decide who's right, only who's left."
+        },
+        {
+            "text": "He who laughs last thinks slowest."
+        },
+        {
+            "text": "Laugh alone and the world thinks you're an idiot."
+        },
+        {
+            "text": "Probably the earliest fly swatters were nothing more than some sort of striking surface attached to the end of a long stick.",
+            "author": "Jack Handey"
+        },
+        {
+            "text": "Don't use a big word where a diminutive one will suffice."
+        },
+        {
+            "text": "Today is the last day of your life so far."
+        },
+        {
+            "text": "When all else fails, read the instructions."
+        },
+        {
+            "text": "If superman is so smart why does he wear his underpants over his trousers?"
+        },
+        {
+            "text": "Every time I think the world is moving too fast, I go to the post office."
+        },
+        {
+            "text": "Duct tape is like the force, there is a light side and a dark side and it holds the universe together."
+        },
+        {
+            "text": "I used to have an open mind, but my brains kept falling out."
+        },
+        {
+            "text": "Black holes are where God divided by zero."
+        },
+        {
+            "text": "Who is General Failure and why is he reading my hard disk?"
+        },
+        {
+            "text": "Everyone has a photographic memory, some don't have film."
+        },
+        {
+            "text": "The light at the end of the tunnel is the headlight of an approaching train."
+        },
+        {
+            "text": "If at first you don't succeed, destroy all evidence that you tried."
+        },
+        {
+            "text": "Reply to everything someone says with 'that's what YOU think'"
+        },
+        {
+            "text": "You make a living by what you get, you make a life by what you give."
+        },
+        {
+            "text": "I know there's always something we have to go through that has some deeper meaning but right now I just can't say."
+        },
+        {
+            "text": "One ought to whimsically delete files every once in a while, just to show the computer who's boss."
+        },
+        {
+            "text": "I think, therefore I am, I think."
+        },
+        {
+            "text": "Leadership is getting someone to do what they don't want to do to achieve what they want to achieve."
+        },
+        {
+            "text": "Take time to deliberate; but when the time for action arrives, stop thinking and act."
         },
         {
             "text": "When I hear somebody sigh, life is hard, I am always tempted to ask, compared to what?",
             "author": "Sydney Harris"
         },
         {
+            "text": "The face of a child can say it all, especially the mouth part of the face."
+        },
+        {
             "text": "Time flies like an arrow. Fruit flies like a banana.",
             "author": "Groucho Marx"
+        },
+        {
+            "text": "I hope life isn't a big joke, because I don't get it.",
+            "author": "Jack Handey"
+        },
+        {
+            "text": "If dogs ever take over the world and they choose a king, I hope they don't go by size, because I bet there are some Chihuahuas with some good ideas.",
+            "author": "Jack Handey"
+        },
+        {
+            "text": "The roots of education are bitter, but the fruit is sweet."
+        },
+        {
+            "text": "Money is a good servant but a bad master."
+        },
+        {
+            "text": "Our sweetest songs are those that tell of saddest thoughts."
         },
         {
             "text": "There is nothing so strong or safe in an emergency of life as the simple truth.",
             "author": "Charles Dickens"
         },
         {
+            "text": "There was never a good war or a bad peace."
+        },
+        {
+            "text": "I had an IQ test. The results came back negative."
+        },
+        {
+            "text": "Change is inevitable, except from vending machines."
+        },
+        {
+            "text": "The trouble with getting a life is making the payments."
+        },
+        {
+            "text": "Live out of your imagination, not your history."
+        },
+        {
+            "text": "Real programmers don't comment their code. If it was hard to write, it should be hard to understand."
+        },
+        {
+            "text": "Never put off till tomorrow what you can do the day after tomorrow."
+        },
+        {
+            "text": "Humanity has only scratched the surface of its real potential."
+        },
+        {
+            "text": "It often shows an excellent command of language to say nothing."
+        },
+        {
+            "text": "People are where they are because that's exactly where they really want to be whether they'll admit that or not."
+        },
+        {
+            "text": "We can let circumstances rule us, or we can take charge and rule our lives from within."
+        },
+        {
+            "text": "Your world is a living expression of how you are using and have used your mind."
+        },
+        {
+            "text": "All you need is the plan, the road map, and the courage to press on to your destination."
+        },
+        {
+            "text": "Success is the progressive realization of a worthy goal or ideal."
+        },
+        {
+            "text": "Whatever we plant in our subconscious mind and nourish with repetition and emotion will one day become a reality."
+        },
+        {
+            "text": "Love all, trust a few, do wrong to none."
+        },
+        {
+            "text": "The only thing that we know is that we know nothing and that is the highest flight of human wisdom."
+        },
+        {
+            "text": "The key to everything is patience. You get the chicken by hatching the egg, not by smashing it."
+        },
+        {
+            "text": "If you want the rainbow, you've got to put up with the rain."
+        },
+        {
+            "text": "Until you make peace with who you are, you'll never be content with what you have."
+        },
+        {
+            "text": "If you can imagine it, you can achieve it. If you can dream it, you can become it."
+        },
+        {
+            "text": "A turtle makes progress when it sticks its neck out."
+        },
+        {
+            "text": "It is amazing how much people can get done if they do not worry about who gets the credit."
+        },
+        {
+            "text": "People will never know how long it takes you to do something. They will only know how well it is done."
+        },
+        {
+            "text": "How far would Moses have gone if he had taken a poll in Egypt?"
+        },
+        {
+            "text": "Depression is merely anger without enthusiasm."
+        },
+        {
+            "text": "Eagles may soar, but weasels don't get sucked into jet engines."
+        },
+        {
+            "text": "The early bird gets the worm, but the second mouse gets the cheese."
+        },
+        {
+            "text": "I intend to live forever - so far, so good."
+        },
+        {
+            "text": "If Barbie is so popular, why do you have to buy her friends?"
+        },
+        {
+            "text": "The only substitute for good manners is fast reflexes."
+        },
+        {
+            "text": "When everything is coming your way, you're in the wrong lane."
+        },
+        {
+            "text": "I've never made a mistake. I thought I did once, but I was wrong."
+        },
+        {
+            "text": "Seek the wisdom of the ages, but look at the world through the eyes of a child."
+        },
+        {
+            "text": "You may be disappointed if you fail, but you are doomed if you don't try."
+        },
+        {
+            "text": "Whatever the mind of man can conceive and believe, it can achieve."
+        },
+        {
+            "text": "Wherever there is a human being, there is an opportunity for kindness."
+        },
+        {
+            "text": "Quit now, you'll never make it. If you disregard this advice, you'll be halfway there."
+        },
+        {
+            "text": "Whenever you fall, pick something up."
+        },
+        {
+            "text": "If it is to be, it is up to me."
+        },
+        {
+            "text": "What I do today is important because I am paying a day of my life for it."
+        },
+        {
             "text": "There's only one corner of the universe you can be certain of improving and that's your own self.",
             "author": "Aldous Huxley"
+        },
+        {
+            "text": "Experience is the gathering of the complexity of knowledge, wisdom is the simplification of it."
+        },
+        {
+            "text": "Fear is just another four-letter word."
+        },
+        {
+            "text": "Ignorance is bliss.",
+            "author": "Thomas Gray"
+        },
+        {
+            "text": "When one burns books, one will, in the end, burn people."
+        },
+        {
+            "text": "I hear and I forget. I see and I remember. I do and I understand."
         },
         {
             "text": "Wherever you go, there you are.",
             "author": "Buckaroo Banzai"
         },
         {
+            "text": "People who say it cannot be done should not interrupt those who are doing it."
+        },
+        {
+            "text": "The best thing a father can do for his children is to love their mother."
+        },
+        {
+            "text": "I once believed in reincarnation, but that was in another life."
+        },
+        {
+            "text": "Tis better to be a witty fool than a foolish twit."
+        },
+        {
+            "text": "Things should be made as simply as possible but not any simpler."
+        },
+        {
+            "text": "Even when you fall, you're still moving forward."
+        },
+        {
+            "text": "If you eliminate the impossible, whatever remains, no matter how unlikely, must be the truth."
+        },
+        {
+            "text": "Two wrongs don't make a right, but two Wrights made an airplane."
+        },
+        {
+            "text": "It's not the pace of life that concerns me, it's the sudden stop at the end."
+        },
+        {
+            "text": "The problem with the gene pool is that there is no lifeguard."
+        },
+        {
+            "text": "It's hard to make a comeback when you haven't been anywhere."
+        },
+        {
+            "text": "Living on Earth is expensive, but it does include a free trip around the sun."
+        },
+        {
+            "text": "When you're finally holding all the cards, why does everyone else decide to play chess?"
+        },
+        {
+            "text": "If you're living on the edge, make sure you're wearing your seat belt."
+        },
+        {
+            "text": "The mind is like a parachute; it works much better when it's open."
+        },
+        {
+            "text": "Never take life seriously, nobody gets out alive anyway."
+        },
+        {
+            "text": "A closed mouth gathers no feet."
+        },
+        {
+            "text": "It's not hard to meet expenses, they're everywhere."
+        },
+        {
+            "text": "Accept that some days you're the pigeon and some days you're the statue."
+        },
+        {
+            "text": "I can please only one person per day. Today is not your day and tomorrow isn't looking good either."
+        },
+        {
+            "text": "Last night I laid in bed looking up at the stars and thought to myself, where the heck is the ceiling?!"
+        },
+        {
+            "text": "On the keyboard of life, always keep one finger on the escape key."
+        },
+        {
+            "text": "There are two rules for ultimate success in life: 1) Never tell everything you know."
+        },
+        {
+            "text": "Someday we'll look back on all this and plow into a parked car."
+        },
+        {
+            "text": "There are very few personal problems that cannot be solved with a suitable application of explosives."
+        },
+        {
+            "text": "Good news is just life's way of keeping you off balance."
+        },
+        {
+            "text": "Politicians and diapers should both be changed regularly and for the same reason."
+        },
+        {
+            "text": "People will accept your ideas much more readily if you first tell them that Benjamin Franklin said it."
+        },
+        {
+            "text": "I don't mind going nowhere as long as it's an interesting path."
+        },
+        {
+            "text": "Indecision is the key to flexibility."
+        },
+        {
+            "text": "I don't get even, I get odder."
+        },
+        {
+            "text": "In just two days, tomorrow will be yesterday."
+        },
+        {
+            "text": "I always wanted to be a procrastinator, but I never got around to it."
+        },
+        {
+            "text": "Dijon vu, the same mustard as before."
+        },
+        {
+            "text": "My inferiority complex is not as good as yours."
+        },
+        {
+            "text": "A day without sunshine is like night."
+        },
+        {
+            "text": "I have kleptomania, but when it gets bad, I take something for it."
+        },
+        {
+            "text": "If marriage were outlawed, only outlaws would have in-laws."
+        },
+        {
+            "text": "Before you run in double harness, look well to the other horse."
+        },
+        {
+            "text": "It's all right to hold a conversation, but you should let go of it now and then."
+        },
+        {
+            "text": "Sometimes life seems like a dream, especially when I look down and see that I forgot to put on my pants."
+        },
+        {
+            "text": "Bumper sticker: My child beat up your Honor Student."
+        },
+        {
+            "text": "I'm a syntactical leper. I'm dropping syntax everywhere."
+        },
+        {
+            "text": "SnapMagic Software Inc, Making the World Snap-Happy."
+        },
+        {
+            "text": "If you find yourself in a hole the first thing to do is stop digging"
+        },
+        {
+            "text": "Never ask a barber if he thinks you need a haircut."
+        },
+        {
+            "text": "Good judgment comes from experience, and a lot of that comes from bad judgment."
+        },
+        {
+            "text": "Always drink upstream from the herd."
+        },
+        {
+            "text": "When you give a lesson in meanness to a critter or a person, don't be surprised if they learn their lesson."
+        },
+        {
+            "text": "The quickest way to double your money is to fold it over and put it back in your pocket."
+        },
+        {
+            "text": "I figure if I care, I'm just gonna get an ulcer, so why care?"
+        },
+        {
+            "text": "My Reality Check bounced."
+        },
+        {
+            "text": "Everybody is somebody else's weirdo."
+        },
+        {
+            "text": "Diplomacy is the art of saying 'nice doggie' until you can find a rock."
+        },
+        {
+            "text": "If Fed Ex and UPS were to merge, would they call it Fed UP?"
+        },
+        {
+            "text": "I believe five out of four people have trouble with fractions."
+        },
+        {
+            "text": "If quitters never win, and winners never quit, what fool came up with, \"Quit while you're ahead\"?"
+        },
+        {
+            "text": "What hair color do they put on the driver's licenses of bald men?"
+        },
+        {
+            "text": "How much deeper would oceans be if sponges didn't live there?"
+        },
+        {
+            "text": "If it's true that we are here to help others, then what exactly are the others here for?"
+        },
+        {
+            "text": "No one ever says \"It's only a game\" when their team is winning."
+        },
+        {
+            "text": "As I said before, I never repeat myself."
+        },
+        {
+            "text": "If you can't be kind, at least have the decency to be vague."
+        },
+        {
+            "text": "Nostalgia isn't what it used to be."
+        },
+        {
+            "text": "I often regret that I have spoken, rarely that I have been silent."
+        },
+        {
+            "text": "When someone annoys you, it takes 42 muscles to frown, but it only takes 4 muscles to extend your arm and whack them in the head."
+        },
+        {
+            "text": "Rather than focusing on things and time, focus on preserving and enhancing relationships and on accomplishing results."
+        },
+        {
+            "text": "Psychiatrists say that 1 of 4 people are mentally ill. Check 3 friends. If they're okay, you're it."
+        },
+        {
+            "text": "If you are given a take-home test, you will forget where you live."
+        },
+        {
+            "text": "The trouble with doing something right the first time is that nobody appreciates how difficult it was."
+        },
+        {
+            "text": "It may be that your sole purpose in life is simply to serve as a warning to others."
+        },
+        {
+            "text": "Boycott shampoo, demand the REAL poo!"
+        },
+        {
+            "text": "For Sale: Parachute. Only used once, never opened, small stain."
+        },
+        {
+            "text": "I tried sniffing Coke once, but the ice cubes got stuck in my nose."
+        },
+        {
+            "text": "When someone asks you, \"A penny for your thoughts\" and you put your two cents in, what happens to the other penny?"
+        },
+        {
+            "text": "Nothing can make you feel inferior without your consent."
+        },
+        {
             "text": "Problems cannot be solved by the same level of thinking that created them.",
             "author": "Albert Einstein"
         },
         {
-            "text": "If the aborigine drafted an IQ test, all of Western civilization would flunk it.",
-            "author": "Stanley Garn"
+            "text": "Anytime you think the problem is out there, that very thought is the problem."
+        },
+        {
+            "text": "Energy and persistence conquer all things."
+        },
+        {
+            "text": "Character is much easier kept than recovered."
+        },
+        {
+            "text": "So, what's with this guy Gideon, anyway? And why can't he ever remember his Bible?"
+        },
+        {
+            "text": "Have you noticed that all you need to grow healthy, vigorous grass is a crack in your sidewalk?"
+        },
+        {
+            "text": "Losing your drivers' license is just God's way of saying \"BOOGA, BOOGA!\""
+        },
+        {
+            "text": "Be like a duck. Calm on the surface, but always paddling like the dickens underneath."
+        },
+        {
+            "text": "Doesn't expecting the unexpected make the unexpected expected?"
+        },
+        {
+            "text": "If you look like your passport photo you are probably too ill to travel."
+        },
+        {
+            "text": "Si quieres tener dinero, quedate soltero. (Translation: If you want to have money, remain single.)"
+        },
+        {
+            "text": "One of the advantages of being disorderly is that one is constantly making exciting discoveries."
+        },
+        {
+            "text": "If two wrongs don't make a right, try three."
+        },
+        {
+            "text": "If anything can go wrong, it will and at the worst possible moment."
+        },
+        {
+            "text": "Assumption is the mother of all screw-ups."
+        },
+        {
+            "text": "To invent, you need a good imagination and a pile of junk."
+        },
+        {
+            "text": "Happiness is not wanting everything, but wanting what you have."
+        },
+        {
+            "text": "I do not regret the things I've done, but those I did not do."
+        },
+        {
+            "text": "Do not count time, make time count."
+        },
+        {
+            "text": "Use what talents you possess: the woods would be very silent if no birds sang there except those that sang best."
+        },
+        {
+            "text": "Waste not want not."
+        },
+        {
+            "text": "A bird in the hand is safer than one overhead."
+        },
+        {
+            "text": "If at first you don't succeed, redefine success."
+        },
+        {
+            "text": "Yeah, there are more important things in life than money, but they won't go out with you if you don't have any."
+        },
+        {
+            "text": "I'm not really for apathy, but I'm not against it either..."
+        },
+        {
+            "text": "Chicken Little only has to be right once."
+        },
+        {
+            "text": "Ever notice that the word \"therapist\" breaks down into \"the rapist\"?"
+        },
+        {
+            "text": "It's amazing how many people you could be friends with if only they'd make the first approach."
+        },
+        {
+            "text": "A little inaccuracy sometimes saves tons of explanation.",
+            "author": "H.H. Munro"
+        },
+        {
+            "text": "I have never had a bad day when I didn't choose to."
+        },
+        {
+            "text": "It is perspective that determines the veracity of the circumstance not the circumstance itself."
+        },
+        {
+            "text": "Sometimes you have to stop and smell the flowers."
+        },
+        {
+            "text": "Our life is frittered away by detail. Simplify, simplify."
         },
         {
             "text": "No man knows his true character until he has run out of gas, purchased something on the installment plan, and raised an adolescent.",
             "author": "Marcelene Cox"
+        },
+        {
+            "text": "Formal education will make you a living, self education will make you a fortune. - Jim Rohn"
+        },
+        {
+            "text": "There is no virtue so great as to be safe from temptation..."
+        },
+        {
+            "text": "Money is the root of all wealth."
+        },
+        {
+            "text": "Good thing my house is on the way home."
+        },
+        {
+            "text": "Did you hear about the self help group for compulsive talkers? It's called On & On Anon."
+        },
+        {
+            "text": "I came, I saw, I had no idea what the heck was going on, I left."
+        },
+        {
+            "text": "Aviation Rule #1: Number of takeoffs must equal number of landings."
+        },
+        {
+            "text": "If you have trouble getting your children's attention, just sit down and look comfortable."
+        },
+        {
+            "text": "Being a husband is like any other job. It helps a lot if you like the boss."
+        },
+        {
+            "text": "Seen on a bumper sticker: \"Driver carries no cash; he is married.\""
+        },
+        {
+            "text": "Snowflakes are some of nature's most fragile things but look what happens when they stick together."
+        },
+        {
+            "text": "Some minds are like concrete; all mixed up and permanently set."
+        },
+        {
+            "text": "If you think this is a free country, try to park your car in a big city."
+        },
+        {
+            "text": "People who claim they don't let little things bother them have never slept in a room with a single mosquito."
+        },
+        {
+            "text": "Think positive. If you fall in the creek, check your pockets for fish."
+        },
+        {
+            "text": "It isn't easy to keep your mouth and your mind open at the same time."
+        },
+        {
+            "text": "The old believe everything, the middle-aged suspect everything, the young know everything.",
+            "author": "Oscar Wilde"
+        },
+        {
+            "text": "Families are like fudge, mostly sweet, with a few nuts."
+        },
+        {
+            "text": "Laughing helps. It's like jogging on the inside."
+        },
+        {
+            "text": "The best way to keep kids at home is to make a pleasant atmosphere and let the air out of their tires."
+        },
+        {
+            "text": "My mind not only wanders; sometimes it leaves completely."
+        },
+        {
+            "text": "Children seldom misquote you. In fact, they usually repeat word for word what you shouldn't have said."
+        },
+        {
+            "text": "Fortunate is he for whom the belle toils."
+        },
+        {
+            "text": "So, is the glass half empty, half full, or just twice as large as it needs to be?"
+        },
+        {
+            "text": "The Law of E-Mail: The best way to inspire fresh thoughts is to hit send."
+        },
+        {
+            "text": "If genius is one percent inspiration and 99 percent perspiration, I wind up sharing elevators with a lot of bright people."
+        },
+        {
+            "text": "I couldn't repair your brakes, so I made your horn louder."
+        },
+        {
+            "text": "A clean desk is the sign of a cluttered drawer."
+        },
+        {
+            "text": "Corduroy pillows - they're making headlines."
+        },
+        {
+            "text": "All those who believe in psychokinesis, raise my hand."
+        },
+        {
+            "text": "A good pun is it's own reword."
+        },
+        {
+            "text": "Laughing stock - cattle with a sense of humor."
+        },
+        {
+            "text": "Support your right to bare arms, wear short sleeves."
         },
         {
             "text": "Oh what a tangled web we weave, when first we practice to deceive.",
@@ -59,52 +869,241 @@
             "author": "Franklin P. Jones"
         },
         {
+            "text": "If ignorance is bliss, why aren't there more happy people?"
+        },
+        {
+            "text": "If swimming is so good for your figure, how do you explain whales?"
+        },
+        {
+            "text": "Do not meddle in the affairs of dragons, for you are crunchy and taste good with ketchup."
+        },
+        {
+            "text": "Last week a cop stopped me in my car. He asked me if I had a police record. I said, no but I have the new Beatles album. Cops have no sense of humor."
+        },
+        {
             "text": "Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway.",
             "author": "Andrew S. Tannenbaum"
+        },
+        {
+            "text": "Quidquid latine dictum sit, altum viditur. [Whatever is said in Latin sounds profound.]"
         },
         {
             "text": "Call on God, but row away from the rocks.",
             "author": "Indian proverb"
         },
         {
+            "text": "Teach a child to be polite and courteous in the home, and when he grows up, he will never be able to edge his car onto a freeway."
+        },
+        {
+            "text": "The brain is a wonderful organ; it starts working the moment you get up in the morning, and does not stop until you get to school."
+        },
+        {
+            "text": "You don't have to know how the computer works, just how to work the computer."
+        },
+        {
+            "text": "Always do right. This will gratify some people and astonish the rest.",
+            "author": "Mark Twain"
+        },
+        {
+            "text": "Just because the message may never be received does not mean it is not worth sending."
+        },
+        {
+            "text": "Habit is habit, and not to be flung out of the window by any man, but coaxed downstairs a step at a time.",
+            "author": "Mark Twain"
+        },
+        {
+            "text": "You have the power to influence all with whom you come in contact."
+        },
+        {
             "text": "An honest tale speeds best being plainly told.",
             "author": "William Shakespeare, \"Henry VI\""
+        },
+        {
+            "text": "It's lucky you're going so slowly, because you're going in the wrong direction."
+        },
+        {
+            "text": "Change your thoughts and you change your world."
+        },
+        {
+            "text": "Wrinkles should merely indicate where smiles have been.",
+            "author": "Mark Twain"
+        },
+        {
+            "text": "It may or may not be worthwhile, but it still has to be done."
+        },
+        {
+            "text": "Your true value depends entirely on what you are compared with."
+        },
+        {
+            "text": "When in doubt, mumble."
+        },
+        {
+            "text": "Every nonzero finite dimensional inner product space has an orthonormal basis. It makes sense, when you don't think about it."
+        },
+        {
+            "text": "Borrow money from pessimists, they don't expect it back."
+        },
+        {
+            "text": "Behold the warranty, the bold print giveth and the fine print taketh away."
+        },
+        {
+            "text": "Any excuse will serve a tyrant.",
+            "author": "Aesop"
+        },
+        {
+            "text": "Stealing a rhinoceros should not be attempted lightly."
+        },
+        {
+            "text": "Every creature has within him the wild, uncontrollable urge to punt."
+        },
+        {
+            "text": "There is nothing to fear but fear itself."
         },
         {
             "text": "Anyone who has never made a mistake has never tried anything new.",
             "author": "Albert Einstein"
         },
         {
+            "text": "Winners never quit, quitters never win, but those who never win and never quit are idiots!"
+        },
+        {
+            "text": "Everyone is a genius. It's just that some people are too stupid to realize it."
+        },
+        {
+            "text": "Well done is better than well said."
+        },
+        {
+            "text": "I love you, not only for what you are, but for what I am when I am with you.",
+            "author": "Roy Croft"
+        },
+        {
+            "text": "love, n.: When you like to think of someone on days that begin with a morning."
+        },
+        {
+            "text": "1 1 was a racehorse, 2 2 was 1 2, and when 1 1 1 1, 2 2 1 1 2."
+        },
+        {
+            "text": "I used to be schizophrenic, but we're okay now."
+        },
+        {
             "text": "There are no great men, only great challenges that ordinary men are forced by circumstances to meet.",
             "author": "Admiral William Halsey"
         },
         {
-            "text": "Life is like a diaper",
-            "author": "short and loaded."
+            "text": "Life is like a diaper — short and loaded."
+        },
+        {
+            "text": "Some don't prefer the pursuit of happiness to the happiness of pursuit."
+        },
+        {
+            "text": "No amount of careful planning will ever replace dumb luck."
+        },
+        {
+            "text": "I'm all for computer dating, but I wouldn't want one to marry my sister."
+        },
+        {
+            "text": "Marry in haste and everyone starts counting the months."
+        },
+        {
+            "text": "If I don't see you in the future, I'll see you in the pasture."
+        },
+        {
+            "text": "Don't let your schooling interfere with your education."
+        },
+        {
+            "text": "I would rather say that a desire to drive fast sports cars is what sets man apart from the animals."
+        },
+        {
+            "text": "Life is hard, but it's even harder when you're stupid."
+        },
+        {
+            "text": "What makes the universe so hard to comprehend is that there's nothing to compare it with."
+        },
+        {
+            "text": "I don't have a short attention span, I just."
+        },
+        {
+            "text": "Fat Liberation: A waist is a terrible thing to mind."
+        },
+        {
+            "text": "Don't let your mind wander, it's too little to be let out all alone."
+        },
+        {
+            "text": "The goal of science is to build better mousetraps. The goal of nature is to build better mice."
         },
         {
             "text": "Deeds, not stones are the true monuments of the great.",
             "author": "John L. Motley"
         },
         {
+            "text": "For visions come not to polluted eyes.",
+            "author": "Mary Howitt"
+        },
+        {
             "text": "The world is my country, all mankind are my brethren and to do good is my religion.",
             "author": "Thomas Paine"
+        },
+        {
+            "text": "Experience teaches slowly and at the cost of mistakes.",
+            "author": "J.A. Froude"
         },
         {
             "text": "A good name, like good will, is got by many actions and lost by one.",
             "author": "Lord Jeffery"
         },
         {
+            "text": "It is better to be hated for what you are than to be loved for what you are not.",
+            "author": "Andre Gide"
+        },
+        {
+            "text": "In case of an atomic attack, the federal ruling against prayer in schools will be temporarily cancelled."
+        },
+        {
             "text": "I told you I was sick",
             "author": "Grave stone of B.H. Roberts."
+        },
+        {
+            "text": "Fear leads to anger, anger leads to hate, hate leads to suffering.",
+            "author": "Yoda"
+        },
+        {
+            "text": "Support your local Search and Rescue team - get lost."
+        },
+        {
+            "text": "I hate animal testing. They get all nervous and give the wrong answers."
         },
         {
             "text": "I never forget a face, but in your case I'll make an exception.",
             "author": "Groucho Marx"
         },
         {
+            "text": "News flash - Today the East German pole-vault champion became the West German pole-vault champion."
+        },
+        {
+            "text": "Live Free or Live in Massachusetts."
+        },
+        {
+            "text": "Nothing is particularly hard if you divide it into small jobs",
+            "author": "Henry Ford"
+        },
+        {
+            "text": "Start the day with a smile. After that you can be your nasty old self again."
+        },
+        {
+            "text": "Nudists are people who wear one-button suits."
+        },
+        {
+            "text": "Some people cause happiness wherever they go, others, whenever they go."
+        },
+        {
             "text": "We may not return the affection of those who like us, but we always respect their good judgement.",
             "author": "Libbie Fudim"
+        },
+        {
+            "text": "A dull pencil is better than a sharp mind."
+        },
+        {
+            "text": "There's no place like ~"
         },
         {
             "text": "The greater amount of truth is impulsively uttered; thus the greater amount is spoken, not written.",
@@ -115,12 +1114,20 @@
             "author": "Carl Sandburg"
         },
         {
+            "text": "He is a hard man who is only just, and a sad one who is only wise.",
+            "author": "Voltaire"
+        },
+        {
             "text": "The silence often of pure innocence Persuades when speaking fails.",
             "author": "William Shakespeare"
         },
         {
             "text": "Simplicity doesn't mean to live in misery and poverty. You have what you need, and you don't want to have what you don't need.",
             "author": "Charan Singh"
+        },
+        {
+            "text": "Millions long for immortality who do not know what to do with themselves on a rainy Sunday afternoon.",
+            "author": "Susan Ertz"
         },
         {
             "text": "A word in earnest is as good as a speech.",
@@ -131,12 +1138,35 @@
             "author": "Japanese proverb"
         },
         {
+            "text": "If entropy is increasing, where is it coming from?"
+        },
+        {
+            "text": "Life's a binge and then you diet."
+        },
+        {
+            "text": "No one can feel as helpless as the owner of a sick goldfish."
+        },
+        {
             "text": "A good laugh and a long sleep are the best cures in the doctor's book.",
             "author": "Irish proverb"
         },
         {
+            "text": "Friendship is unnecessary, like philosophy, like art. It has no survival value; rather it is one of those things that give value to survival.",
+            "author": "C.S. Lewis"
+        },
+        {
+            "text": "If men do not keep on speaking terms with children, they cease to be men, and become merely machines for eating and for earning money.",
+            "author": "John Updike"
+        },
+        {
             "text": "Think like a wise man but communicate in the language of the people.",
             "author": "William Butler Yeats"
+        },
+        {
+            "text": "Sight is a faculty, but seeing is an art."
+        },
+        {
+            "text": "Time is a great healer, unless you have a rash, in which case you're better off with ointment."
         },
         {
             "text": "A treasure of memories is a very special happiness.",
@@ -151,12 +1181,20 @@
             "author": "Charles Dickens"
         },
         {
+            "text": "The educator must above all understand how to wait - to reckon all effects in the light of the future, not of the present.",
+            "author": "Ellen Kay"
+        },
+        {
             "text": "It is not the function of our government to keep the citizen from falling into error; it is the function of the citizen to keep the government from falling into error.",
             "author": "Robert H. Jackson"
         },
         {
             "text": "The great gift of human beings is that we have the power of empathy",
             "author": "Meryl Streep"
+        },
+        {
+            "text": "Ultimately, the only power to which man should aspire is that which he exercises over himself.",
+            "author": "Elie Wiesel"
         },
         {
             "text": "The final test of a leader is that he leaves behind him in other men the conviction and the will to carry on.",
@@ -171,44 +1209,134 @@
             "author": "English Proverb"
         },
         {
+            "text": "Save trees. Eat more woodpeckers."
+        },
+        {
+            "text": "There is no such thing as \"solution\" if \"problem\" is nonexistent."
+        },
+        {
+            "text": "Removing the straw that broke the camel's back does not necessarily allow the camel to walk again."
+        },
+        {
             "text": "The only difference in the game of love over the last few thousand years is that they've changed trumps from clubs to diamonds.",
             "author": "The Indianapolis Star"
         },
         {
-            "text": "A man is not complete until he is married",
-            "author": "then he is finished."
+            "text": "A man is not complete until he is married — then he is finished."
+        },
+        {
+            "text": "I do not know whether I was then a man dreaming I was a butterfly, or whether I am now a butterfly dreaming I am a man.",
+            "author": "Chuang-tzu"
+        },
+        {
+            "text": "Brain off-line, please wait."
         },
         {
             "text": "When you say \"I wrote a program that crashed Windows\", people just stare at you blankly and say \"Hey, I got those with the system, *for free*\".",
-            "author": "Linus Torvalds)"
+            "author": "Linus Torvalds"
+        },
+        {
+            "text": "A bird in the hand makes it awfully hard to blow your nose."
+        },
+        {
+            "text": "Be sure to evaluate the bird-hand/bush ratio."
+        },
+        {
+            "text": "Push where it gives and scratch where it itches."
         },
         {
             "text": "An investment in knowledge always pays the best interest.",
             "author": "Benjamin Franklin"
         },
         {
+            "text": "Love means nothing to a tennis player."
+        },
+        {
+            "text": "Confirmed bachelor: A man who goes through life without a hitch."
+        },
+        {
+            "text": "When you are in command, command.",
+            "author": "Nimitz"
+        },
+        {
+            "text": "The only decent thing to do behind a person's back is to pat it."
+        },
+        {
             "text": "Your friend will argue with you.",
             "author": "Alexander Solzhenitsyn"
+        },
+        {
+            "text": "Los secretos - ni oirlos ni decirlos. (Secrets, don't listen to them nor tell them.)"
+        },
+        {
+            "text": "If we have not quiet in our minds, outward comfort will do no more for us than a golden slipper on a gouty foot.",
+            "author": "John Bunyan"
         },
         {
             "text": "You cannot do a kindness too soon, for you never know how soon it will be too late.",
             "author": "Ralph Waldo Emerson"
         },
         {
+            "text": "Wisdom is divided into two parts: 1) having a great deal to say, and (2) not saying it."
+        },
+        {
+            "text": "It is not always the same thing to be a good man and a good citizen.",
+            "author": "Aristotle"
+        },
+        {
             "text": "Good timber does not grow with ease, the stronger the wind the stronger the trees.",
             "author": "J. Williard Marriott"
+        },
+        {
+            "text": "If the Earth is in a solar system, the solar system is in a galaxy, and the galaxy is in a universe; then what is the universe in?"
+        },
+        {
+            "text": "If you see an onion ring, answer it."
         },
         {
             "text": "Nearly all men can stand adversity, but if you want to test a man's character, give him power.",
             "author": "Abraham Lincoln"
         },
         {
+            "text": "To me, kung-fu is like a ballet, except that there's no music, no choreography, and the dancers all hit each other"
+        },
+        {
             "text": "Compassion will cure more sins than condemnation.",
             "author": "Henry Ward Beecher"
         },
         {
+            "text": "One thing which gives radiance to everything is the hope of something better around the corner."
+        },
+        {
+            "text": "People are like stained glass windows. Their beauty is revealed only if there is light from within.",
+            "author": "Elizabeth Kubler-Ross"
+        },
+        {
+            "text": "The most important words we'll ever utter are those words we say to ourselves, about ourselves, when we are by ourselves.",
+            "author": "Al Waker"
+        },
+        {
             "text": "An idea not coupled with action will never get any bigger then the brain cell it occupied.",
             "author": "Arnold Glasgow"
+        },
+        {
+            "text": "What lies ahead of you is nothing compared to what lies within you."
+        },
+        {
+            "text": "I like being single, I'm always there when I need me.",
+            "author": "Art Leo"
+        },
+        {
+            "text": "Foolproof Operation: No provision for adjustment."
+        },
+        {
+            "text": "Mosher's Law of Software Engineering: Don't worry if it doesn't work right. If everything did, you'd be out of a job."
+        },
+        {
+            "text": "Caution: Breathing may be hazardous to your health."
+        },
+        {
+            "text": "If I knew then what I know now, I'd know more now."
         },
         {
             "text": "Better to write for yourself and have no public, than to write for the public and have no self.",
@@ -223,12 +1351,26 @@
             "author": "Henry Brooks Adams"
         },
         {
+            "text": "To love oneself is the beginning of a lifelong romance.",
+            "author": "Oscar Wilde"
+        },
+        {
+            "text": "The secret to a long life is to try not to shorten it."
+        },
+        {
             "text": "Life is like a box of chocolates, you never know what you're gonna get.",
             "author": "Forrest Gump"
         },
         {
+            "text": "A university is what a college becomes when the faculty loses interest in students.",
+            "author": "John Ciardi"
+        },
+        {
             "text": "Pray to God, but keep rowing to shore.",
             "author": "Russian Proverb"
+        },
+        {
+            "text": "The two most common things in the universe are hydrogen and stupidity."
         },
         {
             "text": "If people are good only because they fear punishment, and hope for reward, then we are a sorry lot indeed.",
@@ -239,12 +1381,14 @@
             "author": "Munich Schoolmaster, to Albert Einstein, age 10"
         },
         {
-            "text": "Math is like love",
-            "author": "a simple idea but it can get complicated."
+            "text": "Math is like love — a simple idea but it can get complicated."
         },
         {
-            "text": "Absence makes the heart grow fonder",
-            "author": "of somebody else."
+            "text": "No act of kindness, no matter how small, is ever wasted.",
+            "author": "Aesop"
+        },
+        {
+            "text": "Absence makes the heart grow fonder — of somebody else."
         },
         {
             "text": "Keep your eyes wide open before marriage, half shut afterwards.",
@@ -255,6 +1399,10 @@
             "author": "William Makepeace Thackeray, novelist, 1811-1863"
         },
         {
+            "text": "There was never a genius without a tincture of madness.",
+            "author": "Aristotle"
+        },
+        {
             "text": "The believer is happy; the doubter is wise.",
             "author": "Hungarian proverb"
         },
@@ -263,8 +1411,32 @@
             "author": "Spanish Proverb"
         },
         {
+            "text": "Real knowledge is to know the extent of one's ignorance.",
+            "author": "Confucius"
+        },
+        {
             "text": "One loss isn't a failure",
             "author": "Lewis Harney"
+        },
+        {
+            "text": "Man who falls in vat of molten optical glass makes spectacle of self."
+        },
+        {
+            "text": "There are 10 types of people in the world: those that understand binary, and those that don't."
+        },
+        {
+            "text": "I got a new hearing aid. What kind is it? 10 past 4."
+        },
+        {
+            "text": "What a strange illusion it is to believe that beauty is goodness.",
+            "author": "Leo Tolstoy"
+        },
+        {
+            "text": "The image of myself, in my own mind, is very different than the image I try to create in the minds of others in order that they might love me.",
+            "author": "W. H. Auden"
+        },
+        {
+            "text": "Hanlon's Razor: Never attribute to malice that which is adequately explained by stupidity."
         },
         {
             "text": "Let me tell you the secret that has led me to my goal: my strength lies solely in my tenacity.",
@@ -279,32 +1451,107 @@
             "author": "Ernest Dimnet, French priest, lecturer and author"
         },
         {
+            "text": "Happiness is a journey, not a destination."
+        },
+        {
+            "text": "To see a need and wait to be asked is to already refuse."
+        },
+        {
             "text": "When a thing is funny, search it carefully for a hidden truth.",
             "author": "George Bernard Shaw"
+        },
+        {
+            "text": "The great man is he who does not lose his child's heart.",
+            "author": "Mencius"
         },
         {
             "text": "A poem begins with a lump in the throat.",
             "author": "Robert Frost"
         },
         {
+            "text": "In life, the more you refuse to accept anything but the best, the more likely you are to get it."
+        },
+        {
+            "text": "Tell a man that the universe is made of 400 billion stars, and he'll believe you. Tell him that a bench has wet paint on it and he has to touch it."
+        },
+        {
+            "text": "Don't worry about spilling some paint while working on the big picture."
+        },
+        {
+            "text": "Don't worry over what other people are thinking about you. They're too busy worrying over what you are thinking about them."
+        },
+        {
+            "text": "If we weren't meant to juggle, tennis balls wouldn't come three to a can."
+        },
+        {
+            "text": "Drink Canada Dry! You might not succeed, but it is fun trying."
+        },
+        {
             "text": "Houston, Tranquillity Base here. The Eagle has landed.",
             "author": "Neil Armstrong"
+        },
+        {
+            "text": "It is much easier to suggest solutions when you know nothing about the problem."
+        },
+        {
+            "text": "You have to make money first in order to make money last."
+        },
+        {
+            "text": "Meade's Maxim: Remember that you are absolutely unique, just like everyone else."
+        },
+        {
+            "text": "Don't let the past dictate who you are, let it dictate who you will become."
+        },
+        {
+            "text": "Did it ever occur to you that fat chance and slim chance mean the same thing?"
+        },
+        {
+            "text": "Put not your trust in money, but put your money in trust."
         },
         {
             "text": "Laughter is the closest distance between two people.",
             "author": "Victor Borge"
         },
         {
+            "text": "What I like most about myself is that I'm so understanding when I mess things up."
+        },
+        {
             "text": "Do not go where the path may lead. Go instead where there is no path and leave a trail.",
             "author": "Ralph Waldo Emerson"
+        },
+        {
+            "text": "Give a man fire and he'll be warm for an hour. Set a man on fire and he'll be warm for a lifetime."
         },
         {
             "text": "Sometimes the answer to fear does not lie in trying to explain away the causes, sometimes the answer lies in courage.",
             "author": "J. Robert Oppenheimer"
         },
         {
+            "text": "You have the power to influence all with whom you come in contact,and the power to choose the kind of influence.",
+            "author": "Dustin Ault"
+        },
+        {
+            "text": "I hereby solemnly swear and resolve, that I shall finish whatever I sta"
+        },
+        {
+            "text": "You have to wonder who decided flammable and inflammable mean the same thing."
+        },
+        {
+            "text": "Never confuse your right to do something with doing the right thing."
+        },
+        {
+            "text": "It is nice to be important, but more important to be nice."
+        },
+        {
+            "text": "The fact that nobody understands you doesn't make you an artist."
+        },
+        {
             "text": "The pessimist sees the difficulty in every opportunity; the optimist sees the opportunity in every difficulty.",
             "author": "Lawrence Pearsall Jacks"
+        },
+        {
+            "text": "Think rich, look poor.",
+            "author": "Andy Warhol"
         },
         {
             "text": "You can't ever be really free if you admire somebody too much.",
@@ -327,16 +1574,33 @@
             "author": "J. R. R. Tolkien"
         },
         {
+            "text": "It is the mark of an educated mind to be able to entertain a thought without accepting it.",
+            "author": "Aristotle"
+        },
+        {
             "text": "I put a dollar in a change machine. Nothing changed.",
             "author": "George Carlin"
+        },
+        {
+            "text": "How much wind could a windbreaker break if a windbreaker could break wind?"
         },
         {
             "text": "When I do good, I feel good; when I do bad, I feel bad, and that is my religion.",
             "author": "Abraham Lincoln"
         },
         {
+            "text": "There are no new sins...the old ones just get more publicity."
+        },
+        {
+            "text": "If you don't have a sense of humor, you probably don't have any sense at all."
+        },
+        {
             "text": "Our chief want is someone who will inspire us to be what we know we could be.",
             "author": "Ralph Waldo Emerson"
+        },
+        {
+            "text": "How fortunate is a person who does not respond to insults - a hundred evils will pass by him.",
+            "author": "Daf Yomi 7a"
         },
         {
             "text": "Success has nothing to do with what you gain in life or accomplish for yourself. Success is what you do for others.",
@@ -347,8 +1611,14 @@
             "author": "Ben Sweetland"
         },
         {
+            "text": "Never look down on a man unless you are helping him up."
+        },
+        {
             "text": "A ship in the harbor is safe but that is not what ships were built for.",
             "author": "Donald Kendall, Chm. PepsiCo"
+        },
+        {
+            "text": "Changing your mind is one of the best ways of finding out if you still have one."
         },
         {
             "text": "It's never too late to be what you might have been.",
@@ -359,8 +1629,20 @@
             "author": "Taylor Rodgers"
         },
         {
+            "text": "Lies equal pain, truth equals pleasure."
+        },
+        {
+            "text": "The original point and click interface was a Smith and Wesson."
+        },
+        {
             "text": "A well-developed sense of humor is the pole that adds balance to your step as you walk the tightrope of life.",
             "author": "William Arthur Ward"
+        },
+        {
+            "text": "You have to learn to listen, and listen to learn."
+        },
+        {
+            "text": "If coffee is not ground up well enough, is it underground?"
         },
         {
             "text": "I've learned from experience that the greater part of our happiness or misery depends on our dispositions and not on our circumstances.",
@@ -377,6 +1659,10 @@
         {
             "text": "Education is what remains after one has forgotten everything he learned in school.",
             "author": "Albert Einstein"
+        },
+        {
+            "text": "Life is ten percent what happens to you and ninety percent how you respond to it.",
+            "author": "Lou Holtz"
         },
         {
             "text": "Man is distinguished from all other creatures by the faculty of laughter.",
@@ -407,6 +1693,10 @@
             "author": "Margaret Storm Jameson"
         },
         {
+            "text": "We are what we believe we are.",
+            "author": "C.S. Lewis"
+        },
+        {
             "text": "Try not to become a man of success but rather to become a man of value.",
             "author": "Albert Einstein"
         },
@@ -431,6 +1721,14 @@
             "author": "Albert Einstein"
         },
         {
+            "text": "Pleasure in the job puts perfection in the work.",
+            "author": "Aristotle"
+        },
+        {
+            "text": "We are what we repeatedly do. Excellence, therefore, is not an act, but a habit.",
+            "author": "Aristotle"
+        },
+        {
             "text": "It is one thing to praise discipline, and another to submit to it.",
             "author": "Miguel de Cervantes"
         },
@@ -443,16 +1741,36 @@
             "author": "Blaise Pascal"
         },
         {
+            "text": "The difference between adversity and adventure is attitude",
+            "author": "Unknown"
+        },
+        {
             "text": "We would worry less about what others think of us if we realized how seldom they do.",
             "author": "Ethel Barrett"
+        },
+        {
+            "text": "Use it up, wear it out, make it do or do without.",
+            "author": "Unknown"
         },
         {
             "text": "People who don't take risks generally make about two big mistakes a year. People who do take risks generally make about two big mistakes a year.",
             "author": "Peter Drucker"
         },
         {
+            "text": "Better the devil you know than the devil you don't",
+            "author": "Unknown"
+        },
+        {
+            "text": "Never argue with an idiot. They'll drag you down to their level and beat you with experience.",
+            "author": "A wise soul"
+        },
+        {
             "text": "It is difficult to get a man to understand something when his salary depends upon his not understanding it.",
             "author": "Upton Beall Sinclair"
+        },
+        {
+            "text": "Spend less time fantasizing about 'success' and way more time making really cool mistakes",
+            "author": "Merlin Mann"
         },
         {
             "text": "Do something wonderful, people may imitate it.",
@@ -463,16 +1781,20 @@
             "author": "Albert Schweitzer"
         },
         {
-            "text": "The tragedy of life is what dies inside a man while he lives.",
-            "author": "Albert Schweitzer"
-        },
-        {
             "text": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
             "author": "Albert Schweitzer"
         },
         {
+            "text": "Wise men speak because they have something to say. Fools speak because they have to say something.",
+            "author": "Unknown"
+        },
+        {
             "text": "I have made this letter longer than usual because I lack the time to make it short.",
             "author": "Blaise Pascal"
+        },
+        {
+            "text": "Great minds have purposes, others have dreams.",
+            "author": "Unknown"
         },
         {
             "text": "Music washes away from the soul the dust of everyday life.",
@@ -532,9 +1854,6 @@
             "text": "How come abbreviated is such a long word?"
         },
         {
-            "text": "How do I set my laser printer on stun?"
-        },
-        {
             "text": "How do they get the deer to cross at that yellow road sign?"
         },
         {
@@ -550,13 +1869,7 @@
             "text": "How much deeper would the ocean be if sponges didn't grow in it?"
         },
         {
-            "text": "If a deaf person swears, does his mother wash his hands with soap?"
-        },
-        {
             "text": "If a parsley farmer is sued, can they garnish his wages?"
-        },
-        {
-            "text": "If a stealth bomber crashes in a forest, will it make a sound?"
         },
         {
             "text": "If a word is misspelled in the dictionary, how would we ever know?"
@@ -565,22 +1878,10 @@
             "text": "If all the world is a stage, where is the audience sitting?"
         },
         {
-            "text": "If God dropped acid, would he see people?"
-        },
-        {
             "text": "If it's zero degrees outside today and it's supposed to be twice as cold tomorrow, how cold is it going to be?"
         },
         {
-            "text": "If love is blind, why is lingerie so popular?"
-        },
-        {
             "text": "If most car accidents occur within five miles of home, why doesn't everyone just move 10 miles away?"
-        },
-        {
-            "text": "If one synchronized swimmer drowns, do the rest have to drown too?"
-        },
-        {
-            "text": "If the black box flight recorder is never damaged during a plane crash, why isn't the whole airplane made out of the stuff?"
         },
         {
             "text": "If the #2 pencil is the most popular, why is it still #2?"
@@ -595,13 +1896,7 @@
             "text": "If work is so terrific, how come they have to pay you to do it?"
         },
         {
-            "text": "If you are cross-eyed and have dyslexia, can you read all right?"
-        },
-        {
             "text": "If you ate pasta and antipasta, would you still be hungry?"
-        },
-        {
-            "text": "If you choke a smurf, what color does it turn?"
         },
         {
             "text": "If you jogged backward . . .would you gain weight?"
@@ -613,13 +1908,7 @@
             "text": "If you're born again, do you have two bellybuttons?"
         },
         {
-            "text": "Is a castrated pig disgruntled?"
-        },
-        {
             "text": "Is it good if a vacuum really sucks?"
-        },
-        {
-            "text": "Is it true that cannibals don't eat clowns because they taste funny?"
         },
         {
             "text": "Is there another word for synonym?"
@@ -638,9 +1927,6 @@
         },
         {
             "text": "What's the speed of dark?"
-        },
-        {
-            "text": "Who is General Failure and why is he reading my hard disk?"
         },
         {
             "text": "When sign makers go on strike, is anything written on their signs?"

@@ -132,6 +132,12 @@ const TEMPLATE = `
 .scrim[hidden] { display: none; }
 .wrap, .quote { position: relative; z-index: 1; }
 
+/* "overlay": the player draws a filler scene (video, audio, rotating lines)
+   behind this card, so the card is just its text on a light scrim. */
+:host([overlay]) { background: none !important; }
+:host([overlay]) .bgvideo, :host([overlay]) .bgcanvas { display: none; }
+:host([overlay]) .scrim { display: block; background: linear-gradient(180deg, rgba(5,6,10,.35), rgba(5,6,10,.12) 55%, rgba(5,6,10,.35)); }
+
 /* Quote content, an alternative to the default "Coming Up Next" block.
    Reuses .wrap's grid padding so either fills the card identically. */
 .quote {

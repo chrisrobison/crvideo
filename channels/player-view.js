@@ -141,9 +141,9 @@ video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: con
 </style>
 <video class="screen" muted playsinline autoplay></video>
 <div class="ytPlayer" hidden></div>
+<div class="fillerHost" hidden></div>
 <div class="continuityHost" hidden></div>
 <div class="bumpHost" hidden></div>
-<div class="fillerHost" hidden></div>
 
 <div class="slate" hidden>
   <div class="card">

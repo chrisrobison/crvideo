@@ -23,10 +23,10 @@ const MAX_LENGTH = 180; // longer lines don't fit a filler card legibly
 const BLOCKED = [
     'sex', 'naked', 'nude', 'women', 'woman', 'wife', 'wives', 'girl', 'whore', 'slut', 'bra ', 'panties',
     'hemorrhoid', 'drunk', 'beer', 'wine', 'whiskey', 'liquor', 'alcohol', 'bottle', 'booze', 'smok',
-    'cigar', 'drug', 'marijuana', 'pot ', 'kill', 'murder', 'suicide', 'die ', 'died', 'dead', 'death',
+    'cigar', 'drug', 'marijuana', 'pot ', 'kill', 'murder', 'suicide', 'die ', 'died', 'dies ', 'dead', 'death',
     'lethal', 'shoot', 'gun', 'rape', 'hell', 'damn', 'ass ', 'crap', 'shit', 'fuck', 'bitch', 'penis',
     'breast', 'tuberculosis', 'cancer', 'virgin', 'pregnan', 'divorce', 'prostitut', 'lust', 'adulter',
-    'bathroom', 'toilet', 'fart', 'poop', 'urine', 'pee ', 'sperm', 'orgasm', 'condom', 'racis', 'nigg', 'kamikaze', 'unconscious',
+    'bathroom', 'toilet', 'fart', 'poop', 'urine', 'pee ', 'sperm', 'orgasm', 'condom', 'racis', 'nigg', 'kamikaze', 'unconscious', 'aborigin', 'acid', 'castrat', 'cannibal', 'drown', 'choke', 'plane crash', 'deaf', 'dyslexia', 'lingerie', 'stun', 'bomber', 'sritched',
 ];
 
 function fetchText(string $src): string
@@ -47,15 +47,18 @@ function clean(string $s): string
     return trim(preg_replace('/\s+/u', ' ', $s));
 }
 
-function allowed(string $line): bool
+function allowed(string $line, int $minLength = 12): bool
 {
-    $hay = strtolower(" $line ");
+    // A blocked word matches at the start of a word (so "kill" catches
+    // "killing" but not "skill", "hell" not "shell"); a trailing space in
+    // the entry also pins the end ("die " catches "die," but not "diet").
     foreach (BLOCKED as $word) {
-        if (str_contains($hay, $word)) {
+        $end = str_ends_with($word, ' ') ? '\\b' : '';
+        if (preg_match('/\\b' . preg_quote(trim($word), '/') . $end . '/i', $line)) {
             return false;
         }
     }
-    return mb_strlen($line) <= MAX_LENGTH && mb_strlen($line) >= 12;
+    return mb_strlen($line) <= MAX_LENGTH && mb_strlen($line) >= $minLength;
 }
 
 $out = ['quote' => [], 'imponderable' => []];
@@ -65,11 +68,20 @@ foreach (preg_split('/\R/', fetchText($argv[1] ?? QUOTES_SRC)) as $i => $row) {
     if ($i === 0 || trim($row) === '') {
         continue; // header / blank
     }
+    // QuoteID|Quote|Author|Views|Votes -- but a few quotes contain a literal
+    // "|" themselves ("Life is like a diaper|short and loaded."). A second
+    // field that starts lowercase continues the quote rather than naming
+    // its author.
     $cols = explode('|', $row);
     $text = clean($cols[1] ?? '');
     $author = clean($cols[2] ?? '');
+    if ($author !== '' && preg_match('/^\p{Ll}/u', $author)) {
+        $text = rtrim($text, " .") . ' — ' . $author;
+        $author = '';
+    }
+    $author = rtrim($author, ')');
     $key = strtolower($text);
-    if ($text === '' || isset($seen[$key]) || !allowed($text) || !allowed($author ?: 'x ok ok')) {
+    if ($text === '' || isset($seen[$key]) || !allowed($text) || ($author !== '' && !allowed($author, 0))) {
         continue;
     }
     $seen[$key] = true;

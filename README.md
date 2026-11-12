@@ -126,8 +126,9 @@ Dependency-free ES modules, no framework:
   before its slot, a failed/retrying load, a provider with no adapter),
   the player shows a looping scene (video plus music/ambience, borrowed
   from the bump library via `channels/filler/scenes.json`) with a
-  rotating proverb or "imponderable" question over it, and puts a quiet
-  music bed under continuity cards. Scene and line are pure functions of
+  rotating proverb or "imponderable" question over it. Continuity cards
+  ("Up Next") sit over the same scene, with their own background dropped
+  and the audio turned down for the voice-over. Scene and line are pure functions of
   the broadcast clock and channel id, so every viewer sees the same
   thing. The lines live in `channels/filler/quotes.json`, a screened
   snapshot of cdr2.com's `quotes.txt` and `imponderablequestions.htm`;

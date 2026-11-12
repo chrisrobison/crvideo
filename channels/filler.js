@@ -5,7 +5,8 @@
 // silent static slate: a gap the schedule leaves uncovered, a file that ends
 // before its slot does, a video that failed to load (while it retries or
 // after it gives up), or a provider with no adapter. During those, and
-// quietly under continuity cards, the player rotates through:
+// under continuity cards (which sit over it, see continuity-card.js's
+// `overlay`), the player rotates through:
 //
 //   - a scene: a looping video with its music/ambience beds, borrowed from
 //     the existing bump library (filler/scenes.json -> bumps/<id>.json,
@@ -22,7 +23,7 @@ import { hashSeed } from "./continuity-card.js";
 
 export const SCENE_SECONDS = 300; // how long one scene (video + beds) stays up
 export const LINE_SECONDS = 14; // how long one line stays up
-export const BED_VOLUME = 0.25; // music under a continuity card, which has its own voice-over and no picture to carry the mood
+export const QUIET_SCALE = 0.5; // beds under a continuity card, which may have its own voice-over
 
 // ---------- pure, unit-testable helpers ----------
 
@@ -85,11 +86,19 @@ export function toFillerDefinition(def) {
   };
 }
 
-/** Where a scene's music/ambience bed for a continuity card comes from: the
- *  scene's first "music" layer, else its first layer of any kind. */
-export function bedUrlFor(scene) {
-  const layers = Array.isArray(scene?.audio) ? scene.audio.filter((l) => l?.url) : [];
-  return (layers.find((l) => l.source === "music") || layers[0])?.url ?? null;
+/** A copy of a scene with every audio layer's volume multiplied by `k`
+ *  (0-1), so it can sit under a voice-over without a ducking control. */
+export function scaleVolumes(def, k) {
+  if (!def || !Array.isArray(def.audio)) return def;
+  return { ...def, audio: def.audio.map((l) => ({ ...l, volume: Math.max(0, Math.min(1, (Number.isFinite(Number(l.volume)) ? Number(l.volume) : 0.6) * k)) })) };
+}
+
+/** Scenes with a picture (video/image), or, only if none loaded, whatever
+ *  is left (a plain color card still has a music bed), so a missing video
+ *  folder degrades to sound instead of to nothing. */
+export function preferPictures(defs) {
+  const pictures = defs.filter((d) => d.background?.type === "video" || d.background?.type === "image");
+  return pictures.length ? pictures : defs;
 }
 
 // ---------- loading ----------
@@ -115,7 +124,7 @@ export function loadFiller() {
     ]);
     const ids = Array.isArray(sceneList?.bumps) ? sceneList.bumps.filter((id) => typeof id === "string") : [];
     const defs = await Promise.all(ids.map((id) => getJson(new URL(`${id}.json`, BUMPS_BASE)).catch(() => null)));
-    return { deck: buildDeck(quotes), scenes: defs.filter(Boolean).map(toFillerDefinition) };
+    return { deck: buildDeck(quotes), scenes: preferPictures(defs.filter(Boolean)).map(toFillerDefinition) };
   })();
   return assets;
 }
@@ -157,6 +166,7 @@ export class FillerRenderer {
     this.sceneKey = null;
     this.lineKey = null;
     this.visible = false;
+    this.quiet = false;
     this.gen = 0; // bumped on every show()/hide(), so a load that resolves after a hide is dropped
   }
 
@@ -177,8 +187,10 @@ export class FillerRenderer {
 
   /** @param {string} channelId seeds this channel's walk through scenes and lines
    *  @param {() => number} clockNow broadcast clock, seconds since the epoch
-   *  @param {boolean} muted */
-  async show(channelId, clockNow, muted) {
+   *  @param {boolean} muted
+   *  @param {{quiet?: boolean}} [opts] quiet: lower the beds, because a continuity card's voice-over plays over them */
+  async show(channelId, clockNow, muted, { quiet = false } = {}) {
+    this.quiet = quiet;
     this.channelId = channelId || "";
     this.clockNow = clockNow;
     this.muted = muted;
@@ -200,7 +212,8 @@ export class FillerRenderer {
   _sync() {
     if (!this.visible) return;
     const t = this.clockNow();
-    const scene = pickScene(this.scenes, t, this.channelId);
+    const picked = pickScene(this.scenes, t, this.channelId);
+    const scene = this.quiet ? scaleVolumes(picked, QUIET_SCALE) : picked;
     const sceneKey = scene ? Math.floor(t / SCENE_SECONDS) : null;
     if (scene && sceneKey !== this.sceneKey) {
       this.sceneKey = sceneKey;
@@ -253,50 +266,5 @@ export class FillerRenderer {
     this.root?.remove();
     this.root = null;
     this.bump = null;
-  }
-}
-
-/**
- * A quiet looping music bed for stretches that have a picture but no sound
- * of their own (continuity cards). One <audio> element, owned by the
- * player; start() picks this moment's scene from the same walk the full
- * filler uses.
- */
-export class FillerBed {
-  constructor() {
-    this.audio = null;
-    this.muted = true;
-    this.gen = 0;
-  }
-
-  async start(channelId, clockNow, muted) {
-    this.muted = muted;
-    const gen = ++this.gen;
-    const { scenes } = await loadFiller();
-    if (gen !== this.gen) return;
-    const url = bedUrlFor(pickScene(scenes, clockNow(), channelId));
-    if (!url) return;
-    const abs = new URL(`../${url}`, import.meta.url).href;
-    this.audio ??= Object.assign(new Audio(), { loop: true, volume: BED_VOLUME });
-    this.audio.muted = muted;
-    if (this.audio.src !== abs) this.audio.src = abs;
-    this.audio.play().catch(() => { /* autoplay refused: stays silent until the viewer engages, like every other channel sound */ });
-  }
-
-  setMuted(muted) {
-    this.muted = muted;
-    if (this.audio) this.audio.muted = muted;
-  }
-
-  stop() {
-    this.gen++;
-    if (!this.audio) return;
-    this.audio.pause();
-    this.audio.removeAttribute("src");
-  }
-
-  destroy() {
-    this.stop();
-    this.audio = null;
   }
 }

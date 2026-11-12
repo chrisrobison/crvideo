@@ -20,7 +20,7 @@ import {
   Html5PlayerAdapter, YouTubePlayerAdapter, ContinuityRenderer, BumpRenderer,
   resolveProvider, computeBackoffMs, computeDriftCorrection, locateActiveBump,
 } from "./player-adapters.js";
-import { FillerRenderer, FillerBed } from "./filler.js";
+import { FillerRenderer } from "./filler.js";
 
 export const CHANNEL_ID = /^[a-z0-9][a-z0-9-]*$/;
 const CHANNELS_URL = new URL("./", import.meta.url);
@@ -514,7 +514,6 @@ export class BroadcastPlayer {
     this.bumpRenderer = bumpContainer ? new BumpRenderer(bumpContainer) : null;
     // Filler is what keeps a channel from ever going to silent dead air; see filler.js and _syncFiller().
     this.fillerRenderer = fillerContainer ? new FillerRenderer(fillerContainer) : null;
-    this.fillerBed = new FillerBed();
 
     this.tick = this.tick.bind(this);
   }
@@ -548,7 +547,6 @@ export class BroadcastPlayer {
     this.continuityRenderer?.setMuted(muted);
     this.bumpRenderer?.setMuted(muted);
     this.fillerRenderer?.setMuted(muted);
-    this.fillerBed.setMuted(muted);
   }
 
   /** Patches fields onto the current channelMeta in place, for data that
@@ -574,22 +572,20 @@ export class BroadcastPlayer {
    *  no adapter) and a failed load. A load that is merely being RETRIED
    *  counts too (`failures` is cleared by switchTo() and by "playing"), so
    *  each retry doesn't flash the stuck video in and out of the filler. A
-   *  continuity card gets a quiet music bed instead of a whole filler
-   *  scene: it already has its own picture and voice-over. */
+   *  continuity card also sits over the filler (its own background is
+   *  dropped; see ContinuityRenderer.show()'s `overlay`), with the beds
+   *  turned down for its voice-over. */
   _syncFiller() {
     const state = this.state;
     const retrying = (state === "loading" || state === "buffering") && this.failures > 0 && !this.retriesExhausted;
-    const deadAir = state === "slate" || state === "error" || retrying;
-    const channelId = this.channelMeta?.id ?? "";
-    if (deadAir && this.fillerRenderer) {
-      if (!this.fillerRenderer.visible) this.fillerRenderer.show(channelId, now, this.muted);
-    } else if (this.fillerRenderer?.visible) {
-      this.fillerRenderer.hide();
-    }
-    if (state === "continuity") {
-      if (!this.fillerBed.audio?.src) this.fillerBed.start(channelId, now, this.muted);
-    } else {
-      this.fillerBed.stop();
+    const quiet = state === "continuity";
+    const wanted = state === "slate" || state === "error" || retrying || quiet;
+    const filler = this.fillerRenderer;
+    if (!filler) return;
+    if (!wanted) {
+      if (filler.visible) filler.hide();
+    } else if (!filler.visible || filler.quiet !== quiet) {
+      filler.show(this.channelMeta?.id ?? "", now, this.muted, { quiet });
     }
   }
 
@@ -698,6 +694,7 @@ export class BroadcastPlayer {
         airing.template,
         this.channelMeta?.bumperTheme ?? null,
         audioUrl,
+        !!this.fillerRenderer,
       );
       this.continuityRenderer.setMuted(this.muted);
       this.setState("continuity");
@@ -736,7 +733,6 @@ export class BroadcastPlayer {
     this.continuityRenderer?.destroy();
     this.bumpRenderer?.destroy();
     this.fillerRenderer?.destroy();
-    this.fillerBed.destroy();
   }
 
   load() {
