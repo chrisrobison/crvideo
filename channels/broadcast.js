@@ -20,6 +20,7 @@ import {
   Html5PlayerAdapter, YouTubePlayerAdapter, ContinuityRenderer, BumpRenderer,
   resolveProvider, computeBackoffMs, computeDriftCorrection, locateActiveBump,
 } from "./player-adapters.js";
+import { FillerRenderer, FillerBed } from "./filler.js";
 
 export const CHANNEL_ID = /^[a-z0-9][a-z0-9-]*$/;
 const CHANNELS_URL = new URL("./", import.meta.url);
@@ -482,8 +483,8 @@ const MAX_RETRIES_PER_PROGRAM = 5; // bounded: after this many failures, stop re
  * | "bump".
  */
 export class BroadcastPlayer {
-  constructor(video, { youtubeContainer = null, continuityContainer = null, bumpContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
-    Object.assign(this, { video, youtubeContainer, continuityContainer, bumpContainer, onAiring, onState });
+  constructor(video, { youtubeContainer = null, continuityContainer = null, bumpContainer = null, fillerContainer = null, onAiring = () => {}, onState = () => {} } = {}) {
+    Object.assign(this, { video, youtubeContainer, continuityContainer, bumpContainer, fillerContainer, onAiring, onState });
     this.timeline = null;
     this.airing = null;
     this.state = null;
@@ -511,6 +512,9 @@ export class BroadcastPlayer {
     // and bumps never show.
     this.continuityRenderer = continuityContainer ? new ContinuityRenderer(continuityContainer) : null;
     this.bumpRenderer = bumpContainer ? new BumpRenderer(bumpContainer) : null;
+    // Filler is what keeps a channel from ever going to silent dead air; see filler.js and _syncFiller().
+    this.fillerRenderer = fillerContainer ? new FillerRenderer(fillerContainer) : null;
+    this.fillerBed = new FillerBed();
 
     this.tick = this.tick.bind(this);
   }
@@ -543,6 +547,8 @@ export class BroadcastPlayer {
     // Narration and bumps are channel audio too: the viewer's choice follows them.
     this.continuityRenderer?.setMuted(muted);
     this.bumpRenderer?.setMuted(muted);
+    this.fillerRenderer?.setMuted(muted);
+    this.fillerBed.setMuted(muted);
   }
 
   /** Patches fields onto the current channelMeta in place, for data that
@@ -560,7 +566,31 @@ export class BroadcastPlayer {
   setState(state) {
     if (state === this.state) return;
     this.state = state;
+    this._syncFiller();
     this.onState(state, this.airing);
+  }
+
+  /** Dead air is the slate (a gap, a file that ended early, a provider with
+   *  no adapter) and a failed load. A load that is merely being RETRIED
+   *  counts too (`failures` is cleared by switchTo() and by "playing"), so
+   *  each retry doesn't flash the stuck video in and out of the filler. A
+   *  continuity card gets a quiet music bed instead of a whole filler
+   *  scene: it already has its own picture and voice-over. */
+  _syncFiller() {
+    const state = this.state;
+    const retrying = (state === "loading" || state === "buffering") && this.failures > 0 && !this.retriesExhausted;
+    const deadAir = state === "slate" || state === "error" || retrying;
+    const channelId = this.channelMeta?.id ?? "";
+    if (deadAir && this.fillerRenderer) {
+      if (!this.fillerRenderer.visible) this.fillerRenderer.show(channelId, now, this.muted);
+    } else if (this.fillerRenderer?.visible) {
+      this.fillerRenderer.hide();
+    }
+    if (state === "continuity") {
+      if (!this.fillerBed.audio?.src) this.fillerBed.start(channelId, now, this.muted);
+    } else {
+      this.fillerBed.stop();
+    }
   }
 
   tick() {
@@ -705,6 +735,8 @@ export class BroadcastPlayer {
     this.adapters.youtube?.destroy();
     this.continuityRenderer?.destroy();
     this.bumpRenderer?.destroy();
+    this.fillerRenderer?.destroy();
+    this.fillerBed.destroy();
   }
 
   load() {

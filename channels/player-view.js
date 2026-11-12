@@ -75,6 +75,7 @@ video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: con
   padding: clamp(14px,6vh,72px) clamp(12px,6vw,96px); background: radial-gradient(circle at 30% 35%,#1b2643,#020306 75%); }
 .card { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: clamp(16px,5vw,88px); align-items: center; width: min(1400px,100%); }
 .card img { display: block; height: clamp(28px,9vh,96px); margin-bottom: clamp(10px,4vh,40px); }
+.fillerHost:not([hidden]) ~ .slate { background: none; }
 .slate .label { color: var(--accent); font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: clamp(11px,1.4vw,18px); }
 .upnext .title { font-size: clamp(20px,4.8vw,76px); font-weight: 800; line-height: 1.05; margin: 8px 0 12px; text-wrap: balance; }
 .upnext .when { font-size: clamp(14px,2vw,28px); font-variant-numeric: tabular-nums; }
@@ -103,6 +104,7 @@ video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: con
 .continuityHost cr-continuity-card { position: absolute; inset: 0; }
 .bumpHost { position: absolute; inset: 0; }
 .bumpHost cr-bump { position: absolute; inset: 0; }
+.fillerHost { position: absolute; inset: 0; }
 
 .bug { position: absolute; top: clamp(8px,3vh,32px); right: clamp(8px,3vw,40px); height: clamp(20px,6vh,64px); opacity: .55; pointer-events: none; }
 
@@ -141,6 +143,7 @@ video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: con
 <div class="ytPlayer" hidden></div>
 <div class="continuityHost" hidden></div>
 <div class="bumpHost" hidden></div>
+<div class="fillerHost" hidden></div>
 
 <div class="slate" hidden>
   <div class="card">
@@ -208,6 +211,7 @@ export class ChannelPlayer extends HTMLElementBase {
       youtubeContainer: q(".ytPlayer"),
       continuityContainer: q(".continuityHost"),
       bumpContainer: q(".bumpHost"),
+      fillerContainer: q(".fillerHost"),
       onAiring: (airing) => this._onAiring(airing),
       onState: (state, airing) => this._onState(state, airing),
     });
@@ -309,7 +313,7 @@ export class ChannelPlayer extends HTMLElementBase {
     q(".lName").textContent = next.name;
     if (next.number != null) this._flashOsd(String(next.number));
     this.player.setTimeline(next.timeline, {
-      name: next.name, logo: next.logo, theme: next.theme, bumperTheme: this._bumperTheme, announcements: this._announcements,
+      id: next.id, name: next.name, logo: next.logo, theme: next.theme, bumperTheme: this._bumperTheme, announcements: this._announcements,
       bumpSchedule: this._bumpSchedule, bumpDefinitions: this._bumpDefinitions,
     });
     this._updateHint();

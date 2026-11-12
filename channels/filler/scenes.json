@@ -1,0 +1,18 @@
+{
+  "_note": "Bump ids (bumps/<id>.json) whose looping video and/or audio beds the player rotates through as filler when nothing is on air (see channels/filler.js). Only the background and audio layers are used; their announcement and upcoming-show text are stripped. Keep at least one entry that has no video, so a missing video file still leaves a silent-free card.",
+  "schema_version": 1,
+  "bumps": [
+    "forest-interlude",
+    "ocean-drift",
+    "prairie-sunset",
+    "jungle-expedition",
+    "night-owl",
+    "workshop-hour",
+    "lecture-hall-intermission",
+    "retro-station-break",
+    "comedy-club-spotlight",
+    "film-day-reel-change",
+    "ustv-ident",
+    "simple-color-card"
+  ]
+}
