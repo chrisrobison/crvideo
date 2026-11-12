@@ -267,8 +267,9 @@ export class Html5PlayerAdapter extends PlayerAdapter {
     });
     // A broadcast never stays paused: whatever paused it (a media key, the
     // OS), pick right back up, unless we're mid-error/idle.
+    // pause() below is deliberate (switching away) and sets `_suspended`, which this respects.
     video.addEventListener("pause", () => {
-      if (this.state !== "idle" && this.state !== "error" && !video.ended) this.play();
+      if (!this._suspended && this.state !== "idle" && this.state !== "error" && !video.ended) this.play();
     });
   }
 
@@ -279,6 +280,7 @@ export class Html5PlayerAdapter extends PlayerAdapter {
   }
 
   load(url, offsetSeconds = 0) {
+    this._suspended = false;
     this._setState("loading");
     if (this._onLoadedMetadata) this.video.removeEventListener("loadedmetadata", this._onLoadedMetadata);
     this._onLoadedMetadata = () => this.seek(offsetSeconds);
@@ -289,11 +291,16 @@ export class Html5PlayerAdapter extends PlayerAdapter {
   }
 
   play() {
+    this._suspended = false;
     const p = this.video.play();
     if (p) p.catch((err) => { if (err.name === "NotAllowedError") this._setState("blocked"); });
   }
 
+  /** A deliberate pause (the adapter was switched away from, or a bump is
+   *  drawn over it): stays paused until load()/play(), unlike an external
+   *  pause, which the "never stays paused" listener undoes. */
   pause() {
+    this._suspended = true;
     this.video.pause();
   }
 
@@ -320,6 +327,7 @@ export class Html5PlayerAdapter extends PlayerAdapter {
   }
 
   destroy() {
+    this._suspended = true;
     if (this._onLoadedMetadata) this.video.removeEventListener("loadedmetadata", this._onLoadedMetadata);
     this.video.pause();
     this.video.removeAttribute("src");
@@ -384,6 +392,7 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
     this.muted = true;
     this._blockTimer = 0;
     this._playerPromise = null;
+    this._suspended = false;
   }
 
   _setState(state) {
@@ -429,7 +438,7 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
     else if (e.data === YT.PlayerState.ENDED) this._setState("ended");
     else if (e.data === YT.PlayerState.PAUSED) {
       // Same "a broadcast never stays paused" rule as Html5PlayerAdapter.
-      if (this.state !== "idle" && this.state !== "error") this.play();
+      if (!this._suspended && this.state !== "idle" && this.state !== "error") this.play();
     }
   }
 
@@ -445,8 +454,11 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
   }
 
   async load(videoId, offsetSeconds = 0) {
+    this._suspended = false;
     this._setState("loading");
     const player = await this._ensurePlayer();
+    // pause() arrived while the API/player was still loading: don't start a video nobody is watching.
+    if (this._suspended) return;
     player.loadVideoById({ videoId, startSeconds: Math.max(0, offsetSeconds) });
     if (this.muted) player.mute(); else { player.unMute(); player.setVolume(100); }
 
@@ -460,10 +472,14 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
   }
 
   play() {
+    this._suspended = false;
     this.player?.playVideo?.();
   }
 
+  /** A deliberate pause: stays paused until load()/play() (see Html5PlayerAdapter.pause()). */
   pause() {
+    this._suspended = true;
+    clearTimeout(this._blockTimer);
     this.player?.pauseVideo?.();
   }
 
@@ -492,6 +508,7 @@ export class YouTubePlayerAdapter extends PlayerAdapter {
   }
 
   destroy() {
+    this._suspended = true;
     clearTimeout(this._blockTimer);
     this.player?.destroy?.();
     this.player = null;
