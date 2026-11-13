@@ -123,6 +123,47 @@ final class AdminSupportTest
         rmdir($dir);
     }
 
+    public function testAtomicWriteLeavesTheFileAndBackupGroupWritable(): void
+    {
+        // The web server (www-data) and the CLI user share these files via the www-data group, so
+        // neither the live file nor its .bak may be left 644.
+        $dir = sys_get_temp_dir() . '/admin-support-test-' . bin2hex(random_bytes(4));
+        mkdir($dir, 0775, true);
+        $path = "$dir/x.json";
+        admin_atomic_write_json($path, ['v' => 1]);
+        admin_atomic_write_json($path, ['v' => 2]);
+
+        Assert::true((fileperms($path) & 0020) !== 0, 'live file should be group-writable');
+        Assert::true((fileperms("$path.bak") & 0020) !== 0, '.bak should be group-writable');
+
+        foreach (glob("$dir/*") ?: [] as $f) {
+            unlink($f);
+        }
+        rmdir($dir);
+    }
+
+    public function testAtomicWriteReplacesAStaleReadOnlyBackupInsteadOfFailing(): void
+    {
+        // A .bak left by the OTHER user is often not writable by us. Overwriting it fails
+        // ("Failed to back up existing file"); replacing it needs only the directory's write bit.
+        $dir = sys_get_temp_dir() . '/admin-support-test-' . bin2hex(random_bytes(4));
+        mkdir($dir, 0775, true);
+        $path = "$dir/x.json";
+        admin_atomic_write_json($path, ['v' => 1]);
+        file_put_contents("$path.bak", '{"v":0}');
+        chmod("$path.bak", 0444);
+
+        admin_atomic_write_json($path, ['v' => 2]);
+
+        Assert::same(1, json_decode(file_get_contents("$path.bak"), true)['v'], 'backup now holds the previous version');
+        Assert::same(2, json_decode(file_get_contents($path), true)['v']);
+
+        foreach (glob("$dir/*") ?: [] as $f) {
+            unlink($f);
+        }
+        rmdir($dir);
+    }
+
     // ---------- subprocess runner ----------
 
     public function testRunSubprocessUsesArgvArrayNeverAShellString(): void

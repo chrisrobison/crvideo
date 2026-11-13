@@ -2,6 +2,8 @@
 <?php
 declare(strict_types=1);
 
+umask(0002); // new files 664 / dirs 775 (dirs are setgid www-data): the web server and the CLI user both write these trees
+
 // channels/publish.php
 //
 // Compiles a channel's recurring-series programming (channels/<id>/

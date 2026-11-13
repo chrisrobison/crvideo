@@ -244,6 +244,25 @@ through the existing dry-run publishing interface" the feature spec
 allows in place of a bespoke visual timeline; a richer visual rendering
 of the same dry-run data remains a nice-to-have for a future pass.
 
+## File permissions (www-data + CLI user share the data trees)
+
+The web server (`www-data`) and the CLI user (cron, `publish.php`, importers)
+both write `series/`, `channels/<id>/`, `bumps/`, `media/`, `cache/` and
+`playlist.json`. Every write is temp-file-then-rename plus a one-generation
+`.bak`, which needs the **directory** to be group-writable: a 755 directory
+makes approving an episode fail with "Failed to back up existing file before
+overwriting: .../series.json.bak".
+
+- Directories are `2775` (setgid, group `www-data`) and files `664`.
+  `server/fix-permissions.sh` re-applies this to the data trees (code is never
+  touched) and is safe to re-run after a checkout/restore.
+- Every writing entry point (`server/*-admin.php`, `publish-playlist.php`,
+  `download-cache.php`, `channels/publish.php`, `announce*.php`, the importers)
+  sets `umask(0002)`, and the atomic writers `chmod 664` what they produce, so
+  new files stay shareable.
+- A stale `.bak` left by the other user is replaced (unlink + copy), not
+  overwritten, so it can no longer block a save.
+
 ## Safety model
 
 - **Id/path whitelisting** (`server/lib/AdminSupport.php`): every id
