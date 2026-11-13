@@ -118,7 +118,7 @@ export const uiKitCSS = `
 
   /* Buttons (extends baseComponentCSS) */
   button{ display:inline-flex; align-items:center; justify-content:center; gap:7px; border-radius:9px; padding:8px 14px; font-weight:600; font-size:13px; }
-  button.primary{ box-shadow:0 4px 14px rgba(109,93,252,.35); }
+  button.primary{ box-shadow:0 4px 14px rgba(74,127,216,.35); }
   button.sm{ padding:5px 10px; font-size:12px; border-radius:8px; }
   button.icon{ padding:7px; width:34px; height:34px; border-radius:9px; background:var(--panel-2); }
   button.outline{ background:transparent; border-color:#3a4373; }
@@ -132,21 +132,21 @@ export const uiKitCSS = `
   .pill[data-tone="approved"],.pill[data-tone="good"]{ background:rgba(34,197,94,.13); border-color:rgba(34,197,94,.55); color:#8fe3ac; }
   .pill[data-tone="rejected"],.pill[data-tone="bad"]{ background:rgba(239,68,68,.13); border-color:rgba(239,68,68,.55); color:#ffa6a6; }
   .pill[data-tone="disabled"],.pill[data-tone="neutral"]{ background:rgba(120,130,170,.14); border-color:rgba(120,130,170,.4); color:#b7bfdc; }
-  .pill[data-tone="accent"]{ background:var(--accent-soft); border-color:var(--accent-line); color:#cfc8ff; }
+  .pill[data-tone="accent"]{ background:var(--accent-soft); border-color:var(--accent-line); color:#c4d7fb; }
   .chip-row{ display:flex; gap:7px; flex-wrap:wrap; }
   .chip{ padding:5px 13px; border-radius:999px; font-size:12.5px; font-weight:600; background:transparent; color:var(--text-muted); border:1px solid var(--border); }
   .chip:hover{ color:var(--text); border-color:#4a5486; }
-  .chip.on{ background:var(--accent); border-color:var(--accent); color:#fff; box-shadow:0 3px 10px rgba(109,93,252,.35); }
+  .chip.on{ background:var(--accent); border-color:var(--accent); color:#fff; box-shadow:0 3px 10px rgba(74,127,216,.35); }
   .chip .n{ opacity:.8; margin-left:4px; }
 
   /* Tabs */
   .tabs{ display:flex; gap:4px; }
   .tabs.pill-tabs{ background:rgba(10,13,28,.6); border:1px solid var(--border); border-radius:11px; padding:4px; }
   .tabs.pill-tabs button{ flex:1; background:transparent; border:1px solid transparent; color:var(--text-muted); padding:7px 12px; }
-  .tabs.pill-tabs button.on{ background:var(--accent); color:#fff; box-shadow:0 3px 10px rgba(109,93,252,.4); }
+  .tabs.pill-tabs button.on{ background:var(--accent); color:#fff; box-shadow:0 3px 10px rgba(74,127,216,.4); }
   .tabs.line-tabs{ border-bottom:1px solid var(--border-soft); padding:0 12px; }
   .tabs.line-tabs button{ background:transparent; border:0; border-bottom:2px solid transparent; border-radius:0; color:var(--text-muted); padding:11px 14px; }
-  .tabs.line-tabs button.on{ color:var(--text); border-bottom-color:var(--accent-hi); background:linear-gradient(180deg, transparent, rgba(109,93,252,.14)); }
+  .tabs.line-tabs button.on{ color:var(--text); border-bottom-color:var(--accent-hi); background:linear-gradient(180deg, transparent, rgba(74,127,216,.14)); }
   .seg{ display:inline-flex; background:rgba(10,13,28,.6); border:1px solid var(--border); border-radius:10px; padding:3px; }
   .seg button{ background:transparent; border:0; color:var(--text-muted); padding:6px 16px; border-radius:8px; }
   .seg button.on{ background:var(--accent); color:#fff; }

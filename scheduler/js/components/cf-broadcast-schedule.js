@@ -278,12 +278,12 @@ class CfBroadcastSchedule extends HTMLElement {
         .navitem{ display:flex; justify-content:flex-start; align-items:center; gap:11px; padding:10px 12px; border-radius:10px; cursor:pointer; color:var(--text); font-size:14px; border:0; background:transparent; width:100%; text-align:left; font-weight:500; }
         .navitem svg{ color:var(--text-muted); }
         .navitem:hover{ background:rgba(255,255,255,.05); }
-        .navitem.on{ background:rgba(109,93,252,.32); box-shadow:inset 0 0 0 1px var(--accent-line); }
+        .navitem.on{ background:rgba(74,127,216,.32); box-shadow:inset 0 0 0 1px var(--accent-line); }
         .navitem.on svg{ color:#fff; }
         .hr{ height:1px; background:var(--border-soft); margin:10px 0; }
         .ver{ display:flex; gap:11px; padding:9px 10px; border-radius:10px; cursor:pointer; align-items:flex-start; border:1px solid transparent; }
         .ver:hover{ background:rgba(255,255,255,.04); }
-        .ver.on{ border-color:var(--accent-line); background:rgba(109,93,252,.14); }
+        .ver.on{ border-color:var(--accent-line); background:rgba(74,127,216,.14); }
         .ver.off{ opacity:.55; cursor:default; }
         .ver .dot{ width:10px; height:10px; border-radius:50%; margin-top:5px; flex-shrink:0; }
         .ver b{ font-size:14.5px; }
@@ -305,9 +305,9 @@ class CfBroadcastSchedule extends HTMLElement {
         .row .t{ text-align:right; color:var(--text-muted); font-size:13px; }
         .card{ display:flex; align-items:center; gap:12px; border:1px solid; border-radius:10px; padding:7px 14px 7px 8px; cursor:pointer; min-width:0; position:relative; }
         .card.program{ min-height:54px; }
-        .card.bump,.card.filler{ min-height:40px; background:linear-gradient(90deg,#3a2a78,#2c2262); border-color:#5a45b4; color:#ece6ff; }
-        .card.filler{ background:linear-gradient(90deg,#2a2552,#221d48); border-color:#473d92; }
-        .card.sel{ outline:2px solid #fff; outline-offset:-1px; box-shadow:0 0 0 3px rgba(109,93,252,.5); }
+        .card.bump,.card.filler{ min-height:40px; background:linear-gradient(90deg,#263a66,#1f2f55); border-color:#3f5f9c; color:#e3ecff; }
+        .card.filler{ background:linear-gradient(90deg,#1d2a4d,#18233f); border-color:#344f86; }
+        .card.sel{ outline:2px solid #fff; outline-offset:-1px; box-shadow:0 0 0 3px rgba(74,127,216,.5); }
         .card.past{ opacity:.55; }
         .card .thumb{ width:76px; height:44px; border-radius:6px; }
         .card .ico{ width:44px; height:28px; display:grid; place-items:center; flex-shrink:0; opacity:.9; }
@@ -338,8 +338,8 @@ class CfBroadcastSchedule extends HTMLElement {
         table.rd th{ position:sticky; top:0; background:#151a35; text-align:left; padding:9px 12px; color:var(--text-muted); font-weight:600; font-size:12px; border-bottom:1px solid var(--border); z-index:2; }
         table.rd td{ padding:8px 12px; border-bottom:1px solid var(--border-soft); white-space:nowrap; max-width:340px; overflow:hidden; text-overflow:ellipsis; }
         table.rd tr{ cursor:pointer; }
-        table.rd tr:hover td{ background:rgba(109,93,252,.08); }
-        table.rd tr.sel td{ background:rgba(109,93,252,.22); }
+        table.rd tr:hover td{ background:rgba(74,127,216,.08); }
+        table.rd tr.sel td{ background:rgba(74,127,216,.22); }
         table.rd tr.past td{ opacity:.5; }
         table.rd tr.now td{ background:rgba(239,68,68,.12); }
 
@@ -348,7 +348,7 @@ class CfBroadcastSchedule extends HTMLElement {
         .insp-top .pic .thumb{ width:100%; height:100%; border-radius:0; }
         .insp-top .pic .play{ position:absolute; inset:0; display:grid; place-items:center; }
         .insp-top .pic .play span{ width:50px; height:50px; border-radius:50%; background:rgba(15,18,40,.72); border:2px solid rgba(255,255,255,.85); display:grid; place-items:center; }
-        .insp-top .pic.bumpic{ display:grid; place-items:center; background:linear-gradient(135deg,#3a2a78,#241c52); color:#cbbcff; cursor:default; }
+        .insp-top .pic.bumpic{ display:grid; place-items:center; background:linear-gradient(135deg,#263a66,#1b2a4f); color:#b8cdf5; cursor:default; }
         .insp-top h3{ margin:0; font-size:20px; font-weight:750; }
         .insp-top .ep{ font-size:13.5px; color:var(--text-muted); margin-top:4px; }
         .insp-top .meta{ display:flex; align-items:center; gap:8px; margin-top:8px; color:var(--text-muted); font-size:13px; }
@@ -367,7 +367,7 @@ class CfBroadcastSchedule extends HTMLElement {
         .cmp-table table{ width:100%; border-collapse:collapse; font-size:13px; }
         .cmp-table th{ position:sticky; top:0; background:#171c38; text-align:left; padding:8px 12px; color:var(--text-muted); font-weight:600; z-index:2; }
         .cmp-table td{ padding:7px 12px; border-top:1px solid var(--border-soft); vertical-align:middle; }
-        .cmp-table tr.changed td{ background:rgba(109,93,252,.2); }
+        .cmp-table tr.changed td{ background:rgba(74,127,216,.2); }
         .cmp-table tr.added td{ background:rgba(34,197,94,.1); }
         .cmp-table tr.removed td{ background:rgba(239,68,68,.1); }
         .cmp-table .cell{ display:flex; gap:10px; align-items:center; min-width:0; }

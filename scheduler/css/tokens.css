@@ -13,12 +13,12 @@
   --text-muted: #9099b8;
   --text-faint: #5f6889;
 
-  /* ChannelFlow revamp: violet primary, as in the mockups. */
-  --accent: #6d5dfc;
-  --accent-hi: #8576ff;
-  --accent-dim: #4b3fc4;
-  --accent-soft: rgba(109,93,252,.18);
-  --accent-line: rgba(133,118,255,.55);
+  /* ChannelFlow revamp: a soft blue primary. */
+  --accent: #4a7fd8;
+  --accent-hi: #6f9be8;
+  --accent-dim: #3a64b0;
+  --accent-soft: rgba(74,127,216,.18);
+  --accent-line: rgba(111,155,232,.55);
 
   --live: #ef4444;
   --live-soft: rgba(239,68,68,.16);
@@ -35,11 +35,11 @@
 
   /* Per-series swatches for grids/schedules (bg, border, text). Indexed by hash. */
   --sw-0-bg:#0f4a63; --sw-0-bd:#1b86a8; --sw-0-fg:#d8f4ff;
-  --sw-1-bg:#4a2f8f; --sw-1-bd:#7b57da; --sw-1-fg:#ece4ff;
+  --sw-1-bg:#2f3f78; --sw-1-bd:#6279d0; --sw-1-fg:#e6ecff;
   --sw-2-bg:#17532f; --sw-2-bd:#2f9a58; --sw-2-fg:#d9f8e4;
   --sw-3-bg:#6b4515; --sw-3-bd:#c0842f; --sw-3-fg:#ffeacc;
   --sw-4-bg:#6a2147; --sw-4-bd:#c04b86; --sw-4-fg:#ffe0ef;
-  --sw-5-bg:#1e3f8f; --sw-5-bd:#4a7fe8; --sw-5-fg:#dce8ff;
+  --sw-5-bg:#1c5a8a; --sw-5-bd:#4aa0e0; --sw-5-fg:#dcefff;
   --sw-6-bg:#5a5a16; --sw-6-bd:#b3b034; --sw-6-fg:#fbfad0;
   --sw-7-bg:#5b2a2a; --sw-7-bd:#c46060; --sw-7-fg:#ffdede;
 
@@ -60,7 +60,7 @@ html,body{ height:100%; }
 body{
   margin:0;
   background:
-    radial-gradient(1200px 600px at 12% -10%, rgba(109,93,252,.10), transparent 60%),
+    radial-gradient(1200px 600px at 12% -10%, rgba(74,127,216,.10), transparent 60%),
     radial-gradient(900px 500px at 100% 0%, rgba(20,184,196,.06), transparent 55%),
     var(--bg);
   background-attachment:fixed;

@@ -359,8 +359,8 @@ class CfChannelAdmin extends HTMLElement {
         .shows-head h2{ margin:0; font-size:20px; font-weight:750; flex:1; letter-spacing:-.01em; }
         .shows-tools{ padding:0 16px 12px; display:flex; flex-direction:column; gap:10px; }
         .show{ display:flex; align-items:center; gap:12px; padding:9px 10px; margin:2px 8px; border-radius:11px; cursor:pointer; border:1px solid transparent; }
-        .show:hover{ background:rgba(109,93,252,.07); }
-        .show.on{ background:rgba(109,93,252,.2); border-color:var(--accent-line); }
+        .show:hover{ background:rgba(74,127,216,.07); }
+        .show.on{ background:rgba(74,127,216,.2); border-color:var(--accent-line); }
         .show .thumb{ width:64px; height:44px; }
         .show .meta{ flex:1; min-width:0; }
         .show .t{ font-weight:650; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
@@ -392,7 +392,7 @@ class CfChannelAdmin extends HTMLElement {
           display:flex; flex-direction:column; justify-content:center; box-shadow:0 1px 0 rgba(255,255,255,.06) inset; }
         .blk b{ font-size:12.5px; font-weight:700; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
         .blk span{ font-size:11.5px; opacity:.9; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-        .blk.sel{ outline:2px solid #fff; outline-offset:-1px; box-shadow:0 0 0 3px rgba(133,118,255,.55); z-index:3; }
+        .blk.sel{ outline:2px solid #fff; outline-offset:-1px; box-shadow:0 0 0 3px rgba(111,155,232,.55); z-index:3; }
         .blk.dim{ opacity:.28; }
         .blk.dirty::after{ content:""; position:absolute; top:4px; right:4px; width:7px; height:7px; border-radius:50%; background:#facc15; }
         .nowline{ position:absolute; left:0; right:0; height:2px; background:var(--live); z-index:2; pointer-events:none; }

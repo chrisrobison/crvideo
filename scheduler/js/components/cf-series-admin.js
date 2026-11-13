@@ -195,8 +195,8 @@ class CfSeriesAdmin extends HTMLElement {
         .workspace{ grid-template-columns:330px minmax(0,1fr) 400px; }
         .lib-tools{ padding:0 14px 12px; display:flex; flex-direction:column; gap:10px; }
         .series-row{ display:flex; align-items:center; gap:12px; padding:9px 14px; cursor:pointer; border-bottom:1px solid var(--border-soft); }
-        .series-row:hover{ background:rgba(109,93,252,.07); }
-        .series-row.on{ background:rgba(109,93,252,.22); box-shadow:inset 0 0 0 1px var(--accent-line); border-radius:11px; margin:2px 8px; padding:9px 8px; border-bottom-color:transparent; }
+        .series-row:hover{ background:rgba(74,127,216,.07); }
+        .series-row.on{ background:rgba(74,127,216,.22); box-shadow:inset 0 0 0 1px var(--accent-line); border-radius:11px; margin:2px 8px; padding:9px 8px; border-bottom-color:transparent; }
         .series-row .thumb{ width:52px; height:52px; border-radius:9px; }
         .series-row .meta{ flex:1; min-width:0; }
         .series-row .t{ font-weight:650; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
@@ -216,8 +216,8 @@ class CfSeriesAdmin extends HTMLElement {
         .sortdir{ width:34px; padding:0; }
         .ep-list{ flex:1; min-height:0; overflow:auto; padding:0 10px 6px; }
         .ep-row{ display:flex; align-items:center; gap:12px; padding:9px 10px; border-radius:11px; cursor:pointer; border:1px solid transparent; border-bottom-color:var(--border-soft); }
-        .ep-row:hover{ background:rgba(109,93,252,.07); }
-        .ep-row.on{ background:rgba(109,93,252,.2); border-color:var(--accent-line); }
+        .ep-row:hover{ background:rgba(74,127,216,.07); }
+        .ep-row.on{ background:rgba(74,127,216,.2); border-color:var(--accent-line); }
         .ep-thumb{ position:relative; width:100px; height:56px; flex-shrink:0; }
         .ep-thumb .thumb{ width:100%; height:100%; }
         .ep-thumb .dur{ position:absolute; left:5px; bottom:4px; font-size:11px; font-weight:700; background:rgba(0,0,0,.72); padding:1px 5px; border-radius:4px; }
@@ -257,7 +257,7 @@ class CfSeriesAdmin extends HTMLElement {
         .decision-btns{ display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:0 16px 16px; flex-shrink:0; }
         .desc p{ max-height:110px !important; }
         .decision-btns button{ padding:12px; font-size:15px; }
-        .decision-btns .primary{ box-shadow:0 6px 20px rgba(109,93,252,.4); }
+        .decision-btns .primary{ box-shadow:0 6px 20px rgba(74,127,216,.4); }
         .tab-pane{ padding:16px 18px; overflow:auto; flex:1; min-height:0; }
         .stat-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin-bottom:16px; }
         .stat{ background:rgba(10,13,28,.55); border:1px solid var(--border); border-radius:11px; padding:12px; }

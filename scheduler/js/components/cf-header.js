@@ -234,13 +234,13 @@ class CfHeader extends HTMLElement {
             background:linear-gradient(180deg, rgba(16,20,42,.96), rgba(11,14,30,.96)); backdrop-filter:blur(8px); }
           .logo{ display:flex; align-items:center; gap:9px; font-weight:800; font-size:19px; letter-spacing:-.02em; padding-right:16px;
             border-right:1px solid var(--border); height:30px; }
-          .logo svg{ color:var(--accent-hi); filter:drop-shadow(0 0 8px rgba(109,93,252,.55)); }
+          .logo svg{ color:var(--accent-hi); filter:drop-shadow(0 0 8px rgba(74,127,216,.55)); }
           nav{ display:flex; gap:4px; }
           nav a{ display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:var(--text-muted); text-decoration:none;
             padding:8px 14px; border-radius:10px; border:1px solid transparent; cursor:pointer; user-select:none; }
           nav a:hover{ color:var(--text); background:rgba(255,255,255,.04); }
-          nav a.active{ color:#fff; background:linear-gradient(180deg, rgba(109,93,252,.55), rgba(88,72,224,.55)); border-color:var(--accent-line);
-            box-shadow:0 0 0 1px rgba(109,93,252,.15), 0 4px 16px rgba(109,93,252,.28); }
+          nav a.active{ color:#fff; background:linear-gradient(180deg, rgba(74,127,216,.55), rgba(58,100,176,.55)); border-color:var(--accent-line);
+            box-shadow:0 0 0 1px rgba(74,127,216,.15), 0 4px 16px rgba(74,127,216,.28); }
           .spacer{ flex:1 1 auto; }
           .network{ display:flex; align-items:center; gap:9px; padding:8px 14px; border:1px solid var(--border); border-radius:10px;
             background:rgba(24,30,59,.7); font-weight:600; font-size:14px; }
