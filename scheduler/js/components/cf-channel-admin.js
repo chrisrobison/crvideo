@@ -28,7 +28,7 @@
 // can change channel programming and announcer config and trigger a real
 // publish or a real `claude`+Kokoro generation run from here.
 
-import { baseComponentCSS, escapeHtml, toast } from "../utils.js";
+import { baseComponentCSS, escapeHtml, toast, appMediaUrl } from "../utils.js";
 import { channelAdminApi, seriesAdminApi, announcerAdminApi } from "../admin-api.js";
 import { TOPICS, publish, subscribe } from "../../../js/bus.js";
 import { icon, uiKitCSS, thumbHtml, swatchStyle, wireMenus } from "./ui-kit.js";
@@ -75,7 +75,7 @@ function announcerRowHtml(entry) {
         <button class="an-regen-btn ghost" data-transition="${escapeHtml(entry.transitionId || "")}">Regenerate</button>
       </div>
       <div class="an-row-text">${escapeHtml(entry.text || "")}</div>
-      ${entry.audio ? `<audio controls preload="none" src="${escapeHtml(entry.audio)}"></audio>` : `<span class="muted">No audio yet.</span>`}
+      ${entry.audio ? `<audio controls preload="none" src="${escapeHtml(appMediaUrl(entry.audio))}"></audio>` : `<span class="muted">No audio yet.</span>`}
     </div>
   `;
 }
@@ -1120,7 +1120,7 @@ class CfChannelAdmin extends HTMLElement {
         const { url } = await announcerAdminApi.previewVoice(channelId, voice);
         const audio = section.querySelector(".an-preview-audio");
         audio.hidden = false;
-        audio.src = url;
+        audio.src = appMediaUrl(url);
         audio.play?.().catch(() => { /* autoplay refused -- the visible controls still let the editor hit play */ });
       } catch (e) {
         toast(e.message, "danger");

@@ -20,7 +20,7 @@
 // printed. The original Drive/live-playlist scheduler is untouched and lives
 // at ?view=legacy-schedule.
 
-import { baseComponentCSS, escapeHtml, toast } from "../utils.js";
+import { baseComponentCSS, escapeHtml, toast, appMediaUrl } from "../utils.js";
 import { channelAdminApi, scheduleFileApi } from "../admin-api.js";
 import { TOPICS, publish, subscribe } from "../../../js/bus.js";
 import { icon, uiKitCSS, thumbHtml, swatchStyle } from "./ui-kit.js";
@@ -697,7 +697,7 @@ class CfBroadcastSchedule extends HTMLElement {
       const nextProgId = it.type === "continuity" ? it.nextItem?.programId : null;
       const hits = this._announcements.filter((a) => a.toProgramId === pid || a.fromProgramId === pid || (nextProgId && a.toProgramId === nextProgId));
       return `${it.type === "continuity" ? `<div class="kv"><div>Template</div><div>${escapeHtml(it.raw.template || "—")}</div><div>Up next</div><div>${escapeHtml(it.nextItem?.raw.title || "—")}</div></div>` : ""}
-        ${hits.length ? hits.map((a) => `<div class="annrow"><span class="pill" data-tone="${a.status === "ready" ? "good" : "neutral"}">${escapeHtml(a.type || "")}</span> <span class="dim">${escapeHtml(a.status || "")}${a.duration ? ` · ${Number(a.duration).toFixed(1)}s` : ""}</span><div style="margin-top:6px">${escapeHtml(a.text || "")}</div>${a.audio ? `<audio controls preload="none" src="${escapeHtml(a.audio)}"></audio>` : ""}</div>`).join("")
+        ${hits.length ? hits.map((a) => `<div class="annrow"><span class="pill" data-tone="${a.status === "ready" ? "good" : "neutral"}">${escapeHtml(a.type || "")}</span> <span class="dim">${escapeHtml(a.status || "")}${a.duration ? ` · ${Number(a.duration).toFixed(1)}s` : ""}</span><div style="margin-top:6px">${escapeHtml(a.text || "")}</div>${a.audio ? `<audio controls preload="none" src="${escapeHtml(appMediaUrl(a.audio))}"></audio>` : ""}</div>`).join("")
           : `<div class="empty">No AI announcement is attached to this slot.<br><span class="dim">Configure the announcer in Programming → ⋯ → Continuity announcer.</span></div>`}`;
     }
     // details

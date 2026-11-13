@@ -164,6 +164,14 @@ export function toast(message, tone = "info", timeout = 3600) {
   }, timeout);
 }
 
+/** The announcer stores clip URLs root-absolute ("/media/announcements/..."), which 404s when the
+ *  app is served under a path (https://host/crvideo/). Resolve them against the app root -- the
+ *  directory above scheduler/. Mirrors resolveAnnouncementAudioUrl() in channels/broadcast.js. */
+export function appMediaUrl(url) {
+  if (typeof url !== "string" || !url.startsWith("/") || url.startsWith("//")) return url;
+  return new URL(url.slice(1), new URL("../", document.baseURI)).href;
+}
+
 /** Shared baseline CSS injected into every shadow root for a consistent look. */
 export const baseComponentCSS = `
   :host{ font: 14px/1.45 var(--font); color: var(--text); }

@@ -361,6 +361,17 @@ export function loadTheme(channel) {
 
 const announcementManifests = new Map();
 
+/** The announcer writes each clip's URL root-absolute ("/media/announcements/<channel>/<hash>.mp3",
+ *  see AudioCache::publicUrlFor). That only resolves when the app is served from the
+ *  site root; when it lives under a path (e.g. https://host/crvideo/) the browser asks
+ *  https://host/media/... and gets a 404, so every card plays silently. Resolve such a
+ *  path against the app root instead -- the directory above channels/, the same base
+ *  the bump definitions use. Absolute http(s)/protocol-relative/relative URLs pass through. */
+export function resolveAnnouncementAudioUrl(audio, channelsUrl = CHANNELS_URL) {
+  if (typeof audio !== "string" || !audio.startsWith("/") || audio.startsWith("//")) return audio;
+  return new URL(audio.slice(1), new URL("../", channelsUrl)).href;
+}
+
 /** A channel's optional announcements.json (the announcer's manifest; see
  *  channels/announcer/README.md), cached per channel. Resolves to `[]` --
  *  never throws -- when missing, malformed or empty. */
@@ -370,6 +381,7 @@ export function loadAnnouncements(channel) {
       channel.announcementsUrl,
       fetchJson(channel.announcementsUrl)
         .then((doc) => (Array.isArray(doc?.announcements) ? doc.announcements : []))
+        .then((list) => list.map((a) => (a && typeof a.audio === "string" ? { ...a, audio: resolveAnnouncementAudioUrl(a.audio) } : a)))
         .catch(() => []),
     );
   }
