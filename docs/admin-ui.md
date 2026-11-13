@@ -1,23 +1,31 @@
 # Admin UI: series review and channel/programming management
 
-An editorial/admin UI built as two new tabs (**SERIES**, **PROGRAMMING**)
-in the existing ChannelFlow scheduler (`scheduler/index.html`), backed by
-two new PHP endpoints under `server/`. It lets an editor:
+The ChannelFlow admin UI (`scheduler/index.html`): a shared top bar
+(**Explorer / Series / Programming / Schedule / Bump Studio**) over five
+workspaces, backed by PHP endpoints under `server/`. The three editorial
+screens follow the "ChannelFlow" revamp mockups:
 
-- review imported episodes and set their `status`/`rights` (the
-  approval gate from `docs/series-and-channels.md`'s "Editorial status
-  and content rights"),
-- trigger a `youtube-import.php` refresh of an existing series, or a
-  brand-new import, from the browser,
-- edit a channel's `catalog.json` series references and
-  `programming.json` recurring blocks,
-- preview or run `channels/publish.php` for a channel.
+- **SERIES -- Series Review**: a three-pane workspace (series library |
+  episodes of the selected series | episode details with an
+  Approve/Reject decision). Review imported episodes and set their
+  `status`/`rights` (the approval gate from
+  `docs/series-and-channels.md`'s "Editorial status and content rights"),
+  in bulk or one at a time; trigger a `youtube-import.php` refresh of an
+  existing series, or a brand-new import, from the browser.
+- **PROGRAMMING -- Visual Grid**: a channel's recurring programming
+  template on a Mon-Sun week grid, with a per-block editor (recurrence,
+  duration/timing, rotation, packing, boundary) plus catalog management,
+  Preview & publish, and the AI continuity announcer in dialogs.
+- **SCHEDULE -- Broadcast Schedule**: the *resolved* `schedule.json` of a
+  channel (Day / Week / Rundown), a Scheduled Item inspector, and a
+  published-vs-proposed comparison with **Compile Preview** and
+  **Publish Schedule...** (see "Broadcast Schedule" below).
 
-It is **additive** to the existing scheduler: the pre-existing SCHEDULE
-tab (the Drive-folder/live-playlist tool, `scheduler/js/store.js`) is
-completely unchanged and still works exactly as before. Switching tabs
-(`scheduler/js/view.js`) only toggles which section of the page is
-visible; nothing is unmounted.
+The pre-revamp Drive/live-playlist scheduler (`scheduler/js/store.js`) is
+unchanged; it is no longer a top-level tab but is still available from the
+gear menu in the header, or directly at `scheduler/?view=legacy-schedule`.
+Switching views (`scheduler/js/view.js`) only toggles which section of the
+page is visible; nothing is unmounted.
 
 ## No access control (read this before deploying)
 
@@ -62,15 +70,28 @@ reach it can administer the whole catalog."
 
 ## Where it lives
 
+- `scheduler/css/tokens.css` -- design tokens (violet primary, per-series
+  swatches `--sw-0..7-*`); `scheduler/js/components/ui-kit.js` -- shared
+  icons, panel/tab/chip/dialog CSS and the per-series swatch picker used by
+  the three revamp screens.
 - `scheduler/js/view.js` -- the tiny view-switcher (plain `EventTarget`,
   same convention as `store.js`).
 - `scheduler/js/admin-api.js` -- fetch wrappers for all three endpoints.
   Deliberately independent of `store.js`'s state (a different backend,
   a different data model).
-- `scheduler/js/components/cf-series-admin.js` -- the SERIES tab.
+- `scheduler/js/components/cf-series-admin.js` -- the SERIES tab (Series
+  Review). Episode descriptions are loaded lazily per series from the
+  read-only `explorer-admin.php` projection (they are not in the 6 MB
+  `series-admin.php?action=list` payload).
+- `scheduler/js/components/cf-broadcast-schedule.js` -- the SCHEDULE tab.
 - `scheduler/js/components/cf-channel-admin.js` -- the PROGRAMMING tab,
-  plus (bolted onto the same per-channel card, not a separate tab) the
-  "Continuity announcer" section for `server/announcer-admin.php`.
+  plus the "Continuity announcer" dialog for `server/announcer-admin.php`.
+  Edits are local until **Save Changes**, which writes ALL of the channel's
+  blocks (the `save_programming` contract). A block is edited by overlaying
+  fields onto the original object, so fields the UI has no control for
+  (`title`, `description`, ...) survive a save. A recurrence has ONE weekday
+  (`channels/publish/src/Recurrence.php`), so the Days chips are exclusive in
+  Weekly mode and all-on in Daily mode.
 - `server/lib/AdminSupport.php` -- shared bootstrap: the auth hook,
   id/path whitelisting, atomic JSON writes, and the subprocess runner.
 - `server/series-admin.php`, `server/channel-admin.php`,
@@ -108,6 +129,7 @@ GET  ?action=list
 POST {"action":"save_catalog", "channel_id", "series_ids":[...]}
 POST {"action":"save_programming", "channel_id", "blocks":[...]}
 POST {"action":"publish", "channel_id", "dry_run", "days"?, "window_start"?, "window_timezone"?}
+POST {"action":"preview_schedule", "channel_id", "days"?, "window_start"?, "window_timezone"?}
 ```
 
 `save_catalog` rewrites `catalog.json`'s `series` array to the standard
@@ -124,6 +146,18 @@ present, they're validated via `EpisodePacker::normalizeConfig()` /
 `BoundaryResolver::normalizeBoundary()` directly, the exact same
 functions the real compiler runs. `publish` builds a whitelisted argv for
 `channels/publish.php`.
+
+`preview_schedule` is a real, *non-dry* `channels/publish.php` run against a
+**throwaway copy** of the channel (`--channels-root=<tmp>`), returning the
+resulting `schedule.json` as `{exitCode, stdout, stderr, schedule}`. It
+validates its arguments exactly like `publish`. The copy includes
+`.publish/` (episode-set pins and rotation state, so the preview rotates like
+the real next publish while the real pins are never modified) and
+deliberately excludes `announcer.json` (the announcer's single opt-in gate)
+and all `announcements.json*` files, so a preview can never enqueue announcer
+work. `series/` is symlinked read-only and the temp tree is removed
+afterwards without following the symlink. Nothing under the real `channels/`
+tree is written.
 
 ### `server/announcer-admin.php`
 
@@ -169,7 +203,33 @@ an operator who never opens them sees no change at all:
   defaulting to `hard`) that reveals `max_delay` only when it isn't
   `hard`.
 
-### Schedule preview
+### Broadcast Schedule
+
+The SCHEDULE tab reads `channels/<id>/schedule.json` (and `meta.json`'s
+`anchor`) directly as static files: every item's absolute time is
+`anchor + block.relative_start + item.start`, and `programs[]` (the
+occurrences) tie episodes back to the programming block that generated
+them. Day / Week / Rundown are three views of the same data; the timezone
+selector (channel zone / your zone / UTC) only changes day bucketing and
+display.
+
+- **Published** = the live `schedule.json`. **Proposed** = *Compile Preview*
+  (`preview_schedule` above) -- the schedule the *saved* programming would
+  produce right now. Because episode rotation continues from where the last
+  publish left off, a re-publish typically changes which episodes air even
+  when no block was edited; the comparison shows exactly that.
+- **Schedule Changes (Preview)** aligns programs of the two versions by
+  start time over their overlapping window and lists changed / added /
+  removed slots. **Change History** does the same for the previous publish
+  (`schedule.json.bak`) vs the live one.
+- **Publish Schedule...** is enabled only after a preview has been compiled
+  and re-uses the exact `days` / `window_start` / `window_timezone` the
+  preview used, through the existing `publish` action.
+- The mockup's "version numbers" (v2025.01.27.1) are not modelled: versions
+  are identified by their generation time and window, because that is all
+  the data records.
+
+### Schedule preview (text)
 
 There is no separate JavaScript approximation of the compiler to keep in
 sync -- the PROGRAMMING tab's existing "Preview (dry run)" button already
@@ -239,8 +299,8 @@ of the same dry-run data remains a nice-to-have for a future pass.
 php server/tests/run-tests.php
 ```
 
-86 tests (`AdminSupportTest`, `SeriesAdminTest`, `ChannelAdminTest`,
-`AnnouncerAdminTest`) against isolated fixtures under
+155 tests (`AdminSupportTest`, `SeriesAdminTest`, `ChannelAdminTest`
+-- including `preview_schedule` --, `AnnouncerAdminTest`, ...) against isolated fixtures under
 `server/tests/fixtures/repo/` -- never the real `series/`/`channels/`
 trees. Covers id/path whitelisting (including rejecting path-traversal
 strings), atomic-write/backup behavior, the argv-array subprocess runner

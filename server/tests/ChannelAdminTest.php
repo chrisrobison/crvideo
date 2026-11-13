@@ -321,4 +321,56 @@ final class ChannelAdminTest
         Assert::true($result['exitCode'] !== 0);
         Assert::true(str_contains($result['stderr'], 'no such channel') || str_contains($result['stderr'], 'Error'));
     }
+
+    // ---------- preview_schedule (compile into a throwaway copy) ----------
+
+    public function testPreviewRejectsAnUnknownChannelId(): void
+    {
+        Assert::throws(ChannelAdminValidationError::class, function (): void {
+            channel_admin_preview_schedule(['channel_id' => 'no-such-channel'], $this->channelsDir);
+        });
+    }
+
+    public function testPreviewRejectsAChannelWithNoProgrammingJson(): void
+    {
+        Assert::throws(ChannelAdminValidationError::class, function (): void {
+            channel_admin_preview_schedule(['channel_id' => 'no-programming-channel'], $this->channelsDir);
+        });
+    }
+
+    public function testPreviewRejectsABadWindowTimezoneLikeARealPublish(): void
+    {
+        Assert::throws(ChannelAdminValidationError::class, function (): void {
+            channel_admin_preview_schedule(['channel_id' => 'demo-channel', 'window_timezone' => 'Nowhere/Fake'], $this->channelsDir);
+        });
+    }
+
+    public function testPreviewCompilesAFixtureChannelWithoutWritingAnythingOrLeavingTempFiles(): void
+    {
+        $before = glob(sys_get_temp_dir() . '/cf-preview-*') ?: [];
+        $channelFiles = scandir("$this->channelsDir/demo-channel");
+        $result = channel_admin_preview_schedule(
+            ['channel_id' => 'demo-channel', 'days' => 3, 'window_start' => '2026-11-02', 'window_timezone' => 'America/Los_Angeles'],
+            $this->channelsDir,
+        );
+        Assert::same(0, $result['exitCode'], 'publish.php should succeed: ' . $result['stderr']);
+        Assert::true(is_array($result['schedule']), 'a schedule array should come back');
+        Assert::true(array_key_exists('programs', $result['schedule']));
+        Assert::true(array_key_exists('blocks', $result['schedule']));
+        // The real channel directory is byte-for-byte untouched ...
+        Assert::same($channelFiles, scandir("$this->channelsDir/demo-channel"));
+        Assert::true(!file_exists("$this->channelsDir/demo-channel/schedule.json"), 'preview must not write schedule.json');
+        // ... and the temp workspace (including its series symlink) is gone.
+        Assert::same($before, glob(sys_get_temp_dir() . '/cf-preview-*') ?: []);
+        Assert::true(is_dir($this->seriesDir), 'the real series tree must survive the symlink cleanup');
+    }
+
+    public function testPreviewNeverCopiesTheAnnouncerOptInOrAnnouncements(): void
+    {
+        file_put_contents("$this->channelsDir/demo-channel/announcer.json", '{"enabled":true}');
+        file_put_contents("$this->channelsDir/demo-channel/announcements.json", '{"announcements":[]}');
+        $result = channel_admin_preview_schedule(['channel_id' => 'demo-channel', 'days' => 2, 'window_start' => '2026-11-02'], $this->channelsDir);
+        Assert::same(0, $result['exitCode'], $result['stderr']);
+        Assert::true(!str_contains($result['stdout'] . $result['stderr'], 'Announcer:'), 'the preview must never reach the announcer enqueue step');
+    }
 }

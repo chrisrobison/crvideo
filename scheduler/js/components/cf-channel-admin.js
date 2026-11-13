@@ -405,7 +405,7 @@ class CfChannelAdmin extends HTMLElement {
         .blk-card .tm{ font-size:13px; color:var(--text-muted); margin-top:2px; }
         .blk-card .open{ margin-left:auto; align-self:flex-start; background:transparent; border:0; color:var(--text-muted); padding:4px; }
         .editor-tabs{ margin:0 14px 10px; }
-        .editor-tabs button{ white-space:nowrap; padding:7px 8px; }
+        .tabs.editor-tabs button{ white-space:nowrap; padding:7px 6px; min-width:0; }
         .frow .inline > input[type=time]{ flex:0 0 132px; }
         .editor-body{ flex:1; min-height:0; overflow:auto; padding:0 14px 10px; }
         .sect{ border:1px solid var(--border); border-radius:12px; margin-bottom:10px; background:rgba(10,13,28,.35); }

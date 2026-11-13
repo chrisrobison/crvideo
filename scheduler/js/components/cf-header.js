@@ -261,7 +261,8 @@ class CfHeader extends HTMLElement {
           .legacy-bar{ display:flex; align-items:center; gap:14px; padding:10px 20px; border-bottom:1px solid var(--border);
             background:var(--bg-elevated); flex-wrap:wrap; }
           .legacy-tag{ display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-muted); }
-          .legacy-tag a{ color:#8fb4ff; cursor:pointer; text-decoration:none; font-weight:600; }
+          .legacy-tag a{ color:#8fb4ff; cursor:pointer; text-decoration:none; font-weight:600; display:inline-flex; align-items:center; gap:4px; white-space:nowrap; }
+          .legacy-tag span{ white-space:nowrap; }
           .channel-select{ min-width:150px; font-weight:600; width:auto; }
           .date-nav{ display:flex; align-items:center; gap:6px; background:var(--panel-2); border:1px solid var(--border);
             border-radius:var(--radius-sm); padding:4px 6px; }

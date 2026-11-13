@@ -19,6 +19,10 @@ declare(strict_types=1);
 // POST {action:"save_programming", channel_id, blocks}        -> rewrites programming.json's "blocks" array
 // POST {action:"publish", channel_id, dry_run, days?,
 //       window_start?, window_timezone?}                      -> channels/publish.php
+// POST {action:"preview_schedule", channel_id, days?,
+//       window_start?, window_timezone?}                      -> compiles the SAVED programming in a throwaway
+//                                                                copy of the channel and returns the resulting
+//                                                                schedule.json (never touches the real files)
 
 require_once __DIR__ . '/lib/AdminSupport.php';
 require_once __DIR__ . '/../channels/publish/src/Recurrence.php';
@@ -295,6 +299,110 @@ function channel_admin_publish(array $body, string $channelsDir = ADMIN_CHANNELS
     return ['dry_run' => $dryRun] + $result;
 }
 
+/** Recursively deletes a directory tree WITHOUT ever following a symlink
+ *  (a symlink is unlinked, never descended into). */
+function channel_admin_rm_tree(string $dir): void
+{
+    if (is_link($dir) || is_file($dir)) {
+        @unlink($dir);
+        return;
+    }
+    if (!is_dir($dir)) {
+        return;
+    }
+    foreach (scandir($dir) ?: [] as $entry) {
+        if ($entry !== '.' && $entry !== '..') {
+            channel_admin_rm_tree("$dir/$entry");
+        }
+    }
+    @rmdir($dir);
+}
+
+function channel_admin_copy_tree(string $src, string $dst): void
+{
+    mkdir($dst, 0700, true);
+    foreach (scandir($src) ?: [] as $entry) {
+        if ($entry === '.' || $entry === '..') {
+            continue;
+        }
+        if (is_dir("$src/$entry") && !is_link("$src/$entry")) {
+            channel_admin_copy_tree("$src/$entry", "$dst/$entry");
+        } elseif (is_file("$src/$entry")) {
+            copy("$src/$entry", "$dst/$entry");
+        }
+    }
+}
+
+/** Compiles a channel's CURRENT saved programming.json into a throwaway
+ *  copy of the channel and returns the schedule.json that a real publish
+ *  would write -- the data behind the Broadcast Schedule screen's "Compile
+ *  Preview" / "Schedule Changes". It is a real run of channels/publish.php
+ *  (so it can never drift from what publishing does), pointed at a temp
+ *  `--channels-root`:
+ *
+ *   - episode-set pins (`.publish/`) and rotation state are COPIED, so the
+ *     preview rotates exactly like the real next publish, while the real
+ *     pins are never modified;
+ *   - `announcer.json` (the announcer's single opt-in gate) and every
+ *     announcements file are deliberately NOT copied, so the preview can
+ *     never enqueue announcer work;
+ *   - `series/` is a symlink to the real (read-only here) series tree, and
+ *     the whole temp tree is deleted afterwards without following it.
+ *
+ *  @return array{exitCode:int, stdout:string, stderr:string, schedule:?array<string,mixed>} */
+function channel_admin_preview_schedule(array $body, string $channelsDir = ADMIN_CHANNELS_DIR): array
+{
+    $channelId = $body['channel_id'] ?? null;
+    $dir = admin_existing_channel_dir($channelId, $channelsDir);
+    if ($dir === null) {
+        throw new ChannelAdminValidationError('Unknown or invalid channel_id.');
+    }
+    if (!is_file("$dir/programming.json")) {
+        throw new ChannelAdminValidationError('This channel has no programming.json yet -- add at least one recurring block first.');
+    }
+    // Same validation and argv as a real publish; then force a real (non-dry)
+    // compile into the temp tree and drop --verbose (the listing is huge and
+    // the structured schedule is what the UI wants).
+    $argv = channel_admin_build_publish_argv((string) $channelId, ['dry_run' => false] + $body);
+    $argv = array_values(array_filter($argv, static fn (string $a): bool => $a !== '--verbose' && $a !== '--dry-run'));
+
+    $tmp = rtrim(sys_get_temp_dir(), '/') . '/cf-preview-' . bin2hex(random_bytes(6));
+    try {
+        $tmpChannel = "$tmp/channels/$channelId";
+        mkdir($tmpChannel, 0700, true);
+        $seriesDir = dirname($channelsDir) . '/series';
+        if (is_dir($seriesDir) && !@symlink($seriesDir, "$tmp/series")) {
+            throw new RuntimeException('Could not prepare the preview workspace.');
+        }
+        foreach (scandir($dir) ?: [] as $entry) {
+            if ($entry === '.' || $entry === '..' || is_link("$dir/$entry")) {
+                continue;
+            }
+            if (is_dir("$dir/$entry")) {
+                if ($entry === '.publish') {
+                    channel_admin_copy_tree("$dir/$entry", "$tmpChannel/$entry");
+                }
+            } elseif (
+                $entry !== 'announcer.json'
+                && !str_starts_with($entry, 'announcements.json')
+                && !preg_match('/\.(bak|lock)$/', $entry)
+            ) {
+                copy("$dir/$entry", "$tmpChannel/$entry");
+            }
+        }
+        $argv[] = "--channels-root=$tmp/channels";
+        $result = admin_run_subprocess($argv);
+        $schedule = null;
+        if ($result['exitCode'] === 0 && is_file("$tmpChannel/schedule.json")) {
+            $decoded = json_decode((string) file_get_contents("$tmpChannel/schedule.json"), true);
+            $schedule = is_array($decoded) ? $decoded : null;
+        }
+        return $result + ['schedule' => $schedule];
+    } finally {
+        channel_admin_rm_tree($tmp);
+    }
+}
+
 // ---------------------------------------------------------------------
 // HTTP dispatch -- runs only when actually serving a web request, never
 // when this file is `require`d by the test suite (SAPI is "cli" there).
@@ -318,6 +426,7 @@ if (PHP_SAPI !== 'cli') {
                 'save_catalog' => channel_admin_save_catalog($body),
                 'save_programming' => channel_admin_save_programming($body),
                 'publish' => channel_admin_publish($body),
+                'preview_schedule' => channel_admin_preview_schedule($body),
                 default => throw new ChannelAdminValidationError('Unknown action.'),
             };
             admin_json_response(200, ['ok' => true] + $result);

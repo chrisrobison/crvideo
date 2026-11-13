@@ -171,6 +171,7 @@ export const uiKitCSS = `
   /* Key/value details table */
   .kv{ display:grid; grid-template-columns:auto 1fr; font-size:13px; }
   .kv > div{ padding:9px 4px; border-bottom:1px solid var(--border-soft); }
+  .kv svg{ display:inline-block; vertical-align:-2px; }
   .kv > div:nth-child(odd){ color:var(--text-muted); padding-right:18px; white-space:nowrap; }
   .kv > div:nth-child(even){ color:var(--text); min-width:0; overflow-wrap:anywhere; }
 

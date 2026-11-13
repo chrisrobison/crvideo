@@ -226,7 +226,7 @@ publication" in `docs/series-and-channels.md`.
 | `ia-import/README.md` | `ia-import.php` CLI reference and input format. |
 | `youtube-import/README.md` | `youtube-import.php` CLI reference, credentials, and editorial-status handling. |
 | `server/README.md` | The cache downloader and admin endpoints. |
-| `scheduler/GOOGLE_DRIVE_SETUP.md` | Google Drive OAuth setup for the scheduler's SCHEDULE tab. |
+| `scheduler/GOOGLE_DRIVE_SETUP.md` | Google Drive OAuth setup for the legacy Drive scheduler (`scheduler/?view=legacy-schedule`). |
 
 ## Testing
 

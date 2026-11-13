@@ -50,6 +50,28 @@ export const channelAdminApi = {
   saveCatalog: (channelId, seriesIds) => postJson(CHANNEL_ENDPOINT, { action: "save_catalog", channel_id: channelId, series_ids: seriesIds }),
   saveProgramming: (channelId, blocks) => postJson(CHANNEL_ENDPOINT, { action: "save_programming", channel_id: channelId, blocks }),
   publish: (channelId, opts) => postJson(CHANNEL_ENDPOINT, { action: "publish", channel_id: channelId, ...opts }),
+  // Compiles the SAVED programming in a throwaway copy of the channel and returns the
+  // schedule.json a real publish would write ({exitCode, stdout, stderr, schedule}).
+  previewSchedule: (channelId, opts) => postJson(CHANNEL_ENDPOINT, { action: "preview_schedule", channel_id: channelId, ...opts }),
+};
+
+// The channels' own static files, read directly (they are plain JSON next to
+// the player): the live schedule, the previous publish (.bak), the meta
+// (anchor) and the announcer's generated announcements. Read-only.
+async function getStatic(path, { optional = false } = {}) {
+  const r = await fetch(path, { cache: "no-store" });
+  if (!r.ok) {
+    if (optional && r.status === 404) return null;
+    throw new Error(`Could not load ${path} (HTTP ${r.status})`);
+  }
+  return r.json();
+}
+
+export const scheduleFileApi = {
+  schedule: (id) => getStatic(`../channels/${encodeURIComponent(id)}/schedule.json`),
+  previousSchedule: (id) => getStatic(`../channels/${encodeURIComponent(id)}/schedule.json.bak`, { optional: true }),
+  meta: (id) => getStatic(`../channels/${encodeURIComponent(id)}/meta.json`),
+  announcements: (id) => getStatic(`../channels/${encodeURIComponent(id)}/announcements.json`, { optional: true }).then((j) => j?.announcements || []),
 };
 
 // server/announcer-admin.php -- the AI continuity announcer's admin surface
