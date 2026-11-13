@@ -1,7 +1,7 @@
 # Admin UI: series review and channel/programming management
 
 The ChannelFlow admin UI (`scheduler/index.html`): a shared top bar
-(**Explorer / Series / Programming / Schedule / Bump Studio**) over five
+(**Explorer / Series / Programming / Schedule / Guide / Bump Studio**) over six
 workspaces, backed by PHP endpoints under `server/`. The three editorial
 screens follow the "ChannelFlow" revamp mockups:
 
@@ -20,6 +20,11 @@ screens follow the "ChannelFlow" revamp mockups:
   channel (Day / Week / Rundown), a Scheduled Item inspector, and a
   published-vs-proposed comparison with **Compile Preview** and
   **Publish Schedule...** (see "Broadcast Schedule" below).
+
+- **GUIDE**: the viewer-facing channel guide (`channels/index.html`),
+  embedded in a frame exactly as a viewer sees it (live grid, preview
+  player, program details). It loads on entering the tab and is blanked on
+  leaving so its player doesn't keep streaming in the background.
 
 The pre-revamp Drive/live-playlist scheduler (`scheduler/js/store.js`) is
 unchanged; it is no longer a top-level tab but is still available from the

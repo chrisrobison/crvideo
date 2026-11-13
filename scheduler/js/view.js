@@ -2,7 +2,8 @@
 // on the page, e.g. Bump Studio's "set up the announcer" link) swap which
 // section of scheduler/index.html is visible, with no router/framework.
 // "schedule" is the Broadcast Schedule (resolved schedule.json, preview and
-// publish); "legacy-schedule" is the original Drive/live-playlist scheduler,
+// publish); "guide" is the viewer-facing channel guide (channels/index.html)
+// embedded as viewers see it; "legacy-schedule" is the original Drive/live-playlist scheduler,
 // kept reachable from the header's tools menu; "series", "programming" and
 // "bumps" are admin views; "explorer" is the read-only CRVideo Explorer.
 // Switching only toggles [hidden]; nothing is unmounted, so scheduler state and
@@ -21,7 +22,7 @@
 
 import { TOPICS, publishState, subscribe } from "../../js/bus.js";
 
-export const VIEWS = ["schedule", "legacy-schedule", "series", "programming", "bumps", "explorer"];
+export const VIEWS = ["schedule", "guide", "legacy-schedule", "series", "programming", "bumps", "explorer"];
 
 const hasWindow = typeof window !== "undefined" && typeof history !== "undefined";
 

@@ -223,6 +223,7 @@ class CfHeader extends HTMLElement {
         ["series", "Series", "film"],
         ["programming", "Programming", "grid"],
         ["schedule", "Schedule", "calendar"],
+        ["guide", "Guide", "tv"],
         ["bumps", "Bump Studio", "bolt"],
       ];
       root.innerHTML = `

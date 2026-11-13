@@ -189,7 +189,7 @@ it with `{ retained: true }`).
 
 | Topic | Kind | Retained | Payload | Notes |
 | --- | --- | --- | --- | --- |
-| `app.view.state` | state | yes | `{view}` -- `"schedule"\|"legacy-schedule"\|"series"\|"programming"\|"bumps"\|"explorer"` | Which top-level section is visible. `main.js` toggles `[data-view]` from it; `cf-header` highlights its nav; `cf-bump-studio` lazy-loads on first `"bumps"`. |
+| `app.view.state` | state | yes | `{view}` -- `"schedule"\|"guide"\|"legacy-schedule"\|"series"\|"programming"\|"bumps"\|"explorer"` | Which top-level section is visible. `main.js` toggles `[data-view]` from it; `cf-header` highlights its nav; `cf-bump-studio` lazy-loads on first `"bumps"`. |
 | `app.view.open` | command | no | `{view}` | Switch view. Published by `cf-header`'s nav and Bump Studio's "set up the announcer" link; handled by `view.js`. |
 
 `view.js` also keeps `?view=<name>` in the URL (`history.pushState` on every

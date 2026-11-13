@@ -27,6 +27,14 @@ function applyView() {
   document.querySelectorAll("[data-view]").forEach((el) => {
     el.hidden = el.dataset.view !== viewState.current;
   });
+  // The Guide view embeds the live viewer guide, whose player streams video:
+  // load it only while that tab is showing and blank it on leaving so nothing
+  // keeps playing (or polling) in the background.
+  const frame = document.getElementById("guideFrame");
+  if (frame) {
+    const want = viewState.current === "guide" ? frame.dataset.src : "about:blank";
+    if (frame.getAttribute("src") !== want) frame.setAttribute("src", want);
+  }
 }
 subscribe(TOPICS.APP_VIEW_STATE, applyView);
 applyView();
