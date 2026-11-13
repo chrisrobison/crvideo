@@ -14,6 +14,7 @@ import "./components/cf-program-monitor.js";
 import "./components/cf-drive-folder-picker.js";
 import "./components/cf-series-admin.js";
 import "./components/cf-channel-admin.js";
+import "./components/cf-broadcast-schedule.js";
 import "./components/bump-studio/cf-bump-studio.js";
 import "./components/explorer/cf-explorer.js";
 import { viewState } from "./view.js";

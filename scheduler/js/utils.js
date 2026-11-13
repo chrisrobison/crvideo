@@ -173,11 +173,11 @@ export const baseComponentCSS = `
     background: var(--panel-2); color: var(--text); border: 1px solid var(--border);
     border-radius: var(--radius-sm); padding: 7px 12px; cursor: pointer;
   }
-  button:hover{ border-color:#48536a; }
+  button:hover{ border-color:#4a5486; }
   button:active{ transform: translateY(1px); }
   button:disabled{ opacity:.5; cursor:not-allowed; }
   button.primary{ background: var(--accent); border-color: var(--accent); font-weight:600; color:#fff; }
-  button.primary:hover{ background:#4c8cf5; }
+  button.primary:hover{ background:var(--accent-hi); border-color:var(--accent-hi); }
   button.ghost{ background: transparent; }
   button.danger{ border-color: var(--live); color:#ffb4b4; }
   button.icon-btn{ padding:6px 8px; line-height:1; }

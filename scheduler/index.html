@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <!-- LARC/PAN message bus (vendor/larc/pan.js, see docs/bus-topics.md). Must precede every module script. -->
 <script type="importmap">{ "imports": { "@larcjs/core": "../vendor/larc/pan.js" } }</script>
-<title>ChannelFlow — Schedule</title>
+<title>ChannelFlow</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%233b82f6'/%3E%3Cpath d='M9 7l8 5-8 5V7z' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/tokens.css">
 <style>
@@ -13,7 +13,7 @@
   /* Preserves the original flex-fill behavior (main.layout{flex:1} needs
      a flex-container parent to mean anything) now that the schedule view
      lives one level deeper, inside a [data-view] wrapper. */
-  div[data-view="schedule"]{ display:flex; flex-direction:column; flex:1; min-width:0; }
+  div[data-view="legacy-schedule"]{ display:flex; flex-direction:column; flex:1; min-width:0; }
   .stat-strip{ padding:16px 20px 0; }
   main.layout{
     display:grid;
@@ -45,13 +45,20 @@
   /* Explorer is likewise a full-bleed workspace whose columns scroll independently. */
   .app:has(> .explorer-view:not([hidden])){ height:100vh; min-height:0; }
   .explorer-view{ flex:1; min-height:0; }
+  /* The revamped Series / Programming / Schedule screens are viewport-height
+     workspaces too: header on top, panels below scroll independently. */
+  .app:has(> .workspace-view:not([hidden])){ height:100vh; min-height:0; }
+  .workspace-view{ flex:1; min-height:0; display:flex; flex-direction:column; }
+  @media (max-width:1100px){
+    .app:has(> .workspace-view:not([hidden])){ height:auto; min-height:100vh; }
+  }
 </style>
 </head>
 <body>
 <pan-bus hidden></pan-bus>
 <div class="app">
   <cf-header></cf-header>
-  <div data-view="schedule">
+  <div data-view="legacy-schedule" hidden>
     <div class="stat-strip"><cf-stat-bar></cf-stat-bar></div>
     <main class="layout">
       <aside class="media-col"><cf-media-library></cf-media-library></aside>
@@ -65,10 +72,13 @@
       </aside>
     </main>
   </div>
-  <div data-view="series" class="admin-view" hidden>
+  <div data-view="schedule" class="workspace-view" hidden>
+    <cf-broadcast-schedule></cf-broadcast-schedule>
+  </div>
+  <div data-view="series" class="workspace-view" hidden>
     <cf-series-admin></cf-series-admin>
   </div>
-  <div data-view="programming" class="admin-view" hidden>
+  <div data-view="programming" class="workspace-view" hidden>
     <cf-channel-admin></cf-channel-admin>
   </div>
   <div data-view="bumps" class="studio-view" hidden>

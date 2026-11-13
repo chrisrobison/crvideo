@@ -4,6 +4,7 @@ import * as drive from "../drive.js";
 import { viewState } from "../view.js";
 import { TOPICS, SCHEDULER_CHANGE_TOPICS, publish, subscribe } from "../../../js/bus.js";
 import "./cf-toggle.js";
+import { icon } from "./ui-kit.js";
 
 class CfHeader extends HTMLElement {
   constructor() {
@@ -29,6 +30,7 @@ class CfHeader extends HTMLElement {
     subscribe(TOPICS.DRIVE_AUTH_STATE, () => { this._profile = null; this._renderDriveBody(); this._render(); }, { signal });
     subscribe(TOPICS.APP_VIEW_STATE, () => this._renderNavActive(), { signal });
     document.addEventListener("click", this._onDocClick, { signal });
+    document.addEventListener("click", () => this.shadowRoot.querySelector(".settings-menu")?.classList.remove("open"), { signal });
     this._render();
   }
 
@@ -49,27 +51,31 @@ class CfHeader extends HTMLElement {
     root.querySelector(".live-menu").addEventListener("toggle", (e) => {
       if (e.target.open) this._renderLiveBody();
     });
-    root.querySelector("nav").addEventListener("click", (e) => {
-      const a = e.target.closest("a[data-view]");
+    root.addEventListener("click", (e) => {
+      const a = e.target.closest("[data-view]");
       if (!a) return;
+      e.preventDefault();
+      root.querySelectorAll(".menu.open").forEach((m) => m.classList.remove("open"));
       publish(TOPICS.APP_VIEW_OPEN, { view: a.dataset.view });
+    });
+    root.querySelector(".settings-menu > button").addEventListener("click", (e) => {
+      e.stopPropagation();
+      root.querySelector(".settings-menu").classList.toggle("open");
     });
   }
 
   _renderNavActive() {
+    const view = viewState.current;
     this.shadowRoot.querySelectorAll("nav a[data-view]").forEach((a) => {
-      a.classList.toggle("active", a.dataset.view === viewState.current);
+      a.classList.toggle("active", a.dataset.view === view);
     });
-    // The schedule-only controls (channel/date/live/validate/publish) are
-    // meaningless outside the SCHEDULE view -- hide them rather than
-    // leaving them acting on a view the editor can't see. (.hidden is
-    // baseComponentCSS's `display:none!important` utility class, not the
-    // bare `hidden` attribute, so it reliably wins over each element's
-    // own `display:flex` rule regardless of CSS source order.)
-    const onSchedule = viewState.current === "schedule";
-    this.shadowRoot.querySelectorAll(".schedule-only-controls").forEach((el) => {
-      el.classList.toggle("hidden", !onSchedule);
-    });
+    // The legacy Drive scheduler's own controls (channel/date/live/validate/
+    // publish/Drive) are meaningless outside that view -- the revamped
+    // screens carry their own. (.hidden is baseComponentCSS's
+    // `display:none!important` utility class, so it reliably beats each
+    // element's own `display:flex` rule regardless of CSS source order.)
+    const legacy = view === "legacy-schedule";
+    this.shadowRoot.querySelector(".legacy-bar")?.classList.toggle("hidden", !legacy);
   }
 
   _renderLiveBody() {
@@ -212,21 +218,51 @@ class CfHeader extends HTMLElement {
     })();
 
     if (!root.innerHTML) {
+      const navItems = [
+        ["explorer", "Explorer", "monitor"],
+        ["series", "Series", "film"],
+        ["programming", "Programming", "grid"],
+        ["schedule", "Schedule", "calendar"],
+        ["bumps", "Bump Studio", "bolt"],
+      ];
       root.innerHTML = `
         <style>
           ${baseComponentCSS}
-          :host{ display:block; }
-          header{ display:flex; align-items:center; gap:18px; padding:12px 20px; border-bottom:1px solid var(--border);
+          :host{ display:block; position:relative; z-index:30; }
+          svg{ display:block; flex-shrink:0; }
+          .bar{ display:flex; align-items:center; gap:16px; height:56px; padding:0 18px; border-bottom:1px solid var(--border);
+            background:linear-gradient(180deg, rgba(16,20,42,.96), rgba(11,14,30,.96)); backdrop-filter:blur(8px); }
+          .logo{ display:flex; align-items:center; gap:9px; font-weight:800; font-size:19px; letter-spacing:-.02em; padding-right:16px;
+            border-right:1px solid var(--border); height:30px; }
+          .logo svg{ color:var(--accent-hi); filter:drop-shadow(0 0 8px rgba(109,93,252,.55)); }
+          nav{ display:flex; gap:4px; }
+          nav a{ display:flex; align-items:center; gap:8px; font-size:14px; font-weight:600; color:var(--text-muted); text-decoration:none;
+            padding:8px 14px; border-radius:10px; border:1px solid transparent; cursor:pointer; user-select:none; }
+          nav a:hover{ color:var(--text); background:rgba(255,255,255,.04); }
+          nav a.active{ color:#fff; background:linear-gradient(180deg, rgba(109,93,252,.55), rgba(88,72,224,.55)); border-color:var(--accent-line);
+            box-shadow:0 0 0 1px rgba(109,93,252,.15), 0 4px 16px rgba(109,93,252,.28); }
+          .spacer{ flex:1 1 auto; }
+          .network{ display:flex; align-items:center; gap:9px; padding:8px 14px; border:1px solid var(--border); border-radius:10px;
+            background:rgba(24,30,59,.7); font-weight:600; font-size:14px; }
+          .network .dot{ width:9px; height:9px; border-radius:50%; background:var(--good); box-shadow:0 0 8px var(--good); }
+          .gear{ width:36px; height:36px; padding:0; display:grid; place-items:center; background:transparent; border:1px solid transparent;
+            color:var(--text-muted); border-radius:10px; }
+          .gear:hover{ color:var(--text); background:rgba(255,255,255,.05); }
+          .menu{ position:relative; }
+          .menu-pop{ position:absolute; right:0; top:calc(100% + 8px); width:260px; background:var(--panel); border:1px solid var(--border);
+            border-radius:12px; padding:6px; box-shadow:0 16px 40px rgba(0,0,0,.6); display:none; }
+          .menu.open .menu-pop{ display:block; }
+          .menu-pop a{ display:flex; gap:10px; align-items:flex-start; padding:9px 10px; border-radius:8px; color:var(--text); text-decoration:none; font-size:13px; cursor:pointer; }
+          .menu-pop a:hover{ background:var(--panel-3); }
+          .menu-pop a small{ display:block; color:var(--text-muted); font-size:11.5px; margin-top:1px; }
+          .menu-pop a svg{ margin-top:2px; color:var(--text-muted); }
+
+          /* Legacy Drive scheduler controls (only on ?view=legacy-schedule) */
+          .legacy-bar{ display:flex; align-items:center; gap:14px; padding:10px 20px; border-bottom:1px solid var(--border);
             background:var(--bg-elevated); flex-wrap:wrap; }
-          .logo{ display:flex; align-items:center; gap:8px; font-weight:800; font-size:18px; letter-spacing:-.02em; }
-          .logo svg{ color:var(--accent); }
-          nav{ display:flex; gap:18px; margin-left:6px; }
-          nav a{ font-size:12px; font-weight:700; letter-spacing:.05em; color:var(--text-muted); text-decoration:none;
-            padding:4px 0; border-bottom:2px solid transparent; cursor:default; }
-          nav a[data-view]{ cursor:pointer; }
-          nav a[data-view]:hover{ color:var(--text); }
-          nav a.active{ color:var(--text); border-bottom-color:var(--accent); }
-          .channel-select{ min-width:150px; font-weight:600; }
+          .legacy-tag{ display:flex; align-items:center; gap:8px; font-size:12px; color:var(--text-muted); }
+          .legacy-tag a{ color:#8fb4ff; cursor:pointer; text-decoration:none; font-weight:600; }
+          .channel-select{ min-width:150px; font-weight:600; width:auto; }
           .date-nav{ display:flex; align-items:center; gap:6px; background:var(--panel-2); border:1px solid var(--border);
             border-radius:var(--radius-sm); padding:4px 6px; }
           .date-nav button{ background:transparent; border:none; padding:4px 6px; }
@@ -240,7 +276,6 @@ class CfHeader extends HTMLElement {
           .clock{ text-align:center; line-height:1.1; }
           .clock-time{ font-size:18px; font-weight:700; font-variant-numeric:tabular-nums; }
           .clock-date{ font-size:10px; color:var(--text-muted); letter-spacing:.04em; }
-          .spacer{ flex:1 1 auto; }
           .actions{ display:flex; gap:10px; }
           .drive-menu{ position:relative; }
           .drive-menu summary{ list-style:none; cursor:pointer; display:flex; align-items:center; gap:6px;
@@ -267,33 +302,46 @@ class CfHeader extends HTMLElement {
           .drive-body cf-toggle{ margin:2px 0; }
         </style>
         <header>
-          <div class="logo">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="14" rx="3" fill="currentColor" opacity=".2"/><path d="M9 8.5l6 3.5-6 3.5v-7z" fill="currentColor"/></svg>
-            ChannelFlow
+          <div class="bar">
+            <div class="logo">
+              <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M7 5.5 25.5 16 7 26.5z" fill="currentColor" opacity=".28"/><path d="M5 4.5 22 14.5 5 24.5z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 15 27 24.6 12 28.4z" fill="#22d3ee" opacity=".9"/></svg>
+              ChannelFlow
+            </div>
+            <nav>
+              ${navItems.map(([v, label, ic]) => `<a data-view="${v}" class="${v === "schedule" ? "active" : ""}">${icon(ic, 19)}${label}</a>`).join("")}
+            </nav>
+            <div class="spacer"></div>
+            <div class="network"><span class="dot"></span>CRVideo Network</div>
+            <div class="menu settings-menu">
+              <button class="gear" title="Tools" aria-label="Tools">${icon("settings", 20)}</button>
+              <div class="menu-pop">
+                <a data-view="legacy-schedule">${icon("drive", 17)}<span>Drive scheduler<small>Legacy media library, timeline and live playlist</small></span></a>
+              </div>
+            </div>
           </div>
-          <nav>
-            <a data-view="schedule" class="active">SCHEDULE</a><a data-view="series">SERIES</a><a data-view="programming">PROGRAMMING</a><a data-view="bumps">BUMPS</a><a data-view="explorer">EXPLORER</a><a>PLAYOUT</a><a>STREAM</a><a>TOGETHER</a>
-          </nav>
-          <select class="channel-select schedule-only-controls"></select>
-          <div class="date-nav schedule-only-controls">
-            <button class="prev-day" title="Previous day">◀</button>
-            <span class="date-label"></span>
-            <button class="next-day" title="Next day">▶</button>
-          </div>
-          <div class="live-badge schedule-only-controls"><span class="dot"></span><span class="label">LIVE</span></div>
-          <div class="clock"><div class="clock-time"></div><div class="clock-date"></div></div>
-          <div class="spacer"></div>
-          <details class="drive-menu">
-            <summary><span class="dot"></span>Drive</summary>
-            <div class="drive-body"></div>
-          </details>
-          <details class="drive-menu live-menu schedule-only-controls">
-            <summary><span class="dot"></span>Live</summary>
-            <div class="drive-body live-body"></div>
-          </details>
-          <div class="actions schedule-only-controls">
-            <button class="validate-btn">Validate Schedule</button>
-            <button class="publish-btn primary">Publish</button>
+          <div class="legacy-bar hidden">
+            <div class="legacy-tag"><a data-view="schedule">${icon("left", 14)} Back to Schedule</a><span>· Legacy Drive scheduler</span></div>
+            <select class="channel-select"></select>
+            <div class="date-nav">
+              <button class="prev-day" title="Previous day">◀</button>
+              <span class="date-label"></span>
+              <button class="next-day" title="Next day">▶</button>
+            </div>
+            <div class="live-badge"><span class="dot"></span><span class="label">LIVE</span></div>
+            <div class="clock"><div class="clock-time"></div><div class="clock-date"></div></div>
+            <div class="spacer"></div>
+            <details class="drive-menu">
+              <summary><span class="dot"></span>Drive</summary>
+              <div class="drive-body"></div>
+            </details>
+            <details class="drive-menu live-menu">
+              <summary><span class="dot"></span>Live</summary>
+              <div class="drive-body live-body"></div>
+            </details>
+            <div class="actions">
+              <button class="validate-btn">Validate Schedule</button>
+              <button class="publish-btn primary">Publish</button>
+            </div>
           </div>
         </header>
       `;
