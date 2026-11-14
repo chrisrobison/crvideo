@@ -40,6 +40,8 @@ Then open:
 | URL | What it is |
 | --- | --- |
 | `/channels/` | **The channel guide** -- start here. |
+| `/channels/channel.html?ch=science` | One channel with room to read: live preview, full day lineup, the shows it carries. |
+| `/channels/browse.html` | The viewer Finder: search every show as posters, a list, or by channel. |
 | `/channels/watch.html?ch=science` | One channel, full-viewport, deep-linkable (any `channels/<id>`). |
 | `/sync-player.html` | USTV's standalone clock-synced player. |
 | `/scheduler/` | ChannelFlow: the Drive/playlist admin tool, plus the SERIES/PROGRAMMING editorial tabs. |
@@ -218,6 +220,7 @@ publication" in `docs/series-and-channels.md`.
 | `docs/series-and-channels.md` | The whole series/catalog/recurring-programming/continuity design; start here for anything `channels/` or `publish.php`-related. |
 | `docs/guide-update.md` | Why/how the guide renders one cell per *program*, not per video. |
 | `docs/bus-topics.md` | The LARC/PAN page bus: topic dictionary, naming/retained-state rules, request/reply, what stays a DOM event. |
+| `docs/viewer.md` | The viewer pages (Guide / Channels / Browse / Show): what each shows, where its data comes from, and why none of it is on-demand. |
 | `docs/admin-ui.md` | The SERIES/PROGRAMMING admin tabs and their (lack of) access control. |
 | `docs/science-packing-report.md` | A worked example of the Science channel's multi-episode packing. |
 | `channels/publish/README.md` | `publish.php` CLI reference and `programming.json`/`continuity.json` schema. |
