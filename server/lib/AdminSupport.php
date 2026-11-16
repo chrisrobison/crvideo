@@ -139,8 +139,14 @@ function admin_atomic_write_json(string $path, array $data): void
     if (!is_dir($dir) && !mkdir($dir, 0775, true) && !is_dir($dir)) {
         throw new RuntimeException("Failed to create directory: $dir");
     }
-    if (is_file($path) && !copy($path, $path . '.bak')) {
-        throw new RuntimeException("Failed to back up existing file before overwriting: $path.bak");
+    if (is_file($path)) {
+        // Replace (don't overwrite) a stale .bak: it may be owned by the other user (web server vs CLI)
+        // and not writable, but removing/creating it only needs the directory's group write bit.
+        @unlink($path . '.bak');
+        if (!copy($path, $path . '.bak')) {
+            throw new RuntimeException("Failed to back up existing file before overwriting: $path.bak");
+        }
+        @chmod($path . '.bak', 0664);
     }
     $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
     if ($json === false) {
@@ -155,6 +161,7 @@ function admin_atomic_write_json(string $path, array $data): void
         @unlink($tmp);
         throw new RuntimeException("Failed to finalize write for: $path");
     }
+    @chmod($path, 0664); // group-writable: the web server (www-data) and the CLI user share these files
 }
 
 /** The CLI PHP binary to shell out to. PHP_BINARY is unreliable under

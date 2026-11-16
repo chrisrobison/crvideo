@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+umask(0002); // new files 664 / dirs 775 (dirs are setgid www-data): the web server and the CLI user both write these trees
+
 // server/publish-playlist.php
 //
 // Lets the scheduler (scheduler/index.html) write a new recurring-format
@@ -112,6 +114,7 @@ $out = [
 ];
 
 if (is_file(PLAYLIST_PATH)) {
+    @unlink(BACKUP_PATH); // replace a stale backup owned by the other user rather than fail to overwrite it
     if (!copy(PLAYLIST_PATH, BACKUP_PATH)) {
         respond(500, ['ok' => false, 'error' => 'Could not back up the existing playlist.json; aborting without writing.']);
     }

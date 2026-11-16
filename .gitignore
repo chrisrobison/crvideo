@@ -63,3 +63,6 @@ tools/kokoro-server/.venv/
 # Sample demo media served from the web root (referenced by schedule.html and
 # scheduler/js/store.js) -- large binaries, kept on disk but never committed.
 /video-00*.mp4
+
+# Viewer Browse/Show projection cache (channels/finder.php) -- regenerated on demand.
+channels/finder/.cache/

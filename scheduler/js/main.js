@@ -14,6 +14,7 @@ import "./components/cf-program-monitor.js";
 import "./components/cf-drive-folder-picker.js";
 import "./components/cf-series-admin.js";
 import "./components/cf-channel-admin.js";
+import "./components/cf-broadcast-schedule.js";
 import "./components/bump-studio/cf-bump-studio.js";
 import "./components/explorer/cf-explorer.js";
 import { viewState } from "./view.js";
@@ -26,6 +27,14 @@ function applyView() {
   document.querySelectorAll("[data-view]").forEach((el) => {
     el.hidden = el.dataset.view !== viewState.current;
   });
+  // The Guide view embeds the live viewer guide, whose player streams video:
+  // load it only while that tab is showing and blank it on leaving so nothing
+  // keeps playing (or polling) in the background.
+  const frame = document.getElementById("guideFrame");
+  if (frame) {
+    const want = viewState.current === "guide" ? frame.dataset.src : "about:blank";
+    if (frame.getAttribute("src") !== want) frame.setAttribute("src", want);
+  }
 }
 subscribe(TOPICS.APP_VIEW_STATE, applyView);
 applyView();

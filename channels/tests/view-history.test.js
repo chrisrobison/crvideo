@@ -7,6 +7,7 @@ import { VIEWS, viewFromSearch, urlForView } from "../../scheduler/js/view.js";
 test("every view is deep-linkable and unknown views fall back to the schedule", () => {
   for (const v of VIEWS) assert.equal(viewFromSearch(`?view=${v}`), v);
   assert.ok(VIEWS.includes("explorer"));
+  assert.ok(VIEWS.includes("guide"));
   assert.equal(viewFromSearch(""), "schedule");
   assert.equal(viewFromSearch("?view=nope"), "schedule");
   assert.equal(viewFromSearch("?view=__proto__"), "schedule");

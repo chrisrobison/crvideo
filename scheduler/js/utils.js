@@ -164,6 +164,14 @@ export function toast(message, tone = "info", timeout = 3600) {
   }, timeout);
 }
 
+/** The announcer stores clip URLs root-absolute ("/media/announcements/..."), which 404s when the
+ *  app is served under a path (https://host/crvideo/). Resolve them against the app root -- the
+ *  directory above scheduler/. Mirrors resolveAnnouncementAudioUrl() in channels/broadcast.js. */
+export function appMediaUrl(url) {
+  if (typeof url !== "string" || !url.startsWith("/") || url.startsWith("//")) return url;
+  return new URL(url.slice(1), new URL("../", document.baseURI)).href;
+}
+
 /** Shared baseline CSS injected into every shadow root for a consistent look. */
 export const baseComponentCSS = `
   :host{ font: 14px/1.45 var(--font); color: var(--text); }
@@ -173,11 +181,11 @@ export const baseComponentCSS = `
     background: var(--panel-2); color: var(--text); border: 1px solid var(--border);
     border-radius: var(--radius-sm); padding: 7px 12px; cursor: pointer;
   }
-  button:hover{ border-color:#48536a; }
+  button:hover{ border-color:#4a5486; }
   button:active{ transform: translateY(1px); }
   button:disabled{ opacity:.5; cursor:not-allowed; }
   button.primary{ background: var(--accent); border-color: var(--accent); font-weight:600; color:#fff; }
-  button.primary:hover{ background:#4c8cf5; }
+  button.primary:hover{ background:var(--accent-hi); border-color:var(--accent-hi); }
   button.ghost{ background: transparent; }
   button.danger{ border-color: var(--live); color:#ffb4b4; }
   button.icon-btn{ padding:6px 8px; line-height:1; }

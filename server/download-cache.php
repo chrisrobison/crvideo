@@ -2,6 +2,8 @@
 <?php
 declare(strict_types=1);
 
+umask(0002); // new files 664 / dirs 775 (dirs are setgid www-data): the web server and the CLI user both write these trees
+
 // server/download-cache.php
 //
 // Pre-fetches the Drive-hosted video file for the playlist entry that is

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- LARC/PAN message bus (vendor/larc/pan.js, see docs/bus-topics.md). Must precede every module script. -->
+<script type="importmap">{ "imports": { "@larcjs/core": "../vendor/larc/pan.js" } }</script>
+<title>Channel · CRVideo</title>
+<link rel="stylesheet" href="viewer/viewer.css">
+</head>
+<body>
+<pan-bus hidden></pan-bus>
+<cr-viewer-nav active="channels"></cr-viewer-nav>
+<main class="page" id="page"><div class="empty">Loading…</div></main>
+<script type="module" src="viewer/channel-page.js"></script>
+</body>
+</html>

@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+umask(0002); // new files 664 / dirs 775 (dirs are setgid www-data): the web server and the CLI user both write these trees
+
 // server/series-admin.php
 //
 // Backend for the admin UI's episode review/approval view

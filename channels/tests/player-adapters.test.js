@@ -26,7 +26,7 @@ import { fileURLToPath } from "node:url";
 
 import { Html5PlayerAdapter, YouTubePlayerAdapter, computeBackoffMs, computeDriftCorrection, resolveProvider, bumpRuleWindow, locateActiveBump } from "../player-adapters.js";
 import { formatCountdown, hashSeed, pickWeightedIndex } from "../continuity-card.js";
-import { buildTimeline, locate, airings, nextProgram, findAnnouncementAudio } from "../broadcast.js";
+import { buildTimeline, locate, airings, nextProgram, findAnnouncementAudio, resolveAnnouncementAudioUrl } from "../broadcast.js";
 
 // ---------- computeBackoffMs ----------
 
@@ -486,4 +486,26 @@ test("YouTubePlayerAdapter.pause() is deliberate: a PAUSED state event does not 
   adapter.play(); // explicit play clears the suspension
   adapter._handleStateChange({ data: 2 }, { PlayerState: { PLAYING: 1, BUFFERING: 3, ENDED: 0, PAUSED: 2 } });
   assert.equal(resumed, 2);
+});
+
+// ---------- resolveAnnouncementAudioUrl (broadcast.js) ----------
+
+test("resolveAnnouncementAudioUrl resolves a root-absolute clip path against the app root, not the site root", () => {
+  const channels = new URL("https://cdr2.com/crvideo/channels/");
+  assert.equal(
+    resolveAnnouncementAudioUrl("/media/announcements/science/h.mp3", channels),
+    "https://cdr2.com/crvideo/media/announcements/science/h.mp3",
+  );
+  // served from the site root, the result is the same URL the manifest named
+  assert.equal(
+    resolveAnnouncementAudioUrl("/media/announcements/science/h.mp3", new URL("https://example.test/channels/")),
+    "https://example.test/media/announcements/science/h.mp3",
+  );
+});
+
+test("resolveAnnouncementAudioUrl leaves absolute, protocol-relative, relative and empty values alone", () => {
+  const channels = new URL("https://cdr2.com/crvideo/channels/");
+  for (const v of ["https://cdn.test/a.mp3", "//cdn.test/a.mp3", "media/a.mp3", "", null, undefined]) {
+    assert.equal(resolveAnnouncementAudioUrl(v, channels), v);
+  }
 });
