@@ -1,4 +1,4 @@
-// scheduler/js/store-notify.js -- how ChannelFlow store mutations map to
+// scheduler/js/store-notify.js -- how CURTV Admin store mutations map to
 // page-bus messages (store.js itself needs a DOM, so the mapping is kept
 // pure and tested here).
 

@@ -136,7 +136,7 @@ export function renderAiring(store) {
     ${p ? kv("Program occurrence", `<code>${esc(p.occurrenceId)}</code>`) : kv("Program occurrence", notRecorded)}
     ${p ? kv("Occurrence window", `${esc(fmtTime(p.startsAt, true))} – ${esc(fmtTime(p.endsAt, true))} (${esc(fmtDuration(p.endsAt - p.startsAt))}, ${esc(p.boundaryMode)} boundary)`) : ""}
     ${kv("Published continuity", `${esc(fmtDuration(lead))} before · ${esc(fmtDuration(trail))} after`)}
-    <p class="note">Planned timing only. CRVideo has no playback telemetry, so “actual” start, drift and sync status are <b>not</b> shown.</p>`);
+    <p class="note">Planned timing only. CURTV has no playback telemetry, so “actual” start, drift and sync status are <b>not</b> shown.</p>`);
 
   // --- assets ---
   const assetRows = [];

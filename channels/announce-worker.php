@@ -56,7 +56,7 @@ require WORKER_ROOT . '/announcer/src/AnnouncerPipeline.php';
 function worker_usage(): string
 {
     return <<<USAGE
-    CRVideo announcer job-queue worker -- drains pending AI-write + Kokoro-
+    CURTV announcer job-queue worker -- drains pending AI-write + Kokoro-
     synthesize jobs queued by publish.php / channels/announce.php.
 
     Usage:

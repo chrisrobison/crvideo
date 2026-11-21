@@ -200,7 +200,7 @@ final class ArchiveMetadataClient
                         CURLOPT_FOLLOWLOCATION => true,
                         CURLOPT_PROTOCOLS => CURLPROTO_HTTPS,
                         CURLOPT_HTTPHEADER => ['Accept: application/json'],
-                        CURLOPT_USERAGENT => 'crvideo-ia-import/1.0',
+                        CURLOPT_USERAGENT => 'curtv-ia-import/1.0',
                     ]);
                     curl_multi_add_handle($mh, $ch);
                     $handles[$id] = $ch;

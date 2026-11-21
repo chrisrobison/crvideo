@@ -39,7 +39,7 @@ function renderOverview(store) {
   const eps = [...(d.seriesIndex?.values() || [])].reduce((n, s) => n + s.episode_count, 0);
   const cov = store.scheduleCoverage();
   return `
-    <div class="sec"><div class="eyebrow-line">CRVIDEO EXPLORER</div><h2 class="ep-title">Browse what's on, and why</h2>
+    <div class="sec"><div class="eyebrow-line">CURTV EXPLORER</div><h2 class="ep-title">Browse what's on, and why</h2>
       <p class="desc">Pick a channel to see what it carries and what is scheduled, a show for its episodes, an episode for its airings, an airing for its continuity. Use <b>Production</b> for bumps and voiceovers, and Search to find anything.</p></div>
     ${section("In this library", `
       ${kv("Channels", d.channels ? String(d.channels.length) : "…")}
@@ -48,7 +48,7 @@ function renderOverview(store) {
       ${kv("Published schedules", `${cov.loaded} of ${cov.total} loaded${cov.failed ? `, ${cov.failed} unavailable` : ""}`)}`)}
     ${section("What the labels mean", `
       <p class="note"><b>Configured</b> = defined in the repository. <b>Published</b> = a compiled schedule exists. <b>Scheduled</b> = the published schedule says it should be playing at that time.
-      Explorer never says “on air” or “live”: CRVideo has no player telemetry, so <b>confirmed playing</b> is not something it can know.</p>`)}`;
+      Explorer never says “on air” or “live”: CURTV has no player telemetry, so <b>confirmed playing</b> is not something it can know.</p>`)}`;
 }
 
 function renderProduction(store) {

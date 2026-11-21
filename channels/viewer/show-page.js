@@ -1,6 +1,6 @@
 // channels/viewer/show-page.js -- show.html?show=<series id>[&ch=<channel id>]:
 // one show -- what it is, whether it's on right now, when it's next on, and
-// which of its episodes are coming up on air. CRVideo is live TV, so this page
+// which of its episodes are coming up on air. CURTV is live TV, so this page
 // never plays an episode: its one action is tuning to the channel that is
 // airing the show. Episode lists come from channels/finder.php (approved
 // episodes only); air times are derived from the published schedules.
@@ -29,7 +29,7 @@ async function init() {
   const carrying = show.channels.map((c) => metaById.get(c)).filter(Boolean);
   const ctx = carrying.find((m) => m.id === param("ch")) || carrying[0] || null;
   if (ctx) rememberChannel(ctx.id);
-  document.title = `${show.title} · CRVideo`;
+  document.title = `${show.title} · CURTV`;
 
   // Only the channels that carry this show need their schedules loaded.
   const channels = await loadChannels(carrying);
@@ -108,7 +108,7 @@ function paint({ show, metaById, carrying, ctx, channels }) {
     }
   }
   page.append(box);
-  page.append(el("p", "footer-note", "CRVideo is live TV: episodes air when they're scheduled, and there's no on-demand playback. Tune in to a channel to watch."));
+  page.append(el("p", "footer-note", "CURTV is live TV: episodes air when they're scheduled, and there's no on-demand playback. Tune in to a channel to watch."));
 }
 
 function airBox(status, t, ctx, chLabel) {

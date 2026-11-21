@@ -8,7 +8,7 @@ declare(strict_types=1);
 // (float seconds or null) and 'original_position' (number, used only for
 // tie-breaking/ordering) -- into fixed-length blocks. This independence is
 // intentional (see README) so the same engine can later be reused for
-// CRVideo's own channel/playlist scheduling, not just IA imports.
+// CURTV's own channel/playlist scheduling, not just IA imports.
 //
 // Optional per-item hint fields used only by the "balanced" strategy's
 // variety scoring: 'subjects' (list<string>), 'collections' (list<string>),

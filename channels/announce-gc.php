@@ -54,7 +54,7 @@ require GC_ROOT . '/announcer/src/AnnouncerGc.php';
 function gc_usage(): string
 {
     return <<<USAGE
-    CRVideo continuity announcer garbage collector -- sweeps audio/script
+    CURTV continuity announcer garbage collector -- sweeps audio/script
     cache files no longer referenced by any channel's current
     announcements.json, plus aging out old job-queue history.
 

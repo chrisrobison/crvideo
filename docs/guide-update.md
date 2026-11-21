@@ -2,7 +2,7 @@
 
 Status: implemented, on `feature/program-level-epg`.
 
-This document explains how CRVideo's channel guide renders one cell per
+This document explains how CURTV's channel guide renders one cell per
 *scheduled program occurrence* (e.g. a one-hour "Electronics Lab" block)
 rather than one cell per individual video/episode, the schema extension
 that makes that possible, and what is and isn't covered yet.

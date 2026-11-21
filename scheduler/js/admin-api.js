@@ -103,7 +103,7 @@ export const bumpAdminApi = {
 };
 
 // server/explorer-admin.php -- READ-ONLY compact projections of series/*/series.json
-// for CRVideo Explorer (the full series list above is ~6 MB). GET only.
+// for CURTV Explorer (the full series list above is ~6 MB). GET only.
 export const explorerAdminApi = {
   seriesIndex: () => getJson(`${EXPLORER_ENDPOINT}?action=series_index`).then((r) => r.series),
   series: (id) => getJson(`${EXPLORER_ENDPOINT}?action=series&id=${encodeURIComponent(id)}`).then((r) => r.series),

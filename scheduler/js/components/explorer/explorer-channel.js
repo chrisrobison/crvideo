@@ -41,7 +41,7 @@ export function renderChannel(store) {
       ${sv ? pill(status.label, statusTone) : ""}
     </div>
     ${sv ? `<p class="note">${esc(status.label)}${status.detail ? ` — ${esc(status.detail)}` : ""}. This is derived from the published schedule and your clock;
-      CRVideo has no player telemetry, so whether anyone is actually watching or the player is healthy is <b>not known</b> here.</p>` : schedErr ? `<p class="note bad">${esc(schedErr)}</p>` : ""}
+      CURTV has no player telemetry, so whether anyone is actually watching or the player is healthy is <b>not known</b> here.</p>` : schedErr ? `<p class="note bad">${esc(schedErr)}</p>` : ""}
   `);
 
   // What the schedule says at the selected instant.

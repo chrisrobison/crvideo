@@ -1,4 +1,4 @@
-// <cf-explorer> -- CRVideo Explorer's shell: toolbar (mode, search, time
+// <cf-explorer> -- CURTV Explorer's shell: toolbar (mode, search, time
 // travel), breadcrumbs, the Finder-style browser, the Inspector and the
 // splitter between them. It is a read-only browser/inspector: see
 // docs/explorer.md. All state lives in explorer-store.js; this element only

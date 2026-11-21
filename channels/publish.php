@@ -77,7 +77,7 @@ require PUBLISH_ROOT . '/announcer/src/AnnouncerPipeline.php';
 function publish_usage(): string
 {
     return <<<USAGE
-    CRVideo channel publisher -- compiles recurring-series programming into schedule.json
+    CURTV channel publisher -- compiles recurring-series programming into schedule.json
 
     Usage:
       php publish.php <channel-id> [options]

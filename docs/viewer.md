@@ -1,6 +1,6 @@
 # Viewer pages: Guide, Channels, Browse
 
-The viewer-facing surfaces of CRVideo. They share one top bar
+The viewer-facing surfaces of CURTV. They share one top bar
 (`<cr-viewer-nav>`, `channels/viewer/nav.js`: **Guide / Channels / Browse** plus the
 broadcast clock) and one palette (the guide's navy surfaces with a gold accent).
 

@@ -1,4 +1,4 @@
-/* ChannelFlow design tokens — shared across the document and, via CSS
+/* CURTV Admin design tokens — shared across the document and, via CSS
    custom-property inheritance, every shadow root mounted inside it. */
 :root{
   color-scheme: dark;
@@ -13,7 +13,7 @@
   --text-muted: #9099b8;
   --text-faint: #5f6889;
 
-  /* ChannelFlow revamp: a soft blue primary. */
+  /* CURTV Admin revamp: a soft blue primary. */
   --accent: #4a7fd8;
   --accent-hi: #6f9be8;
   --accent-dim: #3a64b0;

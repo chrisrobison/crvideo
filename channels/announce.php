@@ -62,7 +62,7 @@ require ANNOUNCE_ROOT . '/announcer/src/AnnouncerPipeline.php';
 function announce_usage(): string
 {
     return <<<USAGE
-    CRVideo continuity announcer -- generates AI-written, Kokoro-synthesized
+    CURTV continuity announcer -- generates AI-written, Kokoro-synthesized
     "coming up next" (etc.) announcements for compiled channel schedules.
 
     Usage:

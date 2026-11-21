@@ -173,7 +173,7 @@ never part of a bump definition.
 
 ## The creator UI
 
-`scheduler/` (the ChannelFlow dashboard) → **BUMPS** tab, the **Bump
+`scheduler/` (the CURTV Admin dashboard) → **BUMPS** tab, the **Bump
 Studio** (`scheduler/js/components/bump-studio/`, talking to
 `server/bump-admin.php`). It has three workspaces:
 

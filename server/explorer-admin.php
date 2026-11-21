@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 // server/explorer-admin.php
 //
-// READ-ONLY backend for CRVideo Explorer (scheduler/js/components/explorer/).
+// READ-ONLY backend for CURTV Explorer (scheduler/js/components/explorer/).
 // Explorer is a browser/inspector; this endpoint owns no data and writes
 // nothing. It exists only because the existing series endpoint
 // (series-admin.php?action=list) returns every episode of every series

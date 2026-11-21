@@ -17,7 +17,7 @@ this existed.
 
 ## How it fits into the existing architecture
 
-CRVideo has no database, no daemon, and no existing AI/TTS integration anywhere -- every
+CURTV has no database, no daemon, and no existing AI/TTS integration anywhere -- every
 "background" task in this repo is a plain, idempotent, cron-invoked CLI script (see
 `server/download-cache.php`). This module follows that exact posture rather than
 introducing a new one:

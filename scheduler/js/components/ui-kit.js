@@ -1,4 +1,4 @@
-// Shared building blocks for the ChannelFlow revamp screens (Series Review,
+// Shared building blocks for the CURTV Admin revamp screens (Series Review,
 // Programming grid, Broadcast Schedule): inline icons, a page-header/panel/
 // tab/chip CSS kit that every one of those shadow roots includes, and the
 // per-series swatch picker. Plain strings -- no framework, same as the rest

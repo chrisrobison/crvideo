@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 kokoro-server: a small, persistent HTTP microservice wrapping Kokoro TTS
-(kokoro-onnx, CPU-only ONNX Runtime) for the CRVideo "AI continuity announcer"
+(kokoro-onnx, CPU-only ONNX Runtime) for the CURTV "AI continuity announcer"
 feature.
 
 The model is loaded exactly once at process startup and kept resident in

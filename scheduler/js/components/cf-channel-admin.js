@@ -1,7 +1,7 @@
 // cf-channel-admin — the PROGRAMMING tab: "Programming — Visual Grid".
 //
 // Edits a channel's recurring programming template (channels/<id>/
-// programming.json) on a week grid, matching the ChannelFlow revamp mockups:
+// programming.json) on a week grid, matching the CURTV Admin revamp mockups:
 //
 //   left   : channel picker + "Shows & Series" (the channel's catalog.json
 //            series; + manages the catalog)

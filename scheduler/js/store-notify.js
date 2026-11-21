@@ -1,4 +1,4 @@
-// Maps a ChannelFlow store mutation ("reason") to the bus messages it
+// Maps a CURTV Admin store mutation ("reason") to the bus messages it
 // publishes. Pure (no DOM, no store import) so channels/tests/ can cover
 // it under `node --test`; store.js calls it from _emit(). Topic meanings
 // live in js/bus.js / docs/bus-topics.md.

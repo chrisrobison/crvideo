@@ -64,7 +64,7 @@ class CrViewerNav extends HTMLElement {
     const base = new URL("../", import.meta.url).href;
     this.shadowRoot.innerHTML = `<style>${STYLE}</style>
       <header>
-        <a class="brand" href="${base}index.html"><b>CR</b>VIDEO</a>
+        <a class="brand" href="${base}index.html">C<b>UR</b>TV</a>
         <nav aria-label="Viewer">${tabs.map(([id, label, href]) =>
           `<a href="${base}${href}"${id === active ? ' aria-current="page"' : ""}>${label}</a>`).join("")}</nav>
         <div class="spacer"></div>

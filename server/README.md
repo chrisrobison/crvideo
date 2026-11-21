@@ -122,7 +122,7 @@ one actually in use) is supported -- it reads `timezone` +
 now and next. The one-off absolute-date format sync-player.html also
 supports isn't handled by this script.
 
-## Publishing a new schedule from the ChannelFlow scheduler
+## Publishing a new schedule from the CURTV Admin scheduler
 
 `publish-playlist.php` lets `scheduler/index.html` write a new live
 schedule directly -- the "Live" menu in the scheduler's header has **Load

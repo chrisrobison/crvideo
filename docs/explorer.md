@@ -1,6 +1,6 @@
-# CRVideo Explorer
+# CURTV Explorer
 
-Explorer is a read-only, Finder-style browser/inspector inside ChannelFlow
+Explorer is a read-only, Finder-style browser/inspector inside CURTV Admin
 (`scheduler/?view=explorer`). It owns no data: every entity is resolved at
 runtime from the files and APIs that already own it. It never publishes,
 saves, regenerates or overrides anything.
@@ -95,7 +95,7 @@ channels/tests/explorer-*.test.js, server/tests/ExplorerAdminTest.php
 
 ## What was built (as of this branch)
 
-Open it from the **EXPLORER** tab in ChannelFlow, or deep-link:
+Open it from the **EXPLORER** tab in CURTV Admin, or deep-link:
 
 ```
 scheduler/?view=explorer&channel=science&series=techmoan&episode=yt-3H3QRtDTE4Y

@@ -31,7 +31,7 @@ const BLOCKED = [
 
 function fetchText(string $src): string
 {
-    $ctx = stream_context_create(['http' => ['timeout' => 20, 'user_agent' => 'crvideo-filler-build']]);
+    $ctx = stream_context_create(['http' => ['timeout' => 20, 'user_agent' => 'curtv-filler-build']]);
     $text = @file_get_contents($src, false, $ctx);
     if ($text === false) {
         fwrite(STDERR, "Could not read $src\n");

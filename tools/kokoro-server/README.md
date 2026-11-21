@@ -1,8 +1,8 @@
 # kokoro-server
 
 A small, self-contained Python HTTP microservice that wraps [Kokoro TTS](https://huggingface.co/hexgrad/Kokoro-82M)
-via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) (CPU-only, ONNX Runtime) for CRVideo's
-"AI continuity announcer" feature. It is fully isolated from the rest of the PHP app: CRVideo's
+via [kokoro-onnx](https://github.com/thewh1teagle/kokoro-onnx) (CPU-only, ONNX Runtime) for CURTV's
+"AI continuity announcer" feature. It is fully isolated from the rest of the PHP app: CURTV's
 `KokoroHttpTtsProvider` calls this service over plain HTTP, nothing more.
 
 Everything here is stdlib Python plus `kokoro-onnx`/`onnxruntime` - no web framework.
@@ -169,7 +169,7 @@ target machine to get a real number before relying on it for anything latency-se
 
 ## 5. Deployment: local vs. remote
 
-CRVideo's `KokoroHttpTtsProvider` always talks to this exact service over HTTP; only *where* it
+CURTV's `KokoroHttpTtsProvider` always talks to this exact service over HTTP; only *where* it
 runs changes between the two supported setups:
 
 **(a) Local** - this script runs on the same machine as the PHP backend. Start it bound to
@@ -185,7 +185,7 @@ Xeon). On that machine:
 KOKORO_HOST=0.0.0.0 KOKORO_PORT=8178 KOKORO_AUTH_TOKEN=<a long random shared secret> python3 server.py
 ```
 
-Then point CRVideo's `KokoroHttpTtsProvider` config at `http://<that-machine>:8178`, with:
+Then point CURTV's `KokoroHttpTtsProvider` config at `http://<that-machine>:8178`, with:
 
 - a configurable request timeout (network round-trip + the measured generation time above, plus
   margin - e.g. at least 20-30s for a 10s clip on slow CPU hardware, less needed on faster boxes)

@@ -1,4 +1,4 @@
-// Registers every ChannelFlow web component and boots the store.
+// Registers every CURTV Admin web component and boots the store.
 // Plain ES modules — no bundler, no build step.
 import "./store.js";
 import "./components/cf-toggle.js";

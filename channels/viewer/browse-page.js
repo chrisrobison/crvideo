@@ -65,7 +65,7 @@ function buildChrome() {
   const head = el("div", "finder-head");
   const left = el("div");
   left.append(
-    el("div", "eyebrow", "CRVideo Finder"),
+    el("div", "eyebrow", "CURTV Finder"),
     el("h1", "title", "Find something worth tuning in for."),
     el("p", "subtle", "Browse the network independently of the clock. The schedule still decides when you can watch it."),
   );
