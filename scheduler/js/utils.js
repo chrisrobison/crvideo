@@ -1,4 +1,4 @@
-// Shared helpers used across the ChannelFlow web components.
+// Shared helpers used across the CURTV Admin web components.
 // Pure vanilla JS / web platform APIs only — no build step, no dependencies.
 
 let uidCounter = 0;

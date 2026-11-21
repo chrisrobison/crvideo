@@ -141,7 +141,7 @@ final class ArchiveCollectionSearch
                 CURLOPT_FOLLOWLOCATION => true,
                 CURLOPT_PROTOCOLS => CURLPROTO_HTTPS,
                 CURLOPT_HTTPHEADER => ['Accept: application/json'],
-                CURLOPT_USERAGENT => 'crvideo-ia-series-import/1.0',
+                CURLOPT_USERAGENT => 'curtv-ia-series-import/1.0',
             ]);
             $body = curl_exec($ch);
             $error = curl_error($ch);

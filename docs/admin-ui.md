@@ -1,9 +1,9 @@
 # Admin UI: series review and channel/programming management
 
-The ChannelFlow admin UI (`scheduler/index.html`): a shared top bar
+The CURTV Admin UI (`scheduler/index.html`): a shared top bar
 (**Explorer / Series / Programming / Schedule / Guide / Bump Studio**) over six
 workspaces, backed by PHP endpoints under `server/`. The three editorial
-screens follow the "ChannelFlow" revamp mockups:
+screens follow the "CURTV Admin" revamp mockups:
 
 - **SERIES -- Series Review**: a three-pane workspace (series library |
   episodes of the selected series | episode details with an
@@ -47,7 +47,7 @@ authenticating:
 - trigger a real `channels/publish.php` run that overwrites a channel's
   `schedule.json`,
 - read every series' episode list, editorial status and rights notes through `server/explorer-admin.php`
-  (read-only; CRVideo Explorer's endpoint -- it calls the same `admin_require_auth()` hook, so a
+  (read-only; CURTV Explorer's endpoint -- it calls the same `admin_require_auth()` hook, so a
   future access check covers it with no other change),
 - edit any channel's AI continuity announcer config (including which
   voice/writer/TTS provider it uses), and trigger a real `claude` CLI +

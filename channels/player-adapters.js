@@ -12,7 +12,7 @@
 //
 // Nothing here downloads, caches, proxies or extracts a YouTube media
 // stream: playback stays inside YouTube's own iframe, and no overlay is ever
-// drawn on top of it (CRVideo's transport UI lives in the surrounding page).
+// drawn on top of it (CURTV's transport UI lives in the surrounding page).
 
 // ---------- continuity cards ----------
 

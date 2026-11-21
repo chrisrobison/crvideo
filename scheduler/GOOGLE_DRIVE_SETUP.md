@@ -1,6 +1,6 @@
-# Connecting ChannelFlow to Google Drive
+# Connecting CURTV Admin to Google Drive
 
-ChannelFlow can use a Google Drive folder as: a shared media library, a
+CURTV Admin can use a Google Drive folder as: a shared media library, a
 schedule backup/restore target, and an extra destination for `Publish`
 (alongside the local `playlist.json` download). This is entirely
 client-side — there's no backend — so it uses Google's OAuth "token
@@ -16,7 +16,7 @@ existing one).
 ## 3. Configure the OAuth consent screen
 **APIs & Services → OAuth consent screen**
 - User type: **External**
-- App name: `ChannelFlow` (anything you like), add your own email as
+- App name: `CURTV Admin` (anything you like), add your own email as
   support/contact email
 - Scopes: you don't need to add anything here manually — the app requests
   `https://www.googleapis.com/auth/drive` at sign-in time
@@ -108,7 +108,7 @@ sign-in, no scheduler UI involved. It:
   (same or different name/time) picks up automatically, no redeploy.
 
 ### Why this needs a Google **API key**, not the OAuth sign-in above
-Everything else in ChannelFlow assumes a human is at the keyboard to click
+Everything else in CURTV Admin assumes a human is at the keyboard to click
 "Connect Google Drive," and that sign-in's access token expires roughly
 hourly. A 24/7 channel has nobody there to re-authenticate. Instead,
 `channel.html` uses a Google **API key** (no sign-in, doesn't expire) against

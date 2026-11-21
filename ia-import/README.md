@@ -11,7 +11,7 @@ scripts. The only optional external dependency is `ffprobe`, used nowhere
 in the current implementation (see "Known limitations" below).
 
 It is deliberately self-contained (its own `src/`, its own test runner) so
-it can be dropped into CRVideo's channel-management system later without
+it can be dropped into CURTV's channel-management system later without
 having pulled in anything that would conflict with the rest of the app.
 **It does not touch `scheduler/`, `server/`, `playlist.json`,
 `sync-player.html`, `schedule.html`, or `cache/`** -- it is a new, separate
@@ -287,7 +287,7 @@ breaks) -- `balanced` optionally reads `subjects`/`collections`/`creator`
 hints for its variety scoring. `MediaCatalog::toSchedulerItems()` is the
 one-line adapter from an IA catalog to this generic shape. This is what the
 task spec means by "structured so its functionality can later be
-integrated into CRVideo's channel management system" -- the same two
+integrated into CURTV's channel management system" -- the same two
 classes should drop straight into a non-IA playlist/channel scheduler.
 
 ## Testing

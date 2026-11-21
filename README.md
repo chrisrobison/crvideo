@@ -1,4 +1,11 @@
-# CRVideo
+# CURTV
+
+**CURTV** (curtv.com -- say it "see-your-TV") is the product name; the wordmark
+is set as C**UR**TV. The admin UI at `scheduler/` is **CURTV Admin**. The repo
+and deploy path are still named `crvideo`, and a few internal identifiers keep
+their old names on purpose so existing installs don't break: the `CRVIDEO_*`
+environment variables, the `crvideo:` / `channelflow:` localStorage keys, the
+`channelflow-schedule.json` Drive file name, and cron lock/log file names.
 
 A self-hosted, always-on "TV station" built out of your own video
 catalogs: Internet Archive films and YouTube channels/playlists, scheduled
@@ -25,7 +32,7 @@ it runs.
   (`sync-player.html`) that joins the "broadcast" already in progress
   based on the current time, the same way real TV works. It's still
   live: the channel guide's **channel 1, USTV**, is this exact lineup,
-  embedded via `sync-player.html`. `scheduler/` (branded "ChannelFlow")
+  embedded via `sync-player.html`. `scheduler/` (branded "CURTV Admin")
   is its admin UI, later extended with the channel guide's own editorial
   tooling (see "Admin / editorial tooling" below) rather than replaced.
 
@@ -44,7 +51,7 @@ Then open:
 | `/channels/browse.html` | The viewer Finder: search every show as posters, a list, or by channel. |
 | `/channels/watch.html?ch=science` | One channel, full-viewport, deep-linkable (any `channels/<id>`). |
 | `/sync-player.html` | USTV's standalone clock-synced player. |
-| `/scheduler/` | ChannelFlow: the Drive/playlist admin tool, plus the SERIES/PROGRAMMING editorial tabs. |
+| `/scheduler/` | CURTV Admin: the Drive/playlist admin tool, plus the SERIES/PROGRAMMING editorial tabs. |
 
 A few pieces need credentials to do anything live (YouTube imports, the
 Google Drive scheduler, the local video cache downloader) -- see
@@ -186,7 +193,7 @@ approve individual announcements. `channels/announcer/README.md`.
   live), and `series-admin.php`/`channel-admin.php`/`announcer-admin.php`
   (back the SERIES/PROGRAMMING tabs below, the last for the "Continuity
   announcer" section specifically). `server/README.md`.
-- **`scheduler/`** (ChannelFlow) -- the admin UI: its original SCHEDULE
+- **`scheduler/`** (CURTV Admin) -- the admin UI: its original SCHEDULE
   tab (Drive folder picker, media library, rundown/timeline editor for
   `playlist.json`) plus newer SERIES tabs (episode approval, triggering
   a `youtube-import.php` refresh) and PROGRAMMING tabs (editing a

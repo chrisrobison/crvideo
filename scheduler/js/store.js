@@ -1,4 +1,4 @@
-// ChannelFlow application state. The store owns the state and its
+// CURTV Admin application state. The store owns the state and its
 // mutators; every mutation is announced on the page bus (js/bus.js, topics
 // mapped in store-notify.js -- e.g. scheduler.blocks.changed,
 // scheduler.channel.state). Components subscribe to those topics and

@@ -5,7 +5,7 @@ bench.py - benchmark Kokoro TTS inference speed on this machine.
 By default this loads the model directly in-process (standalone mode) and
 times a single call to Kokoro.create(). That measures pure inference
 performance without HTTP/JSON overhead, which is what matters for sizing
-"how fast is this CPU at TTS" - the number PHP/CRVideo cares about is
+"how fast is this CPU at TTS" - the number PHP/CURTV cares about is
 dominated by model inference, not the thin HTTP wrapper around it.
 
 Pass --http to instead benchmark an already-running server's POST
@@ -34,7 +34,7 @@ from pathlib import Path
 SCRIPT_DIR = Path(__file__).resolve().parent
 
 # A realistic ~27-word broadcast-announcer sentence, chosen to read aloud in
-# roughly 9-10 seconds at a natural pace - representative of a CRVideo
+# roughly 9-10 seconds at a natural pace - representative of a CURTV
 # "up next" continuity announcement.
 SAMPLE_TEXT = (
     "Good evening, and welcome back. Up next, a brand new episode featuring "

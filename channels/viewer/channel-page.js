@@ -44,7 +44,7 @@ async function init() {
   rememberChannel(meta.id);
   const d = Number.parseInt(param("day"), 10);
   selectedDay = DAY_OFFSETS.includes(d) ? d : 0;
-  document.title = `${meta.name} · CRVideo`;
+  document.title = `${meta.name} · CURTV`;
 
   const [[loaded], index] = await Promise.all([loadChannels([meta]), loadShowIndex()]);
   if (!loaded) return emptyState(page, `${meta.name} is off the air right now.`, urls.browse(), "Browse other channels");

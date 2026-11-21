@@ -3,7 +3,7 @@
 // backend) plus a handful of plain fetch() calls against the Drive REST API.
 //
 // This is the one place in the app that talks to a non-local-standard API;
-// everything else in ChannelFlow stays framework/dependency free.
+// everything else in CURTV Admin stays framework/dependency free.
 import { GOOGLE_CLIENT_ID } from "./drive-config.js";
 import { toast } from "./utils.js";
 import { TOPICS, publishState } from "../../js/bus.js";

@@ -92,7 +92,7 @@ Topics are lower-case, dot-separated `domain.subject[.qualifier].kind`:
 | **request** | a question (`*.get`, `*.query`) | -- (none yet) | `request()` / `respond()` |
 
 Domains in use: `app` (scheduler page shell), `drive` (Google Drive
-auth), `scheduler` (ChannelFlow store), `studio` (Bump Studio UI state),
+auth), `scheduler` (CURTV Admin store), `studio` (Bump Studio UI state),
 `bumps` (bump definitions and schedules), `player` (the channel player).
 Don't add a new domain for one topic; extend an existing one.
 
@@ -218,7 +218,7 @@ Bump Studio hand-offs reuse the existing `studio.compose.open` (`{id}`) and
 | --- | --- | --- | --- | --- |
 | `drive.auth.state` | state | yes | `{connected}` | Initial snapshot at import (a token restored from sessionStorage counts). `cf-header` re-renders its Drive menu. |
 
-### ChannelFlow scheduler -- `scheduler/js/store.js` (mapping in `store-notify.js`)
+### CURTV Admin scheduler -- `scheduler/js/store.js` (mapping in `store-notify.js`)
 
 The store keeps its state and mutators; every mutation's internal
 `reason` maps to the messages below (`schedulerNotifications()`,

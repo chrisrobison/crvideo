@@ -5,7 +5,7 @@
 // publish); "guide" is the viewer-facing channel guide (channels/index.html)
 // embedded as viewers see it; "legacy-schedule" is the original Drive/live-playlist scheduler,
 // kept reachable from the header's tools menu; "series", "programming" and
-// "bumps" are admin views; "explorer" is the read-only CRVideo Explorer.
+// "bumps" are admin views; "explorer" is the read-only CURTV Explorer.
 // Switching only toggles [hidden]; nothing is unmounted, so scheduler state and
 // subscriptions are undisturbed.
 //

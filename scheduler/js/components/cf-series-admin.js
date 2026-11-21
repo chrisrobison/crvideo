@@ -1,7 +1,7 @@
 // cf-series-admin — the SERIES tab: "Series Review".
 //
 // A three-pane workspace (series library | episodes of the selected series |
-// episode details with an Approve/Reject decision), matching the ChannelFlow
+// episode details with an Approve/Reject decision), matching the CURTV Admin
 // revamp mockups. Data and writes are unchanged from the previous
 // single-column version: every series/*/series.json is listed server-side by
 // server/series-admin.php (this component never hardcodes series ids), an

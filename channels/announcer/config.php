@@ -28,7 +28,7 @@ return [
     // for keys a channel's announcer.json doesn't mention at all.
     'enabled' => false,
 
-    // Voice/speech defaults -- identifiers are examples only; CRVideo does
+    // Voice/speech defaults -- identifiers are examples only; CURTV does
     // not assume every Kokoro backend supports the same voice set. See
     // GET /voices on the Kokoro server for what is actually available.
     'voice' => 'af_heart',

@@ -64,7 +64,7 @@ export const TOPICS = Object.freeze({
   /** state, retained. {connected} -- whether a valid Drive OAuth token is held. */
   DRIVE_AUTH_STATE: "drive.auth.state",
 
-  // ---- ChannelFlow scheduler store (scheduler/js/store.js) ----
+  // ---- CURTV Admin scheduler store (scheduler/js/store.js) ----
   /** state, retained. {channelId, name} -- the channel being edited. */
   SCHEDULER_CHANNEL_STATE: "scheduler.channel.state",
   /** state, retained. {date, isToday} -- the calendar day being edited (YYYY-MM-DD). */

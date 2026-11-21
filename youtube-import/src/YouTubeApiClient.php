@@ -250,7 +250,7 @@ final class YouTubeApiClient
                 CURLOPT_FOLLOWLOCATION => true,
                 CURLOPT_PROTOCOLS => CURLPROTO_HTTPS,
                 CURLOPT_HTTPHEADER => ['Accept: application/json'],
-                CURLOPT_USERAGENT => 'crvideo-youtube-import/1.0',
+                CURLOPT_USERAGENT => 'curtv-youtube-import/1.0',
             ]);
             $body = curl_exec($ch);
             $error = curl_error($ch);

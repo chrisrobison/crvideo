@@ -307,13 +307,13 @@ class CfHeader extends HTMLElement {
           <div class="bar">
             <div class="logo">
               <svg width="30" height="30" viewBox="0 0 32 32" fill="none"><path d="M7 5.5 25.5 16 7 26.5z" fill="currentColor" opacity=".28"/><path d="M5 4.5 22 14.5 5 24.5z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 15 27 24.6 12 28.4z" fill="#22d3ee" opacity=".9"/></svg>
-              ChannelFlow
+              CURTV Admin
             </div>
             <nav>
               ${navItems.map(([v, label, ic]) => `<a data-view="${v}" class="${v === "schedule" ? "active" : ""}">${icon(ic, 19)}${label}</a>`).join("")}
             </nav>
             <div class="spacer"></div>
-            <div class="network"><span class="dot"></span>CRVideo Network</div>
+            <div class="network"><span class="dot"></span>CURTV Network</div>
             <div class="menu settings-menu">
               <button class="gear" title="Tools" aria-label="Tools">${icon("settings", 20)}</button>
               <div class="menu-pop">
